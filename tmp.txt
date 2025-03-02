@@ -1,0 +1,11 @@
+Let's move on to the next part: "The Technological Backbone". I want to warn user that this is more technical and the user can skip this part if need be. And it they want to read a diluted version, they can read in the last chapter of this book: "Making It Simple: A Layman’s Guide to an Invisible Revolution" which simply talks about Citizens using an app or website. The Technological Backbone will compromise of a local-first, offline first, distributed micro blockchains which are privacy focussed and quantum secure (please let me know if I am missing any aspect). For the layman, it simply is a website or an app on their mobile. For people who lack a mobile, it will simply be YAD device provided by the government. Essentially, it runs on webassebly. For first time registration, they need internet and a fingerprinting device (For instance, the World ID / World Coin / World Chain / World App "Orb" Device: The real human network) that will scan the user produce a fingerprint to be used as proof of personhood. Once the proof of person hood is established, it is just a matter of scanning the qr code of another person (or interacting to a push notification or simply interacting with a menu on your your app / website, etc. What ever is simplest and appropriate.) and take whatever action is necessary (community verification, update merit points, validation, Authorization, voting etc). This will create immutable records on blockchains and can be synced as required. When someone looses a device, a threshold based signature validation can be done to recover the lost data. People will be required to add trusted identities that can participate in the threshold signature cryptographic verification. This will be both fast and reliable. 
+
+Please note that this part consists of following chapters:
+
+```
+# Proof of Personhood: Securing Trust in a Digital Age
+# Quantum-Secure & Privacy-Centric: Designing a Human-First Blockchain
+# Making It Simple: A Layman’s Guide to an Invisible Revolution
+```
+
+Let's come back to the contents of each chapter later in our conversation. But for now, let focus on the intro to the part before getting to chapters.
