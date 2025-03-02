@@ -2511,74 +2511,48 @@ So let’s celebrate the power of imperfect, evolving ideas, and the communities
 
 This is one of my favorite poems of all time. It is written by a the great Tamil poet Bharati. Translations are at the end.
 
+```
 தேடிச் சோறுநிதந் தின்று
-
 பல சின்னஞ் சிறுகதைகள் பேசி
-
 மனம் வாடித் துன்பமிக உழன்று
-
 பிறர் வாடப் பலசெயல்கள் செய்து
-
 நரை கூடிக் கிழப்பருவ மெய்தி
-
 கொடுங் கூற்றுக் கிரையெனப்பின் மாயும்
-
 பல வேடிக்கை மனிதரைப் போலே
-
 நான் வீழ்வே னென்று நினைத் தாயோ?
+```
 
-
-
+```
 நின்னைச் சிலவரங்கள் கேட்பேன்
-
 அவை நேரே இன்றெனக்குத் தருவாய்
-
 என்றன் முன்னைத் தீயவினைப் பயன்கள்
-
 இன்னும் மூளா தழிந்திடுதல் வேண்டும்
-
 இனி என்னைப் புதியவுயி ராக்கி
-
 எனக் கேதுங் கவலையறச் செய்து
-
 மதி தன்னை மிகத்தெளிவு செய்து
-
 என்றும் சந்தோஷங் கொண்டிருக்கச் செய்வாய்…
-
+```
 
 Translation
 
-
+```
 Day after day, we search for our meal,
-
 Gossiping of trivial tales, stories we reveal,
-
 Hearts burdened, sorrow our constant seal,
-
 Causing others to suffer, their wounds we unseal,
-
 Hair turns grey, the old age we feel,
-
 Finally, death’s cruel embrace, our fate sealed.
-
 Like many foolish men, living lives surreal,
-
 Did you think I, too, would yield?
+```
 
-
-
+```
 I ask of you a few boons dear,
-
 Grant them now, make them clear,
-
 Erase the effects of my past misdeeds,
-
 Let them fade, vanish like fleeting dreams.
-
 Revive me with a life anew,
-
 Free from sorrows, fresh as dew.
-
 Make my mind sharp and bright,
-
 Keep me happy, day and night.
+```
