@@ -118,40 +118,55 @@ It’s easy to dismiss all this talk as idealism, but hope can be a powerful lev
 A fairer future isn’t some distant dream—it’s a direct possibility if we choose to invest our collective energy in making it real. The more we imagine what that future might look like, the better equipped we are to build it. So let’s keep the flame of hope burning, and turn our minds to what we can achieve together with the tools already at our disposal.
 
 {class: part}
-# Defining the Core
+
+## **Defining the Core**
 
 Before diving into the specifics of what truly constitutes our core social contract, let’s make sure we’re on the same page about what “progress” even means. In my view, a *progressive society* is one that continuously advances humanity—intellectually, socially, and ethically—so that each generation starts off better than the one before it. The foundation of that progress? **Knowledge.**
 
-Think about history’s greatest scientific minds—Newton, Einstein, Charles Babbage. They were undoubtedly brilliant, yet they weren’t necessarily *the* most intelligent people ever born. There could have been others with equal or greater potential who never had the chance to realize it—maybe a prodigy who was forced to work endless hours to support a family, a soldier whose life ended in conflict, or a child who simply had no access to education. Every unfulfilled promise of brilliance is a *delay* in humanity’s collective progress, and a delay in progress is a loss not just for an individual, but for all of us who might have benefited from that person’s discoveries or inventions.
+### **A Brief Nod to Broader Ideologies**
+Different schools of thought have grappled with how societies should be structured to enhance human well-being. For instance:
 
-If we want the *best* minds to flourish—whoever and wherever they are—we need to guarantee that they have the basics: **an education, sufficient food and water, decent shelter, healthcare (including mental health), reliable communication, and the freedom to move about.** Without these essentials, we risk losing the next great breakthrough, the next lifesaving idea, the next Einstein. So from an objective standpoint, these are not just “nice-to-haves” but **Fundamental Human Rights** that ensure each generation’s capacity to learn, innovate, and thrive.
+- **Classical Liberalism** emphasizes individual freedom and private property rights, yet it sometimes struggles to provide universal access to essentials without strong state intervention.
+- **Social Democracy** (inspired in part by Keynesianism) advocates for a robust welfare state that protects citizens from the vagaries of the market—ensuring education, healthcare, and social services as public goods.
+- **Marxism** argues that true equality requires collective ownership of the means of production and the abolition of profit-driven hierarchies.
+- **Anarchist or Communal Approaches** favor decentralized, voluntary associations that share resources collectively, aiming to minimize coercive institutions and maximize local autonomy.
+- **Modern Welfare States** (e.g., some European models) blend market economics with extensive social protections, bridging liberal markets with socialist-style safety nets.
 
-## “Save the Planet” or “Save Humanity”?
+Each tradition recognizes, in its own way, that society should strive to guarantee certain basic needs—yet how to achieve that guarantee differs greatly. By acknowledging these perspectives, we can situate our vision as one that borrows from various insights—local autonomy from anarchist thought, universal protections from social democracy, and perhaps technological inclusivity reminiscent of modern progressive movements—rather than claiming to reinvent every wheel.
 
-It’s often said we must “save the planet,” but let’s be real: Earth itself will likely persist through cataclysms and mass extinctions, as it has many times before. What we’re truly worried about is *saving humanity*—our species, our civilizations, and the ecosystems on which we depend. If we treat the environment as expendable, we’re effectively destroying the conditions we need to survive. Life will go on, one way or another—it just might not include us.
+### **Why “Progressive Society” Means More Than Just GDP**
 
-That’s why **environmental stewardship** has to be woven into the fabric of our fundamental rights. If education secures our intellectual future, then a healthy planet secures our literal home. We cannot call ourselves progressive if we don’t protect the resources and natural cycles that nurture and sustain us.
+Think about history’s greatest scientific minds—Newton, Einstein, Charles Babbage. They were undoubtedly brilliant, yet they weren’t necessarily *the* most intelligent people ever born. There could have been others with equal or greater potential who never had the chance to realize it—maybe a prodigy forced to work endless hours to support a family, a soldier whose life ended in conflict, or a child who had no access to education. Every unfulfilled promise of brilliance is a *delay* in humanity’s collective progress—an idea that resonates with various ideological frameworks, from **Rawlsian “equality of opportunity”** to **Marxist critiques** of wasted human potential under exploitative systems.
 
-## All Employment Matters—But Not All Employment Is Salaried
+If we want the *best* minds to flourish—whoever and wherever they are—we need to guarantee that they have the basics: **an education, sufficient food and water, decent shelter, healthcare (including mental health), reliable communication, and the freedom to move about.** Without these essentials, we risk losing the next breakthrough, the next lifesaving idea. From *Keynesians* who emphasize a strong safety net to *Marxists* who call for systemic reorganization, many theories agree at least on the moral imperative of meeting basic needs.
 
-Reimagining “employment” means broadening our definition of valuable contributions. Yes, certain tasks—like engineering, teaching, or medical services—will be salaried or compensated monetarily. But other employment, such as caregiving or studying, is no less vital to societal progress, even if it isn’t tied to a direct paycheck.
+### **Fundamental Human Rights: A Universally Understood Concept**
 
-For instance, if raising a child were a salaried position, one could imagine opportunists having more children simply for income. That would not only be unsustainable but would also commodify child-rearing in ways that could harm families and communities. Instead, unsalaried employment needs its own form of societal support (e.g., guaranteed access to essential resources, priority in certain benefits, or other forms of assistance) that recognizes its crucial role without turning it into a financial incentive.
+It’s easy to assume these rights—food, water, shelter, education, healthcare—are “nice-to-haves,” but history shows that societies function far better when people aren’t chronically deprived. Whether you look at **social contract theories** (e.g., Rousseau, Locke), **modern welfare states**, or even **indigenous communal practices** that emphasize shared stewardship, a consistent theme emerges: ensuring everyone’s survival frees them to contribute their unique talents, pursue innovation, and build healthier communities.
 
-## Merit Points
+**Therefore**, from an *objective standpoint*, these rights become non-negotiable prerequisites for a society that values progress. Denying them not only violates ethical principles but also holds us back from realizing humanity’s full potential.
 
-A new framework for participation should reflect that a person’s role and status can change over time. We rely on **merit points** to acknowledge contributions. Someone accumulating merit points through volunteering, studying, or other recognized roles gains priority in certain allocations—while everyone still retains a baseline of fundamental rights.
+### **Environmental Stewardship in Context**
 
-By carefully balancing **merit-based incentives** for certain roles with **universal support** for essential activities, we can ensure that every crucial human endeavor—whether nurturing a child or pioneering a scientific breakthrough—receives the recognition and resources it needs.
+Many economic schools, including **ecological economics**, highlight that if we deplete the environment, no fancy finance scheme will save us. So while some theories (like classical liberalism) downplay the role of collective environmental management, others (like **Green political theory** or **Marxist ecology**) strongly advocate it as a shared responsibility. In that sense, **environmental stewardship** is woven into our notion of fundamental rights—if education secures our intellectual future, a healthy planet secures our literal home.
 
-## Building a Shared Foundation
+### **All Employment Matters—But Not All Employment Is Salaried**
 
-So as we define the *Core* of our new system:
+Reimagining “employment” means broadening our definition of valuable contributions. Certain tasks—like engineering or medicine—are often well-compensated in capitalist or social-democratic models, but caregiving or studying may be undervalued. A more holistic approach, echoing **utopian socialist** or **post-capitalist** theories, suggests that **society** should reward all essential human endeavors—be they child-rearing, creative pursuits, or environmental restoration.
+
+### **Merit Points and Local Autonomy**
+
+From **Keynesian public works** to **anarchist mutual aid**, many traditions have proposed structures to incentivize beneficial work. Our system of **merit points** represents a blend: it acknowledges local autonomy and community-driven oversight (often found in anarchist or communal models), while aiming for robust social protections (in line with social democracy).
+
+### **Building a Shared Foundation**
+
+So, as we define the *Core* of our new system:
+
 1. **Fundamental Human Rights** ensure that every person can obtain the essentials—enabling them to learn, create, and participate.  
-2. **Reimagined “Employment”** acknowledges that, while certain jobs are salaried, others (like parenting or studying) merit societal support—even if they aren’t tied to direct monetary compensation.  
-3. **Merit Points System** encouraging all forms of contribution while guaranteeing that everyone has a baseline of rights.
+2. **Reimagined “Employment”** acknowledges that certain jobs are salaried while others—like parenting or studying—merit societal support.  
+3. **Merit Points System** encourages all forms of contribution while guaranteeing everyone a baseline of rights.
 
-By valuing knowledge, ensuring access to essentials, and safeguarding our environment, we create a foundation where the full spectrum of human potential—whether it’s found in a newborn in a remote village or a teen in an urban center—can unfold. That, to me, is what real progress looks like: maximizing our collective capacity to learn, adapt, and grow, while honoring our responsibilities to each other and the world that sustains us.
+By synthesizing insights from **various economic and social theories**, we aim to craft a vision of progress that is both ethically compelling and practically feasible. It’s an attempt to take what’s best from each tradition—universal coverage, local empowerment, open collaboration—and blend them into a framework that reflects **humanity’s collective wisdom** on how to thrive.
 
 # Fundamental Human Rights: The Bedrock of Society
 
