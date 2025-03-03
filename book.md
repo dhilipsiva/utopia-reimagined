@@ -1,16 +1,16 @@
 {class: part}
 
-## The Need for Change
+# The Need for Change
 
-### The Paradox of Scarcity in a World of Abundance
+## The Paradox of Scarcity in a World of Abundance
 I have always struggled to accept the notion that a downturn in the economy—what many call a “recession”—should force people to go hungry or lose their homes. It seems to defy my common sense: the Sun still shines as it did yesterday, the Earth hasn’t shrunk in size, and the land remains as fertile (if not more, given technological advances) as it was before the market took a plunge. Physically, we’re not any more deprived of energy, water, or space than we were last week. Yet, thousands—even millions—of people across the world can suddenly find themselves unable to afford food or pay rent. That contradiction troubles me deeply.
 
-#### A Brief Nod to Economic Theories
+### A Brief Nod to Economic Theories
 If we look at *Keynesian* economics, recessions are often viewed as crises of aggregate demand—people just aren’t spending enough money, so businesses cut jobs, leading to further reduced spending, and the cycle continues. *Marxist* thought, on the other hand, might point to systemic contradictions in how capital is accumulated and wages are suppressed—especially when profit motives trump basic needs. *Neoclassical* economics might argue supply and demand naturally “equilibrate” over time, but during severe downturns, that invisible hand often falls short of providing for everyone’s essentials.
 
 Each theory tries to explain why, in moments of *financial* contraction, our *physical* capacity to feed, house, and care for each other suddenly seems off-limits. That disconnect between real-world abundance and artificial economic constraints is precisely what we see when a recession pushes families into hunger, unemployment, or homelessness.
 
-### Willing Hands, Empty Tables
+## Willing Hands, Empty Tables
 The hardest part to swallow is that most people facing financial distress aren’t lazy or indifferent. Many are willing—often desperately so—to be employed. They want to work, learn new skills, and do whatever it takes to secure their basic needs. Yet despite their willingness, the market doesn’t always reward, or even enable, their participation.
 
 - **Keynesian perspective**: Insufficient “aggregate demand” leads to job cuts, creating a vicious cycle of lower spending and deeper joblessness.  
@@ -18,17 +18,17 @@ The hardest part to swallow is that most people facing financial distress aren�
 
 Either way, the core problem remains: the Earth and its resources haven’t diminished, but people’s **ability to pay** has collapsed.
 
-### The Failure of Our Shared Systems
+## The Failure of Our Shared Systems
 We like to imagine that “the market” is perfectly rational—*Keynesians* suggest active government intervention can smooth out its booms and busts, while more *neoclassical* approaches rely on self-correcting mechanisms. *Marxists* would argue that busts are inevitable under capitalism, exacerbating class divides. Whichever lens you choose, the result is the same when investor confidence dips: job losses, reduced consumer spending, and more people who can’t meet basic needs.
 
 **In short**: the resource itself—food, land, water, or labor—doesn’t vanish. What vanishes is people’s ability to *pay* for it. We’ve tied our entire distribution of essentials to a financial infrastructure that can seize up at any moment, leaving everyday workers and families vulnerable.
 
-### Beyond Just Numbers
+## Beyond Just Numbers
 A recession isn’t just about the GDP dropping a few percentage points. *Keynesian models* might cheer government spending to jump-start demand, but in practice we see parents skipping meals, patients avoiding check-ups they can’t afford, and families uprooted when they can’t pay rent. These aren’t isolated tragedies; they’re repeated episodes under our current system.
 
 It’s infuriating to realize that the Earth’s capacity to provide hasn’t changed—yet the system we rely on to deliver resources has arbitrarily decided to withhold them. *Keynesians* might call it a “lack of effective demand,” while *Marxists* might emphasize how capital owners protect profits at workers’ expense. Either way, the mismatch between **physical abundance** and **financial scarcity** is glaring.
 
-### A Personal Impetus for Change
+## A Personal Impetus for Change
 This disconnect—between what we have physically and what our economic frameworks let us use—fuels my desire to imagine something better. I’m not denying that recessions happen or that markets can behave irrationally; I’m challenging the idea that human suffering must always follow a market downturn. Why should a shortage of money or credit trigger empty plates and lost homes, especially when people are *willing to work*?
 
 *Keynesians* suggest targeted interventions or stimulus, and *Marxists* might argue for more structural reorganization of ownership. But what if we reexamine even more foundational assumptions—like how we define “employment,” “wealth,” and “rights?”
@@ -99,15 +99,15 @@ To make these ideals a practical reality, we need a fair mechanism that tracks e
 - **Prioritizing Accessibility**: People who accumulate merit points gain priority in accessing resources—like advanced training, certain luxuries, or queue preferences—while everyone still retains baseline fundamental rights.  
 - **Encouraging Active Engagement**: Merit points ensure that contributing to societal well-being is acknowledged, without entirely excluding those who can’t participate at a given moment (due to health, age, or personal crises).
 
-### Smartphones and YAD
+## Smartphones and YAD
 
-Most people already carry a smartphone or something similar. For those who lack one, a standardized **[YAD](https://github.com/dhilipsiva/a-device)** (Yet Another Device) can be provided, ensuring no one is left out of the digital ecosystem. This technology helps track merit points securely and transparently.
+Most people already carry a smartphone or something similar. For those who lack one, a standardized **[YAD](https://github.com/dhilipsiva/a-device)** (Yet Another Device - A low-power device with e-ink display) can be provided, ensuring no one is left out of the digital ecosystem. This technology helps track merit points securely and transparently.
 
 ## A Quantum-Secure, Local-First, Privacy-Focused Blockchain
 
 Underpinning this entire system is the concept of a **quantum-secure, eventually consistent, and privacy-focused blockchain**, built to manage identity, merit points, and resource distribution. Unlike conventional blockchains that are resource-intensive and often centered around massive server farms, this one would be **local-first** and **offline-capable**—able to keep running even if you temporarily lose internet access. By storing only the data necessary for verification and using robust encryption, it protects personal privacy while still providing transparency where it’s needed.
 
-### Proof of Personhood
+## Proof of Personhood
 
 Rather than using electricity-guzzling “proof of work” algorithms or hyper-financialized “proof of stake” models, this blockchain employs **proof of personhood**, a protocol designed to ensure that each participant is a unique, real individual. This approach not only thwarts fraud and multiple-identity gaming but also aligns perfectly with the principle that **everyone**—regardless of financial standing—deserves a voice and a baseline set of resources.
 
