@@ -6,7 +6,7 @@
 
 Day after day, we wake to the same ritual: find the money, buy the meal, survive another cycle. It’s a strange existence in a world that is—by every measurable fact—overflowing with resources.
 
-We have **more food than we need**. The UN’s Food and Agriculture Organization estimates that global agriculture already produces **enough to feed 1.5× the world’s population**. Yet hunger persists, not because the grain has vanished from the fields, but because it sits behind a paywall. Shelter? Entire blocks stand empty while families sleep in cars. Medicine? We have the supply, the clinics, the knowledge—yet people die for lack of a payment card.
+We have **more food than we need**. Researchers tallying the world’s crop calories find we already grow **enough to feed roughly 10 billion people**—more than everyone alive today. Yet hunger persists, not because the grain has vanished from the fields, but because it sits behind a paywall. Shelter? Entire blocks stand empty while families sleep in cars. Medicine? We have the supply, the clinics, the knowledge—yet people die for lack of a payment card.
 
 The Earth has not shrunk. The soil hasn’t forgotten how to grow. The Sun did not dim when the stock market dipped. **What changes in a recession is not the resource—it’s our permission to access it.** That permission is mediated by money, and money can vanish in an instant.
 
@@ -193,7 +193,7 @@ If they believed we would go quietly, they will learn otherwise.
 
 When mediocrity comes knocking my door, I say: "Not today!".
 
-Did you think that I, too, would yeild?
+Did you think that I, too, would yield?
 
 # Part 2: The Great Awakening
 
@@ -236,7 +236,7 @@ Mobility? The infrastructure for movement is in place, but ticket prices and dis
 The excuses for inaction do not stand up to scrutiny.
 
 * **“It’s too expensive.”** Not compared to the trillions spent annually on subsidies for corporations, military contracts, and tax breaks for the wealthy.
-* **“People will become lazy.”** Evidence from pilots — Finland’s basic income, Kenya’s cash transfer programs — shows the opposite: people work, learn, and contribute more when their basics are secure.
+* **“People will become lazy.”** The largest test of this fear ever run says otherwise. In a 12-year basic income experiment across nearly 200 Kenyan villages, people worked just as much — shifting from wage labor into running their own enterprises — and incomes rose; the researchers found “no evidence of UBI promoting ‘laziness.’” Finland’s two-year basic income trial found recipients worked no less than the control group, while reporting markedly better wellbeing. Security does not breed idleness; it changes what people can afford to attempt.
 * **“We don’t have the means to manage it.”** We already manage supply chains that track millions of packages daily, coordinate global banking in real time, and deliver food across continents. The same logistics can ensure rights, not just profits.
 
 And yes, these rights can be tracked and verified without turning society into a surveillance state. Community-led governance, transparent ledgers, and local-first coordination can make sure resources reach people — and that no one is left invisible.
@@ -475,3 +475,7 @@ Let us be clear — this manifesto is not a request for permission. It is a decl
 We have named the rights. We have shown they can be delivered. We have outlined how to fund them, govern them, and protect them. Now, we must act.
 
 We will build this world not in theory, but in practice — one community, one region, one generation at a time. And we will not stop until the happiness we imagine is the happiness we live, day and night.
+
+---
+
+**A note on the data.** The claims in this manifesto are checkable, and they check out. The world grows enough calories for roughly 10 billion people (Cassidy et al., *Environmental Research Letters*, 2013). The largest basic income experiment ever run — 12 years, nearly 200 Kenyan villages — found "no evidence of UBI promoting 'laziness'" (Banerjee, Faye, Krueger, Niehaus & Suri, 2023), and Finland's national trial reached the same conclusion (Kangas et al., Ministry of Social Affairs and Health, 2020). The ten richest men doubled their fortunes during the first two years of the pandemic while 99% of humanity's incomes fell (Oxfam, *Inequality Kills*, 2022). World military spending alone was $2.9 trillion in 2025 (SIPRI, 2026). In the United States there are roughly twenty vacant homes for every person sleeping without one (U.S. Census Bureau; HUD, 2025–26). Full citations for every figure appear in the References section of the companion book, *Utopia Reimagined: From Dream to Design*.

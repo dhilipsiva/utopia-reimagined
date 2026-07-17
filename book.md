@@ -175,17 +175,17 @@ If we’re serious about building a fair and progressive future, then ensuring e
 ## Real-World Case Studies and Data Points
 
 - **Case Study: Finland’s Basic Income Experiment (2017–2018)**  
-  The Finnish government conducted a **two-year trial** providing a no-strings-attached monthly payment of **€560** to 2,000 unemployed individuals. Early findings showed:
-  1. **Improved Well-Being**: Participants reported **lower stress** levels and **greater financial security** compared to those on traditional unemployment benefits.  
-  2. **No Significant Drop in Employment**: Contrary to fears, basic income didn’t discourage job-seeking; many participants continued looking for work or pursued training.  
-  3. **Reduced Bureaucracy**: Simplifying the social safety net saved administrative costs and cut down on stress-inducing paperwork.  
+  The Finnish government conducted a **two-year randomized trial** providing a no-strings-attached monthly payment of **€560** to 2,000 unemployed individuals. The final evaluation, published in 2020, found:
+  1. **Improved Well-Being**: Recipients reported **less stress and fewer symptoms of depression**, **greater financial security**, and more trust in other people and institutions than those on traditional unemployment benefits.  
+  2. **No Drop in Employment**: Far from discouraging work, recipients averaged **six more days of employment** than the control group in the trial’s second year—though a simultaneous tightening of Finland’s regular unemployment rules makes the exact size of that boost hard to attribute to basic income alone.  
+  3. **Less Bureaucracy for Recipients**: Participants reported **noticeably less paperwork and bureaucratic stress** than the control group—though the trial did not measure whether a full basic income would lower administrative costs.  
 
-  **Implication**: Guaranteeing essentials—like a baseline income—didn’t collapse work incentives or balloon costs; in fact, it helped people focus on health, family, or skill-building.
+  **Implication**: Guaranteeing essentials—like a baseline income—didn’t collapse work incentives; it modestly improved employment while measurably improving mental health, financial security, and trust.
 
 - **Case Study: Kerala’s Social Infrastructure, India**  
   In the Indian state of **Kerala**, decades of robust social programs in **education**, **healthcare**, and **public distribution systems** have yielded:
-  1. **High Literacy Rates**: Kerala boasts a **96+% literacy rate**, among the highest in India, thanks to extensive public schooling.  
-  2. **Low Infant Mortality**: At around **6 per 1,000 births**, Kerala’s infant mortality rate rivals that of some developed nations, a testament to free or low-cost healthcare facilities.  
+  1. **High Literacy Rates**: Kerala’s literacy rate stands at roughly **95–96%**—the highest of any major Indian state per the Government of India’s national surveys (96.2% in the NSO’s 2017–18 education survey)—thanks to extensive public schooling.  
+  2. **Low Infant Mortality**: At just **5 per 1,000 live births** (Sample Registration System, 2023)—the lowest in India—Kerala’s infant mortality rate rivals that of developed nations, a testament to free or low-cost healthcare facilities.  
   3. **Stronger Human Development**: Despite modest per capita income, Kerala consistently ranks high on the Indian Human Development Index, illustrating that **accessible healthcare and education** can dramatically improve overall well-being.
 
 **Why These Cases Matter**: They underscore that meeting fundamental needs—food, water, healthcare, education—can yield tangible social benefits. Whether through a universal basic income or comprehensive public services, societies that prioritize these rights often see **improved well-being**, **reduced inequality**, and **greater economic resilience**.
@@ -201,12 +201,12 @@ Knowledge is the cornerstone of humanity’s growth. A society that doesn’t ed
 - **Inclusivity**: Special provisions for those with disabilities or different learning needs so they’re never left behind.  
 
 **Data Point**  
-- According to **UNESCO**, every **$1** invested in education in low-income countries can **generate up to $10–15** in economic returns, due to higher future earnings and overall societal benefits.
+- According to **UNESCO**, every **$1** invested in education and skills in developing countries can **generate $10–15** in economic growth, due to higher future earnings and overall societal benefits.
 
 ## Food
 
 **Why It’s Essential**  
-Food insecurity is one of the most glaring symptoms of a failing system. We produce more than enough food globally—**roughly 1.3 billion tons** of edible food are wasted each year—yet millions remain malnourished or hungry.
+Food insecurity is one of the most glaring symptoms of a failing system. We produce more than enough food globally—**1.05 billion tonnes** of food went to waste in 2022 at the household, restaurant, and retail level alone, nearly a fifth of everything available to consumers (UN Environment Programme, Food Waste Index 2024), with a further **13%** lost between harvest and shelf (FAO)—yet millions remain malnourished or hungry.
 
 **Key Points**  
 - **Basic Nutritional Standards**: Everyone should have access to a balanced, sustaining diet that fosters good health.  
@@ -214,7 +214,7 @@ Food insecurity is one of the most glaring symptoms of a failing system. We prod
 - **Prioritization**: While everyone’s entitled to essential nutrition, additional “luxury” foods might be earned or purchased through active participation or merit points.  
 
 **Data Point**  
-- The **UN Food and Agriculture Organization (FAO)** estimates we already produce enough food to feed **1.5 times** the current global population, highlighting that hunger is more about distribution than raw supply.
+- Researchers who tallied the world’s crop calories found we already grow enough to feed roughly **10 billion people**—comfortably more than today’s global population—if those calories went to plates instead of feedlots and fuel tanks (Cassidy et al., *Environmental Research Letters*, 2013). The **UN Food and Agriculture Organization (FAO)** is blunter still: the world produces enough food for everyone; hunger persists because of poverty and access, not raw supply.
 
 ## Water
 
@@ -227,7 +227,7 @@ Water is life. From hydration to sanitation, water underpins every aspect of hum
 - **Sustainability**: Monitoring water usage and protecting watersheds remain critical to prevent droughts or pollution.  
 
 **Data Point**  
-- Over **2 billion** people lack access to safe drinking water, according to the **World Health Organization (WHO)**. Ensuring universal coverage could drastically cut diseases like cholera or diarrhea, which remain leading causes of death in some regions.
+- **2.1 billion** people—one in four worldwide—lack safely managed drinking water services, according to the **WHO/UNICEF Joint Monitoring Programme** (2024 data). Ensuring universal coverage could drastically cut diseases like cholera or diarrhea, which remain leading causes of death in some regions.
 
 ## Housing
 
@@ -240,7 +240,7 @@ Shelter is fundamental to well-being. A stable home environment fosters mental, 
 - **Community Integration**: Housing policies should promote diverse, mixed-income neighborhoods, avoiding socioeconomic segregation.  
 
 **Data Point**  
-- The “Housing First” approach used in places like **Utah, USA**, reduced chronic homelessness by up to **91%** in certain areas—demonstrating that giving people homes without rigid preconditions can save money on emergency services and improve outcomes.
+- The “Housing First” approach works when tested rigorously: in Canada’s **At Home/Chez Soi** study—the largest randomized trial of the model, following more than 2,000 people across five cities—participants spent **73%** of their time in stable housing versus **32%** for those receiving usual care. **Finland**, which made Housing First national policy, cut long-term homelessness by roughly **70%** between 2008 and 2024—demonstrating that giving people homes without rigid preconditions keeps them housed and reduces reliance on emergency services.
 
 ## Medicare (Physical & Mental Health)
 
@@ -253,7 +253,7 @@ Health crises often drive people into poverty, and mental health struggles can i
 - **Preventive Approach**: Education on nutrition, exercise, stress management, and regular check-ups can drastically reduce long-term healthcare costs.  
 
 **Data Point**  
-- The **Lancet Commission** estimates that for every **$1** invested in mental health treatment, there is a **$4** return in improved health and productivity, reinforcing the high payoff of holistic healthcare.
+- A **WHO-led study** published in *The Lancet Psychiatry* estimates that for every **$1** invested in scaling up treatment for depression and anxiety—the world’s most common mental disorders—there is a **$4** return in improved health and productivity, reinforcing the high payoff of holistic healthcare.
 
 ## Mobility
 
@@ -266,7 +266,7 @@ Freedom of movement is integral to opportunity. Jobs, education, healthcare, and
 - **Prioritization**: People with higher merit points may get priority during peak times or limited-capacity scenarios.  
 
 **Data Point**  
-- According to the **Institute for Transportation & Development Policy**, **effective mass transit** can lower household transportation costs by up to **25–30%**, freeing income for food, housing, or healthcare needs.
+- Households in car-dependent U.S. neighborhoods spend roughly **25%** of their income on transportation, versus about **9%** in walkable, transit-rich areas (Center for Transit-Oriented Development data, cited by the U.S. Federal Highway Administration). The **Institute for Transportation & Development Policy** and UC Davis estimate that compact, transit-oriented cities could save each urban resident about **$2,000 per year**—freeing income for food, housing, or healthcare needs.
 
 ## Electricity & Communication
 
@@ -279,7 +279,7 @@ Modern life runs on information and connectivity. Without electricity and commun
 - **Local Grids & Renewables**: Encourage sustainable energy solutions like solar or wind, particularly for underserved areas.  
 
 **Data Point**  
-- The **World Bank** reports that roughly **10%** of the global population still lives without electricity, severely limiting access to education, healthcare, and modern economic opportunities.
+- According to the **Tracking SDG 7** report—produced jointly by the **World Bank**, the International Energy Agency, and other UN agencies—**655 million people, roughly 8%** of the global population, still lived without electricity as of 2024, severely limiting access to education, healthcare, and modern economic opportunities.
 
 ## Environmental Stewardship
 
@@ -292,7 +292,7 @@ Humans depend on the Earth’s ecosystems for survival—clean air, fresh water,
 - **Planetary Responsibility**: While “saving the planet” might be an overreach, ensuring a favorable environment for humanity is non-negotiable.  
 
 **Data Point**  
-- Globally, over **15 billion** trees are cut down each year (per Science journal estimates). Reducing deforestation and promoting reforestation yield both climate and biodiversity benefits, integral to long-term sustainability.
+- Globally, an estimated **15 billion** trees are cut down each year, and Earth’s total tree count—about 3.04 trillion—has fallen roughly **46%** since the dawn of human civilization (Crowther et al., *Nature*, 2015). Reducing deforestation and promoting reforestation yield both climate and biodiversity benefits, integral to long-term sustainability.
 
 ## Privacy & Digital Security
 
@@ -305,7 +305,7 @@ As society becomes increasingly digital, personal data is at constant risk of ex
 - **Local-First Architectures**: Minimizing centralized data repositories helps prevent large-scale breaches.
 
 **Data Point**  
-- According to **IBM’s Cost of a Data Breach Report (2022)**, the average data breach costs organizations **$4.35 million**. Protecting personal info reduces not just invasive surveillance but also massive financial losses.
+- According to **IBM’s Cost of a Data Breach Report (2025)**, conducted with the Ponemon Institute, the average data breach costs organizations **$4.44 million** globally—and a record **$10.22 million** in the United States. Protecting personal info reduces not just invasive surveillance but also massive financial losses.
 
 ## Mental Health & Emotional Well-Being
 
@@ -569,7 +569,7 @@ Before we dive into the details of how our **local-first, offline-capable, priva
 
 To ensure **trust, privacy, and resilience** in our new socioeconomic system—like verifying who’s a real person, updating merit points, voting on proposals, or confirming transactions—we rely on technologies that can function even when individual users are offline, protect personal data from prying eyes, and endure in a post-quantum world.
 
-**But** given that **4.88 billion** people worldwide (over **60%** of the global population) already own smartphones, it makes sense to **start** with a **simple smartphone app** for the majority, while also using a **public network of micro-blockchains** under the hood to maintain security and interoperability. Finally, for the billions who remain without smartphones, the **YAD** device acts as a **fallback**.
+**But** given that an estimated **5.6 billion** people worldwide (roughly **two-thirds** of the global population) already use smartphones (Statista, 2026), it makes sense to **start** with a **simple smartphone app** for the majority, while also using a **public network of micro-blockchains** under the hood to maintain security and interoperability. Finally, for the billions who remain without smartphones, the **YAD** device acts as a **fallback**.
 
 ### **1. Local-First, Offline-First Micro-Blockchains**
 
@@ -643,7 +643,7 @@ Though essential, these “engines” remain mostly invisible to everyday users,
 
 ### **YAD (Yet Another Device)**
 
-**But what about the ~39%** of the population who **lack smartphones** or reliable internet?
+**But what about the roughly one-third of humanity**—some **2.5–3 billion people**—who **lack smartphones** or reliable internet?
 
 - **Design**: The YAD features **an e-ink display**, **RISC-V** microcontroller, **BLE/NFC** sensors, and a **micro-SD card slot**—all running on **TockOS**.
 - **Usage**: It can store offline transactions, sync data with peers, and log user contributions or votes.  
@@ -689,7 +689,7 @@ When executed correctly, proof of personhood ensures that every individual’s v
 
 ## **2. Enter the “Orb”: A Biometric Solution**
 
-To establish proof of personhood, we can use an **orb-like device**—inspired by projects like WorldCoin or the World ID network. The orb scans your eye, face, or fingerprint **once** during registration, producing a **cryptographic hash** that confirms your uniqueness without saving raw images or personal data.
+To establish proof of personhood, we can use an **orb-like device**—inspired by, but deliberately departing from, projects like World (formerly Worldcoin), whose iris-scanning Orbs had verified roughly **18 million** people across more than 20 countries by 2026, making it the largest real-world experiment in proof of personhood. World is also our **cautionary tale**: between 2023 and 2025, regulators and courts in Kenya, Spain, Portugal, Hong Kong, Germany, Brazil, Indonesia, the Philippines, and Thailand suspended its operations or ordered biometric data deleted, repeatedly finding that paying people in crypto tokens for their iris scans undermined genuine consent. Our version keeps the core idea—**one human, one cryptographic credential**—but places the hardware under **open-source, community-audited, non-profit control**, with no financial reward for surrendering your biometrics. The orb scans your eye, face, or fingerprint **once** during registration, producing a **cryptographic hash** that confirms your uniqueness without saving raw images or personal data.
 
 ### **2.1. How It Works (High Level)**
 
@@ -813,11 +813,11 @@ Classical cryptography (like RSA, ECC) could be compromised by a powerful quantu
 
 Our human-first blockchain adopts algorithms such as:
 
-- **Lattice-Based Cryptography** (e.g., CRYSTALS-Kyber for key exchange, CRYSTALS-Dilithium for signatures).  
-- **Hash-Based Signatures** (e.g., SPHINCS+) for certain operations.  
+- **Lattice-Based Cryptography** (e.g., **ML-KEM**—NIST standard FIPS 203, based on CRYSTALS-Kyber—for establishing shared keys, and **ML-DSA**—FIPS 204, based on CRYSTALS-Dilithium—for signatures).  
+- **Hash-Based Signatures** (e.g., **SLH-DSA**—FIPS 205, based on SPHINCS+) as a backup built on different mathematical foundations.  
 - **Zero-Knowledge Proofs** that remain valid under quantum computing assumptions, reducing data leaks.
 
-This ensures that even if quantum computers become mainstream, the records—proof of personhood, merit transactions, or votes—**can’t** be easily decrypted or forged.
+These aren’t speculative choices: NIST finalized all three as U.S. federal standards in August 2024 and selected a further backup algorithm (**HQC**) in 2025—a vetted quantum-resistant toolkit already exists today. This ensures that even if quantum computers become mainstream, the records—proof of personhood, merit transactions, or votes—**can’t** be easily decrypted or forged.
 
 ## 4. Privacy by Design
 
@@ -2676,7 +2676,7 @@ So let’s celebrate the power of imperfect, evolving ideas, and the communities
 
 {class: part}
 
-This is one of my favorite poems of all time. It is written by a the great Tamil poet Bharati. Translations are at the end.
+This is one of my favorite poems of all time. It is written by the great Tamil poet Subramania Bharati (1882–1921)—these are stanzas from *Yoga Siddhi* (“Varam Kettal,” asking for boons), among his devotional hymns. Translations are at the end.
 
 ```
 தேடிச் சோறுநிதந் தின்று
@@ -2723,3 +2723,52 @@ Free from sorrows, fresh as dew.
 Make my mind sharp and bright,
 Keep me happy, day and night.
 ```
+
+# References & Data Sources
+
+Every statistic and named study in this book is listed below, with its primary source. Figures were last verified in July 2026; where a number has since been superseded, prefer the newest edition of the source cited.
+
+**Fundamental Human Rights: The Bedrock of Society**
+
+- Kangas, O., Jauhiainen, S., Simanainen, M. & Ylikännö, M. (eds.) (2020). *Suomen perustulokokeilun arviointi* [Evaluation of the Finnish Basic Income Experiment]. Reports and Memorandums of the Ministry of Social Affairs and Health 2020:15. Helsinki: Ministry of Social Affairs and Health / Kela. http://urn.fi/URN:ISBN:978-952-00-9890-2
+- Verho, J., Hämäläinen, K. & Kanninen, O. (2022). Removing Welfare Traps: Employment Responses in the Finnish Basic Income Experiment. *American Economic Journal: Economic Policy*, 14(1), 501–522. https://www.aeaweb.org/articles?id=10.1257/pol.20200143
+- National Statistical Office (2024). *Annual Report, Periodic Labour Force Survey (PLFS), July 2023–June 2024*. Ministry of Statistics and Programme Implementation, Government of India. https://mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf
+- Office of the Registrar General & Census Commissioner, India (2025). *Sample Registration System (SRS) Bulletin 2023*, Vol. 58 No. 1. Ministry of Home Affairs, Government of India. https://censusindia.gov.in/nada/index.php/catalog/46178
+- UNESCO (2012). *Youth and Skills: Putting Education to Work — EFA Global Monitoring Report 2012*. Paris: UNESCO. https://unesdoc.unesco.org/ark:/48223/pf0000218003; see also International Commission on Financing Global Education Opportunity (2016). *The Learning Generation*. https://report.educationcommission.org/report/
+- UNEP (2024). *Food Waste Index Report 2024*. United Nations Environment Programme, Nairobi (with WRAP). https://www.unep.org/resources/publication/food-waste-index-report-2024
+- Cassidy, E. S., West, P. C., Gerber, J. S. & Foley, J. A. (2013). Redefining agricultural yields: from tonnes to people nourished per hectare. *Environmental Research Letters*, 8(3), 034015. https://doi.org/10.1088/1748-9326/8/3/034015
+- WHO/UNICEF (2025). *Progress on Household Drinking Water, Sanitation and Hygiene 2000–2024: Special Focus on Inequalities*. WHO/UNICEF Joint Monitoring Programme. https://washdata.org/reports/jmp-2025-wash-households
+- Goering, P., et al. (2014). *National Final Report: Cross-Site At Home/Chez Soi Project*. Mental Health Commission of Canada. https://mentalhealthcommission.ca/resource/national-at-home-chez-soi-final-report/; on why Utah's widely reported "91%" figure is unreliable, see Corinth, K. (2016). *On Utah's 91 Percent Decrease in Chronic Homelessness*. American Enterprise Institute. https://www.aei.org/research-products/report/on-utahs-91-percent-decrease-in-chronic-homelessness/
+- Chisholm, D., Sweeny, K., Sheehan, P., Rasmussen, B., Smit, F., Cuijpers, P. & Saxena, S. (2016). Scaling-up treatment of depression and anxiety: a global return on investment analysis. *The Lancet Psychiatry*, 3(5), 415–424. https://doi.org/10.1016/S2215-0366(16)30024-4
+- ITDP & UC Davis (2024). *Compact Cities Electrified: United States*. Institute for Transportation and Development Policy. https://itdp.org/publication/compact-cities-electrified-united-states-roadmap/; neighborhood cost-share figures from Center for Transit-Oriented Development, cited in U.S. Federal Highway Administration, "Transportation and Housing Costs" fact sheet. https://www.fhwa.dot.gov/livability/fact_sheets/transandhousing.cfm
+- IEA, IRENA, UNSD, World Bank, WHO (2026). *Tracking SDG 7: The Energy Progress Report 2026*. World Bank, Washington, DC. https://trackingsdg7.esmap.org/
+- Crowther, T. W., Glick, H. B., Covey, K. R., et al. (2015). Mapping tree density at a global scale. *Nature*, 525(7568), 201–205. https://doi.org/10.1038/nature14967
+- IBM Security & Ponemon Institute (2025). *Cost of a Data Breach Report 2025*. IBM Corporation. https://www.ibm.com/reports/data-breach
+- UNESCO (2022). *Re|Shaping Policies for Creativity: Addressing Culture as a Global Public Good*. Paris: UNESCO. https://www.unesco.org/reports/reshaping-creativity/2022/en
+- Economist Intelligence Unit (2026). *Democracy Index 2025*. https://www.eiu.com/n/campaigns/democracy-index-2025/; Transparency International (2026). *Corruption Perceptions Index 2025*. https://www.transparency.org/en/cpi/2025; UN Human Rights Council (2014). *Report of the Commission of Inquiry on Human Rights in the DPRK*, A/HRC/25/63. https://www.ohchr.org/en/hr-bodies/hrc/co-idprk/reportofthe-commissionof-inquiry-dprk
+
+**Employment, Reimagined & Merit Points**
+
+- Immigration, Refugees and Citizenship Canada (2026). *Express Entry: Comprehensive Ranking System (CRS) criteria*. Government of Canada. https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html
+- Stodder, J. (2009). Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring. *Journal of Economic Behavior & Organization*, 72(1), 79–95. https://doi.org/10.1016/j.jebo.2009.06.002; current system: Bank WIR, "CHW-System" (2026). https://www.wir.ch/de/chw-netzwerk/chw-system/
+- Banerjee, A., Faye, M., Krueger, A. B., Niehaus, P. & Suri, T. (2023, rev. 2025). *Universal Basic Income: Short-Term Results from a Long-Term Experiment in Kenya*. Working paper. https://econweb.ucsd.edu/~pniehaus/papers/UBI_main_paper.pdf
+
+**The Technological Backbone**
+
+- Statista (2026). *Number of Smartphone Users Worldwide*. Statista Market Insights. https://www.statista.com/forecasts/1143723/smartphone-users-in-the-world/; GSMA (2025). *The State of Mobile Internet Connectivity Report 2025*. GSMA Intelligence. https://www.gsma.com/somic/
+- Shor, P. W. (1997). Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer. *SIAM Journal on Computing*, 26(5), 1484–1509. https://epubs.siam.org/doi/10.1137/S0097539795293172
+- NIST (2024). *NIST Releases First 3 Finalized Post-Quantum Encryption Standards* (FIPS 203: ML-KEM; FIPS 204: ML-DSA; FIPS 205: SLH-DSA), August 13, 2024. https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards; NIST (2025). *NIST Selects HQC as Fifth Algorithm for Post-Quantum Encryption*, March 11, 2025. https://www.nist.gov/news-events/news/2025/03/nist-selects-hqc-fifth-algorithm-post-quantum-encryption
+- W3C / WebAssembly Community Group (2019–2026). *WebAssembly Core Specification*. https://webassembly.github.io/spec/core/; Haas, A., et al. (2017). Bringing the Web up to Speed with WebAssembly. *PLDI 2017*. https://dl.acm.org/doi/10.1145/3062341.3062363; Jangda, A., et al. (2019). Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code. *USENIX ATC 19*. https://www.usenix.org/conference/atc19/presentation/jangda
+- Interchain Foundation (2025). *IBC v2: Enabling IBC Everywhere*. https://ibcprotocol.dev/blog/ibc-v2-announcement; Union Labs (2026). *Union Documentation: IBC*. https://docs.union.build/concepts/ibc/
+- Tock Project (2025). *Tock: A secure embedded operating system for microcontrollers*, v2.2. https://github.com/tock/tock
+- World Foundation (2026). *What is World? Proof of Human, Privacy & FAQs*. https://world.org/blog/world/world-faqs; on the regulatory record, e.g., National Privacy Commission, Republic of the Philippines (2025). *Cease and Desist Order against Tools for Humanity (World App/Orb)*. https://privacy.gov.ph/npc-issues-cease-and-desist-order-against-tools-for-humanity/
+
+**The Roadmap to MVS & Beyond**
+
+- United Nations (1967). *Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space*, Art. II. UNOOSA. https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html; cf. U.S. Commercial Space Launch Competitiveness Act (2015), 51 U.S.C. § 51303. https://www.law.cornell.edu/uscode/text/51/51303
+- U.S. Census Bureau (2026). *Housing Vacancies and Homeownership, Annual 2025*, Table 11. https://www.census.gov/housing/hvs/data/prevann.html; U.S. Department of Housing and Urban Development (2026). *The 2025 Annual Homelessness Assessment Report (AHAR), Part 1*. https://www.huduser.gov/portal/datasets/ahar/2025-ahar-part-1-pit-estimates-of-homelessness-in-the-us.html
+- Oxfam International (2022). *Inequality Kills*. https://www.oxfam.org/en/research/inequality-kills; SIPRI (2026). *Trends in World Military Expenditure, 2025*. https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025; IMF (2025). *Underpriced and Overused: Fossil Fuel Subsidies Data 2025 Update*. IMF Working Paper WP/2025/270. https://www.imf.org/en/publications/wp/issues/2025/12/20/underpriced-and-overused-fossil-fuel-subsidies-data-2025-update-572729
+
+**Appendix: The Poem**
+
+- Subramania Bharati. *Yoga Siddhi (Varam Kettal)* [யோக சித்தி — வரங் கேட்டல்], stanzas 4–5, in *Thothirap Padalgal*, Deivap Padalgal. Digitized by Project Madurai. https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html
