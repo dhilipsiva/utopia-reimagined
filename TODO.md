@@ -22,6 +22,21 @@ in the Orb passage, the Bharati poem named (Yoga Siddhi / Varam Kettal), "yeild"
 "by a the" typos fixed, and a References & Data Sources section added to the book
 plus "A note on the data" + book cross-reference to the manifesto.
 
+**THREE NEW PART-5 CHAPTERS: LANDED (2026-07-18).** Drafted in the Pitfalls voice,
+every load-bearing claim web-verified (two-pass: draft → fact-check → revise),
+inserted between Pitfalls and Governance, with sources added to the References
+section: (1) "Why This Is Not a Social Credit System—and How It Could Become One"
+(steelmans China's SCS + Aadhaar by name, five enforceable bright lines, honest
+hostile-successor threat model); (2) "Learning from Those Who Tried" (Owen, Chinese
+work points, kibbutzim, Ujamaa, Cybersyn, Auroville, Mondragon, WIR, Kerala's
+People's Plan — a design rule extracted from each); (3) "When the Pod Meets the
+State" (FSSAI/medical/land/tax/RBI/DPDP collisions, existing legal wrappers, a
+survival playbook). Merit-weighted voting was also removed everywhere (village
+~1759, governance ~2324, provincial ~1890 → one-person-one-vote unamendable) and
+the fuel-access line (~1300) brought under the rights floor; Part-5 chapter list
+updated to seven. STILL OPEN from the old "duty-bearer" bullet: the constitutional
+duty-bearer/magnet-problem/recall/justice-chapter/Ambedkar items (below).
+
 - **Merit points: decide what they ARE, and commit (the single biggest credibility
   leak).** Either (a) an explicit community currency — adopt monetary vocabulary
   openly, engage the demurrage/WIR literature, publish issuance/caps/expiry as
@@ -36,25 +51,13 @@ plus "A note on the data" + book cross-reference to the manifesto.
   tension at the same time with a two-token design (perishable consumption credits
   vs permanent non-transferable honor); drop fixed sectoral pools (~510-511),
   which make colleagues' contributions rivalrous.
-- **Write the two missing Pitfalls chapters, in the existing Pitfalls voice.**
-  (a) "Why this is not Social Credit — and how it could become one": confront
-  China's SCS and Aadhaar BY NAME; commit to bright lines (no negative personal
-  scoring — currently violated by pollution/misuse penalties ~1079, ~1412-1413,
-  and fuel access tied to merit ~1300; enrollment never a precondition for the
-  rights floor — currently violated by routing canteens/clinics through the
-  credential; merit never weights votes; biometric failure never blocks baseline
-  rights — every canteen/clinic/shelter needs a non-biometric fallback path);
-  model the hostile-successor-regime threat (the dedup registry + repointable
-  weighting tables + QR vouching social graph as takeover assets) the way the
-  crypto chapters model quantum attack. (b) Named historical case studies with an
-  extracted design rule each: Auroville (1988 Foundation Act state takeover — the
-  exact "roadmap meets the state" scenario, in the author's own country), Owen's
-  New Harmony + National Equitable Labour Exchange (labor notes failing on
-  valuation disputes = who sets the weights), kibbutz privatization (rotation
-  fatigue, skilled-member exit), Nyerere's Ujamaa (voluntary-to-coerced slide at
-  scale), Chile's Cybersyn (benevolent telemetry ended by a coup), Mondragon (the
-  strongest partial success), Kerala's People's Plan campaign. The book currently
-  claims to learn from history while never opening the file.
+- **Follow-through on the social-credit bright lines (charter enforcement).** The
+  social-credit chapter commits to bright lines the rest of the book must now honor
+  end to end: audit for residual violations and fix them — negative personal
+  scoring still implied by misuse penalties (~1079, ~1412-1413), and confirm every
+  canteen/clinic/shelter passage names a non-biometric fallback path so biometric
+  failure can never block the rights floor. (The fuel-access line ~1300 and the
+  three merit-weighted-voting passages are already fixed.)
 - **The consolidation cut (30-40% shorter; nothing of substance lost).** Merge
   Part 4 (Implementing Fundamental Rights) into Part 2 so each right is treated
   exactly once (why it matters + how it's implemented); collapse Pitfalls &
@@ -91,9 +94,9 @@ plus "A note on the data" + book cross-reference to the manifesto.
   carefully limit it), or rename the guarantees "mutual covenants" and be honest
   about non-members and defectors. Confront the magnet problem (mobility is itself
   a guaranteed right; generous pods attract need — standard fiscal-federalism
-  territory). Remove merit-weighted voting everywhere (~1759-1760, ~2324-2325,
-  ~1890) and make one-person-one-vote an unamendable floor. Replace at-will recall
-  with defined thresholds + an administering body + staggered short terms; explain
+  territory). (Merit-weighted voting already removed and one-person-one-vote made
+  an unamendable floor — see the three-new-chapters milestone.) Replace at-will
+  recall with defined thresholds + an administering body + staggered short terms; explain
   how consensus-only global federation avoids the universal veto on exactly the
   planetary problems it exists for. Add a real justice chapter: standards of
   proof, due process, proportionality, an appeals path independent of the merit
@@ -138,13 +141,6 @@ plus "A note on the data" + book cross-reference to the manifesto.
   appendix; state the cwa_false entitlement doctrine (a verdict resting on
   closed-world absence-of-facts must never deny a baseline right — "pending sync,
   escalate to a human") in the Proof-of-Personhood pitfalls section.
-- **"When the pod meets the state" chapter for the MVS roadmap.** The state as
-  regulator and adversary from pod one, not late-stage adopter: legal wrappers
-  available today (cooperative societies, trusts, FPOs in India), tax treatment of
-  merit points, food-safety and medical licensing for canteens and clinics, RBI
-  constraints on parallel units of account, DPDP Act compliance for biometrics,
-  and a litigation/hostile-administration playbook — with Auroville's legal
-  history and Worldcoin's regulatory bans as the case studies.
 - **Positioning pass.** Engage Srnicek & Williams' "folk politics" critique by
   name and make the explicit counter-argument that MVS incrementalism is designed
   to answer it (working proof as political strategy); add a short "how this
