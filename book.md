@@ -870,6 +870,16 @@ The solution: **threshold-based signatures**, where **a set of trusted identitie
 
 This method keeps recovery decentralized and prevents a single authority from controlling your fate.
 
+### 6.3. The Failure Modes We Have to Design For
+
+“A quorum of trusted people” sounds reassuring until you ask *who* those people are and *when* you’d need them—and the honest answers expose real dangers a serious design must confront, not gloss over.
+
+- **The coercion problem.** In a village or family pod your five trustees are your relatives and neighbors—which means the same people present in the room during domestic abuse, dowry disputes, or inheritance conflicts. A quorum that can reset your identity is, in the wrong hands, an account-takeover weapon aimed squarely at the most vulnerable, women especially. So recovery must never be instant: a reset triggers a **mandatory delay** (say, seven days) during which the real account-holder is notified and can **cancel it with a single tap**. A coerced quorum can start a takeover; it cannot silently finish one.
+- **Correlated loss.** The very disaster that destroys your phone—a flood, a fire, displacement—may scatter or kill the trustees who all lived in your village. A recovery scheme that assumes your guardians are reachable exactly when catastrophe strikes has planned for the easy case. We require **geographic diversity** among trustees (not all from one street) and allow one slot to be an institution outside the disaster zone.
+- **The bootstrap problem.** The socially isolated—new arrivals, estranged individuals—may not *have* five trusted people. Falling back to “local officials” quietly reintroduces the gatekeeper the system exists to remove. For them, re-enrolling at an orb is the honest recovery path: your biometric uniqueness *is* your backup. Which points to a cleaner division of labor we should state plainly—**an orb re-scan recovers your identity; the social quorum recovers your data and history.** The two are different jobs, and conflating them is how earlier drafts overpromised.
+
+None of this makes threshold recovery the wrong choice—seed phrases would be absurd for this population, and social recovery is the right family of solution. But “trusted people confirm it’s you” is a headline, not a design. The delay-and-cancel window, geographic diversity, and the orb-vs-quorum split are what make it safe enough to hand to a real, unequal world.
+
 ## 7. Putting It All Together
 
 A **human-first blockchain** emerges from these design choices:
@@ -886,7 +896,25 @@ By weaving these elements together, we create a **robust** and **inclusive** inf
 
 - **Scalability**: Even micro-blockchains need robust consensus rules for merging data from thousands or millions of nodes. Protocol refinements will evolve as pilot projects scale up.  
 - **Usability**: Not everyone is tech-savvy; user interfaces must remain **dead simple**, guiding people to scan QR codes, confirm actions, and handle offline syncs.  
-- **Governance of Updates**: Community or developer consensus will be needed to upgrade cryptographic algorithms or weighting factors in the event of vulnerabilities.
+- **Governance of Updates—the real sovereign.** Here is the one genuinely centralized point in an otherwise decentralized system, and we name it rather than hide it: **whoever signs a software release can, in principle, rewrite every rule on every device at once**—ledger logic, merit weights, identity checks. Guarding that power is not a footnote. We require **multi-party release signing** (no lone maintainer can ship an update), **reproducible builds** (anyone can verify the shipped binary matches the audited source), a **staged rollout with a community veto window**, and an honest acknowledgment that for the smartphone majority the app stores (Apple, Google) are an additional gatekeeper we do not control. This is the sharpest unsolved governance problem in the stack, and pretending otherwise would betray the whole point of the design.
+
+### 8.1. Threat Model at a Glance
+
+Security is a set of *specific* claims against *specific* adversaries, not a vibe. Here is the one-page version—each row an attacker, the mechanism that answers them, and the honest residual risk.
+
+| Adversary / threat | Primary mitigation | Honest residual risk |
+|---|---|---|
+| **Harvest-now-decrypt-later** (quantum) | Post-quantum signatures & KEM (ML-KEM/ML-DSA, SLH-DSA) from day one | Standards are young; crypto-agility required to swap them |
+| **Local majority rewrites a pod's ledger** | Cross-pod checkpoint anchoring; signed append-only logs | A fully isolated pod with no peers to anchor against is weaker |
+| **Sybil / fake identities** | Orb proof-of-personhood (one human, one credential) | Only as strong as orb integrity + the dedup store |
+| **Credential sale/rental** (voluntary) | Biometric re-check on high-stakes actions | A cooperating human can still lend day-to-day access |
+| **Device theft** | PIN/biometric unlock + threshold recovery + key revocation | A stolen *unlocked* device before revocation |
+| **Coerced recovery quorum** | Time-locked reset + owner cancellation window | A victim prevented from cancelling for the full window |
+| **Malicious/compelled software update** | Multi-party signing, reproducible builds, veto window | App-store gatekeepers; a state compelling the signers |
+| **Oracle/attestation fraud** (fake hours, rigged sensors) | Peer verification, committee audit, tamper-evident logs | The chain proves *what was claimed*, not that it was true |
+| **State seizure of the biometric registry** | SMPC-sharded templates, federated (not global) stores, minimal on-chain data | No architecture fully survives a determined state |
+
+The pattern is deliberate: cryptography handles the machine adversaries, and **social process handles the human ones**—with the residual-risk column admitting exactly where each stops. A reader who wants the running, testable version of this discipline can look at the companion reasoning engine, **nibli** (github.com/dhilipsiva/nibli), which applies the same "state the guarantee, name the sharp edge" method to its own claims.
 
 **By embracing quantum-security, local-first design, and privacy-by-default,** we ensure our new socio-economic framework can endure for generations—supporting individuals’ rights, verifying their unique identities, and distributing resources *without* exposing them to surveillance, hacks, or the ebb and flow of centralized market forces.
 
