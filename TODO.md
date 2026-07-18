@@ -123,23 +123,18 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   (community land trusts vs right-of-first-refusal) — needs real fiscal magnitudes
   and a design choice, don't fabricate numbers.
 - **Tech backbone rewrite, in the GUARANTEES.md register (nibli convergence).**
-  DONE (608008d): fixed the biometric-crypto errors (templates not "irreversibly
-  encrypted hash", the 1:N dedup centralization confronted with SMPC sharding +
-  federation) and stated the cwa_false "No Record Found" doctrine in the POP
-  pitfalls. STILL OPEN, autonomous-safe first: (a) rework threshold recovery around
-  its real failure modes (family-quorum coercion, correlated trustee loss in
-  disasters, time-locked recovery + owner cancellation windows); (b) one-page
-  threat-model table (adversaries x mitigations); (c) name the update authority
-  (multi-party release signing, reproducible builds, app-store dependency); (d)
-  note that offline double-spend is now moot since points are earn-only (cross-ref
-  the merit-points decision). MORE OPINIONATED (do carefully / flag): (e) add "Why a
-  blockchain at all?" honestly weighing CRDTs / signed event logs and citing
-  nibli-store's HLC/tombstone/CRDT-export design — partly argues against the book's
-  own central premise, so keep it as honest hedging not repudiation; (f) replace
-  venture brand names (union.build, Sui, Fuel, linera) with capability requirements
-  + dated appendix — removes tools the author chose; (g) cite nibli as the first
-  running piece of the backbone; (h) data-classification table reconciling the
-  radical-transparency governance chapters with the ZK privacy chapter.
+  DONE (608008d): biometric-crypto errors fixed + cwa_false "No Record Found"
+  doctrine. DONE (1404322): (a) threshold-recovery failure modes, (b) threat-model
+  table, (c) update-authority naming, (g) nibli citation. STILL OPEN, autonomous-
+  safe: (h) data-classification table reconciling the radical-transparency
+  governance chapters ("everyone can see who's amassing points") with the ZK
+  privacy promise — a real flagged contradiction, worth resolving. MORE OPINIONATED
+  (do carefully / flag): (e) "Why a blockchain at all?" honestly weighing CRDTs /
+  signed logs + nibli-store's HLC/tombstone/CRDT-export design — partly argues
+  against the book's own central premise, keep as honest hedging not repudiation;
+  (f) replace venture brand names (union.build, Sui, Fuel, linera) with capability
+  requirements + dated appendix — removes tools the author chose. (Offline
+  double-spend is moot: points are now earn-only.)
 - **Copyedit residue.** Heading spacing/numbering normalization ("##  Why
   Redefine" double space ~354; mixed numbering schemes across chapters; mixed Key
   Takeaways formats). The high-visibility typos are fixed.
