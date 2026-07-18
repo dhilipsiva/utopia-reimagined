@@ -147,11 +147,6 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   appendix; state the cwa_false entitlement doctrine (a verdict resting on
   closed-world absence-of-facts must never deny a baseline right — "pending sync,
   escalate to a human") in the Proof-of-Personhood pitfalls section.
-- **Positioning pass.** Engage Srnicek & Williams' "folk politics" critique by
-  name and make the explicit counter-argument that MVS incrementalism is designed
-  to answer it (working proof as political strategy); add a short "how this
-  differs" section against Bregman and Raworth — readers will make the
-  comparisons anyway, and they flatter the book.
 - **Copyedit residue.** Heading spacing/numbering normalization ("##  Why
   Redefine" double space ~354; mixed numbering schemes across chapters; mixed Key
   Takeaways formats). The high-visibility typos are fixed.
