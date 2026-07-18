@@ -608,8 +608,8 @@ If your local chain is built on **CosmWasm** or **polkadot** bridging, the smart
 
 - **First-Time Registration**  
   You might visit a fingerprint-scanning device (often referred to as an **“orb”**—inspired by technologies like World ID), which securely verifies you’re a unique human.
-- **Biometric Hash**  
-  Your data is turned into an irreversibly encrypted “fingerprint,” letting the system confirm you’re real *without* exposing private info.
+- **Biometric Template**  
+  Your scan is reduced to a compact numeric *template*—a one-way mathematical summary, not a stored photo—that lets the system confirm you’re a unique human *without* keeping your raw image. (An honest note for the technically minded: this is genuinely hard to do well, and we return to exactly how below.)
 - **Creating Your Account**  
   Once verified, you’re effectively “on-chain” as a unique individual. From then on, scanning another person’s QR code or responding to a push notification can update your merit points, authorize actions, or cast votes—*all recorded immutably on the blockchain*.
 
@@ -684,9 +684,11 @@ To establish proof of personhood, we can use an **orb-like device**—inspired b
 ### **2.1. How It Works (High Level)**
 
 1. **Visit an Orb Station**: This might be in a government building, community center, or **mobile van traveling to rural areas**. Local volunteers can set up pop-up orb stations at markets, festivals, or near public offices to reach remote populations who might lack the means to travel far.  
-2. **Biometric Scan**: The orb captures an image (e.g., iris, fingerprint) but **immediately** converts it to an encrypted hash on the spot.  
-3. **Unique Hash**: The system checks if this hash (or any closely matching pattern) has already been registered. If not, you get a **proof of personhood credential**—an anonymized ID that asserts, “I am a unique human being.”  
-4. **No Raw Data Saved**: The orb discards the initial image. Only the **derived** cryptographic signature is stored on the distributed ledger, ensuring you can’t be tracked by your personal biometrics.
+2. **Biometric Scan**: The orb captures an image (e.g., iris, fingerprint) but **immediately** reduces it, on the device, to a compact numeric *template* and discards the raw picture.  
+3. **Uniqueness Check**: The system compares your template against existing ones to see whether you’ve registered before. If not, you get a **proof of personhood credential**—an anonymized ID that asserts, “I am a unique human being.”  
+4. **No Raw Image Saved**: The orb discards the initial picture; only the derived template and your public credential persist.
+
+**An honest word about the hard part.** Popular accounts (including earlier drafts of this book) like to say the scan becomes an “irreversible hash” that is then matched. That is not quite true, and the technically minded reader deserves the real story. A cryptographic hash is designed so that *near* inputs produce *totally different* outputs—which makes it perfect for passwords and useless for biometrics, where two scans of the same iris are never bit-identical. Detecting “have I seen this person before?” therefore requires comparing *similar* templates, not identical hashes, and that comparison needs a form of the template that still resembles the original. Two consequences follow that we will not paper over. First, the stored template is **biometric data**, not an inert hash, so protecting it is a real obligation, not a solved problem—modern designs shard the template across independent parties using secure multiparty computation so no single operator ever holds it whole, and that is the standard we hold ourselves to. Second, a uniqueness check is inherently a **one-to-many comparison against everyone ever enrolled**, which is the most centralization-prone part of the whole system. We meet it with federation (regional template stores that cross-check without merging into one global vault) and open audit, but we state plainly: this is the sharpest tension in the design, and “trust us, it’s hashed” is not an answer we will give.
 
 **Why Mobile Vans or Pop-Up Stations?**  
 - **Accessibility**: Not everyone lives near a government office; bringing the orb to them lowers barriers.  
@@ -699,7 +701,7 @@ To establish proof of personhood, we can use an **orb-like device**—inspired b
 
 **Potential Criticisms**  
 1. **Cultural & Religious Concerns**: In some cultures, scanning one’s face or eyes may be perceived as intrusive. This is why orbs can also accept **fingerprint** or **palm-vein** scans, depending on local customs, and are ideally run by **trusted community organizations** rather than for-profit entities.  
-2. **Data Harvesting Fears**: Even if raw images aren’t stored, some fear the technology might overstep. Public **open-source** audits help assure that only cryptographic hashes are kept, not personal images.
+2. **Data Harvesting Fears**: Even if raw images aren’t stored, some fear the technology might overstep. Public **open-source** audits and the sharded-template design (above) help assure that no operator ever holds a usable copy of your biometrics—only fragments that are useless alone, and never the personal image itself.
 
 ---
 
@@ -737,6 +739,12 @@ Despite its promise, proof of personhood raises valid questions:
 4. **Data Lifespan**: People’s biometric features change over time (aging, injuries). The system must allow periodic re-checks or override in legitimate scenarios—again, carefully managed to avoid duplicates or fraud.  
 5. **Cultural Sensitivity**: Some communities may balk at eye or facial scans. Adapting to local customs—like using fingerprints or palm-veins—and offering transparent oversight can mitigate mistrust.
 
+### **The “No Record Found” Rule**
+
+One failure mode deserves to be a hard rule rather than a footnote, because getting it wrong is how identity systems kill people. A local-first system is, by design, often working with *incomplete* information: a device hasn’t synced, a credential is on a phone that’s dead, a scanner can’t read a manual laborer’s worn fingerprint. In all these cases the honest state of the system is **“I cannot currently confirm this”**—which is *not* the same as “this person is an impostor.” The distinction is the whole ballgame. A verdict that rests on the *absence* of a record must always read as **pending**, never as **denied**.
+
+So we commit to it as doctrine: **the absence of a confirmation is never grounds to withhold a fundamental right.** When the system can’t verify someone at a canteen, clinic, or shelter, the answer is to *serve them and reconcile the record afterward*—escalating to a human committee, never to a locked door. This is not softness; it is the direct lesson of biometric welfare systems that denied rations on failed authentication and cost lives for it. Identity confirmation exists to coordinate and to stop fraud in the *perks* layer. It has no authority over the floor, and “no record found” must never be allowed to masquerade as a judgment that a real, present, hungry human does not exist.
+
 ---
 
 ## **6. The Path Forward**
@@ -744,7 +752,7 @@ Despite its promise, proof of personhood raises valid questions:
 Proof of personhood is a **crucial puzzle piece** for any large-scale, trust-based system that wants to remain inclusive yet secure. By combining a one-time biometric check with **local-first, quantum-secure** technology, we can:
 
 - **Guarantee Uniqueness**: No more inflated user counts, rigged polls, or multi-identity hacks.  
-- **Preserve Privacy**: Only anonymized hashes and cryptographic proofs go on the ledger—no central storing of biometric images.  
+- **Preserve Privacy**: Only anonymized credentials and cryptographic proofs go on the ledger; biometric templates stay sharded across independent parties—no central store of biometric images.  
 - **Empower Individuals**: Everyone’s voice counts once, and each person can easily regain their ID if they lose a device.
 
 **In Remote Contexts**: Mobile orb stations or community-based scanning events ensure no one is forced to travel prohibitively far. This fosters higher enrollment rates and respects local norms.
