@@ -334,6 +334,8 @@ Art, science, music, and innovation flourish in an environment that celebrates f
 
 One **core principle** remains non-negotiable: **Fundamental Human Rights**—food, water, shelter, healthcare, education, basic mobility, and communication—go to *everyone*, regardless of their merit points. The system might offer *additional perks* (like access to “luxury” food options, upgraded housing choices, or advanced education pathways) to those with higher merit, but **no one** should be stripped of essentials.
 
+Two guarantees make this a firewall rather than a slogan, and we hold them as bright lines (spelled out fully in “Why This Is Not a Social Credit System”). First, **the floor never depends on identity working.** A failed biometric scan, a lost device, or an unsynced record can never block access to food, water, shelter, or care—the rule everywhere is *serve first, reconcile the record afterward*, because a system that lets a broken fingerprint reader turn away a hungry person has already failed. Second, **merit is earn-only; there is no negative scoring of persons.** No one’s standing is ever docked as punishment, and no sanction ever reaches the floor. (Enterprises that pollute or defraud can be fined or decertified—that is regulation of an organization, a different instrument entirely from scoring a human being.)
+
 **Criminals & Severe Offenders**  
 A possible exception is for individuals who’ve committed serious crimes against humanity. They shouldn’t be denied basic nutrition or essential healthcare, but their freedom of movement, communication privileges, or housing conditions might be restricted. Even then, the aim is to protect society while maintaining a standard of human dignity for the offender.
 
@@ -540,7 +542,7 @@ Before we go further, one clarification that governs everything else in this cha
 2. **Time-Bound Privileges**  
    - Perks might expire after a certain window—say, a year of free priority travel—unless re-earned. This ensures continuous effort rather than a one-time spike that grants permanent upper-class status.
 3. **Community Oversight & Transparency**  
-   - Because all merit transactions are hashed to a local-first ledger, anyone can see who’s amassing significant points. If something seems suspicious (like a sudden, unexplained jump), local committees can investigate or impose penalties.
+   - Because all merit transactions are hashed to a local-first ledger, anyone can see who’s amassing significant points. If something seems suspicious (like a sudden, unexplained jump), local committees can investigate and, through due process, **void fraudulently claimed recognition** or suspend a cheater’s perks. Note the distinction: correcting a fraudulent entry is not the same as *scoring* a person—no one’s honest record is ever docked, and no sanction ever touches the rights floor.
 
 **Result**: By limiting how far one can rise solely through accumulated points—be it via time-bound perks, reset cycles, or democratic checks—we guard against “merit barons” dominating the system.
 
@@ -1058,7 +1060,7 @@ From birth to old age, **food, water, and education** are the building blocks of
 
 ### 1.1. Guaranteed Access
 
-1. **Public Canteens**: Imagine community-run dining halls open to everyone, serving nutritious meals at zero cost—*no questions asked*. These canteens use a local-first blockchain to log the number of meals served, preventing corruption or resource diversion.  
+1. **Public Canteens**: Imagine community-run dining halls open to everyone, serving nutritious meals at zero cost—*no questions asked*. These canteens use a local-first blockchain to log the number of meals served, preventing corruption or resource diversion. Crucially, **the log never gates the meal**: if you have no device, no credential, or a scan simply fails, you still eat, and the record is reconciled afterward. A missing entry means *feed first, sort it out later*—never *no record, no food*.  
 2. **Essential vs. “Luxury” Foods**: Basic staples are free, while scarce “premium” items (exotic meats, specialty desserts) are shared out by rotation and waitlist—with active contributors eligible sooner—or bought with the national currency where a market still applies. This ensures everyone is fed, while treats are distributed by turn and standing rather than sold for points.
 
 ### 1.2. Local Agriculture & Distribution
@@ -1082,7 +1084,7 @@ From birth to old age, **food, water, and education** are the building blocks of
 
 ### 2.2. Environmental & Merit-Based Incentives
 
-- **Pollution Control**: Factories or farms that pollute local water sources might face negative merit consequences (or fines). Clean, sustainable water practices earn them positive points or tax benefits.  
+- **Pollution Control**: Factories or farms that pollute local water sources can be fined or lose operating certifications—enterprise regulation, not personal scoring. Clean, sustainable water practices earn recognition or tax benefits.  
 - **Conservation Nudges**: Households or communities that maintain water-saving measures (like rainwater harvesting) can get merit bonuses or priority on other services.
 
 ### 2.3. Infrastructure & Maintenance
@@ -1169,6 +1171,7 @@ Among all the **Fundamental Human Rights**, healthcare stands out as the system 
 
 - **No Cost at Point of Service**: Basic medical consultations, common medications, lab tests, and inpatient treatments are fully covered for everyone.  
 - **Emergency Readiness**: Accidents or acute conditions—like broken bones or sudden infections—are treated immediately without billing delays or merit point checks.  
+- **No Identity Barrier to Care**: Baseline care is never withheld for a failed biometric scan, a missing credential, or an unsynced record. The clinic treats you and reconciles the record afterward—identity verification is for coordination, never a gate on the rights floor.  
 - **Inclusivity of Mental Health**: Therapy, counseling, and psychiatric care sit alongside physical treatments. No separate or stigmatized system; mental health is integral to overall well-being.
 
 ### 2.2. Premium or Elective Treatments
@@ -1258,10 +1261,11 @@ No matter where we live or what we do, certain elements of modern life—**a saf
 
 1. **Decent, Universal Shelter**  
    - Every individual and family is entitled to a basic, safe home—be it an apartment unit in an urban setting or a house in a rural environment.  
-   - This housing meets essential standards of cleanliness, structural integrity, and proximity to vital resources (like water points or community centers).
+   - This housing meets essential standards of cleanliness, structural integrity, and proximity to vital resources (like water points or community centers).  
+   - No one is turned away from baseline shelter for a failed scan, a lost device, or a record that hasn’t synced. A person with no verifiable credential is housed first and enrolled afterward—identity checks coordinate allocation, they never gate the floor.
 
 2. **Multi-Tiered Options**  
-   - While *basic* shelter is free at the point of use, those with higher merit points or additional resources can access **premium** or **expanded** housing options.  
+   - While *basic* shelter is free at the point of use, those with a strong record of contribution may qualify for **premium** or **expanded** housing options—by waitlist and eligibility, not by outbidding anyone.  
    - *Example*: A teacher or healthcare worker with a strong track record might qualify for a larger apartment, an extra room for a home office, or a more central location.
 
 ### 1.2. Transparent Allocation & Community Oversight
@@ -1416,7 +1420,7 @@ Whether we realize it or not, **everything** we rely on—food, water, health, s
   - Citizens who conserve water, recycle diligently, or volunteer in cleanup projects also gain recognition—encouraging a culture of environmental care.
 
 - **Penalties & Fines**  
-  - Companies or individuals who commit environmental infractions (excessive waste, illegal logging, chemical spills) can lose points or face resource limitations until they remediate the damage.
+  - *Enterprises* that commit environmental infractions (excessive waste, illegal logging, chemical spills) can be fined, lose operating certifications, or face resource limitations until they remediate the damage—regulation of an organization, not scoring of a person. *Individuals* found responsible face due-process remedies (cleanup orders, fines, temporary loss of a specific privilege), but never a subtraction from their merit record and never any touch to their baseline rights.
 
 ### 2.2. Local Green Committees
 
@@ -1816,7 +1820,7 @@ Once you’ve tested basic principles—merit-based collaboration, transparent r
 Picture a **village** where 30–40 households merge their local resources:
 
 1. **A Communal Store**: Stocked with produce grown in a collective farm. Shoppers scan a simple QR code or sign a ledger to record their take. Basic staples are free or heavily subsidized, while scarce premium goods—small-batch coffee beans, artisanal cheese—go first to longstanding contributors on a rotating members’ list, then by lottery when demand outstrips supply. No one pays in points; standing sets your place in line, not your purchasing power.  
-2. **Shared Bike Fleet**: Residents maintain a pool of bicycles or e-scooters. If you fix or clean them, you earn merit points. If you misuse them, you lose points or face a short ban.  
+2. **Shared Bike Fleet**: Residents maintain a pool of bicycles or e-scooters. If you fix or clean them, you earn recognition. If you misuse them, you may lose access to *that pool* for a while—a short ban from the shared bikes—but nothing is ever subtracted from your merit record; sanctions suspend a specific perk, they never dock your standing.  
 3. **Village Council Meetings**: Held weekly in a community hall or under a big tree. Everyone can propose budget items or improvements. No single person can override collective votes.  
 4. **Local Celebrations**: Festive events—like harvest festivals or cultural feasts—become chances for families to pool talent, share food, and reinforce the sense of **we’re in this together**.
 
