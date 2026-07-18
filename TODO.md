@@ -145,8 +145,10 @@ issues are fixed.)
 landed (11 content commits this session). Everything still open is [AUTHOR-GATED] —
 it needs the author's voice, personal memory, a design decision, or touches the
 book's own central choices. In leverage order for when you return:
-1. Merit points — drop fixed sectoral pools (~510-511, colleagues' contributions
-   rivalrous); optional two-token refinement (not taken).
+1. Merit points — DONE (fa98941): fixed sectoral pools dropped (recognition is no
+   longer rivalrous). Only the optional two-token refinement remains, deliberately
+   not taken (single recognition token chosen for simplicity) — revisit only if you
+   want spendable consumption credits.
 2. Voice & people pass (prose conversion, a named family, a failure scene, retitle?).
 3. Poem to the front + bind the two documents (needs your personal framing).
 4. Duty-bearer & governance mechanics: the constitutional-layer-vs-mutual-covenants
