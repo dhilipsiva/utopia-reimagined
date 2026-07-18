@@ -512,10 +512,10 @@ Before we go further, one clarification that governs everything else in this cha
    - Instead of allowing unlimited points, local councils or blockchain-based rules can **cap** the maximum points awarded for certain tasks. For instance, caregiving hours might be recognized up to a weekly limit, preventing infinite claims.
 2. **Diminishing Returns & Seasonal Resets**  
    - As tasks accumulate, **diminishing returns** kick in—for example, the first 10 hours of environmental volunteering earn full points, but subsequent hours might grant fewer. Some communities could even do **“merit resets”** annually or seasonally, redistributing points or requiring re-verification of ongoing roles.
-3. **Targeted Merit Pools**  
-   - Certain sectors (like healthcare, sanitation, teaching) could have a *fixed pool* of points each month—earning them becomes competitive yet transparent, ensuring that points reflect genuine impact. This helps keep points from hyper-inflating.
+3. **Per-Contribution Standards, Not Rivalrous Pools**  
+   - It’s tempting to cap a whole sector—say, “teaching gets a fixed pool of points each month.” We deliberately *avoid* that, because a fixed pool makes recognition **rivalrous**: one nurse’s acknowledgment would come at another nurse’s expense, and colleagues would compete for a scarce quota instead of doing the work. Since merit is earn-only recognition and not a scarce currency, we don’t need pools at all. Inflation is controlled at the level of the *contribution*—clear per-task standards, the caps and diminishing returns above—so two people who each do excellent work are both fully recognized, no matter how many colleagues did the same.
 
-**Result**: By imposing **caps**, **diminishing returns**, or **controlled issuance**, we maintain the value of merit points. People can’t hoard them infinitely or conjure them out of thin air—reducing the risk of “merit inflation.”
+**Result**: By imposing **caps**, **diminishing returns**, and clear **per-task standards**, we keep recognition meaningful without making it a zero-sum contest. Genuine merit inflation—the *grade-inflation* kind, where the bar quietly drops until a point means nothing—is what these guards prevent; scarcity of a shared pool is not, and should not be, the mechanism.
 
 ## Handling “Non-Essential” or Innovative Fields
 
