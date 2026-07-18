@@ -355,7 +355,7 @@ By incorporating **real-world data**—from Finland’s basic income to Kerala�
 
 Traditionally, we’ve thought of *employment* as exchanging labor for wages: you work a certain number of hours at a factory, school, or office, and you receive a paycheck. Yet this narrow definition leaves out countless ways people enrich society—caregiving, community-building, research, creative pursuits—without a direct paycheck. It also traps many in jobs they don’t enjoy simply because that’s the only way to secure income. In this chapter, we’ll expand on how we transition from **typical wage-labor** models to a **merit-based** system, and how we handle **economic factors** like *inflation*, *capital accumulation*, and *global trade*.
 
-##  Why Redefine “Employment”?
+## Why Redefine “Employment”?
 
 1. **Underutilized Talent**: When society rewards only market-driven roles, valuable but unsalaried contributions (like parenting or volunteering) go unrecognized.  
 2. **Personal Fulfillment**: Many people feel stuck in jobs purely for financial security; reimagining employment frees them to follow passions—be that teaching, environmental work, or research.  
@@ -426,7 +426,7 @@ None of this claims markets are dispensable; it claims the opposite. The honest 
 
 - **Short Answer**: Local committees and peer verification reduce false claims. Communities set diminishing returns, so people can’t endlessly “stack” trivial tasks. Meanwhile, tasks that truly benefit society (like childcare or teaching) get recognized *without* undermining the need for genuine effort.
 
-##  Example: Transition in a Mid-Sized City
+## Example: Transition in a Mid-Sized City
 
 Imagine a city of **200,000** people:
 
@@ -563,20 +563,20 @@ Before we go further, one clarification that governs everything else in this cha
 
 By detailing mechanisms for **inflation control**, **supporting innovative fields**, and **stopping new hierarchies**, we make a **merit points** system robust enough to promote fairness without undermining personal ambition or creativity. This approach ensures *everyone’s work*—from critical caregiving to daring invention—can thrive under a common framework that’s less prone to exploitation than purely profit-driven models.
 
-# **The Technological Backbone**
+# The Technological Backbone
 
 Before we dive into the details of how our **local-first, offline-capable, privacy-focused, quantum-secure micro-blockchains** work, here’s a quick heads-up:
 
 > **A Note to Non-Tech Readers**  
 > This section is more technical than the rest of the book. If you’d rather skip the jargon and focus on the *human* aspects, feel free to jump straight to **“Making It Simple: A Layman’s Guide to an Invisible Revolution,”** the last chapter in this part. There, we’ll explain how, for most citizens, the technology simply feels like using a **normal smartphone app or website**—or a government-issued **YAD** (Yet Another Device) if you don’t have a smartphone. You won’t miss out on the big ideas about fairness or community if you skip the technical bits.
 
-## **So, Why All This Tech?**
+## So, Why All This Tech?
 
 To ensure **trust, privacy, and resilience** in our new socioeconomic system—like verifying who’s a real person, updating merit points, voting on proposals, or confirming transactions—we rely on technologies that can function even when individual users are offline, protect personal data from prying eyes, and endure in a post-quantum world.
 
 **But** given that an estimated **5.6 billion** people worldwide (roughly **two-thirds** of the global population) already use smartphones (Statista, 2026), it makes sense to **start** with a **simple smartphone app** for the majority, while also using a **public network of micro-blockchains** under the hood to maintain security and interoperability. Finally, for the billions who remain without smartphones, the **YAD** device acts as a **fallback**.
 
-### **1. Local-First, Offline-First Micro-Blockchains**
+### 1. Local-First, Offline-First Micro-Blockchains
 
 - **No Central Servers**  
   Instead of one giant server storing everyone’s data, each device (smartphone, YAD, or otherwise) keeps a small, partial record of relevant transactions.
@@ -591,7 +591,7 @@ Most users simply install a **lightweight app** on their phone. They interact wi
 **Public Blockchain Engine**:  
 A set of interoperable micro-chains (via tools like **union.build**, **CosmWasm**, **IBC - Inter-Blockchain Communication**, etc.) ensures data merges seamlessly across regions, but from a user’s perspective, it’s as simple as scanning a code or tapping “Update.”
 
-### **2. Quantum-Secure & Privacy-Focused**
+### 2. Quantum-Secure & Privacy-Focused
 
 - **Future-Proof Cryptography**  
   We use algorithms resistant to attacks by powerful quantum computers that might emerge in the coming decades.
@@ -604,7 +604,7 @@ A normal smartphone app or progressive web app (PWA) might prompt you to **tap**
 **Merit Points & Multi-Chain**:  
 If your local chain is built on **CosmWasm** or **polkadot** bridging, the smartphone simply signs a secure transaction. The micro-chain handles the rest, possibly passing data along to other chains via **IBC**—all invisible to you.
 
-### **3. Proof of Personhood: The “Orb” and Fingerprinting**
+### 3. Proof of Personhood: The “Orb” and Fingerprinting
 
 - **First-Time Registration**  
   You might visit a fingerprint-scanning device (often referred to as an **“orb”**—inspired by technologies like World ID), which securely verifies you’re a unique human.
@@ -616,7 +616,7 @@ If your local chain is built on **CosmWasm** or **polkadot** bridging, the smart
 **Smartphone Integration**:  
 After the initial orb scan, you’d load a small credential onto your phone. The **app** (or website) handles verifying your identity offline, then syncing securely with the micro-chains.
 
-### **4. Device Loss & Threshold Signatures**
+### 4. Device Loss & Threshold Signatures
 
 - **Device Independence**  
   Whether you use a smartphone or the low-cost **YAD** device, your account is stored locally and synced to the network. You own your cryptographic keys—so a single point of failure is less likely.
@@ -626,7 +626,7 @@ After the initial orb scan, you’d load a small credential onto your phone. The
 **Smartphone Realities**:  
 If you break or lose your phone, you might just install the MVS app on a new phone, logging in through the threshold process (A multi-party computation). This ensures continuity.
 
-### **A Simple Smartphone App**
+### A Simple Smartphone App
 
 Given the smartphone user base, our main approach is to **distribute an app** (or PWA) that:
 
@@ -636,7 +636,7 @@ Given the smartphone user base, our main approach is to **distribute an app** (o
 
 This approach rapidly brings the majority of humanity into the MVS framework—without forcing them to learn advanced tech.
 
-### **The Public Micro-Blockchain Network**
+### The Public Micro-Blockchain Network
 
 In parallel, multiple micro-chains (running on frameworks like **CosmWasm**, **linera.io**, or **polkadot** bridging) power the app:
 
@@ -646,7 +646,7 @@ In parallel, multiple micro-chains (running on frameworks like **CosmWasm**, **l
 
 Though essential, these “engines” remain mostly invisible to everyday users, akin to how an average person never sees the internet’s packet-routing details.
 
-### **YAD (Yet Another Device)**
+### YAD (Yet Another Device)
 
 **But what about the roughly one-third of humanity**—some **2.5–3 billion people**—who **lack smartphones** or reliable internet?
 
@@ -661,11 +661,11 @@ Because the majority *already* have smartphones. We reach them first with the ea
 
 If you’re **eager** to learn how the plumbing of this futuristic merit-based society fits together, read on. Otherwise, jump to the layman’s overview, **“Making It Simple.”** Either way, the important takeaway is that **from a citizen’s perspective**, these advanced cryptographic protocols, micro-chains, and fallback devices all boil down to a few **simple** actions on a phone—or a YAD if needed. Under the hood, the system ensures **equity, privacy, and resilience** at a massive scale—without burying everyday people in tech complexity.
 
-# **Proof of Personhood: Securing Trust in a Digital Age**
+# Proof of Personhood: Securing Trust in a Digital Age
 
 Any large-scale socioeconomic system—especially one involving merit points, resource distribution, or direct democracy—relies on **verifiable human identities**. If one individual can masquerade as multiple “people,” they can **game the system**, inflating merit points, tampering with votes, or hoarding resources. Thus arises the challenge: *How do we ensure each participant is real and unique* while **preserving privacy** and avoiding centralized data troves?
 
-## **1. The Human Identity Problem**
+## 1. The Human Identity Problem
 
 In traditional setups, you might show a passport or driver’s license. But these documents aren’t designed for online or distributed systems, and they often reveal more personal info than necessary. Moreover, digitizing them can create huge **data silos**—ripe for hacking, surveillance, or commercial exploitation.
 
@@ -677,11 +677,11 @@ When executed correctly, proof of personhood ensures that every individual’s v
 
 ---
 
-## **2. Enter the “Orb”: A Biometric Solution**
+## 2. Enter the “Orb”: A Biometric Solution
 
 To establish proof of personhood, we can use an **orb-like device**—inspired by, but deliberately departing from, projects like World (formerly Worldcoin), whose iris-scanning Orbs had verified roughly **18 million** people across more than 20 countries by 2026, making it the largest real-world experiment in proof of personhood. World is also our **cautionary tale**: between 2023 and 2025, regulators and courts in Kenya, Spain, Portugal, Hong Kong, Germany, Brazil, Indonesia, the Philippines, and Thailand suspended its operations or ordered biometric data deleted, repeatedly finding that paying people in crypto tokens for their iris scans undermined genuine consent. Our version keeps the core idea—**one human, one cryptographic credential**—but places the hardware under **open-source, community-audited, non-profit control**, with no financial reward for surrendering your biometrics. The orb scans your eye, face, or fingerprint **once** during registration, producing a **cryptographic hash** that confirms your uniqueness without saving raw images or personal data.
 
-### **2.1. How It Works (High Level)**
+### 2.1. How It Works (High Level)
 
 1. **Visit an Orb Station**: This might be in a government building, community center, or **mobile van traveling to rural areas**. Local volunteers can set up pop-up orb stations at markets, festivals, or near public offices to reach remote populations who might lack the means to travel far.  
 2. **Biometric Scan**: The orb captures an image (e.g., iris, fingerprint) but **immediately** reduces it, on the device, to a compact numeric *template* and discards the raw picture.  
@@ -694,7 +694,7 @@ To establish proof of personhood, we can use an **orb-like device**—inspired b
 - **Accessibility**: Not everyone lives near a government office; bringing the orb to them lowers barriers.  
 - **Cultural Sensitivity**: Some communities may distrust official buildings or prefer local, community-led deployment. By setting up in familiar, comfortable locations, we reduce suspicion or fear.
 
-### **2.2. Privacy & Consent**
+### 2.2. Privacy & Consent
 
 - **Minimal Disclosure**: The orb only needs enough data to confirm you’re a unique human. It doesn’t store your name, address, or extraneous info.  
 - **One-Time Process**: After your first registration, you have a permanent proof of personhood credential. Further interactions—like scanning someone’s QR code to exchange merit points—don’t require re-verifying biometrics each time.
@@ -705,7 +705,7 @@ To establish proof of personhood, we can use an **orb-like device**—inspired b
 
 ---
 
-## **3. Why Offline-First, Distributed, and Quantum-Secure?**
+## 3. Why Offline-First, Distributed, and Quantum-Secure?
 
 **Proving you’re unique** is just the first step. The system also needs to handle:
 
@@ -717,7 +717,7 @@ To establish proof of personhood, we can use an **orb-like device**—inspired b
 
 ---
 
-## **4. Daily Life with Proof of Personhood**
+## 4. Daily Life with Proof of Personhood
 
 Once you have your proof of personhood credential, everyday tasks become straightforward:
 
@@ -729,7 +729,7 @@ Once you have your proof of personhood credential, everyday tasks become straigh
 
 ---
 
-## **5. Potential Pitfalls & Ethical Concerns**
+## 5. Potential Pitfalls & Ethical Concerns
 
 Despite its promise, proof of personhood raises valid questions:
 
@@ -739,7 +739,7 @@ Despite its promise, proof of personhood raises valid questions:
 4. **Data Lifespan**: People’s biometric features change over time (aging, injuries). The system must allow periodic re-checks or override in legitimate scenarios—again, carefully managed to avoid duplicates or fraud.  
 5. **Cultural Sensitivity**: Some communities may balk at eye or facial scans. Adapting to local customs—like using fingerprints or palm-veins—and offering transparent oversight can mitigate mistrust.
 
-### **The “No Record Found” Rule**
+### The “No Record Found” Rule
 
 One failure mode deserves to be a hard rule rather than a footnote, because getting it wrong is how identity systems kill people. A local-first system is, by design, often working with *incomplete* information: a device hasn’t synced, a credential is on a phone that’s dead, a scanner can’t read a manual laborer’s worn fingerprint. In all these cases the honest state of the system is **“I cannot currently confirm this”**—which is *not* the same as “this person is an impostor.” The distinction is the whole ballgame. A verdict that rests on the *absence* of a record must always read as **pending**, never as **denied**.
 
@@ -747,7 +747,7 @@ So we commit to it as doctrine: **the absence of a confirmation is never grounds
 
 ---
 
-## **6. The Path Forward**
+## 6. The Path Forward
 
 Proof of personhood is a **crucial puzzle piece** for any large-scale, trust-based system that wants to remain inclusive yet secure. By combining a one-time biometric check with **local-first, quantum-secure** technology, we can:
 
@@ -758,12 +758,6 @@ Proof of personhood is a **crucial puzzle piece** for any large-scale, trust-bas
 **In Remote Contexts**: Mobile orb stations or community-based scanning events ensure no one is forced to travel prohibitively far. This fosters higher enrollment rates and respects local norms.
 
 **Cultural & Ethical Awareness**: Collaborations with local leaders, audits by open-source communities, and flexible biometric methods (fingerprint vs. iris) can ease concerns and build trust—key ingredients in mass adoption.
-
----
-
-### **Coming Up Next**
-
-Proof of personhood lays the foundation of trust—ensuring each participant is real and unique. With that in place, the sky’s the limit for building democratic, merit-driven networks that serve everyone’s needs. In the **next** chapters, we’ll see how these credentials plug into local-first, privacy-focused micro-blockchains, forging a **human-first** ecosystem that underpins universal rights, merit-based employment, and global collaboration—**all** without sacrificing individual autonomy or cultural sensitivities.
 
 # Quantum-Secure & Privacy-Centric: Designing a Human-First Blockchain
 
