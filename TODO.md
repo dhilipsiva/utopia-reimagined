@@ -115,9 +115,9 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   problem is engaged by name (Mises 1920, Hayek 1945) and answered — hybrid keeps
   market prices, merit layer free-rides on them for cost info (conceded), essentials
   are a floor guaranteed by physical sufficiency not pricing, and merit points are
-  never prices. STILL OPEN: (a) the UBI-lesson argument (why a conditional merit
-  layer on top of an unconditional floor beats a bare floor + non-material
-  recognition) — additive, doable autonomously; (b) [AUTHOR-GATED / needs data]
+  never prices. Also DONE (47cee15): the UBI-lesson argument (unconditionality
+  applied to the floor = admin-light; merit is a separate optional layer whose
+  verification never touches survival). STILL OPEN: [AUTHOR-GATED / needs data]
   rewrite Transition Costs with a costed worked example (fiat price tag on the
   200k-city baseline, funding per phase) and pick a housing acquisition mechanism
   (community land trusts vs right-of-first-refusal) — needs real fiscal magnitudes
