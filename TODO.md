@@ -133,6 +133,28 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   names (union.build, Sui, Fuel, linera) with capability requirements + dated
   appendix — removes specific tools the author chose to name. (Offline double-spend
   is moot: points are now earn-only.)
-- **Copyedit residue.** Heading spacing/numbering normalization ("##  Why
-  Redefine" double space ~354; mixed numbering schemes across chapters; mixed Key
-  Takeaways formats). The high-visibility typos are fixed.
+**COPYEDIT PASS: LANDED (2026-07-18, commit e042e74).** Stripped bold markers from
+the ~20 tech-chapter headings (now consistent with the rest of the book), fixed the
+double-space headings, dropped a stray "Coming Up Next" teaser. (Full numbering-scheme
+normalization across all 30 chapters was left as low-value/large; the high-visibility
+issues are fixed.)
+
+---
+
+**AUTONOMOUS LOOP WOUND DOWN (2026-07-18).** All clearly-safe, high-value items are
+landed (11 content commits this session). Everything still open is [AUTHOR-GATED] —
+it needs the author's voice, personal memory, a design decision, or touches the
+book's own central choices. In leverage order for when you return:
+1. Merit points — drop fixed sectoral pools (~510-511, colleagues' contributions
+   rivalrous); optional two-token refinement (not taken).
+2. Voice & people pass (prose conversion, a named family, a failure scene, retitle?).
+3. Poem to the front + bind the two documents (needs your personal framing).
+4. Duty-bearer & governance mechanics: the constitutional-layer-vs-mutual-covenants
+   fork, magnet problem, recall thresholds, a justice chapter, answering Ambedkar.
+5. Costed Transition-Costs rewrite (needs real fiscal magnitudes + a housing
+   acquisition mechanism choice).
+6. Consolidation — the destructive structural merges (Part 4→Part 2; Pitfalls+
+   Governance) and the cross-chapter safeguard-litany dedup.
+7. Tech backbone — "Why a blockchain at all?" (hedges the central premise) and
+   replacing the named venture tools with capability descriptions.
+Restart the loop anytime with /loop, or pick any one of these to do together.
