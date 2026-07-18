@@ -211,7 +211,7 @@ Food insecurity is one of the most glaring symptoms of a failing system. We prod
 **Key Points**  
 - **Basic Nutritional Standards**: Everyone should have access to a balanced, sustaining diet that fosters good health.  
 - **Local Production & Distribution**: Encouraging local agriculture and community gardens can reduce waste, lower costs, and build resilience.  
-- **Prioritization**: While everyone’s entitled to essential nutrition, additional “luxury” foods might be earned or purchased through active participation or merit points.  
+- **Prioritization**: While everyone’s entitled to essential nutrition, scarce “luxury” foods are shared out by rotation and waitlist, with active contributors eligible sooner—access earned through participation, never bought with points.  
 
 **Data Point**  
 - Researchers who tallied the world’s crop calories found we already grow enough to feed roughly **10 billion people**—comfortably more than today’s global population—if those calories went to plates instead of feedlots and fuel tanks (Cassidy et al., *Environmental Research Letters*, 2013). The **UN Food and Agriculture Organization (FAO)** is blunter still: the world produces enough food for everyone; hunger persists because of poverty and access, not raw supply.
@@ -376,8 +376,8 @@ Critics argue that abruptly shifting from a wage-labor economy to a merit-based 
 
 ### Inflation Control in a Merit-Based System
 
-- **Limited Scope**: Merit points often serve to prioritize resources (like queue spots or “luxury” items) rather than replace all money. This partial use can limit inflationary pressures—points function more like **social credits** than currency for everyday transactions.  
-- **Supply & Demand**: If certain perks become oversubscribed (e.g., everyone wants premium housing), the “cost” in merit might rise. This *internal inflation* is managed by the local governance board, which can adjust point values or expand infrastructure.  
+- **Not a Currency at All**: Merit points serve to *qualify* people for priority (queue spots, waitlists, eligibility pools), never to *pay* for anything. Because they are earn-only recognition that can’t be spent or transferred, they carry no price and cannot inflate the way a medium of exchange does—there is no “merit price level” to rise.  
+- **Rationing, Not Pricing**: If a perk becomes oversubscribed (everyone wants the sea-view flat), it is *not* auctioned to the highest point-holder. It is allocated by transparent rules—need, rotation, waitlist, and lottery for the truly scarce—so demand is met by *rationing and expanding supply*, not by a rising price that the well-recognized can always outpay.  
 - **Keeping Traditional Currency**: People still use national currencies for goods in global markets, so the monetary system remains. Over time, if more vital resources shift to merit allocation, inflation in the fiat economy might even ease due to reduced demand for pure cash-based transactions.
 
 ### Capital Accumulation & Wealth
@@ -414,8 +414,8 @@ Critics argue that abruptly shifting from a wage-labor economy to a merit-based 
 
 Imagine a city of **200,000** people:
 
-1. **Phase One**: Teachers and healthcare workers start earning modest merit bonuses alongside normal salaries, redeemable for preferential housing, free public transport, or advanced courses for their own children.  
-2. **Phase Two**: Caregivers, students, environmental volunteers join, logging hours that earn points. Local grocery co-ops accept a partial payment in points. The national currency remains for big-ticket or external purchases (cars, global imports).  
+1. **Phase One**: Teachers and healthcare workers start earning modest merit recognition alongside normal salaries, which qualifies them for preferential housing waitlists, free public transport, or advanced courses for their own children.  
+2. **Phase Two**: Caregivers, students, environmental volunteers join, logging hours that earn recognition. Local grocery co-ops offer standing members a first pick of limited stock and member pricing—access earned by contribution, not paid for in points. The national currency remains for big-ticket or external purchases (cars, global imports).  
 3. **Phase Three**: Over 5–10 years, most essential resources—health clinics, water access, community canteens—run significantly on merit-based prioritization, ensuring no one is locked out of basics during monetary recessions or wage fluctuations.
 
 **Result**: People who prefer stable wage jobs keep them. Others who want to devote time to parenting, creative work, or community projects don’t starve for lack of a “traditional” employer, thanks to a robust merit system that acknowledges and rewards their contribution.
@@ -498,6 +498,12 @@ In the previous chapter, we explored how “employment” can be broadened to re
 
 - **Beyond Salaries**: Many essential tasks (child-rearing, community-building, environmental work) don’t neatly fit into profit-driven models. Merit points let us acknowledge such work.
 - **Universal Essentials + Perks**: Everyone keeps a baseline of fundamental rights (food, water, shelter, healthcare), while people who consistently help others or the planet can earn extra perks—premium housing, early access to new technologies, etc.
+
+## What Merit Points Are—and Are Not
+
+Before we go further, one clarification that governs everything else in this chapter: **merit points are not money.** They are **earn-only recognition**—a durable, public record of what you’ve contributed. You cannot spend them, gift them, or transfer them to another person, any more than a scientist can hand a colleague some of their citations or a marathoner can sell their finishing time. This is the deliberate line that separates a recognition system from a currency, and it is the reason merit points cannot quietly re-grow into money-by-another-name. A hoard of points buys nothing and commands no one; it only *shows* something.
+
+“But then how does merit get you the nicer apartment?” It doesn’t—not by *purchase*. Above the rights floor, genuinely scarce non-essentials (a sea-view flat, a coveted apprenticeship, a limited festival slot) are allocated by **transparent, non-market rules**: need first, then rotation and waitlists, and an open **lottery** for the truly scarce. Merit enters as a **qualifying signal**—a sustained caregiver may sit higher on a housing waitlist, an active educator may be eligible for a sabbatical pool—but it is a *threshold you cross*, never a *balance you draw down*, and it can never let one person outbid a needier one. The moment recognition becomes spendable, it becomes purchasing power, purchasing power accumulates, and we have reinvented the very thing this book exists to escape. So we don’t. Merit earns you standing and a voice; it never earns you the right to buy your way past your neighbor.
 
 ## Controlling “Merit Inflation”
 
@@ -954,7 +960,7 @@ Picture a typical day:
 1. **Morning**: You wake up, check your device, and see a prompt: “Your neighbor, Maria, awarded you +2 merit points for tutoring her child in math.” You tap “Confirm.”  
 2. **Afternoon**: You swing by a community meeting. There’s a local vote on whether to allocate funds for a new playground. You scan the event’s QR code, choose “Yes,” and confirm with your fingerprint. Done.  
 3. **Evening**: You attend an online course for sustainable gardening. The instructor logs your attendance via QR; you earn a certificate (stored privately on your device), plus a few bonus points for further training.  
-4. **Offline Moments**: Next week, you lose internet during a storm, but you can still scan a friend’s code to gift them merit points for helping fix your roof. When connectivity returns, everything syncs automatically—no further action required.
+4. **Offline Moments**: Next week, you lose internet during a storm, but you can still scan a friend’s code to *recognize* them—logging that they helped fix your roof—so the community ledger credits their contribution. (You’re vouching for their work, not handing over points of your own; recognition is earned, never transferred.) When connectivity returns, everything syncs automatically—no further action required.
 
 ## 5. Frequently Asked Questions
 
@@ -1053,7 +1059,7 @@ From birth to old age, **food, water, and education** are the building blocks of
 ### 1.1. Guaranteed Access
 
 1. **Public Canteens**: Imagine community-run dining halls open to everyone, serving nutritious meals at zero cost—*no questions asked*. These canteens use a local-first blockchain to log the number of meals served, preventing corruption or resource diversion.  
-2. **Essential vs. “Luxury” Foods**: Basic staples are free, but “premium” items (exotic meats, specialty desserts, etc.) might require merit points or a small monetary outlay. This ensures everyone is fed while letting those who’ve earned extra perks enjoy occasional treats.
+2. **Essential vs. “Luxury” Foods**: Basic staples are free, while scarce “premium” items (exotic meats, specialty desserts) are shared out by rotation and waitlist—with active contributors eligible sooner—or bought with the national currency where a market still applies. This ensures everyone is fed, while treats are distributed by turn and standing rather than sold for points.
 
 ### 1.2. Local Agriculture & Distribution
 
@@ -1167,7 +1173,7 @@ Among all the **Fundamental Human Rights**, healthcare stands out as the system 
 
 ### 2.2. Premium or Elective Treatments
 
-- **Cosmetic or Non-Essential**: Procedures like elective cosmetic surgery, certain brand-name luxury medications, or advanced fertility treatments might require personal payment or merit-based upgrades.  
+- **Cosmetic or Non-Essential**: Procedures like elective cosmetic surgery, certain brand-name luxury medications, or advanced fertility treatments might involve personal payment, or—where a limited pool exists—priority for longstanding contributors by waitlist rather than purchase with points.  
 - **Merit Point Priority**: Those with higher merit points (e.g., caregivers, educators, or others who’ve contributed extensively) may get faster appointments or optional perks, but nobody is ever denied critical services.
 
 ## 3. Funding & Governance
@@ -1727,7 +1733,7 @@ Once you’ve tested basic principles—merit-based collaboration, transparent r
 - **Transparent Pricing**  
   - A small offline-ready ledger logs inventory and sales. Everyone sees how much was bought, at what price, and how proceeds get reinvested.  
 - **Merit vs. Money**  
-  - Baseline groceries remain free or subsidized. Additional “luxury” goods might require extra points or direct payment.
+  - Baseline groceries remain free or subsidized. Scarce “luxury” goods are shared by rotation and waitlist—active contributors eligible sooner—or bought with the national currency; they are never sold for points.
 
 ### 3.2. Community Kitchen or Canteen
 
@@ -1809,7 +1815,7 @@ Once you’ve tested basic principles—merit-based collaboration, transparent r
 
 Picture a **village** where 30–40 households merge their local resources:
 
-1. **A Communal Store**: Stocked with produce grown in a collective farm. Shoppers scan a simple QR code or sign a ledger to record their take. Basic staples are free or heavily subsidized, while premium coffee beans or artisanal cheese might cost extra points.  
+1. **A Communal Store**: Stocked with produce grown in a collective farm. Shoppers scan a simple QR code or sign a ledger to record their take. Basic staples are free or heavily subsidized, while scarce premium goods—small-batch coffee beans, artisanal cheese—go first to longstanding contributors on a rotating members’ list, then by lottery when demand outstrips supply. No one pays in points; standing sets your place in line, not your purchasing power.  
 2. **Shared Bike Fleet**: Residents maintain a pool of bicycles or e-scooters. If you fix or clean them, you earn merit points. If you misuse them, you lose points or face a short ban.  
 3. **Village Council Meetings**: Held weekly in a community hall or under a big tree. Everyone can propose budget items or improvements. No single person can override collective votes.  
 4. **Local Celebrations**: Festive events—like harvest festivals or cultural feasts—become chances for families to pool talent, share food, and reinforce the sense of **we’re in this together**.
@@ -2056,7 +2062,7 @@ Having seen how MVS principles—merit points, universal essentials, local-first
 - **Open Curriculum**  
   - Pods worldwide share educational materials—translated or adapted to local languages. Teachers on one continent can earn merit by assisting remote students on another via offline-ready platforms.  
 - **Scholarships & Cross-Cultural Learning**  
-  - Students gather merit points locally, spend them on international exchange programs, bridging cultural gaps.
+  - Students who’ve earned strong local recognition qualify for limited international exchange placements—allocated by merit-eligibility and lottery, not purchased—bridging cultural gaps.
 
 ### 6.2. International Environmental Summits
 
