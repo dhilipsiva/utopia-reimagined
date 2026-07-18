@@ -123,18 +123,16 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   (community land trusts vs right-of-first-refusal) — needs real fiscal magnitudes
   and a design choice, don't fabricate numbers.
 - **Tech backbone rewrite, in the GUARANTEES.md register (nibli convergence).**
-  DONE (608008d): biometric-crypto errors fixed + cwa_false "No Record Found"
-  doctrine. DONE (1404322): (a) threshold-recovery failure modes, (b) threat-model
-  table, (c) update-authority naming, (g) nibli citation. STILL OPEN, autonomous-
-  safe: (h) data-classification table reconciling the radical-transparency
-  governance chapters ("everyone can see who's amassing points") with the ZK
-  privacy promise — a real flagged contradiction, worth resolving. MORE OPINIONATED
-  (do carefully / flag): (e) "Why a blockchain at all?" honestly weighing CRDTs /
-  signed logs + nibli-store's HLC/tombstone/CRDT-export design — partly argues
-  against the book's own central premise, keep as honest hedging not repudiation;
-  (f) replace venture brand names (union.build, Sui, Fuel, linera) with capability
-  requirements + dated appendix — removes tools the author chose. (Offline
-  double-spend is moot: points are now earn-only.)
+  DONE: biometric-crypto errors + cwa_false doctrine (608008d); threshold-recovery
+  failure modes, threat-model table, update-authority, nibli citation (1404322);
+  data-classification table reconciling transparency-vs-ZK-privacy (b66cb68).
+  STILL OPEN — [AUTHOR-GATED, opinionated, touch the book's own choices]: (e) "Why a
+  blockchain at all?" honestly weighing CRDTs / signed logs + nibli-store's
+  HLC/tombstone/CRDT-export design — partly argues against the book's central
+  premise, so the author should decide how hard to hedge; (f) replace venture brand
+  names (union.build, Sui, Fuel, linera) with capability requirements + dated
+  appendix — removes specific tools the author chose to name. (Offline double-spend
+  is moot: points are now earn-only.)
 - **Copyedit residue.** Heading spacing/numbering normalization ("##  Why
   Redefine" double space ~354; mixed numbering schemes across chapters; mixed Key
   Takeaways formats). The high-visibility typos are fixed.
