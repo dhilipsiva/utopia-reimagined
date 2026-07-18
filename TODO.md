@@ -37,27 +37,23 @@ the fuel-access line (~1300) brought under the rights floor; Part-5 chapter list
 updated to seven. STILL OPEN from the old "duty-bearer" bullet: the constitutional
 duty-bearer/magnet-problem/recall/justice-chapter/Ambedkar items (below).
 
-- **Merit points: decide what they ARE, and commit (the single biggest credibility
-  leak).** Either (a) an explicit community currency — adopt monetary vocabulary
-  openly, engage the demurrage/WIR literature, publish issuance/caps/expiry as
-  monetary policy; or (b) non-transferable, earn-only reputation that gates perks
-  but can never be gifted or spent — then delete point-gifting (book.md ~957) and
-  point-priced goods (~418, ~1812, ~2059). The current hybrid — "social credits,
-  not currency" (~379) atop a design that is earned per hour, transferable,
-  spendable, and demand-repriced — is the contradiction an economically literate
-  reader spots in three questions. Note: choosing (b) also dissolves the offline
-  double-spend problem in the tech backbone (see the backbone-rewrite bullet) and
-  makes the anti-social-credit case far easier. Resolve the resets-vs-incentives
-  tension at the same time with a two-token design (perishable consumption credits
-  vs permanent non-transferable honor); drop fixed sectoral pools (~510-511),
-  which make colleagues' contributions rivalrous.
-- **Follow-through on the social-credit bright lines (charter enforcement).** The
-  social-credit chapter commits to bright lines the rest of the book must now honor
-  end to end: audit for residual violations and fix them — negative personal
-  scoring still implied by misuse penalties (~1079, ~1412-1413), and confirm every
-  canteen/clinic/shelter passage names a non-biometric fallback path so biometric
-  failure can never block the rights floor. (The fuel-access line ~1300 and the
-  three merit-weighted-voting passages are already fixed.)
+**MERIT POINTS = EARN-ONLY RECOGNITION: LANDED (2026-07-18, commit 10b97c1).**
+Chose option (b) — non-transferable recognition, never spent/gifted/priced —
+because a spendable token re-grows into money-power and the merit elite the book
+exists to prevent (reasoned from "what would a utopia have"). Added a "What Merit
+Points Are—and Are Not" subsection; scarce non-essentials above the floor are now
+allocated by transparent non-market rules (need, rotation, waitlist, lottery) with
+merit as a qualifying threshold. Reworked every spend/gift/price passage. STILL
+OPEN from this bullet: drop fixed sectoral pools (~510-511, which make colleagues'
+contributions rivalrous), and the resets-vs-incentives two-token refinement was
+NOT taken (single recognition token chosen for simplicity).
+
+**SOCIAL-CREDIT BRIGHT LINES ENFORCED: LANDED (2026-07-18, commit 5814acc).**
+No negative scoring of persons anywhere (bike/environmental individual penalties →
+perk suspension via due process, never a record subtraction; pollution/fraud →
+enterprise regulation); non-biometric fallback added to canteens/clinics/shelter
+("serve first, reconcile after"); both stated as bright lines in the "Fundamental
+Rights for All" firewall.
 - **The consolidation cut (30-40% shorter; nothing of substance lost).** Merge
   Part 4 (Implementing Fundamental Rights) into Part 2 so each right is treated
   exactly once (why it matters + how it's implemented); collapse Pitfalls &
