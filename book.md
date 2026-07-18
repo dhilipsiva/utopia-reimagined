@@ -835,6 +835,18 @@ When you prove “I earned 5 merit points last week,” you share a zero-knowled
 
 The system must also balance accountability (preventing corruption, double-voting, or sybil attacks) with anonymity. **Proof of Personhood** ensures each user is unique. Meanwhile, advanced cryptography ensures you’re not forced to reveal your identity for every interaction—only that you’re a valid, singular participant.
 
+### 4.4. Who Sees What: A Data-Classification
+
+Attentive readers will have spotted a tension between two of this book’s promises. The governance chapters insist that budgets and resource flows be **radically transparent**—“everyone can see how decisions get made.” This chapter insists your personal contributions stay **private**. Both are true, and the way they coexist is that *not everything lives at the same visibility level*. Rather than wave at “transparency” and “privacy” as moods, we classify every record into one of three tiers, and the same classification governs the whole system:
+
+| Tier | What lives here | Who can see it |
+|---|---|---|
+| **Public** | Pooled budgets, aggregate resource flows, rule/weight tables, vote *tallies*, committee decisions and their rationale | Anyone, anywhere |
+| **Pod-visible** | Who verified whose contribution, allocation waitlists, a member's *tier* of standing (not the underlying detail) | Members of that pod, for peer accountability |
+| **Private (ZK)** | Your individual biometric template, *how and where* you earned specific recognition, which way you voted, your medical and personal records | Only you, disclosed by zero-knowledge proof when *you* choose |
+
+The rule that dissolves the apparent contradiction: **transparency is aimed at power, privacy at persons.** Where public money and communal decisions flow, sunlight is mandatory. Where an individual's private life and choices are concerned, the default is zero-knowledge, and the person controls disclosure. So “anyone can see who’s amassing significant points,” from the governance chapter, is deliberately about a person’s *tier* and any *flagged anomaly a committee is investigating*—never a public feed of everyone’s itemized life. Auditors get what they need to catch corruption; no one gets a surveillance dashboard of their neighbors.
+
 ## 5. WebAssembly & YAD Devices
 
 ### 5.1. WebAssembly for Cross-Platform Performance
