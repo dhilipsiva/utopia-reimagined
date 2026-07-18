@@ -1512,6 +1512,14 @@ If enough of us do this, we’ll develop a **tapestry of pods**—each one exper
 - **Organic Growth**: Success stories spread when they create tangible value. Others adopt or adapt the model, forming new networks.  
 - **Incremental Innovation**: Each pod might develop unique solutions (like a method for collectively owning farmland or operating a local pharmacy). The best ideas multiply as pods cross-pollinate.
 
+## How This Differs from Other Hopeful Visions
+
+I owe a debt to a shelf of thinkers who have argued, better than I can, that a fairer world is affordable and near. It’s worth being clear about what this book adds—because a reader will make these comparisons anyway.
+
+Rutger Bregman’s *Utopia for Realists* marshals the historical evidence that basic income and shorter workweeks *work*; it wins the argument at the level of **policy**. Kate Raworth’s *Doughnut Economics* gives us the essential **reframe**—an economy bounded below by human needs and above by planetary limits. Nick Srnicek and Alex Williams’ *Inventing the Future* supplies the missing **strategy**: don’t just prefigure, build counter-hegemonic power that can win at scale. Each is indispensable. But notice what none of them hands you: **something to try on Tuesday.** They argue for policies to be enacted, goals to be adopted, power to be built—all of it addressed, ultimately, to people who already hold the levers.
+
+This book’s one distinctive bet is to start at the other end. The **Minimum Viable Society** is an attempt to make utopia *bootstrappable*—a design you can fork, run in your own household, and grow pod by pod, the way open-source software ate the world without asking permission first. Where Bregman persuades and Srnicek strategizes, MVS asks you to **ship a prototype**. That’s not a rejection of their work; it’s the missing on-ramp to it. The policy case and the strategy are the destination. A working pod is how ordinary people get on the road.
+
 ## Embracing the Ridiculous Dream
 
 It might sound crazy—**one family’s grocery or farmland** eventually contributing to a **global** transformation. But every big revolution starts with small sparks. If we test these ideas at a household scale, refine them, and invite thousands of others to do the same, we might just build a new socioeconomic fabric from the grassroots up.
@@ -2171,18 +2179,21 @@ Though the **Minimum Viable Society (MVS)** approach offers a bold vision—univ
 ## 7. “Mass Implementation Feels Impossible”
 
 ### Critique
-“Scaling from tiny pods to entire nations—and eventually global adoption—seems overwhelming. Most people might be apathetic, or big corporations could sabotage it.”
+“Scaling from tiny pods to entire nations—and eventually global adoption—seems overwhelming. Most people might be apathetic, or big corporations could sabotage it.” This is the sharpest version of what Nick Srnicek and Alex Williams call the **“folk politics” critique** (*Inventing the Future*, 2015): local, prefigurative projects—co-ops, communes, mutual-aid networks—tend to stay small, get comfortably ignored, or get crushed *before* they ever threaten the structures they oppose. Building the better village, the argument goes, is no substitute for a strategy to win at scale.
 
 ### Potential Response
 
-1. **Organic Spread**  
+1. **Working Proof Is the Strategy**  
+   - We take the folk-politics critique seriously—and answer it directly. MVS is not prefiguration *instead of* scale; it is prefiguration *as* a scaling strategy. A thriving pod is not a moral gesture, it is **evidence**: a running, auditable demonstration that universal essentials plus merit recognition produce lower waste, better health, and less corruption than the status quo. Srnicek and Williams are right that vibes don’t scale—but *proof* travels. The roadmap’s whole point is to convert an argument the powerful can dismiss into a result they must explain.
+
+2. **Organic Spread**  
    - MVS doesn’t push an all-or-nothing approach. It accumulates local successes. If neighbors see a pod thriving with resource-sharing, they’ll want in. The movement spreads from proven utility, not forced ideology.
 
-2. **Targeted Pilot Projects**  
-   - Show large-scale viability with city-level experiments. Over time, national policymakers might incorporate or legalize certain aspects (e.g., universal healthcare financed through transparent ledgers).  
+3. **Targeted Pilot Projects**  
+   - Show large-scale viability with city-level experiments. Over time, national policymakers might incorporate or legalize certain aspects (e.g., universal healthcare financed through transparent ledgers). This is where working proof meets the ballot box: pilots give sympathetic legislators something concrete to point at.  
 
-3. **Resilience Against Sabotage**  
-   - The decentralized nature means no single corporation or political figure can topple the entire system. Even if one region tries to ban pods, others can continue, eventually demonstrating enough success to win broader acceptance.
+4. **Resilience Against Sabotage**  
+   - The decentralized nature means no single corporation or political figure can topple the entire system. Even if one region tries to ban pods, others can continue, eventually demonstrating enough success to win broader acceptance. (As the chapter “When the Pod Meets the State” argues, this is resilience, not immunity—so the strategy pairs demonstrated benefit with early legal legitimacy, never evasion.)
 
 ## 8. Pulling It All Together
 
@@ -2860,6 +2871,7 @@ Every statistic and named study in this book is listed below, with its primary s
 - United Nations (1967). *Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space*, Art. II. UNOOSA. https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html; cf. U.S. Commercial Space Launch Competitiveness Act (2015), 51 U.S.C. § 51303. https://www.law.cornell.edu/uscode/text/51/51303
 - U.S. Census Bureau (2026). *Housing Vacancies and Homeownership, Annual 2025*, Table 11. https://www.census.gov/housing/hvs/data/prevann.html; U.S. Department of Housing and Urban Development (2026). *The 2025 Annual Homelessness Assessment Report (AHAR), Part 1*. https://www.huduser.gov/portal/datasets/ahar/2025-ahar-part-1-pit-estimates-of-homelessness-in-the-us.html
 - Oxfam International (2022). *Inequality Kills*. https://www.oxfam.org/en/research/inequality-kills; SIPRI (2026). *Trends in World Military Expenditure, 2025*. https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025; IMF (2025). *Underpriced and Overused: Fossil Fuel Subsidies Data 2025 Update*. IMF Working Paper WP/2025/270. https://www.imf.org/en/publications/wp/issues/2025/12/20/underpriced-and-overused-fossil-fuel-subsidies-data-2025-update-572729
+- Comparative visions: Bregman, R. (2017). *Utopia for Realists: How We Can Build the Ideal World*. Little, Brown. Raworth, K. (2017). *Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist*. Chelsea Green. Srnicek, N. & Williams, A. (2015). *Inventing the Future: Postcapitalism and a World Without Work*. London: Verso.
 
 **Why This Is Not a Social Credit System**
 
