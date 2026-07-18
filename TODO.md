@@ -111,18 +111,17 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   not a historical footnote — reserved committee representation, mandatory
   external audit of allocation patterns, portability of entitlements so exit from
   a hostile pod is not destitution.
-- **Economics rigor chapter(s).** Engage the calculation/knowledge problem by name
-  (Mises 1920, Hayek 1945, Lange, parecon's iterative planning) and answer it —
-  shadow prices, or explicit acceptance that the merit sector free-rides on the
-  fiat sector's price information; transparency solves hidden corruption, say what
-  solves dispersed knowledge. Rewrite Transition Costs with a costed worked
-  example: a fiat price tag on the universal baseline for the existing
-  200,000-person city scenario, the funding source per phase, and a real housing
-  acquisition mechanism (community land trusts, right-of-first-refusal purchases)
-  with rough magnitudes — the current chapter has three mechanisms and zero
-  numbers. Draw the correct lesson from the book's own UBI evidence
-  (unconditionality works and cuts administration — argue explicitly why a
-  conditional merit layer on top beats a simple unconditional floor, or simplify).
+- **Economics rigor — remaining.** DONE (ee23661): the calculation/knowledge
+  problem is engaged by name (Mises 1920, Hayek 1945) and answered — hybrid keeps
+  market prices, merit layer free-rides on them for cost info (conceded), essentials
+  are a floor guaranteed by physical sufficiency not pricing, and merit points are
+  never prices. STILL OPEN: (a) the UBI-lesson argument (why a conditional merit
+  layer on top of an unconditional floor beats a bare floor + non-material
+  recognition) — additive, doable autonomously; (b) [AUTHOR-GATED / needs data]
+  rewrite Transition Costs with a costed worked example (fiat price tag on the
+  200k-city baseline, funding per phase) and pick a housing acquisition mechanism
+  (community land trusts vs right-of-first-refusal) — needs real fiscal magnitudes
+  and a design choice, don't fabricate numbers.
 - **Tech backbone rewrite, in the GUARANTEES.md register (nibli convergence).**
   Rewrite the tech chapters as enforceable claims with named mechanisms, "Honest
   scope" caveats, and disclosed sharp edges — nibli proves the author can write in
