@@ -123,29 +123,23 @@ Points one). See the flagged bullet below for the remaining, author-gated parts.
   (community land trusts vs right-of-first-refusal) — needs real fiscal magnitudes
   and a design choice, don't fabricate numbers.
 - **Tech backbone rewrite, in the GUARANTEES.md register (nibli convergence).**
-  Rewrite the tech chapters as enforceable claims with named mechanisms, "Honest
-  scope" caveats, and disclosed sharp edges — nibli proves the author can write in
-  exactly this register. Contents: cite nibli as the first running piece of the
-  backbone (the book already cites the YAD repo); add "Why a blockchain at all?"
-  honestly weighing CRDTs / signed event logs — and note nibli-store's own design
-  (HLC clocks, tombstones, export-for-CRDT-sync, gossip with evidential
-  provenance stances) already answers the requirements better than "blockchain"
-  does; specify the partition-merge rule with one worked example (who arbitrates,
-  what rolls back, who bears the loss) — or dissolve most of the problem by
-  making points earn-only (see the merit-points bullet); fix the biometric-crypto
-  description (drop "irreversibly encrypted" ~607, drop fuzzy-matching-on-a-hash
-  ~697-698, confront the global 1:N dedup database's centralization head-on, and
-  answer who manufactures and attests the orbs); rework threshold recovery around
+  DONE (608008d): fixed the biometric-crypto errors (templates not "irreversibly
+  encrypted hash", the 1:N dedup centralization confronted with SMPC sharding +
+  federation) and stated the cwa_false "No Record Found" doctrine in the POP
+  pitfalls. STILL OPEN, autonomous-safe first: (a) rework threshold recovery around
   its real failure modes (family-quorum coercion, correlated trustee loss in
-  disasters, time-locked recovery with owner cancellation windows); add a
-  one-page threat-model table (adversaries x mitigations) and a data-classification
-  table reconciling the radical-transparency governance chapters with the ZK
-  privacy chapter; name the update authority (multi-party release signing,
-  reproducible builds, app-store dependency); replace venture brand names
-  (union.build, Sui, Fuel, linera) with capability requirements + a dated
-  appendix; state the cwa_false entitlement doctrine (a verdict resting on
-  closed-world absence-of-facts must never deny a baseline right — "pending sync,
-  escalate to a human") in the Proof-of-Personhood pitfalls section.
+  disasters, time-locked recovery + owner cancellation windows); (b) one-page
+  threat-model table (adversaries x mitigations); (c) name the update authority
+  (multi-party release signing, reproducible builds, app-store dependency); (d)
+  note that offline double-spend is now moot since points are earn-only (cross-ref
+  the merit-points decision). MORE OPINIONATED (do carefully / flag): (e) add "Why a
+  blockchain at all?" honestly weighing CRDTs / signed event logs and citing
+  nibli-store's HLC/tombstone/CRDT-export design — partly argues against the book's
+  own central premise, so keep it as honest hedging not repudiation; (f) replace
+  venture brand names (union.build, Sui, Fuel, linera) with capability requirements
+  + dated appendix — removes tools the author chose; (g) cite nibli as the first
+  running piece of the backbone; (h) data-classification table reconciling the
+  radical-transparency governance chapters with the ZK privacy chapter.
 - **Copyedit residue.** Heading spacing/numbering normalization ("##  Why
   Redefine" double space ~354; mixed numbering schemes across chapters; mixed Key
   Takeaways formats). The high-visibility typos are fixed.
