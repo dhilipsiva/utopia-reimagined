@@ -4,6 +4,11 @@ The book/manifesto tracker. Plain bullets, never numbered — work the FIRST rem
 bullet; cross-reference items by name. Delete a bullet entirely when it fully lands;
 update it if only partially done. Ordered by leverage, not by chapter order.
 
+**Autonomous loop note:** bullets prefixed **[AUTHOR-GATED]** need the author's own
+voice, personal memory, or a design decision (currency model, structural merges,
+book restructuring) — SKIP them in an unattended loop and work the highest-value
+NON-gated bullet instead; surface the gated ones for the author when they return.
+
 Provenance: 2026-07-18 session — a five-lens critique (economics / technology /
 governance / craft / reader, with every major criticism verified against the book's
 own counterarguments), a 30-claim fact-check against primary sources, and a
@@ -54,19 +59,21 @@ perk suspension via due process, never a record subtraction; pollution/fraud →
 enterprise regulation); non-biometric fallback added to canteens/clinics/shelter
 ("serve first, reconcile after"); both stated as bright lines in the "Fundamental
 Rights for All" firewall.
-- **The consolidation cut (30-40% shorter; nothing of substance lost).**
-  DONE (482a3f2): deleted the four part-intro preview lists + mechanical
-  Next-Chapter/Next-Steps/Ready-to-Begin teasers (kept the 3 substantive Part-5
-  prose bridges). STILL OPEN, in rough priority: (a) trim redundant Key Takeaways
-  blocks (~476, ~556 sit back-to-back) to one or two; (b) state the safeguard
-  litany (caps / diminishing returns / rotation / transparent ledgers / peer
-  verification) ONCE in the Merit Points chapter and reference it thereafter (it
-  recurs near-verbatim in 5+ chapters); (c) the two STRUCTURAL merges — Part 4
-  (Implementing Fundamental Rights) into Part 2, and collapsing Pitfalls +
-  Governance into one chapter — are destructive/reorganizing and would ripple
-  through the new cross-references and bridges; FLAG for author sign-off on scope
-  before attempting, do not do autonomously.
-- **Voice and people pass.** Convert the bullet scaffolds of Parts 3-6 to
+**CONSOLIDATION CUT — SAFE SCOPE DONE (2026-07-18, commits 482a3f2, 1684181).**
+Deleted the four part-intro preview lists + mechanical Next-Chapter / Next-Steps /
+Ready-to-Begin teasers (kept the 3 substantive Part-5 prose bridges), and dropped
+the bloated 11-bullet Employment "Key Takeaways" block (kept the 4-bullet Merit
+Points one). See the flagged bullet below for the remaining, author-gated parts.
+- **[AUTHOR-GATED] Consolidation cut — the destructive/subjective remainder.**
+  NOT for autonomous execution. (a) Dedupe the safeguard litany (caps / diminishing
+  returns / rotation / transparent ledgers / peer verification) across 5+ chapters —
+  risky because the Pitfalls and Governance chapters re-answer distinct objections
+  with it, so a blind "state once, reference after" would weaken their
+  self-containment; decide per-occurrence. (b) Merge Part 4 (Implementing
+  Fundamental Rights) into Part 2, and collapse Pitfalls + Governance into one
+  chapter — reorganizes ~600 lines and ripples through the new Part-5 cross-refs and
+  bridges. Both want author sign-off on scope.
+- **[AUTHOR-GATED] Voice and people pass.** Convert the bullet scaffolds of Parts 3-6 to
   paragraphs (keep bullets only for genuinely enumerable content); move the Part 5
   confessional register ("I'm not the smartest person on Earth", ~1514) to the
   book's opening; pick one named fictional family and one village and carry them
@@ -75,7 +82,7 @@ Rights for All" firewall.
   narrative spine; write ONE dramatized failure scene (a pod that collapses, a
   merit dispute mediation doesn't fix) and hang the Pitfalls material off it.
   Consider retitling around "Minimum Viable Society" — the book's best coinage.
-- **Put the poem at the front and bind the two documents.** Move the Bharati poem
+- **[AUTHOR-GATED] Put the poem at the front and bind the two documents.** Move the Bharati poem
   (Yoga Siddhi) from the back-of-book appendix to the opening with a page of
   personal framing (when you met it, why it structured your thinking); either open
   each book part with its corresponding lines (the poem as the book's spine) or
