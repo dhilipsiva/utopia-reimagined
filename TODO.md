@@ -54,15 +54,18 @@ perk suspension via due process, never a record subtraction; pollution/fraud →
 enterprise regulation); non-biometric fallback added to canteens/clinics/shelter
 ("serve first, reconcile after"); both stated as bright lines in the "Fundamental
 Rights for All" firewall.
-- **The consolidation cut (30-40% shorter; nothing of substance lost).** Merge
-  Part 4 (Implementing Fundamental Rights) into Part 2 so each right is treated
-  exactly once (why it matters + how it's implemented); collapse Pitfalls &
-  Skepticisms and Governance & Conflict Resolution into one chapter; delete every
-  part-intro chapter preview, every "Next Chapter" teaser, and all but one or two
-  Key Takeaways blocks; state the safeguard litany (caps / diminishing returns /
-  rotation / transparent ledgers / peer verification) ONCE in the Merit Points
-  chapter and reference it thereafter (it currently recurs near-verbatim in at
-  least five chapters).
+- **The consolidation cut (30-40% shorter; nothing of substance lost).**
+  DONE (482a3f2): deleted the four part-intro preview lists + mechanical
+  Next-Chapter/Next-Steps/Ready-to-Begin teasers (kept the 3 substantive Part-5
+  prose bridges). STILL OPEN, in rough priority: (a) trim redundant Key Takeaways
+  blocks (~476, ~556 sit back-to-back) to one or two; (b) state the safeguard
+  litany (caps / diminishing returns / rotation / transparent ledgers / peer
+  verification) ONCE in the Merit Points chapter and reference it thereafter (it
+  recurs near-verbatim in 5+ chapters); (c) the two STRUCTURAL merges — Part 4
+  (Implementing Fundamental Rights) into Part 2, and collapsing Pitfalls +
+  Governance into one chapter — are destructive/reorganizing and would ripple
+  through the new cross-references and bridges; FLAG for author sign-off on scope
+  before attempting, do not do autonomously.
 - **Voice and people pass.** Convert the bullet scaffolds of Parts 3-6 to
   paragraphs (keep bullets only for genuinely enumerable content); move the Part 5
   confessional register ("I'm not the smartest person on Earth", ~1514) to the
