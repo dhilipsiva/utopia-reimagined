@@ -471,24 +471,7 @@ Reimagining employment around merit points and broad social contribution require
 
 ## Bridging to the Merit Points Chapter
 
-This expanded view of “employment” is the backbone of a more equitable society. Next, we’ll dive deeper into **how merit points function**: the algorithms, peer reviews, or committees that validate hours and impact, the range of perks available, and the checks and balances to prevent misuse. By matching people to roles they excel at—and ensuring everyone has a baseline of rights—we can finally escape the wage-centric rat race that undercuts individual passions and societal needs alike.
-
-## Key Takeaways
-
-- **Transition Costs**: Phase-ins, hybrid compensation, and policy nudges soften the leap from wage-labor to merit-based roles.  
-- **Inflation & Capital**: Merit points function more like “social credits” than a primary currency, reducing classical inflation risks. Caps or diminishing returns prevent new “merit oligarchs.”  
-- **Global Trade**: National currencies still operate for external transactions. Locally, pods allocate vital goods via merit, insulating communities from external market shocks.  
-- **Incremental Growth**: Start with pilot programs or partial rollouts. Demonstrating immediate benefits (less burnout, better child care) builds momentum.  
-- **Bridging Conventional Jobs**: Traditional salaries remain for market-facing industries, while essential services gradually lean on a merit framework—allowing personal passion to flourish without financial penalty.
-- **Misaligned Employment** leads to underutilized talent, where people can’t pursue their true passions because certain roles pay too little.  
-- **Weighted Merit Points** let us value high-impact roles (like teaching, healthcare, environmental protection) more heavily without neglecting cultural or entertainment fields.  
-- **Fundamental Rights Remain Universal**, ensuring no one starves or goes homeless, while higher merit unlocks *additional perks*.  
-- **Balancing & Non-Stackable Perks** prevent gaming the system (e.g., having more children just to gain extra benefits).  
-- **35 Hours/Week** is a flexible baseline for an “average” able-minded, able-bodied adult, acknowledging variations for personal or situational reasons.  
-- **Cultural & Policy Reforms** are essential to support this broader concept of employment, requiring public acceptance and legal frameworks to protect unsalaried contributors.
-
-
-By clearly articulating how inflation, capital accumulation, and global trade might coexist with a merit-oriented approach, we show critics that “Employment, Reimagined” isn’t naive—**it’s a structured, stepwise shift** that preserves enough market functions to keep the broader economy stable, while expanding recognition to unsalaried but essential roles. This balanced transition can unlock both **personal fulfillment** and **societal resilience**, forging a new paradigm where *everyone’s work* truly matters.
+This expanded view of “employment” is the backbone of a more equitable society. By clearly articulating how inflation, capital accumulation, and global trade might coexist with a merit-oriented approach, we show critics that “Employment, Reimagined” isn’t naive—**it’s a structured, stepwise shift** that preserves enough market functions to keep the broader economy stable, while expanding recognition to unsalaried but essential roles. This balanced transition can unlock both **personal fulfillment** and **societal resilience**, forging a new paradigm where *everyone’s work* truly matters.
 
 By **liberating employment** from the profit-only paradigm, we create a world where individuals can truly **thrive** in roles that align with their skills, passions, and the greater social good. Next, let’s explore how we can track and reward those contributions fairly and transparently through **merit points**.
 
