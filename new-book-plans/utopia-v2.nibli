@@ -1,0 +1,298 @@
+# ═══════════════════════════════════════════════════════════════════
+# UTOPIA v0.2-DRAFT — Constitutional Core (nibli KR)
+# Revision of utopia.nibli (v0.1). Epigraph unchanged:
+# நான் வீழ்வேனென்று நினைத்தாயோ? — "Did you think I would fall?"
+# ═══════════════════════════════════════════════════════════════════
+#
+# REGISTER: commentary here is deliberately flat and technical so the KR
+# diff against v0.1 is legible. The manifesto voice is the author's to
+# re-weave — I am not ghost-writing it. Provenance tags:
+#   [v0.1]          — KR line unchanged from utopia.nibli
+#   [v0.2 NEW]      — new rule or fact
+#   [v0.2 REPLACES] — supersedes a v0.1 rule. The old rule must be DELETED,
+#                     not merely supplemented: derivation is monotone per
+#                     stratum, so an addition can only WIDEN what derives.
+#                     A permissive rule left in place keeps its exploit.
+#                     (Restricting amendments must repeal — a governance
+#                     lesson the logic itself enforces.)
+#
+# Three exploits in v0.1 were confirmed against the native engine before
+# this revision (each one asserted-fact away from total bypass):
+#   E1  show($w,$o) -> defend($w): any defendant asserts show(self, anyone)
+#       — even their own victim — and becomes unjailable under Art 6.
+#   E2  false(X) never gates the multi-sig: a voided auditor with a live
+#       Review credential still co-signs voids. Unfixable in-snapshot:
+#       adding ~false to a false-headed rule is a negative self-cycle and
+#       the stratifier rightly rejects it. Fix requires the epoch split.
+#   E3  severe is only consulted when family: a severe non-domestic
+#       offender with an asserted home fact gets the soft cage — the
+#       farmhouse exploit the v0.1 commentary mocks. "Domestic harm blocks
+#       the soft cage" was commentary, not KR: nothing derived a breach.
+# All three are closed below; each closure has an adversarial pin.
+# Predicate names are drawn from the committed alias corpus (fail-closed
+# lexicon): hence authority / rotten / fit / err rather than
+# official / voided / eligible / breach.
+
+# ─── Article 1: The Unconditional Floor ───────────────────── [v0.1]
+obligated(every person, event { secure() }).
+obligated(every person, event { eats() }).
+obligated(every person, event { dwell() }).
+obligated(every person, event { healthy() }).
+obligated(every person, event { learn() }).
+obligated(every person, event { expresses() }).
+all $anyone: prisoner($anyone) -> person($anyone).
+
+# ─── Article 2: Due-process suspension ────────────────────── [v0.1]
+all $prisoner: prisoner($prisoner) -> expresses($prisoner).
+all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).
+
+# ─── Article 3: Minting at contribution ───────────────────── [v0.1]
+all $teacher: all $student: teaches($teacher, $student) & ~false($teacher) -> reward($teacher).
+all $contributor: all $task: work($contributor, $task) & ~false($contributor) -> reward($contributor).
+
+# ─── Article 4: Audit, invalidation, clawback ─────────────────────
+# [v0.2 REPLACES the multi-sig rule] Appends ~rotten($a) & ~rotten($b):
+# an auditor voided in a PRIOR epoch (Art 8 carry ledger) cannot co-sign.
+all $a: all $b: all $audited: permits(Review, $a) & permits(Review, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited).
+all $fraudster: false($fraudster) -> lose(Points, $fraudster).
+all $teacher: all $student: teaches($teacher, $student) & false($teacher) -> lose(Points, $student).
+all $auditor: all $audited: judge($auditor, $audited) & capture($auditor, $audited) & ~deceive($auditor, $audited) & ~broken($auditor) -> reward($auditor).
+all $auditor: all $audited: deceive($auditor, $audited) & judge(Review, $auditor) -> false($auditor).
+# Open fairness question, flagged not fixed: the contamination rule above
+# punishes students for a teacher's fraud with no culpability guard —
+# collective punishment. Narrower alternative: claw back only rewards
+# DERIVED from the fraudulent teaching, not blanket point loss.
+
+# ─── Article 5: Family non-attestation ────────────────────── [v0.1]
+all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor).
+# Disclosed gap [v0.1, still open]: parent/2 is the ONLY kinship the
+# multi-sig independence check excludes. Spouses and siblings co-sign
+# freely until the registry grows those relations.
+
+# ─── Article 6: Sanction and placement ────────────────────────────
+# [v0.1] conviction rule unchanged.
+all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) -> prisoner($offender).
+# [v0.2 REPLACES  prisoner & home & ~family -> dwell]
+# home confinement now requires DERIVED eligibility, not a raw home flag.
+all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay).
+all $x: prisoner($x) & home($x) & fit($x, Homestay) -> dwell($x).
+# [v0.2 NEW] severity routing is no longer domestic-only (closes E3).
+all $x: prisoner($x) & severe($x) & ~family($x) -> building(HighSec, $x).
+all $x: prisoner($x) & severe($x) -> dwell($x).
+# [v0.2 NEW] breach marker: an asserted home placement without derived
+# eligibility is a queryable violation, not a silent success. The v0.1
+# prose claim "domestic harm blocks the soft cage" is now enforced logic:
+#   ? err(?, Placement).
+all $x: home($x) & ~fit($x, Homestay) -> err($x, Placement).
+# [v0.1] domestic dwell + facility routing unchanged.
+all $offender: prisoner($offender) & family($offender) -> dwell($offender).
+all $offender: prisoner($offender) & family($offender) & severe($offender) -> building(HighSec, $offender).
+all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender).
+
+# ─── Article 7: Defenses against Systemic Capture ─────────────────
+# [v0.2 REPLACES  show($w,$o) -> defend($w)]  (closes E1)
+# The shield now requires (a) the exposed party to be an AUTHORITY — an
+# institution, or anyone the Electorate ever seated — and (b) no Review
+# finding that the exposure itself was deceit.
+# POLARITY, chosen deliberately: until Review adjudicates deceive, the
+# shield HOLDS — fail-open toward protection. A captured Court must not
+# jail a whistleblower faster than an honest Review can convene; the cost
+# is that a cynical defendant who shows a real authority buys time until
+# Review speaks. The Art 4 counter-audit rule then voids the sham-shower
+# automatically. This is a closed-world default-polarity decision, i.e. a
+# POLITICAL choice surfaced in logic, not a technical inevitability.
+all $w: all $o: show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w).
+all $o: choose(Electorate, $o) -> authority($o).
+authority(Court).
+authority(Review).
+authority(Appeals).
+# authority is deliberately NOT revoked by broken/rotten: recalling Boss
+# must not strip Rebel's shield retroactively. Seating is forever
+# exposable; only POWER (permits) is revocable.
+
+# ─── Article 8 [v0.2 NEW]: Credential provenance + epoch carry ────
+# Review credentials are DERIVED, not sovereignly asserted. In v0.1,
+# permits(Review, X) was a raw input: whoever writes facts was sovereign —
+# the widest capture surface in the file, undefended by Art 7. Now the
+# Electorate seats, and standing must be clean: not recalled, not
+# carried-voided. permits(Appeals, X) remains assertable per-case
+# (relief), disclosed. Selection of the Electorate itself stays outside
+# the firewall; its certificate is the choose fact.
+all $a: choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a).
+# Epoch carry (closes E2): rotten(X) is the PRIOR-epoch judgment ledger,
+# an asserted input. Every false(X) derived in epoch N must be re-asserted
+# as rotten(X) in epoch N+1's input by the store discipline. It re-derives
+# false this epoch so clawback keeps firing:
+all $x: rotten($x) -> false($x).
+# Disclosed epoch-granularity limit: two auditors voiding EACH OTHER in
+# the same snapshot both count as clean this epoch. Mitigation is
+# sequencing adjudication batches into epochs. The carry discipline
+# itself ("derived false becomes next-epoch rotten") is a state-transition
+# invariant — a Lean obligation over the fact store, not derivable
+# in-snapshot.
+
+# ─── Article 9 [v0.2 NEW]: Amendment ──────────────────────────────
+# The constitution can change itself — under logic. suggest(Assembly, m)
+# dockets a proposal; approves(Electorate, m) is a CERTIFIED external
+# tally (the counting arithmetic is outside the firewall — an E2E-
+# verifiable count in the ElectionGuard genre; its certificate is this
+# asserted fact); permanent(t) is the entrenchment register. An amendment
+# adjusting an entrenched target has VOID STANDING (reusing false — the
+# standing-voided proxy — so no new predicate). The register entrenches
+# ITSELF (Art_Entrench): the guard cannot be amended away through the
+# front door, and no enactment can lower its own threshold under a lower
+# threshold (the Weimar bootstrap is underivable).
+all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).
+all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).
+permanent(Art_Floor).
+permanent(Art_Person).
+permanent(Art_Entrench).
+# What logic cannot stop: DELETING permanent() facts from the store.
+# Fact-write discipline is the residual trust base — an explicit
+# cross-epoch proof obligation ("no transition removes an entrenchment
+# fact except via an enacted amendment, and none such is derivable"),
+# not an in-snapshot derivation. Named, not hidden.
+
+# ─── The world in facts: cast ───────────────── [v0.1, two swaps]
+prisoner(Adam).
+person(Bela).
+person(Cira).
+teaches(Bela, Cira).
+person(Dev).
+person(Esa).
+parent(Dev, Esa).
+teaches(Esa, Fin).
+judge(Dev, Esa).
+person(Gia).
+person(Hex).
+# [v0.2 REPLACES permits(Review, Gia/Hex)] — seating now flows through
+# Art 8; the credential derives because standing is clean.
+choose(Electorate, Gia).
+choose(Electorate, Hex).
+judge(Gia, Bela).
+capture(Gia, Bela).
+judge(Hex, Bela).
+capture(Hex, Bela).
+person(Koa).
+capture(Koa, Esa).
+person(Quin).
+work(Quin, Census).
+person(Hano).
+person(Ivo).
+injure(Hano, Ivo).
+judge(Court, Hano).
+home(Hano).
+person(Jala).
+injure(Jala, Ivo).
+person(Lupo).
+person(Mira).
+teaches(Mira, Cira).
+judge(Lupo, Mira).
+capture(Lupo, Mira).
+deceive(Lupo, Mira).
+judge(Review, Lupo).
+person(Nia).
+injure(Nia, Ivo).
+judge(Court, Nia).
+permits(Appeals, Nia).
+person(Lalo).
+person(Mina).
+injure(Lalo, Mina).
+judge(Court, Lalo).
+home(Lalo).
+family(Lalo).
+severe(Lalo).
+person(Nando).
+person(Opal).
+injure(Nando, Opal).
+judge(Court, Nando).
+family(Nando).
+
+# ─── Adversarial scenario: capture attempt ───── [v0.1, one swap]
+person(Boss).
+person(Rebel).
+person(Scapegoat).
+# [v0.2 REPLACES permits(Review, Boss)] Boss was seated — so Boss stays
+# forever an authority (Rebel's shield survives the recall) — but broken
+# blocks the credential derivation, so Boss holds no voiding power.
+choose(Electorate, Boss).
+judge(Boss, Rebel).
+capture(Boss, Rebel).
+injure(Rebel, Scapegoat).
+judge(Court, Rebel).
+show(Rebel, Boss).
+broken(Boss).
+
+# ─── Adversarial scenario v0.2: the three exploits, pinned ────────
+# E1a — Don frames himself a whistleblower on his own VICTIM.
+#       v0.1: unjailable. v0.2: Pax is no authority → no shield.
+person(Don).
+person(Pax).
+injure(Don, Pax).
+judge(Court, Don).
+show(Don, Pax).
+# E1b — Sly shows a REAL authority, no Review finding yet: shield holds.
+#       The disclosed fail-open window, working as chosen.
+person(Sly).
+injure(Sly, Pax).
+judge(Court, Sly).
+show(Sly, Court).
+# E1c — Kel did the same, but Review adjudicated the exposure as deceit:
+#       shield falls, prison holds, and the counter-audit voids Kel.
+person(Kel).
+injure(Kel, Pax).
+judge(Court, Kel).
+show(Kel, Court).
+deceive(Kel, Court).
+judge(Review, Kel).
+# E2 — Vex was voided LAST epoch (rotten ledger), is still seated on
+#      paper, and pairs with clean Wren against Tyr. v0.1: Tyr falls.
+#      v0.2: Vex's credential never derives; Tyr stands.
+person(Tyr).
+person(Vex).
+person(Wren).
+rotten(Vex).
+choose(Electorate, Vex).
+choose(Electorate, Wren).
+judge(Vex, Tyr).
+capture(Vex, Tyr).
+judge(Wren, Tyr).
+capture(Wren, Tyr).
+# E3 — Ruk: severe, NON-domestic, home fact asserted (the farmhouse).
+#      v0.1: soft cage, no HighSec. v0.2: HighSec routes, and the home
+#      assertion itself derives a placement breach.
+person(Ruk).
+injure(Ruk, Opal).
+judge(Court, Ruk).
+severe(Ruk).
+home(Ruk).
+# Amendments — a floor cut and a meta-attack both die with void standing
+# regardless of tally; an ordinary mint reform passes.
+suggest(Assembly, Amend_Floor).
+adjust(Amend_Floor, Art_Floor).
+approves(Electorate, Amend_Floor).
+suggest(Assembly, Amend_Mint).
+adjust(Amend_Mint, Art_Mint).
+approves(Electorate, Amend_Mint).
+suggest(Assembly, Amend_Meta).
+adjust(Amend_Meta, Art_Entrench).
+approves(Electorate, Amend_Meta).
+
+# ─── Technical appendix delta (v0.2 proxy vocabulary) ─────────────
+# authority(X)   — X is an exposable office: an institution constant, or
+#                  anyone the Electorate ever seated. Derived + asserted.
+#                  Never revoked (see Art 7 note).
+# choose(E, X)   — the Electorate seats X (asserted; the selection
+#                  process is outside the firewall, this fact is its
+#                  certificate).
+# rotten(X)      — PRIOR-epoch voided standing: the asserted carry ledger.
+#                  Gates multi-sig and credential derivation; re-derives
+#                  false(X) for clawback.
+# fit(X, Homestay)    — derived home-confinement eligibility.
+# err(X, Placement)   — derived placement breach: asserted home without
+#                       derived eligibility.
+# suggest / approves / adjust / permanent / become(M, Law)
+#                — amendment machinery (Art 9). approves is a certified
+#                  tally fact; permanent is the self-entrenching register.
+# Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.
+
