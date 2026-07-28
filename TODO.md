@@ -4,17 +4,19 @@
 
 The repo is heading for two new books plus a clean deletion:
 
-- **book-1** — the active work. **Scope: what an ideal society must BE and how it
-  FUNCTIONS — never how to get there.** No roadmap, no transition, no MVS, no
-  scaling narrative. Content is **gated on the constitution**: if the KR does not
-  derive it, it does not go in the book. Derived from the nibli constitution, plain English,
-  for a **primarily international/global audience**, no technical jargon: anyone
-  should be able to pick it up and follow it. The formalism stays invisible; what
-  readers verify is the **data**.
-- **book-2** — the technical companion: how book-1 is actually implemented with
-  technology. Not planned yet. **It gets its own tracker, written from scratch once
-  book-1 is finished.** Do not add book-2 items here — park them in the hold list
-  at the bottom.
+- **book-1** — the active work, in two parts with a deliberate seam:
+  - **Parts I–V — the destination.** What the society IS and how it FUNCTIONS,
+    never how to get there. Derived from the constitution and **gated on it**.
+    **Jargon-free** — a general reader finishes Part V and stops, and the
+    formalism is never mentioned in these parts.
+  - **Final part — the method, explicitly optional.** The constitution, the
+    derived spine, the compile-time firewall, the evidence/conclusion split, and
+    what the logic refused. Labelled as a different kind of reading. The only
+    place the formalism appears, and what answers "you built a machine and hid it".
+- **book-2** — **how you would actually build it, organisationally and
+  technically.** The transition material (MVS, family→village→planet scaling,
+  legal collisions, costed transition) *and* the technology stack. Not planned;
+  gets its own tracker after book-1 ships. book-1 references it once, at the end.
 - **`book.md` and `manifesto.md`** — legacy, to be **deleted** once both new books
   are written. Nothing in this tracker improves them. The one obligation they carry
   is that no valuable material is lost on the way out; see the legacy-harvest
@@ -31,12 +33,18 @@ Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory
 or a design decision — skip them in unattended work and take the highest-value
 non-gated bullet instead.
 
-**THE INCLUSION GATE.** book-1 describes a destination, not a route. Before any
-passage goes in, two tests: (a) does it describe what the society IS or how it
-FUNCTIONS — not how anyone gets there? and (b) does the constitution derive it? A
-passage failing (a) belongs to the transition material; one failing (b) belongs in
-Part V's explicitly-not-derived section or nowhere. Anything about building up,
-scaling out, phasing in, or persuading anyone is out by construction.
+**THE INCLUSION GATE — applies to Parts I–V only.** Those parts describe a
+destination, not a route. Before any passage goes in, two tests: (a) does it
+describe what the society IS or how it FUNCTIONS — not how anyone gets there? and
+(b) does the constitution derive it? A passage failing (a) belongs to **book-2**;
+one failing (b) belongs in Part V's explicitly-not-derived section or nowhere.
+Anything about building up, scaling out, phasing in, or persuading anyone is out
+of Parts I–V by construction.
+
+The **final part is exempt and inverted**: it is *about* the constitution rather
+than gated on it, and it is the one place jargon is allowed. Keep the seam sharp —
+if a reader cannot tell they have crossed into a different kind of chapter, the
+seam has failed.
 
 Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
 `new-book-plans/`. Note `CLAUDE.md` still describes the repo as being *about*
@@ -628,12 +636,12 @@ trustworthy.
   on page one has no idea whether they want the machinery, and a forward reference
   reads as an apology for the book they are holding. At the end it reads as an
   invitation to the reader who now wants more. It does two jobs in a short
-  paragraph: point the technically curious at book-2, and carry the **one honest
-  sentence about the apparatus** — that the design was machine-checked for
-  consistency, that the machinery is public, and that book-2 covers it. That single
-  sentence is what closes the concealment objection, and it is the only place in
-  book-1 where the formalism is acknowledged at all. Keep it plain: no tool names,
-  no jargon, nothing a general reader must decode.
+  paragraph: point the reader who now wants to know *how you would actually build
+  this* at book-2 — organisationally and technically. **Its old second job is gone.**
+  It used to carry the one honest sentence about the apparatus, because the
+  formalism appeared nowhere else; the final part now does that far better, by
+  showing the machinery instead of alluding to it. Keep the pointer plain: no tool
+  names, no jargon, nothing a general reader must decode.
 
 - **Reframe the brief's India-first assumptions for a global audience.** The
   research brief recommends foregrounding Bharathi and an India-first publishing
@@ -747,15 +755,18 @@ either landed or consciously dropped.
 Parked, so they are not lost when the legacy files go. These become the seed of
 book-2's tracker, written from scratch after book-1 ships.
 
-**[AUTHOR-GATED] Open question: the transition material now has no home.** book-1
-is destination-only, and book-2 is defined as *the technical companion — how
-book-1 is implemented with technology*. The MVS roadmap, the scaling story
-(family → village → city → planet), "When the Pod Meets the State", and the costed
-transition are none of them technical; they are social and organisational. Three
-options: widen book-2 to "how it is built, technically and organisationally"; leave
-them to a later book-3; or drop them. Worth deciding before book-2 is planned, so
-the parked list below knows what it is seeding.
+**RESOLVED:** book-2 is now *how you would actually build it, organisationally and
+technically*, so the transition material has a home here alongside the stack. They
+belong together — measured across the six transition chapters, tech density is only
+5.6–14.1 mentions per 1,000 words and mostly incidental, so the transition material
+is the *why and when* and the stack is the *what with*. "When the Pod Meets the
+State" already reads as a legal argument with technology as scenery.
 
+- **The transition material** in `book.md` — Part 4 in full (One Person One
+  Family; When a Village Joins; Cities, Provinces and Nations; One Planet One
+  People), plus "When the Pod Meets the State" and "MVS in Action". ~8,600 words,
+  largely organisational, legal and fiscal. This is book-2's spine, not an
+  appendix to it.
 - **The technical backbone material** in `book.md` — local-first/offline-first
   micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design,
   YAD, the layman's guide. Roughly a third of the legacy book's word count. It has
