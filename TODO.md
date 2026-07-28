@@ -710,33 +710,20 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
-- **[UNBLOCKED — next writing move] Draft Chapter 1, "What Counts as Evidence".**
-  The twenty-one things the world may report about a person; why the vocabulary is
-  small and fixed; why enlarging it is the quietest way to capture a system. Its
-  fidelity table is in `3-spine.md` §4 and every row is verified. Note row 1.6 is
-  deliberately red — the file names vocabulary growth as its own worst attack and
-  then does not entrench the vocabulary, and the chapter should say so. Ship it with
-  its pinned-verdict file and use it to prove the method end to end before ch 2. Short:
-  the eight entitlements, and the argument that computing eligibility is where denial
-  lives. **Lead with the firewall, not with assert-only-ness.** The old framing —
-  "no rule can reach the floor, so nothing can retract it" — is true but weak, and
-  it is not what actually protects anyone. The real claim is stronger and
-  demonstrable on a page: *write a law that jails people for not holding the right
-  belief, and this constitution will not compile.* Show the rule, show the
-  stratification error, show the same rule loading fine against a right that is not
-  on the floor. A reader who has never seen a line of logic can follow that, and it
-  is the only place in the book where the machine visibly does something no prose
-  could. Then state where it stops — standing and points are still reachable, and
-  positive compulsion is untouched. Ship it with its pinned-verdict file **and** its
-  negative pins, and use it to prove the harness works end to end before Chapter 2.
+- **DRAFTED: Chapter 1, "What Counts as Evidence"** — `book-1/01-what-counts-as-evidence.md`,
+  1,391 words, with its fidelity file at `01-what-counts-as-evidence.pins.nibli`
+  (12 pins, green). Verified jargon-free. Two things to settle on it:
+  - **Length.** 1,391 words is short for a trade chapter. Deliberate — one argument,
+    cleanly — but confirm before the pattern sets, since chapter length compounds.
+  - **[AUTHOR-GATED] Voice.** Written in a plain, mostly impersonal register. The
+    legacy book was first-person and warm, and the constitution's own commentary
+    says "the manifesto voice is the author's to re-weave — I am not ghost-writing
+    it." The personal register is yours to add and should go in before the pattern
+    sets across chapters.
 
-## Legacy harvest — everything valuable out of book.md and manifesto.md before they go
-
-Both legacy files are slated for deletion once book-1 and book-2 are written.
-Nothing here improves them. The job is to make sure nothing valuable dies with
-them — and the deletion must not happen until every bullet in this section is
-either landed or consciously dropped.
-
+- **Add `LICENSE-CC-BY` to `book-1/`** with a licence line in the front matter, per
+  `LICENSING.md`. Prose is CC-BY-4.0. Fetch the canonical text rather than
+  reproducing it from memory.
 - **Harvest the References & Data Sources section — it is the single most valuable
   thing in the legacy books.** `book.md` closes with **55 sourced entries**, grouped
   by chapter, each with a primary source and URL, built by a 30-claim fact-check
