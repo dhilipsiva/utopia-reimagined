@@ -715,6 +715,19 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 7, "A Prisoner Is a Person"** —
+  `book-1/07-a-prisoner-is-a-person.md`, 977 words,
+  `07-a-prisoner-is-a-person.pins.nibli` (9 pins, green). Opens Part III and carries
+  the strongest verified result in the book: **removing the one line that makes a
+  prisoner a person also destroys the firewall for everyone.** Demonstrated on the
+  engine both ways — with the line, a heresy law is refused; without it, the same
+  law loads and the whole population becomes imprisonable for belief. So the clause
+  that keeps prisoners human and the clause that keeps everyone's rights
+  unconditional are the same clause, and it cannot be half-repealed.
+  Ends on the corollary: conviction is the *only* route into personhood that does
+  not require someone to write your name down — which points straight at the
+  personhood-roster bullet below.
+
 - **DRAFTED: Chapter 6, "Clawback"** — `book-1/06-clawback.md`, 994 words,
   `06-clawback.pins.nibli` (13 pins, green). Closes Part II. Written *around* the
   contamination defect rather than after fixing it: Cira is the chapter's centre and

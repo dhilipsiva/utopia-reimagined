@@ -1,0 +1,51 @@
+# ── Chapter 7 fidelity pins: "A Prisoner Is a Person" ────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#             book-1/07-a-prisoner-is-a-person.pins.nibli
+#
+# Zed is introduced BY this pin file rather than living in the constitution:
+# the chapter needs someone the person-roster has never mentioned, and every
+# prisoner in the cast is also asserted as a person. That is itself the
+# chapter's closing point.
+
+:expect-pins 9
+
+# "Zed injured Ivo. A court judged Zed."
+injure(Zed, Ivo).
+judge(Court, Zed).
+
+? injure(Zed, Ivo).
+# => TRUE
+
+# "Zed is a prisoner, which follows from those two facts."
+? prisoner(Zed).
+# => TRUE
+
+# "And Zed is a person, which follows from being a prisoner." — nobody wrote it
+? person(Zed).
+# => TRUE
+
+# "Convicted ... and owed everything." The floor derives for Zed like anyone.
+# (Owed, not delivered — the delivery gap is chapter 8's subject.)
+? eats(Zed).
+# => FALSE
+
+# "Zed is still a prisoner" — conviction stands
+? travel(Zed).
+# => FALSE
+
+# The firewall, which the chapter shows depends on the personhood line:
+:refuse reasoning /'prisoner' -> 'believe'/
+all $x: person($x) & ~believe($x) -> prisoner($x).
+
+:refuse reasoning /'prisoner' -> 'eats'/
+all $x: person($x) & ~eats($x) -> prisoner($x).
+
+# and the non-floor control, so the refusals above mean something
+:accept
+all $x: person($x) & ~home($x) -> prisoner($x).
+
+# "the eight things are owed to persons" — Hano, convicted, keeps expression
+? expresses(Hano).
+# => TRUE
