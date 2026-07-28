@@ -66,33 +66,56 @@
 # credential rule — the capture defence dies while the amendment engine
 # keeps running. Rule HEADS are safe (dwell and expresses are both).
 #
-# INVARIANT 2, and the one most likely to be violated by someone trying
-# to HELP: the floor's quantifier must stay in **x1**. The firewall above
-# exists only because `every person` sits in the first place; that is what
-# creates the P -> person edge. The natural-looking repair — restate the
-# floor as a duty on a duty-bearer, "the State has a duty to feed" — is
-# semantically attractive and STRUCTURALLY WORTHLESS. Verified, all three
-# forms let the heresy law load at 0 errors, identical to writing no floor
-# line at all:
+# INVARIANT 2 — THE SHAPE, and the one most likely to be broken by
+# someone trying to HELP. The floor line must be exactly:
+#     PRED(every person, event { P() }).
+# a universal restricted by `person` in x1, and P inside an `event { }`
+# abstraction in x2. Traced in the engine (nibli session, 2026-07-28):
+# `event { P() }` compiles to `nu(absvar) & __abs_H(absvar) & P(ev2) & …`,
+# and `flatten_consequent` (nibli-reason/src/rules.rs:388) descends BOTH
+# `And` branches unconditionally, so the body's P lands in the rule head
+# and becomes a dependency edge to the restrictor `person`. Meanwhile
+# `collect_ground_facts` (rules.rs:1934) DOES honour `__abs_` opacity and
+# skips the body. **The protection lives in that asymmetry.**
+#
+# Two consequences, both verified:
+#   - The outer predicate name is FREE. `obligated`, `support`, `serve`
+#     and `teaches` all give identical protection. The predicate carries
+#     MEANING ONLY — it buys nothing structural, so choose it purely for
+#     what it says.
+#   - Drop the event and the protection dies. `obligated(every person,
+#     Belief).` — a plain term in x2 — loads the heresy law at 0 errors.
+# Also refuted, all behaving exactly like writing no floor line at all —
+# the natural "name the duty-bearer" repair is STRUCTURALLY WORTHLESS:
 #     obligated(State, event { believe(every person) }).
 #     owe(State, Belief, every person).
 #     all $x: person($x) -> owe(State, Belief, $x).
-# If the reading of the predicate is wrong, change the PREDICATE, never
-# the position. What is needed is one whose x1 is the ENTITLED party
-# rather than the obligated one.
+# If a predicate reads wrong, change the PREDICATE, never the shape.
 #
-# KNOWN DEFECT, open: `obligated` is the wrong predicate on exactly that
-# test. It is `bilga` — places duty/do/standard, template "{x1} is
-# obligated to {x2}" — so x1 bears the duty and these eight lines read as
-# "every person has a DUTY to eat", the inverse of a rights floor. It
-# breaks no derivation (`obligated` appears in no rule head or body) and
-# the firewall is unaffected, so this is a defect of MEANING, which for
-# the foundation of the design is worse. `deserve` (`jerna`) puts the
-# entitlement on x1 and is a verified drop-in — all eight lines swapped
-# gives 146 asserted / 0 errors with the firewall intact — but `jerna`'s
-# x3 is "work", carrying a desert-through-effort sense that an
-# unconditional floor must exclude. Blocked on a nibli-side answer; see
-# the first handoff in TODO.md. Do not "fix" this by inverting.
+# FRAGILITY — the largest single risk to this design. The asymmetry above
+# is an emergent property of two functions disagreeing about abstraction
+# opacity, and NOTHING PINS IT. Anyone "fixing" `flatten_consequent` for
+# opacity symmetry would silently make this floor stratifiable — rules
+# could then punish people for lacking a floor right — and no test in
+# either repo would go red. A regression test pinning the
+# `prisoner -> eats` rejection is being added nibli-side; until it is
+# green, treat every claim in this article as provisional.
+#
+# KNOWN DEFECT, open: `obligated` is the wrong predicate. It is `bilga`
+# (places duty/do/standard) AND it is registered as the x1<->x2
+# *conversion* of `obliged`, so `obligated(A, B)` compiles to
+# `obliged(B, A)`. The shipped corpora write it positionally, so these
+# eight lines currently route each person into a place labelled `duty`
+# and each event into one labelled `do` — not merely inverted, garbled.
+# `deserve` was tested and REJECTED: `jerna` is an earning predicate at
+# its core — x1 earns, **x2 is the wages** — so the floor would put an
+# event into the wages place of an earning relation, and leaving x3
+# unfilled neutralises nothing. `permitted` is structurally excluded: the
+# floor would close permits -> person -> prisoner ->(neg) permits against
+# Article 6's `~permits(Appeals, ·)`. Resolution: a new corpus entry
+# `entitled`, arity 2, landing nibli-side. Do not "fix" this by
+# inverting, and do not substitute a predicate without re-running the
+# firewall suite.
 #
 # ADMISSION CRITERION (replaces the vocabulary formulation in 3-spine.md,
 # which was post-hoc — it admits only dwell and expresses, and would

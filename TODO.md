@@ -400,60 +400,56 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 Ordered. The first blocks a blocking decision, so it goes first.
 
-- **HANDOFF (do this one first): confirm `deserve` is the right floor predicate.**
-  This blocks the duty-bearer decision, the top blocking item. The investigation is
-  mostly done — what remains is one semantic question only the engine's author can
-  settle.
+- **HANDOFF ANSWERED — land `entitled` (arity 2) and the regression test.** The
+  nibli session traced the mechanism and answered all four questions. Outcome:
 
-  **What was established, all verified on the engine.** The firewall — the book's
-  strongest property — exists *only* when `every person` occupies **x1**. Every
-  duty-bearer formulation loses it, behaving identically to having no floor line at
-  all: `obligated(State, event { believe(every person) })`, `owe(State, Belief,
-  every person)` and the rule form `person($x) -> owe(State, Belief, $x)` all let the
-  heresy law load at 0 errors. So the tempting inversion — *"the State has a duty to
-  feed"* — is semantically right and **structurally worthless**. The fix is not to
-  move the person out of x1 but to change the predicate so that **x1 is the entitled
-  party rather than the obligated one**.
-  - `obligated` (`bilga`, places `duty/do/standard`) puts the **duty** on x1 — so
-    the current floor reads *"every person has a duty to eat"*. Wrong.
-  - `deserve` (`jerna`, places `subject/wage/work`) puts the **entitlement** on x1 —
-    *"every person deserves to eat"*. Right, and **verified as a drop-in**: swapping
-    all eight floor lines gives `[Load] Done: 146 asserted, 0 errors`, with
-    `~believe -> prisoner` REFUSED, `~meets -> prisoner` REFUSED, and the non-floor
-    control `~home -> prisoner` still loading. Nothing else in the file changes.
-  - `grant` (x1 is the grantee, which would also be right) does **not** compile with
-    an event in x2.
+  **What the protection actually rests on, and it is not what this tracker said.**
+  The edge comes from the **`event { }` abstraction**, not from the predicate and
+  not from x1 as such. `event { P() }` compiles to
+  `nu(absvar) & __abs_H(absvar) & P(ev2) & …`; `flatten_consequent`
+  (`nibli-reason/src/rules.rs:388`) descends both `And` branches unconditionally so
+  P lands in the rule head against the `person` restrictor, while
+  `collect_ground_facts` (`rules.rs:1934`) honours `__abs_` opacity and skips it.
+  The protection lives in that asymmetry. Confirmed independently here: `obligated`,
+  `support`, `serve` and `teaches` give **identical** protection, and
+  `obligated(every person, Belief)` — same predicate, no event — loses it entirely.
+  **So the predicate name buys nothing structural. Choose it purely for meaning.**
 
-  **The one open question**, to paste into a nibli session:
-  > I need the right corpus predicate for a constitutional rights floor. The form
-  > must be `PRED(every person, event { eats() }).` — the universal has to sit in x1,
-  > because that is what creates the `eats -> person` dependency edge my whole design
-  > rests on (it makes `person($x) & ~eats($x) -> prisoner($x)` an unstratifiable
-  > negative cycle, so no rule can punish someone for lacking a floor right).
-  >
-  > `obligated` is wrong: `bilga` puts the duty on x1, so my floor currently reads
-  > "every person has a duty to eat" rather than "every person is owed food".
-  >
-  > `deserve` (`jerna`) reads correctly — x1 is the one who deserves — and I have
-  > verified it is a clean drop-in that preserves the stratification behaviour. My
-  > worry is `jerna`'s **x3 place, "work"**: "x1 earns/deserves x2 *for work x3*".
-  > My floor is deliberately **unconditional** — nobody earns it, and desert-through-
-  > effort is precisely the reading I need to exclude. I leave x3 unfilled, but a
-  > careful reader of the corpus would see it.
-  >
-  > So: (1) does leaving x3 unfilled actually neutralise the earning sense, or does
-  > `jerna` carry it regardless? (2) Is there a better corpus predicate whose x1 is
-  > the *entitled* party, which accepts an event in x2, and which carries no
-  > desert-through-work connotation — something closer to "is entitled to" or "is
-  > owed"? (3) If not, is adding one reasonable, given `verify-alias-map`'s shape,
-  > provenance, swap/compound-integrity and coverage-floor invariants? (4) Separately
-  > and independently of my choice: `obligated` and `obliged` are registered as a
-  > swap pair with **different place lists** (`duty/do/standard` vs
-  > `bound/duty/standard`) but the **same** template string
-  > `"{x1} is obligated to {x2}"`. One of those looks like a corpus bug.
+  **`deserve` is rejected.** `jerna` is an earning predicate at its core — x1 earns
+  and **x2 is the wages** — so the floor would put an event into the wages place of
+  an earning relation. Leaving x3 unfilled neutralises nothing, and the entry is
+  `Generic` tier with an open TODO, meaning nobody hand-verified its places. Not a
+  foundation for a constitutional floor.
 
-  The x1 invariant and this open defect are now recorded in Article 1's own
-  commentary, so an editor meets them before touching the floor.
+  **`permitted` is structurally excluded**, which is a nice result in itself: the
+  floor would close `permits -> person -> prisoner ->(neg) permits` against Article
+  6's `~permits(Appeals, ·)`, so the whole KB fails to load. The same mechanism that
+  protects the floor, turned against it. `grant` is reserved by `nibli-auth`; `owe`
+  puts the owed party in x3.
+
+  **Decision: add `entitled`, arity 2** — `entitled(every person, event { eats() })`.
+  Arity 2 rather than 3 deliberately: a `standard` place is exactly where a later
+  hand would write a condition, and an unconditional floor should have **nowhere to
+  put one**. That is the property this exercise was chasing from the start.
+
+  **THE REAL RISK, and it now outranks the predicate question.** The opacity
+  asymmetry is emergent and **nothing pins it**. Anyone "fixing" `flatten_consequent`
+  for symmetry would silently make this floor stratifiable — rules could then punish
+  people for lacking a floor right — and **no test in either repo would go red**.
+  That is a single upstream refactor away from destroying book-1's central claim.
+  The nibli-side regression test pinning the `prisoner -> eats` rejection is
+  therefore the highest-value item in this handoff, above the corpus entry. Until it
+  is green, every claim in Article 1 is provisional and the book must not print the
+  firewall argument.
+
+  **Separate, and not blocking book-1:** the `obligated`/`obliged` de-swap. They are
+  not converses — both derive from `bilga` with identical gloss and template, and the
+  swap was bolted on afterwards, so two interchangeable-looking spellings compile to
+  argument-inverted facts. The repair is to drop the swap, give `obligated`
+  `obliged`'s place order, and delete the two `nibli-render` overrides. It touches
+  the GDPR corpus, and the session flagged that `gdpr.nibli:52` Art 6(1)(c) may be
+  **vacuous** as a consequence — query it before deciding whether that line is meant
+  to be live. That is nibli's call, not book-1's.
 
 - **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
   new exploits, and it defeats the constitution's central security claim. Prompt to
