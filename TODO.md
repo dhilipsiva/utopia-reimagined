@@ -44,55 +44,62 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **[AUTHOR-GATED] Confirm the floor at TEN, then make all three artifacts quote
-  it.** The existing six (`secure, eats, dwell, healthy, learn, expresses`) are
-  sound and none should come off. But they are all *provisions* — "X is owed to
-  you" — and the constitution contains **not one forbearance**, "X may not be done
-  to you". That is why Article 6 can build a whole placement apparatus
-  (`prisoner`, `fit`, `building(HighSec)`, `building(LowSec)`) and impose no
-  condition whatever on what may be done to a person inside it. Diagnostic: every
-  one of the six maps to the **ICESCR**, the covenant expressly conditioned on
-  "progressive realization… to the maximum of its available resources", and **not
-  one maps to anything on the ICCPR's Article 4(2) non-derogable list**. The
-  conditional covenant's content was given the unconditional covenant's form —
-  which is also why the delivery gap is total rather than partial, since
-  forbearances are the only guarantees that survive an emergency without a budget.
-
-  **The admission criterion**, derived from the file rather than imported: *the
-  floor admits what this constitution's own machinery can take away, and that no
-  legitimate exercise of that machinery is entitled to take.* It retro-fits the
-  existing six, admits exactly the four below, and excludes water, clothing,
-  energy, connectivity, privacy and clean air on principle rather than by taste.
+- **Enact the floor at SEVEN, and the three demotions with it.** Decided by
+  adversarial red-team; every line below verified on the real engine (0 errors,
+  regression pins unchanged, max stratum 3, stratum 3 still exactly
+  `{err, travel}`). The six stand; **`believe()` joins them**; the other three
+  proposed rights are **not floor material** and land in rules instead.
 
   ```
-  obligated(every person, event { votes() }).      # + permanent(Art_Vote).
-  obligated(every person, event { unharmed() }).
-  obligated(every person, event { meets() }).
-  obligated(every person, event { believes() }).
+  # Article 1 — the floor (add one line)
+  obligated(every person, event { believe() }).
+
+  # Article 2 — the franchise survives conviction
+  all $x: person($x) -> decide($x).
+
+  # Article 2 — isolation becomes queryable
+  all $p: prisoner($p) & ~meets($p) -> err($p, Isolation).
   ```
 
-  **Measured cost: none.** All four appended and the stratifier re-run — graph
-  unchanged, 26 rules, max stratum 3, and stratum 3 still exactly `{err, travel}`,
-  so the single-deprivation theorem survives. None enters the graph, so all four
-  join secure/eats/healthy/learn as predicates appearing exactly once: the "zero
-  rules means a real right" thesis goes from four-of-six to eight-of-ten.
-  - *The vote* — book.md:2285 already calls one-person-one-vote an unamendable
-    floor in print and corrects three earlier drafts to establish it, while the
-    constitution contains it in no form and `permanent()` entrenches three other
-    things. `Electorate` is meanwhile an undefined constant seating every Review
-    credential and enacting every amendment. If only one is taken, take this.
-  - *Bodily non-compulsion* — the only candidate that arrives with a breach marker
-    derivable today rather than a promise waiting on the provisioning layer.
-    `secure()` cannot carry it: that is UDHR-3 shaped, a duty to protect you from
-    *others*, not a limit on the system itself.
-  - *Company* — repairs the book's best theorem instead of costing it. As the file
-    stands a regime could hold every convicted person in permanent solitary and
-    "punishment deprives exactly one thing: movement" would remain *literally
-    true*, because the vocabulary has no predicate for a second human being.
-  - *Belief* — the constitution holds the wrong half of the classic split. ICCPR
-    18(2) is a flat non-derogable prohibition on coercing belief; ICCPR 19
-    (expression) is not on the 4(2) list and is expressly restrictable — and
-    Article 6 converts injurious expression directly into imprisonment.
+  **The structural discovery that decided it: the floor cannot hold a
+  forbearance.** `obligated(every person, event { ~cruel() }).` is a hard reject —
+  *"a consequent atom is not a flat predicate. Rejecting the assertion to preserve
+  soundness."* Same for `~pain()`, `~injure()`, `~obey()`. So the "all six are
+  provisions, none is a forbearance" diagnosis was right and its prescription was
+  wrong: Article 1 is structurally incapable of expressing "X may not be done to
+  you". Forbearances must arrive as rules deriving `err`. No corpus extension
+  changes this.
+
+  Per candidate:
+  - *belief* — **ON THE FLOOR** as `believe()`. The redundancy objection ("the
+    machinery cannot reach belief, so the criterion excludes it") was refuted by
+    construction: a heresy law is writable **today** in committed corpus words with
+    no extension — `all $x: person($x) & ~believe($x) -> prisoner($x).` loads at 0
+    errors and makes `prisoner(Heretic)` TRUE, `travel(Heretic)` FALSE. The
+    machinery reaches belief; the floor must too.
+  - *the franchise* — **IN RULES**, not on the floor. There is no `vote` in the
+    corpus; `choose` is taken by `choose(Electorate, X)` and reusing it would make
+    voting and seating an official the same predicate. `decide` compiles, and
+    Article 2 is the file's own precedent for a right the machinery touches.
+    Verified: `decide(Hano)` TRUE — a **convicted prisoner keeps the vote**, which
+    strengthens the single-deprivation theorem instead of merely asserting it.
+  - *company* — **IN RULES**. The floor line was invisible to the very tool that
+    produces the theorem it claimed to repair: `meets` inside an `event { }` term
+    is not in the predicate inventory at all, so the graph was byte-identical with
+    and without it. The rule does the work. Verified: `err(Hano, Isolation)` TRUE.
+  - *bodily non-compulsion* — **IN RULES + PROSE**. Blocked from the floor by the
+    forbearance rejection above, and there is no corpus name for it. Define
+    `secure` in prose to mean safe from every threat *including this constitution's
+    own hands* — it is an arity-0 predicate with no rules and no arguments, so it
+    has no shape in the file to contradict — and carry the teeth in a consent rule.
+
+  **On the admission criterion: it was post-hoc, and the honest move is to say so.**
+  "What the machinery can take away" admits only `dwell` (4 rule lines) and
+  `expresses` (1); `secure`, `eats`, `healthy` and `learn` each appear exactly once
+  in zero rules, so a test that retro-fits the six would have to exclude food. It
+  does not derive the floor. State plainly in the book that the floor is a **chosen
+  commitment** that the formalism makes precise and unretractable — never one it
+  justifies. That is the book's own thesis about formalisation, applied to itself.
 
   Then reconcile downward. `manifesto.md` names five (`food, shelter, healthcare,
   education, mobility`) — security and expression absent, mobility promoted though
@@ -100,11 +107,11 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   carries at least five mutually inconsistent floors, and the sentence doing the
   firewall work names **seven** items, not the eleven asserted elsewhere.
   **`book.md` also asserts privacy as a fundamental right, and it must not be one**
-  — four independent analyses rejected it, and encoded as a defeasible right it
-  lands at stratum 3 and destroys the single-deprivation theorem. Privacy belongs
-  in Part V as argument, not on the floor. Also free while reconciling: define
-  `dwell()` in prose as *protective* shelter — weatherproof, ventilated, powered,
-  plumbed — which absorbs the water-and-sanitation case at zero KR cost.
+  — four independent analyses rejected it; encoded as a defeasible right it lands
+  at stratum 3 and destroys the single-deprivation theorem. Privacy belongs in
+  Part V as argument. Also free while reconciling: define `dwell()` in prose as
+  *protective* shelter — weatherproof, ventilated, powered, plumbed — which absorbs
+  the water-and-sanitation case at zero KR cost.
 
 - **[AUTHOR-GATED] Re-derive Part V of the new book — the harvest premise does not
   survive contact with the manuscript.** `3-spine.md` proposes lifting four
