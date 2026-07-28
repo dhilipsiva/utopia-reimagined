@@ -289,7 +289,18 @@ derivations are never stored and only asserted facts can make one late).
 
 ## Constitution (KB) work
 
-- **Fix `err/2`: it fires on correctly-placed prisoners.** `err(Lalo, Placement)`
+- **Fix `err/2` — WORSE than recorded: it has never once fired correctly.**
+  Drafting chapter 11 established the full picture. The marker fires on Ruk *and*
+  Lalo, both correctly placed in high security, and on nobody who is misplaced. It
+  tracks "has a home and is not homestay-eligible", which is the ordinary condition
+  of every severe offender with an address — so its false-positive rate on the
+  current cast is 100% and its true-positive count is zero. An alarm with that
+  record is worse than none: it trains a reader to ignore the marker, so the genuine
+  misplacement arrives among the noise. Fix: look at where someone *was placed*,
+  not whether they have a home. **Chapter 11 is written against the defect and its
+  pins encode it** — repairing the rule flips `err(Ruk)` and `err(Lalo)` FALSE and
+  requires rewriting that section, which is the intended outcome.
+  Original note follows: `err(Lalo, Placement)`
   is **TRUE** — but Lalo is severe+family and Article 6 routes him correctly to
   `building(HighSec, Lalo)` (also TRUE). The rule
   `home($x) & ~fit($x, Homestay) -> err($x, Placement)` reads *"has a home"* as
@@ -714,6 +725,17 @@ trustworthy.
   non-derived and labelled the way Part V is labelled, so the book does not open
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
+
+- **DRAFTED: Chapter 11, "Where People Are Put"** —
+  `book-1/11-where-people-are-put.md`, 940 words, 16 pins green. Placement is
+  derived from three facts (severe / domestic / has a home) with no assessor
+  anywhere. Carries the farmhouse: severity used to be consulted only for domestic
+  cases, so a severe non-domestic offender with a home was routed to the soft
+  option — and the design's own commentary claimed otherwise, which is the lesson
+  (reading a rule and reading a description of a rule feel like the same activity).
+  Names the broken alarm in full (see the `err/2` bullet above) and ends on what
+  survives it: there is no assessment to lean on, so the usual point of leverage in
+  prison management does not exist here.
 
 - **DRAFTED: Chapter 10, "Contribution"** — `book-1/10-contribution.md`, 1,019
   words, 12 pins green. Three doors to recognition (teach, work, examine), all

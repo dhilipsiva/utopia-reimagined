@@ -1,0 +1,58 @@
+# ── Chapter 11 fidelity pins: "Where People Are Put" ─────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#             book-1/11-where-people-are-put.pins.nibli
+#
+# The "alarm that does not work" section pins a DEFECT. err(_, Placement) fires
+# on Ruk and Lalo, both correctly placed, and on nobody misplaced. When the rule
+# is repaired to look at where someone was placed rather than whether they have a
+# home, err(Ruk) and err(Lalo) both flip FALSE and that section is rewritten.
+
+:expect-pins 16
+
+# Hano — not severe, not domestic, has a home: eligible, and confined at home
+? severe(Hano).
+# => FALSE
+? fit(Hano, Homestay).
+# => TRUE
+? dwell(Hano).
+# => TRUE
+
+# Ruk — severe, non-domestic: severity blocks eligibility, high security
+? severe(Ruk).
+# => TRUE
+? family(Ruk).
+# => FALSE
+? fit(Ruk, Homestay).
+# => FALSE
+? building(HighSec, Ruk).
+# => TRUE
+
+# Nando — domestic, not severe: low security
+? family(Nando).
+# => TRUE
+? severe(Nando).
+# => FALSE
+? building(LowSec, Nando).
+# => TRUE
+
+# Lalo — domestic AND severe: high security
+? severe(Lalo).
+# => TRUE
+? building(HighSec, Lalo).
+# => TRUE
+
+# THE BROKEN ALARM. Both flagged; both correctly placed. Hano, correctly
+# home-confined, is not flagged — so the marker tracks "has a home and is not
+# homestay-eligible", which is the ordinary condition of a severe offender.
+? err(Ruk, Placement).
+# => TRUE
+? err(Lalo, Placement).
+# => TRUE
+? err(Hano, Placement).
+# => FALSE
+
+# Nando has no home fact, so the marker cannot reach him either way
+? home(Nando).
+# => FALSE
