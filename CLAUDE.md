@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-A book-writing project, not a software project: *Utopia Reimagined: From Dream To Design*. There is no build system, test suite, or linter — all work is Markdown editing. (The `.gitignore` is a leftover Rust template; there is no Rust code.) Licensed CC0.
+A book-writing project, not a software project: *Utopia Reimagined: From Dream To Design*. There is no build system, test suite, or linter — all work is Markdown editing. (The `.gitignore` is a leftover Rust template; there is no Rust code.)
+
+The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
 ## Files
 

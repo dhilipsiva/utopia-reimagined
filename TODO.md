@@ -44,16 +44,16 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **[AUTHOR-GATED] Decide the licence before a single chapter is committed.** This
-  repo is **CC0 1.0** — an *irrevocable* dedication to the public domain (`LICENSE`
-  lines 65, 86). Anything committed here is dedicated as committed; a later
-  "actually I want a trade deal" cannot claw it back. `book.md` and `manifesto.md`
-  are already out and that is fine. The new book is the decision. Options: draft in
-  a private repo and publish only what you choose; keep this repo CC0 but put the
-  new book under its own `LICENSE` in its own directory; or accept CC0 for it too
-  and treat serialisation, not exclusivity, as the channel. This is not a legal
-  opinion — but the choice must precede drafting, because the commit *is* the
-  publication.
+- **Apply the licence structure as each artifact lands.** Decided and recorded in
+  `LICENSING.md`: prose **CC-BY-4.0**, code **MIT OR Apache-2.0**, data registry
+  **CC0**, constitution under nibli's terms. Already-committed files stay CC0
+  irrevocably; the root `LICENSE` stays put and keeps governing them. Remaining
+  work is mechanical and belongs with the artifact it covers — drop `LICENSE-CC-BY`
+  in the book's directory with a licence line in the front matter; add
+  `LICENSE-MIT` + `LICENSE-APACHE` and `SPDX-License-Identifier` headers when the
+  harness and fetchers are written; add `LICENSE-CC0` in the registry directory.
+  Since exclusivity is now permanently off the table, the reach strategy is
+  serialization and open circulation — plan the publishing route on that basis.
 
 - **[AUTHOR-GATED] Pick ONE canonical rights floor and make all three artifacts
   quote it.** The floor is the one thing in the design that must not drift, and it
