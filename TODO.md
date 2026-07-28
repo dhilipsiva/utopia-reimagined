@@ -48,10 +48,17 @@ resume when it lands.
   a non-floor control. You cannot write a law punishing a person for lacking a
   floor right. Where it stops is equally established: `~P -> false` (standing),
   `~P -> lose(Points, ·)`, and positive compulsion `prisoner -> P` all still load.
-- The floor is **eight**, spelled `entitled(...)` (x1 the rights-holder), enacted in `new-book-plans/utopia-v2.nibli`, with
-  the franchise and the isolation marker as rules. Graph after enactment: 37
-  predicates, 16 derived, 28 rules, max stratum 3, **stratum 3 still exactly
-  `{err, travel}`** — the single-deprivation theorem survives.
+- The floor is **eight**, spelled `entitled(every person, event { P() })` with the
+  rights-holder in x1, enacted in `new-book-plans/utopia-v2.nibli`, with the
+  franchise and the isolation marker as rules. Graph: 37 predicates, 16 derived,
+  28 rules, max stratum 3, **stratum 3 still exactly `{err, travel}`** — the
+  single-deprivation theorem survives. All 51 pins pass; the firewall holds
+  (`~believe`/`~meets`/`~eats`/`~secure -> prisoner` refused, `~home` control
+  loads); five upstream regression tests pin the mechanism in nibli's CI.
+- The widening hazard is **rule-head position**, not place index and not the
+  predicate: `every`/`all` forms widen the protected set, ground facts and `some`
+  are inert. It cannot be banned, because the widening *is* the firewall. The
+  guarantee is the complement pins, not a compile-time rule.
 - All 17 v0.1 regression pins, all three exploit closures (E1 shield, E2 epoch
   carry, E3 farmhouse) and Article 9's self-entrenchment are unchanged through
   v0.2 and the enactment, each checked against a v0.1 baseline run.
@@ -184,53 +191,28 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   exclusivity is now permanently off the table, the reach strategy is serialization
   and open circulation — plan the publishing route on that basis.
 
-## The verification harness — build this before writing prose, so every later claim is checkable
+## The verification harness
 
-- **Adopt nibli's own pinned-verdict format for the constitution's pins.** nibli
-  already solved this: `determinism-corpus.nibli` annotates every query with
-  `# => TRUE` and three separate CI legs assert against those annotations. The
-  book's fidelity table should be the same artifact in the same format, not a
-  Markdown table with green ticks. Convert `utopia-v2-run.nibli` to it. The
-  verdicts to pin are known: `person(Hano)` TRUE, `expresses(Hano)` TRUE,
-  `travel(Hano)` FALSE, `travel(Adam)` FALSE, `travel(Jala)` TRUE,
-  `prisoner(Jala)` FALSE, `eats(Adam)` FALSE, `healthy(Bela)` FALSE, plus the
-  enacted three — `decide(Hano, Ballot)` TRUE, `decide(Jala, Ballot)` TRUE,
-  `err(Hano, Isolation)` TRUE.
+**Upstream half is DONE.** `just verify-pins` runs in nibli's `ci`;
+`pins/rights-floor.nibli` guards the engine mechanism with a deliberately inline
+fixture; the runner self-tests before it is trusted. Nothing further is owed there.
+**Book half:** `new-book-plans/rights-floor.pins.nibli` holds this constitution's
+51 pins and `:load`s the live file — which is why it cannot move upstream, where
+fixtures are inline by design. The two are complements.
 
-- **The harness needs a second mode: negative pins that must FAIL to load.** The
-  Article 1 firewall cannot be tested by any query, because what must fail is the
-  *assertion*. Its test is "append this rule and the file must refuse to compile" —
-  a mode no existing runner has. Three cases are specified in `utopia-v2.nibli`'s
-  v0.3 pin block: `~believe -> prisoner` MUST be refused, `~meets -> prisoner` MUST
-  be refused, and the non-floor control `~home -> prisoner` MUST load. **Keep the
-  control** — without it a green firewall test proves nothing about the floor, only
-  about the rule shape. This is the only test the book's strongest claim has.
-
-- **Fix the run script: it loads the wrong constitution and records no
-  expectations.** `utopia-v2-run.nibli` line 1 is `:load utopia.nibli` — it pins
-  **v0.1**, not the `utopia-v2.nibli` beside it — which now carries the enacted
-  eight-right floor, so the gap is a whole constitutional revision wide. And it
-  lists queries with no
-  expected verdicts, so it cannot fail; it is a transcript, not a test. Six of the
-  seven fidelity rows have no query in it at all.
-
-- **Delete `run-kb.rs` — decided, and the replacement lives in nibli, not here.**
-  It cannot run the committed script anyway: It dispatches only `:load`, `:contradictions`, `?` and comments; the
-  pin script is almost entirely `:proof-verbose` lines, which fall through to
-  `assert_text` and produce **42 syntax errors and zero verdicts**. It is also
-  wired into no `Cargo.toml`. And the book repo should not grow one: it has no
-  Cargo.toml today, and a path dependency on a sibling nibli checkout would make a
-  CC-BY prose repo unbuildable for anyone who clones only it. The pin runner belongs
-  upstream — see the x3/CI handoff — because the firewall guards an *emergent*
-  nibli-side property, so a pin sitting here would never fire on the refactor that
-  breaks it. What stays in this repo is the pin *script* and a one-line command.
-
-- **Make fuel exhaustion a hard failure, never a silent FALSE.** At default fuel,
-  `travel(Hano)` and `travel(Jala)` return `RESOURCE_EXCEEDED (fuel)` — not TRUE,
-  not FALSE. Any harness that treats "not TRUE" as FALSE would score the fidelity
-  table green while proving nothing. nibli's own determinism gate explicitly
-  **excludes** fuel-trapping queries as runtime-dependent. Pin `NIBLI_FUEL` in the
-  harness, and fail loudly on `RESOURCE_EXCEEDED`.
+- **Give the book-side suite a trustworthy runner.** It currently runs on a scratch
+  prototype whose defects are known and enumerated: no `:accept`/`:refuse`, so the
+  four complement controls and four firewall refusals are a shell loop rather than
+  pins; a stratification refusal is indistinguishable from a syntax typo, so a
+  misspelled predicate passes as a firewall test; unpinned queries pass silently; a
+  query that fails to compile becomes a comparable verdict string;
+  `RESOURCE_EXCEEDED` is pinnable, which under wasm would let a fuel trap go green
+  (moot natively, where there is no fuel — but pin the surface, not the assumption).
+  Fix: teach `nibli-pin` a `:load`, or rebuild the book-side runner with its
+  directive set — `:refuse <class> /needle/`, `:accept`, mandatory `# =>`,
+  `:expect-pins <n>` as an anti-hollowing floor, and exit 1 = property regressed
+  vs exit 2 = harness broken. **The suite is real; the runner is not yet
+  trustworthy.** Until it is, treat green as unconfirmed.
 
 - **Fix or replace `4-strata.py` — it is not cosmetic, it already caused a wrong
   answer.** Its parser takes only the *first* predicate on a fact line, so it never
@@ -675,7 +657,7 @@ pins plus the firewall suite pass on it.
   outcome chosen by whoever was writing that day. That symmetry is worth more than
   either half alone.
 
-- **Draft Chapter 1 ("The Floor Nobody Computes") as the proof of method.** Short:
+- **[UNBLOCKED — this is the next writing move] Draft Chapter 1 ("The Floor Nobody Computes") as the proof of method.** The floor is settled, enacted and pinned, so nothing structural gates this any more. Short:
   the eight entitlements, and the argument that computing eligibility is where denial
   lives. **Lead with the firewall, not with assert-only-ness.** The old framing —
   "no rule can reach the floor, so nothing can retract it" — is true but weak, and
