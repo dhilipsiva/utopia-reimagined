@@ -4,7 +4,10 @@
 
 The repo is heading for two new books plus a clean deletion:
 
-- **book-1** — the active work. Derived from the nibli constitution, plain English,
+- **book-1** — the active work. **Scope: what an ideal society must BE and how it
+  FUNCTIONS — never how to get there.** No roadmap, no transition, no MVS, no
+  scaling narrative. Content is **gated on the constitution**: if the KR does not
+  derive it, it does not go in the book. Derived from the nibli constitution, plain English,
   for a **primarily international/global audience**, no technical jargon: anyone
   should be able to pick it up and follow it. The formalism stays invisible; what
   readers verify is the **data**.
@@ -27,6 +30,13 @@ a time: do it, verify it, commit it. History belongs in git, not here.
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — skip them in unattended work and take the highest-value
 non-gated bullet instead.
+
+**THE INCLUSION GATE.** book-1 describes a destination, not a route. Before any
+passage goes in, two tests: (a) does it describe what the society IS or how it
+FUNCTIONS — not how anyone gets there? and (b) does the constitution derive it? A
+passage failing (a) belongs to the transition material; one failing (b) belongs in
+Part V's explicitly-not-derived section or nowhere. Anything about building up,
+scaling out, phasing in, or persuading anyone is out by construction.
 
 Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
 `new-book-plans/`. Note `CLAUDE.md` still describes the repo as being *about*
@@ -148,9 +158,14 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   dependencies, including its showpiece self-correction passage, which points at
   three chapters that will not exist.
 
-  **Recommended: the five-joints skeleton, at ~14,500 words.** A century of
-  attempts broke at five recurring joints — valuation, rotation, coercion, capture,
-  the state — so score this design against those five. It is the only principle
+  **Recommended: the five-joints skeleton, at ~14,500 words — but re-framed for
+  the destination-only scope.** The joints themselves survive the narrowing, because
+  valuation, rotation, coercion, capture and the state are places a *functioning*
+  design breaks, not stages of a rollout. What must change is the framing: not
+  "here is what happened to people who tried to build this", which is a transition
+  story, but "here are five places a society of this shape fails, and here is
+  whether this one holds". The historical cases become evidence about failure modes
+  rather than a narrative of attempts. Score this design against those five. It is the only principle
   legible in one sentence, the only proportionate length, and the only one that
   solves the confession problem structurally rather than rhetorically. It won the
   reader judge and the editor judge, and the editor's reason matters: it was the
@@ -181,10 +196,10 @@ Everything else in `new-book-plans/` is unverified or corrected below.
     majority-derived. If Part V approaches half the book, the derivation reads as
     decoration; ~14,500 against ~36,000 derived keeps it near 29%.
 
-- **[AUTHOR-GATED] Settle the title, and whether "Minimum Viable Society" travels.**
-  MVS is the old book's best coinage. Decide whether the new book keeps it — and
-  whether it reads for a global audience — before any sample chapters go out. The
-  same question applies to retitling `book.md` around it.
+- **[AUTHOR-GATED] Settle the title.** Note **MVS is no longer a candidate** — it
+  names a transition strategy (build small, scale up), and book-1 does not describe
+  getting anywhere. The title should name the destination, not the route. Defer
+  until a chapter exists to name it against.
 
 ## Settled — carry out as the artifacts land, blocks nothing
 
@@ -684,8 +699,12 @@ either landed or consciously dropped.
   work-point villages, the kibbutzim, Nyerere's Ujamaa, Chile's Cybersyn, Auroville,
   Mondragon, WIR, Kerala's People's Plan — 2,264 words in "Learning from Those Who
   Tried", researched, sourced, and mechanism-independent. Verified as the only
-  genuine chapter-level harvest in the manuscript. They become the spine of Part V's
-  five-joints chapter.
+  genuine chapter-level harvest in the manuscript. **Re-point them when porting:**
+  book-1 does not tell the story of people who tried to build a better society —
+  that is transition. Each case enters as evidence about a *failure mode of a
+  functioning design* (how Owen's labour notes mispriced, how the kibbutz handled
+  differentiation, where Mondragon's governance held), never as an attempt
+  narrative.
 
 - **Harvest the Bharati poem and settle its attribution.** The full poem with Tamil
   original and translations lives in `book.md`'s closing appendix, attributed there
@@ -727,6 +746,15 @@ either landed or consciously dropped.
 
 Parked, so they are not lost when the legacy files go. These become the seed of
 book-2's tracker, written from scratch after book-1 ships.
+
+**[AUTHOR-GATED] Open question: the transition material now has no home.** book-1
+is destination-only, and book-2 is defined as *the technical companion — how
+book-1 is implemented with technology*. The MVS roadmap, the scaling story
+(family → village → city → planet), "When the Pod Meets the State", and the costed
+transition are none of them technical; they are social and organisational. Three
+options: widen book-2 to "how it is built, technically and organisationally"; leave
+them to a later book-3; or drop them. Worth deciding before book-2 is planned, so
+the parked list below knows what it is seeding.
 
 - **The technical backbone material** in `book.md` — local-first/offline-first
   micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design,

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A book-writing project heading for **two new books**, with the original two manuscripts slated for deletion:
 
-- **book-1** — the active work. Its spine is *derived*: chapter order is computed from the dependency stratification of a formal constitution written in nibli KR (`new-book-plans/utopia-v2.nibli`), and load-bearing sentences carry a query with a pinned verdict. Written for a **primarily international/global audience**, jargon-free — anyone should be able to pick it up. The formalism is never mentioned in the text; what readers verify is the **data**. It references book-2 exactly once, at the end.
+- **book-1** — the active work. **Scope is strictly *what an ideal society must be and how it functions* — never how to get there.** No roadmap, no transition, no MVS, no scaling story; those describe getting somewhere, and book-1 describes the destination. Its spine is *derived*: chapter order is computed from the dependency stratification of a formal constitution written in nibli KR (`new-book-plans/utopia-v2.nibli`), and content is **gated on that constitution** — if the KR does not derive it, it does not go in. Written for a **primarily international/global audience**, jargon-free — anyone should be able to pick it up. The formalism is never mentioned in the text; what readers verify is the **data**. It references book-2 exactly once, at the end.
 - **book-2** — the technical companion (how book-1 is implemented with technology). Not planned yet; it gets its own tracker after book-1 ships.
 - **`book.md` and `manifesto.md`** — legacy. To be deleted once both new books exist, but **not before** the legacy-harvest section of `TODO.md` is complete: `book.md`'s 55 sourced references, the nine historical cases, the Bharati poem, and the five bright lines all need porting first.
 
@@ -64,7 +64,7 @@ The author has deliberately standardized terminology (see git history):
 
 - **"employment"**, not "work" or "jobs" — the book redefines employment beyond salaried labor
 - **"merit points"** (lowercase in prose, "Merit Points" in headings) — the recognition system replacing wages; never call it money or currency
-- Recurring proper concepts: **MVS** (Minimum Viable Society), **YAD** (Yet Another Device — government-issued device for those without smartphones), **Proof of Personhood** (Orb-style biometric identity), **pods** (local pods → regional councils → global federation), **local-first / offline-first micro-blockchains**, **quantum-secure**
+- Recurring proper concepts (legacy `book.md` only — **MVS, pods and the tech stack are all out of scope for book-1**): **MVS** (Minimum Viable Society), **YAD** (Yet Another Device — government-issued device for those without smartphones), **Proof of Personhood** (Orb-style biometric identity), **pods** (local pods → regional councils → global federation), **local-first / offline-first micro-blockchains**, **quantum-secure**
 
 Style: first-person, personal, and accessible; economic framing routinely contrasts *Keynesian*, *Marxist*, and *neoclassical* lenses (italicized); heavy use of **bold** for key claims. Both documents use curly quotes and em dashes throughout — match them. The technology chapters are intentionally more technical, with "Making It Simple: A Layman's Guide" as the deliberately non-technical retelling — keep that chapter jargon-free.
 
