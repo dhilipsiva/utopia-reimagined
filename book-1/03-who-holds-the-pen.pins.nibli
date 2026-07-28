@@ -1,0 +1,55 @@
+# ── Chapter 3 fidelity pins: "Who Holds the Pen" ─────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/03-who-holds-the-pen.pins.nibli
+
+:expect-pins 14
+
+# "The electorate seated you. You have not been recalled. And you were not
+#  voided in an earlier period." — all three holding gives the pen.
+? choose(Electorate, Gia).
+# => TRUE
+
+? permits(Review, Gia).
+# => TRUE
+
+? permits(Review, Wren).
+# => TRUE
+
+# "Writing it down directly is not forbidden-and-punished; it is refused."
+:refuse reasoning /declared derived-only/
+permits(Review, Sock).
+
+# "Boss keeps standing permanently and loses the credential immediately."
+? choose(Electorate, Boss).
+# => TRUE
+
+? broken(Boss).
+# => TRUE
+
+? authority(Boss).
+# => TRUE
+
+? permits(Review, Boss).
+# => FALSE
+
+# "Vex was also seated, and was never recalled — but Vex was voided in an
+#  earlier period. Vex has no pen either."
+? choose(Electorate, Vex).
+# => TRUE
+
+? rotten(Vex).
+# => TRUE
+
+? permits(Review, Vex).
+# => FALSE
+
+# "Nia is not a prisoner, because Nia was cleared."
+? clear(Nia).
+# => TRUE
+
+? permits(Appeals, Nia).
+# => TRUE
+
+? prisoner(Nia).
+# => FALSE

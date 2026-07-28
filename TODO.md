@@ -710,6 +710,13 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 3, "Who Holds the Pen"** — `book-1/03-who-holds-the-pen.md`,
+  1,090 words, `03-who-holds-the-pen.pins.nibli` (14 pins, green). Opens Part II.
+  Carries the Sock/Puppet attack as its centre — the hole that let two people who
+  were never chosen void an innocent — and closes on the honest boundary:
+  everything downstream of selection is closed, selection itself is open, and no
+  rule inside the design can reach up to check the election.
+
 - **DRAFTED: Chapter 2, "Standing, and Why It Is Never Revoked"** —
   `book-1/02-standing.md`, 1,174 words, `02-standing.pins.nibli` (12 pins, green).
   Boss carries the chapter: seated, then recalled, keeps standing forever and loses
