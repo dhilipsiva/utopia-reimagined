@@ -34,17 +34,76 @@
 # official / voided / eligible / breach.
 
 # ─── Article 1: The Unconditional Floor ───────────────────── [v0.1]
+#
+# [v0.3] THE FLOOR IS A COMPILE-TIME PROHIBITION, NOT A DECLARATION.
+# This was missed through v0.2 and it is the strongest property in the
+# file. `obligated(every person, event { P() })` does NOT assert an inert
+# fact: it compiles to a rule with `person` in the body, so P becomes
+# derived from person, and `prisoner -> person` below puts P downstream
+# of prisoner. Any later rule taking ~P into that cone closes a negative
+# cycle and the stratifier REJECTS it. Verified both directions:
+#   without the believe line:  person($x) & ~believe($x) -> prisoner($x).
+#                              => 0 errors. The heretic is jailed.
+#   with it:                   => "Unstratifiable negation: strongly-
+#                              connected component containing 'prisoner'
+#                              -> 'believe' (negative)". Will not compile.
+#   control (non-floor):       person($x) & ~home($x) -> prisoner($x).
+#                              => 0 errors. So the floor line is doing it.
+# So: you cannot write a law that punishes a person for LACKING a floor
+# right. Not "may not" — cannot.
+#
+# WHERE THE FIREWALL STOPS (disclosed, all verified to load at 0 errors
+# with the floor lines present — do not let prose overclaim this):
+#   ~believe($x) -> false($x).            standing can still be voided
+#   ~meets($x) -> lose(Points, $x).       points can still be clawed back
+#   prisoner($x) -> believe($x).          positive compulsion is untouched
+# The floor blocks punishment for ABSENCE, never manufacture, and it
+# reaches `prisoner` only — not standing, not points.
+#
+# INVARIANT for any future floor addition: a floor predicate's name must
+# appear in NO RULE BODY in this file. Verified: putting `choose` on the
+# floor un-stratifies Article 8 and SILENTLY DROPS the Review-credential
+# rule — the capture defence dies while the amendment engine keeps
+# running. Rule HEADS are safe (dwell and expresses are both).
+#
+# ADMISSION CRITERION (replaces the vocabulary formulation in 3-spine.md,
+# which was post-hoc — it admits only dwell and expresses, and would
+# exclude food): a good belongs here when its absence must never be a
+# permissible ground for sanction. That is the prohibition above, not a
+# value claim. What the floor is NOT is justified: the formalism makes
+# this commitment precise and unretractable, never right.
 obligated(every person, event { secure() }).
 obligated(every person, event { eats() }).
 obligated(every person, event { dwell() }).
 obligated(every person, event { healthy() }).
 obligated(every person, event { learn() }).
 obligated(every person, event { expresses() }).
+# [v0.3 NEW] The inner forum. A heresy law is writable in committed
+# corpus words with no lexicon extension; this line is what refuses it.
+obligated(every person, event { believe() }).
+# [v0.3 NEW] Company. Without it a regime could hold every convicted
+# person in permanent solitary and "punishment deprives exactly one
+# thing: movement" would remain literally true — the vocabulary had no
+# predicate for a second human being.
+obligated(every person, event { meets() }).
 all $anyone: prisoner($anyone) -> person($anyone).
 
 # ─── Article 2: Due-process suspension ────────────────────── [v0.1]
 all $prisoner: prisoner($prisoner) -> expresses($prisoner).
 all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).
+# [v0.3 NEW] The franchise, and it survives conviction. Deliberately a
+# RULE and not a floor line: the Article 1 firewall blocks punishment for
+# the ABSENCE of a right (~P -> prisoner), but disenfranchisement runs
+# the other way (~prisoner -> decide), so a floor line would not stop it
+# — verified, felon disenfranchisement enacts in full view of one.
+# As a rule it PROVES the single-deprivation theorem instead of asserting
+# it: decide(Hano, Ballot) TRUE while travel(Hano) FALSE — a convicted
+# person who votes and cannot move. And it is falsifiable: slip ~prisoner
+# into this body and the pin below flips where any reader can see it.
+# `mature` guard because no polity has ever had a franchise unconditional
+# from birth; two-place `decide(_, Ballot)` because bare `decide` means
+# deciding anything and prose could not be written honestly against it.
+all $x: person($x) & mature($x) -> decide($x, Ballot).
 
 # ─── Article 3: Minting at contribution ───────────────────── [v0.1]
 all $teacher: all $student: teaches($teacher, $student) & ~false($teacher) -> reward($teacher).
@@ -84,6 +143,11 @@ all $x: prisoner($x) & severe($x) -> dwell($x).
 # prose claim "domestic harm blocks the soft cage" is now enforced logic:
 #   ? err(?, Placement).
 all $x: home($x) & ~fit($x, Homestay) -> err($x, Placement).
+# [v0.3 NEW] Isolation breach marker. The Article 1 `meets` line refuses
+# a rule that JAILS someone for having no company; this makes existing
+# isolation queryable, which is the other half. Reuses the err idiom so
+# the audit surface stays one predicate:  ? err(?, Isolation).
+all $p: prisoner($p) & ~meets($p) -> err($p, Isolation).
 # [v0.1] domestic dwell + facility routing unchanged.
 all $offender: prisoner($offender) & family($offender) -> dwell($offender).
 all $offender: prisoner($offender) & family($offender) & severe($offender) -> building(HighSec, $offender).
@@ -207,6 +271,14 @@ person(Opal).
 injure(Nando, Opal).
 judge(Court, Nando).
 family(Nando).
+# [v0.3 NEW] Majority, for the Art 2 franchise rule. Note what the
+# absence of a mature fact does and does not mean: a child simply does
+# not yet derive the ballot. Nothing is taken from them — every Article 1
+# obligation is owed to them in full, and no rule anywhere reads ~mature.
+mature(Hano).
+mature(Jala).
+mature(Bela).
+mature(Adam).
 
 # ─── Adversarial scenario: capture attempt ───── [v0.1, one swap]
 person(Boss).
@@ -278,6 +350,26 @@ suggest(Assembly, Amend_Meta).
 adjust(Amend_Meta, Art_Entrench).
 approves(Electorate, Amend_Meta).
 
+# ─── Adversarial pins v0.3: the floor firewall ────────────────────
+# POSITIVE pins — queryable, and they belong in the pinned-verdict file:
+#   ? decide(Hano, Ballot).   TRUE   convicted, and still votes
+#   ? decide(Jala, Ballot).   TRUE   free, and votes
+#   ? travel(Hano).           FALSE  the one thing conviction takes
+#   ? err(Hano, Isolation).   TRUE   no meets fact => breach is visible
+#
+# NEGATIVE pins — these cannot be expressed as queries, because the
+# assertion itself must FAIL. They are the firewall's only test, and a
+# harness has to run them as "this file must refuse to load":
+#   all $x: person($x) & ~believe($x) -> prisoner($x).   MUST be refused
+#   all $x: person($x) & ~meets($x)   -> prisoner($x).   MUST be refused
+#   all $x: person($x) & ~home($x)    -> prisoner($x).   MUST load (control:
+#                                       home is not a floor right, so a
+#                                       refusal here would mean the test
+#                                       is measuring the rule shape, not
+#                                       the floor line)
+# Keeping the control is the point. Without it a green firewall test
+# proves nothing.
+
 # ─── Technical appendix delta (v0.2 proxy vocabulary) ─────────────
 # authority(X)   — X is an exposable office: an institution constant, or
 #                  anyone the Electorate ever seated. Derived + asserted.
@@ -294,5 +386,21 @@ approves(Electorate, Amend_Meta).
 # suggest / approves / adjust / permanent / become(M, Law)
 #                — amendment machinery (Art 9). approves is a certified
 #                  tally fact; permanent is the self-entrenching register.
+# ─── v0.3 additions ───
+# believe(X)     — floor right, the inner forum (Art 1). Corpus: krici.
+#                  Appears in no rule body, per the floor invariant.
+# meets(X)       — floor right, company (Art 1). Appears in one rule body
+#                  under negation, in the Art 6 isolation marker — which
+#                  is permitted because that rule's head is `err`, not
+#                  `prisoner`, so it does not enter the person cone.
+# decide(X, Ballot) — the franchise (Art 2). Derived, never asserted.
+#                  Two-place deliberately: bare `decide` means deciding
+#                  anything. `vote` is not in the committed corpus and
+#                  `choose` is taken by Art 8 seating — and reusing it on
+#                  the floor un-stratifies Art 8 (see the Art 1 invariant).
+# mature(X)      — asserted majority. Guards the franchise only. No rule
+#                  anywhere reads ~mature, so it can gate nothing else.
+# err(X, Isolation) — derived isolation breach: a prisoner with no
+#                  company fact.
 # Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.
 

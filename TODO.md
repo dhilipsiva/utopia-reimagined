@@ -44,94 +44,6 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **Enact the floor at EIGHT, plus two rules.** Decided by adversarial red-team;
-  every line verified on the real engine. The six stand, **`believe()` and
-  `meets()` join them**, and the franchise and bodily non-compulsion are rules.
-
-  ```
-  # Article 1 — the floor (add two lines)
-  obligated(every person, event { believe() }).
-  obligated(every person, event { meets() }).
-
-  # Article 2 — the franchise survives conviction
-  all $x: person($x) & mature($x) -> decide($x, Ballot).
-
-  # Article 6 — isolation becomes queryable
-  all $p: prisoner($p) & ~meets($p) -> err($p, Isolation).
-  ```
-
-  **The floor is a COMPILE-TIME PROHIBITION, not a declaration — this is the
-  strongest result in the project and it was missed until now.**
-  `obligated(every person, event { P() })` does not assert an inert fact: it
-  compiles to a rule with `person` in the body, so `P` becomes derived from
-  `person`, and `prisoner -> person` puts `P` downstream of `prisoner`. Any later
-  rule taking `~P` into that cone closes a negative cycle and the stratifier
-  **refuses it**. Verified both directions:
-  - Without the floor line, `all $x: person($x) & ~believe($x) -> prisoner($x).`
-    loads at **0 errors** and jails the heretic.
-  - With it: *"Unstratifiable negation: strongly-connected component containing
-    'prisoner' -> 'believe' (negative)"* — **the heresy law will not compile.**
-  - Control: `~home($x) -> prisoner($x)` (non-floor predicate) loads clean, so it
-    is the floor line doing the work, not the shape of the rule.
-
-  So the book's claim upgrades from *"nothing can retract the floor because
-  `obligated` is assert-only"* to **"you cannot write a law that punishes a person
-  for lacking a floor right — not may not, cannot; the constitution will not
-  compile."** That is worth a chapter on its own.
-
-  **Where the firewall stops — state this or the book overclaims.** Verified to
-  load at 0 errors even with the floor lines present: `~believe($x) -> false($x)`
-  (voids standing), `~meets($x) -> lose(Points, $x)` (claws back points), and
-  `prisoner($x) -> believe($x)` (positive compulsion — the floor blocks punishment
-  for *absence*, never manufacture). A belief test cannot jail you; it can still
-  strip your standing and your points.
-
-  **Hard invariant for any future floor addition: a floor predicate's name must
-  appear in NO rule body.** Verified — putting `choose` on the floor
-  un-stratifies Article 8 and *silently drops* the Review-credential rule, killing
-  the capture defence while the amendment engine keeps running. Rule *heads* are
-  safe (`dwell`, `expresses` are both floor rights and rule heads).
-
-  Per candidate:
-  - *belief* — **ON THE FLOOR** as `believe()`. The "machinery cannot reach belief"
-    objection was refuted by construction: the heresy law above is writable today
-    in committed corpus words. The floor line is what stops it.
-  - *company* — **ON THE FLOOR** as `meets()`, **and** the `err` rule. Two
-    different claims, both land: the floor line refuses `~meets -> prisoner`, the
-    rule makes existing solitary queryable.
-  - *the franchise* — **IN RULES**. Mechanical reason, not taste: the firewall
-    blocks punishment for *absence* (`~P -> prisoner`), but disenfranchisement runs
-    the other way (`~prisoner -> decide`), so a floor line would not stop it —
-    verified, felon disenfranchisement enacts in full view of a `decide()` floor
-    line. Use `decide($x, Ballot)` (corpus places subject/decision/matter) rather
-    than bare `decide`, which is too broad to write prose against, and guard with
-    `mature` — no polity has ever had a franchise unconditional from birth, and an
-    unguarded rule gives newborns the vote.
-  - *bodily non-compulsion* — **IN RULES + PROSE**, permanently off the floor.
-    Article 1 admits one flat positive atom: `obligated(every person, event {
-    ~cruel() })` and `{ ~injure() }` are hard rejects — *"a consequent atom is not
-    a flat predicate. Rejecting the assertion to preserve soundness."* No corpus
-    word fixes this. Define `secure` in prose to mean safe from every threat
-    *including this constitution's own hands*, and carry the teeth in a consent rule.
-
-  **The admission criterion in `3-spine.md` is post-hoc — replace it.** "What the
-  machinery can take away" admits only `dwell` (4 rule lines) and `expresses` (1);
-  `secure`, `eats`, `healthy`, `learn` appear exactly once in zero rules, so it
-  would exclude food. The engine-checked replacement: **a good belongs on the floor
-  when its absence must never be a permissible ground for sanction** — which is not
-  a declaration but the compile-time prohibition above.
-
-  Then reconcile downward. `manifesto.md` names five (`food, shelter, healthcare,
-  education, mobility`) — security and expression absent, mobility promoted though
-  the constitution derives it only as a defeasible permission. `book.md` alone
-  carries at least five mutually inconsistent floors, and the sentence doing the
-  firewall work names **seven** items, not the eleven asserted elsewhere.
-  **`book.md` also asserts privacy as a fundamental right, and it must not be one**
-  — encoded as a defeasible right it lands at stratum 3 and destroys the
-  single-deprivation theorem. Privacy belongs in Part V as argument. Also free:
-  define `dwell()` in prose as *protective* shelter — weatherproof, ventilated,
-  powered, plumbed — absorbing the water-and-sanitation case at zero KR cost.
-
 - **[AUTHOR-GATED] Re-derive Part V of the new book — the harvest premise does not
   survive contact with the manuscript.** `3-spine.md` proposes lifting four
   `book.md` chapters intact. Two of them **are not chapters**: "The Five Joints" is
@@ -513,6 +425,23 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   it to prove the harness works end to end before Chapter 2.
 
 ## book.md and manifesto.md — the existing manuscripts
+
+- **Reconcile both manuscripts to the enacted floor of eight.** The constitution
+  now carries `secure, eats, dwell, healthy, learn, expresses, believe, meets`
+  (enacted in `new-book-plans/utopia-v2.nibli`, verified 0 errors, all regression
+  pins unchanged, stratum 3 still `{err, travel}`). The manuscripts have not caught
+  up. `manifesto.md` names five (`food, shelter, healthcare, education, mobility`)
+  — security, expression, belief and company absent, and mobility promoted to the
+  floor though the constitution derives it only as a defeasible permission that
+  conviction removes. `book.md` alone carries at least five mutually inconsistent
+  floors, and the sentence doing the firewall work names seven items, not the
+  eleven asserted elsewhere. Three specific fixes while reconciling: **strike
+  privacy as a fundamental right from `book.md`** (encoded as a defeasible right it
+  lands at stratum 3 and destroys the single-deprivation theorem — it belongs in
+  Part V as argument); **define `dwell()` in prose as *protective* shelter** —
+  weatherproof, ventilated, powered, plumbed — which absorbs the
+  water-and-sanitation case at zero KR cost; and state the franchise as a rule that
+  survives conviction, not as a floor right.
 
 - **[AUTHOR-GATED] Settle the Bharati attribution, then decide the poem's role in
   each document.** `1.md` attributes the manifesto's frame to *நின்னைச்
