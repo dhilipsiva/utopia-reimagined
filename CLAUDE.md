@@ -4,7 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-A book-writing project, not a software project: *Utopia Reimagined: From Dream To Design*. There is no build system, test suite, or linter — all work is Markdown editing. (The `.gitignore` is a leftover Rust template; there is no Rust code.)
+A book-writing project heading for **two new books**, with the original two manuscripts slated for deletion:
+
+- **book-1** — the active work. Its spine is *derived*: chapter order is computed from the dependency stratification of a formal constitution written in nibli KR (`new-book-plans/utopia-v2.nibli`), and load-bearing sentences carry a query with a pinned verdict. Written for a **primarily international/global audience**, jargon-free — anyone should be able to pick it up. The formalism is never mentioned in the text; what readers verify is the **data**. It references book-2 exactly once, at the end.
+- **book-2** — the technical companion (how book-1 is implemented with technology). Not planned yet; it gets its own tracker after book-1 ships.
+- **`book.md` and `manifesto.md`** — legacy. To be deleted once both new books exist, but **not before** the legacy-harvest section of `TODO.md` is complete: `book.md`'s 55 sourced references, the nine historical cases, the Bharati poem, and the five bright lines all need porting first.
+
+So this is no longer only Markdown editing: there is a constitution to verify against the real engine, and a data pipeline to build. See `TODO.md`.
 
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
@@ -13,7 +19,9 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `book.md` — the entire book in a single Markdown file (~2970 lines).
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
-- `TODO.md` — the book/manifesto work tracker (plain bullets, ordered by leverage; work the first remaining bullet, delete it when it fully lands, update it if only partially done). Check it before starting revision work. Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory, or a design decision — skip them in unattended work and take the highest-value non-gated bullet instead.
+- `TODO.md` — the **book-1** work tracker (plain bullets, ordered by dependency and leverage; work the first remaining bullet, delete it when it fully lands, update it if only partially done). Check it before starting any work. Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory, or a design decision — skip them in unattended work and take the highest-value non-gated bullet instead. It also holds the legacy-harvest manifest and a parked list for book-2; don't work book-2 items there.
+- `new-book-plans/` — planning material for book-1, plus the constitution `utopia-v2.nibli`. Note `3-spine.md`'s stratification table and chapter order are **stale** (they predate the enacted floor); recompute before relying on them.
+- `LICENSING.md` — the mixed-licence map. Read before adding files.
 
 ## book.md Structure
 
