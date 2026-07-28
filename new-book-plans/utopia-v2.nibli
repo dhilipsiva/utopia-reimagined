@@ -60,11 +60,39 @@
 # The floor blocks punishment for ABSENCE, never manufacture, and it
 # reaches `prisoner` only — not standing, not points.
 #
-# INVARIANT for any future floor addition: a floor predicate's name must
-# appear in NO RULE BODY in this file. Verified: putting `choose` on the
-# floor un-stratifies Article 8 and SILENTLY DROPS the Review-credential
-# rule — the capture defence dies while the amendment engine keeps
-# running. Rule HEADS are safe (dwell and expresses are both).
+# INVARIANT 1 for any future floor addition: a floor predicate's name
+# must appear in NO RULE BODY in this file. Verified: putting `choose` on
+# the floor un-stratifies Article 8 and SILENTLY DROPS the Review-
+# credential rule — the capture defence dies while the amendment engine
+# keeps running. Rule HEADS are safe (dwell and expresses are both).
+#
+# INVARIANT 2, and the one most likely to be violated by someone trying
+# to HELP: the floor's quantifier must stay in **x1**. The firewall above
+# exists only because `every person` sits in the first place; that is what
+# creates the P -> person edge. The natural-looking repair — restate the
+# floor as a duty on a duty-bearer, "the State has a duty to feed" — is
+# semantically attractive and STRUCTURALLY WORTHLESS. Verified, all three
+# forms let the heresy law load at 0 errors, identical to writing no floor
+# line at all:
+#     obligated(State, event { believe(every person) }).
+#     owe(State, Belief, every person).
+#     all $x: person($x) -> owe(State, Belief, $x).
+# If the reading of the predicate is wrong, change the PREDICATE, never
+# the position. What is needed is one whose x1 is the ENTITLED party
+# rather than the obligated one.
+#
+# KNOWN DEFECT, open: `obligated` is the wrong predicate on exactly that
+# test. It is `bilga` — places duty/do/standard, template "{x1} is
+# obligated to {x2}" — so x1 bears the duty and these eight lines read as
+# "every person has a DUTY to eat", the inverse of a rights floor. It
+# breaks no derivation (`obligated` appears in no rule head or body) and
+# the firewall is unaffected, so this is a defect of MEANING, which for
+# the foundation of the design is worse. `deserve` (`jerna`) puts the
+# entitlement on x1 and is a verified drop-in — all eight lines swapped
+# gives 146 asserted / 0 errors with the firewall intact — but `jerna`'s
+# x3 is "work", carrying a desert-through-effort sense that an
+# unconditional floor must exclude. Blocked on a nibli-side answer; see
+# the first handoff in TODO.md. Do not "fix" this by inverting.
 #
 # ADMISSION CRITERION (replaces the vocabulary formulation in 3-spine.md,
 # which was post-hoc — it admits only dwell and expresses, and would

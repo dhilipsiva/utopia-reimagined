@@ -452,9 +452,8 @@ Ordered. The first blocks a blocking decision, so it goes first.
   > `bound/duty/standard`) but the **same** template string
   > `"{x1} is obligated to {x2}"`. One of those looks like a corpus bug.
 
-  **Record either way:** the invariant that a floor predicate must take the
-  beneficiary in x1 belongs in the Article 1 commentary beside the existing
-  "must appear in no rule body" rule. It is the second law of this floor.
+  The x1 invariant and this open defect are now recorded in Article 1's own
+  commentary, so an editor meets them before touching the floor.
 
 - **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
   new exploits, and it defeats the constitution's central security claim. Prompt to
