@@ -70,6 +70,49 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
+- **[AUTHOR-GATED] Answer the duty-bearer question — this is the one place the
+  nearest established alternative beats the design outright.** Book-1's floor is
+  social-democratic in its ends (universal provision, universalism over
+  means-testing, decommodification of essentials — it is Universal Basic *Services*,
+  not UBI, and should probably claim that name). But social democracy delivers
+  through a coercive taxing state, and this design refuses one. A voluntary,
+  coercion-free federation has **no identified agent obligated to provide anything
+  or to compel transfers.** Social democracy answers this; the design currently does
+  not. A reviewer who notices will file the whole book as social democracy with
+  extra steps and an unpaid bill, which wastes the genuinely novel parts.
+
+  **It is worse than an unanswered question — the vocabulary has no slot for the
+  answer, and the predicate in use may invert the claim.** Verified against nibli's
+  committed corpus: `obligated` comes from Lojban `bilga`, places
+  `["duty", "do", "standard"]`, template **"{x1} is obligated to {x2}"** — x1 is the
+  party *bearing* the duty. So `obligated(every person, event { eats() })` reads
+  literally as *every person has a duty to eat*, not *every person is owed food*.
+  That is an inversion of the book's central claim, and `bilga` has **no beneficiary
+  place at all**, so the constitution cannot presently name who owes the floor to
+  whom. Note this breaks no derivation — `obligated` appears in no rule head or body
+  — and the Article 1 firewall works regardless, because it comes from the compiled
+  `P -> person` edge rather than from the deontic reading. The damage is entirely to
+  what the sentence *means*, which for the foundation of the book is worse than a
+  broken rule. It would also be the fourth instance of prose lying about the machine,
+  after the farmhouse bug, "due process" in a comment, and bright line 2.
+
+  Resolve in this order:
+  - **Fix the predicate before anything else is built on it.** Options: use nibli's
+    deontic operator (`must`, compiling to `Obligatory(...)`) which is the
+    semantically correct tool but still names no bearer; find a corpus predicate with
+    a beneficiary place; or hand off for one. Do not "define `obligated` as a term of
+    art in the file" — that is exactly the failure mode this project keeps hitting.
+  - **Then take the political fork, which is a real choice and yours.** Either accept
+    a thin constitutional layer with genuine taxing and inter-community equalisation
+    power, and limit it carefully — which moves the design decisively toward social
+    democracy and should be admitted as such — or rename the guarantees **mutual
+    covenants**, and be honest in print about non-members, defectors, and what
+    happens when a community simply declines. The second is more faithful to the
+    voluntarism; the first is more likely to survive an economist.
+  - Whichever way it goes, Part V's five-joints chapter must state plainly where the
+    design sits relative to social democracy **and** where social democracy has the
+    better answer. Conceding that is far stronger than letting a reviewer find it.
+
 - **[AUTHOR-GATED] Build Part V on the five-joints scorecard.** Four architectures
   were designed and judged by a reader, a trade editor and a hostile expert. The
   salvage audit is settled and measured (I re-verified the counts): the four harvest
@@ -334,6 +377,22 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   the prose either way — it is the single most credibility-buying admission the book
   has.
 
+- **Governance mechanics downstream of the duty-bearer fork.** Do not start these
+  until the fork above is taken — several change shape depending on which way it
+  goes. Confront the magnet problem: mobility is itself a guaranteed right, so
+  generous communities attract need, which is standard fiscal-federalism territory
+  and currently unaddressed. Replace at-will recall with defined thresholds, an
+  administering body, and staggered short terms. Explain how a consensus-only global
+  federation avoids a universal veto on exactly the planetary problems it exists to
+  solve. Add real justice material: standards of proof, proportionality, an appeals
+  path independent of the recognition apparatus, a precise replacement for the
+  misused "crimes against humanity", and who inspects restricted housing. Answer
+  Ambedkar — caste as a design problem, not a historical footnote: reserved
+  committee representation, mandatory external audit of allocation patterns, and
+  portability of entitlements so that exit from a hostile community is not
+  destitution. Check each against what the rules can actually express before writing
+  prose about it; several are constitution work, not chapters.
+
 - **Widen kinship beyond `parent/2`.** The multi-sig independence check excludes
   only parents; spouses and siblings co-sign freely. Disclosed in v0.1, still open.
 
@@ -596,25 +655,6 @@ either landed or consciously dropped.
   ~2397-2404. The legacy books' most human passages, and book-1 currently has no
   narrative register at all. Whether or not the prose survives, the *technique*
   should — a named family carried through food, care, housing and crisis.
-
-- **Answer the duty-bearer question — it is unfinished design work, not editing.**
-  This outlives `book.md` because book-1 inherits the problem: universal
-  "non-negotiable" rights atop a voluntary, coercion-free federation have no
-  identified agent obligated to provide them or to compel transfers. Either accept a
-  thin constitutional layer with real taxing and equalisation power and limit it
-  carefully, or rename the guarantees "mutual covenants" and be honest about
-  non-members and defectors. Confront the magnet problem — mobility is itself a
-  guaranteed right, and generous communities attract need. Replace at-will recall
-  with defined thresholds, an administering body and staggered short terms. Explain
-  how a consensus-only global federation avoids the universal veto on exactly the
-  planetary problems it exists for. Add real justice material: standards of proof,
-  due process, proportionality, an appeals path independent of the recognition
-  apparatus, a precise replacement for the misused "crimes against humanity", and
-  who inspects restricted housing. Answer Ambedkar: caste as a design problem, not a
-  historical footnote — reserved committee representation, mandatory external audit
-  of allocation patterns, portability of entitlements so exit from a hostile
-  community is not destitution. Much of this belongs in the constitution rather than
-  in prose; check each against what the rules can actually express.
 
 - **Carry the floor corrections into book-1 rather than into the legacy files.**
   Three fixes were queued against the manuscripts and should now be written
