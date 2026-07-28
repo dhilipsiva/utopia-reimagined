@@ -726,6 +726,19 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 12, "Changing the Rules"** —
+  `book-1/12-changing-the-rules.md`, 953 words, 14 pins green. Closes Part III.
+  Entrenchment works against the tally: a floor cut is approved and still dead, and
+  the register entrenches itself, which closes the two-move defeat every other
+  entrenchment scheme has. States the anti-democratic cost plainly rather than
+  arguing around it.
+  **Two defects verified and now in print:** an amendment that declares no target
+  escapes the guard entirely (`Amend_Sneak` — proposed, approved, enacted, with
+  nothing examining what it does), and **`become` feeds nothing** — it appears once
+  as a rule head and no rule anywhere reads it, so the design can say an amendment
+  became law and cannot say what became different. Closing either rewrites that
+  section; the pins encode both.
+
 - **DRAFTED: Chapter 11, "Where People Are Put"** —
   `book-1/11-where-people-are-put.md`, 940 words, 16 pins green. Placement is
   derived from three facts (severe / domestic / has a home) with no assessor
