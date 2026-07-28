@@ -17,12 +17,20 @@ carries a ready-to-paste **HANDOFF PROMPT** for a Claude Code session in
 `~/projects/dhilipsiva/nibli`. Hand it over, work the next unblocked bullet, and
 resume when it lands.
 
-**Provenance: 2026-07-27 verification pass.** Nine parallel verifications against
-primary sources, plus the whole pin set re-run on the real engine (`nibli-host
---script`, release wasm, `NIBLI_FUEL=2e12`). What survived and what did not is
-recorded per bullet. Headline: the *stratification and the exploit closures are
-real and reproduce exactly*; the *harness, the harvest premise, and about a third
-of the citations* do not.
+**Already established — don't re-verify these** (2026-07-27 pass; nine parallel
+verifications against primary sources, plus the full pin set re-run on the real
+engine via `nibli-host --script`, release wasm, `NIBLI_FUEL=2e12`):
+
+- The stratification is exact — 34 predicates, 15 derived, 26 rules, 4 strata,
+  membership matching `3-spine.md` line for line, `authority` the only derived
+  predicate with a negation-free cone.
+- All 17 v0.1 regression pins are unchanged in v0.2, checked against a v0.1 run.
+- All three disclosed exploit closures (E1 shield, E2 epoch carry, E3 farmhouse)
+  hold on the engine, as does Article 9's self-entrenchment.
+- All seven fidelity-table rows are true — but none is reproducible from the
+  committed artifacts, which is what the harness bullets below exist to fix.
+
+Everything else in `new-book-plans/` is unverified or corrected below.
 
 ---
 
@@ -73,12 +81,10 @@ of the citations* do not.
   already solved this: `determinism-corpus.nibli` annotates every query with
   `# => TRUE` and three separate CI legs assert against those annotations. The
   book's fidelity table should be the same artifact in the same format, not a
-  Markdown table with green ticks. Convert `utopia-v2-run.nibli` to it.
-  *Verified today:* every one of the fidelity table's seven rows is **true** on the
-  engine (`person(Hano)` TRUE, `expresses(Hano)` TRUE, `travel(Hano)` FALSE,
-  `travel(Adam)` FALSE, `travel(Jala)` TRUE, `prisoner(Jala)` FALSE, `eats(Adam)`
-  FALSE, `healthy(Bela)` FALSE) — but **not one of them is reproducible from the
-  committed artifacts**. That gap is the whole reason for this bullet.
+  Markdown table with green ticks. Convert `utopia-v2-run.nibli` to it. The
+  verdicts to pin are known: `person(Hano)` TRUE, `expresses(Hano)` TRUE,
+  `travel(Hano)` FALSE, `travel(Adam)` FALSE, `travel(Jala)` TRUE,
+  `prisoner(Jala)` FALSE, `eats(Adam)` FALSE, `healthy(Bela)` FALSE.
 
 - **Fix the run script: it loads the wrong constitution and records no
   expectations.** `utopia-v2-run.nibli` line 1 is `:load utopia.nibli` — it pins
@@ -101,11 +107,9 @@ of the citations* do not.
   explicitly **excludes** fuel-trapping queries as runtime-dependent. Pin
   `NIBLI_FUEL` in the harness, and fail loudly on `RESOURCE_EXCEEDED`.
 
-- **Fix or replace `4-strata.py`.** The stratification it reports is **exactly
-  right** — reproduced today: 34 predicates, 15 derived, 19 base-only, 26 rules,
-  max stratum 3, strata membership matching `3-spine.md` line for line, with
-  `authority` the only derived predicate whose cone is negation-free. But its
-  parser takes only the *first* predicate on a fact line, so `secure`, `eats`,
+- **Fix or replace `4-strata.py`.** The stratification it reports is exactly right
+  (see the established list above). But its parser takes only the *first*
+  predicate on a fact line, so `secure`, `eats`,
   `healthy` and `learn` are **invisible to it** — the four floor rights the book's
   central finding is about are not in the 34. Finding (a) is true; the script did
   not compute it. Either extend the parser to see inside `event { … }` blocks, or
@@ -165,9 +169,9 @@ of the citations* do not.
   a disclosed cost; the audit calls the disclosure understated. Bound it, or state
   the bound honestly in the chapter.
 
-- **Grow the provisioning layer, or write Part I to stop where it stops.** Verified:
-  `eats(Adam)` FALSE, `healthy(Bela)` FALSE, and — new today — `secure(Bela)` FALSE,
-  `learn(Cira)` FALSE. The gap is uniform across all four zero-rule floor rights.
+- **Grow the provisioning layer, or write Part I to stop where it stops.**
+  `eats(Adam)`, `healthy(Bela)`, `secure(Bela)` and `learn(Cira)` are all FALSE —
+  the gap is uniform across all four zero-rule floor rights.
   Not denial; no rule connects an obligation to any fact about anything reaching a
   person. The obligation layer is complete and the delivery layer does not exist.
   Chapters 1–2 are writable now; a "does it actually arrive" chapter is not. Keep
@@ -217,8 +221,8 @@ of the citations* do not.
 - **Build the data pipeline before writing the empirical chapters.** The stated
   requirement is that the book depends on the latest data *as much as possible,
   achieved through scripting* — but `final-research.md` is a hand-assembled static
-  snapshot, and today's pass found the predictable result: figures two tax years
-  stale, a superseded working paper, market data from 2015. Design: one machine-
+  snapshot, with the predictable result: figures two tax years stale, a superseded
+  working paper, market data from 2015. Design: one machine-
   readable claim registry (claim id, value, units, source, retrieval date, fetch
   script); fetchers against sources that have APIs (World Bank, WHO GHO, UNEP,
   IEA, OWID, FAOSTAT); a rendering step that injects current values into the prose;
