@@ -289,6 +289,16 @@ derivations are never stored and only asserted facts can make one late).
 
 ## Constitution (KB) work
 
+- **NEW, found while drafting ch 13: there is no release.** The design has no
+  concept of a sentence ending — no duration, term, expiry or completion in any
+  rule. Once convicted a person is a prisoner permanently, for every offence,
+  without distinction between the grave and the trivial. Relief on appeal is the
+  only exit and it is a different thing: a finding that the conviction should never
+  have held, which does nothing for someone rightly convicted. This is arguably the
+  largest substantive gap in the constitution and it is **undisclosed** — the file's
+  own commentary does not mention it. Decide whether punishment is bounded in time
+  and by what.
+
 - **Fix `err/2` — WORSE than recorded: it has never once fired correctly.**
   Drafting chapter 11 established the full picture. The marker fires on Ruk *and*
   Lalo, both correctly placed in high security, and on nobody who is misplaced. It
@@ -725,6 +735,20 @@ trustworthy.
   non-derived and labelled the way Part V is labelled, so the book does not open
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
+
+- **DRAFTED: Chapter 13, "The One Thing Taken"** —
+  `book-1/13-the-one-thing-taken.md`, 988 words, 13 pins green. Opens Part IV and
+  audits the single-deprivation claim in one place. The structural finding:
+  **`travel` appears once in the whole constitution, as a rule head — nothing reads
+  it** — so taking it cascades into nothing, and the absence of collateral
+  consequences is a fact about the shape of the design rather than a promise about
+  administration.
+  **Surfaced a defect nobody had recorded: there is no release.** No duration,
+  term, expiry or completion exists in any rule; every apparent hit is commentary.
+  Conviction is permanent, for every offence, with no distinction between grave and
+  trivial, and relief is not release — it is a finding that the conviction should
+  never have held. The chapter calls this the sharpest unresolved thing in the book
+  and notes the design does not disclose it anywhere in its own account of itself.
 
 - **DRAFTED: Chapter 12, "Changing the Rules"** —
   `book-1/12-changing-the-rules.md`, 953 words, 14 pins green. Closes Part III.

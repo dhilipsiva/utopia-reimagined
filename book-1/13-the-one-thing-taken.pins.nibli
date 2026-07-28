@@ -1,0 +1,58 @@
+# ── Chapter 13 fidelity pins: "The One Thing Taken" ──────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#             book-1/13-the-one-thing-taken.pins.nibli
+#
+# Two of this chapter's claims are about ABSENCES and cannot be queried:
+#   - "Nothing depends on it" — travel appears once in the constitution, as a
+#     rule head. Re-check with a grep if the rules change.
+#   - "There is no release" — no duration, term, expiry or completion exists in
+#     any rule. Every apparent hit is commentary. If a release rule is ever
+#     added, the closing section must be rewritten.
+
+:expect-pins 13
+
+# "Hano was convicted ... and cannot move freely."
+? prisoner(Hano).
+# => TRUE
+
+? travel(Hano).
+# => FALSE
+
+# The audit, item by item — everything else Hano keeps
+? person(Hano).
+# => TRUE
+
+? expresses(Hano).
+# => TRUE
+
+? decide(Hano, Ballot).
+# => TRUE
+
+? false(Hano).
+# => FALSE
+
+? lose(Points, Hano).
+# => FALSE
+
+? dwell(Hano).
+# => TRUE
+
+# "the difference between Hano and Jala, who did the same thing to the same
+#  person and was never convicted"
+? injure(Jala, Ivo).
+# => TRUE
+
+? prisoner(Jala).
+# => FALSE
+
+? travel(Jala).
+# => TRUE
+
+# Voiding is not confinement: Bela lost standing and still moves
+? false(Bela).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
