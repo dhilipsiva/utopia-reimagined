@@ -1,10 +1,23 @@
-# TODO
+# TODO — book-1
 
-One tracker for all three artifacts: the **new derived book** (the active work —
-a third artifact derived from the nibli constitution, plain English, for a
-**primarily international/global audience**, with the formalism invisible to the
-reader and the *data* the thing readers verify), and the existing `book.md` and
-`manifesto.md`.
+**This tracker covers book-1 only.**
+
+The repo is heading for two new books plus a clean deletion:
+
+- **book-1** — the active work. Derived from the nibli constitution, plain English,
+  for a **primarily international/global audience**, no technical jargon: anyone
+  should be able to pick it up and follow it. The formalism stays invisible; what
+  readers verify is the **data**.
+- **book-2** — the technical companion: how book-1 is actually implemented with
+  technology. Not planned yet. **It gets its own tracker, written from scratch once
+  book-1 is finished.** Do not add book-2 items here — park them in the hold list
+  at the bottom.
+- **`book.md` and `manifesto.md`** — legacy, to be **deleted** once both new books
+  are written. Nothing in this tracker improves them. The one obligation they carry
+  is that no valuable material is lost on the way out; see the legacy-harvest
+  section.
+
+book-1 references book-2 **once**, at the very end (see the pointer item).
 
 Plain bullets, never numbered. Work the FIRST remaining bullet; cross-reference
 items by name. Delete a bullet entirely when it fully lands; update it if only
@@ -15,9 +28,9 @@ Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory
 or a design decision — skip them in unattended work and take the highest-value
 non-gated bullet instead.
 
-Settled design decisions live in `CLAUDE.md`, not here — check them before writing
-about points, identity, or voting. Planning material for the new book is in
-`new-book-plans/`.
+Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
+`new-book-plans/`. Note `CLAUDE.md` still describes the repo as being *about*
+`book.md` — it needs the same restructure this file just had.
 
 **nibli handoff protocol.** dhilipsiva wrote nibli. When an item is blocked by an
 engine bug or a missing KR construct, do not work around it in prose — the bullet
@@ -89,18 +102,20 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   failing grade, self-administered, printed as the structure of the part. Score
   against the joints without scoring the design out of five.
 
-  Two decisions only you can make, both surfaced by the judges:
-  - **The hostile reviewer attacks the constraint, not the book.** "The repository
-    is public. I found it in an afternoon." Every design obeyed *never mention the
-    formalism*, and the reviewer's view is that obeying it is the vulnerability —
-    an unmentioned but discoverable apparatus reads as concealment, where a named
-    one reads as discipline. The counter is Krugman's step (3): the public repo is
-    what discharges the obligation to publish the apparatus. Decide whether the
-    book stays silent, adds one honest line in a note, or says it plainly.
-  - **Proportion.** At the losing designs' lengths Part V ran ~27,500 words against
-    perhaps 36,000 derived — 43% of the book non-derived, which invites the reading
-    that the derivation is decoration. The ~14,500 recommendation exists partly to
-    avoid this. Confirm the target before drafting.
+  Both open calls are now **decided**:
+  - **Concealment — resolved by the book-2 split.** The hostile reviewer's attack
+    was on the constraint, not the book: *"The repository is public. I found it in
+    an afternoon."* An unmentioned but discoverable apparatus reads as concealment;
+    a named one reads as discipline. But saying it plainly inside book-1 would put
+    a formal-methods discussion in a book that must stay jargon-free. So it goes
+    where it already belongs: **the single book-2 pointer at the end carries one
+    honest sentence** — the design was machine-checked for consistency, the
+    machinery is public, book-2 covers it. One sentence, skippable by the general
+    reader, and it closes the open goal completely. It is also exactly Krugman's
+    step (3) discharged.
+  - **Proportion — capped.** Part V targets **~14,500 words**, and book-1 stays
+    majority-derived. If Part V approaches half the book, the derivation reads as
+    decoration; ~14,500 against ~36,000 derived keeps it near 29%.
 
 - **[AUTHOR-GATED] Settle the title, and whether "Minimum Viable Society" travels.**
   MVS is the old book's best coinage. Decide whether the new book keeps it — and
@@ -478,7 +493,19 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   it is a 1936 general trade house and co-owner of Aleph. Delete that
   characterisation regardless of what else survives.
 
-## The new book — framing and first chapters
+## book-1 — framing and first chapters
+
+- **Write the single book-2 pointer, at the very end.** book-1 references book-2
+  exactly **once**, in the closing note — not in the introduction, because a reader
+  on page one has no idea whether they want the machinery, and a forward reference
+  reads as an apology for the book they are holding. At the end it reads as an
+  invitation to the reader who now wants more. It does two jobs in a short
+  paragraph: point the technically curious at book-2, and carry the **one honest
+  sentence about the apparatus** — that the design was machine-checked for
+  consistency, that the machinery is public, and that book-2 covers it. That single
+  sentence is what closes the concealment objection, and it is the only place in
+  book-1 where the formalism is acknowledged at all. Keep it plain: no tool names,
+  no jargon, nothing a general reader must decode.
 
 - **Reframe the brief's India-first assumptions for a global audience.** The
   research brief recommends foregrounding Bharathi and an India-first publishing
@@ -524,90 +551,102 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   positive compulsion is untouched. Ship it with its pinned-verdict file **and** its
   negative pins, and use it to prove the harness works end to end before Chapter 2.
 
-## book.md and manifesto.md — the existing manuscripts
+## Legacy harvest — everything valuable out of book.md and manifesto.md before they go
 
-- **Reconcile both manuscripts to the enacted floor of eight.** The constitution
-  now carries `secure, eats, dwell, healthy, learn, expresses, believe, meets`
-  (enacted in `new-book-plans/utopia-v2.nibli`, verified 0 errors, all regression
-  pins unchanged, stratum 3 still `{err, travel}`). The manuscripts have not caught
-  up. `manifesto.md` names five (`food, shelter, healthcare, education, mobility`)
-  — security, expression, belief and company absent, and mobility promoted to the
-  floor though the constitution derives it only as a defeasible permission that
-  conviction removes. `book.md` alone carries at least five mutually inconsistent
-  floors, and the sentence doing the firewall work names seven items, not the
-  eleven asserted elsewhere. Three specific fixes while reconciling: **strike
-  privacy as a fundamental right from `book.md`** (encoded as a defeasible right it
-  lands at stratum 3 and destroys the single-deprivation theorem — it belongs in
-  Part V as argument); **define `dwell()` in prose as *protective* shelter** —
-  weatherproof, ventilated, powered, plumbed — which absorbs the
-  water-and-sanitation case at zero KR cost; and state the franchise as a rule that
-  survives conviction, not as a floor right.
+Both legacy files are slated for deletion once book-1 and book-2 are written.
+Nothing here improves them. The job is to make sure nothing valuable dies with
+them — and the deletion must not happen until every bullet in this section is
+either landed or consciously dropped.
 
-- **[AUTHOR-GATED] Settle the Bharati attribution, then decide the poem's role in
-  each document.** `1.md` attributes the manifesto's frame to *நின்னைச்
-  சரணடைந்தேன்* — a string that appears **nowhere** in any of the three artifacts.
-  `book.md`:2838 attributes the poem to *Yoga Siddhi* ("Varam Kettal"), stanzas 4–5,
-  and the manifesto's own Part 2 Ch 1 epigraph is நின்னைச் **சிலவரங்கள் கேட்பேன்**,
-  which `1.md` appears to have garbled into a title. Confirm the correct name with a
-  Tamil-literature source **first** — it gates everything else here. Then: for
-  `book.md`, move the poem from the back-of-book appendix to the opening with a page
-  of personal framing (when you met it, why it structured your thinking), and either
-  open each part with its corresponding lines or fully separate and cross-reference.
-  Add a short foreword to each document stating their relationship: manifesto =
-  summons, book = specification. Manifesto side: compress Part 2 Ch 5-7 back toward
-  image and demand (the org charts and funding streams bolted onto devotional lines
-  produce bathos) and point to the book for mechanism; reconcile or consciously
-  scope the Ch 3-4 transitional-justice demands (debt relief, reparations,
-  expungement), which have no book counterpart. In the **new** book, Bharati
-  survives at most as one framing epigraph — original, plain translation, one
-  sentence on who he was — never as structure.
+- **Harvest the References & Data Sources section — it is the single most valuable
+  thing in the legacy books.** `book.md` closes with **55 sourced entries**, grouped
+  by chapter, each with a primary source and URL, built by a 30-claim fact-check
+  against primary sources. That is the seed corpus for book-1's claim registry and
+  it would take weeks to rebuild. Port it into the registry format (claim id, value,
+  units, source, retrieval date, fetch script) *before* deletion, applying the
+  corrections in the research-brief section above, and drop entries whose claims
+  book-1 does not make.
 
-- **[AUTHOR-GATED] Voice and people pass on `book.md`.** Convert the bullet
-  scaffolds of Parts 3-6 to paragraphs (keep bullets only for genuinely enumerable
-  content); move the Part 5 confessional register ("I'm not the smartest person on
-  Earth", ~1514) to the book's opening; pick one named fictional family and one
-  village and carry them through food, healthcare, housing, governance, and crisis
-  by expanding the existing day-in-the-life vignettes (~950-957, ~1374-1381,
-  ~2397-2404) into a narrative spine; write ONE dramatized failure scene (a pod that
-  collapses, a merit dispute mediation doesn't fix) and hang the Pitfalls material
-  off it.
+- **Harvest the nine historical cases.** New Harmony and the labour exchange, China's
+  work-point villages, the kibbutzim, Nyerere's Ujamaa, Chile's Cybersyn, Auroville,
+  Mondragon, WIR, Kerala's People's Plan — 2,264 words in "Learning from Those Who
+  Tried", researched, sourced, and mechanism-independent. Verified as the only
+  genuine chapter-level harvest in the manuscript. They become the spine of Part V's
+  five-joints chapter.
 
-- **Answer the duty-bearer question and fix the governance mechanics.** Universal
+- **Harvest the Bharati poem and settle its attribution.** The full poem with Tamil
+  original and translations lives in `book.md`'s closing appendix, attributed there
+  to *Yoga Siddhi* ("Varam Kettal"), stanzas 4–5. `1.md` attributes the manifesto's
+  frame to *நின்னைச் சரணடைந்தேன்* — a string that appears **nowhere** in any
+  artifact, and the manifesto's own Part 2 Ch 1 epigraph is நின்னைச் **சிலவரங்கள்
+  கேட்பேன்**, which `1.md` appears to have garbled into a title. Confirm the correct
+  name with a Tamil-literature source, then decide book-1's use: at most **one**
+  framing epigraph — original, plain translation, one sentence on who Bharati was —
+  never as structure. The manifesto's sixteen-chapter mapping onto the sixteen lines
+  is a real piece of craft; record it before the file goes.
+
+- **Harvest the five bright lines — and check each against the enacted rules.**
+  `book.md`'s social-credit chapter states five enforceable bright lines. They are
+  the most credible thing in the legacy corpus and book-1 needs them. But bright
+  line 2 is already **refuted** by the constitution (see the Article 4 clawback item
+  above), and that was found by accident. Sweep all five against the enacted rules
+  before porting any of them.
+
+- **Harvest the day-in-the-life vignettes.** `book.md` ~950-957, ~1374-1381,
+  ~2397-2404. The legacy books' most human passages, and book-1 currently has no
+  narrative register at all. Whether or not the prose survives, the *technique*
+  should — a named family carried through food, care, housing and crisis.
+
+- **Answer the duty-bearer question — it is unfinished design work, not editing.**
+  This outlives `book.md` because book-1 inherits the problem: universal
   "non-negotiable" rights atop a voluntary, coercion-free federation have no
-  identified agent obligated to provide or compel transfers — either accept a thin
-  constitutional layer with real taxing/inter-pod-equalization power (and carefully
-  limit it), or rename the guarantees "mutual covenants" and be honest about
-  non-members and defectors. Confront the magnet problem (mobility is itself a
-  guaranteed right; generous pods attract need — standard fiscal-federalism
-  territory). Replace at-will recall with defined thresholds + an administering body
-  + staggered short terms; explain how a consensus-only global federation avoids the
-  universal veto on exactly the planetary problems it exists for. Add a real justice
-  chapter: standards of proof, due process, proportionality, an appeals path
-  independent of the merit apparatus, a precise replacement for the misused "crimes
-  against humanity", and who inspects "restricted housing". Answer Ambedkar: caste
-  as a design problem, not a historical footnote — reserved committee
-  representation, mandatory external audit of allocation patterns, portability of
-  entitlements so exit from a hostile pod is not destitution.
+  identified agent obligated to provide them or to compel transfers. Either accept a
+  thin constitutional layer with real taxing and equalisation power and limit it
+  carefully, or rename the guarantees "mutual covenants" and be honest about
+  non-members and defectors. Confront the magnet problem — mobility is itself a
+  guaranteed right, and generous communities attract need. Replace at-will recall
+  with defined thresholds, an administering body and staggered short terms. Explain
+  how a consensus-only global federation avoids the universal veto on exactly the
+  planetary problems it exists for. Add real justice material: standards of proof,
+  due process, proportionality, an appeals path independent of the recognition
+  apparatus, a precise replacement for the misused "crimes against humanity", and
+  who inspects restricted housing. Answer Ambedkar: caste as a design problem, not a
+  historical footnote — reserved committee representation, mandatory external audit
+  of allocation patterns, portability of entitlements so exit from a hostile
+  community is not destitution. Much of this belongs in the constitution rather than
+  in prose; check each against what the rules can actually express.
 
-- **[AUTHOR-GATED / needs data] Rewrite Transition Costs with a costed worked
-  example.** A fiat price tag on the 200k-city baseline and funding per phase, plus
-  a housing acquisition mechanism (community land trusts vs right-of-first-refusal).
-  Needs real fiscal magnitudes and a design choice — don't fabricate numbers.
+- **Carry the floor corrections into book-1 rather than into the legacy files.**
+  Three fixes were queued against the manuscripts and should now be written
+  correctly *once*, in book-1: state the eight-right floor exactly and once;
+  **privacy is not a fundamental right** (encoded as a defeasible right it lands at
+  stratum 3 and destroys the single-deprivation theorem — it is Part V argument);
+  and define `dwell` in prose as **protective** shelter — weatherproof, ventilated,
+  powered, plumbed — which absorbs the water-and-sanitation case at zero cost. The
+  franchise is a rule that survives conviction, not a floor right.
 
-- **[AUTHOR-GATED] Consolidation cut — the destructive/subjective remainder.** NOT
-  for autonomous execution. (a) Dedupe the safeguard litany (caps / diminishing
-  returns / rotation / transparent ledgers / peer verification) across 5+ chapters —
-  risky because the Pitfalls and Governance chapters re-answer distinct objections
-  with it, so a blind "state once, reference after" would weaken their
-  self-containment; decide per-occurrence. (b) Merge Part 4 (Implementing
-  Fundamental Rights) into Part 2, and collapse Pitfalls + Governance into one
-  chapter — reorganizes ~600 lines and ripples through the Part-5 cross-references
-  and bridges. Both want author sign-off on scope.
+- **Then delete both files, in one commit, with the harvest manifest in the body.**
+  Not before. The commit message is the record of what was taken and what was
+  consciously dropped.
 
-- **[AUTHOR-GATED] Tech backbone — the two opinionated remainders.** (a) "Why a
-  blockchain at all?", honestly weighing CRDTs / signed logs against nibli-store's
-  HLC/tombstone/CRDT-export design — this partly argues against the book's central
-  premise, so the author decides how hard to hedge. (b) Replace venture brand names
-  (union.build, Sui, Fuel, linera) with capability requirements plus a dated
-  appendix — removes specific tools the author chose to name. The nibli-side half of
-  this convergence lives in nibli's own `TODO.md`.
+## Hold for book-2 — do not work these here
+
+Parked, so they are not lost when the legacy files go. These become the seed of
+book-2's tracker, written from scratch after book-1 ships.
+
+- **The technical backbone material** in `book.md` — local-first/offline-first
+  micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design,
+  YAD, the layman's guide. Roughly a third of the legacy book's word count. It has
+  **no support in the constitution** — `utopia.nibli` contains no ledger, no
+  biometric, no device, no cryptography — which is precisely why it is book-2's
+  subject and not book-1's.
+- **"Why a blockchain at all?"** — honestly weighing CRDTs and signed logs against
+  nibli-store's HLC/tombstone/CRDT-export design. It partly argues against the
+  legacy book's central premise, which makes it a strong opening question for
+  book-2 rather than a threat to book-1.
+- **Replace venture brand names** (union.build, Sui, Fuel, linera) with capability
+  requirements plus a dated appendix.
+- **The costed transition** — a fiat price tag on a 200k-city baseline, funding per
+  phase, and a housing acquisition mechanism (community land trusts vs
+  right-of-first-refusal). Needs real fiscal magnitudes; don't fabricate numbers.
+- The nibli-side convergence bullets live in nibli's own `TODO.md`.
