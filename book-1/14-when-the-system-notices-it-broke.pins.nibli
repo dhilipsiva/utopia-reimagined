@@ -1,0 +1,52 @@
+# ── Chapter 14 fidelity pins: "When the System Notices It Broke" ─────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#             book-1/14-when-the-system-notices-it-broke.pins.nibli
+#
+# "Nothing reads these markers" is an absence and cannot be queried: err
+# appears twice in the constitution, both times as a rule head. Re-check with a
+# grep if the rules change.
+
+:expect-pins 12
+
+# "all of them. Hano, Ruk, Don, Nando — every convicted person"
+? err(Hano, Isolation).
+# => TRUE
+
+? err(Ruk, Isolation).
+# => TRUE
+
+? err(Don, Isolation).
+# => TRUE
+
+? err(Nando, Isolation).
+# => TRUE
+
+# "Ask which free people are, and the answer is none."
+? err(Bela, Isolation).
+# => FALSE
+
+? err(Jala, Isolation).
+# => FALSE
+
+# "nobody anywhere in this society has company on record"
+? meets(Hano).
+# => FALSE
+
+? meets(Bela).
+# => FALSE
+
+# the placement marker: right about nobody
+? err(Ruk, Placement).
+# => TRUE
+
+? err(Lalo, Placement).
+# => TRUE
+
+? err(Hano, Placement).
+# => FALSE
+
+# and Ruk is correctly placed, which is what makes the marker wrong
+? building(HighSec, Ruk).
+# => TRUE

@@ -736,6 +736,21 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DERIVED SPINE COMPLETE — 14 chapters, 14,743 words, every chapter pinned.**
+  Chapter 14, "When the System Notices It Broke"
+  (`book-1/14-when-the-system-notices-it-broke.md`, 1,057 words, 12 pins) closes it.
+  The two markers demonstrate three failure modes of self-audit: one fires on every
+  prisoner (accurate about a record that knows nothing), one fires on the wrong
+  people, and **nothing reads either** — `err` is a leaf like `travel` and `become`.
+  Names the family: the floor states what is owed and nothing tracks arrival; the
+  amendment machinery states what becomes law and nothing enacts it; the audit
+  states what is broken and nothing repairs it. **The design establishes what is
+  true and has almost nothing to say about what is then done** — a description of a
+  society's reasoning rather than its operation. Ends on what survives: most systems
+  have no vocabulary for their own violation, this one does, and every defect in the
+  book was found by asking the design what it thought was true and checking the
+  answer against its own claims.
+
 - **DRAFTED: Chapter 13, "The One Thing Taken"** —
   `book-1/13-the-one-thing-taken.md`, 988 words, 13 pins green. Opens Part IV and
   audits the single-deprivation claim in one place. The structural finding:
