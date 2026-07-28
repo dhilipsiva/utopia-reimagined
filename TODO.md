@@ -193,26 +193,26 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## The verification harness
 
-**Upstream half is DONE.** `just verify-pins` runs in nibli's `ci`;
-`pins/rights-floor.nibli` guards the engine mechanism with a deliberately inline
-fixture; the runner self-tests before it is trusted. Nothing further is owed there.
-**Book half:** `new-book-plans/rights-floor.pins.nibli` holds this constitution's
-51 pins and `:load`s the live file — which is why it cannot move upstream, where
-fixtures are inline by design. The two are complements.
+**DONE, both halves.** Run the constitution suite with:
 
-- **Give the book-side suite a trustworthy runner.** It currently runs on a scratch
-  prototype whose defects are known and enumerated: no `:accept`/`:refuse`, so the
-  four complement controls and four firewall refusals are a shell loop rather than
-  pins; a stratification refusal is indistinguishable from a syntax typo, so a
-  misspelled predicate passes as a firewall test; unpinned queries pass silently; a
-  query that fails to compile becomes a comparable verdict string;
-  `RESOURCE_EXCEEDED` is pinnable, which under wasm would let a fuel trap go green
-  (moot natively, where there is no fuel — but pin the surface, not the assumption).
-  Fix: teach `nibli-pin` a `:load`, or rebuild the book-side runner with its
-  directive set — `:refuse <class> /needle/`, `:accept`, mandatory `# =>`,
-  `:expect-pins <n>` as an anti-hollowing floor, and exit 1 = property regressed
-  vs exit 2 = harness broken. **The suite is real; the runner is not yet
-  trustworthy.** Until it is, treat green as unconfirmed.
+```
+nibli-pin --kb new-book-plans/utopia-v2.nibli new-book-plans/rights-floor.pins.nibli
+```
+
+**62 pins, 0 findings, exit 0.** Use the **release** build of `nibli-pin` — debug is
+far too slow for this suite. `--kb` loads the live constitution as a fixture.
+
+The two pin files are different KINDS and both headers now say so. nibli's
+`pins/*.nibli` are **mechanism** pins: they inline their fixtures because the
+fixture is not the subject. `new-book-plans/rights-floor.pins.nibli` is a **content**
+pin: it loads the constitution because the constitution *is* the subject, and
+inlining it would certify a copy that then drifts.
+
+Three guards, each of which caught something real on the way in: `:expect-pins` is
+an anti-hollowing floor and caught a miscount on the first run; omitting `--kb`
+yields 34 findings rather than a silent pass; and an inert `derived_only`
+declaration — one placed below the facts it guards — is now refused upstream at
+assert time rather than merely detected.
 
 - **Fix or replace `4-strata.py` — it is not cosmetic, it already caused a wrong
   answer.** Its parser takes only the *first* predicate on a fact line, so it never
