@@ -54,23 +54,18 @@ derived_only("false").
 derived_only("reward").
 derived_only("become").
 derived_only("err").
-# STILL OPEN — these three cannot be closed until the articles that use
-# them separate their asserted half from their derived half. Each carries
-# a deliberate ground fact today, so declaring it breaks the file:
-#   authority — Art 7 asserts the three institution constants
-#               (authority(Court/Review/Appeals)). Fix: assert
-#               `institution(Court).` and derive authority from that plus
-#               choose(Electorate, ·). Until then `authority(Pax).` still
-#               reopens the shield exploit.
-#   permits   — Art 8 deliberately leaves permits(Appeals, ·) assertable
-#               as per-case relief. Fix: assert relief under its own
-#               relation and derive permits(Appeals, ·) from it. Until
-#               then two sock-puppet credentials still void an innocent.
-#   prisoner  — the cast asserts prisoner(Adam) as a fixture rather than
-#               deriving it from injure + judge like everyone else.
-# The engine feature is not at fault here: it exposed that three articles
-# conflate what the world reports with what the system concludes, which is
-# this book's own thesis turned back on its constitution.
+derived_only("authority").
+derived_only("permits").
+derived_only("prisoner").
+# [v0.3] authority, permits and prisoner were the last three open, and each
+# was open for the same reason: the article conflated a fact the world reports
+# with a conclusion the system draws, under one relation name. Splitting them
+# closed all three —
+#   authority — institutions now assert `public(Court).` and authority derives.
+#   permits   — relief now asserts `clear(Nia).` and permits(Appeals, ·) derives.
+#   prisoner  — Adam is convicted through Article 6 rather than asserted.
+# That is this book's own thesis applied to its own constitution: evidence is
+# what the world reports, and a conclusion must be earned by a rule.
 
 # ─── Article 1: The Unconditional Floor ───────────────────── [v0.1]
 #
@@ -331,9 +326,16 @@ all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> b
 # POLITICAL choice surfaced in logic, not a technical inevitability.
 all $w: all $o: show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w).
 all $o: choose(Electorate, $o) -> authority($o).
-authority(Court).
-authority(Review).
-authority(Appeals).
+# [v0.3 REPLACES authority(Court/Review/Appeals)] The three institutions had
+# their authority ASSERTED, which is what kept `authority` open to direct
+# assertion and left `authority(Pax).` able to hand the shield to anyone.
+# Standing is now the asserted fact and authority is derived from it. Note
+# `public` deliberately does NOT flow into Art 8's credential rule — an
+# institution is exposable, but it is not a Review auditor.
+public(Court).
+public(Review).
+public(Appeals).
+all $o: public($o) -> authority($o).
 # authority is deliberately NOT revoked by broken/rotten: recalling Boss
 # must not strip Rebel's shield retroactively. Seating is forever
 # exposable; only POWER (permits) is revocable.
@@ -352,6 +354,12 @@ all $a: choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a
 # as rotten(X) in epoch N+1's input by the store discipline. It re-derives
 # false this epoch so clawback keeps firing:
 all $x: rotten($x) -> false($x).
+# [v0.3 NEW] Per-case appellate relief. Art 8 always meant permits(Appeals, ·)
+# to be assertable while permits(Review, ·) was derived — but a relation is
+# closed or open as a whole, so leaving relief assertable left the CREDENTIAL
+# assertable too, and two sock-puppet credentials could void an innocent.
+# Relief now has its own asserted relation and permits derives from it.
+all $x: clear($x) -> permits(Appeals, $x).
 # Disclosed epoch-granularity limit: two auditors voiding EACH OTHER in
 # the same snapshot both count as clean this epoch. Mitigation is
 # sequencing adjudication batches into epochs. The carry discipline
@@ -382,7 +390,12 @@ permanent(Art_Entrench).
 # not an in-snapshot derivation. Named, not hidden.
 
 # ─── The world in facts: cast ───────────────── [v0.1, two swaps]
-prisoner(Adam).
+# [v0.3 REPLACES prisoner(Adam)] Adam was the one asserted prisoner, a fixture
+# rather than a conviction, which kept `prisoner` open to assertion. He is now
+# convicted through Article 6 like every other prisoner in the cast.
+person(Adam).
+injure(Adam, Ivo).
+judge(Court, Adam).
 person(Bela).
 person(Cira).
 teaches(Bela, Cira).
@@ -422,7 +435,7 @@ judge(Review, Lupo).
 person(Nia).
 injure(Nia, Ivo).
 judge(Court, Nia).
-permits(Appeals, Nia).
+clear(Nia).
 person(Lalo).
 person(Mina).
 injure(Lalo, Mina).

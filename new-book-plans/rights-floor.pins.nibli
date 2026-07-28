@@ -10,7 +10,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 62
+:expect-pins 68
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -162,3 +162,26 @@ err(Hano, Placement).
 
 :refuse reasoning /declared derived-only/
 false(Ara).
+
+# The two worst exploits, dead. Each was one asserted fact from bypassing the
+# article that exists to prevent it; each is now refused at assert time.
+:refuse reasoning /declared derived-only/
+authority(Pax).
+
+:refuse reasoning /declared derived-only/
+permits(Review, Sock).
+
+:refuse reasoning /declared derived-only/
+prisoner(Zed).
+
+# The complement half: closing a relation must not break its derivation, or the
+# guarantee is just a ban. Each of these still derives from its new asserted
+# source — public(Court), clear(Nia), and Article 6's conviction rule.
+? authority(Court).
+# => TRUE
+
+? permits(Appeals, Nia).
+# => TRUE
+
+? prisoner(Adam).
+# => TRUE

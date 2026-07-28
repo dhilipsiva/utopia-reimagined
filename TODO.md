@@ -55,6 +55,14 @@ resume when it lands.
   single-deprivation theorem survives. All 51 pins pass; the firewall holds
   (`~believe`/`~meets`/`~eats`/`~secure -> prisoner` refused, `~home` control
   loads); five upstream regression tests pin the mechanism in nibli's CI.
+- **All nine gate relations are closed to direct assertion** (Article 0):
+  `fit`, `defend`, `false`, `reward`, `become`, `err`, `authority`, `permits`,
+  `prisoner`. The three that once carried deliberate ground facts were split —
+  institutions assert `public(Court).` and authority derives; relief asserts
+  `clear(Nia).` and `permits(Appeals, ·)` derives; Adam is convicted through
+  Article 6 rather than asserted. All three exploits are dead and pinned:
+  `authority(Pax).`, `permits(Review, Sock).` and `fit(Ruk, Homestay).` are each
+  refused at assert time, with complement pins proving the derivations still work.
 - The widening hazard is **rule-head position**, not place index and not the
   predicate: `every`/`all` forms widen the protected set, ground facts and `some`
   are inert. It cannot be banned, because the widening *is* the firewall. The
@@ -238,36 +246,6 @@ derivations are never stored and only asserted facts can make one late).
   it.
 
 ## Constitution (KB) work
-
-- **Separate the asserted half from the derived half in Articles 6, 7 and 8.**
-  The engine feature landed (`derived_only("X").`, fail-closed at assert time,
-  nibli b053b77) and **six relations are now closed** in Article 0: `fit`, `defend`,
-  `false`, `reward`, `become`, `err`. That closes exploit C outright —
-  `fit(Ruk, Homestay).` is refused and the farmhouse breach marker holds.
-
-  **Three cannot be closed yet, and they are the two worst exploits.** Each carries
-  a deliberate ground fact, so declaring it breaks the file:
-  - `authority` — Article 7 asserts the three institution constants. **Fix:** assert
-    `institution(Court).` etc. and derive `authority` from that plus
-    `choose(Electorate, ·)`. Until then `authority(Pax).` still makes Don unjailable.
-  - `permits` — Article 8 deliberately leaves `permits(Appeals, ·)` assertable as
-    per-case relief. **Fix:** assert relief under its own relation and derive
-    `permits(Appeals, ·)` from it. Until then two sock-puppet credentials still void
-    an innocent and strip their points.
-  - `prisoner` — the cast asserts `prisoner(Adam)` as a fixture instead of deriving
-    it from `injure` + `judge` like everyone else. **Fix:** derive it.
-
-  The engine is not at fault: it exposed that three articles conflate what the world
-  reports with what the system concludes — this book's own thesis, turned back on
-  its constitution. Do this before claiming Article 8's guarantee in print.
-
-  **Ordering is no longer a hazard you have to remember.** The check fires at assert
-  time, so a declaration only protects what is asserted after it — but an inert
-  declaration is now *refused* upstream rather than silently ignored, so the failure
-  mode that produced this warning cannot recur. Keep the declarations at the top of
-  the file anyway; that is where they read correctly. When Articles 6/7/8 are split,
-  add `derived_only` for `authority`, `permits` and `prisoner` and extend the three
-  Article 0 refusals in `rights-floor.pins.nibli` to cover them.
 
 - **Fix `err/2`: it fires on correctly-placed prisoners.** `err(Lalo, Placement)`
   is **TRUE** — but Lalo is severe+family and Article 6 routes him correctly to
