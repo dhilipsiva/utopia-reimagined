@@ -1,0 +1,57 @@
+# ── Chapter 6 fidelity pins: "Clawback" ──────────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/06-clawback.pins.nibli
+#
+# NOTE: the Cira pins below encode a defect the chapter names as indefensible.
+# If the contamination rule is narrowed (claw back only recognition derived from
+# the fraudulent teaching), lose(Points, Cira) flips FALSE and the chapter's
+# middle section must be rewritten. That is the intended outcome, not a break.
+
+:expect-pins 13
+
+# "Bela was examined by two auditors and voided ... recognition is clawed back"
+? false(Bela).
+# => TRUE
+
+? lose(Points, Bela).
+# => TRUE
+
+# "Bela is still a person. Bela still moves freely."
+? person(Bela).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+# "Bela taught Cira. Bela was voided. Cira's recognition is clawed back too."
+? teaches(Bela, Cira).
+# => TRUE
+
+? lose(Points, Cira).
+# => TRUE
+
+# "Compare Fin, who was taught by Esa. Esa was never voided, so Fin keeps
+#  everything." — the rule fires only through the teacher
+? teaches(Esa, Fin).
+# => TRUE
+
+? false(Esa).
+# => FALSE
+
+? lose(Points, Fin).
+# => FALSE
+
+# the same clawback reaches the other voided auditor
+? false(Lupo).
+# => TRUE
+
+? lose(Points, Lupo).
+# => TRUE
+
+# and Mira, accused by a liar, keeps everything
+? lose(Points, Mira).
+# => FALSE

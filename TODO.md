@@ -389,7 +389,12 @@ derivations are never stored and only asserted facts can make one late).
   that is a contradiction in the machine, and it is worth framing in the book as
   forgiveness being a *right* rather than merely as a bug fix.
 
-- **Fix the Article 4 clawback rules — they refute a published bright line.** This
+- **Fix the Article 4 clawback rules — and Chapter 6 is now written against them.**
+  Narrowing the contamination rule flips `lose(Points, Cira)` to FALSE and requires
+  rewriting the middle third of `book-1/06-clawback.md`. That is a good trade, not a
+  cost — but do it deliberately, and re-run the chapter's pins after. Note also that
+  "no negative scoring of persons" is a **legacy `book.md`** bright line, not one
+  book-1 has adopted; book-1 currently describes clawback as the design has it. This
   is the third instance of prose lying about the machine, after the farmhouse bug
   and "due process" appearing only in a comment, and it is the worst of the three
   because the contradicted sentence is in the manuscript's most-praised chapter.
@@ -709,6 +714,16 @@ trustworthy.
   non-derived and labelled the way Part V is labelled, so the book does not open
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
+
+- **DRAFTED: Chapter 6, "Clawback"** — `book-1/06-clawback.md`, 994 words,
+  `06-clawback.pins.nibli` (13 pins, green). Closes Part II. Written *around* the
+  contamination defect rather than after fixing it: Cira is the chapter's centre and
+  the chapter states plainly that the rule is not defensible as written. **If the
+  rule is narrowed, `lose(Points, Cira)` flips FALSE and the middle section must be
+  rewritten** — the pin file says so. Decide which way round you want it.
+  Ends on the ceiling rather than a fourth consecutive limit: clawback reaches
+  recognition and stops, so the worst the machinery can do leaves the floor,
+  liberty and personhood untouched.
 
 - **DRAFTED: Chapter 5, "Voiding"** — `book-1/05-voiding.md`, 1,040 words,
   `05-voiding.pins.nibli` (14 pins, green). Bela (it works), Esa (one is not
