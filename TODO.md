@@ -42,13 +42,13 @@ resume when it lands.
 `nibli-host --script`, release wasm, `NIBLI_FUEL` pinned high):
 
 - **A floor line is a compile-time prohibition, not a declaration.**
-  `obligated(every person, event { P() })` compiles to a rule with `person` in the
+  `entitled(every person, event { P() })` compiles to a rule with `person` in the
   body, so `P` sits downstream of `prisoner`; any later rule taking `~P` into that
   cone is an unstratifiable negative cycle and is refused. Verified both ways plus
   a non-floor control. You cannot write a law punishing a person for lacking a
   floor right. Where it stops is equally established: `~P -> false` (standing),
   `~P -> lose(Points, ·)`, and positive compulsion `prisoner -> P` all still load.
-- The floor is **eight** and is enacted in `new-book-plans/utopia-v2.nibli`, with
+- The floor is **eight**, spelled `entitled(...)` (x1 the rights-holder), enacted in `new-book-plans/utopia-v2.nibli`, with
   the franchise and the isolation marker as rules. Graph after enactment: 37
   predicates, 16 derived, 28 rules, max stratum 3, **stratum 3 still exactly
   `{err, travel}`** — the single-deprivation theorem survives.
@@ -398,58 +398,23 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## nibli handoffs — blocked on engine work
 
-Ordered. The first blocks a blocking decision, so it goes first.
+The floor-predicate handoff is **closed**: `entitled` landed upstream (corpus entry
+plus five regression tests pinning the firewall), the floor is migrated, and all 51
+pins plus the firewall suite pass on it.
 
-- **HANDOFF ANSWERED — land `entitled` (arity 2) and the regression test.** The
-  nibli session traced the mechanism and answered all four questions. Outcome:
+- **Close the `obligated`/`obliged` de-swap upstream.** Not blocking book-1 — the
+  floor no longer uses either. They are not converses: both from `bilga`, identical
+  gloss and template, swap bolted on afterwards, so two interchangeable-looking
+  spellings compile to argument-inverted facts. Repair is to drop the swap, give
+  `obligated` `obliged`'s place order, and delete the two `nibli-render` overrides.
+  It touches the GDPR corpus, and `gdpr.nibli:52` Art 6(1)(c) may be **vacuous** as
+  a consequence — query it before deciding whether that line is meant to be live.
 
-  **What the protection actually rests on, and it is not what this tracker said.**
-  The edge comes from the **`event { }` abstraction**, not from the predicate and
-  not from x1 as such. `event { P() }` compiles to
-  `nu(absvar) & __abs_H(absvar) & P(ev2) & …`; `flatten_consequent`
-  (`nibli-reason/src/rules.rs:388`) descends both `And` branches unconditionally so
-  P lands in the rule head against the `person` restrictor, while
-  `collect_ground_facts` (`rules.rs:1934`) honours `__abs_` opacity and skips it.
-  The protection lives in that asymmetry. Confirmed independently here: `obligated`,
-  `support`, `serve` and `teaches` give **identical** protection, and
-  `obligated(every person, Belief)` — same predicate, no event — loses it entirely.
-  **So the predicate name buys nothing structural. Choose it purely for meaning.**
-
-  **`deserve` is rejected.** `jerna` is an earning predicate at its core — x1 earns
-  and **x2 is the wages** — so the floor would put an event into the wages place of
-  an earning relation. Leaving x3 unfilled neutralises nothing, and the entry is
-  `Generic` tier with an open TODO, meaning nobody hand-verified its places. Not a
-  foundation for a constitutional floor.
-
-  **`permitted` is structurally excluded**, which is a nice result in itself: the
-  floor would close `permits -> person -> prisoner ->(neg) permits` against Article
-  6's `~permits(Appeals, ·)`, so the whole KB fails to load. The same mechanism that
-  protects the floor, turned against it. `grant` is reserved by `nibli-auth`; `owe`
-  puts the owed party in x3.
-
-  **Decision: add `entitled`, arity 2** — `entitled(every person, event { eats() })`.
-  Arity 2 rather than 3 deliberately: a `standard` place is exactly where a later
-  hand would write a condition, and an unconditional floor should have **nowhere to
-  put one**. That is the property this exercise was chasing from the start.
-
-  **THE REAL RISK, and it now outranks the predicate question.** The opacity
-  asymmetry is emergent and **nothing pins it**. Anyone "fixing" `flatten_consequent`
-  for symmetry would silently make this floor stratifiable — rules could then punish
-  people for lacking a floor right — and **no test in either repo would go red**.
-  That is a single upstream refactor away from destroying book-1's central claim.
-  The nibli-side regression test pinning the `prisoner -> eats` rejection is
-  therefore the highest-value item in this handoff, above the corpus entry. Until it
-  is green, every claim in Article 1 is provisional and the book must not print the
-  firewall argument.
-
-  **Separate, and not blocking book-1:** the `obligated`/`obliged` de-swap. They are
-  not converses — both derive from `bilga` with identical gloss and template, and the
-  swap was bolted on afterwards, so two interchangeable-looking spellings compile to
-  argument-inverted facts. The repair is to drop the swap, give `obligated`
-  `obliged`'s place order, and delete the two `nibli-render` overrides. It touches
-  the GDPR corpus, and the session flagged that `gdpr.nibli:52` Art 6(1)(c) may be
-  **vacuous** as a consequence — query it before deciding whether that line is meant
-  to be live. That is nibli's call, not book-1's.
+- **Ask upstream whether `entitled` x3 should reject abstractions outright.** The
+  arity-3 entry lets an `event { }` in the standard place silently widen the floor
+  (see Invariant 3 in the constitution). A corpus- or compiler-level refusal would
+  make Invariant 3 unnecessary; until then it is enforced only by a grep and by
+  complement pins.
 
 - **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
   new exploits, and it defeats the constitution's central security claim. Prompt to
@@ -692,9 +657,9 @@ Ordered. The first blocks a blocking decision, so it goes first.
   either half alone.
 
 - **Draft Chapter 1 ("The Floor Nobody Computes") as the proof of method.** Short:
-  the eight obligations, and the argument that computing eligibility is where denial
+  the eight entitlements, and the argument that computing eligibility is where denial
   lives. **Lead with the firewall, not with assert-only-ness.** The old framing —
-  "no rule can reach `obligated`, so nothing can retract it" — is true but weak, and
+  "no rule can reach the floor, so nothing can retract it" — is true but weak, and
   it is not what actually protects anyone. The real claim is stronger and
   demonstrable on a page: *write a law that jails people for not holding the right
   belief, and this constitution will not compile.* Show the rule, show the

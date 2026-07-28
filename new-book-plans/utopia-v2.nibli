@@ -61,7 +61,8 @@
 # reaches `prisoner` only — not standing, not points.
 #
 # INVARIANT 1 for any future floor addition: a floor predicate's name
-# must appear in NO RULE BODY in this file. Verified: putting `choose` on
+# must appear in NO RULE BODY in this file — and note this is about the
+# predicate INSIDE the event, not the outer `entitled`. Verified: putting `choose` on
 # the floor un-stratifies Article 8 and SILENTLY DROPS the Review-
 # credential rule — the capture defence dies while the amendment engine
 # keeps running. Rule HEADS are safe (dwell and expresses are both).
@@ -79,10 +80,10 @@
 # skips the body. **The protection lives in that asymmetry.**
 #
 # Two consequences, both verified:
-#   - The outer predicate name is FREE. `obligated`, `support`, `serve`
-#     and `teaches` all give identical protection. The predicate carries
-#     MEANING ONLY — it buys nothing structural, so choose it purely for
-#     what it says.
+#   - The outer predicate name is FREE. `entitled` was chosen for meaning
+#     alone: `obligated`, `support`, `serve` and `teaches` were all tested
+#     and give identical protection. The predicate buys nothing
+#     structural, so choose it purely for what it says.
 #   - Drop the event and the protection dies. `entitled(every person,
 #     Belief).` — a plain term in x2 — loads the heresy law at 0 errors.
 # Also refuted, all behaving exactly like writing no floor line at all —
@@ -91,6 +92,38 @@
 #     owe(State, Belief, every person).
 #     all $x: person($x) -> owe(State, Belief, $x).
 # If a predicate reads wrong, change the PREDICATE, never the shape.
+#
+# INVARIANT 3 — x3 MUST BE EMPTY ON EVERY FLOOR LINE. `entitled` is arity
+# 3 (holder / entitlement / standard) and x3 is a live place, not padding.
+# It cannot NARROW the floor — every route to gate, tier or condition a
+# right through the standard place is refused by the stratifier, and the
+# firewall is x3-immune. But it can silently WIDEN it, which is worse,
+# because widening is invisible. `flatten_consequent` descends the head's
+# And regardless of WHICH place the abstraction sits in, so an
+# `event { P() }` in x3 contributes the same P -> person edge that x2
+# does, and P joins the protected set. The corpus template is
+# "{x1} is entitled to {x2}", so x3 never reaches English.
+# Demonstrated on this file: change the eats line to
+#     entitled(every person, event { eats() }, event { home() }).
+# and it loads at 146 asserted / 0 errors, every pin still passes, the
+# rendered English is unchanged — and this file's own designated
+# non-floor control `person($x) & ~home($x) -> prisoner($x)` flips from
+# LOADS to REFUSED. Housing is now an unconditional floor right and
+# nothing anywhere says so. Editor check, must stay 0:
+#     grep -c '^entitled(.*,.*,' this-file
+# COMPLEMENT PINS are the only test class that catches a smuggle, because
+# every positive pin passes straight through one. For each non-floor
+# predicate this file relies on, pin that
+#     all $x: person($x) & ~P($x) -> prisoner($x).
+# still LOADS. Verified set, all currently LOADS:
+#     home, choose, permits, false
+# EXCLUDE `travel`: it is REFUSED, and legitimately so — Article 2 derives
+# it as `person($x) & ~prisoner($x) -> travel($x)`, so travel is already
+# inside the prisoner cone by design and a complement pin on it would be
+# a permanent false positive. Any predicate that appears under negation
+# in a rule reaching `prisoner` is disqualified as a control for the same
+# reason; check before adding one.
+# A floor that grew in secret shows up here and nowhere else.
 #
 # FRAGILITY — still the largest single risk to this design, now pinned.
 # The asymmetry above is an emergent property of two functions disagreeing
@@ -129,12 +162,10 @@
 #     6's `~permits(Appeals, ·)`, and the whole file fails to load. The
 #     mechanism that protects the floor is what rules this one out.
 #   `owe` — the owed party is x3, not x1. `grant` — reserved by nibli-auth.
-# ARITY NOTE: 3, not the 2 originally requested. The mitigation is that
-# the template carries only two placeholders, so `standard` never reaches
-# English — an unfilled place is invisible rather than merely empty.
-# Do not fill x3 on a floor line: an unconditional floor should have
-# nowhere to put a condition, and that is the whole reason arity 2 was
-# asked for.
+# ARITY NOTE: 3, not the 2 originally requested, and the mitigation
+# offered upstream — "the template has two placeholders, so an unfilled
+# place is invisible" — is exactly what makes INVARIANT 3 necessary: a
+# FILLED place is invisible too. See INVARIANT 3 above; x3 stays empty.
 # RENDER LIMITATION, pre-existing and NOT introduced here: back-translating
 # a floor line still leaks event scaffolding — "…then Y is an event and X
 # is entitled to Y". The collapse that reads `obligated` nicely is gated on
