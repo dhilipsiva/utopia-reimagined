@@ -57,17 +57,50 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **[AUTHOR-GATED] Re-derive Part V of the new book — the harvest premise does not
-  survive contact with the manuscript.** `3-spine.md` proposes lifting four
-  `book.md` chapters intact. Two of them **are not chapters**: "The Five Joints" is
-  a 192-word `##` section inside "Learning from Those Who Tried", and "The
-  Calculation Problem" is a 540-word `##` section inside "Employment, Reimagined".
-  The two real chapters carry **7 and 5** named cross-references to material the new
-  book drops — against `1.md`'s own stated threshold that a chapter referencing six
-  others is not harvestable. Worst case is the showpiece: the social-credit
-  chapter's most-praised passage ("Those passages now state the bright line") points
-  at three passages in three dropped chapters. Either rewrite these as new chapters
-  that stand alone, or drop the harvest and let Part V be written fresh.
+- **[AUTHOR-GATED] Build Part V on the five-joints scorecard.** Four architectures
+  were designed and judged by a reader, a trade editor and a hostile expert. The
+  salvage audit is settled and measured (I re-verified the counts): the four harvest
+  candidates total 6,653 words — social credit 1,757, "Learning from Those Who
+  Tried" 2,264, "When the Pod Meets the State" 2,092, "The Calculation Problem" 540.
+  **~30% survives near-verbatim and every near-verbatim survivor is evidence; not
+  one argumentative frame survives.** "Learning from Those Who Tried" is the only
+  genuine harvest — the nine historical cases are researched, sourced and
+  mechanism-independent. "When the Pod Meets the State" is unsalvageable: it says
+  "pod" 21 times in 2,092 words, and the new book has no pods. The social-credit
+  chapter is the best writing in the manuscript and unliftable — seven named
+  dependencies, including its showpiece self-correction passage, which points at
+  three chapters that will not exist.
+
+  **Recommended: the five-joints skeleton, at ~14,500 words.** A century of
+  attempts broke at five recurring joints — valuation, rotation, coercion, capture,
+  the state — so score this design against those five. It is the only principle
+  legible in one sentence, the only proportionate length, and the only one that
+  solves the confession problem structurally rather than rhetorically. It won the
+  reader judge and the editor judge, and the editor's reason matters: it was the
+  only design that *measured* rather than estimated, and its numbers check out.
+  Graft on two things from the losing designs: the three-word verdict vocabulary
+  (**Survives / Survives, narrowed / Fails as stated**, printed once and never
+  expanded — the most enforceable seam device proposed, because it disciplines at
+  the sentence level), and the rule that **every limit closes on a specification**
+  concrete enough to be worked on, not on an admission.
+
+  **One fix before building it:** do not publish a numeric self-grade. The hostile
+  judge's dismissal sentence for this design was *"two and a half out of five"* — a
+  failing grade, self-administered, printed as the structure of the part. Score
+  against the joints without scoring the design out of five.
+
+  Two decisions only you can make, both surfaced by the judges:
+  - **The hostile reviewer attacks the constraint, not the book.** "The repository
+    is public. I found it in an afternoon." Every design obeyed *never mention the
+    formalism*, and the reviewer's view is that obeying it is the vulnerability —
+    an unmentioned but discoverable apparatus reads as concealment, where a named
+    one reads as discipline. The counter is Krugman's step (3): the public repo is
+    what discharges the obligation to publish the apparatus. Decide whether the
+    book stays silent, adds one honest line in a note, or says it plainly.
+  - **Proportion.** At the losing designs' lengths Part V ran ~27,500 words against
+    perhaps 36,000 derived — 43% of the book non-derived, which invites the reading
+    that the derivation is decoration. The ~14,500 recommendation exists partly to
+    avoid this. Confirm the target before drafting.
 
 - **[AUTHOR-GATED] Settle the title, and whether "Minimum Viable Society" travels.**
   MVS is the old book's best coinage. Decide whether the new book keeps it — and
@@ -255,12 +288,25 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   that is a contradiction in the machine, and it is worth framing in the book as
   forgiveness being a *right* rather than merely as a bug fix.
 
-- **Narrow the Article 4 student contamination rule.** `teaches($t,$s) &
-  false($t) -> lose(Points, $s)` docks the student for the teacher's fraud —
-  collective punishment, flagged in the file as an open fairness question and
-  independently raised in severity by two lenses. It sits inside the recognition
-  system, the book's signature invention. Narrow to rewards actually derived from
-  the fraudulent teaching, which needs provenance on `reward`.
+- **Fix the Article 4 clawback rules — they refute a published bright line.** This
+  is the third instance of prose lying about the machine, after the farmhouse bug
+  and "due process" appearing only in a comment, and it is the worst of the three
+  because the contradicted sentence is in the manuscript's most-praised chapter.
+  `book.md` bright line 2 reads *"No negative scoring of persons. Merit is earn-only
+  recognition."* It is also recorded in `CLAUDE.md` as a settled decision. The
+  enacted constitution contradicts it twice:
+  - `utopia-v2.nibli:117` — `teaches($t,$s) & false($t) -> lose(Points, $s)` docks
+    a **student** for a teacher's fraud. Negative scoring, of a person, who did
+    nothing. Collective punishment, and a peremptory-norm violation.
+  - `utopia-v2.nibli:116` — `false($f) -> lose(Points, $f)` docks the wrongdoer.
+    Fairer, still a subtraction from a person's record, still refutes the line.
+  Decide which side gives: either the bright line narrows to "no subtraction except
+  by due process for one's own adjudicated fraud" and 117 is deleted, or the
+  clawback rules go and sanctions reach perks only. Do not leave both in print.
+  Whichever way, narrow 117 to rewards actually *derived* from the fraudulent
+  teaching, which needs provenance on `reward`. Then re-check every other bright
+  line against the enacted rules — nobody has done that sweep, and this one was
+  found by accident.
 
 - **Grow the provisioning layer, or write Part I to stop where it stops.**
   `eats(Adam)`, `healthy(Bela)`, `secure(Bela)`, `learn(Cira)` and now
