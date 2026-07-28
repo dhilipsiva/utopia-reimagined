@@ -198,10 +198,25 @@ Everything else in `new-book-plans/` is unverified or corrected below.
     majority-derived. If Part V approaches half the book, the derivation reads as
     decoration; ~14,500 against ~36,000 derived keeps it near 29%.
 
-- **[AUTHOR-GATED] Settle the title.** Note **MVS is no longer a candidate** — it
-  names a transition strategy (build small, scale up), and book-1 does not describe
-  getting anywhere. The title should name the destination, not the route. Defer
-  until a chapter exists to name it against.
+- **DECIDED: book-1 is titled *Nothing Has to Happen First*.** The subtitle is
+  provisional — working version *"Eight things every person is owed, and why no law
+  can take them away"* — and should be confirmed once Chapter 1 exists, since a
+  subtitle chosen against a real voice survives and one chosen against a plan
+  usually does not.
+
+  The title is the thesis in five plain words, taken from the fidelity table's own
+  sentence: *…are owed to every person, and nothing has to happen first.* It clears
+  every constraint the book carries — it names a destination rather than a route, it
+  uses no jargon, it carries the eligibility argument without stating it, and it
+  avoids "utopia", which the reception literature identifies as the fastest way into
+  the naive-utopianism dismissal and which the legacy book already used.
+
+- **[AUTHOR-GATED] The repo name is now misleading.** `utopia-reimagined` names the
+  legacy book, which is being deleted, and neither new book uses the word — book-1
+  is *Nothing Has to Happen First* and book-2 is the build-it companion. Not urgent
+  and it blocks nothing, but decide before anything is published under the URL: a
+  rename costs remote references and clone paths, while leaving it costs a
+  permanent mismatch between the repo and everything in it.
 
 ## Settled — carry out as the artifacts land, blocks nothing
 
