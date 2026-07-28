@@ -211,8 +211,10 @@ inlining it would certify a copy that then drifts.
 Three guards, each of which caught something real on the way in: `:expect-pins` is
 an anti-hollowing floor and caught a miscount on the first run; omitting `--kb`
 yields 34 findings rather than a silent pass; and an inert `derived_only`
-declaration — one placed below the facts it guards — is now refused upstream at
-assert time rather than merely detected.
+declaration — one placed below the facts it guards — is refused upstream at assert
+time rather than merely detected, pinned at `pins/derived-only.nibli:94-106` with
+both halves (a late declaration refused, a post-rules declaration accepted, since
+derivations are never stored and only asserted facts can make one late).
 
 - **Fix or replace `4-strata.py` — it is not cosmetic, it already caused a wrong
   answer.** Its parser takes only the *first* predicate on a fact line, so it never
