@@ -1,0 +1,50 @@
+# ── Chapter 9 fidelity pins: "The Vote Conviction Does Not Take" ─────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#             book-1/09-the-vote-conviction-does-not-take.pins.nibli
+
+:expect-pins 12
+
+# "Hano is in custody. Hano votes."
+? prisoner(Hano).
+# => TRUE
+
+? travel(Hano).
+# => FALSE
+
+? decide(Hano, Ballot).
+# => TRUE
+
+# "the ballot follows for Hano exactly as it follows for anyone"
+? decide(Jala, Ballot).
+# => TRUE
+
+# "Movement, and nothing else." — checked item by item
+? person(Hano).
+# => TRUE
+
+? expresses(Hano).
+# => TRUE
+
+? false(Hano).
+# => FALSE
+
+? lose(Points, Hano).
+# => FALSE
+
+# "Cira is a person ... and has no ballot, because Cira is not an adult."
+? person(Cira).
+# => TRUE
+
+? mature(Cira).
+# => FALSE
+
+? decide(Cira, Ballot).
+# => FALSE
+
+# "The vote does not have that protection." — felon disenfranchisement COMPILES.
+# This is the chapter's honest half. If a later revision armours the franchise,
+# this pin flips to a refusal and the closing sections must be rewritten.
+:accept
+all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).

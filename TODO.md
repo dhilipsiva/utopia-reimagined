@@ -715,6 +715,16 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 9, "The Vote Conviction Does Not Take"** —
+  `book-1/09-the-vote-conviction-does-not-take.md`, 918 words, 12 pins green. The
+  chapter the old spine did not have. Hano is in custody and votes; the theorem is
+  checked item by item rather than announced. Cira gives the *not yet* versus *taken
+  away* distinction. **Its honest half is verified: felon disenfranchisement
+  compiles.** The floor's protection catches "lacking X is a reason to punish you";
+  disenfranchisement is "being punished costs you X", the other direction, which the
+  firewall does not see. So the vote is intact by absence rather than armoured — one
+  clause from being lost, and the pin file says so.
+
 - **DRAFTED: Chapter 8, "What You Are Owed"** — `book-1/08-what-you-are-owed.md`,
   1,036 words, `08-what-you-are-owed.pins.nibli` (12 pins, green). Names the eight,
   then spends most of its length on the two gaps. Turned up a result worth keeping:
@@ -791,6 +801,10 @@ trustworthy.
   (12 pins, green). Verified jargon-free. Two things to settle on it:
   - **Length.** 1,391 words is short for a trade chapter. Deliberate — one argument,
     cleanly — but confirm before the pattern sets, since chapter length compounds.
+  - **Jargon sweep is clean across all nine chapters** (`nibli|predicate|stratum|
+    compil|assert|rule head|quantif` → 0). "It compiles" leaked into ch 9 and was
+    caught; worth re-running the sweep after every chapter, since the leaks are
+    single words rather than passages.
   - **[AUTHOR-GATED] Voice.** Written in a plain, mostly impersonal register. The
     legacy book was first-person and warm, and the constitution's own commentary
     says "the manifesto voice is the author's to re-weave — I am not ghost-writing
