@@ -715,6 +715,20 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 10, "Contribution"** — `book-1/10-contribution.md`, 1,019
+  words, 12 pins green. Three doors to recognition (teach, work, examine), all
+  gated on not having been voided. Its central claim is about an **absence** —
+  there is no arithmetic anywhere in the constitution, verified: every apparent
+  numeric hit is a comment. So recognition is a fact, not a quantity: it cannot be
+  ranked, spent, transferred or priced, because the material those would be made
+  from does not exist.
+  Two things the chapter names rather than smooths: **examining people earns
+  recognition**, so the society pays in its own coin for scrutiny — bounded by ch 5's
+  cost for improper findings, and by the fact that nothing is earned for a
+  conviction as opposed to an acquittal. And the trade the absence buys costs
+  **degree**: the design cannot say anyone did more, which is a peculiar landing
+  place for an instrument built to make invisible contribution visible.
+
 - **DRAFTED: Chapter 9, "The Vote Conviction Does Not Take"** —
   `book-1/09-the-vote-conviction-does-not-take.md`, 918 words, 12 pins green. The
   chapter the old spine did not have. Hano is in custody and votes; the theorem is

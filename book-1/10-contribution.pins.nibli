@@ -1,0 +1,54 @@
+# ── Chapter 10 fidelity pins: "Contribution" ─────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/10-contribution.pins.nibli
+#
+# The chapter's central claim — that recognition has no quantity — is a claim
+# about the ABSENCE of arithmetic and so cannot be pinned by a query. It is
+# checked structurally instead: no rule in the constitution contains a numeric
+# operation. Re-check with a grep if the constitution gains one.
+
+:expect-pins 12
+
+# "Esa taught Fin, and is recognised."
+? teaches(Esa, Fin).
+# => TRUE
+
+? reward(Esa).
+# => TRUE
+
+# "Quin did the census, and is recognised."
+? work(Quin, Census).
+# => TRUE
+
+? reward(Quin).
+# => TRUE
+
+# "Gia examined Bela's conduct without deceit, and is recognised."
+? judge(Gia, Bela).
+# => TRUE
+
+? capture(Gia, Bela).
+# => TRUE
+
+? reward(Gia).
+# => TRUE
+
+# "Bela taught Cira — a real act ... Bela is not recognised, because Bela was
+#  voided. The teaching happened and produces nothing."
+? teaches(Bela, Cira).
+# => TRUE
+
+? false(Bela).
+# => TRUE
+
+? reward(Bela).
+# => FALSE
+
+# "Lupo examined Mira and lied about it, and earns nothing"
+? reward(Lupo).
+# => FALSE
+
+# "Dev judged his own child ... earns nothing either"
+? reward(Dev).
+# => FALSE
