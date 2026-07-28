@@ -37,7 +37,7 @@
 #
 # [v0.3] THE FLOOR IS A COMPILE-TIME PROHIBITION, NOT A DECLARATION.
 # This was missed through v0.2 and it is the strongest property in the
-# file. `obligated(every person, event { P() })` does NOT assert an inert
+# file. `entitled(every person, event { P() })` does NOT assert an inert
 # fact: it compiles to a rule with `person` in the body, so P becomes
 # derived from person, and `prisoner -> person` below puts P downstream
 # of prisoner. Any later rule taking ~P into that cone closes a negative
@@ -83,7 +83,7 @@
 #     and `teaches` all give identical protection. The predicate carries
 #     MEANING ONLY — it buys nothing structural, so choose it purely for
 #     what it says.
-#   - Drop the event and the protection dies. `obligated(every person,
+#   - Drop the event and the protection dies. `entitled(every person,
 #     Belief).` — a plain term in x2 — loads the heresy law at 0 errors.
 # Also refuted, all behaving exactly like writing no floor line at all —
 # the natural "name the duty-bearer" repair is STRUCTURALLY WORTHLESS:
@@ -92,30 +92,59 @@
 #     all $x: person($x) -> owe(State, Belief, $x).
 # If a predicate reads wrong, change the PREDICATE, never the shape.
 #
-# FRAGILITY — the largest single risk to this design. The asymmetry above
-# is an emergent property of two functions disagreeing about abstraction
-# opacity, and NOTHING PINS IT. Anyone "fixing" `flatten_consequent` for
+# FRAGILITY — still the largest single risk to this design, now pinned.
+# The asymmetry above is an emergent property of two functions disagreeing
+# about abstraction opacity. Anyone "fixing" `flatten_consequent` for
 # opacity symmetry would silently make this floor stratifiable — rules
-# could then punish people for lacking a floor right — and no test in
-# either repo would go red. A regression test pinning the
-# `prisoner -> eats` rejection is being added nibli-side; until it is
-# green, treat every claim in this article as provisional.
+# could then punish people for lacking a floor right. As of 2026-07-28
+# five regression tests pin it upstream, at
+# nibli-engine/tests/integration.rs:3228:
+#   rights_floor_entitled_asserts_and_routes
+#   rights_floor_does_not_fabricate_the_actuality   entitled TRUE, eats FALSE
+#   rights_floor_blocks_punishment_for_lacking_it   names prisoner -> eats
+#   punishment_rule_alone_is_stratifiable           the negative control
+#   rights_floor_protection_is_placement_dependent  x2 loses it, and jails
+# If those ever go red or are deleted, this article's central claim is
+# gone and the book must not print the firewall argument.
 #
-# KNOWN DEFECT, open: `obligated` is the wrong predicate. It is `bilga`
-# (places duty/do/standard) AND it is registered as the x1<->x2
-# *conversion* of `obliged`, so `obligated(A, B)` compiles to
-# `obliged(B, A)`. The shipped corpora write it positionally, so these
-# eight lines currently route each person into a place labelled `duty`
-# and each event into one labelled `do` — not merely inverted, garbled.
-# `deserve` was tested and REJECTED: `jerna` is an earning predicate at
-# its core — x1 earns, **x2 is the wages** — so the floor would put an
-# event into the wages place of an earning relation, and leaving x3
-# unfilled neutralises nothing. `permitted` is structurally excluded: the
-# floor would close permits -> person -> prisoner ->(neg) permits against
-# Article 6's `~permits(Appeals, ·)`. Resolution: a new corpus entry
-# `entitled`, arity 2, landing nibli-side. Do not "fix" this by
-# inverting, and do not substitute a predicate without re-running the
-# firewall suite.
+# [v0.3] PREDICATE: `entitled` — RESOLVED, was `obligated`. The corpus
+# entry was added upstream for this floor:
+#   name "entitled", source_gismu "zzright1", places
+#   ["holder", "entitlement", "standard"], template "{x1} is entitled to
+#   {x2}", tier Curated.
+# x1 is the HOLDER of the claim, which is the reading a rights floor
+# needs. Rejected alternatives, each for a different reason, recorded so
+# nobody re-runs the analysis:
+#   `obligated` — `bilga`, places duty/do/standard, AND registered as the
+#     x1<->x2 conversion of `obliged`, so obligated(A,B) compiles to
+#     obliged(B,A). Written positionally by the shipped corpora, so the
+#     old eight lines routed each person into a place labelled `duty` and
+#     each event into one labelled `do`. Not merely inverted — garbled.
+#   `deserve` — `jerna` is an EARNING predicate: x1 earns, x2 is the
+#     WAGES. The floor would have put an event into the wages place, and
+#     leaving x3 unfilled neutralises nothing. Generic tier, places never
+#     hand-verified.
+#   `permitted` — structurally excluded, and elegantly so: the floor would
+#     close permits -> person -> prisoner ->(neg) permits against Article
+#     6's `~permits(Appeals, ·)`, and the whole file fails to load. The
+#     mechanism that protects the floor is what rules this one out.
+#   `owe` — the owed party is x3, not x1. `grant` — reserved by nibli-auth.
+# ARITY NOTE: 3, not the 2 originally requested. The mitigation is that
+# the template carries only two placeholders, so `standard` never reaches
+# English — an unfilled place is invisible rather than merely empty.
+# Do not fill x3 on a floor line: an unconditional floor should have
+# nowhere to put a condition, and that is the whole reason arity 2 was
+# asked for.
+# RENDER LIMITATION, pre-existing and NOT introduced here: back-translating
+# a floor line still leaks event scaffolding — "…then Y is an event and X
+# is entitled to Y". The collapse that reads `obligated` nicely is gated on
+# a hardcoded `matches!(rel, "obligated" | "obliged")` in
+# nibli-render/src/logic.rs:26. Do NOT simply add "entitled" to that list:
+# the collapse reads the party from place 2 and `entitled` has it in place
+# 1, so it would print the wrong word about the wrong argument. The fix is
+# to make the collapse template-driven, which also repairs the shipped
+# GDPR Art 15 rendering. Irrelevant to book-1, which never shows KR.
+# Do not substitute a predicate without re-running the firewall suite.
 #
 # ADMISSION CRITERION (replaces the vocabulary formulation in 3-spine.md,
 # which was post-hoc — it admits only dwell and expresses, and would
@@ -123,20 +152,20 @@
 # permissible ground for sanction. That is the prohibition above, not a
 # value claim. What the floor is NOT is justified: the formalism makes
 # this commitment precise and unretractable, never right.
-obligated(every person, event { secure() }).
-obligated(every person, event { eats() }).
-obligated(every person, event { dwell() }).
-obligated(every person, event { healthy() }).
-obligated(every person, event { learn() }).
-obligated(every person, event { expresses() }).
+entitled(every person, event { secure() }).
+entitled(every person, event { eats() }).
+entitled(every person, event { dwell() }).
+entitled(every person, event { healthy() }).
+entitled(every person, event { learn() }).
+entitled(every person, event { expresses() }).
 # [v0.3 NEW] The inner forum. A heresy law is writable in committed
 # corpus words with no lexicon extension; this line is what refuses it.
-obligated(every person, event { believe() }).
+entitled(every person, event { believe() }).
 # [v0.3 NEW] Company. Without it a regime could hold every convicted
 # person in permanent solitary and "punishment deprives exactly one
 # thing: movement" would remain literally true — the vocabulary had no
 # predicate for a second human being.
-obligated(every person, event { meets() }).
+entitled(every person, event { meets() }).
 all $anyone: prisoner($anyone) -> person($anyone).
 
 # ─── Article 2: Due-process suspension ────────────────────── [v0.1]
