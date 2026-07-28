@@ -389,27 +389,40 @@ fixtures are inline by design. The two are complements.
 
 ## Engine-adjacent work
 
-Only the derived-only predicates item is genuinely **blocked on nibli**; the rest
-are ordinary work that happens to touch the engine, and the old section header
-implied otherwise. Ordered by what actually blocks book-1.
+Nothing here is blocked on nibli any more — the derived-only feature landed. What
+remains is constitution work the feature exposed, plus optional upstream cleanup.
 
-- **BLOCKED ON NIBLI — derived-only (intensional) predicates.** Root cause of 13 of the 15
-  new exploits, and it defeats the constitution's central security claim. Prompt to
-  paste into a nibli session:
-  > In nibli KR, a predicate that appears as a rule head can still be asserted
-  > directly as a fact — a rule *adds* a derivation path, it never *removes*
-  > assertability. I need the opposite for a constitutional model: a way to declare
-  > a predicate **derived-only**, so that any attempt to assert it as a ground fact
-  > is a compile/assert-time error, and its only route to TRUE is derivation.
-  > Concretely, in `utopia.nibli` I derive `permits(Review, X)` from
-  > `choose(Electorate, X) & ~rotten(X) & ~broken(X)`, and the whole point is that
-  > nobody can hand themselves a credential — but `permits(Review, Sock).` still
-  > works and voids an innocent party through the multi-sig rule. Same for
-  > `authority/1` and `fit/2`. Please add an EDB/IDB separation: a declaration
-  > (syntax your call) marking a predicate intensional, enforced fail-closed at
-  > assert time, with a clear error. Needs to survive retraction/rebuild and behave
-  > the same on all three runtimes. Please also say whether this interacts with
-  > stratification or the fact-store replay.
+- **Separate the asserted half from the derived half in Articles 6, 7 and 8.**
+  The engine feature landed (`derived_only("X").`, fail-closed at assert time,
+  nibli b053b77) and **six relations are now closed** in Article 0: `fit`, `defend`,
+  `false`, `reward`, `become`, `err`. That closes exploit C outright —
+  `fit(Ruk, Homestay).` is refused and the farmhouse breach marker holds.
+
+  **Three cannot be closed yet, and they are the two worst exploits.** Each carries
+  a deliberate ground fact, so declaring it breaks the file:
+  - `authority` — Article 7 asserts the three institution constants. **Fix:** assert
+    `institution(Court).` etc. and derive `authority` from that plus
+    `choose(Electorate, ·)`. Until then `authority(Pax).` still makes Don unjailable.
+  - `permits` — Article 8 deliberately leaves `permits(Appeals, ·)` assertable as
+    per-case relief. **Fix:** assert relief under its own relation and derive
+    `permits(Appeals, ·)` from it. Until then two sock-puppet credentials still void
+    an innocent and strip their points.
+  - `prisoner` — the cast asserts `prisoner(Adam)` as a fixture instead of deriving
+    it from `injure` + `judge` like everyone else. **Fix:** derive it.
+
+  The engine is not at fault: it exposed that three articles conflate what the world
+  reports with what the system concludes — this book's own thesis, turned back on
+  its constitution. Do this before claiming Article 8's guarantee in print.
+
+  **Ordering is load-bearing and easy to break silently:** the check fires at assert
+  time, so a declaration protects only what is asserted after it. The declarations
+  must stay at the top of the file. One moved below the cast is inert and looks
+  identical. Worth a pin.
+
+- **Add the closed relations as pins.** nibli ships `pins/derived-only.nibli` with
+  the A/B/C exploits as permanent refusals. The book-side suite should pin the same
+  for this constitution once the runner supports `:refuse` — including the ordering
+  property above.
 
 - **Close the `obligated`/`obliged` de-swap upstream.** Not blocking book-1 — the
   floor no longer uses either. They are not converses: both from `bilga`, identical

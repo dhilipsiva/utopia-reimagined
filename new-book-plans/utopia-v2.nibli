@@ -33,6 +33,45 @@
 # lexicon): hence authority / rotten / fit / err rather than
 # official / voided / eligible / breach.
 
+# ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
+# These relations may ONLY be reached by derivation. A direct assertion of
+# any of them is refused by the engine at assert time, fail-closed:
+#   "`fit` is declared derived-only"
+# This is what makes Articles 4, 6, 7 and 8 mean what they say. Before it,
+# every gate this file called "derived" was one asserted fact from bypass —
+# `fit(Ruk, Homestay).` silenced the farmhouse breach marker outright.
+#
+# ORDERING IS LOAD-BEARING: the check fires at assert time, so a
+# declaration protects only what is asserted AFTER it. These must stay at
+# the TOP of the file, above the cast. A declaration moved below the facts
+# it guards is inert and looks identical.
+#
+# Converted aliases are closed too — `permitted` compiles to the `permits`
+# relation, so closing a relation closes every surface spelling of it.
+derived_only("fit").
+derived_only("defend").
+derived_only("false").
+derived_only("reward").
+derived_only("become").
+derived_only("err").
+# STILL OPEN — these three cannot be closed until the articles that use
+# them separate their asserted half from their derived half. Each carries
+# a deliberate ground fact today, so declaring it breaks the file:
+#   authority — Art 7 asserts the three institution constants
+#               (authority(Court/Review/Appeals)). Fix: assert
+#               `institution(Court).` and derive authority from that plus
+#               choose(Electorate, ·). Until then `authority(Pax).` still
+#               reopens the shield exploit.
+#   permits   — Art 8 deliberately leaves permits(Appeals, ·) assertable
+#               as per-case relief. Fix: assert relief under its own
+#               relation and derive permits(Appeals, ·) from it. Until
+#               then two sock-puppet credentials still void an innocent.
+#   prisoner  — the cast asserts prisoner(Adam) as a fixture rather than
+#               deriving it from injure + judge like everyone else.
+# The engine feature is not at fault here: it exposed that three articles
+# conflate what the world reports with what the system concludes, which is
+# this book's own thesis turned back on its constitution.
+
 # ─── Article 1: The Unconditional Floor ───────────────────── [v0.1]
 #
 # [v0.3] THE FLOOR IS A COMPILE-TIME PROHIBITION, NOT A DECLARATION.
