@@ -154,7 +154,7 @@ Everything else in `new-book-plans/` is unverified or corrected below.
     design sits relative to social democracy **and** where social democracy has the
     better answer. Conceding that is far stronger than letting a reviewer find it.
 
-- **[AUTHOR-GATED] Build Part V on the five-joints scorecard.** Four architectures
+- **CONFIRMED (2026-07-28): build Part V on the five-joints scorecard.** Four architectures
   were designed and judged by a reader, a trade editor and a hostile expert. The
   salvage audit is settled and measured (I re-verified the counts): the four harvest
   candidates total 6,653 words — social credit 1,757, "Learning from Those Who
@@ -191,7 +191,7 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   failing grade, self-administered, printed as the structure of the part. Score
   against the joints without scoring the design out of five.
 
-  Both open calls are now **decided**:
+  Design signed off by the author. Both open calls were already decided:
   - **Concealment — resolved by the book-2 split.** The hostile reviewer's attack
     was on the constraint, not the book: *"The repository is public. I found it in
     an afternoon."* An unmentioned but discoverable apparatus reads as concealment;
