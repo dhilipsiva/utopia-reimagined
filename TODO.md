@@ -710,6 +710,15 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 2, "Standing, and Why It Is Never Revoked"** —
+  `book-1/02-standing.md`, 1,174 words, `02-standing.pins.nibli` (12 pins, green).
+  Boss carries the chapter: seated, then recalled, keeps standing forever and loses
+  every power immediately — and that permanence is what saves Rebel, because a
+  recall that stripped standing would retroactively destroy the whistleblower's
+  protection. Kept as a separate chapter rather than folded into ch 1: ch 1 is what
+  may be *recorded*, ch 2 is who may *act*, and merging them blurs ch 1's single
+  argument. Part I is therefore two chapters and the spine stays at 14.
+
 - **DRAFTED: Chapter 1, "What Counts as Evidence"** — `book-1/01-what-counts-as-evidence.md`,
   1,391 words, with its fidelity file at `01-what-counts-as-evidence.pins.nibli`
   (12 pins, green). Verified jargon-free. Two things to settle on it:

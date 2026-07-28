@@ -1,0 +1,55 @@
+# ── Chapter 2 fidelity pins: "Standing, and Why It Is Never Revoked" ─────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/02-standing.pins.nibli
+#
+# One entry per load-bearing sentence. Private to the author.
+
+:expect-pins 12
+
+# "The court has standing... They have it by being what they are."
+? public(Court).
+# => TRUE
+
+? authority(Court).
+# => TRUE
+
+# "The second is that the electorate seats you."
+? choose(Electorate, Boss).
+# => TRUE
+
+? authority(Boss).
+# => TRUE
+
+# "no route that runs through your own hands" — standing cannot be self-conferred
+:refuse reasoning /declared derived-only/
+authority(Pax).
+
+# "Someone with a great deal of power and no standing cannot write themselves in."
+# Ivo was never seated and is not a public body.
+? authority(Ivo).
+# => FALSE
+
+# "Then the electorate recalled Boss." / "Boss holds no credential"
+? broken(Boss).
+# => TRUE
+
+? permits(Review, Boss).
+# => FALSE
+
+# "But Boss still has standing. Permanently." — the chapter's whole argument.
+# authority(Boss) above is TRUE *despite* broken(Boss) being TRUE.
+
+# "Rebel exposed Boss." / "Rebel is shielded because Boss is an authority."
+? show(Rebel, Boss).
+# => TRUE
+
+? defend(Rebel).
+# => TRUE
+
+# "Rebel is not imprisoned, and the case against Rebel does not proceed."
+? prisoner(Rebel).
+# => FALSE
+
+? false(Rebel).
+# => FALSE
