@@ -1,0 +1,53 @@
+# ── Chapter 5 fidelity pins: "Voiding" ───────────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/05-voiding.pins.nibli
+
+:expect-pins 14
+
+# "Bela was examined by Gia and by Hex. Both hold the pen." — it works
+? permits(Review, Gia).
+# => TRUE
+
+? permits(Review, Hex).
+# => TRUE
+
+? false(Bela).
+# => TRUE
+
+# "One person's finding does not void a person."
+? capture(Koa, Esa).
+# => TRUE
+
+? false(Esa).
+# => FALSE
+
+# "You may not judge your family." — and the guard turns on the judge
+? parent(Dev, Esa).
+# => TRUE
+
+? judge(Dev, Esa).
+# => TRUE
+
+? false(Dev).
+# => TRUE
+
+# "You may not lie." — Mira untouched, Lupo voided
+? deceive(Lupo, Mira).
+# => TRUE
+
+? false(Mira).
+# => FALSE
+
+? false(Lupo).
+# => TRUE
+
+# "Vex's signature does not count" — the epoch carry
+? rotten(Vex).
+# => TRUE
+
+? permits(Review, Wren).
+# => TRUE
+
+? false(Tyr).
+# => FALSE

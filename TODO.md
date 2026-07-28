@@ -710,6 +710,15 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 5, "Voiding"** — `book-1/05-voiding.md`, 1,040 words,
+  `05-voiding.pins.nibli` (14 pins, green). Bela (it works), Esa (one is not
+  enough), Dev (judging your child voids *you*), Lupo (lying voids *you*), Vex/Tyr
+  (the epoch carry). Ends on the two disclosed gaps: only parents are excluded from
+  the independence check, so spouses and siblings co-sign freely and the
+  conspiracy-of-two is barely a conspiracy; and the sequence discipline is not
+  enforceable from inside. Names the limit both chapters have now circled —
+  **this society can guarantee what follows from its record, not its record.**
+
 - **DRAFTED: Chapter 4, "The Shield"** — `book-1/04-the-shield.md`, 1,162 words,
   `04-the-shield.pins.nibli` (15 pins, green). Don, Sly and Kel. Don is the closed
   exploit — exposing his own victim bought a shield until the design required the
