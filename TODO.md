@@ -249,6 +249,16 @@ time rather than merely detected, pinned at `pins/derived-only.nibli:94-106` wit
 both halves (a late declaration refused, a post-rules declaration accepted, since
 derivations are never stored and only asserted facts can make one late).
 
+- **The spine is now generated, and staleness is detectable.**
+  `new-book-plans/5-spine-gen.py` owns the computed region of `3-spine.md` and reads
+  the constitution directly — including the floor, which `4-strata.py` structurally
+  cannot see. Regenerate with
+  `python3 5-spine-gen.py utopia-v2.nibli 3-spine.md`; check with `--check`, which
+  exits 1 when the document has drifted. Verified against the real failure mode:
+  adding a ninth right to a scratch copy makes `--check` fail. **Wire `--check` in
+  beside the pin suite** so a constitution change cannot land with a stale spine —
+  that is exactly how this document went wrong twice.
+
 - **Fix or replace `4-strata.py` — it is not cosmetic, it already caused a wrong
   answer.** Its parser takes only the *first* predicate on a fact line, so it never
   descends into `event { … }` and the floor rights are invisible to it: `secure`,
