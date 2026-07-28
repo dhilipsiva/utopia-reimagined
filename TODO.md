@@ -55,17 +55,67 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   Since exclusivity is now permanently off the table, the reach strategy is
   serialization and open circulation — plan the publishing route on that basis.
 
-- **[AUTHOR-GATED] Pick ONE canonical rights floor and make all three artifacts
-  quote it.** The floor is the one thing in the design that must not drift, and it
-  has drifted inside a single file. `utopia.nibli` has six (`secure, eats, dwell,
-  healthy, learn, expresses`). `manifesto.md` has five (`food, shelter, healthcare,
-  education, mobility`) — security and expression absent, mobility promoted to the
-  floor though the constitution derives it only as a defeasible permission.
-  `book.md` alone carries at least five mutually inconsistent floors, and the
-  sentence that actually does the firewall work names **seven** items, not the
-  eleven asserted elsewhere. Decide the canonical list, amend `utopia.nibli` if the
-  answer is not what it currently says, then make every enumeration in both
-  manuscripts match. Settle once, apply three places.
+- **[AUTHOR-GATED] Confirm the floor at TEN, then make all three artifacts quote
+  it.** The existing six (`secure, eats, dwell, healthy, learn, expresses`) are
+  sound and none should come off. But they are all *provisions* — "X is owed to
+  you" — and the constitution contains **not one forbearance**, "X may not be done
+  to you". That is why Article 6 can build a whole placement apparatus
+  (`prisoner`, `fit`, `building(HighSec)`, `building(LowSec)`) and impose no
+  condition whatever on what may be done to a person inside it. Diagnostic: every
+  one of the six maps to the **ICESCR**, the covenant expressly conditioned on
+  "progressive realization… to the maximum of its available resources", and **not
+  one maps to anything on the ICCPR's Article 4(2) non-derogable list**. The
+  conditional covenant's content was given the unconditional covenant's form —
+  which is also why the delivery gap is total rather than partial, since
+  forbearances are the only guarantees that survive an emergency without a budget.
+
+  **The admission criterion**, derived from the file rather than imported: *the
+  floor admits what this constitution's own machinery can take away, and that no
+  legitimate exercise of that machinery is entitled to take.* It retro-fits the
+  existing six, admits exactly the four below, and excludes water, clothing,
+  energy, connectivity, privacy and clean air on principle rather than by taste.
+
+  ```
+  obligated(every person, event { votes() }).      # + permanent(Art_Vote).
+  obligated(every person, event { unharmed() }).
+  obligated(every person, event { meets() }).
+  obligated(every person, event { believes() }).
+  ```
+
+  **Measured cost: none.** All four appended and the stratifier re-run — graph
+  unchanged, 26 rules, max stratum 3, and stratum 3 still exactly `{err, travel}`,
+  so the single-deprivation theorem survives. None enters the graph, so all four
+  join secure/eats/healthy/learn as predicates appearing exactly once: the "zero
+  rules means a real right" thesis goes from four-of-six to eight-of-ten.
+  - *The vote* — book.md:2285 already calls one-person-one-vote an unamendable
+    floor in print and corrects three earlier drafts to establish it, while the
+    constitution contains it in no form and `permanent()` entrenches three other
+    things. `Electorate` is meanwhile an undefined constant seating every Review
+    credential and enacting every amendment. If only one is taken, take this.
+  - *Bodily non-compulsion* — the only candidate that arrives with a breach marker
+    derivable today rather than a promise waiting on the provisioning layer.
+    `secure()` cannot carry it: that is UDHR-3 shaped, a duty to protect you from
+    *others*, not a limit on the system itself.
+  - *Company* — repairs the book's best theorem instead of costing it. As the file
+    stands a regime could hold every convicted person in permanent solitary and
+    "punishment deprives exactly one thing: movement" would remain *literally
+    true*, because the vocabulary has no predicate for a second human being.
+  - *Belief* — the constitution holds the wrong half of the classic split. ICCPR
+    18(2) is a flat non-derogable prohibition on coercing belief; ICCPR 19
+    (expression) is not on the 4(2) list and is expressly restrictable — and
+    Article 6 converts injurious expression directly into imprisonment.
+
+  Then reconcile downward. `manifesto.md` names five (`food, shelter, healthcare,
+  education, mobility`) — security and expression absent, mobility promoted though
+  the constitution derives it only as a defeasible permission. `book.md` alone
+  carries at least five mutually inconsistent floors, and the sentence doing the
+  firewall work names **seven** items, not the eleven asserted elsewhere.
+  **`book.md` also asserts privacy as a fundamental right, and it must not be one**
+  — four independent analyses rejected it, and encoded as a defeasible right it
+  lands at stratum 3 and destroys the single-deprivation theorem. Privacy belongs
+  in Part V as argument, not on the floor. Also free while reconciling: define
+  `dwell()` in prose as *protective* shelter — weatherproof, ventilated, powered,
+  plumbed — which absorbs the water-and-sanitation case at zero KR cost.
 
 - **[AUTHOR-GATED] Re-derive Part V of the new book — the harvest premise does not
   survive contact with the manuscript.** `3-spine.md` proposes lifting four
@@ -160,6 +210,44 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   `permits(Appeals,·)`, `authority`, `fit`, `defend`, `rotten`, `deceive`, `severe`,
   `family`, `broken`, `parent`, `teaches`, `work`, `adjust`, `permanent`.
 
+- **Guard the personhood roster — it defeats all ten rights at once.** `person`
+  has 29 asserted facts and exactly one producing rule (`prisoner -> person`), so
+  the sole non-assertion route into rights-bearing status is *being imprisoned*.
+  Deleting `person(Bela)` costs Bela the entire floor plus `travel`, derives no
+  `err`, and never touches Article 9 — which entrenches **rules, not facts**. The
+  floor is unconditional only *above* the atom `person(X)`; the domain itself is
+  assertable, so a further right on a floor whose domain is assertable is a better
+  door in a missing wall. Fix: `all $x: human($x) -> person($x).` plus a roster
+  breach marker so de-personing derives an `err` rather than silently succeeding.
+  Add `person` to the fact-write trust base list above.
+
+- **Rename the Article 6 `dwell` head — one atom is doing two jobs.** Every rule
+  head producing `dwell` requires `prisoner` (lines 78, 81, 88; there is no other),
+  so `dwell(Lalo)` does not mean "Lalo is owed shelter" — it means "Lalo is housed
+  at HighSec". The same atom carries both *entitled to a home* and *in a cell*.
+  Free to fix, and a hostile reviewer finds it in an afternoon. Rename the
+  placement head to `placed`, or fold it into `building`. Pairs with the `err/2`
+  fix above — both are Article 6 conflating a fact with a decision.
+
+- **Mark confinement without conviction.** Nothing makes `building` derived-only:
+  assert `building(HighSec, Rebel)` and no rule objects — no `injure`, no
+  `judge(Court, ·)`, so `prisoner(Rebel)` is FALSE and `travel(Rebel)` stays TRUE.
+  The constitution certifies as free a person it is holding. Cheapest high-value
+  fix in the set, and it defends the crown jewel directly:
+  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Placement).`
+
+- **Entrench the evidence vocabulary.** The file states its own threat model in one
+  sentence — *"enlarging the evidence vocabulary is the quietest way to capture a
+  system"* — and then `permanent()` entrenches `Art_Floor`, `Art_Person` and
+  `Art_Entrench`. The named attack is the one thing not entrenched. Add
+  `permanent(Art_Evidence).`
+
+- **Put a precondition on `capture`.** Every lens that examined the evidence layer
+  converged here independently. `capture($a, $audited)` has no precondition
+  anywhere: any two Review-credentialed people who `judge` and `capture` a target
+  can void them, with nothing limiting who may be captured or on what grounds. Add
+  a standing/grounds guard, plus an epoch expiry on `capture` and `judge`.
+
 - **Restore v0.1's stratification note to Article 7 — its deletion is a live
   landmine.** v0.1 carried: *"(No `person(_)` condition: person depends on prisoner
   via Art 1, and prisoner uses `~defend` — that would form an unstratifiable
@@ -170,11 +258,30 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   failure the v0.2 header warns about, now reachable through the stratifier rather
   than through oversight.
 
-- **Decide what to do about the fail-open shield window.** `defend(Sly)` TRUE /
-  `prisoner(Sly)` FALSE works as designed — a defendant who exposes a real
-  authority stays free until Review adjudicates. The plans call this a disclosed
-  cost; the audit calls the disclosure understated. Bound it, or state the bound
-  honestly in the chapter.
+- **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's
+  shield is deliberately fail-**open** toward protection and defended at length as
+  "a political choice surfaced in logic" — `defend(Sly)` TRUE / `prisoner(Sly)`
+  FALSE works exactly as designed. Article 6's `~permits(Appeals, $offender)` is
+  fail-**closed** against protection: appeal is relief that must be granted, not
+  standing anyone holds. Same book, opposite defaults, no stated reason. This is an
+  internal inconsistency rather than an imported criticism. Separate
+  standing-to-seek-review from a pending review that stays the sentence, or require
+  an affirmative exhaustion fact for conviction. Also bound the fail-open window,
+  or state the bound honestly in the chapter.
+
+- **Give `rotten` — and `capture` and `judge` — an expiry or expungement path.** A
+  single void is currently perpetual and compounds, with no route back. Derivation
+  here is monotone, so nothing that ever derives stops deriving: the constitution
+  **cannot forgive**. For a design whose thesis is that sanctions are defeasible,
+  that is a contradiction in the machine, and it is worth framing in the book as
+  forgiveness being a *right* rather than merely as a bug fix.
+
+- **Narrow the Article 4 student contamination rule.** `teaches($t,$s) &
+  false($t) -> lose(Points, $s)` docks the student for the teacher's fraud —
+  collective punishment, flagged in the file as an open fairness question and
+  independently raised in severity by two lenses. It sits inside the recognition
+  system, the book's signature invention. Narrow to rewards actually derived from
+  the fraudulent teaching, which needs provenance on `reward`.
 
 - **Grow the provisioning layer, or write Part I to stop where it stops.**
   `eats(Adam)`, `healthy(Bela)`, `secure(Bela)` and `learn(Cira)` are all FALSE —
@@ -187,10 +294,6 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 - **Widen kinship beyond `parent/2`.** The multi-sig independence check excludes
   only parents; spouses and siblings co-sign freely. Disclosed in v0.1, still open.
-
-- **Give `rotten` an expiry, rehabilitation, or appeal path.** A single void is
-  currently perpetual and compounds — no route back. For a constitution whose thesis
-  is that sanctions are defeasible, that is a contradiction in the machine.
 
 ## nibli handoffs — blocked on engine work
 
@@ -363,6 +466,16 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   not water — and that the system proves what is **owed**, not that anything
   **arrives**. Say both plainly or the book is dishonest; saying them is also the
   most disarming move available.
+
+- **Write the chapter where the logic refuses.** Verified on the engine: appending
+  `all $x: prisoner($x) -> permits(Appeals, $x).` returns *"[Stratification Error]
+  Unstratifiable negation: strongly-connected component containing 'prisoner' ->
+  'permits' (negative)"*. A **universal right of appeal cannot be expressed** in
+  this constitution — `prisoner` derives behind `~permits(Appeals, ·)`, so the rule
+  is a negative cycle. That is not a defeat; it is the strongest chapter in Part V.
+  The book's whole register is *state the guarantee, then name the sharp edge where
+  it stops*, and here the machine refuses a thing the author wanted and can say
+  exactly why. Ship the error message.
 
 - **Draft Chapter 1 ("The Floor Nobody Computes") as the proof of method.** Short:
   the six obligations, why unconditionality is structural rather than promised (no
