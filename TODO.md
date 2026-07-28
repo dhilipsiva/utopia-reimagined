@@ -441,6 +441,48 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   one pinned. Where a number can only come from a paper, the registry pins the
   version and the retrieval date so the drift is visible.
 
+- **Use the democracy/happiness dataset — but for the opposite claim to the obvious
+  one.** `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144 countries, EIU 2025
+  merged with WHR 2025 life evaluations). I re-derived every headline number and they
+  reproduce exactly: raw r = 0.5975, ρ = 0.6231, R² = 0.357; partial r | log GDP =
+  0.195; r(GDP, happiness | democracy) = 0.623; and the regime table to the digit
+  (Authoritarian 45/4.94/1.11, Hybrid 29/5.07/0.95, Flawed 44/5.80/0.94, Full
+  26/6.82/0.51). The source document is careful work and its caveats are sound.
+  - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
+    floor on subjective wellbeing, not a lift toward the top", from regressing
+    |residual| on democracy score, p = 0.0004 — is the one claim it never controls
+    for income, and **it does not survive**: adding log GDP gives democracy b =
+    −0.0196, t = −0.91, **p = 0.37**, while log GDP itself is b = −0.336, t = −2.53,
+    p = 0.011. Within income tertiles the dispersion goes the *wrong* way for the
+    democracy story. The compression is income, misattributed. This is precisely the
+    claim book-1 would most want to be true — a floor effect, in a book about floors
+    — which is exactly why it must not be used. An economist kills it in one
+    regression.
+  - **Use the income result instead: it supports the book's real thesis better.**
+    What compresses the dispersion of human wellbeing across countries is material
+    provision, not the franchise. A book whose floor is eight material-and-personal
+    guarantees, and which deliberately demoted the vote *off* the floor to a rule,
+    just got empirical support for exactly that ordering. That is on-thesis, honest,
+    and stronger than the claim that failed.
+  - **Use the step sizes.** Authoritarian → Hybrid buys **+0.16** — nothing. Hybrid →
+    Flawed +0.73. Flawed → Full +1.01. Partial democratisation does approximately
+    nothing; the gain is concentrated at the top of the scale. That is a real
+    argument against gradualist "add a little democracy" reform.
+  - **Make it Part V's worked example of the method.** Take "democracy makes people
+    happier", test it, and report: survives raw, narrows sharply under income
+    control, and the floor version fails outright. The book demonstrating that
+    discipline on a claim it would have loved is worth more than the claim.
+  - **Licensing blocker for the registry: the EIU index is non-redistributable** —
+    Our World in Data cannot export it. A CC-BY book with a public claim registry
+    cannot ship those numbers. Either cite-and-link without redistributing, or switch
+    to **V-Dem**, which is openly licensed and gives the same picture (r = 0.52).
+    Resolve before the registry is built.
+  - Housekeeping: `demo-happy.txt` is a chat transcript, not a source — record it as
+    "prior analysis, independently re-derived" with the CSV's provenance pinned (WHR
+    2025 = 2022–2024 average; EIU 2025). Delete
+    `democracy_vs_happiness_144.csv:Zone.Identifier`, a Windows
+    alternate-data-stream artifact, and add the pattern to `.gitignore`.
+
 - **Give the reader a verification path, since they cannot see the logic.** The
   formalism stays invisible — so what the reader verifies is data. Ship the claim
   registry as the public artifact: every number in the book, its primary source,

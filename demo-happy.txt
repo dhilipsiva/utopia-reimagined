@@ -1,0 +1,35 @@
+I'll pull these and look at what's actually in them.I pulled the underlying data rather than eyeballing the pages, merged EIU 2025 (166 countries) with the WHR life-evaluation table (147), and ran the numbers on the 144 that match. Findings below; all correlations are mine, computed on that merge.
+
+**Within a category, the indices are near-duplicates. Across categories, they aren't.** EIU 2025 vs V-Dem's electoral democracy index (2025): r = 0.92. EIU vs the Democracy Matrix Total Value Index: r = 0.89. "Democracy index" is essentially one latent construct measured three ways. The disagreements are few and interpretable — India, Serbia, Hungary, Malaysia, Thailand sit far higher on EIU than on V-Dem or DM, because EIU averages five equally-weighted categories, so strong turnout and "political culture" scores partly offset civil-liberties collapse. V-Dem and DM don't let that happen.
+
+**The democracy–happiness link is real but almost entirely income.** Raw: r = 0.60, ρ = 0.62 (R² = 0.36, n = 144). Controlling for log GDP per capita: partial r = 0.20 (p = 0.019). Adding social support and healthy life expectancy: 0.11 (n.s.). Against all six WHR factors: 0.04. Meanwhile r(GDP, happiness | democracy) = 0.62. Same result with Democracy Matrix in place of EIU (0.50 raw → 0.11 partial). *Epistemic status: this is a variance decomposition, not a causal estimate, and it likely over-controls — democracy plausibly causes much of the income and institutional quality being partialled out. What it does establish is that the two index families are not independently informative about each other.*
+
+**The strongest pattern is about variance, not means, and neither index's ranking shows it.** Regressing |residual| on democracy score gives a significantly negative slope (p = 0.0004): happiness disperses less as democracy rises.
+
+| EIU regime type | n | mean life eval | sd | min | max |
+|---|---|---|---|---|---|
+| Authoritarian | 45 | 4.94 | 1.11 | 1.36 | 6.76 |
+| Hybrid | 29 | 5.07 | 0.95 | 3.00 | 6.98 |
+| Flawed democracy | 44 | 5.80 | 0.94 | 3.26 | 7.23 |
+| Full democracy | 26 | 6.82 | 0.51 | 5.78 | 7.74 |
+
+No full democracy scores below 5.78 (Greece). Autocracies span nearly the whole range. Democracy behaves like a floor on subjective wellbeing, not a lift toward the top. Note also that the authoritarian→hybrid step buys ~0.13 points — nothing. The gain is concentrated in flawed→full.
+
+**Residuals are systematic and split into two distinct stories.** Above the line: Gulf monarchies (Saudi 2.08 / 6.60, UAE, Kuwait, Bahrain, Oman), post-Soviet Central Asia, Vietnam, China, and Mexico/Nicaragua. Below: Botswana (7.63 / 3.44), Malawi, Lesotho, Sri Lanka, India (6.96 / 4.39), Ghana, Zambia — poor electoral democracies. Caveat on the Gulf: Gallup samples there include large expatriate populations whose life evaluations differ from nationals', so those points are partly a sampling artifact.
+
+**WHR's six "factors" are a regression with a large structured error term, not a model.** The Dystopia+residual component averages 1.92 for Latin American countries vs 1.26 for everyone else — the factors systematically under-predict Latin America and over-predict Botswana and Sri Lanka. Reading the factor bars as causes is a misreading of what's published.
+
+**Over twenty years the two categories move in opposite directions.** EIU mean fell 5.53 (2006) → 5.22 (2025), with 106 of 166 countries lower than their 2006 score. WHR 2026 reports the opposite for wellbeing — 79 countries improved significantly since 2006–2010, 41 declined, and the world overall is happier. Tentative reading: happiness gains are concentrated in Asian/African/Eastern European income and health convergence, precisely where democracy scores stagnated or fell, while democratic erosion is concentrated in rich countries whose youth wellbeing has dropped — in the US, Canada, Australia and New Zealand, under-25 happiness has fallen by an average of 0.86 points on the 0–10 scale over twenty years.
+
+**One practical flag on your source list.** The vintages are inconsistent in ways that will silently corrupt any comparison. Democracy Matrix's public ranking is still Total Value Index **2020** (dataset V.4) — six years stale. worldpopulationreview is serving WHR **2025** numbers under a 2026 label (it shows Finland 7.74 with Denmark above Iceland; WHR 2026 has Finland 7.764, Iceland 7.540, Denmark 7.539, and Costa Rica 4th). Our World in Data can't export the EIU series at all — it's non-redistributable. My numbers use WHR 2025 (2022–2024 average) because that's the complete table I could obtain; WHR 2026 shifts individual ranks but not the correlational structure.
+
+Cut for length: the EIU's population-weighting (45% of humanity in democracies of either kind), the methodological asymmetry between expert coding and a single-item Cantril ladder, and a mild circularity worry where EIU's participation/culture categories draw on the same survey ecosystem as WHR. Say the word if any of those matter.The merged 144-country dataset, if you want to check any of this yourself.
+
+Yes — a clear one, and it's robust across all three democracy indices.
+
+Pearson r = 0.60, Spearman ρ = 0.62 across the 144 matched countries (p ≈ 3×10⁻¹⁵). That's R² = 0.36: democracy score alone accounts for about a third of the cross-country variance in life evaluation. Substituting V-Dem (r = 0.52) or Democracy Matrix (r = 0.50) for EIU gives the same picture, so it isn't an artifact of EIU's methodology.
+
+Calling it "moderate" is the honest label. It's strong enough that the direction is unambiguous — more democratic countries report higher life evaluations, essentially without exception at the top of the scale — and weak enough that you can't predict a given country's happiness from its democracy score with any confidence. The residual spread is ±2 points on a 10-point scale.
+
+The qualification from before still holds: the correlation is not conditionally independent of income (partial r drops to 0.20 controlling for GDP per capita, to ~0.04 controlling for all six WHR factors). But I'd resist reading that as "the correlation is spurious." Partialling out GDP plausibly removes some of democracy's own downstream effect. The defensible claim is narrower: *once you know a country's income, its democracy score tells you little additional about its happiness*. That's a statement about redundancy between predictors, not about causal irrelevance — and the data here can't distinguish the two.
+
