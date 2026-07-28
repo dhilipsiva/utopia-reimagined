@@ -81,8 +81,14 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   not. A reviewer who notices will file the whole book as social democracy with
   extra steps and an unpaid bill, which wastes the genuinely novel parts.
 
-  **It is worse than an unanswered question — the vocabulary has no slot for the
-  answer, and the predicate in use may invert the claim.** Verified against nibli's
+  **The vocabulary half is now fixed; the political half is still yours.** The floor
+  was spelled `obligated` and read as a duty on the person; it is now `entitled`,
+  with the rights-holder in x1 (see the constitution's Article 1). What that did
+  *not* do is name a duty-bearer — and testing showed why nothing can, structurally:
+  every duty-bearer formulation loses the firewall entirely. So the question below
+  is a political one about the design, not a modelling gap.
+
+  **Historical note on how bad the old spelling was:** Verified against nibli's
   committed corpus: `obligated` comes from Lojban `bilga`, places
   `["duty", "do", "standard"]`, template **"{x1} is obligated to {x2}"** — x1 is the
   party *bearing* the duty. So `obligated(every person, event { eats() })` reads
@@ -208,13 +214,16 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   expected verdicts, so it cannot fail; it is a transcript, not a test. Six of the
   seven fidelity rows have no query in it at all.
 
-- **Delete `run-kb.rs`, or make it the real runner — it cannot run the committed
-  script.** It dispatches only `:load`, `:contradictions`, `?` and comments; the
+- **Delete `run-kb.rs` — decided, and the replacement lives in nibli, not here.**
+  It cannot run the committed script anyway: It dispatches only `:load`, `:contradictions`, `?` and comments; the
   pin script is almost entirely `:proof-verbose` lines, which fall through to
   `assert_text` and produce **42 syntax errors and zero verdicts**. It is also
-  wired into no `Cargo.toml`. `nibli-host --script` already does this job and does
-  support `:proof-verbose` (but not `:contradictions` — pick one runner and make
-  the script match it).
+  wired into no `Cargo.toml`. And the book repo should not grow one: it has no
+  Cargo.toml today, and a path dependency on a sibling nibli checkout would make a
+  CC-BY prose repo unbuildable for anyone who clones only it. The pin runner belongs
+  upstream — see the x3/CI handoff — because the firewall guards an *emergent*
+  nibli-side property, so a pin sitting here would never fire on the refactor that
+  breaks it. What stays in this repo is the pin *script* and a one-line command.
 
 - **Make fuel exhaustion a hard failure, never a silent FALSE.** At default fuel,
   `travel(Hano)` and `travel(Jala)` return `RESOURCE_EXCEEDED (fuel)` — not TRUE,
@@ -410,11 +419,53 @@ pins plus the firewall suite pass on it.
   It touches the GDPR corpus, and `gdpr.nibli:52` Art 6(1)(c) may be **vacuous** as
   a consequence — query it before deciding whether that line is meant to be live.
 
-- **Ask upstream whether `entitled` x3 should reject abstractions outright.** The
-  arity-3 entry lets an `event { }` in the standard place silently widen the floor
-  (see Invariant 3 in the constitution). A corpus- or compiler-level refusal would
-  make Invariant 3 unnecessary; until then it is enforced only by a grep and by
-  complement pins.
+- **HANDOFF (next): x3 abstraction rejection, and move the pin harness into nibli
+  CI.** Both came out of migrating the floor to `entitled`. Paste-ready prompt:
+  > Two follow-ups from the `entitled` entry, one a possible corpus/compiler
+  > tightening and one a CI ask.
+  >
+  > **(A) Should `entitled`'s x3 reject abstractions?** The entry is arity 3
+  > (holder/entitlement/standard) and x3 is live. It cannot narrow a rights floor —
+  > every route I tried to gate or tier a right through the standard place is
+  > refused by the stratifier, and the firewall is x3-immune. But it silently
+  > *widens*. `flatten_consequent` descends the head's `And` regardless of which
+  > place the abstraction sits in, so an `event { }` in x3 contributes the same
+  > `P -> person` edge that x2 does, and P joins the protected set. Repro against
+  > my constitution: change one floor line to
+  > `entitled(every person, event { eats() }, event { home() }).` — it loads at 146
+  > asserted / 0 errors, every pin still passes, the rendered English is unchanged
+  > (the template has two placeholders so x3 never surfaces), and yet my designated
+  > non-floor control `all $x: person($x) & ~home($x) -> prisoner($x).` flips from
+  > LOADS to REFUSED. Housing silently became an unconditional right. The
+  > "an unfilled place is invisible" mitigation is exactly what hides this, because
+  > a *filled* place is invisible too. Question: is it reasonable for `entitled` to
+  > reject an abstraction in x3 at compile time — or more generally, should a place
+  > that never appears in a predicate's template refuse abstraction arguments? I am
+  > currently enforcing it with a grep and a convention, which is the weakest
+  > guarantee in the design.
+  >
+  > **(B) Please host the constitution pin suite in nibli CI.** The firewall guards
+  > an emergent upstream property — the `flatten_consequent` / `collect_ground_facts`
+  > opacity asymmetry — so a pin living in my prose repo would never fire on the
+  > refactor that breaks it. Your five `integration.rs` tests cover the mechanism;
+  > this covers the actual constitution. My repo has no Cargo.toml and shouldn't
+  > grow one. What I have is a throwaway native runner I can hand over: it loads a
+  > KB, runs queries annotated `# => TRUE`, and exits non-zero on mismatch — 51 pins
+  > in seconds, no wasm, no fuel. Its review found real bugs to fix before adoption:
+  > `:expect-load-error` exits 0 before checking pin failures; it cannot distinguish
+  > a stratification refusal from a syntax typo (so a misspelled predicate passes as
+  > a firewall test); there is no positive-load expectation, so the non-floor control
+  > can only be run by inverting the exit code; the expectation flag is global and
+  > sticky rather than scoped to the next statement; unpinned queries pass silently;
+  > a query that fails to compile is rendered as a comparable verdict string; and
+  > `RESOURCE_EXCEEDED` is pinnable as an ordinary verdict, which under wasm would
+  > let a fuel trap go green. Suggested shape: `:refuse reasoning /regex/` and
+  > `:accept` as duals scoped to the next statement, mandatory annotation, an
+  > `:expect-pins <n>` anti-hollowing floor, and a distinct exit code for
+  > harness/script errors versus a real finding. Also worth pinning the complement
+  > controls: `~home`, `~choose`, `~permits`, `~false` must each still LOAD —
+  > `~travel` must NOT be in that set, since Article 2 derives travel behind
+  > `~prisoner` and it is legitimately inside the cone.
 
 - **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
   new exploits, and it defeats the constitution's central security claim. Prompt to
