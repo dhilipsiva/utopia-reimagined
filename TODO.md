@@ -398,7 +398,58 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## nibli handoffs — blocked on engine work
 
-- **HANDOFF: derived-only (intensional) predicates.** Root cause of 13 of the 15
+Ordered. The first blocks a blocking decision, so it goes first.
+
+- **HANDOFF (do this one first): does `obligated` mean what the constitution needs,
+  and is there a predicate with a beneficiary place?** This blocks the duty-bearer
+  decision, which is the top blocking item. Prompt to paste into a nibli session:
+  > I am modelling a constitutional rights floor in `utopia.nibli`. Article 1 says,
+  > eight times over:
+  > ```
+  > obligated(every person, event { eats() }).
+  > ```
+  > I have been reading this as **"every person is owed food"**. But the committed
+  > corpus entry is:
+  > ```
+  > PredicateEntry { name: "obligated", source_gismu: "bilga",
+  >   swap: Some(Swap { with: 2, base: "obliged" }),
+  >   places: &["duty", "do", "standard"], gloss: "must",
+  >   template: Some("{x1} is obligated to {x2}"), tier: CorpusTier::Prose }
+  > ```
+  > and `bilga` is "x1 is bound/obliged to / has the duty to do x2". That reads as
+  > **"every person has a duty to eat"** — the inverse of what I mean, and the
+  > opposite of a rights floor. Three questions:
+  > 1. **Which reading is correct** as the engine compiles it? Note `obligated` is
+  >    registered as a *swapped* alias of `obliged` (`swap: with: 2`), and the two
+  >    entries carry different place lists (`duty/do/standard` vs
+  >    `bound/duty/standard`) but the *same* template string. If the swap means
+  >    `obligated(A, B)` compiles to `obliged(B, A)`, please say so explicitly — that
+  >    changes my answer completely. If the template is simply wrong for one of them,
+  >    that is a corpus bug.
+  > 2. **`bilga` has no beneficiary place at all.** I need to express "society owes
+  >    E to X", or equivalently "X is entitled to E from Y" — a three-place relation
+  >    with a duty-bearer, a beneficiary, and the thing owed. Is there a corpus
+  >    predicate that already does this? If not, what is the right way to add one,
+  >    given `verify-alias-map` checks shape, provenance, swap/compound integrity and
+  >    coverage floors?
+  > 3. **Should I be using the deontic operator instead?** `NIBLI_KR.md` documents
+  >    `must` compiling to `Obligatory(...)`. Would `must eats($x)` be the
+  >    semantically correct way to state an obligation, and does it give me any way
+  >    to name who bears the duty? If not, is a plain predicate genuinely the better
+  >    tool here?
+  >
+  > Context on why this is delicate rather than a simple rename: `obligated` appears
+  > in no rule head and no rule body, so nothing derives from it and no verdict
+  > changes — but `obligated(every person, event { P() })` *does* compile to a rule
+  > with `person` in the body, which puts `P` downstream of `prisoner` and makes any
+  > later `~P -> prisoner` rule an unstratifiable negative cycle. That stratification
+  > firewall is the single most important property of my design and I must not lose
+  > it. So: whatever replacement you suggest, please confirm it still creates the
+  > `P -> person` edge. Minimal check — with the floor line present,
+  > `all $x: person($x) & ~believe($x) -> prisoner($x).` must be REFUSED; without it,
+  > that rule loads at 0 errors.
+
+- **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
   new exploits, and it defeats the constitution's central security claim. Prompt to
   paste into a nibli session:
   > In nibli KR, a predicate that appears as a rule head can still be asserted
@@ -416,7 +467,7 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   > the same on all three runtimes. Please also say whether this interacts with
   > stratification or the fact-store replay.
 
-- **HANDOFF (verify need first): exact minor-unit arithmetic.** The plans claim any
+- **HANDOFF (third, and probably moot): exact minor-unit arithmetic.** The plans claim any
   quantitative treatment of contribution is blocked because "engine float comparison
   is tolerant". That is only half right — nibli has **both** tolerant (`sum`) and
   exact (`num_equal`/`dunli`) comparison, plus a guarded `quotient` with an exact
