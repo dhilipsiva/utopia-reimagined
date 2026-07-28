@@ -105,54 +105,46 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **[AUTHOR-GATED] Answer the duty-bearer question — this is the one place the
-  nearest established alternative beats the design outright.** Book-1's floor is
-  social-democratic in its ends (universal provision, universalism over
-  means-testing, decommodification of essentials — it is Universal Basic *Services*,
-  not UBI, and should probably claim that name). But social democracy delivers
-  through a coercive taxing state, and this design refuses one. A voluntary,
-  coercion-free federation has **no identified agent obligated to provide anything
-  or to compel transfers.** Social democracy answers this; the design currently does
-  not. A reviewer who notices will file the whole book as social democracy with
-  extra steps and an unpaid bill, which wastes the genuinely novel parts.
+- **DECIDED (2026-07-28): a thin constitutional layer is the duty-bearer.** book-1
+  names an agent obligated to provide the floor — one with real taxing and
+  inter-community equalisation power, carefully limited. The other two options were
+  rejected on grounds worth keeping, because each will be proposed again:
+  - **Mutual covenants is inconsistent with the enacted floor.** Verified: the
+    constitution has **no concept of membership, community, citizenship or
+    residence**, and the floor quantifies over `every person`. Covenants would gate
+    it on membership — inventing a `member` predicate and putting an eligibility
+    computation *upstream of the floor*. That is exactly the structure the book's
+    thesis refuses, moved one level up where it is harder to see.
+  - **Naming the gap flinches, and reuses the wrong gap.** The delivery gap is
+    honest because nobody has solved provisioning; it is a real frontier. The
+    duty-bearer question is answered daily by every welfare state. Declining a
+    solved question reads as evasion and spends the credibility Claim C earns.
+  - **A duty-bearer does not weaken the design — it is what makes the firewall mean
+    anything.** "You cannot write a law punishing a person for lacking a floor
+    right" is a constraint on a powerful agent; a firewall with nothing behind it
+    protects nobody. The book is not *society without a state*, it is **a state that
+    structurally cannot do these particular things**.
 
-  **The vocabulary half is now fixed; the political half is still yours.** The floor
-  was spelled `obligated` and read as a duty on the person; it is now `entitled`,
-  with the rights-holder in x1 (see the constitution's Article 1). What that did
-  *not* do is name a duty-bearer — and testing showed why nothing can, structurally:
-  every duty-bearer formulation loses the firewall entirely. So the question below
-  is a political one about the design, not a modelling gap.
+  **It is expressible without cost — verified.** A bearer named *alongside* the
+  intact floor preserves the firewall in every form tried:
+  `owe(State, Provision, every person).`, `all $x: person($x) -> owe(State,
+  Provision, $x).`, and a `public(State)` + rule variant. The earlier finding that
+  duty-bearer forms destroy the firewall was about *replacing* the floor's shape;
+  supplementing it is free. Pick a form, enact it, and pin it.
 
-  **Historical note on how bad the old spelling was:** Verified against nibli's
-  committed corpus: `obligated` comes from Lojban `bilga`, places
-  `["duty", "do", "standard"]`, template **"{x1} is obligated to {x2}"** — x1 is the
-  party *bearing* the duty. So `obligated(every person, event { eats() })` reads
-  literally as *every person has a duty to eat*, not *every person is owed food*.
-  That is an inversion of the book's central claim, and `bilga` has **no beneficiary
-  place at all**, so the constitution cannot presently name who owes the floor to
-  whom. Note this breaks no derivation — `obligated` appears in no rule head or body
-  — and the Article 1 firewall works regardless, because it comes from the compiled
-  `P -> person` edge rather than from the deontic reading. The damage is entirely to
-  what the sentence *means*, which for the foundation of the book is worse than a
-  broken rule. It would also be the fourth instance of prose lying about the machine,
-  after the farmhouse bug, "due process" in a comment, and bright line 2.
-
-  Resolve in this order:
-  - **Fix the predicate before anything else is built on it.** Options: use nibli's
-    deontic operator (`must`, compiling to `Obligatory(...)`) which is the
-    semantically correct tool but still names no bearer; find a corpus predicate with
-    a beneficiary place; or hand off for one. Do not "define `obligated` as a term of
-    art in the file" — that is exactly the failure mode this project keeps hitting.
-  - **Then take the political fork, which is a real choice and yours.** Either accept
-    a thin constitutional layer with genuine taxing and inter-community equalisation
-    power, and limit it carefully — which moves the design decisively toward social
-    democracy and should be admitted as such — or rename the guarantees **mutual
-    covenants**, and be honest in print about non-members, defectors, and what
-    happens when a community simply declines. The second is more faithful to the
-    voluntarism; the first is more likely to survive an economist.
-  - Whichever way it goes, Part V's five-joints chapter must state plainly where the
-    design sits relative to social democracy **and** where social democracy has the
-    better answer. Conceding that is far stronger than letting a reviewer find it.
+  **Three things this now obliges the book to do:**
+  - **Concede coercion in plain words.** A reader who notices the word being avoided
+    stops trusting the rest.
+  - **State the social-democracy positioning outright** — the ends are
+    social-democratic and the provider is a fiscal agent; the novelty is the
+    constraint mechanism, not the absence of a provider. Said plainly, "social
+    democracy with extra steps" loses its teeth, because the extra step is a
+    compile-time prohibition nobody else has. This belongs in Part V's five joints,
+    at the *state* joint.
+  - **Bound the power explicitly, and answer the magnet problem** — mobility is a
+    guaranteed right, so generous communities attract need. Standard fiscal
+    federalism, currently unaddressed. This unblocks the governance-mechanics bullet
+    in the KB section, which was waiting on this fork.
 
 - **CONFIRMED (2026-07-28): build Part V on the five-joints scorecard.** Four architectures
   were designed and judged by a reader, a trade editor and a hostile expert. The
@@ -413,9 +405,8 @@ derivations are never stored and only asserted facts can make one late).
   the prose either way — it is the single most credibility-buying admission the book
   has.
 
-- **Governance mechanics downstream of the duty-bearer fork.** Do not start these
-  until the fork above is taken — several change shape depending on which way it
-  goes. Confront the magnet problem: mobility is itself a guaranteed right, so
+- **Governance mechanics downstream of the duty-bearer fork — now UNBLOCKED.** The
+  fork is taken (thin constitutional layer), so these can start. Confront the magnet problem: mobility is itself a guaranteed right, so
   generous communities attract need, which is standard fiscal-federalism territory
   and currently unaddressed. Replace at-will recall with defined thresholds, an
   administering body, and staggered short terms. Explain how a consensus-only global

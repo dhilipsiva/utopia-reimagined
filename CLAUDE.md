@@ -44,6 +44,14 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 
 ## Settled Design Decisions — Do Not Contradict
 
+**book-1 (the new book):**
+
+- **The floor is eight rights**, spelled `entitled(every person, event { P() })`, and its protection is a **compile-time prohibition**: a rule punishing someone for lacking a floor right is refused by the stratifier. The floor is protected *because* it is reachable — it sits inside the `prisoner` cone. Do not restate the older claim that "nothing derives it, so nothing can retract it"; that had the mechanism backwards.
+- **A thin constitutional layer is the duty-bearer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider.
+- **Chapter order is strictly computed**, never chosen. Exactly three elements are exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.
+
+**Legacy `book.md` (below) — historical; do not port these into book-1 without re-checking them against the constitution:**
+
 These were argued out and hardened in the text; several are stated as bright lines the book calls unamendable. A chapter edit made in isolation can easily re-introduce a passage the book now explicitly refutes, so check against this list before writing about points, identity, or voting.
 
 - **Merit points are earn-only recognition** — never spent, gifted, priced, or converted. Recognition is also non-rivalrous: no fixed sectoral pools, because one nurse's acknowledgment must not come at another's expense. Inflation is controlled at the contribution level (per-task standards, caps, diminishing returns). See "What Merit Points Are—and Are Not". Scarce non-essentials above the floor are allocated by transparent non-market rules (need, rotation, waitlist, lottery), with merit only as a qualifying threshold.
