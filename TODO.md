@@ -37,7 +37,9 @@ non-gated bullet instead.
 destination, not a route. Before any passage goes in, two tests: (a) does it
 describe what the society IS or how it FUNCTIONS — not how anyone gets there? and
 (b) does the constitution derive it? A passage failing (a) belongs to **book-2**;
-one failing (b) belongs in Part V's explicitly-not-derived section or nowhere.
+one failing (b) belongs in Part V's explicitly-not-derived section, or in the
+opening note, or nowhere. Exactly three things in book-1 are exempt and each is
+labelled as such: the opening note, Part V, and the final method part.
 Anything about building up, scaling out, phasing in, or persuading anyone is out
 of Parts I–V by construction.
 
@@ -673,45 +675,32 @@ trustworthy.
   outcome chosen by whoever was writing that day. That symmetry is worth more than
   either half alone.
 
-- **[AUTHOR-GATED — decide before any drafting] Is the chapter order strictly
-  computed, or is the floor exempted?** Recomputing the spine against the enacted
-  constitution overturns the planned Chapter 1. **The floor is not at stratum 0.
-  It is at stratum 2**, alongside `person` and `prisoner` — verified by making the
-  floor edges visible to `4-strata.py` (45 predicates, 38 rules, four strata) and
-  corroborated by the engine's own refusal message, `strongly-connected component
-  containing 'prisoner' -> 'believe'`, which is only possible if `believe` is
-  inside the prisoner cone.
+- **DECIDED: the chapter order is strictly computed. `3-spine.md` is regenerated.**
+  The floor sits at **stratum 2**, not 0 — each floor line compiles to
+  `person($x) -> P($x)`, and `prisoner -> person` puts it inside the prisoner cone.
+  That is not a defect: it *is* the firewall. The floor is protected **because** it
+  is reachable, since being in that cone is what makes `~P -> prisoner` a negative
+  cycle. At stratum 0 there would be no protection at all, and the old spine's
+  "nothing derives it, so nothing can retract it" had the mechanism backwards.
 
-  Three consequences, all of which have to be settled before a word is drafted:
-  - **"The Floor Nobody Computes" is factually false.** Each floor line compiles to
-    `person($x) -> P($x)`, so all eight ARE computed, from `person`.
-  - **The old unconditionality argument is dead.** "Nothing derives it, nothing can
-    retract it" was `obligated`'s stratum-0 argument. The replacement is stronger
-    and inverts it: **the floor is protected *because* it is reachable.** Being
-    inside the prisoner cone is exactly what makes `~P -> prisoner` a negative
-    cycle. At stratum 0 there would be no firewall at all.
-  - **Under the computed order the floor is chapter ~8, not chapter 1.** Part I
-    becomes "What Counts as Evidence" — the base predicates the world may report,
-    and why enlarging that vocabulary is the quietest way to capture a system.
+  Consequences, all now reflected in `3-spine.md`: the first chapter is **"What
+  Counts as Evidence"**, not the floor; the floor chapter is **8**, retitled **"What
+  You Are Owed"**, and carries the firewall demonstration; the spine is 14 derived
+  chapters, gaining "The Vote Conviction Does Not Take"; and the chapter-1 fidelity
+  table was rebuilt from scratch, since no row of the old one survived.
 
-  **Recommendation: take the computed order.** The book's whole method claim is that
-  the order is computed rather than chosen; overriding it at the first structural
-  decision would discredit the method exactly where a reader will test it. The
-  narrative argument agrees — you cannot explain "no law can punish you for lacking
-  this" before the reader knows what a punishing law looks like, and the firewall
-  demonstration needs `prisoner` to exist first. If the floor goes first anyway,
-  that is a deliberate override and the method part must say so out loud.
+  **One concession, deliberate:** a short **opening note** before Part I, explicitly
+  non-derived and labelled the way Part V is labelled, so the book does not open
+  cold on vocabulary. It claims no derivation and carries no verdicts. This is the
+  second sanctioned exception to the inclusion gate, alongside Part V.
 
-- **Regenerate `3-spine.md` — it is superseded, not merely stale.** Its header
-  (34 predicates / 26 rules), its stratification table, its predicate name
-  (`obligated`), its "six floor rights", its "18 evidence predicates" and its
-  findings (a) and (b) are all false now. It is the only spine document and would
-  be drafted from as-is. The recomputed order runs to 14 chapters across four
-  derived parts. Rebuild the Chapter 1 fidelity table from scratch — rows 1.1 and
-  1.2 are false, and no row survives the floor's move to stratum 2.
-
-- **Draft the first chapter, once the order above is settled.** Ship it with its
-  pinned-verdict file and use it to prove the method end to end before chapter 2. Short:
+- **[UNBLOCKED — next writing move] Draft Chapter 1, "What Counts as Evidence".**
+  The twenty-one things the world may report about a person; why the vocabulary is
+  small and fixed; why enlarging it is the quietest way to capture a system. Its
+  fidelity table is in `3-spine.md` §4 and every row is verified. Note row 1.6 is
+  deliberately red — the file names vocabulary growth as its own worst attack and
+  then does not entrench the vocabulary, and the chapter should say so. Ship it with
+  its pinned-verdict file and use it to prove the method end to end before ch 2. Short:
   the eight entitlements, and the argument that computing eligibility is where denial
   lives. **Lead with the firewall, not with assert-only-ness.** The old framing —
   "no rule can reach the floor, so nothing can retract it" — is true but weak, and

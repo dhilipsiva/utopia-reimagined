@@ -1,152 +1,213 @@
-# The Derived Spine
+# The Derived Spine — book-1
 
-Chapter order computed from the constitution's dependency graph, not chosen.
-Method: parse every rule, build the predicate dependency graph, assign strata by
-the standard fixpoint (positive edge ⇒ `stratum(head) ≥ stratum(body)`; negative
-edge ⇒ `stratum(head) > stratum(body)`), then order chapters by stratum and, within
-a stratum, by dependency. 34 predicates, 26 rules, 4 strata. Every verdict quoted
-below was produced by the engine, not by hand.
+Regenerated 2026-07-28 against the enacted constitution (`utopia-v2.nibli`). The
+previous version of this file computed its order from a graph that no longer
+exists; see the *Superseded* note at the end for what changed and why it matters.
+
+Chapter order is **computed from the constitution's dependency graph, not chosen**.
+Method: parse every rule, build the predicate dependency graph, assign strata by the
+standard fixpoint (positive edge ⇒ `stratum(head) ≥ stratum(body)`; negative edge ⇒
+`stratum(head) > stratum(body)`), then order chapters by stratum and, within a
+stratum, by dependency. Every verdict quoted below was produced by the engine.
 
 ---
 
 ## 1. The computed stratification
 
+Two sets of numbers, and **the difference between them is itself a finding**:
+
+| measurement | predicates | derived | rules | strata |
+|---|---|---|---|---|
+| `4-strata.py` as-is | 40 | 16 | 30 | 4 |
+| with the floor edges made explicit | **45** | **22** | **38** | **4** |
+
+`4-strata.py` cannot descend into `event { … }` blocks, so it never sees the eight
+floor predicates at all. The augmented run adds them as the engine actually compiles
+them — `entitled(every person, event { secure() })` becomes `person($x) -> secure($x)`
+— and that is the true graph. Use the augmented numbers. (In the augmented copy
+`entitled` and `derived_only` are left as bare stratum-0 facts; both are structural
+rather than evidence, and neither orders a chapter.)
+
 | Stratum | Predicates | What this layer is |
 |---|---|---|
-| **0** | `obligated`, `authority`, and 18 evidence predicates (`work`, `teaches`, `injure`, `show`, `judge`, `capture`, `deceive`, `family`, `home`, `severe`, `parent`, `broken`, `rotten`, `choose`, `suggest`, `approves`, `adjust`, `permanent`) | What is owed, and what the world reports |
-| **1** | `false`, `permits`, `defend`, `lose` | Accountability: voiding, credentials, the shield, clawback |
-| **2** | `person`, `prisoner`, `reward`, `expresses`, `dwell`, `fit`, `building`, `become` | Status and consequence |
+| **0** | `authority` + 21 evidence predicates: `adjust`, `approves`, `broken`, `capture`, `choose`, `clear`, `deceive`, `family`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `rotten`, `severe`, `show`, `suggest`, `teaches`, `work` | What the world is allowed to report |
+| **1** | `defend`, `false`, `lose`, `permits` | Accountability: credentials, the shield, voiding, clawback |
+| **2** | `prisoner`, `person`, the **eight floor rights** (`secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets`), `decide`, `reward`, `fit`, `building`, `become` | Status and consequence |
 | **3** | `err`, `travel` | The self-audit, and the single deprivation |
 
-`obligated` is **assert-only**: it appears in no rule head and no rule body.
-Nothing derives it and nothing can retract it. That is not a promise about the
-floor; it is the floor's position in the graph.
-
-`authority` is the only derived predicate whose entire dependency cone is
-negation-free. Seating is never revoked — deliberately, so that recall cannot
-retroactively strip a whistleblower's protection.
+`authority` is the only derived predicate at stratum 0, and the only one whose
+entire dependency cone is negation-free. Seating is never revoked — deliberately, so
+that recall cannot retroactively strip a whistleblower's protection.
 
 ---
 
-## 2. Three findings that reshape the book
+## 2. The finding that reorganises the book
 
-**(a) The machinery exists only where the system might be tempted to take
-something away.** Four of the six floor rights — `secure`, `eats`, `healthy`,
-`learn` — appear *exactly once each*, inside their obligation, and in no rule
-anywhere. They have no derivation because the ordinary case has nothing to
-compute. Rules appear only around the accused, the convicted, the corrupt, and
-the accuser. This is the book's thesis and it was computed, not asserted: **a
-right that requires a computation to establish is not a right, it is a benefit.**
+**The floor is at stratum 2, not stratum 0.**
 
-**(b) Conviction deprives exactly one thing.** `travel` sits alone at the top of
-the graph behind `~prisoner`. Every other floor right survives conviction — and
-where it might have been lost by inheritance, there is an *explicit re-grant*
-rule (`prisoner($p) -> expresses($p)`, `prisoner($x) -> person($x)`). Verified:
-`person(Hano)` TRUE, `expresses(Hano)` TRUE, `travel(Hano)` FALSE,
-`travel(Adam)` FALSE. The entire punishment system, reduced to its logic,
-takes away movement and nothing else.
+The old spine claimed the floor sat outside the machine — `obligated` appeared in no
+rule head and no rule body, so nothing could reach it, and *that* was said to be what
+made it unconditional. That is now false in every part.
 
-**(c) The constitution obligates delivery it cannot yet derive.** `eats(Adam)`
-FALSE. `healthy(Bela)` FALSE. Not because anyone is denied — because no rule
-connects the obligation to any fact about food or care reaching a person. The
-obligation layer is complete; the delivery layer does not exist. This is the
-honest boundary of what the current constitution supports, and the book must
-either stop where it stops or the KB must grow a provisioning layer first.
+Each floor line compiles to a rule with `person` in the body. `prisoner -> person`
+puts `person` downstream of `prisoner`. So all eight floor predicates sit at
+stratum 2, **inside the prisoner cone**. The engine says so directly: the refusal
+this design depends on reads
+
+```
+Unstratifiable negation: strongly-connected component containing
+'prisoner' -> 'believe' (negative)
+```
+
+and that component can only exist if `believe` is downstream of `prisoner`.
+
+**This is not a defect. It is the firewall, and the old argument had it backwards.**
+The floor is protected *because* it is reachable. Being inside the prisoner cone is
+exactly what makes `person($x) & ~believe($x) -> prisoner($x)` a negative cycle the
+stratifier refuses. At stratum 0 there would be no cycle to close and no protection
+at all — the floor would be a declaration, which is what the old spine thought it
+was.
+
+Two consequences for the book:
+
+- **The chapter formerly called "The Floor Nobody Computes" is renamed.** The floor
+  *is* computed, from `person`. Its chapter is now **"What You Are Owed"**, and it
+  argues from the compile-time prohibition rather than from unreachability.
+- **It moves from chapter 1 to chapter 8.** That is where the graph puts it, and the
+  order is taken as computed. It also reads better: you cannot explain "no law can
+  punish you for lacking this" before the reader knows what a punishing law is.
 
 ---
 
 ## 3. The spine
 
-**Part I — What is owed (stratum 0)**
+**Opening note** — *explicitly not derived*, ~800 words. What the book is and how to
+read it. Labelled the same way Part V is labelled, so the reader can feel the seam.
+It exists so the book does not open cold on vocabulary. It claims no derivation and
+carries no verdicts.
 
-1. **The Floor Nobody Computes.** Six obligations, asserted, depending on
-   nothing. Why unconditionality is a structural property rather than a promise:
-   no rule can reach `obligated`, so no fact about a person can retract it.
-   Contrast with every benefits system, where eligibility is a computation and
-   therefore a place to stand and deny.
-2. **What Counts as Evidence.** The eighteen things the world is allowed to
-   report. Why the vocabulary is small and fixed, and why enlarging it is the
-   quietest way to capture a system. `authority` and why it is never revoked.
+**Part I — What the world is allowed to say (stratum 0)**
+
+1. **What Counts as Evidence.** The twenty-one things the world may report about a
+   person. Why the vocabulary is small and fixed, and why enlarging it is the
+   quietest way to capture a system — the file names this as its own worst attack.
+2. **Standing, and Why It Is Never Revoked.** `authority`: the only derived
+   predicate here, and the only one with a negation-free cone. Two derivations since
+   the Article 7 split — `public` for institutions, `choose` for seating. Seating is
+   forever exposable; only power is revocable. *(Editorial: could fold into ch 1,
+   giving 13 derived chapters instead of 14.)*
 
 **Part II — Accountability (stratum 1)**
+Forced chain: `permits → false → lose`. `defend` depends only on stratum 0 and floats.
 
-3. **Who Holds the Pen.** `permits` — credentials derive from selection, never
-   from assertion. The Article 8 fix and why it was needed: in the first draft,
-   anyone who could write a fact could seat an auditor.
-4. **Voiding.** `false` — multi-sig, independence, counter-audit. **Vex**: the
-   auditor caught taking bribes who kept signing. The epoch fix, and the
-   admission that it is a discipline over the record store rather than something
-   the rules can enforce alone.
-5. **The Shield.** `defend` — exposure protects, but only against an authority,
-   and only until deceit is found. **Don**, who claimed protection for exposing
-   his own victim and, in the first draft, got it. **Sly**, who is protected
-   during a window the author chose to leave open. **Kel**, whose shield falls.
-6. **Clawback.** `lose` — what taking back looks like when the floor is not
-   touchable.
+3. **Who Holds the Pen.** `permits` — credentials derive from selection, never from
+   assertion, and since the Article 8 split that is *true* rather than merely
+   claimed. Two derivations: Review credentials from clean seating, Appeals relief
+   from `clear`.
+4. **The Shield.** `defend` — exposure protects, but only against an authority, and
+   only until deceit is found. **Don**, who claimed protection for exposing his own
+   victim. **Sly**, protected during a window the author chose to leave open.
+   **Kel**, whose shield falls.
+5. **Voiding.** `false` — multi-sig, independence, counter-audit, epoch carry.
+   **Vex**, the auditor voided last epoch who is still seated on paper.
+6. **Clawback.** `lose` — what taking back looks like when the floor cannot be
+   touched. Carries the open fairness problem: the contamination rule docks a
+   student for a teacher's fraud.
 
 **Part III — Status and consequence (stratum 2)**
+Forced: `prisoner → person → {floor, decide}`; `fit → dwell`. `reward` and `become`
+depend only on strata 0–1 and float.
 
-7. **A Prisoner Is a Person.** One rule, and everything it forces. Why this is
-   the load-bearing line of the constitution and why removing it silently
-   removes six rights at once.
-8. **Contribution.** `reward` — recognition conditioned on not having been
-   voided. **Bela**, **Esa**, **Dev**, **Mira**, **Lupo**. Why recognition is
-   earn-only and why the arithmetic is deliberately absent.
-9. **Where People Are Put.** `fit`, `dwell`, `building` — eligibility derived
-   rather than asserted. **Ruk** in the farmhouse: the escape the first draft's
-   own commentary mocked and its rules permitted.
-10. **Changing the Rules.** `become` — amendment, and the register that
-    entrenches itself. **Amend_Meta**, which voids itself by touching the
-    entrenchment list. Why the bootstrap is underivable rather than forbidden.
+7. **A Prisoner Is a Person.** One rule, and everything it forces. Why removing it
+   silently removes eight rights at once.
+8. **What You Are Owed.** The eight entitlements, derived from `person`. **The
+   firewall demonstration lives here**: write a law that jails people for not
+   holding the right belief, and the constitution will not compile. Show the rule,
+   the error, and the same rule loading fine against a right that is not on the
+   floor. Then state where the protection stops — standing and points are still
+   reachable, and positive compulsion is untouched.
+9. **The Vote Conviction Does Not Take.** `decide($x, Ballot)` — a convicted person
+   still votes. New; the old spine had no such chapter.
+10. **Contribution.** `reward` — recognition conditioned on not having been voided.
+    Why it is earn-only and why the arithmetic is deliberately absent.
+11. **Where People Are Put.** `fit`, `dwell`, `building` — eligibility derived rather
+    than asserted. **Ruk** in the farmhouse. Must follow ch 8, because `dwell` is
+    also a floor right and the reader needs that first.
+12. **Changing the Rules.** `become` — amendment, and the register that entrenches
+    itself. **Watch the scope gate here**: this is change-over-time and drifts
+    easily into "how this gets adopted", which is book-2.
 
 **Part IV — The top of the graph (stratum 3)**
 
-11. **The One Thing Taken.** `travel`. What it means that the whole apparatus
-    of punishment reduces to a single deprivation.
-12. **When the System Notices It Broke.** `err` — the breach marker, above
-    everything, whose only job is to make a wrong placement queryable. A system
-    that cannot state its own violations cannot be audited.
+13. **The One Thing Taken.** `travel`. The whole apparatus of punishment reduces to
+    a single deprivation.
+14. **When the System Notices It Broke.** `err` — the breach marker, above
+    everything, whose only job is to make a violation queryable. Two markers now:
+    Placement and Isolation.
 
 **Part V — Outside the graph** *(nothing here is derived; label it as such)*
+The five-joints scorecard, ~14,500 words. Re-framed for the destination-only scope:
+valuation, rotation, coercion, capture and the state are places a *functioning*
+design breaks, not stages of a rollout, and the historical cases enter as evidence
+about failure modes rather than as a narrative of people who tried.
 
-13. Harvest from `book.md`: the social-credit chapter, the five joints, the pod
-    and the state, the calculation problem. These are argument and evidence,
-    not derivation, and should be visibly a different kind of chapter.
-14. **What This Cannot Do.** The delivery gap (finding c). The fact channel as
-    residual trust base. Manipulability of any selection rule. The difference
-    between precise and justified.
-
----
-
-## 4. Chapter 1 fidelity table (proof of method)
-
-One row per load-bearing sentence. Private to the author; never shown to the
-reader. Regenerate on every constitution change; any row whose verdict flips is a
-paragraph that has started lying.
-
-| # | Sentence in chapter | Query | Expected | Verified |
-|---|---|---|---|---|
-| 1.1 | "Six things are owed to every person, and nothing has to happen first." | `obligated` assertions, lines 37–42 | asserted, stratum 0, assert-only | ✅ |
-| 1.2 | "No rule anywhere can reach the floor to withdraw it." | `obligated` occurs in no rule head or body | structural | ✅ |
-| 1.3 | "A convicted person is still a person." | `person(Hano)` | TRUE | ✅ |
-| 1.4 | "Conviction does not take away your voice." | `expresses(Hano)` | TRUE | ✅ |
-| 1.5 | "It does take away your freedom to move." | `travel(Hano)`, `travel(Adam)` | FALSE, FALSE | ✅ |
-| 1.6 | "A free person may move." | `travel(Jala)`, `prisoner(Jala)` | TRUE, FALSE | ✅ |
-| 1.7 | "Being owed food is not the same as being fed, and this constitution can prove the first and not the second." | `eats(Adam)`, `healthy(Bela)` | FALSE, FALSE | ✅ |
-
-Row 1.7 is the one to keep visible in the writing. Stating the gap is what makes
-the rest of the book credible; hiding it is what would make it propaganda.
+**Final part — The method** *(explicitly optional; the only place jargon is allowed)*
+The constitution, the derived spine, the firewall, the evidence/conclusion split,
+and what the logic refused — including that a universal right of appeal is
+unstratifiable. Its existence is what answers "you built a machine and hid it".
 
 ---
 
-## 5. Writing blocked on constitution work
+## 4. Fidelity table — chapter 1
 
-- **Provisioning layer.** Until rules connect obligation to delivery, Part I
-  chapters can describe what is owed and not what arrives. Chapters 1–2 are
-  writable now; a "does it reach people" chapter is not.
-- **Exact arithmetic.** Any quantitative treatment of contribution needs integer
-  minor-units before it can be derived; tolerant float comparison cannot back
-  claims about money.
-- **`lose` coverage.** Clawback appears in the graph at stratum 1 but chapter 6
-  needs pins that exercise it; none exist yet.
+Rebuilt from scratch. **No row of the old table survived**: it pinned "six things",
+"assert-only" and "stratum 0", all of which are now false. Chapter 1 is about the
+evidence vocabulary, so its table pins base-predicate behaviour.
 
+One row per load-bearing sentence. Private to the author; the reader never sees it.
+Regenerate on every constitution change; any row whose verdict flips is a paragraph
+that has started lying.
+
+| # | Sentence in chapter | Query | Expected |
+|---|---|---|---|
+| 1.1 | "The world may report twenty-one kinds of thing about a person, and no more." | base predicates at stratum 0 | 21, enumerated |
+| 1.2 | "Being accused is a fact; being guilty is a conclusion." | `judge(Court, Hano)` / `prisoner(Hano)` | TRUE / TRUE, but derived |
+| 1.3 | "You cannot simply declare someone guilty." | `prisoner(Zed).` | REFUSED — derived-only |
+| 1.4 | "Nor can you hand yourself the authority to judge." | `authority(Pax).` | REFUSED — derived-only |
+| 1.5 | "An accusation that goes nowhere leaves no mark." | `false(Koa)` | FALSE |
+| 1.6 | "Enlarging this list is how a system is captured quietly." | `permanent(Art_Evidence)` | FALSE — **not yet entrenched** |
+
+Row 1.6 is deliberately red. The file names vocabulary growth as its own worst
+attack and then does not entrench the vocabulary; the chapter should say so.
+
+---
+
+## 5. Writing still blocked on constitution work
+
+- **The delivery gap.** `eats(Adam)`, `healthy(Bela)`, `secure(Bela)`, `learn(Cira)`
+  and `believe(Bela)` are all FALSE. No rule connects an obligation to any fact
+  about anything reaching a person. The obligation layer is complete; the delivery
+  layer does not exist. Chapters can describe what is owed, never what arrives —
+  state the gap in the prose rather than hiding it.
+- **`err/2` fires on a correctly-placed prisoner.** `err(Lalo, Placement)` is TRUE
+  while `building(HighSec, Lalo)` is also TRUE. Fix before ch 14.
+- **The Article 4 clawback rules refute a published bright line** — "no negative
+  scoring of persons" — by docking a student for a teacher's fraud. Fix before ch 6.
+- **`lose` has no adversarial pins.** Chapter 6 needs them; none exist.
+
+---
+
+## Superseded — what the previous version got wrong
+
+Kept as history. The earlier spine computed a 12-chapter order from **34 predicates
+/ 26 rules** and is wrong in six ways, every one of which would have reached print:
+the predicate is `entitled`, not `obligated`; the floor is **eight** rights, not six;
+the floor is at **stratum 2**, not 0; `obligated` is not "assert-only", because the
+floor compiles into rules; finding (a) ("four floor rights appear exactly once")
+described a parser artifact rather than the graph; and the chapter order itself is
+different, gaining `decide` and moving the floor from first to eighth.
+
+The lesson worth carrying into the method part: the old spine was not sloppy. It was
+computed correctly from a file that then changed underneath it, and nothing in the
+repository noticed. That is the argument for regenerating this document from the
+constitution rather than editing it by hand.
