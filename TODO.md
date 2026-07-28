@@ -44,17 +44,6 @@ Everything else in `new-book-plans/` is unverified or corrected below.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **Apply the licence structure as each artifact lands.** Decided and recorded in
-  `LICENSING.md`: prose **CC-BY-4.0**, code **MIT OR Apache-2.0**, data registry
-  **CC0**, constitution under nibli's terms. Already-committed files stay CC0
-  irrevocably; the root `LICENSE` stays put and keeps governing them. Remaining
-  work is mechanical and belongs with the artifact it covers — drop `LICENSE-CC-BY`
-  in the book's directory with a licence line in the front matter; add
-  `LICENSE-MIT` + `LICENSE-APACHE` and `SPDX-License-Identifier` headers when the
-  harness and fetchers are written; add `LICENSE-CC0` in the registry directory.
-  Since exclusivity is now permanently off the table, the reach strategy is
-  serialization and open circulation — plan the publishing route on that basis.
-
 - **[AUTHOR-GATED] Confirm the floor at TEN, then make all three artifacts quote
   it.** The existing six (`secure, eats, dwell, healthy, learn, expresses`) are
   sound and none should come off. But they are all *provisions* — "X is owed to
@@ -133,6 +122,19 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   MVS is the old book's best coinage. Decide whether the new book keeps it — and
   whether it reads for a global audience — before any sample chapters go out. The
   same question applies to retitling `book.md` around it.
+
+## Settled — carry out as the artifacts land, blocks nothing
+
+- **Apply the licence structure.** Decided and recorded in `LICENSING.md`: prose
+  **CC-BY-4.0**, code **MIT OR Apache-2.0**, data registry **CC0**, constitution
+  under nibli's terms. Already-committed files stay CC0 irrevocably; the root
+  `LICENSE` stays put and keeps governing them. What remains is mechanical and
+  belongs with the artifact it covers — drop `LICENSE-CC-BY` in the book's
+  directory with a licence line in the front matter; add `LICENSE-MIT` +
+  `LICENSE-APACHE` and `SPDX-License-Identifier` headers when the harness and
+  fetchers are written; add `LICENSE-CC0` in the registry directory. Since
+  exclusivity is now permanently off the table, the reach strategy is serialization
+  and open circulation — plan the publishing route on that basis.
 
 ## The verification harness — build this before writing prose, so every later claim is checkable
 
