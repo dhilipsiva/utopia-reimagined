@@ -710,6 +710,15 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 4, "The Shield"** — `book-1/04-the-shield.md`, 1,162 words,
+  `04-the-shield.pins.nibli` (15 pins, green). Don, Sly and Kel. Don is the closed
+  exploit — exposing his own victim bought a shield until the design required the
+  exposed party to hold standing. Sly is the deliberate fail-open window, defended
+  on asymmetry of harm rather than apologised for. Kel is what closes it. Ends by
+  paying chapter 2's bill: the shield attaches to anyone with standing, standing is
+  never revoked, so the surface of protective exposures only grows — and whether it
+  should be bounded by time is a real question the design does not answer.
+
 - **DRAFTED: Chapter 3, "Who Holds the Pen"** — `book-1/03-who-holds-the-pen.md`,
   1,090 words, `03-who-holds-the-pen.pins.nibli` (14 pins, green). Opens Part II.
   Carries the Sock/Puppet attack as its centre — the hole that let two people who

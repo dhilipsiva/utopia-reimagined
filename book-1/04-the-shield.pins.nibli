@@ -1,0 +1,58 @@
+# ── Chapter 4 fidelity pins: "The Shield" ────────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/04-the-shield.pins.nibli
+
+:expect-pins 15
+
+# DON — "Don injured Pax. Then Don exposed Pax."
+? injure(Don, Pax).
+# => TRUE
+
+? show(Don, Pax).
+# => TRUE
+
+# "Pax has none." — the condition that fails
+? authority(Pax).
+# => FALSE
+
+# "Don has no shield and Don is a prisoner."
+? defend(Don).
+# => FALSE
+
+? prisoner(Don).
+# => TRUE
+
+# SLY — "Sly injured Pax too. Then Sly exposed the court."
+? injure(Sly, Pax).
+# => TRUE
+
+? show(Sly, Court).
+# => TRUE
+
+? authority(Court).
+# => TRUE
+
+# "So Sly's shield holds, and Sly ... walks free."
+? defend(Sly).
+# => TRUE
+
+? prisoner(Sly).
+# => FALSE
+
+# KEL — "Then the review body examined the exposure and found it deceitful."
+? show(Kel, Court).
+# => TRUE
+
+? deceive(Kel, Court).
+# => TRUE
+
+# "Kel's shield falls ... Kel is a prisoner ... Kel's own standing is voided."
+? defend(Kel).
+# => FALSE
+
+? prisoner(Kel).
+# => TRUE
+
+? false(Kel).
+# => TRUE
