@@ -25,18 +25,31 @@ carries a ready-to-paste **HANDOFF PROMPT** for a Claude Code session in
 `~/projects/dhilipsiva/nibli`. Hand it over, work the next unblocked bullet, and
 resume when it lands.
 
-**Already established — don't re-verify these** (2026-07-27 pass; nine parallel
-verifications against primary sources, plus the full pin set re-run on the real
-engine via `nibli-host --script`, release wasm, `NIBLI_FUEL=2e12`):
+**Already established — don't re-verify these** (verified on the real engine via
+`nibli-host --script`, release wasm, `NIBLI_FUEL` pinned high):
 
-- The stratification is exact — 34 predicates, 15 derived, 26 rules, 4 strata,
-  membership matching `3-spine.md` line for line, `authority` the only derived
-  predicate with a negation-free cone.
-- All 17 v0.1 regression pins are unchanged in v0.2, checked against a v0.1 run.
-- All three disclosed exploit closures (E1 shield, E2 epoch carry, E3 farmhouse)
-  hold on the engine, as does Article 9's self-entrenchment.
-- All seven fidelity-table rows are true — but none is reproducible from the
-  committed artifacts, which is what the harness bullets exist to fix.
+- **A floor line is a compile-time prohibition, not a declaration.**
+  `obligated(every person, event { P() })` compiles to a rule with `person` in the
+  body, so `P` sits downstream of `prisoner`; any later rule taking `~P` into that
+  cone is an unstratifiable negative cycle and is refused. Verified both ways plus
+  a non-floor control. You cannot write a law punishing a person for lacking a
+  floor right. Where it stops is equally established: `~P -> false` (standing),
+  `~P -> lose(Points, ·)`, and positive compulsion `prisoner -> P` all still load.
+- The floor is **eight** and is enacted in `new-book-plans/utopia-v2.nibli`, with
+  the franchise and the isolation marker as rules. Graph after enactment: 37
+  predicates, 16 derived, 28 rules, max stratum 3, **stratum 3 still exactly
+  `{err, travel}`** — the single-deprivation theorem survives.
+- All 17 v0.1 regression pins, all three exploit closures (E1 shield, E2 epoch
+  carry, E3 farmhouse) and Article 9's self-entrenchment are unchanged through
+  v0.2 and the enactment, each checked against a v0.1 baseline run.
+- The seven original fidelity-table rows are true — but **none is reproducible
+  from the committed artifacts**, which is what the harness bullets exist to fix.
+- The 2026-07-27 source pass stands: nine parallel verifications against primary
+  sources. Its corrections are the research-brief section below.
+
+Note `3-spine.md`'s stratification table and chapter order are now **stale** — they
+predate the enactment and do not contain `decide`, `meets` or `mature`. Recompute
+before relying on them.
 
 Everything else in `new-book-plans/` is unverified or corrected below.
 
@@ -83,11 +96,24 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   Markdown table with green ticks. Convert `utopia-v2-run.nibli` to it. The
   verdicts to pin are known: `person(Hano)` TRUE, `expresses(Hano)` TRUE,
   `travel(Hano)` FALSE, `travel(Adam)` FALSE, `travel(Jala)` TRUE,
-  `prisoner(Jala)` FALSE, `eats(Adam)` FALSE, `healthy(Bela)` FALSE.
+  `prisoner(Jala)` FALSE, `eats(Adam)` FALSE, `healthy(Bela)` FALSE, plus the
+  enacted three — `decide(Hano, Ballot)` TRUE, `decide(Jala, Ballot)` TRUE,
+  `err(Hano, Isolation)` TRUE.
+
+- **The harness needs a second mode: negative pins that must FAIL to load.** The
+  Article 1 firewall cannot be tested by any query, because what must fail is the
+  *assertion*. Its test is "append this rule and the file must refuse to compile" —
+  a mode no existing runner has. Three cases are specified in `utopia-v2.nibli`'s
+  v0.3 pin block: `~believe -> prisoner` MUST be refused, `~meets -> prisoner` MUST
+  be refused, and the non-floor control `~home -> prisoner` MUST load. **Keep the
+  control** — without it a green firewall test proves nothing about the floor, only
+  about the rule shape. This is the only test the book's strongest claim has.
 
 - **Fix the run script: it loads the wrong constitution and records no
   expectations.** `utopia-v2-run.nibli` line 1 is `:load utopia.nibli` — it pins
-  **v0.1**, not the v0.2 file it is named for. And it lists queries with no
+  **v0.1**, not the `utopia-v2.nibli` beside it — which now carries the enacted
+  eight-right floor, so the gap is a whole constitutional revision wide. And it
+  lists queries with no
   expected verdicts, so it cannot fail; it is a transcript, not a test. Six of the
   seven fidelity rows have no query in it at all.
 
@@ -106,12 +132,19 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   **excludes** fuel-trapping queries as runtime-dependent. Pin `NIBLI_FUEL` in the
   harness, and fail loudly on `RESOURCE_EXCEEDED`.
 
-- **Fix or replace `4-strata.py`.** The stratification it reports is exactly right
-  (see the established list above). But its parser takes only the *first* predicate
-  on a fact line, so `secure`, `eats`, `healthy` and `learn` are **invisible to it**
-  — the four floor rights the book's central finding is about are not in the 34.
-  The finding is true; the script did not compute it. Either extend the parser to
-  see inside `event { … }` blocks, or stop presenting the finding as computed.
+- **Fix or replace `4-strata.py` — it is not cosmetic, it already caused a wrong
+  answer.** Its parser takes only the *first* predicate on a fact line, so it never
+  descends into `event { … }` and the floor rights are invisible to it: `secure`,
+  `eats`, `healthy`, `learn` and now `believe` do not appear in its output at all.
+  Two consequences, and the second is the serious one. (a) The "four rights appear
+  exactly once" finding is true but the script did not compute it. (b) **The script
+  reports floor lines as graph-inert, and they are not** — the engine sees an edge
+  `P -> person` that the script cannot, which is the whole firewall. Relying on the
+  script's "no change" output is what produced, and briefly committed, the wrong
+  conclusion that a floor line does nothing. Extend the parser to descend into
+  `event { }` blocks, or replace it with something that reads the engine's own
+  compiled IR. Until then, treat its output as a lower bound and confirm any
+  structural claim against the engine.
 
 - **Write the claim-to-query table as a generated artifact, not a hand-maintained
   one.** One row per load-bearing sentence: sentence, query, expected verdict.
@@ -150,14 +183,15 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   `permits(Appeals,·)`, `authority`, `fit`, `defend`, `rotten`, `deceive`, `severe`,
   `family`, `broken`, `parent`, `teaches`, `work`, `adjust`, `permanent`.
 
-- **Guard the personhood roster — it defeats all ten rights at once.** `person`
+- **Guard the personhood roster — it defeats all eight rights at once.** `person`
   has 29 asserted facts and exactly one producing rule (`prisoner -> person`), so
   the sole non-assertion route into rights-bearing status is *being imprisoned*.
-  Deleting `person(Bela)` costs Bela the entire floor plus `travel`, derives no
-  `err`, and never touches Article 9 — which entrenches **rules, not facts**. The
-  floor is unconditional only *above* the atom `person(X)`; the domain itself is
-  assertable, so a further right on a floor whose domain is assertable is a better
-  door in a missing wall. Fix: `all $x: human($x) -> person($x).` plus a roster
+  Deleting `person(Bela)` costs Bela the entire floor plus `travel` and the
+  ballot, derives no `err`, and never touches Article 9 — which entrenches **rules,
+  not facts**. This is now the largest hole in the design: the floor's protection
+  is a compile-time firewall over `person`, so the firewall is only as good as the
+  roster, and the roster is a pile of assertions. Every right is unconditional
+  *above* the atom `person(X)`, and `person(X)` is one deletion away. Fix: `all $x: human($x) -> person($x).` plus a roster
   breach marker so de-personing derives an `err` rather than silently succeeding.
   Add `person` to the fact-write trust base list above.
 
@@ -174,7 +208,10 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   `judge(Court, ·)`, so `prisoner(Rebel)` is FALSE and `travel(Rebel)` stays TRUE.
   The constitution certifies as free a person it is holding. Cheapest high-value
   fix in the set, and it defends the crown jewel directly:
-  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Placement).`
+  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Confinement).`
+  Use a third `err` flavour rather than reusing `Placement`, matching the
+  `err(_, Isolation)` marker already enacted — the audit surface stays one
+  predicate while each breach stays separately queryable.
 
 - **Entrench the evidence vocabulary.** The file states its own threat model in one
   sentence — *"enlarging the evidence vocabulary is the quietest way to capture a
@@ -196,7 +233,9 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   — the replacement silently vanishes and the *original permissive rule stays in
   force*. That is precisely the "a permissive rule left in place keeps its exploit"
   failure the v0.2 header warns about, now reachable through the stratifier rather
-  than through oversight.
+  than through oversight. Related but distinct from the Article 1 firewall
+  commentary already enacted: that documents the stratifier *protecting* the floor,
+  this documents it *silently rejecting* a well-meant tightening.
 
 - **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's
   shield is deliberately fail-**open** toward protection and defended at length as
@@ -224,8 +263,10 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   the fraudulent teaching, which needs provenance on `reward`.
 
 - **Grow the provisioning layer, or write Part I to stop where it stops.**
-  `eats(Adam)`, `healthy(Bela)`, `secure(Bela)` and `learn(Cira)` are all FALSE —
-  the gap is uniform across all four zero-rule floor rights. Not denial; no rule
+  `eats(Adam)`, `healthy(Bela)`, `secure(Bela)`, `learn(Cira)` and now
+  `believe(Bela)` are all FALSE — the gap is uniform across every floor right with
+  no rule of its own, and enacting two more rights widened it rather than closing
+  it. Not denial; no rule
   connects an obligation to any fact about anything reaching a person. The
   obligation layer is complete and the delivery layer does not exist. Chapters 1–2
   are writable now; a "does it actually arrive" chapter is not. Keep this visible in
@@ -417,12 +458,25 @@ Everything else in `new-book-plans/` is unverified or corrected below.
   it stops*, and here the machine refuses a thing the author wanted and can say
   exactly why. Ship the error message.
 
+  Pair it with the firewall from Chapter 1, because together they are the argument:
+  the same stratifier that refuses the author a universal right of appeal is what
+  refuses an attacker a heresy law. One mechanism, no special pleading, and neither
+  outcome chosen by whoever was writing that day. That symmetry is worth more than
+  either half alone.
+
 - **Draft Chapter 1 ("The Floor Nobody Computes") as the proof of method.** Short:
-  the six obligations, why unconditionality is structural rather than promised (no
-  rule can reach `obligated` — it appears in no rule head and no rule body, so
-  nothing derives it and nothing can retract it), and the argument that computing
-  eligibility is where denial lives. Ship it with its pinned-verdict file, and use
-  it to prove the harness works end to end before Chapter 2.
+  the eight obligations, and the argument that computing eligibility is where denial
+  lives. **Lead with the firewall, not with assert-only-ness.** The old framing —
+  "no rule can reach `obligated`, so nothing can retract it" — is true but weak, and
+  it is not what actually protects anyone. The real claim is stronger and
+  demonstrable on a page: *write a law that jails people for not holding the right
+  belief, and this constitution will not compile.* Show the rule, show the
+  stratification error, show the same rule loading fine against a right that is not
+  on the floor. A reader who has never seen a line of logic can follow that, and it
+  is the only place in the book where the machine visibly does something no prose
+  could. Then state where it stops — standing and points are still reachable, and
+  positive compulsion is untouched. Ship it with its pinned-verdict file **and** its
+  negative pins, and use it to prove the harness works end to end before Chapter 2.
 
 ## book.md and manifesto.md — the existing manuscripts
 
