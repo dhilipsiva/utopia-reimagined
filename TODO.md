@@ -715,6 +715,20 @@ trustworthy.
   cold on vocabulary. It claims no derivation and carries no verdicts. This is the
   second sanctioned exception to the inclusion gate, alongside Part V.
 
+- **DRAFTED: Chapter 8, "What You Are Owed"** — `book-1/08-what-you-are-owed.md`,
+  1,036 words, `08-what-you-are-owed.pins.nibli` (12 pins, green). Names the eight,
+  then spends most of its length on the two gaps. Turned up a result worth keeping:
+  **`dwell(Hano)` is the only floor right that derives for anyone in the whole
+  design, and it derives because Hano is in custody** — the placement machinery
+  tracks where convicted people are, and nothing tracks where anyone else is. The
+  only built-out part of the floor is the part overlapping punishment.
+  **Two follow-ups this chapter creates:**
+  - Its closing section says nobody is named as duty-bearer, which is true of the
+    constitution as it stands. **Enacting the thin constitutional layer will
+    require rewriting that section** — the pin file carries the note.
+  - The firewall's three open doors are now in print (standing, recognition,
+    compelled belief). If any is later closed, this chapter changes.
+
 - **DRAFTED: Chapter 7, "A Prisoner Is a Person"** —
   `book-1/07-a-prisoner-is-a-person.md`, 977 words,
   `07-a-prisoner-is-a-person.pins.nibli` (9 pins, green). Opens Part III and carries
