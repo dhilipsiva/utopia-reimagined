@@ -261,15 +261,13 @@ derivations are never stored and only asserted facts can make one late).
   reports with what the system concludes — this book's own thesis, turned back on
   its constitution. Do this before claiming Article 8's guarantee in print.
 
-  **Ordering is load-bearing and easy to break silently:** the check fires at assert
-  time, so a declaration protects only what is asserted after it. The declarations
-  must stay at the top of the file. One moved below the cast is inert and looks
-  identical. Worth a pin.
-
-- **Add the closed relations as pins.** nibli ships `pins/derived-only.nibli` with
-  the A/B/C exploits as permanent refusals. The book-side suite should pin the same
-  for this constitution once the runner supports `:refuse` — including the ordering
-  property above.
+  **Ordering is no longer a hazard you have to remember.** The check fires at assert
+  time, so a declaration only protects what is asserted after it — but an inert
+  declaration is now *refused* upstream rather than silently ignored, so the failure
+  mode that produced this warning cannot recur. Keep the declarations at the top of
+  the file anyway; that is where they read correctly. When Articles 6/7/8 are split,
+  add `derived_only` for `authority`, `permits` and `prisoner` and extend the three
+  Article 0 refusals in `rights-floor.pins.nibli` to cover them.
 
 - **Fix `err/2`: it fires on correctly-placed prisoners.** `err(Lalo, Placement)`
   is **TRUE** — but Lalo is severe+family and Article 6 routes him correctly to
