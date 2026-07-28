@@ -673,7 +673,45 @@ trustworthy.
   outcome chosen by whoever was writing that day. That symmetry is worth more than
   either half alone.
 
-- **[UNBLOCKED — this is the next writing move] Draft Chapter 1 ("The Floor Nobody Computes") as the proof of method.** The floor is settled, enacted and pinned, so nothing structural gates this any more. Short:
+- **[AUTHOR-GATED — decide before any drafting] Is the chapter order strictly
+  computed, or is the floor exempted?** Recomputing the spine against the enacted
+  constitution overturns the planned Chapter 1. **The floor is not at stratum 0.
+  It is at stratum 2**, alongside `person` and `prisoner` — verified by making the
+  floor edges visible to `4-strata.py` (45 predicates, 38 rules, four strata) and
+  corroborated by the engine's own refusal message, `strongly-connected component
+  containing 'prisoner' -> 'believe'`, which is only possible if `believe` is
+  inside the prisoner cone.
+
+  Three consequences, all of which have to be settled before a word is drafted:
+  - **"The Floor Nobody Computes" is factually false.** Each floor line compiles to
+    `person($x) -> P($x)`, so all eight ARE computed, from `person`.
+  - **The old unconditionality argument is dead.** "Nothing derives it, nothing can
+    retract it" was `obligated`'s stratum-0 argument. The replacement is stronger
+    and inverts it: **the floor is protected *because* it is reachable.** Being
+    inside the prisoner cone is exactly what makes `~P -> prisoner` a negative
+    cycle. At stratum 0 there would be no firewall at all.
+  - **Under the computed order the floor is chapter ~8, not chapter 1.** Part I
+    becomes "What Counts as Evidence" — the base predicates the world may report,
+    and why enlarging that vocabulary is the quietest way to capture a system.
+
+  **Recommendation: take the computed order.** The book's whole method claim is that
+  the order is computed rather than chosen; overriding it at the first structural
+  decision would discredit the method exactly where a reader will test it. The
+  narrative argument agrees — you cannot explain "no law can punish you for lacking
+  this" before the reader knows what a punishing law looks like, and the firewall
+  demonstration needs `prisoner` to exist first. If the floor goes first anyway,
+  that is a deliberate override and the method part must say so out loud.
+
+- **Regenerate `3-spine.md` — it is superseded, not merely stale.** Its header
+  (34 predicates / 26 rules), its stratification table, its predicate name
+  (`obligated`), its "six floor rights", its "18 evidence predicates" and its
+  findings (a) and (b) are all false now. It is the only spine document and would
+  be drafted from as-is. The recomputed order runs to 14 chapters across four
+  derived parts. Rebuild the Chapter 1 fidelity table from scratch — rows 1.1 and
+  1.2 are false, and no row survives the floor's move to stratum 2.
+
+- **Draft the first chapter, once the order above is settled.** Ship it with its
+  pinned-verdict file and use it to prove the method end to end before chapter 2. Short:
   the eight entitlements, and the argument that computing eligibility is where denial
   lives. **Lead with the firewall, not with assert-only-ness.** The old framing —
   "no rule can reach the floor, so nothing can retract it" — is true but weak, and
