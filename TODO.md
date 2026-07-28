@@ -387,11 +387,29 @@ fixtures are inline by design. The two are complements.
 - **Widen kinship beyond `parent/2`.** The multi-sig independence check excludes
   only parents; spouses and siblings co-sign freely. Disclosed in v0.1, still open.
 
-## nibli handoffs — blocked on engine work
+## Engine-adjacent work
 
-The floor-predicate handoff is **closed**: `entitled` landed upstream (corpus entry
-plus five regression tests pinning the firewall), the floor is migrated, and all 51
-pins plus the firewall suite pass on it.
+Only the derived-only predicates item is genuinely **blocked on nibli**; the rest
+are ordinary work that happens to touch the engine, and the old section header
+implied otherwise. Ordered by what actually blocks book-1.
+
+- **BLOCKED ON NIBLI — derived-only (intensional) predicates.** Root cause of 13 of the 15
+  new exploits, and it defeats the constitution's central security claim. Prompt to
+  paste into a nibli session:
+  > In nibli KR, a predicate that appears as a rule head can still be asserted
+  > directly as a fact — a rule *adds* a derivation path, it never *removes*
+  > assertability. I need the opposite for a constitutional model: a way to declare
+  > a predicate **derived-only**, so that any attempt to assert it as a ground fact
+  > is a compile/assert-time error, and its only route to TRUE is derivation.
+  > Concretely, in `utopia.nibli` I derive `permits(Review, X)` from
+  > `choose(Electorate, X) & ~rotten(X) & ~broken(X)`, and the whole point is that
+  > nobody can hand themselves a credential — but `permits(Review, Sock).` still
+  > works and voids an innocent party through the multi-sig rule. Same for
+  > `authority/1` and `fit/2`. Please add an EDB/IDB separation: a declaration
+  > (syntax your call) marking a predicate intensional, enforced fail-closed at
+  > assert time, with a clear error. Needs to survive retraction/rebuild and behave
+  > the same on all three runtimes. Please also say whether this interacts with
+  > stratification or the fact-store replay.
 
 - **Close the `obligated`/`obliged` de-swap upstream.** Not blocking book-1 — the
   floor no longer uses either. They are not converses: both from `bilga`, identical
@@ -417,25 +435,7 @@ pins plus the firewall suite pass on it.
   `nibli-pin` to accept `:load`, or rebuild the book-side runner with the same
   directive set. Until then the suite is real but the runner is not trustworthy.
 
-- **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
-  new exploits, and it defeats the constitution's central security claim. Prompt to
-  paste into a nibli session:
-  > In nibli KR, a predicate that appears as a rule head can still be asserted
-  > directly as a fact — a rule *adds* a derivation path, it never *removes*
-  > assertability. I need the opposite for a constitutional model: a way to declare
-  > a predicate **derived-only**, so that any attempt to assert it as a ground fact
-  > is a compile/assert-time error, and its only route to TRUE is derivation.
-  > Concretely, in `utopia.nibli` I derive `permits(Review, X)` from
-  > `choose(Electorate, X) & ~rotten(X) & ~broken(X)`, and the whole point is that
-  > nobody can hand themselves a credential — but `permits(Review, Sock).` still
-  > works and voids an innocent party through the multi-sig rule. Same for
-  > `authority/1` and `fit/2`. Please add an EDB/IDB separation: a declaration
-  > (syntax your call) marking a predicate intensional, enforced fail-closed at
-  > assert time, with a clear error. Needs to survive retraction/rebuild and behave
-  > the same on all three runtimes. Please also say whether this interacts with
-  > stratification or the fact-store replay.
-
-- **HANDOFF (third, and probably moot): exact minor-unit arithmetic.** The plans claim any
+- **[AUTHOR-GATED — a decision, not a blocker] Exact minor-unit arithmetic.** The plans claim any
   quantitative treatment of contribution is blocked because "engine float comparison
   is tolerant". That is only half right — nibli has **both** tolerant (`sum`) and
   exact (`num_equal`/`dunli`) comparison, plus a guarded `quotient` with an exact
