@@ -237,6 +237,38 @@ fixtures are inline by design. The two are complements.
 
 ## Constitution (KB) work
 
+- **Separate the asserted half from the derived half in Articles 6, 7 and 8.**
+  The engine feature landed (`derived_only("X").`, fail-closed at assert time,
+  nibli b053b77) and **six relations are now closed** in Article 0: `fit`, `defend`,
+  `false`, `reward`, `become`, `err`. That closes exploit C outright —
+  `fit(Ruk, Homestay).` is refused and the farmhouse breach marker holds.
+
+  **Three cannot be closed yet, and they are the two worst exploits.** Each carries
+  a deliberate ground fact, so declaring it breaks the file:
+  - `authority` — Article 7 asserts the three institution constants. **Fix:** assert
+    `institution(Court).` etc. and derive `authority` from that plus
+    `choose(Electorate, ·)`. Until then `authority(Pax).` still makes Don unjailable.
+  - `permits` — Article 8 deliberately leaves `permits(Appeals, ·)` assertable as
+    per-case relief. **Fix:** assert relief under its own relation and derive
+    `permits(Appeals, ·)` from it. Until then two sock-puppet credentials still void
+    an innocent and strip their points.
+  - `prisoner` — the cast asserts `prisoner(Adam)` as a fixture instead of deriving
+    it from `injure` + `judge` like everyone else. **Fix:** derive it.
+
+  The engine is not at fault: it exposed that three articles conflate what the world
+  reports with what the system concludes — this book's own thesis, turned back on
+  its constitution. Do this before claiming Article 8's guarantee in print.
+
+  **Ordering is load-bearing and easy to break silently:** the check fires at assert
+  time, so a declaration protects only what is asserted after it. The declarations
+  must stay at the top of the file. One moved below the cast is inert and looks
+  identical. Worth a pin.
+
+- **Add the closed relations as pins.** nibli ships `pins/derived-only.nibli` with
+  the A/B/C exploits as permanent refusals. The book-side suite should pin the same
+  for this constitution once the runner supports `:refuse` — including the ordering
+  property above.
+
 - **Fix `err/2`: it fires on correctly-placed prisoners.** `err(Lalo, Placement)`
   is **TRUE** — but Lalo is severe+family and Article 6 routes him correctly to
   `building(HighSec, Lalo)` (also TRUE). The rule
@@ -389,40 +421,10 @@ fixtures are inline by design. The two are complements.
 
 ## Engine-adjacent work
 
-Nothing here is blocked on nibli any more — the derived-only feature landed. What
-remains is constitution work the feature exposed, plus optional upstream cleanup.
-
-- **Separate the asserted half from the derived half in Articles 6, 7 and 8.**
-  The engine feature landed (`derived_only("X").`, fail-closed at assert time,
-  nibli b053b77) and **six relations are now closed** in Article 0: `fit`, `defend`,
-  `false`, `reward`, `become`, `err`. That closes exploit C outright —
-  `fit(Ruk, Homestay).` is refused and the farmhouse breach marker holds.
-
-  **Three cannot be closed yet, and they are the two worst exploits.** Each carries
-  a deliberate ground fact, so declaring it breaks the file:
-  - `authority` — Article 7 asserts the three institution constants. **Fix:** assert
-    `institution(Court).` etc. and derive `authority` from that plus
-    `choose(Electorate, ·)`. Until then `authority(Pax).` still makes Don unjailable.
-  - `permits` — Article 8 deliberately leaves `permits(Appeals, ·)` assertable as
-    per-case relief. **Fix:** assert relief under its own relation and derive
-    `permits(Appeals, ·)` from it. Until then two sock-puppet credentials still void
-    an innocent and strip their points.
-  - `prisoner` — the cast asserts `prisoner(Adam)` as a fixture instead of deriving
-    it from `injure` + `judge` like everyone else. **Fix:** derive it.
-
-  The engine is not at fault: it exposed that three articles conflate what the world
-  reports with what the system concludes — this book's own thesis, turned back on
-  its constitution. Do this before claiming Article 8's guarantee in print.
-
-  **Ordering is load-bearing and easy to break silently:** the check fires at assert
-  time, so a declaration protects only what is asserted after it. The declarations
-  must stay at the top of the file. One moved below the cast is inert and looks
-  identical. Worth a pin.
-
-- **Add the closed relations as pins.** nibli ships `pins/derived-only.nibli` with
-  the A/B/C exploits as permanent refusals. The book-side suite should pin the same
-  for this constitution once the runner supports `:refuse` — including the ordering
-  property above.
+**Nothing here blocks book-1.** The derived-only feature landed, and the
+constitution work it exposed moved to the KB section. What is left is optional
+upstream cleanup plus one convenience that would make the book-side suite
+trustworthy.
 
 - **Close the `obligated`/`obliged` de-swap upstream.** Not blocking book-1 — the
   floor no longer uses either. They are not converses: both from `bilga`, identical
