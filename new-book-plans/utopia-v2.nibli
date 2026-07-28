@@ -93,37 +93,51 @@
 #     all $x: person($x) -> owe(State, Belief, $x).
 # If a predicate reads wrong, change the PREDICATE, never the shape.
 #
-# INVARIANT 3 — x3 MUST BE EMPTY ON EVERY FLOOR LINE. `entitled` is arity
-# 3 (holder / entitlement / standard) and x3 is a live place, not padding.
-# It cannot NARROW the floor — every route to gate, tier or condition a
-# right through the standard place is refused by the stratifier, and the
-# firewall is x3-immune. But it can silently WIDEN it, which is worse,
-# because widening is invisible. `flatten_consequent` descends the head's
-# And regardless of WHICH place the abstraction sits in, so an
-# `event { P() }` in x3 contributes the same P -> person edge that x2
-# does, and P joins the protected set. The corpus template is
-# "{x1} is entitled to {x2}", so x3 never reaches English.
-# Demonstrated on this file: change the eats line to
-#     entitled(every person, event { eats() }, event { home() }).
-# and it loads at 146 asserted / 0 errors, every pin still passes, the
-# rendered English is unchanged — and this file's own designated
-# non-floor control `person($x) & ~home($x) -> prisoner($x)` flips from
-# LOADS to REFUSED. Housing is now an unconditional floor right and
-# nothing anywhere says so. Editor check, must stay 0:
-#     grep -c '^entitled(.*,.*,' this-file
-# COMPLEMENT PINS are the only test class that catches a smuggle, because
-# every positive pin passes straight through one. For each non-floor
-# predicate this file relies on, pin that
+# INVARIANT 3 — ANY ABSTRACTION THAT REACHES A RULE HEAD JOINS THE
+# PROTECTED SET. Corrected 2026-07-28: I first wrote this as "x3 must be
+# empty", which named the wrong thing. The condition is **rule-head
+# position**, not place index, not `entitled`, not whether the place is
+# referenced by the predicate's template. Verified, control = the
+# non-floor probe `all $x: person($x) & ~home($x) -> prisoner($x).`:
+#   entitled(Adam, Bread, event { home() }).        control LOADS  (inert)
+#   entitled(some person, Bread, event { home() }). control LOADS  (inert)
+#   entitled(every person, Bread, event { home() }).control REFUSED (widened)
+#   all $p: person($p) -> entitled($p, Bread, event { home() }).
+#                                                   control REFUSED (widened)
+#   owns(every person, event { home() }).           control REFUSED (widened)
+# So ground facts and `some` are harmless; `every` and explicit rules are
+# not, at ANY place, on ANY predicate — including a template-referenced
+# x2. `flatten_consequent` descends the head's `And` unconditionally, so
+# every abstraction body in a rule head contributes its P -> person edge.
+#
+# AND IT CANNOT BE BANNED, because the widening IS the firewall — both
+# come from that same unconditional descent. Remove one and you remove
+# the other. There is no compile-time check that keeps the protection and
+# forbids the smuggle.
+#
+# THE GUARANTEE IS THEREFORE A TEST, NOT A RULE: complement pins. For each
+# non-floor predicate this file relies on, pin that
 #     all $x: person($x) & ~P($x) -> prisoner($x).
-# still LOADS. Verified set, all currently LOADS:
-#     home, choose, permits, false
-# EXCLUDE `travel`: it is REFUSED, and legitimately so — Article 2 derives
-# it as `person($x) & ~prisoner($x) -> travel($x)`, so travel is already
-# inside the prisoner cone by design and a complement pin on it would be
-# a permanent false positive. Any predicate that appears under negation
-# in a rule reaching `prisoner` is disqualified as a control for the same
-# reason; check before adding one.
-# A floor that grew in secret shows up here and nowhere else.
+# still LOADS. That asserts the protected set is EXACTLY the floor, and it
+# catches a widening from any predicate, any place, any spelling — which
+# is strictly stronger than an argument check could be. Verified set, all
+# currently LOADS:  home, choose, permits, false
+# EXCLUDE `travel`: it is REFUSED, legitimately — Article 2 derives it as
+# `person($x) & ~prisoner($x) -> travel($x)`, so travel is already inside
+# the prisoner cone and a control on it is a permanent false positive.
+# Any predicate appearing under negation in a rule reaching `prisoner` is
+# disqualified as a control for the same reason.
+#
+# Keep x3 empty anyway as a local convention — x2 is the intended slot and
+# a second abstraction has no business on a floor line. Editor check:
+#     grep -c '^entitled(.*,.*,' this-file      must stay 0
+# But understand it as housekeeping, not the guarantee.
+#
+# CORRECTION to an earlier claim in this file: a smuggled floor line does
+# NOT render identically. A three-place floor back-translates with an
+# extra scaffold conjunct — "…then Y is an event, Z is an event, and X is
+# entitled to Y." It does not name the smuggled predicate, so it is
+# cryptic rather than absent; "invisible" was too strong.
 #
 # FRAGILITY — still the largest single risk to this design, now pinned.
 # The asymmetry above is an emergent property of two functions disagreeing

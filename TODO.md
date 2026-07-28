@@ -419,53 +419,21 @@ pins plus the firewall suite pass on it.
   It touches the GDPR corpus, and `gdpr.nibli:52` Art 6(1)(c) may be **vacuous** as
   a consequence — query it before deciding whether that line is meant to be live.
 
-- **HANDOFF (next): x3 abstraction rejection, and move the pin harness into nibli
-  CI.** Both came out of migrating the floor to `entitled`. Paste-ready prompt:
-  > Two follow-ups from the `entitled` entry, one a possible corpus/compiler
-  > tightening and one a CI ask.
-  >
-  > **(A) Should `entitled`'s x3 reject abstractions?** The entry is arity 3
-  > (holder/entitlement/standard) and x3 is live. It cannot narrow a rights floor —
-  > every route I tried to gate or tier a right through the standard place is
-  > refused by the stratifier, and the firewall is x3-immune. But it silently
-  > *widens*. `flatten_consequent` descends the head's `And` regardless of which
-  > place the abstraction sits in, so an `event { }` in x3 contributes the same
-  > `P -> person` edge that x2 does, and P joins the protected set. Repro against
-  > my constitution: change one floor line to
-  > `entitled(every person, event { eats() }, event { home() }).` — it loads at 146
-  > asserted / 0 errors, every pin still passes, the rendered English is unchanged
-  > (the template has two placeholders so x3 never surfaces), and yet my designated
-  > non-floor control `all $x: person($x) & ~home($x) -> prisoner($x).` flips from
-  > LOADS to REFUSED. Housing silently became an unconditional right. The
-  > "an unfilled place is invisible" mitigation is exactly what hides this, because
-  > a *filled* place is invisible too. Question: is it reasonable for `entitled` to
-  > reject an abstraction in x3 at compile time — or more generally, should a place
-  > that never appears in a predicate's template refuse abstraction arguments? I am
-  > currently enforcing it with a grep and a convention, which is the weakest
-  > guarantee in the design.
-  >
-  > **(B) Please host the constitution pin suite in nibli CI.** The firewall guards
-  > an emergent upstream property — the `flatten_consequent` / `collect_ground_facts`
-  > opacity asymmetry — so a pin living in my prose repo would never fire on the
-  > refactor that breaks it. Your five `integration.rs` tests cover the mechanism;
-  > this covers the actual constitution. My repo has no Cargo.toml and shouldn't
-  > grow one. What I have is a throwaway native runner I can hand over: it loads a
-  > KB, runs queries annotated `# => TRUE`, and exits non-zero on mismatch — 51 pins
-  > in seconds, no wasm, no fuel. Its review found real bugs to fix before adoption:
-  > `:expect-load-error` exits 0 before checking pin failures; it cannot distinguish
-  > a stratification refusal from a syntax typo (so a misspelled predicate passes as
-  > a firewall test); there is no positive-load expectation, so the non-floor control
-  > can only be run by inverting the exit code; the expectation flag is global and
-  > sticky rather than scoped to the next statement; unpinned queries pass silently;
-  > a query that fails to compile is rendered as a comparable verdict string; and
-  > `RESOURCE_EXCEEDED` is pinnable as an ordinary verdict, which under wasm would
-  > let a fuel trap go green. Suggested shape: `:refuse reasoning /regex/` and
-  > `:accept` as duals scoped to the next statement, mandatory annotation, an
-  > `:expect-pins <n>` anti-hollowing floor, and a distinct exit code for
-  > harness/script errors versus a real finding. Also worth pinning the complement
-  > controls: `~home`, `~choose`, `~permits`, `~false` must each still LOAD —
-  > `~travel` must NOT be in that set, since Article 2 derives travel behind
-  > `~prisoner` and it is legitimately inside the cone.
+- **Give the book-side pin suite a real runner.** The upstream half is DONE:
+  `just verify-pins` is in nibli's `ci`, with `pins/rights-floor.nibli` guarding
+  the engine mechanism via a deliberately self-contained fixture, and the runner
+  self-tests before it is trusted. Nothing further is owed there.
+  The book side still needs work. `new-book-plans/rights-floor.pins.nibli` holds
+  this constitution's 51 pins and must `:load` the live file — that is the whole
+  point, and it is why it cannot simply move upstream where fixtures are inline by
+  design. The two files are complements: nibli's guards the *mechanism*, this one
+  guards this *content*. Today it runs on a scratch prototype (`kbcheck`) whose
+  defects are known and listed in nibli's review: no `:accept`/`:refuse`, so the
+  four complement controls and four firewall refusals are still a shell loop rather
+  than pins; a stratification refusal is indistinguishable from a syntax typo;
+  unpinned queries pass silently; `RESOURCE_EXCEEDED` is pinnable. Either port
+  `nibli-pin` to accept `:load`, or rebuild the book-side runner with the same
+  directive set. Until then the suite is real but the runner is not trustworthy.
 
 - **HANDOFF (second): derived-only (intensional) predicates.** Root cause of 13 of the 15
   new exploits, and it defeats the constitution's central security claim. Prompt to

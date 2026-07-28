@@ -1,0 +1,142 @@
+# ── Constitution pins: utopia-v2.nibli ───────────────────────────────────────
+#
+# WHAT THIS IS, and how it differs from nibli's own pins/rights-floor.nibli.
+# That file guards the ENGINE MECHANISM with a deliberately self-contained
+# fixture, so no edit here can weaken it. This file guards THIS CONSTITUTION'S
+# CONTENT, so it must `:load` the live file — the two are complements, not
+# duplicates, and both are needed.
+#
+# Run:  kbcheck rights-floor.pins.nibli        (prototype; see TODO.md)
+# Every verdict below was produced by the engine, never by hand.
+
+:load new-book-plans/utopia-v2.nibli
+# --- v0.1 regression pins ---
+? false(Bela).
+# => TRUE
+? false(Esa).
+# => FALSE
+? reward(Dev).
+# => FALSE
+? false(Mira).
+# => FALSE
+? false(Lupo).
+# => TRUE
+? prisoner(Ivo).
+# => FALSE
+? prisoner(Hano).
+# => TRUE
+? prisoner(Nia).
+# => FALSE
+? prisoner(Jala).
+# => FALSE
+? travel(Jala).
+# => TRUE
+? expresses(Adam).
+# => TRUE
+? defend(Rebel).
+# => TRUE
+? prisoner(Rebel).
+# => FALSE
+? false(Rebel).
+# => FALSE
+? building(HighSec, Lalo).
+# => TRUE
+? building(LowSec, Nando).
+# => TRUE
+? dwell(Hano).
+# => TRUE
+# --- E1/E2/E3 closures ---
+? defend(Don).
+# => FALSE
+? prisoner(Don).
+# => TRUE
+? defend(Sly).
+# => TRUE
+? defend(Kel).
+# => FALSE
+? false(Kel).
+# => TRUE
+? permits(Review, Vex).
+# => FALSE
+? permits(Review, Wren).
+# => TRUE
+? false(Vex).
+# => TRUE
+? false(Tyr).
+# => FALSE
+? authority(Boss).
+# => TRUE
+? permits(Review, Boss).
+# => FALSE
+? prisoner(Ruk).
+# => TRUE
+? building(HighSec, Ruk).
+# => TRUE
+? fit(Ruk, Homestay).
+# => FALSE
+? err(Ruk, Placement).
+# => TRUE
+? err(Hano, Placement).
+# => FALSE
+? dwell(Ruk).
+# => TRUE
+# --- Article 9 ---
+? false(Amend_Floor).
+# => TRUE
+? become(Amend_Floor, Law).
+# => FALSE
+? become(Amend_Mint, Law).
+# => TRUE
+? false(Amend_Meta).
+# => TRUE
+? become(Amend_Meta, Law).
+# => FALSE
+# --- fidelity table ---
+? person(Hano).
+# => TRUE
+? expresses(Hano).
+# => TRUE
+? travel(Hano).
+# => FALSE
+? travel(Adam).
+# => FALSE
+? eats(Adam).
+# => FALSE
+? healthy(Bela).
+# => FALSE
+? secure(Bela).
+# => FALSE
+? learn(Cira).
+# => FALSE
+? believe(Bela).
+# => FALSE
+# --- v0.3 additions ---
+? decide(Hano, Ballot).
+# => TRUE
+? decide(Jala, Ballot).
+# => TRUE
+? err(Hano, Isolation).
+# => TRUE
+
+# ── COMPLEMENT CONTROLS ──────────────────────────────────────────────────────
+# The other half of the guarantee: refusals alone are satisfiable by an engine
+# that refuses everything, and an over-broad protected set silently converts an
+# ordinary predicate into an unconditional right. Each MUST still load.
+# (Runner support for :accept / :refuse is pending — see TODO.md. Until then
+# these are run by the shell loop recorded in the same bullet.)
+#
+#   :accept   all $x: person($x) & ~home($x)    -> prisoner($x).
+#   :accept   all $x: person($x) & ~choose($x)  -> prisoner($x).
+#   :accept   all $x: person($x) & ~permits($x) -> prisoner($x).
+#   :accept   all $x: person($x) & ~false($x)   -> prisoner($x).
+#
+# NOT a control, deliberately: ~travel is refused too, for a reason unrelated to
+# the floor — Article 2 derives travel behind ~prisoner, so it closes its own
+# negative cycle. Listing it would pass for the wrong reason and keep passing
+# after the firewall broke.
+#
+# ── FIREWALL REFUSALS ────────────────────────────────────────────────────────
+#   :refuse reasoning /'prisoner' -> 'believe'/   ... & ~believe($x) -> prisoner($x).
+#   :refuse reasoning /'prisoner' -> 'meets'/     ... & ~meets($x)   -> prisoner($x).
+#   :refuse reasoning /'prisoner' -> 'eats'/      ... & ~eats($x)    -> prisoner($x).
+#   :refuse reasoning /'prisoner' -> 'secure'/    ... & ~secure($x)  -> prisoner($x).
