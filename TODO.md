@@ -111,21 +111,31 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **[AUTHOR-GATED] Decide whether punishment ends.** No duration, term, expiry or
-  completion exists in any rule of `utopia-v2.nibli` — every apparent hit is
-  commentary, and the `epoch` hits (`:26`, `:399`, `:408-424`) are the audit carry
-  ledger, nothing to do with sentences. Conviction is permanent, for every offence,
-  with no distinction between the grave and the trivial; relief on appeal
-  (`clear -> permits(Appeals, ·)`, `:418`) is not release but a finding the
-  conviction should never have held, which does nothing for someone rightly
-  convicted. The gap is disclosed to the reader —
-  `book-1/13-the-one-thing-taken.md` closes on it under "And it never ends", and
-  `13-the-one-thing-taken.pins.nibli:10-13` records it as an absence no query can
-  reach. What is still undisclosed is the constitution's own commentary. Two
-  decisions only the author can make: whether a term exists at all, and what bounds
-  it. Enacting one rewrites ch 13's closing section and that pin note; declining
-  leaves the book's sharpest admitted gap standing, which is defensible but should
-  be chosen.
+- **[AUTHOR-GATED] Name the four severity dimensions, then enact them.** DECIDED
+  2026-07-29: punishment MAY end, and severity governs the outcome across intent,
+  directness, victim plurality and harm kind. **Release landed; the dimensions did not**,
+  because none of `intend`, `deliberate`, `direct` or `many` exists in the committed
+  corpus and an unknown predicate name is a compile error. Nothing can be drafted until
+  the four names are chosen — they define what chapter 1 enumerates.
+  **Price it honestly before choosing.** Four dimensions take the evidence list 22 → 26.
+  Outcome *tiers* are free — `building(MedSec, $x)` costs nothing because uppercase
+  constants never enter the predicate set — but the constant must be digit-free, so
+  `Tier1`/`Tier2` are unavailable. **Do not enact `greater`/`less`.** They would work: the
+  engine's evaluator returns `None` for non-numeric arguments, so `greater(Killing,
+  Insult).` is a plain stored fact that passes the digit ban. But routing each combination
+  to a named tier by its own rule needs no ordering at all, which is how Article 6 already
+  produces four placement outcomes from two booleans, and the comparison costs a 27th entry
+  plus a much harder repair to chapter 10.
+  **Two chapters must be narrowed in the same pass, and both are overclaims rather than
+  errors.** `01:24` — *"There is no score. No rating, no rank, no tier, no percentile"* —
+  should be narrowed to the argument the chapter actually makes one sentence later at
+  `01:32`: the record holds no judgment about a person's **character**. It classifies acts;
+  it holds no standing verdict on a person. And `10:21`/`10:27` — *"nothing anywhere in
+  this society counts anything"*, *"There is no ordering"* — are unqualified whole-society
+  claims inside a chapter about recognition; qualify both to recognition, where the ranking
+  harm actually lives. `10:112`'s argument survives untouched.
+  Combinatorics to watch: three dimensions already give 8 cells and chapter 11 covers 7 of
+  them while claiming 4 exhaust it; seven dimensions give 128.
 
 - **[AUTHOR-GATED] Confirm the subtitle — the condition it was waiting on has fired.**
   The title (*Nothing Has to Happen First*) is settled in `CLAUDE.md`. The subtitle
@@ -789,12 +799,23 @@ for the harness section below.
   it may reduce the pressure to nearly nothing. Then either bound the exposed conduct
   by epoch, or decide the growth is accepted and defend it in Part V.
 
-- **Give `rotten` — and `capture` and `judge` — an expiry or expungement path.** A
-  single void is currently perpetual and compounds, with no route back. Derivation is
-  monotone, so nothing that ever derives stops deriving: the constitution **cannot
-  forgive**. For a design whose thesis is that sanctions are defeasible, that is a
-  contradiction in the machine, and it is worth framing in the book as forgiveness
-  being a *right* rather than merely as a bug fix.
+- **Give `rotten` — and `capture` and `judge` — an expungement path. URGENT: release
+  landed and this did not, so the asymmetry is now live in print.** A single void is
+  perpetual and compounds, with no route back, while a conviction can now be finished.
+  That makes losing your standing the harshest sanction in the design — harsher than
+  imprisonment — which inverts `02-standing.md:41-42` (*"This is the only thing in the
+  entire society that is protected that way. Everything else can be lost"*) and sits
+  badly beside `10-contribution.md:50` (*"Nothing to earn it back with"*). The author
+  decided on 2026-07-29 that both halves are designed together; only the first half
+  shipped.
+  **The shape is known and cheap**, because it is the shape release used: an asserted
+  expungement fact as a `~<expunged>` body conjunct on the multi-sig rule (`:330`) and on
+  `rotten -> false` (`:412`). Both are safe — the predicate is stratum 0 and `false` is
+  stratum 1, so no cycle. **Do not** put `~false` in a `false`-headed rule; the file
+  records that exact attempt failing as E2 at `:24-26`. Costs one more evidence entry
+  (22 → 23) and the nine prose sites move again, so consider landing it in the same pass
+  as the severity dimensions rather than alone.
+  Worth framing in the book as forgiveness being a *right* rather than as a bug fix.
 
 - **Put a precondition on `capture`.** `capture($a, $audited)` has no precondition
   anywhere: any two Review-credentialed people can void any person for no stated
@@ -926,6 +947,26 @@ for the harness section below.
   the failure they were built to answer. The three committed here were rebuilt from the
   post-Article-1b file for that reason; the `README.md` beside them carries the one-line
   `grep -v` for each.
+
+- **`:accept` pollutes every query below it — the ordering is load-bearing and was not
+  documented.** An `:accept` directive loads its rule into the knowledge base and leaves it
+  there, so a pin file's complement controls widen the base for everything that follows.
+  In `rights-floor.pins.nibli` the four controls each add a second route to `prisoner` that
+  Article 6 does not gate, and this produced a **real vacuous green**: `? prisoner(Adam).`
+  sat below them and would have passed with Article 6 deleted outright. Verified — after the
+  `~false` control loads, `prisoner(Quin)` is TRUE though Quin has no conviction at all, and
+  a released person is dragged back in (`free(Hano).` then `prisoner(Hano)` TRUE,
+  `travel(Hano)` FALSE).
+  **Fixed** by moving that file's controls to the end, with the reason written above them.
+  `07-a-prisoner-is-a-person.pins.nibli` and `08-what-you-are-owed.pins.nibli` both have
+  queries after an `:accept` and were checked: neither is currently vacuous (ch 7's Hano has
+  a home so the `~home` control never fires for him; ch 8's queries read no predicate the
+  three accepts touch), and both now carry an ordering warning.
+  Remaining work: make this a rule rather than a habit. Either a convention that `:accept`
+  blocks come last in every file, checkable by a one-line grep in `verify.sh`, or a nibli ask
+  for a scoped accept that does not persist. The second is better and is a one-prompt
+  handoff — a directive that tests loadability and then discards the rule is what every one
+  of these pins actually wants.
 
 - **Write down what FALSE means in a pin file — it means three different things and two
   of them are worthless.** All verified, and the distinction is why five false prose
