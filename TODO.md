@@ -126,6 +126,22 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   to a named tier by its own rule needs no ordering at all, which is how Article 6 already
   produces four placement outcomes from two booleans, and the comparison costs a 27th entry
   plus a much harder repair to chapter 10.
+  **DEGREE IS ALREADY AVAILABLE, AND INSIDE THE FIREWALL — this is the finding that makes
+  the whole thing cheap.** nibli counts entities satisfying a restrictor, verified against
+  the live constitution: `teaches(Tutor, exactly 3 person).` is TRUE against three recorded
+  facts, `exactly 2` and `exactly 4` are FALSE. So "this person taught a hundred" is a
+  hundred `teaches` facts, each individually recorded and individually disputable — **nobody
+  writes the number**, and the degree is a conclusion reached by a route, exactly like
+  `prisoner`. That is chapter 1's argument extended to degree, and it is a better argument
+  than the one chapter 10 currently makes. The cast demonstrates it sharply: Esa teaches
+  Fin, `person(Fin)` is FALSE, so `teaches(Esa, exactly 0 person)` is TRUE — assert
+  `person(Fin).` and it becomes `exactly 1`. Two caveats. `exactly N` contains a digit, so
+  it trips `verify.sh`'s digit ban if it reaches an *enacted* rule; that check guards
+  chapter 10's claim, which is being overturned deliberately, so replace it with something
+  narrower rather than deleting it — the thing worth guarding is that no *judgment* is
+  written, not that no digit appears. And `aggregate` (Sum/Min/Max/Avg) exists but is
+  exposed only through `nibli-session`, not `nibli-pin`: counts are available today, sums
+  are a one-prompt nibli ask.
   **Two chapters must be narrowed in the same pass, and both are overclaims rather than
   errors.** `01:24` — *"There is no score. No rating, no rank, no tier, no percentile"* —
   should be narrowed to the argument the chapter actually makes one sentence later at
@@ -376,6 +392,22 @@ for the harness section below.
   reader being shown it — which is the register the whole book is written in. Read the
   vocabulary-entrenchment bullet below first: the honest sentence is that the list cannot be
   entrenched, not that it merely has not been.
+
+- **[AUTHOR-GATED] Rule out grades — students get recognition, not marks.** Proposed
+  2026-07-29 alongside the teaching-delivers-learning route: that verified learning should
+  mint *grades or marks* for the student and perks for the teacher. **The teacher half is
+  fine; the student half collides with the book's opening sentence.** `01:24` reads *"There
+  is no score. No rating, no rank, no tier, no percentile. There is nowhere to record that
+  you are reliable, or high-risk…"* A grade is a score, on a person, recorded permanently —
+  and it is the canonical instance of the harm that chapter describes: an assessment written
+  in the same ink as the facts, travelling with you, unarguable because it was never an
+  accusation.
+  The repair costs nothing. Students get `reward` — the same bare fact of recognition
+  teachers get — and if degree is wanted, **count verified learnings** rather than scoring
+  the learner. Ten learning facts, each disputable, no number written by anyone. Note this
+  is the one place where the tiering decision must NOT be applied: tiering what a person
+  *did* is defensible, tiering what a person *is* is the thing chapter 1 was written to
+  refuse. Record the decision either way so it is not re-proposed.
 
 - **[AUTHOR-GATED] Rule on whether `person` is the twenty-second entry.**
   `book-1/01-what-counts-as-evidence.md:5-8` ("It has twenty-one entries … they cannot.
@@ -750,6 +782,42 @@ for the harness section below.
   Part V that the design names a debtor without specifying the debt, which is defensible
   only if it is stated rather than discovered. Do not leave the chapter carrying the
   disclosure while the tracker carries no decision.
+
+- **Build the first delivery route: verified teaching delivers learning. VERIFIED TO WORK,
+  and it is the highest-value item in this section.** Nothing in this design touches the
+  floor. Rule heads producing each floor right: `learn` 0, `eats` 0, `healthy` 0, `secure`
+  0, `believe` 0, `meets` 0 — and the two that are non-zero, `dwell` (3) and `expresses`
+  (1), derive only from `prisoner`. **Teaching does not produce learning**: `teaches($t,$s)`
+  produces `reward($t)` and nothing else. So the society's only working provision runs
+  through its prisons.
+  A floor predicate may be a **rule head** — `dwell` and `expresses` already are, and
+  INVARIANT 1 forbids only rule *bodies*. Verified on the live engine 2026-07-29: the rule
+  `all $t: all $s: teaches($t, $s) & capture($t, $s) -> learn($s).` is **accepted**, the
+  firewall still refuses `person & ~believe -> prisoner`, and the non-floor `~home` control
+  still loads. So the delivery layer is expressible and does not cost the firewall.
+  **Keep the entitlement and the actuality apart when writing it.** `entitled(every person,
+  event { learn() })` stays unconditional; `learn(X)` becomes trackable. Written carelessly
+  this reads as "you have the right to learn only if you passed", which is the
+  eligibility-computation-upstream-of-rights structure the design refuses everywhere else.
+  **And do not name it "verification".** Examining a person and recording a finding is
+  already `judge` + `capture`, and two credentialed people doing that to one person complete
+  Article 4's multi-sig and **void them** — verifying a student twice would destroy their
+  standing. The probe above uses `capture` deliberately to expose that; a real delivery rule
+  needs its own predicate.
+  This is also what unblocks the floor-proximity perks gradient, which cannot be computed
+  while nothing reaches the floor at all.
+
+- **[AUTHOR-GATED] Refine release: earning may only shorten, never lengthen.** DECIDED
+  2026-07-29 — punishment is loss of liberty, and a person **may optionally choose** to earn
+  reward to reduce its duration or severity. An earlier form of this had them *forced* to
+  earn, which was dropped: compulsory labour as the price of liberty is convict leasing, and
+  it would have broken the single-deprivation theorem outright by taking liberty *and*
+  labour. Two properties to build in deliberately rather than discover. **Earning shortens
+  and never lengthens** — otherwise someone disabled, ill or elderly serves longer for being
+  incapable, which puts a capacity test upstream of liberty. And **"voluntary" is
+  structurally pressured** when the alternative is longer confinement; that is the standard
+  critique of earned-time credit, it is survivable, and it should be conceded at Part V's
+  coercion joint rather than discovered by a reviewer.
 
 - **Grow the provisioning layer, or write Parts I–V to stop where they stop.** Of eight
   floor rights, six have no rule of their own (`eats`, `healthy`, `secure`, `learn`,
@@ -1143,6 +1211,23 @@ for the harness section below.
 Per the handoff protocol above, these go to `~/projects/dhilipsiva/nibli` as prompts,
 never worked around in prose.
 
+- **Never route a constitutional judgment through the compute backend — and the reason is
+  not performance.** nibli can dispatch predicates to an external compute backend, and an
+  embedded one (Rust or Python wasm) is possible. It is the wrong tool here. From nibli's
+  own `README.md:18` and `:323`: an external predicate is a **trusted oracle, not something
+  nibli proves** — a `true` reply is auto-asserted into the knowledge base as a ground fact
+  mid-query, and nibli never re-derives or checks it. So any grade, tier or severity computed
+  there enters the record as *a conclusion someone wrote*, which is precisely what chapter 1
+  says this design makes impossible. Embedding it changes who operates the oracle, not
+  whether the result is derived. Two further consequences: an unreachable backend yields
+  `UNKNOWN(BackendUnavailable)`, never `FALSE`, so a constitution depending on it stops
+  answering when a service is down; and `li` numbers never enter the quantifier domain, so a
+  universal over a number-bearing predicate is **vacuously true** — a silent failure.
+  **Built-in arithmetic is different and is fine**: `product`/`sum`/`quotient` are computed
+  *locally*, not dispatched, so primitives carry none of the oracle problem. Compute is
+  legitimate for the claim registry and for the method part; not for the society's own
+  conclusions.
+
 - **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
   against direct assertion; nothing closes the *set of relations* a KB will accept. Any of
   the committed corpus's ~1,351 names asserts cleanly onto the constitution and answers
@@ -1203,10 +1288,42 @@ never worked around in prose.
   arity-2 `reward` probe as non-terminating past 15 minutes; that **does not reproduce**.
   Rewriting all three `reward` heads to arity 2 and running a single pin took **38.9s**
   against a **2.1s** baseline — a ~19x cost, not a hang. Budget it, do not fear it.
-  Supermajority thresholds and sunsets need arithmetic and temporal vocabulary the KR does
-  not have, and both are downstream of "there is no release" — hand those off together,
-  after that is decided, or the ask will be malformed. The `obligated`/`obliged` de-swap
-  is optional today and becomes a blocker if `err` gains a consumer.
+  **Temporal vocabulary is now READY to hand off, and it was not before.** It was blocked on
+  "there is no release"; release landed, and the shape of the ask is now exact. The design
+  can say a sentence is finished and cannot say *how long* one runs: there is no duration,
+  term or interval in the KR, the `past`/`now`/`future` markers are opaque exact-match
+  flavours with no ordering between them (`~past P` is rejected outright), and every
+  calendar unit in the corpus takes a number in x2, which `verify.sh` refuses in an enacted
+  line. Ask for a temporal primitive that orders without numerals, and say in the prompt that
+  the consuming artifact is a constitution whose chapter on punishment currently has to write
+  *"the design never says when"* as an admission. Supermajority thresholds and sunsets ride
+  the same ask. Two things NOT to ask for while you are there: counting already works
+  (`exactly N`), and `aggregate` exists but is exposed only through `nibli-session` — that is
+  the smaller, separate ask if sums are ever wanted. The `obligated`/`obliged` de-swap is
+  optional today and becomes a blocker if `err` gains a consumer.
+
+- **HANDOFF PROMPT — nibli: an `:accept` that does not persist.** Every complement control in
+  every pin file wants to test that a rule *loads* and then throw it away. `:accept` instead
+  leaves the rule in the knowledge base, so each control silently widens the base for every
+  query below it — which produced a real vacuous green in this repo (see the harness section).
+  The fix is upstream and small.
+
+  ```text
+  In ~/projects/dhilipsiva/nibli: nibli-pin's `:accept` loads its rule into the KB and
+  leaves it there. Content pin files use `:accept` as a CONTROL — "this rule must still
+  load" — and never want the rule afterwards, but every query below it then runs against
+  a widened base. In utopia-v2.nibli's suite the four complement controls each add a
+  second route to `prisoner`, so `? prisoner(Adam).` below them passed even though the
+  rule that should derive it could have been deleted; and a `~false` control makes a
+  person with no conviction at all come back TRUE for `prisoner`.
+
+  Ask: a scoped form — `:accept-scoped` (or a flag on `:accept`) that compiles and
+  stratifies the rule, reports loadability as the pin verdict, and then DISCARDS it so
+  the KB is unchanged for subsequent pins. `:refuse` already has this property for free,
+  since a refused rule never enters the store; the asymmetry between the two is the bug.
+  Consumer: ~/projects/dhilipsiva/utopia-reimagined/new-book-plans/rights-floor.pins.nibli
+  and book-1/*.pins.nibli, which currently work around it by ordering.
+  ```
 
 ---
 
