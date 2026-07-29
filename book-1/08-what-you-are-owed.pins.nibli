@@ -60,6 +60,13 @@ all $x: person($x) & ~meets($x) -> lose(Points, $x).
 :accept
 all $x: prisoner($x) -> believe($x).
 
+# ORDERING WARNING: each `:accept` above leaves its rule in the KB, so every query
+# below runs against a widened base — after the first one, `false(X)` is TRUE for
+# every person, since nobody has `believe`. The queries below are unaffected
+# (`owe` carries no `~false` guard, and `authority`/`permits` do not read it), but
+# check that again before adding any query here, and prefer putting new queries
+# ABOVE the accepts.
+
 # ── "Owed by whom" ───────────────────────────────────────────────────────────
 # "owed by a public body ... whose obligation runs to every person — not to
 #  members, not to contributors, not to residents, not to anyone who has

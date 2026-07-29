@@ -43,6 +43,13 @@ all $x: person($x) & ~believe($x) -> prisoner($x).
 all $x: person($x) & ~eats($x) -> prisoner($x).
 
 # and the non-floor control, so the refusals above mean something
+# ORDERING WARNING: an `:accept` loads its rule into the KB and LEAVES IT THERE,
+# so every query below it runs against a widened knowledge base. The `~home`
+# control makes every homeless person a prisoner from here on. The query below is
+# sound only because Hano HAS a home, so the control never fires for him — check
+# that again before adding any query after this point, and prefer putting new
+# queries ABOVE the accepts. `rights-floor.pins.nibli` had a real vacuous green
+# from exactly this and its controls now sit last in the file.
 :accept
 all $x: person($x) & ~home($x) -> prisoner($x).
 

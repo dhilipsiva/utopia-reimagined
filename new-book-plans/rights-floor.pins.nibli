@@ -10,7 +10,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 75
+:expect-pins 85
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -132,27 +132,6 @@ all $x: person($x) & ~eats($x) -> prisoner($x).
 :refuse reasoning /'prisoner' -> 'secure'/
 all $x: person($x) & ~secure($x) -> prisoner($x).
 
-# ── COMPLEMENT CONTROLS: the protected set is EXACTLY the floor ──────────────
-# Refusals alone are satisfiable by an engine that refuses everything, and an
-# over-broad protected set silently converts an ordinary predicate into an
-# unconditional right. Each MUST still load.
-:accept
-all $x: person($x) & ~home($x) -> prisoner($x).
-
-:accept
-all $x: person($x) & ~choose($x) -> prisoner($x).
-
-:accept
-all $x: person($x) & ~permits($x) -> prisoner($x).
-
-:accept
-all $x: person($x) & ~false($x) -> prisoner($x).
-
-# NOT a control, deliberately: ~travel is refused too, but for a reason unrelated
-# to the floor — Article 2 derives travel behind ~prisoner, so it closes its own
-# negative cycle. Listing it would pass for the wrong reason and keep passing
-# after the firewall broke.
-
 # ── ARTICLE 0: closed relations refuse direct assertion ──────────────────────
 :refuse reasoning /declared derived-only/
 fit(Ruk, Homestay).
@@ -221,3 +200,82 @@ prisoner(Zed).
 # doing it and not the rule shape.
 :refuse reasoning /'prisoner' -> 'owe'/
 all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
+
+# ── ARTICLE 6: release ───────────────────────────────────────────────────────
+# Nobody in the shipped cast is released, so the guard is inert by default and
+# every verdict above is unaffected. This block asserts one release fact and is
+# therefore LAST in the file — it changes Hano for everything after it.
+? free(Hano).
+# => FALSE
+
+free(Hano).
+
+# The deprivation ends. The record of the conviction does not: `prisoner` is
+# blocked, but nothing pretends the injury and the judgment were not written.
+? prisoner(Hano).
+# => FALSE
+
+? travel(Hano).
+# => TRUE
+
+# Personhood survives — for Hano because it is asserted, and for someone
+# convicted into the roster because of Article 1's `free -> person` line. The
+# derived case is pinned on Zed in 07-a-prisoner-is-a-person.pins.nibli.
+? person(Hano).
+# => TRUE
+
+? entitled(Hano, event { eats() }).
+# => TRUE
+
+? owe(State, Provision, Hano).
+# => TRUE
+
+# WHAT RELEASE COSTS, and it is the delivery gap arriving where it can be felt:
+# `expresses` and `dwell` are the only two floor rights this design ever actually
+# delivers, and both derive ONLY for prisoners. Leaving custody returns a person
+# to the general population, where nothing is delivered to anyone. Being OWED is
+# undisturbed above; the only thing that ever ARRIVED stops.
+? expresses(Hano).
+# => FALSE
+
+? dwell(Hano).
+# => FALSE
+
+# The isolation marker stops, correctly.
+? err(Hano, Isolation).
+# => FALSE
+
+# DEFECT PIN. The placement marker now fires on a released man, because `err/2`
+# keys on HAVING a home rather than on having been PUT at one, and release takes
+# `fit` away while `home(Hano).` stays asserted. This is the tracked err/2 bug
+# reaching a new victim; repairing that rule flips this pin FALSE.
+? err(Hano, Placement).
+# => TRUE
+
+
+# ── COMPLEMENT CONTROLS: the protected set is EXACTLY the floor ──────────────
+# THESE MUST BE LAST IN THE FILE, AND THAT IS NOT COSMETIC. An `:accept` loads
+# its rule into the KB and leaves it there, so each of these adds a SECOND route
+# to `prisoner` that Article 6 does not gate. Verified: after the `~false`
+# control loads, `prisoner(Quin)` is TRUE — Quin has no conviction at all — and a
+# released person is dragged back in, `prisoner(Hano)` TRUE with `free(Hano)`
+# asserted. Any pin querying `prisoner` after this point is measuring a polluted
+# knowledge base and passes for the wrong reason. `? prisoner(Adam).` used to sit
+# below these and was a vacuous green: it would have passed with Article 6
+# deleted outright.
+:accept
+all $x: person($x) & ~home($x) -> prisoner($x).
+
+:accept
+all $x: person($x) & ~choose($x) -> prisoner($x).
+
+:accept
+all $x: person($x) & ~permits($x) -> prisoner($x).
+
+:accept
+all $x: person($x) & ~false($x) -> prisoner($x).
+
+# NOT a control, deliberately: ~travel is refused too, but for a reason unrelated
+# to the floor — Article 2 derives travel behind ~prisoner, so it closes its own
+# negative cycle. Listing it would pass for the wrong reason and keep passing
+# after the firewall broke.
