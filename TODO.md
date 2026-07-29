@@ -350,6 +350,35 @@ for the harness section below.
   than as a save. Add `? decide(Hano, Ballot). # => TRUE` immediately after the
   `:accept`.
 
+- **`mature/1` is a silent franchise gate, and chapter 9 says the ballot needs nobody's
+  permission.** `mature` has no producing rule anywhere (asserted only at `:455-458`), is
+  absent from `derived_only`, and is directly assertable — so a polity disenfranchises a
+  demographic by **declining to write adulthood into their records**, passing no rule at all
+  and tripping no marker. The constitution's own comment at `:454` concedes the second half
+  ("no rule anywhere reads ~mature") while presenting it as a reassurance. Verified:
+  `? mature(Cira). => FALSE` and `? decide(Cira, Ballot). => FALSE`; asserting
+  `person(Zed). mature(Zed).` gives `? decide(Zed, Ballot). => TRUE`, while `person(Yun).`
+  alone gives `? decide(Yun, Ballot). => FALSE` — two writes buy a ballot, one write short
+  and there is neither a ballot nor an `err`. So `09:51-53` — "the ballot follows,
+  automatically, with nobody's permission required and nothing to apply for" — is true of
+  the rule and false of its input; and the Cira passage at `:49-53` rests on reading Cira as
+  a child when the record cannot distinguish a child from an adult nobody wrote down.
+  Qualify `09:51-53`: the ballot needs no permission *once the record says you are an
+  adult*, and that is an asserted fact like any other. Add `mature` to the trust-base list
+  below.
+
+- **Chapter 1 must concede that at least four of the twenty-one are findings, not
+  observations.** `01:24-33` presents the list as things the world reports and the
+  exclusions as "considered and rejected on principle", but `severe`, `deceive` ("someone
+  lied"), `family` and `parent` are adjudicative conclusions with no definition and no
+  precondition anywhere in the constitution — `severe(X).` moves anyone into high security,
+  one `deceive(Rebel, Boss).` jails the file's own whistleblower, and neither has an author
+  or a standard. The chapter's argument survives the concession and is stronger for it: the
+  claim is not that the twenty-one are raw sense-data, it is that a conclusion cannot be
+  written **as a conclusion** — the adjudication still has to happen somewhere and the
+  record still has to say who did it. Say that rather than letting a reader find the four.
+  Pairs with the `capture` precondition bullet, which is the same problem one level down.
+
 - **Chapter 5 asserts two facts about Koa the constitution does not derive.**
   `book-1/05-voiding.md:16-17`: "Koa **examined** Esa and recorded a finding — a real
   finding, on the record, made by **someone with the credential**." Koa's entire
@@ -377,6 +406,18 @@ for the harness section below.
   `06:29-33` to the *entitlement* reading and add the pins that would have caught it —
   `06-clawback.pins.nibli` pins the clawback verdicts and nothing about the floor it
   claims survives.
+
+- **Chapter 12 enumerates the three entrenched articles and never says the evidence list is
+  not among them.** `12-changing-the-rules.md` names `Art_Floor`, `Art_Person` and
+  `Art_Entrench` as the register, all three pinned green — and stops. Chapter 1 closes on the
+  evidence vocabulary being the one thing *not* entrenched, and chapter 12 is where a reader
+  arrives holding the register that would have protected it. `permanent(Art_Evidence). # =>
+  FALSE` is already pinned in chapter 1 and is not re-tested here, so the connection exists
+  in the suite and nowhere in the prose. One sentence, connecting the register back to
+  chapter 1's list. Cheap, and it is the difference between a reader noticing the gap and a
+  reader being shown it — which is the register the whole book is written in. Read the
+  vocabulary-entrenchment bullet below first: the honest sentence is that the list cannot be
+  entrenched, not that it merely has not been.
 
 - **[AUTHOR-GATED] Rule on whether `person` is the twenty-second entry.**
   `book-1/01-what-counts-as-evidence.md:5-8` ("It has twenty-one entries … they cannot.
@@ -507,6 +548,27 @@ for the harness section below.
   the audit surface stays one predicate while each breach stays separately queryable.
   Highest value-per-line in this section.
 
+- **[AUTHOR-GATED] Confinement is a location and nothing else — decide whether the design
+  says anything about conditions.** `building/2` is a bare placement fact: the three rules
+  that produce it (`:298`, `:312`, `:313`) name a facility and stop, and there is no
+  vocabulary anywhere for conditions, visits, who may enter, what may be done, or how long
+  — `grep -niE "visit|condition|treat|enter|guard|inspect|duration|term"` over the enacted
+  lines returns nothing. The only rule that looks at a confined person's treatment at all is
+  the isolation marker (`:309`), which is the one that fires on every prisoner and therefore
+  says nothing about any of them. Three reviewers reached this independently and rated it
+  high or critical.
+  **State the position precisely before deciding, because the obvious reading is wrong.**
+  The floor *does* reach prisoners — Article 1 plus `prisoner -> person` (`:248`) is exactly
+  the chapter-7 result — so a confined person is entitled to all eight rights, and nothing
+  in the design permits a cell that starves someone. What is missing is one level down:
+  entitlement binds the society, and nothing binds *the facility*. That is the same
+  owed-versus-delivered seam the book already discloses, arriving somewhere a reader feels
+  it much harder. Either add the vocabulary — which enlarges the evidence list and needs the
+  `capture`-precondition decision first, since both are about who may do what to a person
+  under authority — or say plainly in ch 13 that the design fixes where a convicted person
+  is and says nothing about what happens there. Do not leave it unsaid; "punishment deprives
+  exactly one thing" is a much weaker claim if the cell is unconstrained.
+
 - **Write the fact-write trust base as a file-level section — Article 0 closed half of
   it.** `:51-59` now declares nine relations `derived_only` and direct assertion of
   each is refused. What Article 0 did **not** do is remove the write surface; it moved
@@ -532,9 +594,17 @@ for the harness section below.
   Rebel — the file's own honest whistleblower, and the whole of chapter 2's argument —
   is jailed by deleting one line. Fix: regenerate the enumeration from
   `grep derived_only new-book-plans/utopia-v2.nibli` rather than editing a list in
-  place, and record **three** undefended classes, not one: assertion, deletion
-  (`person` first, then `permanent`, `severe`, `public`), and vocabulary (below). The
-  file discloses only the deletion class for `permanent()`, at `:386-390`.
+  place — nine relations are closed, everything else is open — and record **three**
+  undefended classes, not one. **Assertion**, at minimum `public`, `clear`, `choose`,
+  `mature`, `person`, `show`, `injure`, `judge`, `capture`, `broken`, `rotten`,
+  `deceive`, `severe`, `family`, `parent`, `teaches`, `work`, `home`, `suggest`,
+  `approves`, `adjust`, `permanent`. **Deletion**, `person` first, then `permanent`,
+  `severe`, `public`, `choose` — the file discloses this class for `permanent()` alone,
+  at `:386-390`. **Vocabulary**, per the bullet below. Prose consequence, and it is the
+  reason this is not only a KB item: `03-who-holds-the-pen.md:100-103` tells the reader
+  the Sock/Puppet hole is closed, and it is closed only against *forged credentials* —
+  two `choose(Electorate, ·)` writes still seat the puppets and the credential derives.
+  Rewrite it to name the cost in **writes** rather than in elections.
 
 - **The evidence vocabulary cannot be entrenched — disclose it instead of patching it.**
   The threat is real and the book prints it at `01:133`, but the old prescribed fix was
