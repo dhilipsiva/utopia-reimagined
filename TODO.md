@@ -66,7 +66,7 @@ Every claim below is reproducible from committed artifacts by one command. Do no
 transcribe numbers into this file; run it.
 
 ```
-./verify.sh            # ~15 min: spine, evidence count, jargon, absences, 294 pins, counterfactuals
+./verify.sh            # ~15 min: spine, evidence count, jargon, absences, the suite, counterfactuals
 ./verify.sh --quick    # ~2 s: everything except the pin suite
 ```
 
@@ -1150,7 +1150,7 @@ for the harness section below.
 
 - **Extract the claim-to-query table from the pin files — it cannot be generated from the
   constitution.** The substance already exists in a better form than the old bullet
-  imagined: fifteen pin files carry 294 pins, every one a query with an enforced expected
+  imagined: fifteen pin files carry every load-bearing sentence, every one a query with an enforced expected
   verdict, all green, and a scan finds no `?` query lacking a `# =>` line. What is left is
   the rendering, and it runs the other way round: the constitution cannot know which
   sentence of chapter 11 a query backs, so the table must be extracted from the pins
@@ -1232,7 +1232,7 @@ never worked around in prose.
 - **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
   against direct assertion; nothing closes the *set of relations* a KB will accept. Any of
   the committed corpus's ~1,351 names asserts cleanly onto the constitution and answers
-  TRUE, and the whole 294-pin suite stays green. `NIBLI_KR.md:579` §14.1 describes
+  TRUE, and the whole pin suite stays green. `NIBLI_KR.md:579` §14.1 describes
   KB-owned `pred` declarations and marks them a v2 target, "not implemented" — so this is
   an ask, not a bug.
 
@@ -1652,6 +1652,25 @@ never worked around in prose.
 
   Available ≈26,200 against 22,564 required. The margin is thin enough that the complement
   screen and the absence cap have to be enforced or the shortfall becomes padding.
+
+
+  **Every chapter revision also strips its counted claims.** A per-chapter check, not a task of
+  its own. Do not write "twenty-two entries", "four people have shelter", "eight rights" or "one
+  thing taken" — **state the rule that produces the count** instead. Every counting claim in this
+  book that was checked turned out *wrong*, not merely stale: "every convicted person" named four
+  of seven, "one person verifiably has shelter" was four, "everything else on both lists is
+  identical" differed in four places, "the four cases exhaust the combinations" covered seven of
+  eight. And the numbers keep moving — the evidence list changed in a single commit, the floor
+  may stop being eight, and more than one thing may become takeable. `verify.sh` carries a
+  **ratchet**: ~38 sites today; it fails if the count rises, and it also fails if the count falls
+  without `BASELINE` being lowered in the same commit, so the tightening cannot be forgotten.
+  When it reaches zero, make it a hard gate. Two clusters worth knowing: **chapter 1 holds ten of
+  the sites**, all the same "twenty-two" claim — and the chapter prints the entire list two
+  sentences later, so the numeral is redundant with the evidence beside it and the closedness is
+  carried by "when someone wants to say something that is not on the list, they cannot". And
+  **chapters 9 and 14 count chapters** ("twelve chapters later", "fourteen chapters"), which the
+  computed spine can invalidate silently with no pin able to catch it. Rhetorical durations
+  ("thirty years") are exempt and allowlisted in the guard.
 
 - **The rule that decides whether expansion is cheap — verified, do not re-derive it.**
   *Ground facts over predicates that already occur in the constitution are structurally

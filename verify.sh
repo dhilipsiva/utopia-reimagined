@@ -54,6 +54,39 @@ else
   pass "jargon sweep clean across $(ls book-1/*.md | wc -l) chapters"
 fi
 
+# ── 3b. counted claims in the prose — a RATCHET, not a gate ──────────────────
+# Every counting claim in this book that has been checked was WRONG, not merely
+# stale: "every convicted person" named four of seven; "one person verifiably has
+# shelter" was four; "everything else on both lists is identical" differed in four
+# places; "the four cases exhaust the combinations" covered seven of eight. The
+# design also keeps moving — the evidence list went 21 -> 22 in one commit, the
+# floor may stop being eight, and more than one thing may become takeable — so a
+# number in the prose is a maintenance liability with a bad accuracy record.
+#
+# The rule is NOT "delete numbers", which only makes the prose vaguer. It is
+# **state the rule that produces the count**: "shelter derives for every confined
+# person and for nobody else" beats "four people have shelter" — stable under cast
+# changes, more informative, and it is what the book is actually about.
+#
+# This is a ratchet because ~38 sites exist today and they are fixed chapter by
+# chapter as each is revised. It fails only if the count GOES UP. Lower BASELINE
+# in the same commit that removes sites; when it reaches 0, make this a hard gate.
+COUNTED='\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|hundred)([- ][a-z]+)?\b|\beight\b|\bexactly one\b|\bone thing\b|\bsingle deprivation\b'
+# Rhetorical durations are not claims about this design; they never go stale.
+COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)'
+BASELINE=38
+n=$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | wc -l)
+if [ "$n" -gt "$BASELINE" ]; then
+  fail "counted claims in the prose rose to $n (baseline $BASELINE)" \
+"$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | tail -5)
+       State the rule that produces the count, do not count the instances."
+elif [ "$n" -lt "$BASELINE" ]; then
+  fail "counted claims fell to $n — lower BASELINE to $n in verify.sh, same commit" \
+       "the ratchet only holds if it is tightened when sites are removed"
+else
+  pass "counted claims held at $BASELINE (ratchet; lower it as chapters are revised)"
+fi
+
 # ── 4. the absence claims ────────────────────────────────────────────────────
 # Each is a load-bearing sentence that no query can hold. Test the rule BODIES:
 # a bare grep also matches the predicate's own rule head, which is a check that

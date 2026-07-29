@@ -23,7 +23,7 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker (plain bullets, ordered by dependency and leverage; work the first remaining bullet, delete it when it fully lands, update it if only partially done). Check it before starting any work. Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory, or a design decision — skip them in unattended work and take the highest-value non-gated bullet instead. It also holds the legacy-harvest manifest and a parked list for book-2; don't work book-2 items there.
 - `new-book-plans/` — planning material for book-1, plus the constitution `utopia-v2.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. Check it with `python3 new-book-plans/5-spine-gen.py new-book-plans/utopia-v2.nibli new-book-plans/3-spine.md --check` (exit 0 = current), and regenerate by dropping `--check`. Verify constitution claims with the release `nibli-pin --kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and all nine gate closures while still answering queries.
-- `verify.sh` — **the one check.** `./verify.sh` (~15 min) runs the spine check, the evidence-vocabulary guard, the jargon sweep, the five absence claims with a positive control, the 294-pin suite with a cross-file `:expect-pins` reconciliation, and the three counterfactual fixtures; `--quick` skips the pin suite and takes about two seconds. It exits non-zero on the first failure and names the claim that stopped being true. Run it before every commit and prefer it to any check by hand — each check here was negative-controlled, and the jargon sweep as previously specified did not catch the leak it was written for.
+- `verify.sh` — **the one check.** `./verify.sh` (~15 min) runs the spine check, the evidence-vocabulary guard, the jargon sweep, the five absence claims with a positive control, the pin suite with a cross-file `:expect-pins` reconciliation, and the three counterfactual fixtures; `--quick` skips the pin suite and takes about two seconds. It exits non-zero on the first failure and names the claim that stopped being true. Run it before every commit and prefer it to any check by hand — each check here was negative-controlled, and the jargon sweep as previously specified did not catch the leak it was written for.
 - `new-book-plans/counterfactual/` — three copies of the constitution, each missing exactly one line, each with pins asserting what the world looks like without it. They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit** — see the README beside them.
 - `LICENSING.md` — the mixed-licence map. Read before adding files.
 
@@ -79,6 +79,17 @@ The author has deliberately standardized terminology (see git history):
 - **"employment"**, not "work" or "jobs" — the book redefines employment beyond salaried labor
 - **"merit points"** (lowercase in prose, "Merit Points" in headings) — the recognition system replacing wages; never call it money or currency
 - Recurring proper concepts (legacy `book.md` only — **MVS, pods and the tech stack are all out of scope for book-1**): **MVS** (Minimum Viable Society), **YAD** (Yet Another Device — government-issued device for those without smartphones), **Proof of Personhood** (Orb-style biometric identity), **pods** (local pods → regional councils → global federation), **local-first / offline-first micro-blockchains**, **quantum-secure**
+
+**No counted claims in the prose.** Do not write "twenty-two entries", "four people have
+shelter", "eight rights" or "one thing taken". Every counting claim in this book that has been
+checked was *wrong*, not merely stale, and the design keeps moving — the evidence list changed
+in a single commit, the floor may stop being eight, and more than one thing may become
+takeable. The rule is not "delete numbers", which only makes the prose vaguer: **state the rule
+that produces the count**. "Shelter derives for every confined person and for nobody else"
+beats "four people have shelter" — it is stable under cast changes, more informative, and it is
+what the book is about. `verify.sh` carries a ratchet on this; lower its `BASELINE` in the same
+commit that removes a site. Rhetorical durations ("thirty years") are fine — they are not claims
+about this design. This is checked per chapter as each is revised, not as one task.
 
 Style: first-person, personal, and accessible; economic framing routinely contrasts *Keynesian*, *Marxist*, and *neoclassical* lenses (italicized); heavy use of **bold** for key claims. Both documents use curly quotes and em dashes throughout — match them. The technology chapters are intentionally more technical, with "Making It Simple: A Layman's Guide" as the deliberately non-technical retelling — keep that chapter jargon-free.
 
