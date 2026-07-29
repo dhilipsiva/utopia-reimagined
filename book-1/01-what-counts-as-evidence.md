@@ -2,8 +2,8 @@
 
 There is a list of things the world is allowed to say about you.
 
-It has twenty-one entries. Not twenty-one categories, with room underneath for
-whatever turns out to be useful — twenty-one entries, and when someone wants to say
+It has twenty-two entries. Not twenty-two categories, with room underneath for
+whatever turns out to be useful — twenty-two entries, and when someone wants to say
 something about you that is not on the list, they cannot. Not *may not*. Cannot.
 There is nowhere to put it.
 
@@ -13,7 +13,8 @@ exposed something. A person has a home, or a family, or a parent, or has reached
 adulthood. An offence was severe. An assembly proposed a change; the electorate
 approved it; the change touches a particular article; that article is protected. A
 body is a public institution. The electorate seated someone. Someone was cleared.
-Someone was recalled. Someone was voided in an earlier period.
+Someone was recalled. Someone was voided in an earlier period. Someone's sentence is
+finished.
 
 That is it. That is everything the record can hold.
 
@@ -29,7 +30,7 @@ your movements, or your associations. There is no field for what you are likely 
 do. There is no field for what someone suspects.
 
 None of this is because those things were considered and rejected on principle,
-though they were. It is because the record has twenty-one slots and none of them
+though they were. It is because the record has twenty-two slots and none of them
 holds a judgment about a person's character. If you wanted to write down that
 someone seems untrustworthy, you would find you had no way to write it. The sentence
 does not go anywhere.
@@ -97,13 +98,13 @@ This is worth sitting with, because it is the opposite of how suspicion usually
 works. In most systems, being investigated is already a cost. The file is open. The
 question has been raised. Even a clean finding leaves something behind — the fact of
 the inquiry itself becomes a fact about you. Here it does not, because "was
-investigated" is not one of the twenty-one things the world may say.
+investigated" is not one of the twenty-two things the world may say.
 
 ## The way this gets taken apart
 
 Now the honest part.
 
-A closed list of twenty-one things is a strong protection, and it has an obvious
+A closed list of twenty-two things is a strong protection, and it has an obvious
 weakness: it works only while the list stays closed. Nobody who wanted to capture
 this society would begin by arguing that people should be imprisoned without
 evidence. They would begin by proposing a twenty-second entry.
@@ -135,6 +136,6 @@ leaves the vocabulary unprotected. Whether that is an oversight or a judgment th
 the list must stay amendable to stay useful, it is currently the softest place to
 push, and anyone serious about attacking this society would push there first.
 
-The rest of this book describes what the twenty-one facts are permitted to produce:
+The rest of this book describes what the twenty-two facts are permitted to produce:
 who may hold power, what may be taken away, and what may never be. All of it rests on
 the list. If you want to know where to watch, watch the list.

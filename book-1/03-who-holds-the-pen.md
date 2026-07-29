@@ -82,7 +82,7 @@ from holding.
 
 It is worth seeing that this is the same shape as the first credential, pointed the
 other way. Relief is not something a sympathetic official confers. Someone records
-that Nia is in the clear — that is one of the twenty-one things the world may say —
+that Nia is in the clear — that is one of the twenty-two things the world may say —
 and the relief follows from it by rule. The route runs through the record, in public,
 where it can be disputed, rather than through a decision someone makes and nobody
 sees.
@@ -97,7 +97,7 @@ The rule is only as good as the fact underneath it, and the fact underneath it i
 the electorate seated you.
 
 That is not something this design produces. It is something the design is *told* —
-one of the twenty-one things the world may report, recorded like any other. Nothing in
+one of the twenty-two things the world may report, recorded like any other. Nothing in
 here checks that the selection was real, that the count was honest, or that the people
 who ran it were not deciding the outcome in advance. The society can refuse a forged
 credential absolutely. It cannot detect a forged election.

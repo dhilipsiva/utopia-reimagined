@@ -72,36 +72,57 @@ punishment for lacking a floor right.
 That is not a small omission. It is the difference between a design that has thought
 about imprisonment and one that has thought about the decision to imprison.
 
-## And it never ends
+## And it may end
 
-There is one more thing, and it is the largest.
+There is one more thing, and the design does speak to this one.
 
-**There is no release.**
+**A sentence can be finished.**
 
-No duration. No sentence length. No term, no expiry, no completion, no rule that
-returns a convicted person to the general population after anything at all. Search the
-whole design for a concept of a punishment ending and there is nothing there. The word
-appears in the commentary and never in the rules.
+Somebody records that it is over — that is one of the things the world may say — and
+from that moment the machinery that was holding a person stops holding them. Movement
+returns. The placement stops. The marker that was watching for isolation goes quiet.
+It is the same shape as relief, and it is not the same thing: relief says the
+conviction should never have held, and this says it held and is done.
 
-Once convicted, a person is a prisoner. Permanently. The only exit is the one Chapter
-3 described: relief, granted on appeal, recorded on the register — and relief is not
-release. It is a finding that the conviction should not have held in the first place.
-There is nothing for the person who was rightly convicted and has served whatever
-anyone might have thought they owed.
+What the design does not say is **when**. There is no duration in it anywhere, no term,
+no length, nothing that counts. It cannot express three years, and it cannot express
+that one offence earns longer than another. So a sentence *may* end, and the design has
+nothing to say about whether this one does. For the gravest things it is expected that
+nothing is ever recorded, and the design cannot compel that either. What ends a
+punishment here is a decision someone makes and writes down, and the design's whole
+contribution is to say what follows once they have.
 
-So the single deprivation is total in a way the earlier chapters did not say. Movement
-is the only thing taken, and it is taken for the rest of the person's life, for every
-offence, without distinction between the grave and the trivial. Hano injured someone
-and cannot move freely, and that is now simply what Hano is.
+That is less than it sounds, and it is worth being exact about why. This is the same
+shape as everything else in these chapters: the design is precise about consequence and
+silent about occurrence. It knows what a finished sentence means. It does not know when
+one happens, and it cannot make one happen.
 
-A design that took one thing and gave it back would be describing punishment. This one
-takes one thing and keeps it, which is closer to describing a category of person — and
-a category of person is what the whole apparatus of these chapters was built to
-refuse.
+## What leaving costs
 
-It is the sharpest unresolved thing in the book. Everything else here has been a
-protection with a boundary, or a guarantee that stops short of arriving. This is a
-punishment with no end, in a design that has taken great care to be exact about
-everything else, and its absence is not disclosed anywhere in the design's own account
-of itself. It was found by asking what happens next and discovering the question has
-no answer.
+And there is a sting in it that is worth following, because it is the sharpest thing
+this chapter has.
+
+Two of the eight things owed to every person actually arrive in this design. Recorded
+speech arrives, and shelter arrives. **Both of them arrive only for prisoners.**
+
+So when a sentence is finished, both stop. The person keeps every entitlement they had
+— they are owed exactly what they were always owed, and the body that owes it still
+owes it — but the two things that were genuinely being delivered were being delivered
+by the punishment machinery, and the punishment machinery has let go. Hano, released,
+is owed shelter and has none, in a way he was not an hour earlier.
+
+**Leaving custody returns a person to a population this design delivers nothing to.**
+
+That is not an argument for keeping people in. It is the delivery gap of Chapter 8,
+arriving somewhere it can be felt rather than merely conceded. A society whose only
+working provision runs through its prisons has not built a floor; it has built a
+prison that happens to be furnished.
+
+It also complicates the comparison made earlier in this chapter, and the complication
+should be said rather than smoothed. Elsewhere a sentence nominally ends and its
+consequences do not; the released person carries a cascade of losses that outlives the
+punishment by decades. Here the sentence genuinely ends, the cascade genuinely does not
+exist, and the person still walks out with less than they had inside. The two failures
+are not the same and this one is smaller, but a design does not get to call a thing
+solved because it broke in a new place. Everything above the floor here is exact. The
+floor itself is still a promise about what is owed rather than a record of what came.
