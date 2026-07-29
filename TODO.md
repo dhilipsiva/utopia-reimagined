@@ -1,6 +1,7 @@
 # TODO — book-1
 
-**This tracker covers book-1 only.**
+**This tracker covers book-1 only.** It is strictly future-facing: a bullet is
+deleted the moment it fully lands. History belongs in git.
 
 The repo is heading for two new books plus a clean deletion:
 
@@ -19,15 +20,14 @@ The repo is heading for two new books plus a clean deletion:
   gets its own tracker after book-1 ships. book-1 references it once, at the end.
 - **`book.md` and `manifesto.md`** — legacy, to be **deleted** once both new books
   are written. Nothing in this tracker improves them. The one obligation they carry
-  is that no valuable material is lost on the way out; see the legacy-harvest
-  section.
-
-book-1 references book-2 **once**, at the very end (see the pointer item).
+  is that no valuable material is lost on the way out: the 55 sourced references,
+  the nine historical cases, the Bharati poem and the five bright lines, itemised
+  under **Legacy harvest** below, ending with the deletion commit.
 
 Plain bullets, never numbered. Work the FIRST remaining bullet; cross-reference
 items by name. Delete a bullet entirely when it fully lands; update it if only
 partly done. Ordered by dependency and leverage, not by chapter order. One item at
-a time: do it, verify it, commit it. History belongs in git, not here.
+a time: do it, verify it, commit it.
 
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — skip them in unattended work and take the highest-value
@@ -49,8 +49,7 @@ if a reader cannot tell they have crossed into a different kind of chapter, the
 seam has failed.
 
 Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
-`new-book-plans/`. Note `CLAUDE.md` still describes the repo as being *about*
-`book.md` — it needs the same restructure this file just had.
+`new-book-plans/`.
 
 **nibli handoff protocol.** dhilipsiva wrote nibli. When an item is blocked by an
 engine bug or a missing KR construct, do not work around it in prose — the bullet
@@ -58,936 +57,1415 @@ carries a ready-to-paste **HANDOFF PROMPT** for a Claude Code session in
 `~/projects/dhilipsiva/nibli`. Hand it over, work the next unblocked bullet, and
 resume when it lands.
 
-**Already established — don't re-verify these** (verified on the real engine via
-`nibli-host --script`, release wasm, `NIBLI_FUEL` pinned high):
+---
+
+## Already established — re-verify by command, not by hand
+
+Every claim below is reproducible in about fifteen minutes from committed
+artifacts. Do not transcribe numbers into this file; run the commands.
+
+```
+nibli-pin --kb new-book-plans/utopia-v2.nibli \
+  new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli    # 248 pins, 0 findings
+python3 new-book-plans/5-spine-gen.py new-book-plans/utopia-v2.nibli \
+  new-book-plans/3-spine.md --check                             # exit 0 = spine current
+```
+
+Use the **release** `nibli-pin`. **Never `nibli-host`** — its newest wasm was built
+2026-07-20, while `derived_only` (nibli `b053b77`) and the `entitled` corpus entry
+(nibli `a65b398`) both landed 2026-07-28. It silently drops the entire rights floor
+and all nine gate closures, then reports a clean run over a constitution it is not
+reading. The provenance line that used to sit here named exactly that tool, which
+is how a hand-transcribed snapshot passed for a verification.
+
+Two facts no command teaches:
 
 - **A floor line is a compile-time prohibition, not a declaration.**
   `entitled(every person, event { P() })` compiles to a rule with `person` in the
   body, so `P` sits downstream of `prisoner`; any later rule taking `~P` into that
-  cone is an unstratifiable negative cycle and is refused. Verified both ways plus
-  a non-floor control. You cannot write a law punishing a person for lacking a
-  floor right. Where it stops is equally established: `~P -> false` (standing),
-  `~P -> lose(Points, ·)`, and positive compulsion `prisoner -> P` all still load.
-- The floor is **eight**, spelled `entitled(every person, event { P() })` with the
-  rights-holder in x1, enacted in `new-book-plans/utopia-v2.nibli`, with the
-  franchise and the isolation marker as rules. Graph: 37 predicates, 16 derived,
-  28 rules, max stratum 3, **stratum 3 still exactly `{err, travel}`** — the
-  single-deprivation theorem survives. All 51 pins pass; the firewall holds
-  (`~believe`/`~meets`/`~eats`/`~secure -> prisoner` refused, `~home` control
-  loads); five upstream regression tests pin the mechanism in nibli's CI.
-- **All nine gate relations are closed to direct assertion** (Article 0):
-  `fit`, `defend`, `false`, `reward`, `become`, `err`, `authority`, `permits`,
-  `prisoner`. The three that once carried deliberate ground facts were split —
-  institutions assert `public(Court).` and authority derives; relief asserts
-  `clear(Nia).` and `permits(Appeals, ·)` derives; Adam is convicted through
-  Article 6 rather than asserted. All three exploits are dead and pinned:
-  `authority(Pax).`, `permits(Review, Sock).` and `fit(Ruk, Homestay).` are each
-  refused at assert time, with complement pins proving the derivations still work.
-- The widening hazard is **rule-head position**, not place index and not the
-  predicate: `every`/`all` forms widen the protected set, ground facts and `some`
+  cone is an unstratifiable negative cycle and is refused. The floor is protected
+  **because** it is reachable — at stratum 0 there would be no cycle to close and
+  no protection at all. Where it stops is equally established and pinned in
+  `book-1/08-what-you-are-owed.pins.nibli`: `~P -> false` (standing), `~P ->
+  lose(Points, ·)` (recognition), and positive compulsion `prisoner -> P` all
+  still load. The floor blocks punishment for ABSENCE, never manufacture, and it
+  reaches `prisoner` only.
+- **The widening hazard is rule-head position** — not place index, not the
+  predicate. `every`/`all` forms widen the protected set; ground facts and `some`
   are inert. It cannot be banned, because the widening *is* the firewall. The
-  guarantee is the complement pins, not a compile-time rule.
-- All 17 v0.1 regression pins, all three exploit closures (E1 shield, E2 epoch
-  carry, E3 farmhouse) and Article 9's self-entrenchment are unchanged through
-  v0.2 and the enactment, each checked against a v0.1 baseline run.
-- The seven original fidelity-table rows are true — but **none is reproducible
-  from the committed artifacts**, which is what the harness bullets exist to fix.
-- The 2026-07-27 source pass stands: nine parallel verifications against primary
-  sources. Its corrections are the research-brief section below.
+  guarantee is therefore the complement pins, not a compile-time rule.
 
-Note `3-spine.md`'s stratification table and chapter order are now **stale** — they
-predate the enactment and do not contain `decide`, `meets` or `mature`. Recompute
-before relying on them.
-
-Everything else in `new-book-plans/` is unverified or corrected below.
+The graph counts live in exactly one generated place, `new-book-plans/3-spine.md:17-32`.
+`4-strata.py` disagrees with it and is blind to the floor by construction — see the
+harness section. Fix while you are next in `utopia-v2.nibli`: `:182` cites the
+upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
 
 ---
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **DECIDED (2026-07-28): a thin constitutional layer is the duty-bearer.** book-1
-  names an agent obligated to provide the floor — one with real taxing and
-  inter-community equalisation power, carefully limited. The other two options were
-  rejected on grounds worth keeping, because each will be proposed again:
-  - **Mutual covenants is inconsistent with the enacted floor.** Verified: the
-    constitution has **no concept of membership, community, citizenship or
-    residence**, and the floor quantifies over `every person`. Covenants would gate
-    it on membership — inventing a `member` predicate and putting an eligibility
-    computation *upstream of the floor*. That is exactly the structure the book's
-    thesis refuses, moved one level up where it is harder to see.
-  - **Naming the gap flinches, and reuses the wrong gap.** The delivery gap is
-    honest because nobody has solved provisioning; it is a real frontier. The
-    duty-bearer question is answered daily by every welfare state. Declining a
-    solved question reads as evasion and spends the credibility Claim C earns.
-  - **A duty-bearer does not weaken the design — it is what makes the firewall mean
-    anything.** "You cannot write a law punishing a person for lacking a floor
-    right" is a constraint on a powerful agent; a firewall with nothing behind it
-    protects nobody. The book is not *society without a state*, it is **a state that
-    structurally cannot do these particular things**.
-
-  **It is expressible without cost — verified.** A bearer named *alongside* the
-  intact floor preserves the firewall in every form tried:
+- **Enact the duty-bearer, then fix the chapter that denies it exists.** The fork is
+  decided and recorded in `CLAUDE.md` — a thin constitutional layer with real taxing
+  and inter-community equalisation power — but nothing has been written down
+  anywhere else. `owe(State, …)` appears in `new-book-plans/utopia-v2.nibli` only
+  inside the INVARIANT-2 commentary at `:125-127`, never in an enacted line, and no
+  pin covers it. Meanwhile `book-1/08-what-you-are-owed.md:89-106` still prints the
+  *rejected* answer — *"This design has not yet chosen … there is no agent in the
+  entire structure who owes them"* — and closes the chapter on it. A shipped chapter
+  contradicting a settled decision is the one failure state a reader can see.
+  **The form is free — verified**, all three candidates loading alongside the intact
+  floor with every existing verdict unmoved (16 pins, 0 findings):
   `owe(State, Provision, every person).`, `all $x: person($x) -> owe(State,
-  Provision, $x).`, and a `public(State)` + rule variant. The earlier finding that
-  duty-bearer forms destroy the firewall was about *replacing* the floor's shape;
-  supplementing it is free. Pick a form, enact it, and pin it.
+  Provision, $x).`, and `public(State).`. Two results worth knowing before choosing.
+  `public(State).` is **not** a neutral label — `all $o: public($o) -> authority($o).`
+  (`:338`) derives `authority(State)` and routes the bearer into Article 7's
+  whistleblower shield (`:327`) as a valid disclosure target. And naming the bearer
+  *widens the firewall to the obligation itself*: `all $x: person($x) & ~owe(State,
+  Provision, $x) -> prisoner($x).` is refused, `'prisoner' -> 'owe' (negative)`. You
+  cannot write a law punishing a person for not being owed.
+  Pick a form, enact it, pin it in `rights-floor.pins.nibli`, then rewrite
+  `08-what-you-are-owed.md:89-106` to name the bearer and leave only the delivery gap
+  standing. Two things the book still owes and says nowhere — `grep -rn
+  "coercion\|social democ" book-1/` returns nothing: **concede coercion in plain
+  words**, because a reader who notices the word being avoided stops trusting the
+  rest; and **state the social-democratic positioning outright** at Part V's *state*
+  joint. Said plainly, "social democracy with extra steps" loses its teeth, because
+  the extra step is a compile-time prohibition nobody else has.
 
-  **Three things this now obliges the book to do:**
-  - **Concede coercion in plain words.** A reader who notices the word being avoided
-    stops trusting the rest.
-  - **State the social-democracy positioning outright** — the ends are
-    social-democratic and the provider is a fiscal agent; the novelty is the
-    constraint mechanism, not the absence of a provider. Said plainly, "social
-    democracy with extra steps" loses its teeth, because the extra step is a
-    compile-time prohibition nobody else has. This belongs in Part V's five joints,
-    at the *state* joint.
-  - **Bound the power explicitly, and answer the magnet problem** — mobility is a
-    guaranteed right, so generous communities attract need. Standard fiscal
-    federalism, currently unaddressed. This unblocks the governance-mechanics bullet
-    in the KB section, which was waiting on this fork.
+- **[AUTHOR-GATED] Part V's proportion cap is computed against a spine that does not
+  exist.** The cap reads "~14,500 against ~36,000 derived keeps it near 29%", but the
+  derived spine is finished at **14,743 words** (`wc -w book-1/*.md`) and nothing
+  anywhere plans growth to 36,000. Part V at 14,500 would be **49.6%** of book-1 —
+  exactly the condition the cap was written to prevent: *if Part V approaches half
+  the book, the derivation reads as decoration.* Two ways out and they are different
+  books. Cap Part V near **6,000 words** to hold ~29%, which is under half the
+  five-joints design's own estimate and may not carry five joints at all. Or decide
+  the derived spine grows past 30,000, which reopens every chapter's deliberate
+  shortness. Decide before drafting a word of Part V; the second answer reopens
+  fourteen finished chapters.
 
-- **CONFIRMED (2026-07-28): build Part V on the five-joints scorecard.** Four architectures
-  were designed and judged by a reader, a trade editor and a hostile expert. The
-  salvage audit is settled and measured (I re-verified the counts): the four harvest
-  candidates total 6,653 words — social credit 1,757, "Learning from Those Who
-  Tried" 2,264, "When the Pod Meets the State" 2,092, "The Calculation Problem" 540.
-  **~30% survives near-verbatim and every near-verbatim survivor is evidence; not
-  one argumentative frame survives.** "Learning from Those Who Tried" is the only
-  genuine harvest — the nine historical cases are researched, sourced and
-  mechanism-independent. "When the Pod Meets the State" is unsalvageable: it says
-  "pod" 21 times in 2,092 words, and the new book has no pods. The social-credit
-  chapter is the best writing in the manuscript and unliftable — seven named
-  dependencies, including its showpiece self-correction passage, which points at
-  three chapters that will not exist.
+- **[AUTHOR-GATED] Decide whether punishment ends.** No duration, term, expiry or
+  completion exists in any rule of `utopia-v2.nibli` — every apparent hit is
+  commentary, and the `epoch` hits (`:26`, `:343`, `:352-368`) are the audit carry
+  ledger, nothing to do with sentences. Conviction is permanent, for every offence,
+  with no distinction between the grave and the trivial; relief on appeal
+  (`clear -> permits(Appeals, ·)`, `:362`) is not release but a finding the
+  conviction should never have held, which does nothing for someone rightly
+  convicted. The gap is disclosed to the reader —
+  `book-1/13-the-one-thing-taken.md` closes on it under "And it never ends", and
+  `13-the-one-thing-taken.pins.nibli:10-13` records it as an absence no query can
+  reach. What is still undisclosed is the constitution's own commentary. Two
+  decisions only the author can make: whether a term exists at all, and what bounds
+  it. Enacting one rewrites ch 13's closing section and that pin note; declining
+  leaves the book's sharpest admitted gap standing, which is defensible but should
+  be chosen.
 
-  **Recommended: the five-joints skeleton, at ~14,500 words — but re-framed for
-  the destination-only scope.** The joints themselves survive the narrowing, because
-  valuation, rotation, coercion, capture and the state are places a *functioning*
-  design breaks, not stages of a rollout. What must change is the framing: not
-  "here is what happened to people who tried to build this", which is a transition
-  story, but "here are five places a society of this shape fails, and here is
-  whether this one holds". The historical cases become evidence about failure modes
-  rather than a narrative of attempts. Score this design against those five. It is the only principle
-  legible in one sentence, the only proportionate length, and the only one that
-  solves the confession problem structurally rather than rhetorically. It won the
-  reader judge and the editor judge, and the editor's reason matters: it was the
-  only design that *measured* rather than estimated, and its numbers check out.
-  Graft on two things from the losing designs: the three-word verdict vocabulary
-  (**Survives / Survives, narrowed / Fails as stated**, printed once and never
-  expanded — the most enforceable seam device proposed, because it disciplines at
-  the sentence level), and the rule that **every limit closes on a specification**
-  concrete enough to be worked on, not on an admission.
+- **[AUTHOR-GATED] Confirm the subtitle — the condition it was waiting on has fired.**
+  The title (*Nothing Has to Happen First*) is settled in `CLAUDE.md`. The subtitle
+  is still the provisional *"Eight things every person is owed, and why no law can
+  take them away"*, held back until Chapter 1 existed. All fourteen chapters now
+  exist, so the call is due. One correction first: **"no law can take them away"
+  overclaims the mechanism.** The firewall refuses only the *prisoner* route.
+  Verified (4 pins, 0 findings): `all $x: person($x) & ~believe($x) -> false($x).`
+  and `all $x: person($x) & ~eats($x) -> lose(Points, $x).` both load — a law can
+  void your standing and dock your recognition for lacking a floor right; it simply
+  cannot imprison you for it. A subtitle Part V has to walk back costs more than a
+  duller one that holds.
 
-  **One fix before building it:** do not publish a numeric self-grade. The hostile
-  judge's dismissal sentence for this design was *"two and a half out of five"* — a
-  failing grade, self-administered, printed as the structure of the part. Score
-  against the joints without scoring the design out of five.
-
-  Design signed off by the author. Both open calls were already decided:
-  - **Concealment — resolved by the book-2 split.** The hostile reviewer's attack
-    was on the constraint, not the book: *"The repository is public. I found it in
-    an afternoon."* An unmentioned but discoverable apparatus reads as concealment;
-    a named one reads as discipline. But saying it plainly inside book-1 would put
-    a formal-methods discussion in a book that must stay jargon-free. So it goes
-    where it already belongs: **the single book-2 pointer at the end carries one
-    honest sentence** — the design was machine-checked for consistency, the
-    machinery is public, book-2 covers it. One sentence, skippable by the general
-    reader, and it closes the open goal completely. It is also exactly Krugman's
-    step (3) discharged.
-  - **Proportion — capped.** Part V targets **~14,500 words**, and book-1 stays
-    majority-derived. If Part V approaches half the book, the derivation reads as
-    decoration; ~14,500 against ~36,000 derived keeps it near 29%.
-
-- **DECIDED: book-1 is titled *Nothing Has to Happen First*.** The subtitle is
-  provisional — working version *"Eight things every person is owed, and why no law
-  can take them away"* — and should be confirmed once Chapter 1 exists, since a
-  subtitle chosen against a real voice survives and one chosen against a plan
-  usually does not.
-
-  The title is the thesis in five plain words, taken from the fidelity table's own
-  sentence: *…are owed to every person, and nothing has to happen first.* It clears
-  every constraint the book carries — it names a destination rather than a route, it
-  uses no jargon, it carries the eligibility argument without stating it, and it
-  avoids "utopia", which the reception literature identifies as the fastest way into
-  the naive-utopianism dismissal and which the legacy book already used.
+- **[AUTHOR-GATED] Record three standing rejections so they are not re-proposed.**
+  Following the duty-bearer precedent, the grounds are worth keeping because each
+  will be proposed again by the next reader:
+  - **Degree facts on contribution** (`taught_for(Esa, 40y)` and kin). Collides with
+    the no-arithmetic result chapter 10 is built on and with the merit-points bright
+    lines in `CLAUDE.md` — recognition is a fact, not a quantity, and the material a
+    degree would be made of deliberately does not exist. This also answers the old
+    exact-minor-unit-arithmetic question: the book wants no quantities, so that ask
+    is moot.
+  - **A narrative-dystopia second part.** Contradicts the book-1/book-2 split: book-2
+    is *how you would actually build it*. A fictional counterfactual is neither the
+    destination nor the build, and would put the one non-derived thing in the project
+    outside all three labelled exemptions.
+  - **"Two pens from different public bodies"** as a strengthening of the dual-pen
+    void. **Unexpressible, verified**: `public/1` is one-place over institution
+    constants (`:335-337`), no person-to-body relation exists, every Review pen flows
+    from the single seating rule at `:351`, and `permits(Court, Gia).` is refused.
+    Expressing it means enlarging the evidence vocabulary, which chapter 1 names as
+    the softest place to push. The strengthening costs more than the weakness.
 
 - **[AUTHOR-GATED] The repo name is now misleading.** `utopia-reimagined` names the
-  legacy book, which is being deleted, and neither new book uses the word — book-1
-  is *Nothing Has to Happen First* and book-2 is the build-it companion. Not urgent
+  legacy book, which is being deleted, and neither new book uses the word. Not urgent
   and it blocks nothing, but decide before anything is published under the URL: a
-  rename costs remote references and clone paths, while leaving it costs a
-  permanent mismatch between the repo and everything in it.
+  rename costs remote references and clone paths, while leaving it costs a permanent
+  mismatch between the repo and everything in it.
 
-## Settled — carry out as the artifacts land, blocks nothing
+---
 
-- **Apply the licence structure.** Decided and recorded in `LICENSING.md`: prose
-  **CC-BY-4.0**, code **MIT OR Apache-2.0**, data registry **CC0**, constitution
-  under nibli's terms. Already-committed files stay CC0 irrevocably; the root
-  `LICENSE` stays put and keeps governing them. What remains is mechanical and
-  belongs with the artifact it covers — drop `LICENSE-CC-BY` in the book's
-  directory with a licence line in the front matter; add `LICENSE-MIT` +
-  `LICENSE-APACHE` and `SPDX-License-Identifier` headers when the harness and
-  fetchers are written; add `LICENSE-CC0` in the registry directory. Since
-  exclusivity is now permanently off the table, the reach strategy is serialization
-  and open circulation — plan the publishing route on that basis.
+## Prose that is false against the constitution
 
-## The verification harness
+**Work this section first.** Every bullet here is a sentence in a shipped chapter
+that the engine contradicts. All were found by the 2026-07-28 review audit or while
+verifying it; none was caught by the 248 green pins, which is itself the argument
+for the harness section below.
 
-**DONE, both halves.** Run the constitution suite with:
+- **[AUTHOR-GATED] "Standing" names two different predicates, and the manuscript uses
+  one word for both.** `authority/1` is answerability and is never revoked; `false/1`
+  is the credibility of the record and is destroyed routinely. They are independent,
+  not opposite — verified on the unmodified constitution: `? false(Vex). => TRUE`
+  alongside `? authority(Vex). => TRUE` and `? permits(Review, Vex). => FALSE`; and
+  `? false(Bela). => TRUE` alongside `? authority(Bela). => FALSE`. So voiding takes
+  the pen and the record and leaves standing wholly intact. **Chapter 2 is correct
+  and needs no change** — every *other* chapter saying "voiding standing" means
+  `false/1`. The reader meets the collision before chapter 2 defines the term
+  (`01:75` precedes `02:34`), and chapter 4 does it to itself twenty-three lines
+  apart: `:91` "Kel's own standing is voided" against `:114` "standing is never
+  revoked".
+  `authority/1` sense, leave alone: `02` throughout, `03:3`, `03:59`, `04:36`,
+  `04:50`, `04:114`. `false/1` sense, needs the new word: `01:75`, `01:85-86`,
+  `03:8`, `03:42`, `03:67`, `04:91`, `05:3`, `05:14`, `05:17`, `05:36`, `05:43`,
+  `06:3`, `08:70`, `08:77`, `10:52`, `10:59`, `10:84`, `13:13`. A third sense hides
+  at `12:22` — "the amendment has no standing" is `false/1` on a proposal.
+  Decide the replacement word — `04:92-93` already reaches for "credibility" — then
+  reserve "standing" for `authority/1` throughout. Add `? false(Vex). # => TRUE` and
+  `? authority(Vex). # => TRUE` adjacent in `02-standing.pins.nibli` so the two senses
+  can never re-merge silently. **Land this before the chapter-2, chapter-5 and
+  chapter-8 rewrites below** — all three touch sentences containing the word.
 
-```
-nibli-pin --kb new-book-plans/utopia-v2.nibli new-book-plans/rights-floor.pins.nibli
-```
+- **Chapter 2's opening paragraph defines standing as the one thing the chapter later
+  says it is not.** `book-1/02-standing.md:3-6`: "They can examine what someone did,
+  record what they find, and set in motion the machinery that takes things away. That
+  capacity has a name — standing". That triple is *power*, and the chapter says so
+  three times afterwards (`:88-92`, `:57-61`, `:114-115`). The engine says the opening
+  is the false one: `authority/1` appears in exactly **one rule body** in the whole
+  file (`:327`, the shield) and does nothing for its holder. Verified:
+  `? authority(Koa). => FALSE` with `? capture(Koa, Esa). => TRUE` — someone with no
+  standing examines and records anyway; and `? authority(Court). => TRUE` with
+  `? permits(Review, Court). => FALSE` — a public body has standing it can never
+  convert into a pen. `02-standing.pins.nibli` has **no pin on the opening
+  definition**; its twelve pins start at the two *routes* into standing, so the one
+  sentence in the first paragraph that nothing guards is the one that is wrong.
+  Rewrite `02:3-6` on answerability — `03-who-holds-the-pen.md:3-5` already does it
+  correctly and in the right voice. Avoid the near-miss fix: "standing is the
+  prerequisite state for holding power" is *also* not derived, because `authority` and
+  `permits` are siblings off `choose(Electorate, ·)` in parallel (`:328`, `:351`), not
+  a chain — which is why Court has one and never the other. Add
+  `? authority(Koa). # => FALSE` and `? capture(Koa, Esa). # => TRUE`.
 
-**62 pins, 0 findings, exit 0.** Use the **release** build of `nibli-pin` — debug is
-far too slow for this suite. `--kb` loads the live constitution as a fixture.
+- **Chapter 10: the third door is not gated on voiding, and the chapter says it is.**
+  `book-1/10-contribution.md:50-68` claims "All three doors close for the same reason:
+  a person whose standing has been voided earns nothing" and closes on "putting the
+  same condition on all three doors". There is no such condition. Article 3 gates
+  teaching and work on `~false` (`:268-269`); the examiner rule (`:277`) gates on
+  `~deceive` and `~broken` only. **Verified:** `false(Vex)` TRUE *and* `reward(Vex)`
+  TRUE — chapter 5's own voided auditor still earns recognition — and adding
+  `judge(Bela, Ivo). capture(Bela, Ivo).` gives `false(Bela)` TRUE, `reward(Bela)`
+  TRUE and `lose(Points, Bela)` TRUE together. Both worked reasons at `:58-60` are
+  also wrong: `reward(Lupo)` is FALSE for `~deceive` and `reward(Dev)` because Dev
+  never captured, neither for voiding. The 12-pin suite is green because
+  `10-contribution.pins.nibli:45` pins `reward(Bela) => FALSE`, which holds only
+  because Bela examines nobody in the shipped cast.
+  Two ways out, and they are different societies: **rewrite the section** to say the
+  doors are gated differently — a voided person can still earn by examining other
+  people, which is worse than the version in print and worth saying — or **add
+  `~false($auditor)` to `:277`** and keep the prose. The guard stratifies (verified,
+  loads at 0 errors). Either way the suite needs a pin on a voided examiner, because
+  its absence is what let this reach print. Also correct `10:52-53` and any tracker
+  prose repeating the claim.
 
-The two pin files are different KINDS and both headers now say so. nibli's
-`pins/*.nibli` are **mechanism** pins: they inline their fixtures because the
-fixture is not the subject. `new-book-plans/rights-floor.pins.nibli` is a **content**
-pin: it loads the constitution because the constitution *is* the subject, and
-inlining it would certify a copy that then drifts.
+- **Chapter 8 says one person has shelter. Four do — and a second floor right derives
+  on the same terms, which breaks chapter 13's headline count.**
+  `book-1/08-what-you-are-owed.md:50`: "One person in this society verifiably has
+  shelter: Hano." Verified: `? dwell(Hano). => TRUE`, `? dwell(Ruk). => TRUE`,
+  `? dwell(Lalo). => TRUE`, `? dwell(Nando). => TRUE`, `? dwell(Bela). => FALSE`.
+  `dwell` derives for every *confined* person and nobody else (`:296`, `:299`, `:311`).
+  And `expresses` does the same through `:251`: `expresses(Hano/Ruk/Don)` TRUE,
+  `expresses(Bela/Cira)` FALSE. So `08:32` ("the same answer comes back for every one
+  of the eight") is wrong on two of the eight, and `08:48-54` should read *two*
+  exceptions covering seven people each. The chapter's pin file samples **seven of
+  eight** floor rights and omits `expresses` entirely, which is why nothing caught it.
+  **This reaches chapter 13, the more damaging half.** `13-the-one-thing-taken.md:21-22`
+  says of Hano and Jala: "One item. Everything else on both lists is identical."
+  Verified false: `expresses(Hano)` TRUE / `expresses(Jala)` FALSE; `dwell(Hano)` TRUE
+  / `dwell(Jala)` FALSE; `fit(Hano, Homestay)` TRUE / `fit(Jala, Homestay)` FALSE;
+  `err(Hano, Isolation)` TRUE / `err(Jala, Isolation)` FALSE. The lists differ by four
+  items and three run the *wrong way* — conviction is the only thing in this design
+  that gets you shelter, recorded speech and a placement. That is a sharper version of
+  the chapter's own argument, currently mis-stated as a weaker one.
+  Rewrite `08:31-34`, `08:48-54` and `13:21-22`. Add `? expresses(Bela). # => FALSE`
+  and `? dwell(Ruk). # => TRUE` to chapter 8's pins, and `? expresses(Jala). # =>
+  FALSE` and `? dwell(Jala). # => FALSE` to chapter 13's.
 
-Three guards, each of which caught something real on the way in: `:expect-pins` is
-an anti-hollowing floor and caught a miscount on the first run; omitting `--kb`
-yields 34 findings rather than a silent pass; and an inert `derived_only`
-declaration — one placed below the facts it guards — is refused upstream at assert
-time rather than merely detected, pinned at `pins/derived-only.nibli:94-106` with
-both halves (a late declaration refused, a post-rules declaration accepted, since
-derivations are never stored and only asserted facts can make one late).
+- **Chapter 11 claims its four cases exhaust the combinations. They cover seven of
+  eight, and the eighth derives no placement at all.**
+  `book-1/11-where-people-are-put.md:22-23`. The missing cell is *not severe, not
+  domestic, no home*, and the constitution's own cast holds three people in it — Don
+  (`:478-482`), Kel (`:491-496`) and Adam (`:396-398`), three of the seven convicted
+  people in the file. Verified: `? prisoner(Don). => TRUE`, `? fit(Don, Homestay). =>
+  TRUE`, `? dwell(Don). => FALSE`, `? building(LowSec, Don). => FALSE`,
+  `? building(HighSec, Don). => FALSE`, `? err(Don, Placement). => FALSE`; same shape
+  for Kel and Adam. They are eligible for home confinement and have no home, so `:296`
+  never fires and neither facility rule reaches them. The chapter's own opening premise
+  — "Somebody convicted has to be somewhere" (`:3`) — is not delivered for three of
+  seven. The breach marker is blind by construction: `err/2` keys on *having* a home.
+  `err(Don, Isolation)` is TRUE, but it is TRUE for every prisoner, so it is not a
+  catch.
+  **Correct the sentence first; it needs no ruling.** Say the four cases cover seven of
+  eight, name the eighth, and say the design has never been asked where that person
+  goes. Add a Don block to `11-where-people-are-put.pins.nibli` pinning all six
+  verdicts. The design question itself is parked below under Constitution work.
 
-- **The spine is now generated, and staleness is detectable.**
-  `new-book-plans/5-spine-gen.py` owns the computed region of `3-spine.md` and reads
-  the constitution directly — including the floor, which `4-strata.py` structurally
-  cannot see. Regenerate with
-  `python3 5-spine-gen.py utopia-v2.nibli 3-spine.md`; check with `--check`, which
-  exits 1 when the document has drifted. Verified against the real failure mode:
-  adding a ninth right to a scratch copy makes `--check` fail. **Wire `--check` in
-  beside the pin suite** so a constitution change cannot land with a stale spine —
-  that is exactly how this document went wrong twice.
+- **`family/1` means "has a family", not "the offence was domestic" — chapter 11
+  glosses it wrong twice.** `11:8-10` says placement follows from "whether the offence
+  was severe, whether it was domestic, and whether they have a home", and `:21-22`
+  calls Nando's offence domestic. Every rule reads `family($x)` — one place, a property
+  of the *offender* (`:295`, `:298`, `:311`, `:312`, `:313`) — and
+  `01-what-counts-as-evidence.md:12` defines it that way itself. Nando's whole record
+  is `injure(Nando, Opal)`, `judge(Court, Nando)`, `family(Nando)`; nothing says Opal
+  is family. Verified: `? family(Nando). => TRUE`, `? family(Opal). => FALSE`,
+  `? building(LowSec, Nando). => TRUE`. There is no victim-relation slot in the
+  twenty-one entries and adding one is a new entry, not a rewording — verified
+  separately, asserting `family(Nando, Opal).` loads clean and changes nothing, because
+  the two-place fact is a different relation no rule reads.
+  Rewrite `11:8-10` and `11:21-22` to say the routing turns on whether the offender
+  *has a family*. That is a weaker and stranger claim worth stating plainly rather than
+  smoothing: an offender with no family on record is eligible for home confinement
+  however domestic the offence, and an offender who has a family goes to a facility
+  however unrelated the victim. Add `? family(Opal). # => FALSE`. **Same line span as
+  the exhaustiveness bullet — do both in one pass or the second clobbers the first.**
 
-- **Fix or replace `4-strata.py` — it is not cosmetic, it already caused a wrong
-  answer.** Its parser takes only the *first* predicate on a fact line, so it never
-  descends into `event { … }` and the floor rights are invisible to it: `secure`,
-  `eats`, `healthy`, `learn` and now `believe` do not appear in its output at all.
-  Two consequences, and the second is the serious one. (a) The "four rights appear
-  exactly once" finding is true but the script did not compute it. (b) **The script
-  reports floor lines as graph-inert, and they are not** — the engine sees an edge
-  `P -> person` that the script cannot, which is the whole firewall. Relying on the
-  script's "no change" output is what produced, and briefly committed, the wrong
-  conclusion that a floor line does nothing. Extend the parser to descend into
-  `event { }` blocks, or replace it with something that reads the engine's own
-  compiled IR. Until then, treat its output as a lower bound and confirm any
-  structural claim against the engine.
+- **Chapter 9 says the disenfranchisement clause "works". It takes nobody's ballot.**
+  `book-1/09-the-vote-conviction-does-not-take.md:73-75`: "Nothing refuses it. **It
+  works. Immediately, every convicted person in this society loses the ballot.**" The
+  accepted clause is strictly *more* restrictive than the Article 2 franchise rule at
+  `:265`, and derivation is monotone, so adding it subtracts nothing. Verified by
+  accepting the chapter's own clause verbatim: `:accept all $x: person($x) & mature($x)
+  & ~prisoner($x) -> decide($x, Ballot).` → `? decide(Hano, Ballot). => TRUE` with
+  `? prisoner(Hano). => TRUE`. The chapter's real result — the clause *compiles*, where
+  a floor-shaped one is refused — survives untouched; the sentence claiming it takes
+  effect does not. `utopia-v2.nibli:12-17` teaches exactly this: "A permissive rule
+  left in place keeps its exploit." The pin file cannot catch it because `:49-50` pins
+  only that the rule loads and never re-queries the ballot.
+  Rewrite `09:71-79`: the clause is writable, and it bites only if the existing
+  franchise rule is repealed alongside it — a two-line repeal, not one, which is a
+  marginally better result than the chapter claims and should be stated as such rather
+  than as a save. Add `? decide(Hano, Ballot). # => TRUE` immediately after the
+  `:accept`.
 
-- **Write the claim-to-query table as a generated artifact, not a hand-maintained
-  one.** One row per load-bearing sentence: sentence, query, expected verdict.
-  Regenerated on every constitution change; any row whose verdict flips is a
-  paragraph that has started lying. Private to the author — the reader never sees
-  it. This is the Catala pattern, and the `err(Lalo)` bug below is the argument for
-  it.
+- **Chapter 5 asserts two facts about Koa the constitution does not derive.**
+  `book-1/05-voiding.md:16-17`: "Koa **examined** Esa and recorded a finding — a real
+  finding, on the record, made by **someone with the credential**." Koa's entire
+  presence is `person(Koa).` and `capture(Koa, Esa).` (`:417-418`). Verified:
+  `? capture(Koa, Esa). => TRUE`, `? judge(Koa, Esa). => FALSE`,
+  `? choose(Electorate, Koa). => FALSE`, `? permits(Review, Koa). => FALSE`. Two of the
+  sentence's three clauses are underivable, which the inclusion gate forbids outright.
+  Chapter 1 gets the same person right (`01:82`, "Koa **documented** something").
+  The consequence is worse than the wording: `? false(Esa). => FALSE` is
+  over-determined three ways, so the section's headline claim — "It takes two" (`05:11`)
+  — is demonstrated by **no pin in the suite**. Two ways out, not equivalent. Either
+  fix `05:16-18` to match chapter 1 — Koa documented, holds no pen, and *that* is the
+  first reason nothing moved — which is cheap but changes what the section
+  demonstrates. Or add `choose(Electorate, Koa).` and `judge(Koa, Esa).` to the cast so
+  Koa is a properly seated single auditor and "it takes two" is carried by the count
+  alone, which is what the chapter says it is doing. Either way pin
+  `? judge(Koa, Esa).` and `? permits(Review, Koa).`.
+
+- **Chapter 6 tells the reader a voided person still eats; the engine says otherwise.**
+  `book-1/06-clawback.md:29-33` says a voided person "still eats. Still has somewhere
+  to live. Still learns, still speaks, still keeps company" — and the engine returns
+  FALSE for every one of those about Bela, *the same person chapter 8 uses to say the
+  opposite* (`08:31-34`). Verified FALSE: `eats(Bela)`, `dwell(Bela)`, `learn(Bela)`,
+  `expresses(Bela)`, `meets(Bela)`; only `decide(Bela, Ballot)` is TRUE. Rewrite
+  `06:29-33` to the *entitlement* reading and add the pins that would have caught it —
+  `06-clawback.pins.nibli` pins the clawback verdicts and nothing about the floor it
+  claims survives.
+
+- **[AUTHOR-GATED] Rule on whether `person` is the twenty-second entry.**
+  `book-1/01-what-counts-as-evidence.md:5-8` ("It has twenty-one entries … they cannot.
+  Not *may not*. Cannot. There is nowhere to put it") and `:18` describe a set that
+  omits the one atom all eight floor rights hang off. `person/1` has **30** ground
+  facts, is absent from the nine `derived_only` declarations, and is directly writable
+  — verified: asserting `person(Ghost).` gives `? person(Ghost). => TRUE` and
+  `? travel(Ghost). => TRUE`.
+  **Why it is not in the twenty-one, precisely.** `5-spine-gen.py:116` computes evidence
+  as predicates with **no producing rule**; `person` has one (`prisoner -> person`,
+  `:248`), so the generator excludes it despite thirty assertions. The same definition
+  excludes twelve other writable heads. Against `derived_only`'s nine names and the
+  generated block, the directly-assertable surface is **34**, not 21. That is also the
+  honest answer to the reviewer request that chapter 1 justify the number: twenty-one
+  counts predicates-with-no-rule, which is not the same set as things-the-world-may-write,
+  and it is not a minimality proof.
+  Any answer that names a number has to name the right one. **Cost of "twenty-two":**
+  nine occurrences across `01:5, :6, :32, :100, :106, :138`, `03:85, :100`, `05:93` —
+  and it hands chapter 1 a natural on-ramp to the personhood-roster bullet below.
+  **Cost of "deliberately outside the list":** one paragraph in `01:20-33` saying why
+  roster membership is not something the world *says about* you, which is a real
+  argument but has to be made rather than assumed. Either way `01:102-140` currently
+  discloses only the *amendment* vector and should also disclose the *write* vector.
+  Do not leave it silently uncounted; add a pin either way.
+
+- **[AUTHOR-GATED] Rule on which of chapter 5's two gaps is the larger — the chapter
+  says both, nine lines apart.** `05:81` opens the costs section with "Two gaps, both
+  disclosed, and **the second is worse than the first**", and `:91` says of the
+  **first** — only parents are excluded from the independence check — that it is "**the
+  single largest gap in the accountability machinery**". Mutually exclusive, in the
+  chapter that closes Part II. A text check, not an engine one, which is precisely why
+  no pin catches it. Cheap once decided: either demote `:91`, or reverse `:81` and
+  re-order the two sections. Note the ranking is not stable under this tracker's own
+  queue — if kinship widens (below), the kinship gap closes and `:81` becomes true by
+  attrition rather than judgement.
+
+---
 
 ## Constitution (KB) work
 
-- **NEW, found while drafting ch 13: there is no release.** The design has no
-  concept of a sentence ending — no duration, term, expiry or completion in any
-  rule. Once convicted a person is a prisoner permanently, for every offence,
-  without distinction between the grave and the trivial. Relief on appeal is the
-  only exit and it is a different thing: a finding that the conviction should never
-  have held, which does nothing for someone rightly convicted. This is arguably the
-  largest substantive gap in the constitution and it is **undisclosed** — the file's
-  own commentary does not mention it. Decide whether punishment is bounded in time
-  and by what.
+- **Add `~false($auditor)` to Article 4's reward rule.** `:277` is the only one of the
+  three minting rules with no `~false` guard; `:268` and `:269` both carry one. The
+  fix is one conjunct, the negative edge stratifies (verified), and it makes chapter
+  10's headline sentence true. See the chapter-10 prose bullet for the fork — enact or
+  rewrite, not both.
 
-- **Fix `err/2` — WORSE than recorded: it has never once fired correctly.**
-  Drafting chapter 11 established the full picture. The marker fires on Ruk *and*
-  Lalo, both correctly placed in high security, and on nobody who is misplaced. It
-  tracks "has a home and is not homestay-eligible", which is the ordinary condition
-  of every severe offender with an address — so its false-positive rate on the
-  current cast is 100% and its true-positive count is zero. An alarm with that
-  record is worse than none: it trains a reader to ignore the marker, so the genuine
-  misplacement arrives among the noise. Fix: look at where someone *was placed*,
-  not whether they have a home. **Chapter 11 is written against the defect and its
-  pins encode it** — repairing the rule flips `err(Ruk)` and `err(Lalo)` FALSE and
-  requires rewriting that section, which is the intended outcome.
-  Original note follows: `err(Lalo, Placement)`
-  is **TRUE** — but Lalo is severe+family and Article 6 routes him correctly to
-  `building(HighSec, Lalo)` (also TRUE). The rule
-  `home($x) & ~fit($x, Homestay) -> err($x, Placement)` reads *"has a home"* as
-  *"was placed at home"*. Any severe offender who happens to have a home trips a
-  false breach. It behaves correctly for Ruk (TRUE, intended) and Hano (FALSE,
-  intended) and false-positives on Lalo. The pin script queries
-  `err(Lalo, Placement)` — with no expected value, so nothing caught it. Fix:
-  separate the *fact* of having a home from the *decision* to place someone there.
+- **`lose/2` is a leaf: clawback records a loss and retracts nothing.**
+  `grep 'lose(' utopia-v2.nibli` returns exactly `:275` and `:276`, **both rule heads**.
+  No rule reads `lose`, so nothing downstream changes when it fires — `reward(Bela)`
+  and `lose(Points, Bela)` are simultaneously TRUE. So `06-clawback.md:3` ("what they
+  earned goes with it") and `:5-8` describe an effect the constitution does not have.
+  The apparent clawback in the shipped cast is entirely the `~false` guards on
+  `:268`/`:269` **never minting**, not `lose` **taking**. This is a fourth member of
+  the "determination, then stop" family alongside `err`, `travel` and `become`.
+  Derivation is monotone, so nothing can literally retract: the only expressible form
+  of "taking away" is a guard on the minting rules, which is the fix above. If a
+  downstream consumer is wanted instead, `all $x: lose(Points, $x) -> err($x,
+  Recognition).` loads at 0 errors. Rewrite `06:3`, `:5-8` and `:103` to say
+  recognition is **never minted** rather than **withdrawn** — the chapter's ceiling
+  paragraph at `:98-101` already reaches for the right register, so the cost is three
+  sentences, not the section.
 
-- **Write the fact-write trust base as a file-level section — it is the
-  constitution's actual security model.** An adversarial re-audit confirmed **15
-  further exploits** on the engine beyond the three disclosed, sharing one root
-  cause: *nibli cannot make a predicate derived-only, so every gate v0.2 calls
-  "derived" is still assertable.* Confirmed attacks: `authority(Pax).` reopens E1a
-  verbatim (`defend(Don)` TRUE, `prisoner(Don)` FALSE); `fit(Ruk, Homestay).`
-  silences E3's breach marker; two asserted `permits(Review, ·)` facts defeat
-  Article 8's headline claim outright and void an innocent (`false(Ara)` TRUE,
-  `lose(Points, Ara)` TRUE) using sock puppets the Electorate never seated. Others
-  worth naming: `rotten/1` is a single-writer universal void; `broken(Court).` is a
-  one-fact universal amnesty; one asserted `deceive` jails the file's own honest
-  whistleblower Rebel; Article 9's `adjust` is self-declared by the proposer, so a
-  target-less amendment enacts unconditionally. The file discloses this hole for
-  `permanent()` only (lines 150–154). Promote it: list **every** predicate whose
-  direct assertion breaks a stated guarantee — `permits(Review,·)`,
-  `permits(Appeals,·)`, `authority`, `fit`, `defend`, `rotten`, `deceive`, `severe`,
-  `family`, `broken`, `parent`, `teaches`, `work`, `adjust`, `permanent`.
+- **Guard Article 9's head — one asserted fact voids a *person*.** `:381` is
+  `all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).` with **no restriction
+  on `$m`**, and `adjust/2` is freely assertable. The single fact
+  `adjust(Jala, Art_Floor).` gives, verified: `false(Jala)` TRUE, `lose(Points, Jala)`
+  TRUE, `travel(Jala)` TRUE, `decide(Jala, Ballot)` TRUE. No imprisonment — but Jala's
+  standing is destroyed and the clawback fires **without** two independent credentialed
+  auditors, without `~parent`, without `~deceive`, without a clean epoch. Article 4's
+  whole apparatus is defeated by one write, because Article 9 reuses `false/1` as its
+  amendment-invalidity proxy (`:376-378`) and never restricts the reused head to
+  amendments. **The fix is free and verified**: appending `& suggest(Assembly, $m)` to
+  `:381` restricts the head to docketed proposals, uses no new vocabulary, and
+  regresses nothing — `false(Jala)` FALSE, `false(Amend_Floor)` TRUE,
+  `become(Amend_Floor, Law)` FALSE, `rights-floor` 68/68 and chapter 12 14/14 still
+  green. Splitting amendment invalidity onto its own predicate is the cleaner
+  alternative and costs a corpus name. **Do this before the shield fix below**, which
+  couples the shield to `false/1`.
 
-- **Guard the personhood roster — it defeats all eight rights at once.** `person`
-  has 29 asserted facts and exactly one producing rule (`prisoner -> person`), so
-  the sole non-assertion route into rights-bearing status is *being imprisoned*.
-  Deleting `person(Bela)` costs Bela the entire floor plus `travel` and the
-  ballot, derives no `err`, and never touches Article 9 — which entrenches **rules,
-  not facts**. This is now the largest hole in the design: the floor's protection
-  is a compile-time firewall over `person`, so the firewall is only as good as the
-  roster, and the roster is a pile of assertions. Every right is unconditional
-  *above* the atom `person(X)`, and `person(X)` is one deletion away. Fix: `all $x: human($x) -> person($x).` plus a roster
-  breach marker so de-personing derives an `err` rather than silently succeeding.
-  Add `person` to the fact-write trust base list above.
+- **`clear/1` is a one-fact conviction nullifier.** `clear` appears twice: `:362`
+  (`all $x: clear($x) -> permits(Appeals, $x).`) and `:438` (Nia's ground fact). No
+  precondition, no author, no guard, no `derived_only`. Asserting `clear(Adam).`,
+  verified: `permits(Appeals, Adam)` TRUE, `prisoner(Adam)` **FALSE**,
+  `expresses(Adam)` FALSE, `travel(Adam)` TRUE. `prisoner(Adam). # => TRUE` is a pinned
+  verdict at `rights-floor.pins.nibli:186`, and one write flips it. Note the asymmetry:
+  the Sock/Puppet void takes six writes, springing a convict takes one. Fix: derive
+  relief from an adjudication rather than a bare flag — `clear($x) & judge(Appeals, $x)
+  -> permits(Appeals, $x)` is verified to stratify and needs no new vocabulary. Until
+  it lands, `03:83-88` should say plainly that nothing constrains who records it.
 
-- **Rename the Article 6 `dwell` head — one atom is doing two jobs.** Every rule
-  head producing `dwell` requires `prisoner` (lines 78, 81, 88; there is no other),
-  so `dwell(Lalo)` does not mean "Lalo is owed shelter" — it means "Lalo is housed
-  at HighSec". The same atom carries both *entitled to a home* and *in a cell*.
-  Free to fix, and a hostile reviewer finds it in an afternoon. Rename the
-  placement head to `placed`, or fold it into `building`. Pairs with the `err/2`
-  fix above — both are Article 6 conflating a fact with a decision.
+- **Rename the Article 6 `dwell` head — one atom is doing two jobs, and it blocks the
+  `err/2` repair.** Every rule producing `dwell` requires `prisoner` (`:296`, `:299`,
+  `:311`), and the Article 1 floor line at `:236` produces nothing — verified,
+  `entitled(Bela, event { dwell() })` is TRUE while `dwell(Bela)` is FALSE. So
+  `dwell(Lalo)` does not mean "Lalo is owed shelter"; it means "Lalo is housed at
+  HighSec", and one atom carries both *entitled to a home* and *in a cell*. Free to
+  fix, and a hostile reviewer finds it in an afternoon. Rename the placement head to
+  `placed`, or fold it into `building`, and add the asserted counterpart the `err/2`
+  fix needs. Six pinned verdicts move with it —
+  `08-what-you-are-owed.pins.nibli:33,38`, `11-where-people-are-put.pins.nibli:19`,
+  `13-the-one-thing-taken.pins.nibli:39`, `rights-floor.pins.nibli:47,82` — and so does
+  `08:50`.
+
+- **Fix `err/2` — the placement alarm has never once fired correctly.** `:304` reads
+  `home($x) & ~fit($x, Homestay) -> err($x, Placement)`, which tests *having a home*,
+  not *having been placed at home*. Verified: it fires on Ruk and Lalo, both routed
+  correctly to `building(HighSec, ·)`, and on nobody misplaced — two false positives,
+  zero true positives, on the entire cast. An alarm with that record is worse than
+  none. The fix is **not** "key it on `dwell`" — `:296` already requires `fit`, so a
+  marker over the derived placement atom could never fire. The marker can only fire on
+  an ASSERTED placement, so give the world a way to report one: a new asserted relation
+  for "X was put at Y" (name from the committed alias corpus), checked against derived
+  `fit`. That is Article 0's own evidence/conclusion split applied to placement, and it
+  is the same repair as the `dwell` rename — **do that one first**. Repairing it flips
+  `err(Ruk, Placement)` and `err(Lalo, Placement)` FALSE, so three files move in the
+  same commit: `rights-floor.pins.nibli:78,80`,
+  `11-where-people-are-put.pins.nibli:52-58`, and "The alarm that does not work" at
+  `11:50-81`, written against the defect on purpose. That rewrite is the intended
+  outcome.
 
 - **Mark confinement without conviction.** Nothing makes `building` derived-only:
   assert `building(HighSec, Rebel)` and no rule objects — no `injure`, no
-  `judge(Court, ·)`, so `prisoner(Rebel)` is FALSE and `travel(Rebel)` stays TRUE.
-  The constitution certifies as free a person it is holding. Cheapest high-value
-  fix in the set, and it defends the crown jewel directly:
-  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Confinement).`
-  Use a third `err` flavour rather than reusing `Placement`, matching the
-  `err(_, Isolation)` marker already enacted — the audit surface stays one
-  predicate while each breach stays separately queryable.
+  `judge(Court, ·)`, so `prisoner(Rebel)` is FALSE and `travel(Rebel)` stays TRUE. The
+  constitution certifies as free a person it is holding. The prescribed rule was run
+  verbatim and both fires and stays quiet in the right places:
+  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Confinement).` Use a
+  third `err` flavour rather than reusing `Placement`, matching `err(_, Isolation)` —
+  the audit surface stays one predicate while each breach stays separately queryable.
+  Highest value-per-line in this section.
 
-- **Entrench the evidence vocabulary.** The file states its own threat model in one
-  sentence — *"enlarging the evidence vocabulary is the quietest way to capture a
-  system"* — and then `permanent()` entrenches `Art_Floor`, `Art_Person` and
-  `Art_Entrench`. The named attack is the one thing not entrenched. Add
-  `permanent(Art_Evidence).`
+- **Write the fact-write trust base as a file-level section — Article 0 closed half of
+  it.** `:51-59` now declares nine relations `derived_only` and direct assertion of
+  each is refused. What Article 0 did **not** do is remove the write surface; it moved
+  it one step back, and every headline attack is alive under a new spelling.
+  *Assertion side*, all verified: `public(Pax).` re-derives `authority(Pax)` and reopens
+  E1a verbatim (`defend(Don)` TRUE, `prisoner(Don)` FALSE); `clear(Adam).` empties a
+  conviction; six ordinary writes reproduce the entire Sock/Puppet void **after** the
+  Article 0 closure (`permits(Review, Sokk)` TRUE, `false(Vict)` TRUE,
+  `lose(Points, Vict)` TRUE — and `person(Vict)` FALSE, so the victim is voided and
+  docked without ever being given a personhood fact); `broken(Court).` is a universal
+  amnesty; `rotten(X).` is a single-writer universal void; one `deceive(Rebel, Boss).`
+  jails the file's own honest whistleblower; `severe(X).` moves anyone into high
+  security.
+  *Deletion side*, recorded nowhere, and it is the worse half. Both routes into
+  standing are bare asserted facts, and the chapter suites turn out to be a deletion
+  detector for free:
+  ```
+  # public(Court). deleted        04-the-shield.pins.nibli: 15 pins, 3 findings
+  ✗ "authority(Court)." TRUE→FALSE  ✗ "defend(Sly)." TRUE→FALSE  ✗ "prisoner(Sly)." FALSE→TRUE
+  # choose(Electorate, Boss). deleted   02-standing.pins.nibli: 12 pins, 4 findings
+  ✗ "authority(Boss)." TRUE→FALSE   ✗ "defend(Rebel)." TRUE→FALSE  ✗ "prisoner(Rebel)." FALSE→TRUE
+  ```
+  Rebel — the file's own honest whistleblower, and the whole of chapter 2's argument —
+  is jailed by deleting one line. Fix: regenerate the enumeration from
+  `grep derived_only new-book-plans/utopia-v2.nibli` rather than editing a list in
+  place, and record **three** undefended classes, not one: assertion, deletion
+  (`person` first, then `permanent`, `severe`, `public`), and vocabulary (below). The
+  file discloses only the deletion class for `permanent()`, at `:386-390`.
 
-- **Put a precondition on `capture`.** Every lens that examined the evidence layer
-  converged here independently. `capture($a, $audited)` has no precondition
-  anywhere: any two Review-credentialed people who `judge` and `capture` a target
-  can void them, with nothing limiting who may be captured or on what grounds. Add
-  a standing/grounds guard, plus an epoch expiry on `capture` and `judge`.
+- **The evidence vocabulary cannot be entrenched — disclose it instead of patching it.**
+  The threat is real and the book prints it at `01:133`, but the old prescribed fix was
+  measured and does not close it. `permanent(Art_Evidence).` was applied verbatim and
+  run: it kills an amendment that DECLARES that target and kills nothing else.
+  `adjust` is self-declared by the proposer (`:381`), so an amendment naming no target
+  enacts (`become(Amend_Sneak, Law)` TRUE) and one naming a harmless target enacts too
+  (`become(Amend_Lie, Law)` TRUE) — and widening the vocabulary needs no amendment at
+  all: `dangerous(Esa).` asserts straight into the store and no rule sees it happen.
+  Entrenchment guards targets a proposer admits to; the vocabulary is not a target, it
+  is the store. Fix: drop the `permanent(Art_Evidence)` idea, record the vocabulary as
+  the third undefended class above, and take the real closure as a nibli handoff.
 
-- **Restore v0.1's stratification note to Article 7 — its deletion is a live
-  landmine.** v0.1 carried: *"(No `person(_)` condition: person depends on prisoner
-  via Art 1, and prisoner uses `~defend` — that would form an unstratifiable
-  negative cycle.)"* v0.2 dropped it. Adding `person($w)` to the shield rule is the
-  most natural tightening anyone would reach for, and it is **rejected atomically**
-  — the replacement silently vanishes and the *original permissive rule stays in
-  force*. That is precisely the "a permissive rule left in place keeps its exploit"
-  failure the v0.2 header warns about, now reachable through the stratifier rather
-  than through oversight. Related but distinct from the Article 1 firewall
-  commentary already enacted: that documents the stratifier *protecting* the floor,
-  this documents it *silently rejecting* a well-meant tightening.
+- **Guard the personhood roster — one deletion defeats all eight rights, and the
+  obvious repair only renames the target.** `person` has **30** asserted facts and
+  exactly one producing rule, `prisoner -> person` (`:248`), so the only non-assertion
+  route into rights-bearing status is being imprisoned. Verified by deleting `:399`
+  `person(Bela).` and changing nothing else: `entitled(Bela, event { eats() })`,
+  `{ dwell() }` and `{ believe() }` all flip TRUE→FALSE, `travel(Bela)` and
+  `decide(Bela, Ballot)` flip TRUE→FALSE, no `err` fires anywhere, and
+  `become(Amend_Mint, Law)` stays TRUE — Article 9 entrenches rules, not facts, so it
+  never notices. The sharp part: `false(Bela)` and `lose(Points, Bela)` stay TRUE.
+  **De-personing strips every right and leaves every sanction running.** Do **not**
+  reach for `all $x: human($x) -> person($x).`: it renames the roster rather than
+  closing it (delete `human(Bela)` and the run repeats), and the breach marker meant to
+  accompany it can never fire, because with that rule in force `person` always derives.
+  No in-snapshot rule can tell a deleted roster entry from one never written. This is
+  the deletion class above, and `person` is its first entry: disclose it as a
+  cross-epoch proof obligation over the fact store, and stop looking for a rule.
 
-- **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's
-  shield is deliberately fail-**open** toward protection and defended at length as
-  "a political choice surfaced in logic" — `defend(Sly)` TRUE / `prisoner(Sly)`
-  FALSE works exactly as designed. Article 6's `~permits(Appeals, $offender)` is
-  fail-**closed** against protection: appeal is relief that must be granted, not
-  standing anyone holds. Same book, opposite defaults, no stated reason. This is an
-  internal inconsistency rather than an imported criticism. Separate
-  standing-to-seek-review from a pending review that stays the sentence, or require
-  an affirmative exhaustion fact for conviction. Also bound the fail-open window,
-  or state the bound honestly in the chapter.
+- **Close `entitled` — it is the floor's own relation and the one gate Article 0
+  forgot.** Verified: `entitled(Sokk, event { eats() }).` asserts cleanly onto the live
+  constitution and answers TRUE while `? person(Sokk). => FALSE`. Nothing reads
+  `entitled`, so this forges no downstream verdict — it forges the *record of what is
+  owed*, which is the one thing the floor is. The obvious fear is unfounded and was
+  checked: closing the relation does **not** refuse the floor lines at `:234-247`,
+  because floor lines compile to rules and `derived_only` refuses only ground
+  assertions. With `derived_only("entitled").` added: the floor still derives, the
+  firewall still refuses the heresy law, the non-floor control still loads, and the
+  forgery is refused. Article 0 goes from nine closed relations to ten.
+
+- **[AUTHOR-GATED] Decide whether the shield closes against the person or the
+  exposure.** `:327` scopes `~deceive($w, $o)` to the **pair**, and the rule is
+  satisfied by *any* qualifying pair, so a deceit finding on one exposure is defeated
+  by making a second. Verified with REX, a Kel clone who also exposed the Review body:
+  `deceive(Rex, Court)` TRUE, `false(Rex)` TRUE, `defend(Rex)` TRUE, `prisoner(Rex)`
+  FALSE. That falsifies `04:95-97` — "it resolves hard" — which is true of **one**
+  exposure; Kel closes only because Kel made exactly one. The three per-subject `show`
+  pins cannot catch a per-pair defect.
+  **Bounded, which is what makes this a decision and not an emergency.** One further
+  deceit finding per exposure restores conviction (verified: `defend(Ryo)` FALSE,
+  `prisoner(Ryo)` TRUE), and the target set is finite in-snapshot at eight — three
+  `public` bodies plus five seats. Linear denial-of-service on the Review queue, not an
+  unbounded bypass.
+  **The person-scoped fix compiles and costs nothing in the suite**: appending
+  `& ~false($w)` to `:327` gives `defend(Rex)` FALSE, `prisoner(Rex)` TRUE, with
+  `defend(Sly)` and `defend(Rebel)` intact and both suites green. The prescribed
+  `sham($w)` variant does **not** compile — `sham`, `deceitful` and `answerable` are
+  all absent from the corpus, so that route is a lexicon ask.
+  **Its cost is the decision.** `~false` closes the shield against anyone whose standing
+  is voided for *any* reason, so one bad-faith finding costs a genuine whistleblower
+  their future protection — precisely the asymmetry Article 7's polarity note exists to
+  defend. And `false/1` has five producing rules, one of which is Article 9's
+  unrestricted head — so **do not close against the person until that is guarded**.
+  Separately and regardless of the fork: `show/2` has no derived-only status, no
+  precondition, no author and no cost, and it is absent from the trust base.
+  **Warning:** adding `person($w)` to this rule is rejected *atomically* — see the
+  Article 7 landmine bullet.
+
+- **[AUTHOR-GATED] Decide where a homeless, non-severe, non-domestic convict goes.**
+  See the chapter-11 prose bullet for the evidence. **The obvious fix does not close
+  it, and that is the decision.** Adding
+  `all $x: prisoner($x) & ~severe($x) & ~family($x) & ~home($x) -> building(LowSec, $x).`
+  is accepted and gives Don a facility, but not shelter — verified:
+  `building(LowSec, Don)` TRUE, `dwell(Don)` **FALSE**, `err(Don, Placement)` still
+  FALSE. `dwell` has exactly three producing rules and every one requires a home,
+  severity or family, so a facility-placed homeless convict is housed by the placement
+  machinery and owed nothing by the floor. Decide both halves: which facility, and
+  whether `dwell` should follow from `building` at all. If it should, chapter 8's
+  shelter arithmetic moves with it. Batch with the `err/2` repair — same section of the
+  same chapter.
+
+- **[AUTHOR-GATED] Decide whether `err` feeds an obligation — chapter 14 presents the
+  audit's powerlessness as structural, and it is a choice.** `14:92-100` argues the
+  marker cannot be read *because* of where it sits, closing on "The audit is powerless
+  because it is uncorruptible, and uncorruptible because it is powerless." That is an
+  argument from stratification, and the stratifier does not make it. Verified:
+  `:accept all $x: err($x, Placement) -> obliged(Review, $x).` is accepted **and
+  derives** — `? obliged(Review, Ruk). => TRUE`. What the stratifier would refuse is a
+  rule taking `~err` back into the cone `err` depends on — far narrower than "nothing
+  can follow from it".
+  **Two costs, both measured.** (1) It breaks a stated invariant: appending the rule
+  and running `5-spine-gen.py --check` gives `3-spine.md is STALE` (exit 1);
+  regenerating shows 45→46 predicates, 22→23 derived, 38→39 rules, and stratum 3 going
+  from `{err, travel}` to `{err, obligated, travel}`. A new derived relation at the top
+  stratum is book content under the inclusion gate. (2) The spelling is a trap:
+  `obligated` and `obliged` are argument-inverted twins of the same gismu, and **both
+  spellings accept the rule and answer TRUE on the surface form** — so whichever you
+  write *looks* right, and one of them says the prisoner owes the duty to the Review.
+  Answering yes promotes the `obligated`/`obliged` de-swap from optional upstream
+  cleanup to a blocker.
+  Three ways out: enact the obligation and rewrite `14:92-100`; keep the design and
+  rewrite those lines to say the powerlessness is **chosen**, showing the accepted rule
+  as proof it could be otherwise; or leave the prose and be wrong. Either of the first
+  two wants the `:accept` added as a pin, and it would be a third exhibit for the
+  method part's "here is what the logic refused, and here is what it permitted".
+
+- **Article 3 mints for the *teacher*, so Cira has no recognition to lose.** `:268`
+  heads on `$teacher` and nothing anywhere mints for a student. Cira's only base facts
+  are `person(Cira)` and being the *object* of two `teaches` facts. Verified:
+  `reward(Cira)` FALSE, `reward(Fin)` FALSE, `lose(Points, Cira)` TRUE, `person(Fin)`
+  FALSE. So `06:49-53`, `:68` ("Esa was never voided, so Fin keeps everything" — Fin
+  has nothing, and is not even on the personhood roster) and `:103` all describe a
+  transfer the constitution never derives. What actually happens is stranger and, for
+  the chapter's own argument about collective punishment, **stronger: Cira is docked
+  for recognition Cira never had.** It also empties the prescribed remedy below —
+  "rewards actually derived from the fraudulent teaching" is the empty set for every
+  student in the design, so that narrowing collapses into deleting the rule. The fork:
+  either give students a minting path (a new article, and with it the claim that being
+  taught is itself a contribution) or rewrite `06:49-53`, `:68` and `:103`.
+
+- **Decide the Article 4 clawback question.** The two rules are `:275`
+  (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
+  from a person's record) and `:276` (`teaches($t,$s) & false($t) -> lose(Points, $s)`
+  — docks a **student** for a teacher's fraud: negative scoring, of a person, who did
+  nothing). Verified: `lose(Points, Bela)` TRUE, `lose(Points, Cira)` TRUE. Legacy
+  `book.md` bright line 2 — *"No negative scoring of persons"* — is contradicted by
+  both, and note it is a **legacy** line recorded in `CLAUDE.md` under historical
+  decisions, not one book-1 has adopted. Decide which side gives: either the bright
+  line narrows to "no subtraction except by due process for one's own adjudicated
+  fraud" and `:276` is deleted, or the clawback rules go and sanctions reach perks
+  only. Do not leave both in print. Narrowing flips `lose(Points, Cira)` FALSE and
+  rewrites `06:40-82`; that is the intended trade and `06-clawback.pins.nibli:5-9`
+  already records it. Read the Article 3 bullet above first — it changes what
+  "narrowing" can mean.
+
+- **The delivery gap can be closed by fiat and nothing objects — record the *rule*-write
+  trust base.** All eight floor predicates are rule-writable heads. Verified:
+  `all $x: person($x) -> P($x).` loads at **0 errors** for every one of the eight, and
+  every floor query flips TRUE. The sharp part: the same fiat **silences the isolation
+  audit marker** (`err(Hano, Isolation)` FALSE), so the one instrument that would have
+  noticed goes quiet in the same edit. **Article 0 cannot close it** — verified against
+  a copy with `derived_only("eats").` inserted: the direct assertion is refused *and*
+  the fiat rule still loads, with `? eats(Adam). TRUE`. `derived_only` closes assertion,
+  not rule heads, and a KB-owned vocabulary declaration is unshipped. So there is no
+  compile-time guard available and the fix is disclosure: state in the constitution's
+  commentary, and in the provisioning bullet below, that any provisioning layer must
+  distinguish a delivery **record** — an evidence fact about something reaching a
+  person — from a derived legal fiction. Otherwise the most credibility-buying
+  admission the book has is one line and a green suite away from being erased.
+
+- **Grow the provisioning layer, or write Parts I–V to stop where they stop.** Of eight
+  floor rights, six have no rule of their own (`eats`, `healthy`, `secure`, `learn`,
+  `believe`, `meets`, all FALSE for everyone) and the two that derive — `dwell`,
+  `expresses` — derive only for prisoners. The obligation layer is complete and the
+  delivery layer does not exist. Either build one or state that Parts I–V stop at
+  entitlement. Keep it visible in the prose either way; it is the single most
+  credibility-buying admission the book has.
+
+- **Document Article 7's stratification landmine — the note is missing and the recorded
+  mechanism is wrong.** Article 7 (`:315-341`) carries no stratification note. Adding
+  `person($w)` to the shield rule at `:327` is the most natural tightening anyone would
+  reach for, and **both** ways of making that edit fail — differently, which is the part
+  worth writing down. Verified:
+  - **Edited in place**: the rule is dropped and nothing replaces it. `nibli-pin`
+    returns `HARNESS ERROR (exit 2) — pins not trustworthy`, so every chapter suite
+    touching `defend` or `prisoner` stops meaning anything until it is reverted.
+  - **Added alongside the original**: the tightened copy is dropped and the *permissive
+    rule stays in force* — `defend(Sly)` TRUE, `prisoner(Sly)` FALSE, `defend(Rebel)`
+    TRUE all still pass, with one finding logged. Exactly the "a permissive rule left in
+    place keeps its exploit" failure the v0.2 header warns about at `:12-17`, now
+    reachable through the stratifier rather than through oversight.
+  Neither is silent — the engine names the cycle precisely. Write the note against what
+  it actually does and drop the "silently vanishes" framing.
+
+- **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's shield is
+  fail-**open** toward protection and defends the choice explicitly at `:320-326`.
+  Article 6's `~permits(Appeals, $offender)` (`:292`) is fail-**closed** against
+  protection and gives no reason at all. Since v0.3 relief is an asserted `clear($x)`
+  feeding a derived `permits(Appeals, ·)`, so the *absence* of a granted relief is what
+  convicts. Same file, opposite defaults on the absence of a finding, one justified and
+  one silent. Fix: either give Article 6 the same explicit polarity note, or separate
+  standing-to-seek-review from a granted relief that stays the sentence, or require an
+  affirmative exhaustion fact for conviction. **Do not re-open the fail-open window in
+  the chapter** — `04:54-81` defends the choice and `:120-124` names the cost outright.
+
+- **[AUTHOR-GATED] Decide whether the shield's exposure surface is bounded by time.**
+  `authority` comes from `choose(Electorate, ·)` and `public(·)`, neither of which ever
+  expires, so the set of people whose exposure buys a defendant the fail-open window
+  only grows: everyone the electorate has ever seated stays on it permanently, and a
+  defendant a century from now can reach back and open the window. The constitution has
+  no in-snapshot time, so a recency bound is expressible only as another asserted fact,
+  which lands it back in the fact-write trust base. **Fix the re-arming defect first** —
+  it may reduce the pressure to nearly nothing. Then either bound the exposed conduct
+  by epoch, or decide the growth is accepted and defend it in Part V.
 
 - **Give `rotten` — and `capture` and `judge` — an expiry or expungement path.** A
-  single void is currently perpetual and compounds, with no route back. Derivation
-  here is monotone, so nothing that ever derives stops deriving: the constitution
-  **cannot forgive**. For a design whose thesis is that sanctions are defeasible,
-  that is a contradiction in the machine, and it is worth framing in the book as
-  forgiveness being a *right* rather than merely as a bug fix.
+  single void is currently perpetual and compounds, with no route back. Derivation is
+  monotone, so nothing that ever derives stops deriving: the constitution **cannot
+  forgive**. For a design whose thesis is that sanctions are defeasible, that is a
+  contradiction in the machine, and it is worth framing in the book as forgiveness
+  being a *right* rather than merely as a bug fix.
 
-- **Fix the Article 4 clawback rules — and Chapter 6 is now written against them.**
-  Narrowing the contamination rule flips `lose(Points, Cira)` to FALSE and requires
-  rewriting the middle third of `book-1/06-clawback.md`. That is a good trade, not a
-  cost — but do it deliberately, and re-run the chapter's pins after. Note also that
-  "no negative scoring of persons" is a **legacy `book.md`** bright line, not one
-  book-1 has adopted; book-1 currently describes clawback as the design has it. This
-  is the third instance of prose lying about the machine, after the farmhouse bug
-  and "due process" appearing only in a comment, and it is the worst of the three
-  because the contradicted sentence is in the manuscript's most-praised chapter.
-  `book.md` bright line 2 reads *"No negative scoring of persons. Merit is earn-only
-  recognition."* It is also recorded in `CLAUDE.md` as a settled decision. The
-  enacted constitution contradicts it twice:
-  - `utopia-v2.nibli:117` — `teaches($t,$s) & false($t) -> lose(Points, $s)` docks
-    a **student** for a teacher's fraud. Negative scoring, of a person, who did
-    nothing. Collective punishment, and a peremptory-norm violation.
-  - `utopia-v2.nibli:116` — `false($f) -> lose(Points, $f)` docks the wrongdoer.
-    Fairer, still a subtraction from a person's record, still refutes the line.
-  Decide which side gives: either the bright line narrows to "no subtraction except
-  by due process for one's own adjudicated fraud" and 117 is deleted, or the
-  clawback rules go and sanctions reach perks only. Do not leave both in print.
-  Whichever way, narrow 117 to rewards actually *derived* from the fraudulent
-  teaching, which needs provenance on `reward`. Then re-check every other bright
-  line against the enacted rules — nobody has done that sweep, and this one was
-  found by accident.
+- **Put a precondition on `capture`.** `capture($a, $audited)` has no precondition
+  anywhere: any two Review-credentialed people can void any person for no stated
+  reason, and the book never admits it. Needs one design decision — which predicate
+  carries "grounds", since adding one enlarges the evidence vocabulary — after which
+  the guard is a body conjunct. Pair with an epoch expiry on `capture` and `judge`.
 
-- **Grow the provisioning layer, or write Part I to stop where it stops.**
-  `eats(Adam)`, `healthy(Bela)`, `secure(Bela)`, `learn(Cira)` and now
-  `believe(Bela)` are all FALSE — the gap is uniform across every floor right with
-  no rule of its own, and enacting two more rights widened it rather than closing
-  it. Not denial; no rule
-  connects an obligation to any fact about anything reaching a person. The
-  obligation layer is complete and the delivery layer does not exist. Chapters 1–2
-  are writable now; a "does it actually arrive" chapter is not. Keep this visible in
-  the prose either way — it is the single most credibility-buying admission the book
-  has.
+- **Widen kinship beyond `parent/2` — the fix is available today, and it is not free.**
+  Article 4's independence check names one relationship (`:274`), so spouses and
+  siblings co-sign. Verified: two Electorate-seated siblings void a stranger —
+  `false(Targ)` TRUE. **Not blocked on the engine**, as the old wording implied:
+  `married` (speni), `brother` (bruna) and `sister` (mensi) are already in the committed
+  corpus. Verified fix — appending `~married`/`~brother`/`~sister` in both directions to
+  `:274` loads at 0 errors, flips `false(Targ)` FALSE, and leaves `false(Bela)` and
+  `false(Lupo)` TRUE. **The cost is what needs deciding.** It takes the evidence
+  vocabulary from 21 entries to 24, and enlarging it is the quietest way to capture a
+  system — the file's own threat model. It also falsifies two shipped passages: `01:3-18`
+  counts the list at twenty-one and calls it exhaustive, and `05:89-93` explains the gap
+  as the record having "no way to say that two people are married", which the corpus
+  refutes. Land the rule and both chapters together, or ship the gap and rewrite
+  `05:92-93` to say the design has not *admitted* the vocabulary rather than that it
+  *cannot*.
 
-- **Governance mechanics downstream of the duty-bearer fork — now UNBLOCKED.** The
-  fork is taken (thin constitutional layer), so these can start. Confront the magnet problem: mobility is itself a guaranteed right, so
-  generous communities attract need, which is standard fiscal-federalism territory
-  and currently unaddressed. Replace at-will recall with defined thresholds, an
-  administering body, and staggered short terms. Explain how a consensus-only global
-  federation avoids a universal veto on exactly the planetary problems it exists to
-  solve. Add real justice material: standards of proof, proportionality, an appeals
-  path independent of the recognition apparatus, a precise replacement for the
-  misused "crimes against humanity", and who inspects restricted housing. Answer
-  Ambedkar — caste as a design problem, not a historical footnote: reserved
-  committee representation, mandatory external audit of allocation patterns, and
-  portability of entitlements so that exit from a hostile community is not
-  destitution. Check each against what the rules can actually express before writing
-  prose about it; several are constitution work, not chapters.
+- **Check each governance item against what the rules can express, before any prose.**
+  Parts I–V are gated on derivation, and the constitution has no predicate for a
+  community, a transfer, a tax, or a term of office — so none of the following is
+  derivable today and all of it is constitution work first. In dependency order:
+  - Recall is one asserted `broken(·)` fact (`:473`, consumed at `:351`) — at-will, no
+    threshold, no administering body, no term. Replacing it also rewrites `02:55-59`
+    and `03:53-60`, which describe it as is.
+  - The magnet problem: mobility is derived at `:252` and there is no community concept
+    at all, so "generous communities attract need" cannot currently be *stated*, let
+    alone answered. Standard fiscal-federalism territory; it needs vocabulary first.
+  - Justice material: standards of proof, proportionality, an appeals path independent
+    of the recognition apparatus, and who inspects placement under Article 6.
+  - Portability of entitlements, so exit from a hostile community is not destitution —
+    blocked on the same missing community concept.
+  Every one of these enlarges the evidence vocabulary. Price that in rather than adding
+  predicates one at a time.
 
-- **Widen kinship beyond `parent/2`.** The multi-sig independence check excludes
-  only parents; spouses and siblings co-sign freely. Disclosed in v0.1, still open.
+- **Sweep the five legacy bright lines against the enacted rules — only one ports.**
+  `book.md:2277-2290` states them. Checked: **BL2** ("no negative scoring of persons")
+  is refuted — `lose(Points, Cira)` derives TRUE — and the decision it forces lives at
+  the clawback bullet above. **BL3** ("merit never weights votes") survives vacuously:
+  there is no arithmetic anywhere in the enacted lines, so weighting cannot be written.
+  **BL4** (portability and exit between pods) and **BL5** (minimal data on-chain) are
+  pod-and-tech-stack material and belong to book-2. **BL1** is the one to port and it
+  must be narrowed: the floor is unconditional *above* `person($x)`, but `person` is 30
+  asserted facts with one producing rule, so personhood **is** an enrolment — say that
+  plainly, or BL1 lies in book-1 the way BL2 lies in `book.md`.
 
-## Engine-adjacent work
+---
 
-**Nothing here blocks book-1.** The derived-only feature landed, and the
-constitution work it exposed moved to the KB section. What is left is optional
-upstream cleanup plus one convenience that would make the book-side suite
-trustworthy.
+## The verification harness
 
-- **Close the `obligated`/`obliged` de-swap upstream.** Not blocking book-1 — the
-  floor no longer uses either. They are not converses: both from `bilga`, identical
-  gloss and template, swap bolted on afterwards, so two interchangeable-looking
-  spellings compile to argument-inverted facts. Repair is to drop the swap, give
-  `obligated` `obliged`'s place order, and delete the two `nibli-render` overrides.
-  It touches the GDPR corpus, and `gdpr.nibli:52` Art 6(1)(c) may be **vacuous** as
-  a consequence — query it before deciding whether that line is meant to be live.
+- **Write the one verification script — nothing runs anything today.** Every piece works
+  in isolation, and nothing runs them: `git ls-files` returns no script, justfile or CI
+  config anywhere in the repo, and the only written record of the commands is prose in
+  this file — which is precisely what went stale twice before. A check nobody runs is a
+  check that does not exist. Add `verify.sh` at the repo root: `5-spine-gen.py --check`
+  first, then the constitution suite, then the chapter suites, then the greps below;
+  first non-zero exit wins. **Budget the runtime out loud or the runner gets skipped** —
+  measured, one invocation over all fifteen files is `PASS — 248 pins` in **13m03s**,
+  because `--kb` reloads and re-stratifies the constitution once per pin file. That
+  figure is also why the audit's full run against a modified constitution was killed at
+  its 600s ceiling. A shared-engine mode is the obvious saving and is worth asking nibli
+  for before the runner is written. **Every other bullet in this section assumes this
+  one exists.**
 
-- **Give the book-side pin suite a real runner.** The upstream half is DONE:
-  `just verify-pins` is in nibli's `ci`, with `pins/rights-floor.nibli` guarding
-  the engine mechanism via a deliberately self-contained fixture, and the runner
-  self-tests before it is trusted. Nothing further is owed there.
-  The book side still needs work. `new-book-plans/rights-floor.pins.nibli` holds
-  this constitution's 51 pins and must `:load` the live file — that is the whole
-  point, and it is why it cannot simply move upstream where fixtures are inline by
-  design. The two files are complements: nibli's guards the *mechanism*, this one
-  guards this *content*. Today it runs on a scratch prototype (`kbcheck`) whose
-  defects are known and listed in nibli's review: no `:accept`/`:refuse`, so the
-  four complement controls and four firewall refusals are still a shell loop rather
-  than pins; a stratification refusal is indistinguishable from a syntax typo;
-  unpinned queries pass silently; `RESOURCE_EXCEEDED` is pinnable. Either port
-  `nibli-pin` to accept `:load`, or rebuild the book-side runner with the same
-  directive set. Until then the suite is real but the runner is not trustworthy.
+- **Wire the vocabulary guard in, and stop calling it a closure — 80 pins stay green
+  when the evidence vocabulary is widened.** Chapter 1 stakes its opening on closure
+  (`01:6-8`: "they cannot. Not *may not*. Cannot. There is nowhere to put it."). Verified
+  against a copy of the constitution with two evidence facts appended — `rich(Esa).` and
+  `dangerous(Esa).`, both committed corpus names, so mounting this needs no lexicon work
+  at all: chapter 1's suite and the constitution's suite both pass, `PASS — 80 pins`. The
+  single committed artifact that notices is the spine generator —
+  `5-spine-gen.py utopia-widened.nibli 3-spine.md --check` → `STALE` (exit 1). So the
+  guard exists and is not run. Two limits to record while wiring it: `--check` reads the
+  constitution **file**, so it catches a drafting drift and cannot see a fact asserted at
+  query time; and it detects rather than refuses. A real closure is a nibli ask. Chapter
+  cost: `01:6-8` and `01:24-29` overclaim and must be weakened to what is true, and
+  `01:102-136` discloses only the *amendment* route into the vocabulary, never the write
+  route.
 
-- **[AUTHOR-GATED — a decision, not a blocker] Exact minor-unit arithmetic.** The plans claim any
-  quantitative treatment of contribution is blocked because "engine float comparison
-  is tolerant". That is only half right — nibli has **both** tolerant (`sum`) and
-  exact (`num_equal`/`dunli`) comparison, plus a guarded `quotient` with an exact
-  divide-by-zero rule, all over f64. Before asking for anything, settle whether the
-  book needs merit arithmetic at all: the old book already decided merit points are
-  earn-only recognition with the arithmetic *deliberately absent*. If that holds,
-  this item is **moot — delete it**. If the new book wants summed or compared
-  quantities, the ask is integer/decimal minor units so exact totals are
-  representable without float error.
+- **Pin the three Article 0 closures that nothing guards: `defend`, `reward`, `become`.**
+  Article 0 closes nine relations and the file says those closures are "what makes
+  Articles 4, 6, 7 and 8 mean what they say". Repo-wide only six have a `:refuse` pin.
+  The three unpinned ones are the shield, the mint and the enactment gate — the heads of
+  Articles 7, 3 and 9. Verified that all three refusals hold today and the pins go in
+  as-is. Add to `rights-floor.pins.nibli` beside the other six and bump `:expect-pins` to
+  71. Ten minutes' work, and without them the file's own named failure mode at `:44-47`
+  — a `derived_only` line moved below the facts it guards "is inert and looks identical"
+  — takes three of the nine gates with it in silence.
+
+- **The floor's own relation is queryable, discriminating, and appears in no pin file.**
+  `grep -rn entitled book-1/*.pins.nibli new-book-plans/rights-floor.pins.nibli` returns
+  nothing. The queryable shape discriminates in three directions at once, verified:
+  `? entitled(Adam, event { eats() }). TRUE` (the floor reaches a person),
+  `? eats(Adam). FALSE` (and does not fabricate it),
+  `? entitled(Adam, event { home() }). FALSE` (home is not on the floor),
+  `? entitled(Hano, event { meets() }). TRUE` (including the convicted). This is not a
+  nicety: `08:31` turns the entire chapter on exactly this contrast — "Ask whether Bela
+  eats. Not whether Bela is entitled to eat — whether Bela eats" — and the pin file pins
+  only the second half. **Delete every floor line from the constitution and those seven
+  pins stay green**, because the actuality was always FALSE. Add
+  `? entitled(Bela, event { eats() }). # => TRUE` beside `? eats(Bela).` in chapter 8,
+  one `entitled` pin for Zed in chapter 7, and the `home` and non-person controls in
+  `rights-floor.pins.nibli` — without the controls the pin passes for the wrong reason.
+  Pairs with closing `entitled`; until that lands an `entitled` pin proves reach, not
+  derivation.
+
+- **Commit the counterfactual fixtures — no probe can test a restriction, so every "if we
+  narrow this rule" line in this tracker is argued, not executed.** Verified: re-stating
+  Article 3 with an extra conjunct Esa cannot satisfy is accepted and changes nothing,
+  because probe rules and facts load *on top* and derivation is monotone. Everything of
+  the form "repairing X flips pin Y" is therefore an unchecked prediction — including
+  the `err/2` repair, the contamination narrowing, and the same claim inside
+  `06-clawback.pins.nibli:6-9` and `11-where-people-are-put.pins.nibli:7-10`. The method
+  that *does* work is a counterfactual copy of the constitution with the line changed,
+  run against the same pin file with the verdicts expected to go **red**. The audit built
+  three by hand and they live **outside this repo**, at
+  `~/review-audit-2026-07-28/probes/`: `utopia-v2-NOPERSONLINE.nibli`,
+  `kb-skep-nopublic.nibli`, `kb-skep-nochoose.nibli`. Each is a one-line deletion.
+  **The first is the fixture behind chapter 7's headline result** — `07:28-34`, "Now take
+  the line out", the strongest verified claim in the book — which means that claim
+  currently rests on a file that is not in the book's repo. Commit them under
+  `new-book-plans/counterfactual/` with their expected-red verdicts and teach the runner
+  to run them.
+
+- **Write down what FALSE means in a pin file — it means three different things and two
+  of them are worthless.** All verified, and the distinction is why five false prose
+  claims survived 180 green pins:
+  - A **corpus name with no occurrence in the KB** answers FALSE and passes cleanly:
+    `? rich(Bela). => FALSE`. This is precisely why a widened evidence vocabulary is
+    invisible to the whole suite.
+  - A **non-corpus name** is not a FALSE at all, it is an abort: `nibli-pin: HARNESS
+    ERROR (exit 2) — pins not trustworthy`.
+  - A **well-formed query on an argument the relation never carries** is a vacuous green
+    that passes forever: `? fit(Ruk, HighSec). => FALSE`, `? lose(Standing, Bela). =>
+    FALSE`.
+  Only the first is a real verdict, and only when something in the KB could have made it
+  TRUE. Put this in the shared header block of the pin files — three sentences — because
+  the pin suggestions that arrive from reviewers are disproportionately of kinds two and
+  three, and a reader cannot tell them apart by looking.
+
+- **Chapters 4 and 5 argue about voids and pin none of the premises a void turns on.**
+  Four gaps, all cheap, all verified in one run:
+  - `? deceive(Sly, Court). # => FALSE` — the conjunct the shield chapter turns on.
+    `04-the-shield.pins.nibli:26-41` pins Sly's `show`, the authority and the outcome,
+    and never the *absence* of a deceit finding, which is the only thing separating Sly
+    from Kel sixteen lines later.
+  - `? judge(Gia, Bela).` / `? capture(Gia, Bela).` / `? judge(Hex, Bela).` /
+    `? capture(Hex, Bela).`, all TRUE. Chapter 5's Bela block pins the two credentials
+    and the result and skips the four facts that actually satisfy `:274`.
+  - The `~parent($a,$b) & ~parent($b,$a)` independence conjunct is exercised by **no pin
+    anywhere**. `05-voiding.pins.nibli:25-33` looks like it covers this and does not — it
+    exercises Article 5 (`:285`), a different rule with a different head. Verified with a
+    seated parent/child pair against one target and an unrelated seated pair against
+    another: `? false(Targ). => FALSE`, `? false(Targo). => TRUE`. The control is the
+    point.
+  - No fixture shows a voided pen-holder **in the same snapshot**. Seat Lupo and
+    `? false(Lupo). => TRUE` and `? permits(Review, Lupo). => TRUE` hold together, and
+    Lupo then co-signs a fresh void. That is the epoch-granularity limit the constitution
+    discloses in prose at `:363-368` and that no pin has ever demonstrated.
+
+- **Chapter 6's two clawback routes are each pinned at one end.** The epoch-carry route
+  `rotten -> false -> lose` is pinned nowhere: `05-voiding.pins.nibli:45-53` stops at the
+  credential, `06-clawback.pins.nibli` never touches the carry. Verified end to end:
+  `rotten(Vex)` TRUE, `permits(Review, Vex)` FALSE, `false(Vex)` TRUE, `authority(Vex)`
+  TRUE, `lose(Points, Vex)` TRUE. Vex is the one person in the cast who is voided,
+  stripped of the pen, still possessed of standing, and clawed back — four verdicts that
+  between them settle three of the book's recurring confusions — and the suite tests one.
+  Second gap: `? false(Cira). # => FALSE` is unpinned, and `06:103` rests on it. **Add
+  both before the contamination fix**, not after, or the chapter loses the only fixture
+  that would show what changed.
+
+- **The eight floor rights are sampled, never enumerated — and the omitted one is exactly
+  where the claim fails.** `08:32` says "the same answer comes back for every one of the
+  eight", and the pin file tests seven, omitting `expresses`. Chapter 7 is worse: the
+  comment at `07-a-prisoner-is-a-person.pins.nibli:29-32` says "the floor derives for Zed
+  like anyone" and pins one right of the eight. Eight pins per subject is not expensive
+  and it is the only shape that makes "every one of the eight" a checked sentence rather
+  than a summary. Put the pin block in **before** the chapter-8 rewrite, so the rewrite
+  has something to write against.
+
+- **Chapter 11 pins three of its four cases' inputs.** `11-where-people-are-put.pins.nibli:14-58`
+  pins `severe`, `family` and the outcome for Hano, Ruk and Lalo, and leaves three facts
+  the routing turns on untested: `? fit(Nando, Homestay). => FALSE`, `? family(Hano). =>
+  FALSE`, `? family(Lalo). => TRUE`. Three lines, and they matter because `family/1` is
+  the input the chapter misdescribes — a pin naming `family(Hano)` FALSE against a man
+  who has no family fact is the cheapest place for that error to become visible.
+  **Do not** add a pin "testing `fit/2` for a placement other than Homestay": `fit` has
+  one producing rule and only ever carries `Homestay`, so `? fit(Ruk, HighSec). => FALSE`
+  is a vacuous green of kind three above.
+
+- **Chapter 12's pin NOTE claims a pin that does not exist.**
+  `12-changing-the-rules.pins.nibli:7-9` says the file "pins two live defects: the
+  self-declared target (`Amend_Sneak`) and the fact that `become()` feeds nothing." The
+  first is pinned, at `:53-62`. The second is not and cannot be: "nothing reads `become`"
+  is an absence, and all four `become` pins assert what does or does not become law,
+  which is the opposite claim. Correct the NOTE to say one defect is pinned and the other
+  is a grep, and put the grep in the runner. Worth doing early because it is the
+  concrete, already-realised cost of the NOTE problem below: a header comment drifted
+  from its own file, nothing detected it, and the drift propagated into this tracker.
+
+- **Chapter 14's pin file carries six defect pins and no rewrite trigger.**
+  `06-clawback.pins.nibli:6-9` and `11-where-people-are-put.pins.nibli:7-10` both say
+  plainly which pins encode a defect and what flips when it is repaired.
+  `14-when-the-system-notices-it-broke.pins.nibli:7-9` warns only that "nothing reads
+  these markers" needs a grep — and then half the file is defect pins, at `:14-31`,
+  encoding an alarm that fires on every prisoner and no free person. If the isolation
+  marker is repaired, or a single `meets` fact is ever recorded anywhere, those six flip
+  and the chapter's middle section is wrong. The two placement pins at `:41-48` duplicate
+  chapter 11's defect and carry no trigger either. Add the same note both other files
+  already have, naming the pins by line.
+
+- **Four load-bearing claims are carried as instructions to a human, and nobody is the
+  human.** Each is an absence, so no query can hold it, and each is a comment asking a
+  reader to run a grep: `10-contribution.pins.nibli:6-9` (no arithmetic anywhere),
+  `12-changing-the-rules.pins.nibli:7-9` (`become` feeds nothing),
+  `13-the-one-thing-taken.pins.nibli:7-12` (`travel` appears once as a rule head; and
+  there is no release), `14-when-the-system-notices-it-broke.pins.nibli:7-9` (nothing
+  reads `err`). Between them they carry chapter 10's central claim, chapter 13's central
+  claim, and one defect each in 12 and 14. Nothing runs them, and chapter 12's NOTE has
+  already drifted undetected — that is what this costs, once, so far. Each is one line of
+  shell: count the occurrences outside comments, compare to the expected count, exit
+  non-zero on drift, exactly as `--check` does for the spine.
+
+- **Extract the claim-to-query table from the pin files — it cannot be generated from the
+  constitution.** The substance already exists in a better form than the old bullet
+  imagined: fifteen pin files carry 248 pins, every one a query with an enforced expected
+  verdict, all green, and a scan finds no `?` query lacking a `# =>` line. What is left is
+  the rendering, and it runs the other way round: the constitution cannot know which
+  sentence of chapter 11 a query backs, so the table must be extracted from the pins
+  rather than derived beside them. Blocked by a data gap — only 80 of the 169 `?` queries
+  under `book-1/` have a comment line directly above, so an extractor run today leaves 89
+  sentence cells empty. Fix: settle one machine-readable form for the sentence (a `# "…"`
+  line immediately above the query is already the majority convention), backfill the 89,
+  then have the verification script emit the table as a by-product.
+
+- **Freeze `4-strata.py` as an exhibit rather than fixing it — the live risk has moved.**
+  The defect is real and still present: the fact branch takes only the first predicate on
+  a line (`:52`, `:54`), so `entitled(every person, event { secure() }).` registers as a
+  fact of `entitled` and nothing else. Repairing it now buys nothing and costs something.
+  Nothing consumes it, because `5-spine-gen.py` parses the floor lines explicitly and owns
+  the generated region of `3-spine.md` — and `3-spine.md:35-37` now keeps the discrepancy
+  deliberately, as "the tooling-blindness story for the method part", so fixing the script
+  deletes a planned exhibit. Give it a header saying it is retained wrong, on purpose.
+  Then take the risk the old bullet did not name: **`5-spine-gen.py` is a second
+  hand-rolled regex parser and it is the load-bearing one.** It reports 45/22/38/4 where
+  `4-strata.py` reports 40/16/30, and *nothing checks either against the engine* — the pin
+  suite verifies the firewall behaviourally, never the strata numbers the method part will
+  print.
+
+- **Fix the upstream test citation in the constitution.** `utopia-v2.nibli:182` cites the
+  five regression tests that pin the floor firewall at `integration.rs:3228`; they are at
+  `:3475-3571`. That citation is the only pointer from the constitution to the tests whose
+  deletion would silently end the firewall argument, so it is worth being right.
+
+- **Two stale numbers and one dead artifact, both in the way of anyone running the suite
+  for the first time.** `new-book-plans/utopia-v2-run.nibli` is committed, 54 lines, opens
+  with `:load utopia.nibli` — a file that exists nowhere in the repo — and carries 42
+  `:proof-verbose` directives, which `nibli-pin` does not take. It is the first thing a
+  reader looking for the runner will open, and it cannot run. Delete it, or replace its
+  contents with the real invocation. And `01-what-counts-as-evidence.pins.nibli:4-6` plus
+  fourteen copies name a single-file invocation as the run command; point them at the
+  runner once it exists.
+
+---
+
+## Engine handoffs (nibli)
+
+Per the handoff protocol above, these go to `~/projects/dhilipsiva/nibli` as prompts,
+never worked around in prose.
+
+- **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
+  against direct assertion; nothing closes the *set of relations* a KB will accept. Any of
+  the committed corpus's ~1,351 names asserts cleanly onto the constitution and answers
+  TRUE, and the whole 248-pin suite stays green. `NIBLI_KR.md:548` §14.1 describes
+  KB-owned `pred` declarations and marks them a v2 target, "not implemented" — so this is
+  an ask, not a bug.
+
+  ```text
+  In ~/projects/dhilipsiva/nibli: a KB needs to be able to declare its own fact
+  vocabulary closed, the way `derived_only` declares a relation closed to assertion.
+  Today `derived_only("false")` refuses `false(X).`, but nothing refuses `rich(X).` in
+  a KB that has no business having a `rich` predicate — any corpus name asserts,
+  fail-open. NIBLI_KR.md §14.1 sketches KB-owned `pred` declarations; §15's roadmap
+  lists the injectable schema source at the arity/label lookup seam. Ship a fail-closed
+  form of that: a declaration block naming the predicates this KB admits, with every
+  other corpus name refused at assert time with the same message shape `derived_only`
+  uses. Ordering should be load-bearing and stated, as `derived_only`'s is.
+
+  Consumer: ~/projects/dhilipsiva/utopia-reimagined/new-book-plans/utopia-v2.nibli,
+  whose Article 0 already closes nine relations, and whose book states as its opening
+  claim that the record has exactly twenty-one entries and that a twenty-second
+  "cannot" be written. It currently can.
+  ```
+
+- **HANDOFF PROMPT — defect pins vs guarantee pins.** Roughly a fifth of the book's 248
+  pins encode admitted defects rather than guarantees, and the harness cannot tell them
+  apart. A defect pin flipping reports as a regression when it is the repair landing, and
+  the only thing preventing that confusion today is a prose comment in each file, one of
+  which has already drifted.
+
+  ```text
+  In ~/projects/dhilipsiva/nibli: nibli-pin has no way to mark that a pin encodes a
+  defect the artifact currently HAS, as opposed to a guarantee it MAKES. Both are
+  `? q.` + `# => VERDICT`, so a flip is reported identically, and the two cases mean
+  opposite things. Add a per-pin annotation — e.g. `:defect "<what flips it>"`
+  immediately preceding a pin — and have the runner (a) report the defect-pin count in
+  the summary line, and (b) when a defect pin's verdict changes, exit with a distinct
+  status and message ("a pinned defect no longer reproduces") rather than the
+  regression message. Keep it inert for files that do not use it. Secondary ask in the
+  same area: let a pin file declare a shell precondition, so the grep-only NOTEs in the
+  book's pin files become checks in the same run. The consuming artifact is
+  ~/projects/dhilipsiva/utopia-reimagined/book-1/*.pins.nibli.
+  ```
+
+- **HANDOFF PROMPT — expose the compiled stratification as data.** The book needs the
+  stratification from the engine, so the spine stops depending on a regex
+  re-implementation of the stratifier. `nibli-pin --kb` is the only book-facing entry
+  point and exposes nothing but pass/fail; `nibli-host` is unusable here. Add a way to
+  dump, for a loaded KB, every predicate with its stratum, whether it is base or derived,
+  and the negative edges — stable enough to diff. Then `5-spine-gen.py` renders that
+  instead of parsing text, and the method part's numbers come from the engine that
+  enforces them. Ask for a shared-engine mode in the same pass — `--kb` re-stratifies once
+  per pin file, which is what makes the full suite a thirteen-minute run.
+
+- **Not ready, deliberately.** Provenance on `reward` is downstream of the clawback fork —
+  do not hand it off until that is settled, because the shape of the ask depends on which
+  side gives. One measured correction to record while it waits: the audit reported an
+  arity-2 `reward` probe as non-terminating past 15 minutes; that **does not reproduce**.
+  Rewriting all three `reward` heads to arity 2 and running a single pin took **38.9s**
+  against a **2.1s** baseline — a ~19x cost, not a hang. Budget it, do not fear it.
+  Supermajority thresholds and sunsets need arithmetic and temporal vocabulary the KR does
+  not have, and both are downstream of "there is no release" — hand those off together,
+  after that is decided, or the ask will be malformed. The `obligated`/`obliged` de-swap
+  is optional today and becomes a blocker if `err` gains a consumer.
+
+---
 
 ## Data — "latest data, by script" is a build system nobody has written yet
 
-- **Build the data pipeline before writing the empirical chapters.** The stated
-  requirement is that the book depends on the latest data *as much as possible,
-  achieved through scripting* — but `final-research.md` is a hand-assembled static
-  snapshot, with the predictable result: figures two tax years stale, a superseded
-  working paper, market data from 2015. Design: one machine-readable claim registry
-  (claim id, value, units, source, retrieval date, fetch script); fetchers against
-  sources that have APIs (World Bank, WHO GHO, UNEP, IEA, OWID, FAOSTAT); a
-  rendering step that injects current values into the prose; and a **staleness
-  gate** that fails the build when a figure's source has a newer edition than the
-  one pinned. Where a number can only come from a paper, the registry pins the
-  version and the retrieval date so the drift is visible.
+- **Build the data pipeline before writing the empirical chapters.** The requirement is
+  that the book depends on the latest data as much as possible, achieved through
+  scripting — but `final-research.md` is a hand-assembled static snapshot, with the
+  predictable result: figures two tax years stale, a superseded working paper, market data
+  from 2015. Design: one machine-readable claim registry (claim id, value, units, source,
+  retrieval date, fetch script); fetchers against sources that have APIs (World Bank, WHO
+  GHO, UNEP, IEA, OWID, FAOSTAT); a rendering step that injects current values into the
+  prose; and a **staleness gate** that fails the build when a figure's source has a newer
+  edition than the one pinned. Where a number can only come from a paper, the registry
+  pins the version and the retrieval date so the drift is visible. **Resolve the EIU
+  licence question below first** — the democracy data is the registry's first customer.
 
-- **Use the democracy/happiness dataset — but for the opposite claim to the obvious
-  one.** `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144 countries, EIU 2025
-  merged with WHR 2025 life evaluations). I re-derived every headline number and they
-  reproduce exactly: raw r = 0.5975, ρ = 0.6231, R² = 0.357; partial r | log GDP =
-  0.195; r(GDP, happiness | democracy) = 0.623; and the regime table to the digit
-  (Authoritarian 45/4.94/1.11, Hybrid 29/5.07/0.95, Flawed 44/5.80/0.94, Full
-  26/6.82/0.51). The source document is careful work and its caveats are sound.
-  - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
-    floor on subjective wellbeing, not a lift toward the top", from regressing
-    |residual| on democracy score, p = 0.0004 — is the one claim it never controls
-    for income, and **it does not survive**: adding log GDP gives democracy b =
-    −0.0196, t = −0.91, **p = 0.37**, while log GDP itself is b = −0.336, t = −2.53,
-    p = 0.011. Within income tertiles the dispersion goes the *wrong* way for the
-    democracy story. The compression is income, misattributed. This is precisely the
-    claim book-1 would most want to be true — a floor effect, in a book about floors
-    — which is exactly why it must not be used. An economist kills it in one
-    regression.
-  - **Use the income result instead: it supports the book's real thesis better.**
-    What compresses the dispersion of human wellbeing across countries is material
-    provision, not the franchise. A book whose floor is eight material-and-personal
-    guarantees, and which deliberately demoted the vote *off* the floor to a rule,
-    just got empirical support for exactly that ordering. That is on-thesis, honest,
-    and stronger than the claim that failed.
-  - **Use the step sizes.** Authoritarian → Hybrid buys **+0.16** — nothing. Hybrid →
-    Flawed +0.73. Flawed → Full +1.01. Partial democratisation does approximately
-    nothing; the gain is concentrated at the top of the scale. That is a real
-    argument against gradualist "add a little democracy" reform.
+- **Use the democracy/happiness dataset — but for the opposite claim to the obvious one.**
+  `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144 countries, EIU 2025 merged with
+  WHR 2025). Every headline number reproduces exactly: raw r = 0.5975, ρ = 0.6231,
+  R² = 0.357; partial r | log GDP = 0.195; r(GDP, happiness | democracy) = 0.623; and the
+  regime table to the digit.
+  - **Do NOT use the floor claim — and write down the regression exactly as it was run.**
+    Its headline finding ("democracy behaves like a floor on subjective wellbeing, not a
+    lift toward the top", p = 0.0004) is the one claim the source never controls for
+    income, and it does not survive. Re-derived: take the residual of `whr2025_life_eval ~
+    eiu_2025 + Log GDP per capita`, regress its absolute value on both, and democracy is
+    b = −0.0196, t = −0.91, **p = 0.37** while income is b = −0.336, t = −2.53, p = 0.012.
+    The residual definition is load-bearing: taking it from the democracy-only fit instead
+    gives democracy p = 0.077, a real but much weaker refutation. State the specification
+    or the refutation cannot be checked. **Drop the "within income tertiles the dispersion
+    goes the wrong way" line** — it is not what the data show: corr(democracy, |residual|)
+    is −0.140, −0.126 and +0.008, so dispersion falls with democracy in the bottom two
+    tertiles and reverses only in the top one. The claim still dies; it dies on the income
+    control alone. This is precisely the claim book-1 would most want to be true — a floor
+    effect, in a book about floors — which is exactly why it must not be used.
+  - **Use the income result instead — as a redundancy statement, not a causal one.**
+    Partial r(income, happiness | democracy) = 0.623 against partial r(democracy, happiness
+    | income) = 0.195. That ordering is on-thesis for a book whose floor is eight
+    material-and-personal guarantees and which deliberately demoted the vote *off* the
+    floor to a rule. Two limits must travel with the sentence or an economist takes it
+    apart exactly as they take apart the floor claim: partialling out income plausibly
+    removes democracy's own downstream effect, so this is redundancy between predictors,
+    not causal irrelevance — the source says so itself; and GDP per capita is a mean, not a
+    floor, so average national income cannot be evidence that a guaranteed minimum is what
+    compresses wellbeing. Write the claim at the width the data support and not one word
+    wider.
+  - **Use the step sizes — the first one is +0.13, not +0.16.** Authoritarian → Hybrid buys
+    **+0.13** (4.945 → 5.072), Hybrid → Flawed **+0.73**, Flawed → Full **+1.01**. The
+    regime table already gives 4.94 → 5.07 and the source says "~0.13", so +0.16 was never
+    anybody's number. The argument is unchanged and is a real one against gradualist "add a
+    little democracy" reform. Say plainly that these are unconditional means — 23 of the 26
+    full democracies sit in the top income tertile, so Flawed → Full is substantially the
+    rich-country step, the same confound that kills the floor claim.
   - **Make it Part V's worked example of the method.** Take "democracy makes people
-    happier", test it, and report: survives raw, narrows sharply under income
-    control, and the floor version fails outright. The book demonstrating that
-    discipline on a claim it would have loved is worth more than the claim.
-  - **Licensing blocker for the registry: the EIU index is non-redistributable** —
-    Our World in Data cannot export it. A CC-BY book with a public claim registry
-    cannot ship those numbers. Either cite-and-link without redistributing, or switch
-    to **V-Dem**, which is openly licensed and gives the same picture (r = 0.52).
-    Resolve before the registry is built.
-  - Housekeeping: `demo-happy.txt` is a chat transcript, not a source — record it as
-    "prior analysis, independently re-derived" with the CSV's provenance pinned (WHR
-    2025 = 2022–2024 average; EIU 2025). Delete
-    `democracy_vs_happiness_144.csv:Zone.Identifier`, a Windows
-    alternate-data-stream artifact, and add the pattern to `.gitignore`.
+    happier", test it, and report: survives raw, narrows sharply under income control, and
+    the floor version fails outright. The book demonstrating that discipline on a claim it
+    would have loved is worth more than the claim.
+  - **Licensing blocker: the EIU index is non-redistributable, and the escape hatch costs
+    more than it looks.** Our World in Data cannot export the series, and `LICENSING.md`
+    commits the claim registry to CC0 — so a CC-BY book with a public registry cannot ship
+    those numbers. Cite-and-link keeps every figure intact but breaks the registry's promise
+    that a reader can re-run it. Or switch to **V-Dem**, which is openly licensed — but then
+    every number here has to be re-derived: the r = 0.52 is quoted from the transcript, no
+    V-Dem data is in the repo, and V-Dem's Regimes of the World gives four categories that
+    are not EIU's four, so the regime table and the step sizes do not carry over. Budget the
+    re-derivation if the answer is V-Dem.
+  - Housekeeping: record `demo-happy.txt` in the registry as "prior analysis, independently
+    re-derived", with the CSV's provenance pinned: WHR 2025 (2022–2024 average) merged with
+    EIU 2025, 144 countries matched from EIU's 166 and WHR's 147. Delete
+    `democracy_vs_happiness_144.csv:Zone.Identifier` and add the pattern to `.gitignore`.
 
-- **Give the reader a verification path, since they cannot see the logic.** The
-  formalism stays invisible — so what the reader verifies is data. Ship the claim
-  registry as the public artifact: every number in the book, its primary source,
-  the date it was fetched, and the script that fetches it. This is the thing that
-  earns the trust, and the honest substitute for showing the constitution.
+- **Publish the registry with the book, not just in the repo.** The formalism stays
+  invisible, so what the reader verifies is the data — which only works if the registry is
+  reachable from the page they are reading. Front matter names it and gives the URL, every
+  figure in the prose resolves to a registry id, and the registry ships CC0 with its own
+  `LICENSE-CC0`. This is the thing that earns the trust and the honest substitute for
+  showing the constitution.
 
-- **Re-cite everything against the published versions.** Muralidharan, Niehaus &
-  Sukhtankar is no longer a working paper — it is *Review of Economics and
-  Statistics* 107(2): 372–392 (2025). Expect several others to have moved similarly.
+- **Re-cite everything against the published versions.** Muralidharan, Niehaus & Sukhtankar
+  is no longer a working paper — it is *Review of Economics and Statistics* 107(2): 372–392
+  (2025). Expect several others to have moved similarly. Fold the check into the registry
+  build so it happens once.
+
+---
 
 ## Correcting the research brief — each is a discrete, committable fix
 
-- **Rewrite the social-choice paragraph — the most damaging error in the brief.**
-  The claim that score voting "escapes Gibbard–Satterthwaite's ordinal frame", with
-  the gloss *"it is always optimal for a voter to give the best candidate the
-  highest possible score"*, is unsourceable and inverts the result: **Gibbard's 1973
-  game-form theorem applies directly to score voting, and score voting is
-  manipulable**. The quoted sentence describes strategic exaggeration, not
-  strategyproofness. Also: Arrow's theorem needs the **transitive-social-ordering**
-  condition the brief drops (relaxing it is a real escape route);
-  Gibbard–Satterthwaite needs **determinism/single-valuedness** (randomised schemes
-  escape, per Gibbard 1977); Black (1948) gives the *Arrow* escape on single-peaked
-  domains but **Moulin (1980)** gives the strategyproofness escape, with the
-  McKelvey–Schofield caveat that it dies in multiple dimensions; and the "two-thirds
-  is neither manipulable nor dictatorial" quote has no source — the substance is the
-  **two-outcome** restriction, not the supermajority threshold. The defensible claim
-  in this vicinity is the sincere-favourite criterion. Getting this wrong is what
-  gets the book dismissed by exactly the readers it wants.
+- **Rewrite the social-choice paragraph — the most damaging error in the brief, and it
+  appears in two places.** `final-research.md:103` says score voting "escapes
+  Gibbard–Satterthwaite's ordinal frame", glossed *"it is always optimal for a voter to
+  give the best candidate the highest possible score"* — unsourceable, and it inverts the
+  result: **Gibbard's 1973 game-form theorem applies directly to score voting, and score
+  voting is manipulable**. That sentence describes strategic exaggeration, not
+  strategyproofness. Same line: Arrow is stated without the **transitive-social-ordering**
+  condition; Gibbard–Satterthwaite without **determinism/single-valuedness** (randomised
+  schemes escape, per Gibbard 1977); Black (1948) is credited with the strategyproofness
+  escape on single-peaked domains when it gives the *Arrow* escape — **Moulin (1980)**
+  gives the other, with the McKelvey–Schofield caveat that it dies in more than one
+  dimension; and "a rule requiring two-thirds is neither manipulable nor dictatorial" has
+  no source — the substance is the **two-outcome** restriction, not the supermajority
+  threshold. The defensible claim in this vicinity is the sincere-favourite criterion.
+  **Fix `:147` in the same commit** — recommendation 5 repeats the same three escapes in
+  compressed form. One thing survives untouched: the theorems say nothing against a rights
+  floor removed from majoritarian aggregation, and this constitution removes it.
 
-- **Fix the Housing First bullet — two outright errors.** The AJPM Community Guide
-  economic review is **Jacob et al. (2022)**, not "Chapman et al. (2021)". And
-  "decreased homelessness by 88% versus 47% for Treatment First" misdescribes what
-  the CPSTF review reports. Re-derive both from source before the sentence is used.
+- **Fix the Muralidharan quotation — it is a splice.** `final-research.md:56` presents a
+  sentence as "verbatim from the abstract" that appears in **no** version of it: it welds
+  the February 2020 abstract (which says **10%**) onto a **10.6%** figure from the body of
+  the September 2021 revision. Do not correct it to the 2021 revision either — quote from
+  the published *REStat* version and drop the NBER citation in the same edit. Numbers to
+  re-derive: "~2 million lost access" should be **1.5–2 million**; "~1.6 million (13% of
+  beneficiaries)" should be **1.7 million** (1.2 million under the paper's conservative
+  assumption), and the 13 is a percentage-*point* increase in treated blocks only. The
+  "almost 90% genuine" figure at `:58` — the brief's self-declared strongest datapoint — is
+  **88%**, is labelled *"purely descriptive"* and non-causal by its own authors, and covers
+  **1.44 lakh** deletions in 10 study districts, not the 11 lakh statewide cancellations the
+  Drèze survey reports at `:57`. Those two must never be narrated as the same number.
 
-- **Fix the Muralidharan quotation — it is a splice presented as verbatim.** The
-  sentence given as "verbatim from the abstract" appears in **no** version of the
-  abstract: it welds the February 2020 abstract (which says **10%**) onto a
-  **10.6%** figure from the body of the September 2021 revision. Related number
-  fixes: "~2 million lost access" should be **1.5–2 million**; "~1.6 million (13% of
-  beneficiaries)" should be **1.7 million** (1.2 million under the paper's
-  conservative assumption), and the 13 is a percentage-*point* increase in treated
-  blocks only. The "almost 90% genuine" figure — the brief's self-declared strongest
-  datapoint — is **88%**, is labelled *"purely descriptive"* and non-causal by its
-  own authors, and covers **1.44 lakh** deletions in 10 study districts, not the 11
-  lakh statewide cancellations.
+- **Restate Krugman honestly — he prescribes the opposite of concealment, and the repo is
+  no longer the answer.** `final-research.md:18` says "Two Cheers for Formalism" "explicitly
+  prescribes the workflow the author is following", quoting only steps (4) and (5). The
+  omitted step (3) is *"Publish the intuition, the math, and the evidence — all three."*
+  Steps (4)–(5) are an *additional* obligation, not a substitute. The paragraph's conclusion
+  — that the system being public on GitHub means "this is solved… the ideal configuration"
+  — must go with it: **the final method part is what discharges step (3)**, publishing the
+  intuition, the machinery and the evidence inside one book. Rewrite `:18` around the method
+  part and delete the "ideal configuration" line; a reader sent to a repository is exactly
+  the inspectability-without-inspection that Woodford's argument, quoted two sentences
+  earlier, says forfeits the model's authority.
 
-- **Reframe Santoshi Kumari around what is documented.** The *cancellation* is
-  documented (card struck off 22 July 2017; the block development officer confirmed
-  the Aadhaar-seeding failure; rations refused for months before). The *cause of
-  death* is **officially disputed** — a district team reported malaria, the family
-  was reportedly harassed for "defaming the village", and no court has adjudicated
-  it. Lead with the documented chain, note the dispute in the same breath. Stating
-  "died of prolonged hunger" as uncontested is one search away from being caught,
-  and this case is the emotional anchor of the strongest chapter.
+- **Fix the Housing First bullet — two outright errors.** Pull the CPSTF effectiveness-review
+  summary and the Jacob et al. (2022) economic review and re-derive the two sentences at
+  `final-research.md:85`.
 
-- **Replace the Mandela Rules "authoritative gloss" — it is a blog post.** Rule 3 is
-  quoted **word-for-word correctly** (verified against A/RES/70/175), and the
-  soft-law characterisation is right and quotable from operative paragraph 8 of the
-  adopting resolution. But the line offered as "one authoritative gloss" — *"the
-  deprivation of liberty is the only permissible restriction imposed by a lawful
-  sentence…"* — traces verbatim to a **December 2025 personal legal blog**. Replace
-  with **Principle 5 of the UN Basic Principles for the Treatment of Prisoners** (GA
-  res. 45/111, 1990), which says the same thing with standing. Also: "normalisation"
-  is genuinely UNODC's gloss but is one of five principles, not "the" governing one,
-  and the word appears nowhere in the Rules.
+- **Reframe Santoshi Kumari around what is documented.** The uncontested "died of prolonged
+  hunger" phrasing is still in the brief at `:16` and is still the prescribed lead at `:143`.
+  Write the documented-chain version instead (cancellation 22 July 2017, the sequence that
+  followed) rather than the contested cause of death.
 
-- **Fix the collateral-consequences and whistleblower numbers.** USCCR says
-  employment-related consequences are *"most (roughly 70%)"*, not "60–70%"; the
-  44,000 count is a 2019 snapshot that has drifted (the inventory now says "more
-  than 40,000"; an independent 2022 count found 48,229). The ECI figures are
-  misstated: 79% and 61% are among employees **who reported misconduct**, not all
-  employees, and the 61% (10-country median, 2021) and 46% (42-country, 2020 and
-  2023 waves) are **not comparable** — they must not be narrated as a decline.
+- **Replace the Mandela Rules "authoritative gloss" — it is blog-sourced.** Still
+  load-bearing at `:68` and reused at `:141`. Substitute Principle 5 of GA res. 45/111
+  (1990) at both sites and demote "normalisation" to one of UNODC's five principles rather
+  than the authoritative reading.
 
-- **Fix four misattributed quotations.** The Langdell *"study the things to be
-  defined, rather than ready-made definitions"* line is **Young B. Smith (1913)**,
-  not Langdell — legal historians will catch it instantly. Both anti-utopian quotes
-  are **Scruton (2010)**, not "Popper/Scruton"; the second is a secondary-source
-  paraphrase, and Popper's argument is structurally different and should be stated
-  separately. The *"never an informational or even a computational problem"* line is
-  **Nguyen's** QJAE sentence, not Boettke/Candela/Truitt's. The "elaborates too
-  little on how to accomplish" complaint belongs to **neither** the Lowy Institute
-  (whose review is favourable throughout) nor Global Policy Journal as quoted.
+- **Fix the collateral-consequences and whistleblower numbers.** All four are still wrong,
+  at `:70`, `:141` and `:97`. Re-read the USCCR report and the GBES 2021/2023 waves, and fix
+  both collateral-consequence sites together.
 
-- **Restate Krugman honestly — he prescribes the opposite of concealment.** The
-  brief says "Two Cheers for Formalism" prescribes the author's workflow. Krugman's
-  step (3), which the brief omits, is *"Publish the intuition, the math, and the
-  evidence — all three."* Steps (4)–(5) are an *additional* obligation, not a
-  substitute. The stronger and honest framing: **the public nibli repo is what
-  discharges Krugman's step (3)** — the apparatus is inspectable by anyone who wants
-  it and invisible to everyone who does not.
+- **Fix four misattributed quotations** at `:14`, `:30`, `:32` and `:115`. Any one is a
+  reviewer's free kill. Re-check each against its primary source and re-attribute in one
+  commit.
 
-- **Smaller citation fixes.** Roberts, *The Price of Everything*, PUP — first
-  edition **2008** (pbk. 2009). Bregman: **Little, Brown (US) ~288pp / Bloomsbury
-  (UK) 336pp**, English edition first from The Correspondent (April 2016), and the
-  proposal is a **15-hour** week. HBS formalised the case method in the **early
-  1920s** (Donham; "case system" adopted 1922), not mid-century — and the
-  decision-forcing-case quote traces only to Wikipedia and governs *instructors*,
-  not authors. Cottrell & Cockshott argue **labour-time** calculation is tractable,
-  which is narrower than "solve the equations fast enough".
+- **Smaller citation fixes — with the line numbers, and one item that is not an error.**
+  Roberts, *The Price of Everything*, PUP at `:16` — first edition **2008** (pbk. 2009).
+  Bregman is wrong in two places, `:12` and `:30`: it is **Little, Brown (US) ~288pp /
+  Bloomsbury (UK) 336pp**, and the English edition came first from The Correspondent (April
+  2016). `:14` dates the HBS case method to the "mid-20th century" — it was formalised in
+  the **early 1920s** (Donham; "case system" adopted 1922) — and the decision-forcing-case
+  quote on the same line traces only to Wikipedia and governs *instructors*, not authors;
+  cut it rather than re-source it. `:115` has Cottrell & Cockshott arguing the equations can
+  be solved "fast enough"; their claim is the narrower one that **labour-time** calculation
+  is tractable. **Not a correction:** the brief states no workweek length. Bregman's proposal
+  is a **15-hour** week — that number belongs in the claim registry, not in an edit to a
+  sentence that never made the mistake.
 
-- **Cut or rebuild the Indian-market paragraph — and remove one defamation risk.**
-  Lower priority now the audience is global, but if any of it survives: the figures
-  come from the **Nielsen India Book Market Report 2015**, superseded by the 2022
-  Nielsen BookData/FIP edition (**24,000+ publishers**, trade at **4%** of the print
-  market). "Trade books in Indian languages account for roughly half of all sales"
-  is **wrong** — the 2015 figure was 45% of *trade* sales only. And calling **Rupa**
-  an "ideologically-aligned right-wing press" is unsupported and defamatory-adjacent:
-  it is a 1936 general trade house and co-owner of Aleph. Delete that
-  characterisation regardless of what else survives.
+- **Cut or rebuild the Indian-market paragraph — and remove the Rupa characterisation** at
+  `:36`, which is a standing defamation risk in a committed file and can be deleted
+  unattended today. The market figures only matter if any of `:36` survives.
 
-## book-1 — framing and first chapters
+---
 
-- **Write the single book-2 pointer, at the very end.** book-1 references book-2
-  exactly **once**, in the closing note — not in the introduction, because a reader
-  on page one has no idea whether they want the machinery, and a forward reference
-  reads as an apology for the book they are holding. At the end it reads as an
-  invitation to the reader who now wants more. It does two jobs in a short
-  paragraph: point the reader who now wants to know *how you would actually build
-  this* at book-2 — organisationally and technically. **Its old second job is gone.**
-  It used to carry the one honest sentence about the apparatus, because the
-  formalism appeared nowhere else; the final part now does that far better, by
-  showing the machinery instead of alluding to it. Keep the pointer plain: no tool
-  names, no jargon, nothing a general reader must decode.
+## book-1 — remaining writing
 
-- **Reframe the brief's India-first assumptions for a global audience.** The
-  research brief recommends foregrounding Bharathi and an India-first publishing
-  route; the audience decision overrides that. India material stays as **evidence**
-  — Aadhaar/PDS is among the strongest evidence the book has — but it is one case
-  among several, not the frame, and every reference needs enough context for a
-  reader who has never heard of a ration card.
+- **Write the opening note — the last unwritten non-derived element, and nothing else
+  tracks it.** ~800 words before Part I, explicitly non-derived and labelled the way Part V
+  is labelled, so the book does not open cold on vocabulary; it claims no derivation and
+  carries no verdicts (`new-book-plans/3-spine.md:85-88`). One of exactly three sanctioned
+  exceptions to the inclusion gate. No file exists. It is also where the licence line and
+  the title/subtitle will have to live, so it unblocks the licence bullet below.
 
-- **Write the introduction's honesty paragraph early, not last.** Two things belong
-  there and both are load-bearing: that a formalisation makes commitments *precise*,
-  never *justified* — nothing in logic says the floor should contain expression and
-  not water — and that the system proves what is **owed**, not that anything
-  **arrives**. Say both plainly or the book is dishonest; saying them is also the
-  most disarming move available.
+- **The honesty paragraph goes in the opening note, and half of it is already in print.**
+  book-1 has no introduction, so the destination this item used to name is gone. One half
+  has landed: *the system proves what is owed, not that anything arrives* is stated hard in
+  `08:27-46` and leaned on again at `13:62` and `14:24-28`. The other half is in no chapter
+  — that a formalisation makes commitments **precise**, never **justified**; nothing in
+  logic says the floor should contain expression and not water. Put that half in the opening
+  note and have it point forward rather than restate chapter 8, or the book opens by
+  spending its strongest admission before the reader knows what was admitted.
 
-- **Write the chapter where the logic refuses.** Verified on the engine: appending
-  `all $x: prisoner($x) -> permits(Appeals, $x).` returns *"[Stratification Error]
-  Unstratifiable negation: strongly-connected component containing 'prisoner' ->
-  'permits' (negative)"*. A **universal right of appeal cannot be expressed** in
-  this constitution — `prisoner` derives behind `~permits(Appeals, ·)`, so the rule
-  is a negative cycle. That is not a defeat; it is the strongest chapter in Part V.
-  The book's whole register is *state the guarantee, then name the sharp edge where
-  it stops*, and here the machine refuses a thing the author wanted and can say
-  exactly why. Ship the error message.
+- **Build Part V on the five-joints scorecard, re-framed for destination-only scope.**
+  Nothing of it exists. Score this design at the five joints — **valuation, rotation,
+  coercion, capture, the state** — as places a *functioning* design breaks, never as stages
+  of a rollout, because "here is what happened to people who tried to build this" is a
+  transition story and belongs to book-2. Three constraints, all grafted deliberately. Use
+  the three-word verdict vocabulary — **Survives / Survives, narrowed / Fails as stated** —
+  printed once and never expanded, because it is the only proposed seam device that
+  disciplines at the sentence level. Every limit closes on a **specification** concrete
+  enough to be worked on, not on an admission. And publish **no numeric self-grade**: the
+  hostile judge's dismissal sentence was *"two and a half out of five"*, and printing that
+  as the structure of the part administers his verdict for him. On salvage: the only genuine
+  harvest is "Learning from Those Who Tried" (`book.md:2303-2380`, 2,264 words), and its
+  nine cases enter as **evidence about failure modes**, never as a narrative of attempts.
+  "When the Pod Meets the State" is unsalvageable — 21 uses of "pod" in 2,092 words and this
+  book has no pods. The social-credit chapter is the best writing in the manuscript and
+  unliftable, with seven named dependencies pointing at three chapters that will not exist.
+  **Length is gated on the proportion decision above.**
 
-  Pair it with the firewall from Chapter 1, because together they are the argument:
-  the same stratifier that refuses the author a universal right of appeal is what
-  refuses an attacker a heresy law. One mechanism, no special pleading, and neither
-  outcome chosen by whoever was writing that day. That symmetry is worth more than
-  either half alone.
+- **Write what the logic refused — in the method part, paired with chapter 7.** Re-verified:
+  appending `all $x: prisoner($x) -> permits(Appeals, $x).` returns *"[Stratification Error]
+  Unstratifiable negation: strongly-connected component containing 'prisoner' -> 'permits'
+  (negative)"*. A **universal right of appeal cannot be expressed** in this constitution.
+  That is not a defeat; the machine refuses a thing the author wanted and can say exactly
+  why. Ship the error message. **Not in Part V** — Part V is argument and evidence and stays
+  jargon-free; an engine error message is formalism, which appears in exactly one place.
+  **And the firewall it pairs with is chapter 7, not chapter 1** — `07:44` is where the
+  heresy law is refused; chapter 1 is the evidence vocabulary and contains no refusal at
+  all. The symmetry is the argument: the same stratifier that refuses the author a universal
+  right of appeal refuses an attacker a heresy law. One mechanism, no special pleading,
+  neither outcome chosen by whoever was writing that day.
 
-- **DECIDED: the chapter order is strictly computed. `3-spine.md` is regenerated.**
-  The floor sits at **stratum 2**, not 0 — each floor line compiles to
-  `person($x) -> P($x)`, and `prisoner -> person` puts it inside the prisoner cone.
-  That is not a defect: it *is* the firewall. The floor is protected **because** it
-  is reachable, since being in that cone is what makes `~P -> prisoner` a negative
-  cycle. At stratum 0 there would be no protection at all, and the old spine's
-  "nothing derives it, so nothing can retract it" had the mechanism backwards.
+- **[AUTHOR-GATED] Decide whether Part V prices the temporary-assessment exclusion.**
+  Chapter 1 excludes assessments of a person's present state (`01:24-29`) and says at
+  `:31-33` that the exclusions were "considered and rejected on principle". It never prices
+  what the exclusion costs. The strongest objection in the review corpus: medical capacity,
+  flight risk and conflict-of-interest are *temporary, operational* assessments a
+  functioning society cannot run without, so forbidding them does not abolish them — it
+  pushes them into a parallel record the constitution cannot see, which is the exact failure
+  mode chapter 1 exists to prevent, relocated one level out. A hostile reader reaches this
+  in a paragraph. Inclusion-gate ruling: this is how the society **functions**, so it is
+  legitimate Part V material and out of Parts I–IV by construction. **The remedy is not
+  adoptable as stated** — a capacity or risk field is a standing judgment about a person,
+  breaking bright line 2 and landing an eligibility computation upstream of the floor. The
+  survivable answers are narrower and both need a ruling: a two-place fact about an
+  *episode* rather than a one-place property of a person (which costs a twenty-second
+  entry), or an explicit concession that this design routes such assessments outside the
+  record, with the reason why that is the lesser harm stated rather than implied. Decide
+  which joint owns it — capture is the closest fit — and which of the three verdicts it gets.
 
-  Consequences, all now reflected in `3-spine.md`: the first chapter is **"What
-  Counts as Evidence"**, not the floor; the floor chapter is **8**, retitled **"What
-  You Are Owed"**, and carries the firewall demonstration; the spine is 14 derived
-  chapters, gaining "The Vote Conviction Does Not Take"; and the chapter-1 fidelity
-  table was rebuilt from scratch, since no row of the old one survived.
+- **[AUTHOR-GATED] Decide how much emotional texture Part V absorbs.** Five of six reviewers
+  independently asked for the same three things: emotional register, an external antagonist,
+  and characterisation of the named cast. Mostly foreclosed by construction — the chapter
+  order is computed, the cast comes from the constitution's own adversarial fixtures rather
+  than from invention, and Parts I–V are jargon-free — but *five of six* is a signal about
+  **how the derived spine reads**, not a taste complaint. Two channels are open without
+  breaching the gate: Part V is explicitly non-derived, and the day-in-the-life technique is
+  already queued for harvest. Decide the ceiling **now**, before Part V is drafted, because
+  retrofitting register across fourteen finished chapters is a different job. The concrete
+  question is narrow: does the named cast get any interiority at all in Part V, or does the
+  book hold the line that the people in it are exactly the facts recorded about them — which
+  is itself the thesis.
 
-  **One concession, deliberate:** a short **opening note** before Part I, explicitly
-  non-derived and labelled the way Part V is labelled, so the book does not open
-  cold on vocabulary. It claims no derivation and carries no verdicts. This is the
-  second sanctioned exception to the inclusion gate, alongside Part V.
+- **[AUTHOR-GATED] Answer Ambedkar in Part V, not in the derived spine.** Caste as a design
+  problem rather than a historical footnote: reserved committee representation, mandatory
+  external audit of allocation patterns. Part V is exempt from the derivation gate, which is
+  exactly why this belongs there and not in a computed chapter.
 
-- **DERIVED SPINE COMPLETE — 14 chapters, 14,743 words, every chapter pinned.**
-  Chapter 14, "When the System Notices It Broke"
-  (`book-1/14-when-the-system-notices-it-broke.md`, 1,057 words, 12 pins) closes it.
-  The two markers demonstrate three failure modes of self-audit: one fires on every
-  prisoner (accurate about a record that knows nothing), one fires on the wrong
-  people, and **nothing reads either** — `err` is a leaf like `travel` and `become`.
-  Names the family: the floor states what is owed and nothing tracks arrival; the
-  amendment machinery states what becomes law and nothing enacts it; the audit
-  states what is broken and nothing repairs it. **The design establishes what is
-  true and has almost nothing to say about what is then done** — a description of a
-  society's reasoning rather than its operation. Ends on what survives: most systems
-  have no vocabulary for their own violation, this one does, and every defect in the
-  book was found by asking the design what it thought was true and checking the
-  answer against its own claims.
+- **Write the single book-2 pointer, at the very end.** book-1 references book-2 exactly
+  **once**, in the closing note — not in the introduction, because a reader on page one has
+  no idea whether they want the machinery, and a forward reference reads as an apology for
+  the book they are holding. At the end it reads as an invitation. **Its old second job is
+  gone** — it used to carry the one honest sentence about the apparatus; the method part now
+  does that far better, by showing the machinery instead of alluding to it. Keep the pointer
+  plain: no tool names, no jargon, nothing a general reader must decode.
 
-- **DRAFTED: Chapter 13, "The One Thing Taken"** —
-  `book-1/13-the-one-thing-taken.md`, 988 words, 13 pins green. Opens Part IV and
-  audits the single-deprivation claim in one place. The structural finding:
-  **`travel` appears once in the whole constitution, as a rule head — nothing reads
-  it** — so taking it cascades into nothing, and the absence of collateral
-  consequences is a fact about the shape of the design rather than a promise about
-  administration.
-  **Surfaced a defect nobody had recorded: there is no release.** No duration,
-  term, expiry or completion exists in any rule; every apparent hit is commentary.
-  Conviction is permanent, for every offence, with no distinction between grave and
-  trivial, and relief is not release — it is a finding that the conviction should
-  never have held. The chapter calls this the sharpest unresolved thing in the book
-  and notes the design does not disclose it anywhere in its own account of itself.
+- **Reframe the brief's India-first assumptions for a global audience.** India material stays
+  as **evidence** — Aadhaar/PDS is among the strongest evidence the book has — but it is one
+  case among several, not the frame, and every reference needs enough context for a reader
+  who has never heard of a ration card. Unblocked by drafting Part V; that is the only place
+  the India evidence lands.
 
-- **DRAFTED: Chapter 12, "Changing the Rules"** —
-  `book-1/12-changing-the-rules.md`, 953 words, 14 pins green. Closes Part III.
-  Entrenchment works against the tally: a floor cut is approved and still dead, and
-  the register entrenches itself, which closes the two-move defeat every other
-  entrenchment scheme has. States the anti-democratic cost plainly rather than
-  arguing around it.
-  **Two defects verified and now in print:** an amendment that declares no target
-  escapes the guard entirely (`Amend_Sneak` — proposed, approved, enacted, with
-  nothing examining what it does), and **`become` feeds nothing** — it appears once
-  as a rule head and no rule anywhere reads it, so the design can say an amendment
-  became law and cannot say what became different. Closing either rewrites that
-  section; the pins encode both.
+- **[AUTHOR-GATED] Voice.** All fourteen chapters are written in a plain, mostly impersonal
+  register. The legacy book was first-person and warm, and the constitution's own commentary
+  says "the manifesto voice is the author's to re-weave — I am not ghost-writing it." Only
+  the author can supply it, and every chapter drafted before that pass needs re-touching, so
+  it gets more expensive each week.
 
-- **DRAFTED: Chapter 11, "Where People Are Put"** —
-  `book-1/11-where-people-are-put.md`, 940 words, 16 pins green. Placement is
-  derived from three facts (severe / domestic / has a home) with no assessor
-  anywhere. Carries the farmhouse: severity used to be consulted only for domestic
-  cases, so a severe non-domestic offender with a home was routed to the soft
-  option — and the design's own commentary claimed otherwise, which is the lesson
-  (reading a rule and reading a description of a rule feel like the same activity).
-  Names the broken alarm in full (see the `err/2` bullet above) and ends on what
-  survives it: there is no assessment to lean on, so the usual point of leverage in
-  prison management does not exist here.
+- **[AUTHOR-GATED] Settle the book's length — the per-chapter question is now a whole-spine
+  question.** All fourteen chapters are drafted, 919–1,392 words each, mean 1,053, **total
+  14,743**. That is roughly a fifth of a trade book, and each chapter is one argument made
+  cleanly, so the fix is not padding. Decide which way the weight goes: Parts I–IV expand
+  with more cast and more worked cases, or Part V and the method part carry it. Same decision
+  as the proportion cap above — settle them together.
 
-- **DRAFTED: Chapter 10, "Contribution"** — `book-1/10-contribution.md`, 1,019
-  words, 12 pins green. Three doors to recognition (teach, work, examine), all
-  gated on not having been voided. Its central claim is about an **absence** —
-  there is no arithmetic anywhere in the constitution, verified: every apparent
-  numeric hit is a comment. So recognition is a fact, not a quantity: it cannot be
-  ranked, spent, transferred or priced, because the material those would be made
-  from does not exist.
-  Two things the chapter names rather than smooths: **examining people earns
-  recognition**, so the society pays in its own coin for scrutiny — bounded by ch 5's
-  cost for improper findings, and by the fact that nothing is earned for a
-  conviction as opposed to an acquittal. And the trade the absence buys costs
-  **degree**: the design cannot say anyone did more, which is a peculiar landing
-  place for an instrument built to make invisible contribution visible.
+- **Re-run the jargon sweep after every chapter.** `grep -rniE
+  "nibli|predicate|stratum|strata|compil|assert|rule head|quantif" book-1/*.md` returns
+  nothing today, across all fourteen. "It compiles" leaked into ch 9 once and was caught by
+  eye, not by a sweep run on schedule — which is the argument for wiring it into the runner
+  rather than remembering it.
 
-- **DRAFTED: Chapter 9, "The Vote Conviction Does Not Take"** —
-  `book-1/09-the-vote-conviction-does-not-take.md`, 918 words, 12 pins green. The
-  chapter the old spine did not have. Hano is in custody and votes; the theorem is
-  checked item by item rather than announced. Cira gives the *not yet* versus *taken
-  away* distinction. **Its honest half is verified: felon disenfranchisement
-  compiles.** The floor's protection catches "lacking X is a reason to punish you";
-  disenfranchisement is "being punished costs you X", the other direction, which the
-  firewall does not see. So the vote is intact by absence rather than armoured — one
-  clause from being lost, and the pin file says so.
+- **Add `LICENSE-CC-BY` to `book-1/` — and take the SPDX-header branch.** `LICENSING.md:58-59`
+  offers "an SPDX header **or** a licence line in the front matter"; `book-1/` holds `01`–`14`
+  and nothing else, and the opening note that would carry front matter is still unwritten.
+  `find . -name "LICENSE*"` still returns only the root CC0 `LICENSE`, so the new prose is
+  covered by nothing — or worse, reads as covered by the irrevocable CC0 dedication it was
+  deliberately moved out of. Fetch the canonical CC-BY-4.0 text from
+  <https://creativecommons.org/licenses/by/4.0/legalcode> rather than reproducing it from
+  memory, drop it at `book-1/LICENSE-CC-BY`, and carry `SPDX-License-Identifier: CC-BY-4.0`
+  either as an HTML comment at the top of each chapter or once in a `book-1/README.md` — a
+  visible licence header in reader-facing prose is not acceptable. The rest stays correctly
+  deferred: `LICENSE-MIT` + `LICENSE-APACHE` with SPDX headers when the harness and fetchers
+  are written; `LICENSE-CC0` when a registry directory exists.
 
-- **DRAFTED: Chapter 8, "What You Are Owed"** — `book-1/08-what-you-are-owed.md`,
-  1,036 words, `08-what-you-are-owed.pins.nibli` (12 pins, green). Names the eight,
-  then spends most of its length on the two gaps. Turned up a result worth keeping:
-  **`dwell(Hano)` is the only floor right that derives for anyone in the whole
-  design, and it derives because Hano is in custody** — the placement machinery
-  tracks where convicted people are, and nothing tracks where anyone else is. The
-  only built-out part of the floor is the part overlapping punishment.
-  **Two follow-ups this chapter creates:**
-  - Its closing section says nobody is named as duty-bearer, which is true of the
-    constitution as it stands. **Enacting the thin constitutional layer will
-    require rewriting that section** — the pin file carries the note.
-  - The firewall's three open doors are now in print (standing, recognition,
-    compelled belief). If any is later closed, this chapter changes.
+- **[AUTHOR-GATED] Plan the reach strategy on the basis that exclusivity is gone.**
+  CC-BY-4.0 is perpetual and irrevocable, so no trade publisher can ever be sold exclusivity
+  — `LICENSING.md` records this as a cost accepted deliberately. That makes serialization and
+  open circulation the route by default rather than by choice, and it is a publishing
+  decision nobody but the author can make. Worth knowing when it is made: the **title** is
+  the only integrity lever that survives an irrevocable content licence, since no licence
+  here grants trademark.
 
-- **DRAFTED: Chapter 7, "A Prisoner Is a Person"** —
-  `book-1/07-a-prisoner-is-a-person.md`, 977 words,
-  `07-a-prisoner-is-a-person.pins.nibli` (9 pins, green). Opens Part III and carries
-  the strongest verified result in the book: **removing the one line that makes a
-  prisoner a person also destroys the firewall for everyone.** Demonstrated on the
-  engine both ways — with the line, a heresy law is refused; without it, the same
-  law loads and the whole population becomes imprisonable for belief. So the clause
-  that keeps prisoners human and the clause that keeps everyone's rights
-  unconditional are the same clause, and it cannot be half-repealed.
-  Ends on the corollary: conviction is the *only* route into personhood that does
-  not require someone to write your name down — which points straight at the
-  personhood-roster bullet below.
+---
 
-- **DRAFTED: Chapter 6, "Clawback"** — `book-1/06-clawback.md`, 994 words,
-  `06-clawback.pins.nibli` (13 pins, green). Closes Part II. Written *around* the
-  contamination defect rather than after fixing it: Cira is the chapter's centre and
-  the chapter states plainly that the rule is not defensible as written. **If the
-  rule is narrowed, `lose(Points, Cira)` flips FALSE and the middle section must be
-  rewritten** — the pin file says so. Decide which way round you want it.
-  Ends on the ceiling rather than a fourth consecutive limit: clawback reaches
-  recognition and stops, so the worst the machinery can do leaves the floor,
-  liberty and personhood untouched.
+## Legacy harvest — before `book.md` and `manifesto.md` are deleted
 
-- **DRAFTED: Chapter 5, "Voiding"** — `book-1/05-voiding.md`, 1,040 words,
-  `05-voiding.pins.nibli` (14 pins, green). Bela (it works), Esa (one is not
-  enough), Dev (judging your child voids *you*), Lupo (lying voids *you*), Vex/Tyr
-  (the epoch carry). Ends on the two disclosed gaps: only parents are excluded from
-  the independence check, so spouses and siblings co-sign freely and the
-  conspiracy-of-two is barely a conspiracy; and the sequence discipline is not
-  enforceable from inside. Names the limit both chapters have now circled —
-  **this society can guarantee what follows from its record, not its record.**
-
-- **DRAFTED: Chapter 4, "The Shield"** — `book-1/04-the-shield.md`, 1,162 words,
-  `04-the-shield.pins.nibli` (15 pins, green). Don, Sly and Kel. Don is the closed
-  exploit — exposing his own victim bought a shield until the design required the
-  exposed party to hold standing. Sly is the deliberate fail-open window, defended
-  on asymmetry of harm rather than apologised for. Kel is what closes it. Ends by
-  paying chapter 2's bill: the shield attaches to anyone with standing, standing is
-  never revoked, so the surface of protective exposures only grows — and whether it
-  should be bounded by time is a real question the design does not answer.
-
-- **DRAFTED: Chapter 3, "Who Holds the Pen"** — `book-1/03-who-holds-the-pen.md`,
-  1,090 words, `03-who-holds-the-pen.pins.nibli` (14 pins, green). Opens Part II.
-  Carries the Sock/Puppet attack as its centre — the hole that let two people who
-  were never chosen void an innocent — and closes on the honest boundary:
-  everything downstream of selection is closed, selection itself is open, and no
-  rule inside the design can reach up to check the election.
-
-- **DRAFTED: Chapter 2, "Standing, and Why It Is Never Revoked"** —
-  `book-1/02-standing.md`, 1,174 words, `02-standing.pins.nibli` (12 pins, green).
-  Boss carries the chapter: seated, then recalled, keeps standing forever and loses
-  every power immediately — and that permanence is what saves Rebel, because a
-  recall that stripped standing would retroactively destroy the whistleblower's
-  protection. Kept as a separate chapter rather than folded into ch 1: ch 1 is what
-  may be *recorded*, ch 2 is who may *act*, and merging them blurs ch 1's single
-  argument. Part I is therefore two chapters and the spine stays at 14.
-
-- **DRAFTED: Chapter 1, "What Counts as Evidence"** — `book-1/01-what-counts-as-evidence.md`,
-  1,391 words, with its fidelity file at `01-what-counts-as-evidence.pins.nibli`
-  (12 pins, green). Verified jargon-free. Two things to settle on it:
-  - **Length.** 1,391 words is short for a trade chapter. Deliberate — one argument,
-    cleanly — but confirm before the pattern sets, since chapter length compounds.
-  - **Jargon sweep is clean across all nine chapters** (`nibli|predicate|stratum|
-    compil|assert|rule head|quantif` → 0). "It compiles" leaked into ch 9 and was
-    caught; worth re-running the sweep after every chapter, since the leaks are
-    single words rather than passages.
-  - **[AUTHOR-GATED] Voice.** Written in a plain, mostly impersonal register. The
-    legacy book was first-person and warm, and the constitution's own commentary
-    says "the manifesto voice is the author's to re-weave — I am not ghost-writing
-    it." The personal register is yours to add and should go in before the pattern
-    sets across chapters.
-
-- **Add `LICENSE-CC-BY` to `book-1/`** with a licence line in the front matter, per
-  `LICENSING.md`. Prose is CC-BY-4.0. Fetch the canonical text rather than
-  reproducing it from memory.
-- **Harvest the References & Data Sources section — it is the single most valuable
-  thing in the legacy books.** `book.md` closes with **55 sourced entries**, grouped
-  by chapter, each with a primary source and URL, built by a 30-claim fact-check
-  against primary sources. That is the seed corpus for book-1's claim registry and
-  it would take weeks to rebuild. Port it into the registry format (claim id, value,
-  units, source, retrieval date, fetch script) *before* deletion, applying the
-  corrections in the research-brief section above, and drop entries whose claims
-  book-1 does not make.
+- **Harvest the References & Data Sources section — the single most valuable thing in the
+  legacy books.** `book.md` closes with **55 sourced entries**, grouped by chapter, each with
+  a primary source and URL, built by a 30-claim fact-check against primary sources. That is
+  the seed corpus for book-1's claim registry and it would take weeks to rebuild. Port it
+  into the registry format *before* deletion, applying the research-brief corrections above,
+  and drop entries whose claims book-1 does not make. **Blocked on the registry format
+  existing** — that is the long pole for the whole harvest.
 
 - **Harvest the nine historical cases.** New Harmony and the labour exchange, China's
   work-point villages, the kibbutzim, Nyerere's Ujamaa, Chile's Cybersyn, Auroville,
-  Mondragon, WIR, Kerala's People's Plan — 2,264 words in "Learning from Those Who
-  Tried", researched, sourced, and mechanism-independent. Verified as the only
-  genuine chapter-level harvest in the manuscript. **Re-point them when porting:**
-  book-1 does not tell the story of people who tried to build a better society —
-  that is transition. Each case enters as evidence about a *failure mode of a
-  functioning design* (how Owen's labour notes mispriced, how the kibbutz handled
-  differentiation, where Mondragon's governance held), never as an attempt
-  narrative.
+  Mondragon, WIR, Kerala's People's Plan — 2,264 words, researched, sourced, and
+  mechanism-independent. **Re-point them when porting:** book-1 does not tell the story of
+  people who tried to build a better society — that is transition. Each case enters as
+  evidence about a *failure mode of a functioning design*, never as an attempt narrative.
+  Nowhere to put them until Part V exists.
 
-- **Harvest the Bharati poem and settle its attribution.** The full poem with Tamil
-  original and translations lives in `book.md`'s closing appendix, attributed there
-  to *Yoga Siddhi* ("Varam Kettal"), stanzas 4–5. `1.md` attributes the manifesto's
-  frame to *நின்னைச் சரணடைந்தேன்* — a string that appears **nowhere** in any
-  artifact, and the manifesto's own Part 2 Ch 1 epigraph is நின்னைச் **சிலவரங்கள்
-  கேட்பேன்**, which `1.md` appears to have garbled into a title. Confirm the correct
-  name with a Tamil-literature source, then decide book-1's use: at most **one**
-  framing epigraph — original, plain translation, one sentence on who Bharati was —
-  never as structure. The manifesto's sixteen-chapter mapping onto the sixteen lines
-  is a real piece of craft; record it before the file goes.
+- **Harvest the Bharati poem and settle its attribution.** The full poem with Tamil original
+  and translations lives in `book.md`'s closing appendix, attributed there to *Yoga Siddhi*
+  ("Varam Kettal"), stanzas 4–5. `1.md` attributes the manifesto's frame to *நின்னைச்
+  சரணடைந்தேன்* — a string that appears **nowhere** in any artifact, and the manifesto's own
+  Part 2 Ch 1 epigraph is நின்னைச் **சிலவரங்கள் கேட்பேன்**, which `1.md` appears to have
+  garbled into a title. Confirming the correct name against a Tamil-literature source is
+  plain research and unblocked. **[AUTHOR-GATED]** is the second half: whether book-1 opens
+  with an epigraph at all — at most **one**, original, plain translation, one sentence on who
+  Bharati was, never as structure. The manifesto's sixteen-chapter mapping onto the sixteen
+  lines is a real piece of craft; record it before the file goes.
 
-- **Harvest the five bright lines — and check each against the enacted rules.**
-  `book.md`'s social-credit chapter states five enforceable bright lines. They are
-  the most credible thing in the legacy corpus and book-1 needs them. But bright
-  line 2 is already **refuted** by the constitution (see the Article 4 clawback item
-  above), and that was found by accident. Sweep all five against the enacted rules
-  before porting any of them.
+- **Harvest the day-in-the-life technique, not the prose — and fix the citations.** The three
+  vignettes are at `book.md:981-984` (merit points), `1395-1398` (shelter, mobility,
+  communication) and `2560-2563` (governance); the ranges previously cited here land on
+  tech-UX bullets and legal-collision prose instead. All three are second-person and generic
+  and two are MVS-framed, so nothing ports verbatim. book-1 is also no longer without a
+  narrative register — seventeen named characters, Hano in 37 places, every chapter built on
+  a case. What is actually missing is the **domestic** register: a household carried through
+  food, care, housing and crisis, rather than a defendant carried through a procedure. Decide
+  whether Part V gets one, since Parts I–IV are derivation-gated and cannot hold it.
 
-- **Harvest the day-in-the-life vignettes.** `book.md` ~950-957, ~1374-1381,
-  ~2397-2404. The legacy books' most human passages, and book-1 currently has no
-  narrative register at all. Whether or not the prose survives, the *technique*
-  should — a named family carried through food, care, housing and crisis.
+- **Finish the floor corrections in book-1 — two of four landed.** Landed: the eight-right
+  floor is stated exactly once, at `08:5-6`; and the franchise is carried as a derived rule
+  — person plus adult — at `09:14-18`, not as a floor right. Still open: **`dwell` is nowhere
+  glossed in prose as protective shelter** — `grep -rniE "weatherproof|ventilat|plumb|sanitation"
+  book-1/` returns nothing, so ch 8's "somewhere to live" carries the whole weight and the
+  water-and-sanitation case is not absorbed; write the gloss into ch 8 now, it costs a
+  sentence. And **privacy is not argued down anywhere** — book-1 has one incidental use of
+  the word (`04:42`), and the argument that encoding it as a defeasible right lands it at
+  stratum 3 and destroys the single-deprivation theorem is Part V material. That half waits
+  on Part V; the `dwell` half does not.
 
-- **Carry the floor corrections into book-1 rather than into the legacy files.**
-  Three fixes were queued against the manuscripts and should now be written
-  correctly *once*, in book-1: state the eight-right floor exactly and once;
-  **privacy is not a fundamental right** (encoded as a defeasible right it lands at
-  stratum 3 and destroys the single-deprivation theorem — it is Part V argument);
-  and define `dwell` in prose as **protective** shelter — weatherproof, ventilated,
-  powered, plumbed — which absorbs the water-and-sanitation case at zero cost. The
-  franchise is a rule that survives conviction, not a floor right.
+- **Then delete both files, in one commit, with the harvest manifest in the body.** Not
+  before. The commit message is the record of what was taken and what was consciously
+  dropped.
 
-- **Then delete both files, in one commit, with the harvest manifest in the body.**
-  Not before. The commit message is the record of what was taken and what was
-  consciously dropped.
+---
 
 ## Hold for book-2 — do not work these here
 
-Parked, so they are not lost when the legacy files go. These become the seed of
-book-2's tracker, written from scratch after book-1 ships.
+Parked, so they are not lost when the legacy files go. These become the seed of book-2's
+tracker, written from scratch after book-1 ships.
 
-**RESOLVED:** book-2 is now *how you would actually build it, organisationally and
-technically*, so the transition material has a home here alongside the stack. They
-belong together — measured across the six transition chapters, tech density is only
-5.6–14.1 mentions per 1,000 words and mostly incidental, so the transition material
-is the *why and when* and the stack is the *what with*. "When the Pod Meets the
-State" already reads as a legal argument with technology as scenery.
-
-- **The transition material** in `book.md` — Part 4 in full (One Person One
-  Family; When a Village Joins; Cities, Provinces and Nations; One Planet One
-  People), plus "When the Pod Meets the State" and "MVS in Action". ~8,600 words,
-  largely organisational, legal and fiscal. This is book-2's spine, not an
-  appendix to it.
+- **The transition material** in `book.md` — Part 4 in full (One Person One Family; When a
+  Village Joins; Cities, Provinces and Nations; One Planet One People), plus "When the Pod
+  Meets the State" and "MVS in Action". ~8,600 words, largely organisational, legal and
+  fiscal. This is book-2's spine, not an appendix to it.
 - **The technical backbone material** in `book.md` — local-first/offline-first
-  micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design,
-  YAD, the layman's guide. Roughly a third of the legacy book's word count. It has
-  **no support in the constitution** — `utopia.nibli` contains no ledger, no
-  biometric, no device, no cryptography — which is precisely why it is book-2's
-  subject and not book-1's.
+  micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design, YAD, the
+  layman's guide. It has **no support in the constitution** — no ledger, no biometric, no
+  device, no cryptography — which is precisely why it is book-2's subject and not book-1's.
 - **"Why a blockchain at all?"** — honestly weighing CRDTs and signed logs against
-  nibli-store's HLC/tombstone/CRDT-export design. It partly argues against the
-  legacy book's central premise, which makes it a strong opening question for
-  book-2 rather than a threat to book-1.
+  nibli-store's HLC/tombstone/CRDT-export design. It partly argues against the legacy book's
+  central premise, which makes it a strong opening question for book-2 rather than a threat
+  to book-1.
 - **Replace venture brand names** (union.build, Sui, Fuel, linera) with capability
-  requirements plus a dated appendix.
-- **The costed transition** — a fiat price tag on a 200k-city baseline, funding per
-  phase, and a housing acquisition mechanism (community land trusts vs
-  right-of-first-refusal). Needs real fiscal magnitudes; don't fabricate numbers.
+  requirements plus a dated appendix. The list in the legacy text is incomplete; re-grep when
+  the book-2 tracker is written rather than trusting it.
+- **The costed transition** — a fiat price tag on a 200k-city baseline, funding per phase, and
+  a housing acquisition mechanism (community land trusts vs right-of-first-refusal). Needs
+  real fiscal magnitudes; don't fabricate numbers.
 - The nibli-side convergence bullets live in nibli's own `TODO.md`.
