@@ -1,0 +1,14 @@
+# ── Counterfactual: `public(Court).` deleted ─────────────────────────────────
+# The deletion axis of the fact-write trust base: one line, and the shield goes.
+:expect-pins 3
+
+? authority(Court).
+# => FALSE
+
+? defend(Sly).
+# => FALSE
+
+# Sly was protected by the fail-open window; with the Court no longer an
+# authority there is nothing to have exposed, and the conviction proceeds.
+? prisoner(Sly).
+# => TRUE

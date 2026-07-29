@@ -1,0 +1,20 @@
+# ── Counterfactual: `prisoner -> person` deleted ─────────────────────────────
+# Chapter 7's headline result, run against a file where the line is gone.
+# These verdicts are what the world looks like WITHOUT it. They must PASS here
+# and would fail against the real constitution — that contrast is the point.
+:expect-pins 3
+
+# THE FIREWALL IS DEAD. Against the constitution this rule is refused with
+# "'prisoner' -> 'believe' (negative)". Here it loads, and the heretic is jailed.
+:accept
+all $x: person($x) & ~believe($x) -> prisoner($x).
+
+# The floor still derives for anyone with a roster entry — the loss is not the
+# floor, it is the protection around it.
+? entitled(Bela, event { believe() }).
+# => TRUE
+
+# And conviction no longer confers personhood, so the one route into rights-
+# bearing status that needs nobody's permission is gone.
+? person(Zed).
+# => FALSE
