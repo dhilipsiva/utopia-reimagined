@@ -18,7 +18,7 @@
 #   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' new-book-plans/utopia-v2.nibli
 # must stay EMPTY. `verify.sh` runs it with a positive control.
 
-:expect-pins 21
+:expect-pins 26
 
 # "Hano was convicted ... and cannot move freely."
 ? prisoner(Hano).
@@ -99,4 +99,24 @@ free(Hano).
 # => FALSE
 
 ? dwell(Hano).
+# => FALSE
+
+# ── The Hano/Jala lists, pinned item by item ─────────────────────────────────
+# "Four differences, and three of them run the wrong way." An earlier draft said
+# "Everything else on both lists is identical", which was false in four places.
+# Pinned as pairs so the claim cannot drift back.
+? expresses(Jala).
+# => FALSE
+
+? dwell(Jala).
+# => FALSE
+
+? fit(Jala, Homestay).
+# => FALSE
+
+? err(Jala, Isolation).
+# => FALSE
+
+# and Jala is genuinely unconvicted — the control for all four
+? prisoner(Jala).
 # => FALSE

@@ -18,8 +18,19 @@ facts rather than anyone's decision.
 
 And Hano cannot move freely.
 
-That is the difference between Hano and Jala, who did the same thing to the same
-person and was never convicted. One item. Everything else on both lists is identical.
+That is the difference the design intends between Hano and Jala, who did the same thing
+to the same person and was never convicted. One item taken.
+
+The lists are not otherwise identical, and the way they differ is worth seeing early,
+because the rest of this chapter turns on it. Hano has shelter and Jala does not. Hano's
+speech is on the record and Jala's is not. Hano has a placement and Jala has none, and
+the marker watching for isolation is watching Hano and not Jala. Four differences, and
+**three of them run the wrong way** — they are things the convicted man has and the free
+woman does not.
+
+Conviction takes one thing. It also happens to be the only route by which anything on
+the floor reaches anybody, which is a separate fact about this design and a much worse
+one. The chapter comes back to it at the end.
 
 ## Why nothing follows from it
 
