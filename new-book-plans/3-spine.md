@@ -17,7 +17,7 @@ stratum, by dependency. Every verdict quoted below was produced by the engine.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **45** | **22** | **38** | **4** |
+| computed from the constitution | **46** | **23** | **39** | **4** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 2 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
@@ -25,7 +25,7 @@ The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `ex
 |---|---|
 | **0** | `adjust`, `approves`, `authority` *(monotone cone)*, `broken`, `capture`, `choose`, `clear`, `deceive`, `derived_only`, `entitled`, `family`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `rotten`, `severe`, `show`, `suggest`, `teaches`, `work` |
 | **1** | `defend`, `false`, `lose`, `permits` |
-| **2** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, **expresses**, `fit`, **healthy**, **learn**, **meets**, `person`, `prisoner`, `reward`, **secure** |
+| **2** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
 | **3** | `err`, `travel` |
 
 Evidence predicates (21), the complete list of what the world may report: `adjust`, `approves`, `broken`, `capture`, `choose`, `clear`, `deceive`, `family`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `rotten`, `severe`, `show`, `suggest`, `teaches`, `work`.

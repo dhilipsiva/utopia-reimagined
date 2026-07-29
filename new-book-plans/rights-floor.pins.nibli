@@ -10,7 +10,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 68
+:expect-pins 75
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -185,3 +185,39 @@ prisoner(Zed).
 
 ? prisoner(Adam).
 # => TRUE
+
+# ── ARTICLE 1b: the duty-bearer ──────────────────────────────────────────────
+# Article 1 says what is owed; Article 1b says by whom. These pin the three
+# things that article claims and the one thing it must NOT be read as claiming.
+
+# The obligation reaches every person on the roster, convicted included, and
+# reaches nobody who is not on it.
+? owe(State, Provision, Adam).
+# => TRUE
+
+? owe(State, Provision, Hano).
+# => TRUE
+
+? owe(State, Provision, Sokk).
+# => FALSE
+
+# The bearer is an exposable institution — answerable, and a valid target of the
+# Article 7 shield — but holds no Review pen. Duty and audit power stay apart.
+? authority(State).
+# => TRUE
+
+? permits(Review, State).
+# => FALSE
+
+# NAMING A DEBTOR IS NOT PAYING THE DEBT. This is the pin that stops the article
+# being read as provision: the floor actualities are exactly as FALSE as they
+# were before it existed. If this ever flips, a delivery layer arrived and
+# chapter 8 must be rewritten — which would be good news.
+? eats(Bela).
+# => FALSE
+
+# The firewall extends to the obligation: no rule may punish a person for not
+# being owed. The `~home` control above is what proves this is the obligation
+# doing it and not the rule shape.
+:refuse reasoning /'prisoner' -> 'owe'/
+all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).

@@ -247,6 +247,62 @@ entitled(every person, event { believe() }).
 entitled(every person, event { meets() }).
 all $anyone: prisoner($anyone) -> person($anyone).
 
+# ─── Article 1b [v0.4 NEW]: The duty-bearer ───────────────────────
+#
+# Article 1 says what is owed. Until now nothing said BY WHOM, and the
+# book had to print "a creditor and no debtor" as an open question. It
+# is not an open question — every welfare state answers it daily — so
+# declining to answer read as evasion. A thin constitutional layer is
+# the bearer: an agent with real taxing and inter-community equalising
+# power, named here and limited by everything above and below it.
+#
+# PREDICATE: `owe`, places subject / owes / creditor. Note this is the
+# predicate Article 1 REJECTED, at :212, and for exactly the property
+# that makes it right here: "the owed party is x3, not x1". A floor line
+# needs the rights-HOLDER in x1; a duty-bearer line needs the DUTY-holder
+# there. Same place structure, opposite requirement. Tier is Generic and
+# the places were never hand-verified upstream, so the behaviour is
+# pinned in rights-floor.pins.nibli rather than trusted from the corpus.
+#
+# THE SHAPE IS AN EXPLICIT RULE, and it buys the same thing the floor
+# lines buy: `person` in the body puts `owe` in the person cone, so the
+# compile-time prohibition extends to the obligation itself.
+# `owe(State, Provision, every person).` is EQUIVALENT to the engine and
+# was the first form enacted — do not switch back. It is identical in
+# every verdict and in the refusal below, but `5-spine-gen.py:25` only
+# recognises a universal when it wears the floor's `event { }` shape, so
+# the bare `every` form is parsed as a ground fact, `owe` never enters
+# head_preds, and the generated evidence list silently becomes TWENTY-TWO
+# — changing chapter 1's headline number by way of a regex. The engine is
+# not fooled either way (the refusal below only fires if `owe` is inside
+# the prisoner cone). The explicit rule is what keeps the tooling honest.
+# Verified both ways:
+#   all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
+#     => "Unstratifiable negation: strongly-connected component
+#         containing 'prisoner' -> 'owe' (negative)".  REFUSED.
+#   control, non-floor: person($x) & ~home($x) -> prisoner($x).  LOADS.
+# So you cannot write a law that punishes a person for not being owed —
+# no route to declaring a class of people outside the provision and then
+# jailing them for being outside it.
+#
+# THE BEARER IS EXPOSABLE. `public(State).` derives `authority(State)`
+# through Art 7 (:394), so the State is a valid target of the
+# whistleblower shield: exposing it protects you. Verified — a defendant
+# who shows the State is shielded, `defend` TRUE and `prisoner` FALSE.
+# And `public` deliberately does NOT flow into Art 8's credential rule
+# (:389-334), so the bearer is answerable without holding a Review pen:
+# `permits(Review, State)` is FALSE. Duty and audit power stay apart.
+#
+# WHERE IT STOPS, and this is the whole of the honesty: naming a debtor
+# is not paying the debt. Every floor actuality is untouched — `eats`,
+# `healthy`, `secure`, `learn`, `believe`, `meets` and `dwell` for the
+# unconvicted all remain FALSE with this article in force. The delivery
+# gap is exactly as wide as it was. What changed is that the gap now has
+# somebody on the far side of it, which is a precondition for closing it
+# and not a closure. Do not let prose read this as provision.
+all $x: person($x) -> owe(State, Provision, $x).
+public(State).
+
 # ─── Article 2: Due-process suspension ────────────────────── [v0.1]
 all $prisoner: prisoner($prisoner) -> expresses($prisoner).
 all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).

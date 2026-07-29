@@ -88,19 +88,37 @@ the cell.
 
 ## Owed by whom
 
-One more question, and this design does not answer it.
+For most of the way here that question had no answer, and saying so was the honest
+course. It has one now.
 
-Nothing here names anyone as obligated. The eight things are owed to every person, and
-there is no agent in the entire structure who owes them — no body with a duty to
-provide, no mechanism to compel anyone to, no consequence for their absence. "Owed"
-is used here in a sense that has a creditor and no debtor.
+The eight things are owed by a public body, named in the design, whose obligation runs
+to every person — not to members, not to contributors, not to residents, not to anyone
+who has qualified for it. That is the whole of what is claimed, and it is a smaller
+claim than it sounds. It also does more than it looks like it does.
 
-This is not the same as the delivery gap, though the two are easy to confuse. The
-delivery gap is that we cannot see whether food arrived. This is that nobody is on the
-hook for sending it.
+**The obligation carries the same protection the eight rights carry.** No law can be
+written that puts a class of people outside the provision and then punishes them for
+being outside it. The manoeuvre that would otherwise be available — declare a group not
+owed, then treat not being owed as the offence — cannot be written, in the same way and
+for the same reason that a law punishing you for not eating cannot be written. Nobody
+extended the protection to the obligation. It arrived with the naming.
 
-Both are open, and the second is a decision rather than an oversight: a society can be
-designed with an agent that taxes and provides, and it can be designed as an agreement
-among people who owe each other nothing enforceable, and those are different societies.
-This design has not yet chosen, and until it does, the eight things are a very precise
-account of a debt that no one has been asked to pay.
+**And the body can be looked at.** Someone who exposes it is protected for doing so, on
+the same terms as anyone who exposes any other authority. It owes, and it is
+answerable, and it holds no power to examine anyone or to take anything from them.
+The duty and the audit are in different hands.
+
+Then the two things this does not buy, and they have the shape everything in this
+chapter has.
+
+**Nothing compels the body.** The design states the debt and contains no machinery for
+collecting it. There is no consequence anywhere for the obligation going unmet, nothing
+that notices, nothing that follows. The bearer is named and then left alone — which
+puts this beside the other places where this design establishes what is true and has
+almost nothing to say about what is then done about it.
+
+**And naming a debtor is not paying the debt.** Ask whether Bela eats and the answer is
+still no. Every gap this chapter opened with is exactly as wide as it was. What changed
+is that there is now somebody standing on the far side of it. That is a precondition
+for closing the gap and it is not a closure, and a reader who takes the naming for
+provision has been handed something this design has not built.

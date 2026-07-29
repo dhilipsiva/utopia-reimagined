@@ -4,12 +4,14 @@
 #   nibli-pin --kb new-book-plans/utopia-v2.nibli \
 #             book-1/08-what-you-are-owed.pins.nibli
 #
-# NOTE: the "owed by whom" section describes the design as it stands — nobody is
-# named. The author has DECIDED on a thin constitutional layer (see TODO.md) but
-# it is not yet enacted. When it is, this chapter's closing section must be
-# rewritten and this note removed.
+# NOTE — one absence this file cannot hold, and it is load-bearing. "Nothing
+# compels the body" rests on nothing anywhere reading the obligation, which is an
+# absence and so has no query. Check it with
+#   grep -n '^[^#]*->' new-book-plans/utopia-v2.nibli | grep owe
+# which must stay EMPTY. If it ever returns a line, something now follows from
+# the obligation and that paragraph is wrong.
 
-:expect-pins 12
+:expect-pins 17
 
 # "the answer this design gives is no ... for every one of the eight"
 ? eats(Adam).
@@ -52,3 +54,29 @@ all $x: person($x) & ~meets($x) -> lose(Points, $x).
 # "And nothing prevents compulsion." — the floor blocks absence, not manufacture
 :accept
 all $x: prisoner($x) -> believe($x).
+
+# ── "Owed by whom" ───────────────────────────────────────────────────────────
+# "owed by a public body ... whose obligation runs to every person — not to
+#  members, not to contributors, not to residents, not to anyone who has
+#  qualified for it"
+? owe(State, Provision, Bela).
+# => TRUE
+
+# scoped to persons and to nothing else: no roster entry, nothing owed
+? owe(State, Provision, Sokk).
+# => FALSE
+
+# "the body can be looked at ... it holds no power to examine anyone or to take
+#  anything from them. The duty and the audit are in different hands."
+? authority(State).
+# => TRUE
+
+? permits(Review, State).
+# => FALSE
+
+# "No law can be written that puts a class of people outside the provision and
+#  then punishes them for being outside it." The `~home` control in
+#  rights-floor.pins.nibli is what proves this is the obligation doing it and
+#  not the shape of the rule.
+:refuse reasoning /'prisoner' -> 'owe'/
+all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
