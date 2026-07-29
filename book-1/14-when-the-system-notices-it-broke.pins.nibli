@@ -4,24 +4,62 @@
 #   nibli-pin --kb new-book-plans/utopia-v2.nibli \
 #             book-1/14-when-the-system-notices-it-broke.pins.nibli
 #
-# "Nothing reads these markers" is an absence and cannot be queried: err
-# appears twice in the constitution, both times as a rule head. Re-check with a
-# grep if the rules change.
+# "Nothing reads these markers" is an absence and cannot be queried: err appears
+# twice in the constitution, both times as a rule head. Test the rule BODIES —
+# a plain `grep err` matches those heads and is a check that can never fail:
+#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /err/ {print NR": "$0}' \
+#       new-book-plans/utopia-v2.nibli
+# It must stay EMPTY. Positive control: the same command with /false/ returns 5
+# lines, so empty means unread and not that the command is broken.
+#
+# DEFECT PINS — half this file encodes defects rather than guarantees, and the
+# repairs are tracked. `err(·, Isolation)` on the seven prisoners flips FALSE the
+# moment the isolation marker is repaired or any `meets` fact is ever recorded,
+# and `err(Ruk/Lalo, Placement)` flips FALSE when the placement marker is keyed
+# on where someone was PUT rather than on having a home. Either repair makes the
+# chapter's middle section wrong, which is the intended outcome — a flip here is
+# the fix arriving, not a regression.
 
-:expect-pins 12
+:expect-pins 18
 
-# "all of them. Hano, Ruk, Don, Nando — every convicted person"
+# "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — the seven, without exception."
+# ALL SEVEN are pinned deliberately. An earlier draft named four and said "every
+# convicted person in the society, without exception"; Adam, Kel and Lalo were
+# missing and the marker fires on all three. A prose enumeration is only as good
+# as the pins under it, so the enumeration is pinned entry by entry.
+? err(Adam, Isolation).
+# => TRUE
+
 ? err(Hano, Isolation).
 # => TRUE
 
-? err(Ruk, Isolation).
+? err(Lalo, Isolation).
+# => TRUE
+
+? err(Nando, Isolation).
 # => TRUE
 
 ? err(Don, Isolation).
 # => TRUE
 
-? err(Nando, Isolation).
+? err(Kel, Isolation).
 # => TRUE
+
+? err(Ruk, Isolation).
+# => TRUE
+
+# "ten people in this society were judged by a court. Three of them are not
+#  prisoners: one was cleared, and two are protected for having exposed an
+#  authority." Nia is the clearance, Rebel and Sly the shields — so the marker
+#  is silent on them despite a judgment.
+? err(Nia, Isolation).
+# => FALSE
+
+? err(Rebel, Isolation).
+# => FALSE
+
+? err(Sly, Isolation).
+# => FALSE
 
 # "Ask which free people are, and the answer is none."
 ? err(Bela, Isolation).

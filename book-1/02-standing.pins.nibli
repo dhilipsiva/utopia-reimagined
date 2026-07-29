@@ -5,7 +5,7 @@
 #
 # One entry per load-bearing sentence. Private to the author.
 
-:expect-pins 12
+:expect-pins 16
 
 # "The court has standing... They have it by being what they are."
 ? public(Court).
@@ -52,4 +52,25 @@ authority(Pax).
 # => FALSE
 
 ? false(Rebel).
+# => FALSE
+
+# ── The opening definition ───────────────────────────────────────────────────
+# "Standing is not the power to act on anyone ... someone can examine you and
+#  record what they find while holding no standing at all."
+# Koa is that person: two facts in the whole constitution, no seat, no office.
+# An earlier draft opened by defining standing AS the capacity to examine and
+# record, which these two pins falsify together.
+? capture(Koa, Esa).
+# => TRUE
+
+? authority(Koa).
+# => FALSE
+
+# "Someone can hold standing and be able to do nothing whatever."
+# The Court is the complement: standing it can never convert into a pen, because
+# `public` deliberately does not flow into the Review credential rule.
+? authority(Court).
+# => TRUE
+
+? permits(Review, Court).
 # => FALSE

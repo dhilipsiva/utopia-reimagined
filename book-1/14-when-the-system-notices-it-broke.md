@@ -17,9 +17,14 @@ a self-auditing design and the three ways it can fail.
 
 ## The one that fires on everybody
 
-Ask which confined people are being held in isolation, and the answer is: all of them.
-Hano, Ruk, Don, Nando — every convicted person in the society, without exception. Ask
-which free people are, and the answer is none.
+Ask which prisoners are being held in isolation, and the answer is: all of them. Adam,
+Hano, Lalo, Nando, Don, Kel, Ruk — the seven, without exception. Ask which free people
+are, and the answer is none.
+
+That the list is exactly seven is worth a moment, because ten people in this society
+were judged by a court. Three of them are not prisoners: one was cleared, and two are
+protected for having exposed an authority. Being judged and being held are different
+things here, and the marker is asking about the second.
 
 At first that looks like an alarm screaming. It is not, quite. It is technically
 correct: the marker fires when a confined person has no company on record, and nobody

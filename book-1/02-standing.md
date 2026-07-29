@@ -1,9 +1,14 @@
 # Standing, and Why It Is Never Revoked
 
-Some people in this society can act on others. They can examine what someone did,
-record what they find, and set in motion the machinery that takes things away. That
-capacity has a name — standing — and the first thing to say about it is that you
-cannot give it to yourself.
+Some people in this society can be held to account for what they do to others. Their
+conduct can be examined, and someone who exposes them is protected for having done it.
+That answerability has a name — standing — and the first thing to say about it is that
+you cannot give it to yourself.
+
+Standing is not the power to act on anyone. The two travel together often enough to be
+mistaken for each other, and this chapter is largely about what happens when they come
+apart. Someone can hold standing and be able to do nothing whatever; someone can examine
+you and record what they find while holding no standing at all.
 
 There are exactly two ways to acquire it.
 
