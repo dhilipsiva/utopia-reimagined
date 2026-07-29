@@ -36,10 +36,10 @@ out=$(python3 new-book-plans/5-spine-gen.py "$KB" "$SPINE" --check 2>&1) \
 
 # ── 2. chapter 1's headline number ───────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
-# ground fact) pushes this to 22 and falsifies chapter 1 in nine places.
+# ground fact) moves this and falsifies the nine prose places that name it.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
-[ "$n" = "21" ] && pass "evidence vocabulary is 21" \
-  || fail "evidence vocabulary is $n, not 21" "chapter 1 says twenty-one in nine places"
+[ "$n" = "22" ] && pass "evidence vocabulary is 22" \
+  || fail "evidence vocabulary is $n, not 22" "chapters 1, 3 and 5 say twenty-two in nine places"
 
 # ── 3. no formalism leaks into Parts I-V ─────────────────────────────────────
 step "prose"

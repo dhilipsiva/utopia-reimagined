@@ -246,6 +246,16 @@ entitled(every person, event { believe() }).
 # predicate for a second human being.
 entitled(every person, event { meets() }).
 all $anyone: prisoner($anyone) -> person($anyone).
+# [v0.4 NEW] A released person is still a person. This line is not optional and
+# it is not symmetry for its own sake: `prisoner -> person` above is the ONLY
+# non-assertion route into the roster, so without this, ending a sentence ends
+# the personhood of anyone who was convicted into it — and with it all eight
+# floor rights, the obligation owed them, the ballot, and even mobility, since
+# Art 2 gates travel on `person`. Verified against a scratch copy: release Zed
+# without this line and `person(Zed)`, `travel(Zed)` and `decide(Zed, Ballot)`
+# all go FALSE. A released person would hold strictly fewer rights than a
+# prisoner, which inverts the entire point of ending a punishment.
+all $x: free($x) -> person($x).
 
 # ─── Article 1b [v0.4 NEW]: The duty-bearer ───────────────────────
 #
@@ -345,7 +355,28 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 
 # ─── Article 6: Sanction and placement ────────────────────────────
 # [v0.1] conviction rule unchanged.
-all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) -> prisoner($offender).
+# [v0.4 NEW] PUNISHMENT MAY END. `free` is the recorded fact that a sentence is
+# over — asserted, never derived, and it blocks the conviction rule the way
+# relief already does. It cannot be anything else: derivation is monotone, so no
+# fact can subtract `prisoner` once it derives; the only shape available is a
+# negated conjunct in this body. That is the same shape as `~permits(Appeals, ·)`
+# three conjuncts along, and the difference between them is the whole point —
+# relief says the conviction should never have held, release says it held and is
+# finished. Nothing here says HOW LONG: there is no temporal vocabulary in the
+# KR, tense markers are opaque exact-match flavours with no ordering, and a
+# numeral in an enacted line fails the build. So the design says a sentence CAN
+# end and never says when, which is why the honest reading is *may*.
+#
+# WHAT RELEASE COSTS, and it is not a defect — it is Article 1's gap arriving
+# somewhere it can be felt. `expresses` (Art 2) and `dwell` (Art 6) are the only
+# two floor rights this design ever actually delivers, and both derive ONLY for
+# prisoners. So release returns a person to the general population, where the
+# design delivers nothing to anyone. Verified: after `free(Zed)`, `expresses` and
+# `dwell` both go FALSE while `entitled(Zed, event { eats() })` stays TRUE. Being
+# owed is undisturbed; the only thing that ever arrived, stops. Do not repair
+# this by exempting released people — the asymmetry IS the delivery gap, and
+# hiding it here would make the book's most credibility-buying admission smaller.
+all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).
 # [v0.2 REPLACES  prisoner & home & ~family -> dwell]
 # home confinement now requires DERIVED eligibility, not a raw home flag.
 all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay).

@@ -14,7 +14,9 @@ all $x: person($x) & ~believe($x) -> prisoner($x).
 ? entitled(Bela, event { believe() }).
 # => TRUE
 
-# And conviction no longer confers personhood, so the one route into rights-
-# bearing status that needs nobody's permission is gone.
+# And conviction no longer confers personhood. Note Article 1 has a second route
+# since release landed — `free -> person` — but that one needs somebody to write
+# a fact, so conviction remains the only route into rights-bearing status that
+# needs nobody's permission, and this fixture removes it.
 ? person(Zed).
 # => FALSE
