@@ -91,10 +91,10 @@ the cell.
 For most of the way here that question had no answer, and saying so was the honest
 course. It has one now.
 
-The eight things are owed by a public body, named in the design, whose obligation runs
-to every person — not to members, not to contributors, not to residents, not to anyone
-who has qualified for it. That is the whole of what is claimed, and it is a smaller
-claim than it sounds. It also does more than it looks like it does.
+There is a public body named in the design, and it owes. What it owes runs to every
+person — not to members, not to contributors, not to residents, not to anyone who has
+qualified for it. That is the whole of what is claimed, and it is a smaller claim than
+it sounds. It also does more than it looks like it does.
 
 **The obligation carries the same protection the eight rights carry.** No law can be
 written that puts a class of people outside the provision and then punishes them for
@@ -105,11 +105,19 @@ extended the protection to the obligation. It arrived with the naming.
 
 **And the body can be looked at.** Someone who exposes it is protected for doing so, on
 the same terms as anyone who exposes any other authority. It owes, and it is
-answerable, and it holds no power to examine anyone or to take anything from them.
-The duty and the audit are in different hands.
+answerable, and it was never given the credential that makes an examination count —
+so it can write down what it likes about you and none of it will void your standing or
+take what you earned. The duty and the pen are in different hands.
 
-Then the two things this does not buy, and they have the shape everything in this
+Then the three things this does not buy, and they have the shape everything in this
 chapter has.
+
+**The debt is recorded as one thing, not eight.** The design says this body owes, and
+it does not say that what it owes is the eight rights named at the start of this
+chapter. There is an obligation and there is a list, and nothing in the design joins
+them. Read strictly, a body could discharge the obligation entirely and no rule
+anywhere would notice that none of the eight had arrived — which is the delivery gap
+again, one level further back, sitting in the definition rather than in the machinery.
 
 **Nothing compels the body.** The design states the debt and contains no machinery for
 collecting it. There is no consequence anywhere for the obligation going unmet, nothing

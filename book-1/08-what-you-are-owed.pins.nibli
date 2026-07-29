@@ -6,12 +6,17 @@
 #
 # NOTE — one absence this file cannot hold, and it is load-bearing. "Nothing
 # compels the body" rests on nothing anywhere reading the obligation, which is an
-# absence and so has no query. Check it with
-#   grep -n '^[^#]*->' new-book-plans/utopia-v2.nibli | grep owe
-# which must stay EMPTY. If it ever returns a line, something now follows from
-# the obligation and that paragraph is wrong.
+# absence and so has no query. Check it with — note the test is the rule BODY,
+# left of the arrow; a plain `grep owe` matches Article 1b's own head and is
+# always non-empty, which is a check that can never fail:
+#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /owe/ {print NR": "$0}' \
+#       new-book-plans/utopia-v2.nibli
+# It must stay EMPTY. Positive control: the same command with /false/ returns 5
+# lines, so an empty result means the predicate is unread and not that the
+# command is broken. If it ever returns a line, something now follows from the
+# obligation and that paragraph is wrong.
 
-:expect-pins 17
+:expect-pins 18
 
 # "the answer this design gives is no ... for every one of the eight"
 ? eats(Adam).
@@ -66,9 +71,19 @@ all $x: prisoner($x) -> believe($x).
 ? owe(State, Provision, Sokk).
 # => FALSE
 
-# "the body can be looked at ... it holds no power to examine anyone or to take
-#  anything from them. The duty and the audit are in different hands."
+# "the body can be looked at"
 ? authority(State).
+# => TRUE
+
+# "it was never given the credential that makes an examination count — so it can
+#  write down what it likes about you and none of it will void your standing"
+# BOTH halves are pinned, because the first draft of this sentence said the body
+# "holds no power to examine anyone" and that is FALSE: `judge` and `capture`
+# have no precondition, so anybody may record an examination of anybody. What
+# the body lacks is the credential that gives a recorded examination force.
+judge(State, Bela).
+capture(State, Bela).
+? capture(State, Bela).
 # => TRUE
 
 ? permits(Review, State).
