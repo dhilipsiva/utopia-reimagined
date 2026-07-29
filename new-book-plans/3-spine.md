@@ -147,15 +147,25 @@ depend only on strata 0–1 and float.
     Placement and Isolation.
 
 **Part V — Outside the graph** *(nothing here is derived; label it as such)*
-The five-joints scorecard, ~14,500 words. Re-framed for the destination-only scope:
+The five-joints scorecard, **~12,000 words**. Re-framed for the destination-only scope:
 valuation, rotation, coercion, capture and the state are places a *functioning*
 design breaks, not stages of a rollout, and the historical cases enter as evidence
-about failure modes rather than as a narrative of people who tried.
+about failure modes rather than as a narrative of people who tried. Each joint closes
+with the strongest real objection to it — named, not straw-manned, and left unanswered
+for a beat — and the objector's own stated condition for changing their mind becomes
+that joint's specification.
 
 **Final part — The method** *(explicitly optional; the only place jargon is allowed)*
-The constitution, the derived spine, the firewall, the evidence/conclusion split,
-and what the logic refused — including that a universal right of appeal is
-unstratifiable. Its existence is what answers "you built a machine and hid it".
+**~5,000 words**, drafted last. The constitution, the derived spine, the firewall, the
+evidence/conclusion split, and what the logic refused — including that a universal right
+of appeal is unstratifiable. Its existence is what answers "you built a machine and hid it".
+
+*Budget note.* These two figures and the ~800 for the opening note are held by one
+invariant: **book-1 stays majority-derived, measured across the whole book** — 38,000
+derived against 17,800 non-derived. The previous ~14,500 for Part V was computed against
+a spine that did not exist and is void; see `CLAUDE.md`. **This region is hand-authored,
+so `5-spine-gen.py --check` cannot catch it if it goes stale — only the generated block
+between the BEGIN/END markers is machine-owned.**
 
 ---
 
