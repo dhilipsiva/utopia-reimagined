@@ -583,27 +583,6 @@ for the harness section below.
   the audit surface stays one predicate while each breach stays separately queryable.
   Highest value-per-line in this section.
 
-- **[AUTHOR-GATED] Confinement is a location and nothing else — decide whether the design
-  says anything about conditions.** `building/2` is a bare placement fact: the three rules
-  that produce it (`:441`, `:455`, `:456`) name a facility and stop, and there is no
-  vocabulary anywhere for conditions, visits, who may enter, what may be done, or how long
-  — `grep -niE "visit|condition|treat|enter|guard|inspect|duration|term"` over the enacted
-  lines returns nothing. The only rule that looks at a confined person's treatment at all is
-  the isolation marker (`:452`), which is the one that fires on every prisoner and therefore
-  says nothing about any of them. Three reviewers reached this independently and rated it
-  high or critical.
-  **State the position precisely before deciding, because the obvious reading is wrong.**
-  The floor *does* reach prisoners — Article 1 plus `prisoner -> person` (`:254`) is exactly
-  the chapter-7 result — so a confined person is entitled to all eight rights, and nothing
-  in the design permits a cell that starves someone. What is missing is one level down:
-  entitlement binds the society, and nothing binds *the facility*. That is the same
-  owed-versus-delivered seam the book already discloses, arriving somewhere a reader feels
-  it much harder. Either add the vocabulary — which enlarges the evidence list and needs the
-  `capture`-precondition decision first, since both are about who may do what to a person
-  under authority — or say plainly in ch 13 that the design fixes where a convicted person
-  is and says nothing about what happens there. Do not leave it unsaid; "punishment deprives
-  exactly one thing" is a much weaker claim if the cell is unconstrained.
-
 - **Write the fact-write trust base as a file-level section — Article 0 closed half of
   it.** `:51-60` now declares ten relations `derived_only` — `severe` joined them in
   v0.5 — and direct assertion of each is refused. What Article 0 did **not** do is remove the write surface; it moved
