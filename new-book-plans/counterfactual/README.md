@@ -10,10 +10,19 @@ Regenerate any of them with:
 
 ```
 K=new-book-plans/constitution.nibli
-grep -vFx 'all $anyone: prisoner($anyone) -> person($anyone).' $K > no-person-line.nibli
-grep -vFx 'public(Court).'                                     $K > no-public-court.nibli
-grep -vFx 'choose(Electorate, Boss).'                          $K > no-choose-boss.nibli
+CF=new-book-plans/counterfactual
+grep -vFx 'all $anyone: prisoner($anyone) -> person($anyone).' $K > $CF/no-person-line.nibli
+grep -vFx 'public(Court).'                                     $K > $CF/no-public-court.nibli
+grep -vFx 'choose(Electorate, Boss).'                          $K > $CF/no-choose-boss.nibli
 ```
+
+**The `$CF/` prefixes are load-bearing and were missing until 2026-07-30.** `$K` is
+written relative to the repo root, so the command has to be run from there — and without
+the prefix the three files landed in the repo root while the real fixtures sat untouched
+beside this README. Anyone following the procedure would have believed they had
+regenerated and would have left three stale fixtures in place, which is the exact failure
+the `-vFx` note below describes, reached by a different route. That makes twice this
+file's own command has been wrong; check it against a real run before trusting it.
 
 **Use `-vFx`, and do not "fix" it back to a regex.** The version of this command that
 stood here until v0.5 was `grep -v '^all \$anyone: …'`, and inside single quotes `\$` is a

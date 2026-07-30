@@ -700,6 +700,28 @@ judge(Court, Kel).
 show(Kel, Court).
 deceive(Kel, Court).
 judge(Review, Kel).
+# E1d — Rex did what Kel did AND exposed a second authority. The shield rule
+#       is satisfied by ANY qualifying pair, so the deceit finding against the
+#       first exposure does not reach the second: `defend(Rex)` holds on the
+#       Review exposure while `false(Rex)` is TRUE from the counter-audit.
+#       VOIDED AND SHIELDED AT ONCE. Kel closes only because Kel exposed once,
+#       so the three per-subject Kel pins could never have caught this — the
+#       defect is per-PAIR. This is the disclosed cost of scoping the shield to
+#       the exposure rather than the person; see chapter 4. Do not "fix" it by
+#       appending ~false($w) to Article 7 without re-reading that section: it
+#       compiles, and it hands two cross-body auditors a route to strip the
+#       shield off the whistleblower who exposed them.
+#       Sena is a FRESH constant, not an existing victim: every argument in a
+#       new fact must be new (except institution constants), because a new
+#       person naming existing ones can complete Art 4's multi-sig.
+person(Rex).
+injure(Rex, Sena).
+judge(Court, Rex).
+show(Rex, Court).
+deceive(Rex, Court).
+judge(Review, Rex).
+show(Rex, Review).
+person(Sena).
 # E2 — Vex was voided LAST epoch (rotten ledger), is still seated on
 #      paper, and pairs with clean Wren against Tyr. v0.1: Tyr falls.
 #      v0.2: Vex's credential never derives; Tyr stands.
