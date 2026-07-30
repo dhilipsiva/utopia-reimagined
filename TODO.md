@@ -831,21 +831,6 @@ for the harness section below.
   two wants the `:accept` added as a pin, and it would be a third exhibit for the
   method part's "here is what the logic refused, and here is what it permitted".
 
-- **Rewrite chapter 6's Cira section — Cira is docked for recognition Cira never had.**
-  No longer a fork: the grades ruling (`CLAUDE.md`, 2026-07-30) settled that students
-  earn nothing for being taught, so the student-minting option is closed and the
-  rewrite is the only move left. `:340` heads on `$teacher` and nothing anywhere mints
-  for a student. Cira's only base facts are `person(Cira)` and being the *object* of
-  two `teaches` facts. Verified: `reward(Cira)` FALSE, `reward(Fin)` FALSE,
-  `lose(Points, Cira)` TRUE, `person(Fin)` FALSE. So `06:49-53`, `:68` ("Esa was never
-  voided, so Fin keeps everything" — Fin has nothing, and is not even on the
-  personhood roster) and `:103` all describe a transfer the constitution never derives.
-  What actually happens is stranger and, for the chapter's own argument about
-  collective punishment, **stronger: Cira is docked for recognition Cira never had.**
-  Pin the two facts the chapter is currently wrong about — `reward(Cira)` FALSE and
-  `person(Fin)` FALSE — which takes `06-clawback.pins.nibli` from 13 to 15 and is
-  reconciled by the `:expect-pins` sum in `verify.sh`.
-
 - **Decide the Article 4 clawback question.** The two rules are `:347`
   (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
   from a person's record) and `:348` (`teaches($t,$s) & false($t) -> lose(Points, $s)`
