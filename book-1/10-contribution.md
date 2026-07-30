@@ -17,18 +17,18 @@ Ask how much recognition Esa has.
 The question has no answer. Not "we do not track it" — the question cannot be
 formed. Recognition here is a fact about a person, in the way that being an adult is a
 fact about a person. Esa is recognised. There is no quantity attached, no total, no
-running balance, and no way to construct one, because nothing anywhere in this
-society counts anything.
+running balance, and no way to construct one, because recognition carries no quantity
+anywhere in this design.
 
 Consider what that forecloses.
 
 You cannot ask who has more. Esa taught one student; imagine someone who taught a
-thousand. They stand in exactly the same relation to this society: both recognised,
-identically, with nothing to distinguish them. There is no ordering, so there is no
-top of it, so there is nobody who can be said to have accumulated the most.
+great many. They stand in exactly the same relation to this society: both recognised,
+identically, with nothing to distinguish them. Recognition has no ordering, so there is
+no top of it, so there is nobody who can be said to have accumulated the most.
 
 You cannot spend it. Spending requires subtraction, subtraction requires arithmetic,
-and there is none. Recognition cannot be transferred to another person, cannot be
+and recognition has none. Recognition cannot be transferred to another person, cannot be
 exchanged for anything, cannot be saved toward a purchase. It is not a thin currency
 or a restricted currency. It is not a currency, in the way that a birthday is not a
 currency.
@@ -97,7 +97,7 @@ entitled to sit uneasily with.
 The absence of arithmetic buys a great deal and it costs one thing, and the cost is
 real.
 
-**This society cannot say that someone did more.**
+**Recognition cannot say that someone did more.**
 
 It cannot distinguish the person who worked for forty years from the person who
 worked for a week. It cannot mark the extraordinary teacher, the exhausting and
@@ -109,9 +109,24 @@ caregiving, the unpaid, the invisible — that is a peculiar place to end up. Th
 instrument built to make contribution visible can see that it happened and not how
 much of it there was.
 
-The trade was made deliberately. A society that can express degree can rank, and a
-society that can rank will eventually sort people into betters and lessers, and the
-whole point of this arrangement was to make that impossible. So degree was given up.
+And the refusal is not a limit of the machinery, which is the part that ought to
+trouble you. Degree is perfectly available here. Chapter 1 showed how: harm more than
+one person and the rules can tell, because each victim is a separate entry and *more
+than one* is something the rules can see in the entries. Teach more than one person and
+that is a separate entry each time too. The same reading is right there, and nothing is
+built on it.
+
+So the honest statement of the trade is not that this society cannot count. It is that
+this society counts on the way in to punishment and refuses to count on the way in to
+reward. That asymmetry was chosen, and the reason it was chosen is that being ranked
+above other people is a harm that recognition would inflict and confinement already
+does — but it is an asymmetry, and it is doing work in the direction that costs the
+person rather than the direction that pays them.
+
+The trade was made deliberately. A system that can express degree can rank, and one
+that can rank will eventually sort people into betters and lessers, and the
+whole point of this arrangement was to make that impossible in the place where people
+would feel it. So degree was given up here and kept elsewhere.
 It is the right trade, on the evidence of every attempt that made the other one, and
 it is still a loss, and pretending otherwise would be the kind of thing this book is
 trying not to do.
