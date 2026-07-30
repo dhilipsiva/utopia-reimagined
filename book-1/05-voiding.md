@@ -8,10 +8,19 @@ and unlike imprisonment it can be done without a court.
 So the question is what it takes. The answer is a list of conditions, and every one
 of them is there because of a specific way this could go wrong.
 
-## It takes two
+## It takes two, from two places
 
-Bela was examined by Gia and by Hex. Both hold the pen. Both looked at Bela, both
-recorded what they found. Bela's credibility is voided.
+Bela was examined by Gia and by Hex. Both hold a pen, and — this is the part that does
+the work — their pens come from different bodies. The electorate seated Gia; the
+convocation seated Hex. Both looked at Bela, both recorded what they found. Bela's
+credibility is voided.
+
+Two signatures from the same body would not have been enough. That is a change from an
+earlier version of this design, where any two credentialed people sufficed, and the
+reason for the change is narrow enough to state exactly: it means capturing one
+appointing body no longer gives you both signatures. It does not mean the signatures
+are harder to forge. Chapter 3 is where that distinction is argued; it matters here
+because this is the rule the distinction is about.
 
 Now Esa. Koa examined Esa and recorded a finding — a real finding, on the record,
 made by someone with the credential. Esa's credibility is untouched. Not provisionally,
@@ -56,8 +65,8 @@ without anyone having to notice the pattern — the rule catches the first one.
 ## Time has to be inserted by hand
 
 Vex was voided in an earlier period. Later, Vex and Wren both examined Tyr — both
-credentialed on paper, both recording the same finding, neither related to the other,
-neither having lied.
+credentialed on paper, from different bodies as the rule requires, both recording the
+same finding, neither related to the other, neither having lied.
 
 Tyr is fine. Vex's signature does not count, because Vex carries the mark of the
 earlier voiding forward, and that mark blocks the credential.

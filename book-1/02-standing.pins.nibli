@@ -5,7 +5,7 @@
 #
 # One entry per load-bearing sentence. Private to the author.
 
-:expect-pins 19
+:expect-pins 20
 
 # "The court has standing... They have it by being what they are."
 ? public(Court).
@@ -73,6 +73,12 @@ authority(Pax).
 # => TRUE
 
 ? permits(Review, Court).
+# => FALSE
+
+# [v0.7] Both pens, or the claim is only half-tested. Chapter 3 says the court
+# has "standing and neither pen"; with two issuers, a pin on one of them would
+# leave the other free to drift.
+? permits(Tribunal, Court).
 # => FALSE
 
 # ── The two senses of one English word, held apart ───────────────────────────

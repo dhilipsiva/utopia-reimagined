@@ -4,23 +4,32 @@ Standing marks you as someone who can be held to account. It does not, by itself
 you do anything to anybody. For that you need the pen: the credential that makes your
 findings count.
 
-Two people with the pen, examining the same person and recording the same thing, can
-void that person's credibility, and strip what they have earned along with it. That is
-the sharpest instrument in the society, and the question of who is allowed to pick it
-up is therefore the question this chapter is about.
+Two people with a pen, examining the same person and recording the same thing, can void
+that person's credibility, and strip what they have earned along with it. That is the
+sharpest instrument in the society, and the question of who is allowed to pick it up is
+therefore the question this chapter is about.
+
+A pen, not the pen: there are two, and they are not interchangeable. One is issued to
+the people the electorate seats. The other is issued to the people a second body, the
+convocation, seats. A voiding needs one of each — two people who were put where they
+are by different hands.
 
 Three things have now been named and it is worth keeping them apart, because the rest
 of the book depends on the difference and they are easy to hear as one. Standing is
-whether you can be *asked*. The pen is whether your findings *count*. Credibility is
-whether what the record already says about you *stands*. A person can have all three,
-or any one without the others: the court has standing and no pen; Koa has recorded a
+whether you can be *asked*. A pen is whether your findings *count* — and which of the
+two you hold matters only when a voiding is being assembled. Credibility is whether
+what the record already says about you *stands*. A person can have all three, or any
+one without the others: the court has standing and neither pen; Koa has recorded a
 finding and has no standing; Vex, voided last period, has standing still and neither
 of the others. And they come apart in different directions — standing is never taken
-away, the pen is taken by recall, and credibility is the one of the three that two
-other people can destroy between them.
+away, a pen is taken by recall, and credibility is the one of the three that two other
+people, seated by different bodies, can destroy between them.
 
-You are allowed to pick it up if three things are true at once. The electorate seated
-you. You have not been recalled. And you were not voided in an earlier period.
+You are allowed to pick one up if three things are true at once. One of the two bodies
+seated you. You have not been recalled. And you were not voided in an earlier period.
+The conditions are word for word the same whichever body it was, which is deliberate:
+two doors are only worth having if they are the same weight, and an attacker uses the
+cheaper one.
 
 That is all, and the ordering matters: this is a rule that runs, not a list of
 qualifications someone checks. Nobody grants you the pen. Nobody signs your
@@ -58,6 +67,17 @@ means what it says for the first time.
 
 This is the same move as Chapter 1's, one level up. There, no one could write down a
 conclusion about a person. Here, no one can write down a power over them.
+
+The two-body requirement is a second layer over the same hole, and it is worth being
+exact about how much it adds, because the obvious reading gives it too much. Sock and
+Puppet now need to have been seated by two different bodies, so capturing one body is
+no longer enough. That is a real gain against a capturer with reach into one place.
+
+It is not a gain against the thing that actually worries this chapter. Seating is
+recorded as a fact somebody writes, and whoever can write that the electorate chose
+Sock can equally write that the convocation chose Puppet. Two bodies means two
+falsifications instead of one. It does not mean the record is any harder to falsify —
+only that it takes twice as much of the same thing, from someone who already has it.
 
 ## Recall and rot
 
