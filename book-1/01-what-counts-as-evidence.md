@@ -2,38 +2,54 @@
 
 There is a list of things the world is allowed to say about you.
 
-It has twenty-two entries. Not twenty-two categories, with room underneath for
-whatever turns out to be useful — twenty-two entries, and when someone wants to say
+The list is short and it is closed. Not a set of categories, with room underneath for
+whatever turns out to be useful — a fixed set of entries, and when someone wants to say
 something about you that is not on the list, they cannot. Not *may not*. Cannot.
 There is nowhere to put it.
 
-Here is the whole list. Someone worked, or taught. Someone injured someone. A body
-passed judgment. An auditor documented what they found. Someone lied. Someone
-exposed something. A person has a home, or a family, or a parent, or has reached
-adulthood. An offence was severe. An assembly proposed a change; the electorate
-approved it; the change touches a particular article; that article is protected. A
-body is a public institution. The electorate seated someone. Someone was cleared.
-Someone was recalled. Someone was voided in an earlier period. Someone's sentence is
-finished.
+Here is the whole list. Someone worked, or taught. Someone injured someone. Someone
+attacked someone, or was cruel to them. A body passed judgment. An auditor documented
+what they found. Someone lied. Someone exposed something. A person has a home, or a
+family, or a parent, or has reached adulthood. An assembly proposed a change; the
+electorate approved it; the change touches a particular article; that article is
+protected. A body is a public institution. The electorate seated someone. Someone was
+cleared. Someone was recalled. Someone was voided in an earlier period. Someone's
+sentence is finished.
 
 That is it. That is everything the record can hold.
+
+Something that used to be on the list is missing from it: nobody can write down that an
+offence was *serious*. Where it went is worth the detour, and it comes back below.
 
 ## What is missing
 
 The interesting part of a list like this is never what is on it.
 
-There is no score. No rating, no rank, no tier, no percentile. There is nowhere to
-record that you are *reliable*, or *high-risk*, or *a person of interest*, or *under
-review* in the vague sense that means someone has a feeling about you. There is no
-field for your wealth, your religion, your ancestry, your politics, your health,
-your movements, or your associations. There is no field for what you are likely to
-do. There is no field for what someone suspects.
+There is nowhere to record that you are *reliable*, or *high-risk*, or *a person of
+interest*, or *under review* in the vague sense that means someone has a feeling about
+you. There is no field for your wealth, your religion, your ancestry, your politics,
+your health, your movements, or your associations. There is no field for what you are
+likely to do. There is no field for what someone suspects.
 
 None of this is because those things were considered and rejected on principle,
-though they were. It is because the record has twenty-two slots and none of them
-holds a judgment about a person's character. If you wanted to write down that
-someone seems untrustworthy, you would find you had no way to write it. The sentence
-does not go anywhere.
+though they were. It is because every slot on the list holds something that happened,
+and none of them holds a judgment about a person's character. If you wanted to write
+down that someone seems untrustworthy, you would find you had no way to write it. The
+sentence does not go anywhere.
+
+Be precise about the size of that claim, because the obvious version of it is too
+strong. This design does classify. It classifies *acts* — that one was an attack, that
+one was cruel — and it sorts convicted people into places on the strength of those
+classifications. What it has no room for is a standing verdict on a person: a mark that
+sits in the file describing what you are like, independent of anything you did, which
+travels with you and which you cannot answer because it is not an accusation. The acts
+are on the list. The person is not summarised anywhere.
+
+Even that concedes something, and it should be said out loud rather than found later.
+Severity attaches to a person, not to an act. Someone cruel to one of two people they
+harmed is severe, full stop, for every purpose, for the whole of their sentence. That
+is a rating of a sort, computed rather than written, and the only honest defence of it
+is that it is reached by a route anyone can retrace to the facts underneath.
 
 People who have dealt with institutions know the shape of the opposite arrangement.
 A file grows. It begins as a record of events — dates, decisions, documents — and
@@ -71,7 +87,29 @@ routes, and both leave a mark somebody else can see. You cannot appoint yourself
 Somebody accused of a crime cannot become, in the course of defending themselves, the
 sort of person whose word counts.
 
-This is the same principle twice, and it is the load-bearing one in the whole design:
+**Nor can you write down that an offence was serious.** This one was a slot on the
+list until recently, and taking it off is the clearest example of the whole idea, so it
+is worth walking. Someone used to record that an offence was severe, and severity is
+what decides where a convicted person is held. It looked like a fact. It was a verdict.
+Nothing in the record said what made the offence severe, and nothing could tell an
+assessment that had been thought about from one that had been typed.
+
+Now severity follows from three things about an offence, and only two of them are
+things anyone writes down. Whether the person attacked — not merely that harm occurred,
+but that they meant it. Whether they were cruel. And whether more than one person was
+harmed, which nobody records at all: each victim is written down separately, one entry
+each, and *more than one* is what the rules see when they look at those entries
+together. An offence is severe when any two of the three are present.
+
+The consequence worth noticing is that nobody writes the number of victims. If
+somebody harmed a great many people, that is a great many separate entries, each one
+naming a person, each one individually disputable. Delete one and the record says
+something slightly different. There is no field anywhere holding the figure, so there
+is nothing to inflate, and no way to be *counted as* having harmed many people without
+each of them appearing by name.
+
+This is the same principle three times over, and it is the load-bearing one in the
+whole design:
 **the things that matter are not writable. They are only derivable.** Every power in
 this society — the power to void someone's standing, to place them somewhere, to
 strip what they have earned — is a conclusion at the end of a chain of ordinary
@@ -98,16 +136,16 @@ This is worth sitting with, because it is the opposite of how suspicion usually
 works. In most systems, being investigated is already a cost. The file is open. The
 question has been raised. Even a clean finding leaves something behind — the fact of
 the inquiry itself becomes a fact about you. Here it does not, because "was
-investigated" is not one of the twenty-two things the world may say.
+investigated" is not one of the things the world may say.
 
 ## The way this gets taken apart
 
 Now the honest part.
 
-A closed list of twenty-two things is a strong protection, and it has an obvious
+A closed list is a strong protection, and it has an obvious
 weakness: it works only while the list stays closed. Nobody who wanted to capture
 this society would begin by arguing that people should be imprisoned without
-evidence. They would begin by proposing a twenty-second entry.
+evidence. They would begin by proposing one more entry.
 
 It would be reasonable. It would solve a real problem. Perhaps we need to record
 whether someone has been cooperative, because the process runs so much better when
@@ -117,6 +155,16 @@ each is small, and none of them is the moment the system dies. But every new thi
 the world may say is a new place for a conclusion to hide, dressed as a fact. Widen
 the vocabulary far enough and the rules no longer matter, because anything you want
 to conclude, you can now simply write.
+
+The severity change earlier in this chapter was exactly this move, and it should be
+held to exactly this standard. It took an entry off the list and put two on: net, the
+world may now say more than it could before. Every argument in the paragraph above
+applies to it. The case for it is that the entry removed was a conclusion wearing the
+clothes of a fact, and the two added are things a witness can describe and a defendant
+can contest — a trade of one soft slot for two hard ones. That is a real argument and
+it is not a proof, and the honest position is that this is the same door, opened
+deliberately, by people who believed they had a good reason. So did everyone who ever
+opened it.
 
 So the list is the most sensitive thing in the design. Which raises the question of
 what protects it.
@@ -136,6 +184,6 @@ leaves the vocabulary unprotected. Whether that is an oversight or a judgment th
 the list must stay amendable to stay useful, it is currently the softest place to
 push, and anyone serious about attacking this society would push there first.
 
-The rest of this book describes what the twenty-two facts are permitted to produce:
+The rest of this book describes what the facts on the list are permitted to produce:
 who may hold power, what may be taken away, and what may never be. All of it rests on
 the list. If you want to know where to watch, watch the list.
