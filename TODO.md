@@ -524,8 +524,13 @@ for the harness section below.
   regresses nothing — `false(Jala)` FALSE, `false(Amend_Floor)` TRUE,
   `become(Amend_Floor, Law)` FALSE, `rights-floor` 75/75 and chapter 12 14/14 still
   green. Splitting amendment invalidity onto its own predicate is the cleaner
-  alternative and costs a corpus name. **Do this before the shield fix below**, which
-  couples the shield to `false/1`.
+  alternative and costs a corpus name.
+  **No longer blocking anything, and the ordering note is withdrawn.** This used to read
+  "do this before the shield fix below". The shield was ruled exposure-scoped on
+  2026-07-30 and is not coupled to `false/1`, so nothing waits on this — but the attack
+  is unchanged and still live against recognition, which is the reason to do it.
+  **Its line references have rotted ~43 lines**: the rule is `:567`, not `:524`, and the
+  reuse comment is `:562-563`, not `:519-521`. Re-derive before quoting.
 
 - **`clear/1` is a one-fact conviction nullifier.** `clear` appears twice: `:505`
   (`all $x: clear($x) -> permits(Appeals, $x).`) and `:586` (Nia's ground fact). No
@@ -680,34 +685,6 @@ for the harness section below.
   **`person` is not a candidate and never will be**: closing it would refuse all 30
   ground facts and collapse the cast, which is why chapter 1 now discloses the roster
   as a gap no rule can close rather than promising a guard.
-
-- **[AUTHOR-GATED] Decide whether the shield closes against the person or the
-  exposure.** `:470` scopes `~deceive($w, $o)` to the **pair**, and the rule is
-  satisfied by *any* qualifying pair, so a deceit finding on one exposure is defeated
-  by making a second. Verified with REX, a Kel clone who also exposed the Review body:
-  `deceive(Rex, Court)` TRUE, `false(Rex)` TRUE, `defend(Rex)` TRUE, `prisoner(Rex)`
-  FALSE. That falsifies `04:95-97` — "it resolves hard" — which is true of **one**
-  exposure; Kel closes only because Kel made exactly one. The three per-subject `show`
-  pins cannot catch a per-pair defect.
-  **Bounded, which is what makes this a decision and not an emergency.** One further
-  deceit finding per exposure restores conviction (verified: `defend(Ryo)` FALSE,
-  `prisoner(Ryo)` TRUE), and the target set is finite in-snapshot at nine — four
-  `public` bodies (Article 1b added `State`) plus five seats. Linear denial-of-service on the Review queue, not an
-  unbounded bypass.
-  **The person-scoped fix compiles and costs nothing in the suite**: appending
-  `& ~false($w)` to `:470` gives `defend(Rex)` FALSE, `prisoner(Rex)` TRUE, with
-  `defend(Sly)` and `defend(Rebel)` intact and both suites green. The prescribed
-  `sham($w)` variant does **not** compile — `sham`, `deceitful` and `answerable` are
-  all absent from the corpus, so that route is a lexicon ask.
-  **Its cost is the decision.** `~false` closes the shield against anyone whose credibility
-  is voided for *any* reason, so one bad-faith finding costs a genuine whistleblower
-  their future protection — precisely the asymmetry Article 7's polarity note exists to
-  defend. And `false/1` has five producing rules, one of which is Article 9's
-  unrestricted head — so **do not close against the person until that is guarded**.
-  Separately and regardless of the fork: `show/2` has no derived-only status, no
-  precondition, no author and no cost, and it is absent from the trust base.
-  **Warning:** adding `person($w)` to this rule is rejected *atomically* — see the
-  Article 7 landmine bullet.
 
 - **[AUTHOR-GATED] Decide where a homeless, non-severe, non-domestic convict goes.**
   See the chapter-11 prose bullet for the evidence. **The obvious fix does not close
