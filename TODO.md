@@ -239,35 +239,41 @@ that the engine contradicts. All were found by the 2026-07-28 review audit or wh
 verifying it; none was caught by the 248 green pins, which is itself the argument
 for the harness section below.
 
-- **[AUTHOR-GATED] "Standing" names two different predicates, and the manuscript uses
-  one word for both.** `authority/1` is answerability and is never revoked; `false/1`
-  is the credibility of the record and is destroyed routinely. They are independent,
-  not opposite — verified on the unmodified constitution: `? false(Vex). => TRUE`
-  alongside `? authority(Vex). => TRUE` and `? permits(Review, Vex). => FALSE`; and
-  `? false(Bela). => TRUE` alongside `? authority(Bela). => FALSE`. So voiding takes
-  the pen and the record and leaves standing wholly intact. **Chapter 2 is correct
-  and needs no change** — every *other* chapter saying "voiding standing" means
-  `false/1`. The reader still meets the collision before chapter 2 defines the term,
-  though the gap narrowed: `6f1ab42` moved the definition from `02:34` into the first
-  paragraph, so it is now `01:76` to `02:5`. Chapter 4 does it to itself twenty-three
-  lines apart: `:91` "Kel's own standing is voided" against `:114` "standing is never
-  revoked".
-  `authority/1` sense, leave alone: `02` throughout, `03:3`, `03:59`, `04:36`,
-  `04:50`, `04:114`. `false/1` sense, needs the new word: `01:76`, `01:86-87`,
-  `03:8`, `03:42`, `03:67`, `04:91`, `05:3`, `05:14`, `05:17`, `05:36`, `05:43`,
-  `06:3`, `08:70`, `08:77`, `08:109`, `10:52`, `10:59`, `10:84`, `13:13`. A third
-  sense hides at `12:22` — "the amendment has no standing" is `false/1` on a proposal.
-  Decide the replacement word — `04:92-93` already reaches for "credibility" — then
-  reserve "standing" for `authority/1` throughout. Add `? false(Vex). # => TRUE` and
-  `? authority(Vex). # => TRUE` adjacent in `02-standing.pins.nibli` so the two senses
-  can never re-merge silently; the file gained the Koa pair at `:63-67` in the same
-  commit but not these. **Land this before the chapter-5 and chapter-8 rewrites
-  below** — both touch sentences containing the word; the chapter-2 rewrite has
-  already landed.
+- **Standing/credibility split: landed 2026-07-30 as v0.6.** `authority/1` keeps the word
+  "standing"; `false/1` is **credibility** in the prose; the amendment at `12:22` **has no
+  force**. Chapter 2 was correct and is untouched. Chapter 3 gained the sentence the book
+  never had — that standing, the pen and credibility are three things — anchored on three
+  cast cases that were each already pinned.
+  **This was a bug, not a tidy.** The book carried two bolded standalone sentences six
+  chapters apart making opposite claims about one noun: `02:35` "Standing is never taken
+  away" against the old `08:70` "Your standing is still reachable".
+  **The site list in this bullet would have caused damage, and the lesson generalises.**
+  It missed `06:10` outright; it omitted `01:69` and `01:84` from the leave-alone list, so
+  a mechanical pass would have renamed two `authority` sites; and it predated four
+  occurrences the severity pass introduced, three of them in chapter 11, which the bullet
+  never mentioned. Chapter 1's line numbers had rotted by 38. **Re-derive a site list by
+  census before executing any rename** — a list in this tracker is a snapshot, and every
+  commit since is an invalidation.
+  **The word was chosen by substitution, not by argument.** Five candidates were each
+  rewritten into every site and the resulting prose compared. `credibility` won because it
+  takes the verb chapter 5 is built on — *lose* — where every alternative forces passives.
+  Rejected: `standing in the record` (the qualifier stops qualifying where the record is
+  the ambient topic, which is everywhere); `their word` and `weight` (passives, and both
+  break the abstract-noun parallel at `08:70`/`08:75`); `good faith` (**wrong on the
+  facts** — Bela never lied, and the multi-sig rule requires `~deceive` of both auditors,
+  so it would report a conclusion no rule reached).
+  **`08:77` was mis-filed in this bullet.** "Poverty of standing" sits under the
+  *recognition* bullet and used a third, loose, social-position sense. It is now just
+  "poverty".
+  **The constitution carried the same collision, reversed** — seven comments said
+  "standing" for the `false/1` sense while the predicate for the other sense is
+  `authority`. Renamed, because the method part prints those comments to the reader.
+  **`06:8`'s "accumulated credit" became "recognition"**, which the vocabulary rule wanted
+  anyway; the rename is what surfaced it.
 
 - **Chapter 10: the third door is not gated on voiding, and the chapter says it is.**
   `book-1/10-contribution.md:50-68` claims "All three doors close for the same reason:
-  a person whose standing has been voided earns nothing" and closes on "putting the
+  a person whose credibility has been voided earns nothing" and closes on "putting the
   same condition on all three doors". There is no such condition. Article 3 gates
   teaching and work on `~false` (`:340-341`); the examiner rule (`:349`) gates on
   `~deceive` and `~broken` only. **Verified:** `false(Vex)` TRUE *and* `reward(Vex)`
@@ -554,7 +560,7 @@ for the harness section below.
   on `$m`**, and `adjust/2` is freely assertable. The single fact
   `adjust(Jala, Art_Floor).` gives, verified: `false(Jala)` TRUE, `lose(Points, Jala)`
   TRUE, `travel(Jala)` TRUE, `decide(Jala, Ballot)` TRUE. No imprisonment — but Jala's
-  standing is destroyed and the clawback fires **without** two independent credentialed
+  credibility is destroyed and the clawback fires **without** two independent credentialed
   auditors, without `~parent`, without `~deceive`, without a clean epoch. Article 4's
   whole apparatus is defeated by one write, because Article 9 reuses `false/1` as its
   amendment-invalidity proxy (`:519-521`) and never restricts the reused head to
@@ -745,7 +751,7 @@ for the harness section below.
   `defend(Sly)` and `defend(Rebel)` intact and both suites green. The prescribed
   `sham($w)` variant does **not** compile — `sham`, `deceitful` and `answerable` are
   all absent from the corpus, so that route is a lexicon ask.
-  **Its cost is the decision.** `~false` closes the shield against anyone whose standing
+  **Its cost is the decision.** `~false` closes the shield against anyone whose credibility
   is voided for *any* reason, so one bad-faith finding costs a genuine whistleblower
   their future protection — precisely the asymmetry Article 7's polarity note exists to
   defend. And `false/1` has five producing rules, one of which is Article 9's
@@ -946,8 +952,9 @@ for the harness section below.
 - **Give `rotten` — and `capture` and `judge` — an expungement path. URGENT: release
   landed and this did not, so the asymmetry is now live in print.** A single void is
   perpetual and compounds, with no route back, while a conviction can now be finished.
-  That makes losing your standing the harshest sanction in the design — harsher than
-  imprisonment — which inverts `02-standing.md:41-42` (*"This is the only thing in the
+  That makes losing your credibility the harshest sanction in the design — harsher than
+  imprisonment. Note the comparison it invites is with *standing*, the other sense, at
+  `02-standing.md:41-42` (*"This is the only thing in the
   entire society that is protected that way. Everything else can be lost"*) and sits
   badly beside `10-contribution.md:50` (*"Nothing to earn it back with"*). The author
   decided on 2026-07-29 that both halves are designed together; only the first half
@@ -1141,9 +1148,12 @@ for the harness section below.
   Verified end to end:
   `rotten(Vex)` TRUE, `permits(Review, Vex)` FALSE, `false(Vex)` TRUE, `authority(Vex)`
   TRUE, `lose(Points, Vex)` TRUE. Vex is the one person in the cast who is voided,
-  stripped of the pen, still possessed of standing, and clawed back — four verdicts that
-  between them settle three of the book's recurring confusions — and no single suite puts
-  more than two of them in front of a reader.
+  stripped of the pen, still possessed of standing (the other sense), and clawed back —
+  four verdicts that between them settle three of the book's recurring confusions.
+  **Partly closed 2026-07-30**: `02-standing.pins.nibli` now carries `false(Vex)`,
+  `authority(Vex)` and `permits(Review, Vex)` as one adjacent block, so three of the five
+  are in front of one reader in one file. Still missing from that block: `rotten(Vex)`,
+  which is the *reason* for the other three, and `lose(Points, Vex)`, which is the cost.
   Second gap: `? false(Cira). # => FALSE` is unpinned, and `06:103` rests on it. **Add
   both before the Article 4 clawback narrowing** (the "Decide the Article 4 clawback
   question" bullet), not after, or the chapter loses the only fixture that would show
