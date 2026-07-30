@@ -6,8 +6,8 @@ gone stale because the numbers were transcribed by hand and the constitution mov
 underneath them. This script owns the computed regions so that cannot happen again.
 
 Usage:
-    5-spine-gen.py utopia-v2.nibli 3-spine.md            rewrite in place
-    5-spine-gen.py utopia-v2.nibli 3-spine.md --check    exit 1 if stale
+    5-spine-gen.py constitution.nibli 3-spine.md            rewrite in place
+    5-spine-gen.py constitution.nibli 3-spine.md --check    exit 1 if stale
 
 Only text between `<!-- BEGIN GENERATED: name -->` and `<!-- END GENERATED: name -->`
 is touched; hand-written prose is never rewritten.

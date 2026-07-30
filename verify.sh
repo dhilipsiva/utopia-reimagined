@@ -18,7 +18,7 @@ set -uo pipefail
 cd "$(dirname "$0")"
 
 PIN="${NIBLI_PIN:-$HOME/projects/dhilipsiva/nibli/target/release/nibli-pin}"
-KB=new-book-plans/utopia-v2.nibli
+KB=new-book-plans/constitution.nibli
 SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
 QUICK=0

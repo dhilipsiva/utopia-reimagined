@@ -1,7 +1,7 @@
 # ── Chapter 9 fidelity pins: "The Vote Conviction Does Not Take" ─────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/09-the-vote-conviction-does-not-take.pins.nibli
 
 :expect-pins 12

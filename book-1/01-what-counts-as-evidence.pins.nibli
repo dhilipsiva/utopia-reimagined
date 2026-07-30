@@ -2,7 +2,7 @@
 #
 # KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
 # inlined. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/01-what-counts-as-evidence.pins.nibli
 #
 # One entry per load-bearing sentence in the chapter. Private to the author; the

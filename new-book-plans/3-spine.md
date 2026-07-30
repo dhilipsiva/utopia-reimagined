@@ -1,6 +1,6 @@
 # The Derived Spine — book-1
 
-Regenerated 2026-07-28 against the enacted constitution (`utopia-v2.nibli`). The
+Regenerated 2026-07-28 against the enacted constitution (`constitution.nibli`). The
 previous version of this file computed its order from a graph that no longer
 exists; see the *Superseded* note at the end for what changed and why it matters.
 

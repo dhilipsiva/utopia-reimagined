@@ -1,7 +1,7 @@
 # ── Chapter 7 fidelity pins: "A Prisoner Is a Person" ────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/07-a-prisoner-is-a-person.pins.nibli
 #
 # Zed is introduced BY this pin file rather than living in the constitution:

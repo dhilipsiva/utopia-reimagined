@@ -1,7 +1,7 @@
 # ── Chapter 12 fidelity pins: "Changing the Rules" ───────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/12-changing-the-rules.pins.nibli
 #
 # The "three ways this is thinner" section pins two live defects: the

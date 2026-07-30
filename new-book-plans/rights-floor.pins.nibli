@@ -1,4 +1,4 @@
-# ── Constitution pins: utopia-v2.nibli ───────────────────────────────────────
+# ── Constitution pins: constitution.nibli ───────────────────────────────────────
 #
 # KIND: CONTENT pin. The fixture is the SUBJECT of these pins, so it is loaded
 # rather than inlined — inlining it would make this file certify a copy, and the
@@ -6,7 +6,7 @@
 # inline their fixtures precisely because the fixture is not the subject.
 #
 # Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli new-book-plans/rights-floor.pins.nibli
+#   nibli-pin --kb new-book-plans/constitution.nibli new-book-plans/rights-floor.pins.nibli
 #
 # Every verdict below was produced by the engine, never by hand.
 

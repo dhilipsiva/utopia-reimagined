@@ -104,7 +104,7 @@ Two facts no command teaches:
 
 The graph counts live in exactly one generated place, `new-book-plans/3-spine.md:17-32`.
 `4-strata.py` disagrees with it and is blind to the floor by construction — see the
-harness section. Fix while you are next in `utopia-v2.nibli`: `:188` cites the
+harness section. Fix while you are next in `constitution.nibli`: `:188` cites the
 upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
 
 ---
@@ -153,7 +153,7 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
 
 - **Citation remaps must cover every file that moved, not just the one being edited.**
   The v0.5 remap was careful about matching old line text rather than offsets, and still
-  rotted three citations, because it was scoped to `utopia-v2.nibli` alone — `3-spine.md`
+  rotted three citations, because it was scoped to `constitution.nibli` alone — `3-spine.md`
   was edited in the same pass and nobody re-pointed the citations into it. Found the next
   day, by content-matching against `git show HEAD~1:new-book-plans/3-spine.md`. Do that
   for **each** file a commit touches. The generic form, which takes a path and reports
@@ -250,11 +250,33 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
 
 ## Blocking decisions — nothing should be drafted until these are settled
 
-- **[AUTHOR-GATED] The repo name is now misleading.** `utopia-reimagined` names the
-  legacy book, which is being deleted, and neither new book uses the word. Not urgent
-  and it blocks nothing, but decide before anything is published under the URL: a
-  rename costs remote references and clone paths, while leaving it costs a permanent
-  mismatch between the repo and everything in it.
+- **Repo and constitution renamed: decided 2026-07-30 as v0.7, GitHub side pending.**
+  The repo becomes **`rights-nobody-has-to-earn`**, mirroring the book title; the
+  constitution is now `new-book-plans/constitution.nibli`. Everything inside the repo is
+  written as though the GitHub rename has already happened.
+  **Working the bullet reopened the title, which is the more useful finding.** The bullet
+  was about a dead word in a repo slug. Checking what the name should mirror surfaced that
+  *Nothing Has to Happen First* was illegible to a stranger — see the title record above.
+  **Four steps remain and they are outside this repo:**
+  1. Rename on GitHub. Redirects cover web, API and git over both protocols, and carry
+     issues, stars and forks.
+  2. **Edit the GitHub description.** It still reads *"Utopia Reimagined: From Dream To
+     Design"* and **a rename does not touch it.** The likeliest thing here to be forgotten.
+  3. Rename the working directory, then `git remote set-url origin`. Cosmetic — pushes
+     already bypass `origin` with an explicit HTTPS URL, because the SSH key is
+     passphrase-locked and the `gh` credential helper is keyed on the host, not the path.
+  4. **Never let anything reoccupy `dhilipsiva/utopia-reimagined`.** The redirect dies the
+     instant something does, including an accidental `gh repo create`.
+  **Two things a rename does not save**: `raw.githubusercontent.com` links do not redirect
+  (and `new-book-plans/1.md:8` records raw fetches as part of the working method), and
+  anything that already resolved the old name into a stored identifier keeps it.
+  **The four handoff blocks no longer hardcode an absolute path.** They rotted once
+  already; they are now repo-relative, which survives this rename and the next.
+  **Deliberately not done: nibli's `utopia.nibli`.** Its header carries the same dead
+  phrase, but it is `include_str!`-compiled into three binaries and its UI label is pinned
+  byte-stable by `nibli/CLAUDE.md:161`. Real cost in another repo for no gain here. The
+  dependency is one-way — nibli contains zero references to this repo, verified across its
+  whole tree.
 
 ---
 
@@ -396,7 +418,7 @@ for the harness section below.
   & ~prisoner($x) -> decide($x, Ballot).` → `? decide(Hano, Ballot). => TRUE` with
   `? prisoner(Hano). => TRUE`. The chapter's real result — the clause *compiles*, where
   a floor-shaped one is refused — survives untouched; the sentence claiming it takes
-  effect does not. `utopia-v2.nibli:12-17` teaches exactly this: "A permissive rule
+  effect does not. `constitution.nibli:12-17` teaches exactly this: "A permissive rule
   left in place keeps its exploit." The pin file cannot catch it because `:49-50` pins
   only that the rule loads and never re-queries the ballot.
   Rewrite `09:71-79`: the clause is writable, and it bites only if the existing
@@ -559,7 +581,7 @@ for the harness section below.
 
 - **`lose/2` is a leaf: clawback records a loss and retracts nothing.**
   Test it on the rule BODIES, not with a bare grep — `awk -F'->' '/^[^#]/ && /->/ && $1
-  ~ /lose/' utopia-v2.nibli` returns nothing, and the only enacted occurrences are
+  ~ /lose/' constitution.nibli` returns nothing, and the only enacted occurrences are
   `:347` and `:348`, **both rule heads**. (A plain `grep 'lose('` returns three lines,
   the third being commentary at `:98`; and a grep that matches a rule's own head is a
   check that can never fail — see the chapter-8 pin NOTE for the same trap caught live.)
@@ -699,7 +721,7 @@ for the harness section below.
   ```
   Rebel — the file's own honest whistleblower, and the whole of chapter 2's argument —
   is jailed by deleting one line. Fix: regenerate the enumeration from
-  `grep derived_only new-book-plans/utopia-v2.nibli` rather than editing a list in
+  `grep derived_only new-book-plans/constitution.nibli` rather than editing a list in
   place — nine relations are closed, everything else is open — and record **three**
   undefended classes, not one. **Assertion**, at minimum `public`, `clear`, `choose`,
   `mature`, `person`, `show`, `injure`, `judge`, `capture`, `broken`, `rotten`,
@@ -1272,19 +1294,19 @@ for the harness section below.
   in any place, or properly by taking the strata from the engine per the handoff above. Until
   then: after any constitution change, check `grep "Evidence predicates" 3-spine.md` reads 21.
 
-- **Fix the upstream test citation in the constitution.** `utopia-v2.nibli:182` cites the
+- **Fix the upstream test citation in the constitution.** `constitution.nibli:182` cites the
   five regression tests that pin the floor firewall at `integration.rs:3228`; they are at
   `:3475-3571`. That citation is the only pointer from the constitution to the tests whose
   deletion would silently end the firewall argument, so it is worth being right.
 
-- **One dead artifact and one stale run-command, both in the way of anyone running the
-  suite for the first time.** `new-book-plans/utopia-v2-run.nibli` is committed, 54 lines,
-  opens with `:load utopia.nibli` — a file that exists nowhere in the repo — and carries 42
-  `:proof-verbose` directives, which `nibli-pin` does not take. It is the first thing a
-  reader looking for the runner will open, and it cannot run. Delete it, or replace its
-  contents with `./verify.sh`. And `01-what-counts-as-evidence.pins.nibli:5-6` plus
-  fourteen copies still name a single-file invocation as the run command; point all fifteen
-  at `./verify.sh`, which now exists.
+- **The stale run-command in fifteen pin files.** `01-what-counts-as-evidence.pins.nibli`
+  and fourteen siblings each name a single-file `nibli-pin --kb …` invocation as the run
+  command. It works, but it is not how the suite is run and it cannot see the cross-file
+  `:expect-pins` reconciliation, so a reader following it gets a green that means less than
+  they think. Point all fifteen at `./verify.sh`.
+  *(The dead runner this bullet used to also name — `utopia-v2-run.nibli`, which opened
+  with `:load utopia.nibli` and carried 42 directives `nibli-pin` does not take — was
+  deleted in the v0.7 rename pass.)*
 
 ## Engine handoffs (nibli)
 
@@ -1365,7 +1387,7 @@ never worked around in prose.
   fixture. nibli-engine/tests/integration.rs:1236 already tests this exact rule shape
   over ASSERTED relations and passes, so the gap is one line from existing coverage.
 
-  Consumer: ~/projects/dhilipsiva/utopia-reimagined/new-book-plans/utopia-v2.nibli.
+  Consumer: the book repo, `new-book-plans/constitution.nibli`.
   It does not currently depend on the fix — Article 4's cross-body rule uses two
   constants precisely because a variable there would have been inert — but the
   workaround is a constraint on the design rather than a choice, and any future rule
@@ -1390,7 +1412,7 @@ never worked around in prose.
   other corpus name refused at assert time with the same message shape `derived_only`
   uses. Ordering should be load-bearing and stated, as `derived_only`'s is.
 
-  Consumer: ~/projects/dhilipsiva/utopia-reimagined/new-book-plans/utopia-v2.nibli,
+  Consumer: the book repo, `new-book-plans/constitution.nibli`,
   whose Article 0 already closes nine relations, and whose book states as its opening
   claim that the record has exactly twenty-one entries and that a twenty-second
   "cannot" be written. It currently can.
@@ -1413,7 +1435,7 @@ never worked around in prose.
   regression message. Keep it inert for files that do not use it. Secondary ask in the
   same area: let a pin file declare a shell precondition, so the grep-only NOTEs in the
   book's pin files become checks in the same run. The consuming artifact is
-  ~/projects/dhilipsiva/utopia-reimagined/book-1/*.pins.nibli.
+  the book repo's `book-1/*.pins.nibli`.
   ```
 
 - **HANDOFF PROMPT — expose the compiled stratification as data.** The book needs the
@@ -1456,7 +1478,7 @@ never worked around in prose.
   In ~/projects/dhilipsiva/nibli: nibli-pin's `:accept` loads its rule into the KB and
   leaves it there. Content pin files use `:accept` as a CONTROL — "this rule must still
   load" — and never want the rule afterwards, but every query below it then runs against
-  a widened base. In utopia-v2.nibli's suite the four complement controls each add a
+  a widened base. In constitution.nibli's suite the four complement controls each add a
   second route to `prisoner`, so `? prisoner(Adam).` below them passed even though the
   rule that should derive it could have been deleted; and a `~false` control makes a
   person with no conviction at all come back TRUE for `prisoner`.
@@ -1465,7 +1487,7 @@ never worked around in prose.
   stratifies the rule, reports loadability as the pin verdict, and then DISCARDS it so
   the KB is unchanged for subsequent pins. `:refuse` already has this property for free,
   since a refused rule never enters the store; the asymmetry between the two is the bug.
-  Consumer: ~/projects/dhilipsiva/utopia-reimagined/new-book-plans/rights-floor.pins.nibli
+  Consumer: the book repo, `new-book-plans/rights-floor.pins.nibli`
   and book-1/*.pins.nibli, which currently work around it by ordering.
   ```
 

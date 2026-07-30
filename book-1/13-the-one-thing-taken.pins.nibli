@@ -1,7 +1,7 @@
 # ── Chapter 13 fidelity pins: "The One Thing Taken" ──────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/13-the-one-thing-taken.pins.nibli
 #
 # TRIGGER FIRED. This file used to record "there is no release" as an absence and
@@ -15,7 +15,7 @@
 #
 # The other: "Nothing depends on it" — travel appears in the constitution only as
 # a rule head. Test the rule BODIES, since a bare grep matches the head too:
-#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' new-book-plans/utopia-v2.nibli
+#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' new-book-plans/constitution.nibli
 # must stay EMPTY. `verify.sh` runs it with a positive control.
 
 :expect-pins 26

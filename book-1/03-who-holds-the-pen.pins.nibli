@@ -1,7 +1,7 @@
 # ── Chapter 3 fidelity pins: "Who Holds the Pen" ─────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/03-who-holds-the-pen.pins.nibli
+#   nibli-pin --kb new-book-plans/constitution.nibli book-1/03-who-holds-the-pen.pins.nibli
 
 :expect-pins 14
 

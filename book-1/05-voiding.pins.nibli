@@ -1,7 +1,7 @@
 # ── Chapter 5 fidelity pins: "Voiding" ───────────────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli book-1/05-voiding.pins.nibli
+#   nibli-pin --kb new-book-plans/constitution.nibli book-1/05-voiding.pins.nibli
 
 :expect-pins 14
 

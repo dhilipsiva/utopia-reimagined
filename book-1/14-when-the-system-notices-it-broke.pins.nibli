@@ -1,14 +1,14 @@
 # ── Chapter 14 fidelity pins: "When the System Notices It Broke" ─────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/14-when-the-system-notices-it-broke.pins.nibli
 #
 # "Nothing reads these markers" is an absence and cannot be queried: err appears
 # twice in the constitution, both times as a rule head. Test the rule BODIES —
 # a plain `grep err` matches those heads and is a check that can never fail:
 #   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /err/ {print NR": "$0}' \
-#       new-book-plans/utopia-v2.nibli
+#       new-book-plans/constitution.nibli
 # It must stay EMPTY. Positive control: the same command with /false/ returns 5
 # lines, so empty means unread and not that the command is broken.
 #

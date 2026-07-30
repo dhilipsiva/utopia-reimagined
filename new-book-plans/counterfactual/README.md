@@ -1,6 +1,6 @@
 # Counterfactual fixtures
 
-Three copies of `../utopia-v2.nibli`, each with **exactly one line deleted**. They exist
+Three copies of `../constitution.nibli`, each with **exactly one line deleted**. They exist
 because of a limitation the tracker records: derivation is monotone and probe facts load
 *on top* of the knowledge base, so **no probe can test a restriction**. Every "if we
 narrowed this rule, pin X would flip" claim in the book and the tracker is an argument
@@ -9,7 +9,7 @@ until it is run against a file where the line is actually gone.
 Regenerate any of them with:
 
 ```
-K=new-book-plans/utopia-v2.nibli
+K=new-book-plans/constitution.nibli
 grep -vFx 'all $anyone: prisoner($anyone) -> person($anyone).' $K > no-person-line.nibli
 grep -vFx 'public(Court).'                                     $K > no-public-court.nibli
 grep -vFx 'choose(Electorate, Boss).'                          $K > no-choose-boss.nibli

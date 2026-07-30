@@ -9,7 +9,7 @@ licensed for what it is.
 | Book prose (the new derived book) | Creative Commons Attribution 4.0 International | `CC-BY-4.0` |
 | Code — scripts, harness, data fetchers | MIT **or** Apache-2.0, at your option | `MIT OR Apache-2.0` |
 | Data — the claim registry and fetched figures | CC0 1.0 Universal (public domain) | `CC0-1.0` |
-| The constitution (`utopia.nibli`) | Whatever nibli carries — it lives in that repo | `MIT OR Apache-2.0` |
+| The constitution (`new-book-plans/constitution.nibli`) | CC0 1.0 Universal, as a pre-decision file under the root `LICENSE` | `CC0-1.0` |
 
 ## Already dedicated, and not reversible
 

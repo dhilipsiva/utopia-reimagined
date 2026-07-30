@@ -1,7 +1,7 @@
 # ── Chapter 8 fidelity pins: "What You Are Owed" ─────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/utopia-v2.nibli \
+#   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/08-what-you-are-owed.pins.nibli
 #
 # NOTE — one absence this file cannot hold, and it is load-bearing. "Nothing
@@ -10,7 +10,7 @@
 # left of the arrow; a plain `grep owe` matches Article 1b's own head and is
 # always non-empty, which is a check that can never fail:
 #   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /owe/ {print NR": "$0}' \
-#       new-book-plans/utopia-v2.nibli
+#       new-book-plans/constitution.nibli
 # It must stay EMPTY. Positive control: the same command with /false/ returns 5
 # lines, so an empty result means the predicate is unread and not that the
 # command is broken. If it ever returns a line, something now follows from the
