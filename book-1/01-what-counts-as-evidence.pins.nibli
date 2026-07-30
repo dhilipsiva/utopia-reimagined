@@ -9,7 +9,7 @@
 # reader never sees this file. If a verdict flips, the sentence it guards has
 # started lying — fix the prose or the constitution, never the pin.
 
-:expect-pins 12
+:expect-pins 16
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -60,3 +60,36 @@ authority(Pax).
 
 ? permanent(Art_Evidence).
 # => FALSE
+
+# 1.7 "Someone is a person." — the entry, and the two ways it gets written.
+#
+# THESE MUST BE LAST IN THE FILE AND THAT IS NOT COSMETIC. An accepted assertion
+# loads into the KB and stays there. `person(Ghost).` puts a name on the roster
+# with every floor right, `travel`, and a public body owing it things; the
+# `free` route does the same by a longer path. Any pin querying the roster after
+# this point measures a polluted KB and passes for the wrong reason —
+# `rights-floor.pins.nibli:285` records a real vacuous green from exactly this.
+# Put new queries ABOVE this block.
+#
+# It does not reach the other thirteen files: each gets a fresh KB. Proof —
+# `rights-floor.pins.nibli` runs first and its controls would make
+# `travel(Bela)` FALSE, yet `06-clawback.pins.nibli` pins it TRUE in the same
+# green run.
+
+# "Someone's sentence is finished" is ON the list, and it confers personhood.
+# This is the pin the chapter's decision turned on: the list already reached the
+# roster before anybody decided whether `person` belonged on it.
+:accept
+free(Wraith).
+
+? person(Wraith).
+# => TRUE
+
+# And the entry itself is writable, with nothing asked and nobody consulted.
+# "a name belonging to nobody acquires every right on the floor ... the freedom
+#  to move ... Nothing anywhere asks who this is."
+:accept
+person(Ghost).
+
+? travel(Ghost).
+# => TRUE

@@ -7,16 +7,28 @@ whatever turns out to be useful — a fixed set of entries, and when someone wan
 something about you that is not on the list, they cannot. Not *may not*. Cannot.
 There is nowhere to put it.
 
-Here is the whole list. Someone worked, or taught. Someone injured someone. Someone
-attacked someone, or was cruel to them. A body passed judgment. An auditor documented
-what they found. Someone lied. Someone exposed something. A person has a home, or a
-family, or a parent, or has reached adulthood. An assembly proposed a change; the
-electorate approved it; the change touches a particular article; that article is
-protected. A body is a public institution. The electorate seated someone. Someone was
-cleared. Someone was recalled. Someone was voided in an earlier period. Someone's
-sentence is finished.
+Here is the whole list. Someone is a person. Someone worked, or taught. Someone injured
+someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
+auditor documented what they found. Someone lied. Someone exposed something. A person
+has a home, or a family, or a parent, or has reached adulthood. An assembly proposed a
+change; the electorate approved it; the change touches a particular article; that
+article is protected. A body is a public institution. The electorate seated someone.
+Someone was cleared. Someone was recalled. Someone was voided in an earlier period.
+Someone's sentence is finished.
 
 That is it. That is everything the record can hold.
+
+Read it again and one entry will not sit right with the others. Everything else on the
+list is something that happened — an act, a finding, a decision, a date. *Someone is a
+person* is not an event. Nobody did it, and it is not true of you at some moment rather
+than another. It is the entry that says you are the sort of thing the rest of the list
+can be about.
+
+It is also written down the same way as all the rest: by somebody, into a record. Read
+that slowly, because it is the most consequential fact in this chapter and it is easy to
+read straight past. Every protection described in this book is owed to persons and to
+nobody else. Being a person is not something the design works out. It is something
+typed.
 
 Something that used to be on the list is missing from it: nobody can write down that an
 offence was *serious*. Where it went is worth the detour, and it comes back below.
@@ -110,11 +122,19 @@ each of them appearing by name.
 
 This is the same principle three times over, and it is the load-bearing one in the
 whole design:
-**the things that matter are not writable. They are only derivable.** Every power in
-this society — the power to void someone's credibility, to place them somewhere, to
+**the conclusions that matter are not writable. They are only derivable.** Every power
+in this society — the power to void someone's credibility, to place them somewhere, to
 strip what they have earned — is a conclusion at the end of a chain of ordinary
 facts. There is no back door where you write the conclusion directly and skip the
 chain, because the door was never built.
+
+Be exact about which word carries that sentence, because the looser version of it is
+false and the looser version is the one you will want to believe. *Conclusions* cannot
+be written. Facts can — that is what makes them facts — and one of them is personhood.
+Being a person is not something anybody reasons their way to at the end of a chain. It
+is written down at the start of one. So the design shuts the door on writing verdicts
+and leaves it standing open on the single fact that every verdict, and every protection,
+takes for granted.
 
 ## One person's word does not move anything
 
@@ -184,6 +204,39 @@ leaves the vocabulary unprotected. Whether that is an oversight or a judgment th
 the list must stay amendable to stay useful, it is currently the softest place to
 push, and anyone serious about attacking this society would push there first.
 
+## The other way in
+
+Everything above is about the list growing. There is a second route and it changes
+nothing, argues for nothing, and requires nobody's agreement.
+
+A list of what may be written is only as good as the writing. Somebody who is not a
+person can be made one: write the entry, and a name belonging to nobody acquires every
+right on the floor, a vote, the freedom to move, and a public body on the hook for all
+of it. Nothing anywhere asks who this is.
+
+The reverse is worse, and it is the one to watch. A person who is never entered is not
+recorded as missing, because there is no record of them at all. Everything this design
+owes, it owes to persons; somebody left off is owed none of it, and nothing in it
+notices, because noticing would mean holding the roster up against something, and there
+is nothing else to hold it against. Widening the list is loud — it takes a proposal, an
+argument, a vote. Leaving a name off the roster is a clerk not typing.
+
+And an entry can be taken back. Remove one and everything that person was owed goes in
+the same instant: every right on the floor, the ballot, the freedom to move, and the
+body that owed them any of it. What does not go is anything held against them. A
+finding that they were unreliable stands. Recognition already stripped stays stripped.
+De-personing costs this design every protection it built and none of its punishments,
+and nothing in it can report that this has happened, because an entry deleted and an
+entry never written look exactly alike.
+
+That gap cannot be closed by another rule, and it is worth saying why rather than
+leaving it as a promise for later. Every rule here works on what the record says. This
+is a claim about what the record leaves out, and there is no vantage point inside the
+record from which an absence is visible. Whatever guards the roster has to stand outside
+the design and watch it over time — which is a real answer, and a much weaker one than
+the rest of this chapter has been able to give.
+
 The rest of this book describes what the facts on the list are permitted to produce:
 who may hold power, what may be taken away, and what may never be. All of it rests on
-the list. If you want to know where to watch, watch the list.
+the list, and the list rests on the entry that says you are a person. If you want to
+know where to watch, watch who is on the roster and who is not.
