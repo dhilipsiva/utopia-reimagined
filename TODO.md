@@ -437,7 +437,7 @@ for the harness section below.
   down.
 
 - **Chapter 5 asserts two facts about Koa the constitution does not derive.**
-  `book-1/05-voiding.md:16-17`: "Koa **examined** Esa and recorded a finding — a real
+  `book-1/05-voiding.md:25-26`: "Koa **examined** Esa and recorded a finding — a real
   finding, on the record, made by **someone with the credential**." Koa's entire
   presence is `person(Koa).` and `capture(Koa, Esa).` (`:560-561`). Verified:
   `? capture(Koa, Esa). => TRUE`, `? judge(Koa, Esa). => FALSE`,
@@ -475,17 +475,6 @@ for the harness section below.
   reader being shown it — which is the register the whole book is written in. Read the
   vocabulary-entrenchment bullet below first: the honest sentence is that the list cannot be
   entrenched, not that it merely has not been.
-
-- **[AUTHOR-GATED] Rule on which of chapter 5's two gaps is the larger — the chapter
-  says both, nine lines apart.** `05:81` opens the costs section with "Two gaps, both
-  disclosed, and **the second is worse than the first**", and `:91` says of the
-  **first** — only parents are excluded from the independence check — that it is "**the
-  single largest gap in the accountability machinery**". Mutually exclusive, in the
-  chapter that closes Part II. A text check, not an engine one, which is precisely why
-  no pin catches it. Cheap once decided: either demote `:91`, or reverse `:81` and
-  re-order the two sections. Note the ranking is not stable under this tracker's own
-  queue — if kinship widens (below), the kinship gap closes and `:81` becomes true by
-  attrition rather than judgement.
 
 ---
 
@@ -953,20 +942,29 @@ for the harness section below.
   the guard is a body conjunct. Pair with an epoch expiry on `capture` and `judge`.
 
 - **Widen kinship beyond `parent/2` — the fix is available today, and it is not free.**
-  Article 4's independence check names one relationship (`:346`), so spouses and
-  siblings co-sign. Verified: two Electorate-seated siblings void a stranger —
-  `false(Targ)` TRUE. **Not blocked on the engine**, as the old wording implied:
-  `married` (speni), `brother` (bruna) and `sister` (mensi) are already in the committed
-  corpus. Verified fix — appending `~married`/`~brother`/`~sister` in both directions to
-  `:346` loads at 0 errors, flips `false(Targ)` FALSE, and leaves `false(Bela)` and
-  `false(Lupo)` TRUE. **The cost is what needs deciding.** It takes the evidence
-  vocabulary from 21 entries to 24, and enlarging it is the quietest way to capture a
-  system — the file's own threat model. It also falsifies two shipped passages: `01:3-18`
-  counts the list at twenty-one and calls it exhaustive, and `05:89-93` explains the gap
-  as the record having "no way to say that two people are married", which the corpus
-  refutes. Land the rule and both chapters together, or ship the gap and rewrite
-  `05:92-93` to say the design has not *admitted* the vocabulary rather than that it
-  *cannot*.
+  Article 4's independence check names one relationship (`:363`, not `:346` — that is
+  now the v0.7 comment header), so spouses and siblings co-sign. **Not blocked on the
+  engine**, as the old wording implied: `married` (speni), `brother` (bruna), `sister`
+  (mensi) and `sibling` (tunba) are already in the committed corpus
+  (`nibli-lexicon/src/corpus/predicates.rs:331,1444,2167,2185`). Appending
+  `~married`/`~brother`/`~sister` in both directions was verified to load at 0 errors and
+  to leave `false(Bela)` and `false(Lupo)` TRUE.
+  **The recorded probe is stale and the gap is narrower than it says.** *"Two
+  Electorate-seated siblings void a stranger — `false(Targ)` TRUE"* predates v0.7:
+  `permits(Review, ·)` derives from `choose(Electorate, ·)` (`:518`) and
+  `permits(Tribunal, ·)` from `choose(Convocation, ·)` (`:537`), so two people seated by
+  the same body cannot co-sign at all now. The pair must span bodies — one seated by
+  each — which is still reachable for a married couple or siblings and is what `05`
+  now describes. Re-run the probe with a cross-body pair before quoting a verdict.
+  **The cost is what needs deciding, and it is the only thing left open here.** It takes
+  the evidence vocabulary from **23** to **26**, and enlarging it is the quietest way to
+  capture a system — the file's own threat model.
+  **The prose half landed 2026-07-30.** `05`'s costs section no longer says the record
+  *cannot* express marriage; it says the words exist, the widening has not been judged
+  worth it, and discloses that as a choice. So the fork is gone: what remains is whether
+  to land the rule, and the chapter is already honest either way. The old note that
+  `01:3-18` "counts the list at twenty-one and calls it exhaustive" is doubly dead —
+  chapter 1 names no number at all, and `person` has since joined the list.
 
 - **Check each governance item against what the rules can express, before any prose.**
   Parts I–V are gated on derivation, and the constitution has no predicate for a
@@ -1781,8 +1779,10 @@ never worked around in prose.
   the generated block is **byte-identical** — predicate count, derived count, rule count,
   strata, the floor list, the evidence list and therefore chapter order all unmoved. A body
   conjunct is free too (`rules` counts arrows, not literals). A **new predicate name** costs
-  the evidence list 21 → 22 and falsifies chapter 1's headline number in nine places
-  (`01:5, :6, :32, :100, :106`, `03:85, :100`, `05:93`); a **new rule** moves the rule count
+  the evidence list 23 → 24. That used to falsify chapter 1's headline number in nine
+  prose places; all nine were converted to rule-statements, and no chapter names a count
+  any more, so the cost is now the spine check and `verify.sh`'s gate on 23 rather than
+  prose — cheaper, and it fails by name instead of quietly. A **new rule** moves the rule count
   and may add a stratum, which would add a chapter, which the computed order forbids.
   **Structural freedom is not verdict freedom, and this is what will actually bite.**
   Article 4's multi-sig quantifies over two auditor variables, so a new person naming
