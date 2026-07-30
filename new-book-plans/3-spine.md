@@ -41,8 +41,10 @@ and, since v0.5, `severe`. They are there for the same reason — each was a con
 that used to be written down, and closing it moved the work into a rule over facts that
 sit below it. Everything said below about `authority` being *the* stratum-0 derivation
 was true until severity stopped being asserted; the pair is now the pattern, not the
-exception. Seating is never revoked — deliberately, so
-that recall cannot retroactively strip a whistleblower's protection.
+exception.
+
+Seating is never revoked — deliberately, so that recall cannot retroactively strip a
+whistleblower's protection.
 
 ---
 
