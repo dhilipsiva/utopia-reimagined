@@ -9,6 +9,16 @@ void that person's credibility, and strip what they have earned along with it. T
 the sharpest instrument in the society, and the question of who is allowed to pick it
 up is therefore the question this chapter is about.
 
+Three things have now been named and it is worth keeping them apart, because the rest
+of the book depends on the difference and they are easy to hear as one. Standing is
+whether you can be *asked*. The pen is whether your findings *count*. Credibility is
+whether what the record already says about you *stands*. A person can have all three,
+or any one without the others: the court has standing and no pen; Koa has recorded a
+finding and has no standing; Vex, voided last period, has standing still and neither
+of the others. And they come apart in different directions — standing is never taken
+away, the pen is taken by recall, and credibility is the one of the three that two
+other people can destroy between them.
+
 You are allowed to pick it up if three things are true at once. The electorate seated
 you. You have not been recalled. And you were not voided in an earlier period.
 

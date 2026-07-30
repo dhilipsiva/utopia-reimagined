@@ -85,7 +85,7 @@ short path — writing down the answer — is closed.
 Either the electorate seated you, or you hold a public office. Those are the only two
 routes, and both leave a mark somebody else can see. You cannot appoint yourself.
 Somebody accused of a crime cannot become, in the course of defending themselves, the
-sort of person whose word counts.
+sort of person whose findings count.
 
 **Nor can you write down that an offence was serious.** This one was a slot on the
 list until recently, and taking it off is the clearest example of the whole idea, so it
