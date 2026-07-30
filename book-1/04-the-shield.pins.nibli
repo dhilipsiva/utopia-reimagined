@@ -3,7 +3,7 @@
 # KIND: CONTENT pin. Run:
 #   nibli-pin --kb new-book-plans/constitution.nibli book-1/04-the-shield.pins.nibli
 
-:expect-pins 15
+:expect-pins 21
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -48,6 +48,10 @@
 # => TRUE
 
 # "Kel's shield falls ... Kel is a prisoner ... Kel's own credibility is voided."
+# KEL RESOLVES ONLY BECAUSE KEL EXPOSED ONCE. These three are per-subject and a
+# per-subject pin cannot see a per-PAIR defect — the shield rule is satisfied by
+# ANY qualifying pair, so a second exposure reopens it. That is what the Rex
+# block below exists to hold, and why it is not enough to pin Kel.
 ? defend(Kel).
 # => FALSE
 
@@ -56,3 +60,29 @@
 
 ? false(Kel).
 # => TRUE
+
+# REX — "Rex did what Kel did, and then did one more thing."
+# The disclosed cost of scoping the shield to the exposure. If any of these six
+# flip, chapter 4's "Rex" section and the second item in "What it costs" are
+# both wrong, and so is the constitution's E1d commentary.
+? show(Rex, Court).
+# => TRUE
+
+? deceive(Rex, Court).
+# => TRUE
+
+# "Rex's credibility was destroyed by the same counter-audit."
+? false(Rex).
+# => TRUE
+
+# "Then Rex exposed the review body. Nobody has examined that one."
+? show(Rex, Review).
+# => TRUE
+
+# THE PAIR THAT MATTERS. Voided and shielded at once — the finding against the
+# first exposure has nothing to say about the second.
+? defend(Rex).
+# => TRUE
+
+? prisoner(Rex).
+# => FALSE

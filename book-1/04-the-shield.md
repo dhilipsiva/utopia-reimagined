@@ -15,8 +15,8 @@ would imprison you stops working. Not slows — stops. The conviction rule canno
 complete while your shield holds.
 
 This is deliberately a strong instrument, and strong instruments get picked up by the
-wrong hands. Three people show what the design does about that, and one of them shows
-what it decides not to.
+wrong hands. Four people show what the design does about that. One of them shows what it
+decides not to, and the last shows where the whole arrangement gives way.
 
 ## Don
 
@@ -94,10 +94,48 @@ loses everything he earned along with it.
 
 Kel is what closes the window Sly is standing in. The design does not leave the
 question open forever; it leaves it open until somebody with the credential examines
-it, and then it resolves hard.
+it, and then, for that exposure, it resolves hard.
 
-Notice what the three cases have in common. In none of them does anyone decide whether
-Don, Sly or Kel deserves protection. Nobody weighs their sincerity. The shield attaches
+That qualifier is not hedging. It is the subject of the next case.
+
+## Rex
+
+Rex did what Kel did, and then did one more thing.
+
+Injured somebody, exposed the court, claimed the shield. The review body examined that
+exposure and found it deceitful, exactly as it did with Kel, and Rex's credibility was
+destroyed by the same counter-audit. Everything that happened to Kel happened to Rex.
+
+Then Rex exposed the review body.
+
+Nobody has examined that one. It is a fresh claim against an authority with no finding
+against it, which is all the shield has ever asked for. So Rex's shield holds again, on
+the new exposure, and Rex is not a prisoner.
+
+Read the state Rex is in, because it is the sharpest thing in this chapter. Rex has been
+found to have lied about an authority in order to escape a prosecution. Rex's credibility
+is gone; the record says, in the strongest terms this society has, that Rex's word cannot
+be relied on. And Rex is walking around, protected, because the protection was never
+attached to Rex's word in the first place.
+
+The shield closes against a claim, not against a claimant. The finding that killed the
+first exposure has nothing to say about the second, because it was a finding about the
+first. Each exposure has to be examined and defeated on its own, and there is nothing
+stopping a defendant from producing another one.
+
+This is a decision and not an oversight, and the honest version of it is uncomfortable
+in both directions. Closing the shield against the person instead is available, and it
+would work. But the way you become a person the shield refuses is by having your
+credibility voided, and voiding runs through two credentialed examiners. That would hand
+any pair of them a route to strip the protection off the whistleblower who exposed them,
+which is the retaliation the shield was built to stop, arriving through the front door
+with paperwork. So the design protects the claim and accepts what Rex does with that.
+
+What it costs is a defendant who can keep going. Each exposure buys a window and each
+window has to be closed separately, one examination at a time.
+
+Notice what the four cases have in common. In none of them does anyone decide whether
+Don, Sly, Kel or Rex deserves protection. Nobody weighs their sincerity. The shield attaches
 or does not attach according to two facts — did the person you exposed hold power, and
 has your exposure been found deceitful — and both facts are on the record where they
 can be argued with. Sincerity never enters, which is what stops the shield from
@@ -105,20 +143,29 @@ becoming a matter of whether the people evaluating you find you sympathetic.
 
 ## What it costs
 
-Two things, and the second is the one to watch.
+Three things, and the last two compound each other.
 
 The first is Sly, and it has already been named: a guilty person is free during the
 window, every time.
 
-The second compounds with the last chapter. The shield attaches when you expose
+The second is Rex: the window can be reopened. Closing one costs an examination by the
+review body, and opening the next one costs a sentence. The exchange rate runs the wrong
+way, and nothing in the design changes it.
+
+The third compounds with the last chapter. The shield attaches when you expose
 someone *with standing*, and standing is never revoked. So the set of people whose
 exposure grants protection only ever grows. Every person the electorate has ever
 seated stays on that list permanently, including the recalled, the disgraced and the
 long dead. A defendant a century from now can reach back, expose someone nobody
 remembers, and open the window.
 
-That is the bill for Chapter 2's decision, and it comes due here. It is payable —
-the review can find the exposure deceitful and close the window, as it did with
-Kel — but it is a permanent, growing surface, and no rule in the design reduces it.
+That is the bill for Chapter 2's decision, and it comes due here. It was payable while
+Kel was the worst case: the review finds the exposure deceitful, the window closes, and
+that is the end of it. Rex is what it costs now. A permanently growing list of people
+whose exposure opens a window, and a window that reopens every time another name is taken
+from that list, are not two separate problems. They are one problem, and it worsens
+without anybody doing anything, because the only thing that ever changes is that the list
+gets longer.
+
 Whether it should be bounded by time, or by requiring the exposed conduct to be
 recent, is a real question this design does not currently answer.
