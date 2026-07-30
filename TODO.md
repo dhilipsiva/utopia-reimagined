@@ -476,42 +476,6 @@ for the harness section below.
   vocabulary-entrenchment bullet below first: the honest sentence is that the list cannot be
   entrenched, not that it merely has not been.
 
-- **[AUTHOR-GATED] Rule on whether `person` belongs on the evidence list.**
-  **The count has now moved twice, and the second time removed the reason to track
-  it.** Release made `free` an entry; v0.5's severity work took `severe` off and put
-  `attack` and `cruel` on, leaving the generated total at 23 (`3-spine.md`). Chapters
-  1, 3 and 5 no longer name a number at all — the nine sites were converted to
-  rule-statements in the same pass — so this decision no longer has a prose cost
-  attached, only a substantive one. `person` is still uncounted.
-  `book-1/01-what-counts-as-evidence.md:5-8` ("It has twenty-two entries … they cannot.
-  Not *may not*. Cannot. There is nowhere to put it") and `:19` describe a set that
-  omits the one atom all eight floor rights hang off. `person/1` has **30** ground
-  facts, is absent from the nine `derived_only` declarations, and is directly writable
-  — verified: asserting `person(Ghost).` gives `? person(Ghost). => TRUE` and
-  `? travel(Ghost). => TRUE`.
-  **Why it is not in the twenty-two, precisely.** `5-spine-gen.py:118` computes evidence
-  as predicates with **no producing rule**; `person` now has **two** — `prisoner ->
-  person` (`:254`) and the release line `free -> person` (`:264`) — so the generator
-  excludes it despite thirty assertions. The same definition excludes twelve other
-  writable heads. The old "directly-assertable surface is 34" figure was computed
-  against a 46-predicate graph and cannot be reproduced from that block or from the
-  current one; under the plain definition — every predicate except the nine
-  `derived_only` names and the `derived_only` declaration itself — the block's 47
-  predicates give **37**, and `entitled` and `owe` are both inside it and both open.
-  Re-derive it and state the method beside the number, or drop the number. That is
-  also the honest answer to the reviewer request that chapter 1 justify its count:
-  the generated figure counts predicates-with-no-rule, which is not the same set as
-  things-the-world-may-write, and it is not a minimality proof.
-  **Cost of counting it:** no prose sites any more, and it hands chapter 1 a natural
-  on-ramp to the personhood-roster bullet below.
-  **Cost of "deliberately outside the list":** one paragraph in `01:21-34` saying why
-  roster membership is not something the world *says about* you, which is a real
-  argument but has to be made rather than assumed. Either way `01:103-141` currently
-  discloses only the *amendment* vector and should also disclose the *write* vector.
-  Do not leave it silently uncounted; add a pin either way.
-  **`01:110` is not gated on this decision** — see the ordinal bullet above; it is
-  wrong under either answer.
-
 - **[AUTHOR-GATED] Rule on which of chapter 5's two gaps is the larger — the chapter
   says both, nine lines apart.** `05:81` opens the costs section with "Two gaps, both
   disclosed, and **the second is worse than the first**", and `:91` says of the
@@ -704,8 +668,12 @@ for the harness section below.
 
 - **Guard the personhood roster — one deletion defeats all eight rights, and the
   obvious repair only renames the target.** `person` has **30** asserted facts and
-  exactly one producing rule, `prisoner -> person` (`:254`), so the only non-assertion
-  route into rights-bearing status is being imprisoned. Verified by deleting `:542`
+  **two** producing rules — `prisoner -> person` (`:254`) and `free -> person` (`:264`,
+  added with release) — so imprisonment is the only route in that needs **nobody's
+  permission**, not the only non-assertion route; the `free` route needs one written
+  fact, and that fact is itself on the evidence list. The counterfactual's own pin file
+  (`counterfactual/no-person-line.pins.nibli`) has stated this correctly since release
+  and this bullet did not get the update. Verified by deleting `:542`
   `person(Bela).` and changing nothing else: `entitled(Bela, event { eats() })`,
   `{ dwell() }` and `{ believe() }` all flip TRUE→FALSE, `travel(Bela)` and
   `decide(Bela, Ballot)` flip TRUE→FALSE, no `err` fires anywhere, and
@@ -720,9 +688,15 @@ for the harness section below.
   No in-snapshot rule can tell a deleted roster entry from one never written. This is
   the deletion class above, and `person` is its first entry: disclose it as a
   cross-epoch proof obligation over the fact store, and stop looking for a rule.
+  **The prose half of this landed 2026-07-30** with the decision to put `person` on the
+  evidence list: `01`'s new closing section states all three vectors — forging an entry,
+  withholding one, deleting one — says the sanctions survive de-personing while every
+  right goes, and says outright that no rule can close it because an absence is not
+  visible from inside the record. What remains here is the obligation itself, not its
+  disclosure. Do not re-derive the disclosure; extend it if the obligation gets built.
 
 - **Close `entitled` *and* `owe` — the floor's own two relations, and the gates Article 0
-  forgot.** Article 1b added the second: `owe` is not among the nine `derived_only`
+  forgot.** Article 1b added the second: `owe` is not among the ten `derived_only`
   declarations and its head is a rule, so the relation is open to direct assertion exactly
   as `entitled` is, and forging `owe(State, Provision, Sokk).` forges the record of what is
   owed to a non-person. Verified: `entitled(Sokk, event { eats() }).` asserts cleanly onto the live
@@ -733,7 +707,11 @@ for the harness section below.
   because floor lines compile to rules and `derived_only` refuses only ground
   assertions. With `derived_only("entitled").` added: the floor still derives, the
   firewall still refuses the heresy law, the non-floor control still loads, and the
-  forgery is refused. Article 0 goes from nine closed relations to ten.
+  forgery is refused. Article 0 goes from ten closed relations to eleven — `severe`
+  closed the tenth in v0.5, and three bullets went on saying nine until 2026-07-30.
+  **`person` is not a candidate and never will be**: closing it would refuse all 30
+  ground facts and collapse the cast, which is why chapter 1 now discloses the roster
+  as a gap no rule can close rather than promising a guard.
 
 - **[AUTHOR-GATED] Decide whether the shield closes against the person or the
   exposure.** `:470` scopes `~deceive($w, $o)` to the **pair**, and the rule is
