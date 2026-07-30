@@ -5,10 +5,9 @@ you do anything to anybody. For that you need the pen: the credential that makes
 findings count.
 
 Two people with the pen, examining the same person and recording the same thing, can
-void that person's standing — strip what they have earned and mark them as someone
-whose word no longer carries. That is the sharpest instrument in the society, and the
-question of who is allowed to pick it up is therefore the question this chapter is
-about.
+void that person's credibility, and strip what they have earned along with it. That is
+the sharpest instrument in the society, and the question of who is allowed to pick it
+up is therefore the question this chapter is about.
 
 You are allowed to pick it up if three things are true at once. The electorate seated
 you. You have not been recalled. And you were not voided in an earlier period.
@@ -39,8 +38,8 @@ Every guard on the voiding rule passes. There are two of them, so it is not one
 person acting alone. They are not related to each other. Neither has been recalled.
 Neither was voided in an earlier period. Neither has been found to have lied. The rule
 looks at what it was built to look at, finds everything in order, and voids an
-innocent person who now loses their standing and their recognition, on the word of two
-people who do not exist in any meaningful sense.
+innocent person who now loses their credibility and their recognition, on the word of
+two people who do not exist in any meaningful sense.
 
 That hole is closed. The credential can now *only* be reached by the rule. Writing it
 down directly is not forbidden-and-punished; it is refused. The sentence does not
@@ -64,7 +63,7 @@ Vex was also seated, and was never recalled — but Vex was voided in an earlier
 Vex has no pen either.
 
 The second case is the more interesting one, because it is about time. A person whose
-standing was voided is not merely marked; they carry that mark forward into every
+credibility was voided is not merely marked; they carry that mark forward into every
 period that follows, and it blocks them from holding the pen again. Without that
 carry, a voided auditor could be voided on Monday and sign someone else's voiding on
 Tuesday, because within any single snapshot of the record the voiding of Vex and the

@@ -1,6 +1,6 @@
 # Voiding
 
-To void someone's standing is to say: this person's word no longer counts. What they
+To void someone's credibility is to say: this person's word no longer counts. What they
 earned is clawed back. What they might have signed, they cannot sign. It is the
 heaviest thing one person can do to another in this society short of imprisonment,
 and unlike imprisonment it can be done without a court.
@@ -11,10 +11,10 @@ of them is there because of a specific way this could go wrong.
 ## It takes two
 
 Bela was examined by Gia and by Hex. Both hold the pen. Both looked at Bela, both
-recorded what they found. Bela's standing is voided.
+recorded what they found. Bela's credibility is voided.
 
 Now Esa. Koa examined Esa and recorded a finding — a real finding, on the record,
-made by someone with the credential. Esa's standing is untouched. Not provisionally,
+made by someone with the credential. Esa's credibility is untouched. Not provisionally,
 not pending anything. One person's finding does not void a person, and if Koa is the
 only one who ever looks, Esa is fine forever.
 
@@ -33,14 +33,14 @@ The next three conditions are unusual, because they do not protect the person be
 examined. They point back at the examiner.
 
 **You may not judge your family.** Dev judged Esa. Dev is Esa's parent. The result is
-not that the finding is discarded — the result is that *Dev's* standing is voided. Dev
-is the one who loses. The design does not treat judging your own child as a procedural
-error to be corrected; it treats it as the kind of thing that tells you something
-about the judge.
+not that the finding is discarded — the result is that *Dev's* credibility is voided.
+Dev is the one who loses. The design does not treat judging your own child as a
+procedural error to be corrected; it treats it as the kind of thing that tells you
+something about the judge.
 
 **You may not lie.** Lupo examined Mira and recorded a finding, and the finding was
 deceitful. Mira is untouched — the finding does not land. And Lupo, once the review
-body examined what he had done, lost his own standing. The same instrument he was
+body examined what he had done, lost his own credibility. The same instrument he was
 using came back around.
 
 Both of these are the same idea. In most systems, an improper finding is thrown out

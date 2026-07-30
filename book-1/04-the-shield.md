@@ -88,9 +88,9 @@ Then the review body examined the exposure and found it deceitful.
 
 Three things follow at once. Kel's shield falls, because the condition that no finding
 of bad faith exists is no longer met. Kel is a prisoner, because the conviction that
-was blocked now completes. And Kel's own standing is voided — the counter-audit runs,
-and the person who lied about an authority in order to escape a prosecution loses
-their own credibility in the record.
+was blocked now completes. And Kel's own credibility is voided — the counter-audit
+runs, and the person who lied about an authority in order to escape a prosecution
+loses everything he earned along with it.
 
 Kel is what closes the window Sly is standing in. The design does not leave the
 question open forever; it leaves it open until somebody with the credential examines

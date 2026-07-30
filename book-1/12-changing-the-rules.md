@@ -19,7 +19,7 @@ narrowly, not procedurally; the approval is recorded and real. And it does not b
 law.
 
 Not vetoed. Not struck down afterwards by a court that took a different view. The
-amendment has no standing from the moment it names what it intends to touch, and the
+amendment has no force from the moment it names what it intends to touch, and the
 approval is simply irrelevant to its fate. You may count the votes for as long as you
 like.
 

@@ -1,13 +1,13 @@
 # Clawback
 
-When someone's standing is voided, what they earned goes with it.
+When someone's credibility is voided, what they earned goes with it.
 
 Bela was examined by two auditors and voided. Bela's recognition is clawed back — the
 accumulated acknowledgement of work done and teaching given, gone. This is the second
 half of voiding, and it is what makes voiding matter. Marking someone as unreliable
-while leaving their accumulated credit intact would be a gesture.
+while leaving their accumulated recognition intact would be a gesture.
 
-The rule is simple to the point of bluntness. Standing voided, recognition taken. No
+The rule is simple to the point of bluntness. Credibility voided, recognition taken. No
 proportion, no partial forfeit, no assessment of how much of it was tainted. It is
 the one instrument in this society that operates without any judgment of degree, and
 that is worth holding in mind through what follows.
@@ -48,8 +48,8 @@ that Cira loses what Cira earned.
 
 The reasoning behind the rule is not stupid. Recognition earned through fraudulent
 teaching was never really earned; if Bela was signing off on work that was not done,
-the credit that flowed from those sign-offs is credit for nothing, and letting it
-stand would leave the fraud partly intact. Somebody has to lose that credit, and the
+the recognition that flowed from those sign-offs is recognition for nothing, and
+letting it stand would leave the fraud partly intact. Somebody has to lose it, and the
 person holding it is Cira.
 
 But look at what the rule actually does, as against what that reasoning would justify.

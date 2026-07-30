@@ -111,7 +111,7 @@ each of them appearing by name.
 This is the same principle three times over, and it is the load-bearing one in the
 whole design:
 **the things that matter are not writable. They are only derivable.** Every power in
-this society — the power to void someone's standing, to place them somewhere, to
+this society — the power to void someone's credibility, to place them somewhere, to
 strip what they have earned — is a conclusion at the end of a chain of ordinary
 facts. There is no back door where you write the conclusion directly and skip the
 chain, because the door was never built.
@@ -121,8 +121,8 @@ chain, because the door was never built.
 Koa documented something about Esa. That is a real event and it is on the list; an
 auditor found something and recorded it.
 
-Esa's standing is untouched. Nothing happened. Not "nothing happened yet" — nothing
-happened, and if no one else ever acts, nothing will. Voiding a person's standing
+Esa's credibility is untouched. Nothing happened. Not "nothing happened yet" — nothing
+happened, and if no one else ever acts, nothing will. Voiding a person's credibility
 takes two independent auditors who each documented the same thing, who are not
 related to each other, who are not themselves compromised, and who have not been
 found to have lied. One person's finding, however sincere, however senior, however

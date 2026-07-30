@@ -67,14 +67,14 @@ The last chapter established that no law can imprison you for lacking one of the
 eight. That protection is real and it is narrower than it sounds, in three specific
 ways, each of which was tested rather than assumed.
 
-**Your standing is still reachable.** A rule that voids the standing of anyone who
-does not believe is perfectly writable. It cannot imprison them, but it can mark them
-as someone whose word does not count — and the previous chapter on clawback showed
-what follows: everything they earned goes too.
+**Your credibility is still reachable.** A rule that voids the credibility of anyone
+who does not believe is perfectly writable. It cannot imprison them, but it can mark
+them as someone whose word does not count — and the previous chapter on clawback
+showed what follows: everything they earned goes too.
 
 **Your recognition is still reachable.** A rule that claws back the earnings of
-anyone who keeps no company is writable in the same way. Not prison. Just poverty of
-standing, indefinitely.
+anyone who keeps no company is writable in the same way. Not prison. Just poverty,
+indefinitely.
 
 **And nothing prevents compulsion.** The floor blocks punishment for *absence* — it
 says nothing about manufacture. A rule that makes belief follow from imprisonment is
@@ -106,8 +106,8 @@ extended the protection to the obligation. It arrived with the naming.
 **And the body can be looked at.** Someone who exposes it is protected for doing so, on
 the same terms as anyone who exposes any other authority. It owes, and it is
 answerable, and it was never given the credential that makes an examination count —
-so it can write down what it likes about you and none of it will void your standing or
-take what you earned. The duty and the pen are in different hands.
+so it can write down what it likes about you and none of it will void your credibility
+or take what you earned. The duty and the pen are in different hands.
 
 Then the three things this does not buy, and they have the shape everything in this
 chapter has.

@@ -49,14 +49,14 @@ material they would be made from.
 
 ## Nothing to earn it back with
 
-All three doors close for the same reason: a person whose standing has been voided
+All three doors close for the same reason: a person whose credibility has been voided
 earns nothing.
 
 Bela taught Cira — a real act, still on the record, never disputed. Bela is not
 recognised, because Bela was voided. The teaching happened and produces nothing.
 
 The same for the examiner. Lupo examined Mira and lied about it, and earns nothing
-for the examination. Dev judged his own child, lost his standing for it, and earns
+for the examination. Dev judged his own child, lost his credibility for it, and earns
 nothing either — not merely nothing for that judgment, nothing at all.
 
 This is the sharp edge of the previous chapters meeting this one. Voiding does not
@@ -81,7 +81,7 @@ additional examination will be of people who did nothing, by examiners who wante
 recognition.
 
 Two things push back. Chapter 5 showed that an improper finding costs the examiner
-their own standing — so the incentive to look is bounded by a real risk in looking
+their own credibility — so the incentive to look is bounded by a real risk in looking
 carelessly. And nothing is earned for finding someone guilty as opposed to finding
 them innocent; the recognition attaches to the examination, not the outcome, so there
 is no bonus for a conviction.
