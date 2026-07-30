@@ -113,8 +113,29 @@ And the refusal is not a limit of the machinery, which is the part that ought to
 trouble you. Degree is perfectly available here. Chapter 1 showed how: harm more than
 one person and the rules can tell, because each victim is a separate entry and *more
 than one* is something the rules can see in the entries. Teach more than one person and
-that is a separate entry each time too. The same reading is right there, and nothing is
-built on it.
+that is a separate entry each time too. The same reading is right there, and it has
+been left alone on purpose.
+
+Follow it one step further and you can see why. Every teaching entry names two people,
+so the reading runs backwards as easily as forwards: count the people who taught
+someone and you have a measure of how much they have been taught. That is a grade. It
+does not look like one — nobody writes a mark, no number appears anywhere, every entry
+underneath it names a real person and can be argued with — and it would work as one the
+moment anybody consulted it. Notice too what it does not need. Nobody earns anything
+for being taught — the doors at the top of this chapter are the doors. The count does
+not go through them at all. It reads the same entries the doors read and arrives at a
+ranking the doors cannot express.
+
+That is the version this design refuses hardest, and the reason is worth separating
+from the one you might expect. It is not that this society has no ratings. Severity is
+one, and chapter 1 put it on the table rather than leave it to be found: whether an
+offence was severe follows from entries in exactly this way. The difference is what the
+rating is *of*, and how long it lasts. Severity is a finding about an act, reached
+through a process the accused was part of, and it ends when the sentence ends. A
+measure of how much someone has learned is a finding about the person — what they are
+like, what they are good for — arrived at without anybody judging anything, and it
+never ends. There is no process to be wrong about and no point at which it expires. It
+is the file that follows you, rebuilt out of parts nobody can object to.
 
 So the honest statement of the trade is not that this society cannot count. It is that
 this society counts on the way in to punishment and does not count on the way in to

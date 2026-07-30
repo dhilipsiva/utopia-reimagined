@@ -96,7 +96,10 @@ body() { awk -F'->' -v p="$1" '/^[^#]/ && /->/ && $1 ~ p {print NR": "$0}' "$KB"
 ctl=$(body 'false' | wc -l)
 [ "$ctl" -ge 1 ] || fail "absence check is broken" "positive control /false/ returned 0 lines; it should return 5"
 pass "positive control: /false/ appears in $ctl rule bodies"
-for p in owe become travel err lose; do
+# `reward` is here by DECISION, not by observation: recognition feeds nothing, so
+# it can never become an input to a ranking of persons. See the counting guard
+# below — the two together are what "recognition is never ranked" reduces to.
+for p in owe become travel err lose reward; do
   n=$(body "$p" | wc -l)
   [ "$n" = "0" ] && pass "nothing reads $p" \
     || fail "$p is now read by a rule" "$(body "$p") — the prose saying nothing follows from it is now false"
@@ -107,6 +110,31 @@ if grep -vE '^\s*#' "$KB" | grep -qE '[0-9]'; then
 else
   pass "no arithmetic in the constitution"
 fi
+
+# ── 4b. no counted degree on the reward side ─────────────────────────────────
+# The digit ban above stops a quantity being WRITTEN. This stops one being
+# COUNTED, which is the cheaper route and the one chapter 10 points at directly:
+# degree needs no arithmetic here, only the same relation twice with the two
+# objects held apart. Severity is built exactly that way (:452-453), and the
+# cast already supplies the reward-side mirror — Cira has two teachers — so
+# "count what a person was taught" is one rule away and always has been.
+#
+# Chapter 10 now says that will not be built, so this is where that stops being
+# a sentence. It is a PATTERN guard on the zero-vocabulary route, not a proof: a
+# rule may still count by inventing a new name for a learning record (`studies`
+# is in the corpus, unused). That route is caught upstream instead — a new
+# evidence name moves the count off 23 and trips the check at the top of this
+# file. Between them the two doors are covered; neither alone is.
+selfjoin() { awk -F'->' -v p="$1" '/^[^#]/ && /->/ { s=$1; n=gsub(p, "", s); if (n>=2) print NR": "$0 }' "$KB"; }
+ctl=$(selfjoin 'judge' | wc -l)
+[ "$ctl" -ge 1 ] || fail "the counting guard is broken" "positive control /judge/ returned 0; the multi-sig rule joins it twice"
+pass "positive control: /judge/ is joined with itself in $ctl rule"
+for p in 'teaches' 'work[(]'; do
+  n=$(selfjoin "$p" | wc -l)
+  [ "$n" = "0" ] && pass "no rule counts ${p%%[*} entries" \
+    || fail "${p%%[*} is now joined with itself — that is counted degree on the reward side" \
+            "$(selfjoin "$p") — chapter 10 says this will not be built"
+done
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
