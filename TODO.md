@@ -104,54 +104,54 @@ Two facts no command teaches:
 
 The graph counts live in exactly one generated place, `new-book-plans/3-spine.md:17-32`.
 `4-strata.py` disagrees with it and is blind to the floor by construction — see the
-harness section. Fix while you are next in `utopia-v2.nibli`: `:182` cites the
+harness section. Fix while you are next in `utopia-v2.nibli`: `:188` cites the
 upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
 
 ---
 
-## Blocking decisions — nothing should be drafted until these are settled
+- **Severity dimensions: landed 2026-07-30 as v0.5.** Recording what the enactment
+  actually cost, because most of the tracker's pricing for it was wrong.
+  **Three dimensions, not four, and `severe` is now derived rather than asserted.**
+  `attack/2` is intent, `cruel/2` is kind of harm, and victim plurality is *not a
+  predicate*: it is the self-join `injure($x,$a) & injure($x,$b) & ~($a = $b)` inside
+  the severity rules. An offence is severe when any two of the three are present — one
+  rule per qualifying pair, monotone, no ordering predicate. `derived_only("severe")`
+  closes the tenth and last open gate.
+  **Directness was refused, and the ground is lexical.** The committed corpus has
+  exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`,
+  `injure` — and none means "directly". `cause` (rinka) compiles but puts the person in
+  the *effect* slot and is true of every injury in the cast, so as a boolean it routes
+  nothing. Do not re-propose without a corpus name that carries the meaning.
+  **Graded tiers were refused too.** `building(MedSec, $x)` compiles and the constant is
+  free, but `building/2` has no exclusivity constraint and is not closed in Article 0,
+  so an offender matching two combinations derives two placements at once and
+  `err(_, Placement)` is blind to it. Needs a mutual-exclusion marker in the same edit.
+  **What the old pricing got wrong.** Evidence went 22 → **23**, not 26: `severe` leaves
+  the list when it gains a producing rule, and plurality costs nothing. The digit ban at
+  `verify.sh:105` needed **no** narrowing — `~($a = $b)` carries no digit, so the
+  `exactly N` problem never arose. Predicates 47 → 49, derived 23 → 24, rules 40 → 43,
+  strata still 4. `severe` lands at stratum 0 in the monotone cone beside `authority`,
+  which falsified `3-spine.md:39-40` and `:96` — both outside the generated block, so
+  `--check` passed green over them.
+  **Cast cost.** `injure(Ruk, Pax).` and `injure(Don, Ivo).` were added so the plurality
+  routes derive rather than compiling and doing nothing. Don thereby becomes severe and
+  is routed to a facility with `dwell`, so the homeless-convict gap below narrows to Kel
+  and Adam — a consequence of putting a rule to work, not a repair.
+  **Runtime cost, unpriced and real.** A derived `severe` behind three rules takes the
+  pin suite from ~2.6s to ~7.5s per pin. `./verify.sh` is now roughly three times
+  longer; `--quick` is unaffected.
 
-- **[AUTHOR-GATED] Name the four severity dimensions, then enact them.** DECIDED
-  2026-07-29: punishment MAY end, and severity governs the outcome across intent,
-  directness, victim plurality and harm kind. **Release landed; the dimensions did not**,
-  because none of `intend`, `deliberate`, `direct` or `many` exists in the committed
-  corpus and an unknown predicate name is a compile error. Nothing can be drafted until
-  the four names are chosen — they define what chapter 1 enumerates.
-  **Price it honestly before choosing.** Four dimensions take the evidence list 22 → 26.
-  Outcome *tiers* are free — `building(MedSec, $x)` costs nothing because uppercase
-  constants never enter the predicate set — but the constant must be digit-free, so
-  `Tier1`/`Tier2` are unavailable. **Do not enact `greater`/`less`.** They would work: the
-  engine's evaluator returns `None` for non-numeric arguments, so `greater(Killing,
-  Insult).` is a plain stored fact that passes the digit ban. But routing each combination
-  to a named tier by its own rule needs no ordering at all, which is how Article 6 already
-  produces four placement outcomes from two booleans, and the comparison costs a 27th entry
-  plus a much harder repair to chapter 10.
-  **DEGREE IS ALREADY AVAILABLE, AND INSIDE THE FIREWALL — this is the finding that makes
-  the whole thing cheap.** nibli counts entities satisfying a restrictor, verified against
-  the live constitution: `teaches(Tutor, exactly 3 person).` is TRUE against three recorded
-  facts, `exactly 2` and `exactly 4` are FALSE. So "this person taught a hundred" is a
-  hundred `teaches` facts, each individually recorded and individually disputable — **nobody
-  writes the number**, and the degree is a conclusion reached by a route, exactly like
-  `prisoner`. That is chapter 1's argument extended to degree, and it is a better argument
-  than the one chapter 10 currently makes. The cast demonstrates it sharply: Esa teaches
-  Fin, `person(Fin)` is FALSE, so `teaches(Esa, exactly 0 person)` is TRUE — assert
-  `person(Fin).` and it becomes `exactly 1`. Two caveats. `exactly N` contains a digit, so
-  it trips `verify.sh`'s digit ban if it reaches an *enacted* rule; that check guards
-  chapter 10's claim, which is being overturned deliberately, so replace it with something
-  narrower rather than deleting it — the thing worth guarding is that no *judgment* is
-  written, not that no digit appears. And `aggregate` (Sum/Min/Max/Avg) exists but is
-  exposed only through `nibli-session`, not `nibli-pin`: counts are available today, sums
-  are a one-prompt nibli ask.
-  **Two chapters must be narrowed in the same pass, and both are overclaims rather than
-  errors.** `01:24` — *"There is no score. No rating, no rank, no tier, no percentile"* —
-  should be narrowed to the argument the chapter actually makes one sentence later at
-  `01:32`: the record holds no judgment about a person's **character**. It classifies acts;
-  it holds no standing verdict on a person. And `10:21`/`10:27` — *"nothing anywhere in
-  this society counts anything"*, *"There is no ordering"* — are unqualified whole-society
-  claims inside a chapter about recognition; qualify both to recognition, where the ranking
-  harm actually lives. `10:112`'s argument survives untouched.
-  Combinatorics to watch: three dimensions already give 8 cells and chapter 11 covers 7 of
-  them while claiming 4 exhaust it; seven dimensions give 128.
+- **Two harness checks that could not fail, both fixed in the v0.5 commit.**
+  The counterfactual README's own regeneration command was
+  `grep -v '^all \$anyone: …'`, and inside single quotes `\$` is a literal
+  backslash-dollar, so it matched nothing and wrote out a byte-identical copy of the
+  constitution. Anyone following the documented procedure destroyed the fixture. Nothing
+  caught it, because `verify.sh:134` assigned its staleness check to a variable it never
+  read. The command is now `grep -vFx`, and the guard asserts one line removed and none
+  added — negative-controlled against both a byte-identical copy and a delete-plus-add
+  drift, which the old `grep -c ''` comparison could not have seen either.
+
+## Blocking decisions — nothing should be drafted until these are settled
 
 - **[AUTHOR-GATED] Confirm the subtitle — the condition it was waiting on has fired.**
   The title (*Nothing Has to Happen First*) is settled in `CLAUDE.md`. The subtitle
@@ -175,12 +175,12 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
     `err(Gia, Recognition)` TRUE, `permits($b, $p) -> err($p, Isolation)` gives
     `err(Gia, Isolation)` FALSE, and the asserted control `judge($b, $p) ->
     err($p, Recognition)` gives `err(Hano, Recognition)` TRUE. So a real cross-body pair —
-    Tass holding an Appeals pen from `clear` (`:449`), Gia a Review pen from the single
-    seating rule (`:438`), both judging and capturing Yuu — leaves `false(Yuu)` FALSE.
+    Tass holding an Appeals pen from `clear` (`:505`), Gia a Review pen from the single
+    seating rule (`:494`), both judging and capturing Yuu — leaves `false(Yuu)` FALSE.
     Reject the strengthening, but record the ground as *unenforceable on this engine*
     rather than *unexpressible*, and raise the binding loss as a **HANDOFF PROMPT**: a rule
     that compiles and silently derives nothing is the failure mode this repo is least able
-    to see. `public/1` is one-place over four institution constants (`:314`, `:422-424`),
+    to see. `public/1` is one-place over four institution constants (`:320`, `:478-480`),
     so it carries no notion of who works for whom; `permits(Court, Gia).` is refused.
 
 - **[AUTHOR-GATED] The repo name is now misleading.** `utopia-reimagined` names the
@@ -228,7 +228,7 @@ for the harness section below.
   `book-1/10-contribution.md:50-68` claims "All three doors close for the same reason:
   a person whose standing has been voided earns nothing" and closes on "putting the
   same condition on all three doors". There is no such condition. Article 3 gates
-  teaching and work on `~false` (`:334-335`); the examiner rule (`:343`) gates on
+  teaching and work on `~false` (`:340-341`); the examiner rule (`:349`) gates on
   `~deceive` and `~broken` only. **Verified:** `false(Vex)` TRUE *and* `reward(Vex)`
   TRUE — chapter 5's own voided auditor still earns recognition — and adding
   `judge(Bela, Ivo). capture(Bela, Ivo).` gives `false(Bela)` TRUE, `reward(Bela)`
@@ -240,7 +240,7 @@ for the harness section below.
   Two ways out, and they are different societies: **rewrite the section** to say the
   doors are gated differently — a voided person can still earn by examining other
   people, which is worse than the version in print and worth saying — or **add
-  `~false($auditor)` to `:343`** and keep the prose. The guard stratifies (verified,
+  `~false($auditor)` to `:349`** and keep the prose. The guard stratifies (verified,
   loads at 0 errors). Either way the suite needs a pin on a voided examiner, because
   its absence is what let this reach print. Also correct `10:52-53` and any tracker
   prose repeating the claim.
@@ -251,11 +251,11 @@ for the harness section below.
   shelter: Hano." Verified: `? dwell(Hano). => TRUE`, `? dwell(Ruk). => TRUE`,
   `? dwell(Lalo). => TRUE`, `? dwell(Nando). => TRUE`, `? dwell(Bela). => FALSE`.
   The two exceptions are of **different widths** and the difference is the point.
-  `dwell` needs a home plus homestay eligibility, or severity, or family (`:383`,
-  `:386`, `:398`), so it reaches **four of the seven convicted people** — `dwell(Don)`,
+  `dwell` needs a home plus homestay eligibility, or severity, or family (`:439`,
+  `:442`, `:454`), so it reaches **four of the seven convicted people** — `dwell(Don)`,
   `dwell(Kel)` and `dwell(Adam)` are all FALSE with `prisoner` TRUE, which is the
   exhaustiveness bullet below seen from the other side. `expresses` is the wide one:
-  `:317` gates on `prisoner` alone, so it reaches **all seven** —
+  `:323` gates on `prisoner` alone, so it reaches **all seven** —
   `expresses(Hano/Ruk/Don)` TRUE, `expresses(Bela/Cira)` FALSE. So `08:32` ("the same
   answer comes back for every one of the eight, for every person in it") is wrong on
   two of the eight, and `08:48-54` should read *two* exceptions, one covering seven
@@ -280,11 +280,11 @@ for the harness section below.
   eight, and the eighth derives no placement at all.**
   `book-1/11-where-people-are-put.md:22-23`. The missing cell is *not severe, not
   domestic, no home*, and the constitution's own cast holds three people in it — Don
-  (`:565-569`), Kel (`:578-583`) and Adam (`:483-485`), three of the seven convicted
+  (`:629-633`), Kel (`:651-656`) and Adam (`:539-541`), three of the seven convicted
   people in the file. Verified: `? prisoner(Don). => TRUE`, `? fit(Don, Homestay). =>
   TRUE`, `? dwell(Don). => FALSE`, `? building(LowSec, Don). => FALSE`,
   `? building(HighSec, Don). => FALSE`, `? err(Don, Placement). => FALSE`; same shape
-  for Kel and Adam. They are eligible for home confinement and have no home, so `:383`
+  for Kel and Adam. They are eligible for home confinement and have no home, so `:439`
   never fires and neither facility rule reaches them. The chapter's own opening premise
   — "Somebody convicted has to be somewhere" (`:3`) — is not delivered for three of
   seven. The breach marker is blind by construction: `err/2` keys on *having* a home.
@@ -299,7 +299,7 @@ for the harness section below.
   glosses it wrong twice.** `11:8-10` says placement follows from "whether the offence
   was severe, whether it was domestic, and whether they have a home", and `:21-22`
   calls Nando's offence domestic. Every rule reads `family($x)` — one place, a property
-  of the *offender* (`:382`, `:385`, `:398`, `:399`, `:400`) — and
+  of the *offender* (`:438`, `:441`, `:454`, `:455`, `:456`) — and
   `01-what-counts-as-evidence.md:12` defines it that way itself. Nando's whole record
   is `injure(Nando, Opal)`, `judge(Court, Nando)`, `family(Nando)`; nothing says Opal
   is family. Verified: `? family(Nando). => TRUE`, `? family(Opal). => FALSE`,
@@ -318,7 +318,7 @@ for the harness section below.
   `book-1/09-the-vote-conviction-does-not-take.md:73-75`: "Nothing refuses it. **It
   works. Immediately, every convicted person in this society loses the ballot.**" The
   accepted clause is strictly *more* restrictive than the Article 2 franchise rule at
-  `:331`, and derivation is monotone, so adding it subtracts nothing. Verified by
+  `:337`, and derivation is monotone, so adding it subtracts nothing. Verified by
   accepting the chapter's own clause verbatim: `:accept all $x: person($x) & mature($x)
   & ~prisoner($x) -> decide($x, Ballot).` → `? decide(Hano, Ballot). => TRUE` with
   `? prisoner(Hano). => TRUE`. The chapter's real result — the clause *compiles*, where
@@ -333,10 +333,10 @@ for the harness section below.
   `:accept`.
 
 - **`mature/1` is a silent franchise gate, and chapter 9 says the ballot needs nobody's
-  permission.** `mature` has no producing rule anywhere (asserted only at `:542-545`), is
+  permission.** `mature` has no producing rule anywhere (asserted only at `:606-609`), is
   absent from `derived_only`, and is directly assertable — so a polity disenfranchises a
   demographic by **declining to write adulthood into their records**, passing no rule at all
-  and tripping no marker. The constitution's own comment at `:541` concedes the second half
+  and tripping no marker. The constitution's own comment at `:605` concedes the second half
   ("no rule anywhere reads ~mature") while presenting it as a reassurance. Verified:
   `? mature(Cira). => FALSE` and `? decide(Cira, Ballot). => FALSE`; asserting
   `person(Zed). mature(Zed).` gives `? decide(Zed, Ballot). => TRUE`, while `person(Yun).`
@@ -374,7 +374,7 @@ for the harness section below.
 - **Chapter 5 asserts two facts about Koa the constitution does not derive.**
   `book-1/05-voiding.md:16-17`: "Koa **examined** Esa and recorded a finding — a real
   finding, on the record, made by **someone with the credential**." Koa's entire
-  presence is `person(Koa).` and `capture(Koa, Esa).` (`:504-505`). Verified:
+  presence is `person(Koa).` and `capture(Koa, Esa).` (`:560-561`). Verified:
   `? capture(Koa, Esa). => TRUE`, `? judge(Koa, Esa). => FALSE`,
   `? choose(Electorate, Koa). => FALSE`, `? permits(Review, Koa). => FALSE`. Two of the
   sentence's three clauses are underivable, which the inclusion gate forbids outright.
@@ -427,11 +427,13 @@ for the harness section below.
   *did* is defensible, tiering what a person *is* is the thing chapter 1 was written to
   refuse. Record the decision either way so it is not re-proposed.
 
-- **[AUTHOR-GATED] Rule on whether `person` is the twenty-third entry.**
-  **The count already moved once, and not for this reason.** Article 6's release made
-  `free` the twenty-second entry (`3-spine.md:32`, generated), and `04b0b5f` moved
-  chapters 1, 3 and 5 to "twenty-two" in nine places. `person` is still uncounted, so
-  the open question is the *twenty-third* entry.
+- **[AUTHOR-GATED] Rule on whether `person` belongs on the evidence list.**
+  **The count has now moved twice, and the second time removed the reason to track
+  it.** Release made `free` an entry; v0.5's severity work took `severe` off and put
+  `attack` and `cruel` on, leaving the generated total at 23 (`3-spine.md`). Chapters
+  1, 3 and 5 no longer name a number at all — the nine sites were converted to
+  rule-statements in the same pass — so this decision no longer has a prose cost
+  attached, only a substantive one. `person` is still uncounted.
   `book-1/01-what-counts-as-evidence.md:5-8` ("It has twenty-two entries … they cannot.
   Not *may not*. Cannot. There is nowhere to put it") and `:19` describe a set that
   omits the one atom all eight floor rights hang off. `person/1` has **30** ground
@@ -440,7 +442,7 @@ for the harness section below.
   `? travel(Ghost). => TRUE`.
   **Why it is not in the twenty-two, precisely.** `5-spine-gen.py:118` computes evidence
   as predicates with **no producing rule**; `person` now has **two** — `prisoner ->
-  person` (`:248`) and the release line `free -> person` (`:258`) — so the generator
+  person` (`:254`) and the release line `free -> person` (`:264`) — so the generator
   excludes it despite thirty assertions. The same definition excludes twelve other
   writable heads. The old "directly-assertable surface is 34" figure was computed
   against a 46-predicate graph and cannot be reproduced from that block or from the
@@ -449,10 +451,9 @@ for the harness section below.
   predicates give **37**, and `entitled` and `owe` are both inside it and both open.
   Re-derive it and state the method beside the number, or drop the number. That is
   also the honest answer to the reviewer request that chapter 1 justify its count:
-  twenty-two counts predicates-with-no-rule, which is not the same set as
+  the generated figure counts predicates-with-no-rule, which is not the same set as
   things-the-world-may-write, and it is not a minimality proof.
-  **Cost of "twenty-three":** the same nine occurrences — `01:5` (twice), `:6`, `:33`,
-  `:101`, `:107`, `:139`, `03:85`, `:100`, `05:93` — and it hands chapter 1 a natural
+  **Cost of counting it:** no prose sites any more, and it hands chapter 1 a natural
   on-ramp to the personhood-roster bullet below.
   **Cost of "deliberately outside the list":** one paragraph in `01:21-34` saying why
   roster membership is not something the world *says about* you, which is a real
@@ -477,8 +478,8 @@ for the harness section below.
 
 ## Constitution (KB) work
 
-- **Add `~false($auditor)` to Article 4's reward rule.** `:343` is the only one of the
-  three minting rules with no `~false` guard; `:334` and `:335` both carry one. The
+- **Add `~false($auditor)` to Article 4's reward rule.** `:349` is the only one of the
+  three minting rules with no `~false` guard; `:340` and `:341` both carry one. The
   fix is one conjunct, the negative edge stratifies (verified), and it makes chapter
   10's headline sentence true. See the chapter-10 prose bullet for the fork — enact or
   rewrite, not both.
@@ -486,8 +487,8 @@ for the harness section below.
 - **`lose/2` is a leaf: clawback records a loss and retracts nothing.**
   Test it on the rule BODIES, not with a bare grep — `awk -F'->' '/^[^#]/ && /->/ && $1
   ~ /lose/' utopia-v2.nibli` returns nothing, and the only enacted occurrences are
-  `:341` and `:342`, **both rule heads**. (A plain `grep 'lose('` returns three lines,
-  the third being commentary at `:92`; and a grep that matches a rule's own head is a
+  `:347` and `:348`, **both rule heads**. (A plain `grep 'lose('` returns three lines,
+  the third being commentary at `:98`; and a grep that matches a rule's own head is a
   check that can never fail — see the chapter-8 pin NOTE for the same trap caught live.)
   No rule reads `lose`, so nothing downstream changes when it fires. **Care with the
   witness:** `reward(Bela)` is FALSE in the shipped cast, so Bela alone does not show
@@ -496,7 +497,7 @@ for the harness section below.
   recognition has supposedly been clawed back. So `06-clawback.md:3` ("what they earned
   goes with it") and `:5-8` describe an effect the constitution does not have.
   The apparent clawback in the shipped cast is entirely the `~false` guards on
-  `:334`/`:335` **never minting**, not `lose` **taking**. That makes `lose` the fifth
+  `:340`/`:341` **never minting**, not `lose` **taking**. That makes `lose` the fifth
   member of the "determination, then stop" family, alongside `err`, `travel`, `become`
   and the Article 1b obligation `owe`.
   Derivation is monotone, so nothing can literally retract: the only expressible form
@@ -507,7 +508,7 @@ for the harness section below.
   paragraph at `:98-101` already reaches for the right register, so the cost is three
   sentences, not the section.
 
-- **Guard Article 9's head — one asserted fact voids a *person*.** `:468` is
+- **Guard Article 9's head — one asserted fact voids a *person*.** `:524` is
   `all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).` with **no restriction
   on `$m`**, and `adjust/2` is freely assertable. The single fact
   `adjust(Jala, Art_Floor).` gives, verified: `false(Jala)` TRUE, `lose(Points, Jala)`
@@ -515,17 +516,17 @@ for the harness section below.
   standing is destroyed and the clawback fires **without** two independent credentialed
   auditors, without `~parent`, without `~deceive`, without a clean epoch. Article 4's
   whole apparatus is defeated by one write, because Article 9 reuses `false/1` as its
-  amendment-invalidity proxy (`:463-465`) and never restricts the reused head to
+  amendment-invalidity proxy (`:519-521`) and never restricts the reused head to
   amendments. **The fix is free and verified**: appending `& suggest(Assembly, $m)` to
-  `:468` restricts the head to docketed proposals, uses no new vocabulary, and
+  `:524` restricts the head to docketed proposals, uses no new vocabulary, and
   regresses nothing — `false(Jala)` FALSE, `false(Amend_Floor)` TRUE,
   `become(Amend_Floor, Law)` FALSE, `rights-floor` 75/75 and chapter 12 14/14 still
   green. Splitting amendment invalidity onto its own predicate is the cleaner
   alternative and costs a corpus name. **Do this before the shield fix below**, which
   couples the shield to `false/1`.
 
-- **`clear/1` is a one-fact conviction nullifier.** `clear` appears twice: `:449`
-  (`all $x: clear($x) -> permits(Appeals, $x).`) and `:525` (Nia's ground fact). No
+- **`clear/1` is a one-fact conviction nullifier.** `clear` appears twice: `:505`
+  (`all $x: clear($x) -> permits(Appeals, $x).`) and `:586` (Nia's ground fact). No
   precondition, no author, no guard, no `derived_only`. Asserting `clear(Adam).`,
   verified: `permits(Appeals, Adam)` TRUE, `prisoner(Adam)` **FALSE**,
   `expresses(Adam)` FALSE, `travel(Adam)` TRUE. `prisoner(Adam). # => TRUE` is a pinned
@@ -536,8 +537,8 @@ for the harness section below.
   it lands, `03:83-88` should say plainly that nothing constrains who records it.
 
 - **Rename the Article 6 `dwell` head — one atom is doing two jobs, and it blocks the
-  `err/2` repair.** Every rule producing `dwell` requires `prisoner` (`:383`, `:386`,
-  `:398`), and the Article 1 floor line at `:236` produces nothing — verified,
+  `err/2` repair.** Every rule producing `dwell` requires `prisoner` (`:439`, `:442`,
+  `:454`), and the Article 1 floor line at `:242` produces nothing — verified,
   `entitled(Bela, event { dwell() })` is TRUE while `dwell(Bela)` is FALSE. So
   `dwell(Lalo)` does not mean "Lalo is owed shelter"; it means "Lalo is housed at
   HighSec", and one atom carries both *entitled to a home* and *in a cell*. Free to
@@ -548,7 +549,7 @@ for the harness section below.
   `13-the-one-thing-taken.pins.nibli:39`, `rights-floor.pins.nibli:47,82` — and so does
   `08:50`.
 
-- **Fix `err/2` — the placement alarm has never once fired correctly, and release gave it a third victim.** `:391` reads
+- **Fix `err/2` — the placement alarm has never once fired correctly, and release gave it a third victim.** `:447` reads
   `home($x) & ~fit($x, Homestay) -> err($x, Placement)`, which tests *having a home*,
   not *having been placed at home*. Verified: it fires on Ruk and Lalo, both routed
   correctly to `building(HighSec, ·)`, and on nobody misplaced. **Release made it worse
@@ -559,7 +560,7 @@ for the harness section below.
   is not even in custody. That verdict is already carried as a DEFECT PIN at
   `rights-floor.pins.nibli:248-253`, so the repair has a green test waiting for it.
   An alarm with that record is worse than none. The fix is **not** "key it on `dwell`" —
-  `:383` already requires `fit`, so a marker over the derived placement atom could never
+  `:439` already requires `fit`, so a marker over the derived placement atom could never
   fire. The marker can only fire on an ASSERTED placement, so give the world a way to
   report one: a new asserted relation for "X was put at Y" (name from the committed alias
   corpus), checked against derived `fit`. That is Article 0's own evidence/conclusion
@@ -582,15 +583,15 @@ for the harness section below.
 
 - **[AUTHOR-GATED] Confinement is a location and nothing else — decide whether the design
   says anything about conditions.** `building/2` is a bare placement fact: the three rules
-  that produce it (`:385`, `:399`, `:400`) name a facility and stop, and there is no
+  that produce it (`:441`, `:455`, `:456`) name a facility and stop, and there is no
   vocabulary anywhere for conditions, visits, who may enter, what may be done, or how long
   — `grep -niE "visit|condition|treat|enter|guard|inspect|duration|term"` over the enacted
   lines returns nothing. The only rule that looks at a confined person's treatment at all is
-  the isolation marker (`:396`), which is the one that fires on every prisoner and therefore
+  the isolation marker (`:452`), which is the one that fires on every prisoner and therefore
   says nothing about any of them. Three reviewers reached this independently and rated it
   high or critical.
   **State the position precisely before deciding, because the obvious reading is wrong.**
-  The floor *does* reach prisoners — Article 1 plus `prisoner -> person` (`:248`) is exactly
+  The floor *does* reach prisoners — Article 1 plus `prisoner -> person` (`:254`) is exactly
   the chapter-7 result — so a confined person is entitled to all eight rights, and nothing
   in the design permits a cell that starves someone. What is missing is one level down:
   entitlement binds the society, and nothing binds *the facility*. That is the same
@@ -602,8 +603,8 @@ for the harness section below.
   exactly one thing" is a much weaker claim if the cell is unconstrained.
 
 - **Write the fact-write trust base as a file-level section — Article 0 closed half of
-  it.** `:51-59` now declares nine relations `derived_only` and direct assertion of
-  each is refused. What Article 0 did **not** do is remove the write surface; it moved
+  it.** `:51-60` now declares ten relations `derived_only` — `severe` joined them in
+  v0.5 — and direct assertion of each is refused. What Article 0 did **not** do is remove the write surface; it moved
   it one step back, and every headline attack is alive under a new spelling.
   *Assertion side*, all verified: `public(Pax).` re-derives `authority(Pax)` and reopens
   E1a verbatim (`defend(Don)` TRUE, `prisoner(Don)` FALSE); `clear(Adam).` empties a
@@ -632,9 +633,9 @@ for the harness section below.
   `deceive`, `severe`, `family`, `parent`, `teaches`, `work`, `home`, `suggest`,
   `approves`, `adjust`, `permanent`. **Deletion**, `person` first, then `permanent`,
   `severe`, `public`, `choose` — and note Article 1b added a fourth institution fact,
-  `public(State).` at `:314`, the sole route to `authority(State)` via `:425`, so one
+  `public(State).` at `:320`, the sole route to `authority(State)` via `:481`, so one
   deleted line makes the duty-bearer unexposable — the file discloses this class for `permanent()` alone,
-  at `:473-477`. **Vocabulary**, per the bullet below. Prose consequence, and it is the
+  at `:529-533`. **Vocabulary**, per the bullet below. Prose consequence, and it is the
   reason this is not only a KB item: `03-who-holds-the-pen.md:100-103` tells the reader
   the Sock/Puppet hole is closed, and it is closed only against *forged credentials* —
   two `choose(Electorate, ·)` writes still seat the puppets and the credential derives.
@@ -644,7 +645,7 @@ for the harness section below.
   The threat is real and the book prints it at `01:133`, but the old prescribed fix was
   measured and does not close it. `permanent(Art_Evidence).` was applied verbatim and
   run: it kills an amendment that DECLARES that target and kills nothing else.
-  `adjust` is self-declared by the proposer (`:468`), so an amendment naming no target
+  `adjust` is self-declared by the proposer (`:524`), so an amendment naming no target
   enacts (`become(Amend_Sneak, Law)` TRUE) and one naming a harmless target enacts too
   (`become(Amend_Lie, Law)` TRUE) — and widening the vocabulary needs no amendment at
   all: `dangerous(Esa).` asserts straight into the store and no rule sees it happen.
@@ -654,8 +655,8 @@ for the harness section below.
 
 - **Guard the personhood roster — one deletion defeats all eight rights, and the
   obvious repair only renames the target.** `person` has **30** asserted facts and
-  exactly one producing rule, `prisoner -> person` (`:248`), so the only non-assertion
-  route into rights-bearing status is being imprisoned. Verified by deleting `:486`
+  exactly one producing rule, `prisoner -> person` (`:254`), so the only non-assertion
+  route into rights-bearing status is being imprisoned. Verified by deleting `:542`
   `person(Bela).` and changing nothing else: `entitled(Bela, event { eats() })`,
   `{ dwell() }` and `{ believe() }` all flip TRUE→FALSE, `travel(Bela)` and
   `decide(Bela, Ballot)` flip TRUE→FALSE, no `err` fires anywhere, and
@@ -679,14 +680,14 @@ for the harness section below.
   constitution and answers TRUE while `? person(Sokk). => FALSE`. Nothing reads
   `entitled`, so this forges no downstream verdict — it forges the *record of what is
   owed*, which is the one thing the floor is. The obvious fear is unfounded and was
-  checked: closing the relation does **not** refuse the floor lines at `:234-247`,
+  checked: closing the relation does **not** refuse the floor lines at `:240-253`,
   because floor lines compile to rules and `derived_only` refuses only ground
   assertions. With `derived_only("entitled").` added: the floor still derives, the
   firewall still refuses the heresy law, the non-floor control still loads, and the
   forgery is refused. Article 0 goes from nine closed relations to ten.
 
 - **[AUTHOR-GATED] Decide whether the shield closes against the person or the
-  exposure.** `:414` scopes `~deceive($w, $o)` to the **pair**, and the rule is
+  exposure.** `:470` scopes `~deceive($w, $o)` to the **pair**, and the rule is
   satisfied by *any* qualifying pair, so a deceit finding on one exposure is defeated
   by making a second. Verified with REX, a Kel clone who also exposed the Review body:
   `deceive(Rex, Court)` TRUE, `false(Rex)` TRUE, `defend(Rex)` TRUE, `prisoner(Rex)`
@@ -699,7 +700,7 @@ for the harness section below.
   `public` bodies (Article 1b added `State`) plus five seats. Linear denial-of-service on the Review queue, not an
   unbounded bypass.
   **The person-scoped fix compiles and costs nothing in the suite**: appending
-  `& ~false($w)` to `:414` gives `defend(Rex)` FALSE, `prisoner(Rex)` TRUE, with
+  `& ~false($w)` to `:470` gives `defend(Rex)` FALSE, `prisoner(Rex)` TRUE, with
   `defend(Sly)` and `defend(Rebel)` intact and both suites green. The prescribed
   `sham($w)` variant does **not** compile — `sham`, `deceitful` and `answerable` are
   all absent from the corpus, so that route is a lexicon ask.
@@ -751,7 +752,7 @@ for the harness section below.
   two wants the `:accept` added as a pin, and it would be a third exhibit for the
   method part's "here is what the logic refused, and here is what it permitted".
 
-- **Article 3 mints for the *teacher*, so Cira has no recognition to lose.** `:334`
+- **Article 3 mints for the *teacher*, so Cira has no recognition to lose.** `:340`
   heads on `$teacher` and nothing anywhere mints for a student. Cira's only base facts
   are `person(Cira)` and being the *object* of two `teaches` facts. Verified:
   `reward(Cira)` FALSE, `reward(Fin)` FALSE, `lose(Points, Cira)` TRUE, `person(Fin)`
@@ -765,16 +766,16 @@ for the harness section below.
   either give students a minting path (a new article, and with it the claim that being
   taught is itself a contribution) or rewrite `06:49-53`, `:68` and `:103`.
 
-- **Decide the Article 4 clawback question.** The two rules are `:341`
+- **Decide the Article 4 clawback question.** The two rules are `:347`
   (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
-  from a person's record) and `:342` (`teaches($t,$s) & false($t) -> lose(Points, $s)`
+  from a person's record) and `:348` (`teaches($t,$s) & false($t) -> lose(Points, $s)`
   — docks a **student** for a teacher's fraud: negative scoring, of a person, who did
   nothing). Verified: `lose(Points, Bela)` TRUE, `lose(Points, Cira)` TRUE. Legacy
   `book.md` bright line 2 — *"No negative scoring of persons"* — is contradicted by
   both, and note it is a **legacy** line recorded in `CLAUDE.md` under historical
   decisions, not one book-1 has adopted. Decide which side gives: either the bright
   line narrows to "no subtraction except by due process for one's own adjudicated
-  fraud" and `:342` is deleted, or the clawback rules go and sanctions reach perks
+  fraud" and `:348` is deleted, or the clawback rules go and sanctions reach perks
   only. Do not leave both in print. Narrowing flips `lose(Points, Cira)` FALSE and
   rewrites `06:40-82`; that is the intended trade and `06-clawback.pins.nibli:5-9`
   already records it. Read the Article 3 bullet above first — it changes what
@@ -803,7 +804,7 @@ for the harness section below.
 
 - **[AUTHOR-GATED] Article 1b's obligation is contentless — decide whether the bearer owes
   *the eight* or owes an opaque token.** `Provision` occurs exactly once in the enacted
-  lines, at `:313`, and nothing anywhere connects it to `secure`, `eats`, `dwell`,
+  lines, at `:319`, and nothing anywhere connects it to `secure`, `eats`, `dwell`,
   `healthy`, `learn`, `expresses`, `believe` or `meets`. So the constitution says a body
   owes *something* to every person and never says what. Caught while re-verifying the
   chapter: the first draft of `08-what-you-are-owed.md:93` said "The eight things are owed
@@ -864,8 +865,8 @@ for the harness section below.
   credibility-buying admission the book has.
 
 - **Document Article 7's stratification landmine — the note is missing and the recorded
-  mechanism is wrong.** Article 7 (`:402-428`) carries no stratification note. Adding
-  `person($w)` to the shield rule at `:414` is the most natural tightening anyone would
+  mechanism is wrong.** Article 7 (`:458-484`) carries no stratification note. Adding
+  `person($w)` to the shield rule at `:470` is the most natural tightening anyone would
   reach for, and **both** ways of making that edit fail — differently, which is the part
   worth writing down. Verified:
   - **Edited in place**: the rule is dropped and nothing replaces it. `nibli-pin`
@@ -881,7 +882,7 @@ for the harness section below.
 
 - **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's shield is
   fail-**open** toward protection and defends the choice explicitly at `:407-413`.
-  Article 6's `~permits(Appeals, $offender)` (`:379`) is fail-**closed** against
+  Article 6's `~permits(Appeals, $offender)` (`:385`) is fail-**closed** against
   protection and gives no reason at all. Since v0.3 relief is an asserted `clear($x)`
   feeding a derived `permits(Appeals, ·)`, so the *absence* of a granted relief is what
   convicts. Same file, opposite defaults on the absence of a finding, one justified and
@@ -911,8 +912,8 @@ for the harness section below.
   decided on 2026-07-29 that both halves are designed together; only the first half
   shipped.
   **The shape is known and cheap**, because it is the shape release used: an asserted
-  expungement fact as a `~<expunged>` body conjunct on the multi-sig rule (`:340`) and on
-  `rotten -> false` (`:443`). Both are safe — the predicate is stratum 0 and `false` is
+  expungement fact as a `~<expunged>` body conjunct on the multi-sig rule (`:346`) and on
+  `rotten -> false` (`:499`). Both are safe — the predicate is stratum 0 and `false` is
   stratum 1, so no cycle. **Do not** put `~false` in a `false`-headed rule; the file
   records that exact attempt failing as E2 at `:24-26`. Costs one more evidence entry
   (22 → 23) and the nine prose sites move again, so consider landing it in the same pass
@@ -926,12 +927,12 @@ for the harness section below.
   the guard is a body conjunct. Pair with an epoch expiry on `capture` and `judge`.
 
 - **Widen kinship beyond `parent/2` — the fix is available today, and it is not free.**
-  Article 4's independence check names one relationship (`:340`), so spouses and
+  Article 4's independence check names one relationship (`:346`), so spouses and
   siblings co-sign. Verified: two Electorate-seated siblings void a stranger —
   `false(Targ)` TRUE. **Not blocked on the engine**, as the old wording implied:
   `married` (speni), `brother` (bruna) and `sister` (mensi) are already in the committed
   corpus. Verified fix — appending `~married`/`~brother`/`~sister` in both directions to
-  `:340` loads at 0 errors, flips `false(Targ)` FALSE, and leaves `false(Bela)` and
+  `:346` loads at 0 errors, flips `false(Targ)` FALSE, and leaves `false(Bela)` and
   `false(Lupo)` TRUE. **The cost is what needs deciding.** It takes the evidence
   vocabulary from 21 entries to 24, and enlarging it is the quietest way to capture a
   system — the file's own threat model. It also falsifies two shipped passages: `01:3-18`
@@ -945,10 +946,10 @@ for the harness section below.
   Parts I–V are gated on derivation, and the constitution has no predicate for a
   community, a transfer, a tax, or a term of office — so none of the following is
   derivable today and all of it is constitution work first. In dependency order:
-  - Recall is one asserted `broken(·)` fact (`:560`, consumed at `:438`) — at-will, no
+  - Recall is one asserted `broken(·)` fact (`:624`, consumed at `:494`) — at-will, no
     threshold, no administering body, no term. Replacing it also rewrites `02:55-59`
     and `03:53-60`, which describe it as is.
-  - The magnet problem: mobility is derived at `:318` and there is no community concept
+  - The magnet problem: mobility is derived at `:324` and there is no community concept
     at all, so "generous communities attract need" cannot currently be *stated*, let
     alone answered. Standard fiscal-federalism territory; it needs vocabulary first.
   - Justice material: standards of proof, proportionality, an appeals path independent
@@ -1077,17 +1078,17 @@ for the harness section below.
     from Kel sixteen lines later.
   - `? judge(Gia, Bela).` / `? capture(Gia, Bela).` / `? judge(Hex, Bela).` /
     `? capture(Hex, Bela).`, all TRUE. Chapter 5's Bela block pins the two credentials
-    and the result and skips the four facts that actually satisfy `:340`.
+    and the result and skips the four facts that actually satisfy `:346`.
   - The `~parent($a,$b) & ~parent($b,$a)` independence conjunct is exercised by **no pin
     anywhere**. `05-voiding.pins.nibli:25-33` looks like it covers this and does not — it
-    exercises Article 5 (`:351`), a different rule with a different head. Verified with a
+    exercises Article 5 (`:357`), a different rule with a different head. Verified with a
     seated parent/child pair against one target and an unrelated seated pair against
     another: `? false(Targ). => FALSE`, `? false(Targo). => TRUE`. The control is the
     point.
   - No fixture shows a voided pen-holder **in the same snapshot**. Seat Lupo and
     `? false(Lupo). => TRUE` and `? permits(Review, Lupo). => TRUE` hold together, and
     Lupo then co-signs a fresh void. That is the epoch-granularity limit the constitution
-    discloses in prose at `:450-455` and that no pin has ever demonstrated.
+    discloses in prose at `:506-511` and that no pin has ever demonstrated.
 
 - **Chapter 6's two clawback routes are each pinned at one end, and the epoch-carry route
   is scattered across three files that never mention each other.** `rotten(Vex)` is pinned
@@ -1662,12 +1663,15 @@ never worked around in prose.
   identical" differed in four places, "the four cases exhaust the combinations" covered seven of
   eight. And the numbers keep moving — the evidence list changed in a single commit, the floor
   may stop being eight, and more than one thing may become takeable. `verify.sh` carries a
-  **ratchet**: ~38 sites today; it fails if the count rises, and it also fails if the count falls
-  without `BASELINE` being lowered in the same commit, so the tightening cannot be forgotten.
-  When it reaches zero, make it a hard gate. Two clusters worth knowing: **chapter 1 holds ten of
-  the sites**, all the same "twenty-two" claim — and the chapter prints the entire list two
-  sentences later, so the numeral is redundant with the evidence beside it and the closedness is
-  carried by "when someone wants to say something that is not on the list, they cannot". And
+  **ratchet**: 28 sites after v0.5, down from 38; it fails if the count rises, and it also fails
+  if the count falls without `BASELINE` being lowered in the same commit, so the tightening
+  cannot be forgotten. When it reaches zero, make it a hard gate. **Chapter 1's cluster is
+  cleared** — it held the largest group, all the same evidence-count claim, and the chapter
+  printed the entire list two sentences later, so the numeral was redundant with the evidence
+  beside it; closedness is now carried by "when someone wants to say something that is not on the
+  list, they cannot". Chapters 3 and 5 went with it. The remaining sites are concentrated in
+  **chapter 8** (the shelter arithmetic, which is wrong on its own terms — see the prose section)
+  and **chapter 7**. And
   **chapters 9 and 14 count chapters** ("twelve chapters later", "fourteen chapters"), which the
   computed spine can invalidate silently with no pin able to catch it. Rhetorical durations
   ("thirty years") are exempt and allowlisted in the guard.
