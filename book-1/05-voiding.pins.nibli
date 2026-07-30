@@ -5,11 +5,14 @@
 
 :expect-pins 14
 
-# "Bela was examined by Gia and by Hex. Both hold the pen." — it works
+# "Bela was examined by Gia and by Hex, and their pens come from different
+#  bodies." — the cross-body requirement, exercised by the shipped case. These
+#  two must stay adjacent: the rule needs one of each, so a pin on either alone
+#  would pass while the pair had quietly become same-body.
 ? permits(Review, Gia).
 # => TRUE
 
-? permits(Review, Hex).
+? permits(Tribunal, Hex).
 # => TRUE
 
 ? false(Bela).
@@ -46,7 +49,12 @@
 ? rotten(Vex).
 # => TRUE
 
-? permits(Review, Wren).
+# Wren's pen is from the OTHER body, and that is what keeps the next pin
+# honest. Vex is Review-seated and carried-void, Wren is Convocation-seated
+# and clean, so the pair satisfies cross-body and fails ONLY on Vex's carry.
+# Put Wren back on the Electorate and false(Tyr) stays FALSE for the wrong
+# reason — verified: with Wren here, deleting rotten(Vex) flips it TRUE.
+? permits(Tribunal, Wren).
 # => TRUE
 
 ? false(Tyr).

@@ -342,7 +342,24 @@ all $contributor: all $task: work($contributor, $task) & ~false($contributor) ->
 # ─── Article 4: Audit, invalidation, clawback ─────────────────────
 # [v0.2 REPLACES the multi-sig rule] Appends ~rotten($a) & ~rotten($b):
 # an auditor voided in a PRIOR epoch (Art 8 carry ledger) cannot co-sign.
-all $a: all $b: all $audited: permits(Review, $a) & permits(Review, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited).
+# [v0.7 REPLACES it again] THE TWO PENS MUST COME FROM DIFFERENT BODIES. The
+# credential conjuncts were `permits(Review, ·)` twice; they are now Review and
+# Tribunal, the two issuers Article 8 defines. This is a REPLACEMENT and the
+# old form is deleted rather than supplemented — derivation is monotone, so a
+# same-body rule left beside this one would keep the exploit whole and the
+# suite would stay green while it did.
+#
+# One rule covers both orderings because $a and $b are symmetric in every other
+# conjunct, so the single assignment Review:=$a, Tribunal:=$b finds any pair.
+# Both slot-1 positions are CONSTANTS, deliberately: a variable there would
+# read as the general "different bodies" claim and would bind nothing, because
+# a body-only variable under an explicit prenex binder does not bind over a
+# derived relation on this engine. See the handoff prompt in the tracker.
+#
+# ~($a = $b) is kept even though the bodies now differ. Nothing stops one
+# person holding both pens, and if that ever becomes possible this conjunct is
+# the only thing between it and self-cosigning.
+all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited).
 all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 all $teacher: all $student: teaches($teacher, $student) & false($teacher) -> lose(Points, $student).
 all $auditor: all $audited: judge($auditor, $audited) & capture($auditor, $audited) & ~deceive($auditor, $audited) & ~broken($auditor) -> reward($auditor).
@@ -577,7 +594,10 @@ person(Hex).
 # [v0.2 REPLACES permits(Review, Gia/Hex)] — seating now flows through
 # Art 8; the credential derives because credibility is clean.
 choose(Electorate, Gia).
-choose(Electorate, Hex).
+# [v0.7] Hex is seated by the Convocation, not the Electorate. Gia and Hex
+# still void Bela, but now as a cross-body pair — which is the whole point:
+# the shipped case that demonstrates the rule must actually exercise it.
+choose(Convocation, Hex).
 judge(Gia, Bela).
 capture(Gia, Bela).
 judge(Hex, Bela).
@@ -687,7 +707,15 @@ person(Vex).
 person(Wren).
 rotten(Vex).
 choose(Electorate, Vex).
-choose(Electorate, Wren).
+# [v0.7] Wren moves to the Convocation too, and this move is LOAD-BEARING
+# rather than cosmetic. E2 pairs carried-void Vex with clean Wren against
+# Tyr, and `? false(Tyr). => FALSE` is supposed to prove that a prior-epoch
+# void denies the credential. Leave Wren on the Electorate and the pair now
+# fails on body-difference BEFORE the rotten test is ever reached — the pin
+# stays green while testing nothing. Verified both ways: with Wren moved,
+# deleting rotten(Vex) flips false(Tyr) TRUE; with Wren left behind, it does
+# not move, which is the vacuous reading.
+choose(Convocation, Wren).
 judge(Vex, Tyr).
 capture(Vex, Tyr).
 judge(Wren, Tyr).

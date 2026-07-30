@@ -59,7 +59,7 @@
 # => TRUE
 ? permits(Review, Vex).
 # => FALSE
-? permits(Review, Wren).
+? permits(Tribunal, Wren).
 # => TRUE
 ? false(Vex).
 # => TRUE

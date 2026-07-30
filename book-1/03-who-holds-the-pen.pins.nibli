@@ -13,7 +13,7 @@
 ? permits(Review, Gia).
 # => TRUE
 
-? permits(Review, Wren).
+? permits(Tribunal, Wren).
 # => TRUE
 
 # "Writing it down directly is not forbidden-and-punished; it is refused."
