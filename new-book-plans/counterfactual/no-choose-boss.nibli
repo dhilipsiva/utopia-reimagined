@@ -470,6 +470,11 @@ all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> b
 # POLITICAL choice surfaced in logic, not a technical inevitability.
 all $w: all $o: show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w).
 all $o: choose(Electorate, $o) -> authority($o).
+# [v0.7 NEW] The Convocation is the second seating body — see Article 8. Its
+# seats confer answerability on exactly the same terms, because a body whose
+# appointees could not be exposed would be a worse hole than the one the
+# cross-body rule closes.
+all $o: choose(Convocation, $o) -> authority($o).
 # [v0.3 REPLACES authority(Court/Review/Appeals)] The three institutions had
 # their authority ASSERTED, which is what kept `authority` open to direct
 # assertion and left `authority(Pax).` able to hand the shield to anyone.
@@ -479,6 +484,7 @@ all $o: choose(Electorate, $o) -> authority($o).
 public(Court).
 public(Review).
 public(Appeals).
+public(Convocation).
 all $o: public($o) -> authority($o).
 # authority is deliberately NOT revoked by broken/rotten: recalling Boss
 # must not strip Rebel's shield retroactively. Seating is forever
@@ -493,6 +499,25 @@ all $o: public($o) -> authority($o).
 # (relief), disclosed. Selection of the Electorate itself stays outside
 # the firewall; its certificate is the choose fact.
 all $a: choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a).
+# [v0.7 NEW] A SECOND ISSUER, so that Article 4's cross-body requirement has
+# something to range over. Until v0.7 there was exactly one audit pen: this
+# relation's other constant, permits(Appeals, ·), is not a pen at all — it is
+# per-case relief attaching to a convicted person, read only under negation by
+# the conviction rule. So "two pens from different bodies" was not merely
+# inert, it was vacuous, and the only cross-body pair available would have
+# been a Review auditor beside a cleared offender.
+#
+# WHAT THIS BUYS, AND IT IS LESS THAN IT LOOKS. It defends against a capturer
+# who controls one seating body and not the other. It does NOTHING against the
+# fact-write trust base: whoever can write choose(Electorate, Sock) can equally
+# write choose(Convocation, Puppet), and the comment above already names that
+# as the widest capture surface in the file. Separation of appointment, not
+# protection against forged facts. Do not let the prose imply otherwise.
+#
+# The clean-hands conditions are deliberately identical. A second body with
+# weaker conditions would be the way in, and an attacker picks the cheaper
+# door; two doors are only worth having if they are the same weight.
+all $a: choose(Convocation, $a) & ~rotten($a) & ~broken($a) -> permits(Tribunal, $a).
 # Epoch carry (closes E2): rotten(X) is the PRIOR-epoch judgment ledger,
 # an asserted input. Every false(X) derived in epoch N must be re-asserted
 # as rotten(X) in epoch N+1's input by the store discipline. It re-derives
