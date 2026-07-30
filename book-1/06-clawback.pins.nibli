@@ -7,8 +7,15 @@
 # If the contamination rule is narrowed (claw back only recognition derived from
 # the fraudulent teaching), lose(Points, Cira) flips FALSE and the chapter's
 # middle section must be rewritten. That is the intended outcome, not a break.
+#
+# The reward(Cira) and person(Fin) pins are the chapter's sharpest claim and the
+# two facts an earlier draft got backwards: the rule strips a student who never
+# earned anything, and the student held up as keeping everything is not on the
+# personhood roster at all. Being taught mints nothing — a settled decision, not
+# an oversight — so the "narrower rule" the chapter discusses has an empty target
+# and narrowing it is repeal. Keep these pinned; the prose turns on both.
 
-:expect-pins 13
+:expect-pins 15
 
 # "Bela was examined by two auditors and voided ... recognition is clawed back"
 ? false(Bela).
@@ -27,17 +34,25 @@
 ? prisoner(Bela).
 # => FALSE
 
-# "Bela taught Cira. Bela was voided. Cira's recognition is clawed back too."
+# "Bela taught Cira. Bela was voided. The rule reaches Cira too."
 ? teaches(Bela, Cira).
 # => TRUE
 
 ? lose(Points, Cira).
 # => TRUE
 
-# "Compare Fin, who was taught by Esa. Esa was never voided, so Fin keeps
-#  everything." — the rule fires only through the teacher
+# "Cira earned nothing. Being taught is not a way to earn recognition here."
+? reward(Cira).
+# => FALSE
+
+# "Compare Fin, whose teacher was Esa. Esa was never voided, so the rule never
+#  reaches Fin at all." — the rule fires only through the teacher
 ? teaches(Esa, Fin).
 # => TRUE
+
+# and Fin, the student held up as the lucky one, is not even a person here
+? person(Fin).
+# => FALSE
 
 ? false(Esa).
 # => FALSE

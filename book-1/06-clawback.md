@@ -3,9 +3,9 @@
 When someone's credibility is voided, what they earned goes with it.
 
 Bela was examined by two auditors and voided. Bela's recognition is clawed back — the
-accumulated acknowledgement of work done and teaching given, gone. This is the second
-half of voiding, and it is what makes voiding matter. Marking someone as unreliable
-while leaving their accumulated recognition intact would be a gesture.
+acknowledgement of work done and teaching given, gone. This is the second half of
+voiding, and it is what makes voiding matter. Marking someone as unreliable while
+leaving their recognition intact would be a gesture.
 
 The rule is simple to the point of bluntness. Credibility voided, recognition taken. No
 proportion, no partial forfeit, no assessment of how much of it was tainted. It is
@@ -41,39 +41,48 @@ built to touch.
 
 Now the difficulty, and it is a real one.
 
-Bela taught Cira. Bela was voided. **Cira's recognition is clawed back too.**
+Bela taught Cira. Bela was voided. **The rule reaches Cira too**, and strips what Cira
+earned.
 
-Cira did nothing. Cira was taught by someone who turned out to be fraudulent, and for
-that Cira loses what Cira earned.
+Cira earned nothing. Being taught is not a way to earn recognition here; sitting in
+front of a teacher is not a contribution, and nothing anywhere in this design says
+otherwise. So the rule fires on a person with nothing, and takes it.
 
-The reasoning behind the rule is not stupid. Recognition earned through fraudulent
-teaching was never really earned; if Bela was signing off on work that was not done,
-the recognition that flowed from those sign-offs is recognition for nothing, and
-letting it stand would leave the fraud partly intact. Somebody has to lose it, and the
-person holding it is Cira.
+Sit with how strange that is before deciding what it means, because the obvious reading
+is the wrong one. This is not a punishment that turned out to be too heavy. The design
+wrote a rule that strips someone for another person's fraud, and nobody thought to check
+first whether there was anything there to strip. What the rule wanted was the mark, not
+the amount.
 
-But look at what the rule actually does, as against what that reasoning would justify.
+The reasoning behind it is not stupid, which is what makes it worth this much space.
+Recognition earned through fraudulent teaching was never really earned; if Bela was
+signing off on work that was not done, the recognition that flowed from those sign-offs
+is recognition for nothing, and letting it stand would leave the fraud partly intact.
+That is a good argument. It is an argument about somebody who is holding something, and
+it was pointed at somebody who is not.
 
-It does not ask whether Cira's recognition came from Bela's teaching. Cira may have
-earned most of it elsewhere, over years, from people who were never voided. All of it
-goes.
+Take the rule at its best anyway, and suppose the student did hold something. Look at
+what it does then, as against what that reasoning would justify.
 
-It does not ask whether Cira knew. A student who colluded and a student who was
+It does not ask whether the recognition came from the fraudulent teaching. It would
+take recognition earned elsewhere, over years, from people who were never voided.
+
+It does not ask whether the student knew. A student who colluded and a student who was
 deceived are treated identically, and the second is the more common case by a long
 way — a fraudulent teacher's students are usually the people the fraud was worked on.
 
 And it does not ask how much. There is no proportion in it, because as noted at the
 start this instrument has no notion of degree.
 
-Compare Fin, who was taught by Esa. Esa was never voided, so Fin keeps everything.
-The difference between Fin and Cira is not anything Fin or Cira did. It is a fact
-about their teachers.
+Compare Fin, whose teacher was Esa. Esa was never voided, so the rule never reaches Fin
+at all. The difference between Fin and Cira is not anything Fin or Cira did. It is a
+fact about their teachers.
 
-The narrower rule is not hard to state: claw back the recognition that came from the
-fraudulent teaching, and leave the rest. That requires the record to know which
-recognition came from where, and at present it does not — recognition is a total, not
-a ledger of sources. So the design does the crude thing, and it does it to people who
-have done nothing.
+The narrower rule sounds easy to state: claw back the recognition that came from the
+fraudulent teaching, and leave the rest. It is not a repair, and it is worth seeing why
+not. There is nothing to narrow it *to*. What Cira got from Bela's teaching is nothing,
+and so is the rest of it, and a rule narrowed to reach exactly that is a rule that has
+been deleted. Whoever sits down to write the fix will find they have written a repeal.
 
 **This one is not defended here, because it is not defensible as written.** It is the
 one place in the accountability machinery where the design does to an innocent person
@@ -98,8 +107,9 @@ deceived, because distinguishing is exactly what it does not do.
 The design's answer to that tension is not to sharpen the instrument. It is to put a
 hard ceiling on it — recognition and nothing else, never the floor, never liberty,
 never personhood — so that even used bluntly, even used wrongly, even used on someone
-who did nothing at all, the worst it can do is take back what was given.
+who did nothing at all, the worst it can do is reach for what was given.
 
-Cira loses what Cira earned. Cira does not lose what Cira is owed. That distinction is
-the whole architecture of this society compressed into one person's bad afternoon, and
-the next part of the book is about the side of it that cannot be taken.
+The rule reaches Cira's recognition and finds nothing there. It does not reach what
+Cira is owed, and that was never in doubt for a moment. The distance between those two
+sentences is the whole architecture of this society compressed into one person's bad
+afternoon, and the next part of the book is about the side of it that cannot be taken.
