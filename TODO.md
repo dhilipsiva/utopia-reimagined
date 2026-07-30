@@ -506,22 +506,6 @@ for the harness section below.
   vocabulary-entrenchment bullet below first: the honest sentence is that the list cannot be
   entrenched, not that it merely has not been.
 
-- **[AUTHOR-GATED] Rule out grades — students get recognition, not marks.** Proposed
-  2026-07-29 alongside the teaching-delivers-learning route: that verified learning should
-  mint *grades or marks* for the student and perks for the teacher. **The teacher half is
-  fine; the student half collides with the book's opening sentence.** `01:24` reads *"There
-  is no score. No rating, no rank, no tier, no percentile. There is nowhere to record that
-  you are reliable, or high-risk…"* A grade is a score, on a person, recorded permanently —
-  and it is the canonical instance of the harm that chapter describes: an assessment written
-  in the same ink as the facts, travelling with you, unarguable because it was never an
-  accusation.
-  The repair costs nothing. Students get `reward` — the same bare fact of recognition
-  teachers get — and if degree is wanted, **count verified learnings** rather than scoring
-  the learner. Ten learning facts, each disputable, no number written by anyone. Note this
-  is the one place where the tiering decision must NOT be applied: tiering what a person
-  *did* is defensible, tiering what a person *is* is the thing chapter 1 was written to
-  refuse. Record the decision either way so it is not re-proposed.
-
 - **[AUTHOR-GATED] Rule on whether `person` belongs on the evidence list.**
   **The count has now moved twice, and the second time removed the reason to track
   it.** Release made `free` an entry; v0.5's severity work took `severe` off and put
@@ -847,19 +831,20 @@ for the harness section below.
   two wants the `:accept` added as a pin, and it would be a third exhibit for the
   method part's "here is what the logic refused, and here is what it permitted".
 
-- **Article 3 mints for the *teacher*, so Cira has no recognition to lose.** `:340`
-  heads on `$teacher` and nothing anywhere mints for a student. Cira's only base facts
-  are `person(Cira)` and being the *object* of two `teaches` facts. Verified:
-  `reward(Cira)` FALSE, `reward(Fin)` FALSE, `lose(Points, Cira)` TRUE, `person(Fin)`
-  FALSE. So `06:49-53`, `:68` ("Esa was never voided, so Fin keeps everything" — Fin
-  has nothing, and is not even on the personhood roster) and `:103` all describe a
-  transfer the constitution never derives. What actually happens is stranger and, for
-  the chapter's own argument about collective punishment, **stronger: Cira is docked
-  for recognition Cira never had.** It also empties the prescribed remedy below —
-  "rewards actually derived from the fraudulent teaching" is the empty set for every
-  student in the design, so that narrowing collapses into deleting the rule. The fork:
-  either give students a minting path (a new article, and with it the claim that being
-  taught is itself a contribution) or rewrite `06:49-53`, `:68` and `:103`.
+- **Rewrite chapter 6's Cira section — Cira is docked for recognition Cira never had.**
+  No longer a fork: the grades ruling (`CLAUDE.md`, 2026-07-30) settled that students
+  earn nothing for being taught, so the student-minting option is closed and the
+  rewrite is the only move left. `:340` heads on `$teacher` and nothing anywhere mints
+  for a student. Cira's only base facts are `person(Cira)` and being the *object* of
+  two `teaches` facts. Verified: `reward(Cira)` FALSE, `reward(Fin)` FALSE,
+  `lose(Points, Cira)` TRUE, `person(Fin)` FALSE. So `06:49-53`, `:68` ("Esa was never
+  voided, so Fin keeps everything" — Fin has nothing, and is not even on the
+  personhood roster) and `:103` all describe a transfer the constitution never derives.
+  What actually happens is stranger and, for the chapter's own argument about
+  collective punishment, **stronger: Cira is docked for recognition Cira never had.**
+  Pin the two facts the chapter is currently wrong about — `reward(Cira)` FALSE and
+  `person(Fin)` FALSE — which takes `06-clawback.pins.nibli` from 13 to 15 and is
+  reconciled by the `:expect-pins` sum in `verify.sh`.
 
 - **Decide the Article 4 clawback question.** The two rules are `:347`
   (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
@@ -872,9 +857,12 @@ for the harness section below.
   line narrows to "no subtraction except by due process for one's own adjudicated
   fraud" and `:348` is deleted, or the clawback rules go and sanctions reach perks
   only. Do not leave both in print. Narrowing flips `lose(Points, Cira)` FALSE and
-  rewrites `06:40-82`; that is the intended trade and `06-clawback.pins.nibli:5-9`
-  already records it. Read the Article 3 bullet above first — it changes what
-  "narrowing" can mean.
+  rewrites `06:40-91`; that is the intended trade and `06-clawback.pins.nibli:6-16`
+  already records it. **The middle option is now closed.** Since the grades ruling
+  settled that students never mint, "claw back only the rewards that came from the
+  fraudulent teaching" is the empty set for every student by construction — so
+  narrowing `:348` is not narrowing, it is deleting it, and it should be decided as a
+  deletion.
 
 - **The delivery gap can be closed by fiat and nothing objects — record the *rule*-write
   trust base.** All eight floor predicates are rule-writable heads. Verified:
@@ -934,6 +922,14 @@ for the harness section below.
   to one person complete Article 4's multi-sig and **void them** — verifying a student
   twice, once by each body, would destroy their credibility. The probe above uses `capture` deliberately to expose that; a real delivery rule
   needs its own predicate.
+  **The recognition half of the original proposal is refused and does not come back with
+  this.** The 2026-07-30 grades ruling (`CLAUDE.md`) refuses marks for the student,
+  counted degree on the reward side, and conditioning the teacher's `reward` on whether
+  the student learned. None of that touches this bullet: `learn` is a floor actuality,
+  not recognition, and delivering learning is not grading the learner. Build the
+  delivery rule; do not let it grow a scoring head. `verify.sh` section 4b will refuse
+  a rule that counts `teaches` entries, so the failure mode is caught rather than
+  argued.
   This is also what unblocks the floor-proximity perks gradient, which cannot be computed
   while nothing reaches the floor at all.
 
