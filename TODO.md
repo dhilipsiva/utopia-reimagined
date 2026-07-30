@@ -248,36 +248,6 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   The binding defect is written up properly in the handoff section — the characterisation
   in this bullet was wrong in three ways and is superseded there.
 
-## Blocking decisions — nothing should be drafted until these are settled
-
-- **Repo and constitution renamed: decided 2026-07-30 as v0.7, GitHub side pending.**
-  The repo becomes **`rights-nobody-has-to-earn`**, mirroring the book title; the
-  constitution is now `new-book-plans/constitution.nibli`. Everything inside the repo is
-  written as though the GitHub rename has already happened.
-  **Working the bullet reopened the title, which is the more useful finding.** The bullet
-  was about a dead word in a repo slug. Checking what the name should mirror surfaced that
-  *Nothing Has to Happen First* was illegible to a stranger — see the title record above.
-  **Four steps remain and they are outside this repo:**
-  1. Rename on GitHub. Redirects cover web, API and git over both protocols, and carry
-     issues, stars and forks.
-  2. **Edit the GitHub description.** It still reads *"Utopia Reimagined: From Dream To
-     Design"* and **a rename does not touch it.** The likeliest thing here to be forgotten.
-  3. Rename the working directory, then `git remote set-url origin`. Cosmetic — pushes
-     already bypass `origin` with an explicit HTTPS URL, because the SSH key is
-     passphrase-locked and the `gh` credential helper is keyed on the host, not the path.
-  4. **Never let anything reoccupy `dhilipsiva/utopia-reimagined`.** The redirect dies the
-     instant something does, including an accidental `gh repo create`.
-  **Two things a rename does not save**: `raw.githubusercontent.com` links do not redirect
-  (and `new-book-plans/1.md:8` records raw fetches as part of the working method), and
-  anything that already resolved the old name into a stored identifier keeps it.
-  **The four handoff blocks no longer hardcode an absolute path.** They rotted once
-  already; they are now repo-relative, which survives this rename and the next.
-  **Deliberately not done: nibli's `utopia.nibli`.** Its header carries the same dead
-  phrase, but it is `include_str!`-compiled into three binaries and its UI label is pinned
-  byte-stable by `nibli/CLAUDE.md:161`. Real cost in another repo for no gain here. The
-  dependency is one-way — nibli contains zero references to this repo, verified across its
-  whole tree.
-
 ---
 
 ## Prose that is false against the constitution

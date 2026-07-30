@@ -98,6 +98,12 @@ Style: first-person, personal, and accessible; economic framing routinely contra
 
 `~/projects/dhilipsiva/nibli` is a companion reasoning engine, cited by name in the tech backbone (book.md:923). Its `GUARANTEES.md` sets the register the tech chapters are converging on — state the guarantee, then name the sharp edge where it stops, rather than claiming unqualified safety. The nibli side of that convergence work lives in nibli's own `TODO.md`.
 
+**nibli's `utopia.nibli` keeps the dead word deliberately** — do not "finish" the v0.7 rename by touching it. It is `include_str!`-compiled into three binaries and its UI label is pinned byte-stable by `nibli/CLAUDE.md:161`, so renaming it is real cost in another repo for no gain here. The dependency is one-way: nibli contains zero references to this repo, verified across its whole tree.
+
+## Repo identity
+
+This repo was renamed from `dhilipsiva/utopia-reimagined` on 2026-07-30 (v0.7). **Never let anything reoccupy that name** — GitHub's redirect covers web, API and git over both protocols and carries issues, stars and forks, but it dies the instant something takes the old slug, including an accidental `gh repo create`. That is irreversible and there is no warning. Note also that a rename does not redirect `raw.githubusercontent.com` links, and does not fix anything that already resolved the old name into a stored identifier.
+
 ## Commits
 
 - One chapter or section per commit; the subject names the area (`Merit points: …`, `Tech backbone (3/n): …`). Avoid sweeping multi-part edits.
