@@ -94,11 +94,11 @@ derived_only("severe").
 #
 # WHERE THE FIREWALL STOPS (disclosed, all verified to load at 0 errors
 # with the floor lines present — do not let prose overclaim this):
-#   ~believe($x) -> false($x).            standing can still be voided
+#   ~believe($x) -> false($x).            credibility can still be voided
 #   ~meets($x) -> lose(Points, $x).       points can still be clawed back
 #   prisoner($x) -> believe($x).          positive compulsion is untouched
 # The floor blocks punishment for ABSENCE, never manufacture, and it
-# reaches `prisoner` only — not standing, not points.
+# reaches `prisoner` only — not credibility, not points.
 #
 # INVARIANT 1 for any future floor addition: a floor predicate's name
 # must appear in NO RULE BODY in this file — and note this is about the
@@ -487,7 +487,7 @@ all $o: public($o) -> authority($o).
 # Review credentials are DERIVED, not sovereignly asserted. In v0.1,
 # permits(Review, X) was a raw input: whoever writes facts was sovereign —
 # the widest capture surface in the file, undefended by Art 7. Now the
-# Electorate seats, and standing must be clean: not recalled, not
+# Electorate seats, and credibility must be clean: not recalled, not
 # carried-voided. permits(Appeals, X) remains assertable per-case
 # (relief), disclosed. Selection of the Electorate itself stays outside
 # the firewall; its certificate is the choose fact.
@@ -516,8 +516,8 @@ all $x: clear($x) -> permits(Appeals, $x).
 # tally (the counting arithmetic is outside the firewall — an E2E-
 # verifiable count in the ElectionGuard genre; its certificate is this
 # asserted fact); permanent(t) is the entrenchment register. An amendment
-# adjusting an entrenched target has VOID STANDING (reusing false — the
-# standing-voided proxy — so no new predicate). The register entrenches
+# adjusting an entrenched target HAS NO FORCE (reusing false — the
+# credibility-voided proxy — so no new predicate). The register entrenches
 # ITSELF (Art_Entrench): the guard cannot be amended away through the
 # front door, and no enactment can lower its own threshold under a lower
 # threshold (the Weimar bootstrap is underivable).
@@ -550,7 +550,7 @@ judge(Dev, Esa).
 person(Gia).
 person(Hex).
 # [v0.2 REPLACES permits(Review, Gia/Hex)] — seating now flows through
-# Art 8; the credential derives because standing is clean.
+# Art 8; the credential derives because credibility is clean.
 choose(Electorate, Gia).
 choose(Electorate, Hex).
 judge(Gia, Bela).
@@ -679,7 +679,7 @@ judge(Court, Ruk).
 attack(Ruk, Opal).
 injure(Ruk, Pax).
 home(Ruk).
-# Amendments — a floor cut and a meta-attack both die with void standing
+# Amendments — a floor cut and a meta-attack both die with no force
 # regardless of tally; an ordinary mint reform passes.
 suggest(Assembly, Amend_Floor).
 adjust(Amend_Floor, Art_Floor).
@@ -718,7 +718,7 @@ approves(Electorate, Amend_Meta).
 # choose(E, X)   — the Electorate seats X (asserted; the selection
 #                  process is outside the firewall, this fact is its
 #                  certificate).
-# rotten(X)      — PRIOR-epoch voided standing: the asserted carry ledger.
+# rotten(X)      — PRIOR-epoch voided credibility: the asserted carry ledger.
 #                  Gates multi-sig and credential derivation; re-derives
 #                  false(X) for clawback.
 # fit(X, Homestay)    — derived home-confinement eligibility.
