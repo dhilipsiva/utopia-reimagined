@@ -48,7 +48,7 @@
 ? prisoner(Hano).
 # => TRUE
 
-# "Your standing is still reachable."
+# "Your credibility is still reachable."
 :accept
 all $x: person($x) & ~believe($x) -> false($x).
 
@@ -83,7 +83,7 @@ all $x: prisoner($x) -> believe($x).
 # => TRUE
 
 # "it was never given the credential that makes an examination count — so it can
-#  write down what it likes about you and none of it will void your standing"
+#  write down what it likes about you and none of it will void your credibility"
 # BOTH halves are pinned, because the first draft of this sentence said the body
 # "holds no power to examine anyone" and that is FALSE: `judge` and `capture`
 # have no precondition, so anybody may record an examination of anybody. What

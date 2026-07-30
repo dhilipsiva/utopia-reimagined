@@ -39,7 +39,7 @@ authority(Pax).
 ? authority(Court).
 # => TRUE
 
-# 1.5 "Koa documented something about Esa. ... Esa's standing is untouched."
+# 1.5 "Koa documented something about Esa. ... Esa's credibility is untouched."
 ? capture(Koa, Esa).
 # => TRUE
 

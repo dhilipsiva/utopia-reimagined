@@ -47,7 +47,7 @@
 ? deceive(Kel, Court).
 # => TRUE
 
-# "Kel's shield falls ... Kel is a prisoner ... Kel's own standing is voided."
+# "Kel's shield falls ... Kel is a prisoner ... Kel's own credibility is voided."
 ? defend(Kel).
 # => FALSE
 

@@ -5,7 +5,7 @@
 #
 # One entry per load-bearing sentence. Private to the author.
 
-:expect-pins 16
+:expect-pins 19
 
 # "The court has standing... They have it by being what they are."
 ? public(Court).
@@ -73,4 +73,24 @@ authority(Pax).
 # => TRUE
 
 ? permits(Review, Court).
+# => FALSE
+
+# ── The two senses of one English word, held apart ───────────────────────────
+# The manuscript used "standing" for BOTH `authority` and `false` until v0.6,
+# and carried two bolded sentences six chapters apart saying opposite things
+# about the same noun. `false` is now "credibility" in the prose. These three
+# pins are the guard against the senses re-merging: they must sit ADJACENT, on
+# one person, so that a future edit collapsing them cannot pass green.
+#
+# Vex is the case that proves they are independent rather than opposite —
+# voided last period, seated by the electorate, and holding no pen. All three
+# verdicts differ, on one person, in one snapshot. This is also the cast case
+# chapter 3's new distinguishing paragraph rests on.
+? false(Vex).
+# => TRUE
+
+? authority(Vex).
+# => TRUE
+
+? permits(Review, Vex).
 # => FALSE

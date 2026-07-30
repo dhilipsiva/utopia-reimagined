@@ -57,7 +57,7 @@
 ? travel(Jala).
 # => TRUE
 
-# Voiding is not confinement: Bela lost standing and still moves
+# Voiding is not confinement: Bela lost credibility and still moves
 ? false(Bela).
 # => TRUE
 
