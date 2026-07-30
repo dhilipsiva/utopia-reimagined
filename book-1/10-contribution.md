@@ -117,16 +117,15 @@ that is a separate entry each time too. The same reading is right there, and not
 built on it.
 
 So the honest statement of the trade is not that this society cannot count. It is that
-this society counts on the way in to punishment and refuses to count on the way in to
-reward. That asymmetry was chosen, and the reason it was chosen is that being ranked
-above other people is a harm that recognition would inflict and confinement already
-does — but it is an asymmetry, and it is doing work in the direction that costs the
-person rather than the direction that pays them.
+this society counts on the way in to punishment and does not count on the way in to
+reward. There is a defence of that — being ranked above other people is a harm that
+recognition would inflict and confinement already does — but the defence came after the
+asymmetry, not before it, and an asymmetry running in the direction that costs the
+person rather than the one that pays them deserves better than a reason found later.
 
-The trade was made deliberately. A system that can express degree can rank, and one
-that can rank will eventually sort people into betters and lessers, and the
-whole point of this arrangement was to make that impossible in the place where people
-would feel it. So degree was given up here and kept elsewhere.
-It is the right trade, on the evidence of every attempt that made the other one, and
-it is still a loss, and pretending otherwise would be the kind of thing this book is
-trying not to do.
+The refusal itself was deliberate, whatever the shape it ended up with. A system that
+can express degree can rank, and one that can rank will eventually sort people into
+betters and lessers, and the whole point of this arrangement was to make that
+impossible in the place where people would feel it. It is the right trade, on the
+evidence of every attempt that made the other one, and it is still a loss, and
+pretending otherwise would be the kind of thing this book is trying not to do.
