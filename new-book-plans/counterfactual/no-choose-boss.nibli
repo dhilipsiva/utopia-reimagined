@@ -404,14 +404,15 @@ all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender)
 # principled. The committed corpus has exactly five relations with a `victim`
 # place — attack, bad, cruel, dangerous, injure — and none of them means
 # "directly". `cause` (rinka) compiles, but it puts the person in the EFFECT
-# slot and is true of all eleven injuries, so as a boolean it routes nothing;
+# slot and is true of every injury in the cast, so as a boolean it routes
+# nothing;
 # asserting it only for direct causation would make the name say "caused"
 # while the rule meant "caused directly". That is the commentary-versus-rules
 # gap this article already has one scar from (see the farmhouse, E3). Do not
 # re-propose it without a corpus name that carries the meaning.
 #
 # POLARITY IS FAIL-OPEN toward the offender, deliberately, and it disagrees
-# with the conviction rule three lines up. Both dimensions are affirmative
+# with the conviction rule at the head of this article. Both are affirmative
 # records: absence of `attack` is not a finding that the offence was
 # unintentional, it is the absence of a finding, and severity does not derive
 # from it. That is Article 7's polarity, not `~permits(Appeals, ·)`'s. The
