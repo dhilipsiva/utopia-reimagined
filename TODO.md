@@ -204,25 +204,36 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   dominant failure mode, a check that reports success because it cannot report anything
   else. The chosen line came from grafting after that was noticed, not from the filter.
 
-## Blocking decisions — nothing should be drafted until these are settled
+- **Two pens from different bodies: built 2026-07-30 as v0.7.** Article 4 now requires one
+  Review pen and one Tribunal pen. This bullet had it parked as "writable but inert" on
+  engine grounds; that was true and it was not the reason.
+  **The design fact was hiding behind the engine story.** `permits/2` had exactly one
+  audit-pen issuer. Its other constant, `permits(Appeals, ·)`, is not a pen — it is
+  per-case relief attaching to a *convicted person*, read only under negation by the
+  conviction rule. So "different bodies" had nothing to range over, and on a working
+  engine the only cross-body pair available would have been a Review auditor beside a
+  cleared offender, which weakens the rule rather than strengthening it. **Check whether a
+  quantifier has anything to range over before blaming the quantifier.**
+  **What was built.** A Convocation seats the second kind of auditor on word-for-word
+  identical clean-hands conditions — identical deliberately, because a second body with
+  weaker conditions is just the cheaper door. Constants only, so the evidence vocabulary
+  did not move: still 23. Predicates 49, derived 24, rules 43 → 45, strata 4.
+  **What it buys, and the book says so where a reader will overrate it.** It defends
+  against a capturer who controls one seating body and not the other. It does nothing
+  against the fact-write trust base: whoever can write `choose(Electorate, Sock)` can
+  write `choose(Convocation, Puppet)`. Separation of appointment, not protection against
+  forged facts.
+  **The trap worth remembering.** Moving Hex to the Convocation keeps the shipped voiding
+  case working. Moving *Wren* is what keeps E2 honest — pair carried-void Vex with clean
+  Wren and `false(Tyr) => FALSE` proves the carry denies the credential, but leave Wren on
+  the Electorate and the pair fails on body-difference *before* the rotten test, so the pin
+  stays green while testing nothing. Verified both ways against the real file. **A rule
+  that gets stricter can make an existing pin vacuous without flipping it**, and nothing in
+  the harness can see that happen.
+  The binding defect is written up properly in the handoff section — the characterisation
+  in this bullet was wrong in three ways and is superseded there.
 
-- **"Two pens from different public bodies"** as a strengthening of the dual-pen
-    void. **Writable but inert, verified — and the ground is an engine defect, not a
-    design one.** The rule compiles with committed vocabulary only:
-    `permits($b1, $a) & permits($b2, $b) & ~($b1 = $b2) & judge(…) & capture(…) ->
-    false($audited).` loads at 0 errors, and `permits/2` *is* a body-to-person relation.
-    It simply never fires, because a universal variable in the body slot of a **derived**
-    relation binds nothing: `permits(Review, $p) -> err($p, Recognition)` gives
-    `err(Gia, Recognition)` TRUE, `permits($b, $p) -> err($p, Isolation)` gives
-    `err(Gia, Isolation)` FALSE, and the asserted control `judge($b, $p) ->
-    err($p, Recognition)` gives `err(Hano, Recognition)` TRUE. So a real cross-body pair —
-    Tass holding an Appeals pen from `clear` (`:505`), Gia a Review pen from the single
-    seating rule (`:494`), both judging and capturing Yuu — leaves `false(Yuu)` FALSE.
-    Reject the strengthening, but record the ground as *unenforceable on this engine*
-    rather than *unexpressible*, and raise the binding loss as a **HANDOFF PROMPT**: a rule
-    that compiles and silently derives nothing is the failure mode this repo is least able
-    to see. `public/1` is one-place over four institution constants (`:320`, `:478-480`),
-    so it carries no notion of who works for whom; `permits(Court, Gia).` is refused.
+## Blocking decisions — nothing should be drafted until these are settled
 
 - **[AUTHOR-GATED] The repo name is now misleading.** `utopia-reimagined` names the
   legacy book, which is being deleted, and neither new book uses the word. Not urgent
@@ -882,9 +893,9 @@ for the harness section below.
   this reads as "you have the right to learn only if you passed", which is the
   eligibility-computation-upstream-of-rights structure the design refuses everywhere else.
   **And do not name it "verification".** Examining a person and recording a finding is
-  already `judge` + `capture`, and two credentialed people doing that to one person complete
-  Article 4's multi-sig and **void them** — verifying a student twice would destroy their
-  standing. The probe above uses `capture` deliberately to expose that; a real delivery rule
+  already `judge` + `capture`, and two credentialed people from different bodies doing that
+  to one person complete Article 4's multi-sig and **void them** — verifying a student
+  twice, once by each body, would destroy their credibility. The probe above uses `capture` deliberately to expose that; a real delivery rule
   needs its own predicate.
   This is also what unblocks the floor-proximity perks gradient, which cannot be computed
   while nothing reaches the floor at all.
@@ -969,8 +980,9 @@ for the harness section below.
   Worth framing in the book as forgiveness being a *right* rather than as a bug fix.
 
 - **Put a precondition on `capture`.** `capture($a, $audited)` has no precondition
-  anywhere: any two Review-credentialed people can void any person for no stated
-  reason, and the book never admits it. Needs one design decision — which predicate
+  anywhere: any credentialed pair — one Review, one Tribunal, since v0.7 — can void any
+  person for no stated reason, and the book never admits it. The cross-body requirement
+  raised the cost of assembling that pair and did nothing about the missing grounds. Needs one design decision — which predicate
   carries "grounds", since adding one enlarges the evidence vocabulary — after which
   the guard is a body conjunct. Pair with an epoch expiry on `capture` and `judge`.
 
@@ -1280,6 +1292,70 @@ never worked around in prose.
   *locally*, not dispatched, so primitives carry none of the oracle problem. Compute is
   legitimate for the claim registry and for the method part; not for the society's own
   conclusions.
+
+- **HANDOFF PROMPT — a body-only variable does not bind over a derived relation.** Found
+  while pricing the cross-body voiding rule; the rule is now built with constants and does
+  not need this, but the defect is general, it is silent, and it contradicts a published
+  guarantee. **It is a bug, not an ask** — unlike the other prompts in this section.
+  The tracker's original statement of it was wrong in three ways, all corrected by probe:
+  it is not slot-1 specific (slot 2 and arity 1 lose it too); it is not universals in
+  general (a **bare** `$y` binds correctly, only an explicit prenex `all $y:` fails); and
+  any **asserted** condition carrying the variable rescues it, which is why the plurality
+  self-join in Article 6 works — `$a` is anchored by an asserted `judge`.
+
+  ```text
+  In ~/projects/dhilipsiva/nibli: a rule body variable that appears in NO head and
+  is bound by an explicit prenex `all` fails to bind when every condition carrying
+  it is rule-backed. The rule loads, the stratifier accepts it, and it silently
+  derives nothing. Six lines, no --kb, no negation, no derived_only, no
+  stratification:
+
+      dog(Rex).
+      cat(Tom).
+      all $x: dog($x) -> animal($x).
+      all $x, $y: animal($y) & cat($x) -> big($x).
+      ? animal(Rex).   # => TRUE   passes
+      ? big(Tom).      # => TRUE   FAILS, engine returns FALSE
+
+  Change `animal($y)` to `dog($y)` — one token, asserted instead of derived — and it
+  passes. Change `all $x, $y:` to `all $x:` leaving `$y` bare and it also passes, so
+  the two spellings of the same logic disagree.
+
+  Root cause, as far as I traced it: bind_join_vars_from_index
+  (nibli-reason/src/reasoning.rs:79-154) is the only binder for body-only individual
+  vars (`x__*`), and it reads `arg_position_index`, which is populated solely by
+  assert_typed_fact (nibli-reason/src/rules.rs:911-925). Backward chaining never
+  materialises derived facts, so a derived relation is never in that index. The two
+  fallbacks both fail closed: fact_store.rs:85-91 is an exact set lookup, and
+  kb.rs:363 cannot unify a PatternVar against a head constant. There is no mode or
+  adornment machinery.
+
+  Three things to fix, in order of how much they cost you later:
+  1. The behaviour. Either bind these vars by resolving the derived condition as a
+     subgoal, or refuse the rule at load time. Silent non-derivation is the worst of
+     the three options.
+  2. GUARANTEES.md:48 promises completeness for non-recursive rule sets within the
+     depth bound, and lists exactly three incompleteness sources. This is a fourth
+     and it is undisclosed. Even if the fix is deferred, the disclosure should not be.
+  3. The clingo differential oracle cannot reach the shape: nibli-verify's generator
+     (src/generator.rs:20) only emits one-place predicates and single-variable rules,
+     so the one tool that would have caught this is structurally blind to it.
+
+  Also worth a look while you are in here: the bare-var form that does work has a
+  performance cliff. Two bare vars with an inequality, over a ~60-entity domain, did
+  not return in seven minutes — the members^k blowup that
+  bind_join_vars_from_index exists to avoid, hit because the index cannot help.
+
+  A regression test belongs beside pins/derived-only.nibli; the repro above needs no
+  fixture. nibli-engine/tests/integration.rs:1236 already tests this exact rule shape
+  over ASSERTED relations and passes, so the gap is one line from existing coverage.
+
+  Consumer: ~/projects/dhilipsiva/utopia-reimagined/new-book-plans/utopia-v2.nibli.
+  It does not currently depend on the fix — Article 4's cross-body rule uses two
+  constants precisely because a variable there would have been inert — but the
+  workaround is a constraint on the design rather than a choice, and any future rule
+  quantifying over which body did something will hit this again.
+  ```
 
 - **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
   against direct assertion; nothing closes the *set of relations* a KB will accept. Any of
