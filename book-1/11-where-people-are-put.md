@@ -5,22 +5,36 @@ an assessment is made, a category assigned, a decision recorded, and a person wi
 title signs it. The decision is reviewable in principle and, in the ordinary run of
 things, made by someone with a caseload and a preference.
 
-Here nobody chooses. Where a convicted person goes follows from three facts about
-them: whether the offence was severe, whether it was domestic, and whether they have
-a home.
+Here nobody chooses. Where a convicted person goes turns on whether the offence was
+severe, whether it was domestic, and whether they have a home — and only the last two
+of those are things anyone writes down. Severity is worked out, by the route Chapter 1
+described: it follows from whether the person attacked, whether they were cruel, and
+whether more than one person was harmed, any two of which are enough.
 
-Hano injured Ivo, was convicted, and has a home. The offence was not severe and not
-domestic. Hano is therefore eligible for home confinement, and is confined at home.
-There was no assessment and no assessor. The three facts were on the record and the
-placement followed.
+Hano injured Ivo, was convicted, and has a home. Hano meant it — that much is on the
+record — but nothing else about the offence is, and intent on its own does not reach
+the threshold. The offence is not severe. It was not domestic either. Hano is therefore
+eligible for home confinement, and is confined at home. There was no assessment and no
+assessor.
 
-Ruk injured Opal, was convicted, and also has a home. But Ruk's offence was severe.
-Severity blocks eligibility for home confinement absolutely, so Ruk is not eligible,
-and Ruk is in high security.
+Ruk injured Opal, was convicted, and also has a home. But Ruk meant it and Ruk harmed
+somebody else as well, and the two together make the offence severe. Severity blocks
+eligibility for home confinement absolutely, so Ruk is not eligible, and Ruk is in high
+security.
 
-Nando's offence was domestic and not severe, and Nando goes to low security. Lalo's
-was domestic *and* severe, and Lalo goes to high security. The four cases exhaust the
-combinations, and in none of them does anyone exercise judgment.
+Nando's offence was domestic and not severe, and Nando goes to low security. Lalo's was
+domestic and severe — Lalo attacked Mina and was cruel about it — and Lalo goes to high
+security. Don, who has no home and no family, gets there by the remaining route —
+cruelty, and a second person harmed — and is in high security too.
+
+Walking cases like this is a good way to see the machinery and a bad way to be sure of
+it. An earlier draft of this chapter said the cases above exhausted the possibilities.
+They do not: severity, domesticity and having a home vary independently, so what needs
+checking is every combination of the three, and what is walked above is only the
+combinations that happen to have somebody standing in them. What holds across those is
+not a tally — it is that in none of them does anyone exercise judgment. What walking
+cases cannot show you is a combination nobody wrote a rule for at all. There is one,
+and it is at the end of this chapter.
 
 ## The farmhouse
 
@@ -94,8 +108,35 @@ This matters more than it may sound. In systems where placement is assessed, the
 assessment is the point of leverage — it is where a difficult prisoner becomes a
 high-risk one, where cooperation is rewarded and its absence noted, where the informal
 economy of prison management does its work. None of that is available here, because
-there is no assessment to lean on. To move Ruk somewhere else you would have to change
-whether his offence was severe, and that is a claim on the record that somebody can
-contradict.
+there is no assessment to lean on. To move Ruk somewhere else you would have to go back
+to what was recorded about the offence and contradict it — that he meant it, that
+somebody else was harmed — and those are claims about events, with people attached to
+them, which somebody can answer.
 
-The alarm is broken. The thing it was watching over is not.
+That is the part worth holding onto from the farmhouse. Severity used to be the place
+where the leverage lived, because severity was written down: one word, no working
+shown, and whoever held the pen decided where a person spent their sentence. It is now
+the end of a short chain, and every link is a thing that either happened or did not.
+
+## Nowhere to put someone
+
+The combination this chapter did not walk is the plainest one: not severe, not
+domestic, and no home.
+
+Such a person is eligible for home confinement — that much derives — and there is no
+home to confine them in. Nothing else fires. No rule sends them to a facility, because
+the facility rules are for severe offences and domestic ones. So the machinery reaches
+the end of its reasoning and has produced no placement whatsoever. Kel is in this
+position. So is Adam.
+
+This is not a mercy and it is not a release. Both are convicted, both have lost the
+right to move freely, and the design simply does not say where they are while that is
+true. In a real society they would be somewhere, and the somewhere would be chosen by
+whoever was standing there — which is precisely the discretion this whole chapter
+claims to have abolished. The abolition holds everywhere the rules reach and there is a
+place they do not reach, and the gap is not visible from inside any of the cases above.
+It is only visible by asking, for every combination the facts allow, what the machinery
+would do — including the combinations with nobody currently standing in them.
+
+The alarm is broken. There is a hole in the floor beside it. The thing they were
+watching over is still worth watching over.
