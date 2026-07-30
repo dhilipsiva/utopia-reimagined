@@ -57,6 +57,12 @@ derived_only("err").
 derived_only("authority").
 derived_only("permits").
 derived_only("prisoner").
+derived_only("severe").
+# [v0.5] severe was the tenth and last open gate, and it was open in exactly
+# the way the v0.3 three were: a conclusion about an offence, written by
+# whoever held the pen, wearing the shape of a reported fact. Before this,
+# `severe(X).` asserted with nothing behind it routed X to high security and
+# no rule could tell the difference. See Article 6.
 # [v0.3] authority, permits and prisoner were the last three open, and each
 # was open for the same reason: the article conflated a fact the world reports
 # with a conclusion the system draws, under one relation name. Splitting them
@@ -377,6 +383,56 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 # this by exempting released people — the asymmetry IS the delivery gap, and
 # hiding it here would make the book's most credibility-buying admission smaller.
 all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).
+# [v0.5 REPLACES  the asserted facts severe(Lalo). severe(Ruk).]
+# SEVERITY IS NOW DERIVED. Three dimensions of an offence, and an offence is
+# severe when any two of them are present. There is no ordering predicate and
+# no arithmetic: each qualifying pair gets its own rule, which is the same
+# shape Article 6 already uses to get four placements out of two booleans.
+# Monotone, so an offence carrying all three is covered by the pairs already
+# and needs no fourth rule.
+#
+# THE DIMENSIONS ARE TWO PREDICATES, NOT THREE. `attack` is intent — gunta is
+# volitional aggression, not mere harm. `cruel` is the kind of harm. Victim
+# plurality is the third and it is not a predicate at all: it is the self-join
+# on `injure` in the second and third rules. Nobody writes "several victims";
+# it follows from victims recorded one at a time, each one individually
+# disputable. Verified against the live engine: the join binds with a variable
+# in slot 1, and `~($v = $w)` is enforced — a one-victim offender does not
+# satisfy it.
+#
+# DIRECTNESS WAS CONSIDERED AND REFUSED, and the reason is lexical, not
+# principled. The committed corpus has exactly five relations with a `victim`
+# place — attack, bad, cruel, dangerous, injure — and none of them means
+# "directly". `cause` (rinka) compiles, but it puts the person in the EFFECT
+# slot and is true of all eleven injuries, so as a boolean it routes nothing;
+# asserting it only for direct causation would make the name say "caused"
+# while the rule meant "caused directly". That is the commentary-versus-rules
+# gap this article already has one scar from (see the farmhouse, E3). Do not
+# re-propose it without a corpus name that carries the meaning.
+#
+# POLARITY IS FAIL-OPEN toward the offender, deliberately, and it disagrees
+# with the conviction rule three lines up. Both dimensions are affirmative
+# records: absence of `attack` is not a finding that the offence was
+# unintentional, it is the absence of a finding, and severity does not derive
+# from it. That is Article 7's polarity, not `~permits(Appeals, ·)`'s. The
+# unexplained contradiction between those two defaults is older than this
+# revision and is still unresolved.
+#
+# SEVERITY COLLAPSES TO THE PERSON, and this is a real edge. `severe($x)` is
+# one-place, so an offender cruel to one of two victims is severe outright,
+# for every placement, for the whole sentence. That is fail-CLOSED toward the
+# harsher outcome and it is the exact behaviour the asserted `severe(Lalo).`
+# had — not a regression, but it is now derived often enough to be noticed.
+#
+# DO NOT ADD GRADED TIERS on top of this. `building(MedSec, $x)` compiles and
+# the constant is free, but `building/2` has no exclusivity constraint and is
+# not closed in Article 0, so an offender matching two combinations derives
+# two placements at once and nothing detects it — the breach marker below
+# keys on home-without-eligibility and is blind to tier conflict. Graded
+# outcomes need a mutual-exclusion marker built in the same edit.
+all $x: all $v: attack($x,$v) & cruel($x,$v) -> severe($x).
+all $x: all $v: all $w: attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
+all $x: all $v: all $w: cruel($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
 # [v0.2 REPLACES  prisoner & home & ~family -> dwell]
 # home confinement now requires DERIVED eligibility, not a raw home flag.
 all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay).
@@ -510,6 +566,11 @@ person(Ivo).
 injure(Hano, Ivo).
 judge(Court, Hano).
 home(Hano).
+# [v0.5] Hano carries EXACTLY ONE dimension, and that is the point of the
+# fact. With no dimension at all `? severe(Hano). => FALSE` passes because
+# there is nothing to test; with one, it is the only pin in the suite that
+# fails if the two-of-three threshold ever slips to one-of-three.
+attack(Hano, Ivo).
 person(Jala).
 injure(Jala, Ivo).
 person(Lupo).
@@ -529,7 +590,10 @@ injure(Lalo, Mina).
 judge(Court, Lalo).
 home(Lalo).
 family(Lalo).
-severe(Lalo).
+# [v0.5] Lalo's severity was asserted; it is now reached by the first route,
+# intent and kind of harm on the same act.
+attack(Lalo, Mina).
+cruel(Lalo, Mina).
 person(Nando).
 person(Opal).
 injure(Nando, Opal).
@@ -566,6 +630,15 @@ person(Pax).
 injure(Don, Pax).
 judge(Court, Don).
 show(Don, Pax).
+# [v0.5] Don exercises the third route — kind of harm plus a second victim —
+# and he is here because without him that rule would compile and derive
+# nothing, which is the failure this file is least able to see. It is not
+# free: Don was one of the three convicted people the placement machinery
+# housed nowhere, and severity now routes him to a facility and delivers
+# `dwell`. The homeless-convict gap narrows to Kel and Adam. That is a
+# consequence of putting a rule to work, not a repair of the gap.
+cruel(Don, Pax).
+injure(Don, Ivo).
 # E1b — Sly shows a REAL authority, no Review finding yet: shield holds.
 #       The disclosed fail-open window, working as chosen.
 person(Sly).
@@ -599,7 +672,11 @@ capture(Wren, Tyr).
 person(Ruk).
 injure(Ruk, Opal).
 judge(Court, Ruk).
-severe(Ruk).
+# [v0.5] Ruk reaches severity by the second route: intent, plus a second
+# victim recorded separately. The farmhouse case is now also the case that
+# demonstrates plurality, and neither victim fact says how many there were.
+attack(Ruk, Opal).
+injure(Ruk, Pax).
 home(Ruk).
 # Amendments — a floor cut and a meta-attack both die with void standing
 # regardless of tally; an ordinary mint reform passes.

@@ -10,14 +10,24 @@ Regenerate any of them with:
 
 ```
 K=new-book-plans/utopia-v2.nibli
-grep -v '^all \$anyone: prisoner(\$anyone) -> person(\$anyone)\.$' $K > no-person-line.nibli
-grep -v '^public(Court)\.$'                                        $K > no-public-court.nibli
-grep -v '^choose(Electorate, Boss)\.$'                             $K > no-choose-boss.nibli
+grep -vFx 'all $anyone: prisoner($anyone) -> person($anyone).' $K > no-person-line.nibli
+grep -vFx 'public(Court).'                                     $K > no-public-court.nibli
+grep -vFx 'choose(Electorate, Boss).'                          $K > no-choose-boss.nibli
 ```
 
-`diff` each against the constitution: exactly one line, no other change. **Regenerate
+**Use `-vFx`, and do not "fix" it back to a regex.** The version of this command that
+stood here until v0.5 was `grep -v '^all \$anyone: …'`, and inside single quotes `\$` is a
+literal backslash-dollar, so it matched nothing and wrote out a byte-identical copy of the
+constitution. Anyone following the documented procedure destroyed the fixture, and the
+three pins still passed, because a fixture that is a copy of the real file answers every
+question the real file answers. `-F` (fixed string) and `-x` (whole line) cannot be
+misread that way.
+
+`diff` each against the constitution: exactly one line removed, nothing added. **Regenerate
 after every constitution edit** — a stale fixture proves something about a file that no
-longer exists, which is the failure mode these were built to answer.
+longer exists, which is the failure mode these were built to answer. `verify.sh` now
+enforces the one-line property before it runs the pins; it did not until v0.5, because the
+guard assigned its result to a variable it never read.
 
 | Fixture | Line removed | What it proves |
 |---|---|---|

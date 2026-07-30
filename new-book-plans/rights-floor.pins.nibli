@@ -10,7 +10,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 85
+:expect-pins 91
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -153,6 +153,14 @@ permits(Review, Sock).
 :refuse reasoning /declared derived-only/
 prisoner(Zed).
 
+# [v0.5] Severity is the tenth closure and the one with the shortest path to
+# harm: an asserted severe(·) routed a person to high security with nothing
+# behind it, and no rule could tell that apart from a severity that had been
+# earned. This pin is the whole of that guarantee — without it the claim that
+# nobody writes severity down is argued rather than executed.
+:refuse reasoning /declared derived-only/
+severe(Ghost).
+
 # The complement half: closing a relation must not break its derivation, or the
 # guarantee is just a ban. Each of these still derives from its new asserted
 # source — public(Court), clear(Nia), and Article 6's conviction rule.
@@ -164,6 +172,26 @@ prisoner(Zed).
 
 ? prisoner(Adam).
 # => TRUE
+
+# [v0.5] Severity's complement, and it needs all three routes, because the
+# threshold is what makes the closure worth having. Lalo reaches it through
+# intent and kind on one act; Ruk through intent and a second victim recorded
+# separately; Don through kind and a second victim. Hano is the control that
+# can actually fail: one dimension, and severity does not follow.
+? severe(Lalo).
+# => TRUE
+
+? severe(Ruk).
+# => TRUE
+
+? severe(Don).
+# => TRUE
+
+? attack(Hano, Ivo).
+# => TRUE
+
+? severe(Hano).
+# => FALSE
 
 # ── ARTICLE 1b: the duty-bearer ──────────────────────────────────────────────
 # Article 1 says what is owed; Article 1b says by whom. These pin the three

@@ -9,9 +9,13 @@
 # is repaired to look at where someone was placed rather than whether they have a
 # home, err(Ruk) and err(Lalo) both flip FALSE and that section is rewritten.
 
-:expect-pins 16
+:expect-pins 31
 
-# Hano — not severe, not domestic, has a home: eligible, and confined at home
+# Hano — meant it, and that alone is not enough. These two pins belong next to
+# each other: with no dimension recorded at all, severe(Hano) would be FALSE for
+# want of anything to test, and the threshold would be unguarded.
+? attack(Hano, Ivo).
+# => TRUE
 ? severe(Hano).
 # => FALSE
 ? fit(Hano, Homestay).
@@ -19,7 +23,13 @@
 ? dwell(Hano).
 # => TRUE
 
-# Ruk — severe, non-domestic: severity blocks eligibility, high security
+# Ruk — severe, non-domestic: severity blocks eligibility, high security.
+# Severity here is intent plus a second person harmed, and the second person is
+# an ordinary injury entry, not a count of anything.
+? attack(Ruk, Opal).
+# => TRUE
+? injure(Ruk, Pax).
+# => TRUE
 ? severe(Ruk).
 # => TRUE
 ? family(Ruk).
@@ -37,10 +47,25 @@
 ? building(LowSec, Nando).
 # => TRUE
 
-# Lalo — domestic AND severe: high security
+# Lalo — domestic AND severe: high security. Severity by the other road,
+# intent and cruelty on a single act.
+? attack(Lalo, Mina).
+# => TRUE
+? cruel(Lalo, Mina).
+# => TRUE
 ? severe(Lalo).
 # => TRUE
 ? building(HighSec, Lalo).
+# => TRUE
+
+# Don — cruelty plus a second person harmed. Don has no home and no family, so
+# before severity derived he had no placement at all; he is the reason the third
+# route is exercised rather than decorative.
+? severe(Don).
+# => TRUE
+? home(Don).
+# => FALSE
+? building(HighSec, Don).
 # => TRUE
 
 # THE BROKEN ALARM. Both flagged; both correctly placed. Hano, correctly
@@ -55,4 +80,23 @@
 
 # Nando has no home fact, so the marker cannot reach him either way
 ? home(Nando).
+# => FALSE
+
+# NOWHERE TO PUT SOMEONE. Not severe, not domestic, no home: eligibility derives
+# and nothing else does. These pins are the chapter's closing section, and the
+# two FALSE building queries are the load-bearing ones — "no rule sends them to a
+# facility" is the claim, and without them the section is an assertion.
+? fit(Kel, Homestay).
+# => TRUE
+? home(Kel).
+# => FALSE
+? dwell(Kel).
+# => FALSE
+? building(HighSec, Kel).
+# => FALSE
+? building(LowSec, Kel).
+# => FALSE
+? fit(Adam, Homestay).
+# => TRUE
+? dwell(Adam).
 # => FALSE
