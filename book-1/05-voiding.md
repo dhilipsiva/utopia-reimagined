@@ -87,7 +87,9 @@ the end of this chapter.
 
 ## What it costs
 
-Two gaps, both disclosed, and the second is worse than the first.
+Two gaps, both disclosed. The second is the worse of them, and the reason is worth
+having in advance: the first has to be arranged, and the second only has to be
+forgotten.
 
 **Only parents are excluded.** The independence condition names one relationship: you
 may not judge your child, and your child may not judge you. Spouses may co-sign.
@@ -96,18 +98,28 @@ share a household, or who owe each other a great deal, may co-sign — and every
 those pairs satisfies "two independent auditors" as far as the design is concerned.
 
 The requirement for two was supposed to make corruption a conspiracy problem. A
-conspiracy of two people who are already intimate is not much of a conspiracy. This is
-the single largest gap in the accountability machinery, it is known, and it is
-unaddressed — the record simply has no way to say that two people are married,
-because that is not one of the things the world may report.
+conspiracy of two people who are already intimate is not much of a conspiracy. It is a
+real gap, it is known, and it is unaddressed.
+
+What it is not is beyond fixing, and this chapter should not dress it up as though it
+were. The repair is to name the other relationships the way parenthood is already
+named. The words for them exist and could be written down tomorrow. What has held it
+back is not the impossibility of saying that two people are married; it is that every
+word added to the record is a new place for a conclusion to hide, which is the argument
+chapter 1 makes at length, and nobody has yet judged this pairing worth the widening.
+That is a choice, and it belongs here as a choice rather than as a limitation.
 
 **And the sequence discipline is not enforceable from inside.** The mark carried
 forward works, and it works only if someone actually carries it. If the record of who
 was voided last period is not written, or is written selectively, the check silently
-passes and a voided auditor signs again. Nothing in the design detects this. It is the
-same shape as the boundary at the end of the last chapter: the rules are airtight and
-they sit on top of a record that people maintain.
+passes and a voided auditor signs again. Nothing in the design detects this.
 
-Two chapters, two versions of the same limit. It is going to keep coming up, and it is
-better said now than discovered later: **this society can guarantee what follows from
-its record. It cannot guarantee its record.**
+That is what makes it the worse of the two. The gap above needs two people who both
+hold pens, from two different bodies, both willing to do it — and afterwards both their
+names are on the finding, where anyone can read them. This one needs a single person
+not to write something down, and afterwards there is nothing to find, because a line
+never written and a line withheld are the same absence. The rules are airtight and they
+sit on top of a record that people maintain.
+
+It is going to keep coming up, and it is better said now than discovered later: **this
+society can guarantee what follows from its record. It cannot guarantee its record.**
