@@ -99,7 +99,17 @@ pass "positive control: /false/ appears in $ctl rule bodies"
 # `reward` is here by DECISION, not by observation: recognition feeds nothing, so
 # it can never become an input to a ranking of persons. See the counting guard
 # below — the two together are what "recognition is never ranked" reduces to.
-for p in owe become travel err lose reward; do
+#
+# `building` is a decision too, and a different kind from the rest of this list.
+# The others record that nothing happens to follow from a fact. This one is
+# chapter 13's central admission made checkable: the design fixes WHERE a
+# convicted person is and says nothing about what happens there, and the proof
+# of that is that the placement is read by nothing. Note what it cuts against —
+# if conditions vocabulary is ever admitted, a rule granting facility-specific
+# protections would legitimately read `building` and this guard would fail. That
+# is intended. Removing it should be a deliberate act with the chapter rewritten
+# in the same commit, not a quiet consequence of some other edit.
+for p in owe become travel err lose reward building; do
   n=$(body "$p" | wc -l)
   [ "$n" = "0" ] && pass "nothing reads $p" \
     || fail "$p is now read by a rule" "$(body "$p") — the prose saying nothing follows from it is now false"

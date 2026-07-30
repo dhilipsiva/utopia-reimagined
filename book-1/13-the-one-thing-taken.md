@@ -80,6 +80,24 @@ managed to say — and knows nothing else, and a society could satisfy every rul
 book while doing almost anything to the people held in those places, provided it never
 wrote the doing down as punishment for lacking a floor right.
 
+The silence is more complete than "there is no rule about conditions" makes it sound,
+and it can be checked rather than taken on trust. The placement does nothing. Sending
+somebody to high security produces a single sentence — that this person is in high
+security — and no rule anywhere reads it. The facilities are named in the rules that
+send people to them and nowhere else in the design at all.
+
+Watch it in the place you would most expect the building to matter. There are three ways
+a confined person comes to have shelter here, and every one of them reads something
+about the person or about the offence: that they are eligible for home confinement and
+have a home, that the offence was severe, that it was domestic. Not one of the three
+looks at where the person is. Somebody in high security has shelter because of what they
+did, and would have it just the same if the design had never said where they were.
+
+There is one exception and it is the one that proves the shape. Home confinement is the
+only placement wired to anything — and it is the placement that is not a facility. The
+design has more to say about the people it does not lock up than about the people it
+does.
+
 That is not a small omission. It is the difference between a design that has thought
 about imprisonment and one that has thought about the decision to imprison.
 
