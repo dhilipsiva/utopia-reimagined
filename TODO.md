@@ -174,10 +174,25 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   Bare `:NNN` citations that inherit a filename from earlier in the sentence are **not**
   caught by this and still need reading by eye — that is how `:96` survived.
 
-- **Subtitle: settled 2026-07-30.** *Nothing Has to Happen First — What every person is
-  owed, and where the protection stops.* Recorded in `CLAUDE.md` with the three words that
-  must not be tidied and why. The provisional carried two overclaims and this bullet had
-  only found one of them.
+- **Title and subtitle: settled 2026-07-30, then the title reopened and resettled the
+  same day.** *The Rights Nobody Has to Earn — A design for a society worked out to the
+  point where it catches its own failures.* Recorded in `CLAUDE.md` with the words that
+  must not be tidied and why.
+  **Two predecessors are dead. The second died for a reason worth keeping.**
+  *Nothing Has to Happen First* was accurate, cleared every constraint the project had
+  written down, and failed the one nobody had thought to write down: a stranger at a shelf
+  reads it and cannot tell what the book is about. Twenty candidates were generated across
+  five angles and scored by a simulated browser seeing the title alone, legibility first
+  and accuracy only to eliminate. **Test a title on someone who knows nothing before
+  testing it on the constraint list** — the constraint list cannot see opacity.
+  The winner is clean on all seven constraints and covers the whole floor rather than one
+  item of it. Its one residue is that "rights" implies these things hold in practice, and
+  the subtitle exists to answer exactly that; do not pair it with the old subtitle, which
+  repeats what "rights" already says.
+  Worth keeping somewhere: **The Furnished Prison** scored highest of the twenty on
+  pick-up and lowest on legibility. A failed title and an excellent part title, back-cover
+  line or launch-essay headline. It comes from `13:141-143`.
+  **The first predecessor carried two overclaims** and this bullet had only found one.
   **"No law can take them away" was the known half**, and the suite already refuted it:
   the refusal covers imprisonment and stops there. Note this bullet misquoted its own
   evidence — the recognition pin is `~meets`, not `~eats`
@@ -1632,8 +1647,8 @@ never worked around in prose.
   carries no verdicts (`new-book-plans/3-spine.md:91-94`). One of exactly three sanctioned
   exceptions to the inclusion gate. No file exists. It is also where the licence line and
   the title/subtitle will have to live, so it unblocks the licence bullet below. Write it
-  against the final wording, which is settled: *Nothing Has to Happen First — What every
-  person is owed, and where the protection stops.* **Check the note against the counted-
+  against the final wording, which is settled: *The Rights Nobody Has to Earn — A design
+  for a society worked out to the point where it catches its own failures.* **Check the note against the counted-
   claims ratchet before committing it** — it will be the fifteenth file in `book-1/*.md`
   and therefore the first new prose the ratchet has ever scored. The subtitle itself is
   clean; a note that opens by naming the floor's size would not be.
