@@ -36,6 +36,24 @@ the block above by hand — it went stale twice that way. Note `4-strata.py` rep
 different numbers because it cannot descend into `event { … }` and so never sees the
 floor at all; that discrepancy is the tooling-blindness story for the method part.
 
+**State the method beside the evidence figure, because the figure answers a narrower
+question than its name suggests.** The generator's rule is *predicates with no producing
+rule*, minus the `derived_only` declaration and minus `entitled` (`5-spine-gen.py:118`,
+`:123`). That is defensible and it is **not** the set of things the world may write.
+`person` is the case that shows the gap: thirty written facts, directly assertable, and
+excluded from the 23 because two rules also produce it — `prisoner -> person`
+(`constitution.nibli:254`) and `free -> person` (`:264`, added with release). Under the
+plain definition of the writable surface — every predicate except the ten `derived_only`
+names and the `derived_only` declaration itself — the figure is **38**, and `entitled`
+and `owe` are both inside it, derived and open at the same time.
+
+Neither number is a minimality proof and neither should be quoted as one. Chapter 1 puts
+`person` on its list on the strength of this: the prose list and the generated list are
+answering different questions, and the divergence is deliberate rather than an error in
+either. The old "directly-assertable surface is 34" figure is not recoverable — it was
+computed against a 46-predicate graph — and only the 34-predicate *graph size* survives,
+in the Superseded note at the end of this file, where it is labelled history.
+
 Two predicates are derived at stratum 0 with a wholly negation-free cone: `authority`
 and, since v0.5, `severe`. They are there for the same reason — each was a conclusion
 that used to be written down, and closing it moved the work into a rule over facts that
