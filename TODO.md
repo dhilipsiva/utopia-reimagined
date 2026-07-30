@@ -131,8 +131,8 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   `verify.sh:105` needed **no** narrowing — `~($a = $b)` carries no digit, so the
   `exactly N` problem never arose. Predicates 47 → 49, derived 23 → 24, rules 40 → 43,
   strata still 4. `severe` lands at stratum 0 in the monotone cone beside `authority`,
-  which falsified `3-spine.md:39-40` and `:96` — both outside the generated block, so
-  `--check` passed green over them.
+  which falsified two sentences in `3-spine.md` — both outside the generated block, so
+  `--check` passed green over them. They now read correctly at `:39-40` and `:105`.
   **Cast cost.** `injure(Ruk, Pax).` and `injure(Don, Ivo).` were added so the plurality
   routes derive rather than compiling and doing nothing. Don thereby becomes severe and
   is routed to a facility with `dwell`, so the homeless-convict gap below narrows to Kel
@@ -151,19 +151,60 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   added — negative-controlled against both a byte-identical copy and a delete-plus-add
   drift, which the old `grep -c ''` comparison could not have seen either.
 
-## Blocking decisions — nothing should be drafted until these are settled
+- **Citation remaps must cover every file that moved, not just the one being edited.**
+  The v0.5 remap was careful about matching old line text rather than offsets, and still
+  rotted three citations, because it was scoped to `utopia-v2.nibli` alone — `3-spine.md`
+  was edited in the same pass and nobody re-pointed the citations into it. Found the next
+  day, by content-matching against `git show HEAD~1:new-book-plans/3-spine.md`. Do that
+  for **each** file a commit touches. The generic form, which takes a path and reports
+  every citation into it that moved:
+  ```
+  python3 - <<'PY'
+  import re, subprocess
+  F='new-book-plans/3-spine.md'
+  old=subprocess.run(['git','show',f'HEAD~1:{F}'],capture_output=True,text=True).stdout.split('\n')
+  new=open(F).read().split('\n'); todo=open('TODO.md').read()
+  for m in re.finditer(re.escape(F.split('/')[-1])+r':(\d{1,4})', todo):
+      a=int(m.group(1))
+      if a>len(old) or not old[a-1].strip(): continue
+      hits=[i+1 for i,l in enumerate(new) if l==old[a-1]]
+      if a not in hits: print(m.group(0), '->', hits or 'GONE', '|', old[a-1][:50])
+  PY
+  ```
+  Bare `:NNN` citations that inherit a filename from earlier in the sentence are **not**
+  caught by this and still need reading by eye — that is how `:96` survived.
 
-- **[AUTHOR-GATED] Confirm the subtitle — the condition it was waiting on has fired.**
-  The title (*Nothing Has to Happen First*) is settled in `CLAUDE.md`. The subtitle
-  is still the provisional *"Eight things every person is owed, and why no law can
-  take them away"*, held back until Chapter 1 existed. All fourteen chapters now
-  exist, so the call is due. One correction first: **"no law can take them away"
-  overclaims the mechanism.** The firewall refuses only the *prisoner* route.
-  Verified (4 pins, 0 findings): `all $x: person($x) & ~believe($x) -> false($x).`
-  and `all $x: person($x) & ~eats($x) -> lose(Points, $x).` both load — a law can
-  void your standing and dock your recognition for lacking a floor right; it simply
-  cannot imprison you for it. A subtitle Part V has to walk back costs more than a
-  duller one that holds.
+- **Subtitle: settled 2026-07-30.** *Nothing Has to Happen First — What every person is
+  owed, and where the protection stops.* Recorded in `CLAUDE.md` with the three words that
+  must not be tidied and why. The provisional carried two overclaims and this bullet had
+  only found one of them.
+  **"No law can take them away" was the known half**, and the suite already refuted it:
+  the refusal covers imprisonment and stops there. Note this bullet misquoted its own
+  evidence — the recognition pin is `~meets`, not `~eats`
+  (`08-what-you-are-owed.pins.nibli:57`).
+  **"Eight things" was the worse half and went unflagged.** A count on a cover is the most
+  permanent counted claim available, in the one place that cannot be revised chapter by
+  chapter; the floor has been six, then ten, then eight. It also trips `\beight\b` in
+  `verify.sh`'s `COUNTED` regex, so it would have failed the build the day it reached the
+  opening note. Verified: the chosen line scores 0 against that regex, the provisional
+  scores 1, and so does anything riffing on chapter 13's title, because `one thing` is in
+  the same pattern.
+  **Rejected, so none of it returns.** *"…and what cannot be written down about you"* —
+  the strongest generated candidate, but `08:109` says the duty-bearing body "can write
+  down what it likes about you" and `01:50` concedes severity is "a rating of a sort,
+  computed rather than written"; both are answerable on the written/computed distinction,
+  which is too fine a thing to hang a cover on. *"…and why the convicted are the test of
+  it"* — the only claim-shaped candidate, anchored at `07:71-73`, rejected as mis-selling
+  a constitution as a prison book. Anything on the delivery axis is contradicted by
+  `08:29-46` and `13:141-143`.
+  **A method note worth keeping.** The candidates were generated across five angles and
+  adversarially refuted. The filter had only rejection criteria and nothing scoring what a
+  line tells a reader, so it killed every candidate that asserted something and converged
+  on lines that were unfalsifiable because they were contentless — this repo's own
+  dominant failure mode, a check that reports success because it cannot report anything
+  else. The chosen line came from grafting after that was noticed, not from the filter.
+
+## Blocking decisions — nothing should be drafted until these are settled
 
 - **"Two pens from different public bodies"** as a strengthening of the dual-pen
     void. **Writable but inert, verified — and the ground is an engine defect, not a
@@ -1502,9 +1543,14 @@ never worked around in prose.
 - **Write the opening note — the last unwritten non-derived element, and nothing else
   tracks it.** ~800 words before Part I, explicitly non-derived and labelled the way Part V
   is labelled, so the book does not open cold on vocabulary; it claims no derivation and
-  carries no verdicts (`new-book-plans/3-spine.md:85-88`). One of exactly three sanctioned
+  carries no verdicts (`new-book-plans/3-spine.md:91-94`). One of exactly three sanctioned
   exceptions to the inclusion gate. No file exists. It is also where the licence line and
-  the title/subtitle will have to live, so it unblocks the licence bullet below.
+  the title/subtitle will have to live, so it unblocks the licence bullet below. Write it
+  against the final wording, which is settled: *Nothing Has to Happen First — What every
+  person is owed, and where the protection stops.* **Check the note against the counted-
+  claims ratchet before committing it** — it will be the fifteenth file in `book-1/*.md`
+  and therefore the first new prose the ratchet has ever scored. The subtitle itself is
+  clean; a note that opens by naming the floor's size would not be.
 
 - **The honesty paragraph goes in the opening note, and half of it is already in print.**
   book-1 has no introduction, so the destination this item used to name is gone. One half
