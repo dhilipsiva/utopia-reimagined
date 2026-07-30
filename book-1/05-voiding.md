@@ -90,7 +90,7 @@ The requirement for two was supposed to make corruption a conspiracy problem. A
 conspiracy of two people who are already intimate is not much of a conspiracy. This is
 the single largest gap in the accountability machinery, it is known, and it is
 unaddressed — the record simply has no way to say that two people are married,
-because that is not one of the twenty-two things the world may report.
+because that is not one of the things the world may report.
 
 **And the sequence discipline is not enforceable from inside.** The mark carried
 forward works, and it works only if someone actually carries it. If the record of who

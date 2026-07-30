@@ -75,10 +75,10 @@ punishment for lacking something and does not touch compulsion; that gap is wide
 exactly here, in the place where a person is most reachable and least able to object.
 
 Confinement in this design is a fact with no texture. A person is confined. The design
-knows where — home, low security, high security — and knows nothing else, and a
-society could satisfy every rule in this book while doing almost anything to the
-people inside those three categories, provided it never wrote the doing down as
-punishment for lacking a floor right.
+knows where — home, low security, high security, or, for some people, nowhere it has
+managed to say — and knows nothing else, and a society could satisfy every rule in this
+book while doing almost anything to the people held in those places, provided it never
+wrote the doing down as punishment for lacking a floor right.
 
 That is not a small omission. It is the difference between a design that has thought
 about imprisonment and one that has thought about the decision to imprison.
@@ -96,12 +96,25 @@ It is the same shape as relief, and it is not the same thing: relief says the
 conviction should never have held, and this says it held and is done.
 
 What the design does not say is **when**. There is no duration in it anywhere, no term,
-no length, nothing that counts. It cannot express three years, and it cannot express
-that one offence earns longer than another. So a sentence *may* end, and the design has
-nothing to say about whether this one does. For the gravest things it is expected that
-nothing is ever recorded, and the design cannot compel that either. What ends a
-punishment here is a decision someone makes and writes down, and the design's whole
-contribution is to say what follows once they have.
+no length, no clock. It cannot express three years. So a sentence *may* end, and the
+design has nothing to say about whether this one does. For the gravest things it is
+expected that nothing is ever recorded, and the design cannot compel that either. What
+ends a punishment here is a decision someone makes and writes down, and the design's
+whole contribution is to say what follows once they have.
+
+It can express that one offence was worse than another — that much changed when
+severity stopped being written down and started being worked out. Where somebody is
+held follows from how bad the offence was, and how bad the offence was follows from
+what was recorded about it. What has not been built is any bridge from that to how
+long. Severity reaches the walls and stops. Nothing carries it to the calendar, because
+there is no calendar.
+
+Notice which way round that is, because it is the safer of the two. A design that could
+grade *how long* would need to say what makes one sentence longer than another, and
+every answer to that question is a place where someone's character gets priced. This
+one grades where and refuses to grade when, and the refusal is not principle — it is
+that the vocabulary for duration was never built. It would be dishonest to claim the
+credit for a restraint nobody chose.
 
 That is less than it sounds, and it is worth being exact about why. This is the same
 shape as everything else in these chapters: the design is precise about consequence and
