@@ -17,7 +17,14 @@
 set -uo pipefail
 cd "$(dirname "$0")"
 
+# NIBLI_PIN set explicitly means "use exactly this binary" — the engine rebuild
+# below is skipped, because overriding the path is how you deliberately test an
+# older or patched build. Unset means "use the checkout", and then this script is
+# responsible for the binary matching the source.
+NIBLI_PIN_OVERRIDDEN=0
+[ -n "${NIBLI_PIN:-}" ] && NIBLI_PIN_OVERRIDDEN=1
 PIN="${NIBLI_PIN:-$HOME/projects/dhilipsiva/nibli/target/release/nibli-pin}"
+NIBLI_SRC="${NIBLI_SRC:-$HOME/projects/dhilipsiva/nibli}"
 KB=new-book-plans/constitution.nibli
 SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
@@ -185,6 +192,31 @@ if [ "$QUICK" = "1" ]; then
   printf '\n\033[33mskipped\033[0m the pin suite (--quick)\n'
   exit 0
 fi
+step "engine"
+# THE BINARY MUST MATCH THE SOURCE, AND THIS IS WHY THE SCRIPT DOES IT.
+# On 2026-07-31 nibli landed NAF materialisation. The commit was on main and
+# materialize.rs was on disk, but target/release/nibli-pin was three days old, so
+# this suite silently kept running the OLD engine — same green result, same 47
+# minutes, and the obvious conclusion would have been that the upstream work did
+# nothing. A stale binary is invisible: every pin still passes, because the pins
+# check the constitution, not the engine.
+#
+# Incremental and free: ~0.2 s when nothing changed, measured, against a ~29 min
+# run. `--quick` never reaches here, so it stays at ~2 s.
+# `--manifest-path` rather than `cd`, so this works from any directory.
+if [ "$NIBLI_PIN_OVERRIDDEN" = "1" ]; then
+  pass "NIBLI_PIN set — using $PIN as-is, not rebuilding"
+elif [ -f "$NIBLI_SRC/Cargo.toml" ] && command -v cargo >/dev/null 2>&1; then
+  out=$(cargo build --release --bin nibli-pin --manifest-path "$NIBLI_SRC/Cargo.toml" 2>&1) \
+    || fail "nibli-pin failed to build" "$out"
+  rev=$(git -C "$NIBLI_SRC" rev-parse --short HEAD 2>/dev/null || echo "not-a-git-checkout")
+  dirty=$(git -C "$NIBLI_SRC" status --porcelain 2>/dev/null | head -1)
+  pass "engine built from ${rev}$([ -n "$dirty" ] && echo ' +uncommitted')"
+else
+  printf '  \033[33mwarn\033[0m no nibli source at %s — running whatever binary is there\n' "$NIBLI_SRC"
+  printf '       set NIBLI_SRC, or NIBLI_PIN to silence this deliberately\n'
+fi
+
 step "pins (~29 min — was 47 until nibli materialised negation; positive search is what is left)"
 [ -x "$PIN" ] || fail "no nibli-pin at $PIN" "build it release, or set NIBLI_PIN"
 

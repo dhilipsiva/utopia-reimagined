@@ -86,10 +86,11 @@ it lands.
   and it passed**: 359 pins, **0 findings**, every verdict identical, over a constitution
   whose two hottest rules use `~($a = $b)` — the multi-sig at `:427` and both severity
   rules at `:516-517`. Counterfactual fixtures pass too. Full run **~50 min → 29.4 min**.
-  **Rebuild `nibli-pin --release` before re-timing anything.** The binary here was three
-  days stale when this landed, so `verify.sh` silently kept running the old engine and
-  measured zero improvement. That is the failure mode to guard: a consuming repo cannot
-  see an engine change it has not rebuilt.
+  **`verify.sh` now rebuilds the engine itself** and prints the nibli commit it built
+  from — ~0.2 s incremental. That closes the hole this landing exposed: the binary here
+  was three days stale, so the suite ran the OLD engine to a green result and measured
+  zero improvement. A stale binary is invisible, because the pins check the constitution
+  and not the engine. `NIBLI_PIN` still overrides for testing a specific build.
   **Per-query, same seven probes before and after** (ms, verdicts unchanged):
   `rotten(Vex)` 11→**25**; `permits(Review, Gia)` 145→**238**; `severe(Lalo)` 311→299;
   `prisoner(Adam)` 6035→**40**; `false(Adam)` 17202→16619; `false(Bela)` 26099→25232;
