@@ -16,7 +16,7 @@
 # command is broken. If it ever returns a line, something now follows from the
 # obligation and that paragraph is wrong.
 
-:expect-pins 21
+:expect-pins 28
 
 # "the answer this design gives is no ... for every one of the eight"
 ? eats(Adam).
@@ -66,6 +66,10 @@
 all $x: person($x) & ~believe($x) -> false($x).
 
 # "Your recognition is still reachable."
+# [v0.8] NOTE this control is precisely the shape INVARIANT 1 now forbids in the
+# constitution: a floor right read into a consequence rather than into `err`. It
+# stays here, because the point of the control is that the ENGINE permits it —
+# which is exactly why the invariant has to, and now does, refuse it separately.
 :accept
 all $x: person($x) & ~meets($x) -> lose(Points, $x).
 
@@ -89,6 +93,32 @@ all $x: prisoner($x) -> believe($x).
 
 # scoped to persons and to nothing else: no roster entry, nothing owed
 ? owe(State, Provision, Sokk).
+# => FALSE
+
+# [v0.8] "The record names each of the things owed ... and owes each of them to
+#  every person." The token survives beside them and is pinned above; these say
+#  the debt now has content.
+? owe(State, Eats, Bela).
+# => TRUE
+
+? owe(State, Meets, Hano).
+# => TRUE
+
+? owe(State, Believe, Cira).
+# => TRUE
+
+# same scoping as the token — a non-person is owed nothing, itemised or not
+? owe(State, Eats, Sokk).
+# => FALSE
+
+# "The entry naming food and the question of whether anyone ate are separate
+#  things in this design, and nothing joins them." Bela is owed food, and shelter,
+#  and has neither. If either of these ever flips while the owe pins stay TRUE,
+#  something joined them and the passage above is wrong.
+? eats(Bela).
+# => FALSE
+
+? dwell(Bela).
 # => FALSE
 
 # "the body can be looked at"
@@ -115,3 +145,10 @@ capture(State, Bela).
 #  not the shape of the rule.
 :refuse reasoning /'prisoner' -> 'owe'/
 all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
+
+# [v0.8] The protection came with the itemisation and was not re-argued for it.
+# Same refusal on a NAMED debt: no law may put a class outside the food debt and
+# then jail them for being outside it. Pinned because "it extends to each of them"
+# is the kind of claim that is assumed rather than checked.
+:refuse reasoning /'prisoner' -> 'owe'/
+all $x: person($x) & ~owe(State, Eats, $x) -> prisoner($x).

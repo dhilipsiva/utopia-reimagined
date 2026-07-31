@@ -100,12 +100,32 @@ derived_only("severe").
 # The floor blocks punishment for ABSENCE, never manufacture, and it
 # reaches `prisoner` only — not credibility, not points.
 #
-# INVARIANT 1 for any future floor addition: a floor predicate's name
-# must appear in NO RULE BODY in this file — and note this is about the
-# predicate INSIDE the event, not the outer `entitled`. Verified: putting `choose` on
-# the floor un-stratifies Article 8 and SILENTLY DROPS the Review-
+# INVARIANT 1 — A FLOOR RIGHT MAY BE NOTICED AND MAY NOT BE ACTED ON.
+# A floor predicate's name may appear in a rule body ONLY where the head
+# is `err`. Anything else — a floor right feeding placement, credibility,
+# recognition or conviction — is refused. Note this is about the
+# predicate INSIDE the event, not the outer `entitled`. Rule HEADS are
+# always safe (dwell and expresses are both). Verified: putting `choose`
+# on the floor un-stratifies Article 8 and SILENTLY DROPS the Review-
 # credential rule — the capture defence dies while the amendment engine
-# keeps running. Rule HEADS are safe (dwell and expresses are both).
+# keeps running.
+#
+# [v0.8] THIS WAS REWRITTEN BECAUSE THE OLD FORM WAS BROKEN AND NOBODY
+# KNEW. It read "a floor predicate's name must appear in NO RULE BODY",
+# and Article 6's isolation marker — `prisoner($p) & ~meets($p) ->
+# err($p, Isolation)` — has violated it since v0.1. Nothing checked, so
+# nothing said. The blanket ban was also the wrong shape: it forbade the
+# design from NOTICING that a floor right had not arrived, which is the
+# one thing the isolation marker exists to do and the only delivery check
+# in the file. What is actually dangerous is a floor right reaching a
+# consequence, and the narrowed form says exactly that. `verify.sh`
+# enforces it now, which the old form never had.
+#
+# The distinction is load-bearing and it is thin. `~eats($x) -> err(...)`
+# NOTICES. `~eats($x) -> prisoner($x)` PUNISHES. The stratifier refuses
+# the second on its own — it is a negative cycle through the person cone
+# — but it does NOT refuse `~eats($x) -> reward($x)` or a placement rule,
+# and neither would be caught by anything except this invariant.
 #
 # INVARIANT 2 — THE SHAPE, and the one most likely to be broken by
 # someone trying to HELP. The floor line must be exactly:
@@ -317,6 +337,50 @@ all $x: free($x) -> person($x).
 # and not a closure. Do not let prose read this as provision.
 all $x: person($x) -> owe(State, Provision, $x).
 public(State).
+
+# [v0.8 NEW] THE DEBT SAYS WHAT IT IS ABOUT. `Provision` occurred exactly
+# once in this file and nothing connected it to anything, so the design
+# said a body owed *something* to every person and never said what. These
+# eight say what. `Provision` is KEPT rather than replaced: it is pinned
+# in four other files, twice inside firewall refusals.
+#
+# COST, MEASURED: eight rules and NOTHING ELSE. The evidence vocabulary
+# counts predicates and these add none — the generator never looks inside
+# the parentheses, so a constant is free where a predicate is not. The
+# tracker priced this as "eight new constants in the evidence vocabulary,
+# the file's own named threat" and that was a category error.
+#
+# THE PROTECTION CAME WITH THEM. Verified: `person($x) & ~owe(State,
+# Eats, $x) -> prisoner($x)` is REFUSED — "'prisoner' -> 'owe'
+# (negative)" — with the non-floor control still loading. No law can put
+# a class outside the food debt and then jail them for being outside it.
+#
+# WHAT THESE CONSTANTS ARE NOT. `Eats` is a CONSTANT and `eats` is a
+# PREDICATE and NOTHING JOINS THEM. The names match on purpose, because
+# the resemblance is the trap: read together they look like a design that
+# knows whether the food arrived, and it does not. Do not "wire them up".
+#
+# AND THE RULE THAT WOULD JOIN THEM IS BOTH LEGAL AND UNBUILT, WHICH IS
+# THE HONEST PART. Verified on the live engine: `owe(State, Eats, $x) &
+# ~eats($x) -> err($x, Undelivered)` is ACCEPTED and DERIVES —
+# err(Bela, Undelivered) TRUE, Bela being owed food and having none.
+# INVARIANT 1 permits it too, in the narrowed form: the head is `err`, so
+# it notices without acting. It is simply not built.
+#
+# And the design already builds exactly this shape for ONE of the eight.
+# Article 6's `prisoner($p) & ~meets($p) -> err($p, Isolation)` is an
+# undelivered-right marker for company, and it is the only one. Seven
+# floor rights have no such check, for no recorded reason — the asymmetry
+# was discovered, not chosen. See the tracker. Do not describe the gap as
+# something the design cannot do; it can, and it does it once.
+all $x: person($x) -> owe(State, Eats, $x).
+all $x: person($x) -> owe(State, Dwell, $x).
+all $x: person($x) -> owe(State, Healthy, $x).
+all $x: person($x) -> owe(State, Learn, $x).
+all $x: person($x) -> owe(State, Secure, $x).
+all $x: person($x) -> owe(State, Expresses, $x).
+all $x: person($x) -> owe(State, Believe, $x).
+all $x: person($x) -> owe(State, Meets, $x).
 
 # ─── Article 2: Due-process suspension ────────────────────── [v0.1]
 all $prisoner: prisoner($prisoner) -> expresses($prisoner).

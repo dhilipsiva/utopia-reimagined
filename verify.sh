@@ -74,7 +74,7 @@ fi
 COUNTED='\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|hundred)([- ][a-z]+)?\b|\beight\b|\bexactly one\b|\bone thing\b|\bsingle deprivation\b'
 # Rhetorical durations are not claims about this design; they never go stale.
 COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)'
-BASELINE=27
+BASELINE=25
 n=$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | wc -l)
 if [ "$n" -gt "$BASELINE" ]; then
   fail "counted claims in the prose rose to $n (baseline $BASELINE)" \
@@ -126,6 +126,34 @@ if grep -vE '^\s*#' "$KB" | grep -qE '[0-9]'; then
 else
   pass "no arithmetic in the constitution"
 fi
+
+# ── 4c. INVARIANT 1: a floor right may be noticed, never acted on ────────────
+# The constitution states this at :103 and until v0.8 nothing enforced it — and
+# the version nobody enforced was WRONG. It said a floor predicate must appear in
+# no rule body at all, and Article 6's isolation marker has broken that since
+# v0.1: `prisoner($p) & ~meets($p) -> err($p, Isolation)` reads `meets`. The
+# blanket ban also forbade the one thing that marker does, which is notice that a
+# floor right did not arrive — the only delivery check in the file.
+#
+# So the rule is narrower and this enforces the narrow form: a floor right may be
+# read ONLY into `err`. Noticing is allowed; acting on it is not.
+#
+# The stratifier does NOT make this check for you. It refuses `~eats -> prisoner`
+# because that is a negative cycle through the person cone, and it accepts
+# `~eats -> reward` and `~eats -> building` quite happily. Those are the rules
+# this guard exists for, and nothing else in the suite would see them.
+step "the floor is noticed, never acted on (INVARIANT 1)"
+for p in secure eats dwell healthy learn expresses believe meets; do
+  bad=$(awk -F'->' -v p="(^|[^a-z])$p\\\\(" '/^[^#]/ && /->/ && $1 ~ p && $2 !~ /err\(/ {print NR": "$0}' "$KB")
+  [ -z "$bad" ] || fail "$p is read into something other than err — INVARIANT 1" \
+    "$bad
+       A floor right may be noticed (head err) and never acted on. See constitution :103."
+done
+noticed=$(awk -F'->' '/^[^#]/ && /->/ && $2 ~ /err\(/ && $1 ~ /(^|[^a-z])(secure|eats|dwell|healthy|learn|expresses|believe|meets)\(/ {c++} END{print c+0}' "$KB")
+[ "$noticed" -ge 1 ] || fail "the noticing check is vacuous" \
+  "no floor right is read into err at all, so the guard above proves nothing — \
+Article 6's isolation marker should be one"
+pass "floor rights reach only err ($noticed such rule, none reaching a consequence)"
 
 # ── 4b. no counted degree on the reward side ─────────────────────────────────
 # The digit ban above stops a quantity being WRITTEN. This stops one being

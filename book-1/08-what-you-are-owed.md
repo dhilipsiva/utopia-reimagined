@@ -116,12 +116,24 @@ or take what you earned. The duty and the pen are in different hands.
 Then the three things this does not buy, and they have the shape everything in this
 chapter has.
 
-**The debt is recorded as one thing, not eight.** The design says this body owes, and
-it does not say that what it owes is the eight rights named at the start of this
-chapter. There is an obligation and there is a list, and nothing in the design joins
-them. Read strictly, a body could discharge the obligation entirely and no rule
-anywhere would notice that none of the eight had arrived — which is the delivery gap
-again, one level further back, sitting in the definition rather than in the machinery.
+**The debt says what it is about, and nothing checks it against anything.** The record
+names each of the things owed — food, shelter, care, learning, safety, speech, belief,
+company — and owes each of them to every person. That is worth more than a body owing
+*something*, which is what it used to say. It is also less than it sounds. The entry
+naming food and the question of whether anyone ate are separate things in this design,
+and nothing joins them. A body could discharge the obligation entirely and the record
+would read exactly as it reads now.
+
+The part worth sitting with is that joining them is available. A rule saying *this person
+is owed food and has none* can be written. It is permitted, and what it produces is a
+mark — not a punishment, which is the only form the design allows, and the distinction
+turns out to be the whole of what protects you here. That rule is not written for food.
+
+For one of the eight it is written. Somebody confined with no company on record is
+marked, and the next chapter is largely about what that marker does and fails to do. The
+other seven have nothing. The difference between the one and the seven is not a judgement
+anybody recorded — it is what happens when a rule gets written carefully in one place and
+the general case is never revisited.
 
 **Nothing compels the body.** The design states the debt and contains no machinery for
 collecting it. There is no consequence anywhere for the obligation going unmet, nothing
