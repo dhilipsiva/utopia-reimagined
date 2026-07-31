@@ -80,40 +80,24 @@ KR construct, do not work around it in prose — hand the prompt over to a Claud
 session in `~/projects/dhilipsiva/nibli`, work the next unblocked item, and resume when
 it lands.
 
-- **LANDED 2026-07-31 — negation is answered by lookup. Verified here, and the successor
-  is below.** nibli commit `69a5e6b` saturates NAF-read relations bottom-up in stratum
-  order and answers `~p(x)` by set membership. **This repo is the real-world differential
-  and it passed**: 359 pins, **0 findings**, every verdict identical, over a constitution
-  whose two hottest rules use `~($a = $b)` — the multi-sig at `:427` and both severity
-  rules at `:516-517`. Counterfactual fixtures pass too. Full run **~50 min → 29.4 min**.
-  **`verify.sh` now rebuilds the engine itself** and prints the nibli commit it built
-  from — ~0.2 s incremental. That closes the hole this landing exposed: the binary here
-  was three days stale, so the suite ran the OLD engine to a green result and measured
-  zero improvement. A stale binary is invisible, because the pins check the constitution
-  and not the engine. `NIBLI_PIN` still overrides for testing a specific build.
-  **Per-query, same seven probes before and after** (ms, verdicts unchanged):
-  `rotten(Vex)` 11→**25**; `permits(Review, Gia)` 145→**238**; `severe(Lalo)` 311→299;
-  `prisoner(Adam)` 6035→**40**; `false(Adam)` 17202→16619; `false(Bela)` 26099→25232;
-  `reward(Esa)` 26444→**1551**. Negation-bound queries collapse (151× and 17×);
-  positive-search queries do not move; **cheap queries got slower**, because saturation is
-  a fixed cost they did not need.
-
-- **LANDED 2026-07-31 — positive goals answer by lookup too, and the suite is 9m46s.**
-  nibli `6c71ef0` saturates every eligible relation, not only NAF-read ones. **Verified
-  here: 359 pins, 0 findings**, engine stamped `6c71ef0` by the auto-rebuild. Full run
-  **~50 min → 29.4 min (`69a5e6b`) → 9m46s (`6c71ef0`)**.
-  **It carried a soundness fix, which is why the differential mattered.** `69a5e6b` could
-  mark a relation complete while a relation its rule *read* had been refused by
-  `seed_edb` — so the negated condition passed over a hole and a head fired for everyone.
-  Latent there, reachable once positive goals widened the target set, caught by nibli's
-  ON/OFF gate as a definitive wrong TRUE. Nothing here regressed.
-  **Two of my own claims in the retired prompt were wrong and are recorded so they are not
-  repeated.** (1) "Saturating `false` costs ~1.5 s, backward-chaining one member ~25 s" —
-  true at `69a5e6b`, false now: `false(Bela)` is **1.0 ms**. (2) "The saturation is rebuilt
-  per query" — it is per **epoch**, dropped only by a mutation. `nibli-pin` walks a file
-  linearly, so this suite's 327 queries collapse into **24** epochs, and a full saturation
-  measures **~1 ms**. The 11→25 ms regression I reported was real at `69a5e6b` and does not
-  reproduce at HEAD, where `rotten(Vex)` is 0.0 ms ON against 3.1 ms OFF.
+- **LANDED 2026-07-31 — negation and positive goals both answer by lookup. Verified here;
+  the successor is below.** nibli `69a5e6b` saturates NAF-read relations in stratum order;
+  `6c71ef0` extends that to every eligible relation. **This repo was the differential and
+  passed both: 359 pins, 0 findings**, verdicts unchanged, over a constitution whose two
+  hottest rules use `~($a = $b)`. Full run **~50 min → 29.4 min → 9m46s**.
+  **`6c71ef0` carried a soundness fix, which is why the differential mattered.** `69a5e6b`
+  could mark a relation complete while a relation its rule *read* had been refused by
+  `seed_edb`, so a negated condition passed over a hole and the head fired for everyone —
+  latent there, reachable once positive goals widened the target set, caught upstream as a
+  definitive wrong TRUE.
+  **Three numbers I published here were wrong within a day. Recorded so they are not
+  re-derived.** (1) "Saturating `false` ~1.5 s vs ~25 s to prove one member" — true at
+  `69a5e6b`, false now: `false(Bela)` is **1.0 ms**. (2) "The saturation is rebuilt per
+  query" — it is per **epoch**, dropped only by a mutation; this suite's 327 queries
+  collapse into **24** saturations of ~1 ms. (3) The 11→25 ms regression was real at
+  `69a5e6b` and does not reproduce at HEAD, where `rotten(Vex)` is 0.0 ms ON against 3.1 ms
+  OFF. **A measured claim is only true of the commit it was measured on** — re-baseline
+  before building on one, and `verify.sh` now stamps the engine commit for exactly this.
 
 - **HANDOFF PROMPT — the `event { }` projection is the whole remaining cost. This repo is
   the firewall differential and it is stronger than the four pins upstream.** Every
@@ -244,7 +228,7 @@ it lands.
   "cannot" be written. It currently can.
   ```
 
-- **HANDOFF PROMPT — defect pins vs guarantee pins.** Roughly a fifth of the book's 271
+- **HANDOFF PROMPT — defect pins vs guarantee pins.** Roughly a fifth of the book's 359
   pins encode admitted defects rather than guarantees, and the harness cannot tell them
   apart. A defect pin flipping reports as a regression when it is the repair landing, and
   the only thing preventing that confusion today is a prose comment in each file, one of
@@ -271,8 +255,10 @@ it lands.
   dump, for a loaded KB, every predicate with its stratum, whether it is base or derived,
   and the negative edges — stable enough to diff. Then `5-spine-gen.py` renders that
   instead of parsing text, and the method part's numbers come from the engine that
-  enforces them. Ask for a shared-engine mode in the same pass — `--kb` re-stratifies once
-  per pin file, which is what makes the full suite a thirteen-minute run.
+  enforces them. Ask for a shared-engine mode in the same pass — `--kb` re-stratifies once per pin
+  file, and since v0.8 it also re-saturates once per *epoch*, so a file that interleaves
+  assertions pays a fixpoint per run of queries. Cheap today (~1 ms) and the reason the
+  suite is 9m46s rather than seconds is the refused `event { }` fragment, not this.
 
 - **Not ready, deliberately.** Provenance on `reward` is downstream of the clawback fork —
   do not hand it off until that is settled, because the shape of the ask depends on which
@@ -1162,8 +1148,8 @@ No known defects. Read it against the constitution anyway.
   Articles 4, 6, 7 and 8 mean what they say". Repo-wide only six have a `:refuse` pin.
   The three unpinned ones are the shield, the mint and the enactment gate — the heads of
   Articles 7, 3 and 9. Verified that all three refusals hold today and the pins go in
-  as-is. Add to `rights-floor.pins.nibli` beside the other six and bump `:expect-pins` from 75 to
-  78. Ten minutes' work, and without them the file's own named failure mode at `:44-47`
+  as-is. Add to `rights-floor.pins.nibli` beside the other six and bump `:expect-pins` from 91 to
+  94. Ten minutes' work, and without them the file's own named failure mode at `:44-47`
   — a `derived_only` line moved below the facts it guards "is inert and looks identical"
   — takes three of the nine gates with it in silence.
 
