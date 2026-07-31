@@ -153,6 +153,21 @@ derived_only("severe").
 #     all $x: person($x) -> owe(State, Belief, $x).
 # If a predicate reads wrong, change the PREDICATE, never the shape.
 #
+# [v0.8] A THIRD REASON, and since nibli `de34cd4` it is the sharpest one.
+# `event { P() }` takes NO argument, and threading the universal into it —
+# `entitled(every person, event { eats($x) })` — would be the single most
+# damaging edit available in this file. The body's event term compiles to
+# `sk(Unspecified)`, INDEPENDENT of the universal, so its role fillers are
+# `Unspecified` and the body describes nobody: `? eats(Adam).` misses and
+# answers FALSE. Thread `$x` in and the head carries a live variable, so
+# `eats(Adam)` derives for every person on the roster — and chapter 8's
+# whole argument, that a right can be owed and undelivered, becomes false
+# while every entitlement pin stays green. 26 actuality pins across eight
+# predicates are FALSE for exactly this reason; they are the guard, and
+# `08-what-you-are-owed.pins.nibli` is where they live.
+# The engine is faithful to whichever shape it is given. The opacity is a
+# property of THIS file's shape, not a protection the engine supplies.
+#
 # INVARIANT 3 — ANY ABSTRACTION THAT REACHES A RULE HEAD JOINS THE
 # PROTECTED SET. Corrected 2026-07-28: I first wrote this as "x3 must be
 # empty", which named the wrong thing. The condition is **rule-head
@@ -205,7 +220,8 @@ derived_only("severe").
 # opacity symmetry would silently make this floor stratifiable — rules
 # could then punish people for lacking a floor right. As of 2026-07-28
 # five regression tests pin it upstream, at
-# nibli-engine/tests/integration.rs:3228:
+# nibli-engine/tests/integration.rs:3475-3571 (the citation read :3228
+# until 2026-07-31, which is a comment banner, not the tests):
 #   rights_floor_entitled_asserts_and_routes
 #   rights_floor_does_not_fabricate_the_actuality   entitled TRUE, eats FALSE
 #   rights_floor_blocks_punishment_for_lacking_it   names prisoner -> eats

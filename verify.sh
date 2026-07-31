@@ -7,8 +7,11 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run, includes the pin suite (~10 min — MEASURED 2026-07-31)
-#   ./verify.sh --quick  everything except the pin suite (~2 s)
+#   ./verify.sh          full run, includes the pin suite (~30 s — MEASURED 2026-07-31)
+#   ./verify.sh --quick  everything except the pin suite AND the counterfactuals (~2 s)
+#                        NOTE --quick cannot see a stale fixture: the counterfactual
+#                        check is step 6, after the pins. Run the FULL suite after any
+#                        constitution edit — that is how a stale fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and all nine gate closures and
@@ -217,7 +220,7 @@ else
   printf '       set NIBLI_SRC, or NIBLI_PIN to silence this deliberately\n'
 fi
 
-step "pins (~9 min — was 47; nibli materialised negation, then positive goals too)"
+step "pins (~20 s — was 47 min; nibli materialised negation, positive goals, then the event projection)"
 [ -x "$PIN" ] || fail "no nibli-pin at $PIN" "build it release, or set NIBLI_PIN"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')

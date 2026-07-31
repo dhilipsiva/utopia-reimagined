@@ -80,30 +80,6 @@ KR construct, do not work around it in prose — hand the prompt over to a Claud
 session in `~/projects/dhilipsiva/nibli`, work the next unblocked item, and resume when
 it lands.
 
-- **HANDOFF PROMPT — the `event { }` projection is the whole remaining cost. This repo is
-  the firewall differential and it is stronger than the four pins upstream.** Every
-  relation inside the materialisable fragment now answers in 0.0–1.0 ms. Everything still
-  slow is a relation the projection refuses because `entitled(every person, event { P() })`
-  compiles to a head with two arity-1 anchors on one event term (`AmbiguousAnchor`) and the
-  abstraction referent in a value slot (`EventEscapes`). Upstream measured the residue as
-  `err` 4,583 ms × 27 queries, `dwell` 13,424 ms × 20, `obliged` 2,747 ms × 8 — **414 s of
-  576 s** — and those query counts match this repo exactly.
-  **The danger is not performance, it is the rights-floor firewall.** A projection that
-  took the abstraction body naively would derive the floor actualities for every person.
-  **This suite pins 44 floor-predicate verdicts, 26 of them FALSE** — `eats(Adam)`,
-  `secure(Bela)`, `learn(Cira)`, `meets(Hano)`, `believe(Bela)` and the rest — across eight
-  predicates and nine people. Those 26 *are* chapter 8's owed-versus-delivered argument. A
-  naive projection flips all of them and the book's central claim becomes false while the
-  entitlement side stays green. Both halves are pinned: `entitled(Hano, event { eats() })`
-  TRUE (`rights-floor.pins.nibli:255`) and `entitled(Hano, event { dwell() })` (`13:90`)
-  must still MATCH, while the actualities must still MISS.
-  **Run this suite before `just ci`, not after** — it fails faster and more specifically,
-  and it is the only check that distinguishes "projection works" from "projection
-  fabricates actuality". It also exercises invalidation rather than just steady state: ten
-  of fifteen pin files interleave mutations with queries (`rights-floor` 12 mutations
-  across 75 queries), and `dwell(Hano)` is pinned TRUE five times and FALSE twice, the
-  FALSE cases sitting after `free(Hano)` is asserted in chapter 13's release sequence.
-
 - **Never route a constitutional judgment through the compute backend — and the reason is
   not performance.** nibli can dispatch predicates to an external compute backend, and an
   embedded one (Rust or Python wasm) is possible. It is the wrong tool here. From nibli's
@@ -236,10 +212,9 @@ it lands.
   dump, for a loaded KB, every predicate with its stratum, whether it is base or derived,
   and the negative edges — stable enough to diff. Then `5-spine-gen.py` renders that
   instead of parsing text, and the method part's numbers come from the engine that
-  enforces them. Ask for a shared-engine mode in the same pass — `--kb` re-stratifies once per pin
-  file, and since v0.8 it also re-saturates once per *epoch*, so a file that interleaves
-  assertions pays a fixpoint per run of queries. Cheap today (~1 ms) and the reason the
-  suite is 9m46s rather than seconds is the refused `event { }` fragment, not this.
+  enforces them. **Do not bundle a shared-engine mode with this.** That ask existed to cut a
+  47-minute suite; the suite is 29 s and per-file re-stratification is not measurable
+  against it. Ask for the dump alone.
 
 - **Not ready, deliberately.** Provenance on `reward` is downstream of the clawback fork —
   do not hand it off until that is settled, because the shape of the ask depends on which

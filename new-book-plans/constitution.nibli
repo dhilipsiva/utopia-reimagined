@@ -153,6 +153,21 @@ derived_only("severe").
 #     all $x: person($x) -> owe(State, Belief, $x).
 # If a predicate reads wrong, change the PREDICATE, never the shape.
 #
+# [v0.8] A THIRD REASON, and since nibli `de34cd4` it is the sharpest one.
+# `event { P() }` takes NO argument, and threading the universal into it —
+# `entitled(every person, event { eats($x) })` — would be the single most
+# damaging edit available in this file. The body's event term compiles to
+# `sk(Unspecified)`, INDEPENDENT of the universal, so its role fillers are
+# `Unspecified` and the body describes nobody: `? eats(Adam).` misses and
+# answers FALSE. Thread `$x` in and the head carries a live variable, so
+# `eats(Adam)` derives for every person on the roster — and chapter 8's
+# whole argument, that a right can be owed and undelivered, becomes false
+# while every entitlement pin stays green. 26 actuality pins across eight
+# predicates are FALSE for exactly this reason; they are the guard, and
+# `08-what-you-are-owed.pins.nibli` is where they live.
+# The engine is faithful to whichever shape it is given. The opacity is a
+# property of THIS file's shape, not a protection the engine supplies.
+#
 # INVARIANT 3 — ANY ABSTRACTION THAT REACHES A RULE HEAD JOINS THE
 # PROTECTED SET. Corrected 2026-07-28: I first wrote this as "x3 must be
 # empty", which named the wrong thing. The condition is **rule-head
