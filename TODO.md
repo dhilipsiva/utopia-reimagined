@@ -1136,10 +1136,19 @@ No known defects. Read it against the constitution anyway.
 - **Extend `verify.sh` as the book grows — the runner shipped, the discipline is keeping it
   honest.** `./verify.sh` at the repo root; `--quick` skips the pin suite and runs in about
   two seconds. It checks, first-failure-wins: the spine is regenerated; the evidence
-  vocabulary reads 21; no formalism has leaked into a derived chapter; the five absence
-  claims still hold; there is no arithmetic in the constitution; the pin suite is green and
-  the number it ran equals the sum of `:expect-pins` across the fifteen files; and the three
-  counterfactual fixtures still prove what the book says they prove.
+  vocabulary reads **23**; no formalism has leaked into a derived chapter; counted claims in
+  the prose have not increased (a ratchet — lower `BASELINE` in the same commit that removes
+  a site); **the engine is rebuilt from source and the commit it was built from is printed**;
+  seven absence claims still hold; no floor right is read into anything but `err`
+  (INVARIANT 1); recognition is never counted; there is no arithmetic in the constitution;
+  the pin suite is green and the number it ran equals the sum of `:expect-pins` across the
+  fifteen files; and the three counterfactual fixtures still prove what the book says.
+  **The engine build is not housekeeping.** A stale `nibli-pin` is invisible here — the pins
+  check the constitution, not the engine, so an out-of-date binary returns the same green
+  359/0 and the same runtime. That happened on 2026-07-31 and would have read as "the
+  upstream NAF work achieved nothing". `cargo build --release` before the pin step costs
+  ~0.2 s incremental; `NIBLI_PIN` skips it, because overriding the path is how you
+  deliberately test a different build.
   **Every check was negative-controlled before it was trusted, and one failed the control.**
   The tracker's original jargon pattern (`stratum|strata`) does **not** match *stratifier* —
   the likeliest leak of all, since it is the word this tracker uses constantly — and a
@@ -1148,9 +1157,10 @@ No known defects. Read it against the constitution anyway.
   The absence checks carry a positive control (`/false/` must return 5 rule bodies) for the
   same reason: a grep that also matches a predicate's own rule head can never fail, which is
   a trap this repo fell into twice in one day.
-  Left to do: fold the ~47-minute pin run into something a person will actually run before
-  every commit — the shared-engine ask below is the real fix, and expansion is what makes it
-  urgent, since ~600 pins projects to 25–40 minutes.
+  Left to do: fold the ~29-minute pin run into something a person will actually run before
+  every commit. The phase-1 successor prompt is the real fix — materialising the positive
+  side and persisting the saturation across a file — and expansion is what makes it urgent,
+  since ~600 pins projects back past 45 minutes even at the post-materialisation rate.
 
 - **Wire the vocabulary guard in, and stop calling it a closure — 97 pins stay green
   when the evidence vocabulary is widened.**   … (and at :966)   at all: chapter 1's suite
