@@ -694,21 +694,21 @@ for the harness section below.
   reporting a named debtor *and* every actuality satisfied: it reads as a discharged
   obligation rather than an undisclosed gap.
 
-- **[AUTHOR-GATED] Article 1b's obligation is contentless — decide whether the bearer owes
-  *the eight* or owes an opaque token.** `Provision` occurs exactly once in the enacted
-  lines, at `:319`, and nothing anywhere connects it to `secure`, `eats`, `dwell`,
-  `healthy`, `learn`, `expresses`, `believe` or `meets`. So the constitution says a body
-  owes *something* to every person and never says what. Caught while re-verifying the
-  chapter: the first draft of `08-what-you-are-owed.md:93` said "The eight things are owed
-  by a public body", which the design does not derive; the sentence has been narrowed and
-  the gap is now disclosed in the chapter's own "does not buy" list, but disclosure is not
-  a fix. Two ways, and they are different designs. **Enumerate** — eight rules of the shape
-  `all $x: person($x) -> owe(State, Eats, $x).` — which makes the obligation say what it is
-  about, costs eight new constants in the evidence vocabulary (the file's own named threat),
-  and needs the firewall re-checked on each. Or **keep the single token** and say plainly in
-  Part V that the design names a debtor without specifying the debt, which is defensible
-  only if it is stated rather than discovered. Do not leave the chapter carrying the
-  disclosure while the tracker carries no decision.
+- **[AUTHOR-GATED] Decide whether the other seven floor rights get delivery markers.**
+  Opened 2026-07-31 by the Article 1b itemisation, and it is the largest thing the
+  delivery gap has ever had. **The design already detects a floor right that did not
+  arrive** — Article 6's `prisoner($p) & ~meets($p) -> err($p, Isolation)` is exactly an
+  undelivered-right marker, for company. Seven have nothing. Verified that the general
+  shape works: `owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered)` is **accepted
+  and derives**, `err(Bela, Undelivered)` TRUE. It is legal under the narrowed INVARIANT 1
+  (head is `err`, so it notices without acting) and it is simply unbuilt.
+  **The asymmetry was discovered, not chosen**, which is why this needs a ruling rather
+  than a defence: nothing anywhere records why company is checked and food is not.
+  Cost if built: seven rules, no vocabulary, and a real rewrite of `08`'s closing item and
+  of chapter 14, which gains seven markers to be honest about — including that they would
+  fire on nearly everybody, since almost nothing is delivered. That last point is the
+  argument against, and it is not nothing: seven more alarms that fire on the whole
+  population report the same emptiness the isolation marker already reports.
 
 - **Build the first delivery route: verified teaching delivers learning. VERIFIED TO WORK,
   and it is the highest-value item in this section.** Nothing in this design touches the
