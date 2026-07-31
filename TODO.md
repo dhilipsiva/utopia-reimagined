@@ -135,8 +135,10 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
   `--check` passed green over them. They now read correctly at `:39-40` and `:105`.
   **Cast cost.** `injure(Ruk, Pax).` and `injure(Don, Ivo).` were added so the plurality
   routes derive rather than compiling and doing nothing. Don thereby becomes severe and
-  is routed to a facility with `dwell`, so the homeless-convict gap below narrows to Kel
-  and Adam — a consequence of putting a rule to work, not a repair.
+  is routed to a facility with `dwell`, so the homeless-convict gap narrowed to Kel
+  and Adam — a consequence of putting a rule to work, not a repair. *(That gap is closed
+  as of v0.8: confinement now houses you. This note is kept because it is why the closing
+  bullet's own worked example had gone stale.)*
   **Runtime cost, unpriced and real.** A derived `severe` behind three rules takes the
   pin suite from ~2.6s to ~7.5s per pin. `./verify.sh` is now roughly three times
   longer; `--quick` is unaffected.
@@ -340,44 +342,6 @@ for the harness section below.
   and `? dwell(Ruk). # => TRUE` to chapter 8's pins, and `? expresses(Jala). # =>
   FALSE` and `? dwell(Jala). # => FALSE` to chapter 13's — **above** its `free(Hano).`
   block at `:72`, which changes Hano for every query after it.
-
-- **Chapter 11 claims its four cases exhaust the combinations. They cover seven of
-  eight, and the eighth derives no placement at all.**
-  `book-1/11-where-people-are-put.md:22-23`. The missing cell is *not severe, not
-  domestic, no home*, and the constitution's own cast holds three people in it — Don
-  (`:629-633`), Kel (`:651-656`) and Adam (`:539-541`), three of the seven convicted
-  people in the file. Verified: `? prisoner(Don). => TRUE`, `? fit(Don, Homestay). =>
-  TRUE`, `? dwell(Don). => FALSE`, `? building(LowSec, Don). => FALSE`,
-  `? building(HighSec, Don). => FALSE`, `? err(Don, Placement). => FALSE`; same shape
-  for Kel and Adam. They are eligible for home confinement and have no home, so `:439`
-  never fires and neither facility rule reaches them. The chapter's own opening premise
-  — "Somebody convicted has to be somewhere" (`:3`) — is not delivered for three of
-  seven. The breach marker is blind by construction: `err/2` keys on *having* a home.
-  `err(Don, Isolation)` is TRUE, but it is TRUE for every prisoner, so it is not a
-  catch.
-  **Correct the sentence first; it needs no ruling.** Say the four cases cover seven of
-  eight, name the eighth, and say the design has never been asked where that person
-  goes. Add a Don block to `11-where-people-are-put.pins.nibli` pinning all six
-  verdicts. The design question itself is parked below under Constitution work.
-
-- **`family/1` means "has a family", not "the offence was domestic" — chapter 11
-  glosses it wrong twice.** `11:8-10` says placement follows from "whether the offence
-  was severe, whether it was domestic, and whether they have a home", and `:21-22`
-  calls Nando's offence domestic. Every rule reads `family($x)` — one place, a property
-  of the *offender* (`:438`, `:441`, `:454`, `:455`, `:456`) — and
-  `01-what-counts-as-evidence.md:12` defines it that way itself. Nando's whole record
-  is `injure(Nando, Opal)`, `judge(Court, Nando)`, `family(Nando)`; nothing says Opal
-  is family. Verified: `? family(Nando). => TRUE`, `? family(Opal). => FALSE`,
-  `? building(LowSec, Nando). => TRUE`. There is no victim-relation slot in the
-  twenty-one entries and adding one is a new entry, not a rewording — verified
-  separately, asserting `family(Nando, Opal).` loads clean and changes nothing, because
-  the two-place fact is a different relation no rule reads.
-  Rewrite `11:8-10` and `11:21-22` to say the routing turns on whether the offender
-  *has a family*. That is a weaker and stranger claim worth stating plainly rather than
-  smoothing: an offender with no family on record is eligible for home confinement
-  however domestic the offence, and an offender who has a family goes to a facility
-  however unrelated the victim. Add `? family(Opal). # => FALSE`. **Same line span as
-  the exhaustiveness bullet — do both in one pass or the second clobbers the first.**
 
 - **Chapter 9 says the disenfranchisement clause "works". It takes nobody's ballot.**
   `book-1/09-the-vote-conviction-does-not-take.md:73-75`: "Nothing refuses it. **It
@@ -685,19 +649,6 @@ for the harness section below.
   **`person` is not a candidate and never will be**: closing it would refuse all 30
   ground facts and collapse the cast, which is why chapter 1 now discloses the roster
   as a gap no rule can close rather than promising a guard.
-
-- **[AUTHOR-GATED] Decide where a homeless, non-severe, non-domestic convict goes.**
-  See the chapter-11 prose bullet for the evidence. **The obvious fix does not close
-  it, and that is the decision.** Adding
-  `all $x: prisoner($x) & ~severe($x) & ~family($x) & ~home($x) -> building(LowSec, $x).`
-  is accepted and gives Don a facility, but not shelter — verified:
-  `building(LowSec, Don)` TRUE, `dwell(Don)` **FALSE**, `err(Don, Placement)` still
-  FALSE. `dwell` has exactly three producing rules and every one requires a home,
-  severity or family, so a facility-placed homeless convict is housed by the placement
-  machinery and owed nothing by the floor. Decide both halves: which facility, and
-  whether `dwell` should follow from `building` at all. If it should, chapter 8's
-  shelter arithmetic moves with it. Batch with the `err/2` repair — same section of the
-  same chapter.
 
 - **[AUTHOR-GATED] Decide whether `err` feeds an obligation — chapter 14 presents the
   audit's powerlessness as structural, and it is a choice.** `14:92-100` argues the
@@ -1833,6 +1784,17 @@ never worked around in prose.
 Parked, so they are not lost when the legacy files go. These become the seed of book-2's
 tracker, written from scratch after book-1 ships.
 
+- **Oversight of the duty-bearer — enablers, their checkers, and the meta-study.** Raised
+  by the author 2026-07-31 while ruling the homeless-convict gap: if shelter is owed and
+  somebody has none, the people who deliver it should have to study why, and somebody
+  else should have to check on *them*. Right instinct, wrong book. In book-1 terms it
+  duplicates two mechanisms that already exist and are deliberately inert — `owe`, which
+  nothing reads (`08:122-126`, "Nothing compels the body"), and `err`, whose read
+  question is its own gated bullet above. And the constitution has no vocabulary for a
+  study, an inspection, oversight, a community or a transfer; verified, the grep returns
+  nothing. So this is institutional design with a lexicon ask under it, which is book-2's
+  subject exactly. **Its book-1 half is already queued**: the `err`-feeds-an-obligation
+  decision. Do not build the structure here; rule that one and stop.
 - **The transition material** in `book.md` — Part 4 in full (One Person One Family; When a
   Village Joins; Cities, Provinces and Nations; One Planet One People), plus "When the Pod
   Meets the State" and "MVS in Action". ~8,600 words, largely organisational, legal and
