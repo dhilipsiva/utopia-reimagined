@@ -80,69 +80,71 @@ KR construct, do not work around it in prose — hand the prompt over to a Claud
 session in `~/projects/dhilipsiva/nibli`, work the next unblocked item, and resume when
 it lands.
 
-- **HANDOFF PROMPT — negation is evaluated by exhaustive search, and it costs 47 minutes
-  per verification. DO THIS ONE FIRST.** `./verify.sh` takes **2,808 s — 47 minutes** for
-  the pin files alone, measured on an idle machine. `verify.sh:10` and `CLAUDE.md` both
-  still advertise "~15 min"; correct those in whichever commit touches this.
-  **It is a bug in evaluation strategy, not an ask, and not a corpus-size problem.** The
-  constitution is 50 predicates and 56 rules over 67 constants — the entire least model is
-  a few hundred ground atoms and should compute in milliseconds.
-  **Where the time actually goes**, single-run, warm binary, idle machine:
-  `rotten(Vex)` (evidence) **11 ms**; `permits(Review, Gia)` (one hop) **145 ms**;
-  `severe(Lalo)` (three-variable self-join) **311 ms**; `prisoner(Adam)` (four negations)
-  **6,035 ms**; `false(Adam)` (multi-sig, FALSE) **17,202 ms**; `false(Bela)` (multi-sig,
-  TRUE) **26,099 ms**; `reward(Esa)` **26,444 ms**.
-  **`reward` is the most expensive query in the design and has no join of its own.**
-  Article 3 is `teaches($t,$s) & ~false($t) -> reward($t)`. It costs 26 s because proving
-  `~false(Esa)` under negation-as-failure means *failing* to prove `false(Esa)`, which
-  exhausts the whole multi-sig space. `prisoner` is 6 s for the same reason — four
-  negations, four exhaustive failure proofs. Per-file cost tracks this exactly:
-  `03-who-holds-the-pen` is the only file that never reaches `false` and runs at
-  **1,077 ms/pin**; everything else runs 3,000–15,600 ms/pin.
-  **Three hypotheses were measured and refused — do not re-propose them.** (1) Per-query
-  cache clearing: six identical queries ran in **13 ms** total, so it is not the
-  bottleneck. (2) Iterative deepening over depths 1..10: FALSE queries are not
-  systematically worse than TRUE, and since work grows with depth the sum is dominated by
-  the last iteration anyway. (3) Reordering the multi-sig conjuncts to put cheap evidence
-  before derived `permits`: **54,848 ms → 58,027 ms**, i.e. very slightly worse. That last
-  one is the useful refutation — if the join were the cost, it would have collapsed.
+- **LANDED 2026-07-31 — negation is answered by lookup. Verified here, and the successor
+  is below.** nibli commit `69a5e6b` saturates NAF-read relations bottom-up in stratum
+  order and answers `~p(x)` by set membership. **This repo is the real-world differential
+  and it passed**: 359 pins, **0 findings**, every verdict identical, over a constitution
+  whose two hottest rules use `~($a = $b)` — the multi-sig at `:427` and both severity
+  rules at `:516-517`. Counterfactual fixtures pass too. Full run **~50 min → 29.4 min**.
+  **Rebuild `nibli-pin --release` before re-timing anything.** The binary here was three
+  days stale when this landed, so `verify.sh` silently kept running the old engine and
+  measured zero improvement. That is the failure mode to guard: a consuming repo cannot
+  see an engine change it has not rebuilt.
+  **Per-query, same seven probes before and after** (ms, verdicts unchanged):
+  `rotten(Vex)` 11→**25**; `permits(Review, Gia)` 145→**238**; `severe(Lalo)` 311→299;
+  `prisoner(Adam)` 6035→**40**; `false(Adam)` 17202→16619; `false(Bela)` 26099→25232;
+  `reward(Esa)` 26444→**1551**. Negation-bound queries collapse (151× and 17×);
+  positive-search queries do not move; **cheap queries got slower**, because saturation is
+  a fixed cost they did not need.
+
+- **HANDOFF PROMPT — materialise the positive side too, and keep it across a file. This is
+  where the remaining 29 minutes is.** Two numbers from the measurement above make the
+  case and neither is an estimate. **Saturating `false` costs ~1.5 s** — that is the whole
+  of `reward(Esa)`'s new cost, which reads `~false` and so builds the entire relation.
+  **One backward-chained `false` query costs ~25 s** — `false(Bela)` still does. So
+  materialising a relation is already **16× cheaper than proving one member of it
+  backwards**, on this KB, today. Extending materialisation from NAF-read relations to all
+  of them is not a refinement; it is strictly cheaper.
+  **And the saturation looks like it is rebuilt per query.** That is what the two
+  regressions above suggest (`rotten` 11→25, `permits` 145→238 — a fixed cost on queries
+  that needed nothing), and it is consistent with `06-clawback` still costing ~15 s/pin
+  across 15 pins that all read the same relation.
 
   ```text
-  In ~/projects/dhilipsiva/nibli: negation-as-failure is evaluated by exhaustive
-  backward search, in a language whose stratification exists precisely so that
-  negated relations can be completed first.
+  In ~/projects/dhilipsiva/nibli, following 69a5e6b (NAF materialisation):
 
-  The engine already computes strata — it uses them to reject unstratifiable
-  programs, which is the guarantee the consuming project depends on. It does not
-  use that same ordering to evaluate. So `~p(x)` is answered by attempting to
-  prove `p(x)` and failing, rather than by a lookup into a completed `p`.
+  Two extensions, in this order. Both are justified by measurement in the
+  consuming project rather than by principle.
 
-  Measured on a 50-predicate, 56-rule, 67-constant stratified Datalog program
-  (no function symbols, finite Herbrand base, least model in the hundreds of
-  atoms): a single query whose body contains `~false($t)`, where `false/1` is
-  produced by one rule with three quantified variables and fifteen conjuncts,
-  takes 26.4 seconds. An evidence lookup in the same KB takes 11 ms.
+  1. PERSIST THE SATURATION ACROSS QUERIES, invalidating on KB mutation
+     rather than per query. Evidence it is per-query today: after 69a5e6b,
+     two queries that read nothing under negation got SLOWER — an evidence
+     lookup 11ms -> 25ms and a one-hop derived query 145ms -> 238ms — which
+     is a fixed setup cost being paid by queries that do not need it. In a
+     pin file of 15 queries over the same relation, that cost is paid 15
+     times. The invalidation hooks already exist; `rebuild_inner` was
+     already made to clear the materialisation cache in 69a5e6b.
 
-  The ask, smallest useful first:
+  2. MATERIALISE THE POSITIVE SIDE. Saturating `false` costs ~1.5s;
+     backward-chaining a single `false(X)` costs ~25s. The relation is
+     produced by one rule with three quantified variables and fifteen
+     conjuncts, so the backward search enumerates pairs while the bottom-up
+     pass computes the join once. Same eligibility test, same projection —
+     the only change is that a query for p(x) consults a complete extension
+     of p when p is in the materialisable fragment, instead of only doing so
+     under negation.
 
-  1. Before answering a query, materialise the complete extension of any
-     predicate appearing under `~`, in stratum order, and answer `~p(x)` by
-     lookup. This is the change the stratifier was already built to enable and
-     should be self-contained.
+  Do NOT widen the fragment to buy this. The refusals in 69a5e6b are the
+  soundness argument: equality classes, compute predicates over infinite
+  domains, anything the projection cannot regroup. A positive lookup against
+  an INCOMPLETE extension is unsound in a way the negative one already is
+  not, so if a relation falls out of the fragment the positive path must
+  fall back to backward chaining rather than answer from a partial set.
 
-  2. Then generalise it: semi-naive bottom-up evaluation stratum by stratum at
-     KB-load time, with queries becoming hash lookups.
-
-  Two things to preserve. `:refuse` pins depend on LOAD-time stratification
-  errors, not on query behaviour, so they should be unaffected — confirm that.
-  And the find/count/aggregate path deliberately refuses to answer when witness
-  enumeration hits the depth horizon rather than silently undercounting; under
-  bottom-up that horizon largely stops existing, so decide what the refusal
-  means before removing it.
-
-  Do not spend time on: per-query cache clearing, iterative deepening, or body
-  conjunct ordering. All three were measured in the consuming project and none
-  is the bottleneck; the third made it marginally worse.
+  The consuming project (rights-nobody-has-to-earn) is a usable real-world
+  differential: 359 pins with independently-authored expected verdicts,
+  `./verify.sh`, currently 29.4 min. It caught nothing wrong with 69a5e6b;
+  run it against this change too.
   ```
 
 - **Never route a constitutional judgment through the compute backend — and the reason is
