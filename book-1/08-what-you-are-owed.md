@@ -47,11 +47,15 @@ your food away and still have no idea whether there is any food.
 
 There is one exception, and it is the most uncomfortable fact in this chapter.
 
-**One person in this society verifiably has shelter: Hano. He has it because he is in
-custody.** Hano is confined to his home under a placement order, and the placement
-machinery — the apparatus for deciding where convicted people are put — actually
-tracks where he is. So the record knows Hano is housed. It knows this about nobody
-else.
+**Shelter derives for every confined person and for nobody else.** That is the whole
+rule, and both halves of it are the uncomfortable part. Everyone this society has
+convicted is housed — the machinery that decides where convicted people go is the one
+piece of the floor that was built out into something that actually runs. And of the
+people it has not convicted, the record can say this about none of them. Not that they
+are unhoused; that it does not know.
+
+Read the shape of that. The society is certain about the housing of exactly the people
+it is punishing.
 
 The only part of the floor that has been built out into working machinery is the part
 that overlaps with punishment. Everywhere the society does something *to* people, the

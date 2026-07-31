@@ -86,12 +86,13 @@ somebody to high security produces a single sentence — that this person is in 
 security — and no rule anywhere reads it. The facilities are named in the rules that
 send people to them and nowhere else in the design at all.
 
-Watch it in the place you would most expect the building to matter. There are three ways
-a confined person comes to have shelter here, and every one of them reads something
-about the person or about the offence: that they are eligible for home confinement and
-have a home, that the offence was severe, that it was domestic. Not one of the three
-looks at where the person is. Somebody in high security has shelter because of what they
-did, and would have it just the same if the design had never said where they were.
+Watch it in the place you would most expect the building to matter. Several rules give a
+confined person shelter, and every one of them reads something about the person or about
+the offence: that they are eligible for home confinement and have a home, that the
+offence was severe, that the offender has a family, that they are eligible and have no
+home at all. Not one of them looks at where the person is. Somebody in high security has
+shelter because of what they did, and would have it just the same if the design had
+never said where they were.
 
 There is one exception and it is the one that proves the shape. Home confinement is the
 only placement wired to anything — and it is the placement that is not a facility. The
@@ -152,6 +153,15 @@ So when a sentence is finished, both stop. The person keeps every entitlement th
 owes it — but the two things that were genuinely being delivered were being delivered
 by the punishment machinery, and the punishment machinery has let go. Hano, released,
 is owed shelter and has none, in a way he was not an hour earlier.
+
+Kel and Adam are the sharper version. Both were already homeless on the day they were
+convicted — that is the whole reason the placement rules ran out on them — and the
+conviction is what produced a roof. Not anybody noticing they were owed one. Not the
+body that owes it doing anything. The confinement machinery needed somewhere to put
+them, and a roof is what it takes to confine a person who has none. When the sentence
+ends the roof ends, and they are returned exactly to the position that made the rules
+run out in the first place. This design will have housed two homeless people for
+precisely as long as it was punishing them.
 
 **Leaving custody returns a person to a population this design delivers nothing to.**
 

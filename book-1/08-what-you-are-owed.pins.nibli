@@ -16,7 +16,7 @@
 # command is broken. If it ever returns a line, something now follows from the
 # obligation and that paragraph is wrong.
 
-:expect-pins 18
+:expect-pins 21
 
 # "the answer this design gives is no ... for every one of the eight"
 ? eats(Adam).
@@ -40,13 +40,26 @@
 ? dwell(Bela).
 # => FALSE
 
-# "One person in this society verifiably has shelter: Hano. He has it because he
-#  is in custody." — dwell derives only through the placement machinery
+# "Shelter derives for every confined person and for nobody else." Both halves are
+# pinned, and the second half is the one that carries the discomfort: the design
+# is certain about the housing of exactly the people it is punishing. Kel and
+# Adam are the v0.8 cases — homeless, and housed by being confined.
 ? dwell(Hano).
 # => TRUE
 
 ? prisoner(Hano).
 # => TRUE
+
+? dwell(Kel).
+# => TRUE
+
+? dwell(Adam).
+# => TRUE
+
+# ...and for nobody else. Bela above is voided and not confined; Cira is a child
+# who was never convicted of anything.
+? dwell(Cira).
+# => FALSE
 
 # "Your credibility is still reachable."
 :accept
