@@ -572,6 +572,40 @@ all $x: clear($x) -> permits(Appeals, $x).
 # invariant — a Lean obligation over the fact store, not derivable
 # in-snapshot.
 
+# ─── Article 8b [v0.8 NEW]: The audit produces a duty ─────────────
+# Chapter 14 used to argue that nothing can follow from the audit BECAUSE
+# the audit sits at the top of the graph — a pure observer, therefore
+# powerless. That was an argument from stratification and the stratifier
+# never made it. These two rules load and derive; the powerlessness was
+# a choice wearing the clothes of a necessity, and it is now a smaller
+# choice, made one link further along.
+#
+# SPELL IT `obliged` AND NEVER "CORRECT" IT TO `obligated`. They are the
+# same gismu (bilga) and `obligated` is a SWAP ALIAS — corpus entry
+# `swap: Some(Swap { with: 2, base: "obliged" })` — so `obligated(Review,
+# $x)` compiles to `obliged($x, Review)`: THE PRISONER BOUND TO THE
+# REVIEW. Both spellings load, both answer TRUE on the surface form, and
+# the renderer prints the identical sentence for each. The only defence
+# is the discriminating pin pair in the chapter-14 suite: obliged(Review,
+# Ruk) TRUE *and* obliged(Ruk, Review) FALSE. Do not drop either half.
+#
+# TWO RULES, NOT ONE, AND THE OBVIOUS GENERALISATION DOES NOT WORK.
+# `all $x: all $k: err($x, $k) -> obliged(Review, $x).` loads cleanly and
+# derives NOTHING — verified, obliged(Review, Ruk) FALSE — because $k is
+# body-only over a derived relation, the same engine limitation the
+# Article 4 note records. Constants in slot 2 are load-bearing here.
+#
+# WHAT THIS DOES NOT BUY. Nothing reads `obliged`. This is a second inert
+# obligation sitting beside Article 1b's `owe`, and the chain now ends one
+# step later rather than ending anywhere. Worse for the design's own
+# story: the breach of this duty is ALSO detectable — verified, appending
+# `obliged(Review,$x) & ~capture(Review,$x) -> err($x, Duty)` is accepted
+# and gives err(Ruk, Duty) TRUE. So a further link is available too, and
+# the one after that. What is missing at the end of the chain is not a
+# link. It is somebody who has to act.
+all $x: err($x, Placement) -> obliged(Review, $x).
+all $x: err($x, Isolation) -> obliged(Review, $x).
+
 # ─── Article 9 [v0.2 NEW]: Amendment ──────────────────────────────
 # The constitution can change itself — under logic. suggest(Assembly, m)
 # dockets a proposal; approves(Electorate, m) is a CERTIFIED external

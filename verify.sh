@@ -74,7 +74,7 @@ fi
 COUNTED='\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|hundred)([- ][a-z]+)?\b|\beight\b|\bexactly one\b|\bone thing\b|\bsingle deprivation\b'
 # Rhetorical durations are not claims about this design; they never go stale.
 COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)'
-BASELINE=28
+BASELINE=27
 n=$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | wc -l)
 if [ "$n" -gt "$BASELINE" ]; then
   fail "counted claims in the prose rose to $n (baseline $BASELINE)" \
@@ -109,7 +109,13 @@ pass "positive control: /false/ appears in $ctl rule bodies"
 # protections would legitimately read `building` and this guard would fail. That
 # is intended. Removing it should be a deliberate act with the chapter rewritten
 # in the same commit, not a quiet consequence of some other edit.
-for p in owe become travel err lose reward building; do
+# `err` LEFT this list in v0.8 and `obliged` took its place. The audit now feeds
+# an obligation (Article 8b), so "nothing reads err" is false by design — chapter
+# 14 says so. What still has to hold is that the chain ENDS: nothing reads the
+# duty either. If `obliged` ever gains a reader the design has grown a third
+# link, and chapter 14's closing argument has to be rewritten around it rather
+# than quietly outgrown. That is what this line is guarding.
+for p in owe become travel obliged lose reward building; do
   n=$(body "$p" | wc -l)
   [ "$n" = "0" ] && pass "nothing reads $p" \
     || fail "$p is now read by a rule" "$(body "$p") — the prose saying nothing follows from it is now false"

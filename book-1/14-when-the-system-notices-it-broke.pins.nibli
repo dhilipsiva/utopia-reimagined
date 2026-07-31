@@ -20,7 +20,7 @@
 # chapter's middle section wrong, which is the intended outcome — a flip here is
 # the fix arriving, not a regression.
 
-:expect-pins 18
+:expect-pins 29
 
 # "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — the seven, without exception."
 # ALL SEVEN are pinned deliberately. An earlier draft named four and said "every
@@ -48,10 +48,12 @@
 ? err(Ruk, Isolation).
 # => TRUE
 
-# "ten people in this society were judged by a court. Three of them are not
-#  prisoners: one was cleared, and two are protected for having exposed an
-#  authority." Nia is the clearance, Rebel and Sly the shields — so the marker
-#  is silent on them despite a judgment.
+# "Several of the judged are not held: one was cleared on appeal, and the others
+#  are protected for having exposed an authority." Nia is the clearance; Rebel,
+#  Sly and (since v0.7) Rex are the shields — so the marker is silent on them
+#  despite a judgment. The prose used to count these and the count went stale the
+#  moment a cast member was added; it now states the rule, and the roster is
+#  pinned name by name instead, Rex included below.
 ? err(Nia, Isolation).
 # => FALSE
 
@@ -87,4 +89,58 @@
 
 # and Ruk is correctly placed, which is what makes the marker wrong
 ? building(HighSec, Ruk).
+# => TRUE
+
+# ── v0.8: the audit produces a duty (Article 8b) ─────────────────────────────
+# "Where the placement marker fires, the review body has a duty about that
+#  person. Where the isolation marker fires, the same."
+? obliged(Review, Ruk).
+# => TRUE
+
+? obliged(Review, Lalo).
+# => TRUE
+
+# via the isolation marker, which fires on every prisoner — so the duty is owed
+# about all of them too. "a duty owed to a category rather than to a case."
+? obliged(Review, Adam).
+# => TRUE
+
+? obliged(Review, Hano).
+# => TRUE
+
+# THE SWAP DISCRIMINATOR — DO NOT DROP EITHER HALF. `obligated` is a swap alias
+# of `obliged` on the same gismu, so writing Article 8b with the other spelling
+# leaves the four pins above TRUE and silently means the PRISONER is bound to the
+# Review. These two are the only thing that can tell the versions apart.
+? obliged(Ruk, Review).
+# => FALSE
+
+? obliged(Adam, Review).
+# => FALSE
+
+# silent where the markers are silent: Bela is not confined, Rex is shielded.
+? obliged(Review, Bela).
+# => FALSE
+
+? obliged(Review, Rex).
+# => FALSE
+
+# "Several of the judged are not held" — Rex is the newest of them and was
+# missing from the roster above, which is how a count in the prose went stale.
+? err(Rex, Isolation).
+# => FALSE
+
+# ── the exhibit: what else was available and was not built ───────────────────
+# MUST BE LAST. An accepted rule loads into the KB and stays; any query after
+# this point is measuring a polluted base. rights-floor.pins.nibli:285 records a
+# real vacuous green from forgetting exactly this.
+#
+# "The design could mark the review body for having ignored the duty; that rule
+#  was tried and it works." This is that rule. It makes err and obliged mutually
+# recursive over positive edges and the stratifier permits it, which is why the
+# chapter can no longer call the powerlessness structural.
+:accept
+all $x: obliged(Review, $x) & ~capture(Review, $x) -> err($x, Duty).
+
+? err(Ruk, Duty).
 # => TRUE

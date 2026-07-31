@@ -17,7 +17,7 @@ stratum, by dependency. Every verdict quoted below was produced by the engine.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **49** | **24** | **46** | **4** |
+| computed from the constitution | **50** | **25** | **48** | **4** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 2 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
@@ -26,7 +26,7 @@ The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `ex
 | **0** | `adjust`, `approves`, `attack`, `authority` *(monotone cone)*, `broken`, `capture`, `choose`, `clear`, `cruel`, `deceive`, `derived_only`, `entitled`, `family`, `free`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `rotten`, `severe` *(monotone cone)*, `show`, `suggest`, `teaches`, `work` |
 | **1** | `defend`, `false`, `lose`, `permits` |
 | **2** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
-| **3** | `err`, `travel` |
+| **3** | `err`, `obliged`, `travel` |
 
 Evidence predicates (23), the complete list of what the world may report: `adjust`, `approves`, `attack`, `broken`, `capture`, `choose`, `clear`, `cruel`, `deceive`, `family`, `free`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `rotten`, `show`, `suggest`, `teaches`, `work`.
 <!-- END GENERATED: stratification -->
@@ -64,6 +64,17 @@ exception.
 
 Seating is never revoked — deliberately, so that recall cannot retroactively strip a
 whistleblower's protection.
+
+**`obliged` joined stratum 3 in v0.8 and does not add a chapter.** It derives from `err`
+and is read by nothing, so it sits beside `err` at the top rather than above it, and the
+strata count is unchanged. Chapter 14 is the audit chapter and covers it: the marker and
+the duty it produces are one subject, and splitting them would give a chapter whose whole
+content is that a relation exists and does nothing. That is an editorial judgement rather
+than a computed one — the block above is generated, the chapter list below is not — so it
+is recorded here rather than left implicit. Note the general form of the rule was
+rejected on evidence: `err($x, $k) -> obliged(Review, $x)` loads and derives nothing,
+because a body-only variable does not bind over a derived relation on this engine, so
+Article 8b is two rules with constants in slot 2.
 
 ---
 
