@@ -547,7 +547,12 @@ for the harness section below.
   `judge(Court, ·)`, so `prisoner(Rebel)` is FALSE and `travel(Rebel)` stays TRUE. The
   constitution certifies as free a person it is holding. The prescribed rule was run
   verbatim and both fires and stays quiet in the right places:
-  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Confinement).` Use a
+  `all $x: all $f: building($f, $x) & ~prisoner($x) -> err($x, Confinement).`
+  **Re-run that before trusting it.** `$f` is body-only over a derived relation, which is
+  the exact shape that silently derived nothing when Article 8b was built —
+  `err($x, $k) -> obliged(Review, $x)` loaded clean and gave FALSE for everybody. If the
+  same thing is happening here the recorded verification is measuring an inert rule. The
+  fix if so is a constant in slot 1, as Article 8b uses. Use a
   third `err` flavour rather than reusing `Placement`, matching `err(_, Isolation)` —
   the audit surface stays one predicate while each breach stays separately queryable.
   Highest value-per-line in this section.
@@ -649,31 +654,6 @@ for the harness section below.
   **`person` is not a candidate and never will be**: closing it would refuse all 30
   ground facts and collapse the cast, which is why chapter 1 now discloses the roster
   as a gap no rule can close rather than promising a guard.
-
-- **[AUTHOR-GATED] Decide whether `err` feeds an obligation — chapter 14 presents the
-  audit's powerlessness as structural, and it is a choice.** `14:92-100` argues the
-  marker cannot be read *because* of where it sits, closing on "The audit is powerless
-  because it is uncorruptible, and uncorruptible because it is powerless." That is an
-  argument from stratification, and the stratifier does not make it. Verified:
-  `:accept all $x: err($x, Placement) -> obliged(Review, $x).` is accepted **and
-  derives** — `? obliged(Review, Ruk). => TRUE`. What the stratifier would refuse is a
-  rule taking `~err` back into the cone `err` depends on — far narrower than "nothing
-  can follow from it".
-  **Two costs, both measured.** (1) It breaks a stated invariant: appending the rule
-  and running `5-spine-gen.py --check` gives `3-spine.md is STALE` (exit 1);
-  regenerating shows 46→47 predicates, 23→24 derived, 39→40 rules, and stratum 3 going
-  from `{err, travel}` to `{err, obliged, travel}`. A new derived relation at the top
-  stratum is book content under the inclusion gate. (2) The spelling is a trap:
-  `obligated` and `obliged` are argument-inverted twins of the same gismu, and **both
-  spellings accept the rule and answer TRUE on the surface form** — so whichever you
-  write *looks* right, and one of them says the prisoner owes the duty to the Review.
-  Answering yes promotes the `obligated`/`obliged` de-swap from optional upstream
-  cleanup to a blocker.
-  Three ways out: enact the obligation and rewrite `14:92-100`; keep the design and
-  rewrite those lines to say the powerlessness is **chosen**, showing the accepted rule
-  as proof it could be otherwise; or leave the prose and be wrong. Either of the first
-  two wants the `:accept` added as a pin, and it would be a third exhibit for the
-  method part's "here is what the logic refused, and here is what it permitted".
 
 - **Decide the Article 4 clawback question.** The two rules are `:347`
   (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
@@ -1299,8 +1279,16 @@ never worked around in prose.
   *"the design never says when"* as an admission. Supermajority thresholds and sunsets ride
   the same ask. Two things NOT to ask for while you are there: counting already works
   (`exactly N`), and `aggregate` exists but is exposed only through `nibli-session` — that is
-  the smaller, separate ask if sums are ever wanted. The `obligated`/`obliged` de-swap is
-  optional today and becomes a blocker if `err` gains a consumer.
+  the smaller, separate ask if sums are ever wanted.
+  **The `obligated`/`obliged` de-swap is no longer optional — `err` gained its consumer
+  on 2026-07-31.** Article 8b writes `obliged(Review, $x)`, and the alias is live in the
+  enacted file: `obligated` swaps arguments 1 and 2 on the same gismu, both spellings
+  load, both answer TRUE on the surface form, and the renderer prints the same sentence
+  for each, so a "tidy-up" of the spelling silently inverts the duty onto the prisoner.
+  The only thing standing between that and a green suite is a two-pin discriminator in
+  `14-when-the-system-notices-it-broke.pins.nibli`. Ask upstream for the de-swap, or for
+  a renderer that distinguishes them; until then the pin pair is load-bearing and is
+  commented as such.
 
 - **HANDOFF PROMPT — nibli: an `:accept` that does not persist.** Every complement control in
   every pin file wants to test that a rule *loads* and then throw it away. `:accept` instead
