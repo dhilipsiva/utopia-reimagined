@@ -80,25 +80,6 @@ KR construct, do not work around it in prose — hand the prompt over to a Claud
 session in `~/projects/dhilipsiva/nibli`, work the next unblocked item, and resume when
 it lands.
 
-- **LANDED 2026-07-31 — negation and positive goals both answer by lookup. Verified here;
-  the successor is below.** nibli `69a5e6b` saturates NAF-read relations in stratum order;
-  `6c71ef0` extends that to every eligible relation. **This repo was the differential and
-  passed both: 359 pins, 0 findings**, verdicts unchanged, over a constitution whose two
-  hottest rules use `~($a = $b)`. Full run **~50 min → 29.4 min → 9m46s**.
-  **`6c71ef0` carried a soundness fix, which is why the differential mattered.** `69a5e6b`
-  could mark a relation complete while a relation its rule *read* had been refused by
-  `seed_edb`, so a negated condition passed over a hole and the head fired for everyone —
-  latent there, reachable once positive goals widened the target set, caught upstream as a
-  definitive wrong TRUE.
-  **Three numbers I published here were wrong within a day. Recorded so they are not
-  re-derived.** (1) "Saturating `false` ~1.5 s vs ~25 s to prove one member" — true at
-  `69a5e6b`, false now: `false(Bela)` is **1.0 ms**. (2) "The saturation is rebuilt per
-  query" — it is per **epoch**, dropped only by a mutation; this suite's 327 queries
-  collapse into **24** saturations of ~1 ms. (3) The 11→25 ms regression was real at
-  `69a5e6b` and does not reproduce at HEAD, where `rotten(Vex)` is 0.0 ms ON against 3.1 ms
-  OFF. **A measured claim is only true of the commit it was measured on** — re-baseline
-  before building on one, and `verify.sh` now stamps the engine commit for exactly this.
-
 - **HANDOFF PROMPT — the `event { }` projection is the whole remaining cost. This repo is
   the firewall differential and it is stronger than the four pins upstream.** Every
   relation inside the materialisable fragment now answers in 0.0–1.0 ms. Everything still
@@ -1366,6 +1347,15 @@ No known defects. Read it against the constitution anyway.
   right of appeal refuses an attacker a heresy law. One mechanism, no special pleading,
   neither outcome chosen by whoever was writing that day.
 
+- **"The Furnished Prison" — a rejected title that is a good part title.** Scored highest
+  of the twenty title candidates on pick-up and lowest on legibility, so it lost the cover
+  and is wasted sitting in git. It is the phrase at
+  `13-the-one-thing-taken.md:169-171` — *"A society whose only working provision runs
+  through its prisons has not built a floor; it has built a prison that happens to be
+  furnished."* Candidate for a Part title, the back cover, or a launch-essay headline,
+  none of which are decided yet. Kept here because the title work is done and this is the
+  one asset from it that outlived the decision.
+
 - **Write the single book-2 pointer, at the very end.** book-1 references book-2 exactly
   **once**, in the closing note — not in the introduction, because a reader on page one has
   no idea whether they want the machinery, and a forward reference reads as an apology for
@@ -1708,108 +1698,53 @@ tracker, written from scratch after book-1 ships.
 
 ---
 
-## Already established — re-verify by command, not by hand
+## Standing facts and methods — not tasks, and not history
 
-
-Every claim below is reproducible from committed artifacts by one command. Do not
-transcribe numbers into this file; run it.
+Landed work is not recorded here; that is what git is for. What survives is the small
+set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
-./verify.sh            # ~50 min: spine, evidence count, jargon, absences, the suite, counterfactuals
+./verify.sh            # ~10 min: engine build, spine, evidence count, jargon, absences, the suite, counterfactuals
 ./verify.sh --quick    # ~2 s: everything except the pin suite
 ```
 
-It exits non-zero on the first failure and says which claim stopped being true. **Prefer
-it to running any single check by hand** — the checks it carries were each
-negative-controlled, and one of them (the jargon sweep as this file used to specify it)
-did not catch the leak it was written for.
+Prefer it to any check by hand. It exits non-zero on the first failure and names the
+claim that stopped being true; every check in it was negative-controlled, and one — the
+jargon sweep as this file used to specify it — did not catch the leak it was written for.
+Use the **release** `nibli-pin`, never `nibli-host`; the script now builds the engine
+itself and prints the commit, so a stale binary can no longer pass green.
 
-Use the **release** `nibli-pin`. **Never `nibli-host`** — it loads
-`target/wasm32-wasip2/debug/nibli.wasm` by default, built **2026-07-26**, and the newest
-release component is **2026-07-23**, while `derived_only` (nibli `b053b77`) and the
-`entitled` corpus entry (nibli `a65b398`) both landed **2026-07-28**. Either build
-predates both. It silently drops the entire rights floor
-and all nine gate closures, then reports a clean run over a constitution it is not
-reading. The provenance line that used to sit here named exactly that tool, which
-is how a hand-transcribed snapshot passed for a verification.
+**Two facts about the floor that no command teaches.**
 
-Two facts no command teaches:
+- **A floor line is a compile-time prohibition, not a declaration**, and since Article 1b
+  it covers the duty as well as the eight rights. `entitled(every person, event { P() })`
+  compiles to a rule with `person` in the body, so `P` sits downstream of `prisoner`; any
+  later rule taking `~P` into that cone is an unstratifiable negative cycle and is
+  refused. The floor is protected **because** it is reachable — at stratum 0 there would
+  be no cycle to close and no protection at all. Where it stops is pinned in
+  `08-what-you-are-owed.pins.nibli`: `~P -> false`, `~P -> lose(Points, ·)` and positive
+  compulsion `prisoner -> P` all still load. It blocks punishment for ABSENCE, never
+  manufacture, and it reaches `prisoner` only. Five upstream regression tests pin the
+  asymmetry at `nibli-engine/tests/integration.rs:3475-3571`.
+- **The widening hazard is rule-head position** — not place index, not the predicate.
+  `every`/`all` forms widen the protected set; ground facts and `some` are inert. It
+  cannot be banned, because the widening *is* the firewall, so the guarantee is the
+  complement pins rather than a compile-time rule.
 
-- **A floor line is a compile-time prohibition, not a declaration — and since Article
-  1b the prohibition covers the duty as well as the eight rights.**
-  `entitled(every person, event { P() })` compiles to a rule with `person` in the
-  body, so `P` sits downstream of `prisoner`; any later rule taking `~P` into that
-  cone is an unstratifiable negative cycle and is refused. The floor is protected
-  **because** it is reachable — at stratum 0 there would be no cycle to close and
-  no protection at all. Where it stops is equally established and pinned in
-  `book-1/08-what-you-are-owed.pins.nibli`: `~P -> false` (standing), `~P ->
-  lose(Points, ·)` (recognition), and positive compulsion `prisoner -> P` all
-  still load. The floor blocks punishment for ABSENCE, never manufacture, and it
-  reaches `prisoner` only.
+The graph counts live in exactly one generated place, `3-spine.md`'s stratification
+block. `4-strata.py` disagrees with it and is blind to the floor by construction.
 
-- **The widening hazard is rule-head position** — not place index, not the
-  predicate. `every`/`all` forms widen the protected set; ground facts and `some`
-  are inert. It cannot be banned, because the widening *is* the firewall. The
-  guarantee is therefore the complement pins, not a compile-time rule.
+**Four disciplines, each learned by being burned.**
 
-The graph counts live in exactly one generated place, `new-book-plans/3-spine.md:17-32`.
-`4-strata.py` disagrees with it and is blind to the floor by construction — see the
-harness section. Fix while you are next in `constitution.nibli`: `:188` cites the
-upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
-
----
-
-- **Severity dimensions: landed 2026-07-30 as v0.5.** Recording what the enactment
-  actually cost, because most of the tracker's pricing for it was wrong.
-  **Three dimensions, not four, and `severe` is now derived rather than asserted.**
-  `attack/2` is intent, `cruel/2` is kind of harm, and victim plurality is *not a
-  predicate*: it is the self-join `injure($x,$a) & injure($x,$b) & ~($a = $b)` inside
-  the severity rules. An offence is severe when any two of the three are present — one
-  rule per qualifying pair, monotone, no ordering predicate. `derived_only("severe")`
-  closes the tenth and last open gate.
-  **Directness was refused, and the ground is lexical.** The committed corpus has
-  exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`,
-  `injure` — and none means "directly". `cause` (rinka) compiles but puts the person in
-  the *effect* slot and is true of every injury in the cast, so as a boolean it routes
-  nothing. Do not re-propose without a corpus name that carries the meaning.
-  **Graded tiers were refused too.** `building(MedSec, $x)` compiles and the constant is
-  free, but `building/2` has no exclusivity constraint and is not closed in Article 0,
-  so an offender matching two combinations derives two placements at once and
-  `err(_, Placement)` is blind to it. Needs a mutual-exclusion marker in the same edit.
-  **What the old pricing got wrong.** Evidence went 22 → **23**, not 26: `severe` leaves
-  the list when it gains a producing rule, and plurality costs nothing. The digit ban at
-  `verify.sh:105` needed **no** narrowing — `~($a = $b)` carries no digit, so the
-  `exactly N` problem never arose. Predicates 47 → 49, derived 23 → 24, rules 40 → 43,
-  strata still 4. `severe` lands at stratum 0 in the monotone cone beside `authority`,
-  which falsified two sentences in `3-spine.md` — both outside the generated block, so
-  `--check` passed green over them. They now read correctly at `:39-40` and `:105`.
-  **Cast cost.** `injure(Ruk, Pax).` and `injure(Don, Ivo).` were added so the plurality
-  routes derive rather than compiling and doing nothing. Don thereby becomes severe and
-  is routed to a facility with `dwell`, so the homeless-convict gap narrowed to Kel
-  and Adam — a consequence of putting a rule to work, not a repair. *(That gap is closed
-  as of v0.8: confinement now houses you. This note is kept because it is why the closing
-  bullet's own worked example had gone stale.)*
-  **Runtime cost, unpriced and real.** A derived `severe` behind three rules takes the
-  pin suite from ~2.6s to ~7.5s per pin. `./verify.sh` is now roughly three times
-  longer; `--quick` is unaffected.
-
-- **Two harness checks that could not fail, both fixed in the v0.5 commit.**
-  The counterfactual README's own regeneration command was
-  `grep -v '^all \$anyone: …'`, and inside single quotes `\$` is a literal
-  backslash-dollar, so it matched nothing and wrote out a byte-identical copy of the
-  constitution. Anyone following the documented procedure destroyed the fixture. Nothing
-  caught it, because `verify.sh:134` assigned its staleness check to a variable it never
-  read. The command is now `grep -vFx`, and the guard asserts one line removed and none
-  added — negative-controlled against both a byte-identical copy and a delete-plus-add
-  drift, which the old `grep -c ''` comparison could not have seen either.
-
-- **Citation remaps must cover every file that moved, not just the one being edited.**
-  The v0.5 remap was careful about matching old line text rather than offsets, and still
-  rotted three citations, because it was scoped to `constitution.nibli` alone — `3-spine.md`
-  was edited in the same pass and nobody re-pointed the citations into it. Found the next
-  day, by content-matching against `git show HEAD~1:new-book-plans/3-spine.md`. Do that
-  for **each** file a commit touches. The generic form, which takes a path and reports
-  every citation into it that moved:
+- **Re-derive a site list by census before executing any rename.** A list written in this
+  file is a snapshot and every commit since is an invalidation. The v0.6 rename list
+  missed one site outright, omitted two from its leave-alone list so a mechanical pass
+  would have renamed them, and predated four occurrences a later pass introduced. Line
+  numbers in it had rotted by 38.
+- **Citation remaps must cover every file a commit touched**, not just the one being
+  edited — a careful remap still rotted three citations because it was scoped to one
+  file while another was edited in the same pass. Content-match against
+  `git show HEAD~1:<path>`:
   ```
   python3 - <<'PY'
   import re, subprocess
@@ -1823,114 +1758,13 @@ upstream regression tests at `integration.rs:3228`; they are at `:3475-3571`.
       if a not in hits: print(m.group(0), '->', hits or 'GONE', '|', old[a-1][:50])
   PY
   ```
-  Bare `:NNN` citations that inherit a filename from earlier in the sentence are **not**
-  caught by this and still need reading by eye — that is how `:96` survived.
-
-- **Title and subtitle: settled 2026-07-30, then the title reopened and resettled the
-  same day.** *The Rights Nobody Has to Earn — A design for a society worked out to the
-  point where it catches its own failures.* Recorded in `CLAUDE.md` with the words that
-  must not be tidied and why.
-  **Two predecessors are dead. The second died for a reason worth keeping.**
-  *Nothing Has to Happen First* was accurate, cleared every constraint the project had
-  written down, and failed the one nobody had thought to write down: a stranger at a shelf
-  reads it and cannot tell what the book is about. Twenty candidates were generated across
-  five angles and scored by a simulated browser seeing the title alone, legibility first
-  and accuracy only to eliminate. **Test a title on someone who knows nothing before
-  testing it on the constraint list** — the constraint list cannot see opacity.
-  The winner is clean on all seven constraints and covers the whole floor rather than one
-  item of it. Its one residue is that "rights" implies these things hold in practice, and
-  the subtitle exists to answer exactly that; do not pair it with the old subtitle, which
-  repeats what "rights" already says.
-  Worth keeping somewhere: **The Furnished Prison** scored highest of the twenty on
-  pick-up and lowest on legibility. A failed title and an excellent part title, back-cover
-  line or launch-essay headline. It comes from `13:141-143`.
-  **The first predecessor carried two overclaims** and this bullet had only found one.
-  **"No law can take them away" was the known half**, and the suite already refuted it:
-  the refusal covers imprisonment and stops there. Note this bullet misquoted its own
-  evidence — the recognition pin is `~meets`, not `~eats`
-  (`08-what-you-are-owed.pins.nibli:57`).
-  **"Eight things" was the worse half and went unflagged.** A count on a cover is the most
-  permanent counted claim available, in the one place that cannot be revised chapter by
-  chapter; the floor has been six, then ten, then eight. It also trips `\beight\b` in
-  `verify.sh`'s `COUNTED` regex, so it would have failed the build the day it reached the
-  opening note. Verified: the chosen line scores 0 against that regex, the provisional
-  scores 1, and so does anything riffing on chapter 13's title, because `one thing` is in
-  the same pattern.
-  **Rejected, so none of it returns.** *"…and what cannot be written down about you"* —
-  the strongest generated candidate, but `08:109` says the duty-bearing body "can write
-  down what it likes about you" and `01:50` concedes severity is "a rating of a sort,
-  computed rather than written"; both are answerable on the written/computed distinction,
-  which is too fine a thing to hang a cover on. *"…and why the convicted are the test of
-  it"* — the only claim-shaped candidate, anchored at `07:71-73`, rejected as mis-selling
-  a constitution as a prison book. Anything on the delivery axis is contradicted by
-  `08:29-46` and `13:141-143`.
-  **A method note worth keeping.** The candidates were generated across five angles and
-  adversarially refuted. The filter had only rejection criteria and nothing scoring what a
-  line tells a reader, so it killed every candidate that asserted something and converged
-  on lines that were unfalsifiable because they were contentless — this repo's own
-  dominant failure mode, a check that reports success because it cannot report anything
-  else. The chosen line came from grafting after that was noticed, not from the filter.
-
-- **Two pens from different bodies: built 2026-07-30 as v0.7.** Article 4 now requires one
-  Review pen and one Tribunal pen. This bullet had it parked as "writable but inert" on
-  engine grounds; that was true and it was not the reason.
-  **The design fact was hiding behind the engine story.** `permits/2` had exactly one
-  audit-pen issuer. Its other constant, `permits(Appeals, ·)`, is not a pen — it is
-  per-case relief attaching to a *convicted person*, read only under negation by the
-  conviction rule. So "different bodies" had nothing to range over, and on a working
-  engine the only cross-body pair available would have been a Review auditor beside a
-  cleared offender, which weakens the rule rather than strengthening it. **Check whether a
-  quantifier has anything to range over before blaming the quantifier.**
-  **What was built.** A Convocation seats the second kind of auditor on word-for-word
-  identical clean-hands conditions — identical deliberately, because a second body with
-  weaker conditions is just the cheaper door. Constants only, so the evidence vocabulary
-  did not move: still 23. Predicates 49, derived 24, rules 43 → 45, strata 4.
-  **What it buys, and the book says so where a reader will overrate it.** It defends
-  against a capturer who controls one seating body and not the other. It does nothing
-  against the fact-write trust base: whoever can write `choose(Electorate, Sock)` can
-  write `choose(Convocation, Puppet)`. Separation of appointment, not protection against
-  forged facts.
-  **The trap worth remembering.** Moving Hex to the Convocation keeps the shipped voiding
-  case working. Moving *Wren* is what keeps E2 honest — pair carried-void Vex with clean
-  Wren and `false(Tyr) => FALSE` proves the carry denies the credential, but leave Wren on
-  the Electorate and the pair fails on body-difference *before* the rotten test, so the pin
-  stays green while testing nothing. Verified both ways against the real file. **A rule
-  that gets stricter can make an existing pin vacuous without flipping it**, and nothing in
-  the harness can see that happen.
-  The binding defect is written up properly in the handoff section — the characterisation
-  in this bullet was wrong in three ways and is superseded there.
-
----
-
-- **Standing/credibility split: landed 2026-07-30 as v0.6.** `authority/1` keeps the word
-  "standing"; `false/1` is **credibility** in the prose; the amendment at `12:22` **has no
-  force**. Chapter 2 was correct and is untouched. Chapter 3 gained the sentence the book
-  never had — that standing, the pen and credibility are three things — anchored on three
-  cast cases that were each already pinned.
-  **This was a bug, not a tidy.** The book carried two bolded standalone sentences six
-  chapters apart making opposite claims about one noun: `02:35` "Standing is never taken
-  away" against the old `08:70` "Your standing is still reachable".
-  **The site list in this bullet would have caused damage, and the lesson generalises.**
-  It missed `06:10` outright; it omitted `01:69` and `01:84` from the leave-alone list, so
-  a mechanical pass would have renamed two `authority` sites; and it predated four
-  occurrences the severity pass introduced, three of them in chapter 11, which the bullet
-  never mentioned. Chapter 1's line numbers had rotted by 38. **Re-derive a site list by
-  census before executing any rename** — a list in this tracker is a snapshot, and every
-  commit since is an invalidation.
-  **The word was chosen by substitution, not by argument.** Five candidates were each
-  rewritten into every site and the resulting prose compared. `credibility` won because it
-  takes the verb chapter 5 is built on — *lose* — where every alternative forces passives.
-  Rejected: `standing in the record` (the qualifier stops qualifying where the record is
-  the ambient topic, which is everywhere); `their word` and `weight` (passives, and both
-  break the abstract-noun parallel at `08:70`/`08:75`); `good faith` (**wrong on the
-  facts** — Bela never lied, and the multi-sig rule requires `~deceive` of both auditors,
-  so it would report a conclusion no rule reached).
-  **`08:77` was mis-filed in this bullet.** "Poverty of standing" sits under the
-  *recognition* bullet and used a third, loose, social-position sense. It is now just
-  "poverty".
-  **The constitution carried the same collision, reversed** — seven comments said
-  "standing" for the `false/1` sense while the predicate for the other sense is
-  `authority`. Renamed, because the method part prints those comments to the reader.
-  **`06:8`'s "accumulated credit" became "recognition"**, which the vocabulary rule wanted
-  anyway; the rename is what surfaced it.
-
+  Bare `:NNN` citations inheriting a filename from earlier in the sentence are **not**
+  caught by this and still need reading by eye.
+- **A rule that gets stricter can make an existing pin vacuous without flipping it**, and
+  nothing in the harness can see that happen. When v0.7 required two bodies, a pin that
+  had tested the epoch-carry guard began failing on body-difference *first* — still
+  green, testing nothing. Check what a pin proves after tightening the rule it sits under.
+- **Check whether a quantifier has anything to range over before blaming the quantifier.**
+  "Different bodies" was parked as an engine limitation when the real problem was that
+  `permits/2` had exactly one audit-pen issuer, so the quantifier had nothing to range
+  over.

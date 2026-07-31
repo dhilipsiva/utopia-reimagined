@@ -205,7 +205,8 @@ derived_only("severe").
 # opacity symmetry would silently make this floor stratifiable — rules
 # could then punish people for lacking a floor right. As of 2026-07-28
 # five regression tests pin it upstream, at
-# nibli-engine/tests/integration.rs:3228:
+# nibli-engine/tests/integration.rs:3475-3571 (the citation read :3228
+# until 2026-07-31, which is a comment banner, not the tests):
 #   rights_floor_entitled_asserts_and_routes
 #   rights_floor_does_not_fabricate_the_actuality   entitled TRUE, eats FALSE
 #   rights_floor_blocks_punishment_for_lacking_it   names prisoner -> eats
