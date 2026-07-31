@@ -6,35 +6,45 @@ title signs it. The decision is reviewable in principle and, in the ordinary run
 things, made by someone with a caseload and a preference.
 
 Here nobody chooses. Where a convicted person goes turns on whether the offence was
-severe, whether it was domestic, and whether they have a home — and only the last two
-of those are things anyone writes down. Severity is worked out, by the route Chapter 1
-described: it follows from whether the person attacked, whether they were cruel, and
-whether more than one person was harmed, any two of which are enough.
+severe, whether the offender has a family, and whether they have a home — and only the
+last two of those are things anyone writes down. Severity is worked out, by the route
+Chapter 1 described: it follows from whether the person attacked, whether they were
+cruel, and whether more than one person was harmed, any two of which are enough.
+
+Read the middle one again, because it does not say what you would expect and the design
+should be held to what it actually says. The record has a slot for *this person has a
+family*. It has no slot for *this person harmed their own family*. So the routing turns
+on the offender having a family at all, and not on who was hurt. That is a weaker and
+stranger rule than the one anybody would write on purpose, and it runs both ways: an
+offender with nobody on record is eligible for home confinement however domestic the
+offence, and an offender with a family goes to a facility however unrelated the victim.
+It is worth knowing that this is what the machinery is doing before watching it work.
 
 Hano injured Ivo, was convicted, and has a home. Hano meant it — that much is on the
 record — but nothing else about the offence is, and intent on its own does not reach
-the threshold. The offence is not severe. It was not domestic either. Hano is therefore
-eligible for home confinement, and is confined at home. There was no assessment and no
-assessor.
+the threshold. The offence is not severe. Hano has no family on record either. Hano is
+therefore eligible for home confinement, and is confined at home. There was no
+assessment and no assessor.
 
 Ruk injured Opal, was convicted, and also has a home. But Ruk meant it and Ruk harmed
 somebody else as well, and the two together make the offence severe. Severity blocks
 eligibility for home confinement absolutely, so Ruk is not eligible, and Ruk is in high
 security.
 
-Nando's offence was domestic and not severe, and Nando goes to low security. Lalo's was
-domestic and severe — Lalo attacked Mina and was cruel about it — and Lalo goes to high
-security. Don, who has no home and no family, gets there by the remaining route —
-cruelty, and a second person harmed — and is in high security too.
+Nando has a family and the offence was not severe, and Nando goes to low security.
+Nothing anywhere says Nando's victim was family; the rule never asked. Lalo has a family
+and the offence *was* severe — Lalo attacked Mina and was cruel about it — and Lalo goes
+to high security. Don, who has no home and no family, gets there by the remaining
+route — cruelty, and a second person harmed — and is in high security too.
 
 Walking cases like this is a good way to see the machinery and a bad way to be sure of
 it. An earlier draft of this chapter said the cases above exhausted the possibilities.
-They do not: severity, domesticity and having a home vary independently, so what needs
-checking is every combination of the three, and what is walked above is only the
+They do not. Severity, having a family and having a home vary independently, so what
+needs checking is every combination of the three, and the cases above are only the
 combinations that happen to have somebody standing in them. What holds across those is
-not a tally — it is that in none of them does anyone exercise judgment. What walking
-cases cannot show you is a combination nobody wrote a rule for at all. There is one,
-and it is at the end of this chapter.
+not a tally; it is that in none of them does anyone exercise judgment. There is a
+combination nobody wrote a rule for — not severe, no family, no home — and it is at the
+end of this chapter, and it is the most interesting thing in it.
 
 ## The farmhouse
 
@@ -118,25 +128,66 @@ where the leverage lived, because severity was written down: one word, no workin
 shown, and whoever held the pen decided where a person spent their sentence. It is now
 the end of a short chain, and every link is a thing that either happened or did not.
 
-## Nowhere to put someone
+## The case nobody wrote a rule for
 
-The combination this chapter did not walk is the plainest one: not severe, not
-domestic, and no home.
+The combination this chapter did not walk is the plainest one: not severe, no family,
+and no home.
 
 Such a person is eligible for home confinement — that much derives — and there is no
-home to confine them in. Nothing else fires. No rule sends them to a facility, because
-the facility rules are for severe offences and domestic ones. So the machinery reaches
-the end of its reasoning and has produced no placement whatsoever. Kel is in this
-position. So is Adam.
+home to confine them in. Nothing else used to fire. No rule sent them to a facility,
+because the facility rules are for severe offences and offenders with families. So the
+machinery reached the end of its reasoning and produced no placement whatsoever. Kel was
+in this position. So was Adam. Both convicted, both having lost the right to move
+freely, and the design simply did not say where they were while that was true.
 
-This is not a mercy and it is not a release. Both are convicted, both have lost the
-right to move freely, and the design simply does not say where they are while that is
-true. In a real society they would be somewhere, and the somewhere would be chosen by
-whoever was standing there — which is precisely the discretion this whole chapter
-claims to have abolished. The abolition holds everywhere the rules reach and there is a
-place they do not reach, and the gap is not visible from inside any of the cases above.
-It is only visible by asking, for every combination the facts allow, what the machinery
-would do — including the combinations with nobody currently standing in them.
+That was worse than it sounds, and not for the reason it first appears. In a real
+society they would be somewhere, and the somewhere would be chosen by whoever was
+standing there — which is exactly the discretion this whole chapter claims to have
+abolished. The abolition held everywhere the rules reached, and there was a place they
+did not reach, and it was invisible from inside every case above. It could only be found
+by asking, for every combination the facts allow, what the machinery would do —
+including the combinations with nobody currently standing in them.
 
-The alarm is broken. There is a hole in the floor beside it. The thing they were
-watching over is still worth watching over.
+## What was actually missing
+
+The obvious repair is to send them somewhere. Pick a facility, write the rule, close the
+hole. That repair is wrong, and seeing why is worth more than the hole was.
+
+Look at what the design is being asked. It has a person it is confining, and no roof to
+confine them under. The missing thing is not a destination. It is a roof — and a roof is
+not a favour the placement machinery hands out. It is one of the things this society
+owes every person, unconditionally, from the first chapter of that argument onward. This
+person was owed a home before they were ever convicted. Something was supposed to have
+delivered it and nothing did.
+
+So the gap in the placement rules was never really a placement gap. It was the delivery
+failure showing through at the one point where the design is forced to look: the moment
+it has to put its hands on somebody and finds there is nowhere to put them.
+
+Stated that way the repair is not a new policy at all, only consistency. This design
+already holds that the state houses whom it confines — that is why a severe offender has
+shelter, and why an offender with a family has shelter. It simply never said so for the
+one combination where the person had nothing. Now it does: confined, eligible for home
+confinement, and no home, and shelter follows.
+
+Kel and Adam are housed. Every convicted person in this design now has shelter, and the
+rule that produces it is the same one for all of them.
+
+## What that does not fix
+
+Read the last sentence of that section again, because it is not the good news it sounds
+like.
+
+Shelter arrives for Kel and Adam **because they were convicted**. It did not arrive
+when they were owed it, which was always. The thing that finally produced a roof over
+two homeless people was a criminal conviction, and if either sentence ends, the roof
+goes with it.
+
+That is not a repair anybody should be pleased with. The hole in the placement rules is
+closed and the reason the hole existed is not: this society still has no machinery that
+notices somebody is owed a home and does not have one. It has machinery that notices
+somebody is being confined and has nowhere to be confined, which is a much smaller
+question that happens to have the same answer.
+
+The alarm is broken. The hole beside it in the floor has been filled, from the wrong
+side. The thing they were watching over is still worth watching over.

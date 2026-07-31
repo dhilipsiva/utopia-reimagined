@@ -9,7 +9,7 @@
 # is repaired to look at where someone was placed rather than whether they have a
 # home, err(Ruk) and err(Lalo) both flip FALSE and that section is rewritten.
 
-:expect-pins 31
+:expect-pins 38
 
 # Hano — meant it, and that alone is not enough. These two pins belong next to
 # each other: with no dimension recorded at all, severe(Hano) would be FALSE for
@@ -82,15 +82,13 @@
 ? home(Nando).
 # => FALSE
 
-# NOWHERE TO PUT SOMEONE. Not severe, not domestic, no home: eligibility derives
-# and nothing else does. These pins are the chapter's closing section, and the
-# two FALSE building queries are the load-bearing ones — "no rule sends them to a
-# facility" is the claim, and without them the section is an assertion.
+# THE CASE NOBODY WROTE A RULE FOR. Not severe, no family, no home: eligibility
+# derives and, until v0.8, nothing else did. The two FALSE building queries stay
+# load-bearing — "the missing thing is not a destination" is the chapter's whole
+# argument, and if a facility rule ever reaches these two the section is wrong.
 ? fit(Kel, Homestay).
 # => TRUE
 ? home(Kel).
-# => FALSE
-? dwell(Kel).
 # => FALSE
 ? building(HighSec, Kel).
 # => FALSE
@@ -98,5 +96,36 @@
 # => FALSE
 ? fit(Adam, Homestay).
 # => TRUE
+
+# [v0.8] "Kel and Adam are housed." Shelter now follows from being confined with
+# nowhere to be confined — NOT from a placement. These two were FALSE and the
+# chapter's closing section turned on their being FALSE; it now turns on their
+# being TRUE, so they are the pins that say which version of the chapter is in
+# print.
+? dwell(Kel).
+# => TRUE
 ? dwell(Adam).
+# => TRUE
+
+# "Every convicted person in this design now has shelter, and the rule that
+#  produces it is the same one for all of them." The claim is universal over
+#  prisoners, so it is pinned across the cast rather than on the two new cases.
+? dwell(Hano).
+# => TRUE
+? dwell(Ruk).
+# => TRUE
+? dwell(Nando).
+# => TRUE
+? dwell(Don).
+# => TRUE
+
+# ...and it reaches nobody who is not confined. Bela is the test: voided,
+# stripped, and not a prisoner.
+? dwell(Bela).
+# => FALSE
+
+# "Nothing anywhere says Nando's victim was family; the rule never asked."
+? family(Nando).
+# => TRUE
+? family(Opal).
 # => FALSE
