@@ -17,7 +17,7 @@ stratum, by dependency. Every verdict quoted below was produced by the engine.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **49** | **24** | **45** | **4** |
+| computed from the constitution | **49** | **24** | **46** | **4** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 2 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
@@ -40,8 +40,9 @@ floor at all; that discrepancy is the tooling-blindness story for the method par
 question than its name suggests.** The generator's rule is *predicates with no producing
 rule*, minus the `derived_only` declaration and minus `entitled` (`5-spine-gen.py:118`,
 `:123`). That is defensible and it is **not** the set of things the world may write.
-`person` is the case that shows the gap: thirty written facts, directly assertable, and
-excluded from the 23 because two rules also produce it — `prisoner -> person`
+`person` is the case that shows the gap: written directly for most of the cast, freely
+assertable, and excluded from the 23 only because two rules also produce it —
+`prisoner -> person`
 (`constitution.nibli:254`) and `free -> person` (`:264`, added with release). Under the
 plain definition of the writable surface — every predicate except the ten `derived_only`
 names and the `derived_only` declaration itself — the figure is **38**, and `entitled`

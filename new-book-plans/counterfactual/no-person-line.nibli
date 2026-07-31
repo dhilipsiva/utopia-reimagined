@@ -471,6 +471,25 @@ all $p: prisoner($p) & ~meets($p) -> err($p, Isolation).
 all $offender: prisoner($offender) & family($offender) -> dwell($offender).
 all $offender: prisoner($offender) & family($offender) & severe($offender) -> building(HighSec, $offender).
 all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender).
+# [v0.8 NEW] CONFINEMENT HOUSES YOU. The combination not severe / no family /
+# no home derived NOTHING: eligible for home confinement with no home to be
+# confined in, and neither facility rule reaching them. Adam and Kel stood in
+# it. This is CONSISTENCY, not new policy — the two rules above already hold
+# that the state houses whom it confines; this is the case they missed.
+#
+# It is deliberately NOT `~home -> home` or any blanket floor fiat. `home/1` is
+# a fact the world reports and asserting it for everyone writes something that
+# may be false; the tracker verified that closing the delivery gap by fiat also
+# SILENCES the isolation marker in the same edit, so the instrument that would
+# have noticed goes quiet. This rule houses the confined and claims nothing
+# about anybody else.
+#
+# WHAT IT DOES NOT CLOSE, and the prose must not read it as closure: a person
+# in this position was owed a home BEFORE the conviction, by Article 1b, and
+# nothing delivered it. This closes a placement gap. The delivery gap is
+# exactly as wide as it was, and the fact that conviction is what finally
+# produces the roof is the whole of chapter 13's sting.
+all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x).
 
 # ─── Article 7: Defenses against Systemic Capture ─────────────────
 # [v0.2 REPLACES  show($w,$o) -> defend($w)]  (closes E1)
