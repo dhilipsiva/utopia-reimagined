@@ -98,55 +98,46 @@ it lands.
   positive-search queries do not move; **cheap queries got slower**, because saturation is
   a fixed cost they did not need.
 
-- **HANDOFF PROMPT — materialise the positive side too, and keep it across a file. This is
-  where the remaining 29 minutes is.** Two numbers from the measurement above make the
-  case and neither is an estimate. **Saturating `false` costs ~1.5 s** — that is the whole
-  of `reward(Esa)`'s new cost, which reads `~false` and so builds the entire relation.
-  **One backward-chained `false` query costs ~25 s** — `false(Bela)` still does. So
-  materialising a relation is already **16× cheaper than proving one member of it
-  backwards**, on this KB, today. Extending materialisation from NAF-read relations to all
-  of them is not a refinement; it is strictly cheaper.
-  **And the saturation looks like it is rebuilt per query.** That is what the two
-  regressions above suggest (`rotten` 11→25, `permits` 145→238 — a fixed cost on queries
-  that needed nothing), and it is consistent with `06-clawback` still costing ~15 s/pin
-  across 15 pins that all read the same relation.
+- **LANDED 2026-07-31 — positive goals answer by lookup too, and the suite is 9m46s.**
+  nibli `6c71ef0` saturates every eligible relation, not only NAF-read ones. **Verified
+  here: 359 pins, 0 findings**, engine stamped `6c71ef0` by the auto-rebuild. Full run
+  **~50 min → 29.4 min (`69a5e6b`) → 9m46s (`6c71ef0`)**.
+  **It carried a soundness fix, which is why the differential mattered.** `69a5e6b` could
+  mark a relation complete while a relation its rule *read* had been refused by
+  `seed_edb` — so the negated condition passed over a hole and a head fired for everyone.
+  Latent there, reachable once positive goals widened the target set, caught by nibli's
+  ON/OFF gate as a definitive wrong TRUE. Nothing here regressed.
+  **Two of my own claims in the retired prompt were wrong and are recorded so they are not
+  repeated.** (1) "Saturating `false` costs ~1.5 s, backward-chaining one member ~25 s" —
+  true at `69a5e6b`, false now: `false(Bela)` is **1.0 ms**. (2) "The saturation is rebuilt
+  per query" — it is per **epoch**, dropped only by a mutation. `nibli-pin` walks a file
+  linearly, so this suite's 327 queries collapse into **24** epochs, and a full saturation
+  measures **~1 ms**. The 11→25 ms regression I reported was real at `69a5e6b` and does not
+  reproduce at HEAD, where `rotten(Vex)` is 0.0 ms ON against 3.1 ms OFF.
 
-  ```text
-  In ~/projects/dhilipsiva/nibli, following 69a5e6b (NAF materialisation):
-
-  Two extensions, in this order. Both are justified by measurement in the
-  consuming project rather than by principle.
-
-  1. PERSIST THE SATURATION ACROSS QUERIES, invalidating on KB mutation
-     rather than per query. Evidence it is per-query today: after 69a5e6b,
-     two queries that read nothing under negation got SLOWER — an evidence
-     lookup 11ms -> 25ms and a one-hop derived query 145ms -> 238ms — which
-     is a fixed setup cost being paid by queries that do not need it. In a
-     pin file of 15 queries over the same relation, that cost is paid 15
-     times. The invalidation hooks already exist; `rebuild_inner` was
-     already made to clear the materialisation cache in 69a5e6b.
-
-  2. MATERIALISE THE POSITIVE SIDE. Saturating `false` costs ~1.5s;
-     backward-chaining a single `false(X)` costs ~25s. The relation is
-     produced by one rule with three quantified variables and fifteen
-     conjuncts, so the backward search enumerates pairs while the bottom-up
-     pass computes the join once. Same eligibility test, same projection —
-     the only change is that a query for p(x) consults a complete extension
-     of p when p is in the materialisable fragment, instead of only doing so
-     under negation.
-
-  Do NOT widen the fragment to buy this. The refusals in 69a5e6b are the
-  soundness argument: equality classes, compute predicates over infinite
-  domains, anything the projection cannot regroup. A positive lookup against
-  an INCOMPLETE extension is unsound in a way the negative one already is
-  not, so if a relation falls out of the fragment the positive path must
-  fall back to backward chaining rather than answer from a partial set.
-
-  The consuming project (rights-nobody-has-to-earn) is a usable real-world
-  differential: 359 pins with independently-authored expected verdicts,
-  `./verify.sh`, currently 29.4 min. It caught nothing wrong with 69a5e6b;
-  run it against this change too.
-  ```
+- **HANDOFF PROMPT — the `event { }` projection is the whole remaining cost. This repo is
+  the firewall differential and it is stronger than the four pins upstream.** Every
+  relation inside the materialisable fragment now answers in 0.0–1.0 ms. Everything still
+  slow is a relation the projection refuses because `entitled(every person, event { P() })`
+  compiles to a head with two arity-1 anchors on one event term (`AmbiguousAnchor`) and the
+  abstraction referent in a value slot (`EventEscapes`). Upstream measured the residue as
+  `err` 4,583 ms × 27 queries, `dwell` 13,424 ms × 20, `obliged` 2,747 ms × 8 — **414 s of
+  576 s** — and those query counts match this repo exactly.
+  **The danger is not performance, it is the rights-floor firewall.** A projection that
+  took the abstraction body naively would derive the floor actualities for every person.
+  **This suite pins 44 floor-predicate verdicts, 26 of them FALSE** — `eats(Adam)`,
+  `secure(Bela)`, `learn(Cira)`, `meets(Hano)`, `believe(Bela)` and the rest — across eight
+  predicates and nine people. Those 26 *are* chapter 8's owed-versus-delivered argument. A
+  naive projection flips all of them and the book's central claim becomes false while the
+  entitlement side stays green. Both halves are pinned: `entitled(Hano, event { eats() })`
+  TRUE (`rights-floor.pins.nibli:255`) and `entitled(Hano, event { dwell() })` (`13:90`)
+  must still MATCH, while the actualities must still MISS.
+  **Run this suite before `just ci`, not after** — it fails faster and more specifically,
+  and it is the only check that distinguishes "projection works" from "projection
+  fabricates actuality". It also exercises invalidation rather than just steady state: ten
+  of fifteen pin files interleave mutations with queries (`rights-floor` 12 mutations
+  across 75 queries), and `dwell(Hano)` is pinned TRUE five times and FALSE twice, the
+  FALSE cases sitting after `free(Hano)` is asserted in chapter 13's release sequence.
 
 - **Never route a constitutional judgment through the compute backend — and the reason is
   not performance.** nibli can dispatch predicates to an external compute backend, and an

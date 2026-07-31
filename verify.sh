@@ -7,7 +7,7 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run, includes the pin suite (~30 min — MEASURED 2026-07-31)
+#   ./verify.sh          full run, includes the pin suite (~10 min — MEASURED 2026-07-31)
 #   ./verify.sh --quick  everything except the pin suite (~2 s)
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
@@ -217,7 +217,7 @@ else
   printf '       set NIBLI_SRC, or NIBLI_PIN to silence this deliberately\n'
 fi
 
-step "pins (~29 min — was 47 until nibli materialised negation; positive search is what is left)"
+step "pins (~9 min — was 47; nibli materialised negation, then positive goals too)"
 [ -x "$PIN" ] || fail "no nibli-pin at $PIN" "build it release, or set NIBLI_PIN"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
