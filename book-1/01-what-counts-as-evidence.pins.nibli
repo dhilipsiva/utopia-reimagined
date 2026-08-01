@@ -88,6 +88,14 @@ dangerous(Adam).
 # `rights-floor.pins.nibli:285` records a real vacuous green from exactly this.
 # Put new queries ABOVE this block.
 #
+# DO NOT CONVERT THESE TO `:accept-scoped`. Each accepted statement here is the
+# premise of the query under it, not a control — scoped, it is retracted before
+# that query runs and the verdict flips from TRUE to FALSE (measured 2026-08-01
+# against nibli 425567b; the accept itself still passes, so the loss surfaces
+# only below it). The conversion does not fail quietly — it fails as a finding,
+# which reads like the design regressed, and this file's rule is never to fix
+# the pin.
+#
 # It does not reach the other thirteen files: each gets a fresh KB. Proof —
 # `rights-floor.pins.nibli` runs first and its controls would make
 # `travel(Bela)` FALSE, yet `06-clawback.pins.nibli` pins it TRUE in the same

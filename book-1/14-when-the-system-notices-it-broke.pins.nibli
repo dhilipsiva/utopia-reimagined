@@ -153,6 +153,14 @@
 # this point is measuring a polluted base. rights-floor.pins.nibli:285 records a
 # real vacuous green from forgetting exactly this.
 #
+# MUST BE LAST is now a choice rather than the only option: nibli 425567b added
+# `:accept-scoped`, which retracts the statement afterwards and so cannot
+# pollute. It was tried here and refused — the rule is the premise of the query
+# below it, and scoped, the accept still passes as loadable while
+# `err(Ruk, Duty)` flips to FALSE (measured 2026-08-01). Scoping would keep the
+# half of the chapter's claim that the stratifier permits this rule and lose the
+# half that says it derives.
+#
 # "The design could mark the review body for having ignored the duty; that rule
 #  was tried and it works." This is that rule. It makes err and obliged mutually
 # recursive over positive edges and the stratifier permits it, which is why the

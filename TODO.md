@@ -175,35 +175,28 @@ measured an engine change that was never rebuilt.
   control our own invocation, so the gate costs us one flag and protects a guarantee that
   is theirs to keep.
 
-- **HANDOFF PROMPT — nibli: an `:accept` that does not persist.** Every complement control in
-  every pin file wants to test that a rule *loads* and then throw it away. `:accept` instead
-  leaves the rule in the knowledge base, so each control silently widens the base for every
-  query below it — which produced a real vacuous green in this repo (see the harness section).
-  The fix is upstream and small.
+- **LANDED 2026-08-01 — `:accept-scoped`, and the ordering rule is retired.** nibli
+  `425567b`. A control now compiles and stratifies its statement, reports loadability as
+  the pin verdict, and then **retracts it**, so it cannot widen the base for the pins
+  below. Retraction is the primitive rather than a bespoke undo, so the scope is exactly
+  as sound as `retract ≡ never-asserted`, which their suite already pins on both paths.
 
-  ```text
-  In ~/projects/dhilipsiva/nibli: nibli-pin's `:accept` loads its rule into the KB and
-  leaves it there. Content pin files use `:accept` as a CONTROL — "this rule must still
-  load" — and never want the rule afterwards, but every query below it then runs against
-  a widened base. In constitution.nibli's suite the four complement controls each add a
-  second route to `prisoner`, so `? prisoner(Adam).` below them passed even though the
-  rule that should derive it could have been deleted; and a `~false` control makes a
-  person with no conviction at all come back TRUE for `prisoner`.
+  **The vacuous green is closed and was re-measured here before saying so.** Against a
+  copy of the constitution with Article 6's conviction rule deleted outright, a
+  `? prisoner(Adam).` query below the complement controls passes **silently** under
+  `:accept` and is **caught** under `:accept-scoped`. Same shape on the other symptom:
+  `prisoner(Quin)` — a man with no conviction — is TRUE under `:accept`, FALSE scoped.
 
-  Ask: a scoped form — `:accept-scoped` (or a flag on `:accept`) that compiles and
-  stratifies the rule, reports loadability as the pin verdict, and then DISCARDS it so
-  the KB is unchanged for subsequent pins. `:refuse` already has this property for free,
-  since a refused rule never enters the store; the asymmetry between the two is the bug.
-  Consumer: the book repo, `new-book-plans/rights-floor.pins.nibli`
-  and book-1/*.pins.nibli, which currently work around it by ordering.
-  
+  **Converted: `rights-floor`, chapters 7, 8, 9, and the `no-person-line` fixture.** Drop-in
+  at 366 pins, 0 findings. **Chapters 1 and 14 keep the plain form deliberately** — there
+  the accepted statement is a *premise* a later query stands on, not a control, and
+  converting them fails both files. That distinction is now allowlisted in `verify.sh`
+  rather than left to a reader's judgement.
 
-  ────────────────────────────────────────────────────────────────────
-  When this lands, reply with: the commit sha, what changed in one line,
-  whether any existing verdict moved, and anything you found that this
-  prompt got wrong. Paste that reply back into the book session — it is
-  the only channel between the two repos.
-  ```
+  **New guard, three-way negative-controlled**: every control must put the base back. It
+  fires when a control is written unscoped, when a premise site is converted, and when the
+  directive is renamed out from under it. This replaces "order the file so the controls
+  come last", which was a rule nobody could see being broken.
 
 ---
 
@@ -1147,10 +1140,12 @@ No known defects. Read it against the constitution anyway.
   than a summary. Put the pin block in **before** the chapter-8 rewrite, so the rewrite
   has something to write against.
 
-- **Bring the pin-file NOTEs into line with the checks that now run them.** The five
-  absence claims — nothing reads `owe`, `become`, `travel`, `err` or `lose` — are no
-  longer instructions to a human: `verify.sh` runs all five with a positive control, so
-  they fail loudly, and the no-arithmetic check runs beside them as a sixth. What is left
+- **Bring the pin-file NOTEs into line with the checks that now run them.** The absence
+  claims are no longer instructions to a human: `verify.sh` runs every one of them with a
+  positive control, so they fail loudly, and the no-arithmetic check runs beside them.
+  **Do not re-enumerate the list here** — this bullet named `err`, which left the loop in
+  v0.8 when the audit gained an obligation, and omitted the three that joined it. The list
+  lives in `verify.sh` and nowhere else. What is left
   is the prose. One NOTE still tells a reader to run an unspecified grep
   (`10-contribution.pins.nibli:6-9`); chapters 8, 13 and 14 were already corrected to test
   rule bodies with a control. Point it at `./verify.sh` instead of restating a command,

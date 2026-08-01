@@ -190,6 +190,50 @@ for p in 'teaches' 'work[(]'; do
             "$(selfjoin "$p") — chapter 10 says this will not be built"
 done
 
+# ── 4d. a control must not pollute the base below it ─────────────────────────
+# `:accept` leaves its statement in the KB, so every pin below one runs against a
+# widened base. That produced a real vacuous green here: with the four complement
+# controls loaded, `? prisoner(Adam).` passed with Article 6's conviction rule
+# DELETED outright — re-measured against a sabotaged copy of the constitution on
+# 2026-08-01, silent under `:accept` and caught under `:accept-scoped`. The
+# workaround was to order every file so its controls came last, which is a rule
+# nobody can see being broken.
+#
+# nibli 425567b made the scope real, so the ordering rule is replaced by this
+# check. Be exact about what it covers: it reads the SPELLING of the directive
+# and nothing more. The retraction is the engine's, and one that fails is a
+# harness error (exit 2), not a pin that goes quietly green — so this section
+# cannot tell you the base was put back, only that the file asked for it.
+#
+# TWO SITES KEEP THE PLAIN FORM DELIBERATELY, and they are allowlisted rather
+# than fixed, because in them the accepted statement is a PREMISE the file goes
+# on to query — chapter 1 writes a roster entry and then asks what that entry
+# derived; chapter 14 loads the duty-breach rule and then asks what it marks.
+# Retract those and the queries below have nothing to stand on. Verified: the
+# conversion fails both files. Anything NOT on this list is a control, and a
+# control that does not clean up is the bug this section exists to catch.
+unscoped_ok="01-what-counts-as-evidence 14-when-the-system-notices-it-broke"
+ctl=0; bad=""
+for f in new-book-plans/*.pins.nibli new-book-plans/counterfactual/*.pins.nibli book-1/*.pins.nibli; do
+  grep -q '^:accept$' "$f" || continue
+  b=$(basename "$f" .pins.nibli)
+  case " $unscoped_ok " in
+    *" $b "*) ctl=$((ctl + 1)) ;;
+    *) bad="$bad$f: $(grep -c '^:accept$' "$f") unscoped
+" ;;
+  esac
+done
+# POSITIVE CONTROL — the allowlisted files must actually still match `^:accept$`.
+# Without this, a change to the pin syntax makes the loop above match nothing and
+# report every file clean, which is the exact shape of green this repo keeps
+# getting fooled by.
+[ "$ctl" = "2" ] || fail "the control-scope guard is broken" \
+  "expected both allowlisted files to carry a plain :accept; matched $ctl. Either the syntax moved or a premise site was converted."
+[ -z "$bad" ] && pass "every control is written :accept-scoped (the engine, not this check, puts the base back)" \
+  || fail "a control leaves its statement in the KB — every pin below it runs against a widened base" \
+          "$bad
+Write these :accept-scoped, or allowlist the file above if the statement is a premise a later query needs."
+
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
   printf '\n\033[33mskipped\033[0m the pin suite (--quick)\n'

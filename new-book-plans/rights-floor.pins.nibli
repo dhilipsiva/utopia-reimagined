@@ -224,15 +224,16 @@ severe(Ghost).
 # => FALSE
 
 # The firewall extends to the obligation: no rule may punish a person for not
-# being owed. The `~home` control above is what proves this is the obligation
-# doing it and not the rule shape.
+# being owed. The `~home` control at the end of this file is what proves this is
+# the obligation doing it and not the rule shape.
 :refuse reasoning /'prisoner' -> 'owe'/
 all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
 
 # ── ARTICLE 6: release ───────────────────────────────────────────────────────
 # Nobody in the shipped cast is released, so the guard is inert by default and
-# every verdict above is unaffected. This block asserts one release fact and is
-# therefore LAST in the file — it changes Hano for everything after it.
+# every verdict above is unaffected. This block asserts a release fact, and with
+# the controls below scoped it is the last thing in the file the knowledge base
+# keeps — it changes Hano for everything after it.
 ? free(Hano).
 # => FALSE
 
@@ -282,25 +283,31 @@ free(Hano).
 
 
 # ── COMPLEMENT CONTROLS: the protected set is EXACTLY the floor ──────────────
-# THESE MUST BE LAST IN THE FILE, AND THAT IS NOT COSMETIC. An `:accept` loads
-# its rule into the KB and leaves it there, so each of these adds a SECOND route
-# to `prisoner` that Article 6 does not gate. Verified: after the `~false`
-# control loads, `prisoner(Quin)` is TRUE — Quin has no conviction at all — and a
-# released person is dragged back in, `prisoner(Hano)` TRUE with `free(Hano)`
-# asserted. Any pin querying `prisoner` after this point is measuring a polluted
-# knowledge base and passes for the wrong reason. `? prisoner(Adam).` used to sit
-# below these and was a vacuous green: it would have passed with Article 6
-# deleted outright.
-:accept
+# ORDERING USED TO PROTECT EVERY PIN BELOW THIS BLOCK, AND WHY IT HAD TO IS
+# STILL THE POINT. These now load under `:accept-scoped`: the statement is
+# compiled, its loadability is the verdict, and it is retracted before the next
+# pin runs, so nothing below inherits it — measured, a `? prisoner(Quin).`
+# probe dropped in among these controls comes out FALSE. Under plain
+# `:accept`, which leaves the rule in the KB, every one of these adds a route
+# to `prisoner` that Article 6 does not gate: measured on this file before the
+# conversion, `prisoner(Quin)` was TRUE with no conviction anywhere behind it,
+# and `prisoner(Hano)` TRUE with `free(Hano)` asserted — a released person
+# dragged back in. `? prisoner(Adam).` used to sit below these and was a
+# vacuous green: it would have passed with Article 6 deleted outright. Scoping
+# retired the instruction to keep controls last, not the reason for it, and it
+# is not verify.sh that puts the base back: section 4d checks only that every
+# control is written `:accept-scoped`, and the retraction is the engine's — one
+# that fails is a harness error, not a pin that goes quietly green.
+:accept-scoped
 all $x: person($x) & ~home($x) -> prisoner($x).
 
-:accept
+:accept-scoped
 all $x: person($x) & ~choose($x) -> prisoner($x).
 
-:accept
+:accept-scoped
 all $x: person($x) & ~permits($x) -> prisoner($x).
 
-:accept
+:accept-scoped
 all $x: person($x) & ~false($x) -> prisoner($x).
 
 # NOT a control, deliberately: ~travel is refused too, but for a reason unrelated

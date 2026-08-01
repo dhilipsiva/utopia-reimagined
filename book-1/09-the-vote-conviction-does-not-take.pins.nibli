@@ -46,5 +46,5 @@
 # "The vote does not have that protection." — felon disenfranchisement COMPILES.
 # This is the chapter's honest half. If a later revision armours the franchise,
 # this pin flips to a refusal and the closing sections must be rewritten.
-:accept
+:accept-scoped
 all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).

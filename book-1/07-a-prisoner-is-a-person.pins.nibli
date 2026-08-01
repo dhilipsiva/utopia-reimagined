@@ -43,14 +43,15 @@ all $x: person($x) & ~believe($x) -> prisoner($x).
 all $x: person($x) & ~eats($x) -> prisoner($x).
 
 # and the non-floor control, so the refusals above mean something
-# ORDERING WARNING: an `:accept` loads its rule into the KB and LEAVES IT THERE,
-# so every query below it runs against a widened knowledge base. The `~home`
-# control makes every homeless person a prisoner from here on. The query below is
-# sound only because Hano HAS a home, so the control never fires for him — check
-# that again before adding any query after this point, and prefer putting new
-# queries ABOVE the accepts. `rights-floor.pins.nibli` had a real vacuous green
-# from exactly this and its controls now sit last in the file.
-:accept
+# `:accept-scoped` loads the statement, reports whether it loaded, then retracts
+# it — so this control cannot widen the base for anything below it, and where a
+# query sits relative to the accepts stops mattering. Measured on this file: with
+# a plain `:accept` here, a `? prisoner(Quin).` added below answers TRUE — Quin
+# has no conviction, only no home — and with `:accept-scoped` the same query
+# answers FALSE. Keep the scoped form. `rights-floor.pins.nibli` records a real
+# vacuous green from the plain one: a `prisoner` query sat below this same
+# `~home` control and would have passed with Article 6 deleted outright.
+:accept-scoped
 all $x: person($x) & ~home($x) -> prisoner($x).
 
 # "the eight things are owed to persons" — Hano, convicted, keeps expression

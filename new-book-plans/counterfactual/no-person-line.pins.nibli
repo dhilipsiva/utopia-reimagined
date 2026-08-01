@@ -6,7 +6,7 @@
 
 # THE FIREWALL IS DEAD. Against the constitution this rule is refused with
 # "'prisoner' -> 'believe' (negative)". Here it loads, and the heretic is jailed.
-:accept
+:accept-scoped
 all $x: person($x) & ~believe($x) -> prisoner($x).
 
 # The floor still derives for anyone with a roster entry — the loss is not the

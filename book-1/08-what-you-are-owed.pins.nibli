@@ -59,7 +59,7 @@
 # => FALSE
 
 # "Your credibility is still reachable."
-:accept
+:accept-scoped
 all $x: person($x) & ~believe($x) -> false($x).
 
 # "Your recognition is still reachable."
@@ -67,19 +67,42 @@ all $x: person($x) & ~believe($x) -> false($x).
 # constitution: a floor right read into a consequence rather than into `err`. It
 # stays here, because the point of the control is that the ENGINE permits it —
 # which is exactly why the invariant has to, and now does, refuse it separately.
-:accept
+# Scoped, and that is not cosmetic here: `verify.sh` reads INVARIANT 1 off the
+# constitution and never off a pin file, so under a plain `:accept` the forbidden
+# shape stayed resident and every pin below it in this file ran against a base
+# that broke the invariant — measured 2026-08-01, `lose(Points, Hano)` derived,
+# Hano being confined with `meets` FALSE for him, pinned above. The widening
+# stopped at the file boundary: measured the same day, nibli-pin rebuilds the base
+# per file, so a plain `:accept` here was never visible to the next file's pins.
+# And this is not the only site it applied to — the credibility control above
+# reads a floor right into `false`, which is the same forbidden shape. This is
+# where the invariant gets named, not where it alone bit. Showing that the engine
+# permits the shape must not mean leaving it enacted.
+:accept-scoped
 all $x: person($x) & ~meets($x) -> lose(Points, $x).
 
 # "And nothing prevents compulsion." — the floor blocks absence, not manufacture
-:accept
+:accept-scoped
 all $x: prisoner($x) -> believe($x).
 
-# ORDERING WARNING: each `:accept` above leaves its rule in the KB, so every query
-# below runs against a widened base — after the first one, `false(X)` is TRUE for
-# every person, since nobody has `believe`. The queries below are unaffected
-# (`owe` carries no `~false` guard, and `authority`/`permits` do not read it), but
-# check that again before adding any query here, and prefer putting new queries
-# ABOVE the accepts.
+# Every `:accept` above is scoped: the statement must compile and load, that
+# loadability is the pin verdict, and the statement is then retracted. So the
+# controls no longer widen the base, and a query may be added at this point.
+# Scoping the controls is not the same as the file never widening its own base,
+# though — the `judge`/`capture` assertions further down are ordinary ground
+# facts, unscoped and resident from the point they are written, so ordering
+# still matters for anything added below them.
+#
+# HISTORY, and why the scoping is not cosmetic here. These were plain `:accept`,
+# which left each rule in the KB, and this file's defence was an argument rather
+# than a mechanism: `owe` carries no `~false` guard and `authority`/`permits`
+# read `false` nowhere, so the queries below were sound — but only for as long as
+# that stayed true of whatever got added next. Measured under the old form: at
+# this line `lose(Points, Hano)` came back TRUE, so the recognition control noted
+# above had already fired on an absent floor right and everything below was being
+# checked against a base that broke INVARIANT 1. Under the scoped form it is
+# FALSE. Hano is the exhibit and Bela is not: `lose(Points, Bela)` is TRUE with
+# no accept at all, since Bela is voided and voiding claws points back unaided.
 
 # ── "Owed by whom" ───────────────────────────────────────────────────────────
 # "owed by a public body ... whose obligation runs to every person — not to
