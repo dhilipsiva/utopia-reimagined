@@ -461,6 +461,21 @@ all $contributor: all $task: work($contributor, $task) & ~false($contributor) ->
 # ─── Article 4: Audit, invalidation, clawback ─────────────────────
 # [v0.2 REPLACES the multi-sig rule] Appends ~rotten($a) & ~rotten($b):
 # an auditor voided in a PRIOR epoch (Art 8 carry ledger) cannot co-sign.
+# [v0.9 NOTE on ~broken/~rotten, KEPT DELIBERATELY] Since v0.3 closed the
+# credential these four conjuncts are SUBSUMED: a Review or Tribunal pen can
+# only derive through Article 8's rules, which read ~rotten and ~broken
+# themselves, so today no assignment reaches this rule with either check
+# failing — verified 2026-08-01, chapters 4 and 5's whole pin suites pass
+# unchanged against a copy with the four stripped (the no-dead-conjuncts
+# fixture). They were LIVE when v0.2 wrote them, because permits was still
+# assertable; the closure demoted them without anyone deciding it. They stay
+# because they are this rule's OWN guarantee that a carried-void or recalled
+# signer never counts, independent of how a pen was obtained — and they re-arm
+# the moment any credential route omits the guards: verified, with one
+# unguarded route added, false(Tyr) stays FALSE here and flips TRUE with the
+# conjuncts stripped (the unguarded-pen fixture). Same idiom as ~($a = $b)
+# below: kept for the day the assumption that hides it stops holding. Do not
+# delete as dead code.
 # [v0.7 REPLACES it again] THE TWO PENS MUST COME FROM DIFFERENT BODIES. The
 # credential conjuncts were `permits(Review, ·)` twice; they are now Review and
 # Tribunal, the two issuers Article 8 defines. This is a REPLACEMENT and the
