@@ -669,11 +669,15 @@ all $x: clear($x) -> permits(Appeals, $x).
 # is the discriminating pin pair in the chapter-14 suite: obliged(Review,
 # Ruk) TRUE *and* obliged(Ruk, Review) FALSE. Do not drop either half.
 #
-# TWO RULES, NOT ONE, AND THE OBVIOUS GENERALISATION DOES NOT WORK.
-# `all $x: all $k: err($x, $k) -> obliged(Review, $x).` loads cleanly and
-# derives NOTHING — verified, obliged(Review, Ruk) FALSE — because $k is
-# body-only over a derived relation, the same engine limitation the
-# Article 4 note records. Constants in slot 2 are load-bearing here.
+# TWO RULES, NOT ONE — AND AS OF 2026-07-31 THAT IS HISTORY, NOT NECESSITY.
+# `all $x: all $k: err($x, $k) -> obliged(Review, $x).` derived NOTHING when
+# this article was written: $k was body-only over a derived relation, which
+# that engine failed to bind. **nibli has since fixed it** — re-verified on
+# the live engine, the generalised rule now derives for Ruk and Adam alike.
+# The two rules are kept because they are correct, pinned, and collapsing
+# them would move the rule count and the spine for no behavioural gain. If
+# this file is ever rewritten, one rule is now the honest form. The same
+# correction applies to the Article 4 note, which cites the old limitation.
 #
 # WHAT THIS DOES NOT BUY. Nothing reads `obliged`. This is a second inert
 # obligation sitting beside Article 1b's `owe`, and the chain now ends one

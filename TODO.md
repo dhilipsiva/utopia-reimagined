@@ -75,73 +75,147 @@ Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
 
 ## Phase 1 — Engine work (nibli). Prompts are ready to paste.
 
-**dhilipsiva wrote nibli.** When an item here is blocked by an engine bug or a missing
-KR construct, do not work around it in prose — hand the prompt over to a Claude Code
-session in `~/projects/dhilipsiva/nibli`, work the next unblocked item, and resume when
-it lands.
+**dhilipsiva wrote nibli, and is the channel between the two repos.** The two sessions
+cannot see each other, so **every item here carries a self-contained prompt in a fenced
+block** — copy the block, paste it into a Claude Code session in
+`~/projects/dhilipsiva/nibli`, and paste that session's reply back here when it lands.
+Each prompt ends by asking for the sha, what changed, whether a verdict moved, and what
+the prompt itself got wrong; that last one has been non-empty more often than not.
 
-- **HANDOFF PROMPT — a body-only variable does not bind over a derived relation.** Found
-  while pricing the cross-body voiding rule; the rule is now built with constants and does
-  not need this, but the defect is general, it is silent, and it contradicts a published
-  guarantee. **It is a bug, not an ask** — unlike the other prompts in this section.
-  The tracker's original statement of it was wrong in three ways, all corrected by probe:
-  it is not slot-1 specific (slot 2 and arity 1 lose it too); it is not universals in
-  general (a **bare** `$y` binds correctly, only an explicit prenex `all $y:` fails); and
-  any **asserted** condition carrying the variable rescues it, which is why the plurality
-  self-join in Article 6 works — `$a` is anchored by an asserted `judge`.
+Rules for this section. A prompt must assume **zero** knowledge of this repo — no bullet
+references, no chapter numbers, no "see above". If an item cannot be stated that way it
+is not ready to hand off, and it says so instead of carrying half a prompt. Do not work
+around an engine limitation in prose: conceding a fixable limitation as though it were a
+design choice is the specific dishonesty this phase exists to prevent.
+
+**When a reply lands here**, re-run `./verify.sh` before believing anything — the script
+rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
+measured an engine change that was never rebuilt.
+
+- **HANDOFF PROMPT — expose the compiled stratification as data.**
 
   ```text
-  In ~/projects/dhilipsiva/nibli: a rule body variable that appears in NO head and
-  is bound by an explicit prenex `all` fails to bind when every condition carrying
-  it is rule-backed. The rule loads, the stratifier accepts it, and it silently
-  derives nothing. Six lines, no --kb, no negation, no derived_only, no
-  stratification:
+  In ~/projects/dhilipsiva/nibli: a consuming project needs the
+  stratification as machine-readable data, and today has to re-implement
+  the stratifier in regex to get it.
 
-      dog(Rex).
-      cat(Tom).
-      all $x: dog($x) -> animal($x).
-      all $x, $y: animal($y) & cat($x) -> big($x).
-      ? animal(Rex).   # => TRUE   passes
-      ? big(Tom).      # => TRUE   FAILS, engine returns FALSE
+  Context. The consumer is a book whose chapter ORDER is computed from the
+  dependency stratification of a constitution written in nibli KR. Its
+  generator (`5-spine-gen.py`) parses the .nibli text with regexes to
+  rebuild the predicate graph, assign strata, and classify base vs derived.
+  That is a second implementation of your stratifier, maintained by
+  somebody who cannot see your code, and it has already disagreed with the
+  engine twice.
 
-  Change `animal($y)` to `dog($y)` — one token, asserted instead of derived — and it
-  passes. Change `all $x, $y:` to `all $x:` leaving `$y` bare and it also passes, so
-  the two spellings of the same logic disagree.
+  The ask. For a loaded KB, dump every predicate with:
+    - its stratum
+    - whether it is base (EDB) or derived (IDB)
+    - its outgoing edges, marked positive or negative
 
-  Root cause, as far as I traced it: bind_join_vars_from_index
-  (nibli-reason/src/reasoning.rs:79-154) is the only binder for body-only individual
-  vars (`x__*`), and it reads `arg_position_index`, which is populated solely by
-  assert_typed_fact (nibli-reason/src/rules.rs:911-925). Backward chaining never
-  materialises derived facts, so a derived relation is never in that index. The two
-  fallbacks both fail closed: fact_store.rs:85-91 is an exact set lookup, and
-  kb.rs:363 cannot unify a PatternVar against a head constant. There is no mode or
-  adornment machinery.
+  Stable enough to diff across runs — sorted, no addresses, no hash order.
+  Any surface reachable from `nibli-pin` is fine: a `--strata` flag
+  printing to stdout is the smallest thing that works. `nibli-host` is not
+  usable for this consumer.
 
-  Three things to fix, in order of how much they cost you later:
-  1. The behaviour. Either bind these vars by resolving the derived condition as a
-     subgoal, or refuse the rule at load time. Silent non-derivation is the worst of
-     the three options.
-  2. GUARANTEES.md:48 promises completeness for non-recursive rule sets within the
-     depth bound, and lists exactly three incompleteness sources. This is a fourth
-     and it is undisclosed. Even if the fix is deferred, the disclosure should not be.
-  3. The clingo differential oracle cannot reach the shape: nibli-verify's generator
-     (src/generator.rs:20) only emits one-place predicates and single-variable rules,
-     so the one tool that would have caught this is structurally blind to it.
+  Why it matters beyond convenience: the book PRINTS these numbers to
+  readers as evidence that its chapter order was derived rather than
+  chosen. Numbers produced by a regex re-implementation cannot honestly be
+  presented as coming from the engine that enforces them.
 
-  Also worth a look while you are in here: the bare-var form that does work has a
-  performance cliff. Two bare vars with an inequality, over a ~60-entity domain, did
-  not return in seven minutes — the members^k blowup that
-  bind_join_vars_from_index exists to avoid, hit because the index cannot help.
+  Do NOT bundle a shared-engine / persistent-KB mode with this. That ask
+  existed to cut a 47-minute suite; the suite is now 29 s and per-file
+  re-stratification is not measurable against it. The dump alone.
 
-  A regression test belongs beside pins/derived-only.nibli; the repro above needs no
-  fixture. nibli-engine/tests/integration.rs:1236 already tests this exact rule shape
-  over ASSERTED relations and passes, so the gap is one line from existing coverage.
+  ────────────────────────────────────────────────────────────────────
+  When this lands, reply with: the commit sha, what changed in one line,
+  whether any existing verdict moved, and anything you found that this
+  prompt got wrong. Paste that reply back into the book session — it is
+  the only channel between the two repos.
+  ```
 
-  Consumer: the book repo, `new-book-plans/constitution.nibli`.
-  It does not currently depend on the fix — Article 4's cross-body rule uses two
-  constants precisely because a variable there would have been inert — but the
-  workaround is a constraint on the design rather than a choice, and any future rule
-  quantifying over which body did something will hit this again.
+  Then `5-spine-gen.py` renders the dump instead of parsing text, and the
+  method part's numbers come from the engine that enforces them.
+
+- **HANDOFF PROMPT — a temporal primitive that orders without numerals. READY.** Was
+  blocked on "there is no release"; release landed, so the shape of the ask is now exact.
+
+  ```text
+  In ~/projects/dhilipsiva/nibli: the KR can say a thing happened, and
+  cannot say when, for how long, or in what order. I need ordering without
+  numerals.
+
+  What exists and why none of it is enough:
+    - `past` / `now` / `future` are opaque exact-match flavours with NO
+      ordering between them. `~past P` is rejected outright, so I cannot
+      even express "not yet".
+    - Every calendar unit in the corpus takes a NUMBER in x2. The consuming
+      project's verifier refuses any digit in an enacted line, so those are
+      unusable there by construction.
+    - Counting already works (`exactly N`) — do not re-do it.
+    - `aggregate` exists but is only exposed through `nibli-session`. That
+      is a separate, smaller ask; not this one.
+
+  The ask: a primitive that expresses ORDER and DURATION without numerals.
+  Enough to say "this came before that", "this is still running", "this
+  has ended" — and to let a rule read those relations.
+
+  Why it matters. The consuming artifact is a constitution, and its chapter
+  on punishment currently has to print the sentence *"the design never says
+  when"* as an admission to the reader. It can say a sentence is FINISHED
+  and cannot say how long one runs, so it cannot express a fixed term, a
+  sunset clause, or a supermajority threshold that lapses. Those all ride
+  this same ask.
+
+  If numerals are unavoidable for duration, say so plainly — the consumer
+  would rather print an honest "cannot" than a vague one.
+
+  ────────────────────────────────────────────────────────────────────
+  When this lands, reply with: the commit sha, what changed in one line,
+  whether any existing verdict moved, and anything you found that this
+  prompt got wrong. Paste that reply back into the book session — it is
+  the only channel between the two repos.
+  ```
+
+- **HANDOFF PROMPT — de-swap `obligated`/`obliged`. NO LONGER OPTIONAL.** It became
+  load-bearing on 2026-07-31 when `err` gained its first consumer.
+
+  ```text
+  In ~/projects/dhilipsiva/nibli: `obligated` and `obliged` are the same
+  gismu (bilga) with arguments 1 and 2 exchanged, and the renderer prints
+  the IDENTICAL sentence for both. That makes a silent, inverting typo.
+
+  Corpus entries:
+    obligated  swap: Some(Swap { with: 2, base: "obliged" })
+               template "{x1} is obligated to {x2}"
+    obliged    swap: None
+               template "{x1} is obligated to {x2}"
+
+  So `obligated(A, B)` compiles to `obliged(B, A)`. Both spellings load,
+  both answer TRUE on the surface form, and both render the same string.
+  Nothing anywhere tells the two apart.
+
+  Why it is now urgent. A consuming constitution writes
+  `obliged(Review, $x)` — a review body owes a duty about a person. Written
+  with the other spelling it silently means the PRISONER owes the duty to
+  the review body: the exact inversion of the guarantee the rule exists to
+  state. The only thing standing between that and a green test suite is a
+  hand-written two-pin discriminator asserting obliged(Review, Ruk) TRUE
+  *and* obliged(Ruk, Review) FALSE.
+
+  Either fix is acceptable:
+    (a) de-swap, so one spelling is canonical and the other is rejected or
+        normalised at parse time; or
+    (b) make the renderer distinguish them, so the printed sentence differs
+        and a reader can see which one they wrote.
+
+  (a) is preferred. A swap alias whose surface form is indistinguishable
+  from its base is a trap for anyone writing KR by hand.
+
+  ────────────────────────────────────────────────────────────────────
+  When this lands, reply with: the commit sha, what changed in one line,
+  whether any existing verdict moved, and anything you found that this
+  prompt got wrong. Paste that reply back into the book session — it is
+  the only channel between the two repos.
   ```
 
 - **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
@@ -166,6 +240,13 @@ it lands.
   whose Article 0 already closes nine relations, and whose book states as its opening
   claim that the record has exactly twenty-one entries and that a twenty-second
   "cannot" be written. It currently can.
+  
+
+  ────────────────────────────────────────────────────────────────────
+  When this lands, reply with: the commit sha, what changed in one line,
+  whether any existing verdict moved, and anything you found that this
+  prompt got wrong. Paste that reply back into the book session — it is
+  the only channel between the two repos.
   ```
 
 - **HANDOFF PROMPT — defect pins vs guarantee pins.** Roughly a fifth of the book's 359
@@ -186,46 +267,14 @@ it lands.
   same area: let a pin file declare a shell precondition, so the grep-only NOTEs in the
   book's pin files become checks in the same run. The consuming artifact is
   the book repo's `book-1/*.pins.nibli`.
+  
+
+  ────────────────────────────────────────────────────────────────────
+  When this lands, reply with: the commit sha, what changed in one line,
+  whether any existing verdict moved, and anything you found that this
+  prompt got wrong. Paste that reply back into the book session — it is
+  the only channel between the two repos.
   ```
-
-- **HANDOFF PROMPT — expose the compiled stratification as data.** The book needs the
-  stratification from the engine, so the spine stops depending on a regex
-  re-implementation of the stratifier. `nibli-pin --kb` is the only book-facing entry
-  point and exposes nothing but pass/fail; `nibli-host` is unusable here. Add a way to
-  dump, for a loaded KB, every predicate with its stratum, whether it is base or derived,
-  and the negative edges — stable enough to diff. Then `5-spine-gen.py` renders that
-  instead of parsing text, and the method part's numbers come from the engine that
-  enforces them. **Do not bundle a shared-engine mode with this.** That ask existed to cut a
-  47-minute suite; the suite is 29 s and per-file re-stratification is not measurable
-  against it. Ask for the dump alone.
-
-- **Not ready, deliberately.** Provenance on `reward` is downstream of the clawback fork —
-  do not hand it off until that is settled, because the shape of the ask depends on which
-  side gives. One measured correction to record while it waits: the audit reported an
-  arity-2 `reward` probe as non-terminating past 15 minutes; that **does not reproduce**.
-  Rewriting all three `reward` heads to arity 2 and running a single pin took **38.9s**
-  against a **2.1s** baseline — a ~19x cost, not a hang. Budget it, do not fear it.
-  **Temporal vocabulary is now READY to hand off, and it was not before.** It was blocked on
-  "there is no release"; release landed, and the shape of the ask is now exact. The design
-  can say a sentence is finished and cannot say *how long* one runs: there is no duration,
-  term or interval in the KR, the `past`/`now`/`future` markers are opaque exact-match
-  flavours with no ordering between them (`~past P` is rejected outright), and every
-  calendar unit in the corpus takes a number in x2, which `verify.sh` refuses in an enacted
-  line. Ask for a temporal primitive that orders without numerals, and say in the prompt that
-  the consuming artifact is a constitution whose chapter on punishment currently has to write
-  *"the design never says when"* as an admission. Supermajority thresholds and sunsets ride
-  the same ask. Two things NOT to ask for while you are there: counting already works
-  (`exactly N`), and `aggregate` exists but is exposed only through `nibli-session` — that is
-  the smaller, separate ask if sums are ever wanted.
-  **The `obligated`/`obliged` de-swap is no longer optional — `err` gained its consumer
-  on 2026-07-31.** Article 8b writes `obliged(Review, $x)`, and the alias is live in the
-  enacted file: `obligated` swaps arguments 1 and 2 on the same gismu, both spellings
-  load, both answer TRUE on the surface form, and the renderer prints the same sentence
-  for each, so a "tidy-up" of the spelling silently inverts the duty onto the prisoner.
-  The only thing standing between that and a green suite is a two-pin discriminator in
-  `14-when-the-system-notices-it-broke.pins.nibli`. Ask upstream for the de-swap, or for
-  a renderer that distinguishes them; until then the pin pair is load-bearing and is
-  commented as such.
 
 - **HANDOFF PROMPT — nibli: an `:accept` that does not persist.** Every complement control in
   every pin file wants to test that a rule *loads* and then throw it away. `:accept` instead
@@ -248,9 +297,24 @@ it lands.
   since a refused rule never enters the store; the asymmetry between the two is the bug.
   Consumer: the book repo, `new-book-plans/rights-floor.pins.nibli`
   and book-1/*.pins.nibli, which currently work around it by ordering.
+  
+
+  ────────────────────────────────────────────────────────────────────
+  When this lands, reply with: the commit sha, what changed in one line,
+  whether any existing verdict moved, and anything you found that this
+  prompt got wrong. Paste that reply back into the book session — it is
+  the only channel between the two repos.
   ```
 
 ---
+
+- **BLOCKED, do not hand off — provenance on `reward`.** The shape of the ask depends on
+  which side the Article 4 clawback fork gives (phase 2), because provenance is only
+  needed if clawback is narrowed rather than deleted. Hand it off after that ruling, not
+  before. One measured correction while it waits: an earlier audit reported an arity-2
+  `reward` probe as non-terminating past 15 minutes; that **does not reproduce**.
+  Rewriting all three `reward` heads to arity 2 and running a single pin took **38.9 s**
+  against a **2.1 s** baseline — a ~19× cost, not a hang. Budget it, do not fear it.
 
 ## Phase 2 — Author-gated decisions. Rule these before the chapter passes.
 
