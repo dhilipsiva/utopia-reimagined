@@ -80,23 +80,6 @@ KR construct, do not work around it in prose — hand the prompt over to a Claud
 session in `~/projects/dhilipsiva/nibli`, work the next unblocked item, and resume when
 it lands.
 
-- **Never route a constitutional judgment through the compute backend — and the reason is
-  not performance.** nibli can dispatch predicates to an external compute backend, and an
-  embedded one (Rust or Python wasm) is possible. It is the wrong tool here. From nibli's
-  own `README.md:18` and `:333`: an external predicate is a **trusted oracle, not something
-  nibli proves** — a `true` reply is auto-asserted into the knowledge base as a ground fact
-  mid-query, and nibli never re-derives or checks it. So any grade, tier or severity computed
-  there enters the record as *a conclusion someone wrote*, which is precisely what chapter 1
-  says this design makes impossible. Embedding it changes who operates the oracle, not
-  whether the result is derived. Two further consequences: an unreachable backend yields
-  `UNKNOWN(BackendUnavailable)`, never `FALSE`, so a constitution depending on it stops
-  answering when a service is down; and `li` numbers never enter the quantifier domain, so a
-  universal over a number-bearing predicate is **vacuously true** — a silent failure.
-  **Built-in arithmetic is different and is fine**: `product`/`sum`/`quotient` are computed
-  *locally*, not dispatched, so primitives carry none of the oracle problem. Compute is
-  legitimate for the claim registry and for the method part; not for the society's own
-  conclusions.
-
 - **HANDOFF PROMPT — a body-only variable does not bind over a derived relation.** Found
   while pricing the cross-body voiding rule; the rule is now built with constants and does
   not need this, but the defect is general, it is silent, and it contradicts a published
