@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 14
+:expect-pins 27
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -15,6 +15,23 @@
 # => TRUE
 
 ? permits(Tribunal, Hex).
+# => TRUE
+
+# THE FOUR FACTS THAT ACTUALLY SATISFY THE RULE. The block above pins the two
+# credentials and the block below pins the outcome; between them sat the
+# examining and the recording, by both signers, unpinned. Delete any one of
+# these and `false(Bela)` stops deriving — which makes them premises, not
+# scenery.
+? judge(Gia, Bela).
+# => TRUE
+
+? capture(Gia, Bela).
+# => TRUE
+
+? judge(Hex, Bela).
+# => TRUE
+
+? capture(Hex, Bela).
 # => TRUE
 
 ? false(Bela).
@@ -60,4 +77,96 @@
 # => TRUE
 
 ? false(Tyr).
+# => FALSE
+
+# ── FIXTURES. MUST BE LAST IN THE FILE, AND THAT IS NOT COSMETIC ─────────────
+# Everything below writes ground facts, and a ground fact is resident from the
+# line it appears on and is never retracted. Any pin added after this point
+# measures a widened record. Put new queries ABOVE this block.
+#
+# THE NAMES ARE FRESH ON PURPOSE, with one deliberate exception. A new fact
+# naming EXISTING people can complete Article 4's multi-sig by accident — four
+# such facts were once measured to flip `false(Tyr)` and destroy this chapter's
+# carried-void case. The exception is Lupo, who has to be someone the record
+# already calls a liar, so `false(Tyr)` is re-queried at the end of this block
+# as a guard rather than as decoration.
+
+# ── The independence condition, which no pin anywhere exercised ──────────────
+# The block above about Dev and Esa LOOKS like this and is not: that is Article
+# 5, parenthood between examiner and examined. This is the multi-sig conjunct,
+# parenthood between the two SIGNERS — a different rule with a different head.
+#
+# The control has to be CROSS-BODY or it proves nothing: a same-body pair fails
+# on the credential conjuncts first, and the void would be blocked for a reason
+# that has nothing to do with kinship. So both credentials are pinned TRUE in
+# the same breath as the blocked void. That pairing is the whole test.
+choose(Electorate, Sirefa).
+choose(Convocation, Scionfa).
+parent(Sirefa, Scionfa).
+judge(Sirefa, Targ).
+capture(Sirefa, Targ).
+judge(Scionfa, Targ).
+capture(Scionfa, Targ).
+
+? permits(Review, Sirefa).
+# => TRUE
+
+? permits(Tribunal, Scionfa).
+# => TRUE
+
+? false(Targ).
+# => FALSE
+
+# ...and the same shape between strangers voids. Without this the pin above is
+# just a void that did not happen.
+choose(Electorate, Unrela).
+choose(Convocation, Unrelb).
+judge(Unrela, Targo).
+capture(Unrela, Targo).
+judge(Unrelb, Targo).
+capture(Unrelb, Targo).
+
+? false(Targo).
+# => TRUE
+
+# ── A voided man holding the pen, in the same snapshot ───────────────────────
+# Lupo's own credibility is already gone in the shipped cast — the review body
+# examined his deceitful finding and voided him. Seat him anyway. Nothing
+# objects: he is voided and credentialed at once, and he can co-sign a stranger
+# into the same condition he is in.
+#
+# The obvious repair is REFUSED, which is why this is a disclosure and not a
+# bug report. Barring a voided person from the pen is rejected outright, and so
+# is gating the void on its own signers. The chapter says why.
+choose(Electorate, Lupo).
+
+? false(Lupo).
+# => TRUE
+
+? permits(Review, Lupo).
+# => TRUE
+
+choose(Convocation, Partnr).
+judge(Lupo, Frisk).
+capture(Lupo, Frisk).
+judge(Partnr, Frisk).
+capture(Partnr, Frisk).
+
+? false(Frisk).
+# => TRUE
+
+# THE GUARD. Everything above added facts naming an existing person; if any of
+# it reached the shipped cast, this is where it shows.
+? false(Tyr).
+# => FALSE
+
+# ── What actually closes it, one round late ──────────────────────────────────
+# The mark carried forward from the previous round. It does not make the void
+# rule reject him — it denies him the pen in the first place, which is the same
+# sentence the chapter's Vex block already makes. Note the query directly above
+# this line and the one directly below are the SAME query with opposite
+# verdicts, and the single asserted fact between them is the whole mechanism.
+rotten(Lupo).
+
+? permits(Review, Lupo).
 # => FALSE
