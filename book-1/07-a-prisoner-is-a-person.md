@@ -20,15 +20,15 @@ appeared in any list of the people this society is for. Zed's entire presence in
 record consists of an injury and a judgment.
 
 Zed is a prisoner, which follows from those two facts. And Zed is a person, which
-follows from being a prisoner. And because Zed is a person, Zed is owed all eight
-things: food, shelter, care, learning, safety, expression, belief, company. In full.
-Convicted, unlisted, and owed everything.
+follows from being a prisoner. And because Zed is a person, Zed is owed everything on
+the floor: food, shelter, care, learning, safety, expression, belief, company. In
+full. Convicted, unlisted, and owed everything.
 
 Now take the line out.
 
 Zed is still a prisoner. Zed is no longer a person. Everything downstream evaporates
-in the same instant — the eight things are owed to *persons*, and Zed has stopped
-being one. The record does not object. Nothing fails, nothing warns, no rule
+in the same instant — the floor is owed to *persons*, and Zed has stopped being
+one. The record does not object. Nothing fails, nothing warns, no rule
 complains. A society could run for years in that state without anyone noticing that
 its prisoners had quietly ceased to be people, because nothing anywhere announces it.
 The only visible difference is a question you would have to think to ask.
@@ -60,10 +60,9 @@ The reason is worth following slowly, because it is the architecture of the enti
 design in one move.
 
 The floor is unconditional because it is bound into the same machinery as
-imprisonment. The eight things run through personhood; personhood runs through the
-prisoner; so a rule that says *lacking one of these eight things shall be a reason to
-imprison you* has to loop back through itself, and the loop is what makes it
-unwritable. Cut the connection between prisoner and person and the loop opens. The
+imprisonment. The floor runs through personhood; personhood runs through the
+prisoner; so a rule that says *lacking a floor right shall be a reason to imprison
+you* has to loop back through itself, and the loop is what makes it unwritable. Cut the connection between prisoner and person and the loop opens. The
 floor is no longer entangled with punishment, and a floor not entangled with
 punishment is just a promise — which means a rule can be written that punishes you for
 falling off it.
@@ -94,17 +93,34 @@ everyone stands on conditionally.
 
 ## The uncomfortable corollary
 
-One thing follows from this that ought to be said out loud.
+One consequence follows from this that ought to be said out loud.
 
-The rule that a prisoner is a person is the *only* route into personhood that does not
-require somebody to write your name down. Everyone else in this society is a person
-because it is recorded that they are. Zed is a person because he was convicted.
+The rule that a prisoner is a person is a route into personhood that asks for nobody's
+willingness. Everyone else in this society is a person because it is recorded that
+they are — someone was willing to list them. Zed is a person because he was convicted:
+his personhood fell out of facts a court wrote for entirely other purposes, and no one
+along the way had to want him included.
 
-Which means the sole way to acquire the protection of this society without depending
-on someone's willingness to list you is to be found guilty of a crime.
+It is not the only side door. There is a second, and it is worse. The record can hold
+that someone's sentence is finished, and a finished sentence confers personhood —
+release has to return you to the roster, or serving your term would end with less than
+you started with. Now recall what the first chapter conceded about that entry: it is a
+finding with no finder. Nothing says who decided the sentence was over, and nothing
+has to have happened first. So write it about a name the record has never held — no
+conviction, no sentence, no roster entry, nothing — and the record does not ask. A
+person exists who was never listed and never judged, released from a sentence that
+never existed, owed everything on the floor, free to move, by one entry that one
+person wrote and nobody adjudicated.
+
+So the conviction door needs nobody's willingness but a whole court's machinery, and
+the release door needs no machinery but one writer's pen. Between them, the sole ways
+to acquire the protection of this society without depending on someone's willingness
+to enrol you are to be found guilty of a crime — or to be recorded as finished with a
+sentence nobody checks you ever served.
 
 That is not the design working as intended. It is an artefact of a roster that is
 otherwise entirely maintained by hand, and it points at something the following
 chapters cannot avoid: the floor is unconditional above the line where personhood
-begins, and personhood itself is mostly a list. What holds that list open is a
-question this design has not answered.
+begins, and personhood itself is mostly a list — a list with side doors cut into it by
+rules that were each built for something else. What holds that list open is a question
+this design has not answered.
