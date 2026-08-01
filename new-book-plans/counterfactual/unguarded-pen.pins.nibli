@@ -1,0 +1,29 @@
+# ── Counterfactual: one unguarded credential route ADDED ─────────────────────
+# A different class from its siblings: the constitution PLUS a line, not minus
+# one. The added rule is the one somebody might someday write — a pen route
+# that forgets ~rotten and ~broken — and this fixture is what the world looks
+# like the day they do. It exists to justify keeping Article 4's ~broken and
+# ~rotten conjuncts, which are subsumed today and are the ONLY thing standing
+# here. If false(Tyr) below ever reads TRUE, the conjuncts were removed and
+# the justification with them.
+:expect-pins 5
+
+# The route bypasses the guards: a signer voided in a prior period gets a pen,
+# and so does a recalled one. Neither could hold one against the real file.
+? rotten(Vex).
+# => TRUE
+
+? permits(Review, Vex).
+# => TRUE
+
+? broken(Boss).
+# => TRUE
+
+? permits(Review, Boss).
+# => TRUE
+
+# ...and the void STILL fails, because the multi-sig's own kept conjuncts
+# catch what the credential rules no longer do. This is the arming case:
+# against a copy with the conjuncts stripped as well, this verdict flips.
+? false(Tyr).
+# => FALSE

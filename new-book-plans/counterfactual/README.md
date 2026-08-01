@@ -1,10 +1,24 @@
 # Counterfactual fixtures
 
-Three copies of `../constitution.nibli`, each with **exactly one line deleted**. They exist
-because of a limitation the tracker records: derivation is monotone and probe facts load
-*on top* of the knowledge base, so **no probe can test a restriction**. Every "if we
-narrowed this rule, pin X would flip" claim in the book and the tracker is an argument
-until it is run against a file where the line is actually gone.
+Copies of `../constitution.nibli`, each differing from it in **exactly one deliberate way**.
+They exist because of a limitation the tracker records: derivation is monotone and probe
+facts load *on top* of the knowledge base, so **no probe can test a restriction**. Every
+"if we removed X" claim in the book and the tracker is an argument until it is run against
+a file where the change is actually made.
+
+Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
+
+- **A line deleted** (1 removed, 0 added) — `no-person-line`, `no-public-court`,
+  `no-choose-boss`. What the world loses without the line.
+- **A line changed** (1 removed, 1 added) — `no-dead-conjuncts`: Article 4's multi-sig with
+  its `~broken`/`~rotten` signer checks stripped. It has **no paired pin file on purpose**:
+  `verify.sh` runs chapters 4 and 5's own pin files against it, and their passing unchanged
+  is the standing proof those conjuncts decide nothing today. The proof strengthens by
+  itself as those suites grow.
+- **A line added** (0 removed, 1 added) — `unguarded-pen`: the constitution *plus* a
+  credential route that forgets the guards. A postulated future, not a deletion — its pins
+  show Article 4's kept conjuncts are the only thing standing between that one line and a
+  carried-void signature counting. See the v0.9 note in Article 4's header.
 
 Regenerate any of them with:
 
@@ -32,7 +46,28 @@ three pins still passed, because a fixture that is a copy of the real file answe
 question the real file answers. `-F` (fixed string) and `-x` (whole line) cannot be
 misread that way.
 
-`diff` each against the constitution: exactly one line removed, nothing added. **Regenerate
+Regenerate the changed-line and added-line fixtures with:
+
+```
+python3 - <<'EOF'
+import pathlib
+s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
+old = " & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited)."
+assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
+pathlib.Path('new-book-plans/counterfactual/no-dead-conjuncts.nibli').write_text(
+    s.replace(old, " -> false($audited)."), encoding='utf-8')
+EOF
+cp new-book-plans/constitution.nibli new-book-plans/counterfactual/unguarded-pen.nibli
+printf 'all $a: choose(Electorate, $a) -> permits(Review, $a).\n' \
+  >> new-book-plans/counterfactual/unguarded-pen.nibli
+```
+
+The assert is not decoration: this file's commands have been wrong twice, both times by
+matching nothing and silently writing a byte-identical copy, and an assert on the
+occurrence count is what makes that loud. The `printf` must not lead with a blank line —
+that reads as a second added line and fails the shape check.
+
+`diff` each against the constitution and check the shape its class requires. **Regenerate
 after every constitution edit** — a stale fixture proves something about a file that no
 longer exists, which is the failure mode these were built to answer. `verify.sh` now
 enforces the one-line property before it runs the pins; it did not until v0.5, because the

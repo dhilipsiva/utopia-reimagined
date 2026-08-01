@@ -1,0 +1,1021 @@
+# ═══════════════════════════════════════════════════════════════════
+# THE CONSTITUTION — Constitutional Core (nibli KR)
+# Revision of utopia.nibli (v0.1). Epigraph unchanged:
+# நான் வீழ்வேனென்று நினைத்தாயோ? — "Did you think I would fall?"
+# ═══════════════════════════════════════════════════════════════════
+#
+# REGISTER: commentary here is deliberately flat and technical so the KR
+# diff against v0.1 is legible. The manifesto voice is the author's to
+# re-weave — I am not ghost-writing it. Provenance tags:
+#   [v0.1]          — KR line unchanged from utopia.nibli
+#   [v0.2 NEW]      — new rule or fact
+#   [v0.2 REPLACES] — supersedes a v0.1 rule. The old rule must be DELETED,
+#                     not merely supplemented: derivation is monotone per
+#                     stratum, so an addition can only WIDEN what derives.
+#                     A permissive rule left in place keeps its exploit.
+#                     (Restricting amendments must repeal — a governance
+#                     lesson the logic itself enforces.)
+#
+# Three exploits in v0.1 were confirmed against the native engine before
+# this revision (each one asserted-fact away from total bypass):
+#   E1  show($w,$o) -> defend($w): any defendant asserts show(self, anyone)
+#       — even their own victim — and becomes unjailable under Art 6.
+#   E2  false(X) never gates the multi-sig: a voided auditor with a live
+#       Review credential still co-signs voids. Unfixable in-snapshot:
+#       adding ~false to a false-headed rule is a negative self-cycle and
+#       the stratifier rightly rejects it. Fix requires the epoch split.
+#   E3  severe is only consulted when family: a severe non-domestic
+#       offender with an asserted home fact gets the soft cage — the
+#       farmhouse exploit the v0.1 commentary mocks. "Domestic harm blocks
+#       the soft cage" was commentary, not KR: nothing derived a breach.
+# All three are closed below; each closure has an adversarial pin.
+# Predicate names are drawn from the committed alias corpus (fail-closed
+# lexicon): hence authority / rotten / fit / err rather than
+# official / voided / eligible / breach.
+
+# ─── Article 0a [v0.9 NEW]: The record is closed ──────────────────
+# Chapter 1 opens by saying that when somebody wants to write something
+# about you that is not on the list, "they cannot. Not *may not*.
+# Cannot." **Until this block that sentence was false.** nibli's lexicon
+# is fail-closed, so an invented word like `zorblat(Adam).` was always a
+# compile error — but `rich(Adam).` loaded and answered TRUE, because
+# `rich` is a corpus name. The closure was at nibli's vocabulary of some
+# thousands, not at this file's two dozen.
+#
+# `admits` closes it here. An unadmitted ground assertion is refused at
+# assert time with a message that names the repair: add the `admits` line
+# ABOVE the first use. That is the point — widening the record becomes a
+# visible, reviewable edit instead of a fact somebody types.
+#
+# ORDERING IS ENFORCED, not merely documented: an `admits` placed below
+# the facts is refused as "comes too late", because a late declaration
+# would silently grandfather everything above it. Same hazard as Article
+# 0's, and unlike Article 0 the engine catches this one.
+#
+# EXTENSIONAL ONLY. This closes what may be WRITTEN. Rules still derive
+# `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
+# is not closing the conclusions, and Article 0 is what does the latter.
+#
+# TWENTY-FOUR, NOT TWENTY-THREE, AND THE GAP IS THE INTERESTING PART.
+# The spine's evidence figure counts predicates with no producing rule.
+# `person` has two producing rules AND thirty ground assertions, so it is
+# absent from that 23 and must appear here or the file will not load.
+# **"What counts as evidence" and "what may be written" are different
+# sets**, and `person` is the whole of the difference — which is exactly
+# what chapter 1 says when it puts personhood on its list.
+admits("adjust").     admits("approves").   admits("attack").
+admits("broken").     admits("capture").    admits("choose").
+admits("clear").      admits("cruel").      admits("deceive").
+admits("family").     admits("free").       admits("home").
+admits("injure").     admits("judge").      admits("mature").
+admits("parent").     admits("permanent").  admits("person").
+admits("public").     admits("rotten").     admits("show").
+admits("suggest").    admits("teaches").    admits("work").
+
+# ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
+# These relations may ONLY be reached by derivation. A direct assertion of
+# any of them is refused by the engine at assert time, fail-closed:
+#   "`fit` is declared derived-only"
+# This is what makes Articles 4, 6, 7 and 8 mean what they say. Before it,
+# every gate this file called "derived" was one asserted fact from bypass —
+# `fit(Ruk, Homestay).` silenced the farmhouse breach marker outright.
+#
+# ORDERING IS LOAD-BEARING: the check fires at assert time, so a
+# declaration protects only what is asserted AFTER it. These must stay at
+# the TOP of the file, above the cast. A declaration moved below the facts
+# it guards is inert and looks identical.
+#
+# Converted aliases are closed too — `permitted` compiles to the `permits`
+# relation, so closing a relation closes every surface spelling of it.
+derived_only("fit").
+derived_only("defend").
+derived_only("false").
+derived_only("reward").
+derived_only("become").
+derived_only("err").
+derived_only("authority").
+derived_only("permits").
+derived_only("prisoner").
+derived_only("severe").
+# [v0.5] severe was the tenth and last open gate, and it was open in exactly
+# the way the v0.3 three were: a conclusion about an offence, written by
+# whoever held the pen, wearing the shape of a reported fact. Before this,
+# `severe(X).` asserted with nothing behind it routed X to high security and
+# no rule could tell the difference. See Article 6.
+# [v0.3] authority, permits and prisoner were the last three open, and each
+# was open for the same reason: the article conflated a fact the world reports
+# with a conclusion the system draws, under one relation name. Splitting them
+# closed all three —
+#   authority — institutions now assert `public(Court).` and authority derives.
+#   permits   — relief now asserts `clear(Nia).` and permits(Appeals, ·) derives.
+#   prisoner  — Adam is convicted through Article 6 rather than asserted.
+# That is this book's own thesis applied to its own constitution: evidence is
+# what the world reports, and a conclusion must be earned by a rule.
+
+# ─── Article 1: The Unconditional Floor ───────────────────── [v0.1]
+#
+# [v0.3] THE FLOOR IS A COMPILE-TIME PROHIBITION, NOT A DECLARATION.
+# This was missed through v0.2 and it is the strongest property in the
+# file. `entitled(every person, event { P() })` does NOT assert an inert
+# fact: it compiles to a rule with `person` in the body, so P becomes
+# derived from person, and `prisoner -> person` below puts P downstream
+# of prisoner. Any later rule taking ~P into that cone closes a negative
+# cycle and the stratifier REJECTS it. Verified both directions:
+#   without the believe line:  person($x) & ~believe($x) -> prisoner($x).
+#                              => 0 errors. The heretic is jailed.
+#   with it:                   => "Unstratifiable negation: strongly-
+#                              connected component containing 'prisoner'
+#                              -> 'believe' (negative)". Will not compile.
+#   control (non-floor):       person($x) & ~home($x) -> prisoner($x).
+#                              => 0 errors. So the floor line is doing it.
+# So: you cannot write a law that punishes a person for LACKING a floor
+# right. Not "may not" — cannot.
+#
+# WHERE THE FIREWALL STOPS (disclosed, all verified to load at 0 errors
+# with the floor lines present — do not let prose overclaim this):
+#   ~believe($x) -> false($x).            credibility can still be voided
+#   ~meets($x) -> lose(Points, $x).       points can still be clawed back
+#   prisoner($x) -> believe($x).          positive compulsion is untouched
+# The floor blocks punishment for ABSENCE, never manufacture, and it
+# reaches `prisoner` only — not credibility, not points.
+#
+# INVARIANT 1 — A FLOOR RIGHT MAY BE NOTICED AND MAY NOT BE ACTED ON.
+# A floor predicate's name may appear in a rule body ONLY where the head
+# is `err`. Anything else — a floor right feeding placement, credibility,
+# recognition or conviction — is refused. Note this is about the
+# predicate INSIDE the event, not the outer `entitled`. Rule HEADS are
+# always safe (dwell and expresses are both). Verified: putting `choose`
+# on the floor un-stratifies Article 8 and SILENTLY DROPS the Review-
+# credential rule — the capture defence dies while the amendment engine
+# keeps running.
+#
+# [v0.8] THIS WAS REWRITTEN BECAUSE THE OLD FORM WAS BROKEN AND NOBODY
+# KNEW. It read "a floor predicate's name must appear in NO RULE BODY",
+# and Article 6's isolation marker — `prisoner($p) & ~meets($p) ->
+# err($p, Isolation)` — has violated it since v0.1. Nothing checked, so
+# nothing said. The blanket ban was also the wrong shape: it forbade the
+# design from NOTICING that a floor right had not arrived, which is the
+# one thing the isolation marker exists to do and the only delivery check
+# in the file. What is actually dangerous is a floor right reaching a
+# consequence, and the narrowed form says exactly that. `verify.sh`
+# enforces it now, which the old form never had.
+#
+# The distinction is load-bearing and it is thin. `~eats($x) -> err(...)`
+# NOTICES. `~eats($x) -> prisoner($x)` PUNISHES. The stratifier refuses
+# the second on its own — it is a negative cycle through the person cone
+# — but it does NOT refuse `~eats($x) -> reward($x)` or a placement rule,
+# and neither would be caught by anything except this invariant.
+#
+# INVARIANT 2 — THE SHAPE, and the one most likely to be broken by
+# someone trying to HELP. The floor line must be exactly:
+#     PRED(every person, event { P() }).
+# a universal restricted by `person` in x1, and P inside an `event { }`
+# abstraction in x2. Traced in the engine (nibli session, 2026-07-28):
+# `event { P() }` compiles to `nu(absvar) & __abs_H(absvar) & P(ev2) & …`,
+# and `flatten_consequent` (nibli-reason/src/rules.rs:388) descends BOTH
+# `And` branches unconditionally, so the body's P lands in the rule head
+# and becomes a dependency edge to the restrictor `person`. Meanwhile
+# `collect_ground_facts` (rules.rs:1934) DOES honour `__abs_` opacity and
+# skips the body. **The protection lives in that asymmetry.**
+#
+# Two consequences, both verified:
+#   - The outer predicate name is FREE. `entitled` was chosen for meaning
+#     alone: `obligated`, `support`, `serve` and `teaches` were all tested
+#     and give identical protection. The predicate buys nothing
+#     structural, so choose it purely for what it says.
+#   - Drop the event and the protection dies. `entitled(every person,
+#     Belief).` — a plain term in x2 — loads the heresy law at 0 errors.
+# Also refuted, all behaving exactly like writing no floor line at all —
+# the natural "name the duty-bearer" repair is STRUCTURALLY WORTHLESS:
+#     obligated(State, event { believe(every person) }).
+#     owe(State, Belief, every person).
+#     all $x: person($x) -> owe(State, Belief, $x).
+# If a predicate reads wrong, change the PREDICATE, never the shape.
+#
+# [v0.8] A THIRD REASON, and since nibli `de34cd4` it is the sharpest one.
+# `event { P() }` takes NO argument, and threading the universal into it —
+# `entitled(every person, event { eats($x) })` — would be the single most
+# damaging edit available in this file. The body's event term compiles to
+# `sk(Unspecified)`, INDEPENDENT of the universal, so its role fillers are
+# `Unspecified` and the body describes nobody: `? eats(Adam).` misses and
+# answers FALSE. Thread `$x` in and the head carries a live variable, so
+# `eats(Adam)` derives for every person on the roster — and chapter 8's
+# whole argument, that a right can be owed and undelivered, becomes false
+# while every entitlement pin stays green. 26 actuality pins across eight
+# predicates are FALSE for exactly this reason; they are the guard, and
+# `08-what-you-are-owed.pins.nibli` is where they live.
+# The engine is faithful to whichever shape it is given. The opacity is a
+# property of THIS file's shape, not a protection the engine supplies.
+#
+# INVARIANT 3 — ANY ABSTRACTION THAT REACHES A RULE HEAD JOINS THE
+# PROTECTED SET. Corrected 2026-07-28: I first wrote this as "x3 must be
+# empty", which named the wrong thing. The condition is **rule-head
+# position**, not place index, not `entitled`, not whether the place is
+# referenced by the predicate's template. Verified, control = the
+# non-floor probe `all $x: person($x) & ~home($x) -> prisoner($x).`:
+#   entitled(Adam, Bread, event { home() }).        control LOADS  (inert)
+#   entitled(some person, Bread, event { home() }). control LOADS  (inert)
+#   entitled(every person, Bread, event { home() }).control REFUSED (widened)
+#   all $p: person($p) -> entitled($p, Bread, event { home() }).
+#                                                   control REFUSED (widened)
+#   owns(every person, event { home() }).           control REFUSED (widened)
+# So ground facts and `some` are harmless; `every` and explicit rules are
+# not, at ANY place, on ANY predicate — including a template-referenced
+# x2. `flatten_consequent` descends the head's `And` unconditionally, so
+# every abstraction body in a rule head contributes its P -> person edge.
+#
+# AND IT CANNOT BE BANNED, because the widening IS the firewall — both
+# come from that same unconditional descent. Remove one and you remove
+# the other. There is no compile-time check that keeps the protection and
+# forbids the smuggle.
+#
+# THE GUARANTEE IS THEREFORE A TEST, NOT A RULE: complement pins. For each
+# non-floor predicate this file relies on, pin that
+#     all $x: person($x) & ~P($x) -> prisoner($x).
+# still LOADS. That asserts the protected set is EXACTLY the floor, and it
+# catches a widening from any predicate, any place, any spelling — which
+# is strictly stronger than an argument check could be. Verified set, all
+# currently LOADS:  home, choose, permits, false
+# EXCLUDE `travel`: it is REFUSED, legitimately — Article 2 derives it as
+# `person($x) & ~prisoner($x) -> travel($x)`, so travel is already inside
+# the prisoner cone and a control on it is a permanent false positive.
+# Any predicate appearing under negation in a rule reaching `prisoner` is
+# disqualified as a control for the same reason.
+#
+# Keep x3 empty anyway as a local convention — x2 is the intended slot and
+# a second abstraction has no business on a floor line. Editor check:
+#     grep -c '^entitled(.*,.*,' this-file      must stay 0
+# But understand it as housekeeping, not the guarantee.
+#
+# CORRECTION to an earlier claim in this file: a smuggled floor line does
+# NOT render identically. A three-place floor back-translates with an
+# extra scaffold conjunct — "…then Y is an event, Z is an event, and X is
+# entitled to Y." It does not name the smuggled predicate, so it is
+# cryptic rather than absent; "invisible" was too strong.
+#
+# FRAGILITY — still the largest single risk to this design, now pinned.
+# The asymmetry above is an emergent property of two functions disagreeing
+# about abstraction opacity. Anyone "fixing" `flatten_consequent` for
+# opacity symmetry would silently make this floor stratifiable — rules
+# could then punish people for lacking a floor right. As of 2026-07-28
+# five regression tests pin it upstream, at
+# nibli-engine/tests/integration.rs:3475-3571 (the citation read :3228
+# until 2026-07-31, which is a comment banner, not the tests):
+#   rights_floor_entitled_asserts_and_routes
+#   rights_floor_does_not_fabricate_the_actuality   entitled TRUE, eats FALSE
+#   rights_floor_blocks_punishment_for_lacking_it   names prisoner -> eats
+#   punishment_rule_alone_is_stratifiable           the negative control
+#   rights_floor_protection_is_placement_dependent  x2 loses it, and jails
+# If those ever go red or are deleted, this article's central claim is
+# gone and the book must not print the firewall argument.
+#
+# [v0.3] PREDICATE: `entitled` — RESOLVED, was `obligated`. The corpus
+# entry was added upstream for this floor:
+#   name "entitled", source_gismu "zzright1", places
+#   ["holder", "entitlement", "standard"], template "{x1} is entitled to
+#   {x2}", tier Curated.
+# x1 is the HOLDER of the claim, which is the reading a rights floor
+# needs. Rejected alternatives, each for a different reason, recorded so
+# nobody re-runs the analysis:
+#   `obligated_by` — `bilga`, places duty/do/standard, AND registered as
+#     the x1<->x2 conversion of `obliged`, so obligated_by(A,B) compiles to
+#     obliged(B,A). Written positionally by the shipped corpora, so the
+#     old eight lines routed each person into a place labelled `duty` and
+#     each event into one labelled `do`. Not merely inverted — garbled.
+#   `deserve` — `jerna` is an EARNING predicate: x1 earns, x2 is the
+#     WAGES. The floor would have put an event into the wages place, and
+#     leaving x3 unfilled neutralises nothing. Generic tier, places never
+#     hand-verified.
+#   `permitted` — structurally excluded, and elegantly so: the floor would
+#     close permits -> person -> prisoner ->(neg) permits against Article
+#     6's `~permits(Appeals, ·)`, and the whole file fails to load. The
+#     mechanism that protects the floor is what rules this one out.
+#   `owe` — the owed party is x3, not x1. `grant` — reserved by nibli-auth.
+# ARITY NOTE: 3, not the 2 originally requested, and the mitigation
+# offered upstream — "the template has two placeholders, so an unfilled
+# place is invisible" — is exactly what makes INVARIANT 3 necessary: a
+# FILLED place is invisible too. See INVARIANT 3 above; x3 stays empty.
+# RENDER LIMITATION, pre-existing and NOT introduced here: back-translating
+# a floor line still leaks event scaffolding — "…then Y is an event and X
+# is entitled to Y". The collapse that reads `obligated` nicely is gated on
+# a hardcoded `matches!(rel, "obligated_by" | "obliged")` in
+# nibli-render/src/logic.rs:26. Do NOT simply add "entitled" to that list:
+# the collapse reads the party from place 2 and `entitled` has it in place
+# 1, so it would print the wrong word about the wrong argument. The fix is
+# to make the collapse template-driven, which also repairs the shipped
+# GDPR Art 15 rendering. Irrelevant to book-1, which never shows KR.
+# Do not substitute a predicate without re-running the firewall suite.
+#
+# ADMISSION CRITERION (replaces the vocabulary formulation in 3-spine.md,
+# which was post-hoc — it admits only dwell and expresses, and would
+# exclude food): a good belongs here when its absence must never be a
+# permissible ground for sanction. That is the prohibition above, not a
+# value claim. What the floor is NOT is justified: the formalism makes
+# this commitment precise and unretractable, never right.
+entitled(every person, event { secure() }).
+entitled(every person, event { eats() }).
+entitled(every person, event { dwell() }).
+entitled(every person, event { healthy() }).
+entitled(every person, event { learn() }).
+entitled(every person, event { expresses() }).
+# [v0.3 NEW] The inner forum. A heresy law is writable in committed
+# corpus words with no lexicon extension; this line is what refuses it.
+entitled(every person, event { believe() }).
+# [v0.3 NEW] Company. Without it a regime could hold every convicted
+# person in permanent solitary and "punishment deprives exactly one
+# thing: movement" would remain literally true — the vocabulary had no
+# predicate for a second human being.
+entitled(every person, event { meets() }).
+all $anyone: prisoner($anyone) -> person($anyone).
+# [v0.4 NEW] A released person is still a person. This line is not optional and
+# it is not symmetry for its own sake: `prisoner -> person` above is the ONLY
+# non-assertion route into the roster, so without this, ending a sentence ends
+# the personhood of anyone who was convicted into it — and with it all eight
+# floor rights, the obligation owed them, the ballot, and even mobility, since
+# Art 2 gates travel on `person`. Verified against a scratch copy: release Zed
+# without this line and `person(Zed)`, `travel(Zed)` and `decide(Zed, Ballot)`
+# all go FALSE. A released person would hold strictly fewer rights than a
+# prisoner, which inverts the entire point of ending a punishment.
+all $x: free($x) -> person($x).
+
+# ─── Article 1b [v0.4 NEW]: The duty-bearer ───────────────────────
+#
+# Article 1 says what is owed. Until now nothing said BY WHOM, and the
+# book had to print "a creditor and no debtor" as an open question. It
+# is not an open question — every welfare state answers it daily — so
+# declining to answer read as evasion. A thin constitutional layer is
+# the bearer: an agent with real taxing and inter-community equalising
+# power, named here and limited by everything above and below it.
+#
+# PREDICATE: `owe`, places subject / owes / creditor. Note this is the
+# predicate Article 1 REJECTED, at :212, and for exactly the property
+# that makes it right here: "the owed party is x3, not x1". A floor line
+# needs the rights-HOLDER in x1; a duty-bearer line needs the DUTY-holder
+# there. Same place structure, opposite requirement. Tier is Generic and
+# the places were never hand-verified upstream, so the behaviour is
+# pinned in rights-floor.pins.nibli rather than trusted from the corpus.
+#
+# THE SHAPE IS AN EXPLICIT RULE, and it buys the same thing the floor
+# lines buy: `person` in the body puts `owe` in the person cone, so the
+# compile-time prohibition extends to the obligation itself.
+# `owe(State, Provision, every person).` is EQUIVALENT to the engine and
+# was the first form enacted — do not switch back. It is identical in
+# every verdict and in the refusal below, but `5-spine-gen.py:25` only
+# recognises a universal when it wears the floor's `event { }` shape, so
+# the bare `every` form is parsed as a ground fact, `owe` never enters
+# head_preds, and the generated evidence list silently becomes TWENTY-TWO
+# — changing chapter 1's headline number by way of a regex. The engine is
+# not fooled either way (the refusal below only fires if `owe` is inside
+# the prisoner cone). The explicit rule is what keeps the tooling honest.
+# Verified both ways:
+#   all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
+#     => "Unstratifiable negation: strongly-connected component
+#         containing 'prisoner' -> 'owe' (negative)".  REFUSED.
+#   control, non-floor: person($x) & ~home($x) -> prisoner($x).  LOADS.
+# So you cannot write a law that punishes a person for not being owed —
+# no route to declaring a class of people outside the provision and then
+# jailing them for being outside it.
+#
+# THE BEARER IS EXPOSABLE. `public(State).` derives `authority(State)`
+# through Art 7 (:394), so the State is a valid target of the
+# whistleblower shield: exposing it protects you. Verified — a defendant
+# who shows the State is shielded, `defend` TRUE and `prisoner` FALSE.
+# And `public` deliberately does NOT flow into Art 8's credential rule
+# (:389-334), so the bearer is answerable without holding a Review pen:
+# `permits(Review, State)` is FALSE. Duty and audit power stay apart.
+#
+# WHERE IT STOPS, and this is the whole of the honesty: naming a debtor
+# is not paying the debt. Every floor actuality is untouched — `eats`,
+# `healthy`, `secure`, `learn`, `believe`, `meets` and `dwell` for the
+# unconvicted all remain FALSE with this article in force. The delivery
+# gap is exactly as wide as it was. What changed is that the gap now has
+# somebody on the far side of it, which is a precondition for closing it
+# and not a closure. Do not let prose read this as provision.
+all $x: person($x) -> owe(State, Provision, $x).
+public(State).
+
+# [v0.8 NEW] THE DEBT SAYS WHAT IT IS ABOUT. `Provision` occurred exactly
+# once in this file and nothing connected it to anything, so the design
+# said a body owed *something* to every person and never said what. These
+# eight say what. `Provision` is KEPT rather than replaced: it is pinned
+# in four other files, twice inside firewall refusals.
+#
+# COST, MEASURED: eight rules and NOTHING ELSE. The evidence vocabulary
+# counts predicates and these add none — the generator never looks inside
+# the parentheses, so a constant is free where a predicate is not. The
+# tracker priced this as "eight new constants in the evidence vocabulary,
+# the file's own named threat" and that was a category error.
+#
+# THE PROTECTION CAME WITH THEM. Verified: `person($x) & ~owe(State,
+# Eats, $x) -> prisoner($x)` is REFUSED — "'prisoner' -> 'owe'
+# (negative)" — with the non-floor control still loading. No law can put
+# a class outside the food debt and then jail them for being outside it.
+#
+# WHAT THESE CONSTANTS ARE NOT. `Eats` is a CONSTANT and `eats` is a
+# PREDICATE and NOTHING JOINS THEM. The names match on purpose, because
+# the resemblance is the trap: read together they look like a design that
+# knows whether the food arrived, and it does not. Do not "wire them up".
+#
+# AND THE RULE THAT WOULD JOIN THEM IS BOTH LEGAL AND UNBUILT, WHICH IS
+# THE HONEST PART. Verified on the live engine: `owe(State, Eats, $x) &
+# ~eats($x) -> err($x, Undelivered)` is ACCEPTED and DERIVES —
+# err(Bela, Undelivered) TRUE, Bela being owed food and having none.
+# INVARIANT 1 permits it too, in the narrowed form: the head is `err`, so
+# it notices without acting. It is simply not built.
+#
+# And the design already builds exactly this shape for ONE of the eight.
+# Article 6's `prisoner($p) & ~meets($p) -> err($p, Isolation)` is an
+# undelivered-right marker for company, and it is the only one. Seven
+# floor rights have no such check, for no recorded reason — the asymmetry
+# was discovered, not chosen. See the tracker. Do not describe the gap as
+# something the design cannot do; it can, and it does it once.
+all $x: person($x) -> owe(State, Eats, $x).
+all $x: person($x) -> owe(State, Dwell, $x).
+all $x: person($x) -> owe(State, Healthy, $x).
+all $x: person($x) -> owe(State, Learn, $x).
+all $x: person($x) -> owe(State, Secure, $x).
+all $x: person($x) -> owe(State, Expresses, $x).
+all $x: person($x) -> owe(State, Believe, $x).
+all $x: person($x) -> owe(State, Meets, $x).
+
+# ─── Article 2: Due-process suspension ────────────────────── [v0.1]
+all $prisoner: prisoner($prisoner) -> expresses($prisoner).
+all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).
+# [v0.3 NEW] The franchise, and it survives conviction. Deliberately a
+# RULE and not a floor line: the Article 1 firewall blocks punishment for
+# the ABSENCE of a right (~P -> prisoner), but disenfranchisement runs
+# the other way (~prisoner -> decide), so a floor line would not stop it
+# — verified, felon disenfranchisement enacts in full view of one.
+# As a rule it PROVES the single-deprivation theorem instead of asserting
+# it: decide(Hano, Ballot) TRUE while travel(Hano) FALSE — a convicted
+# person who votes and cannot move. And it is falsifiable: slip ~prisoner
+# into this body and the pin below flips where any reader can see it.
+# `mature` guard because no polity has ever had a franchise unconditional
+# from birth; two-place `decide(_, Ballot)` because bare `decide` means
+# deciding anything and prose could not be written honestly against it.
+all $x: person($x) & mature($x) -> decide($x, Ballot).
+
+# ─── Article 3: Minting at contribution ───────────────────── [v0.1]
+all $teacher: all $student: teaches($teacher, $student) & ~false($teacher) -> reward($teacher).
+all $contributor: all $task: work($contributor, $task) & ~false($contributor) -> reward($contributor).
+
+# ─── Article 4: Audit, invalidation, clawback ─────────────────────
+# [v0.2 REPLACES the multi-sig rule] Appends ~rotten($a) & ~rotten($b):
+# an auditor voided in a PRIOR epoch (Art 8 carry ledger) cannot co-sign.
+# [v0.9 NOTE on ~broken/~rotten, KEPT DELIBERATELY] Since v0.3 closed the
+# credential these four conjuncts are SUBSUMED: a Review or Tribunal pen can
+# only derive through Article 8's rules, which read ~rotten and ~broken
+# themselves, so today no assignment reaches this rule with either check
+# failing — verified 2026-08-01, chapters 4 and 5's whole pin suites pass
+# unchanged against a copy with the four stripped (the no-dead-conjuncts
+# fixture). They were LIVE when v0.2 wrote them, because permits was still
+# assertable; the closure demoted them without anyone deciding it. They stay
+# because they are this rule's OWN guarantee that a carried-void or recalled
+# signer never counts, independent of how a pen was obtained — and they re-arm
+# the moment any credential route omits the guards: verified, with one
+# unguarded route added, false(Tyr) stays FALSE here and flips TRUE with the
+# conjuncts stripped (the unguarded-pen fixture). Same idiom as ~($a = $b)
+# below: kept for the day the assumption that hides it stops holding. Do not
+# delete as dead code.
+# [v0.7 REPLACES it again] THE TWO PENS MUST COME FROM DIFFERENT BODIES. The
+# credential conjuncts were `permits(Review, ·)` twice; they are now Review and
+# Tribunal, the two issuers Article 8 defines. This is a REPLACEMENT and the
+# old form is deleted rather than supplemented — derivation is monotone, so a
+# same-body rule left beside this one would keep the exploit whole and the
+# suite would stay green while it did.
+#
+# One rule covers both orderings because $a and $b are symmetric in every other
+# conjunct, so the single assignment Review:=$a, Tribunal:=$b finds any pair.
+# Both slot-1 positions are CONSTANTS, deliberately: a variable there would
+# read as the general "different bodies" claim and would bind nothing, because
+# a body-only variable under an explicit prenex binder does not bind over a
+# derived relation on this engine. See the handoff prompt in the tracker.
+#
+# ~($a = $b) is kept even though the bodies now differ. Nothing stops one
+# person holding both pens, and if that ever becomes possible this conjunct is
+# the only thing between it and self-cosigning.
+all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited).
+all $fraudster: false($fraudster) -> lose(Points, $fraudster).
+all $teacher: all $student: teaches($teacher, $student) & false($teacher) -> lose(Points, $student).
+all $auditor: all $audited: judge($auditor, $audited) & capture($auditor, $audited) & ~deceive($auditor, $audited) & ~broken($auditor) -> reward($auditor).
+all $auditor: all $audited: deceive($auditor, $audited) & judge(Review, $auditor) -> false($auditor).
+# Open fairness question, flagged not fixed: the contamination rule above
+# punishes students for a teacher's fraud with no culpability guard —
+# collective punishment. Narrower alternative: claw back only rewards
+# DERIVED from the fraudulent teaching, not blanket point loss.
+
+# ─── Article 5: Family non-attestation ────────────────────── [v0.1]
+all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor).
+# Disclosed gap [v0.1, still open]: parent/2 is the ONLY kinship the
+# multi-sig independence check excludes. Spouses and siblings co-sign
+# freely until the registry grows those relations.
+
+# ─── Article 6: Sanction and placement ────────────────────────────
+# [v0.1] conviction rule unchanged.
+# [v0.4 NEW] PUNISHMENT MAY END. `free` is the recorded fact that a sentence is
+# over — asserted, never derived, and it blocks the conviction rule the way
+# relief already does. It cannot be anything else: derivation is monotone, so no
+# fact can subtract `prisoner` once it derives; the only shape available is a
+# negated conjunct in this body. That is the same shape as `~permits(Appeals, ·)`
+# three conjuncts along, and the difference between them is the whole point —
+# relief says the conviction should never have held, release says it held and is
+# finished. Nothing here says HOW LONG: there is no temporal vocabulary in the
+# KR, tense markers are opaque exact-match flavours with no ordering, and a
+# numeral in an enacted line fails the build. So the design says a sentence CAN
+# end and never says when, which is why the honest reading is *may*.
+#
+# WHAT RELEASE COSTS, and it is not a defect — it is Article 1's gap arriving
+# somewhere it can be felt. `expresses` (Art 2) and `dwell` (Art 6) are the only
+# two floor rights this design ever actually delivers, and both derive ONLY for
+# prisoners. So release returns a person to the general population, where the
+# design delivers nothing to anyone. Verified: after `free(Zed)`, `expresses` and
+# `dwell` both go FALSE while `entitled(Zed, event { eats() })` stays TRUE. Being
+# owed is undisturbed; the only thing that ever arrived, stops. Do not repair
+# this by exempting released people — the asymmetry IS the delivery gap, and
+# hiding it here would make the book's most credibility-buying admission smaller.
+all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).
+# [v0.5 REPLACES  the asserted facts severe(Lalo). severe(Ruk).]
+# SEVERITY IS NOW DERIVED. Three dimensions of an offence, and an offence is
+# severe when any two of them are present. There is no ordering predicate and
+# no arithmetic: each qualifying pair gets its own rule, which is the same
+# shape Article 6 already uses to get four placements out of two booleans.
+# Monotone, so an offence carrying all three is covered by the pairs already
+# and needs no fourth rule.
+#
+# THE DIMENSIONS ARE TWO PREDICATES, NOT THREE. `attack` is intent — gunta is
+# volitional aggression, not mere harm. `cruel` is the kind of harm. Victim
+# plurality is the third and it is not a predicate at all: it is the self-join
+# on `injure` in the second and third rules. Nobody writes "several victims";
+# it follows from victims recorded one at a time, each one individually
+# disputable. Verified against the live engine: the join binds with a variable
+# in slot 1, and `~($v = $w)` is enforced — a one-victim offender does not
+# satisfy it.
+#
+# DIRECTNESS WAS CONSIDERED AND REFUSED, and the reason is lexical, not
+# principled. The committed corpus has exactly five relations with a `victim`
+# place — attack, bad, cruel, dangerous, injure — and none of them means
+# "directly". `cause` (rinka) compiles, but it puts the person in the EFFECT
+# slot and is true of every injury in the cast, so as a boolean it routes
+# nothing;
+# asserting it only for direct causation would make the name say "caused"
+# while the rule meant "caused directly". That is the commentary-versus-rules
+# gap this article already has one scar from (see the farmhouse, E3). Do not
+# re-propose it without a corpus name that carries the meaning.
+#
+# POLARITY IS FAIL-OPEN toward the offender, deliberately, and it disagrees
+# with the conviction rule at the head of this article. Both are affirmative
+# records: absence of `attack` is not a finding that the offence was
+# unintentional, it is the absence of a finding, and severity does not derive
+# from it. That is Article 7's polarity, not `~permits(Appeals, ·)`'s. The
+# unexplained contradiction between those two defaults is older than this
+# revision and is still unresolved.
+#
+# SEVERITY COLLAPSES TO THE PERSON, and this is a real edge. `severe($x)` is
+# one-place, so an offender cruel to one of two victims is severe outright,
+# for every placement, for the whole sentence. That is fail-CLOSED toward the
+# harsher outcome and it is the exact behaviour the asserted `severe(Lalo).`
+# had — not a regression, but it is now derived often enough to be noticed.
+#
+# DO NOT ADD GRADED TIERS on top of this. `building(MedSec, $x)` compiles and
+# the constant is free, but `building/2` has no exclusivity constraint and is
+# not closed in Article 0, so an offender matching two combinations derives
+# two placements at once and nothing detects it — the breach marker below
+# keys on home-without-eligibility and is blind to tier conflict. Graded
+# outcomes need a mutual-exclusion marker built in the same edit.
+all $x: all $v: attack($x,$v) & cruel($x,$v) -> severe($x).
+all $x: all $v: all $w: attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
+all $x: all $v: all $w: cruel($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
+# [v0.2 REPLACES  prisoner & home & ~family -> dwell]
+# home confinement now requires DERIVED eligibility, not a raw home flag.
+all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay).
+all $x: prisoner($x) & home($x) & fit($x, Homestay) -> dwell($x).
+# [v0.2 NEW] severity routing is no longer domestic-only (closes E3).
+all $x: prisoner($x) & severe($x) & ~family($x) -> building(HighSec, $x).
+all $x: prisoner($x) & severe($x) -> dwell($x).
+# [v0.2 NEW] breach marker: an asserted home placement without derived
+# eligibility is a queryable violation, not a silent success. The v0.1
+# prose claim "domestic harm blocks the soft cage" is now enforced logic:
+#   ? err(?, Placement).
+all $x: home($x) & ~fit($x, Homestay) -> err($x, Placement).
+# [v0.3 NEW] Isolation breach marker. The Article 1 `meets` line refuses
+# a rule that JAILS someone for having no company; this makes existing
+# isolation queryable, which is the other half. Reuses the err idiom so
+# the audit surface stays one predicate:  ? err(?, Isolation).
+all $p: prisoner($p) & ~meets($p) -> err($p, Isolation).
+# [v0.1] domestic dwell + facility routing unchanged.
+all $offender: prisoner($offender) & family($offender) -> dwell($offender).
+all $offender: prisoner($offender) & family($offender) & severe($offender) -> building(HighSec, $offender).
+all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender).
+# [v0.8 NEW] CONFINEMENT HOUSES YOU. The combination not severe / no family /
+# no home derived NOTHING: eligible for home confinement with no home to be
+# confined in, and neither facility rule reaching them. Adam and Kel stood in
+# it. This is CONSISTENCY, not new policy — the two rules above already hold
+# that the state houses whom it confines; this is the case they missed.
+#
+# It is deliberately NOT `~home -> home` or any blanket floor fiat. `home/1` is
+# a fact the world reports and asserting it for everyone writes something that
+# may be false; the tracker verified that closing the delivery gap by fiat also
+# SILENCES the isolation marker in the same edit, so the instrument that would
+# have noticed goes quiet. This rule houses the confined and claims nothing
+# about anybody else.
+#
+# WHAT IT DOES NOT CLOSE, and the prose must not read it as closure: a person
+# in this position was owed a home BEFORE the conviction, by Article 1b, and
+# nothing delivered it. This closes a placement gap. The delivery gap is
+# exactly as wide as it was, and the fact that conviction is what finally
+# produces the roof is the whole of chapter 13's sting.
+all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x).
+
+# ─── Article 7: Defenses against Systemic Capture ─────────────────
+# [v0.2 REPLACES  show($w,$o) -> defend($w)]  (closes E1)
+# The shield now requires (a) the exposed party to be an AUTHORITY — an
+# institution, or anyone the Electorate ever seated — and (b) no Review
+# finding that the exposure itself was deceit.
+# POLARITY, chosen deliberately: until Review adjudicates deceive, the
+# shield HOLDS — fail-open toward protection. A captured Court must not
+# jail a whistleblower faster than an honest Review can convene; the cost
+# is that a cynical defendant who shows a real authority buys time until
+# Review speaks. The Art 4 counter-audit rule then voids the sham-shower
+# automatically. This is a closed-world default-polarity decision, i.e. a
+# POLITICAL choice surfaced in logic, not a technical inevitability.
+all $w: all $o: show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w).
+all $o: choose(Electorate, $o) -> authority($o).
+# [v0.7 NEW] The Convocation is the second seating body — see Article 8. Its
+# seats confer answerability on exactly the same terms, because a body whose
+# appointees could not be exposed would be a worse hole than the one the
+# cross-body rule closes.
+all $o: choose(Convocation, $o) -> authority($o).
+# [v0.3 REPLACES authority(Court/Review/Appeals)] The three institutions had
+# their authority ASSERTED, which is what kept `authority` open to direct
+# assertion and left `authority(Pax).` able to hand the shield to anyone.
+# Standing is now the asserted fact and authority is derived from it. Note
+# `public` deliberately does NOT flow into Art 8's credential rule — an
+# institution is exposable, but it is not a Review auditor.
+public(Court).
+public(Review).
+public(Appeals).
+public(Convocation).
+all $o: public($o) -> authority($o).
+# authority is deliberately NOT revoked by broken/rotten: recalling Boss
+# must not strip Rebel's shield retroactively. Seating is forever
+# exposable; only POWER (permits) is revocable.
+
+# ─── Article 8 [v0.2 NEW]: Credential provenance + epoch carry ────
+# Review credentials are DERIVED, not sovereignly asserted. In v0.1,
+# permits(Review, X) was a raw input: whoever writes facts was sovereign —
+# the widest capture surface in the file, undefended by Art 7. Now the
+# Electorate seats, and credibility must be clean: not recalled, not
+# carried-voided. permits(Appeals, X) remains assertable per-case
+# (relief), disclosed. Selection of the Electorate itself stays outside
+# the firewall; its certificate is the choose fact.
+all $a: choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a).
+# [v0.7 NEW] A SECOND ISSUER, so that Article 4's cross-body requirement has
+# something to range over. Until v0.7 there was exactly one audit pen: this
+# relation's other constant, permits(Appeals, ·), is not a pen at all — it is
+# per-case relief attaching to a convicted person, read only under negation by
+# the conviction rule. So "two pens from different bodies" was not merely
+# inert, it was vacuous, and the only cross-body pair available would have
+# been a Review auditor beside a cleared offender.
+#
+# WHAT THIS BUYS, AND IT IS LESS THAN IT LOOKS. It defends against a capturer
+# who controls one seating body and not the other. It does NOTHING against the
+# fact-write trust base: whoever can write choose(Electorate, Sock) can equally
+# write choose(Convocation, Puppet), and the comment above already names that
+# as the widest capture surface in the file. Separation of appointment, not
+# protection against forged facts. Do not let the prose imply otherwise.
+#
+# The clean-hands conditions are deliberately identical. A second body with
+# weaker conditions would be the way in, and an attacker picks the cheaper
+# door; two doors are only worth having if they are the same weight.
+all $a: choose(Convocation, $a) & ~rotten($a) & ~broken($a) -> permits(Tribunal, $a).
+# Epoch carry (closes E2): rotten(X) is the PRIOR-epoch judgment ledger,
+# an asserted input. Every false(X) derived in epoch N must be re-asserted
+# as rotten(X) in epoch N+1's input by the store discipline. It re-derives
+# false this epoch so clawback keeps firing:
+all $x: rotten($x) -> false($x).
+# [v0.3 NEW] Per-case appellate relief. Art 8 always meant permits(Appeals, ·)
+# to be assertable while permits(Review, ·) was derived — but a relation is
+# closed or open as a whole, so leaving relief assertable left the CREDENTIAL
+# assertable too, and two sock-puppet credentials could void an innocent.
+# Relief now has its own asserted relation and permits derives from it.
+all $x: clear($x) -> permits(Appeals, $x).
+# Disclosed epoch-granularity limit: two auditors voiding EACH OTHER in
+# the same snapshot both count as clean this epoch. Mitigation is
+# sequencing adjudication batches into epochs. The carry discipline
+# itself ("derived false becomes next-epoch rotten") is a state-transition
+# invariant — a Lean obligation over the fact store, not derivable
+# in-snapshot.
+
+# ─── Article 8b [v0.8 NEW]: The audit produces a duty ─────────────
+# Chapter 14 used to argue that nothing can follow from the audit BECAUSE
+# the audit sits at the top of the graph — a pure observer, therefore
+# powerless. That was an argument from stratification and the stratifier
+# never made it. These two rules load and derive; the powerlessness was
+# a choice wearing the clothes of a necessity, and it is now a smaller
+# choice, made one link further along.
+#
+# SPELL IT `obliged`. [2026-07-31] The accidental path is now CLOSED
+# upstream: `obligated` was renamed `obligated_by` (nibli e70f22f), so
+# writing `obligated(...)` is a compile error rather than a silently
+# inverted fact. That was the realistic mistake and it can no longer be
+# made by typo.
+#
+# THE MECHANISM IS NOT CLOSED, so the pins stay. `obligated_by` is still
+# the x1<->x2 converse — verified after the rename, `obligated_by(Warden,
+# Ruk)` compiles to `obliged(Ruk, Warden)`, the prisoner bound to the
+# warden. What changed is that you now have to type `_by`, which says
+# which way the arguments run. The discriminating pin pair in the
+# chapter-14 suite — obliged(Review, Ruk) TRUE *and* obliged(Ruk, Review)
+# FALSE — is no longer the ONLY defence, but it is still the only thing
+# that catches an argument-order slip within `obliged` itself. Keep both.
+#
+# TWO RULES, NOT ONE — AND AS OF 2026-07-31 THAT IS HISTORY, NOT NECESSITY.
+# `all $x: all $k: err($x, $k) -> obliged(Review, $x).` derived NOTHING when
+# this article was written: $k was body-only over a derived relation, which
+# that engine failed to bind. **nibli has since fixed it** — re-verified on
+# the live engine, the generalised rule now derives for Ruk and Adam alike.
+# The two rules are kept because they are correct, pinned, and collapsing
+# them would move the rule count and the spine for no behavioural gain. If
+# this file is ever rewritten, one rule is now the honest form. The same
+# correction applies to the Article 4 note, which cites the old limitation.
+#
+# WHAT THIS DOES NOT BUY. Nothing reads `obliged`. This is a second inert
+# obligation sitting beside Article 1b's `owe`, and the chain now ends one
+# step later rather than ending anywhere. Worse for the design's own
+# story: the breach of this duty is ALSO detectable — verified, appending
+# `obliged(Review,$x) & ~capture(Review,$x) -> err($x, Duty)` is accepted
+# and gives err(Ruk, Duty) TRUE. So a further link is available too, and
+# the one after that. What is missing at the end of the chain is not a
+# link. It is somebody who has to act.
+all $x: err($x, Placement) -> obliged(Review, $x).
+all $x: err($x, Isolation) -> obliged(Review, $x).
+
+# ─── Article 9 [v0.2 NEW]: Amendment ──────────────────────────────
+# The constitution can change itself — under logic. suggest(Assembly, m)
+# dockets a proposal; approves(Electorate, m) is a CERTIFIED external
+# tally (the counting arithmetic is outside the firewall — an E2E-
+# verifiable count in the ElectionGuard genre; its certificate is this
+# asserted fact); permanent(t) is the entrenchment register. An amendment
+# adjusting an entrenched target HAS NO FORCE (reusing false — the
+# credibility-voided proxy — so no new predicate). The register entrenches
+# ITSELF (Art_Entrench): the guard cannot be amended away through the
+# front door, and no enactment can lower its own threshold under a lower
+# threshold (the Weimar bootstrap is underivable).
+all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).
+all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).
+permanent(Art_Floor).
+permanent(Art_Person).
+permanent(Art_Entrench).
+# What logic cannot stop: DELETING permanent() facts from the store.
+# Fact-write discipline is the residual trust base — an explicit
+# cross-epoch proof obligation ("no transition removes an entrenchment
+# fact except via an enacted amendment, and none such is derivable"),
+# not an in-snapshot derivation. Named, not hidden.
+
+# ─── The world in facts: cast ───────────────── [v0.1, two swaps]
+# [v0.3 REPLACES prisoner(Adam)] Adam was the one asserted prisoner, a fixture
+# rather than a conviction, which kept `prisoner` open to assertion. He is now
+# convicted through Article 6 like every other prisoner in the cast.
+person(Adam).
+injure(Adam, Ivo).
+judge(Court, Adam).
+person(Bela).
+person(Cira).
+teaches(Bela, Cira).
+person(Dev).
+person(Esa).
+parent(Dev, Esa).
+teaches(Esa, Fin).
+judge(Dev, Esa).
+person(Gia).
+person(Hex).
+# [v0.2 REPLACES permits(Review, Gia/Hex)] — seating now flows through
+# Art 8; the credential derives because credibility is clean.
+choose(Electorate, Gia).
+# [v0.7] Hex is seated by the Convocation, not the Electorate. Gia and Hex
+# still void Bela, but now as a cross-body pair — which is the whole point:
+# the shipped case that demonstrates the rule must actually exercise it.
+choose(Convocation, Hex).
+judge(Gia, Bela).
+capture(Gia, Bela).
+judge(Hex, Bela).
+capture(Hex, Bela).
+person(Koa).
+capture(Koa, Esa).
+person(Quin).
+work(Quin, Census).
+person(Hano).
+person(Ivo).
+injure(Hano, Ivo).
+judge(Court, Hano).
+home(Hano).
+# [v0.5] Hano carries EXACTLY ONE dimension, and that is the point of the
+# fact. With no dimension at all `? severe(Hano). => FALSE` passes because
+# there is nothing to test; with one, it is the only pin in the suite that
+# fails if the two-of-three threshold ever slips to one-of-three.
+attack(Hano, Ivo).
+person(Jala).
+injure(Jala, Ivo).
+person(Lupo).
+person(Mira).
+teaches(Mira, Cira).
+judge(Lupo, Mira).
+capture(Lupo, Mira).
+deceive(Lupo, Mira).
+judge(Review, Lupo).
+person(Nia).
+injure(Nia, Ivo).
+judge(Court, Nia).
+clear(Nia).
+person(Lalo).
+person(Mina).
+injure(Lalo, Mina).
+judge(Court, Lalo).
+home(Lalo).
+family(Lalo).
+# [v0.5] Lalo's severity was asserted; it is now reached by the first route,
+# intent and kind of harm on the same act.
+attack(Lalo, Mina).
+cruel(Lalo, Mina).
+person(Nando).
+person(Opal).
+injure(Nando, Opal).
+judge(Court, Nando).
+family(Nando).
+# [v0.3 NEW] Majority, for the Art 2 franchise rule. Note what the
+# absence of a mature fact does and does not mean: a child simply does
+# not yet derive the ballot. Nothing is taken from them — every Article 1
+# obligation is owed to them in full, and no rule anywhere reads ~mature.
+mature(Hano).
+mature(Jala).
+mature(Bela).
+mature(Adam).
+
+# ─── Adversarial scenario: capture attempt ───── [v0.1, one swap]
+person(Boss).
+person(Rebel).
+person(Scapegoat).
+# [v0.2 REPLACES permits(Review, Boss)] Boss was seated — so Boss stays
+# forever an authority (Rebel's shield survives the recall) — but broken
+# blocks the credential derivation, so Boss holds no voiding power.
+choose(Electorate, Boss).
+judge(Boss, Rebel).
+capture(Boss, Rebel).
+injure(Rebel, Scapegoat).
+judge(Court, Rebel).
+show(Rebel, Boss).
+broken(Boss).
+
+# ─── Adversarial scenario v0.2: the three exploits, pinned ────────
+# E1a — Don frames himself a whistleblower on his own VICTIM.
+#       v0.1: unjailable. v0.2: Pax is no authority → no shield.
+person(Don).
+person(Pax).
+injure(Don, Pax).
+judge(Court, Don).
+show(Don, Pax).
+# [v0.5] Don exercises the third route — kind of harm plus a second victim —
+# and he is here because without him that rule would compile and derive
+# nothing, which is the failure this file is least able to see. It is not
+# free: Don was one of the three convicted people the placement machinery
+# housed nowhere, and severity now routes him to a facility and delivers
+# `dwell`. The homeless-convict gap narrows to Kel and Adam. That is a
+# consequence of putting a rule to work, not a repair of the gap.
+cruel(Don, Pax).
+injure(Don, Ivo).
+# E1b — Sly shows a REAL authority, no Review finding yet: shield holds.
+#       The disclosed fail-open window, working as chosen.
+person(Sly).
+injure(Sly, Pax).
+judge(Court, Sly).
+show(Sly, Court).
+# E1c — Kel did the same, but Review adjudicated the exposure as deceit:
+#       shield falls, prison holds, and the counter-audit voids Kel.
+person(Kel).
+injure(Kel, Pax).
+judge(Court, Kel).
+show(Kel, Court).
+deceive(Kel, Court).
+judge(Review, Kel).
+# E1d — Rex did what Kel did AND exposed a second authority. The shield rule
+#       is satisfied by ANY qualifying pair, so the deceit finding against the
+#       first exposure does not reach the second: `defend(Rex)` holds on the
+#       Review exposure while `false(Rex)` is TRUE from the counter-audit.
+#       VOIDED AND SHIELDED AT ONCE. Kel closes only because Kel exposed once,
+#       so the three per-subject Kel pins could never have caught this — the
+#       defect is per-PAIR. This is the disclosed cost of scoping the shield to
+#       the exposure rather than the person; see chapter 4. Do not "fix" it by
+#       appending ~false($w) to Article 7 without re-reading that section: it
+#       compiles, and it hands two cross-body auditors a route to strip the
+#       shield off the whistleblower who exposed them.
+#       Sena is a FRESH constant, not an existing victim: every argument in a
+#       new fact must be new (except institution constants), because a new
+#       person naming existing ones can complete Art 4's multi-sig.
+person(Rex).
+injure(Rex, Sena).
+judge(Court, Rex).
+show(Rex, Court).
+deceive(Rex, Court).
+judge(Review, Rex).
+show(Rex, Review).
+person(Sena).
+# E2 — Vex was voided LAST epoch (rotten ledger), is still seated on
+#      paper, and pairs with clean Wren against Tyr. v0.1: Tyr falls.
+#      v0.2: Vex's credential never derives; Tyr stands.
+person(Tyr).
+person(Vex).
+person(Wren).
+rotten(Vex).
+choose(Electorate, Vex).
+# [v0.7] Wren moves to the Convocation too, and this move is LOAD-BEARING
+# rather than cosmetic. E2 pairs carried-void Vex with clean Wren against
+# Tyr, and `? false(Tyr). => FALSE` is supposed to prove that a prior-epoch
+# void denies the credential. Leave Wren on the Electorate and the pair now
+# fails on body-difference BEFORE the rotten test is ever reached — the pin
+# stays green while testing nothing. Verified both ways: with Wren moved,
+# deleting rotten(Vex) flips false(Tyr) TRUE; with Wren left behind, it does
+# not move, which is the vacuous reading.
+choose(Convocation, Wren).
+judge(Vex, Tyr).
+capture(Vex, Tyr).
+judge(Wren, Tyr).
+capture(Wren, Tyr).
+# E3 — Ruk: severe, NON-domestic, home fact asserted (the farmhouse).
+#      v0.1: soft cage, no HighSec. v0.2: HighSec routes, and the home
+#      assertion itself derives a placement breach.
+person(Ruk).
+injure(Ruk, Opal).
+judge(Court, Ruk).
+# [v0.5] Ruk reaches severity by the second route: intent, plus a second
+# victim recorded separately. The farmhouse case is now also the case that
+# demonstrates plurality, and neither victim fact says how many there were.
+attack(Ruk, Opal).
+injure(Ruk, Pax).
+home(Ruk).
+# Amendments — a floor cut and a meta-attack both die with no force
+# regardless of tally; an ordinary mint reform passes.
+suggest(Assembly, Amend_Floor).
+adjust(Amend_Floor, Art_Floor).
+approves(Electorate, Amend_Floor).
+suggest(Assembly, Amend_Mint).
+adjust(Amend_Mint, Art_Mint).
+approves(Electorate, Amend_Mint).
+suggest(Assembly, Amend_Meta).
+adjust(Amend_Meta, Art_Entrench).
+approves(Electorate, Amend_Meta).
+
+# ─── Adversarial pins v0.3: the floor firewall ────────────────────
+# POSITIVE pins — queryable, and they belong in the pinned-verdict file:
+#   ? decide(Hano, Ballot).   TRUE   convicted, and still votes
+#   ? decide(Jala, Ballot).   TRUE   free, and votes
+#   ? travel(Hano).           FALSE  the one thing conviction takes
+#   ? err(Hano, Isolation).   TRUE   no meets fact => breach is visible
+#
+# NEGATIVE pins — these cannot be expressed as queries, because the
+# assertion itself must FAIL. They are the firewall's only test, and a
+# harness has to run them as "this file must refuse to load":
+#   all $x: person($x) & ~believe($x) -> prisoner($x).   MUST be refused
+#   all $x: person($x) & ~meets($x)   -> prisoner($x).   MUST be refused
+#   all $x: person($x) & ~home($x)    -> prisoner($x).   MUST load (control:
+#                                       home is not a floor right, so a
+#                                       refusal here would mean the test
+#                                       is measuring the rule shape, not
+#                                       the floor line)
+# Keeping the control is the point. Without it a green firewall test
+# proves nothing.
+
+# ─── Technical appendix delta (v0.2 proxy vocabulary) ─────────────
+# authority(X)   — X is an exposable office: an institution constant, or
+#                  anyone the Electorate ever seated. Derived + asserted.
+#                  Never revoked (see Art 7 note).
+# choose(E, X)   — the Electorate seats X (asserted; the selection
+#                  process is outside the firewall, this fact is its
+#                  certificate).
+# rotten(X)      — PRIOR-epoch voided credibility: the asserted carry ledger.
+#                  Gates multi-sig and credential derivation; re-derives
+#                  false(X) for clawback.
+# fit(X, Homestay)    — derived home-confinement eligibility.
+# err(X, Placement)   — derived placement breach: asserted home without
+#                       derived eligibility.
+# suggest / approves / adjust / permanent / become(M, Law)
+#                — amendment machinery (Art 9). approves is a certified
+#                  tally fact; permanent is the self-entrenching register.
+# ─── v0.3 additions ───
+# believe(X)     — floor right, the inner forum (Art 1). Corpus: krici.
+#                  Appears in no rule body, per the floor invariant.
+# meets(X)       — floor right, company (Art 1). Appears in one rule body
+#                  under negation, in the Art 6 isolation marker — which
+#                  is permitted because that rule's head is `err`, not
+#                  `prisoner`, so it does not enter the person cone.
+# decide(X, Ballot) — the franchise (Art 2). Derived, never asserted.
+#                  Two-place deliberately: bare `decide` means deciding
+#                  anything. `vote` is not in the committed corpus and
+#                  `choose` is taken by Art 8 seating — and reusing it on
+#                  the floor un-stratifies Art 8 (see the Art 1 invariant).
+# mature(X)      — asserted majority. Guards the franchise only. No rule
+#                  anywhere reads ~mature, so it can gate nothing else.
+# err(X, Isolation) — derived isolation breach: a prisoner with no
+#                  company fact.
+# Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.
+
+all $a: choose(Electorate, $a) -> permits(Review, $a).
