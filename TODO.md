@@ -114,16 +114,6 @@ No known defects. Read it against the constitution anyway.
 
 ### Chapter 4
 
-- **Chapter 6 tells the reader a voided person still eats; the engine says otherwise.**
-  `book-1/06-clawback.md:29-33` says a voided person "still eats. Still has somewhere
-  to live. Still learns, still speaks, still keeps company" — and the engine returns
-  FALSE for every one of those about Bela, *the same person chapter 8 uses to say the
-  opposite* (`08:31-34`). Verified FALSE: `eats(Bela)`, `dwell(Bela)`, `learn(Bela)`,
-  `expresses(Bela)`, `meets(Bela)`; only `decide(Bela, Ballot)` is TRUE. Rewrite
-  `06:29-33` to the *entitlement* reading and add the pins that would have caught it —
-  `06-clawback.pins.nibli` pins the clawback verdicts and nothing about the floor it
-  claims survives.
-
 - **Chapter 6's clawback pins are missing the reason and the cost, and the chapter's own
   file never touches the epoch carry.** `02-standing.pins.nibli:91-102` now carries
   `false(Vex)`, `authority(Vex)` and `permits(Review, Vex)` as one adjacent block, so
