@@ -53,8 +53,6 @@ update it if only partly done. One item at a time: do it, verify it, commit it.
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — they are collected in phase 2 rather than scattered.
 
-- **[AUTHOR-GATED] Does care count as contribution?** See `reviews/ai_review.md` for the critique: caregiving is the largest category of real human contribution the text is silent about. The minimal question—*does care count as contribution at all, and should the book say so?*—is a real open question needing an author decision.
-
 **THE INCLUSION GATE — applies to Parts I–V only.** Those parts describe a
 destination, not a route. Before any passage goes in, two tests: (a) does it
 describe what the society IS or how it FUNCTIONS — not how anyone gets there? and
@@ -95,6 +93,31 @@ the phase runs first.
 **When a reply lands here**, re-run `./verify.sh` before believing anything — the script
 rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
 measured an engine change that was never rebuilt.
+
+---
+
+## Phase 2 — Author-gated decisions. Rule these before the chapter passes.
+
+Each of these is a design decision, not a task. Record the ruling in `CLAUDE.md` when it
+lands, so it is not re-proposed. This section emptied once — every earlier decision was
+ruled — and was deleted with its last bullet; it returns because the prefix's promise
+("collected in phase 2 rather than scattered") has to point somewhere.
+
+- **[AUTHOR-GATED] Does care count as contribution, and does the book say so?** Raised by
+  `reviews/ai_review.md` — the one point in that review the book had no answer to: chapter
+  10's doors are teaching, work and auditing, and raising a child passes through none of
+  them by name. **The maximal ask is already refused**: "highest-status, most heavily
+  subsidized" is ranking, and recognition is never ranked (settled, `CLAUDE.md`). **The
+  minimal version is verified free**: `work(Nima, Care).` loads today with no new
+  vocabulary — `Care` is a constant and constants are free — and mints `reward(Nima)`
+  through the work door's existing rule, `~false` guard and all. So the design already
+  recognises care the moment somebody writes the fact; what is undecided is whether the
+  book says so. Three shapes for the ruling: chapter 10 names care as work in one sentence
+  beside the doors (cheapest); the cast gains a caregiver so the claim is pinned rather
+  than argued (a constitution edit — fixture regeneration, fresh-constants rule); or the
+  chapters stay silent and Part V answers the review directly. Whatever is ruled must not
+  rank: one parent's acknowledgment must not come at another's expense, any more than one
+  nurse's.
 
 ---
 
@@ -803,7 +826,11 @@ No known defects. Read it against the constitution anyway.
   ratchet before committing it** — it will be the first prose in `book-1/` the ratchet has
   ever scored, every other file predating it. The subtitle itself is clean; a note that
   opens by naming the floor's size would not be.
-  (Evidence for why this note must be clear upfront: see `reviews/ai_review.md`. A sympathetic reader can easily conclude the book is a dystopian teardown rather than an honest design if they aren't told what they're holding before chapter 6. The confessions are the method, not the verdict.)
+  **The best evidence this note is load-bearing is now on file** (`reviews/ai_review.md`):
+  a sympathetic, capable reader finished the manuscript and concluded it is a teardown —
+  *"a beautiful nightmare to show us what not to do."* The note has to tell a reader what
+  they are holding before chapter 6 teaches them wrong: the confessions are the method,
+  not the verdict.
 
 - **The honesty paragraph goes in the opening note, and half of it is already in print.**
   book-1 has no introduction, so the destination this item used to name is gone. One half
