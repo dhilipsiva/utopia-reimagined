@@ -114,18 +114,6 @@ No known defects. Read it against the constitution anyway.
 
 ### Chapter 4
 
-- **The void rule carries four conjuncts nothing can fail.** Article 4's `~broken` and
-  `~rotten` tests on both signers are unreachable: Article 8's credential rules already
-  read both, so a pen cannot be held without them. Verified 2026-08-01 — assert
-  `rotten(Gia).` and `permits(Review, Gia)` goes FALSE before the void rule is reached;
-  same for `broken(Hex).` Consequence for reading the suite: chapter 5's Vex/Tyr pin and
-  the new carried-mark pin both land on the **missing credential**, not on the carried
-  mark failing the void. The chapter's prose already says this correctly — *"that mark
-  blocks the credential"* — so this is dead weight in the rule, not a wrong sentence in
-  the book. Removing them is a constitution edit and wants its own pass; the risk of
-  doing it carelessly is that the rule stops being readable as a list of everything a
-  signature must satisfy.
-
 - **Chapter 4 counts its own cases in four places.** *"Four people show what the design
   does"*, *"Three things follow at once"*, *"Notice what the four cases have in common"*,
   *"Three things, and the last two compound each other"*. The ratchet cannot see numbers
