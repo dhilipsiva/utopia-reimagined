@@ -85,7 +85,7 @@ End every prompt by asking for the sha, what changed, whether a verdict moved, a
 prompt itself got wrong; that last one has been non-empty more often than not.
 
 **The section is empty on purpose.** Every ask written here has landed and been verified
-here, and the one item below is blocked on a decision of ours rather than on nibli. Do not
+here, and nothing is waiting on nibli. Do not
 work around an engine limitation in prose — conceding a fixable limitation as though it
 were a design choice is the specific dishonesty this phase exists to prevent, and it is why
 the phase runs first.
@@ -585,7 +585,11 @@ No known defects. Read it against the constitution anyway.
   only. Do not leave both in print. Narrowing flips `lose(Points, Cira)` FALSE and
   rewrites `06:40-92`; that is the intended trade, `06-clawback.pins.nibli:6-16` records
   it, and the pin itself is already declared `:defect` so the flip reads as a repair.
-  **The middle option is now closed.** Since the grades ruling settled that students
+  **Both middle options are closed, and the wrongdoer's closed last.** On the wrongdoer's
+  side — where Bela and Vex really do hold recognition — the narrower rule would need
+  provenance on `reward` to say which recognition came from the fraud, and that is refused
+  (`CLAUDE.md`, 2026-08-01). So this fork has two branches and no third, on both halves.
+  **The student middle option was closed first.** Since the grades ruling settled that students
   never mint, "claw back only the rewards that came from the fraudulent teaching" is the
   empty set for every student by construction — so narrowing `:484` is not narrowing, it
   is deleting it, and it should be decided as a deletion.
@@ -1459,5 +1463,5 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
   quoted: a claimed non-termination past fifteen minutes never reproduced, and a 38.9 s-against-
   2.1 s pair predates the `event { }` projection. This is the answer to "how expensive is one
   more argument here", which is the question anybody proposing one will ask first. It is not an
-  argument against a second place on `reward` — [[provenance is refused on other grounds]], and
-  those grounds are in `CLAUDE.md`.
+  argument against a second place on `reward`; that is refused on other grounds, and they are
+  in `CLAUDE.md`.
