@@ -114,9 +114,9 @@ returns. The placement stops. The marker that was watching for isolation goes qu
 It is the same shape as relief, and it is not the same thing: relief says the
 conviction should never have held, and this says it held and is done.
 
-What the design does not say is **when**. There is no duration in it anywhere, no term,
-no length, no clock. It cannot express three years. So a sentence *may* end, and the
-design has nothing to say about whether this one does. For the gravest things it is
+What the design does not say is **when**. No sentence in it has a length, nothing marks
+a term, and nothing counts down. So a sentence *may* end, and the design has nothing to
+say about whether this one does. For the gravest things it is
 expected that nothing is ever recorded, and the design cannot compel that either. What
 ends a punishment here is a decision someone makes and writes down, and the design's
 whole contribution is to say what follows once they have.
@@ -125,15 +125,30 @@ It can express that one offence was worse than another — that much changed whe
 severity stopped being written down and started being worked out. Where somebody is
 held follows from how bad the offence was, and how bad the offence was follows from
 what was recorded about it. What has not been built is any bridge from that to how
-long. Severity reaches the walls and stops. Nothing carries it to the calendar, because
-there is no calendar.
+long. Severity reaches the walls and stops.
+
+Be careful about why it stops, because the obvious reason is the wrong one and it is
+the reason this chapter used to give. The words exist. It is possible to say that one
+thing came before another, that something began, that it is still running, that it has
+ended — and even to name how long a term is without writing a number. None of it is
+used here.
+
+What is genuinely absent is arithmetic. Nothing computes how long something lasted,
+compares one length against another, or advances a clock. A term could be written into
+this design tomorrow and nothing in it would count the term down, notice it had run
+out, or tell you that one sentence was longer than the next.
 
 Notice which way round that is, because it is the safer of the two. A design that could
 grade *how long* would need to say what makes one sentence longer than another, and
 every answer to that question is a place where someone's character gets priced. This
-one grades where and refuses to grade when, and the refusal is not principle — it is
-that the vocabulary for duration was never built. It would be dishonest to claim the
-credit for a restraint nobody chose.
+one grades where and does not grade when.
+
+That is a refusal and not a gap, and the difference matters because a gap excuses you
+and a refusal does not. The design is not prevented from saying how long; it declines
+to, and the reason is the one in the paragraph above rather than the absence of a word
+for it. Which is the harder position to hold and the only honest one — a restraint you
+chose is a restraint you can be argued out of, and this one should have to survive the
+argument every time it is raised.
 
 That is less than it sounds, and it is worth being exact about why. This is the same
 shape as everything else in these chapters: the design is precise about consequence and

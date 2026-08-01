@@ -118,46 +118,6 @@ measured an engine change that was never rebuilt.
   they are visible rather than silent: compiler artifacts (`event`, `__abs_<hash>`) are
   dropped, and `equals` counts as a predicate but is not evidence, since nobody writes it.
 
-- **HANDOFF PROMPT — a temporal primitive that orders without numerals. READY.** Was
-  blocked on "there is no release"; release landed, so the shape of the ask is now exact.
-
-  ```text
-  In ~/projects/dhilipsiva/nibli: the KR can say a thing happened, and
-  cannot say when, for how long, or in what order. I need ordering without
-  numerals.
-
-  What exists and why none of it is enough:
-    - `past` / `now` / `future` are opaque exact-match flavours with NO
-      ordering between them. `~past P` is rejected outright, so I cannot
-      even express "not yet".
-    - Every calendar unit in the corpus takes a NUMBER in x2. The consuming
-      project's verifier refuses any digit in an enacted line, so those are
-      unusable there by construction.
-    - Counting already works (`exactly N`) — do not re-do it.
-    - `aggregate` exists but is only exposed through `nibli-session`. That
-      is a separate, smaller ask; not this one.
-
-  The ask: a primitive that expresses ORDER and DURATION without numerals.
-  Enough to say "this came before that", "this is still running", "this
-  has ended" — and to let a rule read those relations.
-
-  Why it matters. The consuming artifact is a constitution, and its chapter
-  on punishment currently has to print the sentence *"the design never says
-  when"* as an admission to the reader. It can say a sentence is FINISHED
-  and cannot say how long one runs, so it cannot express a fixed term, a
-  sunset clause, or a supermajority threshold that lapses. Those all ride
-  this same ask.
-
-  If numerals are unavoidable for duration, say so plainly — the consumer
-  would rather print an honest "cannot" than a vague one.
-
-  ────────────────────────────────────────────────────────────────────
-  When this lands, reply with: the commit sha, what changed in one line,
-  whether any existing verdict moved, and anything you found that this
-  prompt got wrong. Paste that reply back into the book session — it is
-  the only channel between the two repos.
-  ```
-
 - **HANDOFF PROMPT — de-swap `obligated`/`obliged`. NO LONGER OPTIONAL.** It became
   load-bearing on 2026-07-31 when `err` gained its first consumer.
 
@@ -319,6 +279,26 @@ says. Record the decision in `CLAUDE.md` when it lands, so it is not re-proposed
   fire on nearly everybody, since almost nothing is delivered. That last point is the
   argument against, and it is not nothing: seven more alarms that fire on the whole
   population report the same emptiness the isolation marker already reports.
+
+- **[AUTHOR-GATED] Now that duration is expressible, decide whether the design says how
+  long.** Opened 2026-07-31 by nibli `fc277a9`, which established that **no new primitive
+  was ever needed** — the corpus already carries `earlier`/`later`, `happen`, `continue`,
+  `cease`/`end`, `concurrent`, and `time(x, from, to)` as an interval, none with a numeric
+  place. Verified against *this* constitution: all nine compile and answer, including
+  `year(Term, Two)` — a term length with **no digit**, so `verify.sh`'s ban does not stop
+  it. "Not yet" was never a tense question either: `~cease(Term, Custody)` says it.
+  **What is genuinely absent is arithmetic on time** — nothing computes a length, compares
+  two, or advances a clock. So a term could be stated and nothing would count it down.
+  **Chapter 13 has been corrected either way** (`93da52f`+): it used to say the refusal to
+  grade duration "is not principle — it is that the vocabulary for duration was never
+  built", which is now false. It says the refusal is a choice, and holds the chapter's own
+  reason — grading *how long* means saying what makes one sentence longer than another,
+  and every answer prices someone's character.
+  **The decision is whether that stays a refusal.** Building it costs the evidence
+  vocabulary several entries, which is chapter 1's named threat, and buys a design that
+  can state a term it cannot enforce — the enforcement needs arithmetic that does not
+  exist. Ruling "no" is now a position to defend rather than a limit to disclose, which is
+  the stronger place to be and the harder one.
 
 - **[AUTHOR-GATED] Refine release: earning may only shorten, never lengthen.** DECIDED
   2026-07-29 — punishment is loss of liberty, and a person **may optionally choose** to earn
