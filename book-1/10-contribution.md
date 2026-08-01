@@ -7,6 +7,20 @@ Esa taught Fin, and is recognised. Quin did the census, and is recognised. Gia
 examined Bela's conduct without deceit, and is recognised. That is the entire
 economy of esteem: three doors, no others.
 
+Before going further, ask where raising a child fits, because most systems that
+acknowledge contribution manage to leave it out. It is not a fourth door and it does
+not need one — it walks through two of the three. A parent who teaches a child is a
+teacher; the record never asks what the relationship is, and it is worth noticing that
+this is a choice with a shape: the same design that forbids you to judge your own
+child permits you to teach them, because the closeness that corrupts an examination is
+much of what makes the teaching work. And the rest of care — the feeding, the tending,
+the staying up — is a piece of work, and nothing anywhere narrows what counts as work
+to what is salaried, or scheduled, or done for strangers. Tending a person is as
+recordable as taking a census. The honest limit is the same one this book states
+about everything: the entry has to be written. Care that nobody records earns
+nothing, so the claim here is that the doors are open to it — not that the society
+sees it.
+
 What arrives when you walk through one of them is worth being precise about, because
 it is not what most readers will assume.
 
