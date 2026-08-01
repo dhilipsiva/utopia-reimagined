@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 21
+:expect-pins 23
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -34,6 +34,15 @@
 
 ? authority(Court).
 # => TRUE
+
+# THE CONJUNCT THE SLY SECTION TURNS ON, and it was tested only through its
+# result until now. Sly and Kel are name-swapped duplicates in the cast except
+# for two facts, and this absence is one of them. `defend(Sly)` below would
+# break if a deceit finding were written, so the protection existed — but the
+# claim the chapter actually makes is about the ABSENCE, and an absence tested
+# only downstream is an absence nobody has named.
+? deceive(Sly, Court).
+# => FALSE
 
 # "So Sly's shield holds, and Sly ... walks free."
 ? defend(Sly).
@@ -79,6 +88,13 @@
 
 # "Then Rex exposed the review body. Nobody has examined that one."
 ? show(Rex, Review).
+# => TRUE
+
+# ...and the body Rex exposed has standing, which is the other half of "a fresh
+# claim against an authority". `authority(Court)` is pinned five ways across the
+# suite; its twin was pinned nowhere in the repo until now, so the second
+# exposure's premise rested on nothing.
+? authority(Review).
 # => TRUE
 
 # THE PAIR THAT MATTERS. Voided and shielded at once — the finding against the
