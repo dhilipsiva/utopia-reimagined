@@ -20,17 +20,24 @@ and it is easy to lose behind the difficulty.
 Bela has been voided and stripped. Ask what Bela still has.
 
 Bela is still a person. Bela still moves freely — is not confined, not placed
-anywhere, not restricted. And Bela is still owed every one of the eight things this
-society owes everyone, in full, without qualification or reduction. Nothing in the
-clawback touches any of it. There is no rule anywhere that reads *and therefore this
-person may be given less*, because the floor is not the kind of thing that can be
-reduced by a finding about someone's conduct.
+anywhere, not restricted — and still holds the vote. And Bela is still owed everything
+on the floor — every item this society owes everyone, in full, without qualification
+or reduction. Nothing in the clawback touches any of it. There is no rule anywhere
+that reads *and therefore this person may be given less*, because the floor is not the
+kind of thing that can be reduced by a finding about someone's conduct.
 
-Say plainly what that means. A person can be found unreliable by the highest standard
-the society has, stripped of everything they earned, marked in the record for as long
-as the record lasts — and still eats. Still has somewhere to live. Still learns, still
-speaks, still keeps company, still holds the vote. The worst thing the accountability
-machinery can do to you leaves the floor entirely intact.
+Say plainly what that means, and say it exactly, because the loose version claims too
+much. A person can be found unreliable by the highest standard the society has,
+stripped of everything they earned, marked in the record for as long as the record
+lasts — and is owed food, shelter, learning, expression and company on the day after
+exactly as on the day before. The worst thing the accountability machinery can do to
+you does not subtract one item from what you are owed.
+
+What it does not mean is that Bela is fed. Whether what a person is owed ever reaches
+them is a different question; this book asks it later, of this same person, and does
+not like the answer. What the voiding cannot do is make that answer worse. The gap
+between being owed and being fed is real, and it is the same gap for Bela as for
+everyone — the finding did not widen it by so much as a meal.
 
 This is not restraint on anyone's part. Nobody chose, in the moment of voiding Bela,
 to be merciful about her housing. There is no moment where that choice arises. The
