@@ -116,23 +116,6 @@ No known defects. Read it against the constitution anyway.
 
 ### Chapter 4
 
-- **Chapter 6's clawback pins are missing the reason and the cost, and the chapter's own
-  file never touches the epoch carry.** `02-standing.pins.nibli:91-102` now carries
-  `false(Vex)`, `authority(Vex)` and `permits(Review, Vex)` as one adjacent block, so
-  three of the five verdicts are in front of one reader in one file. Still missing from
-  that block: `rotten(Vex)`, which is the *reason* for the other three, and
-  `lose(Points, Vex)`, which is the cost — the latter is pinned in no file at all.
-  Re-verified 2026-08-01: `rotten(Vex)` TRUE, `permits(Review, Vex)` FALSE,
-  `false(Vex)` TRUE, `authority(Vex)` TRUE, `lose(Points, Vex)` TRUE. Vex is the one
-  person in the cast who is voided, stripped of the pen, still possessed of standing
-  (the other sense), and clawed back — four verdicts that between them settle three of
-  the book's recurring confusions — and `06-clawback.pins.nibli`, the chapter whose
-  subject this is, contains no Vex.
-  Second gap: `? false(Cira). # => FALSE` is unpinned (verified FALSE) and `06:112-113`
-  rests on it. **Add both before the Article 4 clawback narrowing** (the "Decide the
-  Article 4 clawback question" bullet), not after, or the chapter loses the only fixture
-  that would show what changed.
-
 - **Chapter 7 says the prisoner rule is the only route into personhood that needs no
   roster entry. There are two, and the second is worse.** `07:99-104`: "The rule that a
   prisoner is a person is the *only* route into personhood that does not require

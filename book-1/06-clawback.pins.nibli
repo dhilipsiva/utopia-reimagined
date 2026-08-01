@@ -17,7 +17,7 @@
 # an oversight — so the "narrower rule" the chapter discusses has an empty target
 # and narrowing it is repeal. Keep these pinned; the prose turns on both.
 
-:expect-pins 21
+:expect-pins 27
 
 # "Bela was examined by two auditors and voided ... recognition is clawed back"
 ? false(Bela).
@@ -78,6 +78,14 @@
 ? reward(Cira).
 # => FALSE
 
+# "The rule reaches Cira's recognition and finds nothing there. It does not
+#  reach what Cira is owed" — and it does not reach Cira's CREDIBILITY either.
+# The loss lands on recognition alone; Cira is docked, not voided. If this ever
+# flips TRUE the contamination rule grew a second head and the closing section
+# is wrong about what the instrument can touch.
+? false(Cira).
+# => FALSE
+
 # "Compare Fin, whose teacher was Esa. Esa was never voided, so the rule never
 #  reaches Fin at all." — the rule fires only through the teacher
 ? teaches(Esa, Fin).
@@ -103,3 +111,30 @@
 # and Mira, accused by a liar, keeps everything
 ? lose(Points, Mira).
 # => FALSE
+
+# ── The epoch carry, in the chapter whose subject it serves ──────────────────
+# Vex is the one person in the cast who is voided, stripped of the pen, still
+# possessed of standing, and clawed back — and this file, the clawback
+# chapter's own, never touched him. The carry is why: rotten is the mark
+# written forward from a prior period, it re-derives the void THIS period, and
+# that is the only reason the clawback keeps firing on a person whose voiding
+# nobody in this epoch performed. Five verdicts, and between them they hold
+# apart three things this book keeps having to hold apart: voided is not
+# de-personed, losing the pen is not losing standing, and a prior period's
+# judgment costs you here and now.
+? rotten(Vex).
+# => TRUE
+
+? false(Vex).
+# => TRUE
+
+# the cost — pinned in no other file
+? lose(Points, Vex).
+# => TRUE
+
+# the pen goes; the standing that makes you accountable does not
+? permits(Review, Vex).
+# => FALSE
+
+? authority(Vex).
+# => TRUE
