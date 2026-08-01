@@ -22,10 +22,19 @@ appointing body no longer gives you both signatures. It does not mean the signat
 are harder to forge. Chapter 3 is where that distinction is argued; it matters here
 because this is the rule the distinction is about.
 
-Now Esa. Koa examined Esa and recorded a finding — a real finding, on the record,
-made by someone with the credential. Esa's credibility is untouched. Not provisionally,
-not pending anything. One person's finding does not void a person, and if Koa is the
-only one who ever looks, Esa is fine forever.
+Now Esa. Koa recorded a finding about Esa — a real entry, on the record, and also the
+whole of Koa's presence in this society's files. Koa was never seated by anybody, holds
+no pen, and never even judged the case; this is one person's word, and the first chapter
+already showed that one person's word moves nothing. Esa's credibility is untouched. Not
+provisionally, not pending anything. If Koa is the only one who ever looks, Esa is fine
+forever.
+
+The harder question is what happens when the one person is not so easy to dismiss.
+Give somebody everything. Seat him with both bodies, so he holds each of the two pens
+the rule demands. Let him examine the case and record what he found, so every act the
+rule asks of either signer has been done, by him, twice over. It still fails — not for
+want of a credential, not for want of the work, for want of a second person. The rule
+does not count signatures; it counts signers, and one name written twice is one name.
 
 This is the first and most obvious guard, and it is worth pausing on how much work it
 does. A single corrupt auditor cannot destroy anyone. Neither can a single mistaken
