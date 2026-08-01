@@ -9,7 +9,7 @@
 # reader never sees this file. If a verdict flips, the sentence it guards has
 # started lying — fix the prose or the constitution, never the pin.
 
-:expect-pins 16
+:expect-pins 19
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -60,6 +60,23 @@ authority(Pax).
 
 ? permanent(Art_Evidence).
 # => FALSE
+
+# 1.6b "they cannot. Not *may not*. Cannot. There is nowhere to put it."
+# [v0.9] THIS SENTENCE WAS FALSE UNTIL ARTICLE 0a. nibli's lexicon is
+# fail-closed, so an invented word never loaded — but `rich` is a real corpus
+# name and `rich(Adam).` answered TRUE. The closure was at nibli's vocabulary,
+# not at this book's. `admits` moved it here, and these two pins are the whole
+# of the chapter's opening claim: a name off the list is refused, and adding one
+# has to be a visible edit above the first use.
+:refuse reasoning /not admitted vocabulary/
+rich(Adam).
+
+:refuse reasoning /not admitted vocabulary/
+dangerous(Adam).
+
+# and the closure is EXTENSIONAL — conclusions still derive
+? prisoner(Hano).
+# => TRUE
 
 # 1.7 "Someone is a person." — the entry, and the two ways it gets written.
 #

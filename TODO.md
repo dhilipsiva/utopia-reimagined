@@ -137,36 +137,25 @@ measured an engine change that was never rebuilt.
   exactly what that part is for. Re-check before that ships; do not hand it off as a
   prompt, because it is already filed upstream and the fix is in their renderer.
 
-- **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
-  against direct assertion; nothing closes the *set of relations* a KB will accept. Any of
-  the committed corpus's ~1,351 names asserts cleanly onto the constitution and answers
-  TRUE, and the whole pin suite stays green. `NIBLI_KR.md:579` §14.1 describes
-  KB-owned `pred` declarations and marks them a v2 target, "not implemented" — so this is
-  an ask, not a bug.
-
-  ```text
-  In ~/projects/dhilipsiva/nibli: a KB needs to be able to declare its own fact
-  vocabulary closed, the way `derived_only` declares a relation closed to assertion.
-  Today `derived_only("false")` refuses `false(X).`, but nothing refuses `rich(X).` in
-  a KB that has no business having a `rich` predicate — any corpus name asserts,
-  fail-open. NIBLI_KR.md §14.1 sketches KB-owned `pred` declarations; §15's roadmap
-  lists the injectable schema source at the arity/label lookup seam. Ship a fail-closed
-  form of that: a declaration block naming the predicates this KB admits, with every
-  other corpus name refused at assert time with the same message shape `derived_only`
-  uses. Ordering should be load-bearing and stated, as `derived_only`'s is.
-
-  Consumer: the book repo, `new-book-plans/constitution.nibli`,
-  whose Article 0 already closes nine relations, and whose book states as its opening
-  claim that the record has exactly twenty-one entries and that a twenty-second
-  "cannot" be written. It currently can.
-  
-
-  ────────────────────────────────────────────────────────────────────
-  When this lands, reply with: the commit sha, what changed in one line,
-  whether any existing verdict moved, and anything you found that this
-  prompt got wrong. Paste that reply back into the book session — it is
-  the only channel between the two repos.
-  ```
+- **LANDED 2026-07-31 — `admits`, and it made chapter 1's opening sentence true.** nibli
+  `850cf96` ships `admits("<rel>")`, the dual of `derived_only`: an unadmitted ground
+  assertion is refused at assert time, ordering enforced ("comes too late" if declared
+  below the facts). Adopted here as **Article 0a**, 24 names.
+  **The sentence it fixes is the book's first claim.** Chapter 1 says a thing off the list
+  "cannot" be written — *"Not may not. Cannot."* **That was false.** Verified before
+  adopting: `rich(Adam).` loaded and answered TRUE, because `rich` is a nibli corpus name.
+  The closure was at nibli's vocabulary of thousands, not at this book's two dozen; only
+  an invented word like `zorblat` ever failed. Now pinned in the chapter-1 suite by two
+  refusals plus a control that conclusions still derive (16 → 19 pins; suite 359 → 362).
+  **24, not 23, and the gap is the point.** `person` has producing rules *and* ground
+  assertions, so it is absent from the spine's evidence figure and required here — *"what
+  counts as evidence"* and *"what may be written"* are different sets, and `person` is the
+  whole of the difference. Their prompt-reply said 24 and was right; my prompt's headline
+  number was 21, two revisions stale, when `verify.sh` had already gated 23.
+  **Chapter 1's disclosure changed with it**: widening the record is no longer something
+  done by writing a fact, so the *quiet* version of that attack is closed. The chapter now
+  says so and immediately says what it does not buy — visible is not hard, and nothing
+  stops the edit going in.
 
 - **HANDOFF PROMPT — defect pins vs guarantee pins.** Roughly a fifth of the book's 359
   pins encode admitted defects rather than guarantees, and the harness cannot tell them

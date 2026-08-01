@@ -186,6 +186,18 @@ it is not a proof, and the honest position is that this is the same door, opened
 deliberately, by people who believed they had a good reason. So did everyone who ever
 opened it.
 
+Something has changed about that attack and it is worth being exact, because it cuts
+against the paragraph above. Adding to the list is no longer something a person can do
+by writing a fact. The list is declared, in one place, before anything else in the
+design — and a name that is not on it is refused outright, with the refusal naming the
+edit that would allow it. So the quiet version of this attack is closed: you cannot
+widen the record by using a word and having it stick. You have to add the word, in the
+open, where somebody can see you do it.
+
+That is worth something and it is not the protection you would want. It makes the
+attack visible; it does not make it hard. Nothing stops the edit going in, and the next
+paragraph is about what would.
+
 So the list is the most sensitive thing in the design. Which raises the question of
 what protects it.
 

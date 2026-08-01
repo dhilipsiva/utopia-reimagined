@@ -33,6 +33,45 @@
 # lexicon): hence authority / rotten / fit / err rather than
 # official / voided / eligible / breach.
 
+# ─── Article 0a [v0.9 NEW]: The record is closed ──────────────────
+# Chapter 1 opens by saying that when somebody wants to write something
+# about you that is not on the list, "they cannot. Not *may not*.
+# Cannot." **Until this block that sentence was false.** nibli's lexicon
+# is fail-closed, so an invented word like `zorblat(Adam).` was always a
+# compile error — but `rich(Adam).` loaded and answered TRUE, because
+# `rich` is a corpus name. The closure was at nibli's vocabulary of some
+# thousands, not at this file's two dozen.
+#
+# `admits` closes it here. An unadmitted ground assertion is refused at
+# assert time with a message that names the repair: add the `admits` line
+# ABOVE the first use. That is the point — widening the record becomes a
+# visible, reviewable edit instead of a fact somebody types.
+#
+# ORDERING IS ENFORCED, not merely documented: an `admits` placed below
+# the facts is refused as "comes too late", because a late declaration
+# would silently grandfather everything above it. Same hazard as Article
+# 0's, and unlike Article 0 the engine catches this one.
+#
+# EXTENSIONAL ONLY. This closes what may be WRITTEN. Rules still derive
+# `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
+# is not closing the conclusions, and Article 0 is what does the latter.
+#
+# TWENTY-FOUR, NOT TWENTY-THREE, AND THE GAP IS THE INTERESTING PART.
+# The spine's evidence figure counts predicates with no producing rule.
+# `person` has two producing rules AND thirty ground assertions, so it is
+# absent from that 23 and must appear here or the file will not load.
+# **"What counts as evidence" and "what may be written" are different
+# sets**, and `person` is the whole of the difference — which is exactly
+# what chapter 1 says when it puts personhood on its list.
+admits("adjust").     admits("approves").   admits("attack").
+admits("broken").     admits("capture").    admits("choose").
+admits("clear").      admits("cruel").      admits("deceive").
+admits("family").     admits("free").       admits("home").
+admits("injure").     admits("judge").      admits("mature").
+admits("parent").     admits("permanent").  admits("person").
+admits("public").     admits("rotten").     admits("show").
+admits("suggest").    admits("teaches").    admits("work").
+
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
 # any of them is refused by the engine at assert time, fail-closed:
