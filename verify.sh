@@ -276,6 +276,23 @@ out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli boo
 # and also matched nothing, for the same off-by-one-character reason.
 echo "$out" | grep -E 'pins ?[,(]|✗' | sed 's/^/  /'
 echo "$out" | grep -q 'FINDING\|HARNESS ERROR' && fail "a pinned property regressed"
+
+# A PINNED DEFECT THAT STOPS REPRODUCING IS THE BEST OUTCOME HERE, and until
+# 2026-08-01 this script gave it the worst diagnosis it has. nibli-pin exits 3 and
+# prints a RESOLVED DEFECTS block naming the repair; that block contains neither
+# `FINDING` nor `PASS —`, so the regression grep above passed it through and the
+# PASS-line parse below reported "the suite did not report a PASS line" under the
+# hint "a file was added or dropped from the run". Twelve pins here are declared
+# defects — this is the outcome `:defect` was adopted FOR, and it read as a broken
+# harness. Reproduced before fixing: a `:defect` marker on a query that in fact
+# holds produces exactly that.
+if echo "$out" | grep -q 'NO LONGER REPRODUCE'; then
+  printf '  \033[32m✓\033[0m    a pinned defect no longer reproduces — the artifact improved\n'
+  echo "$out" | grep -E '^\s*✓' | sed 's/^/  /'
+  fail "update the pin and the prose that describes it" \
+       "This is a REPAIR, not a regression. Find the chapter that calls this a flaw and rewrite it, then drop the :defect marker in the same commit."
+fi
+
 ran=$(echo "$out" | sed -n 's/.*PASS — \([0-9]*\) pins.*/\1/p')
 [ -n "$ran" ] || fail "the suite did not report a PASS line"
 [ "$ran" = "$declared" ] && pass "$ran pins, 0 findings — matches the sum of :expect-pins" \
