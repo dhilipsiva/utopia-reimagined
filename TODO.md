@@ -128,8 +128,10 @@ measured an engine change that was never rebuilt.
   chapter-14 discriminator stays: it is the only thing catching an argument-order slip
   within `obliged` itself, which was never covered by the rename.
   **What remains open is theirs, not ours, and it points at our spelling.** nibli's own
-  tracker files a defect where the deontic collapse names the wrong duty-holder when
-  back-translating the **base** spelling — `obliged`, i.e. ours. It cannot reach readers
+  tracker files it as **"`obliged`-spelled every-duty renders the wrong obligated
+  party"** — the deontic collapse picks the event variable as duty-holder for the base
+  spelling, ours, while the converted `obligated_by` spelling binds correctly. Cited by
+  title, not line: that file's line numbers rotted twice in one exchange. It cannot reach readers
   today because this repo runs `nibli-pin` only and never renders prose. **It becomes
   live the moment the method part prints a rendered sentence or a proof trace**, which is
   exactly what that part is for. Re-check before that ships; do not hand it off as a
