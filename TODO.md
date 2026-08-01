@@ -104,15 +104,6 @@ a floor for that pass, not its scope.** Chapters with no bullets still get a pas
 
 ### Chapter 1
 
-- **The stale run-command in fifteen pin files.** `01-what-counts-as-evidence.pins.nibli`
-  and fourteen siblings — the other thirteen chapter files and
-  `new-book-plans/rights-floor.pins.nibli` — each name a single-file `nibli-pin --kb …`
-  invocation as the run command. It works, but it is not how the suite is run and it
-  cannot see the cross-file `:expect-pins` reconciliation, so a reader following it gets
-  a green that means less than they think. Point all fifteen at `./verify.sh`. The three
-  counterfactual pin files are correctly excluded: they run against a different KB and
-  their README says so.
-
 ### Chapter 2
 
 No known defects. Read it against the constitution anyway.
