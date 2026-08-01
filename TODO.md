@@ -114,16 +114,6 @@ No known defects. Read it against the constitution anyway.
 
 ### Chapter 4
 
-- **Chapter 4 counts its own cases in four places.** *"Four people show what the design
-  does"*, *"Three things follow at once"*, *"Notice what the four cases have in common"*,
-  *"Three things, and the last two compound each other"*. The ratchet cannot see numbers
-  below eleven, so these pass today and are exactly the shape the no-counted-claims rule
-  exists to stop: three of them go stale the moment a fifth defendant joins the cast, and
-  a fifth defendant is how this chapter has grown twice. State the rule that produces the
-  count, per chapter 4's own pass.
-
-### Chapter 5
-
 - **Chapter 5 asserts two facts about Koa the constitution does not derive.**
   `book-1/05-voiding.md:25-26`: "Koa examined Esa and recorded a finding — a real
   finding, on the record, made by someone with the credential." Koa's entire presence is
