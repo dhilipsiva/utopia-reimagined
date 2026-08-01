@@ -99,6 +99,31 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   rest of the suite. If that isolation ever changes upstream, this suite's containment
   goes with it and every ordering assumption in every pin file has to be re-examined.
 
+- **Provenance on `reward` is refused, and not because of the clawback fork**, decided
+  2026-08-01. The proposal is to give `reward` a second place recording what the recognition
+  was minted *for*, so a clawback could reach only what came from a fraud. **It keeps looking
+  cheap, and that is why it needs a written refusal**: all three minting rules already bind the
+  source and throw it away at the head — `$student`, `$task`, `$audited` — so the argument is
+  sitting there unused and costs no new vocabulary. Refused on five grounds, and **each holds
+  whichever way the Article 4 clawback fork is ruled**, so this does not reopen when that lands.
+  **(a)** `verify.sh` section 4 holds that nothing reads `reward`, by decision — and an arity-2
+  `reward` exists only to be read; verified, the narrower rule `reward($t,$s) & false($t) ->
+  lose(Points,$t)` loads and the absence guard catches it. **(b)** Section 4b forbids joining
+  `teaches`/`work` with itself, and a second place puts counted degree one rule away.
+  **(c)** It is insufficient alone: `lose(Points, $x)`'s first slot is the inert `Points` token,
+  so there is no provenance on the *losing* side and "claw back only what came from the fraud"
+  needs both ends. **(d)** The corpus entry will not carry it — `reward` is gismu `cnemu`,
+  arity 4, places `["subject","rewards","atypical","reward"]`, `Generic` tier with places never
+  hand-verified; the natural `reward($teacher,$student)` puts the student in the *party rewarded*
+  slot, not the deed slot. That is the ground `deserve`/`jerna` was rejected on. **(e)** Measured
+  2026-08-01: all three heads at arity 2 take `rights-floor.pins.nibli` from **15.07 s to
+  337.50 s**. **Chapter 6 already rules this way and needs no change** — *"The design's answer to
+  that tension is not to sharpen the instrument. It is to put a hard ceiling on it"* (`06:107`),
+  and `06:81-85` says whoever writes the narrower rule "will find they have written a repeal".
+  **The arity is guarded by three pins and by nothing else**: `reward(Esa/Quin/Gia)` TRUE in
+  `10-contribution.pins.nibli`. The FALSE pins in that file cannot guard it — under arity 2
+  `reward/1` stops existing and they pass vacuously.
+
 - **Two severity refusals, both on lexical/structural grounds rather than taste.** **Directness is refused**: the committed corpus has exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`, `injure` — and none means "directly"; `cause` (rinka) compiles but puts the person in the *effect* slot and is true of every injury in the cast, so as a boolean it routes nothing. Do not re-propose without a corpus name that carries the meaning. **Graded tiers are refused**: `building(MedSec, $x)` compiles and the constant is free, but `building/2` has no exclusivity constraint and is not closed in Article 0, so an offender matching two combinations derives two placements at once and `err(_, Placement)` is blind to it — a graded outcome needs a mutual-exclusion marker built in the same edit.
 - **Never route a constitutional judgment through the compute backend**, and the reason is not performance. An external predicate is a **trusted oracle, not something nibli proves**: a `true` reply is auto-asserted as a ground fact mid-query and never re-derived or checked (nibli `README.md:18`, and the *Trust boundary* callout in its compute-backend section — **cite that one by its heading, not a line number**; the citation has rotted twice, `:333` then `:323`, and is `:325` today). So a grade, tier or severity computed there enters the record as *a conclusion someone wrote*, which is exactly what chapter 1 says this design makes impossible. Embedding the backend changes who operates the oracle, not whether the result is derived. **Built-in arithmetic is different on trust and identical on lifecycle** — `product`/`sum`/`quotient` are computed locally with no third party, but the arithmetic fast path calls the same `assert_typed_fact`, so they leave the same untracked ground fact; "carries none of the oracle problem" is true of trust only. Two engine behaviours worth stating precisely because the earlier wording overstated both: an unreachable backend yields `UNKNOWN(BackendUnavailable)` and never `FALSE`, but a tuple already computed in that session still answers TRUE from the auto-asserted fact — an outage-*cache*, not a stall. And a universal over a number-bearing predicate is still vacuously true. It is **sometimes** no longer silent, and the earlier wording here overstated that twice. Since nibli `95cba22` a `[Domain]` note fires — but only where the restricting relation is **asserted**; put one rule in between and it goes quiet again (their corrected repro: `sum(every dog, 2, 2)` notes, the one-hop twin `sum(every animal, 2, 2)` does not). And **neither the note nor the proof step is reachable from `nibli-pin`**, which is the only binary this repo runs — verified 2026-08-01, no flag exposes it, and `nibli-host` still fails outright on a stale wasm. So treat the diagnostic as absent here, not as a safety net. What actually contains this is `verify.sh`'s digit ban: there is nothing numeric to quantify over. Compute is legitimate for the claim registry and the method part; never for the society's own conclusions.
 - **Chapter order is strictly computed**, never chosen. Exactly three elements are exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.
