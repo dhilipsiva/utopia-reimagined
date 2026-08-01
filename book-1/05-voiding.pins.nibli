@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 27
+:expect-pins 34
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -40,6 +40,17 @@
 # "One person's finding does not void a person."
 ? capture(Koa, Esa).
 # => TRUE
+
+# ...and the chapter now says exactly what kind of person Koa is: no act of
+# judging, no seat, no pen. The prose used to claim both and the record says
+# neither — these two pins are what keeps that sentence honest. Chapter 2's
+# no-standing exhibit and chapter 1's "documented something" rest on the same
+# two facts, so if either of these ever flips, three chapters move, not one.
+? judge(Koa, Esa).
+# => FALSE
+
+? permits(Review, Koa).
+# => FALSE
 
 ? false(Esa).
 # => FALSE
@@ -129,6 +140,29 @@ capture(Unrelb, Targo).
 ? false(Targo).
 # => TRUE
 
+# ── One person holding both pens ─────────────────────────────────────────────
+# "Give somebody everything... It still fails." Ambi is seated by BOTH bodies,
+# judged and recorded — every act the rule asks of either signer, done twice
+# over by one person. The void does not derive, and with both credentials
+# pinned TRUE beside the FALSE, the only conjunct left standing is that the two
+# names must belong to two people. This is also the liveness proof for the
+# distinctness test Article 4's header keeps "for the day one person holds both
+# pens": the cast now contains that day. The closing exhibit at the end of this
+# file proves distinctness is the ONLY bar left.
+choose(Electorate, Ambi).
+choose(Convocation, Ambi).
+judge(Ambi, Solo).
+capture(Ambi, Solo).
+
+? permits(Review, Ambi).
+# => TRUE
+
+? permits(Tribunal, Ambi).
+# => TRUE
+
+? false(Solo).
+# => FALSE
+
 # ── A voided man holding the pen, in the same snapshot ───────────────────────
 # Lupo's own credibility is already gone in the shipped cast — the review body
 # examined his deceitful finding and voided him. Seat him anyway. Nothing
@@ -170,3 +204,18 @@ rotten(Lupo).
 
 ? permits(Review, Lupo).
 # => FALSE
+
+# ── THE EXHIBIT: distinctness was the only bar. MUST BE LAST ─────────────────
+# An accepted rule loads into the KB and stays, so nothing may be pinned after
+# this point — the base below is widened, exactly like chapter 14's closing
+# exhibit, which is this file's precedent and its allowlist rationale in
+# verify.sh section 4d. The rule is the void rule minus the requirement that
+# the two signers differ. It loads, and Solo — untouchable above with every
+# other condition met — is voided by one man's two pens. That flip is the
+# proof that nothing but distinctness was holding, which is the section
+# headline executed: it takes two, and one name written twice is one name.
+:accept
+all $a: all $audited: permits(Review, $a) & permits(Tribunal, $a) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) -> false($audited).
+
+? false(Solo).
+# => TRUE
