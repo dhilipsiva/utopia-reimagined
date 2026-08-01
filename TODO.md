@@ -92,49 +92,31 @@ design choice is the specific dishonesty this phase exists to prevent.
 rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
 measured an engine change that was never rebuilt.
 
-- **HANDOFF PROMPT — expose the compiled stratification as data.**
-
-  ```text
-  In ~/projects/dhilipsiva/nibli: a consuming project needs the
-  stratification as machine-readable data, and today has to re-implement
-  the stratifier in regex to get it.
-
-  Context. The consumer is a book whose chapter ORDER is computed from the
-  dependency stratification of a constitution written in nibli KR. Its
-  generator (`5-spine-gen.py`) parses the .nibli text with regexes to
-  rebuild the predicate graph, assign strata, and classify base vs derived.
-  That is a second implementation of your stratifier, maintained by
-  somebody who cannot see your code, and it has already disagreed with the
-  engine twice.
-
-  The ask. For a loaded KB, dump every predicate with:
-    - its stratum
-    - whether it is base (EDB) or derived (IDB)
-    - its outgoing edges, marked positive or negative
-
-  Stable enough to diff across runs — sorted, no addresses, no hash order.
-  Any surface reachable from `nibli-pin` is fine: a `--strata` flag
-  printing to stdout is the smallest thing that works. `nibli-host` is not
-  usable for this consumer.
-
-  Why it matters beyond convenience: the book PRINTS these numbers to
-  readers as evidence that its chapter order was derived rather than
-  chosen. Numbers produced by a regex re-implementation cannot honestly be
-  presented as coming from the engine that enforces them.
-
-  Do NOT bundle a shared-engine / persistent-KB mode with this. That ask
-  existed to cut a 47-minute suite; the suite is now 29 s and per-file
-  re-stratification is not measurable against it. The dump alone.
-
-  ────────────────────────────────────────────────────────────────────
-  When this lands, reply with: the commit sha, what changed in one line,
-  whether any existing verdict moved, and anything you found that this
-  prompt got wrong. Paste that reply back into the book session — it is
-  the only channel between the two repos.
-  ```
-
-  Then `5-spine-gen.py` renders the dump instead of parsing text, and the
-  method part's numbers come from the engine that enforces them.
+- **LANDED 2026-07-31 — `nibli-pin --strata`, and it found three live disagreements.**
+  nibli `e1ce09d` dumps the engine's own stratification as TSV. `5-spine-gen.py` now
+  **consumes it** instead of re-implementing the stratifier in regex. What the diff found,
+  all verified here before changing anything:
+  **`entitled`** read as base at stratum 0 — the FLOOR branch synthesised the `P -> domain`
+  edge but never registered the outer predicate as a head. The engine puts it at **2,
+  derived**. **`severe`** read as stratum 0 with a "monotone cone" — its rules carry
+  `~($a = $b)`, a real negative edge to the `equals` builtin, so it is **stratum 1 and its
+  cone is not negation-free**. **`derived_only`** was a phantom node: the fact branch
+  registered the declaration keyword and never the name it quotes.
+  **Two printed numbers were right only because two errors cancelled.** `derived_only`
+  (phantom, +1) and `equals` (real, missed, −1) both hit the predicate total, so it read
+  50 either way; evidence read 23 by two different subtractions. The derived count was
+  genuinely wrong, 25 against the engine's 26.
+  **Four prose claims went with it**, including this file's own "`severe` has a wholly
+  negation-free cone", which was false in two places. **Chapter order did not move** —
+  chapter 1 carries the severity derivation for a stated editorial reason, not a stratum
+  one — so this was a numbers-and-prose correction, not a structural one.
+  **One error was mine, introduced in the rewrite and caught by the diff**: counting only
+  `->` lines undercounted rules by exactly the eight floor lines, which *are* rules — the
+  engine agrees, since `entitled` is derived. Fixed, and the reason is commented at the
+  count.
+  Two filters remain this document's choice and are now named in the generated block so
+  they are visible rather than silent: compiler artifacts (`event`, `__abs_<hash>`) are
+  dropped, and `equals` counts as a predicate but is not evidence, since nobody writes it.
 
 - **HANDOFF PROMPT — a temporal primitive that orders without numerals. READY.** Was
   blocked on "there is no release"; release landed, so the shape of the ask is now exact.
