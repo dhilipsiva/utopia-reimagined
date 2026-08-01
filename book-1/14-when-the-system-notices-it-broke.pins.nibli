@@ -108,10 +108,13 @@
 ? obliged(Review, Hano).
 # => TRUE
 
-# THE SWAP DISCRIMINATOR — DO NOT DROP EITHER HALF. `obligated` is a swap alias
-# of `obliged` on the same gismu, so writing Article 8b with the other spelling
-# leaves the four pins above TRUE and silently means the PRISONER is bound to the
-# Review. These two are the only thing that can tell the versions apart.
+# THE ARGUMENT-ORDER DISCRIMINATOR — DO NOT DROP EITHER HALF. Writing the duty
+# backwards leaves the four pins above TRUE while silently meaning the PRISONER is
+# bound to the Review. These two are the only thing that tells the versions apart.
+# [2026-07-31] The typo route closed upstream — `obligated` was renamed
+# `obligated_by`, so that spelling no longer compiles. The converse mechanism
+# survives under the new name, and a slip within `obliged` itself was never
+# covered by anything but these two lines.
 ? obliged(Ruk, Review).
 # => FALSE
 

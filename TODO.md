@@ -118,47 +118,22 @@ measured an engine change that was never rebuilt.
   they are visible rather than silent: compiler artifacts (`event`, `__abs_<hash>`) are
   dropped, and `equals` counts as a predicate but is not evidence, since nobody writes it.
 
-- **HANDOFF PROMPT — de-swap `obligated`/`obliged`. NO LONGER OPTIONAL.** It became
-  load-bearing on 2026-07-31 when `err` gained its first consumer.
-
-  ```text
-  In ~/projects/dhilipsiva/nibli: `obligated` and `obliged` are the same
-  gismu (bilga) with arguments 1 and 2 exchanged, and the renderer prints
-  the IDENTICAL sentence for both. That makes a silent, inverting typo.
-
-  Corpus entries:
-    obligated  swap: Some(Swap { with: 2, base: "obliged" })
-               template "{x1} is obligated to {x2}"
-    obliged    swap: None
-               template "{x1} is obligated to {x2}"
-
-  So `obligated(A, B)` compiles to `obliged(B, A)`. Both spellings load,
-  both answer TRUE on the surface form, and both render the same string.
-  Nothing anywhere tells the two apart.
-
-  Why it is now urgent. A consuming constitution writes
-  `obliged(Review, $x)` — a review body owes a duty about a person. Written
-  with the other spelling it silently means the PRISONER owes the duty to
-  the review body: the exact inversion of the guarantee the rule exists to
-  state. The only thing standing between that and a green test suite is a
-  hand-written two-pin discriminator asserting obliged(Review, Ruk) TRUE
-  *and* obliged(Ruk, Review) FALSE.
-
-  Either fix is acceptable:
-    (a) de-swap, so one spelling is canonical and the other is rejected or
-        normalised at parse time; or
-    (b) make the renderer distinguish them, so the printed sentence differs
-        and a reader can see which one they wrote.
-
-  (a) is preferred. A swap alias whose surface form is indistinguishable
-  from its base is a trap for anyone writing KR by hand.
-
-  ────────────────────────────────────────────────────────────────────
-  When this lands, reply with: the commit sha, what changed in one line,
-  whether any existing verdict moved, and anything you found that this
-  prompt got wrong. Paste that reply back into the book session — it is
-  the only channel between the two repos.
-  ```
+- **PARTLY LANDED 2026-07-31 — the typo route is closed, the mechanism is not.** nibli
+  `e70f22f` renamed the converse alias `obligated` to `obligated_by`, so `obligated(...)`
+  is now a compile error instead of a silently inverted fact. **Verified here**: the
+  refusal fires, our 359 pins pass untouched (our three `obligated` occurrences were all
+  in `#` comments), and `obligated_by(Warden, Ruk)` **still** compiles to
+  `obliged(Ruk, Warden)`. So the accidental mistake is gone and the converse is not — you
+  now have to type `_by`, which at least says which way the arguments run. The
+  chapter-14 discriminator stays: it is the only thing catching an argument-order slip
+  within `obliged` itself, which was never covered by the rename.
+  **What remains open is theirs, not ours, and it points at our spelling.** nibli's own
+  tracker files a defect where the deontic collapse names the wrong duty-holder when
+  back-translating the **base** spelling — `obliged`, i.e. ours. It cannot reach readers
+  today because this repo runs `nibli-pin` only and never renders prose. **It becomes
+  live the moment the method part prints a rendered sentence or a proof trace**, which is
+  exactly what that part is for. Re-check before that ships; do not hand it off as a
+  prompt, because it is already filed upstream and the fix is in their renderer.
 
 - **HANDOFF PROMPT — KB-owned predicate-set closure.** `derived_only` closes a *relation*
   against direct assertion; nothing closes the *set of relations* a KB will accept. Any of

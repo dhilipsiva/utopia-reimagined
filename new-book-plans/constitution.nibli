@@ -238,8 +238,8 @@ derived_only("severe").
 # x1 is the HOLDER of the claim, which is the reading a rights floor
 # needs. Rejected alternatives, each for a different reason, recorded so
 # nobody re-runs the analysis:
-#   `obligated` — `bilga`, places duty/do/standard, AND registered as the
-#     x1<->x2 conversion of `obliged`, so obligated(A,B) compiles to
+#   `obligated_by` — `bilga`, places duty/do/standard, AND registered as
+#     the x1<->x2 conversion of `obliged`, so obligated_by(A,B) compiles to
 #     obliged(B,A). Written positionally by the shipped corpora, so the
 #     old eight lines routed each person into a place labelled `duty` and
 #     each event into one labelled `do`. Not merely inverted — garbled.
@@ -259,7 +259,7 @@ derived_only("severe").
 # RENDER LIMITATION, pre-existing and NOT introduced here: back-translating
 # a floor line still leaks event scaffolding — "…then Y is an event and X
 # is entitled to Y". The collapse that reads `obligated` nicely is gated on
-# a hardcoded `matches!(rel, "obligated" | "obliged")` in
+# a hardcoded `matches!(rel, "obligated_by" | "obliged")` in
 # nibli-render/src/logic.rs:26. Do NOT simply add "entitled" to that list:
 # the collapse reads the party from place 2 and `entitled` has it in place
 # 1, so it would print the wrong word about the wrong argument. The fix is
@@ -660,14 +660,20 @@ all $x: clear($x) -> permits(Appeals, $x).
 # a choice wearing the clothes of a necessity, and it is now a smaller
 # choice, made one link further along.
 #
-# SPELL IT `obliged` AND NEVER "CORRECT" IT TO `obligated`. They are the
-# same gismu (bilga) and `obligated` is a SWAP ALIAS — corpus entry
-# `swap: Some(Swap { with: 2, base: "obliged" })` — so `obligated(Review,
-# $x)` compiles to `obliged($x, Review)`: THE PRISONER BOUND TO THE
-# REVIEW. Both spellings load, both answer TRUE on the surface form, and
-# the renderer prints the identical sentence for each. The only defence
-# is the discriminating pin pair in the chapter-14 suite: obliged(Review,
-# Ruk) TRUE *and* obliged(Ruk, Review) FALSE. Do not drop either half.
+# SPELL IT `obliged`. [2026-07-31] The accidental path is now CLOSED
+# upstream: `obligated` was renamed `obligated_by` (nibli e70f22f), so
+# writing `obligated(...)` is a compile error rather than a silently
+# inverted fact. That was the realistic mistake and it can no longer be
+# made by typo.
+#
+# THE MECHANISM IS NOT CLOSED, so the pins stay. `obligated_by` is still
+# the x1<->x2 converse — verified after the rename, `obligated_by(Warden,
+# Ruk)` compiles to `obliged(Ruk, Warden)`, the prisoner bound to the
+# warden. What changed is that you now have to type `_by`, which says
+# which way the arguments run. The discriminating pin pair in the
+# chapter-14 suite — obliged(Review, Ruk) TRUE *and* obliged(Ruk, Review)
+# FALSE — is no longer the ONLY defence, but it is still the only thing
+# that catches an argument-order slip within `obliged` itself. Keep both.
 #
 # TWO RULES, NOT ONE — AND AS OF 2026-07-31 THAT IS HISTORY, NOT NECESSITY.
 # `all $x: all $k: err($x, $k) -> obliged(Review, $x).` derived NOTHING when
