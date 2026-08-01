@@ -32,11 +32,81 @@ KB=new-book-plans/constitution.nibli
 SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
 QUICK=0
-[ "${1:-}" = "--quick" ] && QUICK=1
+ONLY=""
+case "${1:-}" in
+  --quick) QUICK=1 ;;
+  --only)  ONLY="${2:-}" ;;
+  "")      ;;
+  *)       printf 'usage: ./verify.sh [--quick | --only <pinfile>]\n' >&2; exit 2 ;;
+esac
 
 pass() { printf '  \033[32mok\033[0m   %s\n' "$1"; }
 fail() { printf '  \033[31mFAIL\033[0m %s\n' "$1"; [ -n "${2:-}" ] && printf '       %s\n' "$2"; exit 1; }
 step() { printf '\n\033[1m%s\033[0m\n' "$1"; }
+
+# THE BINARY MUST MATCH THE SOURCE, AND THIS IS WHY THE SCRIPT DOES IT.
+# On 2026-07-31 nibli landed NAF materialisation. The commit was on main and
+# materialize.rs was on disk, but target/release/nibli-pin was three days old, so
+# this suite silently kept running the OLD engine — same green result, same 47
+# minutes, and the obvious conclusion would have been that the upstream work did
+# nothing. A stale binary is invisible: every pin still passes, because the pins
+# check the constitution, not the engine.
+#
+# Incremental and free: ~0.2 s when nothing changed, measured, against a ~29 min
+# run. `--quick` never reaches here, so it stays at ~2 s.
+# `--manifest-path` rather than `cd`, so this works from any directory.
+#
+# A FUNCTION because `--only` needs it too. A fast per-file loop that skipped the
+# rebuild would be the stale-binary bug again, in the mode people run most.
+build_engine() {
+  step "engine"
+  if [ "$NIBLI_PIN_OVERRIDDEN" = "1" ]; then
+    pass "NIBLI_PIN set — using $PIN as-is, not rebuilding"
+  elif [ -f "$NIBLI_SRC/Cargo.toml" ] && command -v cargo >/dev/null 2>&1; then
+    out=$(cargo build --release --bin nibli-pin --manifest-path "$NIBLI_SRC/Cargo.toml" 2>&1) \
+      || fail "nibli-pin failed to build" "$out"
+    rev=$(git -C "$NIBLI_SRC" rev-parse --short HEAD 2>/dev/null || echo "not-a-git-checkout")
+    dirty=$(git -C "$NIBLI_SRC" status --porcelain 2>/dev/null | head -1)
+    pass "engine built from ${rev}$([ -n "$dirty" ] && echo ' +uncommitted')"
+  else
+    printf '  \033[33mwarn\033[0m no nibli source at %s — running whatever binary is there\n' "$NIBLI_SRC"
+    printf '       set NIBLI_SRC, or NIBLI_PIN to silence this deliberately\n'
+  fi
+  [ -x "$PIN" ] || fail "no nibli-pin at $PIN" "build it release, or set NIBLI_PIN"
+}
+
+# ── --only: one pin file, for the iteration loop during a chapter pass ───────
+# Every pin file used to document its own `nibli-pin --kb …` command. Thirteen of
+# them worked while missing the cross-file reconciliation; TWO WERE SIMPLY BROKEN
+# — chapters 8 and 14 carry `:require` preconditions, their documented command
+# omitted `--allow-shell`, and pasting it gave exit 2 plus a pin-count mismatch
+# that read as though the file had been edited. This mode exists so there is one
+# command that cannot be pasted wrong: it passes the flag, it rebuilds the engine,
+# and it picks the right knowledge base.
+if [ -n "$ONLY" ]; then
+  [ -f "$ONLY" ] || fail "no such pin file: $ONLY" "usage: ./verify.sh --only <pinfile>"
+  case "$ONLY" in
+    *.pins.nibli) ;;
+    *) fail "not a pin file: $ONLY" "expected a path ending .pins.nibli" ;;
+  esac
+  # A counterfactual pin file is asked against ITS OWN constitution, not the real
+  # one — that is the entire point of those fixtures, and running them against the
+  # live file would invert every verdict in them.
+  kb="$KB"
+  case "$ONLY" in "$CF"/*) kb="${ONLY%.pins.nibli}.nibli" ;; esac
+  build_engine
+  step "pins — $ONLY"
+  printf '  against %s\n' "$kb"
+  "$PIN" --allow-shell --kb "$kb" "$ONLY"
+  rc=$?
+  # Propagate, including 3 (a pinned defect stopped reproducing). Swallowing that
+  # here would hide the one outcome the :defect markers exist to announce.
+  printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
+  printf '        cross-file :expect-pins reconciliation, the spine, the jargon sweep,\n'
+  printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
+  printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
+  exit $rc
+fi
 
 # ── 1. the spine is regenerated from the constitution ────────────────────────
 step "spine"
@@ -269,33 +339,9 @@ if [ "$QUICK" = "1" ]; then
   printf '\n\033[33mskipped\033[0m the pin suite (--quick)\n'
   exit 0
 fi
-step "engine"
-# THE BINARY MUST MATCH THE SOURCE, AND THIS IS WHY THE SCRIPT DOES IT.
-# On 2026-07-31 nibli landed NAF materialisation. The commit was on main and
-# materialize.rs was on disk, but target/release/nibli-pin was three days old, so
-# this suite silently kept running the OLD engine — same green result, same 47
-# minutes, and the obvious conclusion would have been that the upstream work did
-# nothing. A stale binary is invisible: every pin still passes, because the pins
-# check the constitution, not the engine.
-#
-# Incremental and free: ~0.2 s when nothing changed, measured, against a ~29 min
-# run. `--quick` never reaches here, so it stays at ~2 s.
-# `--manifest-path` rather than `cd`, so this works from any directory.
-if [ "$NIBLI_PIN_OVERRIDDEN" = "1" ]; then
-  pass "NIBLI_PIN set — using $PIN as-is, not rebuilding"
-elif [ -f "$NIBLI_SRC/Cargo.toml" ] && command -v cargo >/dev/null 2>&1; then
-  out=$(cargo build --release --bin nibli-pin --manifest-path "$NIBLI_SRC/Cargo.toml" 2>&1) \
-    || fail "nibli-pin failed to build" "$out"
-  rev=$(git -C "$NIBLI_SRC" rev-parse --short HEAD 2>/dev/null || echo "not-a-git-checkout")
-  dirty=$(git -C "$NIBLI_SRC" status --porcelain 2>/dev/null | head -1)
-  pass "engine built from ${rev}$([ -n "$dirty" ] && echo ' +uncommitted')"
-else
-  printf '  \033[33mwarn\033[0m no nibli source at %s — running whatever binary is there\n' "$NIBLI_SRC"
-  printf '       set NIBLI_SRC, or NIBLI_PIN to silence this deliberately\n'
-fi
+build_engine
 
 step "pins (~20 s — was 47 min; nibli materialised negation, positive goals, then the event projection)"
-[ -x "$PIN" ] || fail "no nibli-pin at $PIN" "build it release, or set NIBLI_PIN"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
 out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)
