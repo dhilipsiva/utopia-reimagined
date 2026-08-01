@@ -114,29 +114,25 @@ No known defects. Read it against the constitution anyway.
 
 ### Chapter 4
 
-- **Chapters 4 and 5 argue about voids and pin none of the premises a void turns on.**
-  Four gaps, all cheap, all re-verified 2026-08-01:
-  - `? deceive(Sly, Court). # => FALSE` — the conjunct the shield chapter turns on.
-    `04-the-shield.pins.nibli:26-41` pins Sly's `show`, the authority and the outcome,
-    and never the *absence* of a deceit finding, which is the only thing separating Sly
-    from Kel two blocks later. Verified: the string `deceive(Sly` occurs in no pin file.
-  - `? judge(Gia, Bela).` / `? capture(Gia, Bela).` / `? judge(Hex, Bela).` /
-    `? capture(Hex, Bela).`, all TRUE. Chapter 5's Bela block pins the two credentials
-    and the result and skips the four facts that actually satisfy `:482`.
-  - The `~parent($a,$b) & ~parent($b,$a)` independence conjunct is exercised by **no pin
-    anywhere** — `parent` occurs in exactly one pin, `05-voiding.pins.nibli:29`, which
-    looks like it covers this and does not: it exercises Article 5 (`:493`), a different
-    rule with a different head. The control has to be **cross-body** now, and that is
-    not a detail: a same-body pair fails on the credential conjuncts first and proves
-    nothing — measured, the obvious control returns FALSE for the wrong reason. Verified
-    with an Electorate-seated parent and a Convocation-seated child against one target,
-    and an unrelated cross-body pair against another: `? false(Targ). => FALSE`,
-    `? false(Targo). => TRUE`. The control is the point.
-  - No fixture shows a voided pen-holder **in the same snapshot**. Seat Lupo and
-    `? false(Lupo). => TRUE` and `? permits(Review, Lupo). => TRUE` hold together, and
-    Lupo then co-signs a fresh void with a Convocation-seated partner — verified,
-    `? false(Frisk). => TRUE`. That is the epoch-granularity limit the constitution
-    discloses in prose at `:687-690` and that no pin has ever demonstrated.
+- **The void rule carries four conjuncts nothing can fail.** Article 4's `~broken` and
+  `~rotten` tests on both signers are unreachable: Article 8's credential rules already
+  read both, so a pen cannot be held without them. Verified 2026-08-01 — assert
+  `rotten(Gia).` and `permits(Review, Gia)` goes FALSE before the void rule is reached;
+  same for `broken(Hex).` Consequence for reading the suite: chapter 5's Vex/Tyr pin and
+  the new carried-mark pin both land on the **missing credential**, not on the carried
+  mark failing the void. The chapter's prose already says this correctly — *"that mark
+  blocks the credential"* — so this is dead weight in the rule, not a wrong sentence in
+  the book. Removing them is a constitution edit and wants its own pass; the risk of
+  doing it carelessly is that the rule stops being readable as a list of everything a
+  signature must satisfy.
+
+- **Chapter 4 counts its own cases in four places.** *"Four people show what the design
+  does"*, *"Three things follow at once"*, *"Notice what the four cases have in common"*,
+  *"Three things, and the last two compound each other"*. The ratchet cannot see numbers
+  below eleven, so these pass today and are exactly the shape the no-counted-claims rule
+  exists to stop: three of them go stale the moment a fifth defendant joins the cast, and
+  a fifth defendant is how this chapter has grown twice. State the rule that produces the
+  count, per chapter 4's own pass.
 
 ### Chapter 5
 
