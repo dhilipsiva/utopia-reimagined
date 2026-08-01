@@ -10,7 +10,7 @@
 # prisoner in the cast is also asserted as a person. That is itself the
 # chapter's closing point.
 
-:expect-pins 9
+:expect-pins 15
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
@@ -27,7 +27,15 @@ judge(Court, Zed).
 ? person(Zed).
 # => TRUE
 
-# "Convicted ... and owed everything." The floor derives for Zed like anyone.
+# "Convicted, unlisted, and owed everything." The sentence says OWED, and until
+# now this file only proved undelivered — a FALSE that guards the gap, not the
+# debt. The debt pins are what the sentence rests on.
+? owe(State, Eats, Zed).
+# => TRUE
+
+? entitled(Zed, event { eats() }).
+# => TRUE
+
 # (Owed, not delivered — the delivery gap is chapter 8's subject.)
 ? eats(Zed).
 # => FALSE
@@ -57,4 +65,24 @@ all $x: person($x) & ~home($x) -> prisoner($x).
 
 # "the eight things are owed to persons" — Hano, convicted, keeps expression
 ? expresses(Hano).
+# => TRUE
+
+# ── THE SECOND DOOR. MUST STAY LAST: free(Nemo) is a ground fact and persists ─
+# "release has to return you to the roster ... a finding with no finder." One
+# write, a name the record has never held, and a person exists — never listed,
+# never judged, released from a sentence that never existed. Chapter 1's suite
+# pins this same door via Wraith as the route the evidence list already
+# contained; this file pins it as the route the corollary used to deny.
+free(Nemo).
+
+? person(Nemo).
+# => TRUE
+
+? prisoner(Nemo).
+# => FALSE
+
+? travel(Nemo).
+# => TRUE
+
+? owe(State, Eats, Nemo).
 # => TRUE
