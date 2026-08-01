@@ -44,10 +44,17 @@ your health, your movements, or your associations. There is no field for what yo
 likely to do. There is no field for what someone suspects.
 
 None of this is because those things were considered and rejected on principle,
-though they were. It is because every slot on the list holds something that happened,
-and none of them holds a judgment about a person's character. If you wanted to write
-down that someone seems untrustworthy, you would find you had no way to write it. The
-sentence does not go anywhere.
+though they were. It is because no slot on the list holds a feeling about you. If you
+wanted to write down that someone seems untrustworthy, you would find you had no way to
+write it. The sentence does not go anywhere.
+
+What you can write down is that a body already concluded something about them. *Someone
+lied.* *Someone was voided in an earlier period.* Those are on the list, and the second
+one does most of the work a character mark would do: it says this person's word was
+found worthless once, and everything downstream treats them accordingly. The difference
+between that and a file full of impressions is real, and it is narrower than the
+paragraph above makes it sound. It comes back at the end of this chapter, because it is
+the honest weakness in the whole arrangement and it deserves more than a clause.
 
 Be precise about the size of that claim, because the obvious version of it is too
 strong. This design does classify. It classifies *acts* — that one was an attack, that
@@ -71,7 +78,11 @@ the facts, and after a while nobody can tell which is which. Once it is in the f
 it travels. You cannot argue with it, because it is not an accusation you can answer;
 it is a description of you.
 
-That cannot happen here, and not because anyone promised. There is no slot for it.
+The worst of that cannot happen here, and not because anyone promised. There is no slot
+for an impression. But the list does hold entries that are somebody's conclusion, written
+in the same ink as the facts and looking exactly like them, and the design does not mark
+which is which either. It is a smaller version of the same problem, and pretending
+otherwise would be the kind of claim this chapter is about.
 
 ## Facts and conclusions are kept apart
 
@@ -128,13 +139,22 @@ strip what they have earned — is a conclusion at the end of a chain of ordinar
 facts. There is no back door where you write the conclusion directly and skip the
 chain, because the door was never built.
 
+Hold that sentence to exactly what it says. The conclusion cannot be written. The chain
+can still be short — sometimes one entry long, where a single thing somebody writes down
+is enough on its own to force the verdict. Nobody skipped anything; they wrote the
+premise instead, and the premise was one they had to reach a judgment to write. That is
+a different objection from the one this section answers, and the end of the chapter is
+where it gets taken seriously.
+
 Be exact about which word carries that sentence, because the looser version of it is
 false and the looser version is the one you will want to believe. *Conclusions* cannot
 be written. Facts can — that is what makes them facts — and one of them is personhood.
 Being a person is not something anybody reasons their way to at the end of a chain. It
 is written down at the start of one. So the design shuts the door on writing verdicts
-and leaves it standing open on the single fact that every verdict, and every protection,
-takes for granted.
+and leaves it standing open on the fact that every verdict, and every protection, takes
+for granted. Personhood is the entry the design cannot do without, which is why it is
+the one worth staring at first. It is not the only thing the door is standing open on,
+and the end of this chapter is about the rest.
 
 ## One person's word does not move anything
 
@@ -248,7 +268,50 @@ record from which an absence is visible. Whatever guards the roster has to stand
 the design and watch it over time — which is a real answer, and a much weaker one than
 the rest of this chapter has been able to give.
 
-The rest of this book describes what the facts on the list are permitted to produce:
+There is a third route, and unlike the two above it needs nobody added to the roster or
+left off it. It needs only that somebody writes down something they were entitled to
+write.
+
+Go back to the list and put the chapter's own test to it — the test used on severity a
+few pages ago. *It looked like a fact. It was a verdict.* Ask of each entry: could
+somebody have written this from what they saw, or did somebody have to decide something
+first?
+
+Several entries fail that test. *Someone lied* is not seen, it is found. Whether two
+people are family is a determination. So is whether a sentence is finished. Nothing in
+the design defines any of them, and nothing has to happen before one is written down.
+
+What follows is not small. Write that a man lied about the official he exposed — nothing
+else, no examination recorded, nobody's name attached to the finding — and the
+protection he had for exposing it is gone and he is a prisoner. Write that a convicted
+man has family, one word, and he stops being eligible to serve his sentence at home and
+goes to a facility instead. In both cases nobody wrote the verdict. It followed,
+correctly, from a premise somebody typed.
+
+Here is what survives of the original claim, and it is worth stating exactly, because
+the looser version is the comfortable one. The adjudication still has to happen
+somewhere, and it still has to be written down by somebody into a record that can be
+read back and disputed. Nobody holds a conclusion in their head and has the design act
+on it.
+
+Here is what does not survive. Where the record holds an examination, it names the
+examiner — this body judged that person, this auditor documented that finding. Where it
+holds a verdict, it names nobody. The entry saying someone lied does not say who found
+that they lied. The entry ending a sentence does not say who decided it was over. The
+people who wrote this design's own worked examples were careful, and put a review body's
+judgment beside every recorded lie — but that is a habit of the people doing the writing.
+No rule requires it and nothing checks it, and the write that jails the whistleblower
+above has no judgment anywhere near it and works exactly as well.
+
+That is the roster gap again in a smaller form. A finding still has to be written, still
+sits in the open, and still names the person it is about, which is more than a file of
+impressions ever gives you. But this chapter opened by saying the record holds what
+happened and keeps conclusions out, and that is not quite what it does. It keeps out the
+conclusions at the end of the chain. Some of what it admits at the start of one is a
+conclusion too, wearing the same clothes severity wore — and severity was taken off the
+list for exactly that reason.
+
+The rest of this book describes what the entries on the list are permitted to produce:
 who may hold power, what may be taken away, and what may never be. All of it rests on
 the list, and the list rests on the entry that says you are a person. If you want to
 know where to watch, watch who is on the roster and who is not.
