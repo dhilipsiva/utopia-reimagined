@@ -165,6 +165,36 @@ noticed=$(awk -F'->' '/^[^#]/ && /->/ && $2 ~ /err\(/ && $1 ~ /(^|[^a-z])(secure
 Article 6's isolation marker should be one"
 pass "floor rights reach only err ($noticed such rule, none reaching a consequence)"
 
+# ── 4a. `reward` is one place wide, and that is a refusal ────────────────────
+# Provenance on recognition — `reward($teacher, $student)`, so a clawback could
+# reach what came from the fraud and leave the rest — was REFUSED 2026-08-01, not
+# deferred. The grounds are in CLAUDE.md and hold on both branches of the open
+# Article 4 clawback fork.
+#
+# NOTHING ELSE HERE CAN SEE IT ARRIVE, which is the entire reason this exists.
+# Rewriting the three heads is caught by the pin suite, but only as "reward(Esa)
+# regressed" — and it makes five OTHER reward pins vacuous in the same edit, since
+# a FALSE pin against a relation that has stopped existing still reads FALSE.
+# The additive shape is worse: derivation is monotone, so a FOURTH head at arity 2
+# added beside the three leaves `reward/1` deriving, and the absence loop above and
+# the whole pin suite stay green. Verified both ways before this was trusted.
+#
+# The mention count is not decoration. "nothing reads reward" passes just as
+# cleanly against a `reward` that has been renamed out of the file, so one check
+# de-vacuums the other.
+arity2() { awk -v p="$1" '/^[^#]/ && $0 ~ "(^|[^a-z_])" p "\\([^)]*," {print NR": "$0}' "$KB"; }
+n=$(awk '/^[^#]/ && $0 ~ "(^|[^a-z_])reward\\(" {c++} END {print c+0}' "$KB")
+[ "$n" -ge 1 ] || fail "the reward guards are vacuous" \
+  "no enacted line mentions reward at all — 'nothing reads reward' above is proving nothing"
+ctl=$(arity2 'judge' | wc -l)
+[ "$ctl" -ge 1 ] || fail "the arity guard is broken" \
+  "positive control /judge(_, _)/ returned 0; the multi-sig rule carries two places"
+bad=$(arity2 'reward')
+[ -z "$bad" ] && pass "reward is one place wide ($n enacted mentions; control saw $ctl two-place judge)" \
+  || fail "reward has grown a second place — provenance on recognition is refused" \
+          "$bad
+       See CLAUDE.md: refused on grounds that hold on both sides of the Article 4 fork."
+
 # ── 4b. no counted degree on the reward side ─────────────────────────────────
 # The digit ban above stops a quantity being WRITTEN. This stops one being
 # COUNTED, which is the cheaper route and the one chapter 10 points at directly:

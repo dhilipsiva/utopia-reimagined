@@ -94,150 +94,6 @@ the phase runs first.
 rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
 measured an engine change that was never rebuilt.
 
-
-- **BLOCKED, do not hand off — provenance on `reward`.** The shape of the ask depends on
-  which side the Article 4 clawback fork gives — *"Decide the Article 4 clawback question"*,
-  under **Constitution (KB) work** — because provenance is only needed if a clawback is
-  narrowed rather than deleted, and that bullet has already closed the student half: since
-  students never mint, narrowing `:348` *is* deleting it. What is left for provenance is the
-  wrongdoer's own record. Hand it off after the ruling, not before.
-  **Re-measured 2026-08-01, and the old figures are dead.** A single `reward` probe now
-  answers in about a tenth of a second whether the heads are arity 1 or arity 2, so the
-  38.9 s-against-2.1 s pair this bullet used to carry predates the `event { }` projection
-  and means nothing. The cost is real and it lands in one file: with all three `reward`
-  heads rewritten to arity 2, `rights-floor.pins.nibli` goes from **14.8 s to 343.8 s** —
-  a ~23× cost, the same ratio the dead measurement reported, and still not a hang. Budget a
-  `verify.sh` that runs in minutes rather than seconds; do not fear a stall.
-
-## Phase 2 — Author-gated decisions. Rule these before the chapter passes.
-
-Each of these is a design decision, not a task. Several chapters below cannot be
-revised until the decision above them is ruled, because the ruling is what the chapter
-says. Record the decision in `CLAUDE.md` when it lands, so it is not re-proposed.
-
-- **[AUTHOR-GATED] Decide whether the other seven floor rights get delivery markers.**
-  Opened 2026-07-31 by the Article 1b itemisation, and it is the largest thing the
-  delivery gap has ever had. **The design already detects a floor right that did not
-  arrive** — Article 6's `prisoner($p) & ~meets($p) -> err($p, Isolation)` (`:589`) is
-  exactly an undelivered-right marker, for company. Seven have nothing. Re-verified
-  2026-08-01 against the constitution as it now stands, Article 0a included:
-  `owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered)` is **accepted and derives**,
-  `err(Bela, Undelivered)` TRUE. **Article 0a does not charge for it** — that block closes
-  what may be *written*, and `err` is derived, so no `admits` line is needed. It is legal
-  under the narrowed INVARIANT 1 (head is `err`, so it notices without acting) and it is
-  simply unbuilt.
-  **The asymmetry was discovered, not chosen**, which is why this needs a ruling rather
-  than a defence: nothing anywhere records why company is checked and food is not.
-  **The cost doubles, and that is new since Article 8b.** Every marker kind needs its own
-  `obliged` rule — 8b names `Placement` and `Isolation` one at a time (`:735-736`) because
-  the general `err($x, $k)` form derives nothing on this engine (`:718`). Verified: with
-  the Undelivered rule in, `err(Bela, Undelivered)` is TRUE while `obliged(Review, Bela)`
-  is **FALSE**, against `obliged(Review, Ruk)` TRUE off the isolation marker. Markers
-  built without their matching obligations are weaker than the single marker the design
-  already has, and chapter 14 would have to say so.
-  Beyond the rules: a real rewrite of `08`'s closing item, which currently turns on
-  exactly this asymmetry, and of chapter 14, which gains the markers to be honest about —
-  including that they would fire on nearly everybody, since almost nothing is delivered.
-  That last point is the argument against, and it is not nothing: seven more alarms that
-  fire on the whole population report the same emptiness the isolation marker already
-  reports.
-
-- **[AUTHOR-GATED] Now that duration is expressible, decide whether the design says how
-  long.** Opened 2026-07-31 by nibli `fc277a9`, which established that **no new primitive
-  was ever needed** — the corpus already carries `earlier`/`later`, `happen`, `continue`,
-  `cease`/`end`, `concurrent`, and `time(x, from, to)` as an interval, none with a numeric
-  place. **Re-verified 2026-08-01, and Article 0a changed the answer.** All nine are now
-  refused at assert time — *"`earlier` is not admitted vocabulary"* — and none of them
-  compiles until an `admits` line sits above its first use. With those lines in, all nine
-  load and answer, `year(Term, Two)` included: a term length with **no digit**, so
-  `verify.sh`'s ban still does not stop it, and `cease/2` loads, so "not yet" is still not
-  a tense question — `~cease(Term, Custody)` says it. That is the mechanism working as
-  designed and it improves the decision rather than blocking it: widening the record for
-  time is now a visible, reviewable edit at Article 0a instead of a fact somebody types.
-  **What is genuinely absent is arithmetic on time** — nothing computes a length, compares
-  two, or advances a clock. So a term could be stated and nothing would count it down.
-  **Chapter 13 has been corrected either way** (`93da52f`, `d148d2d`). It used to say the
-  refusal to grade duration "is not principle — it is that the vocabulary for duration was
-  never built", which is false; `13:130-151` now says the refusal is a choice and holds the
-  chapter's own reason — grading *how long* means saying what makes one sentence longer
-  than another, and every answer prices someone's character.
-  **The decision is whether that stays a refusal.** Reversing it now costs a chapter
-  rewrite on top of the vocabulary, and the vocabulary costs twice: one evidence entry and
-  one `admits` line for every relation admitted, which is chapter 1's named threat realised
-  in a single visible edit. What it buys is a design that can state a term it cannot
-  enforce — the enforcement needs arithmetic that does not exist. Ruling "no" is a position
-  to defend rather than a limit to disclose, which is the stronger place to be and the
-  harder one.
-
-
-- **[AUTHOR-GATED] Decide whether the shield's exposure surface is bounded by time.**
-  `authority` comes from `choose(Electorate, ·)` (`:627`), `choose(Convocation, ·)`
-  (`:632`) and `public(·)` (`:643`), none of which ever expires, so the set of people whose
-  exposure buys a defendant the fail-open window only grows: everyone the electorate has
-  ever seated stays on it permanently, and a defendant a century from now can reach back
-  and open the window. Verified 2026-08-01 — one `show(Zeno, Court).` by a fresh constant
-  gives `defend(Zeno)` TRUE.
-  **The blocking fork is gone and it took half the question with it.** The shield was ruled
-  exposure-scoped on 2026-07-30 (`8303a8e`) — the deceit finding must be about the same
-  exposure — which does not touch this, because the surface grows regardless of scoping.
-  And the constitution has already picked a side in commentary at `:644-646`: *"Seating is
-  forever exposable; only POWER (permits) is revocable."* So what is left is narrower:
-  does that sentence get defended in Part V's capture joint as written, or does the exposed
-  conduct get bounded by epoch after all?
-  **Price the bound before ruling.** The constitution has no in-snapshot time, so a recency
-  bound is expressible only as another asserted fact, which lands it back in the fact-write
-  trust base — and since Article 0a it also costs a visible `admits` line, which is an
-  argument for doing it that way rather than against.
-
-
-- **[AUTHOR-GATED] Decide whether Part V prices the temporary-assessment exclusion.**
-  Chapter 1 excludes assessments of a person's present state (`01:40-44`) and explains at
-  `01:46-48` that the reason is structural rather than principled — *"None of this is
-  because those things were considered and rejected on principle, though they were. It is
-  because every slot on the list holds something that happened."* It never prices what the
-  exclusion costs. The strongest objection in the review corpus: medical capacity, flight
-  risk and conflict-of-interest are *temporary, operational* assessments a functioning
-  society cannot run without, so forbidding them does not abolish them — it pushes them
-  into a parallel record the constitution cannot see, which is the exact failure mode
-  chapter 1 exists to prevent, relocated one level out. A hostile reader reaches this in a
-  paragraph. Inclusion-gate ruling: this is how the society **functions**, so it is
-  legitimate Part V material and out of Parts I–IV by construction. **The remedy is not
-  adoptable as stated** — a capacity or risk field is a standing judgment about a person,
-  breaking bright line 2 and landing an eligibility computation upstream of the floor. The
-  survivable answers are narrower and both need a ruling: a two-place fact about an
-  *episode* rather than a one-place property of a person, which costs another entry in the
-  evidence vocabulary and, since Article 0a, a visible `admits` line above its first use;
-  or an explicit concession that this design routes such assessments outside the record,
-  with the reason why that is the lesser harm stated rather than implied. Decide which
-  joint owns it — capture is the closest fit — and which of the three verdicts it gets.
-
-- **[AUTHOR-GATED] Decide how much emotional texture Part V absorbs.** Five of six reviewers
-  independently asked for the same three things: emotional register, an external antagonist,
-  and characterisation of the named cast. Mostly foreclosed by construction — the chapter
-  order is computed, the cast comes from the constitution's own adversarial fixtures rather
-  than from invention, and Parts I–V are jargon-free — but *five of six* is a signal about
-  **how the derived spine reads**, not a taste complaint. Two channels are open without
-  breaching the gate: Part V is explicitly non-derived, and the day-in-the-life technique is
-  already queued for harvest. Decide the ceiling **now**, before Part V is drafted, because
-  retrofitting register across fourteen finished chapters is a different job. The concrete
-  question is narrow: does the named cast get any interiority at all in Part V, or does the
-  book hold the line that the people in it are exactly the facts recorded about them — which
-  is itself the thesis.
-
-
-- **[AUTHOR-GATED] Voice.** All fourteen chapters are written in a plain, mostly impersonal
-  register. The legacy book was first-person and warm, and the constitution's own commentary
-  says "the manifesto voice is the author's to re-weave — I am not ghost-writing it." Only
-  the author can supply it, and every chapter drafted before that pass needs re-touching, so
-  it gets more expensive each week.
-
-- **[AUTHOR-GATED] Plan the reach strategy.** `LICENSING.md` already records the
-  constraint and its consequence — exclusivity can never be sold, so serialization and open
-  circulation are the route by default rather than by choice, and the title is the only
-  integrity lever that survives, since no licence here grants trademark. What is not
-  decided is the plan: where the serialization runs, in what order, and what a launch looks
-  like when the text is free the day it appears. Nobody but the author can make that call.
-
 ---
 
 ## Phase 3 — Chapter passes, chapter 1 through 14, in order.
@@ -1593,3 +1449,15 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
   nibli's pin language is closed by design — nothing under their `pins/` may reach outside
   the repo, and their own gate never passes the flag. We control our own invocation, so the
   gate costs us one flag in `verify.sh` and protects a guarantee that is theirs to keep.
+
+- **An extra argument on a derived relation costs about 22x, and the cost lands in one file.**
+  Measured 2026-08-01 on the release engine: rewriting all three `reward` heads from arity 1 to
+  arity 2 takes `rights-floor.pins.nibli` from **15.07 s to 337.50 s**. A single probe is
+  unaffected — it answers in about a tenth of a second either way — so the cost is not in the
+  query, it is in re-saturating per pin, which is nibli's own open item *"Materialisation:
+  incremental re-saturation (C3)"*. Two older figures for this are dead and should not be
+  quoted: a claimed non-termination past fifteen minutes never reproduced, and a 38.9 s-against-
+  2.1 s pair predates the `event { }` projection. This is the answer to "how expensive is one
+  more argument here", which is the question anybody proposing one will ask first. It is not an
+  argument against a second place on `reward` — [[provenance is refused on other grounds]], and
+  those grounds are in `CLAUDE.md`.

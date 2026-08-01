@@ -5,7 +5,8 @@
 #
 # The chapter's central claim — that recognition has no quantity, and is never
 # ranked — is a claim about an ABSENCE and so cannot be pinned by a query. It is
-# checked structurally instead, by three guards in verify.sh section 4:
+# checked structurally instead, by the guards in verify.sh section 4 — listed here
+# without a count, because this list has already grown once since it was written:
 #   - no digit in an enacted line          (a quantity cannot be written)
 #   - nothing reads `reward`               (recognition feeds nothing downstream)
 #   - no rule joins `teaches` or `work` with itself
@@ -13,22 +14,21 @@
 # The last two are the "What is lost" section: degree is available here and is
 # refused, not merely unbuilt. Do not weaken them without rewriting :112-138.
 #
-# A FOURTH GUARD LIVES IN THIS FILE AND IS NOT IN verify.sh: `reward` is arity 1
-# by decision. Giving it a second place to record what the recognition was minted
-# FOR — provenance — is the standing proposal, refused 2026-08-01; the reasoning
-# is in CLAUDE.md and does not need repeating here. What matters at this line is
-# which pins enforce it.
+# A FOURTH GUARD, verify.sh section 4a: `reward` is arity 1 by decision. Giving it
+# a second place to record what the recognition was minted FOR — provenance — is
+# refused (2026-08-01, reasoning in CLAUDE.md). It defends :19-21 and :105
+# directly: arity 2 makes recognition a fact about a person AND a source, which is
+# no longer "the same single fact".
 #
-# THE THREE **TRUE** PINS BELOW ARE THE ENFORCEMENT. Measured against a scratch
-# arity-2 constitution: `reward(Esa)`, `reward(Quin)` and `reward(Gia)` flip FALSE
-# and this file reports exactly those three findings.
-#
-# THE THREE **FALSE** PINS CANNOT ENFORCE IT, and that is the trap. Under arity 2
-# `reward/1` stops existing, so `reward(Bela)`, `reward(Lupo)` and `reward(Dev)`
-# keep answering FALSE and keep passing — for the wrong reason, against a relation
-# that is no longer there. Never let this file drift to FALSE-only pins on
-# `reward`; the vacuous half would go on passing and the guard would be gone with
-# nothing to show it.
+# WHY IT IS IN verify.sh AND NOT LEFT TO THESE PINS. The three TRUE pins below do
+# catch a rewrite of the heads — measured, `reward(Esa/Quin/Gia)` flip FALSE. But
+# the three FALSE pins cannot catch anything: under arity 2 `reward/1` stops
+# existing, so they keep answering FALSE and keep passing, against a relation that
+# is no longer there. Two more pins elsewhere go vacuous the same way,
+# `reward(Cira)` in 06-clawback and `reward(Dev)` in rights-floor. And the ADDITIVE
+# shape is invisible to every pin in the suite: a fourth head at arity 2 beside the
+# three leaves `reward/1` deriving and everything green. Never let this file drift
+# to FALSE-only pins on `reward`.
 
 :expect-pins 12
 
