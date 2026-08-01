@@ -53,6 +53,8 @@ update it if only partly done. One item at a time: do it, verify it, commit it.
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — they are collected in phase 2 rather than scattered.
 
+- **[AUTHOR-GATED] Does care count as contribution?** See `reviews/ai_review.md` for the critique: caregiving is the largest category of real human contribution the text is silent about. The minimal question—*does care count as contribution at all, and should the book say so?*—is a real open question needing an author decision.
+
 **THE INCLUSION GATE — applies to Parts I–V only.** Those parts describe a
 destination, not a route. Before any passage goes in, two tests: (a) does it
 describe what the society IS or how it FUNCTIONS — not how anyone gets there? and
@@ -818,6 +820,7 @@ No known defects. Read it against the constitution anyway.
   ratchet before committing it** — it will be the first prose in `book-1/` the ratchet has
   ever scored, every other file predating it. The subtitle itself is clean; a note that
   opens by naming the floor's size would not be.
+  (Evidence for why this note must be clear upfront: see `reviews/ai_review.md`. A sympathetic reader can easily conclude the book is a dystopian teardown rather than an honest design if they aren't told what they're holding before chapter 6. The confessions are the method, not the verdict.)
 
 - **The honesty paragraph goes in the opening note, and half of it is already in print.**
   book-1 has no introduction, so the destination this item used to name is gone. One half
