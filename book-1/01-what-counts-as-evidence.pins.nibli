@@ -9,7 +9,7 @@
 # reader never sees this file. If a verdict flips, the sentence it guards has
 # started lying — fix the prose or the constitution, never the pin.
 
-:expect-pins 19
+:expect-pins 26
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -76,6 +76,43 @@ dangerous(Adam).
 
 # and the closure is EXTENSIONAL — conclusions still derive
 ? prisoner(Hano).
+# => TRUE
+
+# 1.6c THE LIST HOLDS FINDINGS, NOT ONLY THINGS THAT HAPPENED. Two writes, each
+# a conclusion somebody had to reach before it could be written, and each one
+# reaching a verdict the record refuses to be handed directly. These pin the
+# chapter's concession; if either pair stops flipping, the concession is wrong
+# and the section that makes it has to go.
+#
+# ORDERING: these accepts sit ABOVE the roster block deliberately and their
+# effects are disjoint from it — measured, `person(Wraith)` and `travel(Ghost)`
+# are unchanged with both loaded. They are unscoped for the same reason the
+# roster pair is: each is the premise of the query under it, not a control.
+
+# "Someone lied" — no definition, no precondition, and no finder named. The cast
+# writes a Review judgment beside every lie; no rule requires one, and this write
+# has none. It costs the whistleblower his shield.
+? prisoner(Rebel).
+# => FALSE
+
+:accept
+deceive(Rebel, Boss).
+
+? prisoner(Rebel).
+# => TRUE
+
+# "A person has a family" — one word, buried in a list of attributes, and it is
+# the whole of what decides where a convicted person is held.
+? fit(Hano, Homestay).
+# => TRUE
+
+:accept
+family(Hano).
+
+? fit(Hano, Homestay).
+# => FALSE
+
+? building(LowSec, Hano).
 # => TRUE
 
 # 1.7 "Someone is a person." — the entry, and the two ways it gets written.
