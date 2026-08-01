@@ -17,7 +17,7 @@
 # an oversight — so the "narrower rule" the chapter discusses has an empty target
 # and narrowing it is repeal. Keep these pinned; the prose turns on both.
 
-:expect-pins 15
+:expect-pins 21
 
 # "Bela was examined by two auditors and voided ... recognition is clawed back"
 ? false(Bela).
@@ -34,6 +34,33 @@
 # => TRUE
 
 ? prisoner(Bela).
+# => FALSE
+
+# "...still holds the vote. And Bela is still owed everything on the floor."
+? decide(Bela, Ballot).
+# => TRUE
+
+? entitled(Bela, event { eats() }).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+# THE PINS THAT WOULD HAVE CAUGHT THE OLD SENTENCE. The chapter used to say a
+# voided person "still eats. Still has somewhere to live." The record says
+# neither, about Bela or about anybody — being owed is not having, and the
+# chapter that owns that gap is chapter 8. Jala is the control: never accused,
+# never voided, and the same FALSE — which is what proves the verdict is the
+# delivery gap and not the voiding. If eats(Bela) ever turns TRUE while
+# eats(Jala) stays FALSE, something made the floor conditional on the finding,
+# and both chapters are wrong.
+? eats(Bela).
+# => FALSE
+
+? dwell(Bela).
+# => FALSE
+
+? eats(Jala).
 # => FALSE
 
 # "Bela taught Cira. Bela was voided. The rule reaches Cira too."
