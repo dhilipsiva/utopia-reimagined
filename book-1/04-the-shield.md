@@ -15,8 +15,10 @@ would imprison you stops working. Not slows — stops. The conviction rule canno
 complete while your shield holds.
 
 This is deliberately a strong instrument, and strong instruments get picked up by the
-wrong hands. Four people show what the design does about that. One of them shows what it
-decides not to, and the last shows where the whole arrangement gives way.
+wrong hands. The cases that follow are exactly that, in escalating order: a claim
+against somebody with no power, a claim nobody has yet examined, a claim examined and
+caught, and a caught liar starting fresh. One of them shows what the design decides not
+to do, and the last shows where the whole arrangement gives way.
 
 ## Don
 
@@ -86,7 +88,7 @@ Kel did what Sly did. Injured Pax, exposed the court, claimed the shield.
 
 Then the review body examined the exposure and found it deceitful.
 
-Three things follow at once. Kel's shield falls, because the condition that no finding
+From that one finding, everything else follows at once. Kel's shield falls, because the condition that no finding
 of bad faith exists is no longer met. Kel is a prisoner, because the conviction that
 was blocked now completes. And Kel's own credibility is voided — the counter-audit
 runs, and the person who lied about an authority in order to escape a prosecution
@@ -134,8 +136,8 @@ with paperwork. So the design protects the claim and accepts what Rex does with 
 What it costs is a defendant who can keep going. Each exposure buys a window and each
 window has to be closed separately, one examination at a time.
 
-Notice what the four cases have in common. In none of them does anyone decide whether
-Don, Sly, Kel or Rex deserves protection. Nobody weighs their sincerity. The shield attaches
+Notice what every case above has in common. In none of them does anyone decide whether
+the person reaching for the shield deserves protection. Nobody weighs their sincerity. The shield attaches
 or does not attach according to two facts — did the person you exposed hold power, and
 has your exposure been found deceitful — and both facts are on the record where they
 can be argued with. Sincerity never enters, which is what stops the shield from
@@ -143,7 +145,9 @@ becoming a matter of whether the people evaluating you find you sympathetic.
 
 ## What it costs
 
-Three things, and the last two compound each other.
+The costs line up with the choices defended above — the default that favours the
+accuser, the scope that closes one claim at a time, and the standing that never lapses
+— and the later ones compound each other.
 
 The first is Sly, and it has already been named: a guilty person is free during the
 window, every time.
