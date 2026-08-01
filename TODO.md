@@ -162,25 +162,8 @@ the constitution before the pass is called done.
 
 ### Chapter 7
 
-- **Chapter 7 says the prisoner rule is the only route into personhood that needs no
-  roster entry. There are two, and the second is worse.** `07:99-104`: "The rule that a
-  prisoner is a person is the *only* route into personhood that does not require
-  somebody to write your name down … the sole way to acquire the protection of this
-  society without depending on someone's willingness to list you is to be found guilty
-  of a crime." `free` is the other route. Re-verified 2026-08-01 on a name the record
-  has never held: assert `free(Nemo).` alone and `? person(Nemo). => TRUE`, the whole
-  floor is owed, and `? travel(Nemo). => TRUE` — personhood without a roster entry,
-  without a conviction, and without losing anything, from one write by anybody. The
-  release predicate chapter 13 treats as the end of a sentence mints a person who never
-  had one.
-  Rewrite `07:99-104` to name both routes and say which of them nobody adjudicates, and
-  pin `? person(·).` off a bare `free` fact in this chapter's own suite, which queries
-  neither today. Chapter 1's pass already pinned the mechanism in its file — the
-  `free(Wraith)` and `person(Ghost)` exhibit blocks in
-  `01-what-counts-as-evidence.pins.nibli` — so the chapter-7 pin is fidelity to this
-  chapter's prose, not a new discovery; match that framing rather than re-deriving it.
-  This is chapter 1's `free` finding seen from the other side: the same write empties a
-  conviction there and creates a person here.
+Pass complete 2026-08-02: whole-chapter read, the second-door corollary rewritten, the
+counted claims stripped, the debt and second-door pins added. No known defects remain.
 
 ### Chapter 8
 
@@ -770,8 +753,8 @@ No known defects. Read it against the constitution anyway.
   Still open: `08:31` turns the whole chapter on exactly this contrast — "Ask whether
   Bela eats. Not whether Bela is *entitled* to eat — whether Bela eats" — and chapter 8's
   own pin file still pins only the second half (`eats(Bela)`,
-  `08-what-you-are-owed.pins.nibli:145`), so give it the pair when its pass runs; one
-  `entitled` pin for Zed in chapter 7; and the `home` and non-person controls in
+  `08-what-you-are-owed.pins.nibli:145`), so give it the pair when its pass runs; and
+  the `home` and non-person controls in
   `rights-floor.pins.nibli` — without the controls the pins above pass for the wrong
   reason.
 
@@ -798,9 +781,9 @@ No known defects. Read it against the constitution anyway.
 
 - **The eight floor rights are sampled, never enumerated — and the omitted one is exactly
   where the claim fails.** `08:32` says "the same answer comes back for every one of the
-  eight", and the pin file tests seven, omitting `expresses`. Chapter 7 is worse: the
-  comment at `07-a-prisoner-is-a-person.pins.nibli:30-32` says "the floor derives for Zed
-  like anyone" and pins one right of the eight. Eight pins per subject is not expensive
+  eight", and the pin file tests seven, omitting `expresses`. Chapter 7's pass (2026-08-02)
+  pinned the debt behind "owed everything" — `owe` and `entitled` for one right — so the
+  OWED half is no longer unguarded there, but it still samples rather than enumerates. Eight pins per subject is not expensive
   and it is the only shape that makes "every one of the eight" a checked sentence rather
   than a summary. Put the pin block in **before** the chapter-8 rewrite, so the rewrite
   has something to write against. (Both files re-checked 2026-08-01 — still seven and
