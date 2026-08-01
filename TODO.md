@@ -104,24 +104,6 @@ a floor for that pass, not its scope.** Chapters with no bullets still get a pas
 
 ### Chapter 1
 
-- **Chapter 1 must concede that some entries on its list are findings, not
-  observations.** `01:10-17` presents the list as things the world reports and
-  `01:46-50` presents the exclusions as "considered and rejected on principle", but
-  `deceive` ("Someone lied"), `family`, `parent` and `free` ("Someone's sentence is
-  finished") are adjudicative conclusions with no definition and no precondition
-  anywhere in the constitution. Verified: one `deceive(Rebel, Boss).` jails the file's
-  own whistleblower — `prisoner(Rebel)` FALSE to TRUE on that single write — and one
-  `free(Ruk).` both empties a conviction and stops the only two floor goods the design
-  actually delivers: `prisoner`, `dwell` and `expresses` all TRUE to FALSE, `travel`
-  FALSE to TRUE. That is `clear/1`'s one-fact nullifier shape twice more.
-  The chapter's argument survives the concession and is stronger for it: the claim is
-  not that the list is raw sense-data, it is that a conclusion cannot be written **as a
-  conclusion** — the adjudication still has to happen somewhere and the record still
-  has to say who did it. `01:131-137` already makes exactly that move for personhood;
-  extend it to the rest rather than letting a reader find them.
-  Pairs with the "Put a precondition on `capture`" bullet, which is the same problem
-  one level down.
-
 - **The stale run-command in fifteen pin files.** `01-what-counts-as-evidence.pins.nibli`
   and fourteen siblings — the other thirteen chapter files and
   `new-book-plans/rights-floor.pins.nibli` — each name a single-file `nibli-pin --kb …`
