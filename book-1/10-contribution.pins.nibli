@@ -32,7 +32,7 @@
 # three leaves `reward/1` deriving and everything green. Never let this file drift
 # to FALSE-only pins on `reward`.
 
-:expect-pins 12
+:expect-pins 16
 
 # "Esa taught Fin, and is recognised."
 ? teaches(Esa, Fin).
@@ -75,4 +75,32 @@
 
 # "Dev judged his own child ... earns nothing either"
 ? reward(Dev).
+# => FALSE
+
+# ── CARE, ONE ROUTE EACH. MUST STAY LAST: ground facts persist ───────────────
+# "it walks through two of the three." Two fresh people, one door apiece, so
+# each route is isolated by construction. Nima is the teaching half: a parent
+# who teaches, with the relationship pinned on the record beside the reward —
+# the same pair that voids a JUDGE (Article 5, Dev and Esa) disqualifies no
+# teacher. Sata is the tending half: one work entry, nothing else, and the
+# task constant is free vocabulary like any other.
+person(Nima).
+parent(Nima, Pico).
+teaches(Nima, Pico).
+
+? parent(Nima, Pico).
+# => TRUE
+
+? reward(Nima).
+# => TRUE
+
+person(Sata).
+work(Sata, Care).
+
+? reward(Sata).
+# => TRUE
+
+# ...and being tended, like being taught, mints nothing for the recipient —
+# the grades ruling's shape, re-exhibited on the care side.
+? reward(Pico).
 # => FALSE
