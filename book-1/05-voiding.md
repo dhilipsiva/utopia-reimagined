@@ -79,6 +79,28 @@ perfectly valid, with nothing in the record able to say that one preceded and
 therefore should have prevented the other. A corrupt auditor could be caught and go
 on signing in the same breath.
 
+That is not hypothetical, and the design does not stop it. There is a man in this
+record whose own credibility is already gone — the review body examined a finding he
+made, found it deceitful, and voided him for it. Hand him a pen anyway and nothing
+objects. He is a discredited man and a credentialed one at the same moment, and he can
+put his name to a stranger's voiding and make it stick.
+
+The obvious repair is to say so directly: somebody whose credibility is gone may not
+sign. Try to write that down and the design will not take it, and the refusal is not
+an oversight or an omission anyone could correct. Whether your word counts for
+anything is worked out *from* who signed against you. So who may sign cannot then be
+worked out from whose word counts for nothing — the question would have to answer
+itself before it could be asked. The narrower version fails for the same reason: a
+rule saying the void declines to count a signature from someone already voided is
+asking about a conclusion it is itself in the middle of reaching. This is the same
+refusal that keeps a law from punishing you for having no food, arriving from the
+other side, and it is worth noticing that the mechanism protecting the floor is the
+mechanism blocking this repair. You do not get one without the other.
+
+Which is why the guard has to be a written mark and not a rule. A rule would have to
+look at something the design is still working out. A mark is a plain fact somebody
+wrote down at the close of the last period, and a fact can be looked at.
+
 The mark carried forward is how sequence gets into a system that has no natural sense
 of it. Somebody has to write down, at the close of each period, who was voided during
 it. That is not a rule; it is a discipline over the record, performed by people. The
