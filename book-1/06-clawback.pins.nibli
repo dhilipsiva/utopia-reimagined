@@ -1,7 +1,9 @@
 # ── Chapter 6 fidelity pins: "Clawback" ──────────────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli book-1/06-clawback.pins.nibli
+#   ./verify.sh --only book-1/06-clawback.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # NOTE: the Cira pins below encode a defect the chapter names as indefensible.
 # If the contamination rule is narrowed (claw back only recognition derived from

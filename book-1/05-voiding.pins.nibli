@@ -1,7 +1,9 @@
 # ── Chapter 5 fidelity pins: "Voiding" ───────────────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli book-1/05-voiding.pins.nibli
+#   ./verify.sh --only book-1/05-voiding.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 
 :expect-pins 14
 

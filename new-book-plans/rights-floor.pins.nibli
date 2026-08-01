@@ -6,7 +6,9 @@
 # inline their fixtures precisely because the fixture is not the subject.
 #
 # Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli new-book-plans/rights-floor.pins.nibli
+#   ./verify.sh --only new-book-plans/rights-floor.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # Every verdict below was produced by the engine, never by hand.
 

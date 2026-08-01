@@ -1,8 +1,9 @@
 # ── Chapter 9 fidelity pins: "The Vote Conviction Does Not Take" ─────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/09-the-vote-conviction-does-not-take.pins.nibli
+#   ./verify.sh --only book-1/09-the-vote-conviction-does-not-take.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 
 :expect-pins 12
 

@@ -1,8 +1,9 @@
 # ── Chapter 11 fidelity pins: "Where People Are Put" ─────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/11-where-people-are-put.pins.nibli
+#   ./verify.sh --only book-1/11-where-people-are-put.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # The "alarm that does not work" section pins a DEFECT. err(_, Placement) fires
 # on Ruk and Lalo, both correctly placed, and on nobody misplaced. When the rule

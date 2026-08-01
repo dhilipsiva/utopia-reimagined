@@ -2,8 +2,9 @@
 #
 # KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
 # inlined. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/01-what-counts-as-evidence.pins.nibli
+#   ./verify.sh --only book-1/01-what-counts-as-evidence.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # One entry per load-bearing sentence in the chapter. Private to the author; the
 # reader never sees this file. If a verdict flips, the sentence it guards has

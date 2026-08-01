@@ -1,14 +1,21 @@
 # ── Chapter 8 fidelity pins: "What You Are Owed" ─────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/08-what-you-are-owed.pins.nibli
+#   ./verify.sh --only book-1/08-what-you-are-owed.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # NOTE — one absence this file cannot hold as a query, and it is load-bearing.
 # "Nothing compels the body" rests on nothing anywhere READING the obligation.
 # That was a grep in this comment until nibli 80a87e9; it is a precondition now,
 # with a positive control beside it. Test the rule BODY, left of the arrow — a
 # plain `grep owe` matches Article 1b's own head and can never fail.
+#
+# The `:require` lines need `--allow-shell`, and both commands above pass it. The
+# older per-file command did not, and its failure was doubly misleading: the
+# skipped preconditions were not counted, so it reported a pin-count mismatch —
+# "pins were added or lost" — as though somebody had edited this file. If you ever
+# see that, check the flag before you go looking for a missing pin.
 
 :expect-pins 30
 

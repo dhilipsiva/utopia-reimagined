@@ -1,8 +1,9 @@
 # ── Chapter 7 fidelity pins: "A Prisoner Is a Person" ────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/07-a-prisoner-is-a-person.pins.nibli
+#   ./verify.sh --only book-1/07-a-prisoner-is-a-person.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # Zed is introduced BY this pin file rather than living in the constitution:
 # the chapter needs someone the person-roster has never mentioned, and every

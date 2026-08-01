@@ -1,7 +1,9 @@
 # ── Chapter 10 fidelity pins: "Contribution" ─────────────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli book-1/10-contribution.pins.nibli
+#   ./verify.sh --only book-1/10-contribution.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # The chapter's central claim — that recognition has no quantity, and is never
 # ranked — is a claim about an ABSENCE and so cannot be pinned by a query. It is

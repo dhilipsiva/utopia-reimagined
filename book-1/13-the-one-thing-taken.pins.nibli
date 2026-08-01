@@ -1,8 +1,9 @@
 # ── Chapter 13 fidelity pins: "The One Thing Taken" ──────────────────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/13-the-one-thing-taken.pins.nibli
+#   ./verify.sh --only book-1/13-the-one-thing-taken.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # TRIGGER FIRED. This file used to record "there is no release" as an absence and
 # said: "If a release rule is ever added, the closing section must be rewritten."

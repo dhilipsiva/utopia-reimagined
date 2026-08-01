@@ -1,15 +1,21 @@
 # ── Chapter 14 fidelity pins: "When the System Notices It Broke" ─────────────
 #
 # KIND: CONTENT pin. Run:
-#   nibli-pin --kb new-book-plans/constitution.nibli \
-#             book-1/14-when-the-system-notices-it-broke.pins.nibli
+#   ./verify.sh --only book-1/14-when-the-system-notices-it-broke.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
 #
 # "Nothing reads the duty" is an absence and cannot be queried. It used to sit
 # here as a grep in a comment that nobody ran; since nibli 80a87e9 it is a real
 # precondition, with its own positive control so an empty result cannot mean the
-# command broke. Needs `--allow-shell`, which verify.sh passes.
+# command broke. Needs `--allow-shell`, which both commands above pass — the older
+# per-file command in this header did not, and named the flag four lines under a
+# command that omitted it. Its failure also reported a pin-count mismatch, because
+# a skipped precondition is not counted; that reads as an edited file and is not
+# one.
 #
-# DEFECT PINS — half this file encodes defects rather than guarantees, and the
+# DEFECT PINS — a large share of this file encodes defects rather than guarantees
+# (do not restate that as a fraction; the last one written here was wrong), and the
 # repairs are tracked. `err(·, Isolation)` on the seven prisoners flips FALSE the
 # moment the isolation marker is repaired or any `meets` fact is ever recorded,
 # and `err(Ruk/Lalo, Placement)` flips FALSE when the placement marker is keyed
