@@ -108,21 +108,21 @@ lands, so it is not re-proposed. This section emptied once — every earlier dec
 ruled — and was deleted with its last bullet; it returns because the prefix's promise
 ("collected in phase 2 rather than scattered") has to point somewhere.
 
-- **[AUTHOR-GATED] Does care count as contribution, and does the book say so?** Raised by
-  `reviews/ai_review.md` — the one point in that review the book had no answer to: chapter
-  10's doors are teaching, work and auditing, and raising a child passes through none of
-  them by name. **The maximal ask is already refused**: "highest-status, most heavily
-  subsidized" is ranking, and recognition is never ranked (settled, `CLAUDE.md`). **The
-  minimal version is verified free**: `work(Nima, Care).` loads today with no new
-  vocabulary — `Care` is a constant and constants are free — and mints `reward(Nima)`
-  through the work door's existing rule, `~false` guard and all. So the design already
-  recognises care the moment somebody writes the fact; what is undecided is whether the
-  book says so. Three shapes for the ruling: chapter 10 names care as work in one sentence
-  beside the doors (cheapest); the cast gains a caregiver so the claim is pinned rather
-  than argued (a constitution edit — fixture regeneration, fresh-constants rule); or the
-  chapters stay silent and Part V answers the review directly. Whatever is ruled must not
-  rank: one parent's acknowledgment must not come at another's expense, any more than one
-  nurse's.
+- **[AUTHOR-GATED] The work door has no maturity guard — decide what happens to a
+  child's work.** Found while ruling the care question, verified 2026-08-02:
+  `work(Cira, Chores).` mints `reward(Cira)` with `mature(Cira)` FALSE — the design's own
+  child, whose not-mature status anchored the refusal to mint for students. So the design
+  refuses to recognise a child for being taught and recognises her for chores the moment
+  anyone records them. Be precise about the verb before ruling: recognition is unspendable
+  and unrankable, so this is *acknowledgment of a child's work*, not wages — "paying a
+  child" is the wrong frame, which is why this was not fixed by reflex in the care pass.
+  Three dispositions: a maturity guard on the work door (a body conjunct, and it would be
+  the first door with an age test — chapter 10 currently says the doors ask what was done,
+  never who did it); disclose the asymmetry in chapter 10's pass; or defend it as-is,
+  acknowledgment being precisely what a child's work deserves. Whatever is ruled, check the
+  teaching door in the same breath — a child who *teaches* also mints today
+  (`teaches` has no maturity conjunct either), and the two doors should not end up ruling
+  differently by accident.
 
 ---
 
