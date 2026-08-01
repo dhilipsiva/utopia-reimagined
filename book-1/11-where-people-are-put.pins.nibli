@@ -71,8 +71,10 @@
 # THE BROKEN ALARM. Both flagged; both correctly placed. Hano, correctly
 # home-confined, is not flagged — so the marker tracks "has a home and is not
 # homestay-eligible", which is the ordinary condition of a severe offender.
+:defect "keying err/2 on where somebody was PUT, not on having a home"
 ? err(Ruk, Placement).
 # => TRUE
+:defect "keying err/2 on where somebody was PUT, not on having a home"
 ? err(Lalo, Placement).
 # => TRUE
 ? err(Hano, Placement).

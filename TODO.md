@@ -157,32 +157,23 @@ measured an engine change that was never rebuilt.
   says so and immediately says what it does not buy — visible is not hard, and nothing
   stops the edit going in.
 
-- **HANDOFF PROMPT — defect pins vs guarantee pins.** Roughly a fifth of the book's 359
-  pins encode admitted defects rather than guarantees, and the harness cannot tell them
-  apart. A defect pin flipping reports as a regression when it is the repair landing, and
-  the only thing preventing that confusion today is a prose comment in each file, one of
-  which has already drifted.
-
-  ```text
-  In ~/projects/dhilipsiva/nibli: nibli-pin has no way to mark that a pin encodes a
-  defect the artifact currently HAS, as opposed to a guarantee it MAKES. Both are
-  `? q.` + `# => VERDICT`, so a flip is reported identically, and the two cases mean
-  opposite things. Add a per-pin annotation — e.g. `:defect "<what flips it>"`
-  immediately preceding a pin — and have the runner (a) report the defect-pin count in
-  the summary line, and (b) when a defect pin's verdict changes, exit with a distinct
-  status and message ("a pinned defect no longer reproduces") rather than the
-  regression message. Keep it inert for files that do not use it. Secondary ask in the
-  same area: let a pin file declare a shell precondition, so the grep-only NOTEs in the
-  book's pin files become checks in the same run. The consuming artifact is
-  the book repo's `book-1/*.pins.nibli`.
-  
-
-  ────────────────────────────────────────────────────────────────────
-  When this lands, reply with: the commit sha, what changed in one line,
-  whether any existing verdict moved, and anything you found that this
-  prompt got wrong. Paste that reply back into the book session — it is
-  the only channel between the two repos.
-  ```
+- **LANDED 2026-07-31 — `:defect` and `:require`, both adopted.** nibli `80a87e9`. The
+  suite now reports **366 pins, 12 of which encode defects**, and a defect that stops
+  reproducing exits **3** with *"a pinned defect no longer reproduces"* rather than the
+  regression message — so the repairs tracked in this file announce themselves instead of
+  looking like breakage.
+  Marked: the Cira contamination pin (ch 6), the placement alarm firing on correctly-placed
+  people (ch 11 and 14), and the isolation marker firing on all seven prisoners (ch 14).
+  Each carries the condition that flips it, so the marker says what the repair *is*.
+  **Two grep-only NOTEs became real checks.** Chapter 8's "nothing reads `owe`" and chapter
+  14's "nothing reads the duty" were instructions in a comment that nobody ran; they are
+  `:require` preconditions now, each with a positive control so an empty result cannot
+  mean the command broke. `verify.sh` passes `--allow-shell`; nibli's own gate never does,
+  which is the right default and their call, not ours.
+  **`--allow-shell` stays opt-in and we should not ask for it to be unconditional.** Their
+  pin language is closed by design — nothing under `pins/` may reach outside the repo. We
+  control our own invocation, so the gate costs us one flag and protects a guarantee that
+  is theirs to keep.
 
 - **HANDOFF PROMPT — nibli: an `:accept` that does not persist.** Every complement control in
   every pin file wants to test that a rule *loads* and then throw it away. `:accept` instead

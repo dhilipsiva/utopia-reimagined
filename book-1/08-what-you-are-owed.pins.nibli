@@ -4,19 +4,16 @@
 #   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/08-what-you-are-owed.pins.nibli
 #
-# NOTE — one absence this file cannot hold, and it is load-bearing. "Nothing
-# compels the body" rests on nothing anywhere reading the obligation, which is an
-# absence and so has no query. Check it with — note the test is the rule BODY,
-# left of the arrow; a plain `grep owe` matches Article 1b's own head and is
-# always non-empty, which is a check that can never fail:
-#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /owe/ {print NR": "$0}' \
-#       new-book-plans/constitution.nibli
-# It must stay EMPTY. Positive control: the same command with /false/ returns 5
-# lines, so an empty result means the predicate is unread and not that the
-# command is broken. If it ever returns a line, something now follows from the
-# obligation and that paragraph is wrong.
+# NOTE — one absence this file cannot hold as a query, and it is load-bearing.
+# "Nothing compels the body" rests on nothing anywhere READING the obligation.
+# That was a grep in this comment until nibli 80a87e9; it is a precondition now,
+# with a positive control beside it. Test the rule BODY, left of the arrow — a
+# plain `grep owe` matches Article 1b's own head and can never fail.
 
-:expect-pins 28
+:expect-pins 30
+
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /owe/ {print}' new-book-plans/constitution.nibli)"
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
 
 # "the answer this design gives is no ... for every one of the eight"
 ? eats(Adam).

@@ -38,6 +38,10 @@
 ? teaches(Bela, Cira).
 # => TRUE
 
+# The chapter calls this indefensible outright: a student who earned nothing is
+# stripped for a teacher's fraud. It flips FALSE when Article 4's contamination
+# rule is narrowed or deleted — the intended outcome, not a break.
+:defect "narrowing or deleting Article 4's contamination rule (:365)"
 ? lose(Points, Cira).
 # => TRUE
 

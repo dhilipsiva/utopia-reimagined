@@ -4,13 +4,10 @@
 #   nibli-pin --kb new-book-plans/constitution.nibli \
 #             book-1/14-when-the-system-notices-it-broke.pins.nibli
 #
-# "Nothing reads these markers" is an absence and cannot be queried: err appears
-# twice in the constitution, both times as a rule head. Test the rule BODIES —
-# a plain `grep err` matches those heads and is a check that can never fail:
-#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /err/ {print NR": "$0}' \
-#       new-book-plans/constitution.nibli
-# It must stay EMPTY. Positive control: the same command with /false/ returns 5
-# lines, so empty means unread and not that the command is broken.
+# "Nothing reads the duty" is an absence and cannot be queried. It used to sit
+# here as a grep in a comment that nobody ran; since nibli 80a87e9 it is a real
+# precondition, with its own positive control so an empty result cannot mean the
+# command broke. Needs `--allow-shell`, which verify.sh passes.
 #
 # DEFECT PINS — half this file encodes defects rather than guarantees, and the
 # repairs are tracked. `err(·, Isolation)` on the seven prisoners flips FALSE the
@@ -20,31 +17,47 @@
 # chapter's middle section wrong, which is the intended outcome — a flip here is
 # the fix arriving, not a regression.
 
-:expect-pins 29
+:expect-pins 31
+
+# The chain must END: `err` feeds `obliged` (Article 8b) and nothing reads the
+# duty. If this fires, the design grew a third link and the chapter's closing
+# argument has to be rewritten around it.
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /obliged/ {print}' new-book-plans/constitution.nibli)"
+
+# POSITIVE CONTROL — the same command against a relation that IS read must find
+# lines, so an empty result above means "unread" and not "the awk is broken".
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
 
 # "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — the seven, without exception."
 # ALL SEVEN are pinned deliberately. An earlier draft named four and said "every
 # convicted person in the society, without exception"; Adam, Kel and Lalo were
 # missing and the marker fires on all three. A prose enumeration is only as good
 # as the pins under it, so the enumeration is pinned entry by entry.
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Adam, Isolation).
 # => TRUE
 
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Hano, Isolation).
 # => TRUE
 
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Lalo, Isolation).
 # => TRUE
 
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Nando, Isolation).
 # => TRUE
 
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Don, Isolation).
 # => TRUE
 
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Kel, Isolation).
 # => TRUE
 
+:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Ruk, Isolation).
 # => TRUE
 
@@ -78,9 +91,11 @@
 # => FALSE
 
 # the placement marker: right about nobody
+:defect "keying err/2 on where somebody was PUT, not on having a home"
 ? err(Ruk, Placement).
 # => TRUE
 
+:defect "keying err/2 on where somebody was PUT, not on having a home"
 ? err(Lalo, Placement).
 # => TRUE
 

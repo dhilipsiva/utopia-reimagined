@@ -224,8 +224,13 @@ step "pins (~20 s — was 47 min; nibli materialised negation, positive goals, t
 [ -x "$PIN" ] || fail "no nibli-pin at $PIN" "build it release, or set NIBLI_PIN"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
-out=$("$PIN" --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)
-echo "$out" | grep -E 'pins,|✗' | sed 's/^/  /'
+out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)
+# `pins ?[,(]` not `pins,` — a file carrying :defect markers prints "15 pins (1
+# defects)," with a SPACE before the paren, and the older pattern silently dropped
+# exactly those files from the display while the reconciliation below still passed.
+# Caught by reading the raw output; the first attempt at this fix used `pins[,(]`
+# and also matched nothing, for the same off-by-one-character reason.
+echo "$out" | grep -E 'pins ?[,(]|✗' | sed 's/^/  /'
 echo "$out" | grep -q 'FINDING\|HARNESS ERROR' && fail "a pinned property regressed"
 ran=$(echo "$out" | sed -n 's/.*PASS — \([0-9]*\) pins.*/\1/p')
 [ -n "$ran" ] || fail "the suite did not report a PASS line"
