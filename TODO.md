@@ -114,30 +114,6 @@ No known defects. Read it against the constitution anyway.
 
 ### Chapter 4
 
-- **Chapter 5 asserts two facts about Koa the constitution does not derive.**
-  `book-1/05-voiding.md:25-26`: "Koa examined Esa and recorded a finding — a real
-  finding, on the record, made by someone with the credential." Koa's entire presence is
-  `person(Koa).` and `capture(Koa, Esa).` (`:788-789`). Verified:
-  `? capture(Koa, Esa). => TRUE`, `? judge(Koa, Esa). => FALSE`,
-  `? choose(Electorate, Koa). => FALSE`, `? permits(Review, Koa). => FALSE`,
-  `? permits(Tribunal, Koa). => FALSE`. Two of the sentence's three clauses are
-  underivable, which the inclusion gate forbids outright. Chapter 1 gets the same person
-  right (`01:140`, "Koa documented something").
-  The consequence is worse than the wording: `? false(Esa). => FALSE` is over-determined
-  three ways, so the section's headline claim — "It takes two, from two places"
-  (`05:11`) — is demonstrated by **no pin in the suite**. Two ways out, not equivalent.
-  Either fix `05:25-28` to match chapter 1 — Koa documented, holds no pen, and *that* is
-  the first reason nothing moved — which is cheap but changes what the section
-  demonstrates. Or seat Koa on **both** bodies and add `judge(Koa, Esa).`, which since
-  the cross-body change is the only fixture that isolates the count: verified, with
-  `permits(Review, Koa)` and `permits(Tribunal, Koa)` both TRUE, `? false(Esa).` is
-  still FALSE, and `~($a = $b)` is the only conjunct left doing it. A single
-  Electorate-seated Koa does **not** isolate the count — it fails the Tribunal conjunct
-  as well, which is the "from two places" half.
-  Either way pin `? judge(Koa, Esa).` and `? permits(Review, Koa).`.
-
-### Chapter 6
-
 - **Chapter 6 tells the reader a voided person still eats; the engine says otherwise.**
   `book-1/06-clawback.md:29-33` says a voided person "still eats. Still has somewhere
   to live. Still learns, still speaks, still keeps company" — and the engine returns
