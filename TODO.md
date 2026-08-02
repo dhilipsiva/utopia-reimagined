@@ -159,8 +159,12 @@ seating-class staleness fixed at the growing-list cost. No known defects remain.
 
 ### Chapter 5
 
-Its known defects landed (git has them); it still owes a whole-chapter read against
-the constitution before the pass is called done.
+Pass complete 2026-08-02: whole-chapter read, the opening's cannot-sign overclaim
+reconciled with the chapter's own voided-and-credentialed disclosure (the signing dies
+one period late, and the opening now says so), the recorded-the-same-finding and
+not-related glosses corrected at the Vex block. The disclosure itself was already
+fully pinned — seated Lupo co-signing Frisk, the carry closing it one round late. No
+known defects remain.
 
 ### Chapter 6
 
