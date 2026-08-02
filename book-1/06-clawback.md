@@ -51,6 +51,13 @@ to be merciful about her housing. There is no moment where that choice arises. T
 instrument reaches recognition and stops, because recognition is the only thing it was
 built to touch.
 
+One more boundary, on the other side: the instrument follows the verdict and only the
+verdict. Mira was accused by a liar — examined, named, the machinery of the last
+chapter pointed straight at her — and Mira keeps everything. An accusation that fails
+to become a voiding is, to this instrument, nothing at all. There is no lesser loss
+for having been suspected, no partial mark for a case that collapsed. Until the
+verdict exists, the clawback does not.
+
 ## Cira
 
 Now the difficulty, and it is a real one.
@@ -107,6 +114,35 @@ one place in the accountability machinery where the design does to an innocent p
 what the rest of it is carefully built to prevent, and every other guard in the last
 two chapters — two auditors, no family, no liars, no carried rot — exists precisely to
 stop exactly this. It is flagged in the design as unresolved, and it is unresolved.
+
+## The mark that crosses the year
+
+Everything so far happened in one period: Bela was examined, voided and docked by
+people acting here and now. Vex shows what the loss looks like after the machinery
+has gone home.
+
+Vex was voided in an earlier period. What this period's record holds is the carried
+mark — the prior judgment, written forward — and from that one entry the whole
+verdict reassembles itself: the void stands again, the loss stands again, the pen is
+withheld again. Nobody in this period examined Vex. Nobody signed anything. The
+clawback goes on costing Vex what it cost, period after period, on the strength of a
+judgment whose judges may be long recalled, because the mark is carried forward and
+everything else follows from the mark.
+
+That is deliberate, and chapter 5 built the machinery: the carried mark is how
+sequence gets into a record that has no natural sense of it, and without the carry a
+voided auditor could simply wait for the period to turn and sign again. Chapter 5
+also conceded what the carrying is — a discipline performed by people, not a rule.
+What this chapter has to add is what ending it would be. A sentence can end inside this design: the record has a word for a finished
+sentence, and one entry releases a prisoner into everything release means. The
+record's short list of what may be written — closed, by name — has no word for a
+finished voiding. Nothing says the mark was wrong, or served out, or forgiven. So the
+only way back for Vex is not an entry anyone can point to. It is an omission: the
+record-keeper, one period, quietly declining to copy a line. A prisoner's way out is
+written in the law. A voided person's way out is somebody else's silence — and
+whether that should stay true is a question this design has not answered, flagged
+here the way the Cira rule is flagged, because the two honest markers of this chapter
+are both places where the instrument outran the argument for it.
 
 ## The shape of the instrument
 
