@@ -569,26 +569,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
 ## The verification harness
 
 
-- **Write down what FALSE means in a pin file — it means three different things and two
-  of them are worthless.** All three re-executed 2026-08-01, and the distinction is why
-  five false prose claims survived 180 green pins:
-  - A **corpus name the KB never mentions** answers FALSE and passes cleanly:
-    `? rich(Bela). => FALSE`. It is a real verdict about a name nothing could have made
-    true, which is not the same as a real verdict about the design.
-  - A **non-corpus name** is not a FALSE at all, it is an abort: `nibli-pin: HARNESS
-    ERROR (exit 2) — pins not trustworthy`.
-  - A **well-formed query on an argument the relation never carries** is a vacuous green
-    that passes forever: `? fit(Ruk, HighSec). => FALSE`, `? lose(Standing, Bela). =>
-    FALSE`.
-  Only the first is a verdict at all, and only when something in the KB could have made
-  it TRUE. Put this in the shared header block of the pin files — three sentences —
-  because the pin suggestions that arrive from reviewers are disproportionately of kinds
-  two and three, and a reader cannot tell them apart by looking. Be exact about what
-  Article 0a changed: `admits` closes the *assertion* side, so a widened evidence
-  vocabulary is no longer invisible — appending `rich(Esa).` to the constitution now
-  aborts the run instead of passing green — but a *query* on a name the file never
-  mentions still answers a clean FALSE, so kind one is untouched.
-
 - **Extract the claim-to-query table from the pin files — it cannot be generated from the
   constitution.** The substance already exists in a better form than the old bullet
   imagined: every chapter's pin file plus the constitution's own carry every load-bearing
