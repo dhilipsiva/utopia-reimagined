@@ -203,18 +203,12 @@ defects remain.
 
 ### Chapter 11
 
-- **Three inputs chapter 11's routing turns on are pinned nowhere.**
-  `11-where-people-are-put.pins.nibli` pins `severe`, `family`, `home` and the outcome
-  across the cast and still leaves these untested — verified 2026-08-01:
-  `? fit(Nando, Homestay). => FALSE`, `? family(Hano). => FALSE`,
-  `? family(Lalo). => TRUE`. Three lines, and they matter because `family/1` is the
-  input the chapter warns about at `11:14-21` — a pin naming `family(Hano)` FALSE
-  against a man the chapter says has no family on record (`11:25`) is the cheapest place
-  for that error to become visible.
-  **Do not** add a pin "testing `fit/2` for a placement other than Homestay": `fit` has
-  one producing rule and only ever carries `Homestay`, so `? fit(Ruk, HighSec). => FALSE`
-  is a vacuous green of kind three **below**. When the three pins land, that warning is
-  standing knowledge and moves to the standing section — it does not go with the bullet.
+Pass complete 2026-08-02: whole-chapter read, the three unpinned routing inputs
+pinned (Hano's absent family on the man the opening warns about, Lalo's family fact,
+Nando's closed home-confinement door), the severity gloss corrected to the pairings
+the rules check, the alarm tally made stable, and the same-rule-for-all claim
+corrected to routes-are-rules-with-no-combination-uncovered. No known defects
+remain beyond the declared alarm defect, which is the chapter's subject.
 
 ### Chapter 12
 
@@ -1228,7 +1222,12 @@ while book-1 is active**; collect there, rule here.
 
 ---
 
-## Standing facts and methods — not tasks, and not history
+## Standing facts and methods
+
+- **A `fit/2` pin for any placement other than Homestay is a vacuous green.** `fit`
+  has one producing rule and only ever carries `Homestay`, so `? fit(Ruk, HighSec).
+  => FALSE` passes forever regardless of the design — kind three of the three FALSEs.
+  Moved here from chapter 11's bullet when its three input pins landed (2026-08-02). — not tasks, and not history
 
 Landed work is not recorded here; that is what git is for. What survives is the small
 set of things a command cannot teach you and a rename cannot re-derive.
