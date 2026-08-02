@@ -16,7 +16,7 @@ the work — their pens come from different bodies. The electorate seated Gia; t
 convocation seated Hex. Both looked at Bela, both recorded what they found. Bela's
 credibility is voided.
 
-One thing is missing from that account, and the record is the reason. What did Gia and
+Something is missing from that account, and the record is the reason. What did Gia and
 Hex find? The record does not say. It holds that each of them judged the case and that
 each documented it — who examined, who was examined, and nothing else. No charge, no
 reason, no text of any finding. The rule that voids Bela reads the fact of two
