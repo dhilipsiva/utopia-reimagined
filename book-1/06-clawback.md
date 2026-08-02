@@ -121,17 +121,32 @@ That is deliberate, and chapter 5 built the machinery: the carried mark is how
 sequence gets into a record that has no natural sense of it, and without the carry a
 voided auditor could simply wait for the period to turn and sign again. Chapter 5
 also conceded what the carrying is — a discipline performed by people, not a rule.
-What this chapter has to add is what ending it would be. A sentence can end inside this design: the record has a word for a finished
-sentence, and one entry releases a prisoner into everything release means. The
-record's short list of what may be written — closed, by name — has no word for a
-finished voiding. Nothing says the mark was wrong, or served out, or forgiven. So the
-only way back for Vex is not an entry anyone can point to. It is an omission: the
-record-keeper, one period, quietly declining to copy a line. A prisoner's way out is
-written in the law. A voided person's way out is somebody else's silence — and
-whether that should stay true is a question this design has not answered. It is
-flagged here as this chapter's one remaining honest marker — the place where the
-instrument still outruns the argument for it. There used to be two. The other was
-the rule that reached Cira, and it is gone.
+What this chapter has to add is the ending. A sentence can end inside this design:
+the record has a word for a finished sentence. For most of this design's life it had
+no word for a finished voiding — nothing said the mark was wrong, or served out, or
+forgiven, and the only way back for Vex was an omission, the record-keeper quietly
+declining to copy a line forward. That was this chapter's last open flag, and it is
+closed. The record can say it now: a body forgives, named in the entry itself, and
+the forgiveness stands beside that body's own judgment of the person — the same
+two-entry shape relief uses, adopted for the same reason, because one authorless
+word must never spring what took six guarded entries to conclude. With both in
+place the mark comes clean. The void stops re-deriving. The loss stops. The doors
+to earning reopen.
+
+What forgiveness does not restore is the pen. The mark itself stays on the record —
+forgiven, not erased — and everything that reads the mark directly still reads it: a
+forgiven auditor signs nothing and is seated nowhere until somebody chooses them
+afresh, and the standing mark still blocks that choice. The way back for the person
+and the way back to power are different roads here, and only the first was opened.
+
+So a voided person's way out is no longer somebody else's silence. It is an entry
+someone can point to, made of the same stuff as everything else in this record: an
+act, by a named body, beside its own judgment. What remains true — the honest
+residue — is that nothing obliges anybody to perform it. A person whose forgiveness
+nobody takes up stays voided, exactly as a person whose relief nobody adjudicates
+stays held. The chapter on the pen weighed that default and chose it, and it weighs
+the same here: the benefit of an absence goes to what the machinery concluded, never
+to what somebody might yet do.
 
 ## The shape of the instrument
 

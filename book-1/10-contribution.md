@@ -104,9 +104,22 @@ made the third door ask what the other two had always asked, and it un-minted
 nothing — nothing is ever taken back here except by the loss the last chapter
 described. The door simply stopped paying, from that day forward.
 
+That was the arrangement's whole story until this book's last decisions were made,
+and it has an ending now. The record can forgive. A named body's forgiveness,
+standing beside its own judgment of the person, takes the carried mark out of
+force — and the doors open again, all three, because the word they check stops
+being said about you. It reaches backward, and that should be stated rather than
+discovered: work that sat on the record refused while the void stood starts
+counting the moment the mark comes clean — a forgiven examiner is paid for
+examinations that had spent the whole voiding earning nothing. So the heading
+above is no longer the whole truth. There is still nothing *you* can do to earn it
+back — no act of yours reopens the doors, and that stays deliberate — but there is
+now something somebody else can do, by name, on the record, with their judgment
+beside it.
+
 Whether the whole arrangement is right is a genuine question and the design does not
 argue for it. It is simply what follows from putting the same condition on all three
-doors.
+doors — and, now, from the same record holding the way back.
 
 ## Being paid to look at people
 

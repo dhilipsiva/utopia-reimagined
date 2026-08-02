@@ -15,7 +15,7 @@ adulthood. An assembly proposed a
 change; the electorate approved it; the change touches a particular article; that
 article is protected. A body is a public institution. A seating body seated someone.
 Somebody put someone somewhere. Someone was cleared. Someone was recalled. Someone was
-voided in an earlier period. Someone's sentence is finished.
+voided in an earlier period. A body forgave someone. Someone's sentence is finished.
 
 That is it. That is everything the record can hold.
 

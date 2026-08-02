@@ -26,7 +26,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 28
+:expect-pins 35
 
 # "Ask the record whether Bela is recognised and the answer is no ... Beside
 # that refusal the record holds one more entry: a loss." Both halves of the
@@ -152,4 +152,37 @@
 # => FALSE
 
 ? authority(Vex).
+# => TRUE
+
+# ── [v0.9 2026-08-02] FORGIVENESS, MEASURED. Ground facts persist ────────────
+# The expungement ruling: forgive names its body, and alone it does nothing —
+# the one-write spring the clear guard closed is closed here from birth. With
+# the body's judgment beside it, the mark comes clean: the void stops
+# re-deriving, the loss stops, the doors reopen — and the pen stays lost,
+# because the credential rules read the mark itself, which remains on the
+# record. Forgiven, not erased. The retroactive consequence is pinned rather
+# than discovered: Vex's recorded examination of Tyr starts paying.
+forgive(Appeals, Vex).
+
+? false(Vex).
+# => TRUE
+
+judge(Appeals, Vex).
+
+? clean(Vex).
+# => TRUE
+
+? false(Vex).
+# => FALSE
+
+? lose(Points, Vex).
+# => FALSE
+
+? permits(Review, Vex).
+# => FALSE
+
+? reward(Vex).
+# => TRUE
+
+? rotten(Vex).
 # => TRUE
