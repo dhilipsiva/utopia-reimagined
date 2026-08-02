@@ -383,9 +383,11 @@ in a single commit, the floor may stop being eight, and more than one thing may 
 takeable. The rule is not "delete numbers", which only makes the prose vaguer: **state the rule
 that produces the count**. "Shelter derives for every confined person and for nobody else"
 beats "four people have shelter" — it is stable under cast changes, more informative, and it is
-what the book is about. `verify.sh` carries a ratchet on this; lower its `BASELINE` in the same
-commit that removes a site. Rhetorical durations ("thirty years") are fine — they are not claims
-about this design. This is checked per chapter as each is revised, not as one task.
+what the book is about. `verify.sh` carries a **hard gate at zero** on this (since 2026-08-02;
+the ratchet ran 14 → 0 across the chapter passes). Two allowlisted exceptions only: rhetorical
+durations ("thirty years"), which are not claims about this design, and chapter 13's title —
+"The One Thing Taken" *is* the single-deprivation claim, kept where the whole chapter defends
+it, and the allowlist pins it to that file's line 1, so the phrase anywhere else counts.
 
 Style — **legacy `book.md`/`manifesto.md` only; book-1's register is governed by the voice-boundary ruling in the settled decisions, and this warm first-person style must not be imported into derived chapters**: first-person, personal, and accessible; economic framing routinely contrasts *Keynesian*, *Marxist*, and *neoclassical* lenses (italicized); heavy use of **bold** for key claims. Both documents use curly quotes and em dashes throughout — match them. The technology chapters are intentionally more technical, with "Making It Simple: A Layman's Guide" as the deliberately non-technical retelling — keep that chapter jargon-free.
 

@@ -148,23 +148,21 @@ fi
 # person and for nobody else" beats "four people have shelter" — stable under cast
 # changes, more informative, and it is what the book is actually about.
 #
-# This is a ratchet because ~38 sites exist today and they are fixed chapter by
-# chapter as each is revised. It fails only if the count GOES UP. Lower BASELINE
-# in the same commit that removes sites; when it reaches 0, make this a hard gate.
+# HARD GATE since 2026-08-02: the ratchet ran 14 -> 0 across the chapter passes
+# and any counted claim is now a failure outright. Two allowlisted exceptions:
+# rhetorical durations, which are not claims about this design, and chapter 13's
+# title — "The One Thing Taken" IS the single-deprivation claim, kept on purpose
+# where the whole chapter defends it; the allowlist pins it to line 1 of that one
+# file, so the phrase reappearing anywhere else (including ch13's own body) counts.
 COUNTED='\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|hundred)([- ][a-z]+)?\b|\beight\b|\bexactly one\b|\bone thing\b|\bsingle deprivation\b'
-# Rhetorical durations are not claims about this design; they never go stale.
-COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)'
-BASELINE=1
+COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)|^book-1/13-the-one-thing-taken\.md:1:# The One Thing Taken$'
 n=$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | wc -l)
-if [ "$n" -gt "$BASELINE" ]; then
-  fail "counted claims in the prose rose to $n (baseline $BASELINE)" \
+if [ "$n" -gt 0 ]; then
+  fail "counted claims in the prose: $n (the gate is zero)" \
 "$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | tail -5)
        State the rule that produces the count, do not count the instances."
-elif [ "$n" -lt "$BASELINE" ]; then
-  fail "counted claims fell to $n — lower BASELINE to $n in verify.sh, same commit" \
-       "the ratchet only holds if it is tightened when sites are removed"
 else
-  pass "counted claims held at $BASELINE (ratchet; lower it as chapters are revised)"
+  pass "counted claims at zero (hard gate; ch13's title is the allowlisted exception)"
 fi
 
 # ── 4. the absence claims ────────────────────────────────────────────────────
