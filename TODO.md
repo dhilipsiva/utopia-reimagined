@@ -168,8 +168,11 @@ known defects remain.
 
 ### Chapter 6
 
-Its known defects landed (git has them); it still owes a whole-chapter read against
-the constitution before the pass is called done.
+Pass complete 2026-08-02: whole-chapter read, the withdrawal register corrected
+throughout — the mint refuses and the loss is recorded, never taken — including the
+at-its-best paragraph, which had claimed a taking the rule cannot perform on a student
+it never voids; both halves of the corrected register pinned on Bela in the chapter's
+own file. No known defects remain.
 
 ### Chapter 7
 
@@ -250,37 +253,16 @@ No known defects. Read it against the constitution anyway.
 
 ## Constitution (KB) work
 
-- **`lose/2` is a leaf: clawback records a loss and retracts nothing.**
-  Test it on the rule BODIES, not with a bare grep — `awk -F'->' '/^[^#]/ && /->/ && $1
-  ~ /lose/' constitution.nibli` returns nothing, and the only enacted occurrences are
-  `:498` and `:499`, **both rule heads**. (A plain `grep 'lose('` returns three lines,
-  the third being commentary at `:137`; and a grep that matches a rule's own head is a
-  check that can never fail — see the chapter-8 pin NOTE for the same trap caught live.)
-  No rule reads `lose`, so nothing downstream changes when it fires. **Care with the
-  witness — the old one died with v0.9:** the forced Bela probe (`judge(Bela, Ivo).
-  capture(Bela, Ivo).`) no longer mints, because the examiner door now carries `~false`;
-  chapter 10's pin file holds that pair refusing. The living witness is Cira, in the same
-  file: `work(Cira, Chores)` gives `reward(Cira)` and `lose(Points, Cira)` simultaneously
-  TRUE — recognition earned by a person whose recognition has supposedly been clawed
-  back, because the student clawback reads the teacher's fraud and the work door reads
-  only Cira's own standing. **The chapter 6 pass rewrote the chapter
-  and kept the withdrawal register**: `06:3` ("what they earned goes with it"), `:5-8`
-  ("clawed back … gone") and `:10` ("recognition taken") still describe an effect the
-  constitution does not have. The apparent clawback in the shipped cast is entirely the
-  `~false` guards on the minting rules — all three doors since v0.9 — **never
-  minting**, not `lose` **taking**. `lose`
-  belongs to the "determination, then stop" family — run the same awk test with each
-  name to regenerate it rather than trusting a list here; today it is `lose`, `travel`,
-  `become`, `decide`, `building`, Article 1b's `owe` and Article 8b's `obliged`. **`err`
-  has left that family**: Article 8b reads it, which is where `obliged` came from.
-  Derivation is monotone, so nothing can literally retract: the only expressible form
-  of "taking away" is a guard on the minting rules, which is the fix above. If a
-  downstream consumer is wanted instead, `all $x: lose(Points, $x) -> err($x,
-  Recognition).` loads at 0 errors and derives for Bela and Cira. Rewrite `06:3`, `:5-8`
-  and `:10` to say recognition is **never minted** rather than **withdrawn** — the
-  ceiling paragraph, now at `06:114-117`, and the closing line at `:119` ("reaches
-  Cira's recognition and finds nothing there") already carry the right register, so the
-  cost is still a few sentences, not the section.
+- **`lose/2` is a leaf — the remaining question is whether anything should read it.**
+  The register rewrite the old form of this bullet prescribed landed with chapter 6's
+  pass (2026-08-02): the chapter now says the mint refuses and the loss is recorded,
+  and nothing anywhere says taken. What remains is a design option, adjacent to the
+  open Article 4 clawback fork and best ruled with it: if a downstream consumer is
+  ever wanted, `all $x: lose(Points, $x) -> err($x, Recognition).` loads at 0 errors
+  and derives for Bela and Cira — measured 2026-08-01, re-measure before relying on
+  it. Regenerate the "determination, then stop" family by the awk body-test rather
+  than trusting any list here: `awk -F'->' '/^[^#]/ && /->/ && $1 ~ p' constitution.nibli`
+  with each candidate name — a bare grep matches rule heads and can never fail.
 
 - **Guard Article 9's head — one asserted fact voids a *person*.** `:764` is
   `all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).` with **no restriction
