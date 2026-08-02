@@ -36,8 +36,9 @@ ONLY=""
 case "${1:-}" in
   --quick) QUICK=1 ;;
   --only)  ONLY="${2:-}" ;;
+  --table) exec python3 new-book-plans/6-claim-table.py ;;
   "")      ;;
-  *)       printf 'usage: ./verify.sh [--quick | --only <pinfile>]\n' >&2; exit 2 ;;
+  *)       printf 'usage: ./verify.sh [--quick | --only <pinfile> | --table]\n' >&2; exit 2 ;;
 esac
 
 pass() { printf '  \033[32mok\033[0m   %s\n' "$1"; }
@@ -164,6 +165,15 @@ if [ "$n" -gt 0 ]; then
 else
   pass "counted claims at zero (hard gate; ch13's title is the allowlisted exception)"
 fi
+
+# ── 3c. every pin is reachable from a claim comment ──────────────────────────
+# The claim-to-query table (./verify.sh --table) is extracted, not generated:
+# a query's claim is the nearest preceding comment block in its pin file.
+# Measured 2026-08-02: all queries reachable, none inheriting header or
+# taxonomy boilerplate — this check keeps extraction possible as suites grow.
+out=$(python3 new-book-plans/6-claim-table.py --check 2>&1) \
+  && pass "$out" \
+  || fail "a pin query has no reachable claim comment" "$out"
 
 # ── 4. the absence claims ────────────────────────────────────────────────────
 # Each is a load-bearing sentence that no query can hold. Test the rule BODIES:
