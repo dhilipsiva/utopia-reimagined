@@ -75,6 +75,24 @@ noticing.
   both read by nothing) and needs vocabulary the constitution lacks (a study, an inspection, a
   community, a transfer). Institutional design with a lexicon ask under it — book-2's subject
   exactly. Its book-1 half landed as Article 8b.
+- **Guard the personhood roster — the cross-epoch obligation book-1 can only disclose.**
+  Moved from book-1's tracker 2026-08-02; its book-1 half (the disclosure) is done in
+  chapter 1 and in the constitution's fact-write trust-base section. The residue is an
+  operational obligation no in-snapshot rule can carry: one deleted `person(·)` entry
+  strips every right and leaves every sanction running (re-verified 2026-08-01 — the
+  entitlements, travel and ballot flip while `false` and `lose` stay TRUE, and Article 1b
+  follows the roster out, so the bearer stops owing the person the instant they stop
+  being one; no `err` fires anywhere — and `become(Amend_Mint, Law)` stays TRUE, so
+  Article 9 never notices: it entrenches rules, not facts, which is why "entrench the
+  roster" is not a repair either). **Do not reach for `all $x: human($x) ->
+  person($x).`** — re-run 2026-08-01, it renames the roster rather than closing it, and
+  the breach marker meant to accompany it can never fire because `person` then always
+  derives. No in-snapshot rule can tell a deleted roster entry from one never written, so
+  the guard is a **cross-epoch proof obligation over the fact store** — no transition
+  removes a roster entry except by an operation the record itself licenses — which needs
+  the store-discipline/epoch machinery this book's operational layer owns, alongside the
+  same obligation Article 9 states for `permanent()` and chapter 5 states for the
+  carried-mark discipline. Extend chapter 1's disclosure if the obligation gets built.
 - **The transition material in `book.md`** — Part 4 in full (One Person One Family; When a
   Village Joins; Cities, Provinces and Nations; One Planet One People), plus "When the Pod
   Meets the State" and "MVS in Action". ~8,600 words, largely organisational, legal and
