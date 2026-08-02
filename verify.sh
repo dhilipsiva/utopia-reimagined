@@ -128,10 +128,10 @@ step "prose"
 # tracker itself uses constantly. `strat` alone is too greedy (it matches
 # "demonstrate"), hence the three explicit stems.
 JARGON="nibli|predicat|stratum|strata|stratif|compil|assert|rule head|quantif|derivation|knowledge base|first-order|negation|conjunct"
-if hits=$(grep -rniE "$JARGON" book-1/*.md); then
+if hits=$(grep -rniE "$JARGON" book-1/[0-9]*.md); then
   fail "jargon in a derived chapter" "$hits"
 else
-  pass "jargon sweep clean across $(ls book-1/*.md | wc -l) chapters"
+  pass "jargon sweep clean across $(ls book-1/[0-9]*.md | wc -l) chapters"
 fi
 
 # ── 3b. counted claims in the prose — a RATCHET, not a gate ──────────────────
@@ -156,10 +156,10 @@ fi
 # file, so the phrase reappearing anywhere else (including ch13's own body) counts.
 COUNTED='\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|hundred)([- ][a-z]+)?\b|\beight\b|\bexactly one\b|\bone thing\b|\bsingle deprivation\b'
 COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)|^book-1/13-the-one-thing-taken\.md:1:# The One Thing Taken$'
-n=$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | wc -l)
+n=$(grep -rniE "$COUNTED" book-1/[0-9]*.md | grep -viE "$COUNTED_OK" | wc -l)
 if [ "$n" -gt 0 ]; then
   fail "counted claims in the prose: $n (the gate is zero)" \
-"$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | tail -5)
+"$(grep -rniE "$COUNTED" book-1/[0-9]*.md | grep -viE "$COUNTED_OK" | tail -5)
        State the rule that produces the count, do not count the instances."
 else
   pass "counted claims at zero (hard gate; ch13's title is the allowlisted exception)"
