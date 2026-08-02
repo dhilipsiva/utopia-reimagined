@@ -784,13 +784,13 @@ section carried is now this line.
   the வரம் கேட்டல் stanzas, confirmed against Tamil-literature sources and consistent with
   `book.md`'s own appendix (`book.md:2838`, `book.md:2967`); `1.md:12`'s garbled
   *நின்னைச் சரணடைந்தேன்* title is corrected.
-- **Harvest the References & Data Sources section — the single most valuable thing in the
-  legacy books.** `book.md` closes with **55 sourced entries**, grouped by chapter, each with
-  a primary source and URL, built by a 30-claim fact-check against primary sources. That is
-  the seed corpus for book-1's claim registry and it would take weeks to rebuild. Port it
-  into the registry format *before* deletion, applying the research-brief corrections above,
-  and drop entries whose claims book-1 does not make. **Blocked on the registry format
-  existing** — that is the long pole for the whole harvest.
+- **References & Data Sources: PORTED 2026-08-02 (`dd25b49`).** All entries live in
+  `registry/claims.json` as pinned references with a `book` routing field (book-1 for
+  Part V/method evidence, book-2 for transition/tech/legal material) and the brief's
+  corrections applied; `retrieved: 2026-07` records book.md's own last verification
+  honestly. Nothing was dropped — routing replaced dropping, so the deletion commit
+  loses nothing and book-2's material is marked rather than worked. The references half
+  of the deletion gate is discharged.
 
 - **Harvest the nine historical cases.** New Harmony and the labour exchange, China's
   work-point villages, the kibbutzim, Nyerere's Ujamaa, Chile's Cybersyn, Auroville,
