@@ -31,14 +31,14 @@ The repo is heading for two new books plus a clean deletion:
 arranged in the order the work happens. Do not skip ahead: each phase removes
 constraints the next one would otherwise have to work around.
 
-1. **Phase 1 — engine (nibli).** Empty at the moment — nothing is pending
-   upstream. It stays first because some of what the book has to concede is an
-   engine limitation rather than a design choice, and it is dishonest to write
-   the concession while the limitation is fixable; the section keeps the rules
-   any future ask must follow.
-2. **Phase 2 — author-gated decisions.** Nothing here can be worked unattended.
-   Several chapters cannot be revised until the decision above them is ruled,
-   because the ruling is what the chapter says.
+1. **Phase 1 — author-gated decisions.** First, because several chapters cannot be
+   revised until the decision above them is ruled — the ruling *is* what the chapter
+   says — and because a lost decision costs more than any lost task; this section has
+   been destroyed by tooling once and is watched accordingly.
+2. **Phase 2 — engine handoffs (nibli).** Empty at the moment — nothing is pending
+   upstream. It stays ahead of the chapter passes because some of what the book has to
+   concede is an engine limitation rather than a design choice, and it is dishonest to
+   write the concession while the limitation is fixable.
 3. **Phase 3 — chapter passes, chapter 1 through 14, in order.** One chapter at a
    time: read it whole, fix what is false, revise what is thin, verify, commit,
    move to the next. The per-chapter bullets below are what is already known to be
@@ -56,7 +56,7 @@ Plain bullets, never numbered. Delete a bullet entirely when it fully lands;
 update it if only partly done. One item at a time: do it, verify it, commit it.
 
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
-or a design decision — they are collected in phase 2 rather than scattered.
+or a design decision — they are collected in phase 1 rather than scattered.
 
 **THE INCLUSION GATE — applies to Parts I–V only.** Those parts describe a
 destination, not a route. Before any passage goes in, two tests: (a) does it
@@ -78,30 +78,7 @@ Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
 
 ---
 
-## Phase 1 — Engine work (nibli). Nothing is pending upstream.
-
-**dhilipsiva wrote nibli, and is the channel between the two repos.** The two sessions
-cannot see each other, so **an item is not ready until it carries a self-contained prompt
-in a fenced block** — one that can be pasted into a Claude Code session in
-`~/projects/dhilipsiva/nibli`, with that session's reply pasted back here. A prompt must
-assume **zero** knowledge of this repo: no bullet references, no chapter numbers, no "see
-above". If an item cannot be stated that way it says so instead of carrying half a prompt.
-End every prompt by asking for the sha, what changed, whether a verdict moved, and what the
-prompt itself got wrong; that last one has been non-empty more often than not.
-
-**The section is empty on purpose.** Every ask written here has landed and been verified
-here, and nothing is waiting on nibli. Do not
-work around an engine limitation in prose — conceding a fixable limitation as though it
-were a design choice is the specific dishonesty this phase exists to prevent, and it is why
-the phase runs first.
-
-**When a reply lands here**, re-run `./verify.sh` before believing anything — the script
-rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
-measured an engine change that was never rebuilt.
-
----
-
-## Phase 2 — Author-gated decisions. Rule these before the chapter passes.
+## Phase 1 — Author-gated decisions. Rule these before anything else.
 
 Each of these is a design decision, not a task. Record the ruling in `CLAUDE.md` when it
 lands, so it is not re-proposed. This section emptied once — every earlier decision was
@@ -236,15 +213,30 @@ loss — re-derive before trusting them.
   decided is the plan: where the serialization runs, in what order, and what a launch looks
   like when the text is free the day it appears. Nobody but the author can make that call.
 
+
 ---
 
-## Phase 3 — Chapter passes, chapter 1 through 14, in order.
+## Phase 2 — Engine handoffs (nibli). Nothing is pending upstream.
 
-One chapter at a time: read it whole, fix what is false, revise what is thin, verify,
-commit, move on. **The bullets under each chapter are what is already known to be wrong —
-a floor for that pass, not its scope.** Chapters with no bullets still get a pass.
+**dhilipsiva wrote nibli, and he is the channel between the sessions — for book-2's
+tracker exactly as for this one.** The sessions cannot see each other, so **an item is not
+ready until it carries a self-contained prompt in a fenced block**. Write the prompt as
+one session speaking directly to the other, with dhilipsiva carrying it: address the
+engine session in the second person, assume **zero** knowledge of this repo — no bullet
+references, no chapter numbers, no "see above" — and close by instructing that session to
+write its reply addressed directly back to this one, again through dhilipsiva: the sha,
+what changed, whether any verdict moved, and what the prompt itself got wrong. That last
+item has been non-empty more often than not, on both ends of the channel.
 
-### Chapter 1
+**The section is empty on purpose.** Every ask written here has landed and been verified
+here, and nothing is waiting on nibli. Do not
+work around an engine limitation in prose — conceding a fixable limitation as though it
+were a design choice is the specific dishonesty this phase exists to prevent, and it is why
+the phase runs first.
+
+**When a reply lands here**, re-run `./verify.sh` before believing anything — the script
+rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
+measured an engine change that was never rebuilt.
 
 
 ---
@@ -1052,6 +1044,11 @@ No known defects. Read it against the constitution anyway.
   universal right of appeal refuses an attacker a heresy law. One mechanism, no special
   pleading, neither outcome chosen by whoever was writing that day.
 
+  **The objection docket is now external and convergent** (`reviews/adoption_reviews.md`,
+  2026-08-02): four independent reviewers land on release/duration, delivery/obligor,
+  audit teeth, degree/equity, and legitimacy/transition — plus two new Part V objections
+  from the engine-book review, the unenumerated-rights cage and proportionality-vs-
+  structure. Part V answers these by name or it has not done its job.
 
 - **Before the method part prints a rendered sentence or a proof trace, check who the duty
   names.** nibli carries a filed defect — its tracker bullet **"`obliged`-spelled every-duty
@@ -1301,48 +1298,12 @@ No known defects. Read it against the constitution anyway.
 
 ---
 
-## Hold for book-2 — do not work these here
+## book-2
 
-
-Parked, so they are not lost when the legacy files go. These become the seed of book-2's
-tracker, written from scratch after book-1 ships.
-
-- **Oversight of the duty-bearer — enablers, their checkers, and the meta-study.** Raised
-  by the author 2026-07-31 while ruling the homeless-convict gap: if shelter is owed and
-  somebody has none, the people who deliver it should have to study why, and somebody
-  else should have to check on *them*. Right instinct, wrong book. In book-1 terms it
-  duplicates two mechanisms that already exist and are deliberately inert — `owe`, which
-  nothing reads (`08:138`, "Nothing compels the body"), and `err`, whose only consequence
-  is Article 8b's `obliged`, which nothing reads either. And the constitution has no
-  vocabulary for a study, an inspection, oversight, a community or a transfer; verified
-  again 2026-08-01, the grep returns one word inside a comment and no relation. So this is
-  institutional design with a lexicon ask under it, which is book-2's subject exactly.
-  **Its book-1 half is done** — the `err`-feeds-an-obligation decision was ruled and
-  enacted as Article 8b. Do not build the structure here.
-
-- **The transition material** in `book.md` — Part 4 in full (One Person One Family; When a
-  Village Joins; Cities, Provinces and Nations; One Planet One People), plus "When the Pod
-  Meets the State" and "MVS in Action". ~8,600 words, largely organisational, legal and
-  fiscal. This is book-2's spine, not an appendix to it.
-
-- **The technical backbone material** in `book.md` — local-first/offline-first
-  micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design, YAD, the
-  layman's guide. It has **no support in the constitution** — no ledger, no biometric, no
-  device, no cryptography — which is precisely why it is book-2's subject and not book-1's.
-
-- **"Why a blockchain at all?"** — honestly weighing CRDTs and signed logs against
-  nibli-store's HLC/tombstone/CRDT-export design. It partly argues against the legacy book's
-  central premise, which makes it a strong opening question for book-2 rather than a threat
-  to book-1.
-
-- **Replace venture brand names** (union.build, Sui, Fuel, linera) with capability
-  requirements plus a dated appendix. The list in the legacy text is incomplete; re-grep when
-  the book-2 tracker is written rather than trusting it.
-
-- **The costed transition** — a fiat price tag on a 200k-city baseline, funding per phase, and
-  a housing acquisition mechanism (community land trusts vs right-of-first-refusal). Needs
-  real fiscal magnitudes; don't fabricate numbers.
-- The nibli-side convergence bullets live in nibli's own `TODO.md`.
+book-2 now has its own tracker: `book-2/TODO.md` — unordered until its chapters are
+decided, seeded from the hold list that used to live here plus the adoption reviews
+(`reviews/adoption_reviews.md`). The discipline is unchanged: **do not work book-2 items
+while book-1 is active**; collect there, rule here.
 
 ---
 
