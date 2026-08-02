@@ -10,7 +10,7 @@
 # reader never sees this file. If a verdict flips, the sentence it guards has
 # started lying — fix the prose or the constitution, never the pin.
 
-:expect-pins 26
+:expect-pins 34
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -32,12 +32,28 @@ prisoner(Zed).
 :refuse reasoning /declared derived-only/
 authority(Pax).
 
-# 1.4 cont. "Either the electorate seated you, or you hold a public office.
-#            Those are the only two routes."
+# 1.3b "Nor can you write down that an offence was serious." — the third of the
+# chapter's three cannot-write claims, and the only one that was unpinned.
+:refuse reasoning /declared derived-only/
+severe(Zed).
+
+# 1.4 cont. "Either a seating body chose you, or you hold a public office.
+#            Those are the only routes."
 ? public(Court).
 # => TRUE
 
 ? authority(Court).
+# => TRUE
+
+# ...and the seating body need not be the electorate. Hex holds a seat the
+# convocation gave — no office, no electorate entry — and answerability follows
+# the same way. This is the route the sentence used to deny: it said "the
+# electorate seated you" and "only two routes", stale since the second seating
+# body was added. Hex isolates the third rule: nothing else confers it.
+? choose(Convocation, Hex).
+# => TRUE
+
+? authority(Hex).
 # => TRUE
 
 # 1.5 "Koa documented something about Esa. ... Esa's credibility is untouched."
@@ -114,6 +130,30 @@ family(Hano).
 # => FALSE
 
 ? building(LowSec, Hano).
+# => TRUE
+
+# 1.3c THE PAIRING IS THE RULE. "An offence is severe when two of those stand
+# together in the record: an attack and a cruelty landing on the same person,
+# or either of them landing on one person while an injury lands on another."
+# The gloss this replaced — "any two of the three are present" — was refuted by
+# exactly these verdicts: attack and cruelty toward DIFFERENT people derive
+# nothing, and the same pair on one person derives severity. Fresh names;
+# effects disjoint from everything below — severe feeds placement only through
+# prisoner, and Probe is nobody's prisoner. Unscoped for the file's usual
+# reason: each accept is the premise of the query under it.
+:accept
+attack(Probe, Vic1).
+
+:accept
+cruel(Probe, Vic2).
+
+? severe(Probe).
+# => FALSE
+
+:accept
+cruel(Probe, Vic1).
+
+? severe(Probe).
 # => TRUE
 
 # 1.7 "Someone is a person." — the entry, and the two ways it gets written.
