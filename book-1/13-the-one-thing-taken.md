@@ -171,7 +171,10 @@ And there is a sting in it that is worth following, because it is the sharpest t
 this chapter has.
 
 Of everything owed to every person, what actually arrives in this design is exactly
-this: recorded speech, and shelter. **Both of them arrive only for prisoners.**
+this: recorded speech, and shelter. **Both of them arrive only for prisoners.** A
+route now stands open for a third — teaching that was heard delivers learning — and
+no hearing is on the record, so nothing yet arrives by it; the sting below is
+untouched.
 
 So when a sentence is finished, both stop. The person keeps every entitlement they had
 — they are owed exactly what they were always owed, and the body that owes it still

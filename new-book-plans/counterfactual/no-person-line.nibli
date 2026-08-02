@@ -56,10 +56,10 @@
 # `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
 # is not closing the conclusions, and Article 0 is what does the latter.
 #
-# TWENTY-NINE, NOT TWENTY-EIGHT, AND THE GAP IS THE INTERESTING PART.
+# THIRTY, NOT TWENTY-NINE, AND THE GAP IS THE INTERESTING PART.
 # The spine's evidence figure counts predicates with no producing rule.
 # `person` has two producing rules AND thirty ground assertions, so it is
-# absent from that 28 and must appear here or the file will not load.
+# absent from that 29 and must appear here or the file will not load.
 # [v0.9 2026-08-02] `married` (speni) and `sibling` (tunba) joined both
 # lists with the kinship ruling — guards on the multi-sig's independence
 # check, dead until a marriage or siblinghood is recorded.
@@ -74,12 +74,12 @@ admits("adjust").     admits("approves").   admits("attack").
 admits("broken").     admits("capture").    admits("choose").
 admits("cite").       admits("clear").      admits("cruel").
 admits("deceive").    admits("family").     admits("forgive").
-admits("free").       admits("home").       admits("injure").
-admits("judge").      admits("married").    admits("mature").
-admits("parent").     admits("permanent").  admits("person").
-admits("public").     admits("put").        admits("rotten").
-admits("show").       admits("sibling").    admits("suggest").
-admits("teaches").    admits("work").
+admits("free").       admits("hears").      admits("home").
+admits("injure").     admits("judge").      admits("married").
+admits("mature").     admits("parent").     admits("permanent").
+admits("person").     admits("public").     admits("put").
+admits("rotten").     admits("show").       admits("sibling").
+admits("suggest").    admits("teaches").    admits("work").
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -353,6 +353,21 @@ entitled(every person, event { believe() }).
 # thing: movement" would remain literally true — the vocabulary had no
 # predicate for a second human being.
 entitled(every person, event { meets() }).
+# [v0.9 2026-08-02 RULED] THE FIRST DELIVERY ROUTE. hears (tirna: the
+# student heard the teacher) is an ARRIVAL record — two-sided, the
+# teaching given and received, rating nobody's capability — and from it
+# a floor actuality derives: the only route to learn, and the first
+# route to any floor right that does not run through a prison. The
+# residual-trust-base-II test passes by construction: the arrival
+# evidence upstream of this head is the hears entry, never the roster.
+# The entitlement above stays unconditional — being owed learning never
+# waits on this rule; only the record's knowledge of ARRIVAL does. The
+# route ships DORMANT: no arrival is recorded in the cast, the same
+# posture as the placement marker — dormant is not blind, and the pins
+# force it. Recognition is untouched in both directions: being taught
+# still mints nothing (the grades ruling), and this rule reads teaches
+# beside hears, never teaches beside itself.
+all $t: all $s: teaches($t, $s) & hears($s, $t) -> learn($s).
 # [v0.4 NEW] A released person is still a person. This line is not optional and
 # it is not symmetry for its own sake: `prisoner -> person` above is the ONLY
 # non-assertion route into the roster, so without this, ending a sentence ends

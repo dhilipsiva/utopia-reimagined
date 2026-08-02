@@ -67,6 +67,15 @@ floor that actually runs. But step outside the walls and it stops. Whether a fre
 person's expression ever reaches anyone is a question the record cannot answer, about
 anybody, including the woman whose credibility it went to such lengths to void.
 
+A third piece of machinery now stands beside those two, and it is a different kind
+of thing: not an arrival, a route. Teaching that was heard — both halves on the
+record, the giving and the receiving — delivers learning. No such arrival is recorded
+about anybody, so nothing has changed for Cira yet; the route stands the way the
+placement alarm stands, built and dormant, waiting on the record to say the thing it
+reads. The gap has not narrowed by a single lesson. What changed is that for
+learning — and so far only for learning — the design can say exactly what closing the
+gap would look like, and the saying is a rule rather than a promise.
+
 Read the shape of those two. The society is certain about the housing and the heard
 words of exactly the people it is punishing, and the two certainties have the same
 boundary: the walls.

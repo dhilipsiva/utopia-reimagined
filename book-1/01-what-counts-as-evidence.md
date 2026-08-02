@@ -7,7 +7,8 @@ whatever turns out to be useful — a fixed set of entries, and when someone wan
 something about you that is not on the list, they cannot. Not *may not*. Cannot.
 There is nowhere to put it.
 
-Here is the whole list. Someone is a person. Someone worked, or taught. Someone injured
+Here is the whole list. Someone is a person. Someone worked, or taught, or heard
+their teacher. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
 auditor documented what they found, and cited the grounds they looked on. Someone lied. Someone exposed something. A person
 has a home, or a family, or a parent, or a spouse, or a sibling, or has reached
