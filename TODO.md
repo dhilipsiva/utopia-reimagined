@@ -181,6 +181,12 @@ counted claims stripped, the debt and second-door pins added. No known defects r
 
 ### Chapter 8
 
+Pass complete 2026-08-02: whole-chapter read, the counted sites swept (ratchet 14 to
+9), the marker cross-reference corrected to a later chapter, the nothing-compels
+paragraph reconciled with the chapter's own named exception (the mark lands on the
+body that audits, not the body that owes), and the floor enumerated in full on one
+person in the pin file — both sides of the debt. No known defects remain.
+
 ### Chapter 9
 
 Pass complete 2026-08-02: whole-chapter read, the automatic-ballot claim qualified to
@@ -705,16 +711,14 @@ No known defects. Read it against the constitution anyway.
   aborts the run instead of passing green — but a *query* on a name the file never
   mentions still answers a clean FALSE, so kind one is untouched.
 
-- **The eight floor rights are sampled, never enumerated — and the omitted one is exactly
-  where the claim fails.** The false universal is gone from the prose
-  (2026-08-02 — it hid behind exactly the omitted entry), and `expresses` is now pinned
-  in chapter 8's file; the enumeration ask below still stands for both files. Chapter 7's pass (2026-08-02)
-  pinned the debt behind "owed everything" — `owe` and `entitled` for one right — so the
-  OWED half is no longer unguarded there, but it still samples rather than enumerates. Eight pins per subject is not expensive
-  and it is the only shape that makes "every one of the eight" a checked sentence rather
-  than a summary. Put the pin block in **before** the chapter-8 rewrite, so the rewrite
-  has something to write against. (Both files re-checked 2026-08-01 — still seven and
-  one; the ch7 comment moved down a line when `b60344c` rewrote the headers.)
+- **Chapter 7's file still samples the floor rather than enumerating it.** The
+  chapter 8 half of this bullet landed with its pass (2026-08-02): both sides of the
+  debt are enumerated in full on one person in `08-what-you-are-owed.pins.nibli`, and
+  the chapter's counted sites were swept in the same commit. What remains is chapter
+  7's file, which pinned the debt behind "owed everything" for one right only. Eight
+  pins per subject there when a pass next touches it — the omitted item is exactly
+  where a universal claim fails, which is how the expresses omission hid a false
+  universal in chapter 8's prose.
 
 - **Chapter 12's pin file is the last one whose header argues instead of checking.**
   `12-changing-the-rules.pins.nibli:8-10` says the "three ways this is thinner" section
