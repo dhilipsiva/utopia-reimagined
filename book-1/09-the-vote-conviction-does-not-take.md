@@ -39,6 +39,25 @@ punishment layered onto imprisonment; it is the removal of the mechanism by whic
 imprisonment might be made less bad. The two work together, which is why they so often
 travel together.
 
+## The harsher test
+
+Conviction is not the harshest thing this society can conclude about you. Earlier
+chapters made that case: voiding is worse — your word counts for nothing, your
+recognition takes the only loss this design ever records, every door to earning shuts,
+and unlike a sentence, nothing ends it. Bela carries all of that. Ask whether Bela
+votes.
+
+Bela votes. The voiding reached Bela's credibility and Bela's recognition because
+those are its subjects, and the ballot sits downstream of neither. Follow the two
+heaviest verdicts this design can produce — confined, and not to be believed — all the
+way to the ballot box, and neither one arrives.
+
+What would arrive is the thing chapter 7 warned about. The ballot is owed to persons
+who are adults, so the only route to it runs through the roster — and the only way a
+ballot is ever lost here is the way everything is lost at once: the person's entry
+going missing. No court reaches the vote. No examiner reaches it. The record-keeper
+does.
+
 ## Children, the difference between not yet and taken — and a third thing
 
 Cira does not vote. Cira is a person, is owed everything on the floor, and has no
@@ -60,7 +79,17 @@ So the record has a third category this section's title does not admit, between 
 yet* and *taken away*: **never written**. Esa teaches, was examined by two people, is
 somebody's recorded child — and Esa holds no ballot, because nobody wrote her
 adulthood down. In the record, the teacher and the child are the same: an entry short
-of the franchise. A polity that wanted a demographic voteless would not need to pass a
+of the franchise.
+
+One more fact makes the entry's strangeness exact. Esa earns here. Her teaching is
+recognised — the doors of the next chapter ask nothing about age — so the record that
+will not hand her a ballot is already counting her contribution. The same missing word
+sorts her out of the franchise and not out of the earning. And it is a word with
+precisely one job: in the entire design, adulthood is consulted by the franchise and
+by nothing else. A single undefined entry, written by nobody-in-particular, read in
+one place, and that place is the vote.
+
+A polity that wanted a demographic voteless would not need to pass a
 rule, strip a right, or trip a marker. It would need only to decline, quietly, to
 write adulthood into certain records — and nothing anywhere would notice, because a
 ballot never granted looks exactly like a ballot not yet due.

@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 17
+:expect-pins 19
 
 # "Hano is in custody. Hano votes."
 ? prisoner(Hano).
@@ -43,6 +43,15 @@
 
 ? lose(Points, Hano).
 # => FALSE
+
+# "The harsher test" — voiding does not reach the ballot either. Bela: voided,
+# and voting. The pair must sit adjacent: the TRUE ballot only carries the
+# section's claim while the voiding verdict stands beside it.
+? false(Bela).
+# => TRUE
+
+? decide(Bela, Ballot).
+# => TRUE
 
 # "Cira is a person ... and has no ballot, because Cira is not an adult."
 ? person(Cira).
