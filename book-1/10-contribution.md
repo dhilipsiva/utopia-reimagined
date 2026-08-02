@@ -92,8 +92,21 @@ just strike out what you had; it closes the routes by which you would rebuild. S
 voided can still teach, still work, still contribute in every way that matters to the
 people around them — and none of it registers.
 
-Whether that is right is a genuine question and the design does not argue for it. It
-is simply what follows from putting the same condition on all three doors.
+The third door is also the door that closed last, and the manner of its closing
+deserves a sentence of history. For most of this design's life the teaching door and
+the work door refused the voided, and the examiner door did not: Vex — carrying a
+void forward from an earlier period, penless, unable to sign anything that counted —
+was still being paid for examining people. That was not a cost anybody had accepted.
+It was a contradiction nobody had noticed. An examination is nothing but its author's
+word, and a voiding is precisely the finding that the word is worthless, so the door
+was paying for exactly what the voiding had already priced at nothing. The closing
+made the third door ask what the other two had always asked, and it un-minted
+nothing — nothing is ever taken back here except by the loss the last chapter
+described. The door simply stopped paying, from that day forward.
+
+Whether the whole arrangement is right is a genuine question and the design does not
+argue for it. It is simply what follows from putting the same condition on all three
+doors.
 
 ## Being paid to look at people
 
@@ -113,6 +126,18 @@ their own credibility — so the incentive to look is bounded by a real risk in 
 carelessly. And nothing is earned for finding someone guilty as opposed to finding
 them innocent; the recognition attaches to the examination, not the outcome, so there
 is no bonus for a conviction.
+
+A third thing does not push back, and it belongs in the open. Look at what this door
+actually reads. An examination, to the record, is a pair of entries — someone judged
+a case, someone documented it — and the pair is all the door asks. No pen: the
+credential chapter 3 guards so carefully is a condition on voiding somebody, never on
+being paid for looking. No grounds: the previous chapter conceded that the record
+holds who examined and never why, and this door pays on the same empty pair. Write
+both entries, in good standing, without a lie on the pair, and the recognition
+arrives — for an examination that exists as two lines and nothing else. The design
+pays for the fact of scrutiny, and the fact of scrutiny is cheap to record. What the
+guards above price is the finding that lands on somebody; nothing yet prices the
+looking itself.
 
 That is a better arrangement than most, and it is not nothing to worry about. The
 design has decided that scrutiny is a contribution on a par with teaching and work.
