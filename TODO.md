@@ -151,21 +151,6 @@ counted claims stripped, the debt and second-door pins added. No known defects r
 
 ### Chapter 8
 
-- **Chapter 8 concedes one exception to the delivery gap and there are two.**
-  `08:50` now states the shelter rule correctly, but `08:31-34` still says the answer
-  "no" "comes back for every one of the eight, for every person in it", and `08:48`
-  still says "There is one exception". Recorded speech is the second, and since the v0.8
-  confinement rule the two have exactly the same width: both derive for every confined
-  person and for nobody else. Re-verified 2026-08-01 across the cast — `dwell` and
-  `expresses` are TRUE for every prisoner and FALSE for Bela and Cira, and
-  `expresses(Jala)` and `dwell(Jala)` are FALSE for the unconvicted woman chapter 13
-  pairs with Hano.
-  The pin file is why this survived: `08-what-you-are-owed.pins.nibli` pins the "no" for
-  every floor entry except recorded speech and never names `expresses` anywhere, so the
-  one entry that answers TRUE is the one nothing looks at. Rewrite `08:31-34` and
-  `08:48-58`, and add `? expresses(Hano). # => TRUE` and `? expresses(Bela). # => FALSE`
-  beside the `dwell` block, now at `:44-65` after the header fix in b60344c.
-
 ### Chapter 9
 
 - **Chapter 9 says the disenfranchisement clause "works". It takes nobody's ballot.**
@@ -740,8 +725,8 @@ No known defects. Read it against the constitution anyway.
   Still open: `08:31` turns the whole chapter on exactly this contrast — "Ask whether
   Bela eats. Not whether Bela is *entitled* to eat — whether Bela eats" — and chapter 8's
   own pin file still pins only the second half (`eats(Bela)`,
-  `08-what-you-are-owed.pins.nibli:145`), so give it the pair when its pass runs; and
-  the `home` and non-person controls in
+  `08-what-you-are-owed.pins.nibli`) — LANDED 2026-08-02, both halves adjacent on the
+  same person; still open here: the `home` and non-person controls in
   `rights-floor.pins.nibli` — without the controls the pins above pass for the wrong
   reason.
 
@@ -767,8 +752,9 @@ No known defects. Read it against the constitution anyway.
   mentions still answers a clean FALSE, so kind one is untouched.
 
 - **The eight floor rights are sampled, never enumerated — and the omitted one is exactly
-  where the claim fails.** `08:32` says "the same answer comes back for every one of the
-  eight", and the pin file tests seven, omitting `expresses`. Chapter 7's pass (2026-08-02)
+  where the claim fails.** The false universal is gone from the prose
+  (2026-08-02 — it hid behind exactly the omitted entry), and `expresses` is now pinned
+  in chapter 8's file; the enumeration ask below still stands for both files. Chapter 7's pass (2026-08-02)
   pinned the debt behind "owed everything" — `owe` and `entitled` for one right — so the
   OWED half is no longer unguarded there, but it still samples rather than enumerates. Eight pins per subject is not expensive
   and it is the only shape that makes "every one of the eight" a checked sentence rather
