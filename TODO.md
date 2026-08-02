@@ -93,12 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Voice.** All fourteen chapters are written in a plain, mostly impersonal
-  register. The legacy book was first-person and warm, and the constitution's own commentary
-  says "the manifesto voice is the author's to re-weave — I am not ghost-writing it." Only
-  the author can supply it, and every chapter drafted before that pass needs re-touching, so
-  it gets more expensive each week.
-
 - **[AUTHOR-GATED] Plan the reach strategy.** `LICENSING.md` already records the
   constraint and its consequence — exclusivity can never be sold, so serialization and open
   circulation are the route by default rather than by choice, and the title is the only
@@ -837,7 +831,9 @@ No known defects. Read it against the constitution anyway.
   carries no verdicts (`new-book-plans/3-spine.md:123-126`). One of exactly three sanctioned
   exceptions to the inclusion gate. No file exists. Write it against the final wording,
   which is settled: *The Rights Nobody Has to Earn — A design for a society worked out to
-  the point where it catches its own failures.* **Check the note against the counted-claims
+  the point where it catches its own failures.* **Written in the author's first person under the
+  voice-boundary ruling** — the author drafts (`tmp.txt` is the channel), sessions edit
+  mechanics only and never generate the voice. **Check the note against the counted-claims
   ratchet before committing it** — it will be the first prose in `book-1/` the ratchet has
   ever scored, every other file predating it. The subtitle itself is clean; a note that
   opens by naming the floor's size would not be.
@@ -922,7 +918,8 @@ No known defects. Read it against the constitution anyway.
   design and exactly the question this joint has to answer. The earned-time concession from
   the release ruling lands at the *coercion* joint next door: "voluntary" is structurally
   pressured when the alternative is longer confinement.
-- **The method part discloses the stress surface.** The suite's confidence register must
+- **The method part discloses the stress surface.** It sits inside the voice boundary —
+  first person permitted, same supply protocol as the opening note and Part V. The suite's confidence register must
   not outrun its provenance: every probe, fixture and refusal was written by the author and
   AI sessions against a cast of dozens — no independent reimplementation, no external
   red-team, and the engine that blesses the book shares the book's author. The counterfactual
@@ -952,7 +949,8 @@ No known defects. Read it against the constitution anyway.
   restraint is the thesis performed; one Part V passage states it as chosen. Five of six
   reviewers asking for characterisation enters as citable evidence — a reader who felt the
   flatness has felt the design — never as a defect being repaired. The four channels: the
-  author's first person (gated on the Voice ruling — supplied, not ghost-written); the
+  author's first person (the Voice ruling landed 2026-08-02: admitted, author-drafted,
+  sessions edit mechanics only); the
   second-person **domestic vignette** — a household carried through food, care, housing and
   crisis, generic "you", never a cast name (the register the derived chapters cannot hold);
   the **hostile reviewer corpus as the antagonist**, quoted by name from `reviews/` and
