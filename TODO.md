@@ -24,8 +24,8 @@ The repo is heading for two new books plus a clean deletion:
   is that no valuable material is lost on the way out; what still needs porting is
   itemised under **Legacy harvest** below (the 55 sourced references are already in
   `registry/claims.json`, and the five bright lines are swept — the result stands
-  under **Standing facts and methods**, with the one open consequence being the
-  Article 4 clawback decision in Phase 1).
+  under **Standing facts and methods**; the clawback consequence it forced was ruled
+  2026-08-02, bright line 2 standing narrowed).
 
 **THE WORKING ORDER.** All fourteen chapter passes are complete (2026-08-02) and
 their records live in git, not here. What remains runs in two phases plus
@@ -82,37 +82,6 @@ unnoticed because nothing checks this file, and a later commit then described th
 emptied section as "every earlier decision was ruled", which was false. Treat these as
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
-
-- **[AUTHOR-GATED] Decide the Article 4 clawback question — and, in the same sitting,
-  whether anything should ever read `lose`.** The two rules are the wrongdoer clawback
-  (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
-  from a person's record) and the student clawback (`teaches($t,$s) & false($t) ->
-  lose(Points, $s)` — docks a **student** for a teacher's fraud: negative scoring, of a
-  person, who did nothing). Re-verified: `lose(Points, Bela)` TRUE, `lose(Points, Cira)`
-  TRUE. Legacy `book.md` bright line 2 — *"No negative scoring of persons"* — is
-  contradicted by both, and note it is a **legacy** line recorded in `CLAUDE.md` under
-  historical decisions, not one book-1 has adopted. Decide which side gives: either the
-  bright line narrows to "no subtraction except by due process for one's own adjudicated
-  fraud" and the student rule is deleted, or the clawback rules go and sanctions reach
-  perks only. Do not leave both in print. Narrowing flips `lose(Points, Cira)` FALSE and
-  rewrites the Cira section in chapter 6; that is the intended trade, the NOTE at
-  `06-clawback.pins.nibli` records it, and the Cira pin is already declared `:defect` so
-  the flip reads as a repair.
-  **Both middle options are closed, and the wrongdoer's closed last.** On the wrongdoer's
-  side — where Bela and Vex really do hold recognition — the narrower rule would need
-  provenance on `reward` to say which recognition came from the fraud, and that is
-  refused (`CLAUDE.md`, 2026-08-01). The student middle option was closed first, and the
-  chapter says so in print: since students never mint, "claw back only the rewards that
-  came from the fraudulent teaching" is the empty set by construction, so narrowing is
-  deletion and should be decided as one.
-  **The `lose`-reader half:** `lose/2` is a leaf — nothing reads it, so nothing is ever
-  actually taken, which is what lets chapter 6 say the mint refuses and the loss is
-  recorded, never taken. If a downstream consumer is ever wanted,
-  `all $x: lose(Points, $x) -> err($x, Recognition).` loads at 0 errors and derives for
-  Bela and Cira — measured 2026-08-01, re-measure before relying on it. Regenerate the
-  "determination, then stop" family by the awk body-test rather than trusting any list
-  here: `awk -F'->' '/^[^#]/ && /->/ && $1 ~ p' constitution.nibli` per candidate name —
-  a bare grep matches rule heads and can never fail.
 
 - **[AUTHOR-GATED] Resolve the polarity contradiction between Articles 6 and 7.**
   Article 7's shield is fail-**open** toward protection and defends the choice
@@ -771,9 +740,11 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
 `verify.sh` is the proof.
 
 - **The five legacy bright lines were swept against the enacted rules; only BL1 ported.**
-  **BL2** ("no negative scoring of persons") is refuted by the constitution, not merely
-  unimplemented — `lose(Points, Cira)` derives TRUE, docking a student for a teacher's
-  fraud — and the decision it forces is the Article 4 clawback question in Phase 1.
+  **BL2** ("no negative scoring of persons") stood refuted by the constitution until the
+  clawback ruling (2026-08-02): the student rule that docked Cira for a teacher's fraud
+  is deleted, `lose(Points, Cira)` no longer derives, and BL2 stands **narrowed** —
+  "no subtraction except by due process for one's own adjudicated fraud" — which the
+  surviving wrongdoer rule satisfies.
   **BL3** ("merit never weights votes") survives vacuously: there is no arithmetic
   anywhere in the enacted lines and `verify.sh`'s digit ban keeps it that way, so
   weighting cannot be written. **BL4** and **BL5** are pod-and-tech-stack material and
