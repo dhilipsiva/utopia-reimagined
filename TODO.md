@@ -573,31 +573,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
 ## The verification harness
 
 
-- **The floor's own relation is queried but never controlled.**
-  `grep -rn entitled book-1/*.pins.nibli new-book-plans/rights-floor.pins.nibli` returns
-  three (re-run it; the count has moved once already): `rights-floor.pins.nibli:258`
-  (`entitled(Hano, event { eats() })`) and `13-the-one-thing-taken.pins.nibli:91`
-  (`entitled(Hano, event { dwell() })`), both from the Article 6 release, and
-  `06-clawback.pins.nibli:43`, where the chapter 6 pass put
-  `? entitled(Bela, event { eats() }).` TRUE beside `? eats(Bela).` FALSE — the Bela
-  pairing this bullet used to ask for, landed one chapter early. None is paired with a
-  control, so all still prove reach rather than derivation. (Another sits in
-  `counterfactual/no-person-line.pins.nibli:14`, where the fixture itself is the control.)
-  The queryable shape discriminates in three directions at once, re-executed 2026-08-01:
-  `? entitled(Adam, event { eats() }).` TRUE — the floor reaches a person;
-  `? eats(Adam).` FALSE — and does not fabricate it;
-  `? entitled(Adam, event { home() }).` FALSE — home is not on the floor;
-  `? entitled(Court, event { eats() }).` FALSE — and it does not reach a non-person;
-  `? entitled(Hano, event { meets() }).` TRUE — including the convicted.
-  Still open: `08:31` turns the whole chapter on exactly this contrast — "Ask whether
-  Bela eats. Not whether Bela is *entitled* to eat — whether Bela eats" — and chapter 8's
-  own pin file still pins only the second half (`eats(Bela)`,
-  `08-what-you-are-owed.pins.nibli`) — LANDED 2026-08-02, both halves adjacent on the
-  same person; still open here: the `home` and non-person controls in
-  `rights-floor.pins.nibli` — without the controls the pins above pass for the wrong
-  reason.
-
-
 - **Write down what FALSE means in a pin file — it means three different things and two
   of them are worthless.** All three re-executed 2026-08-01, and the distinction is why
   five false prose claims survived 180 green pins:
@@ -617,15 +592,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   vocabulary is no longer invisible — appending `rich(Esa).` to the constitution now
   aborts the run instead of passing green — but a *query* on a name the file never
   mentions still answers a clean FALSE, so kind one is untouched.
-
-- **Chapter 7's file still samples the floor rather than enumerating it.** The
-  chapter 8 half of this bullet landed with its pass (2026-08-02): both sides of the
-  debt are enumerated in full on one person in `08-what-you-are-owed.pins.nibli`, and
-  the chapter's counted sites were swept in the same commit. What remains is chapter
-  7's file, which pinned the debt behind "owed everything" for one right only. Eight
-  pins per subject there when a pass next touches it — the omitted item is exactly
-  where a universal claim fails, which is how the expresses omission hid a false
-  universal in chapter 8's prose.
 
 - **Extract the claim-to-query table from the pin files — it cannot be generated from the
   constitution.** The substance already exists in a better form than the old bullet
