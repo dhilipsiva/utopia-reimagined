@@ -130,11 +130,46 @@ a floor for that pass, not its scope.** Chapters with no bullets still get a pas
 ### Chapter 1
 
 Its known defects landed (git has them); it still owes a whole-chapter read against
-the constitution before the pass is called done.
+the constitution before the pass is called done. The read began 2026-08-02 and was
+interrupted; what it found so far is below, each verified before being written down.
+
+- **Chapter 1 claims two routes into authority; the constitution has three.**
+  `01:107-109` "Either the electorate seated you, or you hold a public office. Those
+  are the only two routes" — stale since v0.7: `choose(Convocation, $o) ->
+  authority($o)` (`:664`) is a third, live in the cast (Hex, Wren). The list gloss at
+  `01:15-16`, "The electorate seated someone", is narrow the same way — the record
+  holds Convocation seatings too. Fix with the shape, not the count: a seating body
+  chose you, or you hold a public office. Chapter 2 repeats it harder (its bullet).
+
+- **Chapter 1's severity gloss overstates the rules in two directions — measured
+  2026-08-02.** `01:126` "An offence is severe when any two of the three are present":
+  attack plus cruelty toward *different* victims derives nothing (`:602` requires the
+  same victim; probed FALSE with a same-victim positive control TRUE), and two attacks
+  on two victims with no injury entry derives nothing (multiplicity is read only off
+  an attack-or-cruelty entry beside an *injury* to somebody else; probed). State the
+  pairings the rules actually check, and re-read `01:127-133` ("nobody writes the
+  number of victims") against the corrected wording — it survives, but it leans on the
+  loose gloss.
+
+- **Chapter 1's void-requirements sentence has two false clauses.** `01:166-168`:
+  "each documented the same thing" — `capture` names a person, never a finding, and
+  the rule nowhere checks that the two findings agree; and "who are not related to
+  each other" — the rule checks `parent` in both directions and nothing else, spouses
+  and siblings co-sign (measured; chapter 5's costs section already discloses it).
+  Restate against the rule's own conjuncts: credentials from different bodies, two
+  different people, neither the other's parent, neither recalled nor carried-void,
+  neither found to have lied about the person examined. (Checked true while here:
+  every cast `deceive` fact carries `judge(Review, ·)` beside it, 3/3, so the
+  careful-examples claim at `01:301-302` stands.)
 
 ### Chapter 2
 
-No known defects. Read it against the constitution anyway.
+- **Chapter 2's "exactly two ways" is v0.7-stale.** `02:13` "There are exactly two
+  ways to acquire it" and `02:24` "That is the whole of it. No third route" — the
+  Convocation's seats confer authority on the same terms (`:664`), and its case is in
+  the shipped cast (Hex, Wren). The chapter's thesis is untouched — standing still
+  cannot be self-granted, every route still leaves a mark — but the enumeration is
+  wrong, and "the electorate seats you" no longer covers the seating class.
 
 ### Chapter 3
 
@@ -169,30 +204,12 @@ its input, the never-written category named with the teacher exhibit pinned, the
 counted sites swept. No known defects remain.
 
 ### Chapter 10
-  Sharpened by the child-work ruling (2026-08-02): the recognition doors were measured and
-  deliberately carry no `mature` test, so the ballot is now the one place the entry gates —
-  whatever this bullet decides about `mature`, it decides for the franchise alone.
 
-- **Chapter 10: the third door is not gated on voiding, and the chapter says it is.**
-  `book-1/10-contribution.md:50-68` claims "All three doors close for the same reason:
-  a person whose credibility has been voided earns nothing" and closes on "putting the
-  same condition on all three doors". There is no such condition. Article 3 gates
-  teaching and work on `~false` (`:459-460`); the examiner rule (`:500`) gates on
-  `~deceive` and `~broken` only. **Verified:** `false(Vex)` TRUE *and* `reward(Vex)`
-  TRUE — chapter 5's own voided auditor still earns recognition — and adding
-  `judge(Bela, Ivo). capture(Bela, Ivo).` gives `false(Bela)` TRUE, `reward(Bela)`
-  TRUE and `lose(Points, Bela)` TRUE together. Both worked reasons at `10:58-60` are
-  also wrong: `reward(Lupo)` is FALSE for `~deceive` and `reward(Dev)` because Dev
-  never captured, neither for voiding. The 12-pin suite is green because
-  `10-contribution.pins.nibli:69` pins `reward(Bela) => FALSE`, which holds only
-  because Bela examines nobody in the shipped cast.
-  Two ways out, and they are different societies: **rewrite the section** to say the
-  doors are gated differently — a voided person can still earn by examining other
-  people, which is worse than the version in print and worth saying — or **add
-  `~false($auditor)` to `:500`** and keep the prose. The guard stratifies (re-verified
-  2026-08-01 on a scratch copy: `reward(Vex)` goes FALSE, `reward(Gia)` stays TRUE).
-  Either way the suite needs a pin on a voided examiner, because its absence is what let
-  this reach print. Also correct `10:52-53` and any tracker prose repeating the claim.
+Pass complete 2026-08-02: whole-chapter read, the third door gated on voiding
+(constitution v0.9, the enact branch of the fork — ruling in `CLAUDE.md`), the examiner
+paragraph rewritten to name both guards, the severity echo corrected to the pairings the
+rules check, the voided-examiner pins added with a surgical negative control. No known
+defects remain.
 
 ### Chapter 11
 
@@ -252,16 +269,6 @@ No known defects. Read it against the constitution anyway.
 
 ## Constitution (KB) work
 
-- **Add `~false($auditor)` to Article 4's reward rule.** `:500` is the only one of the
-  three minting rules with no `~false` guard; `:459` and `:460` both carry one. **The
-  witness is already in the shipped cast** and nobody has to be added: `false(Vex)` and
-  `reward(Vex)` are both TRUE — chapter 5's carried-void auditor is still earning
-  recognition for auditing. The fix is one conjunct; re-verified 2026-08-01 *after* the
-  chapter 4–6 passes grew their suites: the file loads at 0 errors, `reward(Vex)` flips
-  FALSE, `reward(Gia)` stays TRUE, and `rights-floor` 91/91, chapter 10 12/12, chapter
-  5 34/34 and chapter 6 27/27 all stay green — nothing pins `reward(Vex)`, so no pin
-  moves. See the chapter-10 prose bullet for the fork — enact or rewrite, not both.
-
 - **`lose/2` is a leaf: clawback records a loss and retracts nothing.**
   Test it on the rule BODIES, not with a bare grep — `awk -F'->' '/^[^#]/ && /->/ && $1
   ~ /lose/' constitution.nibli` returns nothing, and the only enacted occurrences are
@@ -269,14 +276,18 @@ No known defects. Read it against the constitution anyway.
   the third being commentary at `:137`; and a grep that matches a rule's own head is a
   check that can never fail — see the chapter-8 pin NOTE for the same trap caught live.)
   No rule reads `lose`, so nothing downstream changes when it fires. **Care with the
-  witness:** `reward(Bela)` is FALSE in the shipped cast, so Bela alone does not show
-  it. Add `judge(Bela, Ivo). capture(Bela, Ivo).` and then `reward(Bela)` and
-  `lose(Points, Bela)` are simultaneously TRUE — recognition earned by a person whose
-  recognition has supposedly been clawed back. **The chapter 6 pass rewrote the chapter
+  witness — the old one died with v0.9:** the forced Bela probe (`judge(Bela, Ivo).
+  capture(Bela, Ivo).`) no longer mints, because the examiner door now carries `~false`;
+  chapter 10's pin file holds that pair refusing. The living witness is Cira, in the same
+  file: `work(Cira, Chores)` gives `reward(Cira)` and `lose(Points, Cira)` simultaneously
+  TRUE — recognition earned by a person whose recognition has supposedly been clawed
+  back, because the student clawback reads the teacher's fraud and the work door reads
+  only Cira's own standing. **The chapter 6 pass rewrote the chapter
   and kept the withdrawal register**: `06:3` ("what they earned goes with it"), `:5-8`
   ("clawed back … gone") and `:10` ("recognition taken") still describe an effect the
   constitution does not have. The apparent clawback in the shipped cast is entirely the
-  `~false` guards on `:459`/`:460` **never minting**, not `lose` **taking**. `lose`
+  `~false` guards on the minting rules — all three doors since v0.9 — **never
+  minting**, not `lose` **taking**. `lose`
   belongs to the "determination, then stop" family — run the same awk test with each
   name to regenerate it rather than trusting a list here; today it is `lose`, `travel`,
   `become`, `decide`, `building`, Article 1b's `owe` and Article 8b's `obliged`. **`err`
@@ -539,8 +550,10 @@ No known defects. Read it against the constitution anyway.
   **And do not name it "verification".** Examining a person and recording a finding is
   already `judge` + `capture`, and borrowing them costs twice: two credentialed people from
   different bodies doing it to one person complete Article 4's multi-sig and **void them**,
-  and the pair also fires Article 4's audit-reward rule at `:500` — the forced probe above
-  mints `reward(Bela)` as a side effect, paying the teacher for an audit nobody performed.
+  and the pair also fires Article 4's audit-reward rule — re-measured 2026-08-02 under the
+  v0.9 `~false` guard: the forced Bela probe no longer mints, Bela being voided, but the
+  rule pays a teacher in good standing for an audit nobody performed all the same
+  (verified, a fresh clean person mints from the bare `judge`+`capture` pair).
   The probe uses `capture` deliberately to expose both; a real delivery rule needs its own
   predicate, which since Article 0a costs an `admits` line as well as an evidence entry.
   **The recognition half of the original proposal is refused and does not come back with
