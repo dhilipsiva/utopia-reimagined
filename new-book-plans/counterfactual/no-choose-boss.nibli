@@ -867,6 +867,79 @@ permanent(Art_Entrench).
 # fact except via an enacted amendment, and none such is derivable"),
 # not an in-snapshot derivation. Named, not hidden.
 
+# ─── The residual trust base, I: fact writes ──────────────────────
+# [v0.9 2026-08-02] What Articles 0 and 0a cannot reach, named at file
+# level the way Article 9 already names it for permanent() alone. Those
+# two articles closed everything a compile-time check can close: every
+# closed relation is derived_only and refuses direct assertion, every
+# admitted name is listed, and a ground fact under any other name is
+# refused as not admitted vocabulary. The vocabulary class is closed.
+# Two classes of fact-write remain, and no line in this file defends
+# either — the defence is store discipline, which is people.
+#
+# ASSERTION, under admitted names. The enumeration of levers is the
+# admits block itself — grep -o 'admits("[a-z_]*")' on this file IS the
+# list; the hand-kept copy this note descends from carried four errors
+# before it was deleted, so no hand list appears here. What the levers
+# do was measured, most recently 2026-08-02, each a probe on top of
+# this exact file:
+#   mature(X).            one write grants a ballot — the franchise
+#                         gate is an asserted, undefined word that no
+#                         rule produces (chapter 9's pair).
+#   public(Pax).          re-derives authority(Pax) and reopens E1a
+#                         verbatim: defend(Don) TRUE, prisoner(Don)
+#                         FALSE — the framed victim becomes an
+#                         authority and the framer walks.
+#   six seating writes    choose x2, judge x2, capture x2 reproduce
+#                         the whole Sock/Puppet void on a fresh name:
+#                         both pens derive, false(Vict) and
+#                         lose(Points, Vict) land — while person(Vict)
+#                         stays FALSE. Voided and docked without ever
+#                         being on the roster.
+#   broken(Court).        universal amnesty — every conviction in the
+#                         cast runs through Court, so one write frees
+#                         every prisoner at once (re-checked across
+#                         the whole cast, 2026-08-02).
+#   rotten(X).            single-writer universal void: the epoch-
+#                         carry rule re-derives false(X) from it, with
+#                         no second signature and no clean-epoch check.
+#   deceive(Rebel, Boss). jails the file's own honest whistleblower:
+#                         the shield reads ~deceive, and the finding
+#                         is an ordinary two-place fact that no rule
+#                         requires anyone to adjudicate.
+#   clear(Adam).          the one that got a guard: since v0.9 the
+#                         bare flag derives nothing — relief needs the
+#                         appeals body's own judgment beside it. The
+#                         guard raises the price from one write to
+#                         two; it does not close the lever.
+#
+# DELETION, and it is the worse half: admits governs what may be
+# written and says nothing about what may be removed. Measured
+# 2026-08-02 by deleting one line at a time from a copy:
+#   choose(Electorate, Boss).  gone — authority(Boss) FALSE,
+#     defend(Rebel) FALSE, prisoner(Rebel) TRUE. The whistleblower
+#     chapter 2 exists to protect is jailed by removing a line.
+#   public(Court).  gone — authority(Court) FALSE and the Sly shield
+#     verdicts invert with it.
+#   cruel(Lalo, Mina).  gone — severe(Lalo) FALSE and Lalo moves out
+#     of high security: severity inputs are deletable evidence.
+#   public(State).  gone — authority(State) FALSE. It is the sole
+#     route to the duty-bearer's standing, so one deletion makes the
+#     duty-bearer unexposable.
+#   person(X).  the first entry in the class — one deletion strips
+#     every floor right and leaves every sanction running (false and
+#     lose survive de-personing). Disclosed in chapter 1; the guard
+#     can only be a cross-epoch obligation over the fact store.
+# The chapter pin suites turn out to be a deletion detector for free —
+# every deletion above turns at least one suite red — but only for
+# facts a pin happens to read, and the finding-counts moved twice in
+# two days as suites grew: coverage is an accident of what the
+# chapters argue, never a guarantee. The store-discipline obligation
+# Article 9 states for permanent() is this class's general form: no
+# transition removes a fact except by an operation the record itself
+# licenses. In-snapshot logic cannot see a removal; only the
+# epoch-to-epoch comparison can.
+
 # ─── The world in facts: cast ───────────────── [v0.1, two swaps]
 # [v0.3 REPLACES prisoner(Adam)] Adam was the one asserted prisoner, a fixture
 # rather than a conviction, which kept `prisoner` open to assertion. He is now
