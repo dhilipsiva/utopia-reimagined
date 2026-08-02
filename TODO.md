@@ -342,25 +342,10 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   work" at `11:74-106`, written against the defect on purpose. That rewrite is the
   intended outcome.
 
-- **Close `building` in Article 0 — it is shut by omission, and omission is the weak
-  form.** The attack this bullet used to carry is **dead**: re-verified 2026-08-01,
-  `building(HighSec, Ghosty).` is refused with "`building` is not admitted vocabulary",
-  because Article 0a declares the record closed and `building` is not among the
-  admitted names. What is left is that it is closed by *not being listed* rather than
-  by being declared, so anybody who later adds `admits("building")` for an unrelated
-  reason reopens it in silence. `derived_only("building").` is one line, loads clean,
-  leaves all three placements deriving and `rights-floor` 91/91 green.
-  **Do not build the breach marker.** Every rule producing `building` requires `prisoner`
-  (`:593`, `:607`, `:608`), so with assertion closed `building($f, $x) & ~prisoner($x)`
-  is unsatisfiable — run verbatim it loads and derives nothing for anyone. **And the
-  engine caveat attached to it is retired**: with `admits("building")` temporarily added,
-  the body-only `$f` over a derived relation binds and the marker fires on the asserted
-  placement while staying quiet on Ruk and Nando. That was the Article 8b limitation, and
-  nibli has fixed it.
-
 - **Write the fact-write trust base as a file-level section — two undefended classes,
   not three.** Articles 0 and 0a between them closed as much of the write surface as a
-  compile-time check can: ten relations are `derived_only` and refuse direct assertion,
+  compile-time check can: every closed relation is `derived_only` and refuses direct assertion
+  (the declaration block is the list; it has grown twice),
   twenty-four names are `admits`-ed, and anything else is refused as "not admitted
   vocabulary". The vocabulary class is therefore **closed** — that bullet is gone. What
   is left is what those two cannot reach.
@@ -421,19 +406,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   1's pass moved it to `01:239-269` ("The other way in" through "watch it over time");
   what remains here is the obligation itself. Do not re-derive the disclosure; extend it
   if the obligation gets built.
-
-- **Declare `entitled` and `owe` `derived_only` — Article 0a already refuses the
-  forgery, but by omission.** Verified 2026-08-01: `entitled(Sokk, event { eats() }).`
-  and `owe(State, Provision, Sokk).` are both refused with "not admitted vocabulary",
-  because neither name is in the `admits` block and neither needs to be — floor lines and
-  Article 1b's rules compile to rules, not ground facts. That closes forging *the record
-  of what is owed*, which is the one thing the floor is. What it does not do is say so:
-  the relations are shut by not being listed, so an unrelated `admits` edit reopens both
-  in silence. The declaration is free and was checked — with `derived_only("entitled").`
-  and `derived_only("owe").` added, the floor still derives, `owe(State, Provision, ·)`
-  and the eight itemised debts still derive, the actualities stay FALSE, and
-  `rights-floor` 91/91 and chapter 8 30/30 stay green. Article 0 goes from ten closed
-  relations to twelve.
 
 - **Decide the Article 4 clawback question.** The two rules are `:498`
   (`false($f) -> lose(Points, $f)` — docks the wrongdoer, fairer, still a subtraction
