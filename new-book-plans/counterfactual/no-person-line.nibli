@@ -119,7 +119,8 @@ derived_only("building").
 # with a conclusion the system draws, under one relation name. Splitting them
 # closed all three —
 #   authority — institutions now assert `public(Court).` and authority derives.
-#   permits   — relief now asserts `clear(Nia).` and permits(Appeals, ·) derives.
+#   permits   — relief asserts `clear(Nia).` beside the appeals judgment, and
+#               permits(Appeals, ·) derives [v0.9: the bare flag stopped sufficing].
 #   prisoner  — Adam is convicted through Article 6 rather than asserted.
 # That is this book's own thesis applied to its own constitution: evidence is
 # what the world reports, and a conclusion must be earned by a rule.
@@ -748,7 +749,18 @@ all $x: rotten($x) -> false($x).
 # closed or open as a whole, so leaving relief assertable left the CREDENTIAL
 # assertable too, and two sock-puppet credentials could void an innocent.
 # Relief now has its own asserted relation and permits derives from it.
-all $x: clear($x) -> permits(Appeals, $x).
+# [v0.9 2026-08-02] judge(Appeals, $x) added: relief derives from an
+# ADJUDICATION, not a bare flag. `clear` is an admitted name with no
+# precondition, so until now one asserted word emptied any conviction —
+# clear(Adam). took prisoner(Adam) FALSE, a one-write spring against the
+# six-write cost of assembling a void. The guard is the design's usual
+# shape: the clearing entry must stand beside the appeals body's own
+# recorded judgment of the case, an examination that names its examiner.
+# Measured before landing, both ways: with the guard the bare flag derives
+# nothing and Nia's relief survives through the judgment below; without it
+# the flag alone springs a convict. Every pin file passes against the
+# guarded copy.
+all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).
 # Disclosed epoch-granularity limit: two auditors voiding EACH OTHER in
 # the same snapshot both count as clean this epoch. Mitigation is
 # sequencing adjudication batches into epochs. The carry discipline
@@ -888,6 +900,10 @@ person(Nia).
 injure(Nia, Ivo).
 judge(Court, Nia).
 clear(Nia).
+# [v0.9] The adjudication the relief rule now requires: the appeals body
+# examined Nia's case. Without this line the guard above would strip the
+# cast's one relieved person in the same edit that closed the forgery.
+judge(Appeals, Nia).
 person(Lalo).
 person(Mina).
 injure(Lalo, Mina).

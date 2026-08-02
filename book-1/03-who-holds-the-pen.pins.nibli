@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 16
+:expect-pins 20
 
 # "The electorate seated you. You have not been recalled. And you were not
 #  voided in an earlier period." — all three holding gives the pen.
@@ -60,8 +60,30 @@ permits(Review, Sock).
 ? clear(Nia).
 # => TRUE
 
+# [v0.9] ...and the adjudication the relief now requires
+? judge(Appeals, Nia).
+# => TRUE
+
 ? permits(Appeals, Nia).
 # => TRUE
 
 ? prisoner(Nia).
+# => FALSE
+
+# ── THE BARE FLAG DERIVES NOTHING. Ground fact persists; keep this last ──────
+# "The entry that says you are in the clear still names nobody. The judgment
+# it must accompany names the body that made it." Adam — convicted, homeless,
+# housed by confinement — is written as cleared, with no examination anywhere
+# near the word, and nothing moves. Negative-controlled against the pre-guard
+# constitution: these three flip (the flag alone sprang him), and Nia's pins
+# above stand either way.
+clear(Adam).
+
+? permits(Appeals, Adam).
+# => FALSE
+
+? prisoner(Adam).
+# => TRUE
+
+? travel(Adam).
 # => FALSE

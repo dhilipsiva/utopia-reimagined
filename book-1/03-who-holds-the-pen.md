@@ -111,19 +111,21 @@ from holding.
 
 It is worth seeing that this is the same shape as the first credential, pointed the
 other way. Relief is not something a sympathetic official confers. Someone records
-that Nia is in the clear — that is one of the things the world may say —
-and the relief follows from it by rule. The route runs through the record, in public,
-where it can be disputed, rather than through a decision someone makes and nobody
-sees.
+that Nia is in the clear — that is one of the things the world may say — and the
+relief follows by rule from that entry standing beside the appeals body's own
+recorded judgment of the case. The route runs through the record, in public, where it
+can be disputed, rather than through a decision someone makes and nobody sees.
 
-Who may record it is worth pausing on, because the answer is nobody in particular.
-The entry that clears you has no precondition and names no author — it is another of
-the findings chapter 1 conceded, a conclusion somebody reached and wrote down as a
-fact. Notice the asymmetry that creates. Destroying a person's credibility takes two
-seated signers, examined conduct, and every guard of the last section; emptying a
-conviction takes one entry, from any hand that can reach the record. The instrument
-for giving back is far easier to forge than the instrument for taking away — which is
-the merciful direction for a forgery to run, and worth knowing all the same.
+Who may record it is worth pausing on, and the answer used to be nobody in
+particular. The entry that clears you has no precondition and names no author —
+another of the findings chapter 1 conceded — and for a while it worked alone: one
+entry, from any hand that could reach the record, emptied a conviction, against the
+two seated signers and every guard it takes to void a credibility. The instrument for
+giving back was far easier to forge than the instrument for taking away. That
+asymmetry is now narrower, and the narrowing has the design's usual shape: the relief
+derives only when the clearing entry stands beside an examination the appeals body
+performed and recorded. The entry that says you are in the clear still names nobody.
+The judgment it must accompany names the body that made it.
 
 Both credentials are conclusions. Neither can be written directly. The society has one
 instrument for taking things away and one for giving them back, and neither can be

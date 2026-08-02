@@ -196,7 +196,8 @@ building(HighSec, Ghost).
 
 # The complement half: closing a relation must not break its derivation, or the
 # guarantee is just a ban. Each of these still derives from its new asserted
-# source — public(Court), clear(Nia), and Article 6's conviction rule.
+# source — public(Court); clear(Nia) beside the appeals judgment [v0.9]; and
+# Article 6's conviction rule.
 ? authority(Court).
 # => TRUE
 
