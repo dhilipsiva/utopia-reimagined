@@ -676,6 +676,13 @@ all $o: public($o) -> authority($o).
 # authority is deliberately NOT revoked by broken/rotten: recalling Boss
 # must not strip Rebel's shield retroactively. Seating is forever
 # exposable; only POWER (permits) is revocable.
+# [v0.9 RATIFIED 2026-08-02] The bound on the exposure surface was priced
+# and refused as COMPOSED: a time bound needs the vocabulary the duration
+# ruling refused; a recency fact is an unadjudicated shield-stripping
+# write; lapsing standing kills Rebel's shield with Boss's recall; and
+# the flat record cannot order an exposure against a recall anyway.
+# Chapter 4 closes its open question with these four; the reach-back is
+# pinned there (Zeno).
 
 # ─── Article 8 [v0.2 NEW]: Credential provenance + epoch carry ────
 # Review credentials are DERIVED, not sovereignly asserted. In v0.1,

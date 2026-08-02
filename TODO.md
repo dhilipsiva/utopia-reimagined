@@ -93,25 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Decide whether the shield's exposure surface is bounded by time.**
-  `authority` comes from `choose(Electorate, ·)` (`:627`), `choose(Convocation, ·)`
-  (`:632`) and `public(·)` (`:643`), none of which ever expires, so the set of people whose
-  exposure buys a defendant the fail-open window only grows: everyone the electorate has
-  ever seated stays on it permanently, and a defendant a century from now can reach back
-  and open the window. Verified 2026-08-01 — one `show(Zeno, Court).` by a fresh constant
-  gives `defend(Zeno)` TRUE.
-  **The blocking fork is gone and it took half the question with it.** The shield was ruled
-  exposure-scoped on 2026-07-30 (`8303a8e`) — the deceit finding must be about the same
-  exposure — which does not touch this, because the surface grows regardless of scoping.
-  And the constitution has already picked a side in commentary at `:644-646`: *"Seating is
-  forever exposable; only POWER (permits) is revocable."* So what is left is narrower:
-  does that sentence get defended in Part V's capture joint as written, or does the exposed
-  conduct get bounded by epoch after all?
-  **Price the bound before ruling.** The constitution has no in-snapshot time, so a recency
-  bound is expressible only as another asserted fact, which lands it back in the fact-write
-  trust base — and since Article 0a it also costs a visible `admits` line, which is an
-  argument for doing it that way rather than against.
-
 - **[AUTHOR-GATED] Decide whether Part V prices the temporary-assessment exclusion.**
   Chapter 1 excludes assessments of a person's present state (`01:40-44`) and explains at
   `01:46-48` that the reason is structural rather than principled — *"None of this is
