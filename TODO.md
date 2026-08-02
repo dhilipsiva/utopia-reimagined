@@ -256,30 +256,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   than trusting any list here: `awk -F'->' '/^[^#]/ && /->/ && $1 ~ p' constitution.nibli`
   with each candidate name — a bare grep matches rule heads and can never fail.
 
-- **Guard Article 9's head — one asserted fact voids a *person*.** `:764` is
-  `all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).` with **no restriction
-  on `$m`**, and `adjust` is an admitted name, so `adjust/2` is freely assertable. The
-  single fact `adjust(Jala, Art_Floor).` gives, re-verified 2026-08-01: `false(Jala)`
-  TRUE, `lose(Points, Jala)` TRUE, `travel(Jala)` TRUE, `decide(Jala, Ballot)` TRUE. No
-  imprisonment — but Jala's credibility is destroyed and the clawback fires **without**
-  two independent credentialed auditors, without `~parent`, without `~deceive`, without
-  a clean epoch. Article 4's whole apparatus is defeated by one write, because Article 9
-  reuses `false/1` as its amendment-invalidity proxy (`:759-760`) and never restricts
-  the reused head to amendments. **The fix is free and re-verified**: appending
-  `& suggest(Assembly, $m)` restricts the head to docketed proposals, uses no new
-  vocabulary, and regresses nothing — `false(Jala)` FALSE, `false(Amend_Floor)` TRUE,
-  `become(Amend_Floor, Law)` FALSE, `become(Amend_Mint, Law)` TRUE, `rights-floor` 91/91
-  and chapter 12 14/14 still green. Splitting amendment invalidity onto its own
-  predicate is the cleaner alternative and costs a corpus name — **only** a corpus name:
-  verified 2026-08-01, a non-corpus head is a compile error ("not a corpus name"), and a
-  rule-head-only predicate needs no `admits` line, because `admits` closes ground
-  assertion and says nothing about rule heads — the same behaviour the delivery-gap
-  bullet below records for the floor fiat rules.
-  **Nothing blocks this and nothing waits on it.** The shield was ruled exposure-scoped
-  on 2026-07-30 and is not coupled to `false/1`; the attack is unchanged and still live
-  against recognition, which is the whole reason to do it. **Re-derive the line numbers
-  before quoting them** — this bullet's have now rotted three times.
-
 - **`clear/1` is a one-fact conviction nullifier.** `clear` appears twice: `:701`
   (`all $x: clear($x) -> permits(Appeals, $x).`) and `:829` (Nia's ground fact). No
   precondition, no author, no guard, no `derived_only` — and it is an admitted name, so
