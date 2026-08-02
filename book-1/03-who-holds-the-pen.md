@@ -79,6 +79,17 @@ Sock can equally write that the convocation chose Puppet. Two bodies means two
 falsifications instead of one. It does not mean the record is any harder to falsify —
 only that it takes twice as much of the same thing, from someone who already has it.
 
+Measured, the whole attack is six entries: two seatings, two examinations, two
+recorded findings. And one detail of the measurement deserves to be kept, because it
+shows what the voiding machinery consults and what it never thinks to. The victim
+does not need to exist. Nobody has to write the target onto the roster of persons —
+the rule reads the examinations, the findings, and the signers' cleanliness, and
+personhood is not among the things it asks about. Run the six entries against a name
+the record has never held, and the void arrives anyway: a person-shaped hole in the
+record, voided and docked, never having been a person there at all. The floor asks
+whether you are a person before it owes you anything. The instrument for destroying
+you does not.
+
 ## Recall and rot
 
 Two of the three conditions are about what has already happened to you, and they
@@ -99,6 +110,36 @@ carry, a voided auditor could be voided on Monday and sign someone else's voidin
 Tuesday, because within any single snapshot of the record the voiding of Vex and the
 voiding of Vex's victim would sit side by side with nothing to say which came first.
 Time has to be put in by hand, and this is where it goes.
+
+## The hurried door
+
+The conditions are word for word the same across the two doors, and the reason was
+stated above as a maxim: an attacker uses the cheaper one. The maxim is not left as
+prose. The design's checks keep a copy of this society with one line added — the door
+somebody in a hurry would someday write. *Seated by the electorate, therefore penned.*
+No recall check, no carried-mark check, everything else identical.
+
+Against that copy, ask who holds a pen. Boss does — recalled, and penned again,
+because the hurried door never asks. Vex does — carried mark and all. The two people
+the conditions exist to stop are exactly the two the extra line lets through, which
+is the maxim executed rather than merely stated: a cheaper door does not lower the average
+price of the pen, it sets the price, for everyone willing to walk around the building.
+
+Then ask whether the attack goes through — Vex, penned by the hurried door, signing a
+voiding against an innocent — and it does not. Not because of anything at the doors.
+Because the voiding rule itself asks the same questions again: each signature is
+checked for recall and for the carried mark at the moment of signing, by conditions
+that sit on the voiding rule and have never once decided anything in this design's
+life — every pen that reaches them has already passed the same checks at a door. They
+are redundant every ordinary day. The day a hurried door exists, they are the only
+thing standing.
+
+That is what the copy in the checks is for. A second copy of a condition looks like
+dead weight exactly until the first copy is skipped, and whoever tidies it away —
+*this is already checked at the door* — has disarmed the guard on the one day it was
+built for. The doors are where the conditions live. The signing is where they are
+asked again, by a rule that does not trust its own doors, and this design keeps it
+that way on purpose.
 
 ## The other pen
 
