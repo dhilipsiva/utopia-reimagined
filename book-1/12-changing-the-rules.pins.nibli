@@ -21,7 +21,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 19
+:expect-pins 20
 
 # "Nothing happens when something becomes law." — no rule body reads `become`;
 # the second :require is the positive control proving the command still works
@@ -107,4 +107,12 @@ adjust(Jala, Art_Floor).
 # => FALSE
 
 ? lose(Points, Jala).
+# => FALSE
+
+# "the check that decides it is the absence — no docket entry naming Jala."
+# The chapter's new section stands on this: the guard saves her because nothing
+# dockets her, not because the record understands that a person is not an
+# amendment. If an assembly ever docketed a person, the void would arrive again
+# through the front of this rule — this pin is where that shows up first.
+? suggest(Assembly, Jala).
 # => FALSE

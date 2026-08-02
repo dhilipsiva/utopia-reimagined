@@ -5,6 +5,17 @@ An assembly proposes a change, the electorate approves it, and the change become
 Two steps, both on the record, neither requiring anybody's permission beyond the
 approval itself.
 
+Look closely at what the record holds when "the electorate approves," because it is
+less than you expect and the less is deliberate. Not the count. No tally, no total, no
+margin lives anywhere in this record — it has no way of writing a number and refuses to
+learn one. What it holds is the outcome, entered as a fact like any other fact: this
+proposal, approved, in the electorate's name. The counting itself happens outside,
+however this society chooses to run a count, and what crosses into the record is the
+certified result. That keeps the arithmetic — with all the ways arithmetic can be
+quietly gotten wrong — out of the machinery this book has been describing, and it means
+the approval can be disputed the way any entry can: by asking who entered it and
+standing on the answer, not by re-litigating a number.
+
 Three things cannot be changed this way.
 
 The floor — what is owed to every person. The rule that a prisoner is still a
@@ -61,6 +72,52 @@ so there is nothing for the guard to void. Put the vocabulary's name on the regi
 and the widening walks past it untouched. The quietest way to capture this society
 does not come through the front door this section just locked, and the lock does not
 fit the door it does come through.
+
+## The word the machinery borrows, and the person it nearly cost
+
+When this society voids an amendment, it uses a word it already had. A dead amendment
+and a voided person are marked the same way — the design coined nothing new for
+amendments with no force, because a new word is a new thing the record can say, and
+every chapter before this one has had something to say about why that is a cost. Reuse
+is the frugal choice. This section is about the day the frugality nearly became a
+catastrophe.
+
+Here is what the voiding rule used to say: anything recorded as touching a protected
+item is void. Anything. It was written with amendments in mind, but *anything* is not
+*any amendment*, and being recorded as touching a protected item is not a proposal,
+not a process, not an act of any assembly. It is one entry, written by whoever writes
+it, about whatever they choose to name.
+
+So consider Jala — never accused of anything, never examined by anybody, holding
+everything a person here holds. Write a single entry describing Jala as touching the
+protected floor. It is nonsense on its face; a person is not an amendment and adjusts
+nothing. The record does not know that. Under the old rule the void arrived at once,
+and it arrived whole: her word worth nothing, the loss recorded against her
+recognition, every door to earning shut — everything the strongest sanction in this
+design carries, delivered through the article about changing rules.
+
+Put that route beside the front door and measure it. Voiding a person properly takes
+two examiners, seated by different bodies, neither related to her, both in good
+standing, in the same period — the whole apparatus of chapter 5, built so that no
+single hand can do it. This route took one entry, written by anyone, naming no
+examiner, showing no grounds. The most carefully guarded verdict in the design had a
+back entrance through a rule about a different subject entirely.
+
+The repair is small, which is the lesson. The rule now begins where an amendment
+begins: at the assembly's own docket. An entry nobody docketed is not an amendment,
+whatever it claims to touch — and the same nonsense about Jala now does nothing at
+all. That is checked here, on her, with both entries in place: no void, no loss,
+nothing following. And the check that decides it is the absence — no docket entry
+naming Jala — which is also why every verdict earlier in this chapter is undisturbed:
+the floor cut and the register cut were docketed, and they die exactly as before.
+
+What should stay with you is not the repair but the shape of the mistake. Chapter 5's
+protection was never attacked head-on. It was walked around, through a rule that
+happened to share a word with it. Borrowed vocabulary is how a design stays small, and
+every borrowing is a bridge between two parts of the record that were never meant to
+meet. This one stood open, in the article whose whole purpose is controlling how the
+rules change, until somebody asked the machinery what a written lie about a person
+would do — and the answer was the reason this book keeps asking that kind of question.
 
 ## What this actually costs
 
