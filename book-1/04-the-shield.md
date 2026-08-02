@@ -40,8 +40,9 @@ sort of person the shield exists to let you point at. Don has no shield and Don 
 prisoner.
 
 The condition is doing something precise. The shield is not a reward for making an
-accusation. It is a protection against *retaliation by power*, and retaliation by
-power requires someone with power. Point at a private person and you have not exposed
+accusation. It is a protection against *retaliation by power*, and the design's test
+for power is standing — held now or ever, since the last chapter made it
+permanent. Point at a private person and you have not exposed
 anything the shield was built for — you have simply made an accusation, and
 accusations, as Chapter 1 established, do not by themselves move anything.
 
@@ -138,9 +139,9 @@ window has to be closed separately, one examination at a time.
 
 Notice what every case above has in common. In none of them does anyone decide whether
 the person reaching for the shield deserves protection. Nobody weighs their sincerity. The shield attaches
-or does not attach according to two facts — did the person you exposed hold power, and
-has your exposure been found deceitful — and both facts are on the record where they
-can be argued with. Sincerity never enters, which is what stops the shield from
+or does not attach according to two questions the record answers — does the person you
+exposed hold standing, and has your exposure been found deceitful — and everything
+both rest on is written where it can be argued with. Sincerity never enters, which is what stops the shield from
 becoming a matter of whether the people evaluating you find you sympathetic.
 
 ## What it costs
@@ -158,8 +159,8 @@ way, and nothing in the design changes it.
 
 The third compounds with the last chapter. The shield attaches when you expose
 someone *with standing*, and standing is never revoked. So the set of people whose
-exposure grants protection only ever grows. Every person the electorate has ever
-seated stays on that list permanently, including the recalled, the disgraced and the
+exposure grants protection only ever grows. Every person a seating body has ever
+chosen stays on that list permanently, including the recalled, the disgraced and the
 long dead. A defendant a century from now can reach back, expose someone nobody
 remembers, and open the window.
 
