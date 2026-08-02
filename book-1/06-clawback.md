@@ -2,22 +2,29 @@
 
 When someone's credibility is voided, what they earned goes with it.
 
-Bela was examined by two auditors and voided. Bela's recognition is clawed back — the
-acknowledgement of work done and teaching given, gone. This is the second half of
-voiding, and it is what makes voiding matter. Marking someone as unreliable while
-leaving their recognition intact would be a gesture.
+Bela was examined by two auditors and voided. Ask the record whether Bela is
+recognised and the answer is no — the teaching Bela gave is still written there, and
+it mints nothing, because every door recognition comes through is shut to a person
+whose word has been found worthless. Beside that refusal the record holds one more
+entry: a loss, written against Bela's name. This is the second half of voiding, and
+it is what makes voiding matter. Marking someone as unreliable while leaving them
+recognised would be a gesture.
 
-The rule is simple to the point of bluntness. Credibility voided, recognition taken. No
-proportion, no partial forfeit, no assessment of how much of it was tainted. It is
-the one instrument in this society that operates without any judgment of degree, and
-that is worth holding in mind through what follows.
+Be precise about the mechanism, because the natural word for it — taken — describes
+an event that never happens. Recognition is not a balance that can be debited; it is
+an answer, and the answer stops being yes. The rule is simple to the point of
+bluntness all the same. Credibility voided, recognition refused. No proportion, no
+partial forfeit, no assessment of how much of it was tainted. It is the one
+instrument in this society that operates without any judgment of degree, and that is
+worth holding in mind through what follows.
 
 ## What it cannot reach
 
 Before the difficulty, the boundary, because the boundary is the more important fact
 and it is easy to lose behind the difficulty.
 
-Bela has been voided and stripped. Ask what Bela still has.
+Bela has been voided, and everything Bela earned now produces nothing. Ask what Bela
+still has.
 
 Bela is still a person. Bela still moves freely — is not confined, not placed
 anywhere, not restricted — and still holds the vote. And Bela is still owed everything
@@ -28,8 +35,8 @@ kind of thing that can be reduced by a finding about someone's conduct.
 
 Say plainly what that means, and say it exactly, because the loose version claims too
 much. A person can be found unreliable by the highest standard the society has,
-stripped of everything they earned, marked in the record for as long as the record
-lasts — and is owed food, shelter, learning, expression and company on the day after
+everything they earned producing nothing, marked in the record for as long as the
+record lasts — and is owed food, shelter, learning, expression and company on the day after
 exactly as on the day before. The worst thing the accountability machinery can do to
 you does not subtract one item from what you are owed.
 
@@ -48,18 +55,18 @@ built to touch.
 
 Now the difficulty, and it is a real one.
 
-Bela taught Cira. Bela was voided. **The rule reaches Cira too**, and strips what Cira
-earned.
+Bela taught Cira. Bela was voided. **The rule reaches Cira too**, and records a loss
+against what Cira earned.
 
 Cira earned nothing. Being taught is not a way to earn recognition here; sitting in
 front of a teacher is not a contribution, and nothing anywhere in this design says
-otherwise. So the rule fires on a person with nothing, and takes it.
+otherwise. So the rule fires on a person with nothing, and records the loss of it.
 
 Sit with how strange that is before deciding what it means, because the obvious reading
 is the wrong one. This is not a punishment that turned out to be too heavy. The design
-wrote a rule that strips someone for another person's fraud, and nobody thought to check
-first whether there was anything there to strip. What the rule wanted was the mark, not
-the amount.
+wrote a rule that marks a loss against someone for another person's fraud, and nobody
+thought to check first whether there was anything there to lose. What the rule wanted
+was the mark, not the amount.
 
 The reasoning behind it is not stupid, which is what makes it worth this much space.
 Recognition earned through fraudulent teaching was never really earned; if Bela was
@@ -68,11 +75,15 @@ is recognition for nothing, and letting it stand would leave the fraud partly in
 That is a good argument. It is an argument about somebody who is holding something, and
 it was pointed at somebody who is not.
 
-Take the rule at its best anyway, and suppose the student did hold something. Look at
-what it does then, as against what that reasoning would justify.
+Take the rule at its best anyway, and suppose the student did hold something. Even
+then nothing would leave them — the student is not the one voided, so their own
+contributions go on being recognised, and what this rule does is write a loss beside
+a record it cannot dim. But look at the mark it writes, as against what that
+reasoning would justify.
 
-It does not ask whether the recognition came from the fraudulent teaching. It would
-take recognition earned elsewhere, over years, from people who were never voided.
+It does not ask whether the recognition came from the fraudulent teaching. The loss
+is recorded against earnings from elsewhere, over years, from people who were never
+voided.
 
 It does not ask whether the student knew. A student who colluded and a student who was
 deceived are treated identically, and the second is the more common case by a long

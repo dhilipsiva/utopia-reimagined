@@ -11,17 +11,22 @@
 # middle section must be rewritten. That is the intended outcome, not a break.
 #
 # The reward(Cira) and person(Fin) pins are the chapter's sharpest claim and the
-# two facts an earlier draft got backwards: the rule strips a student who never
-# earned anything, and the student held up as keeping everything is not on the
+# two facts an earlier draft got backwards: the rule records a loss against a
+# student who never earned anything, and the student held up as keeping everything is not on the
 # personhood roster at all. Being taught mints nothing — a settled decision, not
 # an oversight — so the "narrower rule" the chapter discusses has an empty target
 # and narrowing it is repeal. Keep these pinned; the prose turns on both.
 
-:expect-pins 27
+:expect-pins 28
 
-# "Bela was examined by two auditors and voided ... recognition is clawed back"
+# "Ask the record whether Bela is recognised and the answer is no ... Beside
+# that refusal the record holds one more entry: a loss." Both halves of the
+# corrected register, on one person: the mint refuses, and the loss is recorded.
 ? false(Bela).
 # => TRUE
+
+? reward(Bela).
+# => FALSE
 
 ? lose(Points, Bela).
 # => TRUE
@@ -67,8 +72,8 @@
 ? teaches(Bela, Cira).
 # => TRUE
 
-# The chapter calls this indefensible outright: a student who earned nothing is
-# stripped for a teacher's fraud. It flips FALSE when Article 4's contamination
+# The chapter calls this indefensible outright: a loss recorded against a
+# student who earned nothing, for a teacher's fraud. It flips FALSE when Article 4's contamination
 # rule is narrowed or deleted — the intended outcome, not a break.
 :defect "narrowing or deleting Article 4's contamination rule (teaches & false -> lose)"
 ? lose(Points, Cira).
