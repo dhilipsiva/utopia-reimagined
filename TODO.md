@@ -766,21 +766,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   choice about the book's size, and it means Part V's 12,000 must be justified by content
   rather than by ratio.
 
-
-  **Every chapter revision also strips its counted claims.** A per-chapter check, not a task
-  of its own; the rule lives in `CLAUDE.md` and the guard in `verify.sh` section 3b. What
-  this bullet is for is where the work still is. The ratchet stands at `BASELINE=24`: it
-  fails if the count rises, and it also fails if the count falls without `BASELINE` being
-  lowered in the same commit, so the tightening cannot be forgotten. When it reaches zero,
-  make it a hard gate. **Read the current sites off the guard, never off a list in this
-  file** — run the `COUNTED` grep in `verify.sh` and it prints them. Today they cluster in
-  the chapters that talk about the floor — 7, 8, 9 and 13 — and nearly every one is the same
-  "eight" claim, which goes away by stating the rule that produces it. Worth doing first are
-  the sites no pin can catch going stale: **chapters 9 and 14 count chapters** ("twelve
-  chapters later", "fourteen chapters" — the latter twice in 14), which the computed spine
-  can invalidate silently. Rhetorical durations ("thirty years") are exempt and allowlisted.
-
-
 - **Add `LICENSE-CC-BY` to `book-1/` — and take the SPDX-header branch.** `LICENSING.md:58-59`
   offers "an SPDX header **or** a licence line in the front matter"; `book-1/` holds `01`–`14`
   and nothing else, and the opening note that would carry front matter is still unwritten.
