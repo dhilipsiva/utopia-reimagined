@@ -302,48 +302,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   work" at `11:74-106`, written against the defect on purpose. That rewrite is the
   intended outcome.
 
-- **Write the fact-write trust base as a file-level section — two undefended classes,
-  not three.** Articles 0 and 0a between them closed as much of the write surface as a
-  compile-time check can: every closed relation is `derived_only` and refuses direct assertion
-  (the declaration block is the list; it has grown twice),
-  twenty-four names are `admits`-ed, and anything else is refused as "not admitted
-  vocabulary". The vocabulary class is therefore **closed** — that bullet is gone. What
-  is left is what those two cannot reach.
-  *Assertion* — where the named levers now include the franchise gate: `mature` is
-  asserted, undefined, produced by no rule, and one write of it grants a ballot
-  (chapter 9's pass pinned the pair, 2026-08-02) — and the enumeration is **generated,
-  never hand-kept** —
-  `grep -o 'admits("[a-z_]*")' new-book-plans/constitution.nibli` is the list; the
-  hand-list this bullet used to carry had four errors, including `severe`, which Article
-  0 closed in v0.5. Every headline attack is alive under an admitted name, all
-  re-verified 2026-08-01: `public(Pax).` re-derives `authority(Pax)` and reopens E1a
-  verbatim (`defend(Don)` TRUE, `prisoner(Don)` FALSE); emptying a conviction now takes
-  `clear(Adam).` beside a judgment naming the appeals body (v0.9 guard; re-measured
-  2026-08-02 — the bare flag derives nothing); six ordinary writes reproduce the entire Sock/Puppet void
-  (`permits(Review, Sokk)` TRUE, `permits(Tribunal, Pupp)` TRUE, `false(Vict)` TRUE,
-  `lose(Points, Vict)` TRUE — and `person(Vict)` FALSE, so the victim is voided and
-  docked without ever being given a personhood fact); `broken(Court).` is a universal
-  amnesty that frees every convicted person in the cast; `rotten(X).` is a single-writer
-  universal void; one `deceive(Rebel, Boss).` jails the file's own honest whistleblower.
-  *Deletion*, recorded nowhere, and it is the worse half — `admits` governs what may be
-  written and says nothing about what may be removed. Both routes into standing are bare
-  asserted facts, and the chapter suites turn out to be a deletion detector for free
-  (re-measured 2026-08-01, unchanged after the chapter 2 and 4 suites grew):
-  ```
-  # public(Court). deleted              04-the-shield.pins.nibli: 3 findings
-  ✗ "authority(Court)." TRUE→FALSE  ✗ "defend(Sly)." TRUE→FALSE  ✗ "prisoner(Sly)." FALSE→TRUE
-  # choose(Electorate, Boss). deleted   02-standing.pins.nibli: 4 findings
-  ✗ "authority(Boss)." TRUE→FALSE   ✗ "defend(Rebel)." TRUE→FALSE  ✗ "prisoner(Rebel)." FALSE→TRUE
-  ```
-  Rebel — the file's own honest whistleblower, and the whole of chapter 2's argument —
-  is jailed by deleting one line. Order the class `person` first, then `permanent`,
-  `public`, `choose`, then the severity inputs: `severe` itself has no ground facts to
-  delete, but deleting `cruel(Lalo, Mina).` moves Lalo out of high security, verified.
-  Note also that Article 1b's `public(State).` (`:395`) is the sole route to
-  `authority(State)` via `:658`, so one deleted line makes the duty-bearer unexposable.
-  The file discloses this class for `permanent()` alone, at `:769-773`.
-
-
 - **Guard the personhood roster — one deletion defeats all eight rights, and the
   obvious repair only renames the target.** `person` has two producing rules —
   `prisoner -> person` (`:329`) and `free -> person` (`:339`) — so imprisonment is the
