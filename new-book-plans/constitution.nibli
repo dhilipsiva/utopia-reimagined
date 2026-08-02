@@ -812,7 +812,18 @@ all $x: err($x, Isolation) -> obliged(Review, $x).
 # ITSELF (Art_Entrench): the guard cannot be amended away through the
 # front door, and no enactment can lower its own threshold under a lower
 # threshold (the Weimar bootstrap is underivable).
-all $m: all $t: adjust($m, $t) & permanent($t) -> false($m).
+# [v0.9 2026-08-02] suggest(Assembly, $m) added: the head is restricted to
+# DOCKETED PROPOSALS. Without it, adjust is an admitted name and this rule
+# reused false/1 with no restriction on $m — so the single asserted fact
+# adjust(Jala, Art_Floor). voided a person: false(Jala), the clawback, every
+# door shut, without two credentialed auditors, without ~parent, without a
+# clean epoch. Article 4's whole apparatus, defeated by one write, through a
+# rule about amendments. Measured before landing, both ways: with the guard
+# the same write derives nothing — false(Jala) and lose(Points, Jala) FALSE —
+# and every amendment verdict is unchanged: the floor cut and the meta cut
+# still die, the ordinary reform still enacts. No new vocabulary; the docket
+# entry was always the missing conjunct.
+all $m: all $t: suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m).
 all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).
 permanent(Art_Floor).
 permanent(Art_Person).

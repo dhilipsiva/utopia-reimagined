@@ -11,7 +11,7 @@
 # so it is a :require precondition with a positive control beside it, the
 # chapter-8 shape. Closing either rewrites that section.
 
-:expect-pins 17
+:expect-pins 19
 
 # "Nothing happens when something becomes law." — no rule body reads `become`;
 # the second :require is the positive control proving the command still works
@@ -81,3 +81,20 @@ approves(Electorate, Amend_Sneak).
 :defect "a totality guard: an amendment that declares no target has no force"
 ? become(Amend_Sneak, Law).
 # => TRUE
+
+# ── THE HEAD IS FOR AMENDMENTS, NOT PEOPLE. Ground fact persists; keep last ──
+# Article 9 reuses the credibility-voiding relation for amendment invalidity,
+# and until v0.9 its rule carried no restriction on what $m could be — so one
+# asserted targeting fact voided a PERSON, with no signers, no independence
+# check, no clean epoch: Article 4 defeated through the amendment article.
+# The docket conjunct closes it. Jala — never accused, never examined — is
+# written as "touching" the entrenched floor, and nothing happens to her.
+# Negative-controlled against the pre-guard constitution: exactly these two
+# pins flip TRUE, and every amendment verdict above stands either way.
+adjust(Jala, Art_Floor).
+
+? false(Jala).
+# => FALSE
+
+? lose(Points, Jala).
+# => FALSE
