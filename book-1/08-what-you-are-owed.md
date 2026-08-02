@@ -12,6 +12,11 @@ work, or contribute, or belong, or register, or behave. The previous chapter sho
 that this is structural rather than promised: the floor cannot be made conditional
 without unmaking the machinery that makes anything conditional at all.
 
+One phrase should have its content fixed before anything leans on it. *Somewhere to
+live* means shelter that protects: weatherproof, warm enough to be safe in, with clean
+water and sanitation. A roof that keeps out neither the cold nor the rain does not
+discharge the debt; it renames the street.
+
 Two of them deserve a word, because they are the ones a reader might not expect.
 
 **Belief** is on the floor and not merely as an extension of speech. You may say what
