@@ -661,18 +661,11 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   choice about the book's size, and it means Part V's 12,000 must be justified by content
   rather than by ratio.
 
-- **Add `LICENSE-CC-BY` to `book-1/` — and take the SPDX-header branch.** `LICENSING.md:58-59`
-  offers "an SPDX header **or** a licence line in the front matter"; `book-1/` holds `01`–`14`
-  and nothing else, and the opening note that would carry front matter is still unwritten.
-  `find . -name "LICENSE*"` still returns only the root CC0 `LICENSE`, so the new prose is
-  covered by nothing — or worse, reads as covered by the irrevocable CC0 dedication it was
-  deliberately moved out of. Fetch the canonical CC-BY-4.0 text from
-  <https://creativecommons.org/licenses/by/4.0/legalcode> rather than reproducing it from
-  memory, drop it at `book-1/LICENSE-CC-BY`, and carry `SPDX-License-Identifier: CC-BY-4.0`
-  either as an HTML comment at the top of each chapter or once in a `book-1/README.md` — a
-  visible licence header in reader-facing prose is not acceptable. The rest stays correctly
-  deferred: `LICENSE-MIT` + `LICENSE-APACHE` with SPDX headers when the harness and fetchers
-  are written; `LICENSE-CC0` when a registry directory exists.
+- **Remaining licence files, correctly deferred**: `LICENSE-MIT` + `LICENSE-APACHE` with
+  SPDX headers when the harness and fetchers are written; `LICENSE-CC0` when a registry
+  directory exists. (`book-1/LICENSE-CC-BY` + the SPDX line in `book-1/README.md` landed
+  2026-08-02, `62feeae`; the prose gates in `verify.sh` scope to `book-1/[0-9]*.md` so the
+  README is not swept as a chapter.)
 
 ---
 
