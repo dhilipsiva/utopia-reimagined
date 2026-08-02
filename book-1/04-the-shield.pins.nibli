@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 23
+:expect-pins 27
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -104,3 +104,31 @@
 
 ? prisoner(Rex).
 # => FALSE
+
+# ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
+# "A defendant a century from now can reach back, expose someone nobody
+# remembers, and open the window." Executed, minus the century — which the flat
+# record could not represent anyway: nothing below says whether Zeno's exposure
+# came before or after Boss's recall, and that inexpressibility is one of the
+# four reasons the closing section gives for refusing the bound. Boss is
+# deliberately an existing name — reaching back to him is the exhibit — and
+# everything else is fresh. One write blocks a conviction.
+person(Zeno).
+injure(Zeno, Yara).
+judge(Court, Zeno).
+
+? prisoner(Zeno).
+# => TRUE
+
+show(Zeno, Boss).
+
+? prisoner(Zeno).
+# => FALSE
+
+? defend(Zeno).
+# => TRUE
+
+# ...and the man he reached back to was recalled long since. The shield does
+# not ask.
+? broken(Boss).
+# => TRUE
