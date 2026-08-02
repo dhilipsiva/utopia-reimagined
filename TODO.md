@@ -129,38 +129,11 @@ a floor for that pass, not its scope.** Chapters with no bullets still get a pas
 
 ### Chapter 1
 
-Its known defects landed (git has them); it still owes a whole-chapter read against
-the constitution before the pass is called done. The read began 2026-08-02 and was
-interrupted; what it found so far is below, each verified before being written down.
-
-- **Chapter 1 claims two routes into authority; the constitution has three.**
-  `01:107-109` "Either the electorate seated you, or you hold a public office. Those
-  are the only two routes" — stale since v0.7: `choose(Convocation, $o) ->
-  authority($o)` (`:664`) is a third, live in the cast (Hex, Wren). The list gloss at
-  `01:15-16`, "The electorate seated someone", is narrow the same way — the record
-  holds Convocation seatings too. Fix with the shape, not the count: a seating body
-  chose you, or you hold a public office. Chapter 2 repeats it harder (its bullet).
-
-- **Chapter 1's severity gloss overstates the rules in two directions — measured
-  2026-08-02.** `01:126` "An offence is severe when any two of the three are present":
-  attack plus cruelty toward *different* victims derives nothing (`:602` requires the
-  same victim; probed FALSE with a same-victim positive control TRUE), and two attacks
-  on two victims with no injury entry derives nothing (multiplicity is read only off
-  an attack-or-cruelty entry beside an *injury* to somebody else; probed). State the
-  pairings the rules actually check, and re-read `01:127-133` ("nobody writes the
-  number of victims") against the corrected wording — it survives, but it leans on the
-  loose gloss.
-
-- **Chapter 1's void-requirements sentence has two false clauses.** `01:166-168`:
-  "each documented the same thing" — `capture` names a person, never a finding, and
-  the rule nowhere checks that the two findings agree; and "who are not related to
-  each other" — the rule checks `parent` in both directions and nothing else, spouses
-  and siblings co-sign (measured; chapter 5's costs section already discloses it).
-  Restate against the rule's own conjuncts: credentials from different bodies, two
-  different people, neither the other's parent, neither recalled nor carried-void,
-  neither found to have lied about the person examined. (Checked true while here:
-  every cast `deceive` fact carries `judge(Review, ·)` beside it, 3/3, so the
-  careful-examples claim at `01:301-302` stands.)
+Pass complete 2026-08-02: whole-chapter read against the constitution, the two-routes
+staleness fixed with the shape rather than the count, the severity walk corrected to
+the pairings the rules check, the void summary restated in the rule's own conjuncts,
+the investigation passage reconciled with the chapter's own list, all four measured
+before writing and pinned after. No known defects remain.
 
 ### Chapter 2
 
