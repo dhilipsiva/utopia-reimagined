@@ -102,7 +102,11 @@ noticing.
   side of this is the restored delivery-markers decision (design: which markers exist); book-2
   owns the machinery that reads them. The chain the reviews want is
   owed → tracked → breached → obliged → *acted upon with a deadline* — book-1 deliberately
-  stops at `obliged`.
+  stops at `obliged`. **The markers themselves were refused for book-1** (ruled 2026-08-02:
+  over a record with no arrival facts they fire on everyone and discriminate nobody). When
+  this layer generates arrival facts, the marker design starts from the
+  `undelivered-marker` fixture — those verdicts are what it must stop producing — and the
+  general `err → obliged` form is verified to work, so one duty rule serves every kind.
 - **Sentence administration.** Downstream of book-1's duration decision (Phase 1 there):
   duration classes, review cadence, reintegration, what the earning-shortens ruling looks like
   as an institution. The reviews' ECHR framing (proportionality, review, rehabilitation) is

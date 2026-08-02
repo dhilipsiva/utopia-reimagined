@@ -93,33 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Decide whether the other seven floor rights get delivery markers.**
-  Opened 2026-07-31 by the Article 1b itemisation, and it is the largest thing the
-  delivery gap has ever had. **The design already detects a floor right that did not
-  arrive** — Article 6's `prisoner($p) & ~meets($p) -> err($p, Isolation)` (`:589`) is
-  exactly an undelivered-right marker, for company. Seven have nothing. Re-verified
-  2026-08-01 against the constitution as it now stands, Article 0a included:
-  `owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered)` is **accepted and derives**,
-  `err(Bela, Undelivered)` TRUE. **Article 0a does not charge for it** — that block closes
-  what may be *written*, and `err` is derived, so no `admits` line is needed. It is legal
-  under the narrowed INVARIANT 1 (head is `err`, so it notices without acting) and it is
-  simply unbuilt.
-  **The asymmetry was discovered, not chosen**, which is why this needs a ruling rather
-  than a defence: nothing anywhere records why company is checked and food is not.
-  **The cost doubles, and that is new since Article 8b.** Every marker kind needs its own
-  `obliged` rule — 8b names `Placement` and `Isolation` one at a time (`:735-736`) because
-  the general `err($x, $k)` form derives nothing on this engine (`:718`). Verified: with
-  the Undelivered rule in, `err(Bela, Undelivered)` is TRUE while `obliged(Review, Bela)`
-  is **FALSE**, against `obliged(Review, Ruk)` TRUE off the isolation marker. Markers
-  built without their matching obligations are weaker than the single marker the design
-  already has, and chapter 14 would have to say so.
-  Beyond the rules: a real rewrite of `08`'s closing item, which currently turns on
-  exactly this asymmetry, and of chapter 14, which gains the markers to be honest about —
-  including that they would fire on nearly everybody, since almost nothing is delivered.
-  That last point is the argument against, and it is not nothing: seven more alarms that
-  fire on the whole population report the same emptiness the isolation marker already
-  reports.
-
 - **[AUTHOR-GATED] Now that duration is expressible, decide whether the design says how
   long.** Opened 2026-07-31 by nibli `fc277a9`, which established that **no new primitive
   was ever needed** — the corpus already carries `earlier`/`later`, `happen`, `continue`,
