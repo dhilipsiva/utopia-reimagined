@@ -140,17 +140,21 @@ carelessly. And nothing is earned for finding someone guilty as opposed to findi
 them innocent; the recognition attaches to the examination, not the outcome, so there
 is no bonus for a conviction.
 
-A third thing does not push back, and it belongs in the open. Look at what this door
-actually reads. An examination, to the record, is a pair of entries — someone judged
-a case, someone documented it — and the pair is all the door asks. No pen: the
-credential chapter 3 guards so carefully is a condition on voiding somebody, never on
-being paid for looking. No grounds: the previous chapter conceded that the record
-holds who examined and never why, and this door pays on the same empty pair. Write
-both entries, in good standing, without a lie on the pair, and the recognition
-arrives — for an examination that exists as two lines and nothing else. The design
-pays for the fact of scrutiny, and the fact of scrutiny is cheap to record. What the
-guards above price is the finding that lands on somebody; nothing yet prices the
-looking itself.
+A third thing used to not push back at all, and its repair should be told with its
+limit attached. An examination, to the record, is a pair of entries — someone judged
+a case, someone documented it — and for most of this design's life the pair was all
+the paid door asked. No pen: the credential chapter 3 guards so carefully is a
+condition on voiding somebody, never on being paid for looking. And, until this
+book's last decisions, no grounds: the door paid on the empty pair, for an
+examination that existed as two lines and nothing else. That is closed. The door now
+reads a third entry — the examiner citing what they looked on — and the pair alone
+earns nothing. The limit belongs in the same breath: any word fills that slot. A
+recorded hunch satisfies the rule as well as a recorded complaint, so what the
+record buys is not the truth of the why but an author for it — someone who put
+their name to a reason, where it can be read and answered. The looking now has a
+price. It is low, and it is no longer nothing, and the void's own examinations —
+the ones that destroy a person's word — still ask for no reason at all, which is
+chapter 5's open question and stays it.
 
 That is a better arrangement than most, and it is not nothing to worry about. The
 design has decided that scrutiny is a contribution on a par with teaching and work.

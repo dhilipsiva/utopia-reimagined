@@ -9,7 +9,7 @@ There is nowhere to put it.
 
 Here is the whole list. Someone is a person. Someone worked, or taught. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
-auditor documented what they found. Someone lied. Someone exposed something. A person
+auditor documented what they found, and cited the grounds they looked on. Someone lied. Someone exposed something. A person
 has a home, or a family, or a parent, or a spouse, or a sibling, or has reached
 adulthood. An assembly proposed a
 change; the electorate approved it; the change touches a particular article; that

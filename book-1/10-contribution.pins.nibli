@@ -42,7 +42,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 23
+:expect-pins 25
 
 # "Esa taught Fin, and is recognised."
 ? teaches(Esa, Fin).
@@ -163,9 +163,30 @@ teaches(Pico, Ona).
 # recording a loss while the third door was still handing recognition out.
 judge(Bela, Ivo).
 capture(Bela, Ivo).
+# [v0.9] The ground is recorded too, so the void below is the ONLY failing
+# conjunct — without this line the FALSE would also hold for want of a cite,
+# and the exhibit would stop isolating what it exists to isolate.
+cite(Bela, Query, Ivo).
 
 ? reward(Bela).
 # => FALSE
 
 ? lose(Points, Bela).
+# => TRUE
+
+# ── [v0.9 2026-08-02] THE EMPTY PAIR STOPS PAYING ────────────────────────────
+# The grounds ruling, exercised. Yano — fresh, clean, in good standing — writes
+# the pair that used to mint on its own: a judgment and a documented finding,
+# no pen, no grounds. Nothing arrives. The third entry names the why — any
+# word fills the slot, which is the guard's stated limit — and the pay
+# arrives with the author of the reason on record.
+judge(Yano, Adam).
+capture(Yano, Adam).
+
+? reward(Yano).
+# => FALSE
+
+cite(Yano, Hunch, Adam).
+
+? reward(Yano).
 # => TRUE

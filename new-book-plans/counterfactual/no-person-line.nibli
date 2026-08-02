@@ -56,10 +56,10 @@
 # `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
 # is not closing the conclusions, and Article 0 is what does the latter.
 #
-# TWENTY-EIGHT, NOT TWENTY-SEVEN, AND THE GAP IS THE INTERESTING PART.
+# TWENTY-NINE, NOT TWENTY-EIGHT, AND THE GAP IS THE INTERESTING PART.
 # The spine's evidence figure counts predicates with no producing rule.
 # `person` has two producing rules AND thirty ground assertions, so it is
-# absent from that 27 and must appear here or the file will not load.
+# absent from that 28 and must appear here or the file will not load.
 # [v0.9 2026-08-02] `married` (speni) and `sibling` (tunba) joined both
 # lists with the kinship ruling — guards on the multi-sig's independence
 # check, dead until a marriage or siblinghood is recorded.
@@ -72,14 +72,14 @@
 # what chapter 1 says when it puts personhood on its list.
 admits("adjust").     admits("approves").   admits("attack").
 admits("broken").     admits("capture").    admits("choose").
-admits("clear").      admits("cruel").      admits("deceive").
-admits("family").     admits("forgive").    admits("free").
-admits("home").       admits("injure").     admits("judge").
-admits("married").    admits("mature").     admits("parent").
-admits("permanent").  admits("person").     admits("public").
-admits("put").        admits("rotten").     admits("show").
-admits("sibling").    admits("suggest").    admits("teaches").
-admits("work").
+admits("cite").       admits("clear").      admits("cruel").
+admits("deceive").    admits("family").     admits("forgive").
+admits("free").       admits("home").       admits("injure").
+admits("judge").      admits("married").    admits("mature").
+admits("parent").     admits("permanent").  admits("person").
+admits("public").     admits("put").        admits("rotten").
+admits("show").       admits("sibling").    admits("suggest").
+admits("teaches").    admits("work").
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -558,7 +558,18 @@ all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 # suite green against the guarded copy, rights-floor runtime unchanged.
 # Nothing un-mints — lose is a leaf and derivation is monotone; this guard
 # never-mints, chapter 6's register.
-all $auditor: all $audited: judge($auditor, $audited) & capture($auditor, $audited) & ~deceive($auditor, $audited) & ~broken($auditor) & ~false($auditor) -> reward($auditor).
+# [v0.9 2026-08-02 RULED] THE PAID DOOR ASKS WHY. cite (sitna: who cites
+# what, about whom) is the recorded ground of an examination, and the
+# examiner door reads it: nobody is paid for looking without one. The
+# honest limit is stated where the guard is: any word fills the slot —
+# cite(Gia, Hunch, Adam) satisfies the rule — so what the record gains is
+# an AUTHOR for the why, not the truth of it, the same purchase every
+# entry here makes. The VOID's own grounds stay deliberately unasked:
+# Article 4's multi-sig is untouched, and chapter 5 keeps that absence as
+# the open question it is. Measured: the bare pair that used to mint (two
+# writes, no pen, no grounds) now earns nothing until a third entry names
+# the why.
+all $auditor: all $audited: all $ground: judge($auditor, $audited) & capture($auditor, $audited) & cite($auditor, $ground, $audited) & ~deceive($auditor, $audited) & ~broken($auditor) & ~false($auditor) -> reward($auditor).
 all $auditor: all $audited: deceive($auditor, $audited) & judge(Review, $auditor) -> false($auditor).
 # [v0.9 2026-08-02 RULED — the student clawback is DELETED.] The rule
 # that stood here — teaches($t,$s) & false($t) -> lose(Points, $s) —
@@ -1114,6 +1125,9 @@ judge(Gia, Bela).
 capture(Gia, Bela).
 judge(Hex, Bela).
 capture(Hex, Bela).
+# [v0.9] The examinations' recorded grounds — one complaint, two examiners.
+cite(Gia, Complaint, Bela).
+cite(Hex, Complaint, Bela).
 person(Koa).
 capture(Koa, Esa).
 person(Quin).
@@ -1258,6 +1272,8 @@ judge(Vex, Tyr).
 capture(Vex, Tyr).
 judge(Wren, Tyr).
 capture(Wren, Tyr).
+cite(Vex, Notice, Tyr).
+cite(Wren, Notice, Tyr).
 # E3 — Ruk: severe, NON-domestic, home fact asserted (the farmhouse).
 #      v0.1: soft cage, no HighSec. v0.2: HighSec routes, and the home
 #      assertion itself derives a placement breach.

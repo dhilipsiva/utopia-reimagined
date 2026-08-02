@@ -27,7 +27,10 @@ price that belongs beside the instrument: the record can always show you who des
 a person's word, and it can never show you why. The why lives outside, in whatever the
 examiners would say if asked. Whether it should be brought inside — a written ground,
 the way the seating and the judgment are written — is a question this design leaves
-open, and the chapter on contribution meets the same absence from another side.
+open where it matters most, and answers where it matters less: the chapter on
+contribution now shows an examiner paid only when they cite what they looked on,
+while the examinations that void a person still ask for no reason at all. The
+sharper instrument keeps the silence.
 
 Two signatures from the same body would not have been enough. That is a change from an
 earlier version of this design, where any two credentialed people sufficed, and the
