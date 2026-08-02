@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 27
+:expect-pins 31
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -104,6 +104,26 @@
 
 ? prisoner(Rex).
 # => FALSE
+
+# ── THE TIGHTENING THAT CANNOT BE MADE ───────────────────────────────────────
+# The natural repair — shield persons only — closes a negative cycle through
+# the shield's own head (person <- prisoner, prisoner reads ~defend) and the
+# stratifier refuses it by name. The three queries after it are the hazard the
+# constitution's v0.9 note records: a refused tightening leaves the permissive
+# rule in force with every verdict intact, so it protects nobody it meant to
+# stop protecting. If the refusal ever stops firing, the engine's cycle
+# detection changed and Article 7's note is stale.
+:refuse reasoning /Unstratifiable/
+all $w: all $o: show($w, $o) & authority($o) & person($w) & ~deceive($w, $o) -> defend($w).
+
+? defend(Sly).
+# => TRUE
+
+? prisoner(Sly).
+# => FALSE
+
+? defend(Rebel).
+# => TRUE
 
 # ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
 # "A defendant a century from now can reach back, expose someone nobody

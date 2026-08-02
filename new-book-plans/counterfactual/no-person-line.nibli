@@ -675,6 +675,23 @@ all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> b
 all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x).
 
 # ─── Article 7: Defenses against Systemic Capture ─────────────────
+# [v0.9 STRATIFICATION LANDMINE, documented at last] The most natural
+# tightening of the shield — `person($w)` in its body, so only persons
+# are shielded — CANNOT BE MADE, either way. `person` derives from
+# `prisoner`, `prisoner` reads `~defend`, so the conjunct closes a
+# negative cycle through the shield's own head and the stratifier
+# refuses the rule. Edited in place, the shield is gone and the runner
+# reports a harness error; added alongside, the same. The engine names
+# the cycle precisely and the runner stops — but only because the
+# runner is watching; the old "silently vanishes" framing described a
+# harness gap that is fixed, not an engine behaviour. The hazard that
+# remains is the one the v0.2 note below already warns about from the
+# other side: a tightened COPY refused while the permissive rule stays
+# in force keeps the permissive rule's every verdict — measured, the
+# refusal fires and defend(Sly) stays TRUE — so a refused tightening
+# is not a tightening, and whoever wants persons-only shielding must
+# REPLACE the rule with one the stratifier accepts, not add a conjunct.
+# The exhibit is pinned in chapter 4's suite.
 # [v0.2 REPLACES  show($w,$o) -> defend($w)]  (closes E1)
 # The shield now requires (a) the exposed party to be an AUTHORITY — an
 # institution, or anyone the Electorate ever seated — and (b) no Review
