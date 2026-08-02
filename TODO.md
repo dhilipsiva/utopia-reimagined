@@ -351,29 +351,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   be decided as a deletion; `06:88-92` ("Whoever sits down to write the fix will find
   they have written a repeal") already argues exactly this.
 
-- **The delivery gap can be closed by fiat and nothing objects — record the *rule*-write
-  trust base.** All eight floor predicates are rule-writable heads. Verified 2026-08-01:
-  `all $x: person($x) -> P($x).` loads at **0 errors** for every one of the eight, and
-  every floor query flips TRUE. The sharp part: the same fiat **silences the isolation
-  audit marker** (`err(Hano, Isolation)` FALSE), so the one instrument that would have
-  noticed goes quiet in the same edit. **Neither closure reaches it.** `derived_only`
-  refuses the direct assertion and lets the fiat rule through — verified against a copy
-  with `derived_only("eats").` inserted, `? eats(Adam). TRUE`. Article 0a behaves
-  identically: none of the eight names is admitted, and all eight fiat rules load anyway,
-  because `admits` closes ground assertion and says nothing about rule heads. So there is
-  no compile-time guard available from either direction and the fix is disclosure: state
-  in the constitution's commentary, and in the provisioning bullet below, that any
-  provisioning layer must distinguish a delivery **record** — an evidence fact about
-  something reaching a person — from a derived legal fiction. Otherwise the most
-  credibility-buying admission the book has is one line and a green suite away from being
-  erased.
-  **Article 1b raised the stakes rather than lowering them.** Re-verified with the
-  duty-bearer in force: the eight fiat rules still load, every actuality still flips
-  TRUE, `err(Hano, Isolation)` still goes FALSE — and `owe(State, Provision, Bela)` and
-  `owe(State, Eats, Bela)` are TRUE throughout, because nothing reads `owe`. So one edit
-  now yields a constitution reporting a named debtor *and* every actuality satisfied: it
-  reads as a discharged obligation rather than an undisclosed gap.
-
 - **Build the first delivery route: verified teaching delivers learning. VERIFIED TO WORK,
   and it is the highest-value item in this section.** Nothing in this design touches the
   floor. Rule heads producing each floor right: `learn` 0, `eats` 0, `healthy` 0, `secure`
@@ -420,7 +397,13 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   while every one of those six stays FALSE for every person in the cast. The obligation
   layer is now complete *and attributed*; the delivery layer still does not exist. Either build one or state that Parts I–V stop at
   entitlement. Keep it visible in the prose either way; it is the single most
-  credibility-buying admission the book has.
+  credibility-buying admission the book has. **Any layer built here must keep a delivery
+  record — an evidence fact about something reaching a person — distinct from a derived
+  actuality**: the constitution's "residual trust base, II" section records that all
+  eight heads accept a fiat rule (`person -> P`) that fakes delivery, silences the
+  isolation marker, and leaves `owe` reading as a discharged obligation; the only test
+  that separates a delivery route from that fiat is what arrival evidence sits upstream
+  of the head.
 
 - **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's shield is
   fail-**open** toward protection and defends the choice explicitly at `:634-640`.
