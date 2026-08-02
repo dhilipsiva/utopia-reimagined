@@ -256,52 +256,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   than trusting any list here: `awk -F'->' '/^[^#]/ && /->/ && $1 ~ p' constitution.nibli`
   with each candidate name — a bare grep matches rule heads and can never fail.
 
-- **Rename the Article 6 `dwell` head — one atom is doing two jobs, and it blocks the
-  `err/2` repair.** Every rule producing `dwell` requires `prisoner` (`:591`, `:594`,
-  `:606`, `:627`), and the Article 1 floor line at `:317` produces nothing — verified,
-  `entitled(Bela, event { dwell() })` is TRUE while `dwell(Bela)` is FALSE. So
-  `dwell(Lalo)` does not mean "Lalo is owed shelter"; it means "Lalo is housed at
-  HighSec", and one atom carries both *entitled to a home* and *in a cell*. A hostile
-  reviewer finds it in an afternoon. **`placed` is not the name** — verified 2026-08-01,
-  `-> placed($x)` is refused outright ("not a corpus name") — so either find a name in
-  nibli's committed alias corpus or fold the placement head into `building`, and add
-  the asserted counterpart the `err/2` fix needs. **Regenerate the site list by census
-  before touching anything** — every `dwell` pin in `08`, `11`, `13` and `rights-floor`
-  moves with it, and so does `08:50`. **Since Article 0a the asserted counterpart costs
-  two lines, not one**: the new name needs an `admits` declaration above its first use,
-  and it takes the evidence count off 23, so `verify.sh`'s evidence-vocabulary check
-  moves in the same commit.
-
-- **Fix `err/2` — the placement alarm has never once fired correctly, and release gave
-  it a third victim.** `:599` reads
-  `home($x) & ~fit($x, Homestay) -> err($x, Placement)`, which tests *having a home*,
-  not *having been placed at home*. Re-verified 2026-08-01: exactly three people carry
-  a `home` fact, and it fires on two of them — Ruk and Lalo, both routed correctly to
-  `building(HighSec, ·)` — and on nobody misplaced. **Release made it worse rather than
-  exposing it**: `free(Hano).` takes `fit` away while `home(Hano).` stays asserted, so
-  the alarm fires on a released man in his own house — `prisoner(Hano)` FALSE,
-  `fit(Hano, Homestay)` FALSE, `err(Hano, Placement)` TRUE.
-  **Three false positives, zero true positives** — two on the shipped cast, the third
-  pinned under the release scenario — and the newest one is not even in custody. That
-  verdict is carried as a DEFECT PIN at `rights-floor.pins.nibli:279-284`, and four more
-  pins carry the `:defect` reason string "keying err/2 on where somebody was PUT, not
-  on having a home" — two in `11-where-people-are-put.pins.nibli:75-80` and two in
-  `14-when-the-system-notices-it-broke.pins.nibli:100-106` — so the repair reads as a
-  resolved defect rather than a regression.
-  An alarm with that record is worse than none. The fix is **not** "key it on `dwell`" —
-  `:591` already requires `fit`, so a marker over the derived placement atom could never
-  fire. The marker can only fire on an ASSERTED placement, so give the world a way to
-  report one: a new asserted relation for "X was put at Y" (name from the committed
-  alias corpus, plus an `admits` line), checked against derived `fit`. That is Article
-  0's own evidence/conclusion split applied to placement, and it is the same repair as
-  the `dwell` rename — **do that one first**. Repairing it flips `err(Ruk, Placement)`,
-  `err(Lalo, Placement)` and the released-Hano pin FALSE, so four files move in the same
-  commit: `rights-floor.pins.nibli:80,283` (`:82` already pins FALSE and stays),
-  `11-where-people-are-put.pins.nibli:75-80`,
-  `14-when-the-system-notices-it-broke.pins.nibli:100-106`, and "The alarm that does not
-  work" at `11:74-106`, written against the defect on purpose. That rewrite is the
-  intended outcome.
-
 - **Guard the personhood roster — one deletion defeats all eight rights, and the
   obvious repair only renames the target.** `person` has two producing rules —
   `prisoner -> person` (`:329`) and `free -> person` (`:339`) — so imprisonment is the
