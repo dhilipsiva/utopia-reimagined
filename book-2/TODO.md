@@ -20,6 +20,48 @@ noticing.
 
 ---
 
+## The central thesis candidate — the two paradoxes
+
+- **Prove or disprove: currency becomes irrelevant (completely or partially) in a system
+  that ensures basic rights.** Posed by the author 2026-08-02. The recession scenario that
+  motivates it — capacity intact, claims collapse, the logistics worker unable to move food
+  to others or to themselves — is documented economics, not hypothesis: Sen proved the 1943
+  Bengal famine killed without a significant decline in food availability (entitlement
+  failure), and Keynes named the general form. **And the proposal's own paradox is already
+  formalised, in book-1, as the delivery gap**: claims intact, capacity at risk —
+  *wants-to-but-cannot* versus *can-but-need-not*. The book's question is which paradox is
+  more favorable, and it is well-posed.
+  **The proof program, in book-2's epistemic register** (theorems inside declared models +
+  empirical parameters + simulations that regenerate by script — nibli is not the tool here;
+  real arithmetic is legitimate in this book):
+  1. *The floor-feasibility threshold theorem.* Input-output analysis gives L(F), the labor
+     share required to produce and deliver the floor bundle; the floor is sustainable
+     without compulsion iff voluntary contribution ≥ L(F) + overhead. Anchor: ILO time-use
+     data — unpaid care/household/volunteer labor is already on the order of two-fifths of
+     all human labor hours, with no currency anywhere in it.
+  2. *The recession-immunity theorem.* Identical capacity, same demand shock, two claim
+     layers: derive the monetary amplification loop; show the floor's delivery is invariant
+     to the claim-layer shock by construction — the trucker's dinner never depended on the
+     trucker's wage. State the limit in the same breath: immune to demand-side causes,
+     not to physical ones; no accounting system grows wheat.
+  3. *The favorability comparison.* Both failure modes as risk profiles: fat-tail,
+     correlated, pro-cyclical monetary collapse (1929, 2008, 1943) versus diffuse, visible,
+     chronic under-provision — with two evidenced asymmetries favoring the second: acute
+     crisis raises voluntary contribution (disaster sociology), and book-1's design makes
+     floor-failure a named claim against a named duty-bearer rather than a lapsed wage.
+     UBI pilots are marginal evidence only; do not overclaim general equilibrium from them.
+  4. *The disproof branch, run honestly — the book's credibility lives here.* The
+     calculation problem for the above-floor economy (Mises/Hayek, met by name); free-rider
+     decay in steady state (public-goods experiments; recognition and visibility as the
+     decay-rate variables — which puts book-1's recognition system under empirical test);
+     the unpleasant-jobs allocation problem under refused differential reward; innovation.
+  **Expected honest landing**: complete irrelevance disproven, and the book stronger for
+  executing the disproof itself; partial irrelevance — the floor decoupled from currency,
+  demand-side recession-immune, feasible below a measurable participation threshold —
+  defended on evidence. Partial is still enormous: the goods that keep people alive,
+  decoupled from the layer that historically fails them. If the chapters are ever ordered,
+  this question is the strongest candidate for the spine.
+
 ## From the hold list
 
 - **Oversight of the duty-bearer — enablers, their checkers, and the meta-study.** Raised by
