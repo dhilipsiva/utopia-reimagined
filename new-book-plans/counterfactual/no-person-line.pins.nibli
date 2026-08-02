@@ -2,7 +2,7 @@
 # Chapter 7's headline result, run against a file where the line is gone.
 # These verdicts are what the world looks like WITHOUT it. They must PASS here
 # and would fail against the real constitution — that contrast is the point.
-:expect-pins 3
+:expect-pins 6
 
 # THE FIREWALL IS DEAD. Against the constitution this rule is refused with
 # "'prisoner' -> 'believe' (negative)". Here it loads, and the heretic is jailed.
@@ -17,6 +17,25 @@ all $x: person($x) & ~believe($x) -> prisoner($x).
 # And conviction no longer confers personhood. Note Article 1 has a second route
 # since release landed — `free -> person` — but that one needs somebody to write
 # a fact, so conviction remains the only route into rights-bearing status that
-# needs nobody's permission, and this fixture removes it.
+# needs nobody's permission, and this fixture removes it. Zed's conviction facts
+# are written HERE (this file used to query him bare, which was the weak kind of
+# FALSE the taxonomy warns about): convicted, and no longer a person.
+injure(Zed, Ivo).
+judge(Court, Zed).
+
+? prisoner(Zed).
+# => TRUE
+
 ? person(Zed).
+# => FALSE
+
+# THE DEBT EVAPORATES WITH THE DEBTOR — chapter 7's "it closes the file". A
+# prisoner who is not a person is owed nothing: no unpaid obligation survives to
+# catch an auditor's eye, so de-personing leaves the books balanced rather than
+# showing a gap. Both TRUE against the real constitution (probed 2026-08-02);
+# both FALSE here, in the same edit that jailed the heretic above.
+? owe(State, Eats, Zed).
+# => FALSE
+
+? entitled(Zed, event { eats() }).
 # => FALSE

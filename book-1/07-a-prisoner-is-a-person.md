@@ -33,6 +33,18 @@ complains. A society could run for years in that state without anyone noticing t
 its prisoners had quietly ceased to be people, because nothing anywhere announces it.
 The only visible difference is a question you would have to think to ask.
 
+Say precisely how deep that silence goes, because this design has instruments — a
+later chapter is entirely about the ways it can notice its own misbehaviour — and not
+one of them stirs. The markers watch placements and isolation, never the roster;
+there is no rule that marks a person's disappearance, and nothing it could mark it
+against. And the quietest part is what happens to the debt. Everything this society
+owed Zed, it owed to a person, so the instant Zed stops being one there is no unpaid
+obligation left over to catch an auditor's eye. It is not that the society still owes
+him food and is failing to deliver — a failure at least leaves a gap that an honest
+account must show. It owes him nothing, cleanly, retroactively, and the books
+balance. De-personing does not leave a wound the instruments could find. It closes
+the file.
+
 That is the first thing the line does: it is the entire connection between conviction
 and continued humanity, and it is one sentence wide.
 
@@ -70,6 +82,34 @@ falling off it.
 So the line that keeps prisoners human is the same line that keeps everyone else's
 rights unconditional. They are not two provisions. They are one, and it cannot be
 half-repealed.
+
+## The loop does not take sides
+
+One more thing about that loop, and it is a cost, not a boast.
+
+The refusal is not judgment. The machinery does not read the heresy law, find it
+repugnant, and decline. It finds a rule whose reasoning would have to pass through its
+own conclusion, and it refuses the shape — any rule with that shape, whatever the rule
+is for, whoever wrote it, however good its intentions.
+
+The design has already paid for that once, somewhere you have seen. The shield of
+chapter 4 protects whoever exposes an authority, and there is a tightening its own
+designers would plainly want: let the shield cover *persons*, so that it can never be
+claimed by something that is not one. That rule cannot be written. The reason is this
+chapter's loop, met from the other side — the shield feeds imprisonment, imprisonment
+feeds personhood, so a shield that reads personhood circles back through itself
+exactly the way the heresy law does, and it dies in the same place. Nobody chose
+that. The wall that stops the worst rule this book can imagine also stops a careful
+improvement, permanently, and it does not consult anyone about which is which.
+
+There is a trap inside that cost, and it is sharper than the cost itself. A refused
+tightening leaves the *loose* rule in force. Whoever proposes the persons-only shield,
+watches it refused, and walks away, has changed nothing — the shield goes on
+protecting whatever it protected before, including whatever the tightening was meant
+to exclude. A refusal here is not a veto that leaves things safe. It is the design
+saying that the protection you want cannot exist in this shape, and that what exists
+instead will keep running — so the places where a rule cannot be tightened have to be
+known, priced, and watched, not discovered by whoever tries first.
 
 ## What that means
 
