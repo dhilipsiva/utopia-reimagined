@@ -43,20 +43,30 @@ This is the first failure mode of self-audit: **an alarm can be perfectly accura
 about a system that knows nothing, and accurate reporting of nothing is
 indistinguishable from an accurate report that everything is broken.**
 
-## The one that fires on the wrong people
+## The one that fired on the wrong people
 
-The second marker, from Chapter 11, is the opposite failure. It reports bad placements.
-It fires on Ruk and Lalo, who are correctly placed, and on nobody who is misplaced.
+The second marker, from Chapter 11, spent this design's whole life until now as the
+opposite failure. It was meant to report bad placements. What it fired on was Ruk and
+Lalo, who are correctly placed, and on nobody who was misplaced — wrong every time it
+sounded, silent about everything it existed to catch.
 
-The two together make the point better than either alone. One alarm is right about
-everyone and therefore says nothing. The other is wrong about the specific people it
-names. A reader who trusted both would conclude that this society keeps every prisoner
-in solitary confinement and misassigns its two most serious offenders, and every part
-of that conclusion would be false.
+The two together made the point better than either alone. One alarm right about
+everyone, and therefore saying nothing. The other wrong about the specific people it
+named. A reader who trusted both would have concluded that this society keeps every
+prisoner in solitary confinement and misassigns its two most serious offenders, and
+every part of that conclusion would have been false.
 
 **The second failure mode: a system's report about itself is not more reliable than
 any other part of it.** The audit is made of the same material as the thing it audits,
 written by the same hands, and nothing sits above it checking.
+
+The placement marker has since been repaired — Chapter 11 tells that story. It reads
+recorded placements now, and it is silent, because there are none to read. The repair
+does not retire the lesson; it sharpens it. The broken version shipped, sat in print
+described as a safeguard, and was found the way everything else in this book was found:
+by asking the design what it would say about a specific person and checking the answer.
+And the repaired marker is made of the same material as the old one. What changed is
+what it reads, not who writes it.
 
 ## And then a duty, which is also the end of it
 
@@ -65,15 +75,19 @@ for longest.
 
 A violation is recorded, and now something does follow: the review body is obliged.
 Where the placement marker fires, the review body has a duty about that person. Where
-the isolation marker fires, the same. The design can state that Ruk is misplaced and can
-state that somebody is supposed to do something about Ruk.
+the isolation marker fires, the same. The design can state that somebody is misplaced
+and can state, in the same breath, that somebody else is supposed to do something
+about it.
 
-Read the duty carefully, because it arrives carrying everything wrong with the markers
-that produce it. It is owed about Ruk and Lalo — who are correctly placed. It is owed
-about every prisoner without exception, through the isolation marker that fires on all
-of them. A duty derived from a signal that cannot tell right from wrong is a duty
-pointed at the wrong people, and a duty derived from a signal that fires on everyone is
-a duty owed to a category rather than to a case.
+Read the duty carefully, because it arrives carrying what is still wrong with the
+signals that produce it. Today every duty the audit derives comes through the isolation
+marker, which fires on every prisoner without exception — so the duty is owed about all
+of them, equally, regardless of anything any of them did or suffered. A duty derived
+from a signal that fires on everyone is a duty owed to a category rather than to a
+case. Before the placement repair it was worse — a duty pointed at named, correctly
+placed people, derived from a signal that could not tell right from wrong — and that
+half is fixed, which shows the duty machinery inherits exactly the quality of whatever
+feeds it.
 
 And then **nothing reads the duty.** No rule consults it. No clock starts, no review is
 required, nothing changes about the placement or the isolation being reported. The chain
@@ -127,7 +141,9 @@ unable — and where it has chosen, it has chosen to stop.
 
 What the slot is worth is this: every defect named in this book was found by asking the
 design what it thought was true and comparing the answer to what it claimed. The
-markers themselves are miscalibrated. The capacity to interrogate is not. A society
+markers themselves have been miscalibrated — one spent the design's whole life firing
+on the wrong people before it was repaired, and the other still cannot tell one
+prisoner from another. The capacity to interrogate is not. A society
 you can ask hard questions of, and get answers that can be checked against its own
 promises, is a society whose failures are findable — and everything in these
 chapters that turned out to be broken was found that way, by someone who did not have
