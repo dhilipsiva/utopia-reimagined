@@ -692,17 +692,15 @@ sequenced behind Phase 3's discipline by construction.
 
 ## Data — "latest data, by script" is a build system nobody has written yet
 
-- **Build the data pipeline before writing the empirical chapters.** The stated
-  requirement is that the book depends on the latest data *as much as possible,
-  achieved through scripting* — but `final-research.md` is a hand-assembled static
-  snapshot, with the predictable result: figures two tax years stale, a superseded
-  working paper, market data from 2015. Design: one machine-readable claim registry
-  (claim id, value, units, source, retrieval date, fetch script); fetchers against
-  sources that have APIs (World Bank, WHO GHO, UNEP, IEA, OWID, FAOSTAT); a
-  rendering step that injects current values into the prose; and a **staleness
-  gate** that fails the build when a figure's source has a newer edition than the
-  one pinned. Where a number can only come from a paper, the registry pins the
-  version and the retrieval date so the drift is visible.
+- **Data pipeline: the registry, gate and first fetcher LANDED 2026-08-02 (`e757267`).**
+  `registry/claims.json` (CC0, spec block, pinned-paper vs fetched-by-script classes),
+  `registry/check.py` (schema + staleness gate, negative-controlled, run by `verify.sh`),
+  `registry/fetch/worldbank.py` (ran live). Seeded with the eight research-brief-corrected
+  figures, each noting its correction commit. **Still unbuilt, deliberately**: the
+  rendering step that injects registry values into prose — nothing in book-1 may carry a
+  number (the counted-claims gate), so rendering waits for the empirical writing it
+  serves (Part V / book-2); build it beside the first prose that cites a registry id.
+  More fetchers (WHO GHO, OWID, FAOSTAT…) land as entries need them, not speculatively.
 
 - **Use the democracy/happiness dataset — but for the opposite claim to the obvious
   one.** `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144 countries, EIU 2025
@@ -756,10 +754,11 @@ sequenced behind Phase 3's discipline by construction.
   `LICENSE-CC0`. This is the thing that earns the trust and the honest substitute for
   showing the constitution.
 
-- **Re-cite everything against the published versions.** Muralidharan, Niehaus & Sukhtankar
-  is no longer a working paper — it is *Review of Economics and Statistics* 107(2): 372–392
-  (2025). Expect several others to have moved similarly. Fold the check into the registry
-  build so it happens once.
+- **Re-cite everything against the published versions — folded into the registry as
+  designed.** Pinned entries carry the published version (Muralidharan already moved to
+  *REStat* 107(2): 372–392 in both the brief and the registry, 2026-08-02); a version
+  moving is now an entry edit the diff shows. The remaining sweep happens as each legacy
+  reference is ported into the registry, not as a separate pass.
 
 ---
 
