@@ -12,7 +12,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 97
+:expect-pins 100
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -255,6 +255,21 @@ building(HighSec, Ghost).
 # were before it existed. If this ever flips, a delivery layer arrived and
 # chapter 8 must be rewritten — which would be good news.
 ? eats(Bela).
+# => FALSE
+
+# ── THE FLOOR'S RELATION, CONTROLLED THREE WAYS ──────────────────────────────
+# `entitled` is queried across the suite and until now was never controlled, so
+# every TRUE proved reach rather than derivation. Three directions at once: the
+# floor reaches a person; it does not carry what is not on it — home is a fact
+# the world reports, never a floor item, and chapter 8 turns on the difference;
+# and it does not reach a non-person.
+? entitled(Adam, event { eats() }).
+# => TRUE
+
+? entitled(Adam, event { home() }).
+# => FALSE
+
+? entitled(Court, event { eats() }).
 # => FALSE
 
 # The firewall extends to the obligation: no rule may punish a person for not

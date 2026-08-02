@@ -10,7 +10,7 @@
 # prisoner in the cast is also asserted as a person. That is itself the
 # chapter's closing point.
 
-:expect-pins 15
+:expect-pins 22
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
@@ -29,8 +29,31 @@ judge(Court, Zed).
 
 # "Convicted, unlisted, and owed everything." The sentence says OWED, and until
 # now this file only proved undelivered — a FALSE that guards the gap, not the
-# debt. The debt pins are what the sentence rests on.
+# debt. The debt pins are what the sentence rests on — and "everything" is
+# enumerated, not sampled, because the omitted item is exactly where a
+# universal fails: chapter 8's own missing expresses pin once hid a false one.
 ? owe(State, Eats, Zed).
+# => TRUE
+
+? owe(State, Dwell, Zed).
+# => TRUE
+
+? owe(State, Healthy, Zed).
+# => TRUE
+
+? owe(State, Learn, Zed).
+# => TRUE
+
+? owe(State, Secure, Zed).
+# => TRUE
+
+? owe(State, Expresses, Zed).
+# => TRUE
+
+? owe(State, Believe, Zed).
+# => TRUE
+
+? owe(State, Meets, Zed).
 # => TRUE
 
 ? entitled(Zed, event { eats() }).
