@@ -16,6 +16,19 @@ the work — their pens come from different bodies. The electorate seated Gia; t
 convocation seated Hex. Both looked at Bela, both recorded what they found. Bela's
 credibility is voided.
 
+One thing is missing from that account, and the record is the reason. What did Gia and
+Hex find? The record does not say. It holds that each of them judged the case and that
+each documented it — who examined, who was examined, and nothing else. No charge, no
+reason, no text of any finding. The rule that voids Bela reads the fact of two
+documented examinations from two independent signers; what the examinations contained
+is not a thing this record can hold. That is chapter 1's discipline doing exactly what
+it promised — no loose conclusions, nowhere for an accusation to hide — and it has a
+price that belongs beside the instrument: the record can always show you who destroyed
+a person's word, and it can never show you why. The why lives outside, in whatever the
+examiners would say if asked. Whether it should be brought inside — a written ground,
+the way the seating and the judgment are written — is a question this design leaves
+open, and the chapter on contribution meets the same absence from another side.
+
 Two signatures from the same body would not have been enough. That is a change from an
 earlier version of this design, where any two credentialed people sufficed, and the
 reason for the change is narrow enough to state exactly: it means capturing one
