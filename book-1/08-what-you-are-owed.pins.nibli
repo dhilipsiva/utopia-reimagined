@@ -17,7 +17,7 @@
 # "pins were added or lost" — as though somebody had edited this file. If you ever
 # see that, check the flag before you go looking for a missing pin.
 
-:expect-pins 30
+:expect-pins 34
 
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /owe/ {print}' new-book-plans/constitution.nibli)"
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
@@ -63,6 +63,21 @@
 # ...and for nobody else. Bela above is voided and not confined; Cira is a child
 # who was never convicted of anything.
 ? dwell(Cira).
+# => FALSE
+
+# THE SECOND EXCEPTION, same width exactly. "Recorded speech derives the same
+# way: for every confined person and for nobody else." This entry was the one
+# the old universal hid — this file pinned the "no" for every floor entry
+# EXCEPT recorded speech, so the one entry that answers TRUE was the one
+# nothing looked at. Hano carries the confined half; Bela (voided, free) and
+# Jala (never accused — chapter 13's control) carry "nobody else".
+? expresses(Hano).
+# => TRUE
+
+? expresses(Bela).
+# => FALSE
+
+? expresses(Jala).
 # => FALSE
 
 # "Your credibility is still reachable."
@@ -142,6 +157,12 @@ all $x: prisoner($x) -> believe($x).
 #  things in this design, and nothing joins them." Bela is owed food, and shelter,
 #  and has neither. If either of these ever flips while the owe pins stay TRUE,
 #  something joined them and the passage above is wrong.
+# "Not whether Bela is *entitled* to eat — whether Bela eats." The chapter's
+# whole opening turns on this contrast, and until now the file pinned only the
+# second half. Both halves, adjacent, same person:
+? entitled(Bela, event { eats() }).
+# => TRUE
+
 ? eats(Bela).
 # => FALSE
 
