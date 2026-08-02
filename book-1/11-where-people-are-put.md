@@ -73,42 +73,51 @@ security. The hole is closed, and the manner of its closing is the more useful l
 it was found by asking the machinery what it would actually do with a specific person,
 rather than by re-reading the intention.
 
-## The alarm that does not work
+## The alarm that did not work
 
 Having closed the hole, the design added something to catch it if it ever reopened: a
 marker that flags a bad placement, so that misplacement becomes a thing you can ask
 about rather than a thing you have to notice.
 
-The marker does not work.
+For most of this design's life, the marker did not work.
 
-It is supposed to fire when someone is placed at home without being eligible for it.
-What it actually fires on is: having a home, and not being eligible. Which is not the
-same thing, and the difference is everyone.
+It was supposed to fire when someone was placed at home without being eligible for it.
+What it actually fired on was: having a home, and not being eligible. Which is not the
+same thing, and the difference was everyone.
 
-Ruk is flagged. Ruk is in high security, correctly, exactly where the repaired rule
-puts him. Lalo is flagged. Lalo is in high security, correctly, for a severe domestic
-offence. Neither of them is misplaced by any reading. They are flagged because each
+Ruk was flagged. Ruk is in high security, correctly, exactly where the repaired rule
+puts him. Lalo was flagged. Lalo is in high security, correctly, for a severe domestic
+offence. Neither of them was misplaced by any reading. They were flagged because each
 has a home somewhere and neither is eligible to be confined in it — which is the
-ordinary condition of every severe offender who has ever had an address.
+ordinary condition of every severe offender who has ever had an address. Meanwhile
+nobody who was genuinely misplaced got flagged, because on the record nobody was.
+Every time the alarm sounded, it was wrong, and it never once sounded correctly.
 
-Meanwhile nobody who is genuinely misplaced is flagged, because on the current record
-nobody is genuinely misplaced. Every time the alarm has sounded, it has been wrong,
-and it has never once sounded correctly.
-
-An alarm with that record is worse than no alarm. No alarm at least leaves you
-knowing you are not being told anything. This one produces a steady, plausible signal
-that would train anyone reading it to ignore the marker, at which point the genuine
+An alarm with that record is worse than no alarm. No alarm at least leaves you knowing
+you are not being told anything. This one produced a steady, plausible signal that
+would train anyone reading it to ignore the marker, at which point the genuine
 misplacement it was built to catch arrives among the noise and is dismissed with the
 rest.
 
-The fix is not complicated — the marker needs to look at where someone *was placed*
-rather than at whether they own a house — and it has not been made. It is named here
-because a design that quietly ships a broken alarm and describes it as a safeguard has
-done something worse than leave the gap open.
+The defect had a cause worth naming, because the repair falls out of it. The record had
+nowhere to write down the one thing the alarm needed: where somebody was actually put.
+So the rule watched a property of the person — owns a house — because the record could
+not show it the act. The repair is to give the record that entry. *Somebody put someone
+somewhere* is now a thing the record can hold: an act, with an author, like everything
+else on the first chapter's list. The alarm reads those entries and fires on exactly
+one thing — a recorded placement at home that the eligibility rules contradict.
+
+Two things about the repaired alarm should be said as plainly as the defect was. It is
+silent today, because the record holds no placement entries yet; the alarm watches an
+empty page. Silent is not broken — write a wrong placement into the record and it
+sounds, write a right one and it stays quiet, and the difference between those two is
+eligibility and nothing else. But an act nobody writes down is an act no marker in
+this book can see. That limit is not this alarm's; it is the record's, and it has been
+there since the first chapter.
 
 ## What survives
 
-Set the marker aside, because the chapter's substance does not depend on it.
+Set the marker aside, because the chapter's substance never depended on it.
 
 Placement here is derived. Ruk is in high security because the offence was severe, and
 for no other reason. There was no moment at which anyone could have placed him
@@ -192,5 +201,7 @@ notices somebody is owed a home and does not have one. It has machinery that not
 somebody is being confined and has nowhere to be confined, which is a much smaller
 question that happens to have the same answer.
 
-The alarm is broken. The hole beside it in the floor has been filled, from the wrong
-side. The thing they were watching over is still worth watching over.
+The alarm works now, and what it watches is this design's own conduct. The hole beside
+it in the floor has been filled, from the wrong side. What the people in this chapter
+were owed — before the conviction, before any placement, before this machinery had a
+reason to look at them at all — still has nothing watching it.
