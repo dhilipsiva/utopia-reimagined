@@ -212,34 +212,15 @@ remain beyond the declared alarm defect, which is the chapter's subject.
 
 ### Chapter 12
 
-- **Chapter 12 enumerates the three entrenched articles and never says the evidence list is
-  not among them.** `12-changing-the-rules.md:10-11` names the floor, the personhood rule
-  and the register, all three pinned green — and stops. Chapter 1 argues at `01:221-237`
-  that the evidence vocabulary is the one thing *not* on that register, and chapter 12 is
-  where a reader arrives holding the register that would have protected it.
-  `permanent(Art_Evidence). # => FALSE` is pinned in chapter 1's file and is not re-tested
-  here, so the connection exists in the suite and nowhere in the prose. One sentence,
-  connecting the register back to chapter 1's list. Cheap, and it is the difference between
-  a reader noticing the gap and a reader being shown it — which is the register the whole
-  book is written in. Read the vocabulary-entrenchment bullet below first: the honest
-  sentence is that the list cannot be entrenched, not that it merely has not been.
-
-
-- **Chapter 12's pin NOTE claims a pin that does not exist, and its defect is unmarked.**
-  `12-changing-the-rules.pins.nibli:8-10` says the file "pins two live defects: the
-  self-declared target (`Amend_Sneak`) and the fact that `become()` feeds nothing." The
-  first is pinned, at `:54-63`; the second is not. It is pinnable — a `:require` with a
-  body-testing `awk` and a positive control, the shape chapter 8 already uses at
-  `08-what-you-are-owed.pins.nibli:22-23`. Re-verified 2026-08-01: the `become` body test
-  returns nothing and the `/prisoner/` control returns twelve rules, so the pair runs
-  green and can fail. Add it, and the NOTE becomes true as written instead of needing a
-  correction.
-  Second gap, and it is no longer unique to this file: the `Amend_Sneak` block carries a
-  `# DEFECT:` comment and no `:defect` directive, so the repair that closes it would fail
-  as a regression instead of exiting 3 as a REPAIR — and `rights-floor.pins.nibli`'s
-  "DEFECT PIN" block (`err(Hano, Placement)` firing on a released man) is unmarked the
-  same way; the directive lives only in the chapter 6, 11 and 14 files today. Mark both,
-  `:defect "<the repair that closes it>"`, the form chapter 6 uses.
+Pass complete 2026-08-02: whole-chapter read, the evidence-list paragraph added to the
+register section — the honest form measured first: entrench the vocabulary's name on
+paper and a widening edit still walks past unvoided, so the register cannot hold it,
+not merely does not — with the connecting pin re-tested in this chapter's file. The
+pin header now names one declared defect and one guarded absence; the Amend_Sneak
+pair carries :defect directives, the become absence is a :require pair with its
+positive control, and rights-floor's released-man placement pin is marked with the
+shared err/2 reason string. The counted site swept (ratchet 9 to 8). No known
+defects remain beyond the declared ones, which are the chapter's subject.
 
 ### Chapter 13
 
@@ -713,19 +694,6 @@ No known defects. Read it against the constitution anyway.
   pins per subject there when a pass next touches it — the omitted item is exactly
   where a universal claim fails, which is how the expresses omission hid a false
   universal in chapter 8's prose.
-
-- **Chapter 12's pin file is the last one whose header argues instead of checking.**
-  `12-changing-the-rules.pins.nibli:8-10` says the "three ways this is thinner" section
-  "pins two live defects", and neither half is true as written. The second — that
-  `become()` feeds nothing — is an absence no pin can hold, and `verify.sh` already holds
-  it in the absence loop. The first is real and is marked with a bare `# DEFECT:` comment
-  at `:54` rather than the `:defect` directive chapters 6, 11 and 14 adopted, so the file
-  reports `14 pins, 0 findings` and declares nothing, while the marker that would say what
-  the *repair* is stays invisible to the harness. Re-verified 2026-08-01: marking both
-  `Amend_Sneak` pins runs green at `14 pins (2 defects), 0 findings`. Fix the header to
-  name one declared defect and one guarded absence in the same pass. This is a header that
-  drifted from its own file undetected, which is the whole argument for reading every NOTE
-  against the check that now runs it.
 
 - **Extract the claim-to-query table from the pin files — it cannot be generated from the
   constitution.** The substance already exists in a better form than the old bullet
