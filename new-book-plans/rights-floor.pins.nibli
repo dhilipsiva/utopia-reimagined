@@ -12,7 +12,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 94
+:expect-pins 97
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -178,6 +178,21 @@ reward(Ghost).
 
 :refuse reasoning /declared derived-only/
 become(Amend_Sneak, Law).
+
+# [v0.9] And the three declared rather than omitted: the floor's own relations
+# and the placement head were shut only by not being admitted, so one unrelated
+# admits edit would have reopened them in silence. Now the refusal names the
+# closure. Forging the record of what is owed, or of where somebody is held,
+# is refused by declaration — and each still derives from its real sources,
+# pinned throughout this file.
+:refuse reasoning /declared derived-only/
+entitled(Sokk, event { eats() }).
+
+:refuse reasoning /declared derived-only/
+owe(State, Provision, Sokk).
+
+:refuse reasoning /declared derived-only/
+building(HighSec, Ghost).
 
 # The complement half: closing a relation must not break its derivation, or the
 # guarantee is just a ban. Each of these still derives from its new asserted

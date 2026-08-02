@@ -97,6 +97,18 @@ derived_only("authority").
 derived_only("permits").
 derived_only("prisoner").
 derived_only("severe").
+# [v0.9 2026-08-02] Three more, closing by declaration what was closed by
+# omission. `entitled` and `owe` are the record of what is owed — the floor
+# itself — and neither name is admitted, so forging that record was already
+# refused, but by absence: one unrelated `admits` edit would have reopened
+# both in silence. `building` the same — every placement rule requires
+# `prisoner`, and an asserted placement was refused only for want of an
+# admits line. Verified before landing: the floor lines, the eight itemised
+# debts and all three placements still derive, and the whole suite stays
+# green against the declared copy.
+derived_only("entitled").
+derived_only("owe").
+derived_only("building").
 # [v0.5] severe was the tenth and last open gate, and it was open in exactly
 # the way the v0.3 three were: a conclusion about an offence, written by
 # whoever held the pen, wearing the shape of a reported fact. Before this,
