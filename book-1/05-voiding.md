@@ -1,8 +1,9 @@
 # Voiding
 
 To void someone's credibility is to say: this person's word no longer counts. What they
-earned is clawed back. What they might have signed, they cannot sign. It is the
-heaviest thing one person can do to another in this society short of imprisonment,
+earned is clawed back. What they might have signed, they will not sign again — and
+*again* is doing quiet work in that sentence, which the section on time collects. It is
+the heaviest thing one person can do to another in this society short of imprisonment,
 and unlike imprisonment it can be done without a court.
 
 So the question is what it takes. The answer is a list of conditions, and every one
@@ -74,8 +75,8 @@ without anyone having to notice the pattern — the rule catches the first one.
 ## Time has to be inserted by hand
 
 Vex was voided in an earlier period. Later, Vex and Wren both examined Tyr — both
-credentialed on paper, from different bodies as the rule requires, both recording the
-same finding, neither related to the other, neither having lied.
+credentialed on paper, from different bodies as the rule requires, each recording
+what they found, neither the other's parent, neither having lied.
 
 Tyr is fine. Vex's signature does not count, because Vex carries the mark of the
 earlier voiding forward, and that mark blocks the credential.
