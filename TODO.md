@@ -224,7 +224,11 @@ defects remain beyond the declared ones, which are the chapter's subject.
 
 ### Chapter 13
 
-No known defects. Read it against the constitution anyway.
+Pass complete 2026-08-02: whole-chapter read against the constitution — the duration
+ratification, the release sting and the buildings-read-by-nothing walk all verified
+against prior measurements — and the counted sites swept to their rule forms
+(ratchet 8 to 5). The title stays: it is the theorem's name, and the ratchet
+baseline holds it deliberately. No known defects remain.
 
 ### Chapter 14
 
