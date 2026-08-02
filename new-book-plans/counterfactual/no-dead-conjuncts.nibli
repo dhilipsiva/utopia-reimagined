@@ -56,10 +56,14 @@
 # `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
 # is not closing the conclusions, and Article 0 is what does the latter.
 #
-# TWENTY-FOUR, NOT TWENTY-THREE, AND THE GAP IS THE INTERESTING PART.
+# TWENTY-FIVE, NOT TWENTY-FOUR, AND THE GAP IS THE INTERESTING PART.
 # The spine's evidence figure counts predicates with no producing rule.
 # `person` has two producing rules AND thirty ground assertions, so it is
-# absent from that 23 and must appear here or the file will not load.
+# absent from that 24 and must appear here or the file will not load.
+# [v0.9 2026-08-02] `put` (punji: who put whom where) joined both lists
+# when the placement marker was repaired — the record can now hold a
+# report of the design's own act of placing somebody, which is the fact
+# the repaired marker checks against derived eligibility.
 # **"What counts as evidence" and "what may be written" are different
 # sets**, and `person` is the whole of the difference — which is exactly
 # what chapter 1 says when it puts personhood on its list.
@@ -69,8 +73,9 @@ admits("clear").      admits("cruel").      admits("deceive").
 admits("family").     admits("free").       admits("home").
 admits("injure").     admits("judge").      admits("mature").
 admits("parent").     admits("permanent").  admits("person").
-admits("public").     admits("rotten").     admits("show").
-admits("suggest").    admits("teaches").    admits("work").
+admits("public").     admits("put").        admits("rotten").
+admits("show").       admits("suggest").    admits("teaches").
+admits("work").
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -656,11 +661,27 @@ all $x: prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x).
 # [v0.2 NEW] severity routing is no longer domestic-only (closes E3).
 all $x: prisoner($x) & severe($x) & ~family($x) -> building(HighSec, $x).
 all $x: prisoner($x) & severe($x) -> dwell($x).
-# [v0.2 NEW] breach marker: an asserted home placement without derived
-# eligibility is a queryable violation, not a silent success. The v0.1
-# prose claim "domestic harm blocks the soft cage" is now enforced logic:
-#   ? err(?, Placement).
-all $x: home($x) & ~fit($x, Homestay) -> err($x, Placement).
+# [v0.9 2026-08-02 REPLACES  home & ~fit -> err] THE ALARM IS REPAIRED.
+# The v0.2 rule tested HAVING a home, not having been PUT at one, and
+# its lifetime record was three false positives, zero true: it fired on
+# Ruk and Lalo — both correctly at HighSec, flagged for the ordinary
+# condition of a severe offender with a house — and, once release
+# landed, on a freed man living in his own home. An alarm with that
+# record is worse than none. The repair is Article 0's own
+# evidence/conclusion split applied to placement: `put` (punji: who put
+# whom where — the report names its placer, the same discipline as an
+# examination naming its examiner) is the world's REPORT of a
+# placement, asserted and admitted, and the marker checks the report
+# against derived eligibility. No report, no alarm: the marker is
+# dormant until a placement fact arrives, then fires exactly on a
+# reported homestay placement that eligibility contradicts. It audits
+# the design's own act — the isolation marker's register, not the
+# delivery gap's. The converse wrong (put at a facility while eligible
+# for home confinement) is one rule of this same shape away; it is not
+# written today because nothing routes anyone INTO a facility against
+# eligibility, and the marker should be written beside whatever act
+# makes that possible.
+all $a: all $x: put($a, $x, Homestay) & ~fit($x, Homestay) -> err($x, Placement).
 # [v0.3 NEW] Isolation breach marker. The Article 1 `meets` line refuses
 # a rule that JAILS someone for having no company; this makes existing
 # isolation queryable, which is the other half. Reuses the err idiom so

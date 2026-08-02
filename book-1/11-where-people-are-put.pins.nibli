@@ -5,10 +5,11 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
-# The "alarm that does not work" section pins a DEFECT. err(_, Placement) fires
-# on Ruk and Lalo, both correctly placed, and on nobody misplaced. When the rule
-# is repaired to look at where someone was placed rather than whether they have a
-# home, err(Ruk) and err(Lalo) both flip FALSE and that section is rewritten.
+# [v0.9 2026-08-02] The "alarm that does not work" defect is REPAIRED and the
+# chapter's alarm section is rewritten against the repair. The marker now reads
+# a placement REPORT (put/3) against derived eligibility: no report, no alarm;
+# a reported homestay placement that eligibility contradicts, and it fires.
+# The closing probes exercise both halves on the same write.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -20,7 +21,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 43
+:expect-pins 45
 
 # Hano — meant it, and that alone is not enough. These two pins belong next to
 # each other: with no dimension recorded at all, severe(Hano) would be FALSE for
@@ -99,19 +100,21 @@
 ? building(HighSec, Don).
 # => TRUE
 
-# THE BROKEN ALARM. Both flagged; both correctly placed. Hano, correctly
-# home-confined, is not flagged — so the marker tracks "has a home and is not
-# homestay-eligible", which is the ordinary condition of a severe offender.
-:defect "keying err/2 on where somebody was PUT, not on having a home"
+# THE REPAIRED ALARM. The old rule keyed on HAVING a home and fired on Ruk and
+# Lalo — both correctly placed at HighSec, flagged for the ordinary condition
+# of a severe offender with a house — and on nobody misplaced. The repaired
+# marker reads a placement report, the shipped record holds none, and the
+# alarm is silent about everybody until the closing probes write one.
 ? err(Ruk, Placement).
-# => TRUE
-:defect "keying err/2 on where somebody was PUT, not on having a home"
+# => FALSE
 ? err(Lalo, Placement).
-# => TRUE
+# => FALSE
 ? err(Hano, Placement).
 # => FALSE
 
-# Nando has no home fact, so the marker cannot reach him either way
+# Nando still has no home fact — under the old marker that absence was what
+# kept him unreachable; under the repaired one it is simply a fact, and only
+# a report could put him in the alarm's sight.
 ? home(Nando).
 # => FALSE
 
@@ -170,4 +173,22 @@
 ? family(Nando).
 # => TRUE
 ? family(Opal).
+# => FALSE
+
+# ── THE ALARM, EXERCISED. MUST BE LAST: ground facts persist ─────────────────
+# One report against eligibility, one report with it — the same write, opposite
+# verdicts, so the ~fit conjunct is the whole of what decides. Ruk is severe
+# and ineligible; a homestay report on him is exactly the misplacement the
+# marker exists to catch. Hano is eligible and already home-confined; the same
+# report about him alarms nobody. Both negative-controlled against the
+# pre-repair constitution, where put is not admitted vocabulary and the first
+# line below aborts the run.
+put(State, Ruk, Homestay).
+
+? err(Ruk, Placement).
+# => TRUE
+
+put(State, Hano, Homestay).
+
+? err(Hano, Placement).
 # => FALSE

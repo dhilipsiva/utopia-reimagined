@@ -87,8 +87,12 @@
 # => TRUE
 ? fit(Ruk, Homestay).
 # => FALSE
+# [v0.9] The placement marker is repaired: it reads a placement REPORT
+# (put/3, on the evidence list) against derived eligibility, and the record
+# holds no reports — so it no longer fires on Ruk, whom it used to flag for
+# the ordinary condition of a severe offender with a house.
 ? err(Ruk, Placement).
-# => TRUE
+# => FALSE
 ? err(Hano, Placement).
 # => FALSE
 ? dwell(Ruk).
@@ -333,15 +337,15 @@ free(Hano).
 ? err(Hano, Isolation).
 # => FALSE
 
-# DEFECT PIN. The placement marker now fires on a released man, because `err/2`
-# keys on HAVING a home rather than on having been PUT at one, and release takes
-# `fit` away while `home(Hano).` stays asserted. This is the tracked err/2 bug
-# reaching a new victim; repairing that rule flips this pin FALSE — and the
-# directive below is what makes that flip read as a resolved defect (exit 3)
-# rather than a regression, the same reason string chapters 11 and 14 carry.
-:defect "keying err/2 on where somebody was PUT, not on having a home"
+# [v0.9] RESOLVED DEFECT, kept as the exhibit it was. The old marker fired on
+# a released man in his own house — release took `fit` away while `home(Hano).`
+# stayed asserted, and the rule keyed on having a home. The repaired marker
+# reads a placement report instead, the record holds none for Hano, and a free
+# man living at home no longer trips a confinement alarm. This pin held the
+# defect under :defect until the repair landed 2026-08-02; it now holds the
+# repair.
 ? err(Hano, Placement).
-# => TRUE
+# => FALSE
 
 
 # ── COMPLEMENT CONTROLS: the protected set is EXACTLY the floor ──────────────

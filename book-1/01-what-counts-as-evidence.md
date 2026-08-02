@@ -13,8 +13,8 @@ auditor documented what they found. Someone lied. Someone exposed something. A p
 has a home, or a family, or a parent, or has reached adulthood. An assembly proposed a
 change; the electorate approved it; the change touches a particular article; that
 article is protected. A body is a public institution. A seating body seated someone.
-Someone was cleared. Someone was recalled. Someone was voided in an earlier period.
-Someone's sentence is finished.
+Somebody put someone somewhere. Someone was cleared. Someone was recalled. Someone was
+voided in an earlier period. Someone's sentence is finished.
 
 That is it. That is everything the record can hold.
 

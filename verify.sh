@@ -118,8 +118,8 @@ out=$(python3 new-book-plans/5-spine-gen.py "$KB" "$SPINE" --check 2>&1) \
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and falsifies the nine prose places that name it.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
-[ "$n" = "23" ] && pass "evidence vocabulary is 23" \
-  || fail "evidence vocabulary is $n, not 23" "chapters 1, 3 and 5 describe the list; re-read them against it"
+[ "$n" = "24" ] && pass "evidence vocabulary is 24" \
+  || fail "evidence vocabulary is $n, not 24" "chapters 1, 3 and 5 describe the list; re-read them against it"
 
 # ── 3. no formalism leaks into Parts I-V ─────────────────────────────────────
 step "prose"
@@ -275,7 +275,7 @@ bad=$(arity2 'reward')
 # a sentence. It is a PATTERN guard on the zero-vocabulary route, not a proof: a
 # rule may still count by inventing a new name for a learning record (`studies`
 # is in the corpus, unused). That route is caught upstream instead — a new
-# evidence name moves the count off 23 and trips the check at the top of this
+# evidence name moves the count off 24 and trips the check at the top of this
 # file. Between them the two doors are covered; neither alone is.
 selfjoin() { awk -F'->' -v p="$1" '/^[^#]/ && /->/ { s=$1; n=gsub(p, "", s); if (n>=2) print NR": "$0 }' "$KB"; }
 ctl=$(selfjoin 'judge' | wc -l)

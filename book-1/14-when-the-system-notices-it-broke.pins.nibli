@@ -17,11 +17,11 @@
 # DEFECT PINS — a large share of this file encodes defects rather than guarantees
 # (do not restate that as a fraction; the last one written here was wrong), and the
 # repairs are tracked. `err(·, Isolation)` on the seven prisoners flips FALSE the
-# moment the isolation marker is repaired or any `meets` fact is ever recorded,
-# and `err(Ruk/Lalo, Placement)` flips FALSE when the placement marker is keyed
-# on where someone was PUT rather than on having a home. Either repair makes the
-# chapter's middle section wrong, which is the intended outcome — a flip here is
-# the fix arriving, not a regression.
+# moment the isolation marker is repaired or any `meets` fact is ever recorded.
+# The placement-marker defect RESOLVED 2026-08-02: err/2 is now keyed on a
+# placement report (put/3), the Ruk/Lalo pins hold the repair as plain FALSE,
+# and the chapter's middle section was rewritten against it — exactly the
+# outcome the old :defect markers here existed to announce.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -106,25 +106,30 @@
 ? meets(Bela).
 # => FALSE
 
-# the placement marker: right about nobody
-:defect "keying err/2 on where somebody was PUT, not on having a home"
+# [v0.9] the placement marker, repaired: it reads a placement report against
+# derived eligibility, and the record holds no reports — so it is silent about
+# Ruk and Lalo, whom the old rule flagged while they were correctly placed.
+# Dormant is not blind: chapter 11's closing probes show it firing on a
+# reported misplacement.
 ? err(Ruk, Placement).
-# => TRUE
+# => FALSE
 
-:defect "keying err/2 on where somebody was PUT, not on having a home"
 ? err(Lalo, Placement).
-# => TRUE
+# => FALSE
 
 ? err(Hano, Placement).
 # => FALSE
 
-# and Ruk is correctly placed, which is what makes the marker wrong
+# and Ruk is correctly placed — under the old marker that was what made the
+# alarm wrong; under the repaired one there is nothing to report
 ? building(HighSec, Ruk).
 # => TRUE
 
 # ── v0.8: the audit produces a duty (Article 8b) ─────────────────────────────
-# "Where the placement marker fires, the review body has a duty about that
-#  person. Where the isolation marker fires, the same."
+# Since the placement repair, these two derive through the ISOLATION marker
+# alone — the placement marker is silent about both. The duty survives its
+# discriminating signal going quiet, because the duty's other source fires on
+# every prisoner without exception.
 ? obliged(Review, Ruk).
 # => TRUE
 
