@@ -137,12 +137,10 @@ before writing and pinned after. No known defects remain.
 
 ### Chapter 2
 
-- **Chapter 2's "exactly two ways" is v0.7-stale.** `02:13` "There are exactly two
-  ways to acquire it" and `02:24` "That is the whole of it. No third route" — the
-  Convocation's seats confer authority on the same terms (`:664`), and its case is in
-  the shipped cast (Hex, Wren). The chapter's thesis is untouched — standing still
-  cannot be self-granted, every route still leaves a mark — but the enumeration is
-  wrong, and "the electorate seats you" no longer covers the seating class.
+Pass complete 2026-08-02: whole-chapter read, the two-routes staleness fixed as the
+two kinds of route with the convocation named and Wren pinned as the seat-only
+witness, the recalled-examiner sentence corrected to counts-for-nothing rather than
+cannot-write. No known defects remain.
 
 ### Chapter 3
 
