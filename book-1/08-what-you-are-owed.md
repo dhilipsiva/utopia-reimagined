@@ -1,6 +1,6 @@
 # What You Are Owed
 
-Eight things.
+What every person is owed fits in one breath.
 
 To be safe. To eat. To have somewhere to live. To be cared for when ill. To learn. To
 speak. To believe what you believe. To have the company of other people.
@@ -9,7 +9,7 @@ That is the floor. Not a target, not an aspiration, not a set of outcomes the so
 works toward — a statement of what is owed to every person, in full, with no
 qualifying condition of any kind. Nothing has to happen first. You do not have to
 work, or contribute, or belong, or register, or behave. The previous chapter showed
-that this is structural rather than promised: the eight cannot be made conditional
+that this is structural rather than promised: the floor cannot be made conditional
 without unmaking the machinery that makes anything conditional at all.
 
 Two of them deserve a word, because they are the ones a reader might not expect.
@@ -86,8 +86,8 @@ saying plainly that nobody is watching.
 
 ## Where the protection stops
 
-The last chapter established that no law can imprison you for lacking one of the
-eight. That protection is real and it is narrower than it sounds, in three specific
+The last chapter established that no law can imprison you for lacking anything on
+the floor. That protection is real and it is narrower than it sounds, in three specific
 ways, each of which was tested rather than assumed.
 
 **Your credibility is still reachable.** A rule that voids the credibility of anyone
@@ -119,7 +119,7 @@ person — not to members, not to contributors, not to residents, not to anyone 
 qualified for it. That is the whole of what is claimed, and it is a smaller claim than
 it sounds. It also does more than it looks like it does.
 
-**The obligation carries the same protection the eight rights carry.** No law can be
+**The obligation carries the same protection the floor itself carries.** No law can be
 written that puts a class of people outside the provision and then punishes them for
 being outside it. The manoeuvre that would otherwise be available — declare a group not
 owed, then treat not being owed as the offence — cannot be written, in the same way and
@@ -148,15 +148,17 @@ is owed food and has none* can be written. It is permitted, and what it produces
 mark — not a punishment, which is the only form the design allows, and the distinction
 turns out to be the whole of what protects you here. That rule is not written for food.
 
-For one of the eight it is written. Somebody confined with no company on record is
-marked, and the next chapter is largely about what that marker does and fails to do. The
-other seven have nothing. The difference between the one and the seven is not a judgement
-anybody recorded — it is what happens when a rule gets written carefully in one place and
-the general case is never revisited.
+For a single item on the floor it is written. Somebody confined with no company on
+record is marked, and a later chapter is largely about what that marker does and fails
+to do. The rest have nothing. The difference between the one and the rest is not a
+judgement anybody recorded — it is what happens when a rule gets written carefully in
+one place and the general case is never revisited.
 
 **Nothing compels the body.** The design states the debt and contains no machinery for
-collecting it. There is no consequence anywhere for the obligation going unmet, nothing
-that notices, nothing that follows. The bearer is named and then left alone — which
+collecting it. There is no consequence anywhere for the obligation going unmet — the
+marked absence above is noticed about the person, never collected from the bearer, and
+what follows from the mark lands on the body that audits, not the body that owes, and
+is read by nothing after that. The bearer is named and then left alone — which
 puts this beside the other places where this design establishes what is true and has
 almost nothing to say about what is then done about it.
 

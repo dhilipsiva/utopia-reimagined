@@ -17,7 +17,7 @@
 # "pins were added or lost" — as though somebody had edited this file. If you ever
 # see that, check the flag before you go looking for a missing pin.
 
-:expect-pins 34
+:expect-pins 48
 
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /owe/ {print}' new-book-plans/constitution.nibli)"
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
@@ -168,6 +168,56 @@ all $x: prisoner($x) -> believe($x).
 
 ? dwell(Bela).
 # => FALSE
+
+# ── OWED IN FULL, ENUMERATED, ONE PERSON ─────────────────────────────────────
+# "a statement of what is owed to every person, in full" and "the record names
+# each of the things owed ... and owes each of them to every person" — checked
+# in full on the chapter's own person, every item on both sides of the debt,
+# not sampled. An enumeration is the only shape under which "every one" is a
+# checked phrase rather than a summary, because the omitted item is exactly
+# where such claims fail — this file's own expresses pin was missing for as
+# long as the prose's false universal hid behind it.
+? entitled(Bela, event { secure() }).
+# => TRUE
+
+? entitled(Bela, event { dwell() }).
+# => TRUE
+
+? entitled(Bela, event { healthy() }).
+# => TRUE
+
+? entitled(Bela, event { learn() }).
+# => TRUE
+
+? entitled(Bela, event { expresses() }).
+# => TRUE
+
+? entitled(Bela, event { believe() }).
+# => TRUE
+
+? entitled(Bela, event { meets() }).
+# => TRUE
+
+? owe(State, Secure, Bela).
+# => TRUE
+
+? owe(State, Dwell, Bela).
+# => TRUE
+
+? owe(State, Healthy, Bela).
+# => TRUE
+
+? owe(State, Learn, Bela).
+# => TRUE
+
+? owe(State, Expresses, Bela).
+# => TRUE
+
+? owe(State, Believe, Bela).
+# => TRUE
+
+? owe(State, Meets, Bela).
+# => TRUE
 
 # "the body can be looked at"
 ? authority(State).
