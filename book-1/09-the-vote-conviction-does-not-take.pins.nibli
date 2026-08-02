@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 12
+:expect-pins 14
 
 # "Hano is in custody. Hano votes."
 ? prisoner(Hano).
@@ -49,3 +49,25 @@
 # this pin flips to a refusal and the closing sections must be rewritten.
 :accept-scoped
 all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).
+
+# ── "AND THEN NOTHING HAPPENS." MUST BE LAST, AND MUST BE UNSCOPED ───────────
+# The scoped accept above proves the clause LOADS and then puts the base back —
+# which is exactly why it cannot prove the chapter's corrected sentence. This
+# one leaves the clause RESIDENT, and the query underneath is the sentence:
+# with the standard disenfranchisement formula standing in force, the convicted
+# man still votes, because this record only ever adds and the rule that adults
+# vote is still there saying so.
+#
+# DO NOT EXPECT THE QUERY TO DEPEND ON THE ACCEPT. Measured both ways: drop the
+# accept and the verdict is identical, because the ballot was always the
+# franchise rule's doing. That identity IS the pinned claim — the clause is in
+# force and changes no answer — the same shape as the no-dead-conjuncts
+# fixture, where nothing moving is the result. What this block adds over the
+# scoped accept above is the word RESIDENT: the hostile clause is not merely
+# loadable, it is standing in the record while the answer stays. An accepted
+# rule stays in the KB, so nothing may be pinned after this block.
+:accept
+all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).
+
+? decide(Hano, Ballot).
+# => TRUE

@@ -312,9 +312,11 @@ done
 # Retract those and the queries below have nothing to stand on. Verified: the
 # conversion fails both files. Chapter 5 joined the list for its closing
 # exhibit — the void rule minus distinctness, whose flip of false(Solo) is the
-# premise of the query under it, chapter 14's shape exactly. Anything NOT on this list is a control, and a
+# premise of the query under it, chapter 14's shape exactly. Chapter 9 joined the
+# same way: its resident disenfranchisement clause is the premise of the ballot
+# query that shows the clause takes nothing. Anything NOT on this list is a control, and a
 # control that does not clean up is the bug this section exists to catch.
-unscoped_ok="01-what-counts-as-evidence 05-voiding 14-when-the-system-notices-it-broke"
+unscoped_ok="01-what-counts-as-evidence 05-voiding 09-the-vote-conviction-does-not-take 14-when-the-system-notices-it-broke"
 ctl=0; bad=""
 for f in new-book-plans/*.pins.nibli new-book-plans/counterfactual/*.pins.nibli book-1/*.pins.nibli; do
   grep -q '^:accept$' "$f" || continue
@@ -329,8 +331,8 @@ done
 # Without this, a change to the pin syntax makes the loop above match nothing and
 # report every file clean, which is the exact shape of green this repo keeps
 # getting fooled by.
-[ "$ctl" = "3" ] || fail "the control-scope guard is broken" \
-  "expected all three allowlisted files to carry a plain :accept; matched $ctl. Either the syntax moved or a premise site was converted."
+[ "$ctl" = "4" ] || fail "the control-scope guard is broken" \
+  "expected every allowlisted file to carry a plain :accept; matched $ctl of 4. Either the syntax moved or a premise site was converted."
 [ -z "$bad" ] && pass "every control is written :accept-scoped (the engine, not this check, puts the base back)" \
   || fail "a control leaves its statement in the KB — every pin below it runs against a widened base" \
           "$bad

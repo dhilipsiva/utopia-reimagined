@@ -153,28 +153,6 @@ counted claims stripped, the debt and second-door pins added. No known defects r
 
 ### Chapter 9
 
-- **Chapter 9 says the disenfranchisement clause "works". It takes nobody's ballot.**
-  `book-1/09-the-vote-conviction-does-not-take.md:73-75`: "Nothing refuses it. **It
-  works. Immediately, every convicted person in this society loses the ballot.**" The
-  accepted clause is strictly *more* restrictive than the Article 2 franchise rule at
-  `:456`, and derivation is monotone, so adding it subtracts nothing. Verified by
-  accepting the chapter's own clause verbatim: `all $x: person($x) & mature($x) &
-  ~prisoner($x) -> decide($x, Ballot).` → `? decide(Hano, Ballot). => TRUE` with
-  `? prisoner(Hano). => TRUE`. The chapter's real result — the clause *compiles*, where
-  a floor-shaped one is refused — survives untouched; the sentence claiming it takes
-  effect does not. `constitution.nibli:15` teaches exactly this: "A permissive rule left
-  in place keeps its exploit." The pin file cannot catch it because `:50-51` pins only
-  that the rule loads and never re-queries the ballot.
-  Rewrite `09:71-79`: the clause is writable, and it bites only if the existing
-  franchise rule is repealed alongside it — a two-line repeal, not one, which is a
-  marginally better result than the chapter claims and should be stated as such rather
-  than as a save. **The pin needs care now the accept is scoped.** Verified:
-  `:accept-scoped` retracts the clause before the next query runs, so a query placed
-  under it is about the base and not about the clause. Keep the scoped accept as the
-  loadability pin, then add a second, **unscoped** `:accept` of the same clause as the
-  file's last block with `? decide(Hano, Ballot). # => TRUE` beneath it — verified green
-  at 14 pins — and say in the comment why it must be unscoped and last.
-
 - **`mature/1` is a silent franchise gate, and chapter 9 says the ballot needs nobody's
   permission.** `mature` has no producing rule anywhere (asserted only at `:849-852`), is
   absent from `derived_only`, and is directly assertable — so a polity disenfranchises a

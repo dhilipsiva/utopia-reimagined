@@ -80,11 +80,14 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   ran against a widened base — and that produced a real vacuous green here: with the
   complement controls loaded, `? prisoner(Adam).` passed against a constitution with
   **Article 6's conviction rule deleted outright** (re-measured 2026-08-01; silent under
-  `:accept`, caught under `:accept-scoped`). **Write controls `:accept-scoped`.** The two
-  exceptions are allowlisted in `verify.sh` and must stay that way: chapter 1 accepts a
-  roster entry and then asks what that entry derived, chapter 14 accepts the duty-breach
-  rule and then asks what it marks. There the statement is a **premise the file goes on to
-  query**, not a control, and scoping it makes those queries fail — verified, both files.
+  `:accept`, caught under `:accept-scoped`). **Write controls `:accept-scoped`.** The
+  exceptions are allowlisted in `verify.sh` section 4d — do not re-derive the list here, it
+  has grown twice; the script is the list — and the test for joining it is always the same:
+  the accepted statement is a **premise the file goes on to query**, not a control. Chapter 1
+  accepts a roster entry and asks what it derived; chapter 14 accepts the duty-breach rule and
+  asks what it marks; chapter 5 accepts the void rule minus distinctness and asks what flips;
+  chapter 9 accepts the disenfranchisement clause and asks what it failed to take. Scoping any
+  of these makes its query meaningless — verified per file as each joined.
   The old workaround was "order the file so its controls come last", which is a rule
   nobody can see being broken; do not restore it, and do not delete the *history* those
   ordering comments recorded when deleting the *instruction*. **`derived_only` and
@@ -161,9 +164,9 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   signer — and cannot void alone, with the closing exhibit (the void rule minus distinctness,
   accepted; `false(Solo)` flips TRUE) proving distinctness was the only bar. That fixture is
   also the liveness proof for the `~($a = $b)` conjunct Article 4's header keeps *"for the day
-  one person holds both pens."* Chapter 5's pin file is the **third allowlisted unscoped-
-  `:accept` site** (`verify.sh` section 4d, control at exactly three) for that closing exhibit —
-  chapter 14's shape. The section headline reads: the rule does not count signatures, it counts
+  one person holds both pens."* Chapter 5's pin file joined `verify.sh` section 4d's
+  allowlist for that closing exhibit — chapter 14's shape (the section's positive control
+  counts the allowlisted files; it moves whenever the list does). The section headline reads: the rule does not count signatures, it counts
   signers.
 
 - **Care walks through two existing doors, and chapter 10 says so**, decided 2026-08-02,
