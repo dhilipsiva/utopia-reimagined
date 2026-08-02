@@ -93,13 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Plan the reach strategy.** `LICENSING.md` already records the
-  constraint and its consequence — exclusivity can never be sold, so serialization and open
-  circulation are the route by default rather than by choice, and the title is the only
-  integrity lever that survives, since no licence here grants trademark. What is not
-  decided is the plan: where the serialization runs, in what order, and what a launch looks
-  like when the text is free the day it appears. Nobody but the author can make that call.
-
 
 ---
 
@@ -1048,6 +1041,37 @@ No known defects. Read it against the constitution anyway.
 
 ---
 
+## Reach — ruled 2026-08-02; the gate is the chapter pass
+
+Serialize in spine order as whole-chapter passes complete, from a dedicated domain, with
+the assembled book — opening note, Part V, method part — as the capstone release rather
+than the first contact. Building in public performs the thesis: the repo history is the
+proof of the method, serialization recruits the red-team the method part admits it lacks,
+and defect pins turn known flaws into declared features. **A chapter serializes only when
+its whole-chapter pass is complete** — today only chapter 7 qualifies — so reach is
+sequenced behind Phase 3's discipline by construction.
+
+- **The site.** A dedicated domain — registering it is the author's own task — plain,
+  built from the Markdown that already exists; chapters in spine order; the repo and the
+  one-command suite run linked from the front page. Platforms syndicate *from* it: CC-BY
+  means they will copy regardless, so the canonical home must name itself.
+- **The launch essay.** A standalone distillation for someone who will never read the
+  book, carrying the thesis and the honest second half in miniature. *The Furnished
+  Prison* is the standing headline candidate. First-person territory: the voice protocol
+  applies — the author drafts, sessions edit mechanics only.
+- **The method paper.** JURIX/ICAIL/formal-methods-for-law genre: the derivation gate,
+  the pin suite, the counterfactual classes, the defect markers — the methodology made
+  citable. Coordinate with the method part rather than duplicating it; the paper cites
+  the book, the book does not depend on the paper.
+- **Run-it-yourself as a launch claim.** The suite promoted to a first-class launch
+  artifact — clone, one command, the pins pass — stated where a stranger lands. Nothing
+  new to build: `verify.sh` and its `--only` mode already are the artifact.
+- **Print-on-demand.** A priced, well-made physical edition of a free text. Quality is
+  the lever and revenue a side effect: the typography is canonical because it is first
+  and good, never because it is exclusive.
+
+---
+
 ## Data — "latest data, by script" is a build system nobody has written yet
 
     exactly why it must not be used.
@@ -1409,6 +1433,7 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
   and is wasted sitting in git. It is the sentence that closes chapter 13's delivery-gap
   passage (`13-the-one-thing-taken.md`) — *"A society whose only working provision runs
   through its prisons has not built a floor; it has built a prison that happens to be
-  furnished."* Candidate for a Part title, the back cover, or a launch-essay headline,
-  none of which are decided yet. The title work is done; this is the one asset from it
+  furnished."* Primary candidate since the reach ruling
+  (2026-08-02): the launch-essay headline; the Part-title and back-cover uses stay
+  listed behind it. The title work is done; this is the one asset from it
   that outlived the decision.
