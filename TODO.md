@@ -108,22 +108,6 @@ lands, so it is not re-proposed. This section emptied once — every earlier dec
 ruled — and was deleted with its last bullet; it returns because the prefix's promise
 ("collected in phase 2 rather than scattered") has to point somewhere.
 
-- **[AUTHOR-GATED] The work door has no maturity guard — decide what happens to a
-  child's work.** Found while ruling the care question, verified 2026-08-02:
-  `work(Cira, Chores).` mints `reward(Cira)` with `mature(Cira)` FALSE — the design's own
-  child, whose not-mature status anchored the refusal to mint for students. So the design
-  refuses to recognise a child for being taught and recognises her for chores the moment
-  anyone records them. Be precise about the verb before ruling: recognition is unspendable
-  and unrankable, so this is *acknowledgment of a child's work*, not wages — "paying a
-  child" is the wrong frame, which is why this was not fixed by reflex in the care pass.
-  Three dispositions: a maturity guard on the work door (a body conjunct, and it would be
-  the first door with an age test — chapter 10 currently says the doors ask what was done,
-  never who did it); disclose the asymmetry in chapter 10's pass; or defend it as-is,
-  acknowledgment being precisely what a child's work deserves. Whatever is ruled, check the
-  teaching door in the same breath — a child who *teaches* also mints today
-  (`teaches` has no maturity conjunct either), and the two doors should not end up ruling
-  differently by accident.
-
 ---
 
 ## Phase 3 — Chapter passes, chapter 1 through 14, in order.
@@ -224,6 +208,9 @@ counted claims stripped, the debt and second-door pins added. No known defects r
   below.
 
 ### Chapter 10
+  Sharpened by the child-work ruling (2026-08-02): the recognition doors were measured and
+  deliberately carry no `mature` test, so the ballot is now the one place the entry gates —
+  whatever this bullet decides about `mature`, it decides for the franchise alone.
 
 - **Chapter 10: the third door is not gated on voiding, and the chapter says it is.**
   `book-1/10-contribution.md:50-68` claims "All three doors close for the same reason:
