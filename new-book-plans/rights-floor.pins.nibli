@@ -12,7 +12,7 @@
 #
 # Every verdict below was produced by the engine, never by hand.
 
-:expect-pins 91
+:expect-pins 94
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -162,6 +162,22 @@ prisoner(Zed).
 # nobody writes severity down is argued rather than executed.
 :refuse reasoning /declared derived-only/
 severe(Ghost).
+
+# [v0.9] The last three closures, unpinned until now — and they are the heads of
+# Articles 7, 3 and 9: the shield, the mint, and the enactment gate. Article 0's
+# own named failure mode is a derived_only line moved below the facts it guards,
+# which "is inert and looks identical"; without these pins that failure takes
+# three of the ten gates with it in silence. An asserted shield is an
+# unjailable name, an asserted reward is minted esteem, an asserted enactment
+# is a law nobody passed.
+:refuse reasoning /declared derived-only/
+defend(Ghost).
+
+:refuse reasoning /declared derived-only/
+reward(Ghost).
+
+:refuse reasoning /declared derived-only/
+become(Amend_Sneak, Law).
 
 # The complement half: closing a relation must not break its derivation, or the
 # guarantee is just a ban. Each of these still derives from its new asserted
