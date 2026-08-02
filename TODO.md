@@ -164,22 +164,9 @@ counted claims stripped, the debt and second-door pins added. No known defects r
 
 ### Chapter 9
 
-- **`mature/1` is a silent franchise gate, and chapter 9 says the ballot needs nobody's
-  permission.** `mature` has no producing rule anywhere (asserted only at `:849-852`), is
-  absent from `derived_only`, and is directly assertable — so a polity disenfranchises a
-  demographic by **declining to write adulthood into their records**, passing no rule at all
-  and tripping no marker. The constitution's own comment at `:846-848` concedes the second
-  half ("no rule anywhere reads ~mature") while presenting it as a reassurance. Verified:
-  `? mature(Cira). => FALSE` and `? decide(Cira, Ballot). => FALSE`; asserting
-  `person(Zed). mature(Zed).` gives `? decide(Zed, Ballot). => TRUE`, while `person(Yun).`
-  alone gives `? decide(Yun, Ballot). => FALSE` — two writes buy a ballot, one write short
-  and there is neither a ballot nor an `err`. So `09:50-53` — "the ballot follows,
-  automatically, with nobody's permission required and nothing to apply for" — is true of
-  the rule and false of its input; and the Cira passage at `09:43-53` rests on reading Cira
-  as a child when the record cannot distinguish a child from an adult nobody wrote down.
-  Qualify `09:50-53`: the ballot needs no permission *once the record says you are an
-  adult*, and that is an asserted fact like any other. Add `mature` to the trust-base list
-  below.
+Pass complete 2026-08-02: whole-chapter read, the automatic-ballot claim qualified to
+its input, the never-written category named with the teacher exhibit pinned, the
+counted sites swept. No known defects remain.
 
 ### Chapter 10
   Sharpened by the child-work ruling (2026-08-02): the recognition doors were measured and
@@ -412,7 +399,10 @@ No known defects. Read it against the constitution anyway.
   twenty-four names are `admits`-ed, and anything else is refused as "not admitted
   vocabulary". The vocabulary class is therefore **closed** — that bullet is gone. What
   is left is what those two cannot reach.
-  *Assertion*, and the enumeration is **generated, never hand-kept** —
+  *Assertion* — where the named levers now include the franchise gate: `mature` is
+  asserted, undefined, produced by no rule, and one write of it grants a ballot
+  (chapter 9's pass pinned the pair, 2026-08-02) — and the enumeration is **generated,
+  never hand-kept** —
   `grep -o 'admits("[a-z_]*")' new-book-plans/constitution.nibli` is the list; the
   hand-list this bullet used to carry had four errors, including `severe`, which Article
   0 closed in v0.5. Every headline attack is alive under an admitted name, all
