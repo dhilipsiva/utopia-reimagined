@@ -154,7 +154,7 @@ fi
 COUNTED='\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|hundred)([- ][a-z]+)?\b|\beight\b|\bexactly one\b|\bone thing\b|\bsingle deprivation\b'
 # Rhetorical durations are not claims about this design; they never go stale.
 COUNTED_OK='(thirty|forty|fifty|hundred) (year|second|minute|mile)'
-BASELINE=17
+BASELINE=16
 n=$(grep -rniE "$COUNTED" book-1/*.md | grep -viE "$COUNTED_OK" | wc -l)
 if [ "$n" -gt "$BASELINE" ]; then
   fail "counted claims in the prose rose to $n (baseline $BASELINE)" \

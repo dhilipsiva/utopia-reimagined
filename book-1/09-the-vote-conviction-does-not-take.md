@@ -63,20 +63,29 @@ Now the honest half, and it is the reason this chapter cannot end where the last
 section did.
 
 The floor is protected in a way that is close to absolute. As Chapter 7 showed, a rule
-punishing someone for lacking one of the eight things cannot be written — the society
-refuses it outright.
+punishing someone for lacking a floor right cannot be written — the society refuses it
+outright.
 
 **The vote does not have that protection.**
 
 Write a rule saying that adults who are not prisoners may vote — the standard
 formulation of felon disenfranchisement, in almost exactly the words most legal
-systems use — and it is accepted without complaint. Nothing refuses it. It works.
-Immediately, every convicted person in this society loses the ballot, and nothing
-anywhere objects.
+systems use — and the record takes it in without complaint. Nothing refuses it.
 
-So Hano votes because of an absence. Nobody wrote the clause that would stop him. That
-is a different and much thinner thing than the floor's guarantee, which holds because
-the clause *cannot* be written.
+And then nothing happens. It takes nobody's ballot. This record only ever adds, so a
+narrower permission written beside a wider one changes no answer at all: Hano still
+votes, with the disenfranchisement clause standing in force on the same page, because
+the rule that adults vote is still there saying so. In most legal systems, enacting
+the narrow formula *is* the act of repeal — the new clause replaces the old rule. Here
+those are two separate acts. The clause that would take the ballot bites only if the
+rule that grants it is taken out alongside, and taking a rule out is a different
+machinery altogether — the one the chapter on changing the rules is about.
+
+So the vote's protection is real and it is thin in a specific way. The floor is
+guarded by refusal: the hostile rule cannot enter at all. The vote is guarded by the
+record's inability to subtract: the hostile rule enters, and sits there, and does
+nothing — for exactly as long as the older, wider rule survives beside it. Nobody has
+to refuse the attack; they have to decline the repeal.
 
 The reason the protection does not extend is worth understanding, because it explains
 what the firewall actually does. The floor's protection catches rules of one shape:
@@ -87,7 +96,8 @@ the machinery that makes the first impossible does not see the second at all.
 That asymmetry is not a flaw in the reasoning. It is a fact about what this kind of
 protection can do, and it means the strength of any given guarantee in this book
 depends on which direction the attack comes from. The floor is armoured against being
-made conditional. The vote is not armoured at all; it is merely, at present, intact.
+made conditional. The vote has a humbler armour — additions cannot reach it — and a
+single unguarded flank: the repeal of its own rule.
 
 ## And the same silence as before
 
