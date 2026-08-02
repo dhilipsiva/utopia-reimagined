@@ -789,21 +789,12 @@ section carried is now this line.
 ## Legacy harvest — before `book.md` and `manifesto.md` are deleted
 
 
-- **Settle the Bharati attribution, then decide whether book-1 opens with an epigraph.**
-  The full poem with Tamil original and translations lives in `book.md`'s closing appendix,
-  attributed there to *Yoga Siddhi* ("Varam Kettal"), stanzas 4–5, and sourced to Project
-  Madurai (`book.md:2838`, `book.md:2967`). **The mapping is already recorded, and it is
-  recorded wrong.** `new-book-plans/1.md:12` carries the manifesto's sixteen-chapter mapping
-  onto the sixteen lines — eight of lament and eight of petition, which is why Part 1 is
-  diagnosis and Part 2 is demand — and that file is planning material rather than one of
-  the two going, so the craft is not at risk. What is at risk is the name: `1.md` attributes
-  the frame to *நின்னைச் சரணடைந்தேன்*, a string that appears nowhere in any artifact except
-  that one sentence, while the manifesto's own Part 2 Ch 1 epigraph is நின்னைச்
-  **சிலவரங்கள் கேட்பேன்** (`manifesto.md:202`), which `1.md` appears to have garbled into a
-  title. Confirming the correct name against a Tamil-literature source is plain research and
-  unblocked, and fixing `1.md:12` is the deliverable. **[AUTHOR-GATED]** is the second half:
-  whether book-1 opens with an epigraph at all — at most **one**, original, plain
-  translation, one sentence on who Bharati was, never as structure.
+- **Decide whether book-1 opens with an epigraph. [AUTHOR-GATED]** At most **one**,
+  original, plain translation, one sentence on who Bharati was, never as structure. The
+  attribution half of this bullet landed 2026-08-02: the poem is *Yoga Siddhi* (யோக சித்தி),
+  the வரம் கேட்டல் stanzas, confirmed against Tamil-literature sources and consistent with
+  `book.md`'s own appendix (`book.md:2838`, `book.md:2967`); `1.md:12`'s garbled
+  *நின்னைச் சரணடைந்தேன்* title is corrected.
 - **Harvest the References & Data Sources section — the single most valuable thing in the
   legacy books.** `book.md` closes with **55 sourced entries**, grouped by chapter, each with
   a primary source and URL, built by a 30-claim fact-check against primary sources. That is
