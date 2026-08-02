@@ -464,11 +464,7 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   entitlement. Keep it visible in the prose either way; it is the single most
   credibility-buying admission the book has.
 
-- **Document Article 7's stratification landmine — the note is missing and the recorded
-  mechanism has changed.** Article 7 (`:629-662`) carries no stratification note. Adding
-  `person($w)` to the shield rule at `:641` is the most natural tightening anyone would
-  reach for, and it cannot be made either way. Re-verified 2026-08-01:
-  - **Edited in place**: the rule is dropped and nothing replaces it. `nibli-pin`
+- **Edited in place**: the rule is dropped and nothing replaces it. `nibli-pin`
     returns `HARNESS ERROR (exit 2) — pins not trustworthy`, so every chapter suite
     touching `defend` or `prisoner` stops meaning anything until it is reverted.
   - **Added alongside the original**: also a harness error now, naming the tightened
