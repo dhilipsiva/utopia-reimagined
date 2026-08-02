@@ -7,7 +7,7 @@
 #
 # One entry per load-bearing sentence. Private to the author.
 
-:expect-pins 20
+:expect-pins 22
 
 # "The court has standing... They have it by being what they are."
 ? public(Court).
@@ -16,11 +16,22 @@
 ? authority(Court).
 # => TRUE
 
-# "The second is that the electorate seats you."
+# "The second is to be seated. The electorate seats people..."
 ? choose(Electorate, Boss).
 # => TRUE
 
 ? authority(Boss).
+# => TRUE
+
+# "...and so does the convocation — and a seat from either carries standing on
+# the same terms." Wren holds only a convocation seat — no office, no
+# electorate entry — and is answerable the same way. Chapter 1 pins Hex on the
+# same rule; two witnesses in two files, because the sentence this replaced
+# denied the route existed in both chapters.
+? choose(Convocation, Wren).
+# => TRUE
+
+? authority(Wren).
 # => TRUE
 
 # "no route that runs through your own hands" — standing cannot be self-conferred

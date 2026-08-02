@@ -10,7 +10,7 @@ mistaken for each other, and this chapter is largely about what happens when the
 apart. Someone can hold standing and be able to do nothing whatever; someone can examine
 you and record what they find while holding no standing at all.
 
-There are exactly two ways to acquire it.
+The routes into it are of two kinds.
 
 The first is to be a public institution. The court has standing. The review body has
 standing. The appeals body has standing. They have it by being what they are, and
@@ -18,11 +18,12 @@ nothing else in the design confers it on them; there is no ceremony, no appointm
 no moment at which they were granted it. They are public bodies, and public bodies
 have standing.
 
-The second is that the electorate seats you. Someone was chosen, and from that moment
-they have standing too.
+The second is to be seated. The electorate seats people, and so does the
+convocation — a second seating body the next chapter introduces properly — and a seat
+from either carries standing on the same terms. Someone was chosen, and from that
+moment they have standing too.
 
-That is the whole of it. No third route, and in particular no route that runs through
-your own hands. A person under investigation cannot acquire standing in the course of
+That is the whole of it, and no route runs through your own hands. A person under investigation cannot acquire standing in the course of
 defending themselves. Someone with a great deal of power and no standing cannot write
 themselves into the category. It is not that doing so is forbidden and punished; it
 is that the sentence cannot be written. Standing is a conclusion, and like every
@@ -59,9 +60,9 @@ this, did something the design permits: Rebel exposed Boss.
 
 Then the electorate recalled Boss.
 
-Ask what Boss has now. Not the power: Boss holds no credential, cannot examine
-anyone, cannot document findings that count, cannot participate in taking anything
-from anyone. The recall worked. Every operational capacity Boss had is gone.
+Ask what Boss has now. Not the power: Boss holds no credential, and nothing Boss
+examines or documents can count toward voiding anyone or earn Boss anything. The
+recall worked. Every operational capacity Boss had is gone.
 
 But Boss still has standing. Permanently. And that is what saves Rebel.
 
