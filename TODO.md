@@ -639,17 +639,19 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   who has never heard of a ration card. Unblocked by drafting Part V; that is the only place
   the India evidence lands.
 
-- **Expand Parts I–IV toward ~38,000 words.** DECIDED 2026-07-29; the invariant and the
-  budget are in `CLAUDE.md`. **Re-measure with `wc -w book-1/*.md` before planning against
-  any figure here** — the tree measured 22,412 on 2026-08-01, every previously written
-  figure has been stale when checked, and `CLAUDE.md`'s own refresh was 627 words behind
-  the tree on the day it was dated. This is the largest single item in the tracker —
-  roughly +15,600 words, mean chapter ~1,600 → ~2,700 — and it is one bullet only because
-  the work is one decision; it becomes fourteen commits. **Know what it is not:** the
-  invariant does not force it. Break-even is derived > 17,800 and Parts I–IV already clear
-  it, so majority-derived holds today with no expansion at all. The 38,000 is an editorial
-  choice about the book's size, and it means Part V's 12,000 must be justified by content
-  rather than by ratio.
+- **Expand Parts I–IV toward ~38,000 words — first wave DONE 2026-08-02, stopped where
+  the material stopped.** Ten chapters expanded in one day (72dbb06, fa588e1, 0cfda85,
+  2bcad71, 8c38053, d00b418, aa74a90, eddc2c0, 495c62e and the ch11/ch14 repair
+  rewrites), every passage from verified-but-untold material: pin-suite exhibits, v0.9
+  rulings, fixture measurements. The tree measured 25,027 before the wave and **28,585
+  after** (re-run `wc -w book-1/[0-9]*.md` before trusting this). The wave stopped
+  deliberately: chapters 1, 4, 11, 13, 14 hold no verified-untold material worth prose
+  today, and padding toward the target would break the expansion's own rule. **The
+  remaining ~9,400 words toward 38,000 are not writable from the current constitution**
+  — they arrive with new derived material (open constitution decisions landing, the
+  delivery route, future rulings) or with the author choosing a smaller book. Break-even
+  (derived > 17,800) is cleared either way; Part V's 12,000 must still be justified by
+  content, not ratio.
 
 - **Remaining licence files, correctly deferred**: `LICENSE-MIT` + `LICENSE-APACHE` with
   SPDX headers when the harness and fetchers are written; `LICENSE-CC0` when a registry
