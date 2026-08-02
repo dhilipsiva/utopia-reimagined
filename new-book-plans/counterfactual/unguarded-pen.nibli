@@ -596,6 +596,31 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 # owed is undisturbed; the only thing that ever arrived, stops. Do not repair
 # this by exempting released people — the asymmetry IS the delivery gap, and
 # hiding it here would make the book's most credibility-buying admission smaller.
+#
+# [v0.9 2026-08-02 RULED] POLARITY IS FAIL-CLOSED toward the standing
+# conviction, deliberately — the asymmetry with Article 7's fail-open
+# shield is DEFENDED, not repaired. The two absences differ in kind.
+# The shield's absent finding is an ACCUSATION not yet adjudicated:
+# ~deceive holds until Review speaks, because a person is not treated
+# as a liar on nobody's finding. Relief's absent finding is a REMEDY
+# not yet performed: permits(Appeals, ·) derives only from a clearing
+# entry standing beside the appeals body's own recorded judgment, and
+# a remedy present by default is not a remedy — read ~permits as
+# fail-open and no conviction ever derives, since relief-not-yet-ruled
+# would protect everyone, forever, and whoever declines to adjudicate
+# holds a veto over every conviction. Both defaults give the benefit
+# of absence to what the guarded machinery already concluded, against
+# the same enemy: the captured or idle adjudicator. The cost is stated
+# rather than hidden — a person whose relief nobody adjudicates stays
+# held, and a withheld or deleted clear/judge(Appeals) pair keeps a
+# person imprisoned; that lever is the deletion class of the residual
+# trust base, disclosed at file level. The alternatives were refused
+# AS COMPOSED: review-standing derived from prisoner and read under
+# negation here is the measured stratifier cycle (the same landmine
+# as Article 7's), and an affirmative exhaustion fact is a new
+# admitted name in the finding-with-no-finder class whose WITHHELD
+# entry would block every conviction — one word upstream of liberty,
+# pointed the other way.
 all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).
 # [v0.5 REPLACES  the asserted facts severe(Lalo). severe(Ruk).]
 # SEVERITY IS NOW DERIVED. Three dimensions of an offence, and an offence is
@@ -630,8 +655,11 @@ all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender)
 # records: absence of `attack` is not a finding that the offence was
 # unintentional, it is the absence of a finding, and severity does not derive
 # from it. That is Article 7's polarity, not `~permits(Appeals, ·)`'s. The
-# unexplained contradiction between those two defaults is older than this
-# revision and is still unresolved.
+# disagreement between those two defaults was unexplained for most of this
+# file's life; it was ruled 2026-08-02 — resolved as a defended asymmetry,
+# not a contradiction. The defense is the note at this article's head: an
+# unadjudicated accusation and an unperformed remedy are different absences,
+# and each default protects against the same idle or captured adjudicator.
 #
 # SEVERITY COLLAPSES TO THE PERSON, and this is a real edge. `severe($x)` is
 # one-place, so an offender cruel to one of two victims is severe outright,

@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 20
+:expect-pins 23
 
 # "The electorate seated you. You have not been recalled. And you were not
 #  voided in an earlier period." — all three holding gives the pen.
@@ -97,3 +97,26 @@ clear(Adam).
 
 ? travel(Adam).
 # => FALSE
+
+# ── THE BARE JUDGMENT DERIVES NOTHING EITHER — the other half, ruled 2026-08-02.
+# The chapter's new default paragraph stands on this pair: an appeals
+# examination that cleared nobody leaves the conviction exactly where it stood.
+# Relief takes both entries; either alone is an absence, and the absence
+# convicts — fail-closed, defended at Article 6's head. Voss is fresh (Adam's
+# persisting clear-flag above must not meet a judgment fact, or the two halves
+# would combine and free him). Self-controlling against Nia's block above:
+# both entries together lift a conviction, either alone lifts nothing.
+person(Voss).
+injure(Voss, Ivo).
+judge(Court, Voss).
+
+? prisoner(Voss).
+# => TRUE
+
+judge(Appeals, Voss).
+
+? permits(Appeals, Voss).
+# => FALSE
+
+? prisoner(Voss).
+# => TRUE

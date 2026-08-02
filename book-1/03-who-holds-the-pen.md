@@ -168,6 +168,23 @@ derives only when the clearing entry stands beside an examination the appeals bo
 performed and recorded. The entry that says you are in the clear still names nobody.
 The judgment it must accompany names the body that made it.
 
+And something about this door has to be said in the open, because the chapter on the
+shield will say the opposite about its own. What happens while nothing has been
+decided — a case the appeals body has examined and not cleared, or never examined at
+all? The conviction stands. The doors of this design run opposite defaults on an
+absent finding, and that is a choice, not an oversight. The shield holds until
+somebody finds deceit, because the absent finding there is an accusation, and nobody
+here is treated as a liar on no one's finding. Relief is not an accusation. It is a
+remedy — something a body does — and a remedy that arrived by default, granted
+wherever nobody had yet said otherwise, would not be a remedy at all. It would be the
+record convicting nobody, ever, on the authority of whoever declines to write. The
+cost runs the other way and it is real: a person whose case nobody takes up stays
+held, for exactly as long as nobody takes it up. The shield chapter prices the mirror
+of that cost — a guilty man free while an exposure waits for review — and calls its
+window deliberate. This is the other pan of the same scale, and it is weighed the
+same way: the benefit of an absence goes to what the machinery has already concluded,
+never to what somebody might yet do.
+
 Both credentials are conclusions. Neither can be written directly. The society has one
 instrument for taking things away and one for giving them back, and neither can be
 reached by writing it down.
