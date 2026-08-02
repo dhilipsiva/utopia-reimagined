@@ -136,23 +136,25 @@ Two gaps, both disclosed. The second is the worse of them, and the reason is wor
 having in advance: the first has to be arranged, and the second only has to be
 forgotten.
 
-**Only parents are excluded.** The independence condition names one relationship: you
-may not judge your child, and your child may not judge you. Spouses may co-sign.
-Siblings may co-sign. Two people who have been close friends for thirty years, or who
-share a household, or who owe each other a great deal, may co-sign — and every one of
-those pairs satisfies "two independent auditors" as far as the design is concerned.
+**The intimate pair, named at last — and only as far as the words reach.** The
+independence condition used to name one relationship: you may not judge your child,
+and your child may not judge you. Spouses could co-sign. Siblings could co-sign. That
+stood for most of this design's life, disclosed as a choice — every word added to the
+record is a new place for a conclusion to hide, and nobody had judged the pairing
+worth the widening. It has now been judged worth it. The record gained the words —
+that two people are married, that two people are siblings — and the independence
+check reads both, in each direction. Neither word appears anywhere in the shipped
+record yet; the guards stand armed for the day somebody writes the fact they watch
+for, which is how this design keeps its guards.
 
-The requirement for two was supposed to make corruption a conspiracy problem. A
-conspiracy of two people who are already intimate is not much of a conspiracy. It is a
-real gap, it is known, and it is unaddressed.
-
-What it is not is beyond fixing, and this chapter should not dress it up as though it
-were. The repair is to name the other relationships the way parenthood is already
-named. The words for them exist and could be written down tomorrow. What has held it
-back is not the impossibility of saying that two people are married; it is that every
-word added to the record is a new place for a conclusion to hide, which is the argument
-chapter 1 makes at length, and nobody has yet judged this pairing worth the widening.
-That is a choice, and it belongs here as a choice rather than as a limitation.
+What the widening does not close deserves the same care the old gap was given. Two
+people who have been close friends for thirty years, or who share a household, or who
+owe each other a great deal, still co-sign — and every such pair still satisfies "two
+independent auditors" as far as the design is concerned. Closeness the record has no
+words for is closeness the check cannot see. The conspiracy problem the requirement
+for two was meant to create is real only as far as the vocabulary reaches, and the
+vocabulary now reaches exactly as far as marriage and siblinghood. That is further
+than it reached, and it is not far.
 
 **And the sequence discipline is not enforceable from inside.** The mark carried
 forward works, and it works only if someone actually carries it. If the record of who

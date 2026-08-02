@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 34
+:expect-pins 36
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -214,6 +214,37 @@ rotten(Lupo).
 
 ? permits(Review, Lupo).
 # => FALSE
+
+# ── [v0.9 2026-08-02] THE INTIMATE PAIR, NAMED AT LAST ───────────────────────
+# The kinship ruling: married and sibling joined the independence check beside
+# ~parent. Mara and Maro — seated by different bodies, married to each other,
+# every act the void rule asks performed on Targ2 — and the void does not
+# derive: the marriage is the only failing conjunct. Una and Uno are the
+# control: same seats, same acts, no recorded closeness, and Targ3 is voided.
+# The guard is dead in the shipped cast (no marriage or siblinghood is
+# recorded) and this pair is its liveness proof. The negative control is
+# Article 0a itself: against the pre-ruling constitution the married fact
+# aborts the run as unadmitted vocabulary.
+choose(Electorate, Mara).
+choose(Convocation, Maro).
+married(Mara, Maro).
+judge(Mara, Targ2).
+capture(Mara, Targ2).
+judge(Maro, Targ2).
+capture(Maro, Targ2).
+
+? false(Targ2).
+# => FALSE
+
+choose(Electorate, Una).
+choose(Convocation, Uno).
+judge(Una, Targ3).
+capture(Una, Targ3).
+judge(Uno, Targ3).
+capture(Uno, Targ3).
+
+? false(Targ3).
+# => TRUE
 
 # ── THE EXHIBIT: distinctness was the only bar. MUST BE LAST ─────────────────
 # An accepted rule loads into the KB and stays, so nothing may be pinned after

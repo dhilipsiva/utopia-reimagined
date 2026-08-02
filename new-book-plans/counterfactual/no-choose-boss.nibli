@@ -56,10 +56,13 @@
 # `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
 # is not closing the conclusions, and Article 0 is what does the latter.
 #
-# TWENTY-FIVE, NOT TWENTY-FOUR, AND THE GAP IS THE INTERESTING PART.
+# TWENTY-SEVEN, NOT TWENTY-SIX, AND THE GAP IS THE INTERESTING PART.
 # The spine's evidence figure counts predicates with no producing rule.
 # `person` has two producing rules AND thirty ground assertions, so it is
-# absent from that 24 and must appear here or the file will not load.
+# absent from that 26 and must appear here or the file will not load.
+# [v0.9 2026-08-02] `married` (speni) and `sibling` (tunba) joined both
+# lists with the kinship ruling — guards on the multi-sig's independence
+# check, dead until a marriage or siblinghood is recorded.
 # [v0.9 2026-08-02] `put` (punji: who put whom where) joined both lists
 # when the placement marker was repaired — the record can now hold a
 # report of the design's own act of placing somebody, which is the fact
@@ -71,11 +74,11 @@ admits("adjust").     admits("approves").   admits("attack").
 admits("broken").     admits("capture").    admits("choose").
 admits("clear").      admits("cruel").      admits("deceive").
 admits("family").     admits("free").       admits("home").
-admits("injure").     admits("judge").      admits("mature").
-admits("parent").     admits("permanent").  admits("person").
-admits("public").     admits("put").        admits("rotten").
-admits("show").       admits("suggest").    admits("teaches").
-admits("work").
+admits("injure").     admits("judge").      admits("married").
+admits("mature").     admits("parent").     admits("permanent").
+admits("person").     admits("public").     admits("put").
+admits("rotten").     admits("show").       admits("sibling").
+admits("suggest").    admits("teaches").    admits("work").
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -533,7 +536,7 @@ all $contributor: all $task: work($contributor, $task) & ~false($contributor) ->
 # ~($a = $b) is kept even though the bodies now differ. Nothing stops one
 # person holding both pens, and if that ever becomes possible this conjunct is
 # the only thing between it and self-cosigning.
-all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited).
+all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited).
 all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 # [v0.9 2026-08-02] ~false($auditor) added: the THIRD DOOR closes on voiding.
 # Chapter 10 said all three recognition doors shut for a voided person; the
@@ -569,9 +572,18 @@ all $auditor: all $audited: deceive($auditor, $audited) & judge(Review, $auditor
 
 # ─── Article 5: Family non-attestation ────────────────────── [v0.1]
 all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor).
-# Disclosed gap [v0.1, still open]: parent/2 is the ONLY kinship the
-# multi-sig independence check excludes. Spouses and siblings co-sign
-# freely until the registry grows those relations.
+# [v0.9 2026-08-02 RULED] The registry grew the relations: married and
+# sibling joined the multi-sig independence check (the conjuncts beside
+# ~parent above). Both are guards with nothing to fire on today — the
+# cast records no marriage and no siblinghood — which is the
+# dead-conjuncts pattern kept deliberately: live the day the fact is
+# written. sibling (tunba) is the gender-neutral form; the gendered
+# pair was skipped so the record carries no axis it does not need.
+# Article 5's own judge-your-child rule is deliberately NOT extended —
+# the ruling covers co-signing independence, not who may judge whom.
+# What remains outside any vocabulary: friendship, households, debts —
+# closeness the record has no words for still co-signs, and chapter 5
+# prices that honestly.
 
 # ─── Article 6: Sanction and placement ────────────────────────────
 # [v0.1] conviction rule unchanged.

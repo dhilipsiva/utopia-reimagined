@@ -17,18 +17,18 @@ stratum, by dependency. Every verdict quoted below was produced by the engine.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **51** | **26** | **56** | **4** |
+| computed from the constitution | **53** | **26** | **56** | **4** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 2 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
-| **0** | `adjust`, `approves`, `attack`, `authority` *(monotone cone)*, `broken`, `capture`, `choose`, `clear`, `cruel`, `deceive`, `equals`, `family`, `free`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `put`, `rotten`, `show`, `suggest`, `teaches`, `work` |
+| **0** | `adjust`, `approves`, `attack`, `authority` *(monotone cone)*, `broken`, `capture`, `choose`, `clear`, `cruel`, `deceive`, `equals`, `family`, `free`, `home`, `injure`, `judge`, `married`, `mature`, `parent`, `permanent`, `public`, `put`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
 | **1** | `defend`, `false`, `lose`, `permits`, `severe` |
 | **2** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
 | **3** | `err`, `obliged`, `travel` |
 
-Evidence predicates (24), the complete list of what the world may report: `adjust`, `approves`, `attack`, `broken`, `capture`, `choose`, `clear`, `cruel`, `deceive`, `family`, `free`, `home`, `injure`, `judge`, `mature`, `parent`, `permanent`, `public`, `put`, `rotten`, `show`, `suggest`, `teaches`, `work`.
+Evidence predicates (26), the complete list of what the world may report: `adjust`, `approves`, `attack`, `broken`, `capture`, `choose`, `clear`, `cruel`, `deceive`, `family`, `free`, `home`, `injure`, `judge`, `married`, `mature`, `parent`, `permanent`, `public`, `put`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
 
 Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is not evidence, since nobody writes it.
 <!-- END GENERATED: stratification -->
