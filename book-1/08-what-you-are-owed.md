@@ -159,6 +159,22 @@ to do. The rest have nothing. The difference between the one and the rest is not
 judgement anybody recorded — it is what happens when a rule gets written carefully in
 one place and the general case is never revisited.
 
+There is one more thing the non-joining permits, and it is the worst of them, so it
+goes here rather than in a footnote. The record never changes when food arrives — and
+it also never changes when somebody makes it *say* food arrived. Write a rule, plainly
+and in the open: every person eats. Every question this chapter opened with flips its
+answer — Bela eats, everyone eats, nothing anywhere is missing — and no entry about
+any person was falsified, because the lie is not in any entry. The lie is a rule. The
+marker just described, the one watching confined people for missing company, goes
+quiet in the same stroke, since company now arrives for everybody by the same
+penmanship. This was measured, not imagined, and the honest conclusion is the one this
+book keeps reaching about its record from other directions: the admission this chapter
+makes — that the design does not know whether anybody is fed — stays true only while
+the people who review new rules keep asking the question that cuts through. What
+arrival, recorded about which person, sits upstream of this sentence? When the answer
+is the roster of persons and nothing else, the sentence is not delivery. It is the gap
+being painted over.
+
 **Nothing compels the body.** The design states the debt and contains no machinery for
 collecting it. There is no consequence anywhere for the obligation going unmet — the
 marked absence above is noticed about the person, never collected from the bearer, and
