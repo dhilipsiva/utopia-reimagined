@@ -116,8 +116,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   `teaches`/`work` with itself, and a second place puts counted degree one rule away.
   **(c)** There is nothing at the other end to narrow *from*: `lose` is a **leaf** —
   no rule body reads it, derivation is monotone, so nothing is ever actually taken from anybody,
-  and the apparent clawback in the shipped cast is entirely the `~false` guards on `:459`/`:460`
-  **never minting**. Do **not** restate this as "`lose` has no slot for it" — that was the first
+  and the apparent clawback in the shipped cast is entirely the `~false` guards on the
+  minting rules — all three doors since v0.9 — **never minting**. Do **not** restate this as "`lose` has no slot for it" — that was the first
   draft of this bullet and it is false, cheaply refuted: nibli gives `lose` (gismu `cirko`) a
   third place, `conditions`, and `lose(Points, $s, $t)` loads. **(d)** The corpus entry will not carry it — `reward` is gismu `cnemu`,
   arity 4, places `["subject","rewards","atypical","reward"]`, `Generic` tier with places never
@@ -204,6 +204,31 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   the teaching door isolated by file order on Pico, whose `reward` FALSE while tended flips TRUE
   two verdicts later when he teaches. Prose stays in the conditional voice — the shipped record
   holds no child work entry, and chapter 6's *"Cira earned nothing"* stays true.
+
+- **The third door closes on voiding — enacted, not disclosed**, decided 2026-08-02,
+  resolving the chapter-10 fork (v0.9). Article 4's examiner rule now carries
+  `~false($auditor)` beside `~deceive`/`~broken`, the guard the teaching and work doors
+  already had, so chapter 10's "all three doors close for the same reason" is true as
+  printed. The disclosure branch — keep the rule and print that a voided person can still
+  earn by examining people — was refused as a contradiction rather than a mere cost: an
+  examination is nothing but its author's word, voiding is the finding that the word is
+  worthless, and Vex — carried-void, therefore penless — was being paid for examinations
+  the same voiding made incapable of counting toward anything. Enactment is the
+  confinement ruling's shape: consistency with the design's stated intent, not new policy.
+  Measured before landing: `reward(Vex)` TRUE→FALSE, `reward(Gia/Esa/Quin)` unchanged,
+  every pin suite green against the guarded copy, rights-floor runtime unchanged (~15 s).
+  **What it does not do**: nothing un-mints — `lose` stays a leaf and derivation stays
+  monotone; the guard never-mints, chapter 6's register. **Two things it exposed, recorded
+  where they bite**: the chapter's worked reasons needed correcting anyway — Lupo's door
+  shuts twice over (per-pair `~deceive` for the lie itself, then the void) and Dev never
+  documented anybody, so his "nothing at all" is carried by the void alone — and the third
+  door still pays a person in good standing for a bare `judge`+`capture` pair with no
+  credential and no grounds (measured post-guard: a fresh clean person mints from the two
+  writes), which is the `capture`-precondition bullet's territory, not this ruling's.
+  Exhibits pinned in chapter 10's suite: the Vex pair, and the closing forced-Bela probe
+  (a voided person examines; the mint refuses; the clawback registers) —
+  negative-controlled, exactly those two `reward` pins flip against the pre-guard
+  constitution.
 
 - **The floor-delivery markers are refused while the record holds no arrival facts**, ruled
   2026-08-02, closing the largest restored Phase-1 decision. Measured before ruling: the
