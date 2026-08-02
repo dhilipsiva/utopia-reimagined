@@ -447,21 +447,11 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
 ## The verification harness
 
 
-- **Extract the claim-to-query table from the pin files — it cannot be generated from the
-  constitution.** The substance already exists in a better form than the old bullet
-  imagined: every chapter's pin file plus the constitution's own carry every load-bearing
-  sentence, every one a query with an enforced expected verdict, all green, and a scan
-  finds no `?` query lacking a `# =>` line (re-checked 2026-08-01, after the suite grew).
-  What is left is the rendering, and it runs the other way round: the constitution cannot
-  know which sentence of chapter 11 a query backs, so the table must be extracted from
-  the pins rather than derived beside them. Blocked by a data gap — of the `?` queries
-  under `book-1/`, half again as many have no comment line directly above as do, so an
-  extractor run today leaves most of a chapter's sentence cells empty. (Re-measured
-  2026-08-01 after the ch1–ch6 pin passes: 291 queries, 116 with a comment directly
-  above; re-run the count rather than carrying it forward.) Fix: settle one
-  machine-readable form for the sentence — the `# "…"` line immediately above the query
-  is the existing convention — backfill the rest, then have the verification script emit
-  the table as a by-product.
+- **Claim-to-query table: DONE 2026-08-02 (`a7acd57`).** The settled form is block
+  inheritance — a query's claim is the nearest preceding comment block in its pin file —
+  under which every query was already reachable when measured, so the priced backfill
+  never happened. `./verify.sh --table` emits it; `6-claim-table.py --check` runs inside
+  the prose gates (negative-controlled) so extraction stays possible as suites grow.
 
 
 ---
