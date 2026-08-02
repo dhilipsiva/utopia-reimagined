@@ -55,6 +55,10 @@ noticing.
      decay in steady state (public-goods experiments; recognition and visibility as the
      decay-rate variables — which puts book-1's recognition system under empirical test);
      the unpleasant-jobs allocation problem under refused differential reward; innovation.
+  Two gifts already in book-1: the constitution writes `entitled(...)` — Sen's own term of
+  art, converged on independently, which Part V and this book should notice out loud — and
+  the delivery gap is this thesis's tension already formalised, pinned, and priced; book-2
+  does not have to construct its central problem, book-1 shipped it.
   **Expected honest landing**: complete irrelevance disproven, and the book stronger for
   executing the disproof itself; partial irrelevance — the floor decoupled from currency,
   demand-side recession-immune, feasible below a measurable participation threshold —

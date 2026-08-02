@@ -1029,6 +1029,15 @@ No known defects. Read it against the constitution anyway.
   design and exactly the question this joint has to answer. The earned-time concession from
   the release ruling lands at the *coercion* joint next door: "voluntary" is structurally
   pressured when the alternative is longer confinement.
+- **The method part discloses the stress surface.** The suite's confidence register must
+  not outrun its provenance: every probe, fixture and refusal was written by the author and
+  AI sessions against a cast of dozens — no independent reimplementation, no external
+  red-team, and the engine that blesses the book shares the book's author. The counterfactual
+  fixtures and the upstream differential oracles narrow this and do not close it. One
+  honest paragraph, beside the machinery it qualifies; anything stronger (soliciting an
+  independent verification) is post-ship work and goes to the reach strategy when it is
+  ruled.
+
 - **Write what the logic refused — in the method part, paired with chapter 7.** Re-verified
   2026-08-01: appending `all $x: prisoner($x) -> permits(Appeals, $x).` returns
   *"[Stratification Error] Unstratifiable negation: strongly-connected component containing
@@ -1048,7 +1057,11 @@ No known defects. Read it against the constitution anyway.
   2026-08-02): four independent reviewers land on release/duration, delivery/obligor,
   audit teeth, degree/equity, and legitimacy/transition — plus two new Part V objections
   from the engine-book review, the unenumerated-rights cage and proportionality-vs-
-  structure. Part V answers these by name or it has not done its job.
+  structure. Part V answers these by name or it has not done its job. **One burden is
+  Part V's alone and derivation cannot carry it**: *why this vocabulary* — the record's
+  names are a stipulation, the book proves only what follows from them, and Part V either
+  argues the choice or concedes it is one. Disclosure is done (chapter 1); justification
+  is not.
 
 - **Before the method part prints a rendered sentence or a proof trace, check who the duty
   names.** nibli carries a filed defect — its tracker bullet **"`obliged`-spelled every-duty
