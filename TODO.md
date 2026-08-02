@@ -609,39 +609,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   is the existing convention — backfill the rest, then have the verification script emit
   the table as a by-product.
 
-- **Freeze `4-strata.py` as an exhibit rather than fixing it.** The defect is real and
-  still present: the fact branch takes only the first predicate on a line (`:52`, `:54`),
-  so `entitled(every person, event { secure() }).` registers as a fact of `entitled` and
-  nothing else — and the declaration keywords `derived_only` and `admits` register as
-  predicates in their own right. Repairing it now buys nothing and costs something.
-  Nothing consumes it: `5-spine-gen.py` takes strata, base/derived and edge polarity from
-  `nibli-pin --strata` and owns the generated region of `3-spine.md` — and
-  `3-spine.md:36-39` keeps the discrepancy deliberately, as "the tooling-blindness story
-  for the method part", so fixing the script deletes a planned exhibit. Give it a header
-  saying it is retained wrong, on purpose, and naming what it is blind to: run against the
-  same constitution on 2026-08-01 it reported 46 predicates, 19 derived and 48 rules where
-  the engine reported 50, 26 and 56.
-
-- **`5-spine-gen.py`'s rule count is still text-derived, and only recognises a universal
-  when it wears the floor's shape.** `text_facts` counts a line as a rule if it carries
-  an arrow, or if it matches the `FLOOR` regex at `:47` —
-  `PRED(every <domain>, event { P() })` and nothing else. Any *other* universally
-  quantified line is counted as neither. Re-executed 2026-08-01 against a scratch copy
-  with Article 1b written back as `owe(State, Provision, every person).`: the generated
-  block came back identical except that rules read **55** instead of 56. **The worse
-  version of this is closed** — the head failing to enter `head_preds`, `owe` emitted as
-  an evidence predicate, and the generated list silently reading twenty-two against
-  chapter 1 — because base/derived and strata have come from the engine since `93da52f`.
-  What is left is a figure the method part will print being quietly one low. Fix by
-  taking the rule count from the engine's dump as well, or by widening the regex to any
-  `every <domain>` in any place.
-  **Land the constitution's comment in the same pass**, because it now states the closed
-  version as if it were live: `constitution.nibli:363-367` cites `5-spine-gen.py:25` and
-  says the evidence list "silently becomes TWENTY-TWO". Verified false. The instruction
-  it ends with — do not restore the short form — stays right for a different reason now:
-  it is the form nothing counts. Regenerate the counterfactual fixtures with it — every
-  fixture is a full copy of the constitution and carries the same paragraph.
-
 
 ---
 
