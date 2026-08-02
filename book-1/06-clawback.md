@@ -58,62 +58,50 @@ to become a voiding is, to this instrument, nothing at all. There is no lesser l
 for having been suspected, no partial mark for a case that collapsed. Until the
 verdict exists, the clawback does not.
 
-## Cira
+## Cira, and the rule that is no longer here
 
-Now the difficulty, and it is a real one.
+Now the difficulty. It is resolved — the resolution was a deletion — and both the
+wrong and its repair deserve to be told properly.
 
-Bela taught Cira. Bela was voided. **The rule reaches Cira too**, and records a loss
-against what Cira earned.
+There used to be a second rule beside the clawback. Bela taught Cira. Bela was
+voided. The rule reached Cira too, and recorded a loss against what Cira earned.
 
 Cira earned nothing. Being taught is not a way to earn recognition here; sitting in
 front of a teacher is not a contribution, and nothing anywhere in this design says
-otherwise. So the rule fires on a person with nothing, and records the loss of it.
+otherwise. So the rule fired on a person with nothing, and recorded the loss of it —
+a loss written against a child, for an adult's fraud, asking nothing about whether
+she knew, nothing about whether she was the fraud's victim rather than its
+beneficiary, and nothing about amount, because this instrument has no notion of
+degree.
 
-Sit with how strange that is before deciding what it means, because the obvious reading
-is the wrong one. This is not a punishment that turned out to be too heavy. The design
-wrote a rule that marks a loss against someone for another person's fraud, and nobody
-thought to check first whether there was anything there to lose. What the rule wanted
-was the mark, not the amount.
+The reasoning behind the rule was not stupid, which is why it stood as long as it
+did. Recognition earned through fraudulent teaching was never really earned; if Bela
+was signing off on work that was not done, the recognition that flowed from those
+sign-offs is recognition for nothing, and letting it stand would leave the fraud
+partly intact. That is a good argument. It is an argument about somebody who is
+holding something, and it was pointed at somebody who is not.
 
-The reasoning behind it is not stupid, which is what makes it worth this much space.
-Recognition earned through fraudulent teaching was never really earned; if Bela was
-signing off on work that was not done, the recognition that flowed from those sign-offs
-is recognition for nothing, and letting it stand would leave the fraud partly intact.
-That is a good argument. It is an argument about somebody who is holding something, and
-it was pointed at somebody who is not.
+The repair looked like a choice between two fixes and was actually one. The gentle
+fix says: narrow the rule — claw back only the recognition that came from the
+fraudulent teaching, and leave the rest. But students earn nothing for being taught,
+ever, by a decision this book has already leaned on more than once, so the
+recognition that came from the fraudulent teaching is nothing, for every student,
+always. A rule narrowed to reach exactly that reaches nobody. Whoever sat down to
+write the narrowing found they had written a repeal — and so the repeal was written
+honestly, as itself. The rule is deleted. No loss reaches Cira, or Fin, or any
+student, for any teacher's fraud; the difference between Fin and Cira — which was
+never anything either of them did, only a fact about their teachers — is now no
+difference at all.
 
-Take the rule at its best anyway, and suppose the student did hold something. Even
-then nothing would leave them — the student is not the one voided, so their own
-contributions go on being recognised, and what this rule does is write a loss beside
-a record it cannot dim. But look at the mark it writes, as against what that
-reasoning would justify.
-
-It does not ask whether the recognition came from the fraudulent teaching. The loss
-is recorded against earnings from elsewhere, over years, from people who were never
-voided.
-
-It does not ask whether the student knew. A student who colluded and a student who was
-deceived are treated identically, and the second is the more common case by a long
-way — a fraudulent teacher's students are usually the people the fraud was worked on.
-
-And it does not ask how much. There is no proportion in it, because as noted at the
-start this instrument has no notion of degree.
-
-Compare Fin, whose teacher was Esa. Esa was never voided, so the rule never reaches Fin
-at all. The difference between Fin and Cira is not anything Fin or Cira did. It is a
-fact about their teachers.
-
-The narrower rule sounds easy to state: claw back the recognition that came from the
-fraudulent teaching, and leave the rest. It is not a repair, and it is worth seeing why
-not. There is nothing to narrow it *to*. What Cira got from Bela's teaching is nothing,
-and so is the rest of it, and a rule narrowed to reach exactly that is a rule that has
-been deleted. Whoever sits down to write the fix will find they have written a repeal.
-
-**This one is not defended here, because it is not defensible as written.** It is the
-one place in the accountability machinery where the design does to an innocent person
-what the rest of it is carefully built to prevent, and every other guard in the last
-two chapters — two auditors, no family, no liars, no carried rot — exists precisely to
-stop exactly this. It is flagged in the design as unresolved, and it is unresolved.
+What the deletion does not delete is the lesson. The rule wanted the mark, not the
+amount — nobody who wrote it checked whether there was anything there to lose — and
+it stood for a long time beside guards built precisely against marks landing on the
+uninvolved: two auditors, no family, no liars, no carried rot, every one of them
+watching the front door while this rule stood propped open at the side. The
+accountability machinery's one wrong against an innocent was not an attacker's work.
+It was written in good faith, by the same hands that built the guards, and it was
+found the way everything in this book is found — by asking the record what it held
+against a child, and refusing to like the answer.
 
 ## The mark that crosses the year
 
@@ -140,13 +128,14 @@ finished voiding. Nothing says the mark was wrong, or served out, or forgiven. S
 only way back for Vex is not an entry anyone can point to. It is an omission: the
 record-keeper, one period, quietly declining to copy a line. A prisoner's way out is
 written in the law. A voided person's way out is somebody else's silence — and
-whether that should stay true is a question this design has not answered, flagged
-here the way the Cira rule is flagged, because the two honest markers of this chapter
-are both places where the instrument outran the argument for it.
+whether that should stay true is a question this design has not answered. It is
+flagged here as this chapter's one remaining honest marker — the place where the
+instrument still outruns the argument for it. There used to be two. The other was
+the rule that reached Cira, and it is gone.
 
 ## The shape of the instrument
 
-Step back and the two halves of this chapter are the same fact seen twice.
+Step back, because the instrument's shape is clearest now that its reach is right.
 
 Clawback is deliberately blunt. It has no proportion, no assessment, no discretion.
 That bluntness is a feature where it applies to the person who was voided: there is
@@ -154,16 +143,17 @@ no space for an official to decide that this fraudster deserves to keep a little
 that one deserves to lose more, and therefore no space for that decision to be bought
 or leaned on. Bluntness is what makes it fair *to the guilty*.
 
-And that same bluntness is what makes it unfair to Cira. An instrument with no notion
+And that same bluntness is what made it wrong for Cira. An instrument with no notion
 of degree cannot distinguish the student who colluded from the student who was
-deceived, because distinguishing is exactly what it does not do.
+deceived, because distinguishing is exactly what it does not do. The repair honoured
+that instead of fighting it. Sharpening the instrument — teaching it degrees,
+culpability, circumstances — would have rebuilt exactly the discretion an earlier
+chapter abolished, one assessment at a time. So the design cut the instrument's
+reach instead: the voided person's own recognition and nothing else. Never a
+student. Never the floor, never liberty, never personhood. Used bluntly, even used
+wrongly, the worst it can now do is reach for what the guilty were given.
 
-The design's answer to that tension is not to sharpen the instrument. It is to put a
-hard ceiling on it — recognition and nothing else, never the floor, never liberty,
-never personhood — so that even used bluntly, even used wrongly, even used on someone
-who did nothing at all, the worst it can do is reach for what was given.
-
-The rule reaches Cira's recognition and finds nothing there. It does not reach what
-Cira is owed, and that was never in doubt for a moment. The distance between those two
-sentences is the whole architecture of this society compressed into one person's bad
-afternoon, and the next part of the book is about the side of it that cannot be taken.
+The loss the record holds against Bela, and the absence it holds for Cira, are the
+whole architecture of this society compressed into one afternoon: what you earned
+answers for your own adjudicated fraud, and for nothing else, and nobody else's. The
+next part of the book is about the side of it that cannot be taken.

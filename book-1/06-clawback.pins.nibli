@@ -5,17 +5,16 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
-# NOTE: the Cira pins below encode a defect the chapter names as indefensible.
-# If the contamination rule is narrowed (claw back only recognition derived from
-# the fraudulent teaching), lose(Points, Cira) flips FALSE and the chapter's
-# middle section must be rewritten. That is the intended outcome, not a break.
-#
-# The reward(Cira) and person(Fin) pins are the chapter's sharpest claim and the
-# two facts an earlier draft got backwards: the rule records a loss against a
-# student who never earned anything, and the student held up as keeping everything is not on the
-# personhood roster at all. Being taught mints nothing — a settled decision, not
-# an oversight — so the "narrower rule" the chapter discusses has an empty target
-# and narrowing it is repeal. Keep these pinned; the prose turns on both.
+# [v0.9 2026-08-02] THE CIRA DEFECT IS RESOLVED — the student clawback rule is
+# deleted from Article 4, exactly the repair the old :defect directive here
+# named. lose(Points, Cira) now pins FALSE as a plain verdict, and the chapter's
+# middle section is rewritten to tell the rule's deletion as history. The
+# reasoning that forced deletion rather than narrowing stays on record: students
+# never mint (the grades ruling), so "claw back only recognition derived from
+# the fraudulent teaching" had an empty target — narrowing was always repeal.
+# The reward(Cira) and person(Fin) pins remain the chapter's sharpest facts: a
+# student who never earned anything, and a student who is not on the personhood
+# roster at all.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -78,31 +77,32 @@
 ? eats(Jala).
 # => FALSE
 
-# "Bela taught Cira. Bela was voided. The rule reaches Cira too."
+# "Bela taught Cira. Bela was voided. The rule reached Cira too" — history now;
+# the teaching entry is still real and still on the record.
 ? teaches(Bela, Cira).
 # => TRUE
 
-# The chapter calls this indefensible outright: a loss recorded against a
-# student who earned nothing, for a teacher's fraud. It flips FALSE when Article 4's contamination
-# rule is narrowed or deleted — the intended outcome, not a break.
-:defect "narrowing or deleting Article 4's contamination rule (teaches & false -> lose)"
+# [v0.9] The repair, held as a plain verdict. The rule that recorded a loss
+# against Cira for Bela's fraud is deleted; no loss reaches her. This pin was
+# TRUE under a :defect directive for as long as the rule stood — if it ever
+# reads TRUE again, somebody rebuilt the student clawback.
 ? lose(Points, Cira).
-# => TRUE
+# => FALSE
 
 # "Cira earned nothing. Being taught is not a way to earn recognition here."
 ? reward(Cira).
 # => FALSE
 
-# "The rule reaches Cira's recognition and finds nothing there. It does not
-#  reach what Cira is owed" — and it does not reach Cira's CREDIBILITY either.
-# The loss lands on recognition alone; Cira is docked, not voided. If this ever
-# flips TRUE the contamination rule grew a second head and the closing section
-# is wrong about what the instrument can touch.
+# Nothing reaches Cira now — not a loss (pinned above), and not her
+# credibility either, which was never touched even while the student rule
+# stood. If this ever flips TRUE, something taught the instrument to reach a
+# student's word, and the closing section is wrong about what it can touch.
 ? false(Cira).
 # => FALSE
 
-# "Compare Fin, whose teacher was Esa. Esa was never voided, so the rule never
-#  reaches Fin at all." — the rule fires only through the teacher
+# "the difference between Fin and Cira — which was never anything either of
+#  them did, only a fact about their teachers — is now no difference at all."
+# Fin's side of the exhibit: never reached while the rule stood, identical now.
 ? teaches(Esa, Fin).
 # => TRUE
 

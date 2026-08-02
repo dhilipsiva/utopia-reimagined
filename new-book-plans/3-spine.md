@@ -17,7 +17,7 @@ stratum, by dependency. Every verdict quoted below was produced by the engine.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **51** | **26** | **57** | **4** |
+| computed from the constitution | **51** | **26** | **56** | **4** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 2 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
@@ -154,8 +154,9 @@ Forced chain: `permits → false → lose`. `defend` depends only on stratum 0 a
 5. **Voiding.** `false` — multi-sig, independence, counter-audit, epoch carry.
    **Vex**, the auditor voided last epoch who is still seated on paper.
 6. **Clawback.** `lose` — what taking back looks like when the floor cannot be
-   touched. Carries the open fairness problem: the contamination rule docks a
-   student for a teacher's fraud.
+   touched. The fairness problem it carried — a contamination rule docking a
+   student for a teacher's fraud — was ruled 2026-08-02: the student rule is
+   deleted, and the chapter tells the deletion as a repaired defect.
 
 **Part III — Status and consequence (stratum 2)**
 Forced: `prisoner → person → {floor, decide}`; `fit → dwell`. `reward` and `become`
@@ -244,11 +245,14 @@ attack and then does not entrench the vocabulary; the chapter should say so.
   about anything reaching a person. The obligation layer is complete; the delivery
   layer does not exist. Chapters can describe what is owed, never what arrives —
   state the gap in the prose rather than hiding it.
-- **`err/2` fires on a correctly-placed prisoner.** `err(Lalo, Placement)` is TRUE
-  while `building(HighSec, Lalo)` is also TRUE. Fix before ch 14.
-- **The Article 4 clawback rules refute a published bright line** — "no negative
-  scoring of persons" — by docking a student for a teacher's fraud. Fix before ch 6.
-- **`lose` has no adversarial pins.** Chapter 6 needs them; none exist.
+- **`err/2` fires on a correctly-placed prisoner** — REPAIRED 2026-08-02: the
+  marker is keyed on placement reports (`put/3`) and the false positives are gone.
+- **The Article 4 clawback rules refute a published bright line** — RULED
+  2026-08-02: the student rule is deleted; the bright line stands narrowed to
+  "no subtraction except by due process for one's own adjudicated fraud", which
+  the surviving wrongdoer rule satisfies.
+- **`lose` has no adversarial pins** — stale since chapter 6's suite landed;
+  the clawback file pins `lose` across the cast, including the Cira repair.
 
 ---
 
