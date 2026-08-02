@@ -171,5 +171,21 @@ from that list, are not two separate problems. They are one problem, and it wors
 without anybody doing anything, because the only thing that ever changes is that the list
 gets longer.
 
-Whether it should be bounded by time, or by requiring the exposed conduct to be
-recent, is a real question this design does not currently answer.
+Should it be bounded — by time, or by requiring the exposed conduct to be recent? This
+design answers no, and the answer is not neglect. Each way of writing the bound was
+refused somewhere else in this book, for reasons that had nothing to do with sparing
+this chapter. A bound by time needs a clock, and this record holds none and now never
+will. A bound by recency needs somebody to write down that an exposure has gone stale —
+a finding with no finder that strips shields wholesale, the same kind of entry the
+first chapter conceded and this one watched jail a whistleblower. And expiring the
+standing itself would turn every recall into an escape hatch: the honest man's shield
+would die with the corrupt man's office, which is the one outcome this whole
+arrangement exists to prevent. Beneath all three, the record is flat — it cannot say
+whether the exposure came before the recall or after, so the past a bound would police
+is a past the record cannot see.
+
+So the list grows, because three protections hold, and the growing is what they
+jointly cost. That bill was already itemised above; nothing here shrinks it. A
+restraint refused three ways is still a restraint somebody will propose again, and
+when they do, the question they will have to answer is which of the three protections
+they are willing to trade for it.
