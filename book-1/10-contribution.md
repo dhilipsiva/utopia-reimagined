@@ -21,6 +21,17 @@ about everything: the entry has to be written. Care that nobody records earns
 nothing, so the claim here is that the doors are open to it — not that the society
 sees it.
 
+And notice one more thing the doors do not ask: how old you are. The child this
+design refuses to grade — the record will not hold a mark for what she was taught —
+is recognised the moment she contributes. Record that she did a piece of work, or
+that she taught someone something, and she stands in the same single relation to this
+society as anyone who ever walked through either door. That is not an oversight
+sitting beside the refusal to grade her; it is the same principle read from the other
+side. Being taught is not a contribution, at any age. Contributing is, at any age.
+And the reason this needs no guard is the reason the whole chapter keeps giving:
+recognition here cannot pay, and what makes a child's work worth exploiting is the
+wage.
+
 What arrives when you walk through one of them is worth being precise about, because
 it is not what most readers will assume.
 
