@@ -19,6 +19,12 @@ Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
   credential route that forgets the guards. A postulated future, not a deletion — its pins
   show Article 4's kept conjuncts are the only thing standing between that one line and a
   carried-void signature counting. See the v0.9 note in Article 4's header.
+  `undelivered-marker` is the same class: the constitution *plus* the floor-delivery marker
+  the 2026-08-02 ruling refused. Its pins show the marker firing on the voided, the
+  confined and the never-accused alike — the measured reason it stays unbuilt while the
+  record holds no arrival facts. Regenerate like unguarded-pen: copy, then append
+  `all $x: owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered).` with no leading
+  blank line.
 
 Regenerate any of them with:
 

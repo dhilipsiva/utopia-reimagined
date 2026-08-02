@@ -395,14 +395,17 @@ step "counterfactuals"
 #        proof strengthens automatically as those suites grow)
 #   0:1  a line added    — unguarded-pen is the credential route somebody might
 #        someday write; its pins show the kept conjuncts are the only thing
-#        standing between that line and a carried-void signature counting
+#        standing between that line and a carried-void signature counting; and
+#        undelivered-marker is the delivery marker the 2026-08-02 ruling
+#        refused, whose pins show it firing on everyone the record owes —
+#        the measured reason it stays unbuilt while no arrival facts exist
 # The shape check is not pedantry: the (1:1) class would read as "stale" to the
 # old exactly-one-line rule, and a byte-identical copy — the README's own
 # historical failure — reads as (0:0) and fails every class.
 #
 # NOTE these pins are OUTSIDE the :expect-pins reconciliation above, checked
 # per-file here. Do not "fix" the headline sum to include them.
-for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-dead-conjuncts:1:1 unguarded-pen:0:1; do
+for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-dead-conjuncts:1:1 unguarded-pen:0:1 undelivered-marker:0:1; do
   f=${spec%%:*}; want="${spec#*:}"
   removed=$(diff "$KB" "$CF/$f.nibli" | grep -c '^<')
   added=$(diff "$KB" "$CF/$f.nibli" | grep -c '^>')

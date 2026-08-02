@@ -1,0 +1,25 @@
+# ── Counterfactual: the delivery marker somebody might someday build ─────────
+# The constitution PLUS the Undelivered rule for food — the shape the tracker
+# priced for months and the 2026-08-02 ruling refused. These pins are the
+# measured reason: over a record that holds no arrival facts, the marker fires
+# on the voided, the confined-and-housed, and the never-accused alike, because
+# `eats` is asserted for nobody. A marker that is right about everyone
+# discriminates nobody. The ruling expires with its premise — the day a
+# delivery layer writes arrival facts, this fixture is where the marker design
+# starts, because these verdicts are what it must stop producing.
+:expect-pins 4
+
+? err(Bela, Undelivered).
+# => TRUE
+
+? err(Hano, Undelivered).
+# => TRUE
+
+? err(Jala, Undelivered).
+# => TRUE
+
+# ...and the one person the marker does NOT reach is the one who is not owed:
+# no roster entry, nothing owed, nothing marked. The marker discriminates on
+# personhood alone, which is exactly the problem.
+? err(Sokk, Undelivered).
+# => FALSE
