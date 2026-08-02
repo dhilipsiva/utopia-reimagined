@@ -9,7 +9,7 @@ chapters and this is where it can be checked in one place.
 
 Hano was convicted. Take the list.
 
-Hano is a person. Hano is owed all eight things on the floor, in full, with no
+Hano is a person. Hano is owed everything on the floor, in full, with no
 reduction. Hano speaks. Hano votes. Hano's credibility is intact — nobody has voided it,
 and conviction does not. Hano's recognition is untouched; nothing was clawed back,
 because clawback follows voiding and Hano was not voided. Hano is somewhere specific,
@@ -28,9 +28,9 @@ the marker watching for isolation is watching Hano and not Jala. Four difference
 **three of them run the wrong way** — they are things the convicted man has and the free
 woman does not.
 
-Conviction takes one thing. It also happens to be the only route by which anything on
-the floor reaches anybody, which is a separate fact about this design and a much worse
-one. The chapter comes back to it at the end.
+Conviction takes movement and nothing else. Conviction is also the only route by
+which anything on the floor reaches anybody, which is a separate fact about this
+design and a much worse one. The chapter comes back to it at the end.
 
 ## Why nothing follows from it
 
@@ -170,8 +170,8 @@ one happens, and it cannot make one happen.
 And there is a sting in it that is worth following, because it is the sharpest thing
 this chapter has.
 
-Two of the eight things owed to every person actually arrive in this design. Recorded
-speech arrives, and shelter arrives. **Both of them arrive only for prisoners.**
+Of everything owed to every person, what actually arrives in this design is exactly
+this: recorded speech, and shelter. **Both of them arrive only for prisoners.**
 
 So when a sentence is finished, both stop. The person keeps every entitlement they had
 — they are owed exactly what they were always owed, and the body that owes it still
