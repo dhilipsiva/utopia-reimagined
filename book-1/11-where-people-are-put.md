@@ -100,12 +100,13 @@ misplacement it was built to catch arrives among the noise and is dismissed with
 rest.
 
 The defect had a cause worth naming, because the repair falls out of it. The record had
-nowhere to write down the one thing the alarm needed: where somebody was actually put.
+nowhere to write down what the alarm actually needed: where somebody was put.
 So the rule watched a property of the person — owns a house — because the record could
 not show it the act. The repair is to give the record that entry. *Somebody put someone
 somewhere* is now a thing the record can hold: an act, with an author, like everything
-else on the first chapter's list. The alarm reads those entries and fires on exactly
-one thing — a recorded placement at home that the eligibility rules contradict.
+else on the first chapter's list. The alarm reads those entries, and what makes it
+sound is a recorded placement at home that the eligibility rules contradict — that,
+and nothing else.
 
 Two things about the repaired alarm should be said as plainly as the defect was. It is
 silent today, because the record holds no placement entries yet; the alarm watches an
