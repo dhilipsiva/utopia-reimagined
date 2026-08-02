@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Compute the predicate dependency graph and stratification of a nibli KR file.
 
+RETAINED WRONG, ON PURPOSE — do not fix. This script is the method part's
+tooling-blindness exhibit: a hand-rolled parser that looked sound, agreed with
+itself, and disagreed with the engine, kept as the standing argument for taking
+every figure from `nibli-pin --strata` instead. Nothing consumes it —
+`5-spine-gen.py` owns the generated region of `3-spine.md` and reads the
+engine — and `3-spine.md` keeps the discrepancy deliberately.
+
+What it is blind to, named so nobody rediscovers it as a bug: the fact branch
+takes only the first predicate on a line, so a floor line registers as a fact
+of `entitled` and nothing else; and the declaration keywords `derived_only`
+and `admits` register as predicates in their own right. Re-measured
+2026-08-02 against the same constitution: this script reported 46 predicates,
+19 derived and 48 rules where the engine reported 50, 26 and 56.
+
 Standard Ullman fixpoint: for rule H :- ... P ..., stratum(H) >= stratum(P);
 for H :- ... ~P ..., stratum(H) > stratum(P). Iterate to fixpoint; if a
 stratum exceeds |preds|, the program is unstratifiable.

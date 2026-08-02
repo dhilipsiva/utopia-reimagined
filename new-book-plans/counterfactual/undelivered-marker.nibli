@@ -372,14 +372,18 @@ all $x: free($x) -> person($x).
 # lines buy: `person` in the body puts `owe` in the person cone, so the
 # compile-time prohibition extends to the obligation itself.
 # `owe(State, Provision, every person).` is EQUIVALENT to the engine and
-# was the first form enacted — do not switch back. It is identical in
-# every verdict and in the refusal below, but `5-spine-gen.py:25` only
-# recognises a universal when it wears the floor's `event { }` shape, so
-# the bare `every` form is parsed as a ground fact, `owe` never enters
-# head_preds, and the generated evidence list silently becomes TWENTY-TWO
-# — changing chapter 1's headline number by way of a regex. The engine is
-# not fooled either way (the refusal below only fires if `owe` is inside
-# the prisoner cone). The explicit rule is what keeps the tooling honest.
+# was the first form enacted — do not switch back; the swap buys nothing
+# and each move has cost a tooling incident. History, kept because both
+# halves of it dated: until `93da52f` the generator read base and derived
+# from TEXT, and the bare form dropped `owe` from head_preds — the
+# generated evidence list silently shrank, changing chapter 1's headline
+# number by way of a regex. Since then those figures come from the engine
+# and cannot be fooled; the residue was the RULE COUNT, text-derived and
+# blind to any universal not wearing the floor's event{} shape, so the
+# bare form read as neither rule nor fact and the method part's figure
+# came back one low (measured 2026-08-01; counter widened 2026-08-02 to
+# any `every` form). The engine is not fooled either way — the refusal
+# below fires only if `owe` is inside the prisoner cone.
 # Verified both ways:
 #   all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
 #     => "Unstratifiable negation: strongly-connected component

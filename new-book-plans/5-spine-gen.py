@@ -104,6 +104,13 @@ def text_facts(kb):
             # compiles to one, which is why the engine reports `entitled` as
             # derived. Counting only arrows undercounts by exactly the floor.
             rules += 1
+        elif re.search(r"\bevery\s+[a-z_]+", line):
+            # Any other universally quantified line compiles to a rule too —
+            # `owe(State, Provision, every person).` is one. Until 2026-08-02
+            # only the floor's event{} shape was recognised, so a bare `every`
+            # form was silently counted as neither rule nor fact and the
+            # figure the method part prints came back one low per such line.
+            rules += 1
     return floor, domain, rules
 
 
