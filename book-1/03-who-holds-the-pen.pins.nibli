@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 14
+:expect-pins 16
 
 # "The electorate seated you. You have not been recalled. And you were not
 #  voided in an earlier period." — all three holding gives the pen.
@@ -45,6 +45,16 @@ permits(Review, Sock).
 
 ? permits(Review, Vex).
 # => FALSE
+
+# "On the account so far, Nia should be a prisoner — the injury, the judgment,
+# the machinery." The premises are pinned so the relief verdict below cannot go
+# vacuous: prisoner(Nia) FALSE means something only while a conviction is there
+# to be relieved.
+? injure(Nia, Ivo).
+# => TRUE
+
+? judge(Court, Nia).
+# => TRUE
 
 # "Nia is not a prisoner, because Nia was cleared."
 ? clear(Nia).

@@ -4,8 +4,8 @@ Standing marks you as someone who can be held to account. It does not, by itself
 you do anything to anybody. For that you need the pen: the credential that makes your
 findings count.
 
-Two people with a pen, examining the same person and recording the same thing, can void
-that person's credibility, and strip what they have earned along with it. That is the
+Two people with a pen, examining the same person and each recording what they found,
+can void that person's credibility, and strip what they have earned along with it. That is the
 sharpest instrument in the society, and the question of who is allowed to pick it up is
 therefore the question this chapter is about.
 
@@ -54,7 +54,7 @@ that each of them holds the pen. Have them both examine the same innocent person
 record the same finding.
 
 Every guard on the voiding rule passes. There are two of them, so it is not one
-person acting alone. They are not related to each other. Neither has been recalled.
+person acting alone. Neither is the other's parent. Neither has been recalled.
 Neither was voided in an earlier period. Neither has been found to have lied. The rule
 looks at what it was built to look at, finds everything in order, and voids an
 innocent person who now loses their credibility and their recognition, on the word of
@@ -115,6 +115,15 @@ that Nia is in the clear — that is one of the things the world may say —
 and the relief follows from it by rule. The route runs through the record, in public,
 where it can be disputed, rather than through a decision someone makes and nobody
 sees.
+
+Who may record it is worth pausing on, because the answer is nobody in particular.
+The entry that clears you has no precondition and names no author — it is another of
+the findings chapter 1 conceded, a conclusion somebody reached and wrote down as a
+fact. Notice the asymmetry that creates. Destroying a person's credibility takes two
+seated signers, examined conduct, and every guard of the last section; emptying a
+conviction takes one entry, from any hand that can reach the record. The instrument
+for giving back is far easier to forge than the instrument for taking away — which is
+the merciful direction for a forgery to run, and worth knowing all the same.
 
 Both credentials are conclusions. Neither can be written directly. The society has one
 instrument for taking things away and one for giving them back, and neither can be
