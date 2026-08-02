@@ -9,7 +9,9 @@ Here nobody chooses. Where a convicted person goes turns on whether the offence 
 severe, whether the offender has a family, and whether they have a home — and only the
 last two of those are things anyone writes down. Severity is worked out, by the route
 Chapter 1 described: it follows from whether the person attacked, whether they were
-cruel, and whether more than one person was harmed, any two of which are enough.
+cruel, and whether the offence reached more than one person — and it takes a pairing,
+not a tally: an attack and a cruelty landing on the same person, or either of them
+beside an injury to somebody else.
 
 Read the middle one again, because it does not say what you would expect and the design
 should be held to what it actually says. The record has a slot for *this person has a
@@ -90,8 +92,8 @@ has a home somewhere and neither is eligible to be confined in it — which is t
 ordinary condition of every severe offender who has ever had an address.
 
 Meanwhile nobody who is genuinely misplaced is flagged, because on the current record
-nobody is genuinely misplaced. The alarm has sounded twice and been wrong twice, and
-has never once sounded correctly.
+nobody is genuinely misplaced. Every time the alarm has sounded, it has been wrong,
+and it has never once sounded correctly.
 
 An alarm with that record is worse than no alarm. No alarm at least leaves you
 knowing you are not being told anything. This one produces a steady, plausible signal
@@ -170,8 +172,9 @@ shelter, and why an offender with a family has shelter. It simply never said so 
 one combination where the person had nothing. Now it does: confined, eligible for home
 confinement, and no home, and shelter follows.
 
-Kel and Adam are housed. Every convicted person in this design now has shelter, and the
-rule that produces it is the same one for all of them.
+Kel and Adam are housed. Every convicted person in this design now has shelter, and no
+route into it is a choice: the routes are rules, and between them they leave no
+combination of the three facts uncovered.
 
 ## What that does not fix
 

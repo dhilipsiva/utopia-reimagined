@@ -10,7 +10,7 @@
 # is repaired to look at where someone was placed rather than whether they have a
 # home, err(Ruk) and err(Lalo) both flip FALSE and that section is rewritten.
 
-:expect-pins 38
+:expect-pins 41
 
 # Hano — meant it, and that alone is not enough. These two pins belong next to
 # each other: with no dimension recorded at all, severe(Hano) would be FALSE for
@@ -18,6 +18,12 @@
 ? attack(Hano, Ivo).
 # => TRUE
 ? severe(Hano).
+# => FALSE
+
+# "Hano has no family on record either." — the input the chapter warns about at
+# its opening, pinned on the man the warning is about: one written word here and
+# Hano leaves his house for a facility (chapter 1 runs that exact write).
+? family(Hano).
 # => FALSE
 ? fit(Hano, Homestay).
 # => TRUE
@@ -40,16 +46,23 @@
 ? building(HighSec, Ruk).
 # => TRUE
 
-# Nando — domestic, not severe: low security
+# Nando — domestic, not severe: low security. The family entry does not merely
+# route Nando somewhere; it closes the home-confinement door first, and that
+# half was pinned nowhere until now.
 ? family(Nando).
 # => TRUE
+? fit(Nando, Homestay).
+# => FALSE
 ? severe(Nando).
 # => FALSE
 ? building(LowSec, Nando).
 # => TRUE
 
 # Lalo — domestic AND severe: high security. Severity by the other road,
-# intent and cruelty on a single act.
+# intent and cruelty on a single act. The family fact is what makes the case
+# domestic, and it went unpinned while the chapter's walk leaned on it.
+? family(Lalo).
+# => TRUE
 ? attack(Lalo, Mina).
 # => TRUE
 ? cruel(Lalo, Mina).
@@ -110,9 +123,10 @@
 ? dwell(Adam).
 # => TRUE
 
-# "Every convicted person in this design now has shelter, and the rule that
-#  produces it is the same one for all of them." The claim is universal over
-#  prisoners, so it is pinned across the cast rather than on the two new cases.
+# "Every convicted person in this design now has shelter ... the routes are
+#  rules, and between them they leave no combination of the three facts
+#  uncovered." The claim is universal over prisoners, so it is pinned across
+#  the cast rather than on the two new cases — one witness per route.
 ? dwell(Hano).
 # => TRUE
 ? dwell(Ruk).
@@ -123,7 +137,7 @@
 # => TRUE
 
 # ...and it reaches nobody who is not confined. Bela is the test: voided,
-# stripped, and not a prisoner.
+# unrecognised, and not a prisoner.
 ? dwell(Bela).
 # => FALSE
 
