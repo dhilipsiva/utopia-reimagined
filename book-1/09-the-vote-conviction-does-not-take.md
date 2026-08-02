@@ -11,20 +11,21 @@ without argument.
 Here, nothing takes the vote. Not because anyone decided that prisoners deserve to
 keep it. Because of where the vote comes from.
 
-The vote follows from two things: being a person, and being an adult. That is the
-whole of it. Conviction does not touch either one — Chapter 7 established that a
+The vote follows from two things the record holds about you: that you are a person,
+and that you are an adult. That is the whole of it. Conviction does not touch either one — Chapter 7 established that a
 prisoner remains a person, and no one has ever suggested that imprisonment makes you
 younger. So the ballot follows for Hano exactly as it follows for anyone, and no rule
 anywhere interrupts it.
 
 ## The theorem this completes
 
-The design claims that punishment, reduced to its logic, takes away one thing.
+The design claims that punishment, reduced to its logic, takes movement and nothing
+else.
 
 Hano is the test. Hano is convicted, confined, and cannot move freely — that much is
 real, and the last chapters have not pretended otherwise. Ask what else conviction
 took, and the answer keeps coming back empty. Hano is still a person. Hano is still
-owed all eight things on the floor. Hano still speaks. Hano still votes.
+owed everything on the floor. Hano still speaks. Hano still votes.
 
 Movement, and nothing else. Not a principle the design announces and then quietly
 qualifies twelve chapters later, but a fact you can check item by item, and the vote
@@ -38,7 +39,7 @@ punishment layered onto imprisonment; it is the removal of the mechanism by whic
 imprisonment might be made less bad. The two work together, which is why they so often
 travel together.
 
-## Children, and the difference between not yet and taken
+## Children, the difference between not yet and taken — and a third thing
 
 Cira does not vote. Cira is a person, is owed everything on the floor, and has no
 ballot, because Cira is not an adult.
@@ -47,15 +48,29 @@ It is worth being careful about why that is a different kind of thing from
 disenfranchisement, since on the surface both are people without a vote.
 
 Nothing was taken from Cira. There is no rule anywhere that removes Cira's ballot, no
-finding, no proceeding, nobody who decided. The ballot follows from being a person
-*and* being an adult, and Cira satisfies one of the two. When Cira satisfies both, the
-ballot follows, automatically, with nobody's permission required and nothing to apply
-for.
+finding, no proceeding, nobody who decided. The ballot follows from the record holding
+you a person *and* an adult, and Cira's record holds one of the two. When it holds
+both, the ballot follows automatically — no permission required, nothing to apply for
+— *once the record says you are an adult*. And there the honesty has to be exact,
+because that entry is an entry like any other: somebody writes it, nothing defines it,
+no rule produces it, and nobody has to. The first chapter put adulthood on its list of
+things somebody concluded, and the ballot is where that entry gates.
+
+So the record has a third category this section's title does not admit, between *not
+yet* and *taken away*: **never written**. Esa teaches, was examined by two people, is
+somebody's recorded child — and Esa holds no ballot, because nobody wrote her
+adulthood down. In the record, the teacher and the child are the same: an entry short
+of the franchise. A polity that wanted a demographic voteless would not need to pass a
+rule, strip a right, or trip a marker. It would need only to decline, quietly, to
+write adulthood into certain records — and nothing anywhere would notice, because a
+ballot never granted looks exactly like a ballot not yet due.
 
 Compare what disenfranchisement would be: a rule that reaches in and removes something
 a person already had, on the basis of something they did. The distinction between
 *not yet* and *taken away* sounds like a technicality and is the difference between a
-threshold and a punishment.
+threshold and a punishment. The distinction between *not yet* and *never written* is
+thinner — one entry thin — and unlike the punishment, nothing in this design can see
+it.
 
 ## The part that is weaker than it looks
 
