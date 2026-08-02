@@ -165,8 +165,8 @@ somebody from un-writing them. There is no amendment required, no approval, no
 proposal — just a line removed from a file, after which the floor cut passes normally
 and nothing anywhere notes that the rules of amendment changed.
 
-That is the third time this book has arrived at the same place from a different
-direction, and it is worth stating without softening. **The strongest protection in
+This book keeps arriving at the same place from different directions, and it is worth
+stating without softening. **The strongest protection in
 this design is the impossibility of writing certain rules. The weakest is the
 integrity of the record those rules are written in.** Everything in the preceding
 chapters sits on the second, and the second is people.

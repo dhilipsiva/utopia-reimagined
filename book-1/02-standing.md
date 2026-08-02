@@ -110,9 +110,37 @@ stop applying. In each case the same move: treating the loss of power as the end
 answerability, so that stepping down becomes a way of taking the record with you.
 Here, stepping down takes nothing.
 
+## The separation runs deeper than power
+
+Vex is the person to hold onto here, because on Vex a third thing comes apart from the
+other two — and the ordinary word "standing" has a habit of absorbing all three.
+
+Vex was seated by the electorate, like Boss. In an earlier period Vex was examined and
+voided, and the judgment carries forward: Vex's word, here and now, counts for
+nothing. And Vex holds no pen, because the credential that makes an examiner's
+findings count is withheld from exactly this condition.
+
+So ask the three questions separately, about the one person. Is Vex answerable — can
+Vex be examined, and is whoever exposes Vex protected for it? Yes, permanently, on the
+same terms as Boss. Is Vex believable — does Vex's word carry any weight? No; the
+record says so in the plainest terms it has. Can Vex act — would anything Vex examines
+or documents count toward anything? No.
+
+Answerable, not believable, powerless. Three verdicts, one person, the same moment,
+and the design keeps all three apart because each fusion fails in its own way. Fuse
+answerability with believability, and a seat would make your word true — office as
+truth, which is the farmhouse problem of a later chapter wearing better clothes. Fuse
+answerability with credibility the other way round, and being voided would end your
+answerability — so the surest way out of scrutiny would be to disgrace yourself, and
+misconduct would become the exit. The familiar systems blur these constantly, which
+is why "he's finished, leave it" and "she holds office, believe her" both sound like
+reasoning. Here, neither is a conclusion anything produces: the three verdicts come
+from three separate places in the design, and no rule anywhere converts one into
+another.
+
 ## What it costs
 
-Two things, and neither is small.
+What follows is the bill, and none of it is small.
 
 The first is that the pool of people who carry standing only ever grows. Nobody
 leaves it. A society running for a century has a great many people with standing, most
@@ -134,3 +162,17 @@ and it would be dishonest to present the permanence of standing as free. It is n
 free. It was chosen, knowing what it costs, because the alternative — letting the
 removal of a corrupt official destroy the protection of the person who exposed
 them — costs more.
+
+The last cost is the one this chapter can name but not pay for. The seat that saves
+Rebel is an entry somebody wrote. Nothing in the rules can take Boss's standing away —
+this chapter has made much of that — but the rules are not what holds the entry in
+place. Remove the seating entry itself: not by recall, not through any process this
+society defines, just remove it from the record. Standing goes with it, Rebel's
+shield goes with the standing, and Rebel is imprisoned by an erasure nobody proposed,
+nobody approved, and nobody signed. The recall — the loudest, most public act this
+society can take against an official — could not do to Rebel what a quiet deletion
+can. And no rule can be written that notices, because within any moment's record an
+entry deleted and an entry never made look identical. What stands between Rebel and
+that erasure is not machinery. It is the discipline of whoever keeps the record —
+which is to say, people. The strongest promises in this chapter are conclusions
+nobody can write. The entries they stand on, somebody has to keep.
