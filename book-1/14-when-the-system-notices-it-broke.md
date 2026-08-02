@@ -18,7 +18,7 @@ a self-auditing design and the three ways it can fail.
 ## The one that fires on everybody
 
 Ask which prisoners are being held in isolation, and the answer is: all of them. Adam,
-Hano, Lalo, Nando, Don, Kel, Ruk — the seven, without exception. Ask which free people
+Hano, Lalo, Nando, Don, Kel, Ruk — every one, without exception. Ask which free people
 are, and the answer is none.
 
 That the prisoners are fewer than the people a court has judged is worth a moment.
@@ -95,8 +95,8 @@ to act.
 
 ## What it does have
 
-That is a hard finish for fourteen chapters, so it is worth being exact about what
-survives it, because something does and it is not small.
+That is a hard finish for a book of derived chapters, so it is worth being exact about
+what survives it, because something does and it is not small.
 
 Most systems have no vocabulary for their own violation. A breach is an absence: the
 thing that should have happened did not, and there is no name for that, no place to
@@ -129,7 +129,7 @@ What the slot is worth is this: every defect named in this book was found by ask
 design what it thought was true and comparing the answer to what it claimed. The
 markers themselves are miscalibrated. The capacity to interrogate is not. A society
 you can ask hard questions of, and get answers that can be checked against its own
-promises, is a society whose failures are findable — and everything in these fourteen
+promises, is a society whose failures are findable — and everything in these
 chapters that turned out to be broken was found that way, by someone who did not have
 to be an insider, using nothing but the design's own account of itself.
 

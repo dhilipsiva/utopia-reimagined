@@ -34,7 +34,7 @@
 # lines, so an empty result above means "unread" and not "the awk is broken".
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
 
-# "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — the seven, without exception."
+# "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — every one, without exception."
 # ALL SEVEN are pinned deliberately. An earlier draft named four and said "every
 # convicted person in the society, without exception"; Adam, Kel and Lalo were
 # missing and the marker fires on all three. A prose enumeration is only as good

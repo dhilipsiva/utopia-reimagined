@@ -122,8 +122,7 @@ entitled to sit uneasily with.
 
 ## What is lost
 
-The absence of arithmetic buys a great deal and it costs one thing, and the cost is
-real.
+The absence of arithmetic buys a great deal, and the cost is real.
 
 **Recognition cannot say that someone did more.**
 

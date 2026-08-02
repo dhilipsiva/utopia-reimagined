@@ -28,7 +28,7 @@ took, and the answer keeps coming back empty. Hano is still a person. Hano is st
 owed everything on the floor. Hano still speaks. Hano still votes.
 
 Movement, and nothing else. Not a principle the design announces and then quietly
-qualifies twelve chapters later, but a fact you can check item by item, and the vote
+qualifies chapters later, but a fact you can check item by item, and the vote
 is the item where it bites hardest, because the vote is the one most societies take
 first.
 
