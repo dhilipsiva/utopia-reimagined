@@ -74,6 +74,16 @@ not a joke at the design's expense; it is what happens when a system is built by
 thinking hard about the ways it might harm someone and less hard about the ways it is
 supposed to help.
 
+It is also, now, a line drawn on purpose rather than an accident the book found. The
+same machinery that watches confinement could be pointed at the debts — a rule that
+marks every person whose food never arrived is easy to write. It was written, and
+tested, and refused, because of what the test showed: a record that never holds the
+arrival marks *everyone* — the punished, the free, the never-accused, all flagged
+alike, forever. An alarm that is always right about everybody tells you nothing about
+anybody. So the design watches what it does, and does not yet watch what it owes — not
+because the second is impossible, but because pretending to watch is worse than
+saying plainly that nobody is watching.
+
 ## Where the protection stops
 
 The last chapter established that no law can imprison you for lacking one of the
