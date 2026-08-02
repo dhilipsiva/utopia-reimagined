@@ -464,23 +464,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   entitlement. Keep it visible in the prose either way; it is the single most
   credibility-buying admission the book has.
 
-- **Edited in place**: the rule is dropped and nothing replaces it. `nibli-pin`
-    returns `HARNESS ERROR (exit 2) — pins not trustworthy`, so every chapter suite
-    touching `defend` or `prisoner` stops meaning anything until it is reverted.
-  - **Added alongside the original**: also a harness error now, naming the tightened
-    copy's own line. This used to run green with one finding logged, and the change is
-    in the harness, not the engine — `nibli-pin` no longer runs pins over a fixture whose
-    line failed to load.
-  **The hazard underneath is unchanged, and that is the part to write down.** Introduce
-  the tightened copy through a pin file instead, so the fixture loads clean, and it is
-  refused while the *permissive rule stays in force* — measured, `defend(Sly)` TRUE,
-  `prisoner(Sly)` FALSE, `defend(Rebel)` TRUE, 4 pins, 0 findings. Exactly the "a
-  permissive rule left in place keeps its exploit" failure the v0.2 header warns about at
-  `:12-17`, now reachable through the stratifier rather than through oversight. Write the
-  note against what it actually does: the engine names the cycle precisely and the runner
-  stops, but only because the runner is watching — drop the "silently vanishes" framing
-  and say that the silence was the harness's, and is fixed.
-
 - **Resolve the polarity contradiction between Articles 6 and 7.** Article 7's shield is
   fail-**open** toward protection and defends the choice explicitly at `:634-640`.
   Article 6's `~permits(Appeals, $offender)` (`:536`) is fail-**closed** against
