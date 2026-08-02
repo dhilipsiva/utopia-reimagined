@@ -17,6 +17,16 @@
 # an oversight — so the "narrower rule" the chapter discusses has an empty target
 # and narrowing it is repeal. Keep these pinned; the prose turns on both.
 
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
 :expect-pins 28
 
 # "Ask the record whether Bela is recognised and the answer is no ... Beside

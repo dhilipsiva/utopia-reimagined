@@ -32,6 +32,16 @@
 # three leaves `reward/1` deriving and everything green. Never let this file drift
 # to FALSE-only pins on `reward`.
 
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
 :expect-pins 23
 
 # "Esa taught Fin, and is recognised."
