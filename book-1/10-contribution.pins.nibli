@@ -32,7 +32,7 @@
 # three leaves `reward/1` deriving and everything green. Never let this file drift
 # to FALSE-only pins on `reward`.
 
-:expect-pins 16
+:expect-pins 19
 
 # "Esa taught Fin, and is recognised."
 ? teaches(Esa, Fin).
@@ -77,7 +77,8 @@
 ? reward(Dev).
 # => FALSE
 
-# ── CARE, ONE ROUTE EACH. MUST STAY LAST: ground facts persist ───────────────
+# ── CARE, ONE ROUTE EACH. This block and everything below it write ground ────
+# facts, which persist; the fixture tail stays after every ordinary query.
 # "it walks through two of the three." Two fresh people, one door apiece, so
 # each route is isolated by construction. Nima is the teaching half: a parent
 # who teaches, with the relationship pinned on the record beside the reward —
@@ -104,3 +105,26 @@ work(Sata, Care).
 # the grades ruling's shape, re-exhibited on the care side.
 ? reward(Pico).
 # => FALSE
+
+# ── THE DOORS DO NOT ASK HOW OLD YOU ARE ─────────────────────────────────────
+# Cira is the design's own child — person without mature, the whole of the vote
+# chapter's example — and the grades ruling refused to let the record hold a
+# mark for what she was taught. Record a contribution instead and she is
+# recognised, which is the same principle read from the other side. The work
+# door is isolated here by construction: Cira has no other minting route.
+? mature(Cira).
+# => FALSE
+
+work(Cira, Chores).
+
+? reward(Cira).
+# => TRUE
+
+# ...and the teaching door, isolated by file order: the care block above pins
+# reward(Pico) FALSE while he is only tended and taught. Here Pico teaches, and
+# the same query flips. The record's answer changed because Pico contributed —
+# the design in two adjacent verdicts.
+teaches(Pico, Ona).
+
+? reward(Pico).
+# => TRUE
