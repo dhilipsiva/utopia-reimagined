@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 41
+:expect-pins 43
 
 # Hano — meant it, and that alone is not enough. These two pins belong next to
 # each other: with no dimension recorded at all, severe(Hano) would be FALSE for
@@ -38,6 +38,13 @@
 ? fit(Hano, Homestay).
 # => TRUE
 ? dwell(Hano).
+# => TRUE
+
+# [v0.9] The where has its own atom: home confinement is a placement AT
+# somewhere, recorded in the same relation as the facilities. Before the fold,
+# dwell was the only trace that Hano's placement existed, and one atom carried
+# "housed" and "at Homestay" at once.
+? building(Homestay, Hano).
 # => TRUE
 
 # Ruk — severe, non-domestic: severity blocks eligibility, high security.
@@ -119,6 +126,14 @@
 ? building(HighSec, Kel).
 # => FALSE
 ? building(LowSec, Kel).
+# => FALSE
+
+# ...and the fold gives them no pseudo-destination either. The state houses
+# them (their dwell pins below) and the record holds no where — deliberately:
+# a Homestay entry needs a home, and inventing a constant for "wherever the
+# state found" would fabricate the missing destination chapter 13's sting
+# turns on. If this flips TRUE, somebody wrote that constant.
+? building(Homestay, Kel).
 # => FALSE
 ? fit(Adam, Homestay).
 # => TRUE

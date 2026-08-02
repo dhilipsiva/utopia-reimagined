@@ -638,6 +638,21 @@ all $x: all $v: all $w: cruel($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
 # home confinement now requires DERIVED eligibility, not a raw home flag.
 all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay).
 all $x: prisoner($x) & home($x) & fit($x, Homestay) -> dwell($x).
+# [v0.9 2026-08-02] THE WHERE GETS ITS OWN ATOM. Until this rule, dwell
+# was the only record that a home-confined person's placement existed,
+# which left one atom carrying "housed" and "at Homestay" at once — and
+# dwell(Lalo) reading as "housed at HighSec" is the two-jobs collapse a
+# hostile reviewer finds in an afternoon. Placement now folds into
+# building, the file's own idiom for the where (HighSec, LowSec): a
+# home-confined person derives building(Homestay, ·) beside dwell, and
+# dwell everywhere means one thing — housed, the floor actuality.
+# Constants are free; this costs no vocabulary. The v0.8 default-housing
+# case below deliberately gets NO building entry: the record genuinely
+# holds no destination for a person the state houses for want of
+# anywhere else, and inventing an "Assigned" constant would fabricate
+# the missing where — chapter 13's sting is that there is nothing to
+# write there.
+all $x: prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x).
 # [v0.2 NEW] severity routing is no longer domestic-only (closes E3).
 all $x: prisoner($x) & severe($x) & ~family($x) -> building(HighSec, $x).
 all $x: prisoner($x) & severe($x) -> dwell($x).
