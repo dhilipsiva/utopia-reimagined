@@ -773,89 +773,16 @@ sequenced behind Phase 3's discipline by construction.
 
 ---
 
-## Correcting the research brief — each is a discrete, committable fix
+## Correcting the research brief — COMPLETE 2026-08-02
 
-- **Rewrite the social-choice paragraph — the most damaging error in the brief, and it
-  appears in two places.** `final-research.md:103` says score voting "escapes
-  Gibbard–Satterthwaite's ordinal frame", glossed *"it is always optimal for a voter to
-  give the best candidate the highest possible score"* — unsourceable, and it inverts the
-  result: **Gibbard's 1973 game-form theorem applies directly to score voting, and score
-  voting is manipulable**. That sentence describes strategic exaggeration, not
-  strategyproofness. Same line: Arrow is stated without the **transitive-social-ordering**
-  condition; Gibbard–Satterthwaite without **determinism/single-valuedness** (randomised
-  schemes escape, per Gibbard 1977); Black (1948) is credited with the strategyproofness
-  escape on single-peaked domains when it gives the *Arrow* escape — **Moulin (1980)**
-  gives the other, with the McKelvey–Schofield caveat that it dies in more than one
-  dimension; and "a rule requiring two-thirds is neither manipulable nor dictatorial" has
-  no source — the substance is the **two-outcome** restriction, not the supermajority
-  threshold. The defensible claim in this vicinity is the sincere-favourite criterion.
-  **Fix `:147` in the same commit** — recommendation 5 repeats the same three escapes in
-  compressed form. One thing survives untouched: the theorems say nothing against a rights
-  floor removed from majoritarian aggregation, and this constitution removes it.
-
-- **Fix the Muralidharan quotation — it is a splice.** `final-research.md:56` presents a
-  sentence as "verbatim from the abstract" that appears in **no** version of it: it welds
-  the February 2020 abstract (which says **10%**) onto a **10.6%** figure from the body of
-  the September 2021 revision. Do not correct it to the 2021 revision either — quote from
-  the published *REStat* version and drop the NBER citation in the same edit. Numbers to
-  re-derive: "~2 million lost access" should be **1.5–2 million**; "~1.6 million (13% of
-  beneficiaries)" should be **1.7 million** (1.2 million under the paper's conservative
-  assumption), and the 13 is a percentage-*point* increase in treated blocks only. The
-  "almost 90% genuine" figure at `:58` — the brief's self-declared strongest datapoint — is
-  **88%**, is labelled *"purely descriptive"* and non-causal by its own authors, and covers
-  **1.44 lakh** deletions in 10 study districts, not the 11 lakh statewide cancellations the
-  Drèze survey reports at `:57`. Those two must never be narrated as the same number.
-
-- **Restate Krugman honestly — he prescribes the opposite of concealment, and the repo is
-  no longer the answer.** `final-research.md:18` says "Two Cheers for Formalism" "explicitly
-  prescribes the workflow the author is following", quoting only steps (4) and (5). The
-  omitted step (3) is *"Publish the intuition, the math, and the evidence — all three."*
-  Steps (4)–(5) are an *additional* obligation, not a substitute. The paragraph's conclusion
-  — that the system being public on GitHub means "this is solved… the ideal configuration"
-  — must go with it: **the final method part is what discharges step (3)**, publishing the
-  intuition, the machinery and the evidence inside one book. Rewrite `:18` around the method
-  part and delete the "ideal configuration" line; a reader sent to a repository is exactly
-  the inspectability-without-inspection that Woodford's argument, quoted two sentences
-  earlier, says forfeits the model's authority.
-
-- **Fix the Housing First bullet — two outright errors.** Pull the CPSTF effectiveness-review
-  summary and the Jacob et al. (2022) economic review and re-derive the two sentences at
-  `final-research.md:85`.
-
-- **Reframe Santoshi Kumari around what is documented.** The uncontested "died of prolonged
-  hunger" phrasing is still in the brief at `:16` and is still the prescribed lead at `:143`.
-  Write the documented-chain version instead (cancellation 22 July 2017, the sequence that
-  followed) rather than the contested cause of death.
-
-- **Replace the Mandela Rules "authoritative gloss" — it is blog-sourced.** Still
-  load-bearing at `:68` and reused at `:141`. Substitute Principle 5 of GA res. 45/111
-  (1990) at both sites and demote "normalisation" to one of UNODC's five principles rather
-  than the authoritative reading.
-
-- **Fix the collateral-consequences and whistleblower numbers.** All four are still wrong,
-  at `:70`, `:141` and `:97`. Re-read the USCCR report and the GBES 2021/2023 waves, and fix
-  both collateral-consequence sites together.
-
-- **Fix four misattributed quotations** at `:14`, `:30`, `:32` and `:115`. Any one is a
-  reviewer's free kill. Re-check each against its primary source and re-attribute in one
-  commit.
-
-- **Smaller citation fixes — with the line numbers, and one item that is not an error.**
-  Roberts, *The Price of Everything*, PUP at `:16` — first edition **2008** (pbk. 2009).
-  Bregman is wrong in two places, `:12` and `:30`: it is **Little, Brown (US) ~288pp /
-  Bloomsbury (UK) 336pp**, and the English edition came first from The Correspondent (April
-  2016). `:14` dates the HBS case method to the "mid-20th century" — it was formalised in
-  the **early 1920s** (Donham; "case system" adopted 1922) — and the decision-forcing-case
-  quote on the same line traces only to Wikipedia and governs *instructors*, not authors;
-  cut it rather than re-source it. `:115` has Cottrell & Cockshott arguing the equations can
-  be solved "fast enough"; their claim is the narrower one that **labour-time** calculation
-  is tractable. **Not a correction:** the brief states no workweek length. Bregman's proposal
-  is a **15-hour** week — that number belongs in the claim registry, not in an edit to a
-  sentence that never made the mistake.
-
-- **Cut or rebuild the Indian-market paragraph — and remove the Rupa characterisation** at
-  `:36`, which is a standing defamation risk in a committed file and can be deleted
-  unattended today. The market figures only matter if any of `:36` survives.
+All ten corrections landed, one commit each (773ef68 social choice, 1bcacc7
+Muralidharan splice, 57a3391 Krugman, 74920cd Housing First, 8ff8788 Santoshi
+Kumari, 674cafa Mandela/GA 45-111, 2e41a05 collateral+GBES, 9930f8b the four
+quotations, 317c3c2 smaller fixes, 60f1a85 Indian market/Rupa). Every replaced
+figure or quotation was re-verified against a source fetched on the day of the
+commit, not against the bullet that reported it. The 15-hour workweek figure
+still belongs in the claim registry when it exists — the one non-error the
+section carried is now this line.
 
 ---
 
