@@ -19,7 +19,7 @@
 #   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' new-book-plans/constitution.nibli
 # must stay EMPTY. `verify.sh` runs it with a positive control.
 
-:expect-pins 26
+:expect-pins 30
 
 # "Hano was convicted ... and cannot move freely."
 ? prisoner(Hano).
@@ -120,4 +120,38 @@ free(Hano).
 
 # and Jala is genuinely unconvicted — the control for all four
 ? prisoner(Jala).
+# => FALSE
+
+# ── "What the design does not say is WHEN" — the record's door, today ────────
+# Ruled 2026-08-02: the design does not say how long, and that is ratified,
+# not pending. The time vocabulary is refused at assert time — the loud door
+# (chapter 1's closure) is the only way in.
+:refuse reasoning /not admitted vocabulary/
+year(Term, Two).
+
+:refuse reasoning /not admitted vocabulary/
+earlier(Custody, Release).
+
+# ── THE TERM THAT RELEASES NOBODY. MUST BE LAST: everything below persists ───
+# Walk through the loud door on purpose: admit the word, state the term — no
+# digit anywhere, `Two` is an opaque name — and watch what it does. Nothing.
+# The conviction stands, no release derives, nothing counts down or notices a
+# term run out. Ruk is the subject because this file has already released Hano
+# above — the term has to be stated for somebody still held. "A term could be written into this design tomorrow and nothing
+# in it would count the term down" — executed. This is what the ruling
+# declined to build: a promise with no keeper.
+#
+# A nuance found while checking: `admits` for a FRESH name loads from a probe
+# (the too-late refusal guards relations with prior facts), so this ceremony
+# can be performed on top of the record from outside the constitution's text.
+# In the society, the widening is still the visible reviewable act chapter 1
+# describes; in this harness, it means refusal pins guard the shipped text and
+# a probe may always widen on top — which is exactly what this block does.
+admits("year").
+year(Term_Ruk, Two).
+
+? prisoner(Ruk).
+# => TRUE
+
+? free(Ruk).
 # => FALSE
