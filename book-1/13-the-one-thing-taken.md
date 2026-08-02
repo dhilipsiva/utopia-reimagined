@@ -150,6 +150,16 @@ for it. Which is the harder position to hold and the only honest one — a restr
 chose is a restraint you can be argued out of, and this one should have to survive the
 argument every time it is raised.
 
+It has now been raised in earnest, in the strongest form outside readers give it: that
+a society whose design cannot say when a sentence ends should not be trusted to hold
+anyone. The restraint survived, and it came out of the argument holding a second reason
+beside the first. A term this record held would be a promise nothing keeps — nothing
+counts it down, nothing notices it run out, nobody is released by it — and this design
+has already declined, once before, to build an instrument that pretends to watch.
+Naming the length is easy; it was priced, and declined. A sentence here ends the way it
+has ended throughout these chapters: by a decision somebody writes down, not by a
+clock.
+
 That is less than it sounds, and it is worth being exact about why. This is the same
 shape as everything else in these chapters: the design is precise about consequence and
 silent about occurrence. It knows what a finished sentence means. It does not know when
