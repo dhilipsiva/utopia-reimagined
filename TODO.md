@@ -256,22 +256,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   than trusting any list here: `awk -F'->' '/^[^#]/ && /->/ && $1 ~ p' constitution.nibli`
   with each candidate name — a bare grep matches rule heads and can never fail.
 
-- **`clear/1` is a one-fact conviction nullifier.** `clear` appears twice: `:701`
-  (`all $x: clear($x) -> permits(Appeals, $x).`) and `:829` (Nia's ground fact). No
-  precondition, no author, no guard, no `derived_only` — and it is an admitted name, so
-  Article 0a does not touch it. Asserting `clear(Adam).`, re-verified 2026-08-01:
-  `permits(Appeals, Adam)` TRUE, `prisoner(Adam)` **FALSE**, `expresses(Adam)` FALSE,
-  `travel(Adam)` TRUE. `prisoner(Adam). # => TRUE` is a pinned verdict at
-  `rights-floor.pins.nibli:175`, and one write flips it. Note the asymmetry: the
-  Sock/Puppet void takes six writes, springing a convict takes one. Fix: derive relief
-  from an adjudication rather than a bare flag — `clear($x) & judge(Appeals, $x)
-  -> permits(Appeals, $x)` is verified to stratify and needs no new vocabulary. **It is
-  not free**: run alone it breaks Nia, `prisoner(Nia)` FALSE→TRUE and
-  `permits(Appeals, Nia)` TRUE→FALSE, so `judge(Appeals, Nia).` joins the cast in the
-  same commit and the suite returns to 91/91. The prose half landed in chapter 3's pass
-  (2026-08-02): the section now says who may record it — nobody in particular — and
-  prices the forgery asymmetry against the voiding instrument.
-
 - **Rename the Article 6 `dwell` head — one atom is doing two jobs, and it blocks the
   `err/2` repair.** Every rule producing `dwell` requires `prisoner` (`:591`, `:594`,
   `:606`, `:627`), and the Article 1 floor line at `:317` produces nothing — verified,
@@ -333,8 +317,9 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
   hand-list this bullet used to carry had four errors, including `severe`, which Article
   0 closed in v0.5. Every headline attack is alive under an admitted name, all
   re-verified 2026-08-01: `public(Pax).` re-derives `authority(Pax)` and reopens E1a
-  verbatim (`defend(Don)` TRUE, `prisoner(Don)` FALSE); `clear(Adam).` empties a
-  conviction; six ordinary writes reproduce the entire Sock/Puppet void
+  verbatim (`defend(Don)` TRUE, `prisoner(Don)` FALSE); emptying a conviction now takes
+  `clear(Adam).` beside a judgment naming the appeals body (v0.9 guard; re-measured
+  2026-08-02 — the bare flag derives nothing); six ordinary writes reproduce the entire Sock/Puppet void
   (`permits(Review, Sokk)` TRUE, `permits(Tribunal, Pupp)` TRUE, `false(Vict)` TRUE,
   `lose(Points, Vict)` TRUE — and `person(Vict)` FALSE, so the victim is voided and
   docked without ever being given a personhood fact); `broken(Court).` is a universal
