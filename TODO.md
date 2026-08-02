@@ -912,14 +912,13 @@ sequenced behind Phase 3's discipline by construction.
   second person, never a cast name, per the texture ceiling. What remains here is the
   harvest itself: the technique, not the prose.
 
-- **Finish the floor corrections in book-1 — two remain.** **`dwell` is nowhere glossed in
-  prose as protective shelter** — `grep -rniE "weatherproof|ventilat|plumb|sanitation"
-  book-1/` still returns nothing, so ch 8’s “somewhere to live” carries the whole weight and
-  the water-and-sanitation case is not absorbed; write the gloss into ch 8 now, it costs a
-  sentence. And **privacy is not argued down anywhere** — book-1 has one incidental use of
-  the word (`04:44`, “a private person”), and the argument that encoding it as a defeasible
-  right lands it at stratum 3 and destroys the single-deprivation theorem is Part V material.
-  That half waits on Part V; the `dwell` half does not.
+- **Finish the floor corrections in book-1 — one remains, and it waits on Part V.**
+  The `dwell` gloss landed 2026-08-02 (`e1ea6ec`): ch 8 now fixes "somewhere to live" as
+  protective shelter — weatherproof, warm, clean water and sanitation — so the
+  water-and-sanitation case is absorbed. What remains: **privacy is not argued down
+  anywhere** — book-1 has one incidental use of the word (`04:44`, “a private person”),
+  and the argument that encoding it as a defeasible right lands it at stratum 3 and
+  destroys the single-deprivation theorem is Part V material.
 
 - **Then delete both files, in one commit, with the harvest manifest in the body.** Not
   before. The commit message is the record of what was taken and what was consciously
