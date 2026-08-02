@@ -83,20 +83,6 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-- **[AUTHOR-GATED] Resolve the polarity contradiction between Articles 6 and 7.**
-  Article 7's shield is fail-**open** toward protection and defends the choice
-  explicitly. Article 6's `~permits(Appeals, $offender)` is fail-**closed** against
-  protection and defends nothing. Since v0.3 relief is an asserted `clear($x)` feeding a
-  derived `permits(Appeals, ·)`, so the *absence* of a granted relief is what convicts.
-  Same file, opposite defaults on the absence of a finding, one justified and one silent.
-  **The file names the disagreement without settling it** — Article 6's severity polarity
-  note calls it "older than this revision and still unresolved" — so what is missing is
-  the resolution, not the acknowledgement. Fix: either give the conviction rule its own
-  explicit polarity note, or separate standing-to-seek-review from a granted relief that
-  stays the sentence, or require an affirmative exhaustion fact for conviction. **Do not
-  re-open the fail-open window in the chapter** — chapter 4 defends the choice and its
-  costs section names the cost outright.
-
 - **[AUTHOR-GATED] The vocabulary batch — rule these together, in one sitting.** Every
   member widens the evidence vocabulary and the Article 0a `admits` block, and moves
   `verify.sh`'s evidence count (now 24); enlarging the vocabulary is the quietest way to
