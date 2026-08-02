@@ -640,18 +640,6 @@ chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberat
 ## The verification harness
 
 
-- **Pin the three Article 0 closures that nothing guards: `defend`, `reward`, `become`.**
-  Article 0 closes ten relations and the file says those closures are "what makes
-  Articles 4, 6, 7 and 8 mean what they say". Repo-wide only seven have a `:refuse` pin.
-  The three unpinned ones are the shield, the mint and the enactment gate — the heads of
-  Articles 7, 3 and 9. Verified that all three refusals hold today and the pins go in
-  as-is. Add to `rights-floor.pins.nibli` beside the other seven and bump `:expect-pins`
-  from 91 to 94. Ten minutes' work, and without them the file's own named failure mode
-  at `:83-86` — a `derived_only` line moved below the facts it guards "is inert and looks
-  identical" — takes three of the ten gates with it in silence. Note the contrast Article
-  0a supplies: `admits` refuses a late declaration outright, as "comes too late", so
-  Article 0 is now the one whose ordering hazard the engine still cannot see.
-
 - **The floor's own relation is queried but never controlled.**
   `grep -rn entitled book-1/*.pins.nibli new-book-plans/rights-floor.pins.nibli` returns
   three (re-run it; the count has moved once already): `rights-floor.pins.nibli:258`
