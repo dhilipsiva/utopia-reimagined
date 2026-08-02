@@ -12,7 +12,7 @@ someone. Someone attacked someone, or was cruel to them. A body passed judgment.
 auditor documented what they found. Someone lied. Someone exposed something. A person
 has a home, or a family, or a parent, or has reached adulthood. An assembly proposed a
 change; the electorate approved it; the change touches a particular article; that
-article is protected. A body is a public institution. The electorate seated someone.
+article is protected. A body is a public institution. A seating body seated someone.
 Someone was cleared. Someone was recalled. Someone was voided in an earlier period.
 Someone's sentence is finished.
 
@@ -105,8 +105,8 @@ of those facts is itself something the world may say and someone can dispute. Th
 short path — writing down the answer — is closed.
 
 **Nor can you hand yourself the authority to judge.** Standing is a conclusion too.
-Either the electorate seated you, or you hold a public office. Those are the only two
-routes, and both leave a mark somebody else can see. You cannot appoint yourself.
+Either a seating body chose you, or you hold a public office. Those are the only
+routes, and every one leaves a mark somebody else can see. You cannot appoint yourself.
 Somebody accused of a crime cannot become, in the course of defending themselves, the
 sort of person whose findings count.
 
@@ -119,10 +119,12 @@ assessment that had been thought about from one that had been typed.
 
 Now severity follows from three things about an offence, and only two of them are
 things anyone writes down. Whether the person attacked — not merely that harm occurred,
-but that they meant it. Whether they were cruel. And whether more than one person was
-harmed, which nobody records at all: each victim is written down separately, one entry
-each, and *more than one* is what the rules see when they look at those entries
-together. An offence is severe when any two of the three are present.
+but that they meant it. Whether they were cruel. And whether the offence reached more
+than one person, which nobody records at all: each person it reached is written down
+separately, one entry each, and *more than one* is what the rules see when they look at
+those entries together. An offence is severe when two of those stand together in the
+record: an attack and a cruelty landing on the same person, or either of them landing
+on one person while an injury lands on another.
 
 The consequence worth noticing is that nobody writes the number of victims. If
 somebody harmed a great many people, that is a great many separate entries, each one
@@ -163,10 +165,11 @@ auditor found something and recorded it.
 
 Esa's credibility is untouched. Nothing happened. Not "nothing happened yet" — nothing
 happened, and if no one else ever acts, nothing will. Voiding a person's credibility
-takes two independent auditors who each documented the same thing, who are not
-related to each other, who are not themselves compromised, and who have not been
-found to have lied. One person's finding, however sincere, however senior, however
-correct, is an event in the record and nothing more.
+takes two auditors holding credentials from different bodies, each of whom examined
+the person and documented what they found — two different people, neither the parent
+of the other, neither recalled, neither voided in an earlier period, and neither found
+to have lied about the person in front of them. One person's finding, however sincere,
+however senior, however correct, is an event in the record and nothing more.
 
 Nor is Koa marked for having looked. Making an accusation that goes nowhere is not
 itself a black mark. The record simply holds what Koa found, and holds it without
@@ -175,8 +178,10 @@ consequence, because consequence requires more.
 This is worth sitting with, because it is the opposite of how suspicion usually
 works. In most systems, being investigated is already a cost. The file is open. The
 question has been raised. Even a clean finding leaves something behind — the fact of
-the inquiry itself becomes a fact about you. Here it does not, because "was
-investigated" is not one of the things the world may say.
+the inquiry itself becomes a fact about you. Here the inquiry is on the record too —
+what Koa found is written, and it names Koa — and what is different is that nothing
+reads it. No rule anywhere consumes a lone finding, so the entry sits in the file and
+moves nothing. Not a mark that cannot be made; a mark that does nothing on its own.
 
 ## The way this gets taken apart
 
