@@ -93,27 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Decide whether Part V prices the temporary-assessment exclusion.**
-  Chapter 1 excludes assessments of a person's present state (`01:40-44`) and explains at
-  `01:46-48` that the reason is structural rather than principled — *"None of this is
-  because those things were considered and rejected on principle, though they were. It is
-  because every slot on the list holds something that happened."* It never prices what the
-  exclusion costs. The strongest objection in the review corpus: medical capacity, flight
-  risk and conflict-of-interest are *temporary, operational* assessments a functioning
-  society cannot run without, so forbidding them does not abolish them — it pushes them
-  into a parallel record the constitution cannot see, which is the exact failure mode
-  chapter 1 exists to prevent, relocated one level out. A hostile reader reaches this in a
-  paragraph. Inclusion-gate ruling: this is how the society **functions**, so it is
-  legitimate Part V material and out of Parts I–IV by construction. **The remedy is not
-  adoptable as stated** — a capacity or risk field is a standing judgment about a person,
-  breaking bright line 2 and landing an eligibility computation upstream of the floor. The
-  survivable answers are narrower and both need a ruling: a two-place fact about an
-  *episode* rather than a one-place property of a person, which costs another entry in the
-  evidence vocabulary and, since Article 0a, a visible `admits` line above its first use;
-  or an explicit concession that this design routes such assessments outside the record,
-  with the reason why that is the lesser harm stated rather than implied. Decide which
-  joint owns it — capture is the closest fit — and which of the three verdicts it gets.
-
 - **[AUTHOR-GATED] Decide how much emotional texture Part V absorbs.** Five of six reviewers
   independently asked for the same three things: emotional register, an external antagonist,
   and characterisation of the named cast. Mostly foreclosed by construction — the chapter
@@ -980,6 +959,17 @@ No known defects. Read it against the constitution anyway.
   universal right of appeal refuses an attacker a heresy law. One mechanism, no special
   pleading, neither outcome chosen by whoever was writing that day.
 
+  **The capture joint owns the temporary-assessment exclusion, ruled 2026-08-02, verdict
+  "Survives, narrowed."** The claim shrinks from "no assessments" to "no assessments where
+  they can reach liberty": this design does not abolish capacity, risk or crisis
+  assessments — it refuses them entry to the one record that reaches standing, liberty and
+  the floor, and the firewall is the actual claim (a hospital chart can inform care and can
+  never void you). The exile price is stated in full — assessments pushed outside live in
+  records this design does not police, and power migrates toward whatever record matters —
+  and the lesser-harm argument carries the defense: inside this record an assessment sits
+  upstream of liberty forever; outside it, its harm is bounded by what the record refuses
+  to hear. The section closes on the specification, per this bullet's own constraint: the
+  operational layer book-2 must build — expiring, episode-scoped, one-way firewalled.
   **The objection docket is now external and convergent** (`reviews/adoption_reviews.md`,
   2026-08-02): four independent reviewers land on release/duration, delivery/obligor,
   audit teeth, degree/equity, and legitimacy/transition — plus two new Part V objections

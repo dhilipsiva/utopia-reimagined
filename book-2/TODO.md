@@ -123,6 +123,17 @@ noticing.
   worse-off — everything the reviews said the no-degree rule forecloses. It forecloses it in
   *recognition*; allocation is undesigned, not forbidden. Harvest source: legacy `book.md`'s
   non-market allocation rules (need, rotation, waitlist, lottery, merit as threshold only).
+- **The firewalled operational-assessment layer.** Limited, expiring, non-persistent
+  assessments of present state — capacity, risk, crisis — for the care, protection and
+  emergency domains a functioning society cannot run without. Inherited from book-1's
+  2026-08-02 ruling with the boundary fixed: the constitutional record never widens for
+  them (the episode-fact route is refused there, composed), so the layer lives beside the
+  record and the interface is one-way — the record may inform the layer, the layer may
+  never write the record, and nothing in it may feed standing, voiding, conviction or the
+  floor. This is where the two-paradoxes thesis and the delivery layer meet: care delivery
+  needs present-state information the floor's record cannot hold, so whatever delivers the
+  floor reads this layer and answers to the firewall.
+
 - **Pilots before polities.** Municipality/co-op/union charter pilots (Vienna, Barcelona,
   housing co-ops, platform co-ops were all named); run twelve months; **publish the audit
   log** — how many `err`, how many remedied — as the evidence base. "Progressive countries
