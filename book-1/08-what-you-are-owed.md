@@ -29,12 +29,12 @@ of a body. The eighth thing is there so that "we kept them alive" is not a defen
 Now the thing this book will not soften.
 
 Ask whether Bela eats. Not whether Bela is *entitled* to eat — whether Bela eats. The
-answer this design gives is **no**, and the same answer comes back for every one of
-the eight, for every person in it. Does Bela have shelter? No. Is Cira learning? No.
-Is anyone safe, fed, cared for, in company? No, no, no, no.
+answer this design gives is **no**. Does Bela have shelter? No. Is Cira learning? No.
+Is anyone safe, fed, cared for, in company? No, no, no, no — and those four are no for
+every person in this society, convicted or free, without a single exception anywhere.
 
 This is not a design in which people are starving. It is a design that **cannot tell
-you whether they are**. The eight things are owed with total precision and there is
+you whether they are**. The floor is owed with total precision and there is
 no machinery anywhere connecting an obligation to the fact of anything reaching
 anybody. The floor is a complete account of what is due and a silent one about what
 arrives.
@@ -45,17 +45,26 @@ guarantee described in these chapters is a guarantee about *entitlement*. None i
 guarantee about *provision*. A design can make it impossible to write a law taking
 your food away and still have no idea whether there is any food.
 
-There is one exception, and it is the most uncomfortable fact in this chapter.
+There are two exceptions. They have exactly the same width, and that width is the
+most uncomfortable fact in this chapter.
 
 **Shelter derives for every confined person and for nobody else.** That is the whole
 rule, and both halves of it are the uncomfortable part. Everyone this society has
-convicted is housed — the machinery that decides where convicted people go is the one
+convicted is housed — the machinery that decides where convicted people go is a
 piece of the floor that was built out into something that actually runs. And of the
 people it has not convicted, the record can say this about none of them. Not that they
 are unhoused; that it does not know.
 
-Read the shape of that. The society is certain about the housing of exactly the people
-it is punishing.
+**Recorded speech derives the same way: for every confined person and for nobody
+else.** A confined person's words go into the record — that guarantee exists so that
+nobody this society holds can be held silently, and it is the other piece of the
+floor that actually runs. But step outside the walls and it stops. Whether a free
+person's expression ever reaches anyone is a question the record cannot answer, about
+anybody, including the woman whose credibility it went to such lengths to void.
+
+Read the shape of those two. The society is certain about the housing and the heard
+words of exactly the people it is punishing, and the two certainties have the same
+boundary: the walls.
 
 The only part of the floor that has been built out into working machinery is the part
 that overlaps with punishment. Everywhere the society does something *to* people, the
