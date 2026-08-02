@@ -152,8 +152,10 @@ verdict cannot go vacuous. No known defects remain.
 
 ### Chapter 4
 
-Its known defects landed (git has them); it still owes a whole-chapter read against
-the constitution before the pass is called done.
+Pass complete 2026-08-02: whole-chapter read, the power/standing conflation fixed at
+the condition's rationale and at the closing enumeration (the shield's test is
+standing, held now or ever — the recalled Boss is the chapter's own witness), the
+seating-class staleness fixed at the growing-list cost. No known defects remain.
 
 ### Chapter 5
 
