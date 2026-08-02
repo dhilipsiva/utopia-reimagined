@@ -232,7 +232,14 @@ baseline holds it deliberately. No known defects remain.
 
 ### Chapter 14
 
-No known defects. Read it against the constitution anyway.
+Pass complete 2026-08-02: whole-chapter read against the settled Article 8b material —
+the duty, its inheritance of the markers' miscalibration, the corrected
+powerlessness-was-a-choice position all verified — and the counted sites swept: the
+prisoner tally keeps its names and loses its count, and both chapter-count sites take
+forms that survive a spine change. The sweep also took the last two leftovers in
+chapters 9 and 10, so the ratchet lands at 1: chapter 13's title, held deliberately.
+
+**Phase 3 is complete. All fourteen chapters have whole-chapter passes.**
 
 ---
 
