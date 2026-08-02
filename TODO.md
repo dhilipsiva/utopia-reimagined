@@ -144,7 +144,11 @@ cannot-write. No known defects remain.
 
 ### Chapter 3
 
-No known defects. Read it against the constitution anyway.
+Pass complete 2026-08-02: whole-chapter read, the recorded-the-same-thing and
+not-related glosses corrected to what the rule checks (the chapter 1 fixes, applied
+where the chapter repeated them), the who-may-record disclosure the clear-bullet asked
+for written into the relief section, Nia's conviction premises pinned so the relief
+verdict cannot go vacuous. No known defects remain.
 
 ### Chapter 4
 
@@ -308,10 +312,9 @@ No known defects. Read it against the constitution anyway.
   -> permits(Appeals, $x)` is verified to stratify and needs no new vocabulary. **It is
   not free**: run alone it breaks Nia, `prisoner(Nia)` FALSE→TRUE and
   `permits(Appeals, Nia)` TRUE→FALSE, so `judge(Appeals, Nia).` joins the cast in the
-  same commit and the suite returns to 91/91. Until it lands, `03:107-122` should say
-  plainly that nothing constrains who records it — the section already says the relief
-  follows by rule from a recorded fact, and stops one sentence short of who may record
-  it.
+  same commit and the suite returns to 91/91. The prose half landed in chapter 3's pass
+  (2026-08-02): the section now says who may record it — nobody in particular — and
+  prices the forgery asymmetry against the voiding instrument.
 
 - **Rename the Article 6 `dwell` head — one atom is doing two jobs, and it blocks the
   `err/2` repair.** Every rule producing `dwell` requires `prisoner` (`:591`, `:594`,
