@@ -222,6 +222,25 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   derived head. Do not build a floor-delivery marker into this constitution without arrival
   facts, and do not re-price the decision on rule-count.
 
+- **The design does not say how long — ratified**, ruled 2026-08-02 against the adoption
+  reviews' hardest press. Time vocabulary is refused at the record's door (measured:
+  `year(Term, Two).` and `earlier(Custody, Release).` both "not admitted vocabulary"), and
+  walking through the loud door changes nothing — measured, `admits("year")` plus a stated
+  term with no digit leaves the conviction standing and derives no release; chapter 13's
+  closing pins hold both halves, on Ruk because the file has already released Hano. Two
+  reasons, both in print at `13`: grading *how long* means saying what makes one sentence
+  longer than another, and every answer prices someone's character; and a term the record
+  cannot count down is a promise with no keeper — the delivery-markers pattern, refused for
+  the second time. **Release stays an act, not an expiry**: a decision somebody writes down,
+  with no claim about whose name the record holds (chapter 1 conceded the release entry names
+  no finder). **Do not admit time vocabulary into this constitution**; sentence
+  administration — terms, review cadence, expiry — is book-2's, and the earning-shortens
+  ruling's "reduce its duration or severity" reads as design intent whose duration half waits
+  there: in book-1 nothing measures time and nothing reads `reward`, and neither is an
+  oversight. One harness nuance recorded in the pin file: `admits` for a *fresh* name loads
+  from a probe (too-late guards only relations with prior facts), so refusal pins guard the
+  shipped text and a probe may always widen on top.
+
 - **Two severity refusals, both on lexical/structural grounds rather than taste.** **Directness is refused**: the committed corpus has exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`, `injure` — and none means "directly"; `cause` (rinka) compiles but puts the person in the *effect* slot and is true of every injury in the cast, so as a boolean it routes nothing. Do not re-propose without a corpus name that carries the meaning. **Graded tiers are refused**: `building(MedSec, $x)` compiles and the constant is free, but `building/2` has no exclusivity constraint and is not closed in Article 0, so an offender matching two combinations derives two placements at once and `err(_, Placement)` is blind to it — a graded outcome needs a mutual-exclusion marker built in the same edit.
 - **Never route a constitutional judgment through the compute backend**, and the reason is not performance. An external predicate is a **trusted oracle, not something nibli proves**: a `true` reply is auto-asserted as a ground fact mid-query and never re-derived or checked (nibli `README.md:18`, and the *Trust boundary* callout in its compute-backend section — **cite that one by its heading, not a line number**; the citation has rotted twice, `:333` then `:323`, and is `:325` today). So a grade, tier or severity computed there enters the record as *a conclusion someone wrote*, which is exactly what chapter 1 says this design makes impossible. Embedding the backend changes who operates the oracle, not whether the result is derived. **Built-in arithmetic is different on trust and identical on lifecycle** — `product`/`sum`/`quotient` are computed locally with no third party, but the arithmetic fast path calls the same `assert_typed_fact`, so they leave the same untracked ground fact; "carries none of the oracle problem" is true of trust only. Two engine behaviours worth stating precisely because the earlier wording overstated both: an unreachable backend yields `UNKNOWN(BackendUnavailable)` and never `FALSE`, but a tuple already computed in that session still answers TRUE from the auto-asserted fact — an outage-*cache*, not a stall. And a universal over a number-bearing predicate is still vacuously true. It is **sometimes** no longer silent, and the earlier wording here overstated that twice. Since nibli `95cba22` a `[Domain]` note fires — but only where the restricting relation is **asserted**; put one rule in between and it goes quiet again (their corrected repro: `sum(every dog, 2, 2)` notes, the one-hop twin `sum(every animal, 2, 2)` does not). And **neither the note nor the proof step is reachable from `nibli-pin`**, which is the only binary this repo runs — verified 2026-08-01, no flag exposes it, and `nibli-host` still fails outright on a stale wasm. So treat the diagnostic as absent here, not as a safety net. What actually contains this is `verify.sh`'s digit ban: there is nothing numeric to quantify over. Compute is legitimate for the claim registry and the method part; never for the society's own conclusions.
 - **Chapter order is strictly computed**, never chosen. Exactly three elements are exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.

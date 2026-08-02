@@ -110,7 +110,10 @@ noticing.
 - **Sentence administration.** Downstream of book-1's duration decision (Phase 1 there):
   duration classes, review cadence, reintegration, what the earning-shortens ruling looks like
   as an institution. The reviews' ECHR framing (proportionality, review, rehabilitation) is
-  the requirements list to answer, whichever way the design decision falls.
+  the requirements list to answer — and the design decision fell (2026-08-02): book-1
+  ruled no-duration, ratified. Terms, review cadence and expiry are designed here, and
+  chapter 13's closing pins — a stated term that releases nobody — are the verdicts an
+  administration layer exists to change.
 - **Asymmetric discretion — officials add, never subtract.** Proposed by a reviewer as the
   humanizing feature; chapter 9 has since proven the "never subtract" half is structural (the
   record is add-only). book-2 designs the "add" half: grace as *recorded provision* — an

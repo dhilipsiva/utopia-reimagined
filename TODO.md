@@ -93,33 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Now that duration is expressible, decide whether the design says how
-  long.** Opened 2026-07-31 by nibli `fc277a9`, which established that **no new primitive
-  was ever needed** — the corpus already carries `earlier`/`later`, `happen`, `continue`,
-  `cease`/`end`, `concurrent`, and `time(x, from, to)` as an interval, none with a numeric
-  place. **Re-verified 2026-08-01, and Article 0a changed the answer.** All nine are now
-  refused at assert time — *"`earlier` is not admitted vocabulary"* — and none of them
-  compiles until an `admits` line sits above its first use. With those lines in, all nine
-  load and answer, `year(Term, Two)` included: a term length with **no digit**, so
-  `verify.sh`'s ban still does not stop it, and `cease/2` loads, so "not yet" is still not
-  a tense question — `~cease(Term, Custody)` says it. That is the mechanism working as
-  designed and it improves the decision rather than blocking it: widening the record for
-  time is now a visible, reviewable edit at Article 0a instead of a fact somebody types.
-  **What is genuinely absent is arithmetic on time** — nothing computes a length, compares
-  two, or advances a clock. So a term could be stated and nothing would count it down.
-  **Chapter 13 has been corrected either way** (`93da52f`, `d148d2d`). It used to say the
-  refusal to grade duration "is not principle — it is that the vocabulary for duration was
-  never built", which is false; `13:130-151` now says the refusal is a choice and holds the
-  chapter's own reason — grading *how long* means saying what makes one sentence longer
-  than another, and every answer prices someone's character.
-  **The decision is whether that stays a refusal.** Reversing it now costs a chapter
-  rewrite on top of the vocabulary, and the vocabulary costs twice: one evidence entry and
-  one `admits` line for every relation admitted, which is chapter 1's named threat realised
-  in a single visible edit. What it buys is a design that can state a term it cannot
-  enforce — the enforcement needs arithmetic that does not exist. Ruling "no" is a position
-  to defend rather than a limit to disclose, which is the stronger place to be and the
-  harder one.
-
 - **[AUTHOR-GATED] Decide whether the shield's exposure surface is bounded by time.**
   `authority` comes from `choose(Electorate, ·)` (`:627`), `choose(Convocation, ·)`
   (`:632`) and `public(·)` (`:643`), none of which ever expires, so the set of people whose
