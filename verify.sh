@@ -175,6 +175,15 @@ out=$(python3 new-book-plans/6-claim-table.py --check 2>&1) \
   && pass "$out" \
   || fail "a pin query has no reachable claim comment" "$out"
 
+# ── 3d. the claim registry ───────────────────────────────────────────────────
+# Schema plus the staleness gate (registry/check.py) — a fetchable entry whose
+# retrieval date fell behind fails here and names the script that refreshes it.
+if [ -f registry/claims.json ]; then
+  out=$(python3 registry/check.py 2>&1) \
+    && pass "$out" \
+    || fail "registry check failed" "$out"
+fi
+
 # ── 4. the absence claims ────────────────────────────────────────────────────
 # Each is a load-bearing sentence that no query can hold. Test the rule BODIES:
 # a bare grep also matches the predicate's own rule head, which is a check that

@@ -1,0 +1,132 @@
+{
+  "spec": {
+    "version": 1,
+    "licence": "CC0-1.0 (see LICENSE-CC0; deliberate — LICENSING.md commits the registry to CC0 so any reader can re-run and republish it)",
+    "entry_fields": {
+      "id": "stable slug; prose and pin comments cite this, never the number",
+      "claim": "one sentence, stated the way the book would state it",
+      "value": "number, [low, high] range, or structured object",
+      "units": "what the value counts",
+      "source": "title / venue / year / locator (doi or url); for papers, the PINNED version",
+      "retrieved": "ISO date the value was last checked against the source",
+      "method": "how the value was obtained: quoted, derived, fetched-by-script",
+      "fetch": "script under registry/fetch/ that can refresh this value, or null for pinned papers",
+      "notes": "caveats that must travel with the number"
+    }
+  },
+  "claims": [
+    {
+      "id": "muralidharan-2025-lost-access",
+      "claim": "During Jharkhand's biometric-authentication reforms, 1.5–2 million legitimate beneficiaries lost access to benefits at some point.",
+      "value": [
+        1500000,
+        2000000
+      ],
+      "units": "persons",
+      "source": "Muralidharan, Niehaus & Sukhtankar, \"Identity Verification Standards in Welfare Programs: Experimental Evidence from India\", Review of Economics and Statistics 107(2): 372–392 (2025), doi:10.1162/rest_a_01296",
+      "retrieved": "2026-08-02",
+      "method": "quoted from the published abstract",
+      "fetch": null,
+      "notes": "Supersedes NBER WP 26744; the WP-era '~2 million' and the spliced 10%/10.6% quotation are corrected in final-research.md (commit 1bcacc7)."
+    },
+    {
+      "id": "muralidharan-2025-reconciliation-nonreceipt",
+      "claim": "In the reconciliation phase, roughly 1.7 million people did not receive PDS benefits in the first month (July 2017).",
+      "value": 1700000,
+      "units": "persons",
+      "source": "Muralidharan, Niehaus & Sukhtankar (2025), REStat 107(2), body",
+      "retrieved": "2026-08-02",
+      "method": "derived from the paper's estimates",
+      "fetch": null,
+      "notes": "~1.2 million under the paper's conservative assumption. The widely quoted '13%' is a percentage-POINT increase in non-receipt in treated blocks, not a share of all beneficiaries."
+    },
+    {
+      "id": "muralidharan-2025-genuine-cards",
+      "claim": "88% of cancelled ration cards sampled in the study districts belonged to genuine households.",
+      "value": 88,
+      "units": "percent of sampled cancelled cards",
+      "source": "Muralidharan, Niehaus & Sukhtankar (2025), REStat 107(2)",
+      "retrieved": "2026-08-02",
+      "method": "quoted; authors label the figure 'purely descriptive' (non-causal)",
+      "fetch": null,
+      "notes": "Covers the 1.44 lakh cancellations in the 10 study districts — never to be narrated as the Drèze survey's 11 lakh statewide figure."
+    },
+    {
+      "id": "dreze-2017-cancelled-cards",
+      "claim": "11 lakh (1.1 million) ration cards were cancelled in Jharkhand for not being linked to Aadhaar.",
+      "value": 1100000,
+      "units": "ration cards",
+      "source": "Drèze, Khalid, Khera & Somanchi, \"Aadhaar and Food Security in Jharkhand\", Economic and Political Weekly 52(50): 50–60 (16 December 2017)",
+      "retrieved": "2026-08-02",
+      "method": "quoted",
+      "fetch": null,
+      "notes": "Statewide administrative figure; distinct population from the study-district sample behind muralidharan-2025-genuine-cards."
+    },
+    {
+      "id": "jacob-2022-psh-benefit-cost",
+      "claim": "US permanent-supportive-housing (Housing First) programs show a median benefit-to-cost ratio of 1.8:1.",
+      "value": 1.8,
+      "units": "benefit-to-cost ratio (2019 USD)",
+      "source": "Jacob et al., \"Permanent Supportive Housing With Housing First: Findings From a Community Guide Systematic Economic Review\", American Journal of Preventive Medicine (2022)",
+      "retrieved": "2026-08-02",
+      "method": "quoted (median across studies; median benefit $18,247/person/year vs median cost $16,479)",
+      "fetch": null,
+      "notes": "Corrects the 'Chapman et al. 2021 / 1.44' citation that stood in final-research.md until commit 74920cd."
+    },
+    {
+      "id": "cpstf-2018-housing-first-effect",
+      "claim": "Housing First produced a median 88% greater decrease in homelessness and a median 41% greater housing stability than Treatment First or usual care.",
+      "value": {
+        "homelessness_decrease_pct": 88,
+        "housing_stability_pct": 41
+      },
+      "units": "percent, median across studies",
+      "source": "CPSTF effectiveness review, 26 studies, search through February 2018 (thecommunityguide.org, Housing First finding page)",
+      "retrieved": "2026-08-02",
+      "method": "quoted",
+      "fetch": null,
+      "notes": "88% figure rests on 5 studies, 41% on 13. Never merge into an '88% vs 47%' comparison — that garble stood until commit 74920cd."
+    },
+    {
+      "id": "usccr-2019-collateral-consequences",
+      "claim": "Over 44,000 separate collateral consequences exist in US federal and state law and regulation; most (roughly 70%) relate to employment.",
+      "value": {
+        "consequences": 44000,
+        "employment_share_pct": 70
+      },
+      "units": "distinct sanctions/disqualifications (not statutes)",
+      "source": "US Commission on Civil Rights, \"Collateral Consequences: The Crossroads of Punishment, Redemption and the Effects on Communities\" (June 2019), citing the NICCC",
+      "retrieved": "2026-08-02",
+      "method": "quoted from the report body (extracted text)",
+      "fetch": null,
+      "notes": "Units matter: consequences, not laws. Local ordinances are additional and uncounted."
+    },
+    {
+      "id": "gbes-retaliation-rates",
+      "claim": "Among employees who reported misconduct: 79% (US) and a 61% global median said they experienced retaliation (2021 wave); 46% globally in the 2023 wave, consistent with 2020.",
+      "value": {
+        "us_2021_pct": 79,
+        "global_median_2021_pct": 61,
+        "global_2023_pct": 46
+      },
+      "units": "percent of employees who reported misconduct",
+      "source": "Ethics & Compliance Initiative, Global Business Ethics Survey, 2021 and 2023 waves",
+      "retrieved": "2026-08-02",
+      "method": "quoted",
+      "fetch": null,
+      "notes": "Rates among REPORTERS — misreading them as workforce-wide statistics is the error corrected in commit 2e41a05. 61% is a median across the ten 2021-wave countries."
+    },
+    {
+      "id": "example-worldbank-electricity-access",
+      "claim": "Share of the world population with access to electricity (most recent year available).",
+      "value": 91.9264843853681,
+      "units": "percent of population",
+      "source": "World Bank, indicator EG.ELC.ACCS.ZS (World Development Indicators)",
+      "retrieved": "2026-08-02",
+      "method": "fetched-by-script",
+      "fetch": "worldbank.py EG.ELC.ACCS.ZS WLD",
+      "notes": "Skeleton exemplar of a fetchable entry: value and retrieved are written by the script, never by hand. Run: python3 registry/fetch/worldbank.py EG.ELC.ACCS.ZS WLD --write registry/claims.json --id example-worldbank-electricity-access",
+      "observation_year": 2024
+    }
+  ]
+}
