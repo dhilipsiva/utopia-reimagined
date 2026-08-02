@@ -7,7 +7,7 @@ approval itself.
 
 Three things cannot be changed this way.
 
-The floor — the eight things owed to every person. The rule that a prisoner is still a
+The floor — what is owed to every person. The rule that a prisoner is still a
 person. And the list of what cannot be changed.
 
 ## Approved and dead
@@ -51,6 +51,16 @@ So the register protects itself. An amendment adjusting the list of protected th
 is void on the same terms as an amendment adjusting the things themselves — which is
 tested here, and it dies exactly like the floor cut did. The guard cannot be removed
 through the front door.
+
+One list is not on the register, and the first chapter already told you which. The
+vocabulary — what may be said about anybody at all — is not among the protected
+things, and not because nobody thought of it. The register cannot hold it:
+entrenchment voids amendments, and widening the vocabulary is not an amendment. It is
+an edit to the declaration the record opens with, never docketed and never approved,
+so there is nothing for the guard to void. Put the vocabulary's name on the register
+and the widening walks past it untouched. The quietest way to capture this society
+does not come through the front door this section just locked, and the lock does not
+fit the door it does come through.
 
 ## What this actually costs
 

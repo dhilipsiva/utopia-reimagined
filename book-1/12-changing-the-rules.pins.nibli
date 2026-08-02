@@ -5,11 +5,19 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
-# The "three ways this is thinner" section pins two live defects: the
-# self-declared target (Amend_Sneak) and the fact that become() feeds nothing.
-# Closing either rewrites that section.
+# The "three ways this is thinner" section is held two ways: the self-declared
+# target (Amend_Sneak) is a DECLARED defect below — repairing it exits 3 and
+# names the fix — and "become() feeds nothing" is an absence no pin can hold,
+# so it is a :require precondition with a positive control beside it, the
+# chapter-8 shape. Closing either rewrites that section.
 
-:expect-pins 14
+:expect-pins 17
+
+# "Nothing happens when something becomes law." — no rule body reads `become`;
+# the second :require is the positive control proving the command still works
+# (the same body-test on `prisoner` returns rules).
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /become/ {print}' new-book-plans/constitution.nibli)"
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /prisoner/ {print}' new-book-plans/constitution.nibli)"
 
 # "an ordinary reform ... becomes law without incident"
 ? suggest(Assembly, Amend_Mint).
@@ -51,13 +59,25 @@
 ? permanent(Art_Person).
 # => TRUE
 
-# DEFECT: "Propose one that declares no target at all" — Amend_Sneak is
-# introduced here rather than in the constitution, because it is an attack.
+# "One list is not on the register, and the first chapter already told you
+# which." Chapter 1 pins this beside its closing admission; it is re-tested
+# here because this is the chapter where a reader arrives holding the register
+# that would have protected it. The measured half — entrench the name on paper
+# and a vocabulary edit still walks past unvoided — cannot live in a pin,
+# because the widening is a file edit no probe performs; it lives in the pass's
+# commit message and the chapter's new paragraph.
+? permanent(Art_Evidence).
+# => FALSE
+
+# "Propose one that declares no target at all" — Amend_Sneak is introduced
+# here rather than in the constitution, because it is an attack.
 suggest(Assembly, Amend_Sneak).
 approves(Electorate, Amend_Sneak).
 
+:defect "a totality guard: an amendment that declares no target has no force"
 ? false(Amend_Sneak).
 # => FALSE
 
+:defect "a totality guard: an amendment that declares no target has no force"
 ? become(Amend_Sneak, Law).
 # => TRUE
