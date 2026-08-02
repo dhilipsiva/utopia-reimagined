@@ -80,9 +80,12 @@ earns nothing.
 Bela taught Cira — a real act, still on the record, never disputed. Bela is not
 recognised, because Bela was voided. The teaching happened and produces nothing.
 
-The same for the examiner. Lupo examined Mira and lied about it, and earns nothing
-for the examination. Dev judged his own child, lost his credibility for it, and earns
-nothing either — not merely nothing for that judgment, nothing at all.
+The same for the examiner, and here the door refuses twice over. Lupo examined Mira
+and lied about it. The lie shuts the door on that examination by itself — a dishonest
+examination earns nothing, even for an examiner in otherwise good standing — and the
+lie was adjudicated, so Lupo is voided, and the void shuts every door after it. Dev
+judged his own child, lost his credibility for it, and earns nothing either — not
+merely nothing for that judgment, nothing at all.
 
 This is the sharp edge of the previous chapters meeting this one. Voiding does not
 just strike out what you had; it closes the routes by which you would rebuild. Someone
@@ -135,11 +138,12 @@ instrument built to make contribution visible can see that it happened and not h
 much of it there was.
 
 And the refusal is not a limit of the machinery, which is the part that ought to
-trouble you. Degree is perfectly available here. Chapter 1 showed how: harm more than
-one person and the rules can tell, because each victim is a separate entry and *more
-than one* is something the rules can see in the entries. Teach more than one person and
-that is a separate entry each time too. The same reading is right there, and it has
-been left alone on purpose.
+trouble you. Degree is perfectly available here. Chapter 1 showed how: the severity
+rules can tell when an offence reached more than one person, because each victim is a
+separate entry — an attack on one person, an injury to another — and *more than one*
+is something the rules see by holding two entries side by side. Teach more than one
+person and that is a separate entry each time too. The same reading is right there,
+and it has been left alone on purpose.
 
 Follow it one step further and you can see why. Every teaching entry names two people,
 so the reading runs backwards as easily as forwards: count the people who taught
