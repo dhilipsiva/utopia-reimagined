@@ -93,19 +93,6 @@ the emptied section as "every earlier decision was ruled", which was false. Rest
 verbatim from `412e5a4^` on 2026-08-02; each may cite line numbers from before the
 loss — re-derive before trusting them.
 
-- **[AUTHOR-GATED] Decide how much emotional texture Part V absorbs.** Five of six reviewers
-  independently asked for the same three things: emotional register, an external antagonist,
-  and characterisation of the named cast. Mostly foreclosed by construction — the chapter
-  order is computed, the cast comes from the constitution's own adversarial fixtures rather
-  than from invention, and Parts I–V are jargon-free — but *five of six* is a signal about
-  **how the derived spine reads**, not a taste complaint. Two channels are open without
-  breaching the gate: Part V is explicitly non-derived, and the day-in-the-life technique is
-  already queued for harvest. Decide the ceiling **now**, before Part V is drafted, because
-  retrofitting register across fourteen finished chapters is a different job. The concrete
-  question is narrow: does the named cast get any interiority at all in Part V, or does the
-  book hold the line that the people in it are exactly the facts recorded about them — which
-  is itself the thesis.
-
 - **[AUTHOR-GATED] Voice.** All fourteen chapters are written in a plain, mostly impersonal
   register. The legacy book was first-person and warm, and the constitution's own commentary
   says "the manifesto voice is the author's to re-weave — I am not ghost-writing it." Only
@@ -959,6 +946,18 @@ No known defects. Read it against the constitution anyway.
   universal right of appeal refuses an attacker a heresy law. One mechanism, no special
   pleading, neither outcome chosen by whoever was writing that day.
 
+  **The texture ceiling, ruled 2026-08-02: four real channels, and no imagined people.**
+  No record-person gets an inner life anywhere in this book, Part V included — inventing
+  Cira's fear would fabricate exactly the kind of entry the record refuses to hold, and the
+  restraint is the thesis performed; one Part V passage states it as chosen. Five of six
+  reviewers asking for characterisation enters as citable evidence — a reader who felt the
+  flatness has felt the design — never as a defect being repaired. The four channels: the
+  author's first person (gated on the Voice ruling — supplied, not ghost-written); the
+  second-person **domestic vignette** — a household carried through food, care, housing and
+  crisis, generic "you", never a cast name (the register the derived chapters cannot hold);
+  the **hostile reviewer corpus as the antagonist**, quoted by name from `reviews/` and
+  answered at the joints; and the **nine historical cases as the feeling** — documented
+  grief, never counterfeited.
   **The capture joint owns the temporary-assessment exclusion, ruled 2026-08-02, verdict
   "Survives, narrowed."** The claim shrinks from "no assessments" to "no assessments where
   they can reach liberty": this design does not abolish capacity, risk or crisis
@@ -1210,8 +1209,9 @@ No known defects. Read it against the constitution anyway.
   book-1 is also no longer without a narrative register — every chapter is built on a named
   case, and Hano runs through most of the book. What is actually missing is the **domestic**
   register: a household carried through food, care, housing and crisis, rather than a
-  defendant carried through a procedure. Decide whether Part V gets one, since Parts I–IV
-  are derivation-gated and cannot hold it.
+  defendant carried through a procedure. **Ruled 2026-08-02: Part V gets one** — generic
+  second person, never a cast name, per the texture ceiling. What remains here is the
+  harvest itself: the technique, not the prose.
 
 - **Finish the floor corrections in book-1 — two remain.** **`dwell` is nowhere glossed in
   prose as protective shelter** — `grep -rniE "weatherproof|ventilat|plumb|sanitation"
