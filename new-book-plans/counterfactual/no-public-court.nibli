@@ -423,12 +423,29 @@ public(State).
 # INVARIANT 1 permits it too, in the narrowed form: the head is `err`, so
 # it notices without acting. It is simply not built.
 #
-# And the design already builds exactly this shape for ONE of the eight.
-# Article 6's `prisoner($p) & ~meets($p) -> err($p, Isolation)` is an
-# undelivered-right marker for company, and it is the only one. Seven
-# floor rights have no such check, for no recorded reason — the asymmetry
-# was discovered, not chosen. See the tracker. Do not describe the gap as
-# something the design cannot do; it can, and it does it once.
+# And the design builds a marker of this shape exactly once — but read it
+# precisely, because it is NOT a delivery marker. Article 6's
+# `prisoner($p) & ~meets($p) -> err($p, Isolation)` audits the design's
+# OWN act: a person this society confined, held without recorded company.
+# It watches confinement, not provisioning.
+#
+# [v0.9 RULED 2026-08-02] The floor-delivery markers are REFUSED for as
+# long as the record holds no arrival facts, and the asymmetry is chosen
+# now, not discovered. Measured before ruling: with the Undelivered rule
+# accepted, err(·, Undelivered) derives for the voided, the confined and
+# the never-accused alike — `eats` is asserted for nobody, so `~eats` is
+# true of every person alive, and a marker that fires on everyone
+# discriminates nobody. An alarm that is always right cannot help; the
+# `undelivered-marker` fixture holds that measurement permanently. Two
+# facts recorded so cost never decides this again: the general
+# `all $x: all $k: err($x,$k) -> obliged(·,$x)` form NOW DERIVES (the
+# engine limitation Article 8b's note records as fixed), so all marker
+# kinds would need ONE duty rule, not one each; and Article 0a charges
+# nothing, since `err` is derived. The refusal is about signal, not cost.
+# When a delivery layer generates arrival facts, markers become
+# discriminating and this ruling expires with its premise.
+# Do not describe the gap as something the design cannot do; it can, and
+# it declines to do it vacuously.
 all $x: person($x) -> owe(State, Eats, $x).
 all $x: person($x) -> owe(State, Dwell, $x).
 all $x: person($x) -> owe(State, Healthy, $x).
