@@ -5,7 +5,7 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 
-:expect-pins 14
+:expect-pins 17
 
 # "Hano is in custody. Hano votes."
 ? prisoner(Hano).
@@ -49,6 +49,24 @@
 # this pin flips to a refusal and the closing sections must be rewritten.
 :accept-scoped
 all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).
+
+# ── NEVER WRITTEN LOOKS LIKE NOT YET. Ground facts below persist ─────────────
+# "In the record, the teacher and the child are the same: an entry short of the
+# franchise." Esa teaches, was examined, is somebody's recorded child — and
+# holds no ballot, exactly like Cira above, because the franchise reads a
+# written adulthood entry and nobody wrote hers. Then one write, by anybody,
+# and the teacher votes. The pair is self-controlling: the FALSE only passes
+# while the entry is absent, the TRUE only after the single write.
+? mature(Esa).
+# => FALSE
+
+? decide(Esa, Ballot).
+# => FALSE
+
+mature(Esa).
+
+? decide(Esa, Ballot).
+# => TRUE
 
 # ── "AND THEN NOTHING HAPPENS." MUST BE LAST, AND MUST BE UNSCOPED ───────────
 # The scoped accept above proves the clause LOADS and then puts the base back —
