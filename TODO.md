@@ -83,14 +83,6 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-- **[AUTHOR-GATED] Decide whether book-1 opens with an epigraph.** At most **one**,
-  original, plain translation, one sentence on who Bharati was, never as structure. The
-  attribution is settled (2026-08-02): the poem is *Yoga Siddhi* (யோக சித்தி), the
-  வரம் கேட்டல் stanzas, confirmed against Tamil-literature sources and consistent with
-  `book.md`'s own appendix; the registry holds the reference (`bharati-yoga-siddhi`).
-  This ruling also decides where the poem's full Tamil text and translations live after
-  `book.md` is deleted — see the deletion gate under Legacy harvest.
-
 - **[AUTHOR-GATED] EIU vs V-Dem — the democracy/happiness licensing fork.** The EIU
   index is non-redistributable — Our World in Data cannot export the series, so that
   escape hatch is foreclosed — and `LICENSING.md` commits the claim registry to CC0, so
@@ -456,11 +448,12 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 
 - **Then delete both files, in one commit, with the harvest manifest in the body.** Not
   before. Still outstanding ahead of the deletion: the nine cases and the domestic
-  vignette (both land with Part V), the privacy argument (Part V), and a decided home for
-  the poem's full Tamil text and translations (decided with the epigraph ruling in
-  Phase 1). Already discharged: the 55 references (in `registry/claims.json`) and the
-  five bright lines (swept; result under Standing facts). The commit message is the
-  record of what was taken and what was consciously dropped.
+  vignette (both land with Part V) and the privacy argument (Part V). Already
+  discharged: the 55 references (`registry/claims.json`), the five bright lines
+  (swept; result under Standing facts), and the poem (ruled 2026-08-02: stanza 4 and
+  the author's translation are `book-1/epigraph.md`; the full two-stanza text stays in
+  git history, recorded in the manifest as consciously kept there). The commit message
+  is the record of what was taken and what was consciously dropped.
 
 ---
 
