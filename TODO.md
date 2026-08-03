@@ -42,8 +42,9 @@ cross-cutting sections:
    to write the concession while the limitation is fixable.
 
 The sections after the phases are cross-cutting: the remaining book-1 writing
-(the opening note, Part V, the method part), the reach plan, the data work, the
-legacy harvest, and a pointer to book-2's own tracker. **Standing facts and
+(now only the method part — the opening note and Part V landed 2026-08-03), the
+reach plan, the data work, the legacy harvest, and a pointer to book-2's own
+tracker. **Standing facts and
 methods** closes the file and holds knowledge, not tasks.
 
 Plain bullets, never numbered. Delete a bullet entirely when it fully lands;
@@ -120,105 +121,10 @@ measured an engine change that was never rebuilt.
 
 ## book-1 — remaining writing
 
-- **Build Part V on the five-joints scorecard, re-framed for destination-only scope.**
-  Nothing of it exists. Score this design at the five joints — **valuation, rotation,
-  coercion, capture, the state** — as places a *functioning* design breaks, never as stages
-  of a rollout, because "here is what happened to people who tried to build this" is a
-  transition story and belongs to book-2. Three constraints, all grafted deliberately. Use
-  the three-word verdict vocabulary — **Survives / Survives, narrowed / Fails as stated** —
-  printed once and never expanded, because it is the only proposed seam device that
-  disciplines at the sentence level. Every limit closes on a **specification** concrete
-  enough to be worked on, not on an admission. And publish **no numeric self-grade**: the
-  hostile judge's dismissal sentence was *"two and a half out of five"*, and printing that
-  as the structure of the part administers his verdict for him. On salvage: the only genuine
-  harvest is "Learning from Those Who Tried" (`book.md:2303-2380`, 2,264 words), and its
-  nine cases enter as **evidence about failure modes**, never as a narrative of attempts.
-  "When the Pod Meets the State" is unsalvageable — 21 uses of "pod" in 2,092 words,
-  and this book has no pods. The
-  social-credit chapter is the best writing in the manuscript and unliftable, with seven
-  named dependencies pointing at three chapters that will not exist.
-  **Budget: ~12,000 words** — settled, see `CLAUDE.md`'s length invariant. Shape: a
-  ~1,700-word frame, five joints of ~1,600–2,500, a ~400-word close. **The frame earns
-  the three verdict words on somebody else's claim before spending one on the design** —
-  the democracy-and-happiness data runs Survives → Survives, narrowed → Fails as stated,
-  on a claim this book would have loved to be true, which is exactly why it is the
-  exhibit. Then every joint runs the same five moves: what broke here historically →
-  what this design does → **the strongest real objection, named, not straw-manned, and
-  left unanswered for a beat** → the answer, and what of the objection survives it →
-  the verdict and its specification. Each objector picks up a concession the derived
-  spine already made and argues it is fatal, which is what stops the voices reading as
-  invented. Two rules, stated once and enforced: **no aggregate verdict anywhere** — a
-  five-row summary table *is* the numeric self-grade in another notation, because one
-  Survives plus three narrowed plus one Fails renders as "two and a half out of five"
-  to any reader who wants it to, so no recap, no verdict word in a heading or the
-  contents; and **every specification is a property
-  of the finished society, never a task** — "allocation patterns by group are published
-  in a form an outsider can check", never "set up an audit body", or the inclusion gate
-  leaks out of the part that is exempt from only half of it.
-  Two collisions to fix while drafting. One of the five joints is named **coercion**
-  (what may be done to a person) and the coercion *concession* is assigned to the
-  **state** joint (a body funded compulsorily) — same one-word-two-things problem as
-  `standing`/`false`; disambiguate once in the frame with a forward reference. And the
-  single book-2 pointer belongs at the end of the method part, not here.
-
-  **The capture joint answers Ambedkar by name.** Caste as a design problem rather than a
-  historical footnote — reserved committee representation, and external audit of allocation
-  patterns, the second of which is already this part's worked example of a specification
-  stated as a property ("allocation patterns by group are published in a form an outsider
-  can check"). Part V is exempt from the derivation gate, which is exactly why this belongs
-  here and not in a computed chapter.
-
-  **The state joint carries two sentences nothing else in book-1 can.** *Concede coercion
-  in plain words* — a body obliged to provide at scale is funded compulsorily, and a reader
-  who notices the word being avoided stops trusting the rest; `grep -rn "coercion\|social
-  democ" book-1/` still returns nothing. *State the positioning outright* — the ends are
-  social-democratic and the provider is a fiscal agent; the novelty is the constraint
-  mechanism, not the absence of a provider. Said plainly, "social democracy with extra
-  steps" loses its teeth, because the extra step is a compile-time prohibition nobody else
-  has. Neither can go in Parts I–IV, and the reason is the inclusion gate rather than
-  taste: the constitution has no vocabulary for a tax, a transfer or a community, so the
-  *fiscal* character of the bearer is not derivable and chapter 8 can only say a public
-  body owes the eight to every person. Chapter 8 sets this up and does not spend it —
-  it names the body and says nothing compels it — which is the true state of the design
-  and exactly the question this joint has to answer. The earned-time concession from the
-  release ruling lands at the *coercion* joint next door: "voluntary" is structurally
-  pressured when the alternative is longer confinement.
-
-  **The texture ceiling, ruled 2026-08-02: four real channels, and no imagined people.**
-  No record-person gets an inner life anywhere in this book, Part V included — inventing
-  Cira's fear would fabricate exactly the kind of entry the record refuses to hold, and the
-  restraint is the thesis performed; one Part V passage states it as chosen. Five of six
-  reviewers asking for characterisation enters as citable evidence — a reader who felt the
-  flatness has felt the design — never as a defect being repaired. The four channels: the
-  author's first person (admitted, author-drafted, sessions edit mechanics only); the
-  second-person **domestic vignette** — a household carried through food, care, housing and
-  crisis, generic "you", never a cast name (the register the derived chapters cannot hold);
-  the **hostile reviewer corpus as the antagonist**, quoted by name from `reviews/` and
-  answered at the joints; and the **nine historical cases as the feeling** — documented
-  grief, never counterfeited.
-
-  **The capture joint owns the temporary-assessment exclusion, ruled 2026-08-02, verdict
-  "Survives, narrowed."** The claim shrinks from "no assessments" to "no assessments where
-  they can reach liberty": this design does not abolish capacity, risk or crisis
-  assessments — it refuses them entry to the one record that reaches standing, liberty and
-  the floor, and the firewall is the actual claim (a hospital chart can inform care and can
-  never void you). The exile price is stated in full — assessments pushed outside live in
-  records this design does not police, and power migrates toward whatever record matters —
-  and the lesser-harm argument carries the defense. The section closes on the
-  specification, per this bullet's own constraint: the operational layer book-2 must
-  build — expiring, episode-scoped, one-way firewalled.
-
-  **The objection docket is external and convergent** (`reviews/adoption_reviews.md`):
-  four independent reviewers land on release/duration, delivery/obligor, audit teeth,
-  degree/equity, and legitimacy/transition — plus two Part V objections from the
-  engine-book review, the unenumerated-rights cage and proportionality-vs-structure.
-  Part V answers these by name or it has not done its job. **One burden is Part V's alone
-  and derivation cannot carry it**: *why this vocabulary* — the record's names are a
-  stipulation, the book proves only what follows from them, and Part V either argues the
-  choice or concedes it is one. Disclosure is done (chapter 1); justification is not.
-
 - **The method part discloses the stress surface.** It sits inside the voice boundary —
-  first person permitted, same supply protocol as the opening note and Part V. The suite's
+  first person permitted; the voice protocol applies as CLAUDE.md records it (the
+  opening note and Part V were both session-drafted by the author's explicit
+  instruction; the method part stays author-drafted unless the author rules again). The suite's
   confidence register must not outrun its provenance: every probe, fixture and refusal was
   written by the author and AI sessions against a cast of dozens — no independent
   reimplementation, no external red-team, and the engine that blesses the book shares the
@@ -262,13 +168,6 @@ measured an engine change that was never rebuilt.
   plain: no tool names, no jargon, nothing a general reader must decode — it addresses
   whoever reached the last page, not only the readers who came for the formalism.
 
-- **Reframe the research brief's India-first assumptions for a global audience** — the
-  brief is `new-book-plans/final-research.md`. India material stays
-  as **evidence** — Aadhaar/PDS is among the strongest evidence the book has — but it is one
-  case among several, not the frame, and every reference needs enough context for a reader
-  who has never heard of a ration card. Unblocked by drafting Part V; that is the only place
-  the India evidence lands.
-
 - **Parts I–IV second expansion wave — blocked on new derived material.** The first wave
   (2026-08-02) took the fourteen chapters from 25,027 to 28,585 words and stopped where
   the verified-untold material stopped; re-run `wc -w book-1/[0-9]*.md` before trusting
@@ -279,8 +178,13 @@ measured an engine change that was never rebuilt.
   current constitution: it arrives as Phase 1 decisions land (each ruling is new derived
   material with prose waiting for it — the clawback, expungement, kinship and delivery
   rulings all rewrite or extend chapters), or the author revises the target down.
-  Break-even for the length invariant (derived > 17,800) is already cleared either way;
-  Part V's 12,000 must be justified by content, not ratio. Do not pad.
+  The length invariant holds with room — measured 2026-08-03: chapters 1–14 are
+  29,440 words against 6,434 non-derived (opening note, epigraph, Part V), with only
+  the ~5,000-word method part still to come. Part V landed at ~5,500 words against its
+  ~12,000 budget: every constraint and docket item in the drafting bullet is in it, and
+  the budget's own rule — justified by content, not ratio; do not pad — decided the
+  gap. Whether Part V should grow toward the budget is the author's call, joint by
+  joint.
 
 - **Add `LICENSE-MIT` + `LICENSE-APACHE` — now unblocked.** The condition ("when the
   harness and fetchers are written") is met: `registry/check.py`,
@@ -329,8 +233,11 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 
 - **The rendering step — build it beside the first prose that cites a registry id.**
   Nothing in book-1's derived chapters may carry a number (the counted-claims gate), so
-  value-injection waits for the empirical writing it serves: Part V's worked example and
-  book-2. Do not build it speculatively. More fetchers (WHO GHO, OWID, FAOSTAT…) land the
+  value-injection waited for the empirical writing it serves — and Part V now exists:
+  its frame and capture joint carry registry-backed numbers as hand-written prose,
+  checked against the registry by the landing verification. Build the step beside
+  those figures, or rule that Part V's handful stays hand-checked. Do not build past
+  its consumers. More fetchers (WHO GHO, OWID, FAOSTAT…) land the
   same way — as entries need them.
 
 - **Re-cite the ported registry entries against published versions.** The port
@@ -357,11 +264,12 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   cleanly refuted — it survives the income control narrowed on polyarchy (p = 0.032)
   and dies-or-marginal on the alternative index over the identical sample — so the
   worked example's third act becomes "a verdict that tracks the instrument is not
-  citable", which is a stronger methods lesson than the refutation it replaces. When
-  Part V is drafted, its frame uses this arc; the EIU-era analysis below remains the
-  historical working reference. FLAG for the author: `democracy_vs_happiness_144.csv`
+  citable", which is a stronger methods lesson than the refutation it replaces. Part V's
+  frame now runs this arc (landed 2026-08-03); the EIU-era sub-bullets below remain
+  the historical working reference. FLAG for the author: `democracy_vs_happiness_144.csv`
   in the repo root (CC0 under the root LICENSE, committed pre-ruling) carries EIU
-  index values — same grounds as the registry ruling, worth a look.- **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
+  index values — same grounds as the registry ruling, worth a look.
+  - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
     floor on subjective wellbeing", from regressing |residual| on democracy score,
     p = 0.0004, which is exactly how convincing it looks — is the one claim it never
     controls for income, and
@@ -379,12 +287,8 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   - **Use the step sizes.** Authoritarian → Hybrid buys **+0.16** — nothing. Hybrid →
     Flawed +0.73. Flawed → Full +1.01. Partial democratisation does approximately
     nothing; the gain is concentrated at the top of the scale.
-  - **Make it Part V's worked example of the method.** Take "democracy makes people
-    happier", test it, and report: survives raw, narrows sharply under income control,
-    and the floor version fails outright. The book demonstrating that discipline on a
-    claim it would have loved is worth more than the claim.
-  - When the ruling lands, record `demo-happy.txt` in the registry as "prior analysis,
-    independently re-derived", with the CSV's provenance pinned: WHR 2025 (2022–2024
+  - Still to do from the ruling: record `demo-happy.txt` in the registry as "prior
+    analysis, independently re-derived", with the CSV's provenance pinned: WHR 2025 (2022–2024
     average) merged with EIU 2025, 144 countries matched from EIU's 166 and WHR's 147.
 
 - **Publish the registry with the book, not just in the repo.** The formalism stays
@@ -397,37 +301,17 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 
 ## Legacy harvest — before `book.md` and `manifesto.md` are deleted
 
-- **Harvest the nine historical cases.** New Harmony and the labour exchange, China's
-  work-point villages, the kibbutzim, Nyerere's Ujamaa, Chile's Cybersyn, Auroville,
-  Mondragon, WIR, Kerala's People's Plan — 2,264 words, researched, sourced, and
-  mechanism-independent; their references are already registry entries. **Re-point them
-  when porting:** book-1 does not tell the story of people who tried to build a better
-  society — that is transition. Each case enters as evidence about a *failure mode of a
-  functioning design*, never as an attempt narrative. Nowhere to put them until Part V
-  exists.
-
-- **Harvest the day-in-the-life technique, not the prose.** The three vignettes are at
-  `book.md:981-984` (merit points), `1395-1398` (shelter, mobility, communication) and
-  `2560-2563` (governance) — all three verified in place. All three are second-person and
-  generic and two are MVS-framed, so nothing ports verbatim. What book-1 is missing is
-  the **domestic** register: a household carried through food, care, housing and crisis,
-  rather than a defendant carried through a procedure. **Ruled 2026-08-02: Part V gets
-  one** — generic second person, never a cast name, per the texture ceiling. What remains
-  here is the harvest itself: the technique, not the prose.
-
-- **The last floor correction waits on Part V: privacy is not argued down anywhere.**
-  book-1 has one incidental use of the word ("a private person", chapter 4), and the
-  argument that encoding privacy as a defeasible right lands it at stratum 3 and destroys
-  the single-deprivation theorem is Part V material.
-
-- **Then delete both files, in one commit, with the harvest manifest in the body.** Not
-  before. Still outstanding ahead of the deletion: the nine cases and the domestic
-  vignette (both land with Part V) and the privacy argument (Part V). Already
-  discharged: the 55 references (`registry/claims.json`), the five bright lines
-  (swept; result under Standing facts), and the poem (ruled 2026-08-02: stanza 4 and
-  the author's translation are `book-1/epigraph.md`; the full two-stanza text stays in
-  git history, recorded in the manifest as consciously kept there). The commit message
-  is the record of what was taken and what was consciously dropped.
+- **Delete both files, in one commit, with the harvest manifest in the body.** The
+  harvest gate is fully discharged as of 2026-08-03: the 55 references
+  (`registry/claims.json`); the five bright lines (swept; result under Standing
+  facts); the poem (stanza 4 and the author's translation are `book-1/epigraph.md`,
+  the full two-stanza text consciously kept in git history and recorded so in the
+  manifest); the nine historical cases (Part V, re-pointed as failure-mode evidence);
+  the domestic vignette register (Part V's kitchen); and the privacy argument (Part
+  V's capture joint). What remains is the deletion commit itself, and its timing is
+  the author's: CLAUDE.md ties deletion to both new books existing, so the files
+  stand until that is true or the author rules sooner. The commit message is the
+  record of what was taken and what was consciously dropped.
 
 ---
 
