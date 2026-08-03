@@ -83,118 +83,20 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-- **[AUTHOR-GATED] The vocabulary batch — rule these together, in one sitting.** Every
-  member widens the evidence vocabulary and the Article 0a `admits` block, and moves
-  `verify.sh`'s evidence count (now 24); enlarging the vocabulary is the quietest way to
-  capture a system, the file's own threat model, so the widenings are judged jointly
-  rather than one at a time. Chapters 5, 6 and 10 now flag the first three members as
-  open questions in print, so each ruling has prose waiting to receive it. The members:
-
-  - **Expungement for `rotten` — and `capture` and `judge`. URGENT: release landed and
-    this did not, so the asymmetry is live in print.** A single void is perpetual and
-    compounds, with no route back, while a conviction can be finished. That makes losing
-    your credibility the harshest sanction in the design — harsher than imprisonment.
-    Chapter 6's "mark that crosses the year" section now states it exactly: the record
-    has a word for a finished sentence and none for a finished voiding, so a voided
-    person's way back is the record-keeper's silence. The author decided 2026-07-29 that
-    release and expungement are designed together; only the first half shipped.
-    **The shape is known and cheap**, because it is the shape release used: an asserted
-    expungement fact as a `~<expunged>` body conjunct on the multi-sig rule and on
-    `rotten -> false`. Both are safe — the predicate is stratum 0 and `false` is stratum
-    1, so no cycle. **Do not** put `~false` in a `false`-headed rule; the file records
-    that exact attempt failing as E2, and it still fails.
-    **Two sites are not enough, and this was measured.** With the conjunct on both, an
-    expunged Vex has `false(Vex)` FALSE and the clawback stops — but `permits(Review,
-    Vex)` stays FALSE, because Article 8's credential rules read `~rotten` directly.
-    Decide whether expungement clears the mark only or also returns the pen; if the
-    latter, it is four sites, not two. Costs one evidence entry (24 → 25), an `admits`
-    line above first use, and the matching move of `verify.sh`'s evidence check — and
-    the prose sites that quote the record's list move again in the same pass. Worth
-    framing in the book as forgiveness being a *right* rather than as a bug fix.
-
-  - **A precondition on `capture`.** `capture($a, $audited)` has no precondition
-    anywhere: any credentialed cross-body pair can void any person for no stated reason.
-    The cross-body requirement raised the cost of assembling that pair and did nothing
-    about the missing grounds — the one existing mitigation was evaluated and is not
-    this. Chapters 5 and 10 now admit the absence in print — the record shows who and never why, and
-    the examiner door pays on the same empty pair. Needs one design decision — which
-    predicate carries "grounds", since adding one enlarges the evidence vocabulary —
-    after which the guard is a body conjunct. Pair with an epoch expiry on `capture` and
-    `judge`.
-
-  - **Widen kinship beyond `parent/2` — available today, and not free.** Article 4's
-    independence check names one relationship, so spouses and siblings co-sign. **Not
-    blocked on the engine**: `married` (speni), `brother` (bruna), `sister` (mensi) and
-    `sibling` (tunba) are all in nibli's committed alias corpus — cite them by name,
-    never by line. Re-verified 2026-08-01: appending `~married`/`~brother`/`~sister` in
-    both directions loads at 0 errors and leaves `false(Bela)` and `false(Lupo)` TRUE,
-    `false(Tyr)` FALSE. The cross-body probe has a verdict: with `admits("married").`
-    and `married(Gia, Hex).` added, `false(Bela)` flips **FALSE** — the shipped
-    cross-body pair stops co-signing, which is the demonstration. **The cost is what
-    needs deciding**: three evidence entries (24 → 27), three `admits` lines, the
-    matching check move. Chapter 5 is already honest either way: its costs section says
-    the words exist, the widening has not been judged worth it, and discloses that as a
-    choice. What remains is only whether to land the rule.
-
-  - **The first delivery route: verified teaching delivers learning. VERIFIED TO WORK,
-    and the highest-value member of the batch.** Nothing in this design touches the
-    floor: of the floor rights, most have no producing rule at all, and the ones that
-    derive (`dwell`, `expresses`) derive only from `prisoner` — so the society's only
-    working provision runs through its prisons. A floor predicate may be a **rule
-    head** — INVARIANT 1 forbids only rule *bodies*. Re-verified on the live engine
-    2026-08-01: `all $t: all $s: teaches($t, $s) & capture($t, $s) -> learn($s).` is
-    **accepted**, the firewall still refuses `person & ~believe -> prisoner`, and the
-    non-floor `~home` control still loads. It derives nothing as it stands — no teacher
-    captures a student in the shipped cast — so force it before believing it: adding
-    `judge(Bela, Cira). capture(Bela, Cira).` gives `learn(Cira)` TRUE.
-    **Keep the entitlement and the actuality apart when writing it** — `entitled` stays
-    unconditional; `learn(X)` becomes trackable — or it reads as "you have the right to
-    learn only if you passed", the eligibility-upstream-of-rights structure the design
-    refuses everywhere else. **And do not name it "verification"**: examining a person
-    is already `judge` + `capture`, and borrowing them costs twice — a credentialed
-    cross-body pair doing it completes Article 4's multi-sig and **voids the student**,
-    and the pair also fires the audit-reward rule. A real delivery rule needs its own
-    predicate, which since Article 0a costs an `admits` line as well as an evidence
-    entry — which is why it sits in this batch. **The recognition half of the original
-    proposal stays refused** (the 2026-07-30 grades ruling): `learn` is a floor
-    actuality, not recognition, and delivering learning is not grading the learner;
-    `verify.sh` section 4b refuses a rule that counts `teaches` entries. This is also
-    what unblocks the floor-proximity perks gradient, which cannot be computed while
-    nothing reaches the floor at all. Any route built must keep a delivery **record** —
-    an evidence fact about something reaching a person — distinct from a derived
-    actuality: the constitution's "residual trust base, II" section records that all
-    floor heads accept a fiat rule (`person -> P`) that fakes delivery, silences the
-    isolation marker in the same edit, and leaves `owe` reading as a discharged
-    obligation; the only test that separates a route from the fiat is what arrival
-    evidence sits upstream of the head.
-
-  - **The governance-vocabulary check — the batch's outer frame.** Parts I–V are gated
-    on derivation, and the constitution has no predicate for a community, a transfer, a
-    tax, or a term of office — so none of the following is derivable today and all of it
-    is constitution work first. In dependency order: recall is one asserted `broken(·)`
-    fact consumed by the two credential rules — at-will, no threshold, no administering
-    body, no term (replacing it also rewrites the passages in chapters 2 and 3 that
-    describe it as is); the magnet problem — mobility is derived and there is no
-    community concept, so "generous communities attract need" cannot currently be
-    *stated*, let alone answered; justice material — standards of proof,
-    proportionality, an appeals path independent of the recognition apparatus, and who
-    inspects placement under Article 6; portability of entitlements, so exit from a
-    hostile community is not destitution — blocked on the same missing community
-    concept. Price the widenings in together rather than adding predicates one at a
-    time.
-
-- **[AUTHOR-GATED] Grow the provisioning layer, or write Parts I–V to stop where they
-  stop.** Downstream of the teaching-delivers-learning ruling above: if that route is
-  approved, the delivery layer has its first rule and this fork's first branch opens; if
-  refused, the second branch is the answer and much of it is already in print. Of the
-  floor rights, six have no producing rule of their own (`eats`, `healthy`, `secure`,
-  `learn`, `believe`, `meets` — all FALSE for everyone), and the ones that derive do so
-  for prisoners alone. Article 1b named the bearer and moved none of it — verified,
-  `owe(State, Provision, Hano)` and `authority(State)` are both TRUE while every one of
-  those six stays FALSE for every person in the cast — so the obligation layer is
-  complete *and attributed*, and the delivery layer does not exist. Either build one or state that Parts I–V stop
-  at entitlement. Keep it visible in the prose either way; it is the single most
-  credibility-buying admission the book has.
+- **[AUTHOR-GATED] The provisioning fork, narrowed by the delivery ruling: how far does
+  book-1's delivery layer grow?** The first branch opened 2026-08-02 — the delivery
+  layer has its first rule (`teaches` + `hears` -> `learn`, dormant), and chapters 8
+  and 13 already state where delivery stops. What remains to rule: whether book-1
+  grows further routes to the other floor actualities (`eats`, `healthy`, `secure`,
+  `believe`, `meets` still have no producing rule of their own; `dwell`/`expresses`
+  derive for prisoners alone — Article 1b named the bearer and moved none of it,
+  verified: `owe(State, Provision, Hano)` and `authority(State)` both TRUE while those
+  five stay FALSE for everyone), or declares the learning route the destination-book's
+  whole delivery story and leaves the rest to book-2's operational layer. Each further
+  route costs an arrival-record name (the widening class the batch priced) and must
+  pass the residual-trust-base-II test: arrival evidence upstream of the head, never
+  the roster. The credibility posture is honest either way — the prose states the gap
+  and the one route in the same breath.
 
 - **[AUTHOR-GATED] Decide whether book-1 opens with an epigraph.** At most **one**,
   original, plain translation, one sentence on who Bharati was, never as structure. The

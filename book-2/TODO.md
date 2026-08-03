@@ -68,6 +68,17 @@ noticing.
 
 ## From the hold list
 
+- **The governance vocabulary — deferred here by ruling, 2026-08-02 (book-1's vocabulary
+  batch, recorded in book-1's `CLAUDE.md`).** book-1's constitution has no predicate for
+  a community, a transfer, a tax, or a term of office, and the batch ruled that it will
+  not grow them: recall stays one asserted fact with no threshold or term (chapters 2-3
+  describe it as-is, honestly), the magnet problem and entitlement portability cannot be
+  stated without a community concept, and the justice material (standards of proof,
+  proportionality, an independent appeals path, placement inspection) needs the same
+  missing vocabulary. These arrive HERE as requirements for the operational layer, with
+  book-1's Part V owning the specifications stated as properties. Priced jointly when
+  worked — the one-name-at-a-time route was the exact shape the batch existed to refuse.
+
 - **Oversight of the duty-bearer — enablers, their checkers, and the meta-study.** Raised by
   the author 2026-07-31 while ruling the homeless-convict gap: if shelter is owed and somebody
   has none, the people who deliver it should have to study why, and somebody should check on

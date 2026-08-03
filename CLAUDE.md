@@ -392,6 +392,43 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   finding-with-no-finder class whose *withheld* entry blocks every conviction — one
   word upstream of liberty, pointed the other way.
 
+- **The vocabulary batch — five rulings, one sitting**, 2026-08-02, landed as four
+  constitution commits (`b51781f` kinship, `6c68306` forgive, `fc51b75` cite, `4231547`
+  hears; evidence vocabulary 24 → 29, admits 25 → 30). Each ruling names its refused
+  wider form so nothing trickles back. **(1) Kinship**: `married` (speni) and `sibling`
+  (tunba) joined Article 4's independence check in both directions, beside `~parent` —
+  dead guards, since the cast records no marriage or siblinghood; the gendered pair
+  (`brother`/`sister`) was skipped so the record carries no axis it does not need, and
+  **Article 5's judge-your-child rule was deliberately not extended**. Chapter 5 keeps
+  the residue: closeness the record has no words for still co-signs. **(2) Expungement,
+  mark only**: `forgive(Appeals, $x)` beside `judge(Appeals, $x)` derives `clean($x)`
+  (a new `derived_only` — hold it apart from the asserted `clear`), and the epoch carry
+  became `rotten & ~clean -> false`. Two writes, never one — the clear-guard shape.
+  Word restored, clawback stops, doors reopen, and the measured retroactive consequence
+  is told in print: a forgiven examiner's recorded past examinations start paying.
+  **The pen-return form (four sites) was refused**: credential rules and the multi-sig's
+  signer checks still read the mark itself, which stays on the record — forgiven, not
+  erased; the way back for the person and the way back to power are different roads.
+  **(3) Grounds, the paid door only**: `cite($auditor, $ground, $audited)` (sitna) is a
+  condition on the examiner-reward rule — the bare pair that minted for a fresh clean
+  person now earns nothing (the Yano exhibit, ch10) — with the limit stated where the
+  guard is: any word fills the slot, so the record buys an author for the why, not its
+  truth. **The void's own grounds stay deliberately unasked** — Article 4's multi-sig is
+  untouched and chapter 5's who-never-why stays the open question, now narrowed to
+  where it matters most. **(4) Delivery**: `teaches($t,$s) & hears($s,$t) -> learn($s)`
+  — the first route to a floor actuality that does not run through a prison. `hears`
+  (tirna) is a two-sided arrival record rating nobody; the entitlement stays
+  unconditional; the route ships **dormant** (no cast arrival — the placement-marker
+  posture, pinned live in ch8), and **cast exercise was declined**: Cira's hearing is a
+  probe, not a shipped fact, so chapter 8's no-litany and chapter 13's sting stand.
+  The grades ruling is untouched in both directions — being taught still mints nothing,
+  and the rule joins `teaches` with `hears`, never with itself. **(5) Governance
+  vocabulary — deferred to book-2, as a ruling**: no community, transfer, tax, or
+  term-of-office predicate exists; recall-as-is is honestly described in chapters 2–3;
+  the magnet, portability and justice items cannot be stated in the current vocabulary.
+  Part V owns their specifications; book-2 owns the vocabulary. Do not re-propose the
+  members one at a time — the batch was priced jointly, which was the point.
+
 - **Two severity refusals, both on lexical/structural grounds rather than taste.** **Directness is refused**: the committed corpus has exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`, `injure` — and none means "directly"; `cause` (rinka) compiles but puts the person in the *effect* slot and is true of every injury in the cast, so as a boolean it routes nothing. Do not re-propose without a corpus name that carries the meaning. **Graded tiers are refused**: `building(MedSec, $x)` compiles and the constant is free, but `building/2` has no exclusivity constraint and is not closed in Article 0, so an offender matching two combinations derives two placements at once and `err(_, Placement)` is blind to it — a graded outcome needs a mutual-exclusion marker built in the same edit.
 - **Never route a constitutional judgment through the compute backend**, and the reason is not performance. An external predicate is a **trusted oracle, not something nibli proves**: a `true` reply is auto-asserted as a ground fact mid-query and never re-derived or checked (nibli `README.md:18`, and the *Trust boundary* callout in its compute-backend section — **cite that one by its heading, not a line number**; the citation has rotted twice, `:333` then `:323`, and is `:325` today). So a grade, tier or severity computed there enters the record as *a conclusion someone wrote*, which is exactly what chapter 1 says this design makes impossible. Embedding the backend changes who operates the oracle, not whether the result is derived. **Built-in arithmetic is different on trust and identical on lifecycle** — `product`/`sum`/`quotient` are computed locally with no third party, but the arithmetic fast path calls the same `assert_typed_fact`, so they leave the same untracked ground fact; "carries none of the oracle problem" is true of trust only. Two engine behaviours worth stating precisely because the earlier wording overstated both: an unreachable backend yields `UNKNOWN(BackendUnavailable)` and never `FALSE`, but a tuple already computed in that session still answers TRUE from the auto-asserted fact — an outage-*cache*, not a stall. And a universal over a number-bearing predicate is still vacuously true. It is **sometimes** no longer silent, and the earlier wording here overstated that twice. Since nibli `95cba22` a `[Domain]` note fires — but only where the restricting relation is **asserted**; put one rule in between and it goes quiet again (their corrected repro: `sum(every dog, 2, 2)` notes, the one-hop twin `sum(every animal, 2, 2)` does not). And **neither the note nor the proof step is reachable from `nibli-pin`**, which is the only binary this repo runs — verified 2026-08-01, no flag exposes it, and `nibli-host` still fails outright on a stale wasm. So treat the diagnostic as absent here, not as a safety net. What actually contains this is `verify.sh`'s digit ban: there is nothing numeric to quantify over. Compute is legitimate for the claim registry and the method part; never for the society's own conclusions.
 - **Chapter order is strictly computed**, never chosen. Exactly three elements are exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.
