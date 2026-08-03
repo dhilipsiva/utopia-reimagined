@@ -379,9 +379,10 @@ echo "$out" | grep -q 'FINDING\|HARNESS ERROR' && fail "a pinned property regres
 # prints a RESOLVED DEFECTS block naming the repair; that block contains neither
 # `FINDING` nor `PASS —`, so the regression grep above passed it through and the
 # PASS-line parse below reported "the suite did not report a PASS line" under the
-# hint "a file was added or dropped from the run". Twelve pins here are declared
-# defects — this is the outcome `:defect` was adopted FOR, and it read as a broken
-# harness. Reproduced before fixing: a `:defect` marker on a query that in fact
+# hint "a file was added or dropped from the run". The pins carrying `:defect`
+# markers are declared defects — a count here rots (this comment once said twelve;
+# the live number was nine); the markers themselves are the list — and this is the
+# outcome `:defect` was adopted FOR, yet it read as a broken harness. Reproduced before fixing: a `:defect` marker on a query that in fact
 # holds produces exactly that.
 if echo "$out" | grep -q 'NO LONGER REPRODUCE'; then
   printf '  \033[32m✓\033[0m    a pinned defect no longer reproduces — the artifact improved\n'
