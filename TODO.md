@@ -373,22 +373,21 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   cites his proposal — the one claim the research-brief corrections found no error in but
   no registry entry for either.
 
-- **Re-derive the democracy/happiness analysis on V-Dem — ruled 2026-08-02, now
-  unblocked session work.** The fork chose V-Dem so Part V's worked example is
-  re-runnable by a stranger (the registry's promise); EIU numbers never enter the CC0
-  registry. The work: fetch V-Dem (Regimes of the World) + WHR 2025, re-derive the
-  income-control result and the step-size analogues on RoW's categories (they are not
-  EIU's four, so the regime table does not carry over), land the data + script as
-  registry entries with provenance, and only then let Part V's worked example stand on
-  the numbers. Expect results to shift; the example's discipline survives any outcome,
-  which is the point. The EIU-based analysis below is the working reference for what
-  is being re-derived. `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144
-  countries, EIU 2025 merged with WHR 2025 life evaluations). Every headline number
-  re-derived and reproducing exactly: raw r = 0.5975, ρ = 0.6231, R² = 0.357; partial
-  r | log GDP = 0.195; r(GDP, happiness | democracy) = 0.623; and the regime table to
-  the digit (Authoritarian 45/4.94/1.11, Hybrid 29/5.07/0.95, Flawed 44/5.80/0.94,
-  Full 26/6.82/0.51).
-  - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
+- **The V-Dem re-derivation is DONE (2026-08-03) — Part V's worked example has its
+  numbers and a better third act.** `registry/fetch/vdem_happiness.py` derives
+  everything from OWID's CC BY series (V-Dem polyarchy + RoW, WHR ladder, WB GDP);
+  three registry entries + snapshot landed; working record at
+  `new-book-plans/vdem-rederivation.md`. Robust across instruments: the income-control
+  narrowing (partial r ≈ 0.20, was 0.195) and the step pattern (+0.02/+0.59/+1.09 —
+  bottom step buys nothing). Changed: the floor claim is **instrument-fragile**, not
+  cleanly refuted — it survives the income control narrowed on polyarchy (p = 0.032)
+  and dies-or-marginal on the alternative index over the identical sample — so the
+  worked example's third act becomes "a verdict that tracks the instrument is not
+  citable", which is a stronger methods lesson than the refutation it replaces. When
+  Part V is drafted, its frame uses this arc; the EIU-era analysis below remains the
+  historical working reference. FLAG for the author: `democracy_vs_happiness_144.csv`
+  in the repo root (CC0 under the root LICENSE, committed pre-ruling) carries EIU
+  index values — same grounds as the registry ruling, worth a look.- **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
     floor on subjective wellbeing", from regressing |residual| on democracy score,
     p = 0.0004, which is exactly how convincing it looks — is the one claim it never
     controls for income, and

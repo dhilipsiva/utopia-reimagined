@@ -800,6 +800,81 @@
       "fetch": null,
       "book": "book-1",
       "notes": "Attribution confirmed 2026-08-02 (commit 203fa43). The book-1 epigraph decision is author-gated and open."
+    },
+    {
+      "id": "vdem-2026-democracy-happiness-partial",
+      "claim": "Controlling for log GDP per capita, the democracy–happiness association collapses from r ≈ 0.51 to a partial r ≈ 0.20: what compresses wellbeing differences across countries is mostly material provision.",
+      "value": {
+        "raw_r": 0.513,
+        "spearman_rho": 0.552,
+        "partial_r_given_log_gdp": 0.197,
+        "partial_r_gdp_given_democracy": 0.727,
+        "n": 141
+      },
+      "units": "correlation coefficients, country level",
+      "source": "Derived by registry/fetch/vdem_happiness.py from OWID grapher series (CC BY): electoral-democracy-index (V-Dem v2x_polyarchy), happiness-cantril-ladder (WHR), gdp-per-capita-worldbank; latest common years ≥ 2022; snapshot registry/data/vdem-happiness-2026-08-03.csv",
+      "retrieved": "2026-08-03",
+      "method": "fetched-by-script",
+      "fetch": "vdem_happiness.py --snapshot registry/data",
+      "book": "book-1",
+      "notes": "Reproduces the EIU-era narrowing almost exactly (0.195 there) on an openly licensed instrument — the robust half of Part V's worked example. Working record: new-book-plans/vdem-rederivation.md."
+    },
+    {
+      "id": "vdem-2026-regime-ladder-steps",
+      "claim": "Mean life evaluation by Regimes of the World category rises +0.02 (closed→electoral autocracy), +0.59 (→electoral democracy), +1.09 (→liberal democracy): the bottom step buys approximately nothing and the gain concentrates at the top.",
+      "value": {
+        "means": [
+          5.1,
+          5.13,
+          5.72,
+          6.81
+        ],
+        "sds": [
+          1.25,
+          0.99,
+          0.95,
+          0.48
+        ],
+        "ns": [
+          22,
+          46,
+          45,
+          28
+        ],
+        "steps": [
+          0.02,
+          0.59,
+          1.09
+        ]
+      },
+      "units": "Cantril ladder points, category means",
+      "source": "Same derivation as vdem-2026-democracy-happiness-partial (OWID political-regime series for RoW categories)",
+      "retrieved": "2026-08-03",
+      "method": "fetched-by-script",
+      "fetch": "vdem_happiness.py --snapshot registry/data",
+      "book": "book-1",
+      "notes": "The EIU-era step pattern (+0.16/+0.73/+1.01) reproduces on RoW's four categories — the anti-gradualist reading is instrument-robust."
+    },
+    {
+      "id": "vdem-2026-floor-claim-instrument-fragile",
+      "claim": "The 'democracy is a floor on wellbeing' dispersion claim is instrument-fragile: on V-Dem polyarchy it survives an income control narrowed (b = −0.49, p = 0.032, log GDP n.s.), while on the same sample and control the EIU index loses it — a claim whose verdict tracks the measuring instrument is not citable as support.",
+      "value": {
+        "b_polyarchy_alone": -0.655,
+        "p_alone": 0.001,
+        "b_polyarchy_with_log_gdp": -0.49,
+        "t": -2.17,
+        "p": 0.032,
+        "b_log_gdp": -0.073,
+        "p_log_gdp": 0.158,
+        "n": 141
+      },
+      "units": "OLS on |residuals| of ladder~polyarchy",
+      "source": "Same derivation; isolation test against the alternative index recorded qualitatively in new-book-plans/vdem-rederivation.md (its coefficients stay out of this CC0 registry per the 2026-08-02 licensing ruling)",
+      "retrieved": "2026-08-03",
+      "method": "fetched-by-script",
+      "fetch": "vdem_happiness.py --snapshot registry/data",
+      "book": "book-1",
+      "notes": "Part V's worked example, third act: not a clean refutation but instrument-dependence — 'we would have loved this claim, and we cannot have it, and here is exactly why.' Crude heteroskedasticity test kept deliberately (mirrors the original); no HC errors."
     }
   ]
 }
