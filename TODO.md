@@ -41,8 +41,10 @@ cross-cutting sections:
    concede is an engine limitation rather than a design choice, and it is dishonest
    to write the concession while the limitation is fixable.
 
-The sections after the phases are cross-cutting: the remaining book-1 writing
-(now only the method part — the opening note and Part V landed 2026-08-03), the
+The sections after the phases are cross-cutting: the book-1 work that remains
+around the finished text (the writing is complete as of 2026-08-03 — epigraph,
+opening note, the derived chapters, Part V and the method part are all in
+print; what is left is the expansion question and the licence files), the
 reach plan, the data work, the legacy harvest, and a pointer to book-2's own
 tracker. **Standing facts and
 methods** closes the file and holds knowledge, not tasks.
@@ -119,54 +121,7 @@ measured an engine change that was never rebuilt.
 
 ---
 
-## book-1 — remaining writing
-
-- **The method part discloses the stress surface.** It sits inside the voice boundary —
-  first person permitted; the voice protocol applies as CLAUDE.md records it (the
-  opening note and Part V were both session-drafted by the author's explicit
-  instruction; the method part stays author-drafted unless the author rules again). The suite's
-  confidence register must not outrun its provenance: every probe, fixture and refusal was
-  written by the author and AI sessions against a cast of dozens — no independent
-  reimplementation, no external red-team, and the engine that blesses the book shares the
-  book's author. The counterfactual fixtures and the upstream differential oracles narrow
-  this and do not close it. One honest paragraph, beside the machinery it qualifies;
-  anything stronger (soliciting an independent verification) is post-ship work and goes
-  to the reach plan.
-
-- **Write what the logic refused — in the method part, paired with chapter 7.** Re-verified
-  2026-08-01: appending `all $x: prisoner($x) -> permits(Appeals, $x).` returns
-  *"[Stratification Error] Unstratifiable negation: strongly-connected component containing
-  'prisoner' -> 'permits' (negative)"*. A **universal right of appeal cannot be expressed**
-  in this constitution. That is not a defeat; the machine refuses a thing the author wanted
-  and can say exactly why. Ship the error message. **Not in Part V** — Part V is argument
-  and evidence and stays jargon-free; an engine error message is formalism, which appears
-  in exactly one place. **And the firewall it pairs with is chapter 7, not chapter 1** —
-  chapter 1 carries a refusal of its own (Article 0a turning away the write of an
-  unadmitted word) but that is assert-time closure, a different mechanism, and pairing
-  with it would blur the symmetry. Chapter 7 is where the heresy law is refused by the
-  stratifier, and chapter 7 now also carries the refused shield tightening, so the
-  symmetry is already in print from the reader's side: the same stratifier refuses the author a universal right of appeal, an
-  attacker a heresy law, and a designer a careful improvement. One mechanism, no special
-  pleading, none of the outcomes chosen by whoever was writing that day.
-
-- **Before the method part prints a rendered sentence or a proof trace, check who the duty
-  names.** nibli carries a filed defect — its tracker bullet **"`obliged`-spelled every-duty
-  renders the wrong obligated party"**, re-verified upstream as still reproducing on
-  2026-08-01 — where the deontic collapse picks the event variable as duty-holder when
-  back-translating the **base** spelling, which is ours; the converted `obligated_by`
-  spelling binds correctly. Cited by title and never by line: that file's line numbers
-  rotted twice inside one exchange. It cannot reach a reader today, because this repo runs
-  `nibli-pin` and never renders prose — which is exactly why the gate is the moment the
-  method part ships rendered English or a trace. Do not hand it off as a prompt: it is
-  already filed upstream and the fix is in their renderer.
-
-- **Write the single book-2 pointer, at the very end — the end of the method part.**
-  book-1 references book-2 exactly **once**, and the method part is the book's final
-  element, so the pointer closes it. Not in the introduction, because a reader on page one
-  has no idea whether they want the machinery, and a forward reference reads as an apology
-  for the book they are holding. At the end it reads as an invitation. Keep the pointer
-  plain: no tool names, no jargon, nothing a general reader must decode — it addresses
-  whoever reached the last page, not only the readers who came for the formalism.
+## book-1 — remaining work
 
 - **Parts I–IV second expansion wave — blocked on new derived material.** The first wave
   (2026-08-02) took the fourteen chapters from 25,027 to 28,585 words and stopped where
@@ -178,13 +133,13 @@ measured an engine change that was never rebuilt.
   current constitution: it arrives as Phase 1 decisions land (each ruling is new derived
   material with prose waiting for it — the clawback, expungement, kinship and delivery
   rulings all rewrite or extend chapters), or the author revises the target down.
-  The length invariant holds with room — measured 2026-08-03: chapters 1–14 are
-  29,440 words against 6,434 non-derived (opening note, epigraph, Part V), with only
-  the ~5,000-word method part still to come. Part V landed at ~5,500 words against its
-  ~12,000 budget: every constraint and docket item in the drafting bullet is in it, and
-  the budget's own rule — justified by content, not ratio; do not pad — decided the
-  gap. Whether Part V should grow toward the budget is the author's call, joint by
-  joint.
+  The length invariant holds with a wide margin — measured 2026-08-03 with the
+  method part landed: chapters 1–14 are 29,440 words against 10,545 non-derived
+  (epigraph, opening note, Part V, the method part), and no writing remains.
+  Part V landed at ~5,500 words against its ~12,000 budget and the method part
+  at ~4,100 against ~5,000, both under the budgets' own rule — justified by
+  content, not ratio; do not pad. Whether either grows toward its budget is the
+  author's call.
 
 - **Add `LICENSE-MIT` + `LICENSE-APACHE` — now unblocked.** The condition ("when the
   harness and fetchers are written") is met: `registry/check.py`,
