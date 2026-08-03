@@ -68,6 +68,28 @@ it applies to everyone — not to prisoners, to *everyone*. The whole population
 imprisonable for what they believe, and the change that did it was the removal of a
 clause about prisoners.
 
+There is a quieter way to do the same damage, and honesty requires it be printed
+beside the loud one. The lines that owe you the floor have a deliberate shape: the
+thing owed is written as something that happens — an eating, a believing — never as a
+label pinned to a person. The protection lives in that shape. Rewrite one line with
+the owed thing as a plain label and the line still sits there, still reads to a
+passerby like a floor, and the heresy law loads without complaint. Measured, on a
+copy; and the refusal that stops it in the real record is worth reading beside it,
+because the machinery names the loop it will not close and declines. Nobody has to
+remove the floor to remove the floor. They only have to tidy its grammar.
+
+What would catch them is not a rule forbidding the tidying, because there is none. It
+is that this book writes down what the floor is supposed to promise, in a form
+re-checked every time anybody runs the checks — and in that tidied world those
+recorded promises turn red in several places at once. One of the red lines is the
+belief entitlement itself, simply gone. The others are stranger, and worth sitting
+with: people who were not prisoners are suddenly recorded as housed, and as having
+been heard. Nothing kind has happened to them. They have been jailed for what they
+believe, and in this design shelter and recorded speech arrive for prisoners and for
+nobody else — so the tidied floor looks, on paper, like it is delivering more. That
+is what a floor with the wrong grammar buys: a society that jails people for their
+beliefs and can show you improving numbers.
+
 The reason is worth following slowly, because it is the architecture of the entire
 design in one move.
 
@@ -110,6 +132,29 @@ to exclude. A refusal here is not a veto that leaves things safe. It is the desi
 saying that the protection you want cannot exist in this shape, and that what exists
 instead will keep running — so the places where a rule cannot be tightened have to be
 known, priced, and watched, not discovered by whoever tries first.
+
+And one more limit, the sharpest in the chapter. The refusal you have been watching
+guards one consequence: imprisonment. A rule that reads the lack of a floor right
+into anything else — into a worse placement, into a person's recognition — has a
+different shape, no loop, and the machinery accepts it without comment. What refuses
+those rules is not a wall. It is a promise this design wrote down — a floor right may
+be noticed, and may never be acted on — together with a check that enforces the
+promise, tested against sabotage like everything else here. The distinction matters
+because walls and promises fail differently. A wall fails loudly, when somebody
+breaches it. A promise fails quietly, when somebody stops keeping it. The design's
+protection against the worst rule is a wall; its protection against the merely bad
+ones is a kept promise, and the keeping is work somebody has to keep doing.
+
+And of the wall itself, one last thing, said here because this is where refusals
+live: nobody built it. The refusal is a property of how the machinery happens to read
+the exact shape these lines have — found, not designed, and written down here rather
+than left for a reader to discover. What keeps it standing is watched somewhere else
+entirely, where the machinery itself is made: a handful of named tests whose failure
+would mean the wall is gone. The file that holds the floor says so in as many words —
+if those tests ever go red, this argument must stop being printed. A protection that
+honest about its own foundations is rarer than a protection that is strong, and this
+design would rather have the honesty, because a wall believed indestructible is
+exactly the wall nobody watches.
 
 ## What that means
 
