@@ -13,10 +13,14 @@ you and record what they find while holding no standing at all.
 The routes into it are of two kinds.
 
 The first is to be a public institution. The court has standing. The review body has
-standing. The appeals body has standing. They have it by being what they are, and
-nothing else in the design confers it on them; there is no ceremony, no appointment,
-no moment at which they were granted it. They are public bodies, and public bodies
-have standing.
+standing. The appeals body has standing. So does the convocation. And so — by the
+same single kind of line — does the State itself: the body a later chapter names as
+owing every person the floor is public, which means the duty-bearer is answerable
+the way a court is answerable, and whoever exposes it is protected for having done
+it. The largest debtor in the design is also, on the record, an authority anyone may
+safely expose. They all have standing by being what they are, and nothing else in
+the design confers it on them; there is no ceremony, no appointment, no moment at
+which they were granted it. They are public bodies, and public bodies have standing.
 
 The second is to be seated. The electorate seats people, and so does the
 convocation — a second seating body the next chapter introduces properly — and a seat
@@ -138,6 +142,21 @@ reasoning. Here, neither is a conclusion anything produces: the three verdicts c
 from three separate places in the design, and no rule anywhere converts one into
 another.
 
+The design later acquired a fourth question, and it is the cleanest confirmation the
+separation gets. Vex can be forgiven. When the appeals body writes its forgiveness
+beside its own judgment — two entries, by name, from the body whose business relief
+is — the conclusion that Vex's word counts for nothing stops deriving. Ask the three
+questions again. Answerable? Unchanged, permanent, as always. Believable? Yes,
+restored, from the moment the two entries stand together. Able to act? Still no. The
+pen is withheld by rules that read the mark itself, not the conclusion the mark once
+fed, and the mark is still there: Vex is forgiven, not erased. One verdict moved and
+the other two held still — which could not happen if the three were secretly one
+thing. The word comes back by forgiveness; the pen, if it ever comes back, comes
+back the way it was given, by a body seating a person, and the mark on the record
+stands in the way of exactly that. The way back for a person's word and the way back
+to power are different roads, and the design refuses to pave the second with the
+first.
+
 ## What it costs
 
 What follows is the bill, and none of it is small.
@@ -148,6 +167,16 @@ of them ordinary, some of them long dead, none of them removable from the catego
 Whether that is a problem depends on what standing lets you do — and standing by
 itself lets you do nothing at all. It is a marker of answerability, not a power. Still,
 a list that only grows is a list worth watching.
+
+And it grows by writes. A seat is an entry, and the word that records a seating is
+on the record's short list of writable words — so the pool grows by whatever gets
+written, not only by whatever a seating body actually did. Measured on a copy of the
+record: a few writes about a name nobody ever seated — a seating, a pair of
+examinations — build a person-shaped thing the machinery treats as seated and
+examinable, something it will go as far as to void and to dock, all while the roster
+says no such person exists. Nothing in the rules distinguishes the seat somebody won
+from the seat somebody typed. The pool's growth is honest exactly as long as the
+writing is.
 
 The second is sharper. Because exposing someone with standing confers protection, and
 because the set of people with standing never shrinks, the set of exposures that
@@ -176,3 +205,14 @@ entry deleted and an entry never made look identical. What stands between Rebel 
 that erasure is not machinery. It is the discipline of whoever keeps the record —
 which is to say, people. The strongest promises in this chapter are conclusions
 nobody can write. The entries they stand on, somebody has to keep.
+
+And Boss's seat is not the sharpest instance. The duty-bearer's standing — the
+answerability of the body that owes every person the floor — rests on one line of
+exactly the same kind. Delete it and the State stops being an authority: not
+relieved of what it owes, relieved of being exposable about it — the body that owes
+everyone everything becomes the only thing in the society nobody is protected for
+exposing. That deletion was measured, like the others in this chapter, on a copy.
+On the real record, some deletions would happen to be noticed, because the books
+this design keeps about itself sometimes read the deleted fact for other reasons —
+but only sometimes, and by accident, never by guarantee. The discipline this
+chapter ends on is not decoration. It is the floor under everything above it.
