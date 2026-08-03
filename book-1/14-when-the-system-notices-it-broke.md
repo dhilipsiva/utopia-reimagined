@@ -121,9 +121,13 @@ because the system has no way to represent it.
 This design has the slot. Wrong is a thing this society can say about itself.
 
 And the slot is in the right place. The audit sits at the very top of the structure —
-it depends on everything and almost nothing depends on it. Which means it cannot be
-gamed from below: you cannot arrange your conduct to make the audit report favourably,
-because nothing you do downstream of it is affected by what it says.
+it depends on everything and almost nothing depends on it. Which makes it hard to
+game from below in the usual direction: nothing you do downstream of it is affected
+by what it says, so there is no favourable verdict worth buying. But there is a
+quieter way to defeat it, and the placement chapter already conceded it: part of
+what the audit reads arrives as reports somebody chooses to write, and an act nobody
+writes down is an act no marker in this book can see. The audit cannot be bought.
+It can be starved.
 
 An earlier version of this chapter went one step further and said that being a pure
 observer was *precisely why* nothing could follow from its observations — that the
