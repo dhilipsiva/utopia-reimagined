@@ -156,6 +156,17 @@ price. It is low, and it is no longer nothing, and the void's own examinations �
 the ones that destroy a person's word — still ask for no reason at all, which is
 chapter 5's open question and stays it.
 
+A fourth refusal was on that door all along, and it is worth naming now that the
+door has been in the light: it does not pay the recalled. Being stripped of your
+seat and being found a liar are separate findings, and the door reads each on its
+own — a recall is not a voiding, so the voiding guard would never catch it, and the
+door carries a guard of its own. The record's live case is the official this book
+has already watched being removed, who left a real examination standing on the
+books. He earns nothing from it. And not for want of grounds: give that examination
+its written why, measured, and the door still refuses, because the recall mark is
+read by itself and it is enough. Power was withdrawn, so the work of wielding it
+stops paying — including the work already done.
+
 That is a better arrangement than most, and it is not nothing to worry about. The
 design has decided that scrutiny is a contribution on a par with teaching and work.
 Whether a society should regard being watched over as a service rendered to it is a
@@ -172,6 +183,13 @@ It cannot distinguish the person who worked for forty years from the person who
 worked for a week. It cannot mark the extraordinary teacher, the exhausting and
 thankless job, the contribution that everybody knows was larger. All of it arrives at
 the same single fact: recognised.
+
+And that fact feeds nothing. No rule anywhere reads recognition back into the
+design — not a door, not a placement, not a ballot — and the book's checks hold that
+nothing ever does, as a decision rather than an accident. Esteem here is an output
+only. The moment it became an input to anything, it would begin to be a currency;
+read by nothing, it stays what this chapter promised — the record noticing, once,
+that you gave.
 
 For a design whose whole purpose is to acknowledge what markets ignore — the
 caregiving, the unpaid, the invisible — that is a peculiar place to end up. The

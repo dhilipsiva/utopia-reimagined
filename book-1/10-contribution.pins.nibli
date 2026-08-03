@@ -42,7 +42,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 25
+:expect-pins 27
 
 # "Esa taught Fin, and is recognised."
 ? teaches(Esa, Fin).
@@ -190,3 +190,18 @@ cite(Yano, Hunch, Adam).
 
 ? reward(Yano).
 # => TRUE
+
+# ── The fourth condition: the door does not pay the recalled ─────────────────
+# Boss holds a real recorded examination of Rebel (judge + capture, both in the
+# constitution's cast) and is recalled. The reward rule reads ~broken directly,
+# and that guard is not the voiding guard beside it: a recall is not a voiding,
+# so ~false would never catch this. Baseline FALSE first, then the grounds are
+# supplied — the one condition the Yano block above proved was missing — and the
+# door still refuses. What is doing the refusing is the recall mark by itself.
+? reward(Boss).
+# => FALSE
+
+cite(Boss, Findings, Rebel).
+
+? reward(Boss).
+# => FALSE
