@@ -161,8 +161,9 @@ would read exactly as it reads now.
 
 The part worth sitting with is that joining them is available. A rule saying *this person
 is owed food and has none* can be written. It is permitted, and what it produces is a
-mark — not a punishment, which is the only form the design allows, and the distinction
-turns out to be the whole of what protects you here. That rule is not written for food.
+mark — not a punishment, which is the only form the design's own rules ever read an
+absence into, and the distinction turns out to be the whole of what protects you
+here. That rule is not written for food.
 
 For a single item on the floor it is written. Somebody confined with no company on
 record is marked, and a later chapter is largely about what that marker does and fails
