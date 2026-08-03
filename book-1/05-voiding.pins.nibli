@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 36
+:expect-pins 38
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -244,6 +244,20 @@ judge(Uno, Targ3).
 capture(Uno, Targ3).
 
 ? false(Targ3).
+# => TRUE
+
+# ── The carry, written dishonestly ───────────────────────────────────────────
+# The omission failure the chapter concedes needs a keeper's silence. The
+# forgery needs one line: rotten is admitted (it must be, for honest carries),
+# and the epoch-carry rule re-derives the void from it with no second
+# signature and no clean-epoch check. Fresh name, so the baseline FALSE is the
+# negative control: nothing else about Forga could void him.
+? false(Forga).
+# => FALSE
+
+rotten(Forga).
+
+? false(Forga).
 # => TRUE
 
 # ── THE EXHIBIT: distinctness was the only bar. MUST BE LAST ─────────────────

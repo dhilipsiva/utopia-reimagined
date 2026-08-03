@@ -53,6 +53,22 @@ rule asks of either signer has been done, by him, twice over. It still fails —
 want of a credential, not for want of the work, for want of a second person. The rule
 does not count signatures; it counts signers, and one name written twice is one name.
 
+One distinction is worth drawing slowly here, because the same word does two jobs in
+two different rules and the chapter would blur them otherwise. You have already seen
+that a parent who judges their own child is voided — that rule is about the pair
+examiner-and-examined, and it costs the judge their word. There is a second rule, and
+it is this chapter's: the two signers must be independent of each other. Seat two
+people properly, one from each body; let them be parent and child; have both examine
+the same stranger, by the book, and document what they found. The void does not land.
+Not because either did anything wrong — neither loses anything — but because the rule
+that destroys a person's word will not accept two signatures from one family. The
+same shape between strangers voids. The first rule watches who you judge; the second
+watches who you sign beside. A design that had only the first would let a household
+hold both pens over a stranger; a design that had only the second would let a parent
+sit in judgment on their own child so long as a stranger co-signed. It has both, and
+they are different rules with different targets, which is why being caught by them
+costs different things.
+
 This is the first and most obvious guard, and it is worth pausing on how much work it
 does. A single corrupt auditor cannot destroy anyone. Neither can a single mistaken
 one, or a single auditor with a grudge, or a single auditor who has been leaned on.
@@ -150,6 +166,13 @@ check reads both, in each direction. Neither word appears anywhere in the shippe
 record yet; the guards stand armed for the day somebody writes the fact they watch
 for, which is how this design keeps its guards.
 
+One more reach the words do not have: forgiveness restores a person's word, and
+restores nothing here. The independence check reads the carried mark itself, not the
+conclusion it once fed — the mark outlives the forgiveness in every rule that reads
+the mark itself — so a forgiven examiner still cannot co-sign a voiding. The way
+back for a person's word and the way back to power are different roads, and this
+check sits on the second.
+
 What the widening does not close deserves the same care the old gap was given. Two
 people who have been close friends for thirty years, or who share a household, or who
 owe each other a great deal, still co-sign — and every such pair still satisfies "two
@@ -170,6 +193,17 @@ names are on the finding, where anyone can read them. This one needs a single pe
 not to write something down, and afterwards there is nothing to find, because a line
 never written and a line withheld are the same absence. The rules are airtight and they
 sit on top of a record that people maintain.
+
+And the carried mark can be written as well as withheld. The word that carries a
+voiding across periods is on the record's short list of writable words — it has to
+be, or no honest carry could ever be recorded. So consider the dishonest one: a
+single line, written about a person nobody ever voided. The machinery re-derives the
+voiding from it — no second signature, no check against any earlier period, none of
+the guards this chapter spent its length on, because every one of those guards sits
+on the door where a voiding is *made*, and this line walks through the door where a
+finished voiding is *remembered*. Measured, and now pinned: one write, and a person
+who was never examined by anyone loses their word. The airtight rules and the
+maintained record meet nowhere more sharply than here.
 
 It is going to keep coming up, and it is better said now than discovered later: **this
 society can guarantee what follows from its record. It cannot guarantee its record.**
