@@ -325,7 +325,13 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   boundary that is doing epistemic work. **Supply protocol**: the first person is
   author-drafted — sessions edit mechanics only (guards, citations, wrapping, the ratchet) and
   never generate or extend the voice; ghost-writing stays refused, per the constitution's own
-  register note, which stands as written. `tmp.txt` is the channel for drafts in progress. The
+  register note, which stands as written. `tmp.txt` is the channel for drafts in progress.
+  **One recorded exception, by the author's explicit instruction (2026-08-03): the opening
+  note.** The author directed the session to draft it ("You draft it yourself"), reviewed the
+  draft in `tmp.txt`, and adopted it with no changes ("I have no changes to suggest") —
+  `book-1/00-opening-note.md` is session-drafted, author-adopted, and this line is the record
+  of that. The protocol stands unchanged for Part V and the method part unless the author
+  rules again. The
   full re-weave the tracker once priced (every chapter re-touched, dearer each week) is dead
   by this ruling, not deferred.
 
