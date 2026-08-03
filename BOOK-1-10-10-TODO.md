@@ -35,14 +35,13 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
 
 ## Phase 0 — Author-gated scope rulings
 
-- [ ] **[AUTHOR-GATED] Decide Book 1's new mandate.**
-  - Choose one: retain the narrow verified constitutional kernel and put the wider
-    society in a labelled specification/Book 2; or expand Book 1 into a formally
-    derived constitutional interface for the whole society.
-  - A scope expansion requires a new constitution, regenerated spine, pins, and
-    revised chapter order. It is not an additive prose pass.
-  - **Done when:** the decision and the Book 1/Part V/Book 2 boundary are recorded in
-    `CLAUDE.md` before new social chapters are drafted.
+- [x] **[AUTHOR-GATED] Decide Book 1's new mandate.**
+  - **Ratified 2026-08-03:** expand Book 1 into a formally derived constitutional
+    interface for the whole society. The mandate, scope boundary, and retained
+    operational seam are recorded in `CLAUDE.md` and
+    `new-book-plans/book-1-constitutional-coverage-map.md`.
+  - A scope expansion still requires a new constitution, regenerated spine, pins,
+    counterfactuals, and revised chapter order. It is not an additive prose pass.
 
 - [ ] **[AUTHOR-GATED] Rule the time model.**
   - State one coherent model: snapshot facts have no intra-period ordering; epoch
@@ -58,15 +57,19 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
     or operational mechanism. Do not call every important good a floor.
   - Preserve the principle that no material floor depends on work, virtue, status,
     score, citizenship, documentation, or compliance.
+  - Draft decision artifact:
+    [`new-book-plans/book-1-constitutional-taxonomy.md`](new-book-plans/book-1-constitutional-taxonomy.md).
+    It is pending author ratification and does not change the constitution.
   - **Done when:** a one-page taxonomy replaces ad hoc expansion proposals.
 
-- [ ] **[AUTHOR-GATED] Define the democratic corridor.**
-  - Adopt the principle: the majority chooses among rights-compatible options.
-  - Decide which limits are non-regressive, which are amendable only through a
-    cross-branch process, and who interprets a contested floor violation.
-  - **Done when:** the rule distinguishes ordinary policy, constitutional change,
-    emergency power, and administrative discretion without overstating current
-    entrenchment.
+- [x] **[AUTHOR-GATED] Define the democratic corridor.**
+  - **Ratified 2026-08-03:** a majority chooses only among policies compatible
+    with universal standing, core floors, equal protection/non-discrimination,
+    due process, core liberties, and commons constraints.
+  - The rule distinguishes ordinary policy, constitutional change, emergency
+    power, and administrative discretion. Its formal compatibility test,
+    amendment process, reviewer, and time-gated emergency mechanics remain
+    contract work; current amendment machinery is not misrepresented as that rule.
 
 ## Phase 1 — Repair and map the verified kernel
 
@@ -118,12 +121,21 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
 
 ## Phase 2 — Specify the comprehensive constitution
 
-- [ ] **Create the constitutional coverage matrix before drafting chapters.**
+- [x] **[AUTHOR-GATED] Ratify the constitutional coverage map and expanded mandate.**
+
+  - **Ratified 2026-08-03:**
+    [`new-book-plans/book-1-constitutional-coverage-map.md`](new-book-plans/book-1-constitutional-coverage-map.md)
+    is the scope and planning control. It maps current coverage, ratified scope
+    requirements, pending constitutional interfaces, Book 2 handoffs, roles,
+    democratic limits, and scenario tests. It does **not** change the constitution
+    or prove coverage.
+
+- [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
 
   | Object | Required fields |
   | --- | --- |
   | Right/floor | holder, duty-bearer, minimum, delivery evidence, breach, interim remedy, appeal, audit |
-  | Liberty/power limit | protected person, prohibited act, exception test, evidence, reviewer, expiry, remedy |
+  | Liberty/power limit | protected person, prohibited act, exception test, evidence, reviewer, review or non-temporal end condition, temporal status, remedy |
   | Public power | office, trigger, evidence, scope, conflict rule, limit, review, appeal, end condition |
   | Record | writer, basis, visibility, challenge, correction, retention, external assurance |
 
@@ -171,10 +183,11 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
 - [ ] **Define the democratic ceiling and majority process.**
   - Ordinary majorities decide policy, tax mix, providers, and choices above the core.
   - Every restrictive proposal needs public reasons, evidence, non-discrimination,
-    least-restrictive means, delivery capacity, appeal, independent review, and a
-    review/expiry condition.
-  - Emergency powers may change procedure temporarily; they may not erase personhood,
-    core floors, evidence rights, or an appeal path.
+    least-restrictive means, a constitutional delivery duty, appeal, and independent
+    review. Capacity modelling remains Book 2; time-dependent review/expiry remains
+    author-gated.
+  - An emergency model may never erase personhood, core floors, evidence rights, or an
+    appeal path. Its temporal authority and end condition remain time-gated.
 
 - [ ] **Add the missing non-carceral justice interface.**
   - Cover notice, counsel/advocacy, hearing, challenge, reparation, civil disputes,
@@ -271,7 +284,8 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
 - Adding formal-language explanations, histories, or implementation detail throughout
   derived chapters instead of using the existing Part V/method boundary.
 - Treating a transition roadmap, full operational economy, record-storage technology,
-  or implementation logistics as current Book 1 prose without first changing scope.
+  or implementation logistics as Book 1 prose. The 2026-08-03 mandate adds
+  constitutional interfaces—not their operating machinery—to Book 1 scope.
 
 ## Completion standard
 

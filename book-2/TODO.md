@@ -8,6 +8,14 @@ claims and transition claims are different kinds of claims with different verifi
 standards, and book-1 refuses the roadmap precisely so the destination can be judged on its
 own terms. book-1 references book-2 exactly once, at its very end.
 
+> **Scope synchronisation — 2026-08-03.** Book 1's constitutional-interface mandate now
+> owns its constitutional vocabulary, delivery/breach/remedy interfaces, duty-bearer
+> oversight, and record-integrity requirements. Historical entries below that describe
+> those as Book-2-only are superseded for constitutional scope; retain here only their
+> operating machinery—budgets, staffing, procurement, service workflows, storage,
+> technology, transition, and implementation evidence. See
+> `new-book-plans/book-1-constitutional-coverage-map.md` and `CLAUDE.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until book-1 ships: **collect here, do not work here.** Engine
 handoffs, when they come, follow book-1's channel protocol — dhilipsiva carries prompts

@@ -44,7 +44,8 @@ cross-cutting sections:
 The sections after the phases are cross-cutting: the book-1 work that remains
 around the finished text (the writing is complete as of 2026-08-03 — epigraph,
 opening note, the derived chapters, Part V and the method part are all in
-print; what is left is the expansion question and the licence files), the
+print; what is left is the ratified constitutional-interface expansion and the
+licence files), the
 reach plan, the data work, the legacy harvest, and a pointer to book-2's own
 tracker. **Standing facts and
 methods** closes the file and holds knowledge, not tasks.
