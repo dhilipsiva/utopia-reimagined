@@ -136,12 +136,15 @@ because the system has no way to represent it.
 
 This design has the slot. Wrong is a thing this society can say about itself.
 
-And the slot is write-protected in both directions, which is worth stating in a
-chapter that otherwise counts losses. The audit's verdicts are on the record's
-conclusion-only list: nobody can write down that something is broken — the refusal is
-pinned — and, just as importantly, nobody can write down that everything is fine,
-because a verdict no hand may put on the record cannot be put there soothingly
-either. Whatever reaches the audit reaches it as a conclusion, or not at all. The audit can be
+And the slot cannot be written into, which is worth stating in a chapter that
+otherwise counts losses. The audit's own verdicts are on the record's conclusion-only
+list: nobody can put down by hand that this design has failed somebody — the refusal
+is pinned. Be careful about the scope, because a reader arriving from the first
+chapter has just watched a single written entry about a broken court empty every
+cell. That entry is evidence, and evidence is exactly what the world is meant to
+write. What is closed here is the other end: the finding, the verdict, the sentence
+that says the design itself went wrong. Whatever reaches the audit reaches it as a
+conclusion, or not at all. The audit can be
 starved, as this chapter has already conceded. It cannot be lied to in its own voice.
 
 And the slot is in the right place. The audit sits at the very top of the structure —

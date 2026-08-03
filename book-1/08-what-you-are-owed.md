@@ -187,9 +187,11 @@ would read exactly as it reads now.
 
 The part worth sitting with is that joining them is available. A rule saying *this person
 is owed food and has none* can be written. It is permitted, and what it produces is a
-mark — not a punishment, which is the only form the design's own rules ever read an
-absence into, and the distinction turns out to be the whole of what protects you
-here. That rule is not written for food.
+mark — not a punishment. Absences are read into plenty of things here: a missing
+appeal into a conviction, a missing deceit finding into a shield. What no rule in this
+design does is read a missing *floor right* into anything but a mark, and that
+distinction turns out to be the whole of what protects you here. That rule is not
+written for food.
 
 For a single item on the floor it is written. Somebody confined with no company on
 record is marked, and a later chapter is largely about what that marker does and fails
@@ -225,10 +227,13 @@ chapter was expanded, and the note that said otherwise had been wrong the whole 
 in the direction that flattered the design, which is the direction to distrust.
 
 What caught it was this book's habit of writing down what it is owed. The record of
-checks behind this chapter says, person by person, that each of them is still owed
-each thing — and every one of those lines goes red the instant the promise
-evaporates. Be precise about why that matters, because it is the opposite of the
-comfortable story.
+checks behind this chapter walks one person through every item on the floor and
+records, item by item, that she is still owed it — and the entry for whichever item
+the edit touched goes red at once. Be exact about the size of that: the edit reaches
+one item at a time, so only the promise it names collapses while the rest of the
+floor stands. That is the difference between an attack that empties the floor and one
+that empties a line of it, and only the second is available here. Be precise, too,
+about why the catching matters, because it is the opposite of the comfortable story.
 The guard is not the design's cleverness about its own grammar. The guard is that
 somebody wrote down, in a form re-checked every time, that these people are still
 owed something. A promise nobody records as a promise is a promise that can be

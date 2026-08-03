@@ -166,9 +166,10 @@ this design keeps about itself happen to read the deleted fact for other reasons
 but only some, by accident, never by guarantee.
 
 One further caution keeps derived placement from sounding like a solved problem.
-Today's placement rules are exclusive by the accident of their conditions: severe and
-not-severe cannot both hold of one person, so nobody derives two placements at once.
-Nothing enforces that. Measured on a copy while this chapter was expanded — add a
+Today's placement rules are exclusive by the accident of their conditions — severity
+separates the facility from the rest, having a family separates the two that remain,
+and no person can fall on both sides of either — so nobody derives two placements at
+once. Nothing enforces that. Measured on a copy while this chapter was expanded — add a
 placement rule with a careless condition and a person derives two placements
 simultaneously, while the alarm, which watches home eligibility and nothing else,
 stays perfectly silent. Exclusivity is a property of the rules this design happens to

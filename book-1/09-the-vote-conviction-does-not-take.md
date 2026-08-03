@@ -140,8 +140,10 @@ down. The design has closed words in this position before, by declaring them
 conclusion-only, and the declaration for this word was measured while this chapter was
 being expanded — it changes no answer anywhere in the record. So the edge is open for
 want of a line, not for want of a reason. The chapter on clawback finds the word for a
-loss standing in the same place. Together they are this design's short list of known
-soft edges, and they are kept in view rather than tidied out of it.
+loss standing in the same place, which is worth knowing for what it says about the
+class rather than the count: closure by omission is a condition a word can be in here,
+and the design has not swept for every word that is in it. These edges are kept in
+view rather than tidied out of it.
 
 And the rule that grants the ballot was written to be caught out. Narrow it — slip the
 exception for prisoners into its body — and a checked answer flips in the open, where
