@@ -21,6 +21,18 @@ Three things cannot be changed this way.
 The floor — what is owed to every person. The rule that a prisoner is still a
 person. And the list of what cannot be changed.
 
+A caution belongs beside that list rather than in a later chapter, because it changes
+what the list is. The entrenched items are *names* — entries on a register — and no
+rule anywhere joins those names to the things they name. The floor's real protection
+is the loop of the chapter on prisoners, which has nothing to do with this register.
+What this register protects is the words. The resemblance between a word and the thing
+it names is a trap this record has documented once already, in the debt named for
+eating that the eating itself never touches, and it is the same trap here. An
+amendment that declares one of these names as its target is voided. An amendment that
+attacks the floor without naming it meets whatever defences the floor has of its own,
+and the register never notices. Entrenchment here is a tripwire laid across the honest
+path, not a wall built around the thing.
+
 ## Approved and dead
 
 Watch what happens to an amendment that would cut the floor.
@@ -110,6 +122,22 @@ all. That is checked here, on her, with both entries in place: no void, no loss,
 nothing following. And the check that decides it is the absence — no docket entry
 naming Jala — which is also why every verdict earlier in this chapter is undisturbed:
 the floor cut and the register cut were docketed, and they die exactly as before.
+
+Say the consequence plainly, because the check that guards it does. If an assembly
+ever dockets a person, the void arrives again through the front door of this rule. The
+repair did not teach the record that a person is not an amendment; it made the rule's
+reach exactly as wide as the docket, and the docket is an entry somebody writes.
+
+And the same borrowing runs the other way, into a sentence this record produces with a
+straight face. The amendment that attacked the floor was voided, and the rule that
+claws back recognition reads any voiding at all — so the record now holds a loss of
+recognition written against a proposal. Against a document. It never taught, never
+worked, never examined anybody; it holds no recognition to lose, and the record states
+that it lost some. Nothing malfunctions: the loss is inert, read by nothing, a line in
+a ledger against a thing that cannot own. The sentence exists because two rules that
+never expected to meet met over a name, and neither stopped to ask what kind of thing
+the name was. This record does not know the difference between a person and a
+proposal. It knows names, and what is written about them.
 
 What should stay with you is not the repair but the shape of the mistake. Chapter 5's
 protection was never attacked head-on. It was walked around, through a rule that

@@ -21,7 +21,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 20
+:expect-pins 21
 
 # "Nothing happens when something becomes law." — no rule body reads `become`;
 # the second :require is the positive control proving the command still works
@@ -116,3 +116,15 @@ adjust(Jala, Art_Floor).
 # through the front of this rule — this pin is where that shows up first.
 ? suggest(Assembly, Jala).
 # => FALSE
+
+# ── THE LOSS RECORDED AGAINST A PROPOSAL ─────────────────────────────────────
+# Measured 2026-08-03, and it is the strangest derivation in the record. The
+# floor-cutting amendment is voided by Article 9 — pinned TRUE at the top of
+# this file — and the wrongdoer clawback reads any voiding, so a loss of
+# recognition is written against the amendment itself. Nothing malfunctions:
+# the loss is a leaf, read by nothing. But two rules that never expected to
+# meet met over a name, and neither asked what kind of thing the name was.
+# The control is already above: `lose(Points, Jala)` FALSE, the person the
+# docket guard repaired out of the void, so the clawback does not follow her.
+? lose(Points, Amend_Floor).
+# => TRUE
