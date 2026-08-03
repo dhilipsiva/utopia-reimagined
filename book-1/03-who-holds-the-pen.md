@@ -54,8 +54,9 @@ that each of them holds the pen. Have them both examine the same innocent person
 record the same finding.
 
 Every guard on the voiding rule passes. There are two of them, so it is not one
-person acting alone. Neither is the other's parent. Neither has been recalled.
-Neither was voided in an earlier period. Neither has been found to have lied. The rule
+person acting alone. Neither is the other's parent, spouse or sibling. Neither has
+been recalled. Neither was voided in an earlier period. Neither has been found to
+have lied. The rule
 looks at what it was built to look at, finds everything in order, and voids an
 innocent person who now loses their credibility and their recognition, on the word of
 two people who do not exist in any meaningful sense.
@@ -141,9 +142,32 @@ built for. The doors are where the conditions live. The signing is where they ar
 asked again, by a rule that does not trust its own doors, and this design keeps it
 that way on purpose.
 
+Those doors also answer a question this book could not ask until late: what happens
+to the pen when a voided examiner is forgiven. Forgiveness exists — a later chapter
+gives it its due — and it restores what a voiding takes from a person's standing in
+the record: the weight of their word. It does not restore the pen, and
+the reason is in the doors you have just watched: they read the mark itself, not the
+conclusion the mark once fed. The mark of a carried voiding stays on the record —
+forgiven, not erased — and a door that reads the mark stays shut.
+
+Be exact about what that does and does not mean, because the obvious repair is not
+one. It is not that a forgiven examiner is waiting to be seated again. The record's
+voided auditor holds his seat and always did — a voiding takes the word and the pen,
+never the seat — and if he were forgiven, measured on a copy of the record, his word
+would return while the pen stayed gone, and seating him a second time would move
+nothing at all. The seat is not what the door reads. So the word comes back by
+forgiveness and the pen does not come back: nothing in this design removes a mark,
+and the door goes on reading it for as long as the record keeps it. The way back for
+a person's word and the way back to power are different roads, and the second one
+has no pavement.
+
 ## The other pen
 
-There is a second credential, and it does the opposite work.
+There is a second credential — though the word is stretching here, and the stretch is
+worth naming before it misleads. The examiner's pen is a standing power, held by a
+person over whatever cases come to them. What follows belongs to one convicted
+person, for one case, and nobody holds it over anyone. With that said, it does the
+opposite work.
 
 Nia was accused. A court judged Nia. On the account so far, Nia should be a prisoner —
 the injury, the judgment, the machinery. Nia is not a prisoner, because Nia was
