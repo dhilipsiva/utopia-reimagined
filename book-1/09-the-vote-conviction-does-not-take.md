@@ -131,6 +131,23 @@ record's inability to subtract: the hostile rule enters, and sits there, and doe
 nothing — for exactly as long as the older, wider rule survives beside it. Nobody has
 to refuse the attack; they have to decline the repeal.
 
+There is a second thinness, quieter, and it is in the word rather than the rule. The
+record keeps two guarded lists — the words the world may write, and the words only
+rules may conclude — and the word that records a ballot is on neither. Nobody can
+write your vote today, but that refusal rests on the writable list staying exactly as
+short as it is: one unrelated widening and a ballot becomes something a hand can put
+down. The design has closed words in this position before, by declaring them
+conclusion-only, and the declaration for this word was measured while this chapter was
+being expanded — it changes no answer anywhere in the record. So the edge is open for
+want of a line, not for want of a reason. The chapter on clawback finds the word for a
+loss standing in the same place. Together they are this design's short list of known
+soft edges, and they are kept in view rather than tidied out of it.
+
+And the rule that grants the ballot was written to be caught out. Narrow it — slip the
+exception for prisoners into its body — and a checked answer flips in the open, where
+any reader can see exactly what was taken and from whom. The design cannot refuse that
+attack. What it did instead was arrange for the attack to be loud.
+
 The reason the protection does not extend is worth understanding, because it explains
 what the firewall actually does. The floor's protection catches rules of one shape:
 *lacking this thing shall be a reason to punish you.* Disenfranchisement is the other
