@@ -123,23 +123,23 @@ measured an engine change that was never rebuilt.
 
 ## book-1 — remaining work
 
-- **Parts I–IV second expansion wave — blocked on new derived material.** The first wave
-  (2026-08-02) took the fourteen chapters from 25,027 to 28,585 words and stopped where
-  the verified-untold material stopped; re-run `wc -w book-1/[0-9]*.md` before trusting
-  either figure. The wave's stop-map: chapters
-  1, 4, 11, 13 and 14 held no verified-untold material worth prose on 2026-08-02 —
-  start the second wave elsewhere unless a ruling has touched them since. The
-  remaining distance to the ~38,000 target is not writable from the
-  current constitution: it arrives as Phase 1 decisions land (each ruling is new derived
-  material with prose waiting for it — the clawback, expungement, kinship and delivery
-  rulings all rewrite or extend chapters), or the author revises the target down.
-  The length invariant holds with a wide margin — measured 2026-08-03 with the
-  method part landed: chapters 1–14 are 29,440 words against 10,545 non-derived
-  (epigraph, opening note, Part V, the method part), and no writing remains.
-  Part V landed at ~5,500 words against its ~12,000 budget and the method part
-  at ~4,100 against ~5,000, both under the budgets' own rule — justified by
-  content, not ratio; do not pad. Whether either grows toward its budget is the
-  author's call.
+- **Parts I–IV second expansion wave — ruled and running (2026-08-03).** The blocker
+  is gone: every Phase 1 ruling landed, and the author ruled the forks — **content
+  governs, the ~38,000 target is retired** (the final figure is an outcome; CLAUDE.md's
+  length entry carries the ruling), and **all fourteen chapters are swept**, dry ones
+  skipped with the stop-map updated honestly. Wave-1's method binds: verified-untold =
+  TRUE in the engine and absent from prose; measure the same day and say so in the
+  commit body; one section per exhibit; name what is not being decided; stop at the
+  end of the material. Scouted 2026-08-03: rich in chapters 2, 5, 7, 8, 11; the
+  2026-08-02 stop-map overturned for 4, 11 and 14 (the residual-trust-base comments
+  and the put/building work all landed after it); 13 still dry; four fidelity
+  corrections (prose now wrong, not merely incomplete) land first as their own
+  commits. Three author rulings in: chapter 7 writes the wall-nobody-wrote telling;
+  chapter 12 writes the entrenchment trap; pins-as-accidental-detector goes to the
+  method part. Delete this bullet when the wave's closing tracker commit lands with
+  the new stop-map. First-wave record for reference: 2026-08-02, 25,027 → 28,585,
+  ten commits; measured 2026-08-03 pre-wave: chapters 1–14 at 29,440 against 10,545
+  non-derived — the invariant holds with a wide margin whatever this wave adds.
 
 - **Add `LICENSE-MIT` + `LICENSE-APACHE` — now unblocked.** The condition ("when the
   harness and fetchers are written") is met: `registry/check.py`,
