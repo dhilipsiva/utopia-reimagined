@@ -221,6 +221,16 @@ edit that would allow it. So the quiet version of this attack is closed: you can
 widen the record by using a word and having it stick. You have to add the word, in the
 open, where somebody can see you do it.
 
+Two precisions about that closure, both load-bearing and both measured rather than
+assumed. The declaration cannot arrive late: move a word's declaration below the
+entries that already use it, and those entries are refused as they load — unadmitted,
+with the refusal naming the repair — so nothing is ever rescued by declaring its word
+afterwards. And the openness is one-sided on purpose. A word this record has never
+used can be declared and used in the same breath, at the very bottom of the file, and
+it will load, because a list that could never grow would be a design that could never
+learn. So what the closure buys is not that the record cannot widen. It is that
+widening is always the loud act and never the quiet one.
+
 That is worth something and it is not the protection you would want. It makes the
 attack visible; it does not make it hard. Nothing stops the edit going in, and the next
 paragraph is about what would.
