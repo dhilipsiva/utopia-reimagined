@@ -83,21 +83,6 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-- **[AUTHOR-GATED] The provisioning fork, narrowed by the delivery ruling: how far does
-  book-1's delivery layer grow?** The first branch opened 2026-08-02 — the delivery
-  layer has its first rule (`teaches` + `hears` -> `learn`, dormant), and chapters 8
-  and 13 already state where delivery stops. What remains to rule: whether book-1
-  grows further routes to the other floor actualities (`eats`, `healthy`, `secure`,
-  `believe`, `meets` still have no producing rule of their own; `dwell`/`expresses`
-  derive for prisoners alone — Article 1b named the bearer and moved none of it,
-  verified: `owe(State, Provision, Hano)` and `authority(State)` both TRUE while those
-  five stay FALSE for everyone), or declares the learning route the destination-book's
-  whole delivery story and leaves the rest to book-2's operational layer. Each further
-  route costs an arrival-record name (the widening class the batch priced) and must
-  pass the residual-trust-base-II test: arrival evidence upstream of the head, never
-  the roster. The credibility posture is honest either way — the prose states the gap
-  and the one route in the same breath.
-
 - **[AUTHOR-GATED] Decide whether book-1 opens with an epigraph.** At most **one**,
   original, plain translation, one sentence on who Bharati was, never as structure. The
   attribution is settled (2026-08-02): the poem is *Yoga Siddhi* (யோக சித்தி), the

@@ -367,6 +367,12 @@ entitled(every person, event { meets() }).
 # force it. Recognition is untouched in both directions: being taught
 # still mints nothing (the grades ruling), and this rule reads teaches
 # beside hears, never teaches beside itself.
+# [RULED same day] This route is also the book's WHOLE delivery story:
+# further routes to the other floor actualities belong to the
+# operational layer (book-2), each needing its own genuinely two-sided
+# arrival record and priced as the widening it is. One route
+# demonstrates the shape — delivery as a rule, not a promise — and the
+# destination book needs nothing more from it.
 all $t: all $s: teaches($t, $s) & hears($s, $t) -> learn($s).
 all $anyone: prisoner($anyone) -> person($anyone).
 # [v0.4 NEW] A released person is still a person. This line is not optional and

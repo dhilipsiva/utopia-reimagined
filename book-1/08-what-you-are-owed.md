@@ -73,8 +73,10 @@ record, the giving and the receiving — delivers learning. No such arrival is r
 about anybody, so nothing has changed for Cira yet; the route stands the way the
 placement alarm stands, built and dormant, waiting on the record to say the thing it
 reads. The gap has not narrowed by a single lesson. What changed is that for
-learning — and so far only for learning — the design can say exactly what closing the
-gap would look like, and the saying is a rule rather than a promise.
+learning — and in this book, for learning alone — the design can say exactly what
+closing the gap would look like, and the saying is a rule rather than a promise. The
+routes for the rest are the building of them, and the building belongs to the book
+about building.
 
 Read the shape of those two. The society is certain about the housing and the heard
 words of exactly the people it is punishing, and the two certainties have the same
