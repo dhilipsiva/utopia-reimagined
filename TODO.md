@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
+
 # TODO — book-1
 
 **This tracker covers book-1 only.** It is strictly future-facing: a bullet is
@@ -28,8 +30,8 @@ The repo is heading for two new books plus a clean deletion:
   2026-08-02, bright line 2 standing narrowed).
 
 **THE WORKING ORDER.** All fourteen chapter passes are complete (2026-08-02) and
-their records live in git, not here. What remains runs in two phases plus
-cross-cutting sections:
+their records live in git, not here. What remains runs in two preliminary phases,
+then a constitutional-expansion backlog and cross-cutting sections:
 
 1. **Phase 1 — author-gated decisions.** First, because the chapters that flag
    these questions as open cannot close them until the decision above them is
@@ -40,15 +42,16 @@ cross-cutting sections:
    upstream. It stays ahead of the writing because some of what the book has to
    concede is an engine limitation rather than a design choice, and it is dishonest
    to write the concession while the limitation is fixable.
+3. **Constitutional expansion — implementation backlog.** The ratified mandate,
+   taxonomy, coverage map, democratic corridor, and T3 target now have one
+   canonical execution backlog, ordered from kernel repair through public review.
 
-The sections after the phases are cross-cutting: the book-1 work that remains
-around the finished text (the writing is complete as of 2026-08-03 — epigraph,
-opening note, the derived chapters, Part V and the method part are all in
-print; what is left is the ratified constitutional-interface expansion and the
-licence files), the
-reach plan, the data work, the legacy harvest, and a pointer to book-2's own
-tracker. **Standing facts and
-methods** closes the file and holds knowledge, not tasks.
+The remaining sections are cross-cutting: the book-1 work that remains around the
+finished text (the writing is complete as of 2026-08-03 — epigraph, opening note,
+the derived chapters, Part V and the method part are all in print; what is left is
+the ratified constitutional-interface expansion and the licence files), the reach
+plan, data work, legacy harvest, and a pointer to book-2's own tracker. **Standing
+facts and methods** closes the file and holds knowledge, not tasks.
 
 Plain bullets, never numbered. Delete a bullet entirely when it fully lands;
 update it if only partly done. One item at a time: do it, verify it, commit it.
@@ -72,7 +75,8 @@ if a reader cannot tell they have crossed into a different kind of chapter, the
 seam has failed.
 
 Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
-`new-book-plans/`.
+`new-book-plans/`; the constitutional-expansion backlog below turns its ratified
+boundaries into active work.
 
 ---
 
@@ -105,6 +109,14 @@ changes the edition boundary, not because those rulings were lost.
     can identify its source tag/commit, scope, verification state, revision
     path, preview policy, and print policy.
 
+- [ ] **[AUTHOR-GATED] Harden the two low-risk closure gaps.**
+  - Assess and, if still sound, add `derived_only("lose")` and
+    `derived_only("decide")`; update Chapters 6 and 9, pin files, fixtures, and
+    the generated spine as required.
+  - Do not use the stale review labels `loss` and `ballot` as though they were the
+    current predicates.
+  - **Verify:** full `./verify.sh`, including counterfactual fixtures.
+
 ---
 
 ## Phase 2 — Engine handoffs (nibli). Nothing is pending upstream.
@@ -128,6 +140,259 @@ the phase runs first.
 **When a reply lands here**, re-run `./verify.sh` before believing anything — the script
 rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
 measured an engine change that was never rebuilt.
+
+---
+
+## Constitutional expansion — implementation backlog
+
+This is the canonical merged redesign backlog for the ratified constitutional
+expansion. It is future-facing: the mandate, coverage map, T3 target, taxonomy,
+and democratic corridor set the boundaries, but do not make an unimplemented
+predicate, duty, delivery route, or remedy current law.
+
+### Scope and guardrails
+
+- The ratified scope and contract boundary live in
+  [`new-book-plans/book-1-constitutional-coverage-map.md`](new-book-plans/book-1-constitutional-coverage-map.md),
+  with the taxonomy, time, and edition decisions beside it. `CLAUDE.md` owns the
+  settled rulings; this section owns the work still required to implement them.
+- `reviews.md` is a tracked but undated collection of overlapping reviews. It is an
+  idea source, not a specification: some findings describe older drafts and some
+  recommendations conflict with settled decisions.
+- Preserve the distinction between a **verified derived claim**, a **Part V
+  specification or argument**, and a **Book 2 operational design**. Keep formal
+  methods vocabulary out of derived chapters; the opening note, Part V, and
+  `method.md` are the labelled exceptions.
+- Do not pursue symmetry by making recognition rankable, reward operative, or
+  standing purchasable. Do not mistake a provider's assertion for usable delivery,
+  or call a chain self-healing while `owe`, `become`, or `obliged` remains unread.
+- No material floor may depend on work, virtue, wealth, citizenship, documentation,
+  score, compliance, contribution, testing, or official approval. Book 1 defines
+  constitutional interfaces; transition, operations, infrastructure, and service
+  logistics remain Book 2.
+
+### Expansion phase 1 — Repair and map the verified kernel
+
+- [ ] **Create a generated high-consequence premise audit.**
+  - For every admitted or otherwise writable premise, show writer/authority,
+    provenance requirement, cheapest harmful consequence, challenge route, and
+    whether the risk is patchable, external, or deliberately refused.
+  - Include the roster/person entry, `free`, `mature`, epoch carry, seating,
+    public-body status, amendment inputs, and placement inputs.
+  - Keep this as a generated technical or method artifact, not a brittle counted
+    claim in derived prose.
+
+- [ ] **Build a record-integrity assurance case.**
+  - Specify authorship, authority, append-only correction history, independent
+    witnessing, reconciliation, challenge, and recovery from omission or deletion.
+  - State plainly that an in-snapshot rule cannot distinguish a deleted entry from
+    an entry never written. Do not promise an internal fix that the model cannot
+    supply.
+  - **Book 2 handoff:** record-storage, identity, cryptographic, and operational
+    integrity mechanisms.
+
+- [ ] **Red-team release, adulthood, and carry without creating new withholding gates.**
+  - Test forged `free`, forged/withheld `mature`, forged/withheld carry, roster
+    omission, and cross-epoch correction.
+  - Evaluate any proposed two-entry authorisation shape against its opposite failure:
+    an official withholding release, voting status, or basic standing.
+  - **Done when:** each input has a declared risk posture and a test proving it.
+
+- [ ] **Test amendment semantics, not only amendment labels.**
+  - Add adversarial cases for targetless, falsely targeted, and semantically concealed
+    amendments; keep the known limit that a self-declared target is not proof of an
+    amendment's real effect.
+  - Separate a visible `admits`-vocabulary change from an entrenched amendment; do not
+    claim that the current mechanism protects both.
+
+- [ ] **Make placement exhaustive rather than accidental.**
+  - Generate the relevant placement combinations; test duplicate, missing, and
+    opposite-direction placement outcomes.
+  - Preserve the distinction between a placement repair and actual free-person
+    housing delivery.
+
+### Expansion phase 2 — Specify the comprehensive constitution
+
+- [ ] **Implement the ratified T3 temporal path in stages.**
+  - Preserve T0 in the current constitution until T1 audited transitions, T2 order
+    evidence where required, temporal-input contracts, and the two-snapshot
+    differential harness exist.
+  - Add adversarial controls for recency, carry, release, adulthood, expiry,
+    omission, emergency, office, and the audit reader; apply the narrowness-impact
+    gate before every family lands.
+  - **Done when:** the T3 implementation gate in
+    [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md)
+    passes, full verification passes, residual liveness is explicitly handed to
+    Book 2, and every affected claim is revised or pinned.
+
+- [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
+  - Use the coverage map's contract fields and the taxonomy's formalisation metadata
+    for every new rule family. Every card also records any applicable structural-wall
+    ID and enforcement mechanism. At minimum, record:
+
+    | Object | Required fields |
+    | --- | --- |
+    | Right/floor | holder, duty-bearer, minimum, accessibility, recipient-side access/receipt evidence, authorised writer, challenge route, no personal-outcome inference, breach, interim continuity, remedy, appeal, audit, temporal status |
+    | Liberty/power limit | protected person, prohibited act, direct public binding, public prevention/investigation/remedy duty for private interference, any explicit private binding, narrow exception test, evidence, independent reviewer, public reason, review or current-T0 non-temporal end condition, temporal status, remedy |
+    | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, current-T0 non-temporal end condition, temporal status |
+    | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, independent recipient, action duty, continuity/remedy path, temporal status |
+    | Commons/future condition | protected common, present duty, ceiling or non-destruction rule, evidence, standing for any present person and an independently checked public guardian, guardian authority/independence/evidence/removal controls, remedy, public accountability, temporal status |
+
+  - **Done when:** no new right or institution is added without a completed row.
+
+- [ ] **Make universal standing a root condition, not a service denied by a missing entry.**
+  - Design a safe “serve and reconcile” route for an unregistered person seeking help.
+  - Keep identity resolution separate from access to emergency aid, floor protections,
+    and due process.
+  - Do not erase accountability through a right to disappear from the record.
+
+- [ ] **Define the social floor, liberty shell, and ecological ceiling.**
+  - Retain the existing floor as a compact core, then classify missing coverage:
+    water/sanitation, adequate utilities, material security, disability and care,
+    bodily integrity, usable information, accessibility, and voluntary social life.
+  - Put privacy, bodily autonomy, movement, due process, association, expression,
+    equal civic status, and procedural safeguards in a power-limiting layer where
+    appropriate, not necessarily as more delivery predicates.
+  - Add a commons/intergenerational constraint: rights must not be delivered by
+    exhausting the conditions future people need to exercise them.
+
+- [ ] **Write the Bodies specification.**
+  - Define people/civic associations; legislature and electoral-deliberative bodies;
+    provision and treasury; justice, defence, and appeal; constitutional review;
+    integrity/audit; local bodies; and an independent rights advocate/ombudsperson.
+  - Apply separation of functions: no actor may assert case facts, decide their
+    consequence, execute it, audit it, and remedy it alone.
+  - Define a rights advocate able to act for a child, disabled person, prisoner,
+    newcomer, or unregistered claimant.
+
+- [ ] **Specify obligations without making rights reciprocal bargains.**
+  - Public institutions must respect, protect, fulfil, and remedy.
+  - Contractors remain bound when delivering a public function.
+  - Civic duties may exist, but failure to work, pay, identify oneself, comply, or be
+    socially approved must not remove a basic floor.
+
+- [ ] **Specify delivery as a lifecycle.**
+  - Model: entitlement → service offered → accessible service → authorised,
+    recipient-side access/receipt evidence → disputed/failed → interim continuity
+    → remedy → systemic correction.
+  - A missing receipt must invite outreach and challenge, never terminate entitlement.
+  - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement, and
+    capacity planning.
+
+- [ ] **Define the democratic ceiling and majority process.**
+  - Ordinary majorities decide policy, tax mix, providers, and choices above the core.
+  - Every restrictive proposal needs public reasons, evidence, non-discrimination,
+    least-restrictive means, a constitutional delivery duty, appeal, and independent
+    review. Capacity modelling remains Book 2; time-dependent review/expiry is
+    subject to the ratified T3 implementation gate.
+  - An emergency model may never erase personhood, core floors, evidence rights, or an
+    appeal path. Its temporal authority and end condition remain T3-implementation-gated.
+
+- [ ] **Add the missing non-carceral justice interface.**
+  - Cover notice, counsel/advocacy, hearing, challenge, reparation, civil disputes,
+    child representation, and post-release continuity.
+  - Add explicit carceral limits: bodily integrity, communication, conditions,
+    proportionality, release review, and reintegration support.
+
+### Expansion phase 3 — Make the architecture elegant without making it false
+
+- [ ] **Name the real symmetries and necessary asymmetries.**
+  - Real recursive interfaces:
+    - right → duty → delivery → breach → remedy → review;
+    - power → evidence → limit → appeal → correction;
+    - harm → due process → least coercive response → repair/release.
+  - Necessary asymmetries:
+    - recognition is optional, binary, non-ranked, and non-operative;
+    - punishment is coercive and requires a higher proof threshold;
+    - public power is transparent while private life remains private;
+    - accessibility may require unequal resources to secure equal standing.
+
+- [ ] **State the determination/action boundary accurately.**
+  - Book 1 must identify who owes what, what counts as delivery, failure, remedy, and
+    public accountability.
+  - Book 2 must specify how people, institutions, funding, and real-world operations
+    make those duties happen.
+  - Do not describe an infinite chain of duties as a solution to the need for people
+    and institutions to act.
+
+- [ ] **Use a vector of protected conditions, never a total social score.**
+  - No abundance in one domain compensates for torture, homelessness, exclusion, or
+    disenfranchisement.
+  - Use aggregate, privacy-preserving disparity and outcome measures for public
+    learning; never convert them into individual risk labels.
+
+### Expansion phase 4 — Rewrite for an intelligent non-specialist reader
+
+- [ ] **Add a Reader’s Map inside an existing exempt element.**
+  - State the promise, record/rule/reality distinction, scope boundary, and visible
+    part structure before Chapter 1.
+  - Preserve computed chapter order; make the reader-facing arc visible rather than
+    casually reordering the derivation spine.
+
+- [ ] **Standardise the chapter experience.**
+  - Use: concrete existing case → plain finding → how the rule works → attack/failure
+    → boundary → brief “what this established.”
+  - Prefer chapter-local reminders to long backward cross-references.
+  - Preserve the record-people's deliberately flat inner lives; do not add invented
+    biographies or emotions as if they were evidence.
+
+- [ ] **Add navigation aids.**
+  - Annotated table of contents, concise glossary, character/case index, and selected
+    diagrams for the record/conclusion distinction, floor, institutional roles, and
+    delivery/remedy loop.
+  - Do not add a diagram mechanically to every chapter; each must earn its cognitive
+    cost.
+
+- [ ] **Run reader-comprehension sessions.**
+  - Test the Reader’s Map and representative chapters with non-specialist readers.
+  - Success means readers can explain what is written versus derived; who owes the
+    floor; why an entitlement is not delivery; what a majority may decide; and where
+    the design stops.
+
+### Expansion phase 5 — Evidence, psychology, and external review
+
+- [ ] **Apply scientific and statistical discipline to every expansion.**
+  - Each new claim needs a source, an abuse case, a counterexample test, a residual
+    assumption, and an explicit uncertainty boundary.
+  - Treat group-level outcome data as feedback for institutional repair, not as a
+    measure of individual worth.
+
+- [ ] **Ground psychological claims without turning people into variables.**
+  - Test for autonomy, voice, non-humiliation, relatedness, meaningful control,
+    retaliation, status competition, and coercive incentives.
+  - Use lived-experience review; do not infer psychology from a formal proof.
+
+- [ ] **Run a multidisciplinary red-team before calling the redesign complete.**
+  - Include constitutional law, public administration, disability/accessibility,
+    public health, economics, data governance, and people affected by coercive
+    institutions.
+
+### Explicitly rejected expansion proposals
+
+- Restoring fixed counts in reader-facing book prose; counts are intentionally gated
+  and have historically rotted.
+- Treating `reward` as punishment's inverse, granting standing for contribution, or
+  allowing recognition to buy material security, authority, or voting power.
+- Calling the current record a self-healing closed circle, a mathematical group, a
+  Bayesian model, or proof that random sampling cannot be captured.
+- Adding provider-authored delivery facts as evidence that the floor was met.
+- Adding formal-language explanations, histories, or implementation detail throughout
+  derived chapters instead of using the existing Part V/method boundary.
+- Treating a transition roadmap, full operational economy, record-storage technology,
+  or implementation logistics as Book 1 prose. The 2026-08-03 mandate adds
+  constitutional interfaces—not their operating machinery—to Book 1 scope.
+
+### Expansion completion standard
+
+The redesign is ready only when:
+
+- every constitutional domain has a completed coverage-matrix row;
+- the Book 1/Part V/Book 2 seam is visible and honest;
+- the full verification suite and new adversarial tests pass;
+- no material floor is gated by a mutable status or a provider’s self-certification;
+- ordinary readers can follow the core argument without formal-methods training; and
+- reviewers can identify both the system's guarantees and external trust assumptions
+  without reconstructing them from scattered chapters.
 
 
 ---
@@ -168,13 +433,13 @@ measured an engine change that was never rebuilt.
     hold a word for intent. Three correction commits landed before this close. **Do
     not skip this pass on a future wave**: per-commit gates cannot see cross-chapter
     drift, and every one of the seven had passed its own chapter's full suite.
-  - **Open, and the author's to rule: harden `lose` and `decide` by declaration.** Both
-    sit on neither guarded list — not admitted, not conclusion-only — so a forged loss
-    or a forged ballot is refused today only because the writable list happens to stay
-    short. Measured across the whole pin set: adding both `derived_only` lines changes
-    no answer anywhere (526 pins, 0 findings). The edge is open for want of a line, not
-    for want of a reason. Chapters 6 and 9 both tell it as a known soft edge, so
-    **hardening means editing those two passages in the same commit**.
+  - **Closure-gap evidence (the Phase 1 task owns the ruling).** Both `lose` and
+    `decide` sit on neither guarded list — not admitted, not conclusion-only — so a
+    forged loss or ballot is refused today only because the writable list happens to
+    stay short. Measured across the whole pin set: adding both `derived_only` lines
+    changes no answer anywhere (526 pins, 0 findings). The edge is open for want of a
+    line, not for want of a reason. Chapters 6 and 9 both tell it as a known soft edge,
+    so **hardening means editing those two passages in the same commit**.
   - **Two commit bodies carry word counts off by a little** (chapter 3 says 2,652 for
     2,651; the method addendum says 4,255 for 4,270) because the count was composed
     before the final edit. The figures above are the authoritative re-measurement;
@@ -247,7 +512,8 @@ passes or permission to replace a public page; see
 The registry (`registry/claims.json`, CC0), its staleness gate and the first fetcher
 exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 
-- **The rendering step — build it beside the first prose that cites a registry id.**
+- **The rendering and Part V traceability step — build it beside the first prose that
+  cites a registry id.**
   Nothing in book-1's derived chapters may carry a number (the counted-claims gate), so
   value-injection waited for the empirical writing it serves — and Part V now exists:
   its frame and capture joint carry registry-backed numbers as hand-written prose,
@@ -255,6 +521,9 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   those figures, or rule that Part V's handful stays hand-checked. Do not build past
   its consumers. More fetchers (WHO GHO, OWID, FAOSTAT…) land the
   same way — as entries need them.
+  - This task owns point-of-claim traceability: every empirical statement needs its
+    registry ID and source; causal language must match the evidence, uncertainty, and
+    instrument sensitivity the record supports.
 
 - **Re-cite the ported registry entries against published versions.** The port
   (`dd25b49`) honestly stamped `retrieved: 2026-07` — book.md's own last verification —
