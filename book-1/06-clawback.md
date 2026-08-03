@@ -18,6 +18,25 @@ partial forfeit, no assessment of how much of it was tainted. It is the one
 instrument in this society that operates without any judgment of degree, and that is
 worth holding in mind through what follows.
 
+And a second precision, stranger than the first: nothing reads the loss. The entry
+written against Bela's name is consulted by no rule anywhere — it opens no door,
+changes no placement, feeds no verdict — and the book's checks hold that nothing ever
+does, by decision rather than by oversight. The design determines that something was
+lost, writes it down, and stops. If that sounds familiar it is the audit's register
+arriving early: what this record does with wrongdoing, here as there, is know it, and
+the knowing is the whole of what it does.
+
+The word itself sits in an odd place, and honesty wants it named. The record keeps
+two guarded lists — the words the world may write, and the words only rules may
+conclude — and the word for a loss is on neither. Nothing admits it, so a forged loss
+is refused at the door today; nothing declares it conclusion-only either, so that
+refusal rests on the writable list staying exactly as short as it is. The design has
+hardened words in this position before, by declaration, after noticing that one
+unrelated widening would have reopened them in silence. The word for a loss has not
+been hardened. The declaration is a single line, and the fact that nobody has written
+it is the kind of small unfinished edge this book prefers to record rather than round
+off.
+
 ## What it cannot reach
 
 Before the difficulty, the boundary, because the boundary is the more important fact
@@ -131,13 +150,19 @@ the forgiveness stands beside that body's own judgment of the person — the sam
 two-entry shape relief uses, adopted for the same reason, because one authorless
 word must never spring what took six guarded entries to conclude. With both in
 place the mark comes clean. The void stops re-deriving. The loss stops. The doors
-to earning reopen.
+to earning reopen — backwards as well as forwards. The record's memory of work done
+while voided was never erased, only refused, so the moment the mark comes clean the
+examinations recorded through those years start paying: the answers recompute from
+what was always standing there. Forgiveness here is not a fresh start. It is the
+record resuming payment on everything it already knew.
 
 What forgiveness does not restore is the pen. The mark itself stays on the record —
-forgiven, not erased — and everything that reads the mark directly still reads it: a
-forgiven auditor signs nothing and is seated nowhere until somebody chooses them
-afresh, and the standing mark still blocks that choice. The way back for the person
-and the way back to power are different roads here, and only the first was opened.
+forgiven, not erased — and everything that reads the mark directly still reads it. Do
+not picture a forgiven auditor waiting to be chosen again: this record's voided
+auditor holds his seat and always did, because a voiding takes the word and the pen
+and never the seat, and choosing him a second time — measured — changes nothing at
+all. The seat was never what the door was reading. The way back for the person and
+the way back to power are different roads here, and only the first was opened.
 
 So a voided person's way out is no longer somebody else's silence. It is an entry
 someone can point to, made of the same stuff as everything else in this record: an
