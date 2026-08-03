@@ -156,11 +156,12 @@ price. It is low, and it is no longer nothing, and the void's own examinations �
 the ones that destroy a person's word — still ask for no reason at all, which is
 chapter 5's open question and stays it.
 
-A fourth refusal was on that door all along, and it is worth naming now that the
-door has been in the light: it does not pay the recalled. Being stripped of your
-seat and being found a liar are separate findings, and the door reads each on its
-own — a recall is not a voiding, so the voiding guard would never catch it, and the
-door carries a guard of its own. The record's live case is the official this book
+One more refusal was on that door all along, and it is worth naming now that the
+door has been in the light: it does not pay the recalled. Having your power
+withdrawn and being found a liar are separate findings, and the door reads each on
+its own — a recall is not a voiding, so the voiding guard would never catch it, and
+the door carries a guard of its own. (The recall does not touch the seat, either;
+the chapter on standing is where that matters.) The record's live case is the official this book
 has already watched being removed, who left a real examination standing on the
 books. He earns nothing from it. And not for want of grounds: give that examination
 its written why, measured, and the door still refuses, because the recall mark is

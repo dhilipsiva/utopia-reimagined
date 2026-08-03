@@ -105,11 +105,14 @@ Conviction here reads an injury and a court's judgment, and it reads the absence
 every escape this design provides: granted relief, a court found broken, this shield,
 a sentence already ended. Most of those are somebody else's act. The shield is the
 route a defendant reaches by their own doing. And notice what is missing from the list
-altogether — self-defence, justification, provocation, what anybody intended. No such
-words exist in this record, so no such defence can be raised in it. That is not a
-narrow shield sitting beside a wide law of excuses. It is a shield standing nearly
-alone, which is worth knowing before deciding whether its window is priced too
-generously.
+altogether — self-defence, justification, provocation. No such words exist in this
+record, so no such defence can be raised in it. Intention is the sharp exception, and
+it cuts one way only: the record does hold a word for a deliberate attack, and it
+feeds nothing but severity — which is to say it can make your placement worse and can
+never make your case better. That is not a narrow shield sitting beside a wide law of
+excuses. It is a shield standing nearly alone, beside a word for intent that only ever
+points at you, which is worth knowing before deciding whether the shield's window is
+priced too generously.
 
 ## Kel
 
