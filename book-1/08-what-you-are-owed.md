@@ -76,7 +76,11 @@ reads. The gap has not narrowed by a single lesson. What changed is that for
 learning — and in this book, for learning alone — the design can say exactly what
 closing the gap would look like, and the saying is a rule rather than a promise. The
 routes for the rest are the building of them, and the building belongs to the book
-about building.
+about building. A last note about that route belongs with the rest of this chapter's
+honesty: both halves of it are entries somebody writes. The teaching and the hearing
+alike arrive the way everything here arrives, by a hand — so the route is exactly as
+honest as the record is, and what the rule adds is that no arrival is concluded from
+either entry by itself.
 
 Read the shape of those two. The society is certain about the housing and the heard
 words of exactly the people it is punishing, and the two certainties have the same
@@ -125,6 +129,26 @@ stops there. A society could honour the floor exactly as written and still make 
 comprehensively unpleasant for the people it disapproves of, by every route except
 the cell.
 
+Verified open is a stronger phrase than it looks, and it cuts both ways. The doors
+are checked by walking through them: each of those bad-but-legal rules is loaded
+against a copy of the record on every run of the book's checks, and each must load,
+because a protection whose edges nobody probes is a protection whose edges nobody
+knows. The boundary is then checked from the other side, which is what makes it a
+measurement rather than an assurance. Take words that are not on the floor — whether
+a person has a home, whether anybody chose them, whether they hold a credential,
+whether their word has been voided — and write the punishing rule against each of
+them: *lacking this, you go to prison.* They all load. So the refusal is not a
+general horror of punishing rules. It is specific to the floor, and the way you can
+tell is that the same sentence, aimed at a word beside the floor, is accepted without
+a murmur.
+
+One word is deliberately left out of that demonstration, and the reason is worth more
+than the demonstration. The right to move refuses the punishing rule too — but for a
+reason of its own, having nothing to do with the floor, arising from the way movement
+is derived. Counting it would make the floor's protection look wider than it is. The
+checks leave it out and say so in the margin, which is the difference between testing
+a claim and dressing one.
+
 ## Owed by whom
 
 For most of the way here that question had no answer, and saying so was the honest
@@ -146,7 +170,9 @@ extended the protection to the obligation. It arrived with the naming.
 the same terms as anyone who exposes any other authority. It owes, and it is
 answerable, and it was never given the credential that makes an examination count —
 so it can write down what it likes about you and none of it will void your credibility
-or take what you earned. The duty and the pen are in different hands.
+or take what you earned. The duty and the pen are in different hands. That
+answerability rests on an entry, like everything else here, and the chapter on
+standing prices exactly what a single deletion would do to it.
 
 Then the three things this does not buy, and they have the shape everything in this
 chapter has.
@@ -186,6 +212,27 @@ the people who review new rules keep asking the question that cuts through. What
 arrival, recorded about which person, sits upstream of this sentence? When the answer
 is the roster of persons and nothing else, the sentence is not delivery. It is the gap
 being painted over.
+
+And beneath the painted-over gap sits a stranger failure, worth telling because this
+book found it by looking rather than by being told. The fiat rule above at least adds
+something a reviewer can find. The edit below adds nothing: it rewrites the line that
+owes you food, threading each person's name into the thing they are owed — a change
+of a few characters, in a line that goes on looking exactly like a floor. What it
+does is not what this design's own notes predicted for months. It does not fake the
+delivery. It deletes the promise: the line stops owing anybody anything, silently,
+while sitting there wearing the shape of a guarantee. Measured on a copy the day this
+chapter was expanded, and the note that said otherwise had been wrong the whole time,
+in the direction that flattered the design, which is the direction to distrust.
+
+What caught it was this book's habit of writing down what it is owed. The record of
+checks behind this chapter says, person by person, that each of them is still owed
+each thing — and every one of those lines goes red the instant the promise
+evaporates. Be precise about why that matters, because it is the opposite of the
+comfortable story.
+The guard is not the design's cleverness about its own grammar. The guard is that
+somebody wrote down, in a form re-checked every time, that these people are still
+owed something. A promise nobody records as a promise is a promise that can be
+deleted quietly.
 
 **Nothing compels the body.** The design states the debt and contains no machinery for
 collecting it. There is no consequence anywhere for the obligation going unmet — the
