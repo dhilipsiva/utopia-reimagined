@@ -120,32 +120,6 @@ measured an engine change that was never rebuilt.
 
 ## book-1 — remaining writing
 
-- **Write the opening note — the last unwritten non-derived element, and nothing else
-  tracks it.** ~800 words before Part I, explicitly non-derived and labelled the way Part V
-  is labelled, so the book does not open cold on vocabulary; it claims no derivation and
-  carries no verdicts (`new-book-plans/3-spine.md:123-126`). One of exactly three sanctioned
-  exceptions to the inclusion gate. No file exists. Write it against the final wording,
-  which is settled: *The Rights Nobody Has to Earn — A design for a society worked out to
-  the point where it catches its own failures.* **Written in the author's first person under the
-  voice-boundary ruling** — the author drafts (`tmp.txt` is the channel), sessions edit
-  mechanics only and never generate the voice. **Check the note against the counted-claims
-  gate before committing it** — the gate is now hard at zero. The subtitle itself is
-  clean; a note that opens by naming the floor's size would not be.
-  **The best evidence this note is load-bearing is on file** (`reviews/ai_review.md`):
-  a sympathetic, capable reader finished the manuscript and concluded it is a teardown —
-  *"a beautiful nightmare to show us what not to do."* The note has to tell a reader what
-  they are holding before chapter 6 teaches them wrong: the confessions are the method,
-  not the verdict.
-
-- **The honesty paragraph goes in the opening note, and half of it is already in print.**
-  book-1 has no introduction, so the destination this item used to name is gone. One half
-  has landed: *the system proves what is owed, not that anything arrives* is stated hard in
-  chapter 8, leaned on again in chapters 13 and 14. The other half is in no chapter — that
-  a formalisation makes commitments **precise**, never **justified**; nothing in logic says
-  the floor should contain expression and not water. Put that half in the opening note and
-  have it point forward rather than restate chapter 8, or the book opens by spending its
-  strongest admission before the reader knows what was admitted.
-
 - **Build Part V on the five-joints scorecard, re-framed for destination-only scope.**
   Nothing of it exists. Score this design at the five joints — **valuation, rotation,
   coercion, capture, the state** — as places a *functioning* design breaks, never as stages
