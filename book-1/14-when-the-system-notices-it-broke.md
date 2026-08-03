@@ -89,6 +89,22 @@ placed people, derived from a signal that could not tell right from wrong — an
 half is fixed, which shows the duty machinery inherits exactly the quality of whatever
 feeds it.
 
+It also inherits a boundary nobody drew on purpose. The duty is not derived from
+wrongness in general; it is derived kind by kind — a rule for a misplacement, a rule
+for an isolation, written separately, each naming its own marker. A third kind of
+breach, whenever this record learns to notice one, produces no duty at all until
+somebody writes its rule. The general sentence — every mark obliges a response — is
+available and was measured while this chapter was expanded; the design keeps the two
+specific rules instead, deliberately, because they are correct and pinned and
+collapsing them buys nothing. The consequence deserves its own line. In this design
+even the obligation to respond to wrongdoing is itemised, and a new kind of wrong
+begins life unowed.
+
+The duty also points one way. It is owed about the person who was wronged, never at
+whoever did the wrong — the placement chapter tells how the report's author is
+dropped between the premise and the conclusion, and the duty is built on the
+conclusion.
+
 And then **nothing reads the duty.** No rule consults it. No clock starts, no review is
 required, nothing changes about the placement or the isolation being reported. The chain
 is one link longer than it was and it ends in the same place.
@@ -119,6 +135,14 @@ looks, or somebody dies. The failure is invisible not because it is concealed bu
 because the system has no way to represent it.
 
 This design has the slot. Wrong is a thing this society can say about itself.
+
+And the slot is write-protected in both directions, which is worth stating in a
+chapter that otherwise counts losses. The audit's verdicts are on the record's
+conclusion-only list: nobody can write down that something is broken — the refusal is
+pinned — and, just as importantly, nobody can write down that everything is fine,
+because a verdict no hand may put on the record cannot be put there soothingly
+either. Whatever reaches the audit reaches it as a conclusion, or not at all. The audit can be
+starved, as this chapter has already conceded. It cannot be lied to in its own voice.
 
 And the slot is in the right place. The audit sits at the very top of the structure —
 it depends on everything and almost nothing depends on it. Which makes it hard to
