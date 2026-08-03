@@ -326,18 +326,40 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   author-drafted — sessions edit mechanics only (guards, citations, wrapping, the ratchet) and
   never generate or extend the voice; ghost-writing stays refused, per the constitution's own
   register note, which stands as written. `tmp.txt` is the channel for drafts in progress.
-  **Two recorded exceptions, by the author's explicit instruction (2026-08-03): the opening
-  note and Part V.** For the note, the author directed the session to draft it ("You draft it
-  yourself"), reviewed the draft in `tmp.txt`, and adopted it with no changes ("I have no
-  changes to suggest") — `book-1/00-opening-note.md` is session-drafted, author-adopted. For
-  Part V the instruction was "Same for Part V — draft it yourself, commit and push", so
-  `book-1/15-the-five-joints.md` is session-drafted under the same explicit override,
-  adversarially verified against the reviews corpus, the registry and the chapters before
-  landing (three checkers; every quote verbatim-checked, two misattributions and two
-  overclaims caught and fixed pre-commit). This line is the record of both. The protocol
-  stands unchanged for the method part unless the author rules again. The
+  **All three exempt elements were session-drafted by the author's explicit instruction,
+  each a recorded exception (2026-08-03).** The opening note: "You draft it yourself",
+  reviewed in `tmp.txt`, adopted with no changes ("I have no changes to suggest"). Part V:
+  "Same for Part V — draft it yourself, commit and push" — adversarially verified against
+  the reviews corpus, the registry and the chapters before landing (three checkers; two
+  misattributions and two overclaims caught and fixed pre-commit). The method part: ruled
+  session-drafted in the planning session for its landing (AskUserQuestion, the same
+  explicit-override basis), adversarially verified the same way. This line is the record of
+  all three. The ghost-writing refusal stands for any future first-person writing — the
+  launch essay and the epigraph translation remain the author's — unless the author rules
+  again. The
   full re-weave the tracker once priced (every chapter re-touched, dearer each week) is dead
   by this ruling, not deferred.
+
+- **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
+  decisions, each load-bearing: **(a) the filename is unnumbered and must never be
+  renumbered** — verify.sh's jargon and counted-claims gates glob `book-1/[0-9]*.md`, and
+  the file quotes the stratifier error verbatim, so a numbered name fails the build
+  instantly; the epigraph is the precedent and `book-1/README.md` records the convention.
+  **(b) No pin file** — non-derived elements are unpinned (Part V's precedent), and a new
+  `*.pins.nibli` would enter the suite and break the `:expect-pins` reconciliation. **(c) No
+  machine-rendered English and no proof traces, ever** — rules as written, error messages as
+  printed, pin verdicts only; this is stated in the part's own reading contract and is what
+  keeps nibli's still-open renderer defect (its tracker bullet **"`obliged`-spelled
+  every-duty renders the wrong obligated party"**, cited by title, never by line) dormant.
+  Adding a rendered example "for friendliness" arms it. **(d) Excerpts + pointer, never the
+  full KR inline** — the part owns the resolution in print (the repository is the appendix);
+  reproducing the constitution or the spine's generated table creates the documented
+  staleness failure mode. **(e) The compute backend is not discussed** — if any future edit
+  adds it, cite nibli README's "Trust boundary" callout by heading. The part's quoted error
+  messages were reproduced against the built engine on landing day; the stress-surface
+  paragraph's upstream inventory names artifact classes, never counts, because upstream
+  counts rot. book-1 references book-2 exactly once, in this file's closing lines — do not
+  add a second reference anywhere.
 
 - **The reach strategy: spine-order serialization from a home of its own**, ruled 2026-08-02,
   the last author-gated decision of book-1. Chapters serialize in the computed order **as

@@ -2,11 +2,20 @@
 
 # The Rights Nobody Has to Earn
 
-The chapters in this directory are the derived spine of *The Rights Nobody Has
-to Earn* — fourteen chapters whose order is computed from the dependency
+This directory is the whole of *The Rights Nobody Has to Earn*: the epigraph,
+the opening note, the derived chapters in computed order, Part V, and the
+method part. The numbered chapters between the opening note and Part V are
+the derived spine — their order is computed from the dependency
 stratification of the constitution in `../new-book-plans/constitution.nibli`,
-and whose claims are pinned by the `*.pins.nibli` files beside them. Run
-`../verify.sh` to check every pinned claim against the constitution.
+and their claims are pinned by the `*.pins.nibli` files beside them. Exactly
+three elements are exempt from the derivation gate and labelled so in their
+own text: the opening note, Part V, and the method part.
+
+Two files are deliberately unnumbered — `epigraph.md` and `method.md` —
+because the prose sweeps in `../verify.sh` glob the numbered files only: the
+epigraph is a poem, and the method part must quote the machinery the sweeps
+forbid everywhere else. Do not renumber either; the naming is load-bearing.
+Run `../verify.sh` to check every pinned claim against the constitution.
 
 ## Licence
 

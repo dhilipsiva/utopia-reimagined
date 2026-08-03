@@ -1,0 +1,436 @@
+# The Method
+
+This part is optional, and it is a different kind of reading. The note at the
+front of this book promised that if you ever wanted to see the machinery, the
+last part would show it. The fifth part closed by promising what, exactly: the
+rules as they are actually written, the checks that run, the failures they
+caught, and the things I wanted that the logic refused. This is that part.
+Everything between the note at the front and the fifth part was prose a
+machine had checked; the note, the fifth part and this one are me speaking —
+but where Part V argued, this part shows.
+
+Two ground rules, stated here so you can hold me to them. First: every English
+sentence in this part is mine. You will see rules exactly as they are written
+in the files and the machine's error messages exactly as it prints them; what
+you will not see is the machine's English translation of any rule, or a proof
+transcript — it renders no prose in this book. Where a quoted line is wider
+than the page, it is broken to fit and nothing else about it is changed; the
+files hold each statement whole. Second: everything shown here is runnable.
+The book's repository is public — it holds the constitution, the chapters,
+the pins and the checks — and one command re-checks the claims the chapters
+stand on, building the engine from its own public repository before any pin
+runs.
+This part is the guide to that machinery, not a substitute for it. The
+repository is the appendix.
+
+Why does this part exist at all? Because a book that says "a machine checked
+these promises" and then keeps the machine out of sight has asked for exactly
+the kind of trust the rest of the book abolishes. The chapters are the
+intuition. The files quoted here are the machinery. The checks described here
+are the evidence. You are owed all three, in one object, and this is where the
+other two live.
+
+## The rules as written
+
+The society you have been reading about is a file. Everything the record may
+say is written in a small formal language read by a reasoning engine called
+nibli, and the file — the constitution — is the single source every chapter
+was gated on. Here are three of its lines, exactly as they appear:
+
+```
+entitled(every person, event { eats() }).
+entitled(every person, event { dwell() }).
+entitled(every person, event { believe() }).
+```
+
+That is what a floor right looks like. One line for each thing owed, and the
+two words that carry the book are the plainest ones: *every person* — not
+every citizen, every member, every adult, every contributor. The wrapper
+around the owed thing is not decoration either: the file's own margin notes
+record the measurement that removing it kills the protection the next
+sections describe. The floor is not a preamble. It is load-bearing text in a
+running system, and the current full list — like every figure in this part —
+lives in the repository, not on this page, for a reason I will come to.
+
+Here is the rule that makes someone a prisoner — the only rule in the file
+that does:
+
+```
+all $offender: all $victim: injure($offender, $victim) &
+judge(Court, $offender) & ~permits(Appeals, $offender) &
+~broken(Court) & ~defend($offender) & ~free($offender)
+-> prisoner($offender).
+```
+
+Read it slowly once, because being readable in one breath is the point. A
+recorded injury, with a victim. A court's recorded judgment. No standing
+appellate relief. A court that is not itself marked broken. No derived
+defense. Not already free. Then, and only then: prisoner. Every conjunct is a
+recorded fact or the visible absence of one, and there is nothing else — no
+second route, no discretion, no "unless circumstances warrant". When chapter 13
+called imprisonment the one thing this society takes, this rule is the whole
+of what it was describing.
+
+And here is the rule the voiding chapters orbit — the one that can declare a
+person's word worthless:
+
+```
+all $a: all $b: all $audited: permits(Review, $a) &
+permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) &
+~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) &
+~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) &
+~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) &
+~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b)
+-> false($audited).
+```
+
+It is long because it counts signers, not signatures: two people, each
+credentialed by a different body, each having examined and documented the
+person themselves, neither lying about them, and — the conjunct chapter 5
+turns on — not the same person twice, not each other's parent, spouse or
+sibling, neither carrying a mark. Some of those guards have nothing to catch
+in the shipped record; they are kept armed for the day an assumption stops
+holding, and the sabotage fixtures described in the checks section of this
+part are what prove, rather than assert, that they still decide nothing
+today.
+
+Two shorter blocks do more work than everything above. The first closes what
+may be *written*:
+
+```
+admits("free").       admits("hears").      admits("home").
+admits("injure").     admits("judge").      admits("married").
+```
+
+The record's base vocabulary is declared, name by name, and a ground fact in
+any other vocabulary is refused at the moment of writing. The second closes
+what may only be *concluded*:
+
+```
+derived_only("false").
+derived_only("reward").
+derived_only("prisoner").
+```
+
+A name in this block may never be asserted at all — every appearance of
+`prisoner` in the record must be the conclusion of a rule, which is chapter
+1's most-guarded sentence made mechanical: "the conclusions that matter are
+not writable. They are only derivable." These are two different guards on
+two different doors — one closes the record's vocabulary, the other makes a
+name conclusion-only — and the book has been careful never to describe them
+as one. One name sits differently from everything around it: `person`. It
+has producing rules *and* ground entries — the roster has to start
+somewhere, and released people re-enter it by rule — so it is a conclusion
+the machinery can reach that the record must nonetheless admit. *What counts
+as evidence* and *what may be written* are therefore different sets,
+`person` is the whole of the difference between them, and chapter 1 put
+personhood on its evidence list for precisely that reason.
+
+Try to break the first closure. Add one flattering fact the record does not
+admit — `rich(Adam).` — and the engine answers at assert time:
+
+```
+[Reasoning Error] `rich` is not admitted vocabulary: this knowledge
+base declared its base vocabulary closed with `admits("…")`, and
+`rich` is not in it. Add `admits("rich")` ABOVE the first `rich`
+assertion if this relation really belongs in the record — a visible,
+reviewable edit, which is the point.
+```
+
+I did not write that error message, and its last clause is the engine
+agreeing with chapter 1 in its own words: widening the record is a loud,
+reviewable act, never a fact somebody quietly types.
+
+One honest note on why you are seeing excerpts and not the whole file. It is
+not length. A constitution like this is at its truest where you can run it,
+not where I can frame it — printed in full here, it would be text; in the
+repository, it is a system that answers back. The note at the front promised
+that this part shows all of it; the way it shows all of it is by handing you
+the place where all of it runs. The full file is dedicated to
+the public domain, and the repository is
+`github.com/dhilipsiva/rights-nobody-has-to-earn`. Clone it — and the
+engine's repository beside it, which the check will name if it is missing —
+then run the one command, `./verify.sh`. The pins pass, or this book has a
+defect its author did not know about.
+
+## The order of the chapters, and the tools that got it wrong
+
+The chapters of this book are in a computed order. I chose the words in them;
+I did not choose their sequence.
+
+The mechanism: every relation in the constitution sits in a layer. At the
+bottom are the record's plain words — the things the world may report, like
+an injury, a judgment, a marriage, a lesson heard. Above them sit the
+conclusions those words feed, and above those the conclusions *those* feed —
+personhood, imprisonment, everything owed — up to the marks the audit leaves,
+which feed a duty that nothing then reads: the chain ends one step later
+than it once did, which is chapter 14's whole story. A rule's conclusion
+never sits below something it reads. The engine computes those layers from the file, a script
+turns the layers into a chapter order, and the book follows it: the chapter
+about a relation cannot come before the chapters about what it rests on. The
+computed table — how many relations, how many derived, how many layers, and
+the full list of which sits where — lives in a planning file in the
+repository, inside a block marked *generated*, and a check fails the build
+the moment that block disagrees with the constitution.
+
+You have already felt this order, whether or not you noticed. The book opened
+on the record itself — what may be written, and by whom — because everything
+else rests on it. It ended, before Part V, on the audit — the layer where
+the chains run out — because nothing rests on it. Every chapter in
+between sits where its subject sits in the layering: the voiding chapter
+follows the chapter on the pens because the voiding rule reads the pens'
+conclusions. The order of the book is the direction the rules read, and the
+check that guards the spine fails the moment the two disagree.
+
+That check exists because of a failure worth telling. The first version of
+the spine was computed correctly — and then the constitution changed
+underneath it, and nothing in the repository noticed. The numbers were not
+wrong when written; they were wrong when read, which is worse, because every
+reader after the change was being shown a careful, precise, stale answer.
+The repair was not "be more careful". It was: stop letting a hand-maintained
+copy exist at all.
+
+The repository keeps one tool that got this wrong, on purpose, as a
+standing exhibit: a small script that tried to compute the layers itself,
+by hand-rolled parsing. It cannot see inside the `event { … }` wrapper you
+met a page ago — so it never sees the floor at all. It looked sound, it
+agreed with itself perfectly, and it disagreed with the engine on every
+figure it printed. It is still in the repository, labelled wrong, kept as
+the standing argument for taking every figure from the engine that actually
+runs the rules. The spine generator carries the history of a second: its
+own first form rebuilt the dependency graph out of text-matching rules — a
+second implementation of the engine's layering, maintained by someone who
+could not see it — and it disagreed with the engine in three places, two of
+its numbers right only because two of its errors cancelled. The corrected
+generator records that history in its own header, where the next person
+tempted to reimplement will find it. Even the fixture-regeneration
+instructions in the repository — the commands that rebuild the sabotaged
+constitution copies the checks section describes — have been wrong twice,
+including once in a way that matched nothing and silently wrote a
+byte-identical copy: a fixture that tested nothing while looking freshly
+made.
+
+I am telling you this in the part that is supposed to earn your confidence
+because it is the shape of the whole method. Every tool written to check the
+machine became a thing the machine had to check. The response each time was
+not resolve; it was structure — regenerate instead of transcribe, point
+instead of copy, and make every checker prove it can fail before trusting a
+word it says. That is also why this part quotes so few numbers: a figure
+copied onto this page joins the class of things that rot, and the repository
+is where the living figures are.
+
+## What the logic refused
+
+The conviction rule you read above refuses to convict anyone whose appeal
+has been granted — the `~permits(Appeals, $offender)` conjunct. I wanted to
+write the guarantee that ought to sit beside it. Every prisoner may appeal.
+As a rule, one line:
+
+```
+all $x: prisoner($x) -> permits(Appeals, $x).
+```
+
+The engine's answer, exactly as printed:
+
+```
+[Stratification Error] Unstratifiable negation: strongly-connected
+component containing 'prisoner' -> 'permits' (negative)
+```
+
+A universal right of appeal cannot be expressed in this constitution.
+
+Follow the loop once, because it is the same loop the whole book stands on.
+Conviction reads the *absence* of appellate permission. My rule derives that
+permission *from* conviction. So the conclusion would feed the very absence
+it was read from — reasoning passing through its own result — and the engine
+refuses the shape. Not the policy: the shape. You have seen this refusal
+twice already, from the reader's side, in the chapter on prisoners remaining
+persons: it is what stopped the heresy law an attacker would write, and what
+stopped the persons-only shield a careful designer would write. This is the
+third case, and the difference is only whose rule died: the same wall, met
+from inside, by the author. One mechanism, no special pleading, and none of
+the three outcomes chosen by whoever was writing that day.
+
+That chapter also named the trap, and it applies to me exactly as printed
+there: a refusal leaves the *loose* rule in force. When the engine refused my
+guarantee, prisoners did not get a right of appeal — relief stayed what it
+was, an act somebody performs, granted case by case, with the cost the book
+prices where it weighs that default: a person whose case nobody takes up
+stays held. Being told no is not being kept safe. The refusal told me the
+guarantee I wanted cannot exist in this shape, and that what exists instead
+would keep running whether or not I made my peace with it.
+
+A second refusal, so you can see the wall does not soften when the intention
+is kind. The design lets a convicted person earn their sentence shorter, and
+the obvious way to write that is release earned from inside:
+
+```
+all $x: prisoner($x) & reward($x) -> free($x).
+```
+
+```
+[Stratification Error] Unstratifiable negation: strongly-connected
+component containing 'prisoner' -> 'free' (negative)
+```
+
+Conviction reads *not already free*; a release derived from conviction loops
+straight back through it. Release conditioned on conviction is structurally
+unavailable here — which is why, in this book, release is an entry someone
+writes, never an output the machinery computes, and it carries the
+concession chapter 1 already made: the entry does not say whose decision it
+records. The book calls that refusal the firewall rather than a bug, and I
+have kept it.
+
+What it felt like, since the opening note promised I would say: not like
+being corrected. Like leaning on a wall I had built myself and finding it did
+not care that I was its builder. The machine holds no opinions about appeals
+or mercy. It found a shape twice, and both times the thing it handed back was
+a design honester than my draft of it — not because it is wise, but because
+it cannot be talked out of anything, including by me.
+
+## The checks, and the check on the checks
+
+One command runs everything: `./verify.sh`, at the root of the repository.
+It runs, in order: the spine check against the constitution, the sweeps
+that keep the chapters' prose inside its rules, the guards on what nothing
+may read, then — after rebuilding the engine from source and printing the
+engine commit it built — the full pin suite and the sabotage fixtures. It
+stops at the first failure, naming the claim that stopped being true. The
+rebuild-and-print exists because this repository once spent three days
+running a stale binary to a green result, and a check that does not pin
+down *what is doing the checking* is a rumor with a progress bar.
+
+The script's own history is the honest part, so here it is in the register
+this part owes you — the claim, then where it broke.
+
+The suite reports its runtime; for months it claimed about fifteen minutes,
+and the real figure was closer to fifty. Durations printed there are now
+measured and dated, and trusted only until re-measured.
+
+The pin files can carry control statements — rules loaded deliberately so a
+query can show what they change. The first control mechanism left its
+statement in the knowledge base after the check, so every pin below one ran
+against a quietly widened base. That was not theoretical: measured while
+repairing it, a conviction pin passed against a copy of the constitution
+with the conviction rule deleted outright — the greenest possible light,
+certifying nothing. Controls are now scoped: the engine itself, not
+discipline, puts the base back.
+
+The sweep that keeps engine jargon out of the reading chapters failed, as
+first written, to catch the exact leak it was written for. It earned its
+place only after being made to fail against a sabotaged copy — and that
+became the house rule for every check in the script: sabotage first, trust
+after. A check that has never been watched failing is not yet a check.
+
+The pin suite itself is the book's claims made executable. Each chapter has
+a companion file of pins — a query against the constitution and the verdict
+it must return:
+
+```
+? prisoner(Adam).
+# => TRUE
+```
+
+The whole set runs on every check, each file declares how many pins it
+carries so a file cannot be quietly hollowed out, and a changed verdict
+stops the build and names the chapter whose sentence just became false.
+
+One of the sweeps deserves its own paragraph, because it polices me. The
+chapters you read are forbidden — mechanically, by the same script — from
+containing counted claims: no "the floor is eight rights", no headcount of
+the sheltered, not because numbers are vulgar but because every counted
+claim in this book that was ever checked turned out to be wrong, not stale —
+wrong. The floor has been six, then ten, then eight. The rule the sweep
+enforces is: state the rule that produces the count, never the count.
+"Shelter derives for every confined person and for nobody else" survives
+every cast change; the headcount it replaced was wrong on the day it was
+checked and would have gone stale again at the next ruling. This part sits
+outside the sweeps by its filename, deliberately — the error messages
+quoted here would trip the jargon sweep, and this very paragraph's examples
+would trip the counting one — so it holds itself to the doctrine the hard
+way, which is why the figures here point at the repository instead of
+standing on this page.
+
+Some pins are stranger, and they are this method's most honest invention.
+The book argues about flaws the design still has — chapters stand on them.
+Those flaws are pinned too, marked as defects, with the marker recording
+what would flip them. From chapter 12's file, exactly as written:
+
+```
+:defect "a totality guard: an amendment that declares no target has no force"
+? become(Amend_Sneak, Law).
+# => TRUE
+```
+
+An amendment that declares no target still becomes law here — a real hole,
+and chapter 12's argument depends on it being real. If a future edit quietly
+fixed it, the suite would not celebrate; it stops the build and says, in its
+own words, that this is a repair, not a regression — find the chapter that
+calls this a flaw and rewrite it, then drop the marker in the same commit.
+The markers in the pin files are the complete list of declared flaws — a
+count here would rot, the markers are the list — and each one is a tripwire
+in both directions: the flaw cannot silently persist, and it cannot silently
+vanish while the prose goes on confessing it.
+
+The last class of check exists because of a limit in the logic itself. The
+engine only ever adds conclusions as facts are added — it never retracts on
+its own — so no probe stacked *on top* of the constitution can test what the
+constitution refuses or restricts. Every claim of the form "remove this line
+and the world loses that" would stay an argument forever. So the repository
+keeps sabotaged copies of the constitution — each differing from the real
+one in exactly one deliberate way: a line deleted, a line changed, a line
+added — and the suite verifies each copy differs in exactly the promised
+shape, then runs pins against the sabotaged world to show the loss actually
+happens. When this book says the multi-sig's dormant guards decide nothing
+today, or that one added credential route would let a carried void count, a
+fixture executed that claim. It is the one place in the method where a
+removal is run rather than argued.
+
+Now the paragraph this part exists to hold, beside the machinery it
+qualifies. Everything above runs, and a stranger can run it: clone the
+repository, one command, the pins pass. Here is what that does not mean.
+Every probe, fixture and refusal in this book's repository was written by me
+and by AI sessions working with me, against a cast of a few dozen
+record-people. No one has independently reimplemented the checker. No
+outside red team has attacked this constitution. And the engine that blesses
+the book shares the book's author. Two things narrow that, and neither
+closes it. In this repository: the sabotage fixtures, the one place a
+removal is executed rather than argued. Upstream, in the engine's own
+repository, the engine — not this constitution — is checked against work
+that is not its own: external solvers are run as referees over the fragments
+of the logic they can hear, though each starts from the engine's
+already-compiled output, so the language front-end sits outside them; the
+criterion that refuses unstratifiable rules is implemented a second time
+from its mathematical statement rather than from the engine's code, and the
+two must agree on every random program thrown at them; a proof assistant's
+kernel checks model-level proofs of the core algorithms; mutation and fuzz
+testing beat on the rest. The engine's guarantees document holds that
+inventory in the register I have tried to keep here — state the guarantee
+flatly, then name where it stops. So, flatly, where this one stops: every
+verification artifact in the engine's repository is authored, run and
+interpreted inside that repository. No one outside this project has verified
+the engine. I will not promise you a red team I do not have. The suite is
+public and it is runnable, and that is not a defense — it is a standing
+invitation to become the outside reader this book is still missing.
+
+## The last page
+
+The book ends here, so let me say what it was. Chapters describing a society
+from its rules outward, checked by a machine that cannot be flattered; one
+part of argument, mine, where the machine has no say; and this part, which
+put the machine itself on the table. The confessions along
+the way were the product working. The refusals were the design holding. What
+I could not defend, I said so, out loud, in the plainest words I could find.
+
+One thing this book has deliberately not told you, and it is the largest
+thing. It has described what a society is when certain things cannot be
+taken from anyone — and it has said almost nothing about how to build one.
+What it would cost. Who would go first. How anything arrives at scale, from
+bread to housing to the people who show up when the alarm sounds. Those
+questions are real, they are answerable, and they deserved better than a
+final chapter's gesture at them.
+
+They are the next book. This one was the destination; that one is the road.
+If you have read this far — past the rules, past the failures, past the
+paragraph where I told you exactly who has not yet checked this work — then
+you are the reader that book will be written for.
