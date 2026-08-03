@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 34
+:expect-pins 38
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -165,6 +165,28 @@ cruel(Probe, Vic1).
 
 ? severe(Probe).
 # => TRUE
+
+# ── 1.6b The largest lever, executed ─────────────────────────────────────────
+# Every conviction in the cast runs through Court, and whether a court is
+# compromised is a thing the world may say — it has to be, or a captured court
+# could never be found. So one entry unmakes every conviction at once. Both
+# baselines are pinned TRUE first and are the negative control: nothing else in
+# this file reaches either man. This is a ground assertion, not an :accept, and
+# it persists — which is why it sits here, below every conviction query in the
+# file and above the roster block that must stay last.
+? prisoner(Hano).
+# => TRUE
+
+? prisoner(Lalo).
+# => TRUE
+
+broken(Court).
+
+? prisoner(Hano).
+# => FALSE
+
+? prisoner(Lalo).
+# => FALSE
 
 # 1.7 "Someone is a person." — the entry, and the two ways it gets written.
 #

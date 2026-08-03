@@ -295,6 +295,19 @@ man has family, one word, and he stops being eligible to serve his sentence at h
 goes to a facility instead. In both cases nobody wrote the verdict. It followed,
 correctly, from a premise somebody typed.
 
+The largest of these levers deserves its own paragraph, because it moves the most with
+the least. Whether a court is itself compromised is among the things the world may
+say — it has to be, or a captured court could never be found — and every conviction in
+this record runs through the same court. So consider a single entry: the court is
+broken. Write it, and every prisoner in the record walks. Not pardoned, not reviewed —
+un-convicted, all of them at once, on a premise nobody adjudicated. Measured across
+the cast, and pinned where this book keeps its measurements. Notice what that means
+about the entry rather than about the court: the line that would protect everyone from
+a captured court is the same line that frees everyone a working court convicted, and
+the record cannot tell the two writings apart. Every serious power this record grants
+has that shape. The word that saves is the word that breaks, and which one was written
+is a question for whoever keeps the record, never for the rules.
+
 Here is what survives of the original claim, and it is worth stating exactly, because
 the looser version is the comfortable one. The adjudication still has to happen
 somewhere, and it still has to be written down by somebody into a record that can be
