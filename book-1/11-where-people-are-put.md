@@ -116,6 +116,26 @@ eligibility and nothing else. But an act nobody writes down is an act no marker 
 this book can see. That limit is not this alarm's; it is the record's, and it has been
 there since the first chapter.
 
+Two more things about the repaired alarm belong here, and the first is chapter 5's
+oldest question arriving in a mirror. The report the alarm reads names its placer —
+that was the point of the repair, an act with an author. The alarm's own conclusion
+does not. What the record derives is that a person is misplaced; who put them there
+sits in the premise and is dropped on the way out, so the mark that reaches the audit
+says who suffered the wrong and never who did it. The voiding chapter watched this
+record know who and never why. Here it knows why — eligibility, contradicted — and
+lets go of who. Neither omission was argued for anywhere. Each is what one rule
+happened to keep from its premises, and what a conclusion keeps from its premises is a
+decision being made rule by rule, with nobody assigned to notice the pattern.
+
+The second is that the alarm watches half the space. It fires on a reported placement
+at home that eligibility contradicts. The converse wrong — held at a facility while
+eligible to be at home — draws nothing at all, because no rule watches that direction.
+The design's own margin records why: nothing today routes anybody into a facility
+against eligibility, and the marker for that wrong should be written beside whatever
+act ever makes it possible. That is honest, and it is a shape this book has learned to
+flag out loud. The second half of the watching is filed as future work, and future
+work is a category the record cannot see.
+
 ## What survives
 
 Set the marker aside, because the chapter's substance never depended on it.
@@ -134,6 +154,35 @@ there is no assessment to lean on. To move Ruk somewhere else you would have to 
 to what was recorded about the offence and contradict it — that he meant it, that
 somebody else was harmed — and those are claims about events, with people attached to
 them, which somebody can answer.
+
+Contradict it, or delete it. The record of the offence is entries, and the design's
+measured levers include this one: remove the single line recording what Lalo did to
+Mina, and the severity conclusion goes with it, and Lalo moves out of high security.
+No contradiction, no answering, nobody attached — an absence where a fact used to be.
+The dispute described above is the honest route to moving somebody; the deletion is
+the quiet one. What the standing chapter says about deletions applies here with a
+person's placement on the other end: some of them would be noticed, because the books
+this design keeps about itself happen to read the deleted fact for other reasons —
+but only some, by accident, never by guarantee.
+
+One further caution keeps derived placement from sounding like a solved problem.
+Today's placement rules are exclusive by the accident of their conditions: severe and
+not-severe cannot both hold of one person, so nobody derives two placements at once.
+Nothing enforces that. Measured on a copy while this chapter was expanded — add a
+placement rule with a careless condition and a person derives two placements
+simultaneously, while the alarm, which watches home eligibility and nothing else,
+stays perfectly silent. Exclusivity is a property of the rules this design happens to
+have, not of the design. Whoever writes the next placement rule inherits the duty of
+keeping it true, and nothing anywhere will remind them.
+
+A late repair in the same spirit belongs in this chapter's record. For most of this
+design's life a home-confined person's housing and their whereabouts were a single
+entry doing two jobs — housed, and at home, indistinguishable. They are two entries
+now: the housing the floor owes, and the where that placement decides. And one case
+deliberately gets no where at all — the person the state houses only because it is
+confining them and they had nowhere else. For them the record holds housed, and no
+destination, because there is nothing true to write in that slot, and this design has
+stopped inventing entries to fill silences that are telling the truth.
 
 That is the part worth holding onto from the farmhouse. Severity used to be the place
 where the leverage lived, because severity was written down: one word, no working
