@@ -46,20 +46,16 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
     [`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
     Do not duplicate its status here.
 
-- [ ] **[AUTHOR-GATED] Rule the time model.**
-  - State one coherent model: snapshot facts have no intra-period ordering; epoch
-    carry provides coarse succession; there is no clock or duration arithmetic.
-  - Decide whether that is a permanent constitutional refusal or whether a new,
-    independently auditable temporal layer is worth its capture and withholding risks.
-    Retaining T0 leaves the ratified Public institutions and Emergency/resilience
-    rows incomplete unless their scope is explicitly narrowed.
-  - Draft decision artifact:
+- [x] **[AUTHOR-GATED] Rule the time model.**
+  - **Ratified 2026-08-03:** adopt **T3** as the constitutional target, with T1
+    required and T2 required wherever order matters. T0 remains the current formal
+    kernel until the implementation gate passes.
+  - T3 permits independently assured review, renewal, or end constraints on public
+    power. It does not authorise person-priced duration, sentence clocks, or an
+    unassured timestamp.
+  - The ratification and implementation gate are recorded in
     [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md).
-    It is pending author ratification and does not change the current no-time rule.
-  - Current-v1 prose coherence is separately tracked in `TODO.md`; it is not a
-    T3 gate.
-  - **Done when:** the model is ruled and adversarial tests cover recency, carry,
-    release, adulthood, expiry, and omission.
+    Current-v1 prose coherence remains separately tracked in `TODO.md`.
 
 - [ ] **[AUTHOR-GATED] Rule the constitutional taxonomy.**
   - Classify each proposed addition as a material floor, liberty/invariant,
@@ -78,7 +74,7 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
     due process, core liberties, and commons constraints.
   - The rule distinguishes ordinary policy, constitutional change, emergency
     power, and administrative discretion. Its formal compatibility test,
-    amendment process, reviewer, and time-gated emergency mechanics remain
+    amendment process, reviewer, and T3-implementation-gated emergency mechanics remain
     contract work; current amendment machinery is not misrepresented as that rule.
 
 ## Phase 1 — Repair and map the verified kernel
@@ -140,13 +136,25 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
     democratic limits, and scenario tests. It does **not** change the constitution
     or prove coverage.
 
+- [ ] **Implement the ratified T3 temporal path in stages.**
+  - Preserve T0 in the current constitution until T1 audited transitions, T2 order
+    evidence where required, temporal-input contracts, and the two-snapshot
+    differential harness exist.
+  - Add the adversarial controls for recency, carry, release, adulthood, expiry,
+    omission, emergency, office, and the audit reader; apply the narrowness-impact
+    gate before every family lands.
+  - **Done when:** the T3 implementation gate in
+    [`book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md)
+    passes, full verification passes, residual liveness is explicitly handed to
+    Book 2, and every affected claim is revised or pinned.
+
 - [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
 
   | Object | Required fields |
   | --- | --- |
   | Right/floor | holder, duty-bearer, minimum, accessibility, delivery evidence, breach, interim continuity, remedy, appeal, audit, temporal status |
-  | Liberty/power limit | protected person, prohibited act, narrow exception test, evidence, independent reviewer, public reason, review or non-temporal end condition, temporal status, remedy |
-  | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, non-temporal end condition, temporal status |
+  | Liberty/power limit | protected person, prohibited act, narrow exception test, evidence, independent reviewer, public reason, review or current-T0 non-temporal end condition, temporal status, remedy |
+  | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, current-T0 non-temporal end condition, temporal status |
   | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, temporal status |
 
   - **Done when:** no new right or institution is added without a completed row.
@@ -194,10 +202,10 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
   - Ordinary majorities decide policy, tax mix, providers, and choices above the core.
   - Every restrictive proposal needs public reasons, evidence, non-discrimination,
     least-restrictive means, a constitutional delivery duty, appeal, and independent
-    review. Capacity modelling remains Book 2; time-dependent review/expiry remains
-    author-gated.
+    review. Capacity modelling remains Book 2; time-dependent review/expiry is
+    subject to the ratified T3 implementation gate.
   - An emergency model may never erase personhood, core floors, evidence rights, or an
-    appeal path. Its temporal authority and end condition remain time-gated.
+    appeal path. Its temporal authority and end condition remain T3-implementation-gated.
 
 - [ ] **Add the missing non-carceral justice interface.**
   - Cover notice, counsel/advocacy, hearing, challenge, reparation, civil disputes,

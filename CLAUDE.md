@@ -40,11 +40,14 @@ smuggle in operations: transition, tax rates, budgets, staffing, procurement,
 facilities, service workflows, clocks/calendars, record technology, cryptography,
 and case administration remain Book 2.
 
-The **time-model decision remains separately author-gated**. This mandate does not
-admit duration arithmetic, sentence clocks, filing deadlines, or operational
-cadence into the current constitution. Book 1 may ultimately require a
-constitutionally bounded review or end condition only after that model is ruled
-and tested; Book 2 continues to own administration of time.
+**T3 is author-ratified as Book 1's time-model target (2026-08-03).** The
+current constitution remains T0: it admits no duration arithmetic, sentence
+clock, filing deadline, or operational cadence. T3 changes the expansion
+direction, not the current formal law. Before any temporal rule lands, complete
+the T1/T2 prerequisites, temporal-input contracts, two-snapshot harness, and
+adversarial matrix in `new-book-plans/book-1-time-model-decision.md`. Book 1 may
+then constrain public power through independently assured review, renewal, or an
+end condition; Book 2 continues to operate clocks, calendars, and time services.
 
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
@@ -96,24 +99,17 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 - **Recognition is a bare fact and is never ranked** — not by writing a mark, not by counting entries. Decided 2026-07-30 against the proposal that verified learning mint grades for the student and outcome-conditioned perks for the teacher; all three halves are refused. **(a) Students earn nothing for being taught.** Being taught is not a contribution, the doors in `10-contribution.md:3-8` are the doors, and the constitution is **not** edited to add a student minting rule — that would commit the design to paying a child (Cira is `person` without `mature`, which is the whole of `09:43-51`). **(b) Counted degree on the reward side is refused, not merely unbuilt.** Degree needs no arithmetic here, only the same relation twice with the objects held apart — the idiom the severity rules use at `constitution.nibli:452-453` — and the cast already supplies the mirror, since Cira has two teachers. **(c) Article 3 stays unconditional**: a teacher's recognition does not depend on whether the student learned, the same shape as the auditor rule that pays for the examination and not the outcome (`10:85-87`). **State the disanalogy, never "there is no score here"** — that is verified false and its source sentence was deleted in `c0bede6`. Chapter 1 concedes a computed rating already — the paragraph opening *“Even that concedes something, and it should be said out loud rather than found later”*: severity rates an **act**, is reached through a process the accused was part of, and ends with the sentence; a grade rates a **person's capability**, with nothing adjudicated and no end. That concession is an exception the design paid for once, not a precedent. Enforced, not merely recorded — `verify.sh` section 4 checks that nothing reads `reward`, and section 4b that no rule joins `teaches` or `work` with itself; both were negative-controlled against a scratch copy. Neither is a proof: a new name for a learning record (`studies` is in the corpus, unused) routes around both, and is caught by the evidence-count gate instead, which is the only reason the pair is sufficient. **This does not block the delivery route**: teaching that delivers `learn` is a floor actuality, not recognition. Delivering learning is not grading the learner.
 - **`person` is on chapter 1's evidence list**, decided 2026-07-30. The list had claimed to be everything the record can hold while omitting the one entry every right hangs off, and the decision was forced by a finding that outranks the argument on either side: **the list already reached personhood before anybody ruled on it.** `constitution.nibli:264` is `all $x: free($x) -> person($x).`, and `free` is one of the 23, appearing in the prose list as *"Someone's sentence is finished."* So "roster membership is not a claim the world makes about you" was refuted by an entry the list already contained. Three routes in, and only the first needs nobody's permission: `prisoner -> person` (`:254`), `free -> person` (`:264`), and a direct `person(X)` write. **`derived_only("person")` is refused permanently** — it would refuse every one of its ground facts and collapse the cast; do not restate that as a number, which went stale within a day of being written — so the guard cannot be a compile-time one; it is a cross-epoch obligation over the fact store, which chapter 1 now says outright. Two consequences that must not be tidied away: chapter 1's prose list and `3-spine.md`'s generated list **deliberately disagree**, because the generated figure counts predicates with no producing rule and `person` has two (the method is stated beside the number in `3-spine.md`); and the chapter's load-bearing sentence reads *“the **conclusions** that matter are not writable”*, narrowed from "things", because personhood matters and is writable — do not restore the broader wording.
 - **The record is closed by name — Article 0a**, adopted 2026-07-31 (nibli `850cf96`). `admits("<rel>")` refuses a ground assertion of any unadmitted relation at assert time, and an `admits` line placed below the facts is refused as coming too late, so **widening the record is a visible, reviewable edit rather than a fact somebody types**. This is what makes chapter 1's first claim — *"Not may not. Cannot."* — true: before it, `rich(Adam).` loaded and answered TRUE, because the closure was at nibli's corpus of thousands rather than at this book's own list, and only an invented word ever failed. **It is extensional only.** Rules still derive `false`, `prisoner`, `err` and `obliged`; Article 0's `derived_only` is what closes those, and the two must never be described as one guard. **The admitted list is deliberately one name longer than the evidence figure** — `person` has producing rules *and* ground assertions, so it is absent from the spine's count and mandatory here. *"What counts as evidence"* and *"what may be written"* are different sets, `person` is the whole of the difference, and reconciling the two lists would be an error rather than a tidy-up. One consequence worth stating where it bites: a ground assertion through the converse alias — `obligated_by(Warden, Ruk).` — is now refused as well, because `obliged` is not admitted (verified 2026-08-01; the refusal names `admits` and the repair). The converse mechanism survives in a **rule head**, where `err($x, Placement) -> obligated_by(Review, $x)` loads and derives the inverted `obliged(Ruk, Review)` — so the chapter-14 discriminator pair still earns its keep.
-- **Earning may only shorten a sentence, never lengthen it**, decided 2026-07-29.
-  Punishment is loss of liberty, and a convicted person **may optionally choose** to earn
-  reward to reduce its duration or severity. An earlier form had them *forced* to earn and
-  was dropped: compulsory labour as the price of liberty is convict leasing, and it takes
-  liberty *and* labour, which breaks the single-deprivation claim outright. Two properties
-  are load-bearing rather than incidental. **Earning shortens and never lengthens** —
-  otherwise someone disabled, ill or elderly serves longer for being incapable, which puts
-  a capacity test upstream of liberty. And **"voluntary" is structurally pressured** when
-  the alternative is longer confinement; that is the standard critique of earned-time
-  credit, it is survivable, and it is conceded at Part V's coercion joint rather than left
-  for a reviewer to find. **The obvious implementation is refused by the stratifier, and
-  the refusal is the firewall rather than a bug**: `prisoner($x) & reward($x) -> free($x)`
-  fails with *"Unstratifiable negation: strongly-connected component containing 'prisoner'
-  -> 'free' (negative)"*, because Article 6's conviction rule reads `~free($offender)`.
-  Dropping `prisoner` from the body loads and derives — verified, `free(Quin)` TRUE — but
-  it frees people who were never convicted, so it routes nothing. Release conditioned on
-  conviction is structurally unavailable in the current shape; do not re-propose it as a
-  small rule.
+- **Earning may not alter sentence duration or severity — T3 supersession,
+  2026-08-03.** The 2026-07-29 intention that a convicted person could earn a
+  reduction in duration or severity is retired. T3 prohibits earned-time credit,
+  severity-to-duration tables, character grading, and any personal score that
+  decides a person's sentence. `reward` remains unread in the current kernel and
+  can never become a condition of release, sentence reduction, or freedom.
+  The older coercion diagnosis remains controlling: compelled work as the price
+  of liberty is convict leasing, and nominally voluntary work is pressured when
+  the alternative is longer confinement. The older stratifier tests that refuse
+  `prisoner($x) & reward($x) -> free($x)` remain useful regression evidence, not
+  a reason to invent a workaround.
 - **Confinement houses you**, decided 2026-07-31 (v0.8). The combination *not severe / no family / no home* derived no placement at all — eligible for home confinement with no home to be confined in — and Adam and Kel stood in it. The rule is `prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x)`, and it is **consistency, not new policy**: the design already held that the state houses whom it confines (`:460`, `:472`); this was the case those rules missed. **Do not restate it as "assume everybody has a home."** `home/1` is a fact the world reports, asserting it for everyone writes something that may be false, and closing the delivery gap by fiat is verified to *silence the isolation marker in the same edit* — the instrument that would have noticed goes quiet. **The framing that must survive**: this closes a *placement* gap and the *delivery* gap is exactly as wide, because the person was owed a home before the conviction and nothing delivered it. Chapter 11 says the repair came "from the wrong side" and chapter 13 says the design housed two homeless people for precisely as long as it was punishing them — neither is decoration, they are what stops this reading as a floor that works. Chapter 8's shelter sentence is now the rule — **"shelter derives for every confined person and for nobody else"** — which is this file's own canonical example of a good rule-statement and was false until this landed. Oversight of the duty-bearer (enablers, their checkers, a meta-study) was raised and **parked to book-2** under the former scope. **Superseded in scope 2026-08-03:** Book 1 now owns the constitutional mandate, independence, evidence, and remedy path for oversight; Book 2 retains inspection practice, staffing, and operating systems.
 - **The audit feeds an obligation**, decided 2026-07-31 (v0.8), Article 8b. Chapter 14 used to argue the audit's powerlessness was **structural** — a pure observer, therefore nothing can follow. That was false and it was the comfortable kind of false: it turned a decision into a law of nature. `err($x, Placement) -> obliged(Review, $x)` and the `Isolation` twin both load and derive. **Spell it `obliged`.** The accidental route closed upstream on 2026-07-31 (nibli `e70f22f` renamed the converse alias `obligated` to `obligated_by`), so writing `obligated(...)` is now a compile error rather than a silently inverted fact — that was the realistic typo and it can no longer be made. **The mechanism is narrowed, not closed, and this repo narrowed it further by accident.** After the rename `obligated_by(Warden, Ruk)` still compiles to `obliged(Ruk, Warden)` — but re-measured 2026-08-01 against *this* constitution that ground assertion is now **refused**, because Article 0a closed the base vocabulary and `obliged` is not admitted. `admits` is extensional, so the converse survives in a **rule head**: `err($x, Placement) -> obligated_by(Review, $x)` loads and derives the inverted fact. Two things follow — the realistic forgery route is gone here, and the chapter-14 discriminator still earns its keep against a slip in a rule head. So the discriminating pin pair in the chapter-14 suite — `obliged(Review, Ruk)` TRUE **and** `obliged(Ruk, Review)` FALSE — is no longer the *only* defence, but it is still the only thing catching an argument-order slip within `obliged` itself. Keep both halves. **One constraint this puts on the method part**: nibli has a filed defect — its tracker bullet **"`obliged`-spelled every-duty renders the wrong obligated party"** — where the deontic collapse picks the event variable as duty-holder when back-translating the **base** spelling, which is ours; the converted `obligated_by` spelling binds correctly. Cited by title deliberately, not by line: this is the same file whose line numbers rotted twice inside one exchange. It cannot reach readers today because this repo runs `nibli-pin` only and never renders prose, but the method part exists to show readers the machinery, so if it ever prints a rendered sentence or a proof trace, check that party before it ships. **Two rules, not one**: the general form `err($x, $k) -> obliged(Review, $x)` loads and derives **nothing**, because a body-only variable does not bind over a derived relation on this engine — the same limitation the Article 4 note records. **This is not teeth.** Nothing reads `obliged`, so it is a second inert obligation beside Article 1b's `owe`, and `verify.sh` guards that: `err` left the absence loop and `obliged` took its place. The chapter must keep saying the chain merely ends one step later — the breach of the duty is *also* markable (`obliged & ~capture -> err($x, Duty)` is accepted and derives, pinned as the chapter's closing exhibit), so what runs out is not links but anybody who has to act.
 - **The debt is itemised, and INVARIANT 1 was rewritten because it was broken**, both 2026-07-31 (v0.8). Article 1b now carries eight `owe(State, K, $x)` rules beside the surviving `Provision` token, which is kept because it is pinned in four other files. **Enumeration cost eight rules and no vocabulary** — the evidence list counts *predicates* and the generator never looks inside the parentheses, so a constant is free; the tracker had priced this as "eight new constants in the evidence vocabulary" and that was a category error. Verified: the firewall extends to each named debt (`~owe(State, Eats, $x) -> prisoner` is refused). **The constants are not joined to the predicates**: `Eats` and `eats` are unrelated and must never be "wired up" — the names match so the resemblance is visible, and chapter 8 turns on the gap. **INVARIANT 1 no longer says "no floor predicate in any rule body"** — that was false from v0.1, because Article 6's isolation marker reads `~meets`, and nothing checked it. It now reads: **a floor right may be read only into `err` — noticed, never acted on.** The stratifier does not enforce this; it refuses `~eats -> prisoner` as a negative cycle and accepts `~eats -> reward` or `~eats -> building` happily, so `verify.sh` guards it (negative-controlled). **Do not describe the delivery gap as something the design cannot detect** — verified, `owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered)` is accepted and derives, and the design already ships that shape for company and for none of the other seven. That asymmetry was discovered, then ruled: the markers are refused while the record holds no arrival facts — see the delivery-markers entry.
@@ -235,8 +231,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   `mature` conjuncts on the teaching and work doors, four of the five recognised people go dark
   (`reward(Esa/Quin/Nima/Sata)` all flip), because the record barely holds `mature` and none of
   the recognised have it — so the guard's real meaning is *your work counts only once somebody
-  files your adulthood*, a written entry upstream of esteem, the same shape the earning-shortens
-  ruling refused, and it shuts the care doors for a young carer in the same edit. **Do not add a
+  files your adulthood*, a written entry upstream of esteem, the same shape the old earned-time
+  proposal used, and it shuts the care doors for a young carer in the same edit. **Do not add a
   maturity conjunct to any door as cleanup.** The disanalogy with the grades ruling is the
   argument, stated as a pair in the coda: being taught is not a contribution, at any age;
   contributing is, at any age. The exploitation reading is answered by the design's own shape —
@@ -288,8 +284,9 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   derived head. Do not build a floor-delivery marker into this constitution without arrival
   facts, and do not re-price the decision on rule-count.
 
-- **The design does not say how long — ratified**, ruled 2026-08-02 against the adoption
-  reviews' hardest press. Time vocabulary is refused at the record's door (measured:
+- **The design does not say how long — ruled 2026-08-02; its permanent refusal is
+  superseded in scope by T3 on 2026-08-03.** The current kernel still refuses time
+  vocabulary at the record's door (measured:
   `year(Term, Two).` and `earlier(Custody, Release).` both "not admitted vocabulary"), and
   walking through the loud door changes nothing — measured, `admits("year")` plus a stated
   term with no digit leaves the conviction standing and derives no release; chapter 13's
@@ -299,18 +296,22 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   cannot count down is a promise with no keeper — the delivery-markers pattern, refused for
   the second time. **Release stays an act, not an expiry**: a decision somebody writes down,
   with no claim about whose name the record holds (chapter 1 conceded the release entry names
-  no finder). **Do not admit time vocabulary into this constitution**; sentence
-  administration — terms, review cadence, expiry — is book-2's, and the earning-shortens
-  ruling's "reduce its duration or severity" reads as design intent whose duration half waits
-  there: in book-1 nothing measures time and nothing reads `reward`, and neither is an
-  oversight. One harness nuance recorded in the pin file: `admits` for a *fresh* name loads
+  no finder). **Do not admit temporal vocabulary into the current constitution until the
+  T3 implementation gate passes.** A future T3 family may constrain public power through
+  independently assured review, renewal, or an end condition; it may not score a person or
+  price a sentence. Book 2 retains clocks, calendars, scheduling, availability, and all
+  operational time administration. The superseded earning-shortens ruling is not a
+  deferred permission: in the current book-1 nothing measures time and nothing reads
+  `reward`, and T3 prohibits its revival as a personal-time score. One harness nuance
+  recorded in the pin file: `admits` for a *fresh* name loads
   from a probe (too-late guards only relations with prior facts), so refusal pins guard the
   shipped text and a probe may always widen on top.
 
 - **The shield's exposure surface is unbounded, refused as composed**, ruled 2026-08-02,
   closing chapter 4's own open question. Every candidate bound dies on a prior ruling, and the
-  settled entry names them so nobody re-proposes one at a time: a **time** bound needs the
-  vocabulary the duration ruling refused; an **epoch-recency fact** is an unadjudicated
+  settled entry names them so nobody re-proposes one at a time: a **time** bound cannot land
+  in the current T0 kernel and requires the ratified T3 implementation gate, rather than an
+  individual exception; an **epoch-recency fact** is an unadjudicated
   shield-stripping write — one fact retires a target from everyone's shield surface, the
   finding-with-no-finder class chapter 1 conceded, handed to whoever writes it; **lapsing or
   re-certifying standing** revokes it, and Rebel's shield surviving Boss's recall (chapter 2's
@@ -403,7 +404,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   add a second reference anywhere.
 
 - **The reach strategy: spine-order serialization from a home of its own**, ruled 2026-08-02,
-  the last author-gated decision of book-1. Chapters serialize in the computed order **as
+  the final reach decision then outstanding. Chapters serialize in the computed order **as
   their whole-chapter passes complete** — the pass was the gate, and all fourteen passes
   completed 2026-08-02, so the sequencing constraint is discharged — from a dedicated
   domain the author registers, with platforms

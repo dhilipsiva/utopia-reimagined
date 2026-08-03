@@ -217,7 +217,8 @@ passes or permission to replace a public page; see
   - Cross-read Chapters 4, 5, and 13 against the current model: flat snapshots
     have no internal order; epoch carry is an external/manual cross-snapshot
     convention; no duration or automatic expiry exists.
-  - Keep this prose-only correction separate from the author-gated time ruling.
+  - Keep this prose-only correction separate from the ratified T3 implementation
+    gate.
     Re-run the relevant prose, claim, and pin checks before freezing the edition.
 
 - **The site.** A dedicated domain — **registering it is the author's own task** — plain,

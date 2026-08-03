@@ -31,17 +31,18 @@ and evidence are not moral or mathematical opposites.
 | 1. Standing and equal status | Who counts before any other rule applies? | Include personhood, equal protection, non-discrimination, unregistered access, and status correction. Exclude service delivery and office eligibility. | Holder; forbidden preconditions; immediate-access route; challenge/correction; independent check. |
 | 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; independent receipt evidence; breach; interim continuity; remedy; appeal; audit. |
 | 3. Liberty and personal integrity | What interference must power and other people not impose? | Include bodily integrity, personal privacy, conscience, expression, association, movement, and family life. Exclude a claim to a particular service, record/data controls, or the procedure for deciding a case. | Protected person/act; prohibited interference; narrow necessity and least-restrictive exception; evidence; independent review; remedy. |
-| 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; non-temporal reversal condition. |
+| 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; current-T0 non-temporal reversal condition; temporal status. |
 | 5. Democratic self-government and amendment | What may people decide together? | Include equal political voice, public reasons, ordinary law, constitutional amendment, recall, and rights-compatibility review. Exclude individual adjudication and administrative workflow. | Equal voice; accessible participation; decision scope; public reasons; compatibility test; amendment limit; challenge/remedy. |
-| 6. Public institutions and delegated duty | Which public function may act, and under what separation? | Include legislative, provision, justice, appeal, audit, ombuds, and local mandates. Exclude staffing, salaries, procurement, and workflow design. | Democratic source; mandate; trigger; scope; conflict/recusal rule; non-delegable limit; review; appeal; non-temporal end condition; temporal status. |
+| 6. Public institutions and delegated duty | Which public function may act, and under what separation? | Include legislative, provision, justice, appeal, audit, ombuds, and local mandates. Exclude staffing, salaries, procurement, and workflow design. | Democratic source; mandate; trigger; scope; conflict/recusal rule; non-delegable limit; review; appeal; current-T0 non-temporal end condition; temporal status. |
 | 7. Records, evidence, privacy, and accountability | What may count in a public decision, and how is power made contestable? | Include admissibility, writer authority, challenge, correction, privacy, audit, and assurance. Exclude databases, cryptography, biometrics, and assessment tools. | Basis; writer; visibility/privacy; challenge; correction/deletion control; assurance; systemic referral. |
 | 8. Jurisdiction, locality, and subsidiarity | How are public powers divided across place without lowering common protection? | Include local authority, subsidiarity, inter-community duty, and portability duties. Exclude individual movement, plurality, migration procedure, transfer systems, border administration, and service logistics. | Common baseline; local mandate; non-discrimination; portability duty; equalisation duty; dispute forum; review. |
 | 9. Commons and future conditions | What may no contract, owner, or present majority exhaust or trade away? | Include non-regression, public maintenance duty, shared-resource limits, and intergenerational non-destruction. Exclude property/work policy, tax rates, budgets, allocation models, and production plans. | Protected condition; duty-bearer; non-destruction rule; evidence; present-person or designated-public standing; remedy; public accountability. |
 
 **Temporal-status contract:** whenever a class proposes a deadline, cadence,
 expiry, term, retention period, or “temporary” exception, its contract must name
-its temporal status. Until the separate time decision is ratified, no class may
-silently assume one.
+its temporal status. T3 is ratified but unimplemented: label the proposal as
+current-T0/non-temporal or T3-authorised/implementation-pending. No class may
+silently assume a temporal effect.
 
 **Worked pattern (limited):**
 `teaches($t, $s) & hears($s, $t) -> learn($s)` is the existing two-sided arrival
@@ -98,10 +99,10 @@ These rules apply across the classes; they are not new classes.
    record or feed those consequences.
 6. **Separation of functions:** no actor may assert decisive case facts, decide
    their consequence, execute it, audit itself, and provide final remedy alone.
-7. **Time remains unresolved:** no class authorises duration arithmetic, expiry,
-   deadlines, cadence, or an emergency/office “temporary” period. Until the
-   separate time decision is made, use only a clearly adjudicated non-temporal
-   reversal or end condition where one is necessary.
+7. **T3 is ratified; the current kernel remains T0:** no class yet authorises
+   duration arithmetic, expiry, deadlines, cadence, or an emergency/office
+   “temporary” period. Do not add one until the T1/T2 prerequisites, temporal
+   contracts, differential harness, and adversarial matrix pass.
 
 ## Book 1 / Book 2 discriminator
 
@@ -155,4 +156,4 @@ The author should ratify this draft only if it preserves these conclusions:
 - Democratic choice is real, but bounded by standing, floors, liberties, fair
   process, and commons.
 - The taxonomy expands Book 1’s constitutional interface without importing
-  Book 2’s operations or weakening the no-score and no-time guardrails.
+  Book 2’s operations or weakening the no-score and current-T0 guardrails.

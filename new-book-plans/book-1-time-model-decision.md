@@ -2,9 +2,9 @@
 
 # Book 1 Time-Model Decision
 
-> **Status: draft for author ratification.** This records the decision that is
-> still required. It does not admit a temporal predicate, change the current
-> constitution, or supersede the 2026-08-02 refusal of duration vocabulary.
+> **Status: author-ratified T3 target (2026-08-03); implementation gated.** This
+> does not yet admit a temporal predicate or change the current constitution. It
+> supersedes the 2026-08-02 refusal as a permanent scope rule, not as current law.
 
 ## 1. What exists now
 
@@ -30,9 +30,9 @@ act, not an expiry. The current model cannot distinguish exposure-before-recall
 from recall-before-exposure, cannot detect a deleted fact inside a snapshot,
 and cannot prove that a later snapshot will ever be made.
 
-The existing refusal remains controlling until the author explicitly changes
-it. "Author-gated" does not license a contributor to add a date-shaped fact or
-call it a time model.
+The 2026-08-02 refusal remains controlling for the current T0 source, but T3
+supersedes its permanent scope. Ratification does not license a contributor to
+add a date-shaped fact or call it a time model.
 
 ## 2. The real constitutional choice
 
@@ -73,11 +73,12 @@ where order itself matters. Only T3 can honestly prohibit indefinitely
 unreviewed public power. Neither T1 nor T2 should be sold as a solution to that
 problem.
 
-## 4. Recommended ruling
+## 4. Ratified ruling
 
-**Recommended target: choose T3, with T1 required and T2 required wherever a
-rule depends on event order.** It supersedes the old permanent-refusal rule only
-after author ratification. Until then, T0 and its existing pins remain law.
+**Author ruling (2026-08-03): adopt T3 as the constitutional target, with T1
+required and T2 required wherever a rule depends on event order.** This supersedes
+the old permanent-refusal rule as an expansion direction. T0 and its existing pins
+remain the current law until the implementation gate passes.
 
 The proposed constitutional principle is:
 
@@ -92,11 +93,10 @@ storage, scheduling, recovery, and availability. A Book 1 sentence must say
 whether its temporal effect is formally modelled or externally assured; it may
 not imply that an operational promise is a present derivation.
 
-If the author rejects an independent temporal assurance service, choose T0
-explicitly and retain only non-temporal end conditions. That is coherent, but
-it leaves the Public institutions and Emergency/resilience rows incomplete
-unless the author explicitly narrows their ratified scope. It is not a
-safeguard against indefinitely unreviewed power.
+The rejected T0 alternative would retain only non-temporal end conditions. That
+is coherent, but it leaves the Public institutions and Emergency/resilience rows
+incomplete unless the author explicitly narrows their ratified scope. It is not
+a safeguard against indefinitely unreviewed power.
 
 ## 5. Non-negotiable limits for a T3 design
 
@@ -139,8 +139,9 @@ land before v1 freezes.
 
 Do not alter `constitution.nibli` until all of these are present:
 
-1. **Author decision:** retain T0 or ratify the T3 target and explicitly
-   supersede the 2026-08-02 duration refusal in `CLAUDE.md`.
+1. [x] **Author decision — complete:** T3 is ratified as the target and
+   supersedes the 2026-08-02 duration refusal in `CLAUDE.md` as a permanent scope
+   rule.
 2. **Temporal-input contracts:** for every input, name writer, evidence,
    forge route, withholding route, correction, appeal, cross-epoch handoff,
    residual external assurance, and exact Book 1/Book 2 boundary.
@@ -169,14 +170,15 @@ Do not alter `constitution.nibli` until all of these are present:
 | Emergency and office | Test forged declaration/end, frozen end, re-declaration loop, succession, and self-review. Ending power must not erase answerability or the shield. |
 | Audit | Any deadline or ignored-duty rule that reads `obliged` must deliberately retire Chapter 14's current endpoint and update its pins and prose. |
 
-## 9. Ratification choices
+## 9. Ratification record
 
-- [ ] **Retain T0 permanently.** Keep the no-time ruling; correct the Chapter 13
-  wording and current-v1 coherence separately; accept that Public institutions
-  and Emergency/resilience remain incomplete unless their mandate is narrowed.
-- [ ] **Adopt T3 as the constitutional target (recommended).** Keep the current
-  formal kernel at T0 until T1, T2 wherever order matters, the temporal-input
-  contracts, the differential harness, and the adversarial matrix all pass.
+- [ ] **Retain T0 permanently.** Not chosen. This would retain the no-time ruling
+  and leave Public institutions and Emergency/resilience incomplete unless their
+  mandate were narrowed.
+- [x] **Adopt T3 as the constitutional target (ratified 2026-08-03).** Keep the
+  current formal kernel at T0 until T1, T2 wherever order matters, the
+  temporal-input contracts, the differential harness, and the adversarial matrix
+  all pass.
 
 No third option is honest: an unassured manual timestamp, a new word for an
 epoch, or a Book 2 promise with no named failure consequence is not a time

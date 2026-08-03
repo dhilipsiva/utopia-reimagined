@@ -260,9 +260,10 @@ stays held. Being told no is not being kept safe. The refusal told me the
 guarantee I wanted cannot exist in this shape, and that what exists instead
 would keep running whether or not I made my peace with it.
 
-A second refusal, so you can see the wall does not soften when the intention
-is kind. The design lets a convicted person earn their sentence shorter, and
-the obvious way to write that is release earned from inside:
+A second refusal shows something less comfortable: a wall can block a bad
+intention without proving a good policy. An earlier version would have let a
+convicted person earn their sentence shorter, and the obvious way to write that
+was release earned from inside:
 
 ```
 all $x: prisoner($x) & reward($x) -> free($x).
@@ -274,19 +275,21 @@ component containing 'prisoner' -> 'free' (negative)
 ```
 
 Conviction reads *not already free*; a release derived from conviction loops
-straight back through it. Release conditioned on conviction is structurally
-unavailable here — which is why, in this book, release is an entry someone
-writes, never an output the machinery computes, and it carries the
-concession chapter 1 already made: the entry does not say whose decision it
-records. The book calls that refusal the firewall rather than a bug, and I
-have kept it.
+straight back through it. That tells a fact about the current formal shape. It
+does not decide whether earned-time credit is just. The T3 target now answers
+that question: no person may earn a shorter sentence through character,
+contribution, or recognition. In this book, release remains an entry someone
+writes, never an output the machinery computes, and it carries the concession
+chapter 1 already made: the entry does not say whose decision it records. A
+future T3 rule must constrain the authority holding someone, not compute release
+from reward.
 
 What it felt like, since the opening note promised I would say: not like
 being corrected. Like leaning on a wall I had built myself and finding it did
 not care that I was its builder. The machine holds no opinions about appeals
-or mercy. It found a shape twice, and both times the thing it handed back was
-a design honester than my draft of it — not because it is wise, but because
-it cannot be talked out of anything, including by me.
+or mercy. It found a shape twice, and both times it returned a fact my draft had
+to answer. That made the later decision more honest — not because it is wise,
+but because it cannot be talked out of anything, including by me.
 
 ## The checks, and the check on the checks
 

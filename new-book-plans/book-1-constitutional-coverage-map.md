@@ -56,13 +56,13 @@ social outcome.
 | Personhood and equality | **Partial:** `person` is the root for floor entitlements. | Universal standing; non-discrimination; emergency access without a settled record; challenge and correction. | Partial formalisation; ratified scope, contract pending. | Roster deletion and unregistered access are not protectable in the current snapshot model. |
 | Material floor | **Partial:** `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` are unconditional entitlements. | Adequate food, water/sanitation, home/utilities, health and care, material security, learning/information, accessibility, and voluntary social life. | Partial formalisation; ratified scope, contract pending. | Only learning has a non-carceral arrival route; confinement can derive limited shelter/speech. The remaining floor items have no general delivery, breach, or remedy path. |
 | Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on public or private power. |
-| Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, and release are formalised. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, contract pending; time-gated. | Civil disputes, child representation, enforcement limits, and administration are missing; time remains refused. |
+| Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, and release are formalised. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, contract pending; T3 target ratified. | Civil disputes, child representation, enforcement limits, and administration are missing; the current T0 kernel has no temporal rule until the T3 gate passes. |
 | Democracy and amendment | **Partial:** vote, recall, and amendment machinery exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The corridor is ratified, but formal compatibility, amendment, reviewer, office, and locality vocabulary remain absent. |
-| Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; temporal completion blocked under T0. | Authority, conflict rules, and independence are not a complete branch architecture. An adjudicated end act is not a bound on unreviewed power; complete status requires T3 or an explicit narrowing of scope. |
+| Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; T3 target ratified, implementation pending. | Authority, conflict rules, and independence are not a complete branch architecture. An adjudicated end act is not a bound on unreviewed power; complete status requires the ratified T3 path to pass. |
 | Records and accountability | **Partial:** closed admitted record, derived-only conclusions, and audit markers. | Basis, visibility, privacy, contestation, correction, retention, external assurance, and systemic remedy. | Partial formalisation; ratified scope, contract pending. | Writer trust and arbitrary/intra-snapshot deletion assurance remain external. Epoch carry can expose a required fact missing from a later attested snapshot, but an obligation/assurance to carry and reconcile honestly does not exist. `err` already derives `obliged` for audit findings, but no reader turns that duty into remedy or systemic correction. |
 | Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
 | Locality, plurality, mobility, and external relations | **Partial:** `travel` is a current conclusion, not a federal/social interface. | Equal standing across places; local self-government; subsidiarity; portability; and basic protections for newcomers, migrants, and external relations. | Partial formalisation; ratified scope, contracts pending. | No community or transfer vocabulary; external-operation details remain Book 2 work. |
-| Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope, contracts pending; time-gated; temporal completion blocked under T0. | No emergency model; Book 2 owns response operations. A non-temporal reversal act cannot prevent an emergency from continuing unreviewed; complete status requires T3 or an explicit narrowing of scope. |
+| Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope, contracts pending; T3 target ratified, implementation pending. | No emergency model; Book 2 owns response operations. A non-temporal reversal act cannot prevent an emergency from continuing unreviewed; complete status requires the ratified T3 path to pass. |
 | Ecology and future people | **Absent.** | Commons, non-destruction, intergenerational constraint, and a reviewable ecological ceiling. | Absent; ratified scope, contracts pending. | Needs a constitutional statement without invented metrics or implementation claims. |
 
 ## 4. The constitutional contract for every row
@@ -74,8 +74,8 @@ a detail to hide in prose.
 | Object | Required constitutional fields |
 | --- | --- |
 | Right / material floor | Holder; duty-bearer; minimum; accessibility; delivery evidence; breach; interim continuity; remedy; appeal; audit; temporal status. |
-| Liberty / power limit | Protected person; prohibited act; narrow exception test; evidence; independent reviewer; public reason; review or non-temporal end condition; temporal status; remedy. |
-| Public power | Office; democratic source; trigger; evidence; scope; conflict rule; non-delegable limit; review; appeal; non-temporal end condition; temporal status. |
+| Liberty / power limit | Protected person; prohibited act; narrow exception test; evidence; independent reviewer; public reason; review or current-T0 non-temporal end condition; temporal status; remedy. |
+| Public power | Office; democratic source; trigger; evidence; scope; conflict rule; non-delegable limit; review; appeal; current-T0 non-temporal end condition; temporal status. |
 | Record | Writer; permitted basis; visibility and privacy; challenge; correction; retention; deletion control; external assurance; temporal status. |
 | Commons / future condition | Protected common; present duty; ceiling or non-destruction rule; evidence; affected-person standing; remedy; public accountability; temporal status. |
 
@@ -141,8 +141,9 @@ Every restrictive ordinary proposal must supply: a public purpose, evidence,
 non-discrimination, least-restrictive means, a constitutional delivery duty,
 an appeal, and independent review. Actual budgets, rates, capacity models, and
 allocation operations remain Book 2. An emergency cannot erase personhood, the
-core floor, evidence rights, or a path to review. Its temporal operation and
-any expiry/review cadence remain author-gated; do not imply they exist yet.
+core floor, evidence rights, or a path to review. T3 is ratified as the target,
+but no temporal operation, expiry, or review cadence exists until its
+implementation gate passes.
 
 ## 7. Scenario coverage test
 
@@ -168,17 +169,17 @@ roster-integrity-as-disclosure-only. The map now controls constitutional design
 for those areas; they are **eligible for Book 1 work**, not automatically adopted
 rules. Add them as complete domain/rule families, never one predicate at a time.
 
-The time-model refusal remains separately author-gated. This ratification does
-not admit duration arithmetic, operational deadlines, or review cadence into
-the constitution.
+The author has ratified T3 as the time-model target. This decision does not yet
+admit duration arithmetic, operational deadlines, or review cadence into the
+constitution: the current kernel remains T0 until the implementation gate passes.
 
-The draft [`book-1-time-model-decision.md`](book-1-time-model-decision.md)
-records the choice and implementation gate without changing that rule.
+[`book-1-time-model-decision.md`](book-1-time-model-decision.md) records the
+ruling and implementation gate without changing the current T0 rule.
 
-Under T0, an end act may be specified but its occurrence cannot be guaranteed. A
-row requiring time-bounded review, renewal, or an end to unreviewed public power
-may not be marked complete under T0. Retaining T0 requires accepting that
-incompleteness or explicitly narrowing the mandate.
+Under the current T0 kernel, an end act may be specified but its occurrence
+cannot be guaranteed. A row requiring time-bounded review, renewal, or an end to
+unreviewed public power may not be marked complete until the ratified T3 path
+passes.
 
 This map also does not authorise a serialized edition to be changed in place.
 The author-gated decision is owned by `TODO.md`; its draft is

@@ -226,30 +226,29 @@ compulsion door is open exactly as described — the floor blocks punishment for
 absence and says nothing about manufacture — and chapter 8 printed that before
 any reviewer found it. What the design refuses is the pretence that a rule could
 close it; what I concede here is that an open door, honestly labelled, is still
-open. And one more concession, mine rather than theirs, because nobody pressed
-it and somebody will: this design intends that a convicted person may choose to
-earn their sentence shorter, and *choose* is doing strained work in that
-sentence — when the alternative is longer confinement, volunteering is
-structurally pressured. That is the standard critique of earned-time credit
-everywhere it exists. It applies here in intent, and in this book only in
-intent: nothing here measures time and nothing reads the recognition record, so
-the machinery of shortening belongs to the operational book — where I want it
-built, pressure and all, because the alternative, forbidding the shortening,
-serves the prisoner worse. I record the pressure now so it arrives already
-priced.
+open. There was one more intention in the earlier design, and I am withdrawing
+it rather than calling its failure a kindness: it would have let a convicted
+person earn a shorter sentence. That makes labour, compliance, or recognition a
+price of liberty; *choose* is strained when the alternative is longer
+confinement. The expanded constitutional target now refuses that trade. A
+future time limit may constrain the power holding someone through independent
+review, renewal, or an end condition; it may not let character, contribution,
+or recognition buy less confinement. This current book has none of that time
+machinery — nothing here measures time and nothing reads the recognition record
+— so it cannot yet secure prompt release. That gap remains, rather than being
+hidden behind a reward.
 
 **Survives, narrowed.** The claim that punishment takes movement and only
 movement holds, was attacked from every side, and held — the vote stood, the
 floor stood, personhood stood; even a hostile graded read called the chapter
 carrying this trade excellent, and what it flagged as sharpest — no release —
 is the one part of the objection the design has since answered rather than
-conceded. The narrowing is duration's silence and the compulsion door, both
-kept in print. The specification, as a property: in
-the finished society, anyone can see how long each confined person has been
-held, and no one is confined whom the record's own rules would release — the
-first half needs machinery this book refused on principled grounds; it belongs
-to the operational book, and the property it must preserve there is that no
-one's character is priced by it; the second half is checkable today.
+conceded. The current narrowing is duration's silence and the compulsion door,
+both kept in print. The expanded constitutional target adds a future property:
+every restriction faces independently assured review, renewal, or an end, and
+no person's character can buy or extend it. The time service this needs is not
+in the current record; that absence is still a failure. The second half — no
+one is confined whom the record's own rules would release — is checkable today.
 
 ## Capture
 
