@@ -386,6 +386,20 @@ today, or that one added credential route would let a carried void count, a
 fixture executed that claim. It is the one place in the method where a
 removal is run rather than argued.
 
+There is a second thing the fixtures reveal, and it is a weakness rather
+than a strength, so it belongs here rather than in a footnote. Beyond the
+handful of sabotaged copies, the constitution's margins record a longer
+list of single deletions that would each do real damage — a seat removed,
+a court's standing removed, the evidence behind somebody's placement
+removed. Every one of those turns at least one chapter's pins red, which
+sounds like a safety net and is not. The suites catch those deletions
+only because some chapter happened to argue about the deleted fact and
+pinned it for reasons of its own. Coverage is an accident of what the
+chapters chose to say, never a guarantee, and the count of noticed
+deletions moved twice in two days as the suites grew. A deletion nobody
+happened to pin is a deletion nothing sees. I would rather write that
+down than let the green tick imply otherwise.
+
 Now the paragraph this part exists to hold, beside the machinery it
 qualifies. Everything above runs, and a stranger can run it: clone the
 repository, one command, the pins pass. Here is what that does not mean.
