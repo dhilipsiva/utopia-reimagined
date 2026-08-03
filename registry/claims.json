@@ -319,7 +319,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "SOURCE REFERENCE ONLY — no derived values may enter this registry until the EIU-vs-V-Dem licensing question is ruled (see TODO.md Data section; registry README names this). The demo-happy derivation stays out."
+      "notes": "SOURCE REFERENCE ONLY — ruled 2026-08-02: the democracy/happiness analysis will be re-derived on V-Dem (openly licensed), so no EIU-derived values ever enter this CC0 registry; cite-and-link was refused because Part V's worked example must be re-runnable by a stranger. This entry stays as the comparator reference book-2 may cite-and-link."
     },
     {
       "id": "ti-2026-cpi",

@@ -83,19 +83,13 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-- **[AUTHOR-GATED] EIU vs V-Dem — the democracy/happiness licensing fork.** The EIU
-  index is non-redistributable — Our World in Data cannot export the series, so that
-  escape hatch is foreclosed — and `LICENSING.md` commits the claim registry to CC0, so
-  a CC-BY book with a public registry cannot ship those numbers. Cite-and-link keeps
-  every figure intact but breaks the registry's promise that a reader can re-run it.
-  Switching to **V-Dem** (openly licensed) means every number is re-derived: the r =
-  0.52 attached to the V-Dem branch is quoted from a transcript, no V-Dem data is in
-  the repo, and V-Dem's Regimes of the World categories are not EIU's four, so the
-  regime table and the step sizes do not carry over — budget the re-derivation if
-  the answer is V-Dem. The working analysis this decides the fate of is under **Data**
-  below; the registry's `eiu-2026-democracy-index` entry is declared
-  source-reference-only until this is ruled.
-
+**The section is empty — every decision it held has been ruled**, the last three on
+2026-08-02 (the provisioning fork, the epigraph, EIU-vs-V-Dem), following the clawback
+fork, the polarity contradiction and the vocabulary batch the same day. Rulings live in
+`CLAUDE.md`'s settled decisions. The section stays, because the prefix's promise
+("collected in phase 1 rather than scattered") has to point somewhere when the next
+author-gated decision arises — and because its emptiness was once faked by tooling, so
+it is stated here deliberately: empty by rulings, not by loss.
 
 ---
 
@@ -379,9 +373,16 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   cites his proposal — the one claim the research-brief corrections found no error in but
   no registry entry for either.
 
-- **Use the democracy/happiness dataset — but for the opposite claim to the obvious
-  one.** Fate decided by the EIU-vs-V-Dem ruling in Phase 1; the analysis below is the
-  working material either way. `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144
+- **Re-derive the democracy/happiness analysis on V-Dem — ruled 2026-08-02, now
+  unblocked session work.** The fork chose V-Dem so Part V's worked example is
+  re-runnable by a stranger (the registry's promise); EIU numbers never enter the CC0
+  registry. The work: fetch V-Dem (Regimes of the World) + WHR 2025, re-derive the
+  income-control result and the step-size analogues on RoW's categories (they are not
+  EIU's four, so the regime table does not carry over), land the data + script as
+  registry entries with provenance, and only then let Part V's worked example stand on
+  the numbers. Expect results to shift; the example's discipline survives any outcome,
+  which is the point. The EIU-based analysis below is the working reference for what
+  is being re-derived. `demo-happy.txt` + `democracy_vs_happiness_144.csv` (144
   countries, EIU 2025 merged with WHR 2025 life evaluations). Every headline number
   re-derived and reproducing exactly: raw r = 0.5975, ρ = 0.6231, R² = 0.357; partial
   r | log GDP = 0.195; r(GDP, happiness | democracy) = 0.623; and the regime table to
