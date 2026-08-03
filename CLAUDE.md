@@ -49,6 +49,24 @@ adversarial matrix in `new-book-plans/book-1-time-model-decision.md`. Book 1 may
 then constrain public power through independently assured review, renewal, or an
 end condition; Book 2 continues to operate clocks, calendars, and time services.
 
+**The constitutional taxonomy is author-ratified (2026-08-03).**
+`new-book-plans/book-1-constitutional-taxonomy.md` is an author-chosen planning
+grammar for Phase 2, not a derivation, a claim that the named classes are
+exhaustive, or current formal coverage. Liberty limits bind public power directly
+and public institutions are responsible for preventing, investigating, and
+remedying private interference; no general private horizontal effect is implied,
+and a future direct private duty must be named expressly.
+Property is a conditional liberty bounded by floors and commons. Merit,
+recognition, contribution, qualifying thresholds, and personal scores may not be
+allocation keys for material security, standing, authority, political voice, or
+property/commons access. Commons and future-condition claims have standing for
+any present person and an independently checked public guardian; the guardian's
+authority, evidence, independence, and removal remain Class 6/7/9 contract work.
+Structural refusals remain cross-cutting walls, not ordinary subject-matter
+rules: Article 1's firewall, `admits`, `derived_only`, and verifier guards keep
+their own enforcement and test obligations. This ruling adds no predicate, duty,
+or present remedy.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains non-ranked and non-operative; no provider's assertion alone
@@ -512,6 +530,13 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   floor. A provider's self-authored assertion cannot alone count as receipt or delivery,
   and no floor may become conditional. Meal logistics, care workflow, facilities,
   staffing, procurement, capacity, and all other operating machinery remain Book 2.
+  **Its shape was ruled on 2026-08-03:** the legacy route is not a generic delivery
+  template—`hears` is audio-literal and uncontrolled, while `learn` is a personal
+  outcome rather than neutral receipt. Future delivery families must use
+  accessibility-neutral, recipient-side access/receipt evidence with a named
+  authorised writer and challenge route; they may secure conditions but may not
+  certify learning, health, belief, or another compelled personal state. This is
+  a Phase-2 interface requirement, not a new current formal route.
 
 - **book-1 opens with one epigraph, and the poem's full text lives in git**, ruled
   2026-08-02. `book-1/epigraph.md` (unnumbered, so the chapter gates do not sweep it)

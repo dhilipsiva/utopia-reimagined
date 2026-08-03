@@ -54,16 +54,16 @@ social outcome.
 | Domain | Current Book 1 coverage | Ratified scope requirement | Status | Gap / author ruling required |
 | --- | --- | --- | --- | --- |
 | Personhood and equality | **Partial:** `person` is the root for floor entitlements. | Universal standing; non-discrimination; emergency access without a settled record; challenge and correction. | Partial formalisation; ratified scope, contract pending. | Roster deletion and unregistered access are not protectable in the current snapshot model. |
-| Material floor | **Partial:** `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` are unconditional entitlements. | Adequate food, water/sanitation, home/utilities, health and care, material security, learning/information, accessibility, and voluntary social life. | Partial formalisation; ratified scope, contract pending. | Only learning has a non-carceral arrival route; confinement can derive limited shelter/speech. The remaining floor items have no general delivery, breach, or remedy path. |
-| Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on public or private power. |
+| Material floor | **Partial:** `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` are unconditional entitlements. | Adequate food, water/sanitation, home/utilities, health and care, material security, learning/information, accessibility, and voluntary social life. | Partial formalisation; ratified scope, contract pending. | Only learning has a non-carceral arrival route; confinement can derive limited shelter/speech. The legacy `hears` route is not qualifying general delivery evidence. Every future route needs accessibility-neutral, recipient-side access/receipt evidence with an authorised writer and challenge route; it may not assert a personal outcome. |
+| Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on power. Future liberty rules bind public power directly; public institutions must prevent, investigate, and remedy private interference. A direct private prohibition exists only where a rule names it expressly. |
 | Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, and release are formalised. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, contract pending; T3 target ratified. | Civil disputes, child representation, enforcement limits, and administration are missing; the current T0 kernel has no temporal rule until the T3 gate passes. |
 | Democracy and amendment | **Partial:** vote, recall, and amendment machinery exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The corridor is ratified, but formal compatibility, amendment, reviewer, office, and locality vocabulary remain absent. |
 | Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; T3 target ratified, implementation pending. | Authority, conflict rules, and independence are not a complete branch architecture. An adjudicated end act is not a bound on unreviewed power; complete status requires the ratified T3 path to pass. |
 | Records and accountability | **Partial:** closed admitted record, derived-only conclusions, and audit markers. | Basis, visibility, privacy, contestation, correction, retention, external assurance, and systemic remedy. | Partial formalisation; ratified scope, contract pending. | Writer trust and arbitrary/intra-snapshot deletion assurance remain external. Epoch carry can expose a required fact missing from a later attested snapshot, but an obligation/assurance to carry and reconcile honestly does not exist. `err` already derives `obliged` for audit findings, but no reader turns that duty into remedy or systemic correction. |
-| Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
+| Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. Property is a conditional liberty bounded by floors and commons. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall: merit, recognition, contribution, qualifying thresholds, and personal scores may not become allocation or access gates for property, commons, material security, standing, authority, or political voice. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
 | Locality, plurality, mobility, and external relations | **Partial:** `travel` is a current conclusion, not a federal/social interface. | Equal standing across places; local self-government; subsidiarity; portability; and basic protections for newcomers, migrants, and external relations. | Partial formalisation; ratified scope, contracts pending. | No community or transfer vocabulary; external-operation details remain Book 2 work. |
 | Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope, contracts pending; T3 target ratified, implementation pending. | No emergency model; Book 2 owns response operations. A non-temporal reversal act cannot prevent an emergency from continuing unreviewed; complete status requires the ratified T3 path to pass. |
-| Ecology and future people | **Absent.** | Commons, non-destruction, intergenerational constraint, and a reviewable ecological ceiling. | Absent; ratified scope, contracts pending. | Needs a constitutional statement without invented metrics or implementation claims. |
+| Ecology and future people | **Absent.** | Commons, non-destruction, intergenerational constraint, and a reviewable ecological ceiling. | Absent; ratified scope, contracts pending. | Needs a constitutional statement without invented metrics or implementation claims, with standing for any present person and an independently checked public guardian. |
 
 ## 4. The constitutional contract for every row
 
@@ -73,18 +73,18 @@ a detail to hide in prose.
 
 | Object | Required constitutional fields |
 | --- | --- |
-| Right / material floor | Holder; duty-bearer; minimum; accessibility; delivery evidence; breach; interim continuity; remedy; appeal; audit; temporal status. |
-| Liberty / power limit | Protected person; prohibited act; narrow exception test; evidence; independent reviewer; public reason; review or current-T0 non-temporal end condition; temporal status; remedy. |
+| Right / material floor | Holder; duty-bearer; minimum; accessibility; recipient-side access/receipt evidence; authorised writer; challenge route; no personal-outcome inference; breach; interim continuity; remedy; appeal; audit; temporal status. |
+| Liberty / power limit | Protected person; prohibited act; direct public binding; public prevention/investigation/remedy duty for private interference; any explicit private binding; narrow exception test; evidence; independent reviewer; public reason; review or current-T0 non-temporal end condition; temporal status; remedy. |
 | Public power | Office; democratic source; trigger; evidence; scope; conflict rule; non-delegable limit; review; appeal; current-T0 non-temporal end condition; temporal status. |
 | Record | Writer; permitted basis; visibility and privacy; challenge; correction; retention; deletion control; external assurance; temporal status. |
-| Commons / future condition | Protected common; present duty; ceiling or non-destruction rule; evidence; affected-person standing; remedy; public accountability; temporal status. |
+| Commons / future condition | Protected common; present duty; ceiling or non-destruction rule; evidence; standing for any present person and an independently checked public guardian; guardian authority/independence/evidence/removal controls; remedy; public accountability; temporal status. |
 
 ### Required recursive paths
 
 These are the useful symmetries; each is a complete path, not a slogan.
 
 ```text
-right  → duty → accessible delivery → evidence of result
+right  → duty → accessible delivery → recipient-side evidence of access/receipt
        → failure → interim continuity → remedy → audit → correction
 
 power  → lawful trigger → bounded act → public reason/evidence
@@ -153,7 +153,7 @@ Before a domain is called complete, run these questions through its rows.
 | --- | --- |
 | An unregistered person needs urgent help | Immediate floor/access route; later identity challenge; no loss of standing. |
 | A child, caregiver, or disabled person cannot navigate a system | Accessible delivery; advocate; representation; appeal; non-retaliation. |
-| Food, housing, care, or learning does not arrive | Duty-bearer; independent evidence; continuity; remedy; systemic correction. |
+| Food, housing, care, or learning does not arrive | Duty-bearer; authorised, contestable recipient-side access/receipt evidence; continuity; remedy; systemic correction. |
 | A person is accused or detained | Lawful trigger; evidence; notice; advocate; hearing; least coercion; review; release/repair. |
 | A majority backs a discriminatory or floor-cutting policy | Compatibility gate; standing; reviewer; remedy; amendment boundary. |
 | A provider falsifies a record or suppresses a complaint | Basis/visibility/challenge; independent audit; correction; consequence for the power, not loss of the claimant's floor. |
@@ -181,6 +181,11 @@ cannot be guaranteed. A row requiring time-bounded review, renewal, or an end to
 unreviewed public power may not be marked complete until the ratified T3 path
 passes.
 
+The author has ratified the constitutional taxonomy. Its named functional
+classes and boundary rulings govern future contract cards; they do not add a
+current predicate, delivery route, private duty, property claim, or guardian
+mechanism. See [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md).
+
 This map also does not authorise a serialized edition to be changed in place.
 The author-gated decision is owned by `TODO.md`; its draft is
 [`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md).
@@ -189,10 +194,10 @@ Work in this order:
 
 1. ~~Record the mandate and Book 1/Part V/Book 2 seam in `CLAUDE.md`.~~ **Done
    2026-08-03.**
-2. Rule the remaining taxonomy (draft:
-   [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md))
-   and time decisions; then complete this map’s fields and scenario tests for
-   each proposed domain. The democratic corridor is ratified but not formalised.
+2. ~~Rule the taxonomy and time decisions.~~ **Done 2026-08-03.** Use the
+   ratified [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md)
+   and T3 target to complete this map’s fields and scenario tests for each
+   proposed domain. The democratic corridor is ratified but not formalised.
 3. Define only constitutional interfaces in a new formal source; keep operations
    in [`book-2/TODO.md`](../book-2/TODO.md).
 4. Add one bounded rule family at a time, including adversarial pins and a

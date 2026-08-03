@@ -57,16 +57,30 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
     [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md).
     Current-v1 prose coherence remains separately tracked in `TODO.md`.
 
-- [ ] **[AUTHOR-GATED] Rule the constitutional taxonomy.**
-  - Classify each proposed addition as a material floor, liberty/invariant,
-    procedural guarantee, common good/ecological ceiling, democratic policy domain,
-    or operational mechanism. Do not call every important good a floor.
-  - Preserve the principle that no material floor depends on work, virtue, status,
-    score, citizenship, documentation, or compliance.
-  - Draft decision artifact:
-    [`new-book-plans/book-1-constitutional-taxonomy.md`](new-book-plans/book-1-constitutional-taxonomy.md).
-    It is pending author ratification and does not change the constitution.
-  - **Done when:** a one-page taxonomy replaces ad hoc expansion proposals.
+- [x] **[AUTHOR-GATED] Rule the constitutional taxonomy.**
+  - **Ratified 2026-08-03:**
+    [`new-book-plans/book-1-constitutional-taxonomy.md`](new-book-plans/book-1-constitutional-taxonomy.md)
+    is the author-chosen, non-derived planning grammar for the expanded mandate;
+    it does not change the current constitution or claim present formal coverage.
+  - It adopts the functional classes as named and bounded; economy/locality/
+    external splits; emergency as an overlay; accessibility, T3, and structural
+    refusals as cross-cutting constraints; record-to-remedy routing; and Book 2's
+    operational boundary.
+  - **Horizontal reach:** public power is directly bound; public institutions
+    prevent, investigate, and remedy private interference; direct private duties
+    require an express future rule.
+  - **Delivery:** `teaches` + `hears` remains legacy-only. Future routes require
+    accessibility-neutral recipient-side access/receipt evidence with an
+    authorised writer and challenge route, never a claimed personal outcome.
+  - **Property and commons:** property is a conditional liberty bounded by floors
+    and commons; merit, recognition, contribution, qualifying thresholds, and
+    personal scores cannot be allocation or access gates for property, commons,
+    material security, standing, authority, or political voice; any present person
+    and an independently checked public guardian have commons/future-condition
+    standing.
+  - Formal rule-family work remains Phase 2. Do not call every important good a
+    floor, and preserve the rule that no material floor depends on work, virtue,
+    status, score, citizenship, documentation, or compliance.
 
 - [x] **[AUTHOR-GATED] Define the democratic corridor.**
   - **Ratified 2026-08-03:** a majority chooses only among policies compatible
