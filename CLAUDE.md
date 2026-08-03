@@ -326,12 +326,16 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   author-drafted — sessions edit mechanics only (guards, citations, wrapping, the ratchet) and
   never generate or extend the voice; ghost-writing stays refused, per the constitution's own
   register note, which stands as written. `tmp.txt` is the channel for drafts in progress.
-  **One recorded exception, by the author's explicit instruction (2026-08-03): the opening
-  note.** The author directed the session to draft it ("You draft it yourself"), reviewed the
-  draft in `tmp.txt`, and adopted it with no changes ("I have no changes to suggest") —
-  `book-1/00-opening-note.md` is session-drafted, author-adopted, and this line is the record
-  of that. The protocol stands unchanged for Part V and the method part unless the author
-  rules again. The
+  **Two recorded exceptions, by the author's explicit instruction (2026-08-03): the opening
+  note and Part V.** For the note, the author directed the session to draft it ("You draft it
+  yourself"), reviewed the draft in `tmp.txt`, and adopted it with no changes ("I have no
+  changes to suggest") — `book-1/00-opening-note.md` is session-drafted, author-adopted. For
+  Part V the instruction was "Same for Part V — draft it yourself, commit and push", so
+  `book-1/15-the-five-joints.md` is session-drafted under the same explicit override,
+  adversarially verified against the reviews corpus, the registry and the chapters before
+  landing (three checkers; every quote verbatim-checked, two misattributions and two
+  overclaims caught and fixed pre-commit). This line is the record of both. The protocol
+  stands unchanged for the method part unless the author rules again. The
   full re-weave the tracker once priced (every chapter re-touched, dearer each week) is dead
   by this ruling, not deferred.
 
