@@ -42,14 +42,24 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
     `new-book-plans/book-1-constitutional-coverage-map.md`.
   - A scope expansion still requires a new constitution, regenerated spine, pins,
     counterfactuals, and revised chapter order. It is not an additive prose pass.
+  - The public-edition boundary is separately author-gated in `TODO.md`; see
+    [`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
+    Do not duplicate its status here.
 
 - [ ] **[AUTHOR-GATED] Rule the time model.**
   - State one coherent model: snapshot facts have no intra-period ordering; epoch
     carry provides coarse succession; there is no clock or duration arithmetic.
   - Decide whether that is a permanent constitutional refusal or whether a new,
     independently auditable temporal layer is worth its capture and withholding risks.
-  - **Done when:** Chapters 4, 5, and 13 use the same explanation, and adversarial
-    tests cover recency, carry, release, adulthood, expiry, and omission.
+    Retaining T0 leaves the ratified Public institutions and Emergency/resilience
+    rows incomplete unless their scope is explicitly narrowed.
+  - Draft decision artifact:
+    [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md).
+    It is pending author ratification and does not change the current no-time rule.
+  - Current-v1 prose coherence is separately tracked in `TODO.md`; it is not a
+    T3 gate.
+  - **Done when:** the model is ruled and adversarial tests cover recency, carry,
+    release, adulthood, expiry, and omission.
 
 - [ ] **[AUTHOR-GATED] Rule the constitutional taxonomy.**
   - Classify each proposed addition as a material floor, liberty/invariant,
@@ -134,10 +144,10 @@ release work. Do not copy an item into `TODO.md` until its scope is ruled.
 
   | Object | Required fields |
   | --- | --- |
-  | Right/floor | holder, duty-bearer, minimum, delivery evidence, breach, interim remedy, appeal, audit |
-  | Liberty/power limit | protected person, prohibited act, exception test, evidence, reviewer, review or non-temporal end condition, temporal status, remedy |
-  | Public power | office, trigger, evidence, scope, conflict rule, limit, review, appeal, end condition |
-  | Record | writer, basis, visibility, challenge, correction, retention, external assurance |
+  | Right/floor | holder, duty-bearer, minimum, accessibility, delivery evidence, breach, interim continuity, remedy, appeal, audit, temporal status |
+  | Liberty/power limit | protected person, prohibited act, narrow exception test, evidence, independent reviewer, public reason, review or non-temporal end condition, temporal status, remedy |
+  | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, non-temporal end condition, temporal status |
+  | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, temporal status |
 
   - **Done when:** no new right or institution is added without a completed row.
 

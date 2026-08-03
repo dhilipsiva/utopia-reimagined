@@ -128,15 +128,16 @@ what was recorded about it. What has not been built is any bridge from that to h
 long. Severity reaches the walls and stops.
 
 Be careful about why it stops, because the obvious reason is the wrong one and it is
-the reason this chapter used to give. The words exist. It is possible to say that one
-thing came before another, that something began, that it is still running, that it has
-ended — and even to name how long a term is without writing a number. None of it is
-used here.
+the reason this chapter used to give. The words exist in ordinary language, not in this
+constitutional record. No admitted relation says that something came before another,
+began, is still running, ended, or has a term. A name that looks like a duration is only
+a name here: it does not create a clock or order events.
 
-What is genuinely absent is arithmetic. Nothing computes how long something lasted,
-compares one length against another, or advances a clock. A term could be written into
-this design tomorrow and nothing in it would count the term down, notice it had run
-out, or tell you that one sentence was longer than the next.
+What is genuinely absent inside this record is temporal semantics: neither an ordering
+relation nor arithmetic. Nothing computes how long something lasted, compares one
+length against another, or advances a clock. A term could be written into this design
+tomorrow and nothing in it would count the term down, notice it had run out, or tell you
+that one sentence was longer than the next.
 
 Notice which way round that is, because it is the safer of the two. A design that could
 grade *how long* would need to say what makes one sentence longer than another, and
@@ -144,11 +145,12 @@ every answer to that question is a place where someone's character gets priced. 
 one grades where and does not grade when.
 
 That is a refusal and not a gap, and the difference matters because a gap excuses you
-and a refusal does not. The design is not prevented from saying how long; it declines
-to, and the reason is the one in the paragraph above rather than the absence of a word
-for it. Which is the harder position to hold and the only honest one — a restraint you
-chose is a restraint you can be argued out of, and this one should have to survive the
-argument every time it is raised.
+and a refusal does not. The design could be widened to name temporal facts, but it
+declines both that widening and the machinery that would honour a term. The reason is
+the one in the paragraph above rather than an accidental absence of English words. Which
+is the harder position to hold and the only honest one — a restraint you chose is a
+restraint you can be argued out of, and this one should have to survive the argument
+every time it is raised.
 
 It has now been raised in earnest, in the strongest form outside readers give it: that
 a society whose design cannot say when a sentence ends should not be trusted to hold

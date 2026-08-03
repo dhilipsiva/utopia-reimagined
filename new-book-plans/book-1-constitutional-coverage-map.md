@@ -58,11 +58,11 @@ social outcome.
 | Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on public or private power. |
 | Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, and release are formalised. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, contract pending; time-gated. | Civil disputes, child representation, enforcement limits, and administration are missing; time remains refused. |
 | Democracy and amendment | **Partial:** vote, recall, and amendment machinery exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The corridor is ratified, but formal compatibility, amendment, reviewer, office, and locality vocabulary remain absent. |
-| Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending. | Authority, conflict rules, and independence are not a complete branch architecture. |
-| Records and accountability | **Partial:** closed admitted record, derived-only conclusions, and audit markers. | Basis, visibility, privacy, contestation, correction, retention, external assurance, and systemic remedy. | Partial formalisation; ratified scope, contract pending. | Writer trust and deletion assurance remain external; epoch carry exists, but an obligation/assurance to carry and reconcile honestly does not. `err` already derives `obliged` for audit findings, but no reader turns that duty into remedy or systemic correction. |
-| Economy, property, work, and commons | **Absent:** contribution and recognition are deliberately non-operative, not an economic order. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. | Absent; ratified scope, contracts pending. | Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
+| Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; temporal completion blocked under T0. | Authority, conflict rules, and independence are not a complete branch architecture. An adjudicated end act is not a bound on unreviewed power; complete status requires T3 or an explicit narrowing of scope. |
+| Records and accountability | **Partial:** closed admitted record, derived-only conclusions, and audit markers. | Basis, visibility, privacy, contestation, correction, retention, external assurance, and systemic remedy. | Partial formalisation; ratified scope, contract pending. | Writer trust and arbitrary/intra-snapshot deletion assurance remain external. Epoch carry can expose a required fact missing from a later attested snapshot, but an obligation/assurance to carry and reconcile honestly does not exist. `err` already derives `obliged` for audit findings, but no reader turns that duty into remedy or systemic correction. |
+| Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
 | Locality, plurality, mobility, and external relations | **Partial:** `travel` is a current conclusion, not a federal/social interface. | Equal standing across places; local self-government; subsidiarity; portability; and basic protections for newcomers, migrants, and external relations. | Partial formalisation; ratified scope, contracts pending. | No community or transfer vocabulary; external-operation details remain Book 2 work. |
-| Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope, contracts pending; time-gated. | No emergency model; Book 2 owns response operations. |
+| Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope, contracts pending; time-gated; temporal completion blocked under T0. | No emergency model; Book 2 owns response operations. A non-temporal reversal act cannot prevent an emergency from continuing unreviewed; complete status requires T3 or an explicit narrowing of scope. |
 | Ecology and future people | **Absent.** | Commons, non-destruction, intergenerational constraint, and a reviewable ecological ceiling. | Absent; ratified scope, contracts pending. | Needs a constitutional statement without invented metrics or implementation claims. |
 
 ## 4. The constitutional contract for every row
@@ -73,10 +73,10 @@ a detail to hide in prose.
 
 | Object | Required constitutional fields |
 | --- | --- |
-| Right / material floor | Holder; duty-bearer; minimum; accessibility; delivery evidence; breach; interim continuity; remedy; appeal; audit. |
+| Right / material floor | Holder; duty-bearer; minimum; accessibility; delivery evidence; breach; interim continuity; remedy; appeal; audit; temporal status. |
 | Liberty / power limit | Protected person; prohibited act; narrow exception test; evidence; independent reviewer; public reason; review or non-temporal end condition; temporal status; remedy. |
 | Public power | Office; democratic source; trigger; evidence; scope; conflict rule; non-delegable limit; review; appeal; non-temporal end condition; temporal status. |
-| Record | Writer; permitted basis; visibility and privacy; challenge; correction; retention; deletion control; external assurance. |
+| Record | Writer; permitted basis; visibility and privacy; challenge; correction; retention; deletion control; external assurance; temporal status. |
 | Commons / future condition | Protected common; present duty; ceiling or non-destruction rule; evidence; affected-person standing; remedy; public accountability; temporal status. |
 
 ### Required recursive paths
@@ -172,6 +172,18 @@ The time-model refusal remains separately author-gated. This ratification does
 not admit duration arithmetic, operational deadlines, or review cadence into
 the constitution.
 
+The draft [`book-1-time-model-decision.md`](book-1-time-model-decision.md)
+records the choice and implementation gate without changing that rule.
+
+Under T0, an end act may be specified but its occurrence cannot be guaranteed. A
+row requiring time-bounded review, renewal, or an end to unreviewed public power
+may not be marked complete under T0. Retaining T0 requires accepting that
+incompleteness or explicitly narrowing the mandate.
+
+This map also does not authorise a serialized edition to be changed in place.
+The author-gated decision is owned by `TODO.md`; its draft is
+[`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md).
+
 Work in this order:
 
 1. ~~Record the mandate and Book 1/Part V/Book 2 seam in `CLAUDE.md`.~~ **Done
@@ -184,6 +196,10 @@ Work in this order:
    in [`book-2/TODO.md`](../book-2/TODO.md).
 4. Add one bounded rule family at a time, including adversarial pins and a
    counterfactual showing what it prevents.
+   **Receipt-before-marker gate:** a floor's receipt/arrival evidence, including
+   its writer, authority, and challenge controls, must land before or in the same
+   change as its delivery/breach marker. Do not revive a marker against a record
+   with no arrival facts: it fires on everyone and discriminates nobody.
 5. Apply the narrowness-dependent claim impact gate below before the family lands.
 6. Regenerate the spine; revise every chapter whose claim changes, even where its
    own derivation did not; make a reader map, glossary, diagrams, and
@@ -206,10 +222,23 @@ At minimum, check these live claims:
   allowlisted phrase in `verify.sh`'s counted-claims gate.
 - Chapter 8's “three doors, all open, all verified open” claim.
 - Chapter 14's claim that the chain ends one step later.
+- Every Part V verdict and stated specification in
+  `book-1/15-the-five-joints.md`, including valuation's non-operative
+  recognition, rotation's failure and no-term-of-office claim, coercion's
+  single-deprivation/duration/release claims, capture's record/audit claims, and
+  the State joint's one deliberate non-carceral delivery route and Book 2 seam.
+- Every uniqueness, terminality, and refusal claim in the final method part,
+  `book-1/method.md`, including its accounts of imprisonment, the audit endpoint,
+  appeal, and release.
 
 Do not land the family while any affected claim is unclassified. A preserved
 claim needs a pin/control; a revised or retired claim needs its prose, registry,
 and counted-claim guard updated in the same change.
+
+For a Part V or method claim, “test” means the appropriate verification route:
+a pin or counterfactual for a formal claim, a registry-backed reanalysis for an
+empirical claim, or an explicit author scope decision for a Book 1/Book 2
+boundary. It is not preserved merely because no numbered chapter pin changed.
 
 ## 9. Completion standard
 

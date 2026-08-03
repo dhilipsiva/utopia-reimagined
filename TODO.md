@@ -87,13 +87,23 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-**The section is empty — every decision it held has been ruled**, the last three on
-2026-08-02 (the provisioning fork, the epigraph, EIU-vs-V-Dem), following the clawback
-fork, the polarity contradiction and the vocabulary batch the same day. Rulings live in
-`CLAUDE.md`'s settled decisions. The section stays, because the prefix's promise
-("collected in phase 1 rather than scattered") has to point somewhere when the next
-author-gated decision arises — and because its emptiness was once faked by tooling, so
-it is stated here deliberately: empty by rulings, not by loss.
+**The inherited decision set is complete** — its last three rulings landed on
+2026-08-02 (the provisioning fork, epigraph, and EIU-vs-V-Dem), following the
+clawback fork, polarity contradiction, and vocabulary batch. Rulings live in
+`CLAUDE.md`; the new decision below exists because the constitutional expansion
+changes the edition boundary, not because those rulings were lost.
+
+- [ ] **[AUTHOR-GATED] Rule Book 1's public-edition boundary.**
+  - The 2026-08-02 reach ruling governs the pass-complete pre-expansion
+    manuscript. It does not decide whether the ratified expansion is a new
+    edition, a held replacement, or a versioned public draft.
+  - Draft decision:
+    [`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
+    Do not silently replace a serialized edition or call the baseline
+    comprehensive under the expanded mandate.
+  - **Done when:** the author selects an edition policy and the canonical site
+    can identify its source tag/commit, scope, verification state, revision
+    path, preview policy, and print policy.
 
 ---
 
@@ -185,7 +195,7 @@ measured an engine change that was never rebuilt.
 
 ---
 
-## Reach — ruled 2026-08-02; the gate is the chapter pass, and every chapter now qualifies
+## Reach — delivery plan ruled 2026-08-02; edition boundary author-gated
 
 Serialize in spine order from a dedicated domain, with the assembled book — opening note,
 Part V, method part — as the capstone release rather than the first contact. Building in
@@ -194,6 +204,21 @@ recruits the red-team the method part admits it lacks, and defect pins turn know
 into declared features. **A chapter serializes only when its whole-chapter pass is
 complete** — all fourteen passes are complete, so the sequencing constraint is
 discharged and serialization can begin whenever the site exists.
+
+Until the Phase 1 decision is ratified, “all fourteen qualify” applies only to
+the immutable pre-expansion baseline. The expansion does not inherit those
+passes or permission to replace a public page; see
+[`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
+
+- **Align the current no-time account before any v1 edition freezes.**
+  - Correct Chapter 13's ambiguous “the words exist” passage: ordinary temporal
+    language is not admitted constitutional fact, a clock, or duration
+    arithmetic.
+  - Cross-read Chapters 4, 5, and 13 against the current model: flat snapshots
+    have no internal order; epoch carry is an external/manual cross-snapshot
+    convention; no duration or automatic expiry exists.
+  - Keep this prose-only correction separate from the author-gated time ruling.
+    Re-run the relevant prose, claim, and pin checks before freezing the edition.
 
 - **The site.** A dedicated domain — **registering it is the author's own task** — plain,
   built from the Markdown that already exists; chapters in spine order; the repo and the

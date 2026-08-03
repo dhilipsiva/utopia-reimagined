@@ -29,7 +29,7 @@ and evidence are not moral or mathematical opposites.
 | Class | Question answered | Include / exclude test | Required Book 1 contract |
 | --- | --- | --- | --- |
 | 1. Standing and equal status | Who counts before any other rule applies? | Include personhood, equal protection, non-discrimination, unregistered access, and status correction. Exclude service delivery and office eligibility. | Holder; forbidden preconditions; immediate-access route; challenge/correction; independent check. |
-| 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; independent receipt evidence; breach; continuity; remedy; appeal; audit. |
+| 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; independent receipt evidence; breach; interim continuity; remedy; appeal; audit. |
 | 3. Liberty and personal integrity | What interference must power and other people not impose? | Include bodily integrity, personal privacy, conscience, expression, association, movement, and family life. Exclude a claim to a particular service, record/data controls, or the procedure for deciding a case. | Protected person/act; prohibited interference; narrow necessity and least-restrictive exception; evidence; independent review; remedy. |
 | 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; non-temporal reversal condition. |
 | 5. Democratic self-government and amendment | What may people decide together? | Include equal political voice, public reasons, ordinary law, constitutional amendment, recall, and rights-compatibility review. Exclude individual adjudication and administrative workflow. | Equal voice; accessible participation; decision scope; public reasons; compatibility test; amendment limit; challenge/remedy. |
@@ -37,6 +37,20 @@ and evidence are not moral or mathematical opposites.
 | 7. Records, evidence, privacy, and accountability | What may count in a public decision, and how is power made contestable? | Include admissibility, writer authority, challenge, correction, privacy, audit, and assurance. Exclude databases, cryptography, biometrics, and assessment tools. | Basis; writer; visibility/privacy; challenge; correction/deletion control; assurance; systemic referral. |
 | 8. Jurisdiction, locality, and subsidiarity | How are public powers divided across place without lowering common protection? | Include local authority, subsidiarity, inter-community duty, and portability duties. Exclude individual movement, plurality, migration procedure, transfer systems, border administration, and service logistics. | Common baseline; local mandate; non-discrimination; portability duty; equalisation duty; dispute forum; review. |
 | 9. Commons and future conditions | What may no contract, owner, or present majority exhaust or trade away? | Include non-regression, public maintenance duty, shared-resource limits, and intergenerational non-destruction. Exclude property/work policy, tax rates, budgets, allocation models, and production plans. | Protected condition; duty-bearer; non-destruction rule; evidence; present-person or designated-public standing; remedy; public accountability. |
+
+**Temporal-status contract:** whenever a class proposes a deadline, cadence,
+expiry, term, retention period, or “temporary” exception, its contract must name
+its temporal status. Until the separate time decision is ratified, no class may
+silently assume one.
+
+**Worked pattern (limited):**
+`teaches($t, $s) & hears($s, $t) -> learn($s)` is the existing two-sided arrival
+route. A provider-side `teaches` fact alone cannot derive `learn`; the rule also
+requires a `hears` fact about the recipient. It ranks neither person and leaves
+the entitlement unconditional. This is recipient-side evidence, not yet a fully
+independent authority model: current rules do not control who writes or validates
+`hears`. Reuse its two-sided receipt shape only with writer, authority, and
+challenge controls before calling another route independently evidenced.
 
 ## Classify the existing coverage map
 
