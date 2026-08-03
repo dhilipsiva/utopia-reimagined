@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 31
+:expect-pins 34
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -134,6 +134,25 @@ all $w: all $o: show($w, $o) & authority($o) & person($w) & ~deceive($w, $o) -> 
 
 ? defend(Rebel).
 # => TRUE
+
+# ── THE FRAME-UP COMPLETED FROM OUTSIDE ──────────────────────────────────────
+# Don's frame-up fails on an absence: Pax holds no standing, pinned FALSE at the
+# top of this file beside defend(Don) FALSE and prisoner(Don) TRUE. Those three
+# are the negative control for what follows. Standing by the public route is a
+# single admitted entry that nobody adjudicates — so write it about the victim
+# and the absence is gone. The shield attaches to the exposure Don manufactured
+# and the conviction stops deriving. Ground fact, so it persists; the reach-back
+# block below does not read Pax.
+public(Pax).
+
+? authority(Pax).
+# => TRUE
+
+? defend(Don).
+# => TRUE
+
+? prisoner(Don).
+# => FALSE
 
 # ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
 # "A defendant a century from now can reach back, expose someone nobody

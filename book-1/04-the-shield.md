@@ -46,6 +46,17 @@ permanent. Point at a private person and you have not exposed
 anything the shield was built for — you have simply made an accusation, and
 accusations, as Chapter 1 established, do not by themselves move anything.
 
+So how narrow is the thing standing between Don and a shield? One entry wide. The
+frame-up fails on an absence — Pax was never seated, holds no office, is nobody's
+authority — which means it can be repaired by supplying the missing presence. Standing
+arrives by two routes, and one of them is a single line saying that a body is public,
+adjudicated by nobody and asked of no one. Write that line about the victim. Pax
+becomes an authority; the shield attaches to the very exposure Don manufactured; the
+conviction stops deriving and Don walks, defended by the machinery for having framed
+the person he injured. Measured on a copy, and pinned beside this chapter's own case.
+What separates a failed frame-up from a working one is a word about the target, and it
+is a word the world may say.
+
 ## Sly
 
 Sly injured Pax too. Then Sly exposed the court.
@@ -53,6 +64,11 @@ Sly injured Pax too. Then Sly exposed the court.
 The court has standing. There is no finding that Sly's exposure was made in bad
 faith, because nobody has examined it yet. So Sly's shield holds, and Sly — who
 injured someone, and who is being prosecuted for it — walks free.
+
+The court's standing, on which all of that rests, is itself an entry: a line saying
+the court is public. Remove it and every verdict in this section inverts. The book
+keeps a sabotaged copy of the record with exactly that line missing and runs its
+checks against it, so this is a claim executed rather than argued, on every run.
 
 This is not a bug. It was chosen, and it is worth being exact about what the choice
 was.
@@ -82,6 +98,18 @@ available to people who do not deserve it. What can be said is that the alternat
 window is worse: a system where the wrong choice costs a guilty man some months of
 freedom is recoverable, and one where the wrong choice puts the honest whistleblower
 in a cell before anyone reads their evidence is not.
+
+There is something worth saying plainly about what this shield is, structurally,
+because the chapter has been treating it as a protection among others and it is not.
+Conviction here reads an injury and a court's judgment, and it reads the absence of
+every escape this design provides: granted relief, a court found broken, this shield,
+a sentence already ended. Most of those are somebody else's act. The shield is the
+route a defendant reaches by their own doing. And notice what is missing from the list
+altogether — self-defence, justification, provocation, what anybody intended. No such
+words exist in this record, so no such defence can be raised in it. That is not a
+narrow shield sitting beside a wide law of excuses. It is a shield standing nearly
+alone, which is worth knowing before deciding whether its window is priced too
+generously.
 
 ## Kel
 
