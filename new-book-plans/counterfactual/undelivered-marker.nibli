@@ -221,16 +221,25 @@ derived_only("clean").
 #
 # [v0.8] A THIRD REASON, and since nibli `de34cd4` it is the sharpest one.
 # `event { P() }` takes NO argument, and threading the universal into it —
-# `entitled(every person, event { eats($x) })` — would be the single most
-# damaging edit available in this file. The body's event term compiles to
-# `sk(Unspecified)`, INDEPENDENT of the universal, so its role fillers are
-# `Unspecified` and the body describes nobody: `? eats(Adam).` misses and
-# answers FALSE. Thread `$x` in and the head carries a live variable, so
-# `eats(Adam)` derives for every person on the roster — and chapter 8's
-# whole argument, that a right can be owed and undelivered, becomes false
-# while every entitlement pin stays green. 26 actuality pins across eight
-# predicates are FALSE for exactly this reason; they are the guard, and
-# `08-what-you-are-owed.pins.nibli` is where they live.
+# `entitled(every person, event { eats($x) })` — is a damaging edit, and
+# RE-MEASURED 2026-08-03 IT DAMAGES THE OPPOSITE THING FROM WHAT THIS
+# COMMENT SAID FOR MONTHS. The old text claimed the threaded variable
+# makes `eats(Adam)` derive for every person on the roster, faking
+# delivery "while every entitlement pin stays green", and named the
+# actuality pins as the guard. Measured on a copy carrying exactly that
+# edit: `eats(Adam)` and `eats(Bela)` stay FALSE — no actuality is
+# fabricated — and `entitled(Adam, event { eats() })` goes FALSE. The
+# edit does not forge the delivery. IT DELETES THE PROMISE: the floor
+# line stops entitling anyone while still sitting there looking like a
+# floor. So the guard is real and it is the OTHER pins — the
+# entitlement pins, which go red at once (measured: rights-floor
+# :281/:320 and `08-what-you-are-owed.pins.nibli:174` all flip TRUE to
+# FALSE). Whoever writes this edit is caught, immediately, by the pins
+# that assert the floor still promises something. Do not restate the
+# old symptom; it was wrong in the direction that flatters the design,
+# which is the direction to distrust. Nothing checked this comment,
+# which is why it rotted — the same failure mode as the spine that went
+# stale while nobody noticed.
 # The engine is faithful to whichever shape it is given. The opacity is a
 # property of THIS file's shape, not a protection the engine supplies.
 #
