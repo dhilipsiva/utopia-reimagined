@@ -67,7 +67,7 @@ The rest of the conditions exist because "two" is easier to fake than it sounds.
 The next three conditions are unusual, because they do not protect the person being
 examined. They point back at the examiner.
 
-**You may not judge your family.** Dev judged Esa. Dev is Esa's parent. The result is
+**You may not judge your child.** Dev judged Esa. Dev is Esa's parent. The result is
 not that the finding is discarded — the result is that *Dev's* credibility is voided.
 Dev is the one who loses. The design does not treat judging your own child as a
 procedural error to be corrected; it treats it as the kind of thing that tells you
