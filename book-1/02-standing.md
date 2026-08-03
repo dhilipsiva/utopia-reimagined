@@ -151,11 +151,11 @@ restored, from the moment the two entries stand together. Able to act? Still no.
 pen is withheld by rules that read the mark itself, not the conclusion the mark once
 fed, and the mark is still there: Vex is forgiven, not erased. One verdict moved and
 the other two held still — which could not happen if the three were secretly one
-thing. The word comes back by forgiveness; the pen, if it ever comes back, comes
-back the way it was given, by a body seating a person, and the mark on the record
-stands in the way of exactly that. The way back for a person's word and the way back
-to power are different roads, and the design refuses to pave the second with the
-first.
+thing. The word comes back by forgiveness; the pen does not come back at all, and the
+chapters ahead measure why — the rule that issues a pen reads the mark itself, so
+neither the forgiveness nor a fresh seating reaches it. The way back for a person's
+word and the way back to power are different roads, and the design refuses to pave
+the second with the first.
 
 ## What it costs
 

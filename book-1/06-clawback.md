@@ -158,11 +158,9 @@ record resuming payment on everything it already knew.
 
 What forgiveness does not restore is the pen. The mark itself stays on the record —
 forgiven, not erased — and everything that reads the mark directly still reads it. Do
-not picture a forgiven auditor waiting to be chosen again: this record's voided
-auditor holds his seat and always did, because a voiding takes the word and the pen
-and never the seat, and choosing him a second time — measured — changes nothing at
-all. The seat was never what the door was reading. The way back for the person and
-the way back to power are different roads here, and only the first was opened.
+not picture a forgiven auditor waiting to be chosen again; the chapter on the pen
+measures that, and the seat turns out never to have been what the credential door was
+reading. Only the first road was opened here.
 
 So a voided person's way out is no longer somebody else's silence. It is an entry
 someone can point to, made of the same stuff as everything else in this record: an

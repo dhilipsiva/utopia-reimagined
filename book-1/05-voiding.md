@@ -166,12 +166,16 @@ check reads both, in each direction. Neither word appears anywhere in the shippe
 record yet; the guards stand armed for the day somebody writes the fact they watch
 for, which is how this design keeps its guards.
 
-One more reach the words do not have: forgiveness restores a person's word, and
-restores nothing here. The independence check reads the carried mark itself, not the
-conclusion it once fed — the mark outlives the forgiveness in every rule that reads
-the mark itself — so a forgiven examiner still cannot co-sign a voiding. The way
-back for a person's word and the way back to power are different roads, and this
-check sits on the second.
+One more reach the words do not have, and it is worth getting the mechanism right
+because the tempting version is wrong. Forgiveness restores a person's word and does
+not put them back at this table — but not because the conditions above catch them.
+Those conditions are about who you sign beside, and a forgiven examiner trips none of
+them. What stops him is earlier: co-signing needs a pen, the pen is issued by a rule
+that reads the carried mark directly, and the mark outlives the forgiveness. No pen
+is ever issued, so he never arrives at the conditions this section is about. The way
+back for a person's word and the way back to power are different roads, and this one
+runs through a door the chapter on the pen describes rather than through anything
+here.
 
 What the widening does not close deserves the same care the old gap was given. Two
 people who have been close friends for thirty years, or who share a household, or who
