@@ -21,7 +21,7 @@ voided in an earlier period. A body forgave someone. Someone's sentence is finis
 That is it. That is everything the record can hold.
 
 Read it again and one entry will not sit right with the others. Everything else on the
-list is something that happened — an act, a finding, a decision, a date. *Someone is a
+list is something that happened — an act, a finding, a decision. *Someone is a
 person* is not an event. Nobody did it, and it is not true of you at some moment rather
 than another. It is the entry that says you are the sort of thing the rest of the list
 can be about.
