@@ -123,23 +123,57 @@ measured an engine change that was never rebuilt.
 
 ## book-1 — remaining work
 
-- **Parts I–IV second expansion wave — ruled and running (2026-08-03).** The blocker
-  is gone: every Phase 1 ruling landed, and the author ruled the forks — **content
-  governs, the ~38,000 target is retired** (the final figure is an outcome; CLAUDE.md's
-  length entry carries the ruling), and **all fourteen chapters are swept**, dry ones
-  skipped with the stop-map updated honestly. Wave-1's method binds: verified-untold =
-  TRUE in the engine and absent from prose; measure the same day and say so in the
-  commit body; one section per exhibit; name what is not being decided; stop at the
-  end of the material. Scouted 2026-08-03: rich in chapters 2, 5, 7, 8, 11; the
-  2026-08-02 stop-map overturned for 4, 11 and 14 (the residual-trust-base comments
-  and the put/building work all landed after it); 13 still dry; four fidelity
-  corrections (prose now wrong, not merely incomplete) land first as their own
-  commits. Three author rulings in: chapter 7 writes the wall-nobody-wrote telling;
-  chapter 12 writes the entrenchment trap; pins-as-accidental-detector goes to the
-  method part. Delete this bullet when the wave's closing tracker commit lands with
-  the new stop-map. First-wave record for reference: 2026-08-02, 25,027 → 28,585,
-  ten commits; measured 2026-08-03 pre-wave: chapters 1–14 at 29,440 against 10,545
-  non-derived — the invariant holds with a wide margin whatever this wave adds.
+- **Parts I–IV second expansion wave — DONE 2026-08-03, with its stop.** Ruled
+  content-governs (the ~38,000 target retired; CLAUDE.md's length entry carries the
+  ruling) and swept all fourteen chapters. Outcome, measured the same day: chapters
+  1–14 went **29,440 → 35,071** words across 24 commits, against 10,722 non-derived —
+  majority-derived holds at roughly three quarters. The retired target was approached
+  from below by material rather than aimed at, which is the only way this wave would
+  have accepted reaching it.
+  - **The stop-map, checked 2026-08-03.** Thirteen chapters took new material. **13 is
+    dry and was declined on the merits, not skipped**: its two candidate sharpenings —
+    that the time words are refused at the door rather than merely unused, and that
+    release has the shape it has because derivation only ever adds — were read against
+    the chapter and judged already covered by its existing passage, so writing them
+    would have been padding against the wave's own rule. Start a third wave elsewhere.
+  - **Four fidelity corrections landed first**, because wrong prose outranks untold
+    prose: chapter 1 listed "a date" among what the record holds; chapter 5's bolded
+    headline read "judge your family" over a rule reading parenthood alone; chapter 8
+    claimed a mark was "the only form the design allows"; chapter 14 claimed the audit
+    "cannot be gamed from below" when it can be starved. A fifth was found by
+    measurement mid-wave and folded into chapter 6.
+  - **The wave corrected the constitution, not only the book.** Chapter 8's planned
+    passage rested on a margin note claiming that threading the universal into a floor
+    line fakes delivery for everyone "while every entitlement pin stays green".
+    Measured before writing: it fabricates no actuality and instead deletes the
+    entitlement — the opposite failure, and the guard is the entitlement pins, not the
+    actuality ones. Note corrected, all six fixtures regenerated. Nothing checked that
+    comment, which is why it rotted.
+  - **The adversarial pass earned its place and then some.** Two checkers over the
+    whole wave diff returned twenty-two findings, and seven were factual errors in new
+    prose — most importantly that a voiding does not take the pen (the credential
+    rules read the carried mark, never the current voiding, which is the design's own
+    disclosed exploit), that a recall does not strip a seat, and that the record does
+    hold a word for intent. Three correction commits landed before this close. **Do
+    not skip this pass on a future wave**: per-commit gates cannot see cross-chapter
+    drift, and every one of the seven had passed its own chapter's full suite.
+  - **Open, and the author's to rule: harden `lose` and `decide` by declaration.** Both
+    sit on neither guarded list — not admitted, not conclusion-only — so a forged loss
+    or a forged ballot is refused today only because the writable list happens to stay
+    short. Measured across the whole pin set: adding both `derived_only` lines changes
+    no answer anywhere (526 pins, 0 findings). The edge is open for want of a line, not
+    for want of a reason. Chapters 6 and 9 both tell it as a known soft edge, so
+    **hardening means editing those two passages in the same commit**.
+  - **Two commit bodies carry word counts off by a little** (chapter 3 says 2,652 for
+    2,651; the method addendum says 4,255 for 4,270) because the count was composed
+    before the final edit. The figures above are the authoritative re-measurement;
+    pushed bodies were not rewritten.
+  - **Process notes worth keeping.** Two gates failed for a reason that was not the
+    prose — editing another chapter's files while a full run was in flight breaks the
+    cross-file pin reconciliation, so gate strictly serially. And the two-second
+    `--quick` prose pre-check before each five-minute full run caught three violations
+    in this wave at a fortieth of the cost; the counted-claims gate stopped "one thing"
+    twice more, which is now four times across two waves.
 
 - **Add `LICENSE-MIT` + `LICENSE-APACHE` — now unblocked.** The condition ("when the
   harness and fetchers are written") is met: `registry/check.py`,
