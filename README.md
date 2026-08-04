@@ -19,15 +19,19 @@ imprisonment and stops there.
 | `book-1/` | the chapters, each with a sidecar of pinned queries against the constitution |
 | `new-book-plans/constitution.nibli` | the constitution, in [nibli](https://github.com/dhilipsiva/nibli) KR |
 | `new-book-plans/3-spine.md` | the computed chapter order — generated, not hand-written |
+| `new-book-plans/assertion-surface-audit.md` | the generated inventory of derived relations and writable-premise risks |
+| `new-book-plans/assertion-surface-contracts.json` | the reviewed authority, provenance, harm, challenge and risk contracts behind that audit |
 | `new-book-plans/counterfactual/` | copies of the constitution each missing one line, so "remove this and X breaks" is executed rather than argued |
 | `verify.sh` | the one check |
 
 ```bash
 ./verify.sh          # everything, including the pin suite
-./verify.sh --quick  # everything else, about two seconds
+./verify.sh --quick  # incremental checks except pins/counterfactuals (0.53 s measured)
 ```
 
 It exits non-zero on the first failure and names the claim that stopped being true.
+That includes a new or reclassified rule head, a changed admission or ground-fact
+snapshot, or an unreviewed producer/consumer route in the assertion surface.
 
 A second book — how you would actually build this, organisationally and technically — is
 planned and not started.

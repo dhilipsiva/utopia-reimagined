@@ -7,8 +7,10 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run, includes the pin suite (~30 s — MEASURED 2026-07-31)
-#   ./verify.sh --quick  everything except the pin suite AND the counterfactuals (~2 s)
+#   ./verify.sh          full run, includes the pin suite (~5–8 min; 431.6 s
+#                       measured 2026-08-04 at 544 pins)
+#   ./verify.sh --quick  everything except the pin suite AND the counterfactuals
+#                       (0.53 s incremental, measured 2026-08-04)
 #                        NOTE --quick cannot see a stale fixture: the counterfactual
 #                        check is step 6, after the pins. Run the FULL suite after any
 #                        constitution edit — that is how a stale fixture shipped once.
@@ -26,8 +28,8 @@ cd "$(dirname "$0")"
 # responsible for the binary matching the source.
 NIBLI_PIN_OVERRIDDEN=0
 [ -n "${NIBLI_PIN:-}" ] && NIBLI_PIN_OVERRIDDEN=1
-PIN="${NIBLI_PIN:-$HOME/projects/dhilipsiva/nibli/target/release/nibli-pin}"
 NIBLI_SRC="${NIBLI_SRC:-$HOME/projects/dhilipsiva/nibli}"
+PIN="${NIBLI_PIN:-$NIBLI_SRC/target/release/nibli-pin}"
 KB=new-book-plans/constitution.nibli
 SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
@@ -54,7 +56,8 @@ step() { printf '\n\033[1m%s\033[0m\n' "$1"; }
 # check the constitution, not the engine.
 #
 # Incremental and free: ~0.2 s when nothing changed, measured, against a ~29 min
-# run. `--quick` never reaches here, so it stays at ~2 s.
+# historical run. Quick mode builds too: the spine and assertion audit must read
+# the same release engine that the full pin suite will use.
 # `--manifest-path` rather than `cd`, so this works from any directory.
 #
 # A FUNCTION because `--only` needs it too. A fast per-file loop that skipped the
@@ -103,19 +106,30 @@ if [ -n "$ONLY" ]; then
   # Propagate, including 3 (a pinned defect stopped reproducing). Swallowing that
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
-  printf '        cross-file :expect-pins reconciliation, the spine, the jargon sweep,\n'
+  printf '        cross-file :expect-pins reconciliation, the spine and assertion audit,\n'
+  printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
   exit $rc
 fi
 
 # ── 1. the spine is regenerated from the constitution ────────────────────────
+build_engine
+STRATA_FILE=$(mktemp) || fail "could not create a strata cache"
+trap 'rm -f -- "$STRATA_FILE"' EXIT
+
 step "spine"
-out=$(python3 new-book-plans/5-spine-gen.py "$KB" "$SPINE" --check 2>&1) \
+out=$(NIBLI_PIN="$PIN" NIBLI_STRATA_CACHE_OUT="$STRATA_FILE" python3 new-book-plans/5-spine-gen.py "$KB" "$SPINE" --check 2>&1) \
   && pass "3-spine.md is current" \
   || fail "3-spine.md is stale" "$out — rerun 5-spine-gen.py without --check"
 
-# ── 2. chapter 1's headline number ───────────────────────────────────────────
+# ── 2. every rule-produced and ground-writable relation has a contract ───────
+step "assertion surface"
+out=$(NIBLI_STRATA_FILE="$STRATA_FILE" python3 new-book-plans/7-assertion-surface.py --check 2>&1) \
+  && pass "$out" \
+  || fail "assertion-surface audit failed" "$out"
+
+# ── 2b. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and falsifies the nine prose places that name it.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
@@ -360,9 +374,8 @@ if [ "$QUICK" = "1" ]; then
   printf '\n\033[33mskipped\033[0m the pin suite (--quick)\n'
   exit 0
 fi
-build_engine
 
-step "pins (~20 s — was 47 min; nibli materialised negation, positive goals, then the event projection)"
+step "pins (~5–8 min at 544 pins; measured 2026-08-04)"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
 out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)

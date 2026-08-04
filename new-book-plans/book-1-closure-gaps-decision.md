@@ -285,5 +285,6 @@ Implemented and measured 2026-08-04:
   shapes and all six counterfactual suites pass.
 
 The quick verifier, both targeted suites, the spine `--check`, and the full
-verifier all passed. This closes only L1 + D1; the generated assertion-surface
-census and the remaining ten interface decisions stay open.
+verifier all passed. This closed only L1 + D1. The assertion-surface census
+landed later as a separate generated audit; the interface decisions it records
+as pending remain open.

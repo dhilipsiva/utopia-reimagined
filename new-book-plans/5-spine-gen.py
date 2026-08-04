@@ -66,6 +66,13 @@ def engine_strata(kb):
     r = subprocess.run([pin, "--strata", "--kb", kb], capture_output=True, text=True)
     if r.returncode != 0:
         sys.exit(f"5-spine-gen: nibli-pin --strata failed:\n{r.stdout}{r.stderr}")
+    cache_out = os.environ.get("NIBLI_STRATA_CACHE_OUT")
+    if cache_out:
+        try:
+            with open(cache_out, "w", encoding="utf-8") as handle:
+                handle.write(r.stdout)
+        except OSError as exc:
+            sys.exit(f"5-spine-gen: cannot write strata cache {cache_out}: {exc}")
     out = {}
     for line in r.stdout.splitlines():
         if not line or line.startswith("#"):

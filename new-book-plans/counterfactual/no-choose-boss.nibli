@@ -739,11 +739,11 @@ all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender)
 # had — not a regression, but it is now derived often enough to be noticed.
 #
 # DO NOT ADD GRADED TIERS on top of this. `building(MedSec, $x)` compiles and
-# the constant is free, but `building/2` has no exclusivity constraint and is
-# not closed in Article 0, so an offender matching two combinations derives
-# two placements at once and nothing detects it — the breach marker below
-# keys on home-without-eligibility and is blind to tier conflict. Graded
-# outcomes need a mutual-exclusion marker built in the same edit.
+# the constant is free. Article 0 closes direct ground assertions of `building`
+# but has no exclusivity constraint on rule-derived placements, so an offender
+# matching two combinations derives two placements at once and nothing detects
+# it — the breach marker below keys on home-without-eligibility and is blind to
+# tier conflict. Graded outcomes need a mutual-exclusion marker in the same edit.
 all $x: all $v: attack($x,$v) & cruel($x,$v) -> severe($x).
 all $x: all $v: all $w: attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
 all $x: all $v: all $w: cruel($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).

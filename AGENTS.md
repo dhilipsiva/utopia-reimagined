@@ -4,7 +4,7 @@
 
 `CLAUDE.md` is the authoritative record of settled design and editorial decisions; follow it if this guide conflicts. Before active work, read `CLAUDE.md`, `TODO.md`, and `tmp.txt` (draft context, never book content). This is a verified book-design repository, not an application. `book-1/` contains active numbered chapters such as `01-what-counts-as-evidence.md` and their matching `.pins.nibli` files. Apart from its labelled opening note, Part V, and method, book-1 prose must derive from `new-book-plans/constitution.nibli`; keep it jargon-free and exclude roadmaps, MVS, scaling, and technology implementation. Those belong to book 2; do not develop book 2 while book 1 is active. Do not remove legacy `book.md` or `manifesto.md` before the TODO's legacy harvest is complete.
 
-`new-book-plans/` owns the constitution, generated `3-spine.md`, and counterfactual fixtures. `registry/` contains claims, snapshots, checks, and Python fetchers. Keep `book-1/epigraph.md` and `method.md` unnumbered.
+`new-book-plans/` owns the constitution, generated `3-spine.md`, generated assertion-surface audit, its reviewed JSON contract, and counterfactual fixtures. `registry/` contains claims, snapshots, checks, and Python fetchers. Keep `book-1/epigraph.md` and `method.md` unnumbered.
 
 ## Validation & Development Commands
 
@@ -14,10 +14,11 @@ Run from the repository root:
 ./verify.sh --quick   # iteration only; skips pins and counterfactuals
 ./verify.sh           # authoritative suite; required before every commit
 python3 new-book-plans/5-spine-gen.py new-book-plans/constitution.nibli new-book-plans/3-spine.md --check
+python3 new-book-plans/7-assertion-surface.py --check
 python3 registry/check.py
 ```
 
-Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate the spine. After every constitution edit, including comments, regenerate counterfactual fixtures and run the full verifier. Never hand-edit generated spine blocks.
+Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate a generated artifact. For the assertion audit, edit `assertion-surface-contracts.json`, then regenerate; never hand-edit the report. After a reviewed rule or fact change, `7-assertion-surface.py --fingerprints` prints candidate digests; review the affected contracts before copying them. After every constitution edit, including comments, regenerate counterfactual fixtures and run the full verifier. Never hand-edit generated spine blocks.
 
 ## Editing, Testing & Naming
 
