@@ -76,6 +76,19 @@ guarantee**: a majority chooses only among policies compatible with universal
 standing, core floors, equal protection/non-discrimination, due process, core
 liberties, and commons constraints.
 
+**Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
+D2.** The current-T0 baseline remains public source and git history but receives
+no promoted edition, canonical serialization, assembled release, or print
+identity. The completed constitutional expansion becomes Book 1 — First Edition
+and its first print-on-demand edition. Before completion, coherent expansion
+milestones may appear only as immutable, tagged First-Edition previews with
+permanent URLs, exact book and nibli sources, full verification records, and
+visible supersession; they are design snapshots, not promises of final chapter
+order. `main` is never an edition URL, and no public artifact may be silently
+replaced. The controlling publication contract and release gates are in
+`new-book-plans/book-1-edition-boundary-decision.md`. This ruling creates no tag,
+release, site, preview, or print file by itself.
+
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
 ## Files
@@ -421,22 +434,28 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   counts rot. book-1 references book-2 exactly once, in this file's closing lines — do not
   add a second reference anywhere.
 
-- **The reach strategy: spine-order serialization from a home of its own**, ruled 2026-08-02,
-  the final reach decision then outstanding. Chapters serialize in the computed order **as
-  their whole-chapter passes complete** — the pass was the gate, and all fourteen passes
-  completed 2026-08-02, so the sequencing constraint is discharged — from a dedicated
-  domain the author registers, with platforms
-  syndicating from it; the assembled book (opening note, Part V, method part) is the capstone
-  release, not the first contact. Building in public performs the thesis: the repo history is
-  the method's proof, serialization recruits the red-team the method part admits it lacks,
-  and defect pins make known flaws declared features. Four companions, all ruled in: the
-  launch essay (*The Furnished Prison* the standing headline candidate; inside the voice
-  boundary — author-drafted), the method paper (formal-methods-for-law genre; cites the book,
-  never the reverse dependency), run-it-yourself as a front-page claim (`verify.sh` is
-  already the artifact), and a print-on-demand edition whose lever is quality, not
-  exclusivity. **The dilution guard from the adoption reviews rides along: reach adapts the
-  packaging, never the design** — an audience that needs a different design is book-2's
-  reader, not book-1's.
+- **The reach strategy: public construction from a home of its own**, ruled
+  2026-08-02 and qualified by E2 + P1 + D2 on 2026-08-04. The dedicated domain,
+  platform syndication, public red team, and assembled-book capstone survive.
+  The original instruction to serialize the pass-complete current-T0 manuscript
+  does not: E2 leaves that manuscript as public source and git history without a
+  promoted edition. P1 replaces that immediate route with immutable, tagged
+  expansion snapshots after their full gates; they are previews, not final
+  spine-order serialization. Once the expanded constitution and spine freeze,
+  the First-Edition release candidate serializes in computed order **as each
+  whole-chapter pass completes against that exact candidate**; the assembled
+  digital book is the capstone, and D2 makes that completed expansion the first
+  print-on-demand edition. Building in public still performs the thesis: repo
+  history is the method's proof, previews recruit the outside red team, and
+  defect pins make known flaws declared features. Four companions remain: the
+  launch essay (*The Furnished Prison* the standing headline candidate; inside
+  the voice boundary — author-drafted), the method paper (formal-methods-for-law
+  genre; cites the book, never the reverse dependency), run-it-yourself as a
+  front-page claim once the exact nibli dependency is reproducible (`verify.sh`
+  is the core artifact, not yet a one-repo reproduction), and the D2 physical
+  edition whose lever is quality, not exclusivity. **The dilution guard from the
+  adoption reviews rides along: reach adapts the packaging, never the design** —
+  an audience that needs a different design is book-2's reader, not book-1's.
 
 - **The student clawback is deleted, and `lose` stays a leaf**, ruled 2026-08-02 — the
   Article 4 clawback fork, decided as Branch A. The rule `teaches($t,$s) & false($t) ->

@@ -187,8 +187,11 @@ current predicate, delivery route, private duty, property claim, or guardian
 mechanism. See [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md).
 
 This map also does not authorise a serialized edition to be changed in place.
-The author-gated decision is owned by `TODO.md`; its draft is
-[`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md).
+The ratified E2 + P1 + D2 publication contract is
+[`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md):
+the current-T0 baseline receives no promoted edition; immutable expansion
+snapshots are permitted after their gates; and the completed expansion becomes
+Book 1's First Edition and first print-on-demand edition.
 
 Work in this order:
 

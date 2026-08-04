@@ -1,90 +1,213 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-# Book 1 Edition-Boundary Decision
+# Book 1 Public-Edition Boundary Decision
 
-> **Status: draft for author ratification.** This is a publication decision,
-> not a constitutional change. It neither replaces the 2026-08-02 reach ruling
-> nor authorises changing a public edition in place.
+> **Status: author-ratified 2026-08-04 — E2 + P1 + D2.** This is a
+> publication decision, not a constitutional change. It qualifies the
+> 2026-08-02 reach ruling and does not authorise changing a public artifact in
+> place.
 
-## 1. Decision required
+## 1. What is being decided
 
-The 2026-08-02 reach ruling remains sound for the **pass-complete,
-pre-expansion verified kernel**: its chapters passed in spine order, and public
-serialization can recruit the red-team the book needs. The 2026-08-03 mandate,
-however, creates a different artifact: a new constitution, regenerated spine,
-new pins and counterfactuals, possible reordering, and revised prose.
+The source is already public under irrevocable open licences. Measured
+2026-08-04, however, the repository has no edition tag, GitHub Release,
+assembled reader artifact, canonical site, homepage, or immutable public-book
+URL. Public source is not yet a citable edition.
 
-A completed pass is therefore version-specific. It remains evidence for an
-immutable baseline; it is not a pass for a changed chapter or for a new spine.
-The unresolved question is whether the expansion replaces, follows, or delays
-the public baseline.
+The 2026-08-02 reach ruling originally assigned the pass-complete current-T0
+manuscript to spine-order serialization, public red-team review, and an
+assembled capstone. The 2026-08-03 mandate creates a different future artifact:
+an expanded constitution, regenerated spine, new tests, possible reordering,
+and revised prose. A completed pass is therefore version-specific. E2 preserves
+the public-review and capstone strategy but applies them to the expansion rather
+than promoting the current-T0 manuscript.
 
-## 2. Non-negotiable publication contract
+The current tree is a **candidate baseline**, not and never a First Edition
+under E2. It combines the current T0 constitution with the ratified but
+unimplemented T3 target, while some reader-facing prose still states the older
+permanent no-time refusal. Its last page also promises that the operational
+volume is “the next book,” an order the expansion may change.
 
-Every public edition or preview must identify:
+On 2026-08-04, the author decided:
 
-1. **Edition and source:** a stable tag or commit, canonical source location,
-   and an immutable assembled artifact.
-2. **Verification state:** whether the full suite passed against that exact
-   source, plus its date and known external-assurance limits.
-3. **Scope:** whether it is the verified narrow kernel, an expanded draft, or a
-   later comprehensive interface. No baseline may be called comprehensive under
-   the new mandate.
-4. **Revision path:** stable citation/URL policy, public changelog, correction
-   route, and an explicit rule against silent page replacement.
-5. **Print policy:** a print edition is immutable and identifies its edition and
-   source. A mutable web page is not a print edition by another name.
-6. **Deferred-work pointer:** before v1 freezes, audit any reference to an
-   unpublished later book. It must state a scope boundary, not promise publication
-   order. If an already frozen edition contains such a promise and the order
-   changes, preserve its text and publish a dated, immutable status note beside it.
-   An expanded Book 1 v2 is not the separate operational book it once pointed to.
+1. the candidate baseline does **not** become a promoted edition;
+2. coherent, immutable expansion snapshots may be published before completion;
+3. the completed expansion becomes both Book 1's First Edition and its first
+   print-on-demand edition.
 
-## 3. Available choices
+## 2. Terms that must not be blurred
+
+- **Source:** the evolving public repository. `main` is never an edition URL.
+- **Release candidate:** an immutable, tagged source snapshot used for
+  serialization and public review before a final edition.
+- **Edition:** a final, immutable assembled artifact with a stable identity.
+- **Preview:** an immutable, non-final snapshot of expansion work. It is not a
+  promise of final chapter order.
+- **Latest:** mutable navigation to a newer object. It is never a citable source.
+- **Withdrawn:** no longer recommended by the canonical site, not erased from
+  history or recalled from mirrors.
+
+In reader-facing material, use **Book 1 — First Edition** and **Book 1 — Second
+Edition**, not bare “v1” and “v2,” which can be confused with Book 2. Namespaced
+machine tags may use forms such as `book-1-v1.0.0`. Under E2, the completed
+expansion is Book 1 — First Edition; “Second Edition” is reserved for a later
+major revision, not used as another name for the expansion.
+
+## 3. Non-negotiable publication contract
+
+Every release candidate, edition, or preview must carry the following contract
+in the artifact itself or in inseparable release metadata.
+
+1. **Exact identity:** human-readable status; immutable namespaced tag; full
+   book-repository commit; canonical versioned URL; and hashes of every
+   assembled artifact. A tag is never moved or reused.
+2. **Reproducible inputs:** exact, clean nibli commit; ordered prose-input
+   manifest; registry snapshot; build command; and licences. The book commit
+   alone is insufficient because `verify.sh` currently builds an adjacent,
+   mutable nibli checkout.
+3. **Verification record:** full `./verify.sh` result against those exact clean
+   inputs, command, date, retained transcript, and known external-assurance
+   limits. A release run may not contain `+uncommitted`, use an unidentified
+   binary override, or fall back silently to an existing binary.
+4. **Plain scope:** current-T0 baseline, expanded draft, or completed expanded
+   interface; implemented guarantees; known defects; and what remains external.
+   “Verified” describes checked formal and editorial claims, not successful
+   delivery in society or independent validation of the engine.
+5. **Stable revision path:** immutable version URLs and assets, public
+   changelog, errata route, supersession links, and no silent page replacement.
+   Only an index or `latest` pointer may move.
+6. **Correction and withdrawal:** every content change creates a new tag,
+   artifact, and version. A critical defect may receive an immediate warning or
+   withdrawal notice on the mutable index; the old artifact remains identified
+   and accessible unless a legal, privacy, or security duty requires removal,
+   in which case a dated tombstone records what was removed and why. Openly
+   licensed copies elsewhere cannot be recalled.
+7. **Print provenance:** every printed copy names the edition, publication date,
+   source commit, licence, canonical errata URL, and print-file identity. A
+   changed interior is a new version, never a replacement under the same name.
+   Release candidates and previews are not print editions.
+8. **Deferred-work pointer:** Book 2 is defined by scope, not promised
+   publication order. An already frozen edition keeps its text and receives a
+   dated status note; an unfrozen candidate corrects the promise before release.
+   An expanded Book 1 is not the separate operational Book 2.
+
+A generated release manifest may record the final tag, commits, and hashes
+outside the tagged source tree; this avoids requiring a source file to contain
+the hash of the commit that contains it.
+
+## 4. Ratified choice 1 — canonical baseline
 
 | Choice | Benefit | Cost / condition |
 | --- | --- | --- |
-| **A. Freeze and release the verified kernel as v1; build the expansion as v2.** | Preserves a reproducible object for readers to test and keeps the red-team benefit of building in public. | Readers need clear scope labelling; v2 must earn fresh passes, spine order, and public claims. |
-| **B. Hold all publication until v2 is complete.** | One public edition and no split attention. | Gives up the near-term red-team and reach rationale for an open-ended expansion. |
-| **C. Run a living public v2 serial.** | Invites early review of the expanded design. | Permitted only as immutable, versioned previews alongside a stable baseline; otherwise readers cannot cite or test what they read. |
+| **E1. Give the current-T0 baseline its own First Edition.** | Preserves a reproducible object, honours the existing serialization ruling, and lets outside review attack a stable claim set. | It must be labelled as narrow and later superseded; the pre-freeze and release-candidate gates apply. |
+| **E2. Withhold a promoted edition until expansion is complete.** | Avoids giving the narrow design a durable canonical identity. | Cannot make the manuscript private; it remains in public git history. It gives up baseline serialization as the planned red-team route, so another review route and a clear completion event are required. The expanded work would become Book 1’s First Edition, not its Second. |
 
-## 4. Recommended ruling
+**Ruling: E2.** The author rejected the draft recommendation to give the
+current-T0 baseline a separate First Edition. It remains public source and git
+history, but receives no canonical serialization, assembled edition, edition
+tag, or print identity. The completed expansion becomes Book 1's First Edition.
+P1 supplies the replacement public-review route. No additional rationale was
+supplied; do not invent one.
 
-**Choose A, with C available as a later, explicitly labelled v2-preview mode.**
-Release the current book as an immutable **pre-expansion verified kernel**
-edition. Start the constitutional expansion as v2; it must not silently revise
-or overwrite v1 pages. If the author chooses public v2 serialization, each post
-must identify its v2 draft status, source version, affected claims, and revision
-history, and must preserve accessible prior versions.
+## 5. Ratified choice 2 — expansion previews
 
-This preserves both truths: the current book is a real, verified object worth
-public testing, and it is not yet the comprehensive constitution the new mandate
-requires.
+| Choice | Benefit | Cost / condition |
+| --- | --- | --- |
+| **P1. Permit immutable expansion snapshots.** | Restores public red-team value while the larger redesign is being built. | Each snapshot needs its own full gate and permanent URL. It is a design preview, not final spine-order serialization. Under E1, begin these after the First Edition capstone so two moving public narratives do not compete. |
+| **P2. Keep expansion private until its final release candidate.** | Simplifies the reader-facing story and avoids provisional-order confusion. | Gives up review during the longest and riskiest design phase. |
 
-Before v1 freezes, resolve its final-page Book 2 pointer under the deferred-work
-contract. If it is already frozen when publication order changes, add a dated
-status note rather than silently rewriting the source.
+**Ruling: P1.** Publish milestone snapshots, not a mutable living page. An
+individual preview chapter may be linked only as part of a tagged coherent
+snapshot whose provisional order and supersession status are explicit. Because
+E2 creates no baseline capstone, previews may begin when their own gate passes.
 
-## 5. Fresh-pass rule for v2
+## 6. Ratified choice 3 — print boundary
 
-No expansion rule family may inherit v1 publication clearance. Before an affected
-v2 chapter is serialized, the change needs its own constitution/spine/pin and
-counterfactual validation, narrowness-impact disposition, prose revision, and
-whole-chapter reader pass. The resulting v2 serialization order comes from its
-regenerated spine, not the v1 order.
+| Choice | Benefit | Cost / condition |
+| --- | --- | --- |
+| **D1. Print the narrow baseline if it receives a First Edition.** | Gives the verified baseline a durable, accessible physical form and fulfils the original reach ruling sooner. | Physical copies will outlive their scope warning and may be mistaken for the comprehensive redesign. This option has no object under E2. |
+| **D2. Make the completed expansion the first POD edition.** | Reserves the most durable format for the mandate the author now intends Book 1 to fulfil. | Delays the print-on-demand companion and forgoes physical reach for the baseline. |
 
-The existing v1 edition remains useful evidence even where v2 later retires a
-claim. A revision must name the difference; it may not make the older source
-disappear.
+**Ruling: D2.** The current-T0 baseline receives no print edition. The completed
+expansion is the first physical Book 1 as well as its First Edition.
 
-## 6. Ratification choices
+## 7. Gate before any public expansion snapshot
 
-- [ ] **A. Release immutable v1; develop v2 separately (recommended).** Decide
-  whether v2 previews are permitted after their fresh-pass rule is met.
-- [ ] **B. Hold public release for v2.** State what event ends the hold and how
-  red-team review is otherwise obtained.
-- [ ] **C. Begin versioned public v2 previews now.** Supply the non-negotiable
-  publication contract before the first post; v1 remains separately accessible.
+P1 does not authorise publishing current HEAD or an incoherent intermediate
+state. Before the first expansion-preview tag:
 
-When the author chooses, record the qualifying ruling in `CLAUDE.md`; `TODO.md`
-owns the open decision until then.
+1. **Align current time claims.** The Chapter 13 ordinary-language distinction
+   has landed. Remove or narrow the remaining permanent-refusal claims in
+   Chapters 4 and 13 that conflict with T3 as a future target; cross-read
+   Chapter 5’s manual epoch-carry account; introduce no temporal guarantee into
+   the current T0 constitution.
+2. **Audit standing claims in all public entry points.** The root README says no
+   registration is required, and the opening note says rights attach from the
+   day a person exists, while universal unregistered service remains expansion
+   work. Correct or explicitly qualify every such claim. First-person changes
+   in the opening note remain author-supplied.
+3. **Remove the order promise.** The author supplies an order-neutral,
+   scope-only replacement for the final-page “next book” wording, preserving
+   Book 1’s single Book 2 pointer and the voice boundary.
+4. **Define the artifact.** Create a machine-readable ordered-input manifest and
+   a reproducible build for versioned Markdown/HTML/PDF/EPUB outputs as actually
+   offered. A repository archive is not the book: it also contains legacy
+   manuscripts, reviews, plans, and verification files.
+5. **Lock verification.** Pin or otherwise reproduce the exact nibli source,
+   run the full suite from clean book and engine trees, retain the result, and
+   prove the public “run it yourself” path works from documented inputs.
+6. **Close the candidate's remaining design gates.** Rule the pending
+   `lose`/`decide` closure hardening before the first snapshot, or expressly
+   identify it as unresolved in that snapshot's scope. A preview cannot imply
+   that a planned current-kernel change has already landed.
+
+## 8. Ratified release sequence under E2 + P1 + D2
+
+1. Keep the current-T0 baseline in public source and history without an edition
+   tag, canonical serialization, assembled release, or print file.
+2. Build the expansion one bounded rule family at a time under the mandate,
+   taxonomy, T3 gate, coverage contracts, and narrowness-impact gate.
+3. When a coherent milestone passes Section 7 and the fresh gate below, publish
+   it as an immutable First-Edition preview such as
+   `book-1-v1.0.0-preview.1`. A later preview receives a new tag and URL; it
+   never replaces the prior snapshot.
+4. After the expanded constitution and spine are frozen, create a tagged First-
+   Edition release candidate. Serialize its chapters in computed order, with
+   every whole-chapter pass rerun against that exact candidate.
+5. Close review on an explicit published event, resolve every release-blocking
+   finding, rerun the exact release gate, and tag `book-1-v1.0.0`.
+6. Publish the assembled digital capstone and its matching POD files. Both
+   identify the same final source and release manifest.
+7. After final release, typography or metadata-only corrections use patch
+   versions; a correction that changes a public claim uses a visibly named
+   corrected edition. Any later constitutional/spine redesign is a new major
+   edition.
+
+## 9. Fresh gate for every expansion snapshot
+
+No expansion rule family inherits baseline publication clearance. Before a
+snapshot is public, it needs completed coverage and taxonomy contracts,
+constitution/spine/pin and counterfactual validation, full-suite verification,
+and the coverage map’s narrowness-impact disposition.
+
+“Affected” includes indirectly falsified claims, changed spine positions, Part
+V verdicts, method-part refusal or uniqueness claims, registry entries, and
+counted-claim guards—not only chapters whose own derivation changed. A preview
+pass never substitutes for validation against the final expanded source.
+
+## 10. Ratification record
+
+The author selected one option on each axis on 2026-08-04:
+
+- [ ] **E1 — distinct narrow First Edition.**
+- [x] **E2 — no promoted edition until expansion is complete.**
+- [x] **P1 — immutable expansion snapshots.**
+- [ ] **P2 — no public expansion snapshots before the final candidate.**
+- [ ] **D1 — POD for the narrow First Edition.**
+- [x] **D2 — first POD is the expanded edition.**
+
+Ratified composite ruling: **E2 + P1 + D2**.
+
+This ruling closes the Phase 1 author gate. It does not itself create a tag,
+release, site, preview, or print file; those remain ordered Reach implementation
+work in `TODO.md`.

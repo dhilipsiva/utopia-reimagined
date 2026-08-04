@@ -121,19 +121,25 @@ a safeguard against indefinitely unreviewed power.
    An adulthood rule, if retained, needs an accessible correction route and may
    never gate anything beyond the expressly ratified civic function.
 
-## 6. Current-v1 prose coherence — not gated by the time ruling
+## 6. Current-baseline prose coherence — not gated by the time ruling
 
 These are corrections to the current T0 description, not temporal
-formalisation. They apply whichever model the author later chooses and must
-land before v1 freezes.
+formalisation. They remain necessary despite T3's selection as the future
+target and must land before any public expansion snapshot containing the
+affected chapters or the First-Edition release candidate.
 
-1. Repair Chapter 13's ambiguous claim that temporal words “exist”: distinguish
-   ordinary language from admitted constitutional facts and from a clock.
-2. Cross-read Chapters 4, 5, and 13 against one current account: flat snapshots
-   have no internal order; epoch carry is an external/manual cross-snapshot
-   convention; the constitution has no duration arithmetic or automatic expiry.
-3. Verify their prose and existing pins/counted-claim gates without introducing
-   a temporal predicate, deadline, cadence, or new Book 1 guarantee.
+1. [x] **Chapter 13's ambiguous “words exist” claim is repaired:** ordinary
+   language is now distinguished from admitted constitutional facts and from a
+   clock.
+2. [ ] **Complete the cross-chapter coherence pass.** Chapters 4, 5, and 13 must
+   use one current account: flat snapshots have no internal order; epoch carry
+   is an external/manual cross-snapshot convention; the current constitution
+   has no duration arithmetic or automatic expiry; and T3 is a ratified future
+   target. In particular, retire the remaining permanent-refusal wording in
+   Chapters 4 and 13 without implying that T3 already exists.
+3. [ ] **Verify the corrected prose and existing pins/counted-claim gates**
+   without introducing a temporal predicate, deadline, cadence, or new current
+   Book 1 guarantee.
 
 ## 7. Formal implementation and verification gate
 
