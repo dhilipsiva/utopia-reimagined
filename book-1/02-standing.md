@@ -143,9 +143,11 @@ from three separate places in the design, and no rule anywhere converts one into
 another.
 
 The design later acquired something that puts the separation to its cleanest test,
-and it is worth running the three questions again against it. Vex can be forgiven. When the appeals body writes its forgiveness
-beside its own judgment — two entries, by name, from the body whose business relief
-is — the conclusion that Vex's word counts for nothing stops deriving. Ask the three
+and it is worth running the three questions again against it. Vex can be forgiven.
+Formally, `forgive(Appeals, Vex)` stands beside the generic
+`judge(Appeals, Vex)`. Those facts name Appeals but authenticate no writer and link
+no case or purpose. When the pair stands together, the conclusion that Vex's word
+counts for nothing stops deriving. Ask the three
 questions again. Answerable? Unchanged, permanent, as always. Believable? Yes,
 restored, from the moment the two entries stand together. Able to act? Still no. The
 pen is withheld by rules that read the mark itself, not the conclusion the mark once

@@ -168,9 +168,10 @@ different roads, and the second one has no pavement.
 
 There is a second credential — though the word is stretching here, and the stretch is
 worth naming before it misleads. The examiner's pen is a standing power, held by a
-person over whatever cases come to them. What follows belongs to one convicted
-person, for one case, and nobody holds it over anyone. With that said, it does the
-opposite work.
+person over whatever cases come to them. The story that follows belongs to one
+convicted person and one case. The formal relation is thinner: it names a body and
+a person, but no case, purpose, decision or writer. That gap matters before the
+mechanism is called a safeguard. With that said, it does the opposite work.
 
 Nia was accused. A court judged Nia. On the account so far, Nia should be a prisoner —
 the injury, the judgment, the machinery. Nia is not a prisoner, because Nia was
@@ -180,9 +181,10 @@ from holding.
 It is worth seeing that this is the same shape as the first credential, pointed the
 other way. Relief is not something a sympathetic official confers. Someone records
 that Nia is in the clear — that is one of the things the world may say — and the
-relief follows by rule from that entry standing beside the appeals body's own
-recorded judgment of the case. The route runs through the record, in public, where it
-can be disputed, rather than through a decision someone makes and nobody sees.
+relief follows by rule from that entry standing beside `judge(Appeals, Nia)`. Nia's
+story says this is the appeals judgment of the case. The formal record cannot say
+that: an older judgment about Nia has the same shape. What is public and disputable
+is the pair of entries, not their purpose-bound link.
 
 Who may record it is worth pausing on, and the answer used to be nobody in
 particular. The entry that clears you has no precondition and names no author —
@@ -190,23 +192,27 @@ another of the findings chapter 1 conceded — and for a while it worked alone: 
 entry, from any hand that could reach the record, emptied a conviction, against the
 two seated signers and every guard it takes to void a credibility. The instrument for
 giving back was far easier to forge than the instrument for taking away. That
-asymmetry is now narrower, and the narrowing has the design's usual shape: the relief
-derives only when the clearing entry stands beside an examination the appeals body
-performed and recorded. The entry that says you are in the clear still names nobody.
-The judgment it must accompany names the body that made it.
+asymmetry is now narrower, but only in a mechanical sense: relief derives only when
+the clearing entry stands beside `judge(Appeals, Nia)`. The clearing entry still
+names no author. The judgment names a body and person, not a case, purpose, act or
+writer. An existing generic judgment can therefore be reused; if it is already
+present, one later `clear` entry is again the marginal write that opens relief. The
+guard raises the fact count in some snapshots. It does not prove independent
+authorship or that Appeals decided this case for this purpose.
 
 And something about this door has to be said in the open, because the chapter on the
 shield will say the opposite about its own. What happens while nothing has been
-decided — a case the appeals body has examined and not cleared, or never examined at
-all? The conviction stands. The doors of this design run opposite defaults on an
+recorded as relief — whether a case was examined or ignored? The conviction stands.
+The doors of this design run opposite defaults on an
 absent finding, and that is a choice, not an oversight. The shield holds until
 somebody finds deceit, because the absent finding there is an accusation, and nobody
-here is treated as a liar on no one's finding. Relief is not an accusation. It is a
-remedy — something a body does — and a remedy that arrived by default, granted
+here is treated as a liar on no one's finding. Relief is not an accusation. It is
+meant to record a remedy — something a body does, though these entries do not prove
+that it did — and a remedy that arrived by default, granted
 wherever nobody had yet said otherwise, would not be a remedy at all. It would be the
 record convicting nobody, ever, on the authority of whoever declines to write. The
-cost runs the other way and it is real: a person whose case nobody takes up stays
-held, for exactly as long as nobody takes it up. The shield chapter prices the mirror
+cost runs the other way and it is real: a person whose case nobody takes up — or
+whose completed relief never reaches the record — stays held. The shield chapter prices the mirror
 of that cost — a guilty man free while an exposure waits for review — and calls its
 window deliberate. This is the other pan of the same scale, and it is weighed the
 same way: the benefit of an absence goes to what the machinery has already concluded,

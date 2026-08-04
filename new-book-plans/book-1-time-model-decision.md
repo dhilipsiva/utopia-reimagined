@@ -156,6 +156,13 @@ Do not alter `constitution.nibli` until all of these are present:
    unexplained cross-snapshot disappearance, replay, or a frozen transition
    rather than merely producing a harmless-looking green result. It cannot claim
    to detect a fact deleted within or before an attested snapshot.
+   **Partial evidence, 2026-08-04:**
+   [`record-integrity-red-team.md`](record-integrity-red-team.md) executes
+   constructed honest-carry, omitted-carry, unmatched-carry, forgiveness-companion rollback,
+   silent-mark-deletion, and lawful-unrelated-change pairs. This is deliberately
+   not completion of this gate: snapshot identity, predecessor attestation,
+   replay, divergence, frozen-transition invocation, reconciliation, recovery,
+   and liveness remain unimplemented.
 4. **Staged formal work:** implement and test T1 first, then T2 wherever an
    effect depends on before/after, then T3. Do not bypass this with `year`,
    `earlier`, a numeral, a tense wrapper, or a raw `temporary` assertion.

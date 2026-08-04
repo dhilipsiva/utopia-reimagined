@@ -27,7 +27,7 @@ silently satisfy a control that the design claims to provide.
 These are load-bearing limitations, not implementation notes:
 
 - **In Snapshot Absence:** Within one supplied snapshot, an in-snapshot rule cannot distinguish an entry deleted before or within that snapshot from an entry withheld or never written. Absence exposes no history.
-- **T1 Boundary:** A future T1 comparison can expose an attested fact that disappears between independently attested snapshots. It cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition, or make a successor snapshot arrive.
+- **T1 Boundary:** The bounded red-team now compares constructed snapshot files and exposes selected carry, omission, and rollback consequences, but those pairs have no independently attested identity, predecessor, manifest, authorship, reconciliation, replay protection, or divergence rule. A future T1 comparison can expose an attested fact that disappears between independently attested snapshots; it still cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition, or make a successor snapshot arrive.
 - **Monotone Derivation:** Monotone derivation is not append-only storage. Current rules accumulate conclusions from supplied premises, while an external fact store or rule source can still be rewritten, withheld, or deleted.
 - **Independence:** Two named bodies, two entries, two signatures, or two replicas do not by themselves prove independent witnessing. Independence requires separate control, incentives, credentials, and failure domains, plus a conflict and collusion posture.
 - **Authenticity:** Authentication can attribute an entry to a credential. It does not prove that the underlying event occurred, that the source was complete, that the basis was sufficient, or that the credential holder acted lawfully.
@@ -254,6 +254,7 @@ None.
 | --- | --- | --- | --- |
 | decision | `exposes_gap` | `RI-7` | `new-book-plans/book-1-time-model-decision.md::current one-file pins cannot prove` |
 | decision | `sets_boundary` | `RI-7` | `new-book-plans/book-1-time-model-decision.md::T1 is necessary to make cross-epoch claims less trusting.` |
+| generated | `exposes_gap` | `RI-7` | `new-book-plans/record-integrity-red-team.md::## Cross-snapshot transition matrix — T1 precursor only` |
 
 **Acceptance evidence still required**
 
@@ -268,12 +269,12 @@ None.
 **Argument.** There is no safe relation-wide default: the same premise can support a claimant on one route and public power on another, and an absent accusation is not the same as an unperformed remedy. Recovery may reconstruct only from independently held evidence, must mark uncertainty, distinguish hostile loss from authorised disposition, and never manufacture a missing fact or resurrect lawfully disposed personal content merely to make the record complete.
 
 - **Posture:** `book1_target_unimplemented`
-- **Current failure:** Current consequences can reverse after a forged, withheld, or deleted premise, while pins cover only selected source-copy deletions and do not detect a runtime event. Recovery, interim continuity, and systematic reconsideration do not exist.
+- **Current failure:** The bounded red-team executes selected release, adulthood, roster, carry, relief, and forgiveness harms, but it neither detects nor attributes a runtime event and it supplies no recovery, interim continuity, systematic reconsideration, or remedy. Other premise routes remain reviewed-only.
 - **Target contract:** For every premise route, classify assertion and withholding or deletion harm, beneficiary and power polarity, disputed-state default, interim continuity, reconstruction sources and authorised-disposition boundary, uncertainty mark, affected conclusions, reconsideration, appeal, and remedy for harm already caused; never infer that an unperformed relief occurred.
 - **Residual assumption:** Some lost facts cannot be reconstructed; in that case the constitutional default can contain harm but cannot recreate historical truth.
 - **Temporal status:** T0 can state a failure default; disappearance and recovery across snapshots require T1, order-sensitive reconsideration requires T2, and delay limits require T3.
 - **Book 2 handoff:** Maintain independent recovery sources, backups, incident records, service continuity, claimant support, and operational procedures for reviewing and remedying decisions after integrity failure.
-- **Owner:** `TODO.md::Red-team release, adulthood, and carry without creating new withholding gates`
+- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -281,6 +282,7 @@ None.
 | --- | --- | --- | --- |
 | formal | `exposes_gap` | `RI-8` | `new-book-plans/constitution.nibli::In-snapshot logic cannot see a removal; only the` |
 | counterfactual | `exposes_gap` | `RI-8` | `new-book-plans/counterfactual/README.md::The deletion axis of the fact-write trust base.` |
+| generated | `exposes_gap` | `RI-8` | `new-book-plans/record-integrity-red-team.md::## Route postures` |
 
 **Acceptance evidence still required**
 
@@ -407,7 +409,7 @@ None.
 - **Residual assumption:** No internal completeness declaration proves that an external writer disclosed every in-scope event or that a first snapshot was complete.
 - **Temporal status:** A route-specific T0 default can be stated, but cross-snapshot completeness and disappearance require T1, order-sensitive absence requires T2, and expiry or delay requires T3 plus external liveness evidence.
 - **Book 2 handoff:** Operate independently controlled scope and completeness attestations, preserve external evidence of missing or disposed entries, and report uncertainty without converting operational absence into a constitutional fact.
-- **Owner:** `TODO.md::Red-team release, adulthood, and carry without creating new withholding gates`
+- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -415,6 +417,7 @@ None.
 | --- | --- | --- | --- |
 | formal | `sets_boundary` | `RI-13` | `new-book-plans/constitution.nibli::unadjudicated accusation and an unperformed remedy are different absences,` |
 | generated | `exposes_gap` | `RI-13` | ``new-book-plans/assertion-surface-audit.md::withhold a true `married(Gia, Hex)` entry.`` |
+| generated | `exposes_gap` | `RI-13` | `new-book-plans/record-integrity-red-team.md::## T0 indistinguishability boundary` |
 
 **Acceptance evidence still required**
 
@@ -661,7 +664,7 @@ even if their own numbered chapter derivations do not change.
 | `book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds` | Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission. | preserved | The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics. | Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect. |
 | `book-1/12-changing-the-rules.md::integrity of the record those rules are written in.` | Entrenchment rests on the integrity of its own rule and fact record. | preserved | The case treats the constitutional source as a record but does not harden amendment semantics. | Revise with the later semantic-amendment and source-transition rule family and its counterfactuals. |
 | `book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**` | The current audit chain ends at an unread `obliged` duty. | preserved | The case specifies the future reader/action contract and deliberately adds no reader rule. | Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands. |
-| `book-1/method.md::Coverage outside the fixtures is an accident of what` | Current deletion coverage is accidental chapter-pin coverage, not a guarantee. | preserved | The case names source-copy counterfactuals as evidence of harm, not runtime deletion detection. | Revise only to the exact scope of a later differential harness and deployed assurance evidence. |
+| `book-1/method.md::Coverage outside the fixtures is an accident of what` | Current deletion coverage is accidental chapter-pin coverage, not a guarantee. | preserved | The case now cites an intentional named snapshot suite as evidence of selected harms, while general runtime deletion detection and transition assurance remain absent. | Revise only to the exact scope of a later differential harness and deployed assurance evidence. |
 | `book-1/15-the-five-joints.md::record-keeping layer is not prevented, it is exposed` | Capture of the record layer is exposed rather than prevented. | preserved | The case is a target and acceptance gate, not an implemented institutional or operational defence. | Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land. |
 
 ## Acceptance gate
@@ -674,7 +677,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 | --- | --- | --- | --- |
 | `RA-1` | The assertion-surface ledger digest matches, every writable premise has exactly one record-class assignment, each class reaches every mandatory assurance dimension, and every negative consumer is separately inventoried as an effective-premise route. | Generated positive and negative premise checks plus their negative controls; explicit semantic review after any route, premise-contract, or classification change. | `new-book-plans/7-assertion-surface.py::def validate_contract(` |
 | `RA-2` | Every new record-dependent right, limit, institution, or power has a completed record contract and declared complete legally operative basis before its rule family is drafted. | Writer, authority, permitted and prohibited inputs, provenance, visibility/privacy, challenge, correction, retention, deletion, assurance, negative-premise admissibility, independent reader, action and systemic-correction duties, continuity/remedy, and temporal fields. | `TODO.md::Maintain completed constitutional coverage rows before drafting chapters` |
-| `RA-3` | Assertion and withholding or deletion harms are tested separately, including the opposite failure created by every added authorisation, witness, or closed-world gate and the settled difference between an absent accusation and an unperformed remedy. | Executable non-vacuous pins or harness cases with a positive control, declared route-specific risk posture, and authorised-disposition boundary. | `TODO.md::Red-team release, adulthood, and carry without creating new withholding gates` |
+| `RA-3` | Assertion and withholding or deletion harms are tested separately, including the opposite failure created by every added authorisation, witness, or closed-world gate and the settled difference between an absent accusation and an unperformed remedy. | Executable non-vacuous pins or harness cases with a positive control, declared route-specific risk posture, and authorised-disposition boundary. | `new-book-plans/9-record-integrity-red-team.py::def validate_source(` |
 | `RA-4` | No cross-snapshot, order, expiry, deadline, or liveness claim is promoted before its T1/T2/T3 gate and differential evidence exists. | Two-snapshot harness, ordering tests where applicable, T3 controls, and explicit external liveness evidence. | `TODO.md::Implement the ratified T3 temporal path in stages` |
 | `RA-5` | Every integrity finding has an independent recipient, action duty, continuity, escalation, review, individual remedy, common-cause correction, affected-case re-audit, and recurrence-verification path; a referral alone does not pass and systemic work cannot delay individual relief. | Formal reader/action family, wrong-recipient and non-response controls, systemic-correction and recurrence evidence, and updated audit endpoint claims. | `TODO.md::Specify obligations without making rights reciprocal bargains` |
 | `RA-6` | Every external assumption has a Book 2 evidence owner and a Book 1 failure consequence that protects the person and constrains unsupported power. | Operational assurance plans and reproducible evidence for identity, storage, witnesses, reconciliation, privacy, recovery, availability, clocks, action, released source, dependencies, toolchain provenance, and independent verification. | `book-2/TODO.md::The record-integrity operating layer` |
@@ -684,11 +687,13 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `717f6cf59332f9c98fe8e4723ec8d5075b9deeaed778fb2216391ce6eecd91d4`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `9cd62e45cd8e924941c4bc51962cab42d047e2a0c006d351087bc59b66b6759a`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and
   report freshness. It does not prove real authorship, witness independence,
   storage integrity, clock progress, omission recovery, or deletion recovery.
-- No scenario in this artifact is an executable forged `free`, `mature`, or
-  epoch-carry test. Those adversarial tests remain a separate acceptance gate.
+- The bounded report at `new-book-plans/record-integrity-red-team.md`
+  executes selected release, adulthood, roster, carry, relief, and forgiveness harms.
+  Those reproduced cases expose gaps; they do not establish authorship,
+  recovery, T1 transition assurance, liveness, or operational integrity.

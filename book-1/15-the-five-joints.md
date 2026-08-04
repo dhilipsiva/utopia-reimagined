@@ -355,9 +355,13 @@ Kumari died in September 2017, after her family's card was cancelled for
 want of a database link; her family says she died asking for rice. The cause of
 her death is contested. The chain — cancellation, denial, death — is documented.
 That is what it looks like when the computation of eligibility becomes the
-instrument of denial, and it is the precise shape this design's floor exists to
-make unbuildable: no eligibility sits under the floor at all, and "no record
-found" can gate a perk but never a meal.
+instrument of denial, and it is the shape this design wants to make unbuildable.
+It has not yet done so completely. Once the record recognizes someone as a
+person, no further eligibility sits under the floor. But that first roster entry
+is still an eligibility gate: remove Bela's `person` line and the formal meal
+disappears while Bela's adverse `false` and `lose` conclusions survive. So, in
+this version, "no record found" can still gate a meal. Universal standing and
+record recovery remain unfinished constitutional work.
 
 **Survives, narrowed.** The guards hold where they claim to hold; the record
 stays the one surface, named; and the narrowing is permanent — capture of the

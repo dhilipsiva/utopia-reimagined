@@ -310,7 +310,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No release appeal, correction, or continuity mechanism exists.
 - **Required challenge route:** Immediate challenge, independent review, and continuity that never makes release depend on a withheld official write.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Red-team release, adulthood, and carry without creating new withholding gates`.
+- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `bf0bacd9119366a1f102a7ad1fd3f0c9f606f29f9300f7552d7e75ec2036c580`.
 
 ### `hears`
@@ -406,7 +406,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No challenge, correction, or automatic transition exists.
 - **Required challenge route:** Immediate contest and continuity of political access while the status record is reconciled.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Red-team release, adulthood, and carry without creating new withholding gates`.
+- **Owner:** `TODO.md::Implement the ratified T3 temporal path in stages`.
 - **Reviewed route fingerprint:** `0c872905b2585b4aee023d50cfbc45f6440d6e33d3134304bb319e9f34c3bbc9`.
 
 ### `parent`
@@ -503,7 +503,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** Forgiveness can derive `clean` and neutralise false, but it neither authenticates nor corrects the carry fact.
 - **Required challenge route:** Cross-snapshot contest, independent reconciliation, correction history, and recovery from omitted or forged carry.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Red-team release, adulthood, and carry without creating new withholding gates`.
+- **Owner:** `TODO.md::Implement the ratified T3 temporal path in stages`.
 - **Reviewed route fingerprint:** `96e33d1877c50e1f8bf24859ea5ab769ea9f47273a4adf7b73f2cf4f32c0d494`.
 
 ### `show`
@@ -592,8 +592,9 @@ channels. No exceptional channel exists in the current contract.
 This audit proves inventory completeness and makes reviewed assumptions
 drift-sensitive. Dependency reach is structural; it does not authenticate a
 fact, prove a scenario's real-world truth, or establish that an external
-clock or record advances. The operation sets are reviewed threat models,
-not executable pins. The generated record-integrity assurance case owns the
-control argument and records that current T0 assurance is not established.
-It does not turn these scenarios into executable attacks: the subsequent
-red-team item still owns forged, withheld, deleted, and cross-epoch tests.
+clock or record advances. The operation sets remain a reviewed threat-model
+inventory rather than executable proof. The bounded record-integrity red-team
+executes only its named release, adulthood, roster, carry, and correction
+subset; all other ledger scenarios remain reviewed-only. The generated
+assurance case owns the wider control argument and records that current T0
+assurance is not established.

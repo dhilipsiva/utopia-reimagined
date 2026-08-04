@@ -902,11 +902,12 @@ def render(contract: dict[str, object], inventory: Inventory) -> str:
             "This audit proves inventory completeness and makes reviewed assumptions",
             "drift-sensitive. Dependency reach is structural; it does not authenticate a",
             "fact, prove a scenario's real-world truth, or establish that an external",
-            "clock or record advances. The operation sets are reviewed threat models,",
-            "not executable pins. The generated record-integrity assurance case owns the",
-            "control argument and records that current T0 assurance is not established.",
-            "It does not turn these scenarios into executable attacks: the subsequent",
-            "red-team item still owns forged, withheld, deleted, and cross-epoch tests.",
+            "clock or record advances. The operation sets remain a reviewed threat-model",
+            "inventory rather than executable proof. The bounded record-integrity red-team",
+            "executes only its named release, adulthood, roster, carry, and correction",
+            "subset; all other ledger scenarios remain reviewed-only. The generated",
+            "assurance case owns the wider control argument and records that current T0",
+            "assurance is not established.",
             "",
         ]
     )

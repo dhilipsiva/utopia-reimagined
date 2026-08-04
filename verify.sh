@@ -7,13 +7,15 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run, includes the pin suite (~5–8 min; 431.6 s
-#                       measured 2026-08-04 at 544 pins)
-#   ./verify.sh --quick  everything except the pin suite AND the counterfactuals
-#                       (0.53 s incremental, measured 2026-08-04)
-#                        NOTE --quick cannot see a stale fixture: the counterfactual
-#                        check is step 6, after the pins. Run the FULL suite after any
-#                        constitution edit — that is how a stale fixture shipped once.
+#   ./verify.sh          full run: 544 chapter/floor pins, 23 record snapshots
+#                       with 145 reviewed pins, and source counterfactuals
+#                       (474.46 s measured 2026-08-04)
+#   ./verify.sh --quick  everything except those three executable suites
+#                       (2.02 s incremental, measured 2026-08-04)
+#                        NOTE --quick cannot execute a record snapshot or see a stale
+#                        counterfactual fixture: those are steps 6 and 7. Run the FULL
+#                        suite after any constitution edit — that is how a stale
+#                        fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and every conclusion-only gate
@@ -33,6 +35,7 @@ PIN="${NIBLI_PIN:-$NIBLI_SRC/target/release/nibli-pin}"
 KB=new-book-plans/constitution.nibli
 SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
+RED_TEAM=new-book-plans/9-record-integrity-red-team.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -108,7 +111,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case,\n'
+  printf '        record-integrity assurance case or bounded red-team contract,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -137,7 +140,13 @@ out=$(python3 new-book-plans/8-record-integrity-assurance.py --check 2>&1) \
   && pass "$out" \
   || fail "record-integrity assurance case failed" "$out"
 
-# ── 2b. chapter 1's headline number ──────────────────────────────────────────
+# ── 2b. bounded record snapshots stay reviewed and digest-bound ─────────────
+step "record-integrity red-team contract"
+out=$(python3 "$RED_TEAM" --check 2>&1) \
+  && pass "$out" \
+  || fail "record-integrity red-team contract failed" "$out"
+
+# ── 2c. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and falsifies the nine prose places that name it.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
@@ -379,11 +388,11 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m the pin suite (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor pins, executable record snapshots, and counterfactuals (--quick)\n'
   exit 0
 fi
 
-step "pins (~5–8 min at 544 pins; measured 2026-08-04)"
+step "chapter/floor pins (544 declared pins)"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
 out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)
@@ -417,7 +426,17 @@ ran=$(echo "$out" | sed -n 's/.*PASS — \([0-9]*\) pins.*/\1/p')
 [ "$ran" = "$declared" ] && pass "$ran pins, 0 findings — matches the sum of :expect-pins" \
   || fail "ran $ran pins but the files declare $declared" "a file was added or dropped from the run"
 
-# ── 6. the counterfactuals ───────────────────────────────────────────────────
+# ── 6. bounded record-snapshot red-team ─────────────────────────────────────
+# These ephemeral KBs exercise additions, exact deletions, two-entry matrices,
+# and constructed predecessor/successor pairs. They stay outside the chapter
+# :expect-pins sum. A pass reproduces reviewed T0 harms and boundaries; it does
+# not authenticate a transition, attribute deletion, or establish T1.
+step "record-integrity red-team snapshots"
+out=$(NIBLI_PIN="$PIN" python3 "$RED_TEAM" --check --execute 2>&1) \
+  && pass "$out" \
+  || fail "record-integrity red-team execution failed" "$out"
+
+# ── 7. the source counterfactuals ────────────────────────────────────────────
 # Derivation is monotone and probe facts load on top, so no probe can test a
 # restriction. These are the only way a "remove this line and X breaks" claim in
 # the book is executed rather than argued. Regenerate after any KB edit.

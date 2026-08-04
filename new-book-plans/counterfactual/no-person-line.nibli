@@ -672,17 +672,19 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 # shield is DEFENDED, not repaired. The two absences differ in kind.
 # The shield's absent finding is an ACCUSATION not yet adjudicated:
 # ~deceive holds until Review speaks, because a person is not treated
-# as a liar on nobody's finding. Relief's absent finding is a REMEDY
-# not yet performed: permits(Appeals, ·) derives only from a clearing
-# entry standing beside the appeals body's own recorded judgment, and
-# a remedy present by default is not a remedy — read ~permits as
+# as a liar on nobody's finding. Relief's absent record cannot say
+# whether a remedy was unperformed, withheld, or deleted. T0 nevertheless
+# cannot manufacture relief from absence: permits(Appeals, ·) derives only
+# from a clearing entry beside generic judge(Appeals, ·), and a remedy
+# present by default is not a remedy — read ~permits as
 # fail-open and no conviction ever derives, since relief-not-yet-ruled
 # would protect everyone, forever, and whoever declines to adjudicate
 # holds a veto over every conviction. Both defaults give the benefit
 # of absence to what the guarded machinery already concluded, against
 # the same enemy: the captured or idle adjudicator. The cost is stated
-# rather than hidden — a person whose relief nobody adjudicates stays
-# held, and a withheld or deleted clear/judge(Appeals) pair keeps a
+# rather than hidden — a person whose relief is unperformed or missing
+# from the record stays held, and a withheld or deleted
+# clear/judge(Appeals) pair keeps a
 # person imprisoned; that lever is the deletion class of the residual
 # trust base, disclosed at file level. The alternatives were refused
 # AS COMPOSED: review-standing derived from prisoner and read under
@@ -911,13 +913,15 @@ all $a: choose(Convocation, $a) & ~rotten($a) & ~broken($a) -> permits(Tribunal,
 #
 # [v0.9 2026-08-02 RULED] THE RECORD HAS A WORD FOR A FINISHED VOIDING.
 # Expungement, mark only: forgive(Appeals, $x) — the forgiving body named
-# in the entry itself — standing beside the body's own judgment of the
-# person derives clean($x), and a clean mark stops re-deriving the void.
+# in the entry itself — standing beside generic judge(Appeals, $x) derives
+# clean($x), and a clean mark stops re-deriving the void.
 # Word restored, clawback stops, the earning doors reopen (measured: a
 # forgiven examiner's RECORDED past examinations start paying — reward
-# derives retroactively — which chapter 10 now says out loud). Two writes,
-# not one: the clear-guard shape, adopted for the same reason — an
-# authorless one-write spring against a six-write void. THE PEN STAYS
+# derives retroactively — which chapter 10 now says out loud). The rule has
+# two facts, but judge/2 carries no case, purpose, act, or writer identity:
+# an older generic judgment can be reused, leaving `forgive` as the one
+# marginal write. This is a mechanical conjunct, not independent authority.
+# THE PEN STAYS
 # LOST: the credential rules and the multi-sig's signer checks still read
 # ~rotten directly, and the mark itself remains on the record — forgiven,
 # not erased. Withdrawn power follows the recall precedent: it needs
@@ -931,17 +935,15 @@ all $x: rotten($x) & ~clean($x) -> false($x).
 # closed or open as a whole, so leaving relief assertable left the CREDENTIAL
 # assertable too, and two sock-puppet credentials could void an innocent.
 # Relief now has its own asserted relation and permits derives from it.
-# [v0.9 2026-08-02] judge(Appeals, $x) added: relief derives from an
-# ADJUDICATION, not a bare flag. `clear` is an admitted name with no
-# precondition, so until now one asserted word emptied any conviction —
-# clear(Adam). took prisoner(Adam) FALSE, a one-write spring against the
-# six-write cost of assembling a void. The guard is the design's usual
-# shape: the clearing entry must stand beside the appeals body's own
-# recorded judgment of the case, an examination that names its examiner.
-# Measured before landing, both ways: with the guard the bare flag derives
-# nothing and Nia's relief survives through the judgment below; without it
-# the flag alone springs a convict. Every pin file passes against the
-# guarded copy.
+# [v0.9 2026-08-02] judge(Appeals, $x) added: a bare `clear` flag no longer
+# suffices. That establishes two facts in a snapshot, not an adjudication
+# lineage. judge/2 names a body and person but no case, purpose, act, or
+# writer, so an older generic judgment can be reused and one later `clear`
+# remains the marginal write. Measured before landing, both ways: with the
+# conjunct the bare flag derives nothing and Nia's relief survives through
+# the generic judgment below; without it the flag alone springs a convict.
+# Every pin file passes against the two-fact copy. The record-integrity
+# red-team now pins the neither/either/both matrix and the reuse limit.
 all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).
 # Disclosed epoch-granularity limit: two auditors voiding EACH OTHER in
 # the same snapshot both count as clean this epoch. Mitigation is
@@ -1067,11 +1069,12 @@ permanent(Art_Entrench).
 #                         the shield reads ~deceive, and the finding
 #                         is an ordinary two-place fact that no rule
 #                         requires anyone to adjudicate.
-#   clear(Adam).          the one that got a guard: since v0.9 the
-#                         bare flag derives nothing — relief needs the
-#                         appeals body's own judgment beside it. The
-#                         guard raises the price from one write to
-#                         two; it does not close the lever.
+#   clear(Adam).          the one that got a conjunct: since v0.9 the
+#                         bare flag derives nothing — relief also needs
+#                         generic judge(Appeals, Adam). This raises the
+#                         fact count, not authority or case binding; an
+#                         existing judgment leaves clear as one marginal
+#                         write, so it does not close the lever.
 #
 # DELETION, and it is the worse half: admits governs what may be
 # written and says nothing about what may be removed. Measured
@@ -1197,9 +1200,10 @@ person(Nia).
 injure(Nia, Ivo).
 judge(Court, Nia).
 clear(Nia).
-# [v0.9] The adjudication the relief rule now requires: the appeals body
-# examined Nia's case. Without this line the guard above would strip the
-# cast's one relieved person in the same edit that closed the forgery.
+# [v0.9] The generic Appeals judgment that satisfies Nia's relief rule.
+# The story treats it as an examination of Nia's case; judge/2 cannot encode
+# that purpose-bound link. Without this line the conjunct would strip the
+# cast's one relieved person.
 judge(Appeals, Nia).
 person(Lalo).
 person(Mina).

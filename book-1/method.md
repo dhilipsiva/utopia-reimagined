@@ -387,15 +387,23 @@ shape, then runs pins against the sabotaged world to show the loss actually
 happens. When this book says the multi-sig's dormant guards decide nothing
 today, or that one added credential route would let a carried void count, a
 fixture executed that claim. It is the one place in the method where a
-removal is run rather than argued.
+constitutional source-line removal is run rather than argued.
+
+The record red-team adds a second and narrower class. Its ephemeral copies
+delete named ground entries — adulthood, roster standing, carry and the two
+parts of forgiveness — and execute the T0 consequences. Those tests prove what
+follows from the supplied flat records. They do not show that a live deletion
+occurred, identify who withheld or removed anything, or recover the missing
+entry.
 
 There is a second thing to say about the fixtures, and it is a weakness
 rather than a strength, so it belongs here rather than in a footnote.
-Sabotaged copies exist for a few deletions — a seat, a court's standing —
-and those are covered on purpose, every run. The constitution's margins
-record other deletions that would do comparable damage and have no
-fixture: the evidence behind somebody's placement, the line that makes
-the duty-bearer answerable. Those still turn some chapter's pins red,
+Source counterfactuals exist for a few rule and fact changes — a seat, a
+court's standing — and the record red-team now names a few more ground-entry
+deletions. Those are covered on purpose, every full run. The constitution's
+margins record other deletions that would do comparable damage and have no
+fixture: the evidence behind somebody's placement, the line that makes the
+duty-bearer answerable. Those still turn some chapter's pins red,
 which sounds like a safety net and is not, because they do it only where
 a chapter happened to argue about the deleted fact and pinned it for
 reasons of its own. Coverage outside the fixtures is an accident of what

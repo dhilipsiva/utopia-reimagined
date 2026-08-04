@@ -149,10 +149,12 @@ no word for a finished voiding — nothing said the mark was wrong, or served ou
 forgiven, and the only way back for Vex was an omission, the record-keeper quietly
 declining to copy a line forward. That was this chapter's last open flag, and it is
 closed. The record can say it now: a body forgives, named in the entry itself, and
-the forgiveness stands beside that body's own judgment of the person — the same
-two-entry shape relief uses, adopted for the same reason, because one authorless
-word must never spring what took six guarded entries to conclude. With both in
-place the mark comes clean. The void stops re-deriving. The loss stops. The doors
+the forgiveness stands beside `judge(Appeals, Vex)`. The pair is mechanically
+necessary. It is not yet case-bound or independent: the judgment relation has no
+purpose, case or writer slot, so an older generic Appeals judgment can sit ready
+before a mark exists. Then one later authorless `forgive` word is again enough to
+spring what took six guarded entries to conclude. With both in place the mark comes
+clean. The void stops re-deriving. The loss stops. The doors
 to earning reopen — backwards as well as forwards. The record's memory of work done
 while voided was never erased, only refused, so the moment the mark comes clean the
 examinations recorded through those years start paying: the answers recompute from
@@ -165,12 +167,14 @@ not picture a forgiven auditor waiting to be chosen again; the chapter on the pe
 measures that, and the seat turns out never to have been what the credential door was
 reading. Only the first road was opened here.
 
-So a voided person's way out is no longer somebody else's silence. It is an entry
-someone can point to, made of the same stuff as everything else in this record: an
-act, by a named body, beside its own judgment. What remains true — the honest
-residue — is that nothing obliges anybody to perform it. A person whose forgiveness
-nobody takes up stays voided, exactly as a person whose relief nobody adjudicates
-stays held. The chapter on the pen weighed that default and chose it, and it weighs
+So a voided person's way out is no longer somebody else's silence. It is a pair of
+entries someone can point to. One names Appeals as the forgiving body and the other
+is a generic Appeals judgment; neither authenticates a writer or proves that Appeals
+performed this act for this mark. What remains true — the honest residue — is that
+nothing obliges anybody to perform it. A person whose forgiveness nobody takes up,
+or whose completed forgiveness loses either record fact, stays voided — just as a
+person whose relief is unperformed or missing from the record stays held. The chapter
+on the pen weighed that default and chose it, and it weighs
 the same here: the benefit of an absence goes to what the machinery concluded, never
 to what somebody might yet do.
 

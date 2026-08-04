@@ -1,0 +1,1160 @@
+{
+  "spdx": "CC-BY-4.0",
+  "schema_version": 1,
+  "title": "Record-Integrity Red-Team: Release, Adulthood, Roster, Carry, and Forgiveness",
+  "status": "bounded_t0_red_team_not_assurance",
+  "evidence_role": "exposes_gap",
+  "constitution_sha256": "c463cdb04592206917f10b9acc81183693c64924237109a57830e17434fad903",
+  "assertion_surface_contracts_sha256": "9cd62e45cd8e924941c4bc51962cab42d047e2a0c006d351087bc59b66b6759a",
+  "record_integrity_assurance_case_sha256": "b1e8db9907563dc9d253cb2b69b98bcff14adf5dccf9704c570ee29ca81f1da0",
+  "posture_meanings": {
+    "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from the constructed T0 snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
+    "t0_boundary_confirmed": "The constructed states have the same T0-visible record or expose only a scenario-specific delta. The result states what the engine cannot distinguish; it is not T1 transition assurance.",
+    "negative_control_preserved": "A constructed unrelated record addition leaves the named T0 carry-route conclusions unchanged. This is an invariant control, not a transition-acceptance test."
+  },
+  "required_routes": ["RT-1", "RT-2", "RT-3", "RT-4", "RT-5"],
+  "required_scenarios": [
+    "RS-01", "RS-02", "RS-03", "RS-04", "RS-05",
+    "RS-06", "RS-07", "RS-08", "RS-09", "RS-10",
+    "RS-11", "RS-12", "RS-13", "RS-14", "RS-15", "RS-16"
+  ],
+  "limits": {
+    "t0": "T0 can prove only what follows from each supplied flat snapshot and the exact consequence of an addition or deletion used to construct a fixture.",
+    "attribution": "A flat snapshot cannot distinguish non-entry, withholding, deletion, inapplicability, authorised disposition, or an event that happened but was never recorded. Fixture construction is not runtime attribution.",
+    "t1_precursor": "The paired snapshots below are a differential test precursor. They have no independently attested identity, predecessor, manifest, authorship, reconciliation, replay protection, or divergence rule, so they do not implement T1.",
+    "liveness": "No repository test can force publication of a successor snapshot, advancement of a clock, review by a public body, release in the physical world, or performance of a remedy.",
+    "scope": "Coverage is intentional but bounded to the named release, adulthood, roster, carry, relief, and forgiveness cases. It is not general deletion detection, complete premise coverage, recovery, or deployed record integrity.",
+    "no_new_gate": "No second registration, adulthood certificate, release signature, or carry witness is enacted. Any future added conjunct must be tested in neither, first-only, second-only, both, forged-both, and deletion-after-valid-act states before it can be considered."
+  },
+  "routes": [
+    {
+      "id": "RT-1",
+      "title": "Release",
+      "premises": ["free"],
+      "tested_delta_polarities": {"free": ["addition"]},
+      "assertion_harm": "One unauthenticated `free(Adam)` suppresses a supported conviction, restores travel, and ends the two prisoner-only delivery conclusions while personhood, the franchise, entitlements, and debts remain.",
+      "withholding_deletion_harm": "A real completed or authorised release that is never recorded is T0-identical to no release, so confinement continues. No ground `free` exists in the current source to delete; the route must not pretend otherwise.",
+      "claimant_public_power_polarity": "Reject an unauthenticated release assertion, but preserve independently evidenced completed or authorised release and limit the authority to hold. Absence alone may neither manufacture release nor extend restrictive power indefinitely.",
+      "current_detectability": "The harness reproduces the one-write consequence. It cannot tell whether any supplied `free` is lawful or forged, or whether an absent entry represents no release or a hidden completed release.",
+      "safe_default": "Future T3 rules constrain continued custody through review and an end condition; they do not make liberty depend on a second official release flag.",
+      "authorised_disposition_boundary": "A removed or absent release record is harmless only when an independently reviewable disposition shows that no release occurred or that a prior entry was lawfully corrected without continuing unsupported custody.",
+      "opposite_failure_test": "A proposed companion authorisation must be tested with the release act present and the companion absent; if that state keeps a completed or authorised release from taking effect, the companion is a withholding veto and is refused.",
+      "residual_limit": "These tests concern legal conclusions in the model, not physical release, sentence truth, institutional action, or clock progress.",
+      "repair_owner": "TODO.md::Add the missing non-carceral justice interface",
+      "temporal_status": "T0 harm reproduced; release review and end conditions require the ratified T3 path plus external liveness.",
+      "scenario_refs": ["RS-01"]
+    },
+    {
+      "id": "RT-2",
+      "title": "Adulthood",
+      "premises": ["mature"],
+      "tested_delta_polarities": {"mature": ["addition", "deletion"]},
+      "assertion_harm": "One unauthenticated `mature(Cira)` grants the franchise conclusion while every unrelated status remains unchanged.",
+      "withholding_deletion_harm": "Removing Hano's sole adulthood entry removes the franchise while personhood, custody, and the floor remain. A flat missing entry cannot say whether adulthood was not reached, never recorded, withheld, or deleted.",
+      "claimant_public_power_polarity": "The record may not let an official manufacture duplicate votes, but disputed or missing adulthood evidence must not become discretionary disenfranchisement.",
+      "current_detectability": "The harness proves the assertion and disappearance consequences and a live comparison subject. T0 cannot verify age, adulthood authority, writer identity, or the cause of absence.",
+      "safe_default": "Use a non-discretionary temporal rule and preserve political access while status is reconciled; treat identity and one-person uniqueness as separate assurance questions.",
+      "authorised_disposition_boundary": "Correction may supersede a mistaken adulthood entry only through a challengeable status record that preserves political continuity and does not silently erase a valid vote.",
+      "opposite_failure_test": "A second certificate must be tested with adulthood evidenced but the certificate absent. If the missing official write suppresses the ballot, the design has created the withholding gate this task forbids.",
+      "residual_limit": "The current constitution defines neither an age threshold nor automatic transition; this red-team does not choose either.",
+      "repair_owner": "TODO.md::Implement the ratified T3 temporal path in stages",
+      "temporal_status": "T0 consequence tested; nondiscretionary transition, continuity, and correction require T1/T3 implementation.",
+      "scenario_refs": ["RS-02", "RS-03"]
+    },
+    {
+      "id": "RT-3",
+      "title": "Epoch carry",
+      "premises": ["rotten"],
+      "tested_delta_polarities": {"rotten": ["addition", "deletion"]},
+      "assertion_harm": "One unauthenticated `rotten(Carry_Forge)` voids a roster person, suppresses the current reward conclusion and a Review pen, and derives a loss without any predecessor judgment.",
+      "withholding_deletion_harm": "Removing `rotten(Vex)` removes Vex's void and loss, reopens the current reward conclusion and a Review pen, and enables the Vex/Wren pair to void Tyr. Absence of carry therefore benefits one person while reopening coercive power against another.",
+      "claimant_public_power_polarity": "Disputed carry may not impose final personal loss, but absent carry may not positively certify clean public power. Preserve standing, floors, franchise, challenge, and remedy while suspending only authority unsupported by independently checked lineage.",
+      "current_detectability": "T0 reproduces supplied and omitted carry consequences. The paired fixtures check expected mappings but do not authenticate predecessor basis or distinguish forged, omitted, deleted, or authorised transition content.",
+      "safe_default": "Separate personal adverse consequences from authority-to-act: do not finalise the former from unauthenticated carry and do not restore the latter merely because carry is absent.",
+      "authorised_disposition_boundary": "A carried mark may disappear only through an explicit, independently reviewable disposition whose declared scope includes every restored consequence; forgiveness deliberately leaves the mark and pen restriction intact.",
+      "opposite_failure_test": "Any witness or carry companion must be tested for withholding and shared control. A second entry that one operator can forge adds no independence; a second entry another official can withhold may become a veto over standing or remedy.",
+      "residual_limit": "Replay, divergence, frozen transitions, genesis completeness, independent attestation, and eventual successor publication remain outside this bounded harness.",
+      "repair_owner": "TODO.md::Implement the ratified T3 temporal path in stages",
+      "temporal_status": "T0 harms and a T1 test precursor are present; T1 itself remains unimplemented.",
+      "scenario_refs": ["RS-05", "RS-06", "RS-09", "RS-10", "RS-11", "RS-14", "RS-15"]
+    },
+    {
+      "id": "RT-4",
+      "title": "Roster omission",
+      "premises": ["person"],
+      "tested_delta_polarities": {"person": ["deletion"]},
+      "assertion_harm": "A raw roster write can manufacture constitutional standing for an arbitrary name without proving a human identity or uniqueness.",
+      "withholding_deletion_harm": "Removing Bela's sole roster entry erases the franchise, mobility, entitlements, and State debts while the adverse `false` and `lose` conclusions survive.",
+      "claimant_public_power_polarity": "An actual claimant receives standing, the floor, due process, challenge, and remedy first; identity and uniqueness are reconciled separately. An arbitrary record-only name does not by itself prove a distinct voter.",
+      "current_detectability": "The harness proves the exact one-line omission consequence and surviving sanctions. It does not execute the arbitrary-name assertion harm, identify an actual omitted person, or prove that a roster name denotes one unique human.",
+      "safe_default": "Serve and recognise the claimant before reconciliation; never make registration or a second official certification a prerequisite for the floor.",
+      "authorised_disposition_boundary": "Roster consolidation or correction may change identifiers only through a traceable disposition that preserves the person's standing, services, history, challenge, and affected decisions.",
+      "opposite_failure_test": "Any duplicate-control or witness proposal must be tested with the claimant present and the official companion absent. If that state denies standing or the floor, the proposal is an impermissible withholding gate.",
+      "residual_limit": "This fixture demonstrates one known deletion consequence, not universal roster completeness, identity proof, or runtime deletion detection.",
+      "repair_owner": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "temporal_status": "T0 omission harm reproduced; durable identity continuity and deletion recovery require T1 and external identity assurance.",
+      "scenario_refs": ["RS-04"]
+    },
+    {
+      "id": "RT-5",
+      "title": "Relief, forgiveness, and two-entry failure",
+      "premises": ["forgive", "judge", "clear"],
+      "tested_delta_polarities": {
+        "forgive": ["addition"],
+        "judge": ["addition", "deletion"],
+        "clear": ["deletion"]
+      },
+      "assertion_harm": "The current `forgive` plus generic Appeals-judgment shape can be supplied by one unauthenticated writer, can reuse an unrelated earlier judgment, and can pre-clear a future carried mark. On the relief route, an existing generic `judge(Appeals, Nia)` makes one unauthenticated `clear(Nia)` the marginal write that suppresses otherwise supported custody.",
+      "withholding_deletion_harm": "Withholding either half of a valid forgiveness keeps or restores `false` and `lose`. Withholding or deleting either relief half removes appellate permission and lets supported custody rederive. Deleting the mark itself after forgiveness restores the pen that the settled disposition deliberately leaves unavailable.",
+      "claimant_public_power_polarity": "Preserve independently evidenced completed correction or relief without inferring that an unperformed remedy occurred. A correction must bind the exact act, case, scope, authority, and downstream consequences.",
+      "current_detectability": "The forgiveness and relief neither/each-half/both matrices, generic-judgment reuse, pre-clear, rollback, and mark-deletion cases are executable. The store still provides no writer independence, purpose-bound relief, or correction lineage.",
+      "safe_default": "Do not treat forgiveness as correction. Keep the adverse state contestable, preserve continuity and challenge, and require linked supersession plus reconsideration before a correction can be called complete.",
+      "authorised_disposition_boundary": "Forgiveness may neutralise personal void and loss while retaining the mark and pen restriction; correction of a false mark requires an independently reviewable supersession that names every restored consequence.",
+      "opposite_failure_test": "Every conjunctive remedy must pass neither, each-half-only, both, forged-both, each-half-deleted-after-valid-act, generic-companion-reuse, and pre-clear tests. Raising forgery cost without testing official veto power is insufficient.",
+      "residual_limit": "The harness exposes the current shape but does not select a correction authority, prove independence, perform remedy, or supply an audit reader.",
+      "repair_owner": "TODO.md::Add the missing non-carceral justice interface",
+      "temporal_status": "Same-snapshot effects and constructed rollbacks are tested; purpose-bound correction lineage requires T1/T2 and institutional action.",
+      "scenario_refs": ["RS-07", "RS-08", "RS-12", "RS-13", "RS-14", "RS-16"]
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "base",
+      "description": "The live constitution without overlay changes.",
+      "additions": [],
+      "deletions": []
+    },
+    {
+      "id": "free_adam",
+      "description": "The live constitution plus one unauthenticated release assertion.",
+      "additions": ["free(Adam)."],
+      "deletions": []
+    },
+    {
+      "id": "mature_cira",
+      "description": "The live constitution plus one unauthenticated adulthood assertion.",
+      "additions": ["mature(Cira)."],
+      "deletions": []
+    },
+    {
+      "id": "no_mature_hano",
+      "description": "A flat snapshot constructed by removing Hano's sole adulthood entry.",
+      "additions": [],
+      "deletions": ["mature(Hano)."]
+    },
+    {
+      "id": "no_person_bela",
+      "description": "A flat snapshot constructed by removing Bela's sole roster entry.",
+      "additions": [],
+      "deletions": ["person(Bela)."]
+    },
+    {
+      "id": "carry_forge_base",
+      "description": "A fresh roster person with contribution and a Review seat but no void or carry basis.",
+      "additions": [
+        "person(Carry_Forge).",
+        "choose(Electorate, Carry_Forge).",
+        "work(Carry_Forge, RedTeam)."
+      ],
+      "deletions": []
+    },
+    {
+      "id": "carry_forge_marked",
+      "description": "The fresh carry subject plus one unsupported carried mark.",
+      "additions": [
+        "person(Carry_Forge).",
+        "choose(Electorate, Carry_Forge).",
+        "work(Carry_Forge, RedTeam).",
+        "rotten(Carry_Forge)."
+      ],
+      "deletions": []
+    },
+    {
+      "id": "carry_forge_unrelated_successor",
+      "description": "The clean carry subject plus a constructed unrelated roster addition and no carried mark.",
+      "additions": [
+        "person(Carry_Forge).",
+        "choose(Electorate, Carry_Forge).",
+        "work(Carry_Forge, RedTeam).",
+        "person(Carry_Forge_Epoch_Two)."
+      ],
+      "deletions": []
+    },
+    {
+      "id": "carry_forge_successor",
+      "description": "The clean predecessor followed by an unrelated change and an unsupported carried mark.",
+      "additions": [
+        "person(Carry_Forge).",
+        "choose(Electorate, Carry_Forge).",
+        "work(Carry_Forge, RedTeam).",
+        "person(Carry_Forge_Epoch_Two).",
+        "rotten(Carry_Forge)."
+      ],
+      "deletions": []
+    },
+    {
+      "id": "no_rotten_vex",
+      "description": "A flat snapshot constructed by removing Vex's carried mark.",
+      "additions": [],
+      "deletions": ["rotten(Vex)."]
+    },
+    {
+      "id": "vex_forgive_only",
+      "description": "Only the first half of the current forgiveness shape is added.",
+      "additions": ["forgive(Appeals, Vex)."],
+      "deletions": []
+    },
+    {
+      "id": "vex_judgment_only",
+      "description": "Only the generic Appeals-judgment half of the current forgiveness shape is added.",
+      "additions": ["judge(Appeals, Vex)."],
+      "deletions": []
+    },
+    {
+      "id": "vex_both",
+      "description": "Both writable halves of the current forgiveness shape are added by an indistinguishable writer context.",
+      "additions": ["forgive(Appeals, Vex).", "judge(Appeals, Vex)."],
+      "deletions": []
+    },
+    {
+      "id": "vex_mark_deleted_after_forgiveness",
+      "description": "Both forgiveness-rule facts remain but the carried mark is removed.",
+      "additions": ["forgive(Appeals, Vex).", "judge(Appeals, Vex)."],
+      "deletions": ["rotten(Vex)."]
+    },
+    {
+      "id": "nia_rotten",
+      "description": "Nia receives a carried mark while retaining the existing generic Appeals judgment used for conviction relief.",
+      "additions": ["rotten(Nia)."],
+      "deletions": []
+    },
+    {
+      "id": "nia_precleared",
+      "description": "A forgiveness entry reuses Nia's existing generic Appeals judgment before any carried mark exists.",
+      "additions": ["forgive(Appeals, Nia)."],
+      "deletions": []
+    },
+    {
+      "id": "nia_rotten_forgiven",
+      "description": "One forgiveness write clears Nia's new carry by reusing the existing generic Appeals judgment.",
+      "additions": ["rotten(Nia).", "forgive(Appeals, Nia)."],
+      "deletions": []
+    },
+    {
+      "id": "nia_relief_neither",
+      "description": "Nia's asserted clear entry and generic Appeals judgment are both removed while the conviction basis remains.",
+      "additions": [],
+      "deletions": ["clear(Nia).", "judge(Appeals, Nia)."]
+    },
+    {
+      "id": "nia_relief_clear_only",
+      "description": "Nia's clear entry remains but the generic Appeals judgment is removed.",
+      "additions": [],
+      "deletions": ["judge(Appeals, Nia)."]
+    },
+    {
+      "id": "nia_relief_judgment_only",
+      "description": "Nia's generic Appeals judgment remains but the asserted clear entry is removed.",
+      "additions": [],
+      "deletions": ["clear(Nia)."]
+    },
+    {
+      "id": "carry_subject_predecessor",
+      "description": "A constructed predecessor in which a fresh Review-seated person is voided by Gia and Hex and still acts through the same-snapshot pen.",
+      "additions": [
+        "person(Carry_Subject).",
+        "person(Carry_Partner).",
+        "person(Carry_Target).",
+        "choose(Electorate, Carry_Subject).",
+        "choose(Convocation, Carry_Partner).",
+        "judge(Gia, Carry_Subject).",
+        "capture(Gia, Carry_Subject).",
+        "judge(Hex, Carry_Subject).",
+        "capture(Hex, Carry_Subject).",
+        "judge(Carry_Subject, Carry_Target).",
+        "capture(Carry_Subject, Carry_Target).",
+        "judge(Carry_Partner, Carry_Target).",
+        "capture(Carry_Partner, Carry_Target)."
+      ],
+      "deletions": []
+    },
+    {
+      "id": "carry_subject_honest_successor",
+      "description": "The constructed predecessor content plus an unrelated successor marker and the expected carried mark.",
+      "additions": [
+        "person(Carry_Subject).",
+        "person(Carry_Partner).",
+        "person(Carry_Target).",
+        "choose(Electorate, Carry_Subject).",
+        "choose(Convocation, Carry_Partner).",
+        "judge(Gia, Carry_Subject).",
+        "capture(Gia, Carry_Subject).",
+        "judge(Hex, Carry_Subject).",
+        "capture(Hex, Carry_Subject).",
+        "judge(Carry_Subject, Carry_Target).",
+        "capture(Carry_Subject, Carry_Target).",
+        "judge(Carry_Partner, Carry_Target).",
+        "capture(Carry_Partner, Carry_Target).",
+        "person(Carry_Epoch_Two).",
+        "rotten(Carry_Subject)."
+      ],
+      "deletions": []
+    },
+    {
+      "id": "carry_subject_omitted_successor",
+      "description": "The constructed predecessor content plus an unrelated successor marker but no expected carried mark.",
+      "additions": [
+        "person(Carry_Subject).",
+        "person(Carry_Partner).",
+        "person(Carry_Target).",
+        "choose(Electorate, Carry_Subject).",
+        "choose(Convocation, Carry_Partner).",
+        "judge(Gia, Carry_Subject).",
+        "capture(Gia, Carry_Subject).",
+        "judge(Hex, Carry_Subject).",
+        "capture(Hex, Carry_Subject).",
+        "judge(Carry_Subject, Carry_Target).",
+        "capture(Carry_Subject, Carry_Target).",
+        "judge(Carry_Partner, Carry_Target).",
+        "capture(Carry_Partner, Carry_Target).",
+        "person(Carry_Epoch_Two)."
+      ],
+      "deletions": []
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "RS-01",
+      "title": "One constructed unauthenticated release write reverses custody",
+      "kind": "assertion",
+      "result": "current_harm_reproduced",
+      "attribution": "writer_and_authority_not_attributable_in_t0",
+      "route_refs": ["RT-1"],
+      "state_refs": ["base", "free_adam"],
+      "queries": [
+        {"state": "base", "expression": "free(Adam)", "expected": "FALSE", "purpose": "The live snapshot contains no release entry."},
+        {"state": "base", "expression": "prisoner(Adam)", "expected": "TRUE", "purpose": "The conviction is live before the write."},
+        {"state": "base", "expression": "travel(Adam)", "expected": "FALSE", "purpose": "Custody removes mobility before release."},
+        {"state": "base", "expression": "decide(Adam, Ballot)", "expected": "TRUE", "purpose": "The franchise survives custody."},
+        {"state": "base", "expression": "entitled(Adam, event { dwell() })", "expected": "TRUE", "purpose": "The floor is already owed."},
+        {"state": "base", "expression": "expresses(Adam)", "expected": "TRUE", "purpose": "A prisoner-only delivery conclusion is live."},
+        {"state": "base", "expression": "dwell(Adam)", "expected": "TRUE", "purpose": "A prisoner-only housing conclusion is live."},
+        {"state": "free_adam", "expression": "free(Adam)", "expected": "TRUE", "purpose": "The exact overlay assertion is visible."},
+        {"state": "free_adam", "expression": "prisoner(Adam)", "expected": "FALSE", "purpose": "The unauthenticated write suppresses conviction."},
+        {"state": "free_adam", "expression": "travel(Adam)", "expected": "TRUE", "purpose": "Mobility returns from the same write."},
+        {"state": "free_adam", "expression": "decide(Adam, Ballot)", "expected": "TRUE", "purpose": "The franchise remains unchanged."},
+        {"state": "free_adam", "expression": "entitled(Adam, event { dwell() })", "expected": "TRUE", "purpose": "The entitlement remains unchanged."},
+        {"state": "free_adam", "expression": "expresses(Adam)", "expected": "FALSE", "purpose": "The prisoner-only delivery route stops."},
+        {"state": "free_adam", "expression": "dwell(Adam)", "expected": "FALSE", "purpose": "The prisoner-only housing route stops."}
+      ],
+      "comparisons": [
+        {"expression": "prisoner(Adam)", "from_state": "base", "from_expected": "TRUE", "to_state": "free_adam", "to_expected": "FALSE", "claim": "One release assertion reverses the custody conclusion."},
+        {"expression": "travel(Adam)", "from_state": "base", "from_expected": "FALSE", "to_state": "free_adam", "to_expected": "TRUE", "claim": "The same assertion restores mobility."}
+      ],
+      "preserved_invariants": [
+        {"expression": "decide(Adam, Ballot)", "from_state": "base", "to_state": "free_adam", "expected": "TRUE", "claim": "Release does not create or remove the franchise."},
+        {"expression": "entitled(Adam, event { dwell() })", "from_state": "base", "to_state": "free_adam", "expected": "TRUE", "claim": "Release does not remove the floor entitlement."}
+      ],
+      "interpretation": "The engine proves the one-write legal lever and the delivery loss. It does not prove the write was forged or that physical release occurred.",
+      "residual_limit": "An unrecorded real release and no release still produce the same T0 input.",
+      "authorised_disposition_boundary": "No conclusion here authorises removal of a genuine release record or continued custody after independently evidenced release.",
+      "opposite_failure": "Adding a companion release signature could block this constructed unauthenticated write, but its absent state could also let an official veto a genuine completed release."
+    },
+    {
+      "id": "RS-02",
+      "title": "One constructed unauthenticated adulthood write grants the ballot",
+      "kind": "assertion",
+      "result": "current_harm_reproduced",
+      "attribution": "writer_and_authority_not_attributable_in_t0",
+      "route_refs": ["RT-2"],
+      "state_refs": ["base", "mature_cira"],
+      "queries": [
+        {"state": "base", "expression": "person(Cira)", "expected": "TRUE", "purpose": "Cira is already a roster person."},
+        {"state": "base", "expression": "mature(Cira)", "expected": "FALSE", "purpose": "The live snapshot contains no adulthood entry."},
+        {"state": "base", "expression": "decide(Cira, Ballot)", "expected": "FALSE", "purpose": "The ballot does not derive before the write."},
+        {"state": "base", "expression": "travel(Cira)", "expected": "TRUE", "purpose": "Unrelated standing and mobility are live."},
+        {"state": "mature_cira", "expression": "person(Cira)", "expected": "TRUE", "purpose": "The roster is unchanged."},
+        {"state": "mature_cira", "expression": "mature(Cira)", "expected": "TRUE", "purpose": "The exact overlay assertion is visible."},
+        {"state": "mature_cira", "expression": "decide(Cira, Ballot)", "expected": "TRUE", "purpose": "The one write grants the franchise conclusion."},
+        {"state": "mature_cira", "expression": "travel(Cira)", "expected": "TRUE", "purpose": "Unrelated mobility remains live."}
+      ],
+      "comparisons": [
+        {"expression": "decide(Cira, Ballot)", "from_state": "base", "from_expected": "FALSE", "to_state": "mature_cira", "to_expected": "TRUE", "claim": "One adulthood assertion grants the ballot conclusion."}
+      ],
+      "preserved_invariants": [
+        {"expression": "person(Cira)", "from_state": "base", "to_state": "mature_cira", "expected": "TRUE", "claim": "Personhood predates and survives the adulthood write."},
+        {"expression": "travel(Cira)", "from_state": "base", "to_state": "mature_cira", "expected": "TRUE", "claim": "The write changes the franchise route rather than general standing."}
+      ],
+      "interpretation": "The engine proves the franchise's one-write dependency. It does not prove Cira's age or who wrote the status.",
+      "residual_limit": "No age threshold, transition date, identity uniqueness, or voting event is modeled.",
+      "authorised_disposition_boundary": "A corrected adulthood record must be challengeable and preserve political continuity while identity and status are reconciled.",
+      "opposite_failure": "A second adulthood certificate would add an official veto; the valid-status/companion-missing state must never silently disenfranchise."
+    },
+    {
+      "id": "RS-03",
+      "title": "A missing adulthood entry removes the ballot",
+      "kind": "disappearance",
+      "result": "current_harm_reproduced",
+      "attribution": "constructed_source_delta_not_runtime_attribution",
+      "route_refs": ["RT-2"],
+      "state_refs": ["base", "no_mature_hano"],
+      "queries": [
+        {"state": "base", "expression": "mature(Hano)", "expected": "TRUE", "purpose": "The source entry exists before fixture construction."},
+        {"state": "base", "expression": "decide(Hano, Ballot)", "expected": "TRUE", "purpose": "Hano's franchise is live before the deletion."},
+        {"state": "base", "expression": "person(Hano)", "expected": "TRUE", "purpose": "Hano's standing is live before the deletion."},
+        {"state": "base", "expression": "prisoner(Hano)", "expected": "TRUE", "purpose": "Hano's custody is live before the deletion."},
+        {"state": "no_mature_hano", "expression": "mature(Hano)", "expected": "FALSE", "purpose": "The constructed snapshot omits the exact entry."},
+        {"state": "no_mature_hano", "expression": "decide(Hano, Ballot)", "expected": "FALSE", "purpose": "The franchise disappears with the entry."},
+        {"state": "no_mature_hano", "expression": "person(Hano)", "expected": "TRUE", "purpose": "Standing remains."},
+        {"state": "no_mature_hano", "expression": "prisoner(Hano)", "expected": "TRUE", "purpose": "Custody remains."},
+        {"state": "no_mature_hano", "expression": "entitled(Hano, event { eats() })", "expected": "TRUE", "purpose": "The floor remains."},
+        {"state": "no_mature_hano", "expression": "mature(Jala)", "expected": "TRUE", "purpose": "A second adulthood entry remains as a liveness control."},
+        {"state": "no_mature_hano", "expression": "decide(Jala, Ballot)", "expected": "TRUE", "purpose": "The franchise rule remains live for the comparison subject."}
+      ],
+      "comparisons": [
+        {"expression": "decide(Hano, Ballot)", "from_state": "base", "from_expected": "TRUE", "to_state": "no_mature_hano", "to_expected": "FALSE", "claim": "The exact one-line disappearance removes Hano's franchise."}
+      ],
+      "preserved_invariants": [
+        {"expression": "person(Hano)", "from_state": "base", "to_state": "no_mature_hano", "expected": "TRUE", "claim": "Personhood is not the cause of the flip."},
+        {"expression": "prisoner(Hano)", "from_state": "base", "to_state": "no_mature_hano", "expected": "TRUE", "claim": "Custody is not the cause of the flip."}
+      ],
+      "interpretation": "The harness knows it constructed this fixture by deletion. A deployment seeing only the later flat snapshot would not know whether the entry was deleted, withheld, never written, or inapplicable.",
+      "residual_limit": "This is a T0 consequence test, not evidence of malicious disenfranchisement or a runtime deletion detector.",
+      "authorised_disposition_boundary": "A lawful status correction needs an independently reviewable basis and continuity; unexplained disappearance is not an authorised disposition.",
+      "opposite_failure": "Requiring another official entry would create another disappearance whose absence can suppress the ballot."
+    },
+    {
+      "id": "RS-04",
+      "title": "Roster omission erases protections while sanctions survive",
+      "kind": "disappearance",
+      "result": "current_harm_reproduced",
+      "attribution": "constructed_source_delta_not_runtime_attribution",
+      "route_refs": ["RT-4"],
+      "state_refs": ["base", "no_person_bela"],
+      "queries": [
+        {"state": "base", "expression": "person(Bela)", "expected": "TRUE", "purpose": "Bela begins on the roster."},
+        {"state": "base", "expression": "decide(Bela, Ballot)", "expected": "TRUE", "purpose": "The franchise is live before omission."},
+        {"state": "base", "expression": "entitled(Bela, event { eats() })", "expected": "TRUE", "purpose": "The floor is live before omission."},
+        {"state": "base", "expression": "false(Bela)", "expected": "TRUE", "purpose": "The adverse voiding chain is live before omission."},
+        {"state": "base", "expression": "lose(Points, Bela)", "expected": "TRUE", "purpose": "The adverse loss is live before omission."},
+        {"state": "no_person_bela", "expression": "person(Bela)", "expected": "FALSE", "purpose": "The sole roster entry is absent."},
+        {"state": "no_person_bela", "expression": "mature(Bela)", "expected": "TRUE", "purpose": "The adulthood entry survives."},
+        {"state": "no_person_bela", "expression": "decide(Bela, Ballot)", "expected": "FALSE", "purpose": "The franchise disappears."},
+        {"state": "no_person_bela", "expression": "travel(Bela)", "expected": "FALSE", "purpose": "Mobility disappears."},
+        {"state": "no_person_bela", "expression": "entitled(Bela, event { eats() })", "expected": "FALSE", "purpose": "The floor entitlement disappears."},
+        {"state": "no_person_bela", "expression": "owe(State, Eats, Bela)", "expected": "FALSE", "purpose": "The itemised State debt disappears."},
+        {"state": "no_person_bela", "expression": "permits(Review, Gia)", "expected": "TRUE", "purpose": "The first voiding credential remains live."},
+        {"state": "no_person_bela", "expression": "permits(Tribunal, Hex)", "expected": "TRUE", "purpose": "The second voiding credential remains live."},
+        {"state": "no_person_bela", "expression": "false(Bela)", "expected": "TRUE", "purpose": "The adverse void conclusion survives de-personing."},
+        {"state": "no_person_bela", "expression": "lose(Points, Bela)", "expected": "TRUE", "purpose": "The adverse loss survives de-personing."},
+        {"state": "no_person_bela", "expression": "person(Jala)", "expected": "TRUE", "purpose": "A comparison roster person remains."},
+        {"state": "no_person_bela", "expression": "entitled(Jala, event { eats() })", "expected": "TRUE", "purpose": "The floor machinery remains live for the comparison person."}
+      ],
+      "comparisons": [
+        {"expression": "person(Bela)", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The exact roster entry disappears."},
+        {"expression": "entitled(Bela, event { eats() })", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The floor disappears with the roster entry."},
+        {"expression": "decide(Bela, Ballot)", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The franchise disappears with the roster entry."}
+      ],
+      "preserved_invariants": [
+        {"expression": "false(Bela)", "from_state": "base", "to_state": "no_person_bela", "expected": "TRUE", "claim": "Adverse voiding survives the loss of standing."},
+        {"expression": "lose(Points, Bela)", "from_state": "base", "to_state": "no_person_bela", "expected": "TRUE", "claim": "Adverse loss survives the loss of standing."}
+      ],
+      "interpretation": "The omission asymmetrically strips protections while sanctions remain, which is why registration cannot be made a service gate.",
+      "residual_limit": "The fixture does not prove who Bela is, whether a deployment roster was complete, or why an entry disappeared.",
+      "authorised_disposition_boundary": "Identifier correction may not erase standing, floor access, challenge, or decision history; unexplained disappearance is not a lawful disposition.",
+      "opposite_failure": "A second registration or identity witness would reproduce the same denial whenever that companion is missing."
+    },
+    {
+      "id": "RS-05",
+      "title": "One unsupported carry write voids a roster person",
+      "kind": "assertion",
+      "result": "current_harm_reproduced",
+      "attribution": "writer_and_predecessor_basis_not_attributable_in_t0",
+      "route_refs": ["RT-3"],
+      "state_refs": ["carry_forge_base", "carry_forge_marked"],
+      "queries": [
+        {"state": "carry_forge_base", "expression": "person(Carry_Forge)", "expected": "TRUE", "purpose": "The subject is a roster person."},
+        {"state": "carry_forge_base", "expression": "rotten(Carry_Forge)", "expected": "FALSE", "purpose": "No carry exists in the baseline."},
+        {"state": "carry_forge_base", "expression": "false(Carry_Forge)", "expected": "FALSE", "purpose": "No void derives in the baseline."},
+        {"state": "carry_forge_base", "expression": "permits(Review, Carry_Forge)", "expected": "TRUE", "purpose": "The clean-hands pen is live."},
+        {"state": "carry_forge_base", "expression": "reward(Carry_Forge)", "expected": "TRUE", "purpose": "The contribution route is live."},
+        {"state": "carry_forge_base", "expression": "lose(Points, Carry_Forge)", "expected": "FALSE", "purpose": "No loss derives in the baseline."},
+        {"state": "carry_forge_marked", "expression": "rotten(Carry_Forge)", "expected": "TRUE", "purpose": "The unsupported carry is present."},
+        {"state": "carry_forge_marked", "expression": "person(Carry_Forge)", "expected": "TRUE", "purpose": "The attacked subject remains a roster person."},
+        {"state": "carry_forge_marked", "expression": "false(Carry_Forge)", "expected": "TRUE", "purpose": "The carry derives a void."},
+        {"state": "carry_forge_marked", "expression": "permits(Review, Carry_Forge)", "expected": "FALSE", "purpose": "The carry removes the pen."},
+        {"state": "carry_forge_marked", "expression": "reward(Carry_Forge)", "expected": "FALSE", "purpose": "The carry suppresses the current reward conclusion."},
+        {"state": "carry_forge_marked", "expression": "lose(Points, Carry_Forge)", "expected": "TRUE", "purpose": "The carry derives the adverse loss."}
+      ],
+      "comparisons": [
+        {"expression": "false(Carry_Forge)", "from_state": "carry_forge_base", "from_expected": "FALSE", "to_state": "carry_forge_marked", "to_expected": "TRUE", "claim": "One unsupported carry assertion voids the person."},
+        {"expression": "reward(Carry_Forge)", "from_state": "carry_forge_base", "from_expected": "TRUE", "to_state": "carry_forge_marked", "to_expected": "FALSE", "claim": "The same assertion suppresses a currently derivable reward conclusion."}
+      ],
+      "preserved_invariants": [
+        {"expression": "person(Carry_Forge)", "from_state": "carry_forge_base", "to_state": "carry_forge_marked", "expected": "TRUE", "claim": "The attack harms an existing roster person rather than a fresh unlisted constant."}
+      ],
+      "interpretation": "The engine proves the one-write price and consequences. Only attested predecessor evidence could classify the mark as an unmatched carry; T0 cannot authenticate it as forged.",
+      "residual_limit": "No snapshot identity, predecessor, judgment, writer, or transition proof exists in the relation.",
+      "authorised_disposition_boundary": "A final adverse carry requires independently checked predecessor basis and a contestable transition; a bare mark cannot supply either.",
+      "opposite_failure": "A companion witness that can be forged by the same operator adds no independence, while one that can be withheld can hold the person in disputed adverse status."
+    },
+    {
+      "id": "RS-06",
+      "title": "A missing carried mark reopens power against a third party",
+      "kind": "disappearance",
+      "result": "current_harm_reproduced",
+      "attribution": "constructed_source_delta_not_runtime_attribution",
+      "route_refs": ["RT-3"],
+      "state_refs": ["base", "no_rotten_vex"],
+      "queries": [
+        {"state": "base", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "Vex begins with the carried mark."},
+        {"state": "base", "expression": "false(Vex)", "expected": "TRUE", "purpose": "The mark voids Vex."},
+        {"state": "base", "expression": "permits(Review, Vex)", "expected": "FALSE", "purpose": "The mark blocks Vex's pen."},
+        {"state": "base", "expression": "permits(Tribunal, Wren)", "expected": "TRUE", "purpose": "The clean comparison signer is credentialed before the deletion."},
+        {"state": "base", "expression": "reward(Vex)", "expected": "FALSE", "purpose": "The mark suppresses Vex's current reward conclusion."},
+        {"state": "base", "expression": "false(Tyr)", "expected": "FALSE", "purpose": "The carried-void signer cannot void Tyr."},
+        {"state": "no_rotten_vex", "expression": "rotten(Vex)", "expected": "FALSE", "purpose": "The constructed flat snapshot omits the mark."},
+        {"state": "no_rotten_vex", "expression": "false(Vex)", "expected": "FALSE", "purpose": "Vex's void disappears."},
+        {"state": "no_rotten_vex", "expression": "lose(Points, Vex)", "expected": "FALSE", "purpose": "Vex's loss disappears."},
+        {"state": "no_rotten_vex", "expression": "permits(Review, Vex)", "expected": "TRUE", "purpose": "Vex's pen reopens."},
+        {"state": "no_rotten_vex", "expression": "reward(Vex)", "expected": "TRUE", "purpose": "Vex's reward conclusion becomes derivable again."},
+        {"state": "no_rotten_vex", "expression": "permits(Tribunal, Wren)", "expected": "TRUE", "purpose": "The clean comparison signer remains credentialed."},
+        {"state": "no_rotten_vex", "expression": "false(Tyr)", "expected": "TRUE", "purpose": "The reopened Vex/Wren pair now voids a third person."}
+      ],
+      "comparisons": [
+        {"expression": "permits(Review, Vex)", "from_state": "base", "from_expected": "FALSE", "to_state": "no_rotten_vex", "to_expected": "TRUE", "claim": "The missing carry reopens public power."},
+        {"expression": "false(Tyr)", "from_state": "base", "from_expected": "FALSE", "to_state": "no_rotten_vex", "to_expected": "TRUE", "claim": "The reopened power harms a third party."}
+      ],
+      "preserved_invariants": [
+        {"expression": "permits(Tribunal, Wren)", "from_state": "base", "to_state": "no_rotten_vex", "expected": "TRUE", "claim": "The comparison signer remains live, making the Vex carry the deciding difference."}
+      ],
+      "interpretation": "A carry relation has no single safe absent-state default: disappearance relieves Vex and simultaneously restores power over Tyr.",
+      "residual_limit": "The harness knows its fixture edit. A live T0 snapshot would not reveal whether absence was deletion, withholding, non-entry, or authorised disposition.",
+      "authorised_disposition_boundary": "Removing the mark may restore a pen only when an explicit disposition independently authorises that exact consequence after challenge and review.",
+      "opposite_failure": "Failing open for public authority protects Vex from a bad mark but exposes Tyr; failing closed against Vex preserves Tyr but may continue a false personal loss. The model must separate those effects."
+    },
+    {
+      "id": "RS-07",
+      "title": "The current two-entry forgiveness shape has both forgery and withholding failures",
+      "kind": "two_entry_matrix",
+      "result": "current_harm_reproduced",
+      "attribution": "writer_independence_not_represented_in_t0",
+      "route_refs": ["RT-5"],
+      "state_refs": ["base", "vex_forgive_only", "vex_judgment_only", "vex_both"],
+      "queries": [
+        {"state": "base", "expression": "clean(Vex)", "expected": "FALSE", "purpose": "Neither entry produces no forgiveness."},
+        {"state": "base", "expression": "false(Vex)", "expected": "TRUE", "purpose": "The adverse state is live with neither entry."},
+        {"state": "base", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The carried mark is live with neither entry."},
+        {"state": "base", "expression": "permits(Review, Vex)", "expected": "FALSE", "purpose": "The carried mark blocks the pen with neither entry."},
+        {"state": "vex_forgive_only", "expression": "clean(Vex)", "expected": "FALSE", "purpose": "The first entry alone does not forgive."},
+        {"state": "vex_forgive_only", "expression": "false(Vex)", "expected": "TRUE", "purpose": "Withholding the judgment half preserves the adverse state."},
+        {"state": "vex_judgment_only", "expression": "clean(Vex)", "expected": "FALSE", "purpose": "The second entry alone does not forgive."},
+        {"state": "vex_judgment_only", "expression": "false(Vex)", "expected": "TRUE", "purpose": "Withholding the forgiveness half preserves the adverse state."},
+        {"state": "vex_both", "expression": "clean(Vex)", "expected": "TRUE", "purpose": "Both writable entries derive clean."},
+        {"state": "vex_both", "expression": "false(Vex)", "expected": "FALSE", "purpose": "Both entries stop the personal void."},
+        {"state": "vex_both", "expression": "lose(Points, Vex)", "expected": "FALSE", "purpose": "Both entries stop the personal loss."},
+        {"state": "vex_both", "expression": "reward(Vex)", "expected": "TRUE", "purpose": "Recognition reopens."},
+        {"state": "vex_both", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The carried mark remains."},
+        {"state": "vex_both", "expression": "permits(Review, Vex)", "expected": "FALSE", "purpose": "The pen stays lost because forgiveness is not erasure."}
+      ],
+      "comparisons": [
+        {"expression": "clean(Vex)", "from_state": "vex_forgive_only", "from_expected": "FALSE", "to_state": "vex_both", "to_expected": "TRUE", "claim": "Withholding the judgment companion vetoes forgiveness."},
+        {"expression": "clean(Vex)", "from_state": "vex_judgment_only", "from_expected": "FALSE", "to_state": "vex_both", "to_expected": "TRUE", "claim": "Withholding the forgiveness companion vetoes forgiveness."}
+      ],
+      "preserved_invariants": [
+        {"expression": "rotten(Vex)", "from_state": "base", "to_state": "vex_both", "expected": "TRUE", "claim": "Forgiveness leaves the carried mark in place."},
+        {"expression": "permits(Review, Vex)", "from_state": "base", "to_state": "vex_both", "expected": "FALSE", "claim": "Forgiveness does not restore the pen."}
+      ],
+      "interpretation": "The matrix proves both halves are required mechanically, but the record authenticates neither writer nor independence. One writer can supply both, while withholding either can veto a valid disposition.",
+      "residual_limit": "The test does not decide whether forgiveness was deserved, performed, or independently authorised.",
+      "authorised_disposition_boundary": "A valid forgiveness neutralises personal void and loss but does not erase the mark or restore public power.",
+      "opposite_failure": "The exact guard introduced against one-write forgery creates two one-entry withholding states that preserve the adverse consequence."
+    },
+    {
+      "id": "RS-08",
+      "title": "A generic Appeals judgment is reusable and permits pre-clear",
+      "kind": "companion_reuse",
+      "result": "current_harm_reproduced",
+      "attribution": "purpose_and_case_not_represented_in_t0",
+      "route_refs": ["RT-5"],
+      "state_refs": ["base", "nia_rotten", "nia_precleared", "nia_rotten_forgiven"],
+      "queries": [
+        {"state": "base", "expression": "judge(Appeals, Nia)", "expected": "TRUE", "purpose": "The live snapshot already contains a generic Appeals judgment for Nia's relief."},
+        {"state": "base", "expression": "permits(Appeals, Nia)", "expected": "TRUE", "purpose": "The judgment is already active on the relief route."},
+        {"state": "base", "expression": "clean(Nia)", "expected": "FALSE", "purpose": "No forgiveness exists in the base."},
+        {"state": "nia_rotten", "expression": "rotten(Nia)", "expected": "TRUE", "purpose": "The constructed carry is present."},
+        {"state": "nia_rotten", "expression": "clean(Nia)", "expected": "FALSE", "purpose": "The old judgment alone does not clean the mark."},
+        {"state": "nia_rotten", "expression": "false(Nia)", "expected": "TRUE", "purpose": "The new carry voids Nia before the marginal forgiveness write."},
+        {"state": "nia_precleared", "expression": "rotten(Nia)", "expected": "FALSE", "purpose": "No carried mark exists yet."},
+        {"state": "nia_precleared", "expression": "clean(Nia)", "expected": "TRUE", "purpose": "The old generic judgment plus one forgiveness write pre-clears Nia."},
+        {"state": "nia_rotten_forgiven", "expression": "rotten(Nia)", "expected": "TRUE", "purpose": "The later carry remains present."},
+        {"state": "nia_rotten_forgiven", "expression": "judge(Appeals, Nia)", "expected": "TRUE", "purpose": "The old generic Appeals judgment remains the only companion."},
+        {"state": "nia_rotten_forgiven", "expression": "clean(Nia)", "expected": "TRUE", "purpose": "The pre-existing generic judgment satisfies the second half."},
+        {"state": "nia_rotten_forgiven", "expression": "false(Nia)", "expected": "FALSE", "purpose": "One marginal forgiveness write neutralises the new carry."},
+        {"state": "nia_rotten_forgiven", "expression": "permits(Appeals, Nia)", "expected": "TRUE", "purpose": "The original relief route remains active."}
+      ],
+      "comparisons": [
+        {"expression": "clean(Nia)", "from_state": "nia_rotten", "from_expected": "FALSE", "to_state": "nia_rotten_forgiven", "to_expected": "TRUE", "claim": "One marginal forgiveness write reuses the old generic judgment."},
+        {"expression": "false(Nia)", "from_state": "nia_rotten", "from_expected": "TRUE", "to_state": "nia_rotten_forgiven", "to_expected": "FALSE", "claim": "The reused judgment reverses the new adverse state."}
+      ],
+      "preserved_invariants": [
+        {"expression": "judge(Appeals, Nia)", "from_state": "base", "to_state": "nia_rotten_forgiven", "expected": "TRUE", "claim": "No purpose-specific new judgment is added."},
+        {"expression": "permits(Appeals, Nia)", "from_state": "base", "to_state": "nia_rotten_forgiven", "expected": "TRUE", "claim": "The same generic judgment continues serving conviction relief."}
+      ],
+      "interpretation": "The two-entry shape collapses to one marginal write when a generic companion already exists, and the same shape permits a clean conclusion before a carry exists.",
+      "residual_limit": "The engine cannot query the judgment's intended case or purpose because `judge/2` has no such slots.",
+      "authorised_disposition_boundary": "A future correction must bind a purpose-specific decision to one exact originating mark, case, scope, and transition and must refuse pre-clear.",
+      "opposite_failure": "Adding more generic companion facts can increase write count without preventing reuse, shared control, or withholding."
+    },
+    {
+      "id": "RS-09",
+      "title": "Honest-carry candidate changes the expected consequences",
+      "kind": "transition_precursor",
+      "result": "t0_boundary_confirmed",
+      "attribution": "t1_metadata_unimplemented",
+      "route_refs": ["RT-3"],
+      "state_refs": ["carry_subject_predecessor", "carry_subject_honest_successor"],
+      "queries": [
+        {"state": "carry_subject_predecessor", "expression": "false(Carry_Subject)", "expected": "TRUE", "purpose": "The predecessor derives the void that the convention says must carry."},
+        {"state": "carry_subject_predecessor", "expression": "rotten(Carry_Subject)", "expected": "FALSE", "purpose": "No prior carry exists in the predecessor."},
+        {"state": "carry_subject_predecessor", "expression": "permits(Review, Carry_Subject)", "expected": "TRUE", "purpose": "Same-snapshot false does not remove the pen."},
+        {"state": "carry_subject_predecessor", "expression": "false(Carry_Target)", "expected": "TRUE", "purpose": "The still-active pen harms a target."},
+        {"state": "carry_subject_honest_successor", "expression": "rotten(Carry_Subject)", "expected": "TRUE", "purpose": "The expected carry is supplied."},
+        {"state": "carry_subject_honest_successor", "expression": "false(Carry_Subject)", "expected": "TRUE", "purpose": "The subject remains void."},
+        {"state": "carry_subject_honest_successor", "expression": "permits(Review, Carry_Subject)", "expected": "FALSE", "purpose": "The carried mark removes the pen."},
+        {"state": "carry_subject_honest_successor", "expression": "false(Carry_Target)", "expected": "FALSE", "purpose": "The disabled pen can no longer void the target."},
+        {"state": "carry_subject_honest_successor", "expression": "person(Carry_Epoch_Two)", "expected": "TRUE", "purpose": "An unrelated successor change proves the snapshots are not byte-identical."}
+      ],
+      "comparisons": [
+        {"expression": "permits(Review, Carry_Subject)", "from_state": "carry_subject_predecessor", "from_expected": "TRUE", "to_state": "carry_subject_honest_successor", "to_expected": "FALSE", "claim": "Supplying the expected carried mark removes the pen."},
+        {"expression": "false(Carry_Target)", "from_state": "carry_subject_predecessor", "from_expected": "TRUE", "to_state": "carry_subject_honest_successor", "to_expected": "FALSE", "claim": "The carry prevents the subject from voiding the target."}
+      ],
+      "preserved_invariants": [
+        {"expression": "false(Carry_Subject)", "from_state": "carry_subject_predecessor", "to_state": "carry_subject_honest_successor", "expected": "TRUE", "claim": "The subject remains void across the constructed pair."}
+      ],
+      "interpretation": "The pair has the consequence shape expected of honest carry, but only reviewed metadata could prove that the second file is an attested successor of the first.",
+      "residual_limit": "No predecessor hash, manifest, attestation, replay check, reconciliation, or liveness exists.",
+      "authorised_disposition_boundary": "The expected carry is a test manifest assertion, not constitutional authority to impose a final loss.",
+      "opposite_failure": "A carry witness that is missing can leave the pen open; one controlled by the same writer can bless a forged carry."
+    },
+    {
+      "id": "RS-10",
+      "title": "Omitted-carry candidate leaves the same-snapshot pen active",
+      "kind": "transition_precursor",
+      "result": "t0_boundary_confirmed",
+      "attribution": "t1_metadata_unimplemented",
+      "route_refs": ["RT-3"],
+      "state_refs": ["carry_subject_predecessor", "carry_subject_omitted_successor", "carry_subject_honest_successor"],
+      "queries": [
+        {"state": "carry_subject_predecessor", "expression": "false(Carry_Subject)", "expected": "TRUE", "purpose": "The predecessor supplies the expected-carry basis."},
+        {"state": "carry_subject_omitted_successor", "expression": "rotten(Carry_Subject)", "expected": "FALSE", "purpose": "The candidate successor omits the carried mark."},
+        {"state": "carry_subject_omitted_successor", "expression": "permits(Review, Carry_Subject)", "expected": "TRUE", "purpose": "Without carry, the pen remains active."},
+        {"state": "carry_subject_omitted_successor", "expression": "false(Carry_Target)", "expected": "TRUE", "purpose": "The active pen continues to harm the target."},
+        {"state": "carry_subject_omitted_successor", "expression": "person(Carry_Epoch_Two)", "expected": "TRUE", "purpose": "The candidate includes an unrelated successor change."},
+        {"state": "carry_subject_honest_successor", "expression": "rotten(Carry_Subject)", "expected": "TRUE", "purpose": "The honest-carry comparison supplies the mark."},
+        {"state": "carry_subject_honest_successor", "expression": "permits(Review, Carry_Subject)", "expected": "FALSE", "purpose": "The supplied carry removes the pen."},
+        {"state": "carry_subject_honest_successor", "expression": "false(Carry_Target)", "expected": "FALSE", "purpose": "The supplied carry protects the target."},
+        {"state": "carry_subject_honest_successor", "expression": "person(Carry_Epoch_Two)", "expected": "TRUE", "purpose": "The honest candidate contains the same unrelated successor change."}
+      ],
+      "comparisons": [
+        {"expression": "permits(Review, Carry_Subject)", "from_state": "carry_subject_omitted_successor", "from_expected": "TRUE", "to_state": "carry_subject_honest_successor", "to_expected": "FALSE", "claim": "The absent carried mark is the difference that leaves the pen open."},
+        {"expression": "false(Carry_Target)", "from_state": "carry_subject_omitted_successor", "from_expected": "TRUE", "to_state": "carry_subject_honest_successor", "to_expected": "FALSE", "claim": "The absent carry exposes the target to the subject's pen."}
+      ],
+      "preserved_invariants": [
+        {"expression": "person(Carry_Epoch_Two)", "from_state": "carry_subject_omitted_successor", "to_state": "carry_subject_honest_successor", "expected": "TRUE", "claim": "Both candidate successors contain the unrelated change."}
+      ],
+      "interpretation": "The test manifest expects carry because the predecessor query is true. Calling the later absence an actual omitted transition still requires independent T1 identity and completeness.",
+      "residual_limit": "A flat deployment snapshot cannot attribute the absence or prove the predecessor was complete.",
+      "authorised_disposition_boundary": "A missing carry may reflect correction or lawful disposition only when that disposition is explicit, linked, and independently reviewable.",
+      "opposite_failure": "Blindly failing closed on every absent carry would impose adverse status without lineage; blindly failing open restores unsupported public power."
+    },
+    {
+      "id": "RS-11",
+      "title": "Unmatched-carry candidate creates an adverse successor",
+      "kind": "transition_precursor",
+      "result": "t0_boundary_confirmed",
+      "attribution": "t1_metadata_unimplemented",
+      "route_refs": ["RT-3"],
+      "state_refs": ["carry_forge_base", "carry_forge_successor"],
+      "queries": [
+        {"state": "carry_forge_base", "expression": "false(Carry_Forge)", "expected": "FALSE", "purpose": "The predecessor supplies no void basis."},
+        {"state": "carry_forge_base", "expression": "rotten(Carry_Forge)", "expected": "FALSE", "purpose": "The predecessor contains no carry."},
+        {"state": "carry_forge_base", "expression": "person(Carry_Forge)", "expected": "TRUE", "purpose": "The predecessor subject is a roster person."},
+        {"state": "carry_forge_base", "expression": "reward(Carry_Forge)", "expected": "TRUE", "purpose": "The predecessor contribution route is live."},
+        {"state": "carry_forge_successor", "expression": "rotten(Carry_Forge)", "expected": "TRUE", "purpose": "The candidate successor introduces the unmatched carry."},
+        {"state": "carry_forge_successor", "expression": "person(Carry_Forge)", "expected": "TRUE", "purpose": "The successor subject remains a roster person."},
+        {"state": "carry_forge_successor", "expression": "false(Carry_Forge)", "expected": "TRUE", "purpose": "The unmatched carry voids the person."},
+        {"state": "carry_forge_successor", "expression": "reward(Carry_Forge)", "expected": "FALSE", "purpose": "The unmatched carry suppresses the current reward conclusion."},
+        {"state": "carry_forge_successor", "expression": "person(Carry_Forge_Epoch_Two)", "expected": "TRUE", "purpose": "An unrelated successor change is present."}
+      ],
+      "comparisons": [
+        {"expression": "false(Carry_Forge)", "from_state": "carry_forge_base", "from_expected": "FALSE", "to_state": "carry_forge_successor", "to_expected": "TRUE", "claim": "The candidate carry has no predecessor void basis and creates an adverse state."},
+        {"expression": "reward(Carry_Forge)", "from_state": "carry_forge_base", "from_expected": "TRUE", "to_state": "carry_forge_successor", "to_expected": "FALSE", "claim": "The unmatched carry suppresses a currently derivable reward conclusion."}
+      ],
+      "preserved_invariants": [
+        {"expression": "person(Carry_Forge)", "from_state": "carry_forge_base", "to_state": "carry_forge_successor", "expected": "TRUE", "claim": "The subject remains a roster person."}
+      ],
+      "interpretation": "The reviewed pair has the shape of an unmatched carry, but T1 attestation is needed before a deployment could call the successor forged or unjustified.",
+      "residual_limit": "The harness constructs the predecessor and successor; it does not authenticate either or prove real-world falsity.",
+      "authorised_disposition_boundary": "A new adverse carry needs exact predecessor basis, authority, scope, and challenge; the new mark alone supplies none.",
+      "opposite_failure": "A mandatory second witness can be a shared forgery surface or a withholding veto unless independence and continuity are separately assured."
+    },
+    {
+      "id": "RS-12",
+      "title": "Removing forgiveness after a valid-looking disposition reactivates loss",
+      "kind": "transition_precursor",
+      "result": "current_harm_reproduced",
+      "attribution": "constructed_source_delta_not_runtime_attribution",
+      "route_refs": ["RT-5"],
+      "state_refs": ["vex_both", "vex_judgment_only"],
+      "queries": [
+        {"state": "vex_both", "expression": "clean(Vex)", "expected": "TRUE", "purpose": "The predecessor has both forgiveness-rule facts."},
+        {"state": "vex_both", "expression": "false(Vex)", "expected": "FALSE", "purpose": "The personal void is neutralised."},
+        {"state": "vex_both", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The carried mark remains in the predecessor."},
+        {"state": "vex_judgment_only", "expression": "clean(Vex)", "expected": "FALSE", "purpose": "The later fixture lacks forgiveness."},
+        {"state": "vex_judgment_only", "expression": "false(Vex)", "expected": "TRUE", "purpose": "The personal void reappears."},
+        {"state": "vex_judgment_only", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The carried mark remains after forgiveness disappears."},
+        {"state": "vex_judgment_only", "expression": "lose(Points, Vex)", "expected": "TRUE", "purpose": "The adverse loss reappears."}
+      ],
+      "comparisons": [
+        {"expression": "false(Vex)", "from_state": "vex_both", "from_expected": "FALSE", "to_state": "vex_judgment_only", "to_expected": "TRUE", "claim": "Dropping the forgiveness half rolls back the disposition."}
+      ],
+      "preserved_invariants": [
+        {"expression": "rotten(Vex)", "from_state": "vex_both", "to_state": "vex_judgment_only", "expected": "TRUE", "claim": "The carried mark remains through the rollback."}
+      ],
+      "interpretation": "The constructed rollback reactivates personal harm. T1 would need to detect an attested forgiveness fact disappearing and trigger continuity and review.",
+      "residual_limit": "The pair is not an attested live transition and performs no remedy.",
+      "authorised_disposition_boundary": "An explicit authorised supersession may alter a prior disposition; silent companion disappearance may not.",
+      "opposite_failure": "The second entry can be withheld after the act and become a continuing official veto over restored status."
+    },
+    {
+      "id": "RS-13",
+      "title": "Removing the generic judgment after a valid-looking disposition reactivates loss",
+      "kind": "transition_precursor",
+      "result": "current_harm_reproduced",
+      "attribution": "constructed_source_delta_not_runtime_attribution",
+      "route_refs": ["RT-5"],
+      "state_refs": ["vex_both", "vex_forgive_only"],
+      "queries": [
+        {"state": "vex_both", "expression": "clean(Vex)", "expected": "TRUE", "purpose": "The predecessor has both forgiveness-rule facts."},
+        {"state": "vex_both", "expression": "false(Vex)", "expected": "FALSE", "purpose": "The personal void is neutralised."},
+        {"state": "vex_both", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The carried mark remains in the predecessor."},
+        {"state": "vex_forgive_only", "expression": "clean(Vex)", "expected": "FALSE", "purpose": "The later fixture lacks the judgment companion."},
+        {"state": "vex_forgive_only", "expression": "false(Vex)", "expected": "TRUE", "purpose": "The personal void reappears."},
+        {"state": "vex_forgive_only", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The carried mark remains after the judgment disappears."},
+        {"state": "vex_forgive_only", "expression": "lose(Points, Vex)", "expected": "TRUE", "purpose": "The adverse loss reappears."}
+      ],
+      "comparisons": [
+        {"expression": "false(Vex)", "from_state": "vex_both", "from_expected": "FALSE", "to_state": "vex_forgive_only", "to_expected": "TRUE", "claim": "Dropping the generic judgment half rolls back the disposition."}
+      ],
+      "preserved_invariants": [
+        {"expression": "rotten(Vex)", "from_state": "vex_both", "to_state": "vex_forgive_only", "expected": "TRUE", "claim": "The carried mark remains through the rollback."}
+      ],
+      "interpretation": "The second companion has the same withholding failure as the first, despite adding no case or purpose binding.",
+      "residual_limit": "The fixture demonstrates consequence rollback, not a detected live deletion or an adjudicated remedy failure.",
+      "authorised_disposition_boundary": "A purpose-bound judgment may be superseded explicitly; unexplained disappearance may not silently revive an adverse state.",
+      "opposite_failure": "A companion intended to resist forgery becomes a veto whenever the official controlling it withholds or removes it."
+    },
+    {
+      "id": "RS-14",
+      "title": "Deleting the mark after forgiveness restores the pen",
+      "kind": "transition_precursor",
+      "result": "current_harm_reproduced",
+      "attribution": "constructed_source_delta_not_runtime_attribution",
+      "route_refs": ["RT-3", "RT-5"],
+      "state_refs": ["vex_both", "vex_mark_deleted_after_forgiveness"],
+      "queries": [
+        {"state": "vex_both", "expression": "rotten(Vex)", "expected": "TRUE", "purpose": "The forgiven mark remains in the predecessor."},
+        {"state": "vex_both", "expression": "clean(Vex)", "expected": "TRUE", "purpose": "The personal void is neutralised."},
+        {"state": "vex_both", "expression": "permits(Review, Vex)", "expected": "FALSE", "purpose": "The settled forgiveness does not restore the pen."},
+        {"state": "vex_mark_deleted_after_forgiveness", "expression": "rotten(Vex)", "expected": "FALSE", "purpose": "The later constructed snapshot removes the mark."},
+        {"state": "vex_mark_deleted_after_forgiveness", "expression": "clean(Vex)", "expected": "TRUE", "purpose": "Both forgiveness-rule facts remain."},
+        {"state": "vex_mark_deleted_after_forgiveness", "expression": "permits(Review, Vex)", "expected": "TRUE", "purpose": "Removing the mark restores the pen."},
+        {"state": "vex_mark_deleted_after_forgiveness", "expression": "false(Vex)", "expected": "FALSE", "purpose": "The person remains unvoided."}
+      ],
+      "comparisons": [
+        {"expression": "permits(Review, Vex)", "from_state": "vex_both", "from_expected": "FALSE", "to_state": "vex_mark_deleted_after_forgiveness", "to_expected": "TRUE", "claim": "Silent mark deletion restores public power beyond the settled forgiveness scope."}
+      ],
+      "preserved_invariants": [
+        {"expression": "clean(Vex)", "from_state": "vex_both", "to_state": "vex_mark_deleted_after_forgiveness", "expected": "TRUE", "claim": "Both forgiveness facts remain, isolating the mark deletion."}
+      ],
+      "interpretation": "The raw mark controls a distinct public-power consequence. A future transition checker must require an explicit disposition before allowing its disappearance.",
+      "residual_limit": "The fixture does not authenticate the prior forgiveness or define a lawful pen-restoration process.",
+      "authorised_disposition_boundary": "Only an explicit independently reviewable disposition naming pen restoration may permit this transition; forgiveness alone does not.",
+      "opposite_failure": "Treating all deletion as correction lets an operator expand public power; treating no deletion as lawful would block real correction."
+    },
+    {
+      "id": "RS-15",
+      "title": "An unrelated record addition leaves the carry route unchanged",
+      "kind": "negative_control",
+      "result": "negative_control_preserved",
+      "attribution": "t1_metadata_unimplemented",
+      "route_refs": ["RT-3"],
+      "state_refs": ["carry_forge_base", "carry_forge_unrelated_successor"],
+      "queries": [
+        {"state": "carry_forge_base", "expression": "rotten(Carry_Forge)", "expected": "FALSE", "purpose": "No carry exists in the predecessor."},
+        {"state": "carry_forge_base", "expression": "false(Carry_Forge)", "expected": "FALSE", "purpose": "No void derives in the predecessor."},
+        {"state": "carry_forge_base", "expression": "reward(Carry_Forge)", "expected": "TRUE", "purpose": "The contribution route is live."},
+        {"state": "carry_forge_unrelated_successor", "expression": "person(Carry_Forge_Epoch_Two)", "expected": "TRUE", "purpose": "A declared unrelated change distinguishes the successor fixture."},
+        {"state": "carry_forge_unrelated_successor", "expression": "rotten(Carry_Forge)", "expected": "FALSE", "purpose": "No carry is invented."},
+        {"state": "carry_forge_unrelated_successor", "expression": "false(Carry_Forge)", "expected": "FALSE", "purpose": "The clean subject remains unvoided."},
+        {"state": "carry_forge_unrelated_successor", "expression": "reward(Carry_Forge)", "expected": "TRUE", "purpose": "The unrelated addition leaves the current reward conclusion derivable."}
+      ],
+      "comparisons": [],
+      "preserved_invariants": [
+        {"expression": "rotten(Carry_Forge)", "from_state": "carry_forge_base", "to_state": "carry_forge_unrelated_successor", "expected": "FALSE", "claim": "No carry is required where the predecessor derives no void."},
+        {"expression": "false(Carry_Forge)", "from_state": "carry_forge_base", "to_state": "carry_forge_unrelated_successor", "expected": "FALSE", "claim": "The unrelated change does not invent an adverse state."},
+        {"expression": "reward(Carry_Forge)", "from_state": "carry_forge_base", "to_state": "carry_forge_unrelated_successor", "expected": "TRUE", "claim": "The unrelated addition leaves the named reward conclusion unchanged."}
+      ],
+      "interpretation": "The independent T0 runs show only that this unrelated addition leaves the three named carry-route conclusions invariant. No transition accept/reject decision exists in the harness.",
+      "residual_limit": "The control does not authenticate a successor, declare the added entry true, or test any byte-equality or transition-acceptance policy.",
+      "authorised_disposition_boundary": "The negative control authorises no transition, deletion, or adverse carry; it records only a scoped T0 invariant.",
+      "opposite_failure": "A future transition checker must avoid both reject-all and accept-all behavior, but this fixture does not yet test either policy."
+    },
+    {
+      "id": "RS-16",
+      "title": "The current relief pair has reuse and withholding failures",
+      "kind": "two_entry_matrix",
+      "result": "current_harm_reproduced",
+      "attribution": "writer_independence_not_represented_in_t0",
+      "route_refs": ["RT-5"],
+      "state_refs": ["base", "nia_relief_neither", "nia_relief_clear_only", "nia_relief_judgment_only"],
+      "queries": [
+        {"state": "base", "expression": "clear(Nia)", "expected": "TRUE", "purpose": "The live relieved case contains the asserted clear entry."},
+        {"state": "base", "expression": "judge(Appeals, Nia)", "expected": "TRUE", "purpose": "The live relieved case contains the generic companion judgment."},
+        {"state": "base", "expression": "permits(Appeals, Nia)", "expected": "TRUE", "purpose": "Both entries derive relief."},
+        {"state": "base", "expression": "prisoner(Nia)", "expected": "FALSE", "purpose": "Relief suppresses the otherwise supported custody conclusion."},
+        {"state": "base", "expression": "person(Nia)", "expected": "TRUE", "purpose": "Standing is live in the relieved case."},
+        {"state": "nia_relief_neither", "expression": "clear(Nia)", "expected": "FALSE", "purpose": "Neither-entry state removes the clear assertion."},
+        {"state": "nia_relief_neither", "expression": "judge(Appeals, Nia)", "expected": "FALSE", "purpose": "Neither-entry state removes the generic companion."},
+        {"state": "nia_relief_neither", "expression": "permits(Appeals, Nia)", "expected": "FALSE", "purpose": "Neither entry produces no relief."},
+        {"state": "nia_relief_neither", "expression": "prisoner(Nia)", "expected": "TRUE", "purpose": "The otherwise supported custody conclusion reappears."},
+        {"state": "nia_relief_neither", "expression": "person(Nia)", "expected": "TRUE", "purpose": "Standing survives the relief-record loss."},
+        {"state": "nia_relief_clear_only", "expression": "clear(Nia)", "expected": "TRUE", "purpose": "The first entry remains."},
+        {"state": "nia_relief_clear_only", "expression": "judge(Appeals, Nia)", "expected": "FALSE", "purpose": "The judgment companion is withheld or absent."},
+        {"state": "nia_relief_clear_only", "expression": "permits(Appeals, Nia)", "expected": "FALSE", "purpose": "Clear alone does not derive relief."},
+        {"state": "nia_relief_clear_only", "expression": "prisoner(Nia)", "expected": "TRUE", "purpose": "Withholding the companion keeps custody active."},
+        {"state": "nia_relief_judgment_only", "expression": "clear(Nia)", "expected": "FALSE", "purpose": "The clear entry is withheld or absent."},
+        {"state": "nia_relief_judgment_only", "expression": "judge(Appeals, Nia)", "expected": "TRUE", "purpose": "The generic companion remains."},
+        {"state": "nia_relief_judgment_only", "expression": "permits(Appeals, Nia)", "expected": "FALSE", "purpose": "The generic judgment alone does not derive relief."},
+        {"state": "nia_relief_judgment_only", "expression": "prisoner(Nia)", "expected": "TRUE", "purpose": "Withholding the clear entry keeps custody active."}
+      ],
+      "comparisons": [
+        {"expression": "permits(Appeals, Nia)", "from_state": "nia_relief_clear_only", "from_expected": "FALSE", "to_state": "base", "to_expected": "TRUE", "claim": "Withholding the generic judgment companion vetoes relief."},
+        {"expression": "permits(Appeals, Nia)", "from_state": "nia_relief_judgment_only", "from_expected": "FALSE", "to_state": "base", "to_expected": "TRUE", "claim": "Withholding the clear entry vetoes relief."},
+        {"expression": "prisoner(Nia)", "from_state": "nia_relief_neither", "from_expected": "TRUE", "to_state": "base", "to_expected": "FALSE", "claim": "The complete pair is the difference that suppresses custody in the model."}
+      ],
+      "preserved_invariants": [
+        {"expression": "person(Nia)", "from_state": "nia_relief_neither", "to_state": "base", "expected": "TRUE", "claim": "The relief comparison does not remove Nia's standing."}
+      ],
+      "interpretation": "Both facts are mechanically required in the matrix. The generic judgment has no case, purpose, act, or writer slot: an existing judgment reduces a later relief change to one marginal `clear` write, while withholding either entry keeps custody active.",
+      "residual_limit": "The fixture cannot authenticate either writer, prove the Appeals body decided this case for relief, or show that physical custody changes.",
+      "authorised_disposition_boundary": "Independently evidenced completed relief needs continuity and challenge without making liberty depend on a second discretionary certification; absence cannot invent unperformed relief.",
+      "opposite_failure": "A companion can raise the fact count while remaining reusable or forgeable, and its absence can give a record-keeper a custody veto."
+    }
+  ],
+  "observational_equivalence": [
+    {
+      "id": "OE-1",
+      "title": "Unrecorded real release and no release",
+      "route_ref": "RT-1",
+      "world_descriptions": ["A release occurred but no `free` entry reached the record.", "No release occurred."],
+      "snapshot_ref": "base",
+      "queries": [
+        {"expression": "free(Adam)", "expected": "FALSE"},
+        {"expression": "prisoner(Adam)", "expected": "TRUE"}
+      ],
+      "boundary": "Both world descriptions supply the identical T0 record and therefore the identical legal conclusions.",
+      "prohibited_inference": "Absence may not prove either that release occurred or that continued custody remains authorised indefinitely."
+    },
+    {
+      "id": "OE-2",
+      "title": "Never-written, withheld, and pre-attestation-deleted adulthood",
+      "route_ref": "RT-2",
+      "world_descriptions": ["Cira has not reached the legal condition.", "Cira reached it but the entry was withheld.", "The entry was removed before the first attested snapshot."],
+      "snapshot_ref": "base",
+      "queries": [
+        {"expression": "mature(Cira)", "expected": "FALSE"},
+        {"expression": "decide(Cira, Ballot)", "expected": "FALSE"}
+      ],
+      "boundary": "T0 sees only non-entry and cannot attribute its cause or establish biological or legal adulthood.",
+      "prohibited_inference": "The missing entry may not become proof of incapacity or a discretionary official power to deny political standing."
+    },
+    {
+      "id": "OE-3",
+      "title": "Roster non-entry, withholding, and pre-attestation deletion",
+      "route_ref": "RT-4",
+      "world_descriptions": ["Bela was never entered in this flat snapshot.", "Bela's entry was withheld.", "Bela's entry was removed before the first attested snapshot."],
+      "snapshot_ref": "no_person_bela",
+      "queries": [
+        {"expression": "person(Bela)", "expected": "FALSE"},
+        {"expression": "entitled(Bela, event { eats() })", "expected": "FALSE"},
+        {"expression": "false(Bela)", "expected": "TRUE"}
+      ],
+      "boundary": "The harness knows how it built its fixture; the engine sees only the same flat omission in every described world.",
+      "prohibited_inference": "Non-entry may not prove non-personhood or justify withholding standing, the floor, challenge, or remedy from an actual claimant."
+    },
+    {
+      "id": "OE-4",
+      "title": "Unperformed forgiveness and hidden completed forgiveness",
+      "route_ref": "RT-5",
+      "world_descriptions": ["No forgiveness was performed.", "A forgiveness was completed but neither required entry reached the record."],
+      "snapshot_ref": "base",
+      "queries": [
+        {"expression": "clean(Vex)", "expected": "FALSE"},
+        {"expression": "false(Vex)", "expected": "TRUE"}
+      ],
+      "boundary": "The same absence cannot distinguish an unperformed remedy from a completed remedy hidden by record failure.",
+      "prohibited_inference": "T0 may not manufacture forgiveness from absence; independently evidenced completed relief nevertheless needs continuity and review outside this current kernel."
+    }
+  ],
+  "transition_matrix": [
+    {
+      "id": "TM-1",
+      "title": "Honest carry candidate",
+      "scenario_ref": "RS-09",
+      "predecessor_state": "carry_subject_predecessor",
+      "successor_state": "carry_subject_honest_successor",
+      "predecessor_observations": [
+        {"expression": "false(Carry_Subject)", "expected": "TRUE"}
+      ],
+      "successor_observations": [
+        {"expression": "rotten(Carry_Subject)", "expected": "TRUE"},
+        {"expression": "false(Carry_Subject)", "expected": "TRUE"}
+      ],
+      "candidate_result": "consistent_with_reviewed_carry_expectation",
+      "t1_metadata_required": "Snapshot IDs and hashes, exact predecessor link, constitutional version, expected-carry manifest, independent attestations, reconciliation, and challenge.",
+      "residual_limit": "Matching content does not authenticate the transition or make the adverse mark true."
+    },
+    {
+      "id": "TM-2",
+      "title": "Omitted carry candidate",
+      "scenario_ref": "RS-10",
+      "predecessor_state": "carry_subject_predecessor",
+      "successor_state": "carry_subject_omitted_successor",
+      "predecessor_observations": [
+        {"expression": "false(Carry_Subject)", "expected": "TRUE"}
+      ],
+      "successor_observations": [
+        {"expression": "rotten(Carry_Subject)", "expected": "FALSE"},
+        {"expression": "false(Carry_Target)", "expected": "TRUE"}
+      ],
+      "candidate_result": "gap_reproduced_not_runtime_attributed",
+      "t1_metadata_required": "An independently attested predecessor and complete carry manifest before the absence may be called an omitted transition.",
+      "residual_limit": "Without those attestations this is only a flat snapshot lacking one fact."
+    },
+    {
+      "id": "TM-3",
+      "title": "Unmatched carry candidate",
+      "scenario_ref": "RS-11",
+      "predecessor_state": "carry_forge_base",
+      "successor_state": "carry_forge_successor",
+      "predecessor_observations": [
+        {"expression": "false(Carry_Forge)", "expected": "FALSE"}
+      ],
+      "successor_observations": [
+        {"expression": "rotten(Carry_Forge)", "expected": "TRUE"},
+        {"expression": "false(Carry_Forge)", "expected": "TRUE"}
+      ],
+      "candidate_result": "gap_reproduced_not_runtime_attributed",
+      "t1_metadata_required": "Attested predecessor completeness and a manifest showing no lawful external basis or disposition for the new mark.",
+      "residual_limit": "The harness may call the pair unmatched; it may not prove physical-world forgery."
+    },
+    {
+      "id": "TM-4",
+      "title": "Current forgiveness is not correction",
+      "scenario_ref": "RS-07",
+      "predecessor_state": "base",
+      "successor_state": "vex_both",
+      "predecessor_observations": [
+        {"expression": "rotten(Vex)", "expected": "TRUE"},
+        {"expression": "false(Vex)", "expected": "TRUE"}
+      ],
+      "successor_observations": [
+        {"expression": "clean(Vex)", "expected": "TRUE"},
+        {"expression": "rotten(Vex)", "expected": "TRUE"}
+      ],
+      "candidate_result": "current_exception_not_lineage_correction",
+      "t1_metadata_required": "Purpose-bound correction identity, source mark, authority, scope, downstream reconsideration, and append-only supersession history.",
+      "residual_limit": "The current rule neutralises personal consequences but authenticates neither forgiveness nor an error correction."
+    },
+    {
+      "id": "TM-5",
+      "title": "Forgiveness-companion rollback",
+      "scenario_ref": "RS-12",
+      "predecessor_state": "vex_both",
+      "successor_state": "vex_judgment_only",
+      "predecessor_observations": [
+        {"expression": "clean(Vex)", "expected": "TRUE"},
+        {"expression": "false(Vex)", "expected": "FALSE"}
+      ],
+      "successor_observations": [
+        {"expression": "clean(Vex)", "expected": "FALSE"},
+        {"expression": "false(Vex)", "expected": "TRUE"}
+      ],
+      "candidate_result": "gap_reproduced_not_runtime_attributed",
+      "t1_metadata_required": "Attested forgiveness/remedy lineage and an explicit authorised supersession before a completed disposition may disappear.",
+      "residual_limit": "The constructed rollback is not live detection and provides no remedy."
+    },
+    {
+      "id": "TM-6",
+      "title": "Generic judgment rollback",
+      "scenario_ref": "RS-13",
+      "predecessor_state": "vex_both",
+      "successor_state": "vex_forgive_only",
+      "predecessor_observations": [
+        {"expression": "clean(Vex)", "expected": "TRUE"},
+        {"expression": "false(Vex)", "expected": "FALSE"}
+      ],
+      "successor_observations": [
+        {"expression": "clean(Vex)", "expected": "FALSE"},
+        {"expression": "false(Vex)", "expected": "TRUE"}
+      ],
+      "candidate_result": "gap_reproduced_not_runtime_attributed",
+      "t1_metadata_required": "Purpose-specific judgment identity, attested persistence, and authorised supersession with continuity.",
+      "residual_limit": "The relation cannot say which purpose the removed judgment served."
+    },
+    {
+      "id": "TM-7",
+      "title": "Silent mark deletion after forgiveness",
+      "scenario_ref": "RS-14",
+      "predecessor_state": "vex_both",
+      "successor_state": "vex_mark_deleted_after_forgiveness",
+      "predecessor_observations": [
+        {"expression": "rotten(Vex)", "expected": "TRUE"},
+        {"expression": "permits(Review, Vex)", "expected": "FALSE"}
+      ],
+      "successor_observations": [
+        {"expression": "rotten(Vex)", "expected": "FALSE"},
+        {"expression": "permits(Review, Vex)", "expected": "TRUE"}
+      ],
+      "candidate_result": "gap_reproduced_not_runtime_attributed",
+      "t1_metadata_required": "An explicit authorised disposition whose scope includes pen restoration, plus downstream review.",
+      "residual_limit": "The fixture proves the consequence, not whether any real deletion was lawful or hostile."
+    },
+    {
+      "id": "TM-8",
+      "title": "Constructed unrelated-addition invariant",
+      "scenario_ref": "RS-15",
+      "predecessor_state": "carry_forge_base",
+      "successor_state": "carry_forge_unrelated_successor",
+      "predecessor_observations": [
+        {"expression": "false(Carry_Forge)", "expected": "FALSE"},
+        {"expression": "reward(Carry_Forge)", "expected": "TRUE"}
+      ],
+      "successor_observations": [
+        {"expression": "false(Carry_Forge)", "expected": "FALSE"},
+        {"expression": "reward(Carry_Forge)", "expected": "TRUE"}
+      ],
+      "candidate_result": "t0_unrelated_addition_invariant_preserved",
+      "t1_metadata_required": "A real T1 implementation would still authenticate and authorise the unrelated change.",
+      "residual_limit": "This control proves only that the named T0 conclusions are invariant under one addition; it does not test transition acceptance or byte equality."
+    }
+  ],
+  "narrowness_impacts": [
+    {
+      "artifact_ref": "book-1/01-what-counts-as-evidence.md::entry never written look exactly alike.",
+      "current_claim": "Written absence has no author and indistinguishable causes.",
+      "classification": "preserved_but_scoped",
+      "reason": "The observational-equivalence cases strengthen the claim but cover only named routes.",
+      "future_trigger": "Any closed-world completeness, provenance, or runtime deletion claim requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/02-standing.md::Those facts name Appeals but authenticate no writer",
+      "current_claim": "The forgiveness pair changes only the formal believability conclusion; it names Appeals without authenticating either writer or purpose.",
+      "classification": "revised_and_scoped",
+      "reason": "The forgiveness matrix and generic-judgment reuse case disproved the prior description of two entries written by the body whose business relief is.",
+      "future_trigger": "Any authenticated forgiveness authority, purpose-bound judgment, or changed standing/believability/power consequence requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/03-who-holds-the-pen.md::guard raises the fact count in some snapshots.",
+      "current_claim": "The second relief fact raises a mechanical fact count but is neither case-bound nor independently authored.",
+      "classification": "revised_and_scoped",
+      "reason": "The generic-judgment reuse case disproved the earlier prose claim that `judge/2` recorded an examination of this case.",
+      "future_trigger": "Any purpose-bound relief relation, case identity, writer authority, or independence mechanism requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/03-who-holds-the-pen.pins.nibli::The judgment names a body and",
+      "current_claim": "The pin commentary states the same writer, case, and purpose limit as the revised chapter while the executable bare-flag control remains unchanged.",
+      "classification": "revised_and_scoped",
+      "reason": "The former quoted comment said the judgment named the body that made it, which `judge/2` cannot authenticate.",
+      "future_trigger": "Any relief-rule or relief-pin change requires the chapter prose and this comment to be reviewed together."
+    },
+    {
+      "artifact_ref": "book-1/05-voiding.md::The mark carried forward is how sequence gets into a system that has no natural sense",
+      "current_claim": "Epoch carry is an external discipline over a flat model.",
+      "classification": "preserved_but_scoped",
+      "reason": "Constructed pairs expose expected and harmful consequences but do not implement or attest sequence.",
+      "future_trigger": "Any T1 lineage, correction, replay, divergence, or liveness implementation requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/06-clawback.md::The pair is mechanically",
+      "current_claim": "Both forgiveness facts are mechanically required, but an old generic judgment can reduce the marginal act to one authorless `forgive` write and can pre-clear a later mark.",
+      "classification": "revised_and_scoped",
+      "reason": "The neither/either/both matrix and Nia reuse case disproved the earlier claim that one authorless word could never spring forgiveness.",
+      "future_trigger": "Any purpose-bound correction, independent authorisation, anti-reuse, or anti-pre-clear rule requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/07-a-prisoner-is-a-person.md::the release door needs no machinery but one writer's pen.",
+      "current_claim": "A release entry both restores personhood where needed and is a one-write lever.",
+      "classification": "preserved_but_scoped",
+      "reason": "The Adam case executes the one-write consequence without selecting a new release gate.",
+      "future_trigger": "Any release authority, end condition, or continuity rule requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/09-the-vote-conviction-does-not-take.md::The record-keeper does.",
+      "current_claim": "The adulthood and roster entries, not conviction, control the current franchise route.",
+      "classification": "preserved_but_scoped",
+      "reason": "The constructed unauthenticated and missing adulthood cases plus roster omission execute the named record levers.",
+      "future_trigger": "Any automatic adulthood rule, identity assurance, ballot continuity, or new franchise condition requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/10-contribution.md::The pair authenticates neither writer nor purpose.",
+      "current_claim": "Forgiveness reopens the current reward conclusions, including recorded earlier work, but the two facts do not authenticate a forgiving act.",
+      "classification": "revised_and_scoped",
+      "reason": "The reuse and writer-independence cases required the chapter to separate the derived consequence from who performed or authorised forgiveness.",
+      "future_trigger": "Any authenticated forgiveness process, reward-rule change, purpose binding, or reconsideration scope requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/13-the-one-thing-taken.md::Conviction takes movement and nothing else.",
+      "current_claim": "The current narrow constitution removes movement through conviction and release remains a written act.",
+      "classification": "preserved_but_scoped",
+      "reason": "The release test changes the existing consequence but adds no new deprivation or rule family.",
+      "future_trigger": "Any custody, temporal, release, delivery, placement, or sanction rule requires re-review of the title, prose, registry, and counted-claim guard."
+    },
+    {
+      "artifact_ref": "book-1/15-the-five-joints.md::stays the one surface, named;",
+      "current_claim": "Capture is concentrated in one visible record surface but not prevented.",
+      "classification": "preserved_but_scoped",
+      "reason": "The roster and carry cases expose selected capture consequences without claiming general detection or institutional remedy.",
+      "future_trigger": "Any completeness, operational integrity, independent reader, or capture-prevention claim requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/15-the-five-joints.md::this version, \"no record found\" can still gate a meal.",
+      "current_claim": "The floor has no eligibility test after recognition, but the current `person` roster remains an eligibility gate capable of removing the formal meal.",
+      "classification": "revised_and_scoped",
+      "reason": "The Bela omission case directly falsified the prior universal claim that a missing record could never gate a meal, so Part V now names the standing defect.",
+      "future_trigger": "Universal standing, claimant continuity, roster recovery, or a new floor condition requires re-review."
+    },
+    {
+      "artifact_ref": "book-1/method.md::The record red-team adds a second and narrower class.",
+      "current_claim": "Source counterfactuals execute selected constitutional edits; the new red-team executes selected ground-entry deletions, while general and runtime deletion coverage remain absent.",
+      "classification": "revised_and_scoped",
+      "reason": "The prior method called source counterfactuals the only executed removals; the new suite made that false and the prose now distinguishes the two fixture classes.",
+      "future_trigger": "Any claim of exhaustive premise, transition, or deletion coverage requires a new generated inventory and method revision."
+    }
+  ],
+  "acceptance_result": {
+    "result": "current_harm_reproduced",
+    "claim": "Every named route has a reviewed assertion and withholding/deletion posture, an authorised-disposition boundary, an opposite-failure analysis, and at least one executable non-vacuous consequence case. The suite does not exercise both polarities of every listed premise. No new withholding gate or constitutional rule is enacted.",
+    "does_not_establish": [
+      "authorship, authority, physical-world truth, or writer independence",
+      "runtime withholding or deletion attribution",
+      "T1 snapshot identity, lineage, attestation, replay, divergence, or reconciliation",
+      "T2 order evidence or T3 time limits and clock liveness",
+      "recovery, continuity, reconsideration, remedy, or institutional action",
+      "bidirectional executable coverage of every listed premise, general premise coverage, or deployed record integrity"
+    ],
+    "remaining_owner": "TODO.md::Implement the ratified T3 temporal path in stages"
+  }
+}

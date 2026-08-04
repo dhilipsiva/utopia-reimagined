@@ -81,10 +81,10 @@ permits(Review, Sock).
 # => FALSE
 
 # ── THE BARE FLAG DERIVES NOTHING. Ground fact persists; keep this last ──────
-# "The entry that says you are in the clear still names nobody. The judgment
-# it must accompany names the body that made it." Adam — convicted, homeless,
-# housed by confinement — is written as cleared, with no examination anywhere
-# near the word, and nothing moves. Negative-controlled against the pre-guard
+# "The clearing entry still names no author. The judgment names a body and
+# person, not a case, purpose, act or writer." Adam — convicted, homeless,
+# housed by confinement — is written as cleared, with no generic Appeals
+# judgment beside the word, and nothing moves. Negative-controlled against the pre-guard
 # constitution: these three flip (the flag alone sprang him), and Nia's pins
 # above stand either way.
 clear(Adam).

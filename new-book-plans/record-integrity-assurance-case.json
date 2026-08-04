@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "717f6cf59332f9c98fe8e4723ec8d5075b9deeaed778fb2216391ce6eecd91d4",
+  "assertion_surface_contracts_sha256": "9cd62e45cd8e924941c4bc51962cab42d047e2a0c006d351087bc59b66b6759a",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -42,7 +42,7 @@
   ],
   "limitations": {
     "in_snapshot_absence": "Within one supplied snapshot, an in-snapshot rule cannot distinguish an entry deleted before or within that snapshot from an entry withheld or never written. Absence exposes no history.",
-    "t1_boundary": "A future T1 comparison can expose an attested fact that disappears between independently attested snapshots. It cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition, or make a successor snapshot arrive.",
+    "t1_boundary": "The bounded red-team now compares constructed snapshot files and exposes selected carry, omission, and rollback consequences, but those pairs have no independently attested identity, predecessor, manifest, authorship, reconciliation, replay protection, or divergence rule. A future T1 comparison can expose an attested fact that disappears between independently attested snapshots; it still cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition, or make a successor snapshot arrive.",
     "monotone_derivation": "Monotone derivation is not append-only storage. Current rules accumulate conclusions from supplied premises, while an external fact store or rule source can still be rewritten, withheld, or deleted.",
     "independence": "Two named bodies, two entries, two signatures, or two replicas do not by themselves prove independent witnessing. Independence requires separate control, incentives, credentials, and failure domains, plus a conflict and collusion posture.",
     "authenticity": "Authentication can attribute an entry to a credential. It does not prove that the underlying event occurred, that the source was complete, that the basis was sufficient, or that the credential holder acted lawfully.",
@@ -305,6 +305,12 @@
           "role": "sets_boundary",
           "supports": "RI-7",
           "ref": "new-book-plans/book-1-time-model-decision.md::T1 is necessary to make cross-epoch claims less trusting."
+        },
+        {
+          "kind": "generated",
+          "role": "exposes_gap",
+          "supports": "RI-7",
+          "ref": "new-book-plans/record-integrity-red-team.md::## Cross-snapshot transition matrix — T1 precursor only"
         }
       ],
       "known_failure": "The current T0 kernel has only an external carry convention. It cannot establish lineage, detect replay or equivocation, reconcile competing successors, or guarantee that any next snapshot or review arrives.",
@@ -342,9 +348,15 @@
           "role": "exposes_gap",
           "supports": "RI-8",
           "ref": "new-book-plans/counterfactual/README.md::The deletion axis of the fact-write trust base."
+        },
+        {
+          "kind": "generated",
+          "role": "exposes_gap",
+          "supports": "RI-8",
+          "ref": "new-book-plans/record-integrity-red-team.md::## Route postures"
         }
       ],
-      "known_failure": "Current consequences can reverse after a forged, withheld, or deleted premise, while pins cover only selected source-copy deletions and do not detect a runtime event. Recovery, interim continuity, and systematic reconsideration do not exist.",
+      "known_failure": "The bounded red-team executes selected release, adulthood, roster, carry, relief, and forgiveness harms, but it neither detects nor attributes a runtime event and it supplies no recovery, interim continuity, systematic reconsideration, or remedy. Other premise routes remain reviewed-only.",
       "target_contract": "For every premise route, classify assertion and withholding or deletion harm, beneficiary and power polarity, disputed-state default, interim continuity, reconstruction sources and authorised-disposition boundary, uncertainty mark, affected conclusions, reconsideration, appeal, and remedy for harm already caused; never infer that an unperformed relief occurred.",
       "acceptance_evidence": [
         "Per-route assertion and withholding or deletion tests with non-vacuous controls.",
@@ -352,7 +364,7 @@
         "Recovery tests showing independent reconstruction, uncertainty, downstream review, and remedy without fabricated facts or resurrection of lawfully disposed content."
       ],
       "residual_assumption": "Some lost facts cannot be reconstructed; in that case the constitutional default can contain harm but cannot recreate historical truth.",
-      "owner_ref": "TODO.md::Red-team release, adulthood, and carry without creating new withholding gates",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "T0 can state a failure default; disappearance and recovery across snapshots require T1, order-sensitive reconsideration requires T2, and delay limits require T3.",
       "book2_handoff": "Maintain independent recovery sources, backups, incident records, service continuity, claimant support, and operational procedures for reviewing and remedying decisions after integrity failure."
     },
@@ -524,6 +536,12 @@
           "role": "exposes_gap",
           "supports": "RI-13",
           "ref": "new-book-plans/assertion-surface-audit.md::withhold a true `married(Gia, Hex)` entry."
+        },
+        {
+          "kind": "generated",
+          "role": "exposes_gap",
+          "supports": "RI-13",
+          "ref": "new-book-plans/record-integrity-red-team.md::## T0 indistinguishability boundary"
         }
       ],
       "known_failure": "Current rules deliberately read many absences, but the positive writable-premise ledger does not by itself establish which record was complete, who could attest that completeness, or whether non-entry, withholding, deletion, inapplicability, and an unperformed act are distinguishable on each route.",
@@ -534,7 +552,7 @@
         "Tests preserving the current appeal polarity while refusing absent relationship, delivery, capacity, or independence entries as self-proving facts."
       ],
       "residual_assumption": "No internal completeness declaration proves that an external writer disclosed every in-scope event or that a first snapshot was complete.",
-      "owner_ref": "TODO.md::Red-team release, adulthood, and carry without creating new withholding gates",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "A route-specific T0 default can be stated, but cross-snapshot completeness and disappearance require T1, order-sensitive absence requires T2, and expiry or delay requires T3 plus external liveness evidence.",
       "book2_handoff": "Operate independently controlled scope and completeness attestations, preserve external evidence of missing or disposed entries, and report uncertainty without converting operational absence into a constitutional fact."
     }
@@ -963,7 +981,7 @@
       "artifact_ref": "book-1/method.md::Coverage outside the fixtures is an accident of what",
       "current_claim": "Current deletion coverage is accidental chapter-pin coverage, not a guarantee.",
       "classification": "preserved",
-      "reason": "The case names source-copy counterfactuals as evidence of harm, not runtime deletion detection.",
+      "reason": "The case now cites an intentional named snapshot suite as evidence of selected harms, while general runtime deletion detection and transition assurance remain absent.",
       "future_trigger": "Revise only to the exact scope of a later differential harness and deployed assurance evidence."
     },
     {
@@ -991,7 +1009,7 @@
       "id": "RA-3",
       "requirement": "Assertion and withholding or deletion harms are tested separately, including the opposite failure created by every added authorisation, witness, or closed-world gate and the settled difference between an absent accusation and an unperformed remedy.",
       "evidence_needed": "Executable non-vacuous pins or harness cases with a positive control, declared route-specific risk posture, and authorised-disposition boundary.",
-      "owner_ref": "TODO.md::Red-team release, adulthood, and carry without creating new withholding gates"
+      "owner_ref": "new-book-plans/9-record-integrity-red-team.py::def validate_source("
     },
     {
       "id": "RA-4",

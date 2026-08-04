@@ -1172,8 +1172,10 @@ def render(
             "- The checker proves schema coverage, traceability, ledger coupling, and",
             "  report freshness. It does not prove real authorship, witness independence,",
             "  storage integrity, clock progress, omission recovery, or deletion recovery.",
-            "- No scenario in this artifact is an executable forged `free`, `mature`, or",
-            "  epoch-carry test. Those adversarial tests remain a separate acceptance gate.",
+            "- The bounded report at `new-book-plans/record-integrity-red-team.md`",
+            "  executes selected release, adulthood, roster, carry, relief, and forgiveness harms.",
+            "  Those reproduced cases expose gaps; they do not establish authorship,",
+            "  recovery, T1 transition assurance, liveness, or operational integrity.",
             "",
         ]
     )

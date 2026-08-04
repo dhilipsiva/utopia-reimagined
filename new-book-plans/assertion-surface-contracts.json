@@ -594,7 +594,7 @@
       "current_challenge_route": "No release appeal, correction, or continuity mechanism exists.",
       "required_challenge_route": "Immediate challenge, independent review, and continuity that never makes release depend on a withheld official write.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Red-team release, adulthood, and carry without creating new withholding gates",
+      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
       "tags": ["release", "time", "justice"]
     },
     "hears": {
@@ -756,7 +756,7 @@
       "current_challenge_route": "No challenge, correction, or automatic transition exists.",
       "required_challenge_route": "Immediate contest and continuity of political access while the status record is reconciled.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Red-team release, adulthood, and carry without creating new withholding gates",
+      "owner_ref": "TODO.md::Implement the ratified T3 temporal path in stages",
       "tags": ["adulthood", "democracy", "time"]
     },
     "parent": {
@@ -919,7 +919,7 @@
       "current_challenge_route": "Forgiveness can derive `clean` and neutralise false, but it neither authenticates nor corrects the carry fact.",
       "required_challenge_route": "Cross-snapshot contest, independent reconciliation, correction history, and recovery from omitted or forged carry.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Red-team release, adulthood, and carry without creating new withholding gates",
+      "owner_ref": "TODO.md::Implement the ratified T3 temporal path in stages",
       "tags": ["epoch-carry", "record-integrity", "time"]
     },
     "show": {
