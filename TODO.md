@@ -149,21 +149,6 @@ predicate, duty, delivery route, or remedy current law.
 
 ### Expansion phase 1 — Repair and map the verified kernel
 
-- [ ] **Create a generated assertion-surface and high-consequence premise audit.**
-  - Classify every authored derived relation as `derived_only`, admitted under a
-    named mixed/base-fact contract, or deliberately unadmitted pending a named
-    interface decision. Fail on a new unclassified relation or an unrecorded
-    posture change; do not infer that every rule head must be conclusion-only.
-  - Seed the pending class with the eight floor actualities, `obliged`, and
-    `travel`; preserve `person` as the settled admitted-and-derived case.
-  - For every admitted or otherwise writable premise, show writer/authority,
-    provenance requirement, cheapest harmful consequence, challenge route, and
-    whether the risk is patchable, external, or deliberately refused.
-  - Include the roster/person entry, `free`, `mature`, epoch carry, seating,
-    public-body status, amendment inputs, and placement inputs.
-  - Keep this as a generated technical or method artifact, not a brittle counted
-    claim in derived prose.
-
 - [ ] **Build a record-integrity assurance case.**
   - Specify authorship, authority, append-only correction history, independent
     witnessing, reconciliation, challenge, and recovery from omission or deletion.
@@ -620,16 +605,18 @@ Landed work is not recorded here; that is what git is for. What survives is the 
 set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
-./verify.sh                 # ~5 min (2026-08-02, 500+ pins): spine, evidence count,
-                            #   jargon, counted-claims hard gate, claim-comment check,
+./verify.sh                 # ~5–8 min (431.6 s on 2026-08-04, 544 pins): engine,
+                            #   spine, assertion surface, evidence count, jargon,
+                            #   counted-claims hard
+                            #   gate, claim-comment check,
                             #   registry check, absences, INVARIANT 1, the arity and
-                            #   counting guards, control scope, engine build, the pin
+                            #   counting guards, control scope, the pin
                             #   suite with its cross-file :expect-pins reconciliation,
                             #   and the counterfactual fixtures in their three diff
                             #   classes — line deleted, line changed, line added
-./verify.sh --quick         # ~2 s: everything except the pin suite AND the
-                            #   counterfactuals — never sufficient after a constitution
-                            #   edit
+./verify.sh --quick         # 0.53 s incremental (2026-08-04): every check except
+                            #   the pin suite AND the counterfactuals — never sufficient
+                            #   after a constitution edit
 ./verify.sh --only <file>   # one pin file, engine rebuilt, --allow-shell passed, and
                             #   the fixture's own KB chosen for counterfactual files;
                             #   partial by design — full run before committing
