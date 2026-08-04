@@ -149,13 +149,6 @@ predicate, duty, delivery route, or remedy current law.
 
 ### Expansion phase 1 — Repair and map the verified kernel
 
-- [ ] **Red-team release, adulthood, and carry without creating new withholding gates.**
-  - Test forged `free`, forged/withheld `mature`, forged/withheld carry, roster
-    omission, and cross-epoch correction.
-  - Evaluate any proposed two-entry authorisation shape against its opposite failure:
-    an official withholding release, voting status, or basic standing.
-  - **Done when:** each input has a declared risk posture and a test proving it.
-
 - [ ] **Test amendment semantics, not only amendment labels.**
   - Add adversarial cases for targetless, falsely targeted, and semantically concealed
     amendments; keep the known limit that a self-declared target is not proof of an
@@ -596,19 +589,21 @@ Landed work is not recorded here; that is what git is for. What survives is the 
 set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
-./verify.sh                 # ~5–8 min (431.6 s on 2026-08-04, 544 pins): engine,
-                            #   spine, assertion surface, record-integrity assurance,
+./verify.sh                 # 474.46 s on 2026-08-04: engine, spine, assertion
+                            #   surface, assurance case, bounded red-team contract,
                             #   evidence count, jargon,
                             #   counted-claims hard
                             #   gate, claim-comment check,
                             #   registry check, absences, INVARIANT 1, the arity and
                             #   counting guards, control scope, the pin
-                            #   suite with its cross-file :expect-pins reconciliation,
-                            #   and the counterfactual fixtures in their three diff
-                            #   classes — line deleted, line changed, line added
-./verify.sh --quick         # 0.53 s incremental (2026-08-04): every check except
-                            #   the pin suite AND the counterfactuals — never sufficient
-                            #   after a constitution edit
+                            #   suite (544 pins) with cross-file :expect-pins
+                            #   reconciliation, 23 record snapshots / 145 pins,
+                            #   one executable failing-pin control, and source
+                            #   counterfactuals in three diff classes — line deleted,
+                            #   line changed, line added
+./verify.sh --quick         # 2.02 s incremental (2026-08-04): skips chapter/floor
+                            #   pins, executable record snapshots, and counterfactuals
+                            #   — never sufficient after a constitution edit
 ./verify.sh --only <file>   # one pin file, engine rebuilt, --allow-shell passed, and
                             #   the fixture's own KB chosen for counterfactual files;
                             #   partial by design — full run before committing
