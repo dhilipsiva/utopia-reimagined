@@ -149,15 +149,6 @@ predicate, duty, delivery route, or remedy current law.
 
 ### Expansion phase 1 — Repair and map the verified kernel
 
-- [ ] **Build a record-integrity assurance case.**
-  - Specify authorship, authority, append-only correction history, independent
-    witnessing, reconciliation, challenge, and recovery from omission or deletion.
-  - State plainly that an in-snapshot rule cannot distinguish a deleted entry from
-    an entry never written. Do not promise an internal fix that the model cannot
-    supply.
-  - **Book 2 handoff:** record-storage, identity, cryptographic, and operational
-    integrity mechanisms.
-
 - [ ] **Red-team release, adulthood, and carry without creating new withholding gates.**
   - Test forged `free`, forged/withheld `mature`, forged/withheld carry, roster
     omission, and cross-epoch correction.
@@ -606,7 +597,8 @@ set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
 ./verify.sh                 # ~5–8 min (431.6 s on 2026-08-04, 544 pins): engine,
-                            #   spine, assertion surface, evidence count, jargon,
+                            #   spine, assertion surface, record-integrity assurance,
+                            #   evidence count, jargon,
                             #   counted-claims hard
                             #   gate, claim-comment check,
                             #   registry check, absences, INVARIANT 1, the arity and
