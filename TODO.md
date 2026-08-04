@@ -91,23 +91,10 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-**The inherited decision set is complete** — its last three rulings landed on
-2026-08-02 (the provisioning fork, epigraph, and EIU-vs-V-Dem), following the
-clawback fork, polarity contradiction, and vocabulary batch. Rulings live in
-`CLAUDE.md`; the new decision below exists because the constitutional expansion
-changes the edition boundary, not because those rulings were lost.
-
-- [ ] **[AUTHOR-GATED] Rule Book 1's public-edition boundary.**
-  - The 2026-08-02 reach ruling governs the pass-complete pre-expansion
-    manuscript. It does not decide whether the ratified expansion is a new
-    edition, a held replacement, or a versioned public draft.
-  - Draft decision:
-    [`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
-    Do not silently replace a serialized edition or call the baseline
-    comprehensive under the expanded mandate.
-  - **Done when:** the author selects an edition policy and the canonical site
-    can identify its source tag/commit, scope, verification state, revision
-    path, preview policy, and print policy.
+**The inherited decision set and public-edition boundary are complete.** The
+edition ruling is E2 + P1 + D2 (2026-08-04) and lives in `CLAUDE.md`; its release
+work is under Reach. The remaining decision below comes from the second-wave
+closure measurements, not from a lost inherited ruling.
 
 - [ ] **[AUTHOR-GATED] Harden the two low-risk closure gaps.**
   - Assess and, if still sound, add `derived_only("lose")` and
@@ -460,36 +447,61 @@ The redesign is ready only when:
 
 ---
 
-## Reach — delivery plan ruled 2026-08-02; edition boundary author-gated
+## Reach — delivery and edition boundary ruled 2026-08-04
 
-Serialize in spine order from a dedicated domain, with the assembled book — opening note,
-Part V, method part — as the capstone release rather than the first contact. Building in
-public performs the thesis: the repo history is the proof of the method, serialization
-recruits the red-team the method part admits it lacks, and defect pins turn known flaws
-into declared features. **A chapter serializes only when its whole-chapter pass is
-complete** — all fourteen passes are complete, so the sequencing constraint is
-discharged and serialization can begin whenever the site exists.
+The ratified policy is E2 + P1 + D2. The current-T0 baseline remains public
+source and git history but receives no canonical serialization, assembled
+edition, edition tag, or print identity. The completed expansion becomes Book 1
+— First Edition and its first print-on-demand edition.
 
-Until the Phase 1 decision is ratified, “all fourteen qualify” applies only to
-the immutable pre-expansion baseline. The expansion does not inherit those
-passes or permission to replace a public page; see
+Building in public survives through P1: coherent expansion milestones may be
+published as immutable, tagged previews after their full gates. They are design
+snapshots with provisional order, not final serialization. Once the expanded
+constitution and spine freeze, serialize the First-Edition release candidate in
+computed order, with each whole-chapter pass rerun against that exact candidate;
+the assembled digital and POD book is the capstone. The controlling contract is
 [`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
 
-- **Align the current no-time account before any v1 edition freezes.**
-  - Correct Chapter 13's ambiguous “the words exist” passage: ordinary temporal
-    language is not admitted constitutional fact, a clock, or duration
-    arithmetic.
-  - Cross-read Chapters 4, 5, and 13 against the current model: flat snapshots
+- **Align the current time account before any public expansion snapshot.**
+  - Chapter 13's ordinary-language/admitted-fact distinction has landed. Remove
+    or narrow the remaining permanent-refusal wording in Chapters 4 and 13 that
+    contradicts T3 as a ratified future target.
+  - Cross-read Chapters 4, 5, and 13 against one current model: flat snapshots
     have no internal order; epoch carry is an external/manual cross-snapshot
-    convention; no duration or automatic expiry exists.
+    convention; no current duration or automatic expiry exists.
   - Keep this prose-only correction separate from the ratified T3 implementation
     gate.
-    Re-run the relevant prose, claim, and pin checks before freezing the edition.
+    Re-run the relevant prose, claim, and pin checks before publishing a
+    snapshot that contains the affected chapters.
 
-- **The site.** A dedicated domain — **registering it is the author's own task** — plain,
-  built from the Markdown that already exists; chapters in spine order; the repo and the
-  one-command suite run linked from the front page. Platforms syndicate *from* it: CC-BY
-  means they will copy regardless, so the canonical home must name itself.
+- **Implement the ratified E2 + P1 + D2 edition contract.**
+  - Do not create a promoted artifact from the current-T0 baseline. Before the
+    first expansion preview, audit the root README and opening note for
+    unregistered-standing overclaims, and have the author replace the final-page
+    publication-order promise with the single permitted, scope-only Book 2
+    pointer.
+  - Create a machine-readable ordered-input manifest and reproducible assembled
+    reader artifacts. A repository archive is not a book artifact: it also
+    contains legacy manuscripts, reviews, plans, and verification files.
+  - Record an immutable namespaced tag; full book-repository and nibli commit
+    SHAs, each verified from a clean tree; the full verification transcript/date;
+    registry snapshot; known limits; licences; and artifact hashes. Never cite
+    `main`, move a tag, or replace an asset in place.
+  - Publish coherent milestones, when useful, as immutable tags such as
+    `book-1-v1.0.0-preview.1`; preserve superseded previews and mark their order
+    provisional. After the expansion freezes, serialize tagged release
+    candidates in computed order and publish the final assembled digital and
+    POD capstone after an explicit review-close event.
+  - Give every version a permanent URL; only `latest` navigation may move. New
+    content creates a new version, and withdrawal means visibly disrecommended,
+    not silently erased.
+
+- **The site.** A dedicated domain — **registering it is the author's own task**
+  — plain, built from the Markdown that already exists; immutable preview
+  snapshots during expansion, then final chapters in computed order; the repo
+  and the one-command suite linked from the front page. Platforms syndicate
+  *from* it: CC-BY means they will copy regardless, so the canonical home must
+  name itself.
 - **The launch essay. [AUTHOR-GATED]** A standalone distillation for someone who will
   never read the book, carrying the thesis and the honest second half in miniature. *The
   Furnished Prison* is the standing headline candidate. First-person territory: the voice
@@ -498,12 +510,17 @@ passes or permission to replace a public page; see
   the pin suite, the counterfactual classes, the defect markers — the methodology made
   citable. Coordinate with the method part rather than duplicating it; the paper cites
   the book, the book does not depend on the paper.
-- **Run-it-yourself as a launch claim.** The suite promoted to a first-class launch
-  artifact — clone, one command, the pins pass — stated where a stranger lands. Nothing
-  new to build: `verify.sh` and its `--only` mode already are the artifact.
-- **Print-on-demand.** A priced, well-made physical edition of a free text. Quality is
-  the lever and revenue a side effect: the typography is canonical because it is first
-  and good, never because it is exclusive.
+- **Make run-it-yourself true as a launch claim.** `verify.sh` and its `--only`
+  mode are the core artifact, but the script currently defaults to an adjacent,
+  mutable nibli checkout. Supply and test a pinned two-checkout or bootstrap path
+  from clean inputs, and publish the exact engine commit; only then say “clone,
+  one command, the pins pass.”
+- **Print-on-demand for the completed expansion only (D2).** A priced, well-made
+  physical edition of a free text. Quality is the lever and revenue a side
+  effect: the typography is canonical because it is first and good, never
+  because it is exclusive. Generate it only from the final tagged First
+  Edition; put the edition, source commit, licence, print-file identity, and
+  errata URL inside every copy, and mint a new version for any changed interior.
 
 ---
 
