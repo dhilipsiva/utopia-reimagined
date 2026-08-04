@@ -33,11 +33,10 @@ The repo is heading for two new books plus a clean deletion:
 their records live in git, not here. What remains runs in two preliminary phases,
 then a constitutional-expansion backlog and cross-cutting sections:
 
-1. **Phase 1 — author-gated decisions.** First, because the chapters that flag
-   these questions as open cannot close them until the decision above them is
-   ruled — the ruling *is* what the chapter says — and because a lost decision
-   costs more than any lost task; this section has been destroyed by tooling once
-   and is watched accordingly.
+1. **Phase 1 — author-gated decisions.** Currently empty. It stays first because
+   a future question that changes what a chapter says must be ruled before the
+   implementation backlog, and because a lost decision costs more than any lost
+   task; this section has been destroyed by tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** Empty at the moment — nothing is pending
    upstream. It stays ahead of the writing because some of what the book has to
    concede is an engine limitation rather than a design choice, and it is dishonest
@@ -91,18 +90,8 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-**The inherited decision set and public-edition boundary are complete.** The
-edition ruling is E2 + P1 + D2 (2026-08-04) and lives in `CLAUDE.md`; its release
-work is under Reach. The remaining decision below comes from the second-wave
-closure measurements, not from a lost inherited ruling.
-
-- [ ] **[AUTHOR-GATED] Harden the two low-risk closure gaps.**
-  - Assess and, if still sound, add `derived_only("lose")` and
-    `derived_only("decide")`; update Chapters 6 and 9, pin files, fixtures, and
-    the generated spine as required.
-  - Do not use the stale review labels `loss` and `ballot` as though they were the
-    current predicates.
-  - **Verify:** full `./verify.sh`, including counterfactual fixtures.
+**No author-gated decision is currently open.** Settled rulings live in
+`CLAUDE.md`; implementation work remains in the ordered backlog below.
 
 ---
 
@@ -160,7 +149,13 @@ predicate, duty, delivery route, or remedy current law.
 
 ### Expansion phase 1 — Repair and map the verified kernel
 
-- [ ] **Create a generated high-consequence premise audit.**
+- [ ] **Create a generated assertion-surface and high-consequence premise audit.**
+  - Classify every authored derived relation as `derived_only`, admitted under a
+    named mixed/base-fact contract, or deliberately unadmitted pending a named
+    interface decision. Fail on a new unclassified relation or an unrecorded
+    posture change; do not infer that every rule head must be conclusion-only.
+  - Seed the pending class with the eight floor actualities, `obliged`, and
+    `travel`; preserve `person` as the settled admitted-and-derived case.
   - For every admitted or otherwise writable premise, show writer/authority,
     provenance requirement, cheapest harmful consequence, challenge route, and
     whether the risk is patchable, external, or deliberately refused.
@@ -420,13 +415,6 @@ The redesign is ready only when:
     hold a word for intent. Three correction commits landed before this close. **Do
     not skip this pass on a future wave**: per-commit gates cannot see cross-chapter
     drift, and every one of the seven had passed its own chapter's full suite.
-  - **Closure-gap evidence (the Phase 1 task owns the ruling).** Both `lose` and
-    `decide` sit on neither guarded list — not admitted, not conclusion-only — so a
-    forged loss or ballot is refused today only because the writable list happens to
-    stay short. Measured across the whole pin set: adding both `derived_only` lines
-    changes no answer anywhere (526 pins, 0 findings). The edge is open for want of a
-    line, not for want of a reason. Chapters 6 and 9 both tell it as a known soft edge,
-    so **hardening means editing those two passages in the same commit**.
   - **Two commit bodies carry word counts off by a little** (chapter 3 says 2,652 for
     2,651; the method addendum says 4,255 for 4,270) because the count was composed
     before the final edit. The figures above are the authoritative re-measurement;
