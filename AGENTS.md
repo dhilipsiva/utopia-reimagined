@@ -2,9 +2,9 @@
 
 ## Authority, Scope & Structure
 
-`CLAUDE.md` is the authoritative record of settled design and editorial decisions; follow it if this guide conflicts. Before active work, read `CLAUDE.md`, `TODO.md`, and `tmp.txt` (draft context, never book content). This is a verified book-design repository, not an application. `book-1/` contains active numbered chapters such as `01-what-counts-as-evidence.md` and their matching `.pins.nibli` files. Apart from its labelled opening note, Part V, and method, book-1 prose must derive from `new-book-plans/constitution.nibli`; keep it jargon-free and exclude roadmaps, MVS, scaling, and technology implementation. Those belong to book 2; do not develop book 2 while book 1 is active. Do not remove legacy `book.md` or `manifesto.md` before the TODO's legacy harvest is complete.
+`CLAUDE.md` is authoritative; follow it if this guide conflicts. Before work, read `CLAUDE.md`, `TODO.md`, and `tmp.txt` (draft context, never book content). `book-1/` contains numbered chapter/`.pins.nibli` pairs. Except for its labelled opening note, Part V, and method, prose must derive from `new-book-plans/constitution.nibli`; keep it jargon-free and move roadmaps, MVS, scaling, and technology implementation to book 2. Do not develop book 2 while book 1 is active or remove legacy `book.md`/`manifesto.md` before the TODO harvest.
 
-`new-book-plans/` owns the constitution, generated `3-spine.md`, generated assertion-surface audit, its reviewed JSON contract, and counterfactual fixtures. `registry/` contains claims, snapshots, checks, and Python fetchers. Keep `book-1/epigraph.md` and `method.md` unnumbered.
+`new-book-plans/` owns the constitution, generated spine and audits, reviewed JSON contracts, and counterfactuals. `registry/` holds claims, snapshots, checks, and fetchers. Keep `book-1/epigraph.md` and `method.md` unnumbered.
 
 ## Validation & Development Commands
 
@@ -15,17 +15,18 @@ Run from the repository root:
 ./verify.sh           # authoritative suite; required before every commit
 python3 new-book-plans/5-spine-gen.py new-book-plans/constitution.nibli new-book-plans/3-spine.md --check
 python3 new-book-plans/7-assertion-surface.py --check
+python3 new-book-plans/8-record-integrity-assurance.py --check
 python3 registry/check.py
 ```
 
-Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate a generated artifact. For the assertion audit, edit `assertion-surface-contracts.json`, then regenerate; never hand-edit the report. After a reviewed rule or fact change, `7-assertion-surface.py --fingerprints` prints candidate digests; review the affected contracts before copying them. After every constitution edit, including comments, regenerate counterfactual fixtures and run the full verifier. Never hand-edit generated spine blocks.
+Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate. Edit JSON contracts, never generated reports or spine blocks. After a rule or fact change, use `7-assertion-surface.py --fingerprints`, review affected contracts, then copy candidate digests. Any assertion-contract change also requires assurance-case review before updating its bound digest and regenerating both reports. Evidence roles may not relabel a gap as assurance. After every constitution edit, including comments, regenerate counterfactuals and run the full verifier.
 
 ## Editing, Testing & Naming
 
-Match existing Markdown hierarchy and `NN-kebab-case.md` / `.pins.nibli` pairs. Write pin controls as `:accept-scoped`; use plain `:accept` only when an accepted statement is a later query's premise. In book-1, state the rule that produces a count rather than a counted design claim. Add a primary source and URL for every empirical statistic or named study in the same commit. Python uses four-space indentation and new code needs `SPDX-License-Identifier: MIT OR Apache-2.0`.
+Match Markdown hierarchy and `NN-kebab-case.md`/`.pins.nibli` pairs. Write controls as `:accept-scoped`; use `:accept` only when the accepted statement is a later premise. State the rule producing a count, not a counted design claim. Add a primary source and URL with every statistic or named study. Python uses four spaces; new code needs `SPDX-License-Identifier: MIT OR Apache-2.0`.
 
 ## Commits, Pull Requests & Licensing
 
-Make one chapter or section change per content commit. Use descriptive `<area>: <outcome>` subjects, explain *why* in a ~72-column body, then make a separate `Tracker: <what landed> (<content SHA>)` TODO commit. Pull requests should summarize the claim or mechanism, report validation, identify regenerated artifacts, and link the tracker item; include screenshots only for rendered visual changes.
+Make one chapter or section change per content commit. Use `<area>: <outcome>` subjects and explain why in a ~72-column body. Close TODOs separately with `Tracker: <what landed> (<content SHA>)`. Pull requests summarize the claim, validation, regenerated artifacts, and tracker item; screenshots are only for rendered visual changes.
 
 Read `LICENSING.md` before adding files. New prose is CC-BY-4.0, code is MIT OR Apache-2.0, registry claims are CC0, and data snapshots can carry upstream terms. Legacy pre-decision material remains CC0 under the root `LICENSE`.

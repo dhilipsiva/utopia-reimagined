@@ -903,8 +903,10 @@ def render(contract: dict[str, object], inventory: Inventory) -> str:
             "drift-sensitive. Dependency reach is structural; it does not authenticate a",
             "fact, prove a scenario's real-world truth, or establish that an external",
             "clock or record advances. The operation sets are reviewed threat models,",
-            "not executable pins. The following expansion items still own record-integrity",
-            "assurance and forged/withheld/cross-epoch adversarial tests.",
+            "not executable pins. The generated record-integrity assurance case owns the",
+            "control argument and records that current T0 assurance is not established.",
+            "It does not turn these scenarios into executable attacks: the subsequent",
+            "red-team item still owns forged, withheld, deleted, and cross-epoch tests.",
             "",
         ]
     )
@@ -1111,8 +1113,19 @@ def negative_controls(
 
 
 def load_contract(path: pathlib.Path) -> dict[str, object]:
+    def reject_duplicate_keys(pairs: list[tuple[str, object]]) -> dict[str, object]:
+        result: dict[str, object] = {}
+        for key, value in pairs:
+            if key in result:
+                raise AuditError(f"duplicate JSON object key: {key}")
+            result[key] = value
+        return result
+
     try:
-        value = json.loads(path.read_text(encoding="utf-8"))
+        value = json.loads(
+            path.read_text(encoding="utf-8"),
+            object_pairs_hook=reject_duplicate_keys,
+        )
     except (OSError, json.JSONDecodeError) as exc:
         raise AuditError(f"cannot read contract {path}: {exc}") from exc
     if not isinstance(value, dict):

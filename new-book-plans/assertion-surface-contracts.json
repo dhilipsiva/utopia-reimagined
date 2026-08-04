@@ -376,7 +376,7 @@
       "current_challenge_route": "No correction or appeal attaches to a capture fact.",
       "required_challenge_route": "Subject access, contest, correction history, and independent case review.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Build a record-integrity assurance case",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions",
       "tags": ["audit", "justice", "record-integrity"]
     },
     "choose": {
@@ -431,7 +431,7 @@
       "current_challenge_route": "No rule contests the truth, relevance, or sufficiency of a cited ground.",
       "required_challenge_route": "The subject can inspect and challenge the ground before an independent reviewer.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Build a record-integrity assurance case",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-3 — Provenance, authenticity, and truth limits",
       "tags": ["audit", "provenance"]
     },
     "clear": {
@@ -729,7 +729,7 @@
       "current_challenge_route": "No private correction or co-signing challenge exists.",
       "required_challenge_route": "Confidential correction and recusal challenge before the voiding takes effect.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Build a record-integrity assurance case",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge",
       "tags": ["audit", "privacy", "conflict"]
     },
     "mature": {
@@ -783,7 +783,7 @@
       "current_challenge_route": "No correction or recusal challenge exists.",
       "required_challenge_route": "Confidential relationship correction and independent conflict review.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Build a record-integrity assurance case",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge",
       "tags": ["audit", "privacy", "conflict"]
     },
     "permanent": {
@@ -947,7 +947,7 @@
       "required_challenge_route": "Protected contest and correction without allowing delay, recall, or record control to erase the exposure.",
       "risk_dispositions": ["patchable", "external", "deliberately_refused"],
       "refused_alternative": "Do not impose recency, lapse, or recertification on the flat T0 record; erasing historical exposure or authority would remove the shield through delay or record control.",
-      "owner_ref": "TODO.md::Build a record-integrity assurance case",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions",
       "tags": ["liberty", "public-body", "record-integrity"]
     },
     "sibling": {
@@ -974,7 +974,7 @@
       "current_challenge_route": "No private correction or co-signing challenge exists.",
       "required_challenge_route": "Confidential correction and recusal challenge before the voiding takes effect.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Build a record-integrity assurance case",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge",
       "tags": ["audit", "privacy", "conflict"]
     },
     "suggest": {

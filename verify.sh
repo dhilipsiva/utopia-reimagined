@@ -57,7 +57,8 @@ step() { printf '\n\033[1m%s\033[0m\n' "$1"; }
 #
 # Incremental and free: ~0.2 s when nothing changed, measured, against a ~29 min
 # historical run. Quick mode builds too: the spine and assertion audit must read
-# the same release engine that the full pin suite will use.
+# the same release engine that the full pin suite will use; the assurance case is
+# then checked against that reviewed assertion contract.
 # `--manifest-path` rather than `cd`, so this works from any directory.
 #
 # A FUNCTION because `--only` needs it too. A fast per-file loop that skipped the
@@ -106,7 +107,8 @@ if [ -n "$ONLY" ]; then
   # Propagate, including 3 (a pinned defect stopped reproducing). Swallowing that
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
-  printf '        cross-file :expect-pins reconciliation, the spine and assertion audit,\n'
+  printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
+  printf '        record-integrity assurance case,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -128,6 +130,12 @@ step "assertion surface"
 out=$(NIBLI_STRATA_FILE="$STRATA_FILE" python3 new-book-plans/7-assertion-surface.py --check 2>&1) \
   && pass "$out" \
   || fail "assertion-surface audit failed" "$out"
+
+# ── 2a. record classes, assurance controls, and limits stay reviewable ────────
+step "record-integrity assurance"
+out=$(python3 new-book-plans/8-record-integrity-assurance.py --check 2>&1) \
+  && pass "$out" \
+  || fail "record-integrity assurance case failed" "$out"
 
 # ── 2b. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new

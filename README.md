@@ -21,6 +21,8 @@ imprisonment and stops there.
 | `new-book-plans/3-spine.md` | the computed chapter order — generated, not hand-written |
 | `new-book-plans/assertion-surface-audit.md` | the generated inventory of derived relations and writable-premise risks |
 | `new-book-plans/assertion-surface-contracts.json` | the reviewed authority, provenance, harm, challenge and risk contracts behind that audit |
+| `new-book-plans/record-integrity-assurance-case.md` | the generated current/target argument for positive writes, effective absences, authorship, correction, witnessing, reconciliation, challenge and recovery |
+| `new-book-plans/record-integrity-assurance-case.json` | the reviewed claims, evidence, premise coverage, defeaters, defaults and Book 2 assumptions behind that case |
 | `new-book-plans/counterfactual/` | copies of the constitution each missing one line, so "remove this and X breaks" is executed rather than argued |
 | `verify.sh` | the one check |
 
@@ -31,7 +33,12 @@ imprisonment and stops there.
 
 It exits non-zero on the first failure and names the claim that stopped being true.
 That includes a new or reclassified rule head, a changed admission or ground-fact
-snapshot, or an unreviewed producer/consumer route in the assertion surface.
+snapshot, an unreviewed producer/consumer route in the assertion surface, or a
+premise that has drifted out of the record-integrity case. The case's current
+verdict is deliberately **not established**: verification proves consequences
+from the supplied snapshot, not that a deployed record is authentic, complete,
+append-only, or live, and not that the checker authenticates its own source or
+toolchain.
 
 A second book — how you would actually build this, organisationally and technically — is
 planned and not started.

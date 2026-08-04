@@ -133,13 +133,27 @@ noticing.
 
 ## From the adoption reviews
 
+- **The record-integrity operating layer.** Satisfy Book 1's generated assurance
+  case with evidence-backed identity and writer authentication, credential/key
+  recovery, tamper-evident and privacy-bounded storage, independent witnessing,
+  attested snapshot publication, reconciliation, retention and authorised
+  disposition, replication, backups, incident response, recovery, source release,
+  toolchain provenance, and independent verification. Test compromise, collusion,
+  shadow decision inputs, omission, rollback, outage, and frozen transitions. The
+  layer may expose some cross-attested-snapshot disappearance; it must never claim
+  that cryptography proves truth or that one snapshot distinguishes deletion from
+  non-entry. Book 1 owns the constitutional defaults, challenge, continuity,
+  independent reader, action duty, and remedy; this book owns the machinery and
+  reproducible operational evidence.
 - **The delivery layer — obligor, tracking, consequence.** The batch's most convergent
   demand: name who supplies each floor item, record whether it arrived, and wire the audit
   markers to mandatory response with deadlines (ombudsman shapes, review boards). book-1's
   side of this is the restored delivery-markers decision (design: which markers exist); book-2
   owns the machinery that reads them. The chain the reviews want is
-  owed → tracked → breached → obliged → *acted upon with a deadline* — book-1 deliberately
-  stops at `obliged`. **The markers themselves were refused for book-1** (ruled 2026-08-02:
+  owed → tracked → breached → obliged → *acted upon with a deadline*. The current
+  T0 kernel stops at `obliged`; expanded Book 1 owns the constitutional reader,
+  action, continuity, and remedy interface, while this book owns the operating
+  workflow and evidence. **The markers themselves were refused for book-1** (ruled 2026-08-02:
   over a record with no arrival facts they fire on everyone and discriminate nobody). When
   this layer generates arrival facts, the marker design starts from the
   `undelivered-marker` fixture — those verdicts are what it must stop producing — and the
@@ -152,8 +166,10 @@ noticing.
   chapter 13's closing pins — a stated term that releases nobody — are the verdicts an
   administration layer exists to change.
 - **Asymmetric discretion — officials add, never subtract.** Proposed by a reviewer as the
-  humanizing feature; chapter 9 has since proven the "never subtract" half is structural (the
-  record is add-only). book-2 designs the "add" half: grace as *recorded provision* — an
+  humanizing feature; chapter 9 has since proven only that one in-run derivation accumulates
+  conclusions, so a narrower permission does not retract a surviving wider one. That is not
+  append-only source or storage history. book-2 designs the "add" half: grace as
+  *recorded provision* — an
   official authorising more than the baseline, on the record, without that record becoming a
   score. The hard part is keeping additions from becoming rankings by accretion.
 - **Equity and allocation machinery.** Triage, need-based provision, prioritising the

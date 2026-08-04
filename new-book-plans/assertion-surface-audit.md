@@ -180,7 +180,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No correction or appeal attaches to a capture fact.
 - **Required challenge route:** Subject access, contest, correction history, and independent case review.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Build a record-integrity assurance case`.
+- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions`.
 - **Reviewed route fingerprint:** `bb2b5d843f216e85d5ed3fc34bdcd611ba1b23ac1a17c9230d0be5a4e69e7882`.
 
 ### `choose`
@@ -213,7 +213,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No rule contests the truth, relevance, or sufficiency of a cited ground.
 - **Required challenge route:** The subject can inspect and challenge the ground before an independent reviewer.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Build a record-integrity assurance case`.
+- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-3 — Provenance, authenticity, and truth limits`.
 - **Reviewed route fingerprint:** `ccbb9dcfcba6f7250281b5bdd4a69112f8b5bbf17d671079a20c56937cd6d587`.
 
 ### `clear`
@@ -390,7 +390,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No private correction or co-signing challenge exists.
 - **Required challenge route:** Confidential correction and recusal challenge before the voiding takes effect.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Build a record-integrity assurance case`.
+- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
 - **Reviewed route fingerprint:** `07ec62c697a393a18ac1e4183cc7a2250afcefdbc8a8ad8deaa0b10e2f44b129`.
 
 ### `mature`
@@ -422,7 +422,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No correction or recusal challenge exists.
 - **Required challenge route:** Confidential relationship correction and independent conflict review.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Build a record-integrity assurance case`.
+- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
 - **Reviewed route fingerprint:** `b152e6e85880b7c046e5f6ae8a57d47580976b0a97d81ab29ec3452a1e112b59`.
 
 ### `permanent`
@@ -520,7 +520,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Protected contest and correction without allowing delay, recall, or record control to erase the exposure.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not impose recency, lapse, or recertification on the flat T0 record; erasing historical exposure or authority would remove the shield through delay or record control.
-- **Owner:** `TODO.md::Build a record-integrity assurance case`.
+- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions`.
 - **Reviewed route fingerprint:** `6f8d9509bc118699d35f0dfd418f1b994fe677cbf0387d95e6d18a1431162bd4`.
 
 ### `sibling`
@@ -536,7 +536,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No private correction or co-signing challenge exists.
 - **Required challenge route:** Confidential correction and recusal challenge before the voiding takes effect.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Build a record-integrity assurance case`.
+- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
 - **Reviewed route fingerprint:** `07ec62c697a393a18ac1e4183cc7a2250afcefdbc8a8ad8deaa0b10e2f44b129`.
 
 ### `suggest`
@@ -593,5 +593,7 @@ This audit proves inventory completeness and makes reviewed assumptions
 drift-sensitive. Dependency reach is structural; it does not authenticate a
 fact, prove a scenario's real-world truth, or establish that an external
 clock or record advances. The operation sets are reviewed threat models,
-not executable pins. The following expansion items still own record-integrity
-assurance and forged/withheld/cross-epoch adversarial tests.
+not executable pins. The generated record-integrity assurance case owns the
+control argument and records that current T0 assurance is not established.
+It does not turn these scenarios into executable attacks: the subsequent
+red-team item still owns forged, withheld, deleted, and cross-epoch tests.
