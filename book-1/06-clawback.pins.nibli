@@ -26,10 +26,10 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 35
+:expect-pins 39
 
 # "Ask the record whether Bela is recognised and the answer is no ... Beside
-# that refusal the record holds one more entry: a loss." Both halves of the
+# that refusal the record holds one more conclusion: a loss." Both halves of the
 # corrected register, on one person: the mint refuses, and the loss is recorded.
 ? false(Bela).
 # => TRUE
@@ -186,3 +186,22 @@ judge(Appeals, Vex).
 
 ? rotten(Vex).
 # => TRUE
+
+# [v0.9 2026-08-04] L1: exercise the exact-name route the prose says is now
+# closed. This block is last because the admission remains resident. That makes
+# the refusal prove more than omission without widening the context of unrelated
+# pins above. The mixed assertion also proves atomic rollback: the otherwise
+# legal person fact must not survive the refused loss. The final probe holds the
+# corpus's three-place shape beside the live two-place Bela derivation above.
+# `derived_only` closes the relation, not an arity.
+:accept
+admits("lose").
+
+:refuse reasoning /`lose` is declared derived-only/
+person(Loss_Probe) & lose(Points, Loss_Probe).
+
+? person(Loss_Probe).
+# => FALSE
+
+:refuse reasoning /`lose` is declared derived-only/
+lose(Points, Ghost, Case).

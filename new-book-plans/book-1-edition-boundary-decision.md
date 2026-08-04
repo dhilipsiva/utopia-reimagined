@@ -156,10 +156,10 @@ state. Before the first expansion-preview tag:
 5. **Lock verification.** Pin or otherwise reproduce the exact nibli source,
    run the full suite from clean book and engine trees, retain the result, and
    prove the public “run it yourself” path works from documented inputs.
-6. **Close the candidate's remaining design gates.** Rule the pending
-   `lose`/`decide` closure hardening before the first snapshot, or expressly
-   identify it as unresolved in that snapshot's scope. A preview cannot imply
-   that a planned current-kernel change has already landed.
+6. **Verify the ratified closure hardening.** L1 + D1 must be implemented and
+   pass the current full suite and counterfactual fixtures before the first
+   snapshot. A preview cannot imply that a ratified current-kernel change has
+   landed unless its exact source and verification record contain it.
 
 ## 8. Ratified release sequence under E2 + P1 + D2
 

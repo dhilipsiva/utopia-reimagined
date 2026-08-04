@@ -10,8 +10,9 @@ chapters and this is where it can be checked in one place.
 Hano was convicted. Take the list.
 
 Hano is a person. Hano is owed everything on the floor, in full, with no
-reduction. Hano speaks. Hano votes. Hano's credibility is intact — nobody has voided it,
-and conviction does not. Hano's recognition is untouched; nothing was clawed back,
+reduction. Hano speaks. Hano has the right to vote. Hano's credibility is intact —
+nobody has voided it, and conviction does not. Hano's recognition is untouched;
+nothing was clawed back,
 because clawback follows voiding and Hano was not voided. Hano is somewhere specific,
 because convicted people have to be somewhere, and where follows from three recorded
 facts rather than anyone's decision.

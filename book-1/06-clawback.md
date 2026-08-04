@@ -6,7 +6,7 @@ Bela was examined by two auditors and voided. Ask the record whether Bela is
 recognised and the answer is no — the teaching Bela gave is still written there, and
 it mints nothing, because every door recognition comes through is shut to a person
 whose word has been found worthless. Beside that refusal the record holds one more
-entry: a loss, written against Bela's name. This is the second half of voiding, and
+conclusion: a loss against Bela's name. This is the second half of voiding, and
 it is what makes voiding matter. Marking someone as unreliable while leaving them
 recognised would be a gesture.
 
@@ -18,24 +18,27 @@ partial forfeit, no assessment of how much of it was tainted. It is the one
 instrument in this society that operates without any judgment of degree, and that is
 worth holding in mind through what follows.
 
-And a second precision, stranger than the first: nothing reads the loss. The entry
-written against Bela's name is consulted by no rule anywhere — it opens no door,
+And a second precision, stranger than the first: nothing reads the loss. The conclusion
+against Bela's name is consulted by no rule anywhere — it opens no door,
 changes no placement, feeds no verdict — and the book's checks hold that nothing ever
 does, by decision rather than by oversight. The design determines that something was
 lost, writes it down, and stops. If that sounds familiar it is the audit's register
 arriving early: what this record does with wrongdoing, here as there, is know it, and
 the knowing is the whole of what it does.
 
-The word itself sits in an odd place, and honesty wants it named. The record keeps
+The word itself used to sit in an odd place, and the repair matters. The record keeps
 two guarded lists — the words the world may write, and the words only rules may
-conclude — and the word for a loss is on neither. Nothing admits it, so a forged loss
-is refused at the door today; nothing declares it conclusion-only either, so that
-refusal rests on the writable list staying exactly as short as it is. The design has
-hardened words in this position before, by declaration, after noticing that one
-unrelated widening would have reopened them in silence. The word for a loss has not
-been hardened. The declaration is a single line, and the fact that nobody has written
-it is the kind of small unfinished edge this book prefers to record rather than round
-off.
+conclude — and the word for a loss was on neither. That kept a forged loss out only
+because nobody had added that exact word to the writable list. When that
+reclassification was tested, a hand could write a loss directly and skip the rule.
+
+The word is now on the conclusion-only list. A hand cannot write a loss even if
+someone later tries to make that exact word writable; only a rule may produce one.
+The protection covers the word in every form. A future factual report that somebody
+suffered a material or personal loss therefore needs a different word, with its own
+rules about who may report it and how it may be challenged. This is a narrow repair:
+a rule may still conclude a loss, nothing reads one once concluded, and the design
+has not pretended that every rule-produced word has now been swept.
 
 ## What it cannot reach
 

@@ -85,8 +85,8 @@ admits("suggest").    admits("teaches").    admits("work").
 # These relations may ONLY be reached by derivation. A direct assertion of
 # any of them is refused by the engine at assert time, fail-closed:
 #   "`fit` is declared derived-only"
-# This is what makes Articles 4, 6, 7 and 8 mean what they say. Before it,
-# every gate this file called "derived" was one asserted fact from bypass —
+# This is what makes the listed conclusion gates mean what they say. Before
+# it, every gate this file called "derived" was one asserted fact from bypass —
 # `fit(Ruk, Homestay).` silenced the farmhouse breach marker outright.
 #
 # ORDERING IS LOAD-BEARING: the check fires at assert time, so a
@@ -109,12 +109,12 @@ derived_only("severe").
 # [v0.9 2026-08-02] Three more, closing by declaration what was closed by
 # omission. `entitled` and `owe` are the record of what is owed — the floor
 # itself — and neither name is admitted, so forging that record was already
-# refused, but by absence: one unrelated `admits` edit would have reopened
-# both in silence. `building` the same — every placement rule requires
-# `prisoner`, and an asserted placement was refused only for want of an
-# admits line. Verified before landing: the floor lines, the eight itemised
-# debts and all three placements still derive, and the whole suite stays
-# green against the declared copy.
+# refused, but by absence: later exact-name `admits` edits would have reopened
+# them. `building` the same — every placement rule requires `prisoner`, and an
+# asserted placement was refused only for want of an exact-name admits line.
+# Verified before landing: the floor lines, the eight itemised debts and all
+# three placements still derive, and the whole suite stays green against the
+# declared copy.
 derived_only("entitled").
 derived_only("owe").
 derived_only("building").
@@ -123,6 +123,18 @@ derived_only("building").
 # is the ASSERTED half of appellate relief for convictions: clear is a
 # word the world may say, clean is a conclusion the machinery reaches.
 derived_only("clean").
+# [v0.9 2026-08-04] L1 + D1 close two more exact-name assertion routes.
+# `lose` is the rule-concluded legal loss marker, and legacy `decide` is the
+# rule-concluded franchise status used with Ballot. Both used to be refused
+# only because their exact names were absent from `admits`; adding the matching
+# admission made either ground conclusion writable. These declarations reserve
+# each relation at every arity and through any future converted alias, while
+# leaving rule heads free to derive it. They do not give `lose` a reader, make
+# `decide` evidence of a cast ballot or count, or complete the wider assertion-
+# surface sweep: the eight floor actualities, `obliged`, and `travel` remain for
+# their interface decisions and the generated census.
+derived_only("lose").
+derived_only("decide").
 # [v0.5] severe was the tenth and last open gate, and it was open in exactly
 # the way the v0.3 three were: a conclusion about an offence, written by
 # whoever held the pen, wearing the shape of a reported fact. Before this,
@@ -526,8 +538,8 @@ all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).
 # — verified, felon disenfranchisement enacts in full view of one.
 # As a rule it PROVES the single-deprivation theorem instead of asserting
 # it: decide(Hano, Ballot) TRUE while travel(Hano) FALSE — a convicted
-# person who votes and cannot move. And it is falsifiable: slip ~prisoner
-# into this body and the pin below flips where any reader can see it.
+# person who retains the franchise and cannot move. And it is falsifiable:
+# slip ~prisoner into this body and the pin below flips where any reader can see it.
 # `mature` guard because no polity has ever had a franchise unconditional
 # from birth; two-place `decide(_, Ballot)` because bare `decide` means
 # deciding anything and prose could not be written honestly against it.
@@ -1032,7 +1044,7 @@ permanent(Art_Entrench).
 # before it was deleted, so no hand list appears here. What the levers
 # do was measured, most recently 2026-08-02, each a probe on top of
 # this exact file:
-#   mature(X).            one write grants a ballot — the franchise
+#   mature(X).            one write grants the franchise — its asserted
 #                         gate is an asserted, undefined word that no
 #                         rule produces (chapter 9's pair).
 #   public(Pax).          re-derives authority(Pax) and reopens E1a
@@ -1207,7 +1219,7 @@ judge(Court, Nando).
 family(Nando).
 # [v0.3 NEW] Majority, for the Art 2 franchise rule. Note what the
 # absence of a mature fact does and does not mean: a child simply does
-# not yet derive the ballot. Nothing is taken from them — every Article 1
+# not yet derive the franchise. Nothing is taken from them — every Article 1
 # obligation is owed to them in full, and no rule anywhere reads ~mature.
 mature(Hano).
 mature(Jala).
@@ -1331,8 +1343,8 @@ approves(Electorate, Amend_Meta).
 
 # ─── Adversarial pins v0.3: the floor firewall ────────────────────
 # POSITIVE pins — queryable, and they belong in the pinned-verdict file:
-#   ? decide(Hano, Ballot).   TRUE   convicted, and still votes
-#   ? decide(Jala, Ballot).   TRUE   free, and votes
+#   ? decide(Hano, Ballot).   TRUE   convicted, franchise retained
+#   ? decide(Jala, Ballot).   TRUE   free, franchise held
 #   ? travel(Hano).           FALSE  the one thing conviction takes
 #   ? err(Hano, Isolation).   TRUE   no meets fact => breach is visible
 #
@@ -1351,8 +1363,8 @@ approves(Electorate, Amend_Meta).
 
 # ─── Technical appendix delta (v0.2 proxy vocabulary) ─────────────
 # authority(X)   — X is an exposable office: an institution constant, or
-#                  anyone the Electorate ever seated. Derived + asserted.
-#                  Never revoked (see Art 7 note).
+#                  anyone the Electorate ever seated. Derived-only from
+#                  asserted public/choose premises. Never revoked (see Art 7 note).
 # choose(E, X)   — the Electorate seats X (asserted; the selection
 #                  process is outside the firewall, this fact is its
 #                  certificate).
@@ -1372,14 +1384,13 @@ approves(Electorate, Amend_Meta).
 #                  under negation, in the Art 6 isolation marker — which
 #                  is permitted because that rule's head is `err`, not
 #                  `prisoner`, so it does not enter the person cone.
-# decide(X, Ballot) — the franchise (Art 2). Derived, never asserted.
-#                  Two-place deliberately: bare `decide` means deciding
-#                  anything. `vote` is not in the committed corpus and
-#                  `choose` is taken by Art 8 seating — and reusing it on
+# decide(X, Ballot) — legal franchise status (Art 2). Derived, with direct
+#                  assertion refused. Two-place deliberately: bare `decide`
+#                  means deciding anything. `vote` is not in the committed
+#                  corpus and `choose` is taken by Art 8 seating — and reusing it on
 #                  the floor un-stratifies Art 8 (see the Art 1 invariant).
 # mature(X)      — asserted majority. Guards the franchise only. No rule
 #                  anywhere reads ~mature, so it can gate nothing else.
 # err(X, Isolation) — derived isolation breach: a prisoner with no
 #                  company fact.
 # Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.
-

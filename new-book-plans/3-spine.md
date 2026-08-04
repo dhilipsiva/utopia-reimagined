@@ -41,21 +41,20 @@ floor at all; that discrepancy is the tooling-blindness story for the method par
 **State the method beside the evidence figure, because the figure answers a narrower
 question than its name suggests.** Evidence is *the engine's base predicates, minus
 builtins* — since 2026-07-31 the strata come from `nibli-pin --strata` rather than from a
-regex re-implementation of the stratifier. That is defensible and it is **not** the set of things the world may write.
-`person` is the case that shows the gap: written directly for most of the cast, freely
-assertable, and excluded from the 23 only because two rules also produce it —
-`prisoner -> person`
-(`constitution.nibli:254`) and `free -> person` (`:264`, added with release). Under the
-plain definition of the writable surface — every predicate except the ten `derived_only`
-names and the `derived_only` declaration itself — the figure is **38**, and `entitled`
-and `owe` are both inside it, derived and open at the same time.
+regex re-implementation of the stratifier. That is defensible and it is **not** by itself
+the set of things the world may write.
 
-Neither number is a minimality proof and neither should be quoted as one. Chapter 1 puts
-`person` on its list on the strength of this: the prose list and the generated list are
-answering different questions, and the divergence is deliberate rather than an error in
-either. The old "directly-assertable surface is 34" figure is not recoverable — it was
-computed against a 46-predicate graph — and only the 34-predicate *graph size* survives,
-in the Superseded note at the end of this file, where it is labelled history.
+Article 0a's `admits` roster names the candidate ground vocabulary. Article 0's
+`derived_only` roster independently removes conclusion-only relations from direct
+assertion, even if somebody later admits the same exact name. `person` is the settled
+mixed case that proves why no graph subtraction can replace those rosters: it is admitted
+and written directly for most of the cast, while rules also produce it. The prose list
+therefore includes personhood and the generated base-predicate list does not. They answer
+different questions, and the divergence is deliberate rather than an error in either.
+
+No one of these lists is a minimality proof. Read the generated block for dependency
+structure and the two constitutional rosters for assertion posture; do not turn their
+current sizes into another hand-maintained writable-surface count.
 
 `authority` is derived at stratum 0 with a wholly negation-free cone, and it is the only
 one. This file claimed until 2026-07-31 that `severe` had joined it. **It has not, and the
@@ -171,7 +170,7 @@ depend only on strata 0–1 and float.
    floor. Then state where the protection stops — standing and points are still
    reachable, and positive compulsion is untouched.
 9. **The Vote Conviction Does Not Take.** `decide($x, Ballot)` — a convicted person
-   still votes. New; the old spine had no such chapter.
+   retains the franchise. New; the old spine had no such chapter.
 10. **Contribution.** `reward` — recognition conditioned on not having been voided.
     Why it is earn-only and why the arithmetic is deliberately absent.
 11. **Where People Are Put.** `fit`, `dwell`, `building` — eligibility derived rather
@@ -251,8 +250,6 @@ attack and then does not entrench the vocabulary; the chapter should say so.
   2026-08-02: the student rule is deleted; the bright line stands narrowed to
   "no subtraction except by due process for one's own adjudicated fraud", which
   the surviving wrongdoer rule satisfies.
-- **`lose` has no adversarial pins** — stale since chapter 6's suite landed;
-  the clawback file pins `lose` across the cast, including the Cira repair.
 
 ---
 

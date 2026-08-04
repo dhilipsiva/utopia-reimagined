@@ -14,8 +14,8 @@
 #                        constitution edit — that is how a stale fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
-# entries, so it silently drops the rights floor and all nine gate closures and
-# then reports a clean run over a constitution it is not reading.
+# entries, so it silently drops the rights floor and every conclusion-only gate
+# and then reports a clean run over a constitution it is not reading.
 
 set -uo pipefail
 cd "$(dirname "$0")"
@@ -322,18 +322,18 @@ done
 # harness error (exit 2), not a pin that goes quietly green — so this section
 # cannot tell you the base was put back, only that the file asked for it.
 #
-# TWO SITES KEEP THE PLAIN FORM DELIBERATELY, and they are allowlisted rather
-# than fixed, because in them the accepted statement is a PREMISE the file goes
-# on to query — chapter 1 writes a roster entry and then asks what that entry
-# derived; chapter 14 loads the duty-breach rule and then asks what it marks.
-# Retract those and the queries below have nothing to stand on. Verified: the
-# conversion fails both files. Chapter 5 joined the list for its closing
-# exhibit — the void rule minus distinctness, whose flip of false(Solo) is the
-# premise of the query under it, chapter 14's shape exactly. Chapter 9 joined the
-# same way: its resident disenfranchisement clause is the premise of the ballot
-# query that shows the clause takes nothing. Anything NOT on this list is a control, and a
-# control that does not clean up is the bug this section exists to catch.
-unscoped_ok="01-what-counts-as-evidence 05-voiding 09-the-vote-conviction-does-not-take 14-when-the-system-notices-it-broke"
+# FIVE FILES KEEP THE PLAIN FORM DELIBERATELY, and they are allowlisted rather
+# than fixed, because in them an accepted statement is a PREMISE the file goes
+# on to query. Chapter 1 writes a roster entry; chapter 5 keeps its closing
+# no-distinctness rule resident; chapter 14 keeps the duty-breach rule resident;
+# and chapter 9 keeps its disenfranchisement rule resident. Chapters 6 and 9
+# also keep exact-name `admits` declarations resident so their following
+# refusals prove `lose` and `decide` stay closed after the real widening edit,
+# not merely because the names were omitted. Retract those premises and the
+# queries or refusal controls below them have nothing to stand on. Anything NOT
+# on this list is a control, and a control that does not clean up is the bug this
+# section exists to catch.
+unscoped_ok="01-what-counts-as-evidence 05-voiding 06-clawback 09-the-vote-conviction-does-not-take 14-when-the-system-notices-it-broke"
 ctl=0; bad=""
 for f in new-book-plans/*.pins.nibli new-book-plans/counterfactual/*.pins.nibli book-1/*.pins.nibli; do
   grep -q '^:accept$' "$f" || continue
@@ -348,8 +348,8 @@ done
 # Without this, a change to the pin syntax makes the loop above match nothing and
 # report every file clean, which is the exact shape of green this repo keeps
 # getting fooled by.
-[ "$ctl" = "4" ] || fail "the control-scope guard is broken" \
-  "expected every allowlisted file to carry a plain :accept; matched $ctl of 4. Either the syntax moved or a premise site was converted."
+[ "$ctl" = "5" ] || fail "the control-scope guard is broken" \
+  "expected every allowlisted file to carry a plain :accept; matched $ctl of 5. Either the syntax moved or a premise site was converted."
 [ -z "$bad" ] && pass "every control is written :accept-scoped (the engine, not this check, puts the base back)" \
   || fail "a control leaves its statement in the KB — every pin below it runs against a widened base" \
           "$bad
