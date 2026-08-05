@@ -540,7 +540,7 @@
       "current_challenge_route": "No relation contests or corrects family status.",
       "required_challenge_route": "Private correction and placement appeal without making family a service gate.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Make placement exhaustive rather than accidental",
+      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
       "tags": ["placement", "privacy"]
     },
     "forgive": {
@@ -648,7 +648,7 @@
       "current_challenge_route": "No correction or placement appeal attaches to home status.",
       "required_challenge_route": "Private correction and independent placement appeal, kept separate from free-person housing delivery.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Make placement exhaustive rather than accidental",
+      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
       "tags": ["placement", "housing", "privacy"]
     },
     "injure": {
@@ -892,7 +892,7 @@
       "current_challenge_route": "The marker notices only one direction and no rule corrects placement or acts on the duty.",
       "required_challenge_route": "Immediate placement appeal, interim safe continuity, correction, remedy, and independent audit reader.",
       "risk_dispositions": ["patchable", "external"],
-      "owner_ref": "TODO.md::Make placement exhaustive rather than accidental",
+      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
       "tags": ["placement", "public-body", "audit"]
     },
     "rotten": {

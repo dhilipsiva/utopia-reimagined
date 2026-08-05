@@ -153,8 +153,9 @@
 
 # "Every convicted person in this design now has shelter ... the routes are
 #  rules, and between them they leave no combination of the three facts
-#  uncovered." The claim is universal over prisoners, so it is pinned across
-#  the cast rather than on the two new cases — one witness per route.
+#  uncovered." These cast queries remain chapter-local witnesses, one per
+#  route. The generated placement audit owns the universal three-axis check,
+#  including combinations with no named person standing in them.
 ? dwell(Hano).
 # => TRUE
 ? dwell(Ruk).

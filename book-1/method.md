@@ -297,13 +297,14 @@ One command runs everything: `./verify.sh`, at the root of the repository.
 It rebuilds the engine from source and prints the engine commit it built,
 then checks the generated spine and audits: the assertion surface, the
 record-integrity assurance case, the bounded record red-team, and the
-JSON-backed amendment-semantics audit. It also runs the sweeps that keep the
-chapters' prose inside the rules, the guards on what nothing may read, the
-full pin suite, the executable record snapshots, and the source
-counterfactuals. It stops at the first failure, naming the claim that stopped
-being true. The rebuild-and-print exists because this repository once spent
-three days running a stale binary to a green result, and a check that does
-not pin down *what is doing the checking* is a rumor with a progress bar.
+JSON-backed amendment-semantics and placement-exhaustiveness audits. It also
+runs the sweeps that keep the chapters' prose inside the rules, the guards on
+what nothing may read, the full pin suite, the executable record snapshots,
+and the source counterfactuals. It stops at the first failure, naming the claim
+that stopped being true. The rebuild-and-print exists because this repository
+once spent three days running a stale binary to a green result, and a check
+that does not pin down *what is doing the checking* is a rumor with a progress
+bar.
 
 The script's own history is the honest part, so here it is in the register
 this part owes you — the claim, then where it broke.
@@ -409,6 +410,27 @@ label verdict and the candidate mutation meet only because the test author
 placed them beside each other. The audit exposes that boundary. It does not
 close it or add a new withholding gate.
 
+Placement has its own audit because a walk through named people cannot prove
+that every case in the current routing table was visited. Its reviewed source is
+`new-book-plans/placement-exhaustiveness-audit.json`; the script
+`new-book-plans/11-placement-exhaustiveness.py` generates the full product of
+severity, family and home status, constructs each confined case from ordinary
+writable premises, and asks separately about eligibility, housing and every
+known destination. It mirrors the same cases twice without confinement: once
+with affirmative freedom and once with personhood alone. In both, the shelter
+debt and entitlement remain while housing and destinations do not appear.
+
+The source manifest is part of that contract. A new producer or destination
+cannot hide outside a fixed query list. Temporary mutations add an overlapping
+route, delete the historical housing repair, remove a required destination,
+reverse a route, and paint housing onto every registered person. Each harmful
+copy must be caught by the ordinary expectations before the audit is trusted.
+Each alarm-silence probe supplies and confirms a placement report first, so a
+missing report cannot make the result green by accident. The result is
+exhaustive for the current declared subject states, axes and source. It is not
+a runtime exclusivity rule, evidence that a reported placement happened, a
+placement appeal or remedy, or delivery of housing to a free person.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the
@@ -437,19 +459,18 @@ rather than a strength, so it belongs here rather than in a footnote.
 Source counterfactuals exist for a few rule and fact changes — a seat, a
 court's standing. The amendment audit executes a bounded set of candidate
 source edits, and the record red-team names a few more ground-entry deletions.
-Those are covered on purpose, every full run. They are not a complete census
-of possible semantic effects. The constitution's margins record other
-deletions that would do comparable damage and have no fixture: the evidence
-behind somebody's placement, the line that makes the duty-bearer answerable.
-Those still turn some chapter's pins red,
-which sounds like a safety net and is not, because they do it only where
-a chapter happened to argue about the deleted fact and pinned it for
-reasons of its own. Coverage outside the fixtures is an accident of what
-the chapters chose to say, never a guarantee, and the constitution's own
-note records the tally of noticed deletions moving twice in two days as
-the suites grew. A deletion nobody happened to pin is a deletion nothing
-sees. I would rather write that down than let the green tick imply
-otherwise.
+The placement audit is one bounded exception to accidental coverage: across
+its declared subject states and severity, family and home axes it generates the
+whole outcome table and rejects missing, conflicting and reversed routes. None
+of those is a complete census of semantic effects. Deleting the evidence behind a named
+person's severity, or the line that makes the duty-bearer answerable, still
+depends on whatever other check happens to read it. Those changes may turn a
+chapter's pins red, which sounds like a safety net and is not, because they do
+it only where a chapter happened to argue about the changed fact and pinned it
+for reasons of its own. Coverage outside the declared fixtures and generated
+matrix is an accident of what the chapters chose to say, never a guarantee. A
+change nobody happened to pin is a change nothing sees. I would rather write
+that down than let the green tick imply otherwise.
 
 Now the paragraph this part exists to hold, beside the machinery it
 qualifies. Everything above runs, and a stranger can run it: clone the
@@ -460,9 +481,9 @@ record-people. No one has independently reimplemented the checker. No
 outside red team has attacked this constitution. And the engine that blesses
 the book shares the book's author. Two things narrow that, and neither
 closes it. In this repository, the sabotage fixtures, amendment-semantics
-audit and record red-team execute selected source and record mutations rather
-than merely describing them. Upstream, in the engine's own repository, the
-engine — not this constitution — is checked against work
+audit, placement audit and record red-team execute selected source and record
+mutations rather than merely describing them. Upstream, in the engine's own
+repository, the engine — not this constitution — is checked against work
 that is not its own: external solvers are run as referees over the fragments
 of the logic they can hear, though each starts from the engine's
 already-compiled output, so the language front-end sits outside them; the

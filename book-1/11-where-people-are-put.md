@@ -42,11 +42,12 @@ route — cruelty, and a second person harmed — and is in high security too.
 Walking cases like this is a good way to see the machinery and a bad way to be sure of
 it. An earlier draft of this chapter said the cases above exhausted the possibilities.
 They do not. Severity, having a family and having a home vary independently, so what
-needs checking is every combination of the three, and the cases above are only the
-combinations that happen to have somebody standing in them. What holds across those is
-not a tally; it is that in none of them does anyone exercise judgment. There is a
-combination nobody wrote a rule for — not severe, no family, no home — and it is at the
-end of this chapter, and it is the most interesting thing in it.
+needs checking is every combination of the three. The checks beside this book now make
+each of those cases, including the ones with nobody in the story, and ask where each one
+ends. The named people above remain examples, not the proof. What holds across the full
+set is not a tally; it is that in none of them does anyone exercise judgment. There is a
+combination nobody originally wrote a rule for — not severe, no family, no home — and it
+is at the end of this chapter, and it is the most interesting thing in it.
 
 ## The farmhouse
 
@@ -165,16 +166,16 @@ person's placement on the other end: some of them would be noticed, because the 
 this design keeps about itself happen to read the deleted fact for other reasons —
 but only some, by accident, never by guarantee.
 
-One further caution keeps derived placement from sounding like a solved problem.
-Today's placement rules are exclusive by the accident of their conditions — severity
-separates the facility from the rest, having a family separates the two that remain,
-and no person can fall on both sides of either — so nobody derives two placements at
-once. Nothing enforces that. Measured on a copy while this chapter was expanded — add a
-placement rule with a careless condition and a person derives two placements
-simultaneously, while the alarm, which watches home eligibility and nothing else,
-stays perfectly silent. Exclusivity is a property of the rules this design happens to
-have, not of the design. Whoever writes the next placement rule inherits the duty of
-keeping it true, and nothing anywhere will remind them.
+One further caution keeps derived placement from sounding like a solved problem. No
+rule inside the society forbids overlapping destinations. The current routes happen not
+to overlap: severity separates high security from the rest, and having a family
+separates the routes that remain. The checks beside this book now make every combination
+and reject a changed version that gives one person conflicting destinations, omits a
+required result, or reverses a route. Add a careless placement rule on a copy and that
+check fails. The society's alarm, which watches reported home placement and nothing
+else, stays perfectly silent. The check protects the version of the rules that reaches
+this book; it gives the society no new alarm and no remedy after a conflicting version
+is put into use.
 
 A late repair in the same spirit belongs in this chapter's record. For most of this
 design's life a home-confined person's housing and their whereabouts were a single

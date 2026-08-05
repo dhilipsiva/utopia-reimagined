@@ -278,7 +278,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No relation contests or corrects family status.
 - **Required challenge route:** Private correction and placement appeal without making family a service gate.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Make placement exhaustive rather than accidental`.
+- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `7ab1a419e85f28871c839ab899df62b1a3e43aab7dc27b84492cac43dfd2bcc8`.
 
 ### `forgive`
@@ -342,7 +342,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No correction or placement appeal attaches to home status.
 - **Required challenge route:** Private correction and independent placement appeal, kept separate from free-person housing delivery.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Make placement exhaustive rather than accidental`.
+- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `fc6d2e5aecde311bab334041520434be3c4d3cbae006200ff8b09f1792fdcf24`.
 
 ### `injure`
@@ -487,7 +487,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The marker notices only one direction and no rule corrects placement or acts on the duty.
 - **Required challenge route:** Immediate placement appeal, interim safe continuity, correction, remedy, and independent audit reader.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Make placement exhaustive rather than accidental`.
+- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627`.
 
 ### `rotten`

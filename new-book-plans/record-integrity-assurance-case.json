@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "03f5e2f332277c61ed892f62f9bde3e881129f890bac2200c0bb21256cef29ad",
+  "assertion_surface_contracts_sha256": "d92bc73e19d9edede8e0badb9a8bf8b7beaa0c84dea908c461aafc1e5aad1687",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -978,10 +978,10 @@
       "future_trigger": "Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands."
     },
     {
-      "artifact_ref": "book-1/method.md::Coverage outside the fixtures is an accident of what",
-      "current_claim": "Current deletion coverage is accidental chapter-pin coverage, not a guarantee.",
-      "classification": "preserved",
-      "reason": "The case now cites an intentional named snapshot suite as evidence of selected harms, while general runtime deletion detection and transition assurance remain absent.",
+      "artifact_ref": "book-1/method.md::Coverage outside the declared fixtures and generated",
+      "current_claim": "Coverage outside declared fixtures and the placement matrix remains accidental chapter-pin coverage, not a guarantee.",
+      "classification": "revised",
+      "reason": "The method now names the placement matrix as a bounded exception while general runtime deletion detection and transition assurance remain absent.",
       "future_trigger": "Revise only to the exact scope of a later differential harness and deployed assurance evidence."
     },
     {

@@ -309,10 +309,10 @@ the design defines any of them, and nothing has to happen before one is written 
 
 What follows is not small. Write that a man lied about the official he exposed — nothing
 else, no examination recorded, nobody's name attached to the finding — and the
-protection he had for exposing it is gone and he is a prisoner. Write that a convicted
-man has family, one word, and he stops being eligible to serve his sentence at home and
-goes to a facility instead. In both cases nobody wrote the verdict. It followed,
-correctly, from a premise somebody typed.
+protection he had for exposing it is gone and he is a prisoner. Write that a non-severe
+convicted man has family, one word, and he stops being eligible to serve his sentence at
+home and goes to a facility instead. In both cases nobody wrote the verdict. It
+followed, correctly, from a premise somebody typed.
 
 The largest of these levers deserves its own paragraph, because it moves the most with
 the least. Whether a court is itself compromised is among the things the world may

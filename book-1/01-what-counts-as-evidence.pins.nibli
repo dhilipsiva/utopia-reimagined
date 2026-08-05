@@ -128,8 +128,9 @@ deceive(Rebel, Boss).
 ? prisoner(Rebel).
 # => TRUE
 
-# "A person has a family" — one word, buried in a list of attributes, and it is
-# the whole of what decides where a convicted person is held.
+# "A person has a family" — one word, buried in a list of attributes. For
+# Hano's fixed non-severe, home-owning case it alone closes Homestay and opens
+# LowSec; the full placement table has other deciding conditions.
 ? fit(Hano, Homestay).
 # => TRUE
 

@@ -20,10 +20,13 @@ python3 new-book-plans/9-record-integrity-red-team.py --check
 python3 new-book-plans/9-record-integrity-red-team.py --check --execute
 python3 new-book-plans/10-amendment-semantics.py --check
 python3 new-book-plans/10-amendment-semantics.py --check --execute
+python3 new-book-plans/11-placement-exhaustiveness.py --check
+python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 python3 registry/check.py
 ```
 
 Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Dependency order is 7 → 8 → 9; script 10 separately binds the constitution and reviewed 7/8 sources. Its fixtures manually apply candidates and do not prove enactment. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier.
+Script 11 binds the constitution and reviewed placement contract; the full verifier rejects conflicts with the current routing matrix when run but adds no runtime alarm or housing-delivery evidence.
 
 ## Editing, Testing & Naming
 

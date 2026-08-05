@@ -120,6 +120,16 @@ and semantic effects can diverge, and that direct vocabulary edits sit outside t
 amendment path. It manually applies each candidate; it does not prove enactment,
 target truth, source authorship, lawful deployment, or transition assurance.
 
+The generated
+[`placement-exhaustiveness-audit.md`](placement-exhaustiveness-audit.md) owns the
+current routing table across confinement, affirmative freedom and personhood
+alone, then across severity/family/home status. It checks housing separately
+from destination and rejects missing, conflicting, reversed, and painted-on
+non-carceral outcomes in temporary source copies. Positive placement-report
+probes keep its alarm-silence result non-vacuous. This is repository assurance
+for the current rule family, not a runtime placement marker, authenticated
+placement record, appeal, remedy, or housing delivery interface.
+
 ## 5. Required institutional coverage (rules pending)
 
 | Body | Constitutional job | May not do alone | Required check / remedy |

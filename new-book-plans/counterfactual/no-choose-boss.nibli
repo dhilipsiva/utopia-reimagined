@@ -698,8 +698,9 @@ all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender)
 # [v0.5 REPLACES  the asserted facts severe(Lalo). severe(Ruk).]
 # SEVERITY IS NOW DERIVED. Three dimensions of an offence, and an offence is
 # severe when any two of them are present. There is no ordering predicate and
-# no arithmetic: each qualifying pair gets its own rule, which is the same
-# shape Article 6 already uses to get four placements out of two booleans.
+# no arithmetic: each qualifying pair gets its own rule. The generated
+# placement-exhaustiveness audit owns the complete severity/family/home table;
+# do not replace that table with a hand-maintained count here.
 # Monotone, so an offence carrying all three is covered by the pairs already
 # and needs no fourth rule.
 #
@@ -743,9 +744,12 @@ all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender)
 # DO NOT ADD GRADED TIERS on top of this. `building(MedSec, $x)` compiles and
 # the constant is free. Article 0 closes direct ground assertions of `building`
 # but has no exclusivity constraint on rule-derived placements, so an offender
-# matching two combinations derives two placements at once and nothing detects
-# it — the breach marker below keys on home-without-eligibility and is blind to
-# tier conflict. Graded outcomes need a mutual-exclusion marker in the same edit.
+# matching two combinations derives two placements at once and nothing in the
+# constitutional runtime detects it — the breach marker below keys on
+# home-without-eligibility and is blind to tier conflict. The repository's
+# full verifier's generated placement audit rejects that source outcome when
+# run; it does not turn the silent runtime into a remedy. Graded outcomes need a
+# mutual-exclusion marker in the same edit.
 all $x: all $v: attack($x,$v) & cruel($x,$v) -> severe($x).
 all $x: all $v: all $w: attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
 all $x: all $v: all $w: cruel($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).

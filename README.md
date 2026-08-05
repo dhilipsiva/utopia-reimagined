@@ -27,6 +27,8 @@ imprisonment and stops there.
 | `new-book-plans/record-integrity-red-team.json` | the reviewed route postures, snapshot deltas, expected results, limits and narrowness impacts behind that audit |
 | `new-book-plans/amendment-semantics-audit.md` | the generated, executable audit separating Article 9's declared labels from candidate-source effects |
 | `new-book-plans/amendment-semantics-audit.json` | the reviewed exact mutations, expected verdicts, limits and affected claims behind that audit |
+| `new-book-plans/placement-exhaustiveness-audit.md` | the generated, executable severity/family/home placement matrix and mutation audit |
+| `new-book-plans/placement-exhaustiveness-audit.json` | the reviewed axes, routes, source manifest, harmful mutations, limits and affected claims behind that audit |
 | `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
 | `verify.sh` | the one check |
 
@@ -35,6 +37,7 @@ imprisonment and stops there.
 ./verify.sh --quick  # schema/freshness checks; skips the executable suites
 python3 new-book-plans/9-record-integrity-red-team.py --check --execute
 python3 new-book-plans/10-amendment-semantics.py --check --execute
+python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 ```
 
 It exits non-zero on the first failure and names the claim that stopped being true.
@@ -48,7 +51,12 @@ snapshots, not that a deployed record is authentic, complete, append-only or liv
 and not that the checker authenticates its own source or toolchain. The amendment
 audit manually applies exact candidate mutations and proves their bounded
 consequences. It does not show that `become` enacted them, that a declared target is
-true, or that a source transition was authorised.
+true, or that a source transition was authorised. The placement audit generates the
+current routing combinations for confined, affirmatively free, and person-only
+subjects. When the full verifier runs, it rejects missing, conflicting, reversed, or
+roster-only non-carceral housing outcomes. Its mutation probes positively establish a
+placement report before checking alarm silence. It adds no runtime placement alarm
+and does not prove that housing or a reported placement exists in the world.
 
 A second book — how you would actually build this, organisationally and technically — is
 planned and not started.

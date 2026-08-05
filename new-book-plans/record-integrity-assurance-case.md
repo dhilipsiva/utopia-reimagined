@@ -664,7 +664,7 @@ even if their own numbered chapter derivations do not change.
 | `book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds` | Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission. | preserved | The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics. | Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect. |
 | `book-1/12-changing-the-rules.md::integrity of the record those rules are written in.` | The declared-name guard rests on the integrity of its own rule, label register, and constitutional source; semantic entrenchment is not established. | preserved | The case treats the constitutional source as a record but does not harden amendment semantics. | Revise with the later semantic-amendment and source-transition rule family and its counterfactuals. |
 | `book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**` | The current audit chain ends at an unread `obliged` duty. | preserved | The case specifies the future reader/action contract and deliberately adds no reader rule. | Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands. |
-| `book-1/method.md::Coverage outside the fixtures is an accident of what` | Current deletion coverage is accidental chapter-pin coverage, not a guarantee. | preserved | The case now cites an intentional named snapshot suite as evidence of selected harms, while general runtime deletion detection and transition assurance remain absent. | Revise only to the exact scope of a later differential harness and deployed assurance evidence. |
+| `book-1/method.md::Coverage outside the declared fixtures and generated` | Coverage outside declared fixtures and the placement matrix remains accidental chapter-pin coverage, not a guarantee. | revised | The method now names the placement matrix as a bounded exception while general runtime deletion detection and transition assurance remain absent. | Revise only to the exact scope of a later differential harness and deployed assurance evidence. |
 | `book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and` | Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented. | preserved | The case is a target and acceptance gate, not an implemented institutional or operational defence. | Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land. |
 
 ## Acceptance gate
@@ -687,7 +687,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `03f5e2f332277c61ed892f62f9bde3e881129f890bac2200c0bb21256cef29ad`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `d92bc73e19d9edede8e0badb9a8bf8b7beaa0c84dea908c461aafc1e5aad1687`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

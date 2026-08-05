@@ -9,14 +9,16 @@
 #
 #   ./verify.sh          full run: 549 chapter/floor pins, 23 record snapshots
 #                       with 145 reviewed pins, 9 amendment candidates with 44
-#                       pins, executable controls, and source counterfactuals
-#                       (476.18 s measured 2026-08-04)
-#   ./verify.sh --quick  everything except those four executable suites
-#                       (2.35 s incremental, measured 2026-08-04)
+#                       pins, 24 placement rows with 336 pins, 5 placement
+#                       mutations with 74 pins, executable controls, and source
+#                       counterfactuals (751.70 s measured 2026-08-05 with a
+#                       clean b334af1 release supplied through NIBLI_PIN)
+#   ./verify.sh --quick  everything except those five executable suites
+#                       (1.15 s with the same pinned binary, measured 2026-08-05)
 #                       NOTE --quick cannot execute record snapshots, amendment
-#                       candidates, or stale counterfactual fixtures: those are
-#                       steps 6, 6b, and 7. Run the FULL suite after any constitution
-#                       edit — that is how a stale fixture shipped once.
+#                       candidates, placement cases, or stale counterfactual
+#                       fixtures. Run the FULL suite after any constitution edit
+#                       — that is how a stale fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and every conclusion-only gate
@@ -38,6 +40,7 @@ SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
 RED_TEAM=new-book-plans/9-record-integrity-red-team.py
 AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
+PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -113,7 +116,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, or amendment audit,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, amendment audit, or placement audit,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -154,7 +157,13 @@ out=$(python3 "$AMENDMENT_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "amendment-semantics audit failed" "$out"
 
-# ── 2d. chapter 1's headline number ──────────────────────────────────────────
+# ── 2d. placement combinations and source mutations stay reviewed ───────────
+step "placement-exhaustiveness contract"
+out=$(python3 "$PLACEMENT_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "placement-exhaustiveness audit failed" "$out"
+
+# ── 2e. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and falsifies the nine prose places that name it.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
@@ -396,7 +405,7 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor pins, executable record snapshots, amendment executions, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor pins, executable record snapshots, amendment and placement executions, and counterfactuals (--quick)\n'
   exit 0
 fi
 
@@ -452,6 +461,16 @@ step "amendment-semantics executions"
 out=$(NIBLI_PIN="$PIN" python3 "$AMENDMENT_AUDIT" --check --execute 2>&1) \
   && pass "$out" \
   || fail "amendment-semantics execution failed" "$out"
+
+# ── 6c. current placement matrix and bounded source mutations ────────────────
+# The audit generates every declared subject state and severity/family/home
+# case, including both non-confined mirrors, then proves that missing,
+# duplicate, reversed, and painted housing mutations trip the reviewed source
+# contract. It adds no runtime alarm.
+step "placement-exhaustiveness executions"
+out=$(NIBLI_PIN="$PIN" python3 "$PLACEMENT_AUDIT" --check --execute 2>&1) \
+  && pass "$out" \
+  || fail "placement-exhaustiveness execution failed" "$out"
 
 # ── 7. the standing source counterfactuals ───────────────────────────────────
 # Derivation is monotone and probe facts load on top, so no probe can test a
