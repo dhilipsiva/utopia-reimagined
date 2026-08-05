@@ -37,10 +37,10 @@ then a constitutional-expansion backlog and cross-cutting sections:
    a future question that changes what a chapter says must be ruled before the
    implementation backlog, and because a lost decision costs more than any lost
    task; this section has been destroyed by tooling once and is watched accordingly.
-2. **Phase 2 — engine handoffs (nibli).** One residual T3 composition-performance
-   handoff is pending upstream. It stays ahead of the writing because some of what
-   the book has to concede is an engine limitation rather than a design choice, and
-   it is dishonest to write the concession while the limitation is fixable.
+2. **Phase 2 — engine handoffs (nibli).** Currently empty and reserved for
+   fixable engine boundaries. It stays ahead of the writing because some of what
+   the book has to concede may be an engine limitation rather than a design choice,
+   and it is dishonest to write the concession while the limitation is fixable.
 3. **Constitutional expansion — implementation backlog.** The ratified mandate,
    taxonomy, coverage map, democratic corridor, and staged T3 path now have one
    canonical execution backlog, ordered from kernel repair through public review.
@@ -95,7 +95,7 @@ later edits — re-derive before trusting.
 
 ---
 
-## Phase 2 — Engine handoffs (nibli). One residual item is pending upstream.
+## Phase 2 — Engine handoffs (nibli)
 
 **dhilipsiva wrote nibli, and he is the channel between the sessions — for book-2's
 tracker exactly as for this one.** The sessions cannot see each other, so **an item is not
@@ -107,90 +107,15 @@ write its reply addressed directly back to this one, again through dhilipsiva: t
 what changed, whether any verdict moved, and what the prompt itself got wrong. That last
 item has been non-empty more often than not, on both ends of the channel.
 
-- [ ] **Bound composed T3-standing-to-opaque-entitlement queries.**
-  - **What landed:** engine `5cec80080eea0334c87508e60813f8f70f487441`
-    repaired the independent eager-materialisation and global witness-candidate
-    paths. Book content commit `ed93d42` restored full-source opaque entitlement
-    execution, deleted the extracted-floor script, and returned the authoritative
-    verifier to bounded completion.
-  - **Residual measured boundary:** an opaque entitlement for a synthetic subject
-    whose only `person` proof traverses the generated high-arity T3 custody chain
-    still exceeded 180 seconds on 2026-08-05. The placement audit therefore proves
-    the actual standing chain and the same subject's full-source floor projection in
-    paired fresh processes. This is honest compositional evidence, not one-process
-    execution of the composed chain. Chapter 7's analogous Zed entitlement remains
-    omitted for the same reason.
-  - **Done when:** a release `nibli-pin` completes the augmented chapter 7 query and
-    the generated `confined-notsevere-nofamily-home` case with
-    `entitled(Confined_NotSevere_NoFamily_Home, event { dwell() })` in the same
-    bounded process as its actual matrix facts; a general engine regression protects
-    that composition; the direct pin is restored; and the full verifier passes
-    without paired execution being the only evidence for the chain.
-
-```text
-You are working in the Nibli engine repository. Assume no knowledge of the
-rights-nobody-has-to-earn repository or its book.
-
-Investigate the residual composed-query performance boundary after release
-engine commit 5cec80080eea0334c87508e60813f8f70f487441. The public fixture is
-https://github.com/dhilipsiva/rights-nobody-has-to-earn at content commit
-ed93d42d81a28d8a8901444f71b9b122cac08eea. Build release `nibli-pin` from that
-engine commit. Copy the book fixture
-`book-1/07-a-prisoner-is-a-person.pins.nibli`, change `:expect-pins 21` to 22,
-and append:
-
-    # The T3 custody chain derives Zed's standing; the floor must remain open.
-    ? entitled(Zed, event { eats() }).
-    # => TRUE
-
-Then run:
-
-    /usr/bin/time -v target/release/nibli-pin --kb \
-      /path/to/rights-nobody-has-to-earn/new-book-plans/constitution.nibli \
-      /tmp/07-composed-floor.pins.nibli
-
-On 2026-08-05, the fixed engine completed ordinary full-source opaque floor
-queries in about 0.13 seconds, but this query did not return within 180 seconds.
-The same residual appears in generated placement subjects whose only `person`
-proof traverses the high-arity T3 custody chain. The book currently proves the
-standing chain and opaque projection in paired fresh processes; do not mistake
-that for one-process execution of their composition.
-
-The second acceptance fixture is the placement case
-`confined-notsevere-nofamily-home` in
-`new-book-plans/11-placement-exhaustiveness.py`. Use its generated base candidate
-(the full constitution plus that case's matrix facts), do not add the paired
-`person` overlay, and query:
-
-    ? entitled(Confined_NotSevere_NoFamily_Home, event { dwell() }).
-    # => TRUE
-
-Profile the general anchor and witness path for an opaque event projection whose
-subject is established by a high-arity derived chain. Do not special-case Zed,
-`person`, `entitled`, any book predicate, or this fixture. `EventPath` and
-`RecordPath` are constants in the third place of ternary `precede/3`, not binary
-relation heads. Preserve deterministic reasoning, opaque event abstraction,
-derived-only behavior, relation-scoped materialisation, cumulative-root cache
-semantics, and every temporal/deontic flavour mapping. Add a deterministic
-engine regression that fails before the repair and proves both the derived
-standing and opaque conclusion in one query process. Record binary-bound
-before/after wall time, peak memory, and the regression threshold; do not claim a
-timeless performance guarantee.
-
-Run the relevant package tests and `just ci-all` from a clean engine checkout.
-Then write your reply directly to the rights-nobody-has-to-earn session, through
-dhilipsiva, with: the engine commit SHA; root cause; files and behavior changed;
-before/after measurements; tests run; whether any logical verdict moved; the
-book-side pin that can be restored; and what this prompt got wrong.
-```
+**No engine handoff is currently open.**
 
 Do not work around an engine limitation in prose — conceding a fixable limitation
 as though it were a design choice is the specific dishonesty this phase exists to
 prevent, and it is why the phase runs first.
 
-**When a reply lands here**, re-run `./verify.sh` before believing anything — the script
-rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
-measured an engine change that was never rebuilt.
+**When a reply lands here**, independently build or identify its source commit, select
+that binary explicitly, and re-run `./verify.sh` before believing anything. This repo
+has twice measured an engine change that was never rebuilt.
 
 ---
 
@@ -226,18 +151,17 @@ route, or remedy current law.
 ### Expansion phase 2 — Specify the comprehensive constitution
 
 - [ ] **Implement the ratified T3 temporal path in stages — staged rule families and
-  the primary full-source gate landed; semantic, prose, and composed-engine closures
-  remain.**
+  the full-source execution gates landed; four semantic and prose closures remain.**
   - Content commit `6f6c636` implements witnessed T1 transitions and carry,
     typed transitive T2 event/record paths, and canonical-current, source/window/
     case/lease-bound T3 Court custody. Forty fresh processes now execute 236
     temporal pins, including replay, divergence, omission, forgery, typed cycles,
     conflicting bindings, unwitnessed reverse dates, and withheld standing evidence.
-  - Content commit `ed93d42` restored direct full-source opaque entitlements,
-    deleted the extracted-floor workaround, and refreshed the affected entitlement
-    pins and governed execution artifacts. The placement audit still separates a
-    generated subject's actual T3 standing proof from its full-source opaque floor
-    projection; that precise composition remains the Phase 2 handoff above.
+  - Content commit `ed93d42` restored ordinary full-source opaque entitlements and
+    deleted the extracted-floor workaround. Content commit `c7d9a19` then restored
+    chapter 7's direct Zed entitlement and made every generated placement subject's
+    floor projection execute cold against its exact matrix facts, without a `person`
+    overlay. A standing-removal sabotage protects that composition boundary.
   - Before closure, repair or explicitly narrow four non-engine gaps:
     - withholding either predecessor-standing witness can still suppress `person`
       and the floor; resolve this through the universal-standing root item below or
@@ -252,10 +176,8 @@ route, or remedy current law.
       interpretation with its current generated block and constitution.
   - **Done when:** the T3 implementation gate in
     [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md)
-    passes with the composed standing-to-entitlement execution restored, the four
-    closures above are resolved and pinned, residual liveness remains explicitly
-    handed to Book 2, every affected claim is revised or pinned, and the Phase 2
-    engine handoff is deleted as completed.
+    passes with the four closures above resolved and pinned, residual liveness
+    explicitly handed to Book 2, and every affected claim revised or pinned.
 
 - [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
   - Use the coverage map's contract fields and the taxonomy's formalisation metadata
@@ -674,8 +596,8 @@ Landed work is not recorded here; that is what git is for. What survives is the 
 set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
-./verify.sh                 # 45.22 s measured 2026-08-05 with a clean 5cec800
-                            #   release supplied through NIBLI_PIN:
+./verify.sh                 # 34.89 s measured 2026-08-05 with an independently
+                            #   built clean 4cb02aa release supplied through NIBLI_PIN:
                             #   engine, spine, assertion surface, assurance case,
                             #   bounded red-team, amendment-semantics and placement
                             #   contracts,
@@ -684,17 +606,18 @@ set of things a command cannot teach you and a rename cannot re-derive.
                             #   gate, claim-comment check,
                             #   registry check, absences, INVARIANT 1, the arity and
                             #   counting guards, control scope, the pin
-                            #   suite (554 pins) with cross-file :expect-pins
+                            #   suite (555 pins) with cross-file :expect-pins
                             #   reconciliation, 15 record snapshots / 108 pins,
                             #   40 temporal processes / 236 pins, nine amendment
                             #   candidates / 44 pins, 24 placement rows / 336 pins,
-                            #   24 paired full-source floor probes / 24 pins, five
+                            #   24 cold composed floor probes / 24 pins, five
                             #   placement mutations / 73 pins, five placement
-                            #   sabotages, the other executable
+                            #   mutation-baseline sabotages, one composed-standing-
+                            #   removal sabotage, the other executable
                             #   controls, one record failing-pin control, and source
                             #   counterfactuals in three diff classes — line deleted,
                             #   line changed, line added
-./verify.sh --quick         # 2.38 s with the same pinned binary (2026-08-05): skips
+./verify.sh --quick         # 2.22 s with the same pinned binary (2026-08-05): skips
                             #   chapter/floor pins, executable record snapshots,
                             #   amendment and placement executions, and counterfactuals
                             #   — never sufficient after a constitution edit
@@ -709,11 +632,13 @@ claim that stopped being true — including exit 3, the failure that is good new
 pinned `:defect` stopped reproducing, and the script names it a REPAIR, not a
 regression, because the response is to drop the marker and rewrite the prose that
 called it a flaw, never to debug the harness. Use the **release** `nibli-pin` at or
-after `5cec800`, never `nibli-host`. The script builds the adjacent engine unless
+after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. The script builds the adjacent engine unless
 `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one; an explicit binary path is used
 as-is, so record its source commit separately. A stale binary can preserve logical
-verdicts while violating bounded completion — the pre-`5cec800` engine did exactly
-that — so a green pin result alone does not establish engine freshness. **Gate on
+verdicts while violating bounded completion: pre-`5cec800` builds failed ordinary
+full-source opaque queries, and `5cec800` restored those but could still time out when
+standing itself had to traverse the T3 custody chain. `4cb02aa` closes that composed
+boundary, so a green pin result alone does not establish engine freshness. **Gate on
 the verifier's exit status, never on its output**: piping to `tail` swallows the exit, and `echo $?`
 followed by `&&` gates on the echo — both shapes shipped a red commit on 2026-08-02.
 The only safe chain is `./verify.sh > /dev/null 2>&1 && git commit …`.
