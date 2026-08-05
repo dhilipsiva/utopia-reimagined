@@ -149,13 +149,6 @@ predicate, duty, delivery route, or remedy current law.
 
 ### Expansion phase 1 — Repair and map the verified kernel
 
-- [ ] **Test amendment semantics, not only amendment labels.**
-  - Add adversarial cases for targetless, falsely targeted, and semantically concealed
-    amendments; keep the known limit that a self-declared target is not proof of an
-    amendment's real effect.
-  - Separate a visible `admits`-vocabulary change from an entrenched amendment; do not
-    claim that the current mechanism protects both.
-
 - [ ] **Make placement exhaustive rather than accidental.**
   - Generate the relevant placement combinations; test duplicate, missing, and
     opposite-direction placement outcomes.
@@ -232,6 +225,10 @@ predicate, duty, delivery route, or remedy current law.
 
 - [ ] **Define the democratic ceiling and majority process.**
   - Ordinary majorities decide policy, tax mix, providers, and choices above the core.
+  - Current `approves(Electorate, amendment)` names the electorate but authenticates
+    neither writer, tally, certificate, recount, challenge, nor correction. Require an
+    authenticated, contestable result without giving one writer or reviewer a
+    withholding veto.
   - Every restrictive proposal needs public reasons, evidence, non-discrimination,
     least-restrictive means, a constitutional delivery duty, appeal, and independent
     review. Capacity modelling remains Book 2; time-dependent review/expiry is
@@ -589,20 +586,23 @@ Landed work is not recorded here; that is what git is for. What survives is the 
 set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
-./verify.sh                 # 474.46 s on 2026-08-04: engine, spine, assertion
-                            #   surface, assurance case, bounded red-team contract,
+./verify.sh                 # 476.18 s measured 2026-08-04:
+                            #   engine, spine, assertion surface, assurance case,
+                            #   bounded red-team and amendment-semantics contracts,
                             #   evidence count, jargon,
                             #   counted-claims hard
                             #   gate, claim-comment check,
                             #   registry check, absences, INVARIANT 1, the arity and
                             #   counting guards, control scope, the pin
-                            #   suite (544 pins) with cross-file :expect-pins
+                            #   suite (549 pins) with cross-file :expect-pins
                             #   reconciliation, 23 record snapshots / 145 pins,
-                            #   one executable failing-pin control, and source
+                            #   nine amendment candidates / 44 pins, their executable
+                            #   controls, one record failing-pin control, and source
                             #   counterfactuals in three diff classes — line deleted,
                             #   line changed, line added
-./verify.sh --quick         # 2.02 s incremental (2026-08-04): skips chapter/floor
-                            #   pins, executable record snapshots, and counterfactuals
+./verify.sh --quick         # 2.35 s incremental (2026-08-04): skips
+                            #   chapter/floor pins, executable record snapshots,
+                            #   amendment executions, and counterfactuals
                             #   — never sufficient after a constitution edit
 ./verify.sh --only <file>   # one pin file, engine rebuilt, --allow-shell passed, and
                             #   the fixture's own KB chosen for counterfactual files;
@@ -742,15 +742,22 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
   restate the unnarrowed BL1 in book-1; it would be false the way BL2 is false in
   `book.md`.
 
-- **Entrenchment cannot protect the evidence vocabulary, and the reason is structural.**
-  `permanent(Art_Evidence).` was applied verbatim and run: it kills an amendment that
-  DECLARES that target and kills nothing else. `adjust` is self-declared by the proposer,
-  so an amendment naming no target enacts and one naming a harmless target enacts too.
-  **Entrenchment guards targets a proposer admits to; the vocabulary is not a target, it
-  is the store.** Article 0a closed the quiet route — an unadmitted name is refused at
-  assert time — but that makes widening *visible*, not *hard*, and nothing entrenches the
-  `admits` block itself. So the honest sentence, in chapter 1 and chapter 12 alike, is
-  that the list **cannot** be entrenched, not that it merely has not been.
+- **Article 9 does not semantically entrench the evidence vocabulary.**
+  The source audit applies `permanent(Art_Evidence).` and still executes a direct
+  vocabulary widening: `rich(Adam)` becomes writable. Article 9's general rule marks
+  dead a docketed proposal that DECLARES a registered target and does nothing to the
+  source itself. `adjust` is self-declared, so a targetless proposal and one naming a
+  harmless target both receive the otherwise-derived law label.
+  In the reverse direction, `false(Amend_Floor)` remains true and `become` remains false
+  while an independently constructed source deletion removes the food entitlement and
+  makes the adverse rule loadable.
+  The executable source audit goes further: a concealed grammar change can remove the
+  food entitlement while the separate anti-imprisonment firewall survives, and direct
+  `admits("rich")` widening bypasses Article 9 entirely. Article 0a therefore makes
+  widening *source-visible*, not approved, authenticated, or semantically entrenched.
+  Nothing reads `become`, and the audit manually applies its candidates; it proves no
+  proposal-to-source transition. A future entrenchment design must bind an exact change,
+  independent effect review, compatibility verdict, and effective version.
 
 - **`--allow-shell` stays opt-in, and do not ask upstream to make it unconditional.**
   nibli's pin language is closed by design — nothing under their `pins/` may reach outside
