@@ -147,14 +147,6 @@ predicate, duty, delivery route, or remedy current law.
   constitutional interfaces; transition, operations, infrastructure, and service
   logistics remain Book 2.
 
-### Expansion phase 1 — Repair and map the verified kernel
-
-- [ ] **Make placement exhaustive rather than accidental.**
-  - Generate the relevant placement combinations; test duplicate, missing, and
-    opposite-direction placement outcomes.
-  - Preserve the distinction between a placement repair and actual free-person
-    housing delivery.
-
 ### Expansion phase 2 — Specify the comprehensive constitution
 
 - [ ] **Implement the ratified T3 temporal path in stages.**
@@ -586,9 +578,11 @@ Landed work is not recorded here; that is what git is for. What survives is the 
 set of things a command cannot teach you and a rename cannot re-derive.
 
 ```
-./verify.sh                 # 476.18 s measured 2026-08-04:
+./verify.sh                 # 751.70 s measured 2026-08-05 with a clean b334af1
+                            #   release supplied through NIBLI_PIN:
                             #   engine, spine, assertion surface, assurance case,
-                            #   bounded red-team and amendment-semantics contracts,
+                            #   bounded red-team, amendment-semantics and placement
+                            #   contracts,
                             #   evidence count, jargon,
                             #   counted-claims hard
                             #   gate, claim-comment check,
@@ -596,13 +590,15 @@ set of things a command cannot teach you and a rename cannot re-derive.
                             #   counting guards, control scope, the pin
                             #   suite (549 pins) with cross-file :expect-pins
                             #   reconciliation, 23 record snapshots / 145 pins,
-                            #   nine amendment candidates / 44 pins, their executable
+                            #   nine amendment candidates / 44 pins, 24 placement
+                            #   rows / 336 pins, five placement mutations / 74 pins,
+                            #   five placement sabotages, the other executable
                             #   controls, one record failing-pin control, and source
                             #   counterfactuals in three diff classes — line deleted,
                             #   line changed, line added
-./verify.sh --quick         # 2.35 s incremental (2026-08-04): skips
+./verify.sh --quick         # 1.15 s with the same pinned binary (2026-08-05): skips
                             #   chapter/floor pins, executable record snapshots,
-                            #   amendment executions, and counterfactuals
+                            #   amendment and placement executions, and counterfactuals
                             #   — never sufficient after a constitution edit
 ./verify.sh --only <file>   # one pin file, engine rebuilt, --allow-shell passed, and
                             #   the fixture's own KB chosen for counterfactual files;
