@@ -221,15 +221,15 @@ The implementation was admitted only after these gates were made executable:
    [`temporal-assurance-case.md`](temporal-assurance-case.md) is the bounded
    current-source assurance record; it preserves the outside-liveness boundary.
 7. [x] **Integrated floor-query execution:** release Nibli
-   `5cec80080eea0334c87508e60813f8f70f487441` executes an exact opaque floor
-   entitlement against the full T3 constitution. TA-22 now owns that coexistence
-   check inside the temporal harness, and the chapter, red-team, amendment, and
-   placement suites exercise the same full-source shape. This is bounded,
-   binary-specific evidence; it is not a timeless performance guarantee. The
-   placement proof is explicitly paired: its synthetic T3 row proves standing
-   and debt, while a fresh full-current-source probe supplies that same standing
-   fact and proves the opaque entitlement. It does not claim the composed
-   high-arity synthetic-standing path completes in one process.
+   `4cb02aade43b394374c40e661907ad66df3af3fe` executes an exact opaque floor
+   entitlement from standing derived through the full T3 custody chain. Chapter
+   7 pins that composition for Zed. Every placement row also receives a fresh
+   one-pin probe against its complete generated candidate, so the confined rows
+   must derive standing through their actual case-bound T3 facts; no direct
+   standing overlay or extracted floor source is supplied. TA-22, the red-team,
+   and amendment suites retain independent full-source coexistence coverage.
+   This is bounded, binary-specific evidence over the reviewed sources and
+   fixtures; it is not a timeless or global performance guarantee.
 
 ## 8. Required adversarial matrix
 

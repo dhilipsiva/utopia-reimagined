@@ -167,31 +167,46 @@ or make a successor arrive. It checks itemised `owe` debts and their opaque
 event-abstraction `entitled` projections together against the full constitution.
 No second registration, adulthood, release, or carry gate was added.
 
-**Full-source opaque floor execution restored 2026-08-05:** release Nibli
-`5cec80080eea0334c87508e60813f8f70f487441` removes the temporary extracted-floor
-isolation. There were two independent costs: every query eagerly materialised all
-eligible relations, and backward witness generation used the global typed domain
-and every Skolem family while ignoring bound sibling arguments. The repair scopes
-materialisation to the reachable relation cone, backward-chains positive
-entailments before materialising, and uses relation anchors plus bound siblings
-before any sound global fallback. No book predicate or logical verdict was
-special-cased or moved. On the exact full-T3 food-entitlement command, the clean
-baseline `225bba4` timed out after 180.24 s at 1,850,676 KiB RSS; the supplied
-fixed binary returned TRUE in three 0.13 s runs at about 12,008 KiB. An independent
-clean build of `5cec800` returned TRUE in 0.13–0.15 s at 11,888 KiB. These are
-dated, binary-bound measurements, not a timeless performance guarantee. One
-composition remains outside that bound: an opaque entitlement for a synthetic
-subject whose only `person` proof traverses the generated high-arity T3 custody
-fixture timed out at 180 s, while the same candidate answered Adam and Hano in
-0.14–0.18 s and a direct standing anchor answered the synthetic subject in 0.15 s.
-The placement audit therefore pairs each actual synthetic matrix row with a fresh
-full-current-source probe containing only the same subject's standing fact. That
-is compositional assurance, not a claim that the expensive chain executes in one
-process; no floor source is extracted.
+**Full-source and composed opaque floor execution restored 2026-08-05:** release
+Nibli `5cec80080eea0334c87508e60813f8f70f487441` first removed the temporary
+extracted-floor isolation. It repaired two independent global costs: eager
+materialisation of every eligible relation and backward witness generation over
+the global typed domain and every Skolem family without first using relation
+anchors and bound siblings. The exact full-T3 food entitlement fell from a
+180.24 s timeout at 1,850,676 KiB RSS on `225bba4` to 0.13–0.15 s and about
+12,000 KiB on clean `5cec800` builds.
+
+Release Nibli `4cb02aade43b394374c40e661907ad66df3af3fe` closes the residual
+composition where the queried subject's only standing proof traverses the
+high-arity T3 custody chain. The remaining cause was general: rule firing built
+independent candidate vectors for unbound Neo-Davidsonian events before shared
+individual-role bindings could constrain them; partial dependent-Skolem
+candidates rebuilt already grounded dependencies; opaque-query candidate order
+did not favour the ground subject; and an exact eligible one-positive derived
+antecedent could not request its complete relation cone lazily. The repair uses
+deterministic left-deep event joins under accumulated bindings, grounded/index
+selectivity, guarded early role binding, query-ground dependency ordering,
+partial-Skolem specialisation, and fail-closed exact relation-scoped lookup. No
+book predicate or definitive logical verdict was special-cased or moved.
+
+On binary-bound 2026-08-05 measurements, `5cec800` timed out on both the composed
+Zed chapter query (180.13 s, 25,792 KiB RSS) and the generated placement query
+(180.11 s, 25,912 KiB). The supplied `4cb02aa` release returned Zed TRUE in a
+0.87 s median at no more than 13,364 KiB and the placement entitlement TRUE in a
+0.23 s median at no more than 12,868 KiB. These are dated fixtures, not a timeless
+performance guarantee. An independent clean build (SHA-256 `d5d0f86a494aedd943434c2fa0abd0acbe0d7df36142d983df5774bf2dd38999`)
+reproduced the two results at 0.87 s / 13,324 KiB and 0.22 s / 12,796 KiB. Its
+bytes differ from the supplied binary (`33ea9c9805b899fa054b75371c60eedc9b975d4be356a45b57de0d6323071fa7`),
+so this establishes source identity and behaviour, not byte-reproducible builds.
+Chapter 7 now pins the Zed composition directly. Each placement row also runs a
+fresh one-pin probe against its complete generated candidate: confined standing
+must traverse the actual T3 facts, with no direct `person` overlay and no
+extracted floor source.
+
 `EventPath` and `RecordPath` are third-place constants in ternary `precede/3`, not
-binary relation heads; the engine's binary-path fixture is a minimal general
-analogue. Opaque abstraction exposed witness expansion but was not required for
-the separate eager-materialisation defect.
+binary relation heads. The T3 chain amplified both engine failures but was not
+their complete cause; opaque abstraction exposed witness expansion but was not
+required for the separate eager-materialisation defect.
 
 **Staged temporal assurance enacted 2026-08-05:**
 `12-temporal-assurance.py` constructs cumulative T1, T2, and T3 sources and
@@ -268,7 +283,7 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order the work happens**, refreshed 2026-08-03 after all fourteen chapter passes completed (their records live in git, not the tracker). It starts with **Phase 1, author-gated decisions**, currently empty and reserved for questions that must be ruled before implementation, and **Phase 2, engine handoffs (nibli)**, which currently owns the residual composed T3-standing-to-opaque-entitlement performance boundary. It then carries the merged **Constitutional expansion — implementation backlog**, which turns the ratified mandate, time target, taxonomy, coverage map, and democratic corridor into ordered work without claiming any unimplemented rule exists. Cross-cutting sections cover remaining book work, reach, data, legacy harvest, and book-2; **Standing facts and methods** closes the file with knowledge, not tasks. Delete a bullet when it fully lands; update it if only partly done. book-2's items live in `book-2/TODO.md`; don't work them while book-1 is active.
-- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `5cec800` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
+- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
 - `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
 - `book-2/TODO.md` — book-2's seed tracker, deliberately unordered. Same channel protocol as book-1's Phase 2 when engine asks eventually arise.

@@ -73,9 +73,10 @@ Every row also checks standing, affirmative freedom or confinement,
 the presence or absence of an exact case-bound custody lease,
 the itemised shelter debt, each axis result, and every
 discovered non-selected destination.
-A paired probe checks the same subject's exact opaque shelter
-entitlement against the full current source plus only a standing
-fact; it never extracts the floor rules.
+A fresh one-pin probe checks the same subject's exact opaque shelter
+entitlement against that row's full generated candidate, including
+its actual standing route; it supplies no standing overlay and
+extracts no floor rules.
 
 ## Affirmatively free mirror
 
@@ -94,9 +95,10 @@ Every row also checks standing, affirmative freedom or confinement,
 the presence or absence of an exact case-bound custody lease,
 the itemised shelter debt, each axis result, and every
 discovered non-selected destination.
-A paired probe checks the same subject's exact opaque shelter
-entitlement against the full current source plus only a standing
-fact; it never extracts the floor rules.
+A fresh one-pin probe checks the same subject's exact opaque shelter
+entitlement against that row's full generated candidate, including
+its actual standing route; it supplies no standing overlay and
+extracts no floor rules.
 
 ## Person-only mirror
 
@@ -115,9 +117,10 @@ Every row also checks standing, affirmative freedom or confinement,
 the presence or absence of an exact case-bound custody lease,
 the itemised shelter debt, each axis result, and every
 discovered non-selected destination.
-A paired probe checks the same subject's exact opaque shelter
-entitlement against the full current source plus only a standing
-fact; it never extracts the floor rules.
+A fresh one-pin probe checks the same subject's exact opaque shelter
+entitlement against that row's full generated candidate, including
+its actual standing route; it supplies no standing overlay and
+extracts no floor rules.
 
 The two non-confined mirrors are current-source narrowness tripwires. They
 record the present gap between entitlement, itemised debt, and actuality.
@@ -269,10 +272,10 @@ This counterexample separates current placement completeness from actual non-car
 - **Bounded Absence Meaning:** The negative axis states and FALSE query results mean not derivable from the supplied bounded fixture. They do not prove a classical negative fact, record completeness, or the truth of any asserted positive entry.
 - **Current Source:** The matrix binds the exact current constitution, every discovered fit/dwell/building producer, and every literal building destination. It is not a proof about a changed source until the reviewed manifest and expectations are updated.
 - **Future Delivery:** The non-confined mirrors are current narrowness tripwires, not a permanent prohibition. A future authorised and challengeable housing-delivery rule must intentionally revise this contract and every affected book claim.
-- **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. A paired probe for every row uses the full current source plus only that subject's standing fact to execute the exact opaque shelter entitlement without extracting floor rules. This exposes the current delivery gap rather than closing it.
+- **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. Every exact generated row also runs a fresh one-pin opaque shelter entitlement against the full current source plus that row's actual facts; standing must derive through the row's own route, with no standing overlay or extracted floor rules. This exposes the current delivery gap rather than closing it.
 - **Records And Remedy:** The audit constructs facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family or home record; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.
 - **Runtime:** The repository rejects current-source outcomes that conflict with the reviewed matrix, but the constitution has no general exclusivity, completeness, or opposite-destination reader. A deployed harmful rule can therefore leave err(_, Placement) false.
-- **Scope:** The Cartesian product is exhaustive only for the current confined, affirmatively free, and person-only states; current severity derivability, family-record presence, home-record presence; and the discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Paired entitlement probes bind the exact current constitution plus one standing fact; they do not establish bounded event-query performance for arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, real facilities, or future constitutional axes.
+- **Scope:** The Cartesian product is exhaustive only for the current confined, affirmatively free, and person-only states; current severity derivability, family-record presence, home-record presence; and the discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row's complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, real facilities, or future constitutional axes.
 - **Temporal Fixture:** Every confined row receives one self-contained witnessed transition and ordered window shared inside that generated knowledge base, one shared TemporalLeaseFamily source record, and an exact subject-specific case identifier that is also its lease identifier. Non-confined rows receive none of those case facts. This proves only the supplied fixture can reach current formal custody; it does not authenticate the premises or prove outside time and publication advance.
 - **Trust Root:** The constitution, reviewed JSON, generator, release engine, verifier, and human review can be weakened together. A green run does not authenticate or authorise that shared repository trust root.
 
@@ -289,12 +292,12 @@ This counterexample separates current placement completeness from actual non-car
 
 - **Current claim:** Shelter actuality currently arrives through confinement and not for either affirmatively free or person-only mirrors; the placement audit preserves rather than repairs that perverse boundary.
 - **Classification:** `preserved`.
-- **Reason:** The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and require dwell to remain absent in both states; paired full-source standing probes execute the exact opaque shelter entitlement without extracting floor rules.
+- **Reason:** The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and require dwell to remain absent in both states; fresh one-pin probes execute the exact opaque shelter entitlement against those same complete candidates without a standing overlay or extracted floor rules.
 - **Future trigger:** Any non-carceral dwell producer must revise this chapter's shelter claim even if its own pin file and the recorded-speech half do not change.
 
 ### `book-1/08-what-you-are-owed.md::Shelter derives for every confined person and for nobody else.`
 
-- **Current claim:** The current source derives shelter for every confined person and no non-confined mirror, while itemised debt reaches all three subject states and paired full-source standing probes execute the exact opaque entitlement for each generated subject.
+- **Current claim:** The current source derives shelter for every confined person and no non-confined mirror, while itemised debt reaches all three subject states and each complete generated candidate directly executes the exact opaque entitlement for its subject.
 - **Classification:** `preserved`.
 - **Reason:** The generated matrix executes the claim over confined, affirmatively free, and person-only states for every declared axis tuple instead of relying on the current named cast.
 - **Future trigger:** Any valid non-carceral delivery family must revise this prose, its chapter pins, the matrix contract, and the counted-claim guard implications in the same change.

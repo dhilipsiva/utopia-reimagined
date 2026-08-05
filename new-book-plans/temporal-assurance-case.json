@@ -7,12 +7,12 @@
   "subprocess_timeout_seconds": 180,
   "constitution_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
   "bound_sources_sha256": {
-    "time_model": "a07f7e1937fb5c015e4c19811d6bb20416011b4858aead987c656e8d434f4de9",
+    "time_model": "7597e421914206d7fcbdfdd885f1cf626198d9017e82e45fb0deb3c8e9e39654",
     "assertion_surface": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
     "record_assurance": "03c6345d4cea4715116c2fea25e315ce00877bfe8521c8f3aeacf3742bab5d1f",
     "record_red_team": "62d00a43ac1b35b0dba0460cc78038e8624b21a2e14956637270a58dd3813653",
     "amendment_semantics": "18285fc2e807f035320c1a5c5e6420433bbf3f024553c1e9c6343d7acf228c31",
-    "placement_exhaustiveness": "bd52d0148c4c28583892109cb9ddb0e37cf12fcd29e032f99de12ed11a86e877"
+    "placement_exhaustiveness": "1852d25123b678c656ad4e424248454f65803f481aa9f79e932a0a1ede5233a5"
   },
   "marker_sha256": {
     "T1-ADMISSIONS": "3134ec9518e8e80d540d1d984f89213cac06533fa7847658a5b2121a4c7d63c9",
@@ -40,7 +40,7 @@
     "source_binding_fragment": "all $binding: all $current: passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & ~collide($binding, SourceBinding) -> reference($binding, SourceBound).",
     "source_binding_sha256": "dd23aab90fd994e4a23fb6e16637359548449b7c5cdd277e0476d3b3feeb3de0",
     "semantic_effect": "A restrictive custody conclusion requires a positive, independently reviewed renewal bound to the exact case, subject, judgment basis, injury victim, symbolic window, canonical terminal transition, and collision-free source. Typed collisions reject ambiguous lineage, manifests, order, windows, cases, leases, and source bindings. A raw lease produces a lease-scoped TemporalRecord defect when inactive, while a sufficiently bound person-facing attempt produces TemporalAuthority; neither error authorises custody or fabricates release.",
-    "compatibility_review": "The staged fixtures preserve standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the unread-duty endpoint while intentionally revising the former permanent no-time claim and raw carry effects. TA-22 executes an exact opaque floor entitlement against the full T3 source, and the chapter, red-team, amendment, and placement suites exercise the same full-source query shape.",
+    "compatibility_review": "The staged fixtures preserve standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the unread-duty endpoint while intentionally revising the former permanent no-time claim and raw carry effects. TA-22 executes an exact opaque floor entitlement against the full T3 source; the chapter, red-team, and amendment suites add independent full-source coverage, while every placement probe derives the same projection from its complete generated standing route without an overlay.",
     "article9_boundary": "The effective-version binding is reviewed against this exact source digest and executable effects. Article 9's proposer-written target label neither authenticates nor applies this version. Lawful deployment and source-transition authentication remain external."
   },
   "pre_t3_custody_rule": "all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).",

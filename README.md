@@ -43,8 +43,9 @@ python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 python3 new-book-plans/12-temporal-assurance.py --check --execute
 ```
 
-Use release `nibli-pin` at or after engine commit `5cec800`; earlier builds may
-fail to complete the full-source opaque entitlement checks.
+Use release `nibli-pin` at or after engine commit
+`4cb02aade43b394374c40e661907ad66df3af3fe`; earlier builds may fail to complete
+opaque entitlement checks whose ground subject is itself derived.
 
 It exits non-zero on the first failure and names the claim that stopped being true.
 That includes a new or reclassified rule head, a changed admission or ground-fact
@@ -61,8 +62,10 @@ true, or that a source transition was authorised. The placement audit generates 
 current routing combinations for confined, affirmatively free, and person-only
 subjects. When the full verifier runs, it rejects missing, conflicting, reversed, or
 roster-only non-carceral housing outcomes. Its mutation probes positively establish a
-placement report before checking alarm silence. It adds no runtime placement alarm
-and does not prove that housing or a reported placement exists in the world.
+placement report before checking alarm silence. A cold one-pin probe also derives each
+row's opaque shelter entitlement from that row's complete standing route, without a
+standing overlay. The audit adds no runtime placement alarm and does not prove that
+housing or a reported placement exists in the world.
 
 A second book — how you would actually build this, organisationally and technically — is
 planned and not started.

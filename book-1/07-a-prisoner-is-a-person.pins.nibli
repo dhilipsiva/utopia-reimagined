@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 21
+:expect-pins 22
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
@@ -64,10 +64,8 @@ approves(TemporalReview, Case_Zed).
 # debt. The debt pins are what the sentence rests on — and "everything" is
 # enumerated, not sampled, because the omitted item is exactly where a
 # universal fails: chapter 8's own missing expresses pin once hid a false one.
-# This file executes Zed's T3 custody-to-person chain and every itemised debt.
-# The paired full-source event projection is owned by the temporal and placement
-# audits: composing opaque abstraction with a synthetic subject whose only
-# standing proof traverses this high-arity T3 fixture remains an engine boundary.
+# This file executes Zed's T3 custody-to-person chain, every itemised debt, and
+# the exact opaque floor projection from that derived standing in one process.
 ? owe(State, Eats, Zed).
 # => TRUE
 
@@ -141,4 +139,8 @@ free(Nemo).
 # => TRUE
 
 ? owe(State, Eats, Nemo).
+# => TRUE
+
+# The T3 custody chain derives Zed's standing; the floor must remain open.
+? entitled(Zed, event { eats() }).
 # => TRUE

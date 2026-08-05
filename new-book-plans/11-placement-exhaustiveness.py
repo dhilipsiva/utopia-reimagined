@@ -12,8 +12,9 @@ The audit is repository-level acceptance evidence for the exact current
 source.  It adds no runtime exclusivity rule, authenticates no placement
 report, supplies no appeal or remedy, and does not deliver housing to a free
 person. Every matrix row checks the itemised shelter debt in its exact synthetic
-case and pairs it with an opaque entitlement probe against the full current
-source plus only that subject's standing fact.
+case, then runs a cold one-pin opaque entitlement probe against that same full
+candidate. The subject's actual standing route must derive; no standing overlay
+or floor-source extraction is supplied.
 
 Usage:
     python3 new-book-plans/11-placement-exhaustiveness.py
@@ -1120,21 +1121,37 @@ def matrix_pin_lines(
     return lines
 
 
-def floor_entitlement_pin_lines(case: Mapping[str, object]) -> list[str]:
+def composed_floor_pin_lines(case: Mapping[str, object]) -> list[str]:
     subject = case_subject(
         str(case["subject_kind"]),
         axis_tuple(case["axes"], f"matrix.{case['id']}.axes"),
     )
     return [
         ":expect-pins 1",
-        "# Full-current-source floor projection for the paired matrix subject.",
-        "# The only overlay is the subject's standing fact; no floor source is extracted.",
-        f"person({subject}).",
-        "",
+        "# Full-source floor projection from the generated matrix subject's actual standing route.",
+        "# No standing overlay or extracted floor source is supplied.",
         f"? entitled({subject}, event {{ dwell() }}).",
         "# => TRUE",
         "",
     ]
+
+
+def validate_composed_floor_pin_lines(
+    case: Mapping[str, object], lines: Sequence[str]
+) -> None:
+    subject = case_subject(
+        str(case["subject_kind"]),
+        axis_tuple(case["axes"], f"matrix.{case['id']}.axes"),
+    )
+    active = [line for line in lines if line and not line.startswith("#")]
+    expected = [
+        ":expect-pins 1",
+        f"? entitled({subject}, event {{ dwell() }}).",
+    ]
+    if active != expected or lines.count("# => TRUE") != 1:
+        raise PlacementAuditError(
+            f"matrix.{case['id']}: composed floor probe must be query-only"
+        )
 
 
 def apply_mutations(
@@ -1692,6 +1709,21 @@ def negative_controls(
     expect_failure("assurance overclaim", lambda: validate(changed))
     controls += 1
 
+    probe_case = as_object(
+        as_list(source["matrix"], "matrix")[0], "matrix[0]"
+    )
+    probe_subject = case_subject(
+        str(probe_case["subject_kind"]),
+        axis_tuple(probe_case["axes"], "matrix[0].axes"),
+    )
+    overlay_lines = composed_floor_pin_lines(probe_case)
+    overlay_lines.insert(3, f"person({probe_subject}).")
+    expect_failure(
+        "composed floor standing overlay",
+        lambda: validate_composed_floor_pin_lines(probe_case, overlay_lines),
+    )
+    controls += 1
+
     expect_failure(
         "duplicate JSON key",
         lambda: json.loads(
@@ -1926,7 +1958,7 @@ def execute_audit(
         raise PlacementAuditError(f"release nibli-pin is missing or not executable: {pin_binary}")
     timeout = int(source["subprocess_timeout_seconds"])
     base_pin_count = sum(len(case_queries(case, inventory)) for case in cases)
-    floor_pin_count = len(cases)
+    composed_floor_pin_count = len(cases)
     cases_by_id = {str(case["id"]): case for case in cases}
     default_jobs = min(8, max(1, os.cpu_count() or 1))
     try:
@@ -1942,9 +1974,9 @@ def execute_audit(
     ) as raw_temp:
         temp = pathlib.Path(raw_temp)
         base_jobs: list[tuple[Mapping[str, object], pathlib.Path, pathlib.Path]] = []
-        floor_source = temp / "full-current-source.nibli"
-        floor_source.write_text(kb_text, encoding="utf-8", newline="\n")
-        floor_jobs: list[tuple[Mapping[str, object], pathlib.Path]] = []
+        composed_floor_jobs: list[
+            tuple[Mapping[str, object], pathlib.Path, pathlib.Path]
+        ] = []
         for case in cases:
             case_dir = temp / "base" / str(case["id"])
             case_dir.mkdir(parents=True)
@@ -1962,12 +1994,14 @@ def execute_audit(
             floor_dir = temp / "floor" / str(case["id"])
             floor_dir.mkdir(parents=True)
             floor_pin = floor_dir / "entitlement.pins.nibli"
+            floor_lines = composed_floor_pin_lines(case)
+            validate_composed_floor_pin_lines(case, floor_lines)
             floor_pin.write_text(
-                "\n".join(floor_entitlement_pin_lines(case)),
+                "\n".join(floor_lines),
                 encoding="utf-8",
                 newline="\n",
             )
-            floor_jobs.append((case, floor_pin))
+            composed_floor_jobs.append((case, case_kb, floor_pin))
 
         def run_base_case(
             job: tuple[Mapping[str, object], pathlib.Path, pathlib.Path]
@@ -2004,43 +2038,96 @@ def execute_audit(
                 f"base matrix ran {executed_base_pins} pins, expected {base_pin_count}"
             )
 
-        def run_floor_case(
-            job: tuple[Mapping[str, object], pathlib.Path]
+        def run_composed_floor_case(
+            job: tuple[Mapping[str, object], pathlib.Path, pathlib.Path]
         ) -> int:
-            case, floor_pin = job
+            case, case_kb, floor_pin = job
             identifier = str(case["id"])
             completed = run_process(
-                [str(pin_binary), "--kb", str(floor_source), str(floor_pin)],
-                label=f"full-source floor {identifier}",
+                [str(pin_binary), "--kb", str(case_kb), str(floor_pin)],
+                label=f"composed full-source floor {identifier}",
                 timeout_seconds=timeout,
             )
             if completed.returncode != 0:
                 tail = "\n".join(completed.stdout.splitlines()[-18:])
                 raise PlacementAuditError(
-                    f"full-source floor {identifier} exited "
+                    f"composed full-source floor {identifier} exited "
                     f"{completed.returncode}\n{tail}"
                 )
             actual = parse_pass_count(
-                completed.stdout, f"full-source floor {identifier}"
+                completed.stdout, f"composed full-source floor {identifier}"
             )
             if actual != 1:
                 raise PlacementAuditError(
-                    f"full-source floor {identifier} ran {actual} pins, expected 1"
+                    f"composed full-source floor {identifier} ran {actual} pins, expected 1"
                 )
             return actual
 
-        executed_floor_pins = 0
+        executed_composed_floor_pins = 0
         with concurrent.futures.ThreadPoolExecutor(
-            max_workers=min(requested_jobs, len(floor_jobs))
+            max_workers=min(requested_jobs, len(composed_floor_jobs))
         ) as pool:
-            futures = [pool.submit(run_floor_case, job) for job in floor_jobs]
+            futures = [
+                pool.submit(run_composed_floor_case, job)
+                for job in composed_floor_jobs
+            ]
             for future in concurrent.futures.as_completed(futures):
-                executed_floor_pins += future.result()
-        if executed_floor_pins != floor_pin_count:
+                executed_composed_floor_pins += future.result()
+        if executed_composed_floor_pins != composed_floor_pin_count:
             raise PlacementAuditError(
-                f"full-source floor probes ran {executed_floor_pins} pins, "
-                f"expected {floor_pin_count}"
+                "composed full-source floor probes ran "
+                f"{executed_composed_floor_pins} pins, "
+                f"expected {composed_floor_pin_count}"
             )
+
+        standing_case = cases_by_id["confined-notsevere-nofamily-home"]
+        standing_subject = case_subject(
+            str(standing_case["subject_kind"]),
+            axis_tuple(
+                standing_case["axes"],
+                "matrix.confined-notsevere-nofamily-home.axes",
+            ),
+        )
+        standing_fact = f"judge(Court, {standing_subject}).\n"
+        standing_facts = matrix_facts([standing_case])
+        if standing_facts.count(standing_fact) != 1:
+            raise PlacementAuditError(
+                "composed-standing sabotage requires one exact Court judgment fact"
+            )
+        standing_sabotage_dir = temp / "composed-standing-sabotage"
+        standing_sabotage_dir.mkdir()
+        standing_sabotage_kb = standing_sabotage_dir / "candidate.nibli"
+        standing_sabotage_pin = standing_sabotage_dir / "entitlement.pins.nibli"
+        standing_sabotage_kb.write_text(
+            kb_text + standing_facts.replace(standing_fact, "", 1),
+            encoding="utf-8",
+            newline="\n",
+        )
+        standing_sabotage_lines = composed_floor_pin_lines(standing_case)
+        validate_composed_floor_pin_lines(
+            standing_case, standing_sabotage_lines
+        )
+        standing_sabotage_pin.write_text(
+            "\n".join(standing_sabotage_lines),
+            encoding="utf-8",
+            newline="\n",
+        )
+        standing_sabotage = run_process(
+            [
+                str(pin_binary),
+                "--kb",
+                str(standing_sabotage_kb),
+                str(standing_sabotage_pin),
+            ],
+            label="composed-standing-removal sabotage",
+            timeout_seconds=timeout,
+        )
+        validate_expected_findings(
+            standing_sabotage.returncode,
+            standing_sabotage.stdout,
+            1,
+            "composed-standing-removal sabotage",
+        )
 
         def run_mutation(entry: Mapping[str, object]) -> int:
             identifier = str(entry["id"])
@@ -2119,10 +2206,10 @@ def execute_audit(
         len(cases),
         base_pin_count,
         len(cases),
-        floor_pin_count,
+        composed_floor_pin_count,
         len(mutations),
         observation_pins,
-        len(mutations),
+        len(mutations) + 1,
     )
 
 
@@ -2228,9 +2315,10 @@ def render(
                 "the presence or absence of an exact case-bound custody lease,",
                 "the itemised shelter debt, each axis result, and every",
                 "discovered non-selected destination.",
-                "A paired probe checks the same subject's exact opaque shelter",
-                "entitlement against the full current source plus only a standing",
-                "fact; it never extracts the floor rules.",
+                "A fresh one-pin probe checks the same subject's exact opaque shelter",
+                "entitlement against that row's full generated candidate, including",
+                "its actual standing route; it supplies no standing overlay and",
+                "extracts no floor rules.",
             ]
         )
     lines.extend(
@@ -2434,15 +2522,15 @@ def main(argv: Iterable[str] | None = None) -> int:
     )
     controls = negative_controls(source, kb_text, kb_digest, inventory)
 
-    base_runs = base_pins = floor_runs = floor_pins = 0
+    base_runs = base_pins = composed_floor_runs = composed_floor_pins = 0
     candidate_runs = candidate_pins = sabotage_runs = 0
     if args.execute:
         pin = select_pin(args.pin)
         (
             base_runs,
             base_pins,
-            floor_runs,
-            floor_pins,
+            composed_floor_runs,
+            composed_floor_pins,
             candidate_runs,
             candidate_pins,
             sabotage_runs,
@@ -2456,10 +2544,12 @@ def main(argv: Iterable[str] | None = None) -> int:
         if current != generated_bytes:
             raise PlacementAuditError(f"{output_relative} is STALE — rerun without --check")
         suffix = (
-            f"; {base_runs} matrix / {base_pins} pins, {floor_runs} full-source "
-            f"floor probes / {floor_pins} pins, {candidate_runs} mutation "
-            f"observation runs / {candidate_pins} pins, and {sabotage_runs} executable "
-            "baseline sabotages pass"
+            f"; {base_runs} matrix / {base_pins} pins, {composed_floor_runs} "
+            f"direct composed floor probes / {composed_floor_pins} pins, "
+            f"{candidate_runs} mutation "
+            f"observation runs / {candidate_pins} pins, {sabotage_runs - 1} "
+            "executable mutation-baseline sabotages, and 1 "
+            "composed-standing-removal sabotage pass"
             if args.execute
             else "; execution skipped"
         )
