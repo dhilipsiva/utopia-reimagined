@@ -238,20 +238,27 @@ paragraph is about what would.
 So the list is the most sensitive thing in the design. Which raises the question of
 what protects it.
 
-**Nothing does.** Some parts of this constitution are entrenched — marked as
-unchangeable, so that an amendment touching them fails regardless of how many people
-vote for it. The floor of rights is entrenched. The rule that a prisoner is still a
-person is entrenched. The register of what is entrenched is itself entrenched, so
-that the guard cannot be removed through the front door.
+**Nothing inside this record protects the list's meaning.** Three names sit on an amendment register. A docketed proposal that
+declares one of those names as its target is marked dead regardless of how many people
+vote for it: the name for the floor, the name for the rule that a prisoner is still a
+person, and the name for the register itself.
 
-The list of what counts as evidence is not on that register.
+That is a check on declared names, not protection of their meaning. The floor has a
+separate wall against one narrow class of hostile rule: those rules are refused because
+of the shape they would create. The amendment register does not inspect a proposed change, bind its label to
+its effect, or stop somebody changing the source by another route. It is a tripwire
+across the honest path.
+
+The list of what counts as evidence is not on that register. Putting its name there
+would still catch only a proposal honest enough to declare that name; it would not
+govern a direct edit to the opening declaration.
 
 This is a real gap and it is stated here rather than buried, because it is precisely
 the kind of thing a design should be caught at rather than confess later. The design
-treats widening the vocabulary as the quietest way to capture a system — and then
-leaves the vocabulary unprotected. Whether that is an oversight or a judgment that
-the list must stay amendable to stay useful, it is currently the softest place to
-push, and anyone serious about attacking this society would push there first.
+treats widening the vocabulary as the quietest way to capture a system — and makes
+that widening visible without making it constitutionally approved or entrenched. It
+is currently the softest place to push, and anyone serious about attacking this
+society would push there first.
 
 ## The other way in
 
@@ -267,8 +274,10 @@ The reverse is worse, and it is the one to watch. A person who is never entered 
 recorded as missing, because there is no record of them at all. Everything this design
 owes, it owes to persons; somebody left off is owed none of it, and nothing in it
 notices, because noticing would mean holding the roster up against something, and there
-is nothing else to hold it against. Widening the list is loud — it takes a proposal, an
-argument, a vote. Leaving a name off the roster is a clerk not typing.
+is nothing else to hold it against. Widening the list is loud in one exact sense: it
+takes a visible edit to the opening declaration. It takes no proposal, argument, or
+vote under the amendment procedure. Leaving a name off the roster is a clerk not
+typing.
 
 And an entry can be taken back. Remove one and everything that person was owed goes in
 the same instant: every right on the floor, the ballot, the freedom to move, and the

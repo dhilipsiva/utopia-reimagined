@@ -998,16 +998,27 @@ all $x: err($x, Placement) -> obliged(Review, $x).
 all $x: err($x, Isolation) -> obliged(Review, $x).
 
 # ─── Article 9 [v0.2 NEW]: Amendment ──────────────────────────────
-# The constitution can change itself — under logic. suggest(Assembly, m)
-# dockets a proposal; approves(Electorate, m) is a CERTIFIED external
-# tally (the counting arithmetic is outside the firewall — an E2E-
-# verifiable count in the ElectionGuard genre; its certificate is this
-# asserted fact); permanent(t) is the entrenchment register. An amendment
-# adjusting an entrenched target HAS NO FORCE (reusing false — the
-# credibility-voided proxy — so no new predicate). The register entrenches
-# ITSELF (Art_Entrench): the guard cannot be amended away through the
-# front door, and no enactment can lower its own threshold under a lower
-# threshold (the Weimar bootstrap is underivable).
+# This article classifies recorded proposals; it does not apply a source
+# change. suggest(Assembly, m) dockets a proposal; approves(Electorate, m)
+# is an asserted outcome intended to carry an externally certified tally.
+# The counting arithmetic is outside this model, and no rule here authenticates
+# the writer, certificate, recount, challenge, or correction. adjust(m, t) is
+# the proposal's own
+# target LABEL, and permanent(t) is the label register. A docketed proposal
+# DECLARING a registered target derives false(m) (reusing false — the
+# credibility-voided proxy — so no new predicate) and therefore does not
+# derive become(m, Law). Art_Entrench makes an honestly labelled proposal
+# to change that label register receive the same verdict.
+#
+# [v0.9 2026-08-04 SEMANTIC BOUNDARY] This is not semantic entrenchment.
+# Nothing binds adjust(m, t) to the candidate source diff, checks the diff's
+# direct or downstream effects, or makes a false(m) verdict prevent an
+# out-of-band source transition. Targetless and falsely targeted proposals
+# pass the label test; a concealed effect need not contain an Art_* token at
+# all. Nothing reads become either, so a TRUE verdict changes no rule here.
+# The bounded amendment-semantics audit executes those label verdicts and
+# candidate effects separately. It does not claim that become enacted them.
+# There is no amendment threshold or count in this model to lower.
 # [v0.9 2026-08-02] suggest(Assembly, $m) added: the head is restricted to
 # DOCKETED PROPOSALS. Without it, adjust is an admitted name and this rule
 # reused false/1 with no restriction on $m — so the single asserted fact
@@ -1016,19 +1027,20 @@ all $x: err($x, Isolation) -> obliged(Review, $x).
 # clean epoch. Article 4's whole apparatus, defeated by one write, through a
 # rule about amendments. Measured before landing, both ways: with the guard
 # the same write derives nothing — false(Jala) and lose(Points, Jala) FALSE —
-# and every amendment verdict is unchanged: the floor cut and the meta cut
-# still die, the ordinary reform still enacts. No new vocabulary; the docket
-# entry was always the missing conjunct.
+# and every label verdict is unchanged: proposals declaring Art_Floor and
+# Art_Entrench still fail to derive become, while the ordinary proposal does.
+# No new vocabulary; the docket entry was always the missing conjunct.
 all $m: all $t: suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m).
 all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).
 permanent(Art_Floor).
 permanent(Art_Person).
 permanent(Art_Entrench).
-# What logic cannot stop: DELETING permanent() facts from the store.
-# Fact-write discipline is the residual trust base — an explicit
-# cross-epoch proof obligation ("no transition removes an entrenchment
-# fact except via an enacted amendment, and none such is derivable"),
-# not an in-snapshot derivation. Named, not hidden.
+# What logic cannot stop: DELETING permanent() facts or changing the source.
+# No current rule licenses, applies, or authenticates a source transition, so
+# Article 9 cannot prove that an invalid label verdict preserved the file or
+# that a valid one changed it. Source-version and fact-write discipline are
+# residual trust obligations outside this snapshot. Named, not hidden; see
+# the rule-write boundary below and the bounded semantic audit.
 
 # ─── The residual trust base, I: fact writes ──────────────────────
 # [v0.9 2026-08-02] What Articles 0 and 0a cannot reach, named at file
@@ -1333,8 +1345,9 @@ judge(Court, Ruk).
 attack(Ruk, Opal).
 injure(Ruk, Pax).
 home(Ruk).
-# Amendments — a floor cut and a meta-attack both die with no force
-# regardless of tally; an ordinary mint reform passes.
+# Amendment labels — the proposals declaring the floor and register targets
+# do not derive become regardless of tally; the ordinary label verdict does.
+# No line here says what source effect any proposal would have.
 suggest(Assembly, Amend_Floor).
 adjust(Amend_Floor, Art_Floor).
 approves(Electorate, Amend_Floor).
@@ -1379,8 +1392,9 @@ approves(Electorate, Amend_Meta).
 # err(X, Placement)   — derived placement breach: asserted home without
 #                       derived eligibility.
 # suggest / approves / adjust / permanent / become(M, Law)
-#                — amendment machinery (Art 9). approves is a certified
-#                  tally fact; permanent is the self-entrenching register.
+#                — amendment labels (Art 9). approves is an asserted outcome;
+#                  permanent is the declared-target label register. No rule
+#                  authenticates a tally, binds an effect, or applies a change.
 # ─── v0.3 additions ───
 # believe(X)     — floor right, the inner forum (Art 1). Corpus: krici.
 #                  Appears in no rule body, per the floor invariant.

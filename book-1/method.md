@@ -294,14 +294,16 @@ but because it cannot be talked out of anything, including by me.
 ## The checks, and the check on the checks
 
 One command runs everything: `./verify.sh`, at the root of the repository.
-It runs, in order: the spine check against the constitution, the sweeps
-that keep the chapters' prose inside its rules, the guards on what nothing
-may read, then — after rebuilding the engine from source and printing the
-engine commit it built — the full pin suite and the sabotage fixtures. It
-stops at the first failure, naming the claim that stopped being true. The
-rebuild-and-print exists because this repository once spent three days
-running a stale binary to a green result, and a check that does not pin
-down *what is doing the checking* is a rumor with a progress bar.
+It rebuilds the engine from source and prints the engine commit it built,
+then checks the generated spine and audits: the assertion surface, the
+record-integrity assurance case, the bounded record red-team, and the
+JSON-backed amendment-semantics audit. It also runs the sweeps that keep the
+chapters' prose inside the rules, the guards on what nothing may read, the
+full pin suite, the executable record snapshots, and the source
+counterfactuals. It stops at the first failure, naming the claim that stopped
+being true. The rebuild-and-print exists because this repository once spent
+three days running a stale binary to a green result, and a check that does
+not pin down *what is doing the checking* is a rumor with a progress bar.
 
 The script's own history is the honest part, so here it is in the register
 this part owes you — the claim, then where it broke.
@@ -360,20 +362,52 @@ Those flaws are pinned too, marked as defects, with the marker recording
 what would flip them. From chapter 12's file, exactly as written:
 
 ```
-:defect "a totality guard: an amendment that declares no target has no force"
+:defect "a totality guard: a targetless proposal receives no law label"
 ? become(Amend_Sneak, Law).
 # => TRUE
 ```
 
-An amendment that declares no target still becomes law here — a real hole,
-and chapter 12's argument depends on it being real. If a future edit quietly
-fixed it, the suite would not celebrate; it stops the build and says, in its
-own words, that this is a repair, not a regression — find the chapter that
-calls this a flaw and rewrite it, then drop the marker in the same commit.
+A targetless proposal still receives the law label here — a real defect in the
+label guard, not proof that any change took effect — and chapter 12's argument
+depends on it being real. If a future edit quietly fixed it, the suite would not
+celebrate; it stops the build and says, in its own words, that this is a repair,
+not a regression — find the chapter that calls this a flaw and rewrite it, then
+drop the marker in the same commit.
 The markers in the pin files are the complete list of declared flaws — a
 count here would rot, the markers are the list — and each one is a tripwire
 in both directions: the flaw cannot silently persist, and it cannot silently
 vanish while the prose goes on confessing it.
+
+That pin tests the amendment's label verdict. A separate audit tests selected
+source effects. Its reviewed source is
+`new-book-plans/amendment-semantics-audit.json`; the script
+`new-book-plans/10-amendment-semantics.py` validates that contract, applies
+each exact candidate mutation to a temporary copy of the constitution, runs
+the paired queries in a fresh engine, and generates
+`new-book-plans/amendment-semantics-audit.md`. These are bounded source
+counterfactuals: the candidate edits are applied manually by the audit, not
+by the amendment machinery.
+
+The cases walk both directions. A targetless proposal sits beside a direct
+floor deletion. Another declares a harmless target beside the same deletion;
+a third declares the floor honestly and receives a blocked label, yet the
+entitlement is still absent in the audit's manually constructed source. A
+one-line floor-shape edit hides its effect more subtly: the food promise
+disappears while the anti-sanction refusal remains. The reverse false-target
+poisoning attack adds a registered target label to an ordinary proposal and
+blocks its law label without any modelled mint or floor effect. A separate case adds
+`Art_Evidence` to the register and directly adds `admits("rich")`; `rich(Adam).`
+becomes writable because no proposal binds the two. It is kept outside the
+amendment cases because a direct vocabulary edit bypasses Article 9.
+
+The audit proves the engine-visible consequences of those exact supplied
+sources, and no more. It does not prove that `become` enacted an edit, that
+`false` prevented one, that a declared target is true or complete, who wrote
+or authorised the source, whether it was lawfully deployed, or whether one
+constitutional version safely became another. No rule reads `become`; the
+label verdict and the candidate mutation meet only because the test author
+placed them beside each other. The audit exposes that boundary. It does not
+close it or add a new withholding gate.
 
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
@@ -386,8 +420,10 @@ added — and the suite verifies each copy differs in exactly the promised
 shape, then runs pins against the sabotaged world to show the loss actually
 happens. When this book says the multi-sig's dormant guards decide nothing
 today, or that one added credential route would let a carried void count, a
-fixture executed that claim. It is the one place in the method where a
-constitutional source-line removal is run rather than argued.
+fixture executed that claim. This was the first source-mutation suite in the
+method; the amendment-semantics audit now executes its own bounded candidate
+deletions, replacements and additions for the narrower question of whether a
+declared target matches an effect.
 
 The record red-team adds a second and narrower class. Its ephemeral copies
 delete named ground entries — adulthood, roster standing, carry and the two
@@ -399,11 +435,13 @@ entry.
 There is a second thing to say about the fixtures, and it is a weakness
 rather than a strength, so it belongs here rather than in a footnote.
 Source counterfactuals exist for a few rule and fact changes — a seat, a
-court's standing — and the record red-team now names a few more ground-entry
-deletions. Those are covered on purpose, every full run. The constitution's
-margins record other deletions that would do comparable damage and have no
-fixture: the evidence behind somebody's placement, the line that makes the
-duty-bearer answerable. Those still turn some chapter's pins red,
+court's standing. The amendment audit executes a bounded set of candidate
+source edits, and the record red-team names a few more ground-entry deletions.
+Those are covered on purpose, every full run. They are not a complete census
+of possible semantic effects. The constitution's margins record other
+deletions that would do comparable damage and have no fixture: the evidence
+behind somebody's placement, the line that makes the duty-bearer answerable.
+Those still turn some chapter's pins red,
 which sounds like a safety net and is not, because they do it only where
 a chapter happened to argue about the deleted fact and pinned it for
 reasons of its own. Coverage outside the fixtures is an accident of what
@@ -421,9 +459,10 @@ and by AI sessions working with me, against a cast of a few dozen
 record-people. No one has independently reimplemented the checker. No
 outside red team has attacked this constitution. And the engine that blesses
 the book shares the book's author. Two things narrow that, and neither
-closes it. In this repository: the sabotage fixtures, the one place a
-removal is executed rather than argued. Upstream, in the engine's own
-repository, the engine — not this constitution — is checked against work
+closes it. In this repository, the sabotage fixtures, amendment-semantics
+audit and record red-team execute selected source and record mutations rather
+than merely describing them. Upstream, in the engine's own repository, the
+engine — not this constitution — is checked against work
 that is not its own: external solvers are run as referees over the fragments
 of the logic they can hear, though each starts from the engine's
 already-compiled output, so the language front-end sits outside them; the

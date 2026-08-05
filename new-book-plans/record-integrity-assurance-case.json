@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "9cd62e45cd8e924941c4bc51962cab42d047e2a0c006d351087bc59b66b6759a",
+  "assertion_surface_contracts_sha256": "03f5e2f332277c61ed892f62f9bde3e881129f890bac2200c0bb21256cef29ad",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -122,7 +122,7 @@
           "kind": "formal",
           "role": "exposes_gap",
           "supports": "RI-2",
-          "ref": "new-book-plans/constitution.nibli::Fact-write discipline is the residual trust base"
+          "ref": "new-book-plans/constitution.nibli::Source-version and fact-write discipline are"
         }
       ],
       "known_failure": "Any current fact-store writer can forge or withhold admitted premises; claimed actors are not authenticated writers and existing companion facts do not establish a general authority model.",
@@ -499,15 +499,15 @@
           "ref": "new-book-plans/assertion-surface-audit.md::Authored-rule fingerprint:"
         }
       ],
-      "known_failure": "The current amendment mechanism trusts self-declared targets, the evidence vocabulary is not entrenched, and a hostile but syntactically valid rule can manufacture a conclusion while all supplied facts remain authentic.",
-      "target_contract": "Bind proposal text, author, lawful authority, exact diff, declared and independently reviewed semantic effects, structural-wall impact, counterfactual, source version, approval, effective transition, rollback prohibition, and affected prose and claims.",
+      "known_failure": "The current amendment mechanism trusts self-declared targets; its approval fact authenticates no writer, tally, certificate, recount, challenge, or correction; the evidence vocabulary is not entrenched; and a hostile but syntactically valid rule can manufacture a conclusion while all supplied facts remain authentic.",
+      "target_contract": "Bind proposal text, author, lawful authority, exact diff, declared and independently reviewed semantic effects, structural-wall impact, counterfactual, source version, an authenticated and contestable approval result, effective transition, rollback prohibition, and affected prose and claims, without any one writer or reviewer acquiring a universal withholding veto.",
       "acceptance_evidence": [
-        "Adversarial tests for targetless, falsely targeted, and semantically concealed amendments.",
+        "Keep bounded adversarial label/candidate tests current for targetless, falsely targeted, honestly blocked, and semantically concealed cases, including a blocked label beside a direct protected-line deletion, without treating example-level tests as proof of semantic completeness.",
         "A source-release and transition contract tying every snapshot to one reviewed constitutional version.",
         "Narrowness-impact classification and appropriate pins or counterfactuals for every changed consequence route."
       ],
       "residual_assumption": "Reviewers, generators, verifiers, engines, and release tools can misunderstand semantic effect, share a defect, be weakened together, or approve a harmful but internally consistent rule.",
-      "owner_ref": "TODO.md::Test amendment semantics, not only amendment labels",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor",
       "temporal_status": "Current source history is repository-visible; constitutional effect across versions needs T1, and effective order needs T2 where disputed.",
       "book2_handoff": "Operate authenticated source release, distribution, rollback protection, archival availability, toolchain and dependency provenance, independent release verification, and binding between deployed snapshots and reviewed constitutional versions."
     },
@@ -561,7 +561,7 @@
     {
       "id": "RC-1",
       "title": "Constitutional-change records",
-      "description": "Dockets, approvals, target declarations, and entrenchment entries that can change or constrain the constitutional source.",
+      "description": "Dockets, asserted approval outcomes, target declarations, and label-register entries used by the current amendment-label rules; a future source-transition contract must bind them to exact candidate changes.",
       "assurance_claims": [
         "RI-1",
         "RI-2",
@@ -577,7 +577,7 @@
         "RI-12",
         "RI-13"
       ],
-      "failure_posture": "Missing authorisation means the change does not enact. A disputed semantic effect cannot widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power."
+      "failure_posture": "Target posture: no source change becomes effective without authorisation. Current T0 does not implement this: missing authorisation or a false label cannot prevent an independently supplied source change. A disputed semantic effect must not widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power."
     },
     {
       "id": "RC-2",
@@ -965,7 +965,7 @@
     },
     {
       "artifact_ref": "book-1/12-changing-the-rules.md::integrity of the record those rules are written in.",
-      "current_claim": "Entrenchment rests on the integrity of its own rule and fact record.",
+      "current_claim": "The declared-name guard rests on the integrity of its own rule, label register, and constitutional source; semantic entrenchment is not established.",
       "classification": "preserved",
       "reason": "The case treats the constitutional source as a record but does not harden amendment semantics.",
       "future_trigger": "Revise with the later semantic-amendment and source-transition rule family and its counterfactuals."
@@ -985,8 +985,8 @@
       "future_trigger": "Revise only to the exact scope of a later differential harness and deployed assurance evidence."
     },
     {
-      "artifact_ref": "book-1/15-the-five-joints.md::record-keeping layer is not prevented, it is exposed",
-      "current_claim": "Capture of the record layer is exposed rather than prevented.",
+      "artifact_ref": "book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and",
+      "current_claim": "Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented.",
       "classification": "preserved",
       "reason": "The case is a target and acceptance gate, not an implemented institutional or operational defence.",
       "future_trigger": "Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land."

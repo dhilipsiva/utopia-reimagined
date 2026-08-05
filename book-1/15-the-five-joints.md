@@ -293,17 +293,17 @@ every factual clause in it.
 The answer is about surface, not invulnerability. In the societies you know,
 capture is available at every layer: the law's wording, its interpretation, its
 enforcement, its discretion, its records — five surfaces, each with its own
-captors. This design collapses the first four. The cruellest class of rule —
-imprisonment for lacking what the floor owes you — cannot be written, and the
-chapter on the floor says plainly where that refusal stops; a biased
-interpretation has nowhere to live because conclusions follow from entries by
-routes anyone can retrace; enforcement and discretion have no purchase because
-placement and standing derive rather than get decided; and that leaves
-the record — one surface, named on the first page of the first chapter, guarded
-by disciplines the design states it cannot enforce, watched by a suite of
-checks, and kept, finally, by people. Moving all of the leverage to one visible
-layer is not solving capture. It is choosing where to fight it, and saying so
-loudly enough that nobody can pretend the fight is elsewhere.
+captors. This design narrows those surfaces, but it does not collapse them to
+one. The consequential surfaces that remain are the constitutional source — the
+rules that decide what follows — and the supplied record — the facts those rules
+receive. The exact rule that would imprison a person because something owed on
+the floor is absent is refused, and the chapter on the floor says plainly where
+that refusal stops. Within a fixed source, conclusions follow from supplied
+entries by routes anyone can retrace. But neither surface authenticates itself.
+The machinery does not prove that a source change was authorised or safe; nor
+does it prove that a supplied fact is true, complete, or honestly kept. Naming
+those places is not solving capture. It is choosing where to fight it, and
+saying so loudly enough that nobody can pretend the fight is elsewhere.
 
 Two consequences of that choice deserve their own paragraphs, because they are
 where this joint touches the ground.
@@ -330,16 +330,20 @@ that follows you. That refusal has a price the capture chapter of my life has
 taught me to say plainly: the assessments do not vanish, they move — into
 hospital charts, school files, employers' notes, records this design does not
 police — and power migrates toward whatever record matters. The design's answer
-is the firewall, not the abolition: a hospital chart can inform care and can
-never void you; nothing outside the record reaches standing, liberty, or the
-floor. Inside this record, an assessment would sit upstream of liberty forever.
-Outside it, its harm is bounded by what the record refuses to hear. That is a
-lesser harm, chosen as such. And it is why privacy, which several readers went
-looking for on the floor, is not there: this design does not protect your
-privacy by granting a right that could be weighed against others — a right
-written to be outweighed teaches a system how to outweigh rights — it protects
-the private life by building a public record too narrow to hold it. What the
-record cannot say about you, no one can be judged by.
+is the firewall, not the abolition: under the rules as written, a hospital chart
+can inform care but cannot serve as the fact that voids you; there is no route
+from that outside record to standing, liberty, or the floor. That is a boundary
+in the written rules, not proof that an official never used a shadow file or
+that a future source change would preserve it. Inside this record, an assessment
+would sit upstream of liberty forever. Outside it, the current rules refuse to
+read it. That limits what this design itself can do with the assessment; the
+wider harm remains. And it is why privacy, which several readers went looking
+for on the floor, is not there: this design does not protect your privacy by
+granting a right that could be weighed against others — a right written to be
+outweighed teaches a system how to outweigh rights — it protects the private
+life by building a public record too narrow to hold it. What this public record
+has no words for, the current rules cannot use directly. They do not prove that
+nobody judges you elsewhere.
 
 India, because this is not hypothetical and not every reader carries the
 context. India's welfare system feeds hundreds of millions through ration
@@ -363,12 +367,13 @@ disappears while Bela's adverse `false` and `lose` conclusions survive. So, in
 this version, "no record found" can still gate a meal. Universal standing and
 record recovery remain unfinished constitutional work.
 
-**Survives, narrowed.** The guards hold where they claim to hold; the record
-stays the one surface, named; and the narrowing is permanent — capture of the
-record-keeping layer is not prevented, it is exposed, and exposure is only worth
-what the people reading the exposures do. The specifications are the two given
-above, and they are the part of this joint I am least willing to see traded
-away.
+**Survives, narrowed.** The guards hold against the exact attacks they refuse.
+The constitutional source and the supplied record remain consequential and
+named; neither protects its own integrity. Review can expose a changed rule, and
+record checks can expose selected failures in supplied facts, but exposure is
+only worth what the people reading the exposures do. The specifications are the
+two given above, and they are the part of this joint I am least willing to see
+traded away.
 
 ## The State
 
@@ -404,11 +409,14 @@ are social-democratic; the provider is a fiscal agent; I have no interest in
 pretending otherwise. What is new here is not the absence of a provider — it is
 the constraint mechanism wrapped around one. Somebody once summarised an
 argument like this as social democracy with extra steps, and the answer is yes —
-and the extra step is that the cruel version cannot be written down. One of this
-book's early readers saw it exactly: the point is that no politician can
-quietly defund a citizen's basic rights; "it makes the welfare state
-mathematically enforceable." That sentence was offered as praise and I accept
-it as a description.
+and the extra step is narrower than the praise once given it. Under the rules as
+written, the absence of something owed on the floor cannot be made a reason to
+imprison a person. That refusal does not deliver the floor, block every hostile
+rule, stop defunding, or keep the constitutional source from changing. One of
+this book's early readers said that no politician could quietly defund a
+citizen's basic rights; "it makes the welfare state mathematically enforceable."
+I accept that sentence as an ambition, not as a description of what this version
+has proved.
 
 The objections, and this joint collects the heaviest. DeepSeek: "A society that
 can state its obligations but cannot fulfill them is not a society; it is a
@@ -433,22 +441,23 @@ cannot be argued away as impossible. Everything else on the delivery
 side — the bakeries, the budgets, the logistics, the legitimacy — belongs to a
 second book about building, and the last pages of this one point to it. What
 this book contributes to that future work is not nothing: it is the binding
-layer — the thing that makes the difference between a welfare state that can be
-quietly defunded and one whose defunding cannot be phrased. The objection that
-survives, whole, is legitimacy: no argument in this part makes anyone *adopt*
-these rules, constitutions are not adopted for technical merit, and the
-reviewer who said the bridging book is unwritten is right. I am one author; that
-book needs people I have not met.
+layer — a named duty, plus the exact refusal to turn the absence of a floor item
+into a reason for imprisonment. It is not a ban on defunding, and it does not
+make delivery self-executing. The objection that survives, whole, is legitimacy:
+no argument in this part makes anyone *adopt* these rules, constitutions are not
+adopted for technical merit, and the reviewer who said the bridging book is
+unwritten is right. I am one author; that book needs people I have not met.
 
-**Survives, narrowed.** The design's claim was never "this feeds people" — it
-was "under these rules, no one can make feeding people conditional, and the
-duty has a name" — and that claim holds and was attacked and holds still. The
-narrowing is everything the claim was never able to be: delivery, and
-legitimacy. The specification, as a property: the bearer's taking and spending
-resolve to published entries an outsider can re-run — where the money came
-from, where it went, held to the same standard of retraceability as every other
-conclusion in the record. A duty-bearer whose books cannot be re-run is a
-discretion engine wearing this design's clothes.
+**Survives, narrowed.** The claim that survives is smaller than "this feeds
+people": under these rules, the floor is owed without an earned condition, its
+absence cannot be made a reason for imprisonment, and the duty has a name. That
+claim was attacked and holds still. The narrowing is everything the current
+source cannot prove: delivery, funding, enforcement, and legitimacy. The
+specification, as a property: the bearer's taking and spending resolve to
+published entries an outsider can re-run — where the money came from, where it
+went, held to the same standard of retraceability as every other conclusion in
+the record. A duty-bearer whose books cannot be re-run is a discretion engine
+wearing this design's clothes.
 
 ## What I will not add up
 
@@ -475,10 +484,15 @@ list of things the record may say, and I chose the list. The chapters prove
 what follows from it; nothing anywhere proves the list itself is right, and
 nothing could — a different author could argue a different list, and the
 arguing, not any machinery, is where that contest would be settled. What I can
-say for this list is that it is short, it is public, every widening of it is
-loud and reviewable, and each name on it survived this book's own attempts to
-break the design it serves. That is a defence, not a proof. It is the only kind
-of defence a foundation ever gets.
+say for this list is that it is short, it is public, and every widening is
+visible as a change to the constitutional source; the current repository checks
+reject an unreviewed widening. That review is not constitutional approval: no
+adopted amendment
+procedure approves the widening, no entrenchment protects the list, and no
+check certifies the new word's meaning or every consequence it creates. Each
+current name has faced this book's own attempts to break the design it serves.
+That history is a defence, not a proof. It is the only kind of defence a
+foundation ever gets.
 
 The last part of this book shows the machine: the rules as they are actually
 written, the checks that run, the failures they caught, and the things I wanted

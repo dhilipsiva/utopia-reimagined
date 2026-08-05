@@ -7,15 +7,16 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run: 544 chapter/floor pins, 23 record snapshots
-#                       with 145 reviewed pins, and source counterfactuals
-#                       (474.46 s measured 2026-08-04)
-#   ./verify.sh --quick  everything except those three executable suites
-#                       (2.02 s incremental, measured 2026-08-04)
-#                        NOTE --quick cannot execute a record snapshot or see a stale
-#                        counterfactual fixture: those are steps 6 and 7. Run the FULL
-#                        suite after any constitution edit — that is how a stale
-#                        fixture shipped once.
+#   ./verify.sh          full run: 549 chapter/floor pins, 23 record snapshots
+#                       with 145 reviewed pins, 9 amendment candidates with 44
+#                       pins, executable controls, and source counterfactuals
+#                       (476.18 s measured 2026-08-04)
+#   ./verify.sh --quick  everything except those four executable suites
+#                       (2.35 s incremental, measured 2026-08-04)
+#                       NOTE --quick cannot execute record snapshots, amendment
+#                       candidates, or stale counterfactual fixtures: those are
+#                       steps 6, 6b, and 7. Run the FULL suite after any constitution
+#                       edit — that is how a stale fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and every conclusion-only gate
@@ -36,6 +37,7 @@ KB=new-book-plans/constitution.nibli
 SPINE=new-book-plans/3-spine.md
 CF=new-book-plans/counterfactual
 RED_TEAM=new-book-plans/9-record-integrity-red-team.py
+AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -111,7 +113,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case or bounded red-team contract,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, or amendment audit,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -146,7 +148,13 @@ out=$(python3 "$RED_TEAM" --check 2>&1) \
   && pass "$out" \
   || fail "record-integrity red-team contract failed" "$out"
 
-# ── 2c. chapter 1's headline number ──────────────────────────────────────────
+# ── 2c. amendment labels stay separate from candidate-source effects ─────────
+step "amendment-semantics contract"
+out=$(python3 "$AMENDMENT_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "amendment-semantics audit failed" "$out"
+
+# ── 2d. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and falsifies the nine prose places that name it.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
@@ -388,11 +396,11 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor pins, executable record snapshots, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor pins, executable record snapshots, amendment executions, and counterfactuals (--quick)\n'
   exit 0
 fi
 
-step "chapter/floor pins (544 declared pins)"
+step "chapter/floor pins (549 declared pins)"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
 out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)
@@ -436,10 +444,20 @@ out=$(NIBLI_PIN="$PIN" python3 "$RED_TEAM" --check --execute 2>&1) \
   && pass "$out" \
   || fail "record-integrity red-team execution failed" "$out"
 
-# ── 7. the source counterfactuals ────────────────────────────────────────────
+# ── 6b. amendment-label/source-effect counterexamples ────────────────────────
+# The audit manually applies reviewed exact candidate mutations in isolated
+# copies and checks their consequences. It proves neither enactment nor an
+# authenticated source transition.
+step "amendment-semantics executions"
+out=$(NIBLI_PIN="$PIN" python3 "$AMENDMENT_AUDIT" --check --execute 2>&1) \
+  && pass "$out" \
+  || fail "amendment-semantics execution failed" "$out"
+
+# ── 7. the standing source counterfactuals ───────────────────────────────────
 # Derivation is monotone and probe facts load on top, so no probe can test a
-# restriction. These are the only way a "remove this line and X breaks" claim in
-# the book is executed rather than argued. Regenerate after any KB edit.
+# restriction. These persistent fixtures execute the book's named standing
+# source-removal/change/addition claims; the amendment audit above separately
+# executes its reviewed ephemeral candidates. Regenerate after any KB edit.
 step "counterfactuals"
 # The staleness guard used to assign `d` and never read it, so a fixture that had
 # drifted — or been regenerated by the README's own command, which matched nothing

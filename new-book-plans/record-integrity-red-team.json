@@ -4,9 +4,9 @@
   "title": "Record-Integrity Red-Team: Release, Adulthood, Roster, Carry, and Forgiveness",
   "status": "bounded_t0_red_team_not_assurance",
   "evidence_role": "exposes_gap",
-  "constitution_sha256": "c463cdb04592206917f10b9acc81183693c64924237109a57830e17434fad903",
-  "assertion_surface_contracts_sha256": "9cd62e45cd8e924941c4bc51962cab42d047e2a0c006d351087bc59b66b6759a",
-  "record_integrity_assurance_case_sha256": "b1e8db9907563dc9d253cb2b69b98bcff14adf5dccf9704c570ee29ca81f1da0",
+  "constitution_sha256": "656ec24d3147ba59249dd5b4588d85c63bace21ffc15a2d30db023cdb3222815",
+  "assertion_surface_contracts_sha256": "03f5e2f332277c61ed892f62f9bde3e881129f890bac2200c0bb21256cef29ad",
+  "record_integrity_assurance_case_sha256": "c4b281dcb56d7a54e607a811f2ae0afa6901b182d2a23e6905c22145bd1def24",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from the constructed T0 snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "t0_boundary_confirmed": "The constructed states have the same T0-visible record or expose only a scenario-specific delta. The result states what the engine cannot distinguish; it is not T1 transition assurance.",
@@ -1123,8 +1123,8 @@
       "future_trigger": "Any custody, temporal, release, delivery, placement, or sanction rule requires re-review of the title, prose, registry, and counted-claim guard."
     },
     {
-      "artifact_ref": "book-1/15-the-five-joints.md::stays the one surface, named;",
-      "current_claim": "Capture is concentrated in one visible record surface but not prevented.",
+      "artifact_ref": "book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and",
+      "current_claim": "The constitutional source and supplied facts remain separate consequential capture surfaces; neither is authenticated or protected by the current formalism.",
       "classification": "preserved_but_scoped",
       "reason": "The roster and carry cases expose selected capture consequences without claiming general detection or institutional remedy.",
       "future_trigger": "Any completeness, operational integrity, independent reader, or capture-prevention claim requires re-review."
@@ -1138,7 +1138,7 @@
     },
     {
       "artifact_ref": "book-1/method.md::The record red-team adds a second and narrower class.",
-      "current_claim": "Source counterfactuals execute selected constitutional edits; the new red-team executes selected ground-entry deletions, while general and runtime deletion coverage remain absent.",
+      "current_claim": "Persistent counterfactuals and the amendment audit execute selected source edits; the record red-team executes selected ground-entry deletions, while general and runtime deletion coverage remain absent.",
       "classification": "revised_and_scoped",
       "reason": "The prior method called source counterfactuals the only executed removals; the new suite made that false and the prose now distinguishes the two fixture classes.",
       "future_trigger": "Any claim of exhaustive premise, transition, or deletion coverage requires a new generated inventory and method revision."

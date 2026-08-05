@@ -77,11 +77,11 @@ severe(Zed).
 ? false(Koa).
 # => FALSE
 
-# 1.6 "The floor of rights is entrenched. ... The list of what counts as
-#      evidence is not on that register."
+# 1.6 "Three names sit on an amendment register. ... The list of what counts
+#      as evidence is not on that register."
 # This pin is DELIBERATELY the uncomfortable one. It is the chapter's closing
-# admission, and if it ever flips to TRUE the closing section must be rewritten
-# — which would be good news.
+# admission. A TRUE would change the label verdict and require a rewrite, but
+# would still not prove that an `admits` edit was semantically entrenched.
 ? permanent(Art_Floor).
 # => TRUE
 

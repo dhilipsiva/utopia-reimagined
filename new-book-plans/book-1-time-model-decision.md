@@ -151,7 +151,13 @@ Do not alter `constitution.nibli` until all of these are present:
 2. **Temporal-input contracts:** for every input, name writer, evidence,
    forge route, withholding route, correction, appeal, cross-epoch handoff,
    residual external assurance, and exact Book 1/Book 2 boundary.
-3. **A two-snapshot differential harness:** current one-file pins cannot prove
+3. **Constitutional source and effect binding:** bind every temporal proposal to
+   an exact candidate source change, independent semantic-effect and compatibility
+   review, and an authenticated effective version. Article 9's declared-target
+   label is not this control. The bounded amendment-semantics audit demonstrates
+   the gap; it does not close RI-12's source-release, transition, or narrowness
+   assurance work.
+4. **A two-snapshot differential harness:** current one-file pins cannot prove
    an N-to-N+1 transition. The harness must fail on omitted carry, forged carry,
    unexplained cross-snapshot disappearance, replay, or a frozen transition
    rather than merely producing a harmless-looking green result. It cannot claim
@@ -163,10 +169,10 @@ Do not alter `constitution.nibli` until all of these are present:
    not completion of this gate: snapshot identity, predecessor attestation,
    replay, divergence, frozen-transition invocation, reconciliation, recovery,
    and liveness remain unimplemented.
-4. **Staged formal work:** implement and test T1 first, then T2 wherever an
+5. **Staged formal work:** implement and test T1 first, then T2 wherever an
    effect depends on before/after, then T3. Do not bypass this with `year`,
    `earlier`, a numeral, a tense wrapper, or a raw `temporary` assertion.
-5. **Narrowness-impact note:** before each family lands, classify the impact on
+6. **Narrowness-impact note:** before each family lands, classify the impact on
    Chapters 1, 4, 5, 7, 8, 9, 13, 14, and Part V. In particular, name the fate
    of Chapter 4's unbounded reach-back, Chapter 13's title and no-duration
    claim, Chapter 8's three-open-doors claim, and Chapter 14's unread-duty
@@ -190,8 +196,8 @@ Do not alter `constitution.nibli` until all of these are present:
   mandate were narrowed.
 - [x] **Adopt T3 as the constitutional target (ratified 2026-08-03).** Keep the
   current formal kernel at T0 until T1, T2 wherever order matters, the
-  temporal-input contracts, the differential harness, and the adversarial matrix
-  all pass.
+  temporal-input contracts, constitutional source/effect binding, the differential
+  harness, and the adversarial matrix all pass.
 
 No third option is honest: an unassured manual timestamp, a new word for an
 epoch, or a Book 2 promise with no named failure consequence is not a time

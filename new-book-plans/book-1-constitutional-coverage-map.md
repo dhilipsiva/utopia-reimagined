@@ -5,8 +5,9 @@
 > **Status: author-ratified scope and planning control (2026-08-03).** This is
 > not constitutional prose, does not change `constitution.nibli`, and does not
 > claim that any ratified-scope requirement is derived or already complete. A row
-> becomes formal law only after it is formalised, pinned, counterfactually tested, and
-> reflected accurately in derived prose.
+> counts as formalised coverage only after it is formalised, pinned,
+> counterfactually tested, and reflected accurately in derived prose. That
+> repository status does not itself prove lawful enactment or deployment.
 
 ## 1. Ratified mandate
 
@@ -57,7 +58,7 @@ social outcome.
 | Material floor | **Partial:** `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` are unconditional entitlements. | Adequate food, water/sanitation, home/utilities, health and care, material security, learning/information, accessibility, and voluntary social life. | Partial formalisation; ratified scope, contract pending. | Only learning has a non-carceral arrival route; confinement can derive limited shelter/speech. The legacy `hears` route is not qualifying general delivery evidence. Every future route needs accessibility-neutral, recipient-side access/receipt evidence with an authorised writer and challenge route; it may not assert a personal outcome. |
 | Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on power. Future liberty rules bind public power directly; public institutions must prevent, investigate, and remedy private interference. A direct private prohibition exists only where a rule names it expressly. |
 | Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, and release are formalised. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, contract pending; T3 target ratified. | Civil disputes, child representation, enforcement limits, and administration are missing; the current T0 kernel has no temporal rule until the T3 gate passes. |
-| Democracy and amendment | **Partial:** vote, recall, and amendment machinery exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The corridor is ratified, but formal compatibility, amendment, reviewer, office, and locality vocabulary remain absent. |
+| Democracy and amendment | **Partial:** vote, recall, proposal, approval, and declared-target label verdicts exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The current machinery does not authenticate the approval writer, tally, certificate, recount, challenge, or correction; bind a proposal to an exact source change; review semantic effects; identify an independent compatibility reviewer; or apply an authenticated effective-version transition. The bounded audit executes only label/effect counterexamples, including an honestly blocked label beside a manually applied deletion; it supplies none of those controls. Office and locality vocabulary also remain absent. |
 | Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; T3 target ratified, implementation pending. | Authority, conflict rules, and independence are not a complete branch architecture. An adjudicated end act is not a bound on unreviewed power; complete status requires the ratified T3 path to pass. |
 | Records and accountability | **Partial:** closed admitted record, derived-only conclusions, audit markers, and a bounded executable snapshot red-team. | Complete legally operative basis; permitted and prohibited inputs; authored positive premises and route-specific admissibility of absence; visibility, privacy, contestation, correction, retention, external assurance, independent receipt/action, continuity, individual remedy, and systemic correction. | Partial formalisation; selected T0 harms executable; generated assurance case still **not established**; ratified rule families pending. | The harness reproduces named release, adulthood, roster, carry, relief, and forgiveness consequences plus constructed transition pairs. It does not authenticate writers or snapshots, attribute absence, implement T1, detect arbitrary/intra-snapshot deletion, recover records, or create a reader/remedy. `err` already derives `obliged`, but no reader turns that duty into individual or systemic correction. |
 | Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. Property is a conditional liberty bounded by floors and commons. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall: merit, recognition, contribution, qualifying thresholds, and personal scores may not become allocation or access gates for property, commons, material security, standing, authority, or political voice. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
@@ -111,6 +112,13 @@ record. The generated
 executable evidence for selected harms and T0 indistinguishability. Its
 constructed pairs are a T1 test precursor, not constitutional transition
 assurance or operational deletion detection.
+
+The generated
+[`amendment-semantics-audit.md`](amendment-semantics-audit.md) executes exact
+candidate-source counterexamples against Article 9. It shows that declared labels
+and semantic effects can diverge, and that direct vocabulary edits sit outside the
+amendment path. It manually applies each candidate; it does not prove enactment,
+target truth, source authorship, lawful deployment, or transition assurance.
 
 ## 5. Required institutional coverage (rules pending)
 
@@ -242,6 +250,10 @@ At minimum, check these live claims:
   allowlisted phrase in `verify.sh`'s counted-claims gate.
 - Chapter 8's “three doors, all open, all verified open” claim.
 - Chapter 14's claim that the chain ends one step later.
+- Chapter 1's claim that vocabulary widening is visible but neither
+  constitutionally approved nor semantically entrenched.
+- Chapter 12's distinction between a declared-target label verdict, a candidate's
+  actual effect, and an applied source transition.
 - Every Part V verdict and stated specification in
   `book-1/15-the-five-joints.md`, including valuation's non-operative
   recognition, rotation's failure and no-term-of-office claim, coercion's
@@ -249,7 +261,7 @@ At minimum, check these live claims:
   the State joint's one deliberate non-carceral delivery route and Book 2 seam.
 - Every uniqueness, terminality, and refusal claim in the final method part,
   `book-1/method.md`, including its accounts of imprisonment, the audit endpoint,
-  appeal, and release.
+  appeal, release, amendment labels, and source counterfactuals.
 
 Do not land the family while any affected claim is unclassified. A preserved
 claim needs a pin/control; a revised or retired claim needs its prose, registry,

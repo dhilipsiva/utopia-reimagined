@@ -110,8 +110,9 @@ required, nothing changes about the placement or the isolation being reported. T
 is one link longer than it was and it ends in the same place.
 
 This is the same shape as two earlier gaps and it is worth naming as a family. The floor
-states what is owed and delivers to the confined. The amendment machinery states what
-becomes law and nothing enacts it. The audit states what is broken, states who owes a
+states what is owed and delivers to the confined. The amendment machinery decides which
+proposals receive the law label and nothing applies the change. The audit states what is
+broken, states who owes a
 response, and nothing responds. Three times, the design reaches the moment where a
 determination has been made correctly and then stops — and the third one now stops one
 step later, which is not the same as arriving.

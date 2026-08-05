@@ -178,12 +178,12 @@ prisoner(Zed).
 severe(Ghost).
 
 # [v0.9] The last three closures, unpinned until now — and they are the heads of
-# Articles 7, 3 and 9: the shield, the mint, and the enactment gate. Article 0's
+# Articles 7, 3 and 9: the shield, the mint, and the law-label gate. Article 0's
 # own named failure mode is a derived_only line moved below the facts it guards,
 # which "is inert and looks identical"; without these pins that failure takes
 # three of the ten gates with it in silence. An asserted shield is an
-# unjailable name, an asserted reward is minted esteem, an asserted enactment
-# is a law nobody passed.
+# unjailable name, an asserted reward is minted esteem, an asserted law label
+# is a verdict no proposal produced.
 :refuse reasoning /declared derived-only/
 defend(Ghost).
 

@@ -2,7 +2,7 @@
 
 ## Authority, Scope & Structure
 
-`CLAUDE.md` is authoritative; follow it if this guide conflicts. Before work, read `CLAUDE.md`, `TODO.md`, and `tmp.txt` (draft context, never book content). `book-1/` contains numbered chapter/`.pins.nibli` pairs. Except for its labelled opening note, Part V, and method, prose must derive from `new-book-plans/constitution.nibli`; keep it jargon-free and move roadmaps, MVS, scaling, and technology implementation to book 2. Do not develop book 2 while book 1 is active or remove legacy `book.md`/`manifesto.md` before the TODO harvest.
+`CLAUDE.md` is authoritative. Before work, read it, `TODO.md`, and `tmp.txt` (draft context only). `book-1/` contains numbered chapter/`.pins.nibli` pairs. Except for its labelled opening note, Part V, and method, prose must derive from `new-book-plans/constitution.nibli`; keep it jargon-free. Roadmaps, scaling, and implementation belong in book 2, which stays inactive. Preserve legacy `book.md`/`manifesto.md` until the TODO harvest.
 
 `new-book-plans/` owns the constitution, generated spine/audits, reviewed JSON contracts, bounded record-snapshot red-team, and counterfactuals. `registry/` holds claims, snapshots, checks, and fetchers. Keep `book-1/epigraph.md` and `method.md` unnumbered.
 
@@ -11,17 +11,19 @@
 Run from the repository root:
 
 ```bash
-./verify.sh --quick   # iteration; skips pins, executable snapshots, counterfactuals
+./verify.sh --quick   # schema/freshness; skips executable suites
 ./verify.sh           # authoritative suite; required before every commit
 python3 new-book-plans/5-spine-gen.py new-book-plans/constitution.nibli new-book-plans/3-spine.md --check
 python3 new-book-plans/7-assertion-surface.py --check
 python3 new-book-plans/8-record-integrity-assurance.py --check
 python3 new-book-plans/9-record-integrity-red-team.py --check
 python3 new-book-plans/9-record-integrity-red-team.py --check --execute
+python3 new-book-plans/10-amendment-semantics.py --check
+python3 new-book-plans/10-amendment-semantics.py --check --execute
 python3 registry/check.py
 ```
 
-Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate. Edit JSON contracts, never generated reports or spine blocks. After a rule/fact change, use `7-assertion-surface.py --fingerprints`, review contracts, then copy candidate digests. Dependency order is 7 → 8 → 9: an assertion-contract change requires assurance review and new 8/9 digests; an assurance-source change requires a new 9 digest. Evidence roles may not relabel a gap as assurance. After every constitution edit, including comments, regenerate counterfactuals and run the full verifier.
+Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Dependency order is 7 → 8 → 9; script 10 separately binds the constitution and reviewed 7/8 sources. Its fixtures manually apply candidates and do not prove enactment. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier.
 
 ## Editing, Testing & Naming
 

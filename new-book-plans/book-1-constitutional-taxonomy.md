@@ -13,7 +13,7 @@ The author ratifies the functional classes named below. They are an
 author-chosen planning grammar, not a result derived from the present
 constitution or pins; nothing currently verifies that they are complete or
 exhaustive. A later addition, split, merge, or removal needs an explicit author
-amendment and revised border-case tests.
+ruling and revised border-case tests.
 
 Every future Book 1 rule family gets one **primary class based on its direct
 legal effect**. It can depend on other classes, but it must not become a hybrid
@@ -102,7 +102,7 @@ mistaken for proof that the current constitution provides the stated result.
 | 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; authorised recipient-side access/receipt evidence **(future target; legacy `hears` does not qualify)**; breach; interim continuity; remedy; appeal; audit. |
 | 3. Liberty and personal integrity | What interference must public power or another actor not impose? | Include bodily integrity, personal privacy, conscience, expression, association, movement, and family life. Exclude a claim to a particular service, record/data controls, or the procedure for deciding a case. | Protected person/act; prohibited interference; narrow necessity and least-restrictive exception; evidence; independent review; remedy. |
 | 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; current-T0 non-temporal reversal condition; temporal status. |
-| 5. Democratic self-government and amendment | What may people decide together? | Include equal political voice, public reasons, ordinary law, constitutional amendment, recall, and rights-compatibility review. Exclude individual adjudication and administrative workflow. | Equal voice; one person, one vote; no earned, scored, or weighted political voice; accessible participation; decision scope; public reasons; compatibility test; amendment limit; challenge/remedy; temporal status. |
+| 5. Democratic self-government and amendment | What may people decide together? | Include equal political voice, public reasons, ordinary law, constitutional amendment, recall, and rights-compatibility review. Exclude individual adjudication and administrative workflow. | Equal voice; one person, one vote; no earned, scored, or weighted political voice; accessible participation; decision scope; public reasons; authenticated, contestable decision/tally evidence and writer; exact proposal/source change; declared target; independent semantic-effect and compatibility review; redundant and escalating writer/reviewer routes; missing approval or review never counts as approval, while no one writer or reviewer can permanently withhold the route; authenticated effective-version binding; amendment limit; challenge/remedy; temporal status. |
 | 6. Public institutions and delegated duty | Which public function may act, and under what separation? | Include legislative, electoral/deliberative, provision, justice, appeal, constitutional review, audit, ombuds, local, and external-public mandates; classify any separately scoped defence/security mandate here, never as a standing emergency exception. Exclude staffing, salaries, procurement, and workflow design. | Democratic source; mandate; trigger; scope; conflict/recusal rule; non-delegable limit; review; appeal; current-T0 non-temporal end condition; temporal status. |
 | 7. Records, evidence, privacy, and accountability | What may count in a public decision, and how is power made contestable? | Include admissibility, writer authority, challenge, correction, privacy, audit, and assurance. Exclude databases, cryptography, biometrics, and assessment tools. | Basis; writer; visibility/privacy; challenge; correction/deletion control; assurance; independent recipient; action duty; continuity/remedy path; temporal status. |
 | 8. Jurisdiction, locality, and subsidiarity | How are public powers and duties divided across place without lowering common protection? | Include local authority, subsidiarity, inter-community and cross-jurisdictional duty, and portability duties. Exclude individual movement, plurality, migration procedure, transfer systems, border administration, and service logistics. | Common baseline; local mandate; non-discrimination; portability duty; equalisation and cross-jurisdictional duty; dispute forum; review. |
@@ -199,7 +199,9 @@ structural refusal instead limits what *form of rule* may exist across subjects.
    negative pin/counterfactual, residual trust base, and responsible owner.
    Article 1's anti-sanction firewall, `admits`, `derived_only`, and verifier
    guards are walls with different mechanisms; do not file them under their
-   subject matter and thereby lose what they prevent.
+   subject matter and thereby lose what they prevent. Article 9's registered
+   names are not such a semantic wall: they compare a proposal's self-declared
+   label and do not bind that label to an exact source change or its effects.
 
 ## Book 1 / Book 2 discriminator
 
@@ -244,7 +246,12 @@ into two contract cards.
 Every contract card also records: its class; applicable structural-wall ID and
 enforcement mechanism; permitted and prohibited inputs; permitted downstream
 effects; evidence authority; conflict rule; temporal status; formal status;
-negative-test ID; counterfactual ID; Part V status; and Book 2 handoff. This
+negative-test ID; counterfactual ID; Part V status; and Book 2 handoff. An
+amendment card additionally records the exact candidate source change, declared
+target, independent semantic-effect review, compatibility verdict, and effective
+version it authorises, plus the writer/reviewer unavailability default that prevents
+missing approval or review from becoming approval and prevents any one writer or
+reviewer from permanently withholding the route through redundant escalation. This
 makes the taxonomy a control on dangerous edges, not a prettier table of topics.
 
 ## Ratification limits

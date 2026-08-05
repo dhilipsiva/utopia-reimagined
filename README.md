@@ -25,13 +25,16 @@ imprisonment and stops there.
 | `new-book-plans/record-integrity-assurance-case.json` | the reviewed claims, evidence, premise coverage, defeaters, defaults and Book 2 assumptions behind that case |
 | `new-book-plans/record-integrity-red-team.md` | the generated, executable T0 audit of release, adulthood, roster, carry, relief and forgiveness harms |
 | `new-book-plans/record-integrity-red-team.json` | the reviewed route postures, snapshot deltas, expected results, limits and narrowness impacts behind that audit |
-| `new-book-plans/counterfactual/` | copies of the constitution each missing one line, so "remove this and X breaks" is executed rather than argued |
+| `new-book-plans/amendment-semantics-audit.md` | the generated, executable audit separating Article 9's declared labels from candidate-source effects |
+| `new-book-plans/amendment-semantics-audit.json` | the reviewed exact mutations, expected verdicts, limits and affected claims behind that audit |
+| `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
 | `verify.sh` | the one check |
 
 ```bash
-./verify.sh          # everything, including pins, executable snapshots and counterfactuals
-./verify.sh --quick  # schema/freshness checks; skips those three executable suites
+./verify.sh          # everything, including pins, executable audits and counterfactuals
+./verify.sh --quick  # schema/freshness checks; skips the executable suites
 python3 new-book-plans/9-record-integrity-red-team.py --check --execute
+python3 new-book-plans/10-amendment-semantics.py --check --execute
 ```
 
 It exits non-zero on the first failure and names the claim that stopped being true.
@@ -42,7 +45,10 @@ reproduces selected current harms in constructed snapshots; it does not attribut
 forgery, withholding or deletion. The assurance case's current verdict remains
 deliberately **not established**: verification proves consequences from supplied
 snapshots, not that a deployed record is authentic, complete, append-only or live,
-and not that the checker authenticates its own source or toolchain.
+and not that the checker authenticates its own source or toolchain. The amendment
+audit manually applies exact candidate mutations and proves their bounded
+consequences. It does not show that `become` enacted them, that a declared target is
+true, or that a source transition was authorised.
 
 A second book — how you would actually build this, organisationally and technically — is
 planned and not started.

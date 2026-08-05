@@ -117,7 +117,7 @@ None.
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
 | reviewed | `exposes_gap` | `RI-2` | `new-book-plans/assertion-surface-audit.md::Any fact-store writer can assert the act; credentials are checked only in the voiding route.` |
-| formal | `exposes_gap` | `RI-2` | `new-book-plans/constitution.nibli::Fact-write discipline is the residual trust base` |
+| formal | `exposes_gap` | `RI-2` | `new-book-plans/constitution.nibli::Source-version and fact-write discipline are` |
 
 **Acceptance evidence still required**
 
@@ -377,12 +377,12 @@ None.
 **Argument.** A pristine fact history is insufficient if a rule can derive a floor actuality from the roster alone, conceal an amendment's effect, or widen a conclusion route. Repository fingerprints expose a changed source but do not prove the change is lawful or semantically safe.
 
 - **Posture:** `book1_target_unimplemented`
-- **Current failure:** The current amendment mechanism trusts self-declared targets, the evidence vocabulary is not entrenched, and a hostile but syntactically valid rule can manufacture a conclusion while all supplied facts remain authentic.
-- **Target contract:** Bind proposal text, author, lawful authority, exact diff, declared and independently reviewed semantic effects, structural-wall impact, counterfactual, source version, approval, effective transition, rollback prohibition, and affected prose and claims.
+- **Current failure:** The current amendment mechanism trusts self-declared targets; its approval fact authenticates no writer, tally, certificate, recount, challenge, or correction; the evidence vocabulary is not entrenched; and a hostile but syntactically valid rule can manufacture a conclusion while all supplied facts remain authentic.
+- **Target contract:** Bind proposal text, author, lawful authority, exact diff, declared and independently reviewed semantic effects, structural-wall impact, counterfactual, source version, an authenticated and contestable approval result, effective transition, rollback prohibition, and affected prose and claims, without any one writer or reviewer acquiring a universal withholding veto.
 - **Residual assumption:** Reviewers, generators, verifiers, engines, and release tools can misunderstand semantic effect, share a defect, be weakened together, or approve a harmful but internally consistent rule.
 - **Temporal status:** Current source history is repository-visible; constitutional effect across versions needs T1, and effective order needs T2 where disputed.
 - **Book 2 handoff:** Operate authenticated source release, distribution, rollback protection, archival availability, toolchain and dependency provenance, independent release verification, and binding between deployed snapshots and reviewed constitutional versions.
-- **Owner:** `TODO.md::Test amendment semantics, not only amendment labels`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor`
 
 **Current evidence**
 
@@ -393,7 +393,7 @@ None.
 
 **Acceptance evidence still required**
 
-- Adversarial tests for targetless, falsely targeted, and semantically concealed amendments.
+- Keep bounded adversarial label/candidate tests current for targetless, falsely targeted, honestly blocked, and semantically concealed cases, including a blocked label beside a direct protected-line deletion, without treating example-level tests as proof of semantic completeness.
 - A source-release and transition contract tying every snapshot to one reviewed constitutional version.
 - Narrowness-impact classification and appropriate pins or counterfactuals for every changed consequence route.
 
@@ -434,10 +434,10 @@ assurance argument that must govern it.
 
 ### RC-1 — Constitutional-change records
 
-Dockets, approvals, target declarations, and entrenchment entries that can change or constrain the constitutional source.
+Dockets, asserted approval outcomes, target declarations, and label-register entries used by the current amendment-label rules; a future source-transition contract must bind them to exact candidate changes.
 
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
-- **Failure posture:** Missing authorisation means the change does not enact. A disputed semantic effect cannot widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power.
+- **Failure posture:** Target posture: no source change becomes effective without authorisation. Current T0 does not implement this: missing authorisation or a false label cannot prevent an independently supplied source change. A disputed semantic effect must not widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power.
 
 ### RC-2 — Standing, status, and public-power records
 
@@ -662,10 +662,10 @@ even if their own numbered chapter derivations do not change.
 | `book-1/03-who-holds-the-pen.md::It does not mean the record is any harder to falsify` | Cross-body pens raise decision cost but do not assure record authorship. | preserved | The case distinguishes decisional independence from record witnessing and changes no pen rule. | Revise when authenticated, independently witnessed writer controls are formal and tested. |
 | `book-1/05-voiding.md::society can guarantee what follows from its record. It cannot guarantee its record.` | The current society guarantees derivation from a snapshot, not the snapshot itself. | preserved | The top assurance verdict is explicitly not established for T0. | Narrow, never erase, after T1 and external assurance evidence exists; genesis, truth, and liveness limits remain. |
 | `book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds` | Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission. | preserved | The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics. | Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect. |
-| `book-1/12-changing-the-rules.md::integrity of the record those rules are written in.` | Entrenchment rests on the integrity of its own rule and fact record. | preserved | The case treats the constitutional source as a record but does not harden amendment semantics. | Revise with the later semantic-amendment and source-transition rule family and its counterfactuals. |
+| `book-1/12-changing-the-rules.md::integrity of the record those rules are written in.` | The declared-name guard rests on the integrity of its own rule, label register, and constitutional source; semantic entrenchment is not established. | preserved | The case treats the constitutional source as a record but does not harden amendment semantics. | Revise with the later semantic-amendment and source-transition rule family and its counterfactuals. |
 | `book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**` | The current audit chain ends at an unread `obliged` duty. | preserved | The case specifies the future reader/action contract and deliberately adds no reader rule. | Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands. |
 | `book-1/method.md::Coverage outside the fixtures is an accident of what` | Current deletion coverage is accidental chapter-pin coverage, not a guarantee. | preserved | The case now cites an intentional named snapshot suite as evidence of selected harms, while general runtime deletion detection and transition assurance remain absent. | Revise only to the exact scope of a later differential harness and deployed assurance evidence. |
-| `book-1/15-the-five-joints.md::record-keeping layer is not prevented, it is exposed` | Capture of the record layer is exposed rather than prevented. | preserved | The case is a target and acceptance gate, not an implemented institutional or operational defence. | Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land. |
+| `book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and` | Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented. | preserved | The case is a target and acceptance gate, not an implemented institutional or operational defence. | Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land. |
 
 ## Acceptance gate
 
@@ -687,7 +687,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `9cd62e45cd8e924941c4bc51962cab42d047e2a0c006d351087bc59b66b6759a`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `03f5e2f332277c61ed892f62f9bde3e881129f890bac2200c0bb21256cef29ad`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

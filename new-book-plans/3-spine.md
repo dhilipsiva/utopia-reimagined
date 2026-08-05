@@ -1,6 +1,6 @@
 # The Derived Spine — book-1
 
-Regenerated 2026-07-28 against the enacted constitution (`constitution.nibli`). The
+Regenerated 2026-07-28 against the current constitutional source (`constitution.nibli`). The
 previous version of this file computed its order from a graph that no longer
 exists; see the *Superseded* note at the end for what changed and why it matters.
 
@@ -176,8 +176,8 @@ depend only on strata 0–1 and float.
 11. **Where People Are Put.** `fit`, `dwell`, `building` — eligibility derived rather
     than asserted. **Ruk** in the farmhouse. Must follow ch 8, because `dwell` is
     also a floor right and the reader needs that first.
-12. **Changing the Rules.** `become` — amendment, and the register that entrenches
-    itself. **Watch the scope gate here**: this is change-over-time and drifts
+12. **Changing the Rules.** `become` — an amendment label, and the self-naming
+    register that can mark a proposal dead. **Watch the scope gate here**: this is change-over-time and drifts
     easily into "how this gets adopted", which is book-2.
 
 **Part IV — The top of the graph (stratum 3)**
@@ -230,10 +230,12 @@ that has started lying.
 | 1.3 | "You cannot simply declare someone guilty." | `prisoner(Zed).` | REFUSED — derived-only |
 | 1.4 | "Nor can you hand yourself the authority to judge." | `authority(Pax).` | REFUSED — derived-only |
 | 1.5 | "An accusation that goes nowhere leaves no mark." | `false(Koa)` | FALSE |
-| 1.6 | "Enlarging this list is how a system is captured quietly." | `permanent(Art_Evidence)` | FALSE — **not yet entrenched** |
+| 1.6 | "Enlarging this list is how a system is captured quietly." | `permanent(Art_Evidence)` | FALSE — the vocabulary's name is not registered |
 
 Row 1.6 is deliberately red. The file names vocabulary growth as its own worst
-attack and then does not entrench the vocabulary; the chapter should say so.
+attack and omits its name from the amendment register. Even adding the name would
+only test a proposal's declared label; it would not govern a direct `admits` edit or
+prove the proposal's effect. The chapter should say so.
 
 ---
 

@@ -105,30 +105,30 @@ channels. No exceptional channel exists in the current contract.
 
 ### `adjust`
 
-- **Tuple claim:** A proposed amendment adjusts a named constitutional target.
-- **Claimed actor:** No writer is encoded; the tuple names an amendment and its self-declared target.
-- **Current writer/authority:** Any fact-store writer; Article 0a authenticates neither the amendment nor its target.
+- **Tuple claim:** The tuple asserts a target label for a named subject; it proves neither docket, subject type, nor semantic effect.
+- **Claimed actor:** No writer is encoded; the tuple names a subject and its asserted target label.
+- **Current writer/authority:** Any fact-store writer; Article 0a authenticates neither the named subject nor the label's truth.
 - **Required writer/authority:** A docketed amendment process must bind the proposal, proposer, certified text, and declared target.
 - **Current provenance:** The target label is accepted as written; the model does not compare it with the amendment's semantic effect.
 - **Required provenance:** Immutable proposal text and an independently reviewable semantic-impact record.
-- **Cheapest harmful assert:** 1 operation(s): assert `adjust(Amend_Mint, Art_Floor)`. The ordinary reform is marked false merely by adding an entrenched target label. Structural route: `adjust` → `false`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `adjust(Amend_Floor, Art_Floor)`. The entrenched floor amendment is no longer marked false and can enact through its remaining docket and approval facts. Structural route: `adjust` → `false`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m)`.
-- **Current challenge route:** No rule tests whether the declared target is honest or permits a semantic challenge.
+- **Cheapest harmful assert:** 1 operation(s): assert `adjust(Amend_Mint, Art_Floor)`. The ordinary reform receives the `false` label verdict merely by adding a registered target label; no source effect is changed. Structural route: `adjust` → `false`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `adjust(Amend_Floor, Art_Floor)`. The floor-labelled proposal is no longer marked false and the otherwise unread `become(Amend_Floor, Law)` conclusion derives; no source transition follows. Structural route: `adjust` → `false`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m)`.
+- **Current challenge route:** No rule tests whether the declared label is honest, binds it to candidate text, or permits a semantic challenge.
 - **Required challenge route:** Independent constitutional review of declared and actual effects before enactment.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Test amendment semantics, not only amendment labels`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor`.
 - **Reviewed route fingerprint:** `b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106`.
 
 ### `approves`
 
-- **Tuple claim:** The Electorate approved a docketed proposal.
+- **Tuple claim:** The tuple asserts that the Electorate approved the named proposal; it does not prove a docket, tally, certificate, or writer.
 - **Claimed actor:** The first argument names the approving body; it does not authenticate that body as the writer.
-- **Current writer/authority:** Any fact-store writer can assert the certified-tally relation.
-- **Required writer/authority:** Only an independently verifiable democratic result may authorise the approval certificate.
-- **Current provenance:** The constitution treats the fact as an external tally certificate and verifies no count.
+- **Current writer/authority:** Any fact-store writer can assert the approval outcome.
+- **Required writer/authority:** A publicly accountable, redundantly available publication route may record only an independently verifiable democratic result; no single writer or reviewer controls availability.
+- **Current provenance:** The constitution treats the fact as an asserted outcome and verifies no writer, certificate, count, recount, challenge, or correction.
 - **Required provenance:** A public, contestable tally record bound to the exact proposal and electorate.
-- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A fresh proposal becomes law without any internally verified vote or target semantics. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `approves(Electorate, Amend_Mint)`. A valid ordinary reform cannot become law. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `approves(Electorate, Amend_Mint)`. The ordinary reform cannot derive the unread `become(_, Law)` label. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
 - **Current challenge route:** No in-model recount, contest, or correction route exists.
 - **Required challenge route:** A public contest and independent review route tied to the tally certificate.
 - **Risk disposition:** patchable, external.
@@ -427,18 +427,18 @@ channels. No exceptional channel exists in the current contract.
 
 ### `permanent`
 
-- **Tuple claim:** A constitutional target is entrenched against ordinary amendment.
+- **Tuple claim:** A constitutional target label appears in the register consulted by the amendment-label rule.
 - **Claimed actor:** No entrenching authority or writer is encoded; the fact names only a target.
-- **Current writer/authority:** Any fact-store writer can add or delete entrenchment status.
+- **Current writer/authority:** Any fact-store writer can add or delete registered-target status; no source protection follows.
 - **Required writer/authority:** Only the constitutionally valid entrenchment process, independently witnessed and transition-audited.
 - **Current provenance:** No enactment, source text, effective transition, or correction history is attached.
 - **Required provenance:** The entrenching law, protected text, authority, effective state, and append-only history.
-- **Cheapest harmful assert:** 1 operation(s): assert `permanent(Art_Mint)`. The existing ordinary mint reform is marked false and blocked. Structural route: `permanent` → `false`. Evidence: `new-book-plans/constitution.nibli::adjust($m, $t) & permanent($t) -> false($m)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `permanent(Art_Floor)`. The floor amendment is no longer marked false and can enact. Structural route: `permanent` → `false`. Evidence: `new-book-plans/constitution.nibli::adjust($m, $t) & permanent($t) -> false($m)`.
-- **Current challenge route:** No in-snapshot rule detects deletion or proves the protected target's text.
+- **Cheapest harmful assert:** 1 operation(s): assert `permanent(Art_Mint)`. The existing ordinary mint reform receives the `false` label verdict and no longer derives `become`; no source effect is blocked. Structural route: `permanent` → `false`. Evidence: `new-book-plans/constitution.nibli::adjust($m, $t) & permanent($t) -> false($m)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `permanent(Art_Floor)`. The floor-labelled proposal is no longer marked false and can derive the unread `become` conclusion; no source transition is applied. Structural route: `permanent` → `false`. Evidence: `new-book-plans/constitution.nibli::adjust($m, $t) & permanent($t) -> false($m)`.
+- **Current challenge route:** No in-snapshot rule detects deletion, proves protected text, or binds a registered label to candidate semantics.
 - **Required challenge route:** Cross-snapshot integrity review, public correction history, and constitutional challenge.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Test amendment semantics, not only amendment labels`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor`.
 - **Reviewed route fingerprint:** `b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106`.
 
 ### `person`
@@ -541,18 +541,18 @@ channels. No exceptional channel exists in the current contract.
 
 ### `suggest`
 
-- **Tuple claim:** The Assembly docketed a proposal.
+- **Tuple claim:** The tuple asserts that the Assembly docketed a named subject; it does not type that subject as a proposal.
 - **Claimed actor:** The first argument names the Assembly, but the technical writer is not authenticated.
 - **Current writer/authority:** Any fact-store writer can create or remove a docket entry.
 - **Required writer/authority:** A constitutionally authorised, public docket process bound to exact proposal text.
 - **Current provenance:** No proposer, text hash, notice, jurisdiction, or docket history is represented.
 - **Required provenance:** Public proposal text, proposer, docket decision, notice, and append-only status history.
-- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A proposal with no target or semantic review becomes law. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `suggest(Assembly, Amend_Mint)`. The approved ordinary reform cannot enact and its target semantics vanish from the formal path. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A proposal with no target or semantic review derives the unread `become(_, Law)` label. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `suggest(Assembly, Amend_Mint)`. The ordinary reform carrying a recorded approval entry cannot derive the unread `become(_, Law)` label; no candidate semantics were ever in the formal path. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
 - **Current challenge route:** No docket contest, correction, or target-truth review exists.
 - **Required challenge route:** Public notice, correction, challenge, and independent semantic review before approval.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Test amendment semantics, not only amendment labels`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor`.
 - **Reviewed route fingerprint:** `c40d4481c5b33c855551714786774e8178398f286ee46ad4cf4544ba905864d8`.
 
 ### `teaches`
