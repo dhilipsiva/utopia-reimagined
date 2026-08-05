@@ -37,12 +37,12 @@ then a constitutional-expansion backlog and cross-cutting sections:
    a future question that changes what a chapter says must be ruled before the
    implementation backlog, and because a lost decision costs more than any lost
    task; this section has been destroyed by tooling once and is watched accordingly.
-2. **Phase 2 — engine handoffs (nibli).** Empty at the moment — nothing is pending
-   upstream. It stays ahead of the writing because some of what the book has to
+2. **Phase 2 — engine handoffs (nibli).** One T3 integration-performance handoff
+   is pending upstream. It stays ahead of the writing because some of what the book has to
    concede is an engine limitation rather than a design choice, and it is dishonest
    to write the concession while the limitation is fixable.
 3. **Constitutional expansion — implementation backlog.** The ratified mandate,
-   taxonomy, coverage map, democratic corridor, and T3 target now have one
+   taxonomy, coverage map, democratic corridor, and staged T3 path now have one
    canonical execution backlog, ordered from kernel repair through public review.
 
 The remaining sections are cross-cutting: the book-1 work that remains around the
@@ -95,7 +95,7 @@ later edits — re-derive before trusting.
 
 ---
 
-## Phase 2 — Engine handoffs (nibli). Nothing is pending upstream.
+## Phase 2 — Engine handoffs (nibli). One item is pending upstream.
 
 **dhilipsiva wrote nibli, and he is the channel between the sessions — for book-2's
 tracker exactly as for this one.** The sessions cannot see each other, so **an item is not
@@ -107,11 +107,71 @@ write its reply addressed directly back to this one, again through dhilipsiva: t
 what changed, whether any verdict moved, and what the prompt itself got wrong. That last
 item has been non-empty more often than not, on both ends of the channel.
 
-**The section is empty on purpose.** Every ask written here has landed and been verified
-here, and nothing is waiting on nibli. Do not
-work around an engine limitation in prose — conceding a fixable limitation as though it
-were a design choice is the specific dishonesty this phase exists to prevent, and it is why
-the phase runs first.
+- [ ] **Make full-source opaque floor entitlements coexist with T2 binary paths.**
+  - **Measured boundary:** on 2026-08-05, clean release Nibli
+    `225bba48d282ae558fa626bb39f9c126c07edc6f` exhibited global
+    witness-candidate expansion when the T3 constitution and an
+    `entitled(Adam, event { eats() })` query shared one process. The book now
+    isolates the eight exact entitlement assertions in script 13 and says plainly
+    that this is not integrated full-source evidence. That isolation is temporary;
+    do not convert the engine cost into a constitutional design choice.
+  - **Book-side source:** content commit `6f6c636` contains the staged T1/T2/T3
+    source, the exact-source isolation, and the measured boundary.
+  - **Done when:** a release `nibli-pin` executes the opaque entitlement query
+    against the full T3 constitution in bounded time, a regression protects the
+    relevant candidate-generation path, the full-source entitlement pins are
+    restored here, and `./verify.sh` passes without script 13 standing in for
+    integrated execution.
+
+```text
+You are working in the Nibli engine repository. Assume no knowledge of the
+rights-nobody-has-to-earn repository or its book.
+
+Investigate and fix a performance regression in release `nibli-pin`, starting
+from engine commit 225bba48d282ae558fa626bb39f9c126c07edc6f. The public
+reproducer is https://github.com/dhilipsiva/rights-nobody-has-to-earn at book
+content commit 6f6c636. Build release `nibli-pin`, then run it against that
+checkout's `new-book-plans/constitution.nibli` with this one-pin file:
+
+    :expect-pins 1
+    ? entitled(Adam, event { eats() }).
+    # => TRUE
+
+Use the equivalent of:
+
+    target/release/nibli-pin --kb \
+      /path/to/rights-nobody-has-to-earn/new-book-plans/constitution.nibli \
+      /tmp/full-t3-floor.pins.nibli
+
+On 2026-08-05, that full-source query exhibited global witness-candidate
+expansion after the constitution added the binary `EventPath` and `RecordPath`
+heads and their transitive rules. The exact eight universal entitlement lines
+still return the expected results in an extracted minimal KB. Treat eager global
+candidate enumeration caused by the interaction between opaque event
+abstraction and binary path relations as the current hypothesis, not as a
+settled diagnosis.
+
+Find the smallest faithful reproducer, profile candidate generation, and repair
+the general engine path. Prefer lazy or relation-scoped candidate generation if
+the evidence supports it; do not special-case `entitled`, the book's predicate
+names, or this one query. Preserve deterministic reasoning and the semantics of
+opaque event abstraction, binary transitive relations, derived-only predicates,
+and the rule that one formula path may carry one temporal or deontic wrapper but
+not both. Add an engine regression that combines an opaque event query with
+unrelated binary path rules and fails before the fix. Record before/after command,
+wall time, peak memory if practical, release binary hash, and the exact threshold
+chosen for the regression rather than inventing a timeless performance claim.
+
+Run the relevant package tests and `just ci-all` from a clean engine checkout.
+Then write your reply directly to the rights-nobody-has-to-earn session, through
+dhilipsiva, with: the engine commit SHA; root cause; files and behavior changed;
+before/after measurements; tests run; whether any logical verdict moved; the
+book-side command that should now be restored; and what this prompt got wrong.
+```
+
+Do not work around an engine limitation in prose — conceding a fixable limitation
+as though it were a design choice is the specific dishonesty this phase exists to
+prevent, and it is why the phase runs first.
 
 **When a reply lands here**, re-run `./verify.sh` before believing anything — the script
 rebuilds `nibli-pin` from the checkout and prints the commit, and this repo has twice
@@ -122,9 +182,10 @@ measured an engine change that was never rebuilt.
 ## Constitutional expansion — implementation backlog
 
 This is the canonical merged redesign backlog for the ratified constitutional
-expansion. It is future-facing: the mandate, coverage map, T3 target, taxonomy,
-and democratic corridor set the boundaries, but do not make an unimplemented
-predicate, duty, delivery route, or remedy current law.
+expansion. Except for the staged T3 path already named below, it is
+future-facing: the mandate, coverage map, taxonomy, and democratic corridor set
+the boundaries, but do not make an unimplemented predicate, duty, delivery
+route, or remedy current law.
 
 ### Scope and guardrails
 
@@ -149,17 +210,22 @@ predicate, duty, delivery route, or remedy current law.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
 
-- [ ] **Implement the ratified T3 temporal path in stages.**
-  - Preserve T0 in the current constitution until T1 audited transitions, T2 order
-    evidence where required, temporal-input contracts, and the two-snapshot
-    differential harness exist.
-  - Add adversarial controls for recency, carry, release, adulthood, expiry,
-    omission, emergency, office, and the audit reader; apply the narrowness-impact
-    gate before every family lands.
+- [ ] **Implement the ratified T3 temporal path in stages — formal stages landed;
+  integrated engine gate open.**
+  - Content commit `6f6c636` implements witnessed T1 transitions and carry,
+    typed transitive T2 event/record paths, and canonical-current, source/window/
+    case/lease-bound T3 Court custody. Forty fresh processes now execute 235
+    temporal pins, including replay, divergence, omission, forgery, typed cycles,
+    conflicting bindings, unwitnessed reverse dates, and withheld standing evidence.
+  - The book, audits, counterfactuals, and narrowness ledger are reconciled, and
+    the repository verifier passes. That green result deliberately uses script
+    13's minimal exact-source floor abstraction because the full-source opaque
+    entitlement query is pending the Phase 2 engine handoff above.
   - **Done when:** the T3 implementation gate in
     [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md)
-    passes, full verification passes, residual liveness is explicitly handed to
-    Book 2, and every affected claim is revised or pinned.
+    passes with integrated full-source entitlement execution restored, residual
+    liveness remains explicitly handed to Book 2, every affected claim is revised
+    or pinned, and the Phase 2 engine handoff is deleted as completed.
 
 - [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
   - Use the coverage map's contract fields and the taxonomy's formalisation metadata
