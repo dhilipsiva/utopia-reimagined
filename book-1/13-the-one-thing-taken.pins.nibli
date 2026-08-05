@@ -29,7 +29,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 30
+:expect-pins 34
 
 # "Hano was convicted ... and cannot move freely."
 ? prisoner(Hano).
@@ -98,9 +98,6 @@ free(Hano).
 ? person(Hano).
 # => TRUE
 
-? entitled(Hano, event { dwell() }).
-# => TRUE
-
 ? owe(State, Provision, Hano).
 # => TRUE
 
@@ -136,6 +133,27 @@ free(Hano).
 # Ruled 2026-08-02: the design does not say how long, and that is ratified,
 # not pending. The time vocabulary is refused at assert time — the loud door
 # (chapter 1's closure) is the only way in.
+# T3 now represents one independently witnessed transition, two separately
+# witnessed order claims, and one reviewed custody interval. These are symbolic
+# record relations, not a clock or a computed term.
+? succeed(Epoch_Current, Transition).
+# => TRUE
+
+? precede(Order_Court_A, EventSequence).
+# => TRUE
+
+? precede(Order_Log_Court_A, RecordSequence).
+# => TRUE
+
+? time(Window_Custody, ReviewedInterval).
+# => TRUE
+
+? correct(Case_Hano, ActivePower).
+# => TRUE
+
+# `year` and `earlier` remain unadmitted negative controls. Their refusal does
+# not prove the model has no temporal path; it proves date-shaped words cannot
+# bypass the reviewed path through the loud vocabulary door.
 :refuse reasoning /not admitted vocabulary/
 year(Term, Two).
 

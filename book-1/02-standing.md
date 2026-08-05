@@ -150,11 +150,12 @@ no case or purpose. When the pair stands together, the conclusion that Vex's wor
 counts for nothing stops deriving. Ask the three
 questions again. Answerable? Unchanged, permanent, as always. Believable? Yes,
 restored, from the moment the two entries stand together. Able to act? Still no. The
-pen is withheld by rules that read the mark itself, not the conclusion the mark once
-fed, and the mark is still there: Vex is forgiven, not erased. One verdict moved and
+pen is withheld by rules that read the reconciled carried history in the witnessed
+current record, not the conclusion it once fed, and the mark is still there: Vex is
+forgiven, not erased. One verdict moved and
 the other two held still — which could not happen if the three were secretly one
 thing. The word comes back by forgiveness; the pen does not come back at all, and the
-chapters ahead measure why — the rule that issues a pen reads the mark itself, so
+chapters ahead measure why — the rule that issues a pen reads the matched history, so
 neither the forgiveness nor a fresh seating reaches it. The way back for a person's
 word and the way back to power are different roads, and the design refuses to pave
 the second with the first.
@@ -172,15 +173,16 @@ a list that only grows is a list worth watching.
 
 And it grows by writes. A seat is an entry, and the word that records a seating is
 on the record's short list of writable words — so the pool grows by whatever gets
-written, not only by whatever a seating body actually did. Measured on a copy of the
-record: seat two names nobody ever chose, one from each of the two seating bodies,
-and have each of them examine and document the same third name. Six entries, about
-three people who do not exist on the roster. Both invented auditors hold real pens,
-their signatures satisfy every independence condition the design has, and the third
-name — never examined by anybody real — is voided and docked, while the roster goes
-on saying that none of the three is a person at all. Nothing in the rules
-distinguishes the seat somebody won from the seat somebody typed. The pool's growth is honest exactly as long as the
-writing is.
+written, not only by whatever a seating body actually did. A forged seat still gives
+an invented name standing and expands the set of exposures that open a shield.
+
+It no longer gives that name a pen by itself. Public pens now require positive clear
+history reconciled across records, witnessed by two public bodies, and carried into the
+selected current record. Completing the
+old voiding attack therefore requires the capturer to forge or compromise that history
+as well. That is a real repair, and it does not authenticate the seat: nothing in the
+rules distinguishes the seat somebody won from the seat somebody typed. The pool's
+growth is honest exactly as long as the writing is.
 
 The second is sharper. Because exposing someone with standing confers protection, and
 because the set of people with standing never shrinks, the set of exposures that
@@ -204,11 +206,17 @@ society defines, just remove it from the record. Standing goes with it, Rebel's
 shield goes with the standing, and Rebel is imprisoned by an erasure nobody proposed,
 nobody approved, and nobody signed. The recall — the loudest, most public act this
 society can take against an official — could not do to Rebel what a quiet deletion
-can. And no rule can be written that notices, because within any moment's record an
-entry deleted and an entry never made look identical. What stands between Rebel and
-that erasure is not machinery. It is the discipline of whoever keeps the record —
-which is to say, people. The strongest promises in this chapter are conclusions
-nobody can write. The entries they stand on, somebody has to keep.
+can.
+
+A witnessed transition can now report that deletion if the seat was separately
+declared among the protected entries in the earlier record. The report does not restore
+the seat, Boss's standing, or Rebel's shield, and the Appeals duty it can produce after
+a challenge is still unread. Nor does “disappearance” prove an unlawful deletion: the
+record has no form for lawful retirement of a protected entry, so every missing
+required carry sounds the same alarm. A deletion before the first accepted record, or
+of an entry never placed in that protected set, remains indistinguishable from an entry
+never made. The strongest promises in this chapter are conclusions nobody can write.
+The entries they stand on, somebody still has to keep.
 
 And Boss's seat is not the sharpest instance. The duty-bearer's standing — the
 answerability of the body that owes every person the floor — rests on one line of
@@ -217,7 +225,8 @@ relieved of what it owes, relieved of being exposable about it. The body that ow
 everyone everything drops into the same class as a private person — and as the
 electorate and the assembly, neither of which carries standing either — where
 exposing it protects nobody. That deletion was measured, like the others in this chapter, on a copy.
-On the real record, some deletions would happen to be noticed, because the books
-this design keeps about itself sometimes read the deleted fact for other reasons —
-but only sometimes, and by accident, never by guarantee. The discipline this
+On the real record, a declared protected entry can make the disappearance visible,
+but visibility alone repairs nothing. Other deletions may still be noticed because the books
+this design keeps about itself read the deleted fact for another reason, not because
+there is a complete recovery guarantee. The discipline this
 chapter ends on is not decoration. It is the floor under everything above it.

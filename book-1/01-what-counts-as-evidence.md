@@ -10,13 +10,21 @@ There is nowhere to put it.
 Here is the whole list. Someone is a person. Someone worked, or taught, or heard
 their teacher. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
-auditor documented what they found, and cited the grounds they looked on. Someone lied. Someone exposed something. A person
+auditor documented what they found, and cited the grounds they looked on. A court
+tied a case to a person. Someone lied. Someone exposed something. A person
 has a home, or a family, or a parent, or a spouse, or a sibling, or has reached
 adulthood. An assembly proposed a
-change; the electorate approved it; the change touches a particular article; that
+change; a named body approved something; the change touches a particular article; that
 article is protected. A body is a public institution. A seating body seated someone.
 Somebody put someone somewhere. Someone was cleared. Someone was recalled. Someone was
 voided in an earlier period. A body forgave someone. Someone's sentence is finished.
+Someone challenged an entry before a review body. A status, custody lease, or lawful
+disposition was authorised. Two public witnesses reported the same item, evidence, and
+scope. One record replaced another; two witnesses carried a status across that change;
+a list put record inventories, events, or entries in order; a time service named the boundaries
+of a review window; and a custody lease named its case, limit, current period, and
+constitutional source. A witnessed source record selected which constitutional line
+counts as current.
 
 That is it. That is everything the record can hold.
 
@@ -279,20 +287,25 @@ takes a visible edit to the opening declaration. It takes no proposal, argument,
 vote under the amendment procedure. Leaving a name off the roster is a clerk not
 typing.
 
-And an entry can be taken back. Remove one and everything that person was owed goes in
-the same instant: every right on the floor, the ballot, the freedom to move, and the
-body that owed them any of it. What does not go is anything held against them. A
-finding that they were unreliable stands. Recognition already stripped stays stripped.
-De-personing costs this design every protection it built and none of its punishments,
-and nothing in it can report that this has happened, because an entry deleted and an
-entry never written look exactly alike.
+An entry can still be taken back, but the attack is no longer invisible in every
+case. Once a person's status is separately attested in an accepted earlier record, an
+accepted later transition must account for its carry. If that carry is omitted, the
+earlier status keeps the person inside the floor and the omission is reported as a
+defect. A missing required carry no longer erases both the protection and the evidence
+of the omission in the same move.
 
-That gap cannot be closed by another rule, and it is worth saying why rather than
-leaving it as a promise for later. Every rule here works on what the record says. This
-is a claim about what the record leaves out, and there is no vantage point inside the
-record from which an absence is visible. Whatever guards the roster has to stand outside
-the design and watch it over time — which is a real answer, and a much weaker one than
-the rest of this chapter has been able to give.
+The report is deliberately broader than proof of deletion. This record has no way to
+say that a protected entry was lawfully retired, so it reports every missing required
+carry as a disappearance. It may therefore sound when outside law would call the
+removal proper. What it proves is the mismatch between the two supplied records, not
+why the entry is gone.
+
+Keep the size of that repair exact. It protects a standing entry that already appears
+in a witnessed earlier record. It cannot find a person who was never entered, detect a
+deletion made before or inside that earlier record, prove either witness honest, or make
+the next record arrive. Bypass the witnessed transition and the old danger returns:
+everything owed can disappear while adverse findings survive. The design can now
+compare two accepted records. It still cannot compare the record with the world.
 
 There is a third route, and unlike the two above it needs nobody added to the roster or
 left off it. It needs only that somebody writes down something they were entitled to

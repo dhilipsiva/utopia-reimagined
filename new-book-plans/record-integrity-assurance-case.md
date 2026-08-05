@@ -27,12 +27,12 @@ silently satisfy a control that the design claims to provide.
 These are load-bearing limitations, not implementation notes:
 
 - **In Snapshot Absence:** Within one supplied snapshot, an in-snapshot rule cannot distinguish an entry deleted before or within that snapshot from an entry withheld or never written. Absence exposes no history.
-- **T1 Boundary:** The bounded red-team now compares constructed snapshot files and exposes selected carry, omission, and rollback consequences, but those pairs have no independently attested identity, predecessor, manifest, authorship, reconciliation, replay protection, or divergence rule. A future T1 comparison can expose an attested fact that disappears between independently attested snapshots; it still cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition, or make a successor snapshot arrive.
+- **T1 Boundary:** The current staged rules and executable temporal harness can derive and attack selected predecessor/successor, carry, standing, order, and review-window consequences over exact supplied fixtures and enumerated item-field scopes. Derived status tuples retain an identifier and type tag, not their full payload; every consequential consumer must rejoin the raw fields it uses and their matching witness fields. That is repository safety evidence, not authentication or exhaustive disclosure of the observed payload, external witness independence, truth of the transition, arrival of a successor, or advancement of the outside time service. T1 can expose selected disappearance only between accepted supplied snapshots; it still cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition without further evidence, or make a successor arrive.
 - **Monotone Derivation:** Monotone derivation is not append-only storage. Current rules accumulate conclusions from supplied premises, while an external fact store or rule source can still be rewritten, withheld, or deleted.
 - **Independence:** Two named bodies, two entries, two signatures, or two replicas do not by themselves prove independent witnessing. Independence requires separate control, incentives, credentials, and failure domains, plus a conflict and collusion posture.
 - **Authenticity:** Authentication can attribute an entry to a credential. It does not prove that the underlying event occurred, that the source was complete, that the basis was sufficient, or that the credential holder acted lawfully.
 - **Genesis:** The first attested snapshot has no predecessor and cannot prove its own completeness. Genesis evidence and any unresolved uncertainty remain external assumptions rather than facts the snapshot certifies about itself.
-- **Classification Choice:** RC-1 through RC-5 are reviewed grouping choices, not derived or exhaustive constitutional classes. The checker proves exact premise assignment and declared dimension coverage; it does not prove that a semantic classification is correct.
+- **Classification Choice:** RC-1 through RC-6 are reviewed grouping choices, not derived or exhaustive constitutional classes. The checker proves exact premise assignment and declared dimension coverage; it does not prove that a semantic classification is correct, and one polymorphic relation may still serve routes that deserve distinct rule-family cards.
 - **Assurance Meta Root:** The assurance source, assertion ledger, generators, verifier, engine, and review process can be weakened or compromised together. A green repository check does not authenticate or authorise edits to its own trust root; release and toolchain integrity remain externally evidenced assumptions.
 
 ### Book 1 owns
@@ -63,7 +63,7 @@ These are load-bearing limitations, not implementation notes:
 | `RI-4` | Visibility, privacy, and effective challenge | `book1_target_unimplemented` | `visibility_privacy`, `challenge` |
 | `RI-5` | Independent witnessing and separation of functions | `book1_target_unimplemented` | `independent_witnessing`, `separation_of_functions` |
 | `RI-6` | Visible correction, retention, and deletion control | `book1_target_unimplemented` | `append_only_correction_history`, `retention`, `deletion_control` |
-| `RI-7` | Snapshot lineage, reconciliation, and time | `book1_target_unimplemented` | `reconciliation`, `temporal_status` |
+| `RI-7` | Supplied snapshot lineage, order, and constitutional time | `current_verified` | `reconciliation`, `temporal_status` |
 | `RI-8` | Failure polarity, continuity, and recovery | `book1_target_unimplemented` | `failure_polarity`, `continuity_remedy`, `omission_or_deletion_recovery` |
 | `RI-9` | Independent reader, action duty, and remedy | `book1_target_unimplemented` | `independent_recipient`, `action_duty`, `continuity_remedy` |
 | `RI-10` | Operational assurance and liveness remain external | `book2_external_assumption` | `external_assurance` |
@@ -83,7 +83,7 @@ These are load-bearing limitations, not implementation notes:
 - **Current failure:** The source fingerprints detect repository drift only. They do not prove who supplied a deployed premise, whether a live store omitted it, or whether the reviewed threat narrative is correct.
 - **Target contract:** Keep the census exact and require explicit review whenever a relation, route, fact snapshot, declaration, premise contract, or assurance classification changes.
 - **Residual assumption:** The release engine, parser, verifier, and human semantic review faithfully represent the source under test.
-- **Temporal status:** Current T0 repository invariant; no claim about a live transition.
+- **Temporal status:** Current repository invariant over the exact staged source; no claim about a deployed transition or outside clock.
 - **Book 2 handoff:** Deployment must bind an identified, released constitutional version to each attested snapshot.
 - **Owner:** `new-book-plans/7-assertion-surface.py::def validate_contract(`
 
@@ -143,7 +143,7 @@ None.
 
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
-| reviewed | `exposes_gap` | `RI-3` | `new-book-plans/assertion-surface-audit.md::The relation buys an author for the reason, not truth or sufficiency of the reason.` |
+| reviewed | `exposes_gap` | `RI-3` | `new-book-plans/assertion-surface-audit.md::For audits the relation buys an author for the reason, not truth or sufficiency.` |
 | decision | `sets_boundary` | `RI-3` | `new-book-plans/book-1-constitutional-taxonomy.md::Evidence is not self-certification:` |
 
 **Acceptance evidence still required**
@@ -214,7 +214,7 @@ None.
 **Argument.** Logical append-only correction preserves the original claim, the correction, who authorised each, their scope, and which downstream decisions require reconsideration. This does not require every personal detail to remain public forever, nor does it mean the current store is append-only.
 
 - **Posture:** `book1_target_unimplemented`
-- **Current failure:** The current kernel has no general correction event, effective-state rule, retention policy, deletion authorisation, or history assurance; forgiveness changes one consequence while the carried mark remains and is not a general correction pattern.
+- **Current failure:** The current `complete(item, ScopeTag)`, `succeed(after, Transition)`, `succeed(lease, PowerBound)`, `precede(claim, SequenceTag)`, `time(window, ReviewedInterval)`, `related(case, CaseBound)`, `orderly(lease, WindowBound)`, `concurrent(lease, RenewalBound)`, `reference(binding, SourceBound)`, and `correct(lease, ActivePower)` conclusions are compressed typed status outputs whose consequential consumers rejoin raw fields and their matching witness fields; despite their ordinary English names none is a general correction event. The kernel still has no general superseding-entry effect, retention policy, deletion authorisation, or stored-history assurance.
 - **Target contract:** Every correction names the superseded entry, author, authority, reason, evidence, effective scope, retrospective or prospective effect, affected conclusions, review and appeal; every retention or disposition rule states purpose, approver, proof retained, and privacy boundary.
 - **Residual assumption:** Book 1 cannot make bytes immutable or guarantee that an operator retained every entry and recovery copy.
 - **Temporal status:** A correction and a non-temporal purpose- or event-based disposition can be represented at T0; reliable predecessor/successor history requires T1, order-dependent effect requires T2, and every duration-based retention, review, or deletion schedule requires T3 plus external clock and liveness evidence.
@@ -226,7 +226,7 @@ None.
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
 | formal | `exposes_gap` | `RI-6` | `new-book-plans/constitution.nibli::admits governs what may be` |
-| prose | `exposes_gap` | `RI-6` | `book-1/05-voiding.md::never written and a line withheld are the same absence.` |
+| prose | `exposes_gap` | `RI-6` | `book-1/05-voiding.md::A fact deleted before the first attested` |
 
 **Acceptance evidence still required**
 
@@ -234,33 +234,31 @@ None.
 - A retention and authorised-disposition contract reconciled with privacy and accountability.
 - External evidence that stored history and disposition attestations resist undetected alteration.
 
-### RI-7 — Snapshot lineage, reconciliation, and time
+### RI-7 — Supplied snapshot lineage, order, and constitutional time
 
-**Claim.** Every attested transition identifies its predecessor, constitutional version, manifest, permitted changes, independent attestations, reconciliation result, divergence and replay status, and recovery state; time-dependent effects use the ratified T1/T2/T3 sequence.
+**Claim.** For the exact current source and supplied staged fixtures, T1 derives `succeed(after, Transition)` only after exact manifest observations and rejects enumerated lineage and manifest conflicts; T2 derives `precede(claim, SequenceTag)` from separately witnessed raw endpoints; and T3 derives `correct(lease, ActivePower)` only after typed status tags, rejoined raw fields, and their exact matching observations establish the case, subject, Court holder, custody power, window, renewal, source family, and successor required by the lease rule. Missing, disputed, conflicting, stale, or tuple-aliased inputs remove the restrictive conclusion.
 
-**Argument.** One-file pins start from a fresh engine and cannot prove an N-to-N+1 transition. T1 is required to compare attested snapshots, T2 where event order matters, and T3 where time limits public power; none proves that an outside clock advances or a successor is published.
+**Argument.** The executable temporal audit runs cumulative T1, T2, and T3 candidates in fresh engines and attacks omission, forged carry, disappearance, reverse or divergent lineage, status-tag injection, order conflict, window conflict, source mismatch, case mismatch, compact-tag tuple aliasing, challenge, and frozen supplied transitions. The derived heads intentionally retain only an identifier and type tag for engine safety; consequential consumers rejoin the exact raw fields and matching observations they use. These checks establish bounded repository safety for supplied records, not witness authenticity, outside clock advancement, successor publication, or institutional action.
 
-- **Posture:** `book1_target_unimplemented`
-- **Current failure:** The current T0 kernel has only an external carry convention. It cannot establish lineage, detect replay or equivocation, reconcile competing successors, or guarantee that any next snapshot or review arrives.
-- **Target contract:** Specify snapshot identity, predecessor, source version, permitted transition, carry and correction manifest, independent attestations, reconciliation and conflict result, replay and rollback rule, recovery status, challenge, and fail-safe consequence for missing or frozen transitions.
-- **Residual assumption:** Even an attested chain cannot prove an entry existed before genesis, detect a fact removed before attestation, or force the next transition to occur.
-- **Temporal status:** Current T0 gap; T1 is mandatory, T2 applies to order, and T3 applies to constitutional time limits.
+- **Posture:** `current_verified`
+- **Current failure:** Every temporal input and nominal witness remains ground-writable and unauthenticated. The compressed status tags do not carry their payloads; safety depends on each consequential consumer's exact raw-field and matching-witness rejoin plus the enumerated conflict and aliasing controls exercised by the supplied fixtures. Neither the tags nor those tests prove exhaustive enumeration, source deployment, honest independent control, immutable storage, physical truth, correction or recovery, successor arrival, clock advancement, release, or institutional action.
+- **Target contract:** Keep the cumulative stage boundaries, exact status shapes, raw-field and matching-witness rejoins, source and effect bindings, restrictive-power failure polarity, and adversarial harness current whenever a temporal premise, rule, fixture, or source version changes; never relabel a compressed status tag, external liveness, or operational authenticity as proof of its underlying payload.
+- **Residual assumption:** Even the accepted supplied chain cannot prove an entry existed before genesis, detect every fact removed before attestation, authenticate its witnesses, or force the next transition, clock event, review, release, or remedy to occur.
+- **Temporal status:** T1, T2, and T3 repository safety are implemented and audited for supplied staged fixtures; storage, witness, source-deployment, successor, clock, and institutional liveness assurance remain external.
 - **Book 2 handoff:** Operate snapshot publication, independent attestation, reconciliation, replicated availability, replay protection, clocks, calendars, and recovery services.
-- **Owner:** `TODO.md::Implement the ratified T3 temporal path in stages`
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`
 
 **Current evidence**
 
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
-| decision | `exposes_gap` | `RI-7` | `new-book-plans/book-1-time-model-decision.md::current one-file pins cannot prove` |
-| decision | `sets_boundary` | `RI-7` | `new-book-plans/book-1-time-model-decision.md::T1 is necessary to make cross-epoch claims less trusting.` |
-| generated | `exposes_gap` | `RI-7` | `new-book-plans/record-integrity-red-team.md::## Cross-snapshot transition matrix — T1 precursor only` |
+| formal | `supports_current` | `RI-7` | `new-book-plans/constitution.nibli::# <T1-RULES-BEGIN>` |
+| generated | `supports_current` | `RI-7` | `new-book-plans/temporal-assurance-case.md::ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED.` |
+| decision | `sets_boundary` | `RI-7` | `new-book-plans/book-1-time-model-decision.md::There is also a strict boundary between **safety** and **liveness**.` |
 
 **Acceptance evidence still required**
 
-- The required two-snapshot differential harness passing omission, forged carry, disappearance, replay, divergence, and frozen-transition controls.
-- T2 tests wherever before and after change a legal effect, and T3 tests wherever a duration or deadline limits power.
-- External availability and clock evidence labelled as liveness assurance rather than derivation.
+None.
 
 ### RI-8 — Failure polarity, continuity, and recovery
 
@@ -269,10 +267,10 @@ None.
 **Argument.** There is no safe relation-wide default: the same premise can support a claimant on one route and public power on another, and an absent accusation is not the same as an unperformed remedy. Recovery may reconstruct only from independently held evidence, must mark uncertainty, distinguish hostile loss from authorised disposition, and never manufacture a missing fact or resurrect lawfully disposed personal content merely to make the record complete.
 
 - **Posture:** `book1_target_unimplemented`
-- **Current failure:** The bounded red-team executes selected release, adulthood, roster, carry, relief, and forgiveness harms, but it neither detects nor attributes a runtime event and it supplies no recovery, interim continuity, systematic reconsideration, or remedy. Other premise routes remain reviewed-only.
+- **Current failure:** The staged temporal path now gives selected supplied standing and restrictive-power routes an explicit polarity and the executable audits attack carry, release, adulthood, lineage, order, and review inputs. It still neither authenticates nor attributes a runtime event, covers every premise route, recovers a lost record, systematically reconsiders downstream decisions, remedies completed harm, or makes an institution act.
 - **Target contract:** For every premise route, classify assertion and withholding or deletion harm, beneficiary and power polarity, disputed-state default, interim continuity, reconstruction sources and authorised-disposition boundary, uncertainty mark, affected conclusions, reconsideration, appeal, and remedy for harm already caused; never infer that an unperformed relief occurred.
 - **Residual assumption:** Some lost facts cannot be reconstructed; in that case the constitutional default can contain harm but cannot recreate historical truth.
-- **Temporal status:** T0 can state a failure default; disappearance and recovery across snapshots require T1, order-sensitive reconsideration requires T2, and delay limits require T3.
+- **Temporal status:** Selected supplied-record routes now implement T1 carry and disappearance checks, T2 order conflicts, and a T3 custody-power default. General reconstruction, downstream reconsideration, delay control for other powers, and operational recovery remain unimplemented or external.
 - **Book 2 handoff:** Maintain independent recovery sources, backups, incident records, service continuity, claimant support, and operational procedures for reviewing and remedying decisions after integrity failure.
 - **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
 
@@ -297,7 +295,7 @@ None.
 **Argument.** A referral nobody must read repeats the current audit gap. Deriving a duty is a formal consequence, but the assurance path remains open until a separate recipient has an action obligation and a failure consequence that does not remove the affected person's rights.
 
 - **Posture:** `book1_target_unimplemented`
-- **Current failure:** Article 8b derives `obliged` from selected `err` findings, but nothing reads the duty and no general reader, response, escalation, continuity, or systemic remedy follows.
+- **Current failure:** Articles 8b and 8c derive `obliged` from selected placement and temporal findings, but nothing reads the duty and no general reader, response, escalation, continuity, or systemic remedy follows.
 - **Target contract:** Name the recipient, independence, receipt evidence, action duty, permitted actions, continuity, reasons, review, escalation, non-response finding, final remedy authority, effect on prior decisions, common-cause investigation, systemic correction owner, affected-case re-audit, and recurrence evidence; systemic work may not delay individual continuity or remedy.
 - **Residual assumption:** No constitutional rule can prove that a real institution eventually acts; operational response remains a liveness claim.
 - **Temporal status:** A reader can be represented at T0; deadlines, maximum delay, and assured response require T3 and external liveness evidence.
@@ -355,16 +353,16 @@ None.
 - **Current failure:** Any claim of internal detection would be a false guarantee and could make an omitted or deleted claimant-supporting fact look lawfully absent.
 - **Target contract:** Keep the impossibility explicit. Use independently held evidence and attested transitions where available, classify uncertainty, and apply the consequence-specific fail-safe and recovery path rather than manufacturing the missing entry.
 - **Residual assumption:** External evidence can itself be missing, collusive, or compromised and may never establish the original history conclusively.
-- **Temporal status:** Unprovable within T0 and within any single snapshot; T1 narrows only cross-attested-snapshot disappearance.
+- **Temporal status:** Unprovable within any single snapshot; the current T1 path narrows only selected disappearance between accepted supplied snapshots and does not cure genesis or pre-attestation uncertainty.
 - **Book 2 handoff:** Preserve independent sources and history that can expose some omissions or deletions, while reporting genesis and pre-attestation uncertainty honestly.
-- **Owner:** `new-book-plans/book-1-time-model-decision.md::cannot detect a deleted fact inside a snapshot`
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::It cannot detect a fact deleted before or inside the first`
 
 **Current evidence**
 
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
-| decision | `supports_current` | `RI-11` | `new-book-plans/book-1-time-model-decision.md::cannot detect a deleted fact inside a snapshot` |
-| prose | `supports_current` | `RI-11` | `book-1/01-what-counts-as-evidence.md::entry never written look exactly alike.` |
+| decision | `supports_current` | `RI-11` | `new-book-plans/book-1-time-model-decision.md::It cannot detect a fact deleted before or inside the first` |
+| prose | `supports_current` | `RI-11` | `book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a` |
 
 **Acceptance evidence still required**
 
@@ -404,7 +402,7 @@ None.
 **Argument.** Negation makes non-entry legally operative without creating an attributable author. Deletion can therefore manufacture an apparent absence. The safe polarity is route-specific: an absent accusation may prevent adverse power, while an absent `clear` and Appeals judgment cannot manufacture relief, and absent relationship entries cannot certify independent signers.
 
 - **Posture:** `book1_target_unimplemented`
-- **Current failure:** Current rules deliberately read many absences, but the positive writable-premise ledger does not by itself establish which record was complete, who could attest that completeness, or whether non-entry, withholding, deletion, inapplicability, and an unperformed act are distinguishable on each route.
+- **Current failure:** Current rules deliberately read many absences. T1 derives `complete(item, ScopeTag)`, while T2 and T3 compress paired exact-field observations into typed status tags and then rejoin raw fields and matching observations at consequential consumers. Those admitted observations and status tags do not establish writer authority, independent control, exhaustive disclosure, immutable storage, truth, or whether non-entry, withholding, deletion, inapplicability, authorised disposition, and an unperformed act are distinguishable on every route.
 - **Target contract:** Inventory every negative consumer as an effective-premise route; for each, state finite scope, completeness author and witness, permitted and prohibited inference, assertion and deletion polarity, uncertainty, challenge, continuity, and recovery, preserving the settled distinction between an unadjudicated accusation and an unperformed remedy.
 - **Residual assumption:** No internal completeness declaration proves that an external writer disclosed every in-scope event or that a first snapshot was complete.
 - **Temporal status:** A route-specific T0 default can be stated, but cross-snapshot completeness and disappearance require T1, order-sensitive absence requires T2, and expiry or delay requires T3 plus external liveness evidence.
@@ -417,7 +415,7 @@ None.
 | --- | --- | --- | --- |
 | formal | `sets_boundary` | `RI-13` | `new-book-plans/constitution.nibli::unadjudicated accusation and an unperformed remedy are different absences,` |
 | generated | `exposes_gap` | `RI-13` | ``new-book-plans/assertion-surface-audit.md::withhold a true `married(Gia, Hex)` entry.`` |
-| generated | `exposes_gap` | `RI-13` | `new-book-plans/record-integrity-red-team.md::## T0 indistinguishability boundary` |
+| generated | `exposes_gap` | `RI-13` | `new-book-plans/record-integrity-red-team.md::## Flat-snapshot indistinguishability boundary` |
 
 **Acceptance evidence still required**
 
@@ -437,7 +435,7 @@ assurance argument that must govern it.
 Dockets, asserted approval outcomes, target declarations, and label-register entries used by the current amendment-label rules; a future source-transition contract must bind them to exact candidate changes.
 
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
-- **Failure posture:** Target posture: no source change becomes effective without authorisation. Current T0 does not implement this: missing authorisation or a false label cannot prevent an independently supplied source change. A disputed semantic effect must not widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power.
+- **Failure posture:** Target posture: no source change becomes effective without authorisation. The current amendment mechanism still does not implement this: missing authorisation or a false label cannot prevent an independently supplied source change. A disputed semantic effect must not widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power.
 
 ### RC-2 — Standing, status, and public-power records
 
@@ -467,17 +465,29 @@ Teaching, the legacy claimed-receipt premise `hears`, and work premises used to 
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
 - **Failure posture:** A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome.
 
+### RC-6 — Temporal transition, order, and review records
+
+Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`, `observe`, `passport`, and `replace` inputs used by the staged T1 reconciliation, T2 order, and T3 review-window and lease paths. Closed temporal conclusions retain an identifier and type tag while consequential consumers rejoin raw payload fields and their matching observations. Shared `approves`, `cite`, and `broken` inputs remain assigned to RC-1, RC-3, and RC-2 respectively because they also serve non-temporal routes; those classifications do not authenticate their temporal uses.
+
+- **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
+- **Failure posture:** Missing, disputed, stale, replayed, divergent, or unauthenticated temporal evidence cannot extend restrictive public power, revoke independently evidenced completed relief, or manufacture an unperformed release. Once an accepted transition and both exact predecessor-standing witnesses are supplied, omitted successor carry does not erase that standing or its floor; withholding a predecessor witness can still leave both non-derivable. Repository derivation is conditional on supplied exact-field evidence; exhaustive payload disclosure, writer authenticity, witness independence, storage integrity, successor arrival, and outside time progression remain external assurance obligations.
+
 | writable premise | record class | class title |
 | --- | --- | --- |
 | `adjust` | `RC-1` | Constitutional-change records |
 | `approves` | `RC-1` | Constitutional-change records |
 | `attack` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `authorized` | `RC-6` | Temporal transition, order, and review records |
 | `broken` | `RC-2` | Standing, status, and public-power records |
 | `capture` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `carries` | `RC-6` | Temporal transition, order, and review records |
+| `challenge` | `RC-6` | Temporal transition, order, and review records |
 | `choose` | `RC-2` | Standing, status, and public-power records |
 | `cite` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `clear` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `continue` | `RC-6` | Temporal transition, order, and review records |
 | `cruel` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `date` | `RC-6` | Temporal transition, order, and review records |
 | `deceive` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `family` | `RC-4` | Private relationship and location records |
 | `forgive` | `RC-3` | Case evidence, findings, filings, and remedy records |
@@ -486,13 +496,18 @@ Teaching, the legacy claimed-receipt premise `hears`, and work premises used to 
 | `home` | `RC-4` | Private relationship and location records |
 | `injure` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `judge` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `limit` | `RC-6` | Temporal transition, order, and review records |
+| `list` | `RC-6` | Temporal transition, order, and review records |
 | `married` | `RC-4` | Private relationship and location records |
 | `mature` | `RC-2` | Standing, status, and public-power records |
+| `observe` | `RC-6` | Temporal transition, order, and review records |
 | `parent` | `RC-4` | Private relationship and location records |
+| `passport` | `RC-6` | Temporal transition, order, and review records |
 | `permanent` | `RC-1` | Constitutional-change records |
 | `person` | `RC-2` | Standing, status, and public-power records |
 | `public` | `RC-2` | Standing, status, and public-power records |
 | `put` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `replace` | `RC-6` | Temporal transition, order, and review records |
 | `rotten` | `RC-2` | Standing, status, and public-power records |
 | `show` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `sibling` | `RC-4` | Private relationship and location records |
@@ -658,14 +673,14 @@ even if their own numbered chapter derivations do not change.
 
 | artifact | current claim | classification | reason | future trigger |
 | --- | --- | --- | --- | --- |
-| `book-1/01-what-counts-as-evidence.md::entry never written look exactly alike.` | Deletion and non-entry are indistinguishable inside the current record. | preserved | This assurance case specifies an external/T1 control boundary and does not add a detector. | Revise only if a later edition accurately introduces independently attested transition evidence, while retaining the intra-snapshot limit. |
-| `book-1/03-who-holds-the-pen.md::It does not mean the record is any harder to falsify` | Cross-body pens raise decision cost but do not assure record authorship. | preserved | The case distinguishes decisional independence from record witnessing and changes no pen rule. | Revise when authenticated, independently witnessed writer controls are formal and tested. |
-| `book-1/05-voiding.md::society can guarantee what follows from its record. It cannot guarantee its record.` | The current society guarantees derivation from a snapshot, not the snapshot itself. | preserved | The top assurance verdict is explicitly not established for T0. | Narrow, never erase, after T1 and external assurance evidence exists; genesis, truth, and liveness limits remain. |
+| `book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a` | A person never entered and a deletion before or inside the first attested record remain undetectable; selected later standing-carry omissions can now be exposed. | revised | The staged path detects selected conflicts and disappearance only across accepted supplied snapshots; it does not distinguish deletion, withholding, and non-entry inside one snapshot. | Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit. |
+| `book-1/03-who-holds-the-pen.md::It does not prove independent` | Cross-body pens raise decision cost but do not assure record authorship. | preserved | The case distinguishes decisional independence from record witnessing and changes no pen rule. | Revise when authenticated, independently witnessed writer controls are formal and tested. |
+| `book-1/05-voiding.md::They do not make the record self-authenticating.` | The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive. | revised | The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service. | Narrow, never erase, when scoped external assurance evidence exists; genesis, truth, exhaustive disclosure, storage integrity, and liveness limits remain. |
 | `book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds` | Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission. | preserved | The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics. | Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect. |
 | `book-1/12-changing-the-rules.md::integrity of the record those rules are written in.` | The declared-name guard rests on the integrity of its own rule, label register, and constitutional source; semantic entrenchment is not established. | preserved | The case treats the constitutional source as a record but does not harden amendment semantics. | Revise with the later semantic-amendment and source-transition rule family and its counterfactuals. |
 | `book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**` | The current audit chain ends at an unread `obliged` duty. | preserved | The case specifies the future reader/action contract and deliberately adds no reader rule. | Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands. |
-| `book-1/method.md::Coverage outside the declared fixtures and generated` | Coverage outside declared fixtures and the placement matrix remains accidental chapter-pin coverage, not a guarantee. | revised | The method now names the placement matrix as a bounded exception while general runtime deletion detection and transition assurance remain absent. | Revise only to the exact scope of a later differential harness and deployed assurance evidence. |
-| `book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and` | Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented. | preserved | The case is a target and acceptance gate, not an implemented institutional or operational defence. | Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land. |
+| `book-1/method.md::Coverage outside the declared fixtures and generated` | Coverage outside declared fixtures and generated bounded suites remains accidental chapter-pin coverage, not a guarantee. | revised | The method can name the placement matrix and staged temporal harness as bounded exceptions while runtime authentication, exhaustive deletion detection, storage integrity, and external liveness remain absent. | Revise only to the exact scope of later generated suites and independently deployed assurance evidence. |
+| `book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and` | Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented. | preserved | The staged T3 path adds bounded formal safety controls, but the supplied premises, witnesses, source deployment, storage, readers, and institutional action remain externally capturable. | Reassess the Part V capture verdict after authenticated operational controls, independent readers, and external assurance evidence land. |
 
 ## Acceptance gate
 
@@ -678,7 +693,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 | `RA-1` | The assertion-surface ledger digest matches, every writable premise has exactly one record-class assignment, each class reaches every mandatory assurance dimension, and every negative consumer is separately inventoried as an effective-premise route. | Generated positive and negative premise checks plus their negative controls; explicit semantic review after any route, premise-contract, or classification change. | `new-book-plans/7-assertion-surface.py::def validate_contract(` |
 | `RA-2` | Every new record-dependent right, limit, institution, or power has a completed record contract and declared complete legally operative basis before its rule family is drafted. | Writer, authority, permitted and prohibited inputs, provenance, visibility/privacy, challenge, correction, retention, deletion, assurance, negative-premise admissibility, independent reader, action and systemic-correction duties, continuity/remedy, and temporal fields. | `TODO.md::Maintain completed constitutional coverage rows before drafting chapters` |
 | `RA-3` | Assertion and withholding or deletion harms are tested separately, including the opposite failure created by every added authorisation, witness, or closed-world gate and the settled difference between an absent accusation and an unperformed remedy. | Executable non-vacuous pins or harness cases with a positive control, declared route-specific risk posture, and authorised-disposition boundary. | `new-book-plans/9-record-integrity-red-team.py::def validate_source(` |
-| `RA-4` | No cross-snapshot, order, expiry, deadline, or liveness claim is promoted before its T1/T2/T3 gate and differential evidence exists. | Two-snapshot harness, ordering tests where applicable, T3 controls, and explicit external liveness evidence. | `TODO.md::Implement the ratified T3 temporal path in stages` |
+| `RA-4` | No cross-snapshot, order, expiry, deadline, or liveness claim is promoted before its T1/T2/T3 gate and differential evidence exists. | Two-snapshot harness, ordering tests where applicable, T3 controls, and explicit external liveness evidence. | `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate` |
 | `RA-5` | Every integrity finding has an independent recipient, action duty, continuity, escalation, review, individual remedy, common-cause correction, affected-case re-audit, and recurrence-verification path; a referral alone does not pass and systemic work cannot delay individual relief. | Formal reader/action family, wrong-recipient and non-response controls, systemic-correction and recurrence evidence, and updated audit endpoint claims. | `TODO.md::Specify obligations without making rights reciprocal bargains` |
 | `RA-6` | Every external assumption has a Book 2 evidence owner and a Book 1 failure consequence that protects the person and constrains unsupported power. | Operational assurance plans and reproducible evidence for identity, storage, witnesses, reconciliation, privacy, recovery, availability, clocks, action, released source, dependencies, toolchain provenance, and independent verification. | `book-2/TODO.md::The record-integrity operating layer` |
 | `RA-7` | Every rule family classifies its effect on the standing narrowness-dependent chapter, Part V, and method claims before landing. | Preserve/revise/retire classification, new test route, and same-change prose, registry, and counted-claim updates. | `new-book-plans/book-1-constitutional-coverage-map.md::Narrowness-dependent claim impact gate` |
@@ -687,13 +702,15 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `d92bc73e19d9edede8e0badb9a8bf8b7beaa0c84dea908c461aafc1e5aad1687`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and
   report freshness. It does not prove real authorship, witness independence,
   storage integrity, clock progress, omission recovery, or deletion recovery.
 - The bounded report at `new-book-plans/record-integrity-red-team.md`
-  executes selected release, adulthood, roster, carry, relief, and forgiveness harms.
-  Those reproduced cases expose gaps; they do not establish authorship,
-  recovery, T1 transition assurance, liveness, or operational integrity.
+  executes selected release, adulthood, roster, relief, and forgiveness harms,
+  plus a negative control proving that bare `rotten` is inert. Those cases
+  expose flat-snapshot gaps and one input boundary; they do not establish
+  authorship, runtime attribution, recovery, liveness, or operational integrity,
+  and they do not duplicate the staged temporal assurance harness.

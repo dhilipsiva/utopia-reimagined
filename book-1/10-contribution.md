@@ -95,7 +95,7 @@ people around them — and none of it registers.
 The third door is also the door that closed last, and the manner of its closing
 deserves a sentence of history. For most of this design's life the teaching door and
 the work door refused the voided, and the examiner door did not: Vex — carrying a
-void forward from an earlier period, penless, unable to sign anything that counted —
+void through a reconciled record transition, penless, unable to sign anything that counted —
 was still being paid for examining people. That was not a cost anybody had accepted.
 It was a contradiction nobody had noticed. An examination is nothing but its author's
 word, and a voiding is precisely the finding that the word is worthless, so the door
@@ -106,8 +106,8 @@ described. The door simply stopped paying, from that day forward.
 
 That was the arrangement's whole story until this book's last decisions were made,
 and it has an ending now. The record can forgive. A `forgive` fact naming Appeals,
-standing beside a generic Appeals judgment about the person, takes the carried mark
-out of force — and the doors open again, all three, because the word they check stops
+standing beside a generic Appeals judgment about the person, takes the matched carried
+history out of force — and the doors open again, all three, because the word they check stops
 being said about you. It reaches backward, and that should be stated rather than
 discovered: work that sat on the record refused while the void stood starts
 counting the moment the mark comes clean — a forgiven examiner is paid for

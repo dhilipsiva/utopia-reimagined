@@ -162,9 +162,10 @@ way to say thank you that counted.
 What does this design do about rotation? Almost nothing, and this joint is where
 I say so. Recognition does not price the unpleasant against the pleasant — a
 recognised cleaner and a recognised surgeon stand identically, which removes the
-market's answer without supplying another. The design has no vocabulary for a
-term of office, so it cannot even express staggered rotation, let alone require
-it. What it does contribute is negative and real: because the floor never
+market's answer without supplying another. The design can now represent witnessed
+order and a reviewed interval, but it applies that machinery to case-bound custody,
+not office terms, staggered rotation, or unwanted work. What it does contribute is
+negative and real: because the floor never
 depends on work, nobody can be starved into the jobs nobody wants, which takes
 the historical worst answer — assignment by hunger — off the table permanently.
 But taking the worst answer away is not giving an answer.
@@ -213,15 +214,21 @@ overriding your real one.
 Stand there a moment, because each found something true.
 
 The first two objections read a draft in which no sentence ended, and they were
-right about that draft; release exists now, and a sentence can be finished by an
-entry anyone can point to. What survives of their objection is the part this
-book concedes rather than fixes: the design does not say *how long*. It refused
-duration on purpose — grading how long means saying what makes one sentence
-longer than another, and every answer prices someone's character; a term the
-record cannot count down is a promise with no keeper — and so release stays an
-act somebody performs, not an expiry anyone can rely on. A person whose case
-nobody takes up stays held. The chapter on the pen weighed that default openly,
-and the price is real and remains. Gemini's objection survives differently: the
+right about that draft. Release still exists as an entry anyone can point to. A
+second limit now sits on the power to hold: each custody case needs its own current
+renewal; witnessed ties to the person, the court, the judgment, and the injured person;
+unconflicted event and record-entry order; and binding to the exact constitutional
+source. The renewal must name the selected end of the witnessed constitutional record
+line, with no competing selection. Without that positive authority the custody
+conclusion does not derive when the supplied record is evaluated afresh. Nothing automatically writes *free*, and nothing here
+proves that the outside time service advances or that the next record arrives.
+
+What survives of their objection is therefore narrower and still serious. The
+design does not measure *how long*, count down a sentence, or secure physical
+release by its own operation. It evaluates the authority presented in each supplied
+record afresh; it cannot force the record to change. Adding a later
+record to an already-running evaluation would not retract conclusions already reached
+there. Gemini's objection survives differently: the
 compulsion door is open exactly as described — the floor blocks punishment for
 absence and says nothing about manufacture — and chapter 8 printed that before
 any reviewer found it. What the design refuses is the pretence that a rule could
@@ -230,25 +237,25 @@ open. There was one more intention in the earlier design, and I am withdrawing
 it rather than calling its failure a kindness: it would have let a convicted
 person earn a shorter sentence. That makes labour, compliance, or recognition a
 price of liberty; *choose* is strained when the alternative is longer
-confinement. The expanded constitutional target now refuses that trade. A
-future time limit may constrain the power holding someone through independent
-review, renewal, or an end condition; it may not let character, contribution,
-or recognition buy less confinement. This current book has none of that time
-machinery — nothing here measures time and nothing reads the recognition record
-— so it cannot yet secure prompt release. That gap remains, rather than being
-hidden behind a reward.
+confinement. The expanded constitutional target now refuses that trade. The
+temporal gate constrains the power holding someone through independent review and
+case-bound renewal; it does not let character, contribution, or recognition buy
+less confinement. Nothing here measures duration and nothing reads the recognition
+record. Prompt physical release remains an outside obligation that institutions must
+actually perform, rather than being hidden behind a reward.
 
 **Survives, narrowed.** The claim that punishment takes movement and only
 movement holds, was attacked from every side, and held — the vote stood, the
 floor stood, personhood stood; even a hostile graded read called the chapter
-carrying this trade excellent, and what it flagged as sharpest — no release —
-is the one part of the objection the design has since answered rather than
-conceded. The current narrowing is duration's silence and the compulsion door,
-both kept in print. The expanded constitutional target adds a future property:
-every restriction faces independently assured review, renewal, or an end, and
-no person's character can buy or extend it. The time service this needs is not
-in the current record; that absence is still a failure. The second half — no
-one is confined whom the record's own rules would release — is checkable today.
+carrying this trade excellent. What it flagged as sharpest — public power with
+no formal renewal — now has a case-bound gate. Physical release remains an
+outside obligation. The current narrowing is duration's silence, dependence on outside
+action, and the
+compulsion door, all kept in print. Custody now faces a case-bound reviewed renewal,
+and no person's character can buy or extend it. The time service and its boundary
+events are represented; their honest operation and eventual advancement are not
+proved here. The second half — no custody conclusion derives for a person whose case
+lacks current authority in the supplied record — is checkable today.
 
 ## Capture
 
@@ -271,10 +278,11 @@ not what happens when a design breaks. It is what happens while it works.
 
 What this design does against capture, most of this book: the pen split across
 two bodies, the kinship and marriage guards, the grounds a paid examiner must
-cite, the mark carried across periods, the shield for whoever exposes an
-authority, the audit that cannot be corrupted from below because nothing it says
-changes anything downstream — and the confession, made early and repeated, that
-beneath every guard sits a record that people keep.
+cite, the reconciled mark carried into the selected current record on one witnessed
+constitutional line, the shield for whoever
+exposes an authority, the audit whose findings can name a duty but still cannot
+make anyone act — and the confession, made early and repeated, that beneath every
+guard sits a record that people keep.
 
 The objection is that confession, handed back as a verdict. Gemini: "You have
 not destroyed the informal economy of leverage; you have just moved it to the
@@ -360,20 +368,27 @@ want of a database link; her family says she died asking for rice. The cause of
 her death is contested. The chain — cancellation, denial, death — is documented.
 That is what it looks like when the computation of eligibility becomes the
 instrument of denial, and it is the shape this design wants to make unbuildable.
-It has not yet done so completely. Once the record recognizes someone as a
-person, no further eligibility sits under the floor. But that first roster entry
-is still an eligibility gate: remove Bela's `person` line and the formal meal
-disappears while Bela's adverse `false` and `lose` conclusions survive. So, in
-this version, "no record found" can still gate a meal. Universal standing and
-record recovery remain unfinished constitutional work.
+It has not yet done so completely. Once the record recognises someone as a
+person, no further eligibility sits under the floor. A witnessed transition now
+preserves personhood from a separately attested earlier status and reports an omitted
+carry into the later record. That report is conservative: because lawful retirement
+of a protected record is not represented, it cannot distinguish authorised disposal
+from deletion. But the first roster entry is still an eligibility gate, and a
+deletion made before or inside that first accepted record leaves nothing to
+compare. In that case, "no record found" can still gate a meal while adverse
+conclusions survive. Universal initial standing and record recovery remain
+unfinished constitutional work.
 
 **Survives, narrowed.** The guards hold against the exact attacks they refuse.
 The constitutional source and the supplied record remain consequential and
-named; neither protects its own integrity. Review can expose a changed rule, and
-record checks can expose selected failures in supplied facts, but exposure is
-only worth what the people reading the exposures do. The specifications are the
-two given above, and they are the part of this joint I am least willing to see
-traded away.
+named; neither protects its own trust root. Exact source binding and witnessed
+record comparisons now expose selected changes, carry failures and missing required
+carry, while one witnessed current record line and exact conflict checks constrain
+which supplied authority counts as current. They neither authenticate their outside
+witnesses, prove a disappearance unlawful, nor force a later record to arrive.
+Exposure is only worth what the people reading the exposures do. The
+specifications are the two given above, and they are the part of this joint I am
+least willing to see traded away.
 
 ## The State
 

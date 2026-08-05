@@ -244,7 +244,7 @@ like.
 
 Shelter arrives for Kel and Adam **because they were convicted**. It did not arrive
 when they were owed it, which was always. The thing that finally produced a roof over
-two homeless people was a criminal conviction, and if either sentence ends, the roof
+Kel and Adam was a criminal conviction, and if either sentence ends, the roof
 goes with it.
 
 That is not a repair anybody should be pleased with. The hole in the placement rules is

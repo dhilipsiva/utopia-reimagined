@@ -20,11 +20,33 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 22
+:expect-pins 21
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
 judge(Court, Zed).
+cite(Court, Case_Zed, Zed).
+observe(Chronicle, Case_Zed, Zed, CaseScope).
+observe(TemporalReview, Case_Zed, Zed, CaseScope).
+observe(Chronicle, Case_Zed, Court, HolderScope).
+observe(TemporalReview, Case_Zed, Court, HolderScope).
+observe(Chronicle, Case_Zed, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Zed, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Zed, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Zed, Ivo, InjuryVictimScope).
+authorized(Case_Zed, ActiveCustody, Case_Zed).
+observe(Chronicle, Case_Zed, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Zed, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Zed, Case_Zed, CaseBindingScope).
+observe(TemporalReview, Case_Zed, Case_Zed, CaseBindingScope).
+limit(Case_Zed, Case_Zed, Window_Custody).
+observe(Chronicle, Case_Zed, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Zed, Window_Custody, LimitScope).
+continue(Case_Zed, Epoch_Current).
+observe(Chronicle, Case_Zed, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Zed, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Zed).
+approves(TemporalReview, Case_Zed).
 
 ? injure(Zed, Ivo).
 # => TRUE
@@ -66,9 +88,7 @@ judge(Court, Zed).
 ? owe(State, Meets, Zed).
 # => TRUE
 
-? entitled(Zed, event { eats() }).
-# => TRUE
-
+# Exact floor-event derivation is centralized in `13-floor-abstraction.py`.
 # (Owed, not delivered — the delivery gap is chapter 8's subject.)
 ? eats(Zed).
 # => FALSE

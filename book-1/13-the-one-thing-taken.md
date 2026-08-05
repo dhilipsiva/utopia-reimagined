@@ -103,83 +103,63 @@ does.
 That is not a small omission. It is the difference between a design that has thought
 about imprisonment and one that has thought about the decision to imprison.
 
-## And it may end
+## And the authority must be current
 
-There is one more thing, and the design does speak to this one.
+There is one more thing, and the design now speaks to it in two different ways.
 
-**A sentence can be finished.**
+**A sentence can be finished.** Somebody records that it is over, and the machinery
+that was holding that person stops holding them. Movement returns. Placement stops.
+The marker watching for isolation goes quiet. This is not relief: relief says the
+conviction should never have held; a finished sentence says it held and is done.
 
-Somebody records that it is over — that is one of the things the world may say — and
-from that moment the machinery that was holding a person stops holding them. Movement
-returns. The placement stops. The marker that was watching for isolation goes quiet.
-It is the same shape as relief, and it is not the same thing: relief says the
-conviction should never have held, and this says it held and is done.
+Custody now has another limit. A court judgment is no longer enough by itself. The
+record must also tie the same case to the person, the court, the court's judgment, and
+the injured person, with separate public witnesses agreeing. The custody authority must
+name that case, its window, its current renewal, and the exact constitutional source,
+and separate routes must approve it. The window needs unconflicted event order and
+record-entry order. The current renewal must point to the selected end of the witnessed
+constitutional record line, with no competing selection. A general renewal cannot be reused across every
+prisoner. If required evidence is missing, the order is conflicted, or the source,
+window, case subject, or lease has a competing witnessed account, the conclusion that the
+person is a prisoner does not follow when that record is evaluated afresh.
 
-What the design does not say is **when**. No sentence in it has a length, nothing marks
-a term, and nothing counts down. So a sentence *may* end, and the design has nothing to
-say about whether this one does. For the gravest things it is
-expected that nothing is ever recorded, and the design cannot compel that either. What
-ends a punishment here is a decision someone makes and writes down, and the design's
-whole contribution is to say what follows once they have.
+Do not turn that into a claim that the record released anyone. Missing authority does
+not write the word *free*. It withdraws the public power to keep deriving custody in
+the record being considered. Nor does the design open a cell, transport a person home,
+or make an appeal body act. Those are things institutions must do in the world.
 
-It can express that one offence was worse than another — that much changed when
-severity stopped being written down and started being worked out. Where somebody is
-held follows from how bad the offence was, and how bad the offence was follows from
-what was recorded about it. What has not been built is any bridge from that to how
-long. Severity reaches the walls and stops.
+The review window has an order but no measured length. Witnessed chains can say that
+its opening came before its boundary, and a direct or longer cycle makes the connected
+path unusable. Nothing here says how many days lie between the boundaries, counts those
+days down, or forces the outside time service to publish the next one. A frozen
+designated-current record can still be presented forever unless the outside assurance
+system makes a successor arrive. The rules evaluate each supplied record afresh and
+verify its safety; they do not prove that the world supplying it keeps moving.
 
-Be careful about why it stops, because the obvious reason is the wrong one and it is
-the reason this chapter used to give. The words exist in ordinary language, not in this
-constitutional record. No admitted relation says that something came before another,
-began, is still running, ended, or has a term. A name that looks like a duration is only
-a name here: it does not create a clock or order events.
+Severity still reaches the walls and stops. It cannot lengthen the interval.
+Recognition, work, compliance, wealth and character cannot shorten or extend custody
+either. Time constrains the power holding a person; it does not become a price attached
+to the person.
 
-What is genuinely absent inside this record is temporal semantics: neither an ordering
-relation nor arithmetic. Nothing computes how long something lasted, compares one
-length against another, or advances a clock. A term could be written into this design
-tomorrow and nothing in it would count the term down, notice it had run out, or tell you
-that one sentence was longer than the next.
-
-Notice which way round that is, because it is the safer of the two. A design that could
-grade *how long* would need to say what makes one sentence longer than another, and
-every answer to that question is a place where someone's character gets priced. This
-one grades where and does not grade when.
-
-That is a refusal and not a gap, and the difference matters because a gap excuses you
-and a refusal does not. The design could be widened to name temporal facts, but it
-declines both that widening and the machinery that would honour a term. The reason is
-the one in the paragraph above rather than an accidental absence of English words. Which
-is the harder position to hold and the only honest one — a restraint you chose is a
-restraint you can be argued out of, and this one should have to survive the argument
-every time it is raised.
-
-It has now been raised in earnest, in the strongest form outside readers give it: that
-a society whose design cannot say when a sentence ends should not be trusted to hold
-anyone. The restraint survived, and it came out of the argument holding a second reason
-beside the first. A term this record held would be a promise nothing keeps — nothing
-counts it down, nothing notices it run out, nobody is released by it — and this design
-has already declined, once before, to build an instrument that pretends to watch.
-Naming the length is easy; it was priced, and declined. A sentence here ends the way it
-has ended throughout these chapters: by a decision somebody writes down, not by a
-clock.
-
-That is less than it sounds, and it is worth being exact about why. This is the same
-shape as everything else in these chapters: the design is precise about consequence and
-silent about occurrence. It knows what a finished sentence means. It does not know when
-one happens, and it cannot make one happen.
+So this design can now say more than *a sentence may end*. It can refuse custody that
+lacks a current, case-bound review when the selected record is evaluated afresh. What
+it still cannot say is
+that a promised period has elapsed in the world, that a successor will appear, or that
+physical release will happen promptly. The difference is the difference between a
+safety rule and somebody keeping time.
 
 ## What leaving costs
 
 And there is a sting in it that is worth following, because it is the sharpest thing
 this chapter has.
 
-Of everything owed to every person, what actually arrives in this design is exactly
-this: recorded speech, and shelter. **Both of them arrive only for prisoners.** A
-route now stands open for a third — teaching that was heard delivers learning — and
-no hearing is on the record, so nothing yet arrives by it; the sting below is
-untouched.
+The floor has only narrow delivery routes here. Recorded speech and shelter actually
+arrive, and **each arrives only for prisoners**. Teaching received through the legacy
+route can also deliver learning, but no matching receipt is in this record, so nothing
+arrives by that route here; the sting below is untouched.
 
-So when a sentence is finished, both stop. The person keeps every entitlement they had
+So when a sentence is finished, or current case authority is absent, recorded speech
+and shelter stop in the newly evaluated record. The person keeps every entitlement they had
 — they are owed exactly what they were always owed, and the body that owes it still
 owes it — but the two things that were genuinely being delivered were being delivered
 by the punishment machinery, and the punishment machinery has let go. Hano, released,
@@ -191,8 +171,8 @@ conviction is what produced a roof. Not anybody noticing they were owed one. Not
 body that owes it doing anything. The confinement machinery needed somewhere to put
 them, and a roof is what it takes to confine a person who has none. When the sentence
 ends the roof ends, and they are returned exactly to the position that made the rules
-run out in the first place. This design will have housed two homeless people for
-precisely as long as it was punishing them.
+run out in the first place. This design will have housed Adam and Kel for precisely as
+long as it was punishing them.
 
 **Leaving custody returns a person to a population this design delivers nothing to.**
 

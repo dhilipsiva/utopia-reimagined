@@ -203,18 +203,19 @@ from that list, are not two separate problems. They are one problem, and it wors
 without anybody doing anything, because the only thing that ever changes is that the list
 gets longer.
 
-Should it be bounded — by time, or by requiring the exposed conduct to be recent? This
-design answers no, and the answer is not neglect. Each way of writing the bound was
-refused somewhere else in this book, for reasons that had nothing to do with sparing
-this chapter. A bound by time needs a clock, and this record holds none and now never
-will. A bound by recency needs somebody to write down that an exposure has gone stale —
-a finding with no finder that strips shields wholesale, the same kind of entry the
-first chapter conceded and this one watched jail a whistleblower. And expiring the
-standing itself would turn every recall into an escape hatch: the honest man's shield
-would die with the corrupt man's office, which is the one outcome this whole
-arrangement exists to prevent. Beneath all three, the record is flat — it cannot say
-whether the exposure came before the recall or after, so the past a bound would police
-is a past the record cannot see.
+Should it be bounded — by time, or by requiring the exposed conduct to be recent? The
+record can now hold a witnessed claim that one event preceded another. It can also
+limit a court's authority through a reviewed interval. Neither change ages an exposure
+or narrows this shield. The shield asks only whether the exposed person ever held
+standing and whether this particular exposure has been found deceitful; it deliberately
+does not read the new order or interval.
+
+That refusal preserves two things. A recall still cannot become an escape hatch for the
+official who was exposed, and missing or disputed time evidence cannot strip protection
+from the person exposing them. The cost remains the reach-back already priced here:
+standing never lapses, an old name can still open a shield, and each claim must still
+be examined on its own. The design can now describe order elsewhere. It has chosen not
+to make recency the price of this protection.
 
 So the list grows, because three protections hold, and the growing is what they
 jointly cost. That bill was already itemised above; nothing here shrinks it. A

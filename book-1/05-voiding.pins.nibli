@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 38
+:expect-pins 39
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -121,6 +121,64 @@
 # on the credential conjuncts first, and the void would be blocked for a reason
 # that has nothing to do with kinship. So both credentials are pinned TRUE in
 # the same breath as the blocked void. That pairing is the whole test.
+# T1 fixtures: a new seat is not a pen. Each synthetic signer below carries an
+# independently witnessed positive-clear status into the current record.
+authorized(Sirefa, ClearStatus, Epoch_Previous).
+observe(Chronicle, Sirefa, Epoch_Previous, ClearScope).
+observe(TemporalReview, Sirefa, Epoch_Previous, ClearScope).
+carries(Chronicle, Sirefa, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Sirefa, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Scionfa, ClearStatus, Epoch_Previous).
+observe(Chronicle, Scionfa, Epoch_Previous, ClearScope).
+observe(TemporalReview, Scionfa, Epoch_Previous, ClearScope).
+carries(Chronicle, Scionfa, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Scionfa, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Unrela, ClearStatus, Epoch_Previous).
+observe(Chronicle, Unrela, Epoch_Previous, ClearScope).
+observe(TemporalReview, Unrela, Epoch_Previous, ClearScope).
+carries(Chronicle, Unrela, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Unrela, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Unrelb, ClearStatus, Epoch_Previous).
+observe(Chronicle, Unrelb, Epoch_Previous, ClearScope).
+observe(TemporalReview, Unrelb, Epoch_Previous, ClearScope).
+carries(Chronicle, Unrelb, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Unrelb, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Ambi, ClearStatus, Epoch_Previous).
+observe(Chronicle, Ambi, Epoch_Previous, ClearScope).
+observe(TemporalReview, Ambi, Epoch_Previous, ClearScope).
+carries(Chronicle, Ambi, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Ambi, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Lupo, ClearStatus, Epoch_Previous).
+observe(Chronicle, Lupo, Epoch_Previous, ClearScope).
+observe(TemporalReview, Lupo, Epoch_Previous, ClearScope).
+carries(Chronicle, Lupo, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Lupo, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Partnr, ClearStatus, Epoch_Previous).
+observe(Chronicle, Partnr, Epoch_Previous, ClearScope).
+observe(TemporalReview, Partnr, Epoch_Previous, ClearScope).
+carries(Chronicle, Partnr, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Partnr, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Mara, ClearStatus, Epoch_Previous).
+observe(Chronicle, Mara, Epoch_Previous, ClearScope).
+observe(TemporalReview, Mara, Epoch_Previous, ClearScope).
+carries(Chronicle, Mara, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Mara, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Maro, ClearStatus, Epoch_Previous).
+observe(Chronicle, Maro, Epoch_Previous, ClearScope).
+observe(TemporalReview, Maro, Epoch_Previous, ClearScope).
+carries(Chronicle, Maro, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Maro, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Una, ClearStatus, Epoch_Previous).
+observe(Chronicle, Una, Epoch_Previous, ClearScope).
+observe(TemporalReview, Una, Epoch_Previous, ClearScope).
+carries(Chronicle, Una, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Una, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Uno, ClearStatus, Epoch_Previous).
+observe(Chronicle, Uno, Epoch_Previous, ClearScope).
+observe(TemporalReview, Uno, Epoch_Previous, ClearScope).
+carries(Chronicle, Uno, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Uno, Epoch_Current, Epoch_Previous, ClearCarry).
+
 choose(Electorate, Sirefa).
 choose(Convocation, Scionfa).
 parent(Sirefa, Scionfa).
@@ -205,11 +263,14 @@ capture(Partnr, Frisk).
 # => FALSE
 
 # ── What actually closes it, one round late ──────────────────────────────────
-# The mark carried forward from the previous round. It does not make the void
-# rule reject him — it denies him the pen in the first place, which is the same
-# sentence the chapter's Vex block already makes. Note the query directly above
-# this line and the one directly below are the SAME query with opposite
-# verdicts, and the single asserted fact between them is the whole mechanism.
+# A raw mark no longer closes the pen. The predecessor status, both exact
+# observations, and both carry witnesses must agree before the mark has legal
+# force in the current record.
+authorized(Lupo, VoidStatus, Epoch_Previous).
+observe(Chronicle, Lupo, Epoch_Previous, VoidScope).
+observe(TemporalReview, Lupo, Epoch_Previous, VoidScope).
+carries(Chronicle, Lupo, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, Lupo, Epoch_Current, Epoch_Previous, VoidCarry).
 rotten(Lupo).
 
 ? permits(Review, Lupo).
@@ -247,18 +308,20 @@ capture(Uno, Targ3).
 # => TRUE
 
 # ── The carry, written dishonestly ───────────────────────────────────────────
-# The omission failure the chapter concedes needs a keeper's silence. The
-# forgery needs one line: rotten is admitted (it must be, for honest carries),
-# and the epoch-carry rule re-derives the void from it with no second
-# signature and no clean-epoch check. Fresh name, so the baseline FALSE is the
-# negative control: nothing else about Forga could void him.
+# A raw mark is inert. Even two carry entries without a witnessed predecessor
+# basis are reported as forgery rather than converted into legal voiding.
 ? false(Forga).
 # => FALSE
 
 rotten(Forga).
+carries(Chronicle, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
+
+? err(Forga, CarryForgery).
+# => TRUE
 
 ? false(Forga).
-# => TRUE
+# => FALSE
 
 # ── THE EXHIBIT: distinctness was the only bar. MUST BE LAST ─────────────────
 # An accepted rule loads into the KB and stays, so nothing may be pinned after

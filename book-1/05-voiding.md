@@ -104,22 +104,25 @@ prevent a corrupt auditor from making one attempt. Nothing can. What it does is 
 the first attempt expensive enough that there is rarely a second, and it does so
 without anyone having to notice the pattern — the rule catches the first one.
 
-## Time has to be inserted by hand
+## What has to cross the record
 
 Vex was voided in an earlier period. Later, Vex and Wren both examined Tyr — both
 credentialed on paper, from different bodies as the rule requires, each recording
 what they found, neither the other's parent, neither having lied.
 
-Tyr is fine. Vex's signature does not count, because Vex carries the mark of the
-earlier voiding forward, and that mark blocks the credential.
+Tyr is fine. Vex's signature does not count, because the selected current successor on
+the witnessed constitutional line carries the earlier voiding forward, and the
+reconciled mark blocks the credential.
 
-This condition looks like housekeeping and is not. Without it, there is a hole with
-an odd shape. The record, examined at any single moment, is a flat collection of
-things that are true — it does not, on its own, know what happened before what. So
-the voiding of Vex and the voiding of Vex's next victim would sit side by side, each
-perfectly valid, with nothing in the record able to say that one preceded and
-therefore should have prevented the other. A corrupt auditor could be caught and go
-on signing in the same breath.
+This condition looks like housekeeping and is not. Within one record, the voiding of
+Vex and the voiding of Vex's next victim can still sit side by side. The repair works
+across two records instead: the later one names the earlier one, two public bodies
+witness the exact inventory entry naming each record and the earlier void, and both bodies report the
+same carry. The later record must also be the selected end of the witnessed
+constitutional record line, with no competing selection. Only then does the carried
+history take effect. A separate pair of witnessed entries can
+also say that one event preceded another, though the voiding rule does not use that
+order to decide whether Vex may sign.
 
 That is not hypothetical, and the design does not stop it. There is a man in this
 record whose own credibility is already gone — the review body examined a finding he
@@ -139,15 +142,17 @@ refusal that keeps a law from punishing you for having no food, arriving from th
 other side, and it is worth noticing that the mechanism protecting the floor is the
 mechanism blocking this repair. You do not get one without the other.
 
-Which is why the guard has to be a written mark and not a rule. A rule would have to
-look at something the design is still working out. A mark is a plain fact somebody
-wrote down at the close of the last period, and a fact can be looked at.
+Which is why the guard still begins with written marks rather than the voiding
+conclusion itself. The difference now is that one mark is not trusted alone. A rule
+compares the witnessed predecessor and successor and derives the carried history only
+when they agree. The record can therefore report an omitted or invented carry instead
+of silently treating it as truth.
 
-The mark carried forward is how sequence gets into a system that has no natural sense
-of it. Somebody has to write down, at the close of each period, who was voided during
-it. That is not a rule; it is a discipline over the record, performed by people. The
-design depends on it and cannot enforce it, which is worth remembering when we get to
-the end of this chapter.
+This remains a discipline over public records, not proof that history looked the way
+the witnesses said. The design checks agreement, exact declared scope, replacement, and
+the selected current record line. It does not prove a record inventory actually complete, prove
+either witness honest, find a deletion made before the first accepted record, or force
+a later record to be published.
 
 ## What it costs
 
@@ -171,11 +176,11 @@ because the tempting version is wrong. Forgiveness restores a person's word and 
 not put them back at this table — but not because the conditions above catch them.
 Those conditions are about who you sign beside, and a forgiven examiner trips none of
 them. What stops him is earlier: co-signing needs a pen, the pen is issued by a rule
-that reads the carried mark directly, and the mark outlives the forgiveness. No pen
-is ever issued, so he never arrives at the conditions this section is about. The way
-back for a person's word and the way back to power are different roads, and this one
-runs through a door the chapter on the pen describes rather than through anything
-here.
+that reads the matched carried history directly, and that history outlives the
+forgiveness. No pen is ever issued, so he never arrives at the conditions this section
+is about. The way back for a person's word and the way back to power are different
+roads, and this one runs through a door the chapter on the pen describes rather than
+through anything here.
 
 What the widening does not close deserves the same care the old gap was given. Two
 people who have been close friends for thirty years, or who share a household, or who
@@ -186,28 +191,18 @@ for two was meant to create is real only as far as the vocabulary reaches, and t
 vocabulary now reaches exactly as far as marriage and siblinghood. That is further
 than it reached, and it is not far.
 
-**And the sequence discipline is not enforceable from inside.** The mark carried
-forward works, and it works only if someone actually carries it. If the record of who
-was voided last period is not written, or is written selectively, the check silently
-passes and a voided auditor signs again. Nothing in the design detects this.
+**And the sequence discipline still rests on outside witnesses.** Omit a required
+carry from an attested successor and the design now reports the omission. Insert a
+carried mark with no matching predecessor and it reports a forgery; the raw mark alone
+no longer destroys anyone's word. Public pens also require positive matched clearance,
+so withholding a clear carry closes a pen instead of silently cleaning its holder.
+Those are real repairs to the attacks this chapter used to disclose.
 
-That is what makes it the worse of the two. The gap above needs two people who both
-hold pens, from two different bodies, both willing to do it — and afterwards both their
-names are on the finding, where anyone can read them. This one needs a single person
-not to write something down, and afterwards there is nothing to find, because a line
-never written and a line withheld are the same absence. The rules are airtight and they
-sit on top of a record that people maintain.
-
-And the carried mark can be written as well as withheld. The word that carries a
-voiding across periods is on the record's short list of writable words — it has to
-be, or no honest carry could ever be recorded. So consider the dishonest one: a
-single line, written about a person nobody ever voided. The machinery re-derives the
-voiding from it — no second signature, no check against any earlier period, none of
-the guards this chapter spent its length on, because every one of those guards sits
-on the door where a voiding is *made*, and this line walks through the door where a
-finished voiding is *remembered*. Measured, and now pinned: one write, and a person
-who was never examined by anyone loses their word. The airtight rules and the
-maintained record meet nowhere more sharply than here.
-
-It is going to keep coming up, and it is better said now than discovered later: **this
-society can guarantee what follows from its record. It cannot guarantee its record.**
+They do not make the record self-authenticating. Two compromised witnesses can agree
+on the same false lists. A transition can be withheld, replayed outside the selected
+constitutional line, or never published. A fact deleted before the first attested
+record leaves nothing here to compare. And because the machinery only adds conclusions
+during one check, a later successor must be checked from scratch; adding it to an old
+check does not retract what that check already concluded. The rules now guarantee more about what
+follows from supplied records. They still depend on people and institutions to make
+those records honest and to make the next one arrive.

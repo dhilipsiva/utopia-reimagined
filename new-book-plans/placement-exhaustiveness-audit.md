@@ -7,16 +7,16 @@
 
 **BOUNDED CURRENT-SOURCE REPOSITORY ASSURANCE — not a runtime placement guarantee or housing-delivery assurance.**
 
-For the exact reviewed current source, the generated Cartesian matrix establishes the confined housing result, the deliberate no-destination exception, the unique expected destination in every other confined tuple, and the absence of placement actualities in every affirmatively free and person-only mirror; bounded harmful source mutations are detected before acceptance.
+For the exact reviewed current source, with exact positive case-bound T3 custody prerequisites held constant in confined rows, the generated Cartesian matrix establishes the confined housing result, the deliberate no-destination exception, the unique expected destination in every other confined tuple, and the absence of placement actualities in every affirmatively free and person-only mirror; bounded harmful source mutations are detected before acceptance.
 
 The accepted matrix is exhaustive for the declared current axes and the exact
 current producer surface. `FALSE` below means *not derivable from the supplied
-T0 snapshot*, not classical negation or an independently established fact.
+bounded fixture*, not classical negation or an independently established fact.
 
 ## Bound source manifest
 
 - Reviewed source: `new-book-plans/placement-exhaustiveness-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `b04840b260539534851cde99eb82b0e39344e572717981f0d68db51835eb9a19`.
+- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5`.
 - Destination manifest: `HighSec`, `Homestay`, `LowSec`.
 - Destination-manifest SHA-256: `95051f6b6ea7ebc732a2effa083868b2924dd20efd2509d5cacffbcbf0c530c4`.
 
@@ -46,15 +46,15 @@ T0 snapshot*, not classical negation or an independently established fact.
 
 ## Subject-status contract
 
-- **confined:** Ordinary conviction premises derive prisoner status; no free entry is supplied, and free must remain not derivable.
+- **confined:** Ordinary conviction premises plus a generated exact T1/T2/T3 transition, shared review window and source record, and case-bound current custody lease derive prisoner status; no free entry is supplied, and free must remain not derivable.
 - **registered_free:** A free entry is supplied and derives personhood; prisoner status must remain not derivable.
-- **registered_person:** A person entry alone is supplied; neither prisoner nor free may derive. This is a live T0 state, not an inference that the person is secretly free or confined.
+- **registered_person:** A person entry alone is supplied; neither prisoner, a current custody lease, nor free may derive. This is a bounded formal state, not an inference that the person is secretly free or confined.
 
 ## Axis contract
 
 - **severe:** `not_derived` / `derived`. Derived severity is constructed with an attack and cruelty concerning the same subject and victim. Not-derived severity omits those entries; it is not an affirmative finding of non-severity.
-- **family:** `absent` / `present`. Present means a family entry is supplied. Absent means no family entry is supplied in this T0 snapshot; it does not establish that no family exists.
-- **home:** `absent` / `present`. Present means a home entry is supplied. Absent means no home entry is supplied in this T0 snapshot; it does not establish homelessness outside the supplied record.
+- **family:** `absent` / `present`. Present means a family entry is supplied. Absent means no family entry is supplied in this bounded fixture; it does not establish that no family exists.
+- **home:** `absent` / `present`. Present means a home entry is supplied. Absent means no home entry is supplied in this bounded fixture; it does not establish homelessness outside the supplied record.
 
 ## Confined matrix
 
@@ -70,7 +70,8 @@ T0 snapshot*, not classical negation or an independently established fact.
 | `confined-severe-nofamily-nohome` | `derived` | `absent` | `absent` | `FALSE` | `TRUE` | `HighSec` | `FALSE` |
 
 Every row also checks standing, affirmative freedom or confinement,
-the shelter entitlement, the itemised shelter debt, each axis result, and every
+the presence or absence of an exact case-bound custody lease,
+the itemised shelter debt, each axis result, and every
 discovered non-selected destination.
 
 ## Affirmatively free mirror
@@ -87,7 +88,8 @@ discovered non-selected destination.
 | `free-severe-nofamily-nohome` | `derived` | `absent` | `absent` | `FALSE` | `FALSE` | — | `FALSE` |
 
 Every row also checks standing, affirmative freedom or confinement,
-the shelter entitlement, the itemised shelter debt, each axis result, and every
+the presence or absence of an exact case-bound custody lease,
+the itemised shelter debt, each axis result, and every
 discovered non-selected destination.
 
 ## Person-only mirror
@@ -104,12 +106,14 @@ discovered non-selected destination.
 | `registered-severe-nofamily-nohome` | `derived` | `absent` | `absent` | `FALSE` | `FALSE` | — | `FALSE` |
 
 Every row also checks standing, affirmative freedom or confinement,
-the shelter entitlement, the itemised shelter debt, each axis result, and every
+the presence or absence of an exact case-bound custody lease,
+the itemised shelter debt, each axis result, and every
 discovered non-selected destination.
 
 The two non-confined mirrors are current-source narrowness tripwires. They
-record the present gap between entitlement/debt and actuality; they are not
-a permanent ban on a future valid free-person delivery route.
+record the present gap between itemised debt and actuality; script 13
+separately executes the exact event-abstraction entitlement. They are not a
+permanent ban on a future valid free-person delivery route.
 
 ## Executable source mutations
 
@@ -120,11 +124,11 @@ every affected subject and requires it to remain silent.
 
 | mutation | kind | baseline flips | alarm-silence cases | candidate source SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `f4ea9bdf63a5bcf0e0c64dc9ca301a0a30713ea5fcf341bb471bfdebb317aa74` |
-| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `9ce81246819987af11f7e915a3644461757de93316924347b5a1abe8b8021373` |
-| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `d48bb7e5ec2753a5df54a1f05d0801a2352e1b5e3c5cbdf5b6967abb8db2be49` |
-| `opposite-destination` | `opposite_destination` | 4 | 2 | `d8c1faff3676cfeb164777c0048ad83fdd2adc0e5dc1c839fce5acdf35ee5821` |
-| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `8f9f0bc963f365dceb4912afb5f80389f0e9d68eb266514ab70e0a133b5bcca0` |
+| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `90645107cca0f7f39bda4eb6a769969f7add498c6997e3af44707a486b732b56` |
+| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `699c23e01e07003ad7d43da4422c128d6370baf47fa3f30b894d377ace645c91` |
+| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `e6d37984c6cb657f688fe7a05d2385cf61c30b69a88e975532b4f220ebbaba33` |
+| `opposite-destination` | `opposite_destination` | 4 | 2 | `03f731fcdf17686b5434cb710c456bc20a803830f3975d849c16945d8778e69a` |
+| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `d25c64d0714d96e80f92cf94adb527ff2cbe0d99f0ff41e9a0dbb75fc3d0e151` |
 
 ### duplicate-destination — An overlapping route gives Homestay and LowSec together
 
@@ -230,7 +234,6 @@ This counterexample separates current placement completeness from actual non-car
   - `dwell(Registered_Severe_NoFamily_Home)` = `TRUE`: The severe home-present person-only mirror flips.
   - `dwell(Registered_Severe_Family_NoHome)` = `TRUE`: The severe family person-only mirror flips without arrival evidence.
   - `dwell(Registered_Severe_Family_Home)` = `TRUE`: Every person-only axis tuple now looks housed by rule fiat.
-  - `entitled(Free_NotSevere_NoFamily_NoHome, event { dwell() })` = `TRUE`: The unconditional shelter entitlement was already present and does not distinguish the painted rule.
   - `owe(State, Dwell, Free_NotSevere_NoFamily_NoHome)` = `TRUE`: The itemised debt was already present and likewise supplies no delivery evidence.
   - `prisoner(Free_NotSevere_NoFamily_NoHome)` = `FALSE`: The mutation fakes free-person delivery without routing through confinement.
 - Placement-alarm silence checked for: `free-notsevere-nofamily-nohome`, `free-notsevere-nofamily-home`, `free-notsevere-family-nohome`, `free-notsevere-family-home`, `free-severe-nofamily-nohome`, `free-severe-nofamily-home`, `free-severe-family-nohome`, `free-severe-family-home`, `registered-notsevere-nofamily-nohome`, `registered-notsevere-nofamily-home`, `registered-notsevere-family-nohome`, `registered-notsevere-family-home`, `registered-severe-nofamily-nohome`, `registered-severe-nofamily-home`, `registered-severe-family-nohome`, `registered-severe-family-home`.
@@ -254,13 +257,14 @@ This counterexample separates current placement completeness from actual non-car
 
 ## Limits
 
+- **Bounded Absence Meaning:** The negative axis states and FALSE query results mean not derivable from the supplied bounded fixture. They do not prove a classical negative fact, record completeness, or the truth of any asserted positive entry.
 - **Current Source:** The matrix binds the exact current constitution, every discovered fit/dwell/building producer, and every literal building destination. It is not a proof about a changed source until the reviewed manifest and expectations are updated.
 - **Future Delivery:** The non-confined mirrors are current narrowness tripwires, not a permanent prohibition. A future authorised and challengeable housing-delivery rule must intentionally revise this contract and every affected book claim.
-- **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing, shelter entitlement, and the itemised debt while dwell remains absent. This exposes the current delivery gap rather than closing it.
-- **Records And Remedy:** The audit constructs facts and source edits. It authenticates no writer, placement report, adjudication, family or home record; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.
+- **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. Script 13 separately executes the exact event-abstraction entitlement. This exposes the current delivery gap rather than closing it.
+- **Records And Remedy:** The audit constructs facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family or home record; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.
 - **Runtime:** The repository rejects current-source outcomes that conflict with the reviewed matrix, but the constitution has no general exclusivity, completeness, or opposite-destination reader. A deployed harmful rule can therefore leave err(_, Placement) false.
-- **Scope:** The Cartesian product is exhaustive only for the current confined, affirmatively free, and person-only states; current severity derivability, family-record presence, home-record presence; and the discovered current destinations. It does not exhaust severity evidence patterns, sentence states, accessibility, capacity, real facilities, or future constitutional axes.
-- **T0 Axis Meaning:** The negative axis states and FALSE query results mean not derivable from the supplied flat snapshot. They do not prove a classical negative fact, record completeness, or the truth of any asserted positive entry.
+- **Scope:** The Cartesian product is exhaustive only for the current confined, affirmatively free, and person-only states; current severity derivability, family-record presence, home-record presence; and the discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, real facilities, or future constitutional axes.
+- **Temporal Fixture:** Every confined row receives one self-contained witnessed transition and ordered window shared inside that generated knowledge base, one shared TemporalLeaseFamily source record, and an exact subject-specific case identifier that is also its lease identifier. Non-confined rows receive none of those case facts. This proves only the supplied fixture can reach current formal custody; it does not authenticate the premises or prove outside time and publication advance.
 - **Trust Root:** The constitution, reviewed JSON, generator, release engine, verifier, and human review can be weakened together. A green run does not authenticate or authorise that shared repository trust root.
 
 ## Narrowness impacts
@@ -276,12 +280,12 @@ This counterexample separates current placement completeness from actual non-car
 
 - **Current claim:** Shelter actuality currently arrives through confinement and not for either affirmatively free or person-only mirrors; the placement audit preserves rather than repairs that perverse boundary.
 - **Classification:** `preserved`.
-- **Reason:** The generated rows separately establish affirmative freedom and personhood alone, retain shelter entitlement and debt, and require dwell to remain absent in both states.
+- **Reason:** The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and require dwell to remain absent in both states. Script 13 separately executes the exact event-abstraction entitlement.
 - **Future trigger:** Any non-carceral dwell producer must revise this chapter's shelter claim even if its own pin file and the recorded-speech half do not change.
 
 ### `book-1/08-what-you-are-owed.md::Shelter derives for every confined person and for nobody else.`
 
-- **Current claim:** The current source derives shelter for every confined person and no non-confined mirror, while entitlement and debt reach all three subject states.
+- **Current claim:** The current source derives shelter for every confined person and no non-confined mirror, while the itemised debt reaches all three subject states. The exact event-abstraction entitlement is tested separately by script 13.
 - **Classification:** `preserved`.
 - **Reason:** The generated matrix executes the claim over confined, affirmatively free, and person-only states for every declared axis tuple instead of relying on the current named cast.
 - **Future trigger:** Any valid non-carceral delivery family must revise this prose, its chapter pins, the matrix contract, and the counted-claim guard implications in the same change.
@@ -293,7 +297,7 @@ This counterexample separates current placement completeness from actual non-car
 - **Reason:** The chapter can now name a repository check, but must retain that no general runtime placement constraint or remedy was added.
 - **Future trigger:** A new placement axis, destination, producer, runtime marker, or delivery route requires re-running the narrowness review even if the chapter's own original pins do not change.
 
-### `book-1/13-the-one-thing-taken.md::Both of them arrive only for prisoners.`
+### `book-1/13-the-one-thing-taken.md::each arrives only for prisoners`
 
 - **Current claim:** Shelter remains one of the current punishment-only actualities; a roster-to-dwell rule would falsify that claim without proving delivery.
 - **Classification:** `preserved`.
@@ -328,6 +332,6 @@ python3 new-book-plans/11-placement-exhaustiveness.py --check
 python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 ```
 
-This does not establish runtime exclusivity or completeness, placement-report authorship or truth, appeal, remedy, real-world placement, free-person housing delivery, record integrity, institutional action, or liveness.
+This does not establish runtime exclusivity or completeness, temporal or placement-report authorship or truth, appeal, remedy, real-world placement, free-person housing delivery, record integrity, institutional action, or liveness.
 
 **Remaining boundary:** The repository can reject a source whose tested consequences violate this reviewed matrix. The society described by the current source still has no general reader that notices those conflicts after deployment, and its shelter floor still does not deliver housing outside confinement.

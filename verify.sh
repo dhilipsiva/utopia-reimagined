@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # verify.sh — the one check for book-1. First failure wins.
 #
 # This project's recurring failure mode is a hand-maintained number going stale:
@@ -7,18 +8,15 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run: 549 chapter/floor pins, 23 record snapshots
-#                       with 145 reviewed pins, 9 amendment candidates with 44
-#                       pins, 24 placement rows with 336 pins, 5 placement
-#                       mutations with 74 pins, executable controls, and source
-#                       counterfactuals (751.70 s measured 2026-08-05 with a
-#                       clean b334af1 release supplied through NIBLI_PIN)
-#   ./verify.sh --quick  everything except those five executable suites
-#                       (1.15 s with the same pinned binary, measured 2026-08-05)
-#                       NOTE --quick cannot execute record snapshots, amendment
-#                       candidates, placement cases, or stale counterfactual
-#                       fixtures. Run the FULL suite after any constitution edit
-#                       — that is how a stale fixture shipped once.
+#   ./verify.sh          full run: every declared chapter/floor pin; exact-source floor,
+#                       reviewed record, temporal, amendment, placement, and
+#                       counterfactual suites.
+#   ./verify.sh --quick  everything except the executable suites
+#                       NOTE --quick cannot execute floor abstraction, record
+#                       snapshots, temporal transitions, amendment candidates,
+#                       placement cases, or stale counterfactual fixtures. Run
+#                       the FULL suite after any constitution edit — that is how
+#                       a stale fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and every conclusion-only gate
@@ -41,6 +39,8 @@ CF=new-book-plans/counterfactual
 RED_TEAM=new-book-plans/9-record-integrity-red-team.py
 AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
+TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
+FLOOR_ABSTRACTION=new-book-plans/13-floor-abstraction.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -116,7 +116,8 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, amendment audit, or placement audit,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, or placement audit,\n'
+  printf '        floor-abstraction execution,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -163,12 +164,24 @@ out=$(python3 "$PLACEMENT_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "placement-exhaustiveness audit failed" "$out"
 
+# ── 2e. staged time candidates and exact source/effect bindings ─────────────
+step "temporal-assurance contract"
+out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "temporal-assurance contract failed" "$out"
+
+# ── 2f. the live floor survives as an exact minimal engine projection ────────
+step "floor-abstraction contract"
+out=$(python3 "$FLOOR_ABSTRACTION" --check 2>&1) \
+  && pass "$out" \
+  || fail "floor-abstraction contract failed" "$out"
+
 # ── 2e. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
-# ground fact) moves this and falsifies the nine prose places that name it.
+# ground fact) moves this and may falsify prose that describes the list.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
-[ "$n" = "29" ] && pass "evidence vocabulary is 29" \
-  || fail "evidence vocabulary is $n, not 29" "chapters 1, 3 and 5 describe the list; re-read them against it"
+[ "$n" = "39" ] && pass "evidence vocabulary is 39" \
+  || fail "evidence vocabulary is $n, not 39" "chapters 1, 3 and 5 describe the list; re-read them against it"
 
 # ── 3. no formalism leaks into Parts I-V ─────────────────────────────────────
 step "prose"
@@ -237,7 +250,13 @@ fi
 # a bare grep also matches the predicate's own rule head, which is a check that
 # can never fail. The positive control proves the command still works.
 step "absences (nothing reads these)"
-body() { awk -F'->' -v p="$1" '/^[^#]/ && /->/ && $1 ~ p {print NR": "$0}' "$KB"; }
+body() {
+  awk -F'->' -v p="$1" '
+    /^[^#]/ && /->/ {
+      if ($1 ~ ("(^|[^[:alnum:]_])" p "\\(")) print NR ": " $0
+    }
+  ' "$KB"
+}
 ctl=$(body 'false' | wc -l)
 [ "$ctl" -ge 1 ] || fail "absence check is broken" "positive control /false/ returned 0 lines; it should return 5"
 pass "positive control: /false/ appears in $ctl rule bodies"
@@ -405,11 +424,16 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor pins, executable record snapshots, amendment and placement executions, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor pins, floor-abstraction execution, record snapshots, temporal, amendment and placement executions, and counterfactuals (--quick)\n'
   exit 0
 fi
 
-step "chapter/floor pins (549 declared pins)"
+step "floor-abstraction execution"
+out=$(NIBLI_PIN="$PIN" python3 "$FLOOR_ABSTRACTION" --check --execute 2>&1) \
+  && pass "$out" \
+  || fail "floor-abstraction execution failed" "$out"
+
+step "chapter/floor pins"
 
 declared=$(grep -h ':expect-pins' new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli | awk '{s+=$2} END {print s}')
 out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/rights-floor.pins.nibli book-1/*.pins.nibli 2>&1)
@@ -445,15 +469,22 @@ ran=$(echo "$out" | sed -n 's/.*PASS — \([0-9]*\) pins.*/\1/p')
 
 # ── 6. bounded record-snapshot red-team ─────────────────────────────────────
 # These ephemeral KBs exercise additions, exact deletions, two-entry matrices,
-# and constructed predecessor/successor pairs. They stay outside the chapter
-# :expect-pins sum. A pass reproduces reviewed T0 harms and boundaries; it does
-# not authenticate a transition, attribute deletion, or establish T1.
+# and the remaining single-snapshot record levers. They stay outside the chapter
+# :expect-pins sum. A pass reproduces the reviewed flat-record harms and
+# boundaries; staged transition, carry, order, and renewal evidence belongs to
+# the temporal suite below.
 step "record-integrity red-team snapshots"
 out=$(NIBLI_PIN="$PIN" python3 "$RED_TEAM" --check --execute 2>&1) \
   && pass "$out" \
   || fail "record-integrity red-team execution failed" "$out"
 
-# ── 6b. amendment-label/source-effect counterexamples ────────────────────────
+# ── 6b. cumulative T1, T2, and T3 candidates ────────────────────────────────
+step "temporal-assurance executions"
+out=$(NIBLI_PIN="$PIN" python3 "$TEMPORAL_AUDIT" --check --execute 2>&1) \
+  && pass "$out" \
+  || fail "temporal-assurance execution failed" "$out"
+
+# ── 6c. amendment-label/source-effect counterexamples ────────────────────────
 # The audit manually applies reviewed exact candidate mutations in isolated
 # copies and checks their consequences. It proves neither enactment nor an
 # authenticated source transition.
@@ -462,7 +493,7 @@ out=$(NIBLI_PIN="$PIN" python3 "$AMENDMENT_AUDIT" --check --execute 2>&1) \
   && pass "$out" \
   || fail "amendment-semantics execution failed" "$out"
 
-# ── 6c. current placement matrix and bounded source mutations ────────────────
+# ── 6d. current placement matrix and bounded source mutations ────────────────
 # The audit generates every declared subject state and severity/family/home
 # case, including both non-confined mirrors, then proves that missing,
 # duplicate, reversed, and painted housing mutations trip the reviewed source
@@ -484,7 +515,8 @@ step "counterfactuals"
 # CONTENT, not a line count: `grep -c ''` reads a delete-plus-add as no change.
 # THREE CLASSES OF FIXTURE, and the diff shape is the fixture's identity:
 #   1:0  a line deleted  — what the world loses without it
-#   1:1  a line changed  — no-dead-conjuncts strips Article 4's ~broken/~rotten
+#   1:1  a line changed  — no-dead-conjuncts strips Article 4's
+#        ~broken/~match(CarriedVoid)
 #        conjuncts; chapters 4 and 5's OWN pin files must pass against it, which
 #        is the standing proof those conjuncts decide nothing today (and the
 #        proof strengthens automatically as those suites grow)

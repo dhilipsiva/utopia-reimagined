@@ -56,10 +56,13 @@
 # `false`, `prisoner`, `err`, `obliged` and the rest — closing the record
 # is not closing the conclusions, and Article 0 is what does the latter.
 #
-# THIRTY, NOT TWENTY-NINE, AND THE GAP IS THE INTERESTING PART.
-# The spine's evidence figure counts predicates with no producing rule.
-# `person` has two producing rules AND thirty ground assertions, so it is
-# absent from that 29 and must appear here or the file will not load.
+# WRITABLE NAMES AND EVIDENCE PREDICATES ARE DIFFERENT SETS.
+# The generated spine counts predicates with no producing rule; this declaration
+# block instead lists every relation that a ground record may write. `person`
+# has producing rules as well as ground assertions, so it is absent from the
+# first set and must still appear here or the file will not load. The temporal
+# admissions below widen both sets without changing that distinction. Do not
+# copy either count into commentary; the generator owns them.
 # [v0.9 2026-08-02] `married` (speni) and `sibling` (tunba) joined both
 # lists with the kinship ruling — guards on the multi-sig's independence
 # check, dead until a marriage or siblinghood is recorded.
@@ -80,6 +83,18 @@ admits("mature").     admits("parent").     admits("permanent").
 admits("person").     admits("public").     admits("put").
 admits("rotten").     admits("show").       admits("sibling").
 admits("suggest").    admits("teaches").    admits("work").
+# <T1-ADMISSIONS-BEGIN>
+# [v1.0 T1-T3] These narrow relations hold the reviewed temporal envelope.
+# `list` and `replace` name snapshot lineage; `authorized`, `carries`, `limit`,
+# `continue`, `date`, and `passport` separate status, carry, lease, renewal,
+# boundary, and source claims; `observe` carries independently controlled
+# attestations; `challenge` opens the subject-side contest route. They remain
+# reported inputs, not proof that a writer, witness, or outside event is genuine.
+admits("authorized"). admits("carries").    admits("challenge").
+admits("continue").   admits("date").       admits("limit").
+admits("list").       admits("observe").    admits("passport").
+admits("replace").
+# <T1-ADMISSIONS-END>
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -135,6 +150,40 @@ derived_only("clean").
 # their interface decisions and the generated census.
 derived_only("lose").
 derived_only("decide").
+# <T1-DERIVED-BEGIN>
+# [v1.0 T1-T3] Assurance conclusions cannot be supplied as facts. `complete`
+# tags a witnessed evidence item and scope, `succeed` tags an accepted successor,
+# `correct` tags an active case-bound lease, `collide` names a typed conflict,
+# and `match` is a legally effective reconciled status. Consumers rejoin every
+# exact raw field they use.
+# None authenticates its own premises; the temporal assurance case owns that
+# external boundary.
+derived_only("complete").
+derived_only("collide").
+derived_only("correct").
+derived_only("match").
+derived_only("succeed").
+# <T1-DERIVED-END>
+# <T2-DERIVED-BEGIN>
+# [v1.0 T2] Event order is derived only from a separately attested event claim
+# and record-entry claim. `precede/2` tags the witnessed claim; `precede/3`
+# closes its endpoint path so cycles longer than one direct reversal remain
+# visible. An asserted `earlier` or tensed wrapper remains inert.
+derived_only("precede").
+# <T2-DERIVED-END>
+# <T3-DERIVED-BEGIN>
+# [v1.0 T3] A constitutional interval is a derived relation over independently
+# reviewed boundary events. It is not a clock and does not prove advancement.
+derived_only("time").
+# Typed assurance conclusions keep independent input classes from becoming one
+# large self-join. Their identifier-plus-tag heads certify a reviewed input
+# family; every consumer must rejoin its case, subject, holder, limit, renewal,
+# or source fields from the raw relations.
+derived_only("concurrent").
+derived_only("orderly").
+derived_only("reference").
+derived_only("related").
+# <T3-DERIVED-END>
 # [v0.5] severe was the tenth and last open gate, and it was open in exactly
 # the way the v0.3 three were: a conclusion about an offence, written by
 # whoever held the pen, wearing the shape of a reported fact. Before this,
@@ -550,11 +599,11 @@ all $teacher: all $student: teaches($teacher, $student) & ~false($teacher) -> re
 all $contributor: all $task: work($contributor, $task) & ~false($contributor) -> reward($contributor).
 
 # ─── Article 4: Audit, invalidation, clawback ─────────────────────
-# [v0.2 REPLACES the multi-sig rule] Appends ~rotten($a) & ~rotten($b):
-# an auditor voided in a PRIOR epoch (Art 8 carry ledger) cannot co-sign.
-# [v0.9 NOTE on ~broken/~rotten, KEPT DELIBERATELY] Since v0.3 closed the
+# [v1.0 REPLACES the multi-sig carry guards] The rule now reads the reconciled
+# `CarriedVoid` status rather than a raw `rotten` report.
+# [v1.0 NOTE on ~broken/~match, KEPT DELIBERATELY] Since v0.3 closed the
 # credential these four conjuncts are SUBSUMED: a Review or Tribunal pen can
-# only derive through Article 8's rules, which read ~rotten and ~broken
+# only derive through Article 8's rules, which read ~match(CarriedVoid) and ~broken
 # themselves, so today no assignment reaches this rule with either check
 # failing — verified 2026-08-01, chapters 4 and 5's whole pin suites pass
 # unchanged against a copy with the four stripped (the no-dead-conjuncts
@@ -595,7 +644,7 @@ all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 # disclosure, because an examination is nothing but its author's word and
 # voiding is the finding that the word is worthless; paying for one while
 # refusing the other is not a policy, it is a contradiction. ~false subsumes
-# the carried mark (rotten -> false) and the adjudicated lie (the rule below);
+# the reconciled carried mark (CarriedVoid -> false) and the adjudicated lie;
 # ~broken stays for the recall, which false does not cover. Verified before
 # landing: reward(Vex) TRUE->FALSE, reward(Gia/Esa/Quin) unchanged, every pin
 # suite green against the guarded copy, rights-floor runtime unchanged.
@@ -646,17 +695,20 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 
 # ─── Article 6: Sanction and placement ────────────────────────────
 # [v0.1] conviction rule unchanged.
-# [v0.4 NEW] PUNISHMENT MAY END. `free` is the recorded fact that a sentence is
-# over — asserted, never derived, and it blocks the conviction rule the way
-# relief already does. It cannot be anything else: derivation is monotone, so no
-# fact can subtract `prisoner` once it derives; the only shape available is a
-# negated conjunct in this body. That is the same shape as `~permits(Appeals, ·)`
-# three conjuncts along, and the difference between them is the whole point —
-# relief says the conviction should never have held, release says it held and is
-# finished. Nothing here says HOW LONG: there is no temporal vocabulary in the
-# KR, tense markers are opaque exact-match flavours with no ordering, and a
-# numeral in an enacted line fails the build. So the design says a sentence CAN
-# end and never says when, which is why the honest reading is *may*.
+# [v1.0 T3] PUNISHMENT MAY END IN TWO DISTINCT WAYS. `free` remains the
+# recorded fact that a sentence was completed; it blocks the conviction without
+# pretending that a time service performed the release. The new positive
+# case-bound lease constrains the public authority itself. It derives only for
+# an independently witnessed case and renewal, the current transition, an
+# ordered review window, dual approval, and exact source binding in Article 8c.
+# One case cannot lend its renewal to another. When that evidence is missing or
+# stale, the restrictive conclusion does not derive and
+# `err(·, TemporalAuthority)` makes the unsupported act contestable.
+#
+# This is T3 safety, not clock liveness. Symbolic boundary events and a fresh
+# successor can be checked; this file cannot force the outside service to
+# advance, publish the successor, or make Appeals act. No duration depends on
+# severity, `reward`, character, compliance, identity, wealth, or score.
 #
 # WHAT RELEASE COSTS, and it is not a defect — it is Article 1's gap arriving
 # somewhere it can be felt. `expresses` (Art 2) and `dwell` (Art 6) are the only
@@ -674,7 +726,7 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 # The shield's absent finding is an ACCUSATION not yet adjudicated:
 # ~deceive holds until Review speaks, because a person is not treated
 # as a liar on nobody's finding. Relief's absent record cannot say
-# whether a remedy was unperformed, withheld, or deleted. T0 nevertheless
+# whether a remedy was unperformed, withheld, or deleted. The model nevertheless
 # cannot manufacture relief from absence: permits(Appeals, ·) derives only
 # from a clearing entry beside generic judge(Appeals, ·), and a remedy
 # present by default is not a remedy — read ~permits as
@@ -694,7 +746,9 @@ all $auditor: all $audited: judge($auditor, $audited) & parent($auditor, $audite
 # admitted name in the finding-with-no-finder class whose WITHHELD
 # entry would block every conviction — one word upstream of liberty,
 # pointed the other way.
-all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).
+# <T3-COURT-GATE-BEGIN>
+all $offender: all $victim: all $case: all $renewal: injure($offender, $victim) & judge(Court, $offender) & cite(Court, $case, $offender) & match($offender, ConvictionRecorded) & observe(Chronicle, $case, $offender, CaseScope) & observe(TemporalReview, $case, $offender, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & observe(Chronicle, $case, CourtJudgment, JudgmentScope) & observe(TemporalReview, $case, CourtJudgment, JudgmentScope) & observe(Chronicle, $case, $victim, InjuryVictimScope) & observe(TemporalReview, $case, $victim, InjuryVictimScope) & authorized($renewal, ActiveCustody, $case) & observe(Chronicle, $renewal, ActiveCustody, PowerScope) & observe(TemporalReview, $renewal, ActiveCustody, PowerScope) & observe(Chronicle, $renewal, $case, CaseBindingScope) & observe(TemporalReview, $renewal, $case, CaseBindingScope) & correct($renewal, ActivePower) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).
+# <T3-COURT-GATE-END>
 # [v0.5 REPLACES  the asserted facts severe(Lalo). severe(Ruk).]
 # SEVERITY IS NOW DERIVED. Three dimensions of an offence, and an offence is
 # severe when any two of them are present. There is no ordering predicate and
@@ -876,12 +930,10 @@ all $o: public($o) -> authority($o).
 # must not strip Rebel's shield retroactively. Seating is forever
 # exposable; only POWER (permits) is revocable.
 # [v0.9 RATIFIED 2026-08-02] The bound on the exposure surface was priced
-# and refused as COMPOSED: a time bound needs the vocabulary the duration
-# ruling refused; a recency fact is an unadjudicated shield-stripping
-# write; lapsing standing kills Rebel's shield with Boss's recall; and
-# the flat record cannot order an exposure against a recall anyway.
-# Chapter 4 closes its open question with these four; the reach-back is
-# pinned there (Zeno).
+# and refused as COMPOSED: T2 can now represent witnessed order, but the shield
+# deliberately does not read that path. A recency rule would still create a
+# shield-stripping write, and lapsing standing would still kill Rebel's shield
+# with Boss's recall. Chapter 4 keeps the unbounded reach-back pinned (Zeno).
 
 # ─── Article 8 [v0.2 NEW]: Credential provenance + epoch carry ────
 # Review credentials are DERIVED, not sovereignly asserted. In v0.1,
@@ -891,7 +943,7 @@ all $o: public($o) -> authority($o).
 # carried-voided. permits(Appeals, X) remains assertable per-case
 # (relief), disclosed. Selection of the Electorate itself stays outside
 # the firewall; its certificate is the choose fact.
-all $a: choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a).
+all $a: choose(Electorate, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Review, $a).
 # [v0.7 NEW] A SECOND ISSUER, so that Article 4's cross-body requirement has
 # something to range over. Until v0.7 there was exactly one audit pen: this
 # relation's other constant, permits(Appeals, ·), is not a pen at all — it is
@@ -910,11 +962,11 @@ all $a: choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a
 # The clean-hands conditions are deliberately identical. A second body with
 # weaker conditions would be the way in, and an attacker picks the cheaper
 # door; two doors are only worth having if they are the same weight.
-all $a: choose(Convocation, $a) & ~rotten($a) & ~broken($a) -> permits(Tribunal, $a).
-# Epoch carry (closes E2): rotten(X) is the PRIOR-epoch judgment ledger,
-# an asserted input. Every false(X) derived in epoch N must be re-asserted
-# as rotten(X) in epoch N+1's input by the store discipline. It re-derives
-# false this epoch so clawback keeps firing — unless the mark is CLEAN.
+all $a: choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a).
+# Epoch carry (closes E2): `rotten(X)` remains the reported mark, but it has no
+# legal effect alone. Article 8c requires predecessor basis, exact observations,
+# an accepted transition, and both carry witnesses before `CarriedVoid` derives.
+# Missing carry is an error; it does not silently certify a clean public pen.
 #
 # [v0.9 2026-08-02 RULED] THE RECORD HAS A WORD FOR A FINISHED VOIDING.
 # Expungement, mark only: forgive(Appeals, $x) — the forgiving body named
@@ -927,14 +979,14 @@ all $a: choose(Convocation, $a) & ~rotten($a) & ~broken($a) -> permits(Tribunal,
 # an older generic judgment can be reused, leaving `forgive` as the one
 # marginal write. This is a mechanical conjunct, not independent authority.
 # THE PEN STAYS
-# LOST: the credential rules and the multi-sig's signer checks still read
-# ~rotten directly, and the mark itself remains on the record — forgiven,
+# LOST: the credential rules and the multi-sig's signer checks still read the
+# reconciled carried mark, and that mark remains effective — forgiven,
 # not erased. Withdrawn power follows the recall precedent: it needs
 # re-seating, not auto-return, and re-seating stays blocked while the
 # mark stands. The wider form (pen-return, four sites) was considered and
 # refused in the same ruling.
 all $x: forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x).
-all $x: rotten($x) & ~clean($x) -> false($x).
+all $x: match($x, CarriedVoid) & ~clean($x) -> false($x).
 # [v0.3 NEW] Per-case appellate relief. Art 8 always meant permits(Appeals, ·)
 # to be assertable while permits(Review, ·) was derived — but a relation is
 # closed or open as a whole, so leaving relief assertable left the CREDENTIAL
@@ -1000,6 +1052,197 @@ all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).
 # link. It is somebody who has to act.
 all $x: err($x, Placement) -> obliged(Review, $x).
 all $x: err($x, Isolation) -> obliged(Review, $x).
+
+# ─── Article 8c [v1.0 NEW]: Staged constitutional time ────────────
+#
+# This article implements the ratified T3 path in its required order. The
+# stages are marked because the temporal assurance harness executes cumulative
+# T1, T2, and T3 candidates separately before accepting the live source.
+# Nothing here proves that an outside service publishes a successor, advances a
+# clock, or makes an institution act. Those are operational liveness claims.
+
+# <T1-RULES-BEGIN>
+# T1 — independently witnessed manifests and audited successor transitions.
+# Matching observations from Chronicle and TemporalReview bind an item, its
+# evidence value, and its scope. Member-level bindings prevent a fact appended
+# after manifest attestation from borrowing the manifest's authority. The tuple
+# still does not prove either institution honest; the reviewed input contract
+# and external witness service own that assurance.
+# Each accepted observation family is closed over its exact scope. The derived
+# result deliberately tags the evidence item rather than copying every input
+# field into its head. Consumers must rejoin the raw, independently witnessed
+# field and its matching observations. That keeps exact binding — a tag cannot
+# bless another tuple sharing its identifier — while preventing the engine's
+# event witness search from enumerating a multi-variable conclusion domain.
+all $item: all $evidence: observe(Chronicle, $item, $evidence, ManifestScope) & observe(TemporalReview, $item, $evidence, ManifestScope) -> complete($item, ManifestScope).
+all $item: all $evidence: observe(Chronicle, $item, $evidence, VoidScope) & observe(TemporalReview, $item, $evidence, VoidScope) -> complete($item, VoidScope).
+all $item: all $evidence: observe(Chronicle, $item, $evidence, ClearScope) & observe(TemporalReview, $item, $evidence, ClearScope) -> complete($item, ClearScope).
+all $item: all $evidence: observe(Chronicle, $item, $evidence, StandingScope) & observe(TemporalReview, $item, $evidence, StandingScope) -> complete($item, StandingScope).
+all $item: all $evidence: observe(Chronicle, $item, $evidence, PreservedScope) & observe(TemporalReview, $item, $evidence, PreservedScope) -> complete($item, PreservedScope).
+all $item: all $evidence: observe(Chronicle, $item, $evidence, DispositionKindScope) & observe(TemporalReview, $item, $evidence, DispositionKindScope) -> complete($item, DispositionKindScope).
+all $item: all $evidence: observe(Chronicle, $item, $evidence, DispositionLeaseScope) & observe(TemporalReview, $item, $evidence, DispositionLeaseScope) -> complete($item, DispositionLeaseScope).
+
+# A successor with two different claimed predecessors is conflicted, and a snapshot
+# cannot succeed itself. These checks make replay and divergence visible inside
+# a supplied envelope; the harness remains responsible for detecting a frozen
+# invocation in which no successor is supplied at all.
+all $after: all $first: all $second: replace($after, $first, Chronicle) & replace($after, $second, Chronicle) & ~($first = $second) -> collide($after, TransitionLineage).
+all $after: all $before: replace($after, $before, Chronicle) & replace($before, $after, Chronicle) -> collide($after, TransitionLineage).
+all $first: all $second: all $before: replace($first, $before, Chronicle) & replace($second, $before, Chronicle) & ~($first = $second) -> collide($first, TransitionLineage).
+all $manifest: all $first: all $second: list($manifest, $first, ManifestOrder, Chronicle) & list($manifest, $second, ManifestOrder, Chronicle) & ~($first = $second) -> collide($manifest, ManifestBinding).
+all $first: all $second: all $epoch: list($first, $epoch, ManifestOrder, Chronicle) & list($second, $epoch, ManifestOrder, Chronicle) & ~($first = $second) -> collide($epoch, ManifestBinding).
+
+# A transition is accepted only when it names one predecessor and both snapshot
+# manifests have independently witnessed completeness for the transition scope.
+all $after: all $before: all $before_manifest: all $after_manifest: replace($after, $before, Chronicle) & ~($after = $before) & ~collide($after, TransitionLineage) & ~collide($after, ManifestBinding) & ~collide($before, ManifestBinding) & list($before_manifest, $before, ManifestOrder, Chronicle) & ~collide($before_manifest, ManifestBinding) & list($after_manifest, $after, ManifestOrder, Chronicle) & ~collide($after_manifest, ManifestBinding) & complete($before_manifest, ManifestScope) & observe(Chronicle, $before_manifest, $before, ManifestScope) & observe(TemporalReview, $before_manifest, $before, ManifestScope) & complete($after_manifest, ManifestScope) & observe(Chronicle, $after_manifest, $after, ManifestScope) & observe(TemporalReview, $after_manifest, $after, ManifestScope) -> succeed($after, Transition).
+
+# A terminal accepted successor is the only snapshot whose adverse or public-
+# power status is effective in a fresh evaluation. The independently witnessed
+# Binding_Chronicle passport selects the one constitutional lineage; a disjoint
+# terminal chain has no legal effect. Conflicting lineage passports invalidate that
+# binding. A later accepted link makes the earlier successor non-terminal; the
+# repository cannot make that later snapshot arrive and does not claim
+# incremental retraction inside one process.
+all $later: all $after: replace($later, $after, Chronicle) -> complete($after, HasSuccessor).
+all $first_family: all $first_version: all $first_epoch: all $second_family: all $second_version: all $second_epoch: passport(Binding_Chronicle, $first_family, $first_version, $first_epoch) & observe(Chronicle, Binding_Chronicle, $first_family, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, $first_family, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, $first_version, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, $first_version, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $first_epoch, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $first_epoch, LineageEpochScope) & passport(Binding_Chronicle, $second_family, $second_version, $second_epoch) & observe(Chronicle, Binding_Chronicle, $second_family, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, $second_family, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, $second_version, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, $second_version, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $second_epoch, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $second_epoch, LineageEpochScope) & ~($first_family = $second_family) -> collide(Binding_Chronicle, LineageBinding).
+all $first_family: all $first_version: all $first_epoch: all $second_family: all $second_version: all $second_epoch: passport(Binding_Chronicle, $first_family, $first_version, $first_epoch) & observe(Chronicle, Binding_Chronicle, $first_family, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, $first_family, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, $first_version, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, $first_version, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $first_epoch, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $first_epoch, LineageEpochScope) & passport(Binding_Chronicle, $second_family, $second_version, $second_epoch) & observe(Chronicle, Binding_Chronicle, $second_family, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, $second_family, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, $second_version, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, $second_version, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $second_epoch, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $second_epoch, LineageEpochScope) & ~($first_version = $second_version) -> collide(Binding_Chronicle, LineageBinding).
+all $first_family: all $first_version: all $first_epoch: all $second_family: all $second_version: all $second_epoch: passport(Binding_Chronicle, $first_family, $first_version, $first_epoch) & observe(Chronicle, Binding_Chronicle, $first_family, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, $first_family, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, $first_version, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, $first_version, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $first_epoch, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $first_epoch, LineageEpochScope) & passport(Binding_Chronicle, $second_family, $second_version, $second_epoch) & observe(Chronicle, Binding_Chronicle, $second_family, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, $second_family, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, $second_version, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, $second_version, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $second_epoch, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $second_epoch, LineageEpochScope) & ~($first_epoch = $second_epoch) -> collide(Binding_Chronicle, LineageBinding).
+all $after: succeed($after, Transition) & ~complete($after, HasSuccessor) & passport(Binding_Chronicle, ChronicleLineage, Constitution_Temporal, $after) & observe(Chronicle, Binding_Chronicle, ChronicleLineage, LineageFamilyScope) & observe(TemporalReview, Binding_Chronicle, ChronicleLineage, LineageFamilyScope) & observe(Chronicle, Binding_Chronicle, Constitution_Temporal, LineageVersionScope) & observe(TemporalReview, Binding_Chronicle, Constitution_Temporal, LineageVersionScope) & observe(Chronicle, Binding_Chronicle, $after, LineageEpochScope) & observe(TemporalReview, Binding_Chronicle, $after, LineageEpochScope) & ~collide(Binding_Chronicle, LineageBinding) -> succeed($after, TerminalTransition).
+
+# `rotten` remains the reported carried-status input, but it no longer has legal
+# force by itself. The effective mark is `match(·, CarriedVoid)`, derived only
+# when both independent witnesses report the same predecessor-to-successor
+# carry and the predecessor status itself is independently bound.
+all $x: all $after: all $before: succeed($after, TerminalTransition) & replace($after, $before, Chronicle) & authorized($x, VoidStatus, $before) & complete($x, VoidScope) & observe(Chronicle, $x, $before, VoidScope) & observe(TemporalReview, $x, $before, VoidScope) & carries(Chronicle, $x, $after, $before, VoidCarry) & carries(TemporalReview, $x, $after, $before, VoidCarry) & rotten($x) -> match($x, CarriedVoid).
+
+# Public pens use the opposite polarity: authority requires a positive,
+# reconciled clear status as well as absence of a carried void. Withholding a
+# witness therefore suspends the pen instead of silently restoring it.
+all $x: all $after: all $before: succeed($after, TerminalTransition) & replace($after, $before, Chronicle) & authorized($x, ClearStatus, $before) & complete($x, ClearScope) & observe(Chronicle, $x, $before, ClearScope) & observe(TemporalReview, $x, $before, ClearScope) & carries(Chronicle, $x, $after, $before, ClearCarry) & carries(TemporalReview, $x, $after, $before, ClearCarry) -> match($x, CarriedClear).
+all $x: match($x, CarriedVoid) & match($x, CarriedClear) -> err($x, StatusConflict).
+
+# Standing is supportive, so its polarity is the mirror image. An independently
+# witnessed predecessor standing mark preserves personhood even if the successor
+# omits the mark; the omission becomes an error instead of erasing the person.
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, StandingStatus, $before) & complete($x, StandingScope) & observe(Chronicle, $x, $before, StandingScope) & observe(TemporalReview, $x, $before, StandingScope) -> person($x).
+
+# Missing required carry, a raw or manifested carry without predecessor basis,
+# and unexplained protected-record disappearance are named defects. Complete
+# manifests make absence admissible only for these finite declared scopes.
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, VoidStatus, $before) & complete($x, VoidScope) & observe(Chronicle, $x, $before, VoidScope) & observe(TemporalReview, $x, $before, VoidScope) & ~carries(Chronicle, $x, $after, $before, VoidCarry) -> err($x, CarryOmission).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, VoidStatus, $before) & complete($x, VoidScope) & observe(Chronicle, $x, $before, VoidScope) & observe(TemporalReview, $x, $before, VoidScope) & ~carries(TemporalReview, $x, $after, $before, VoidCarry) -> err($x, CarryOmission).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & carries(Chronicle, $x, $after, $before, VoidCarry) & carries(TemporalReview, $x, $after, $before, VoidCarry) & ~authorized($x, VoidStatus, $before) -> err($x, CarryForgery).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & carries(Chronicle, $x, $after, $before, VoidCarry) & carries(TemporalReview, $x, $after, $before, VoidCarry) & ~rotten($x) -> err($x, CarryForgery).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, ClearStatus, $before) & complete($x, ClearScope) & observe(Chronicle, $x, $before, ClearScope) & observe(TemporalReview, $x, $before, ClearScope) & ~carries(Chronicle, $x, $after, $before, ClearCarry) -> err($x, ClearOmission).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, ClearStatus, $before) & complete($x, ClearScope) & observe(Chronicle, $x, $before, ClearScope) & observe(TemporalReview, $x, $before, ClearScope) & ~carries(TemporalReview, $x, $after, $before, ClearCarry) -> err($x, ClearOmission).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & carries(Chronicle, $x, $after, $before, ClearCarry) & carries(TemporalReview, $x, $after, $before, ClearCarry) & ~authorized($x, ClearStatus, $before) -> err($x, ClearForgery).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, StandingStatus, $before) & complete($x, StandingScope) & observe(Chronicle, $x, $before, StandingScope) & observe(TemporalReview, $x, $before, StandingScope) & ~carries(Chronicle, $x, $after, $before, StandingCarry) -> err($x, StandingOmission).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, StandingStatus, $before) & complete($x, StandingScope) & observe(Chronicle, $x, $before, StandingScope) & observe(TemporalReview, $x, $before, StandingScope) & ~carries(TemporalReview, $x, $after, $before, StandingCarry) -> err($x, StandingOmission).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, PreservedStatus, $before) & complete($x, PreservedScope) & observe(Chronicle, $x, $before, PreservedScope) & observe(TemporalReview, $x, $before, PreservedScope) & ~carries(Chronicle, $x, $after, $before, PreservedCarry) -> err($x, RecordDisappearance).
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, PreservedStatus, $before) & complete($x, PreservedScope) & observe(Chronicle, $x, $before, PreservedScope) & observe(TemporalReview, $x, $before, PreservedScope) & ~carries(TemporalReview, $x, $after, $before, PreservedCarry) -> err($x, RecordDisappearance).
+
+# The affected person can contest each temporal defect. The result is an Appeals
+# duty, not a self-executing remedy; `obliged` remains unread and Book 1 does not
+# pretend that the institution eventually acts.
+all $x: all $entry: err($x, CarryOmission) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, CarryForgery) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, ClearOmission) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, ClearForgery) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, StatusConflict) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, StandingOmission) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, RecordDisappearance) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: challenge($x, MaturityRecord, TemporalReview) -> err($x, MaturityDispute).
+all $x: all $entry: err($x, MaturityDispute) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+# <T1-RULES-END>
+
+# <T2-RULES-BEGIN>
+# T2 — event order and record-entry order are separate claims. A claim tag
+# derives only when its exact endpoints are witnessed. The endpoint paths close
+# transitively inside each family; any direct or longer cycle marks every
+# participating direct claim as contestable and can break a dependent window.
+all $claim: all $before_event: all $after_event: list($claim, $before_event, $after_event, EventSequence) & observe(Chronicle, $claim, $before_event, EventStartScope) & observe(TemporalReview, $claim, $before_event, EventStartScope) & observe(Chronicle, $claim, $after_event, EventEndScope) & observe(TemporalReview, $claim, $after_event, EventEndScope) & ~($before_event = $after_event) -> precede($claim, EventSequence).
+all $claim: all $before_entry: all $after_entry: list($claim, $before_entry, $after_entry, RecordSequence) & observe(Chronicle, $claim, $before_entry, RecordStartScope) & observe(TemporalReview, $claim, $before_entry, RecordStartScope) & observe(Chronicle, $claim, $after_entry, RecordEndScope) & observe(TemporalReview, $claim, $after_entry, RecordEndScope) & ~($before_entry = $after_entry) -> precede($claim, RecordSequence).
+all $claim: all $before_event: all $after_event: precede($claim, EventSequence) & list($claim, $before_event, $after_event, EventSequence) & observe(Chronicle, $claim, $before_event, EventStartScope) & observe(TemporalReview, $claim, $before_event, EventStartScope) & observe(Chronicle, $claim, $after_event, EventEndScope) & observe(TemporalReview, $claim, $after_event, EventEndScope) -> precede($before_event, $after_event, EventPath).
+all $claim: all $before_entry: all $after_entry: precede($claim, RecordSequence) & list($claim, $before_entry, $after_entry, RecordSequence) & observe(Chronicle, $claim, $before_entry, RecordStartScope) & observe(TemporalReview, $claim, $before_entry, RecordStartScope) & observe(Chronicle, $claim, $after_entry, RecordEndScope) & observe(TemporalReview, $claim, $after_entry, RecordEndScope) -> precede($before_entry, $after_entry, RecordPath).
+all $first: all $middle: all $last: precede($first, $middle, EventPath) & precede($middle, $last, EventPath) & ~($first = $last) -> precede($first, $last, EventPath).
+all $first: all $middle: all $last: precede($first, $middle, RecordPath) & precede($middle, $last, RecordPath) & ~($first = $last) -> precede($first, $last, RecordPath).
+all $claim: all $before_event: all $after_event: precede($claim, EventSequence) & list($claim, $before_event, $after_event, EventSequence) & observe(Chronicle, $claim, $before_event, EventStartScope) & observe(TemporalReview, $claim, $before_event, EventStartScope) & observe(Chronicle, $claim, $after_event, EventEndScope) & observe(TemporalReview, $claim, $after_event, EventEndScope) & precede($after_event, $before_event, EventPath) -> err($claim, OrderConflict).
+all $claim: all $before_entry: all $after_entry: precede($claim, RecordSequence) & list($claim, $before_entry, $after_entry, RecordSequence) & observe(Chronicle, $claim, $before_entry, RecordStartScope) & observe(TemporalReview, $claim, $before_entry, RecordStartScope) & observe(Chronicle, $claim, $after_entry, RecordEndScope) & observe(TemporalReview, $claim, $after_entry, RecordEndScope) & precede($after_entry, $before_entry, RecordPath) -> err($claim, OrderConflict).
+# Conflict taint follows the exact endpoints and their connected path. T3 can
+# therefore reject a window whose apparent start-to-end route crosses any
+# contested edge, even when the cycle is longer than a direct reversal.
+all $claim: all $before_event: all $after_event: precede($claim, EventSequence) & list($claim, $before_event, $after_event, EventSequence) & observe(Chronicle, $claim, $before_event, EventStartScope) & observe(TemporalReview, $claim, $before_event, EventStartScope) & observe(Chronicle, $claim, $after_event, EventEndScope) & observe(TemporalReview, $claim, $after_event, EventEndScope) & precede($after_event, $before_event, EventPath) -> collide($before_event, EventOrder).
+all $claim: all $before_event: all $after_event: precede($claim, EventSequence) & list($claim, $before_event, $after_event, EventSequence) & observe(Chronicle, $claim, $before_event, EventStartScope) & observe(TemporalReview, $claim, $before_event, EventStartScope) & observe(Chronicle, $claim, $after_event, EventEndScope) & observe(TemporalReview, $claim, $after_event, EventEndScope) & precede($after_event, $before_event, EventPath) -> collide($after_event, EventOrder).
+all $claim: all $before_entry: all $after_entry: precede($claim, RecordSequence) & list($claim, $before_entry, $after_entry, RecordSequence) & observe(Chronicle, $claim, $before_entry, RecordStartScope) & observe(TemporalReview, $claim, $before_entry, RecordStartScope) & observe(Chronicle, $claim, $after_entry, RecordEndScope) & observe(TemporalReview, $claim, $after_entry, RecordEndScope) & precede($after_entry, $before_entry, RecordPath) -> collide($before_entry, RecordOrder).
+all $claim: all $before_entry: all $after_entry: precede($claim, RecordSequence) & list($claim, $before_entry, $after_entry, RecordSequence) & observe(Chronicle, $claim, $before_entry, RecordStartScope) & observe(TemporalReview, $claim, $before_entry, RecordStartScope) & observe(Chronicle, $claim, $after_entry, RecordEndScope) & observe(TemporalReview, $claim, $after_entry, RecordEndScope) & precede($after_entry, $before_entry, RecordPath) -> collide($after_entry, RecordOrder).
+all $first: all $last: precede($first, $last, EventPath) & collide($first, EventOrder) -> collide($last, EventOrder).
+all $first: all $last: precede($first, $last, EventPath) & collide($last, EventOrder) -> collide($first, EventOrder).
+all $first: all $last: precede($first, $last, RecordPath) & collide($first, RecordOrder) -> collide($last, RecordOrder).
+all $first: all $last: precede($first, $last, RecordPath) & collide($last, RecordOrder) -> collide($first, RecordOrder).
+all $x: all $claim: challenge($x, $claim, TemporalReview) & err($claim, OrderConflict) -> obliged(Appeals, $x).
+# <T2-RULES-END>
+
+# <T3-RULES-BEGIN>
+# T3 — an ordered review window and a source-bound renewal constrain a public
+# power. Boundary names are symbolic events, not dates or scores. Both event
+# order and record-entry order must agree. The time service supplies outside
+# advancement assurance; this source supplies the safety rule that missing,
+# disputed, stale, or unreviewed authority cannot produce a restriction.
+all $window: all $first_start: all $first_end: all $second_start: all $second_end: date($window, $first_start, $first_end, TimeService) & observe(Chronicle, $window, $first_start, WindowStartScope) & observe(TemporalReview, $window, $first_start, WindowStartScope) & observe(Chronicle, $window, $first_end, WindowEndScope) & observe(TemporalReview, $window, $first_end, WindowEndScope) & date($window, $second_start, $second_end, TimeService) & observe(Chronicle, $window, $second_start, WindowStartScope) & observe(TemporalReview, $window, $second_start, WindowStartScope) & observe(Chronicle, $window, $second_end, WindowEndScope) & observe(TemporalReview, $window, $second_end, WindowEndScope) & ~($first_start = $second_start) -> collide($window, WindowDefinition).
+all $window: all $first_start: all $first_end: all $second_start: all $second_end: date($window, $first_start, $first_end, TimeService) & observe(Chronicle, $window, $first_start, WindowStartScope) & observe(TemporalReview, $window, $first_start, WindowStartScope) & observe(Chronicle, $window, $first_end, WindowEndScope) & observe(TemporalReview, $window, $first_end, WindowEndScope) & date($window, $second_start, $second_end, TimeService) & observe(Chronicle, $window, $second_start, WindowStartScope) & observe(TemporalReview, $window, $second_start, WindowStartScope) & observe(Chronicle, $window, $second_end, WindowEndScope) & observe(TemporalReview, $window, $second_end, WindowEndScope) & ~($first_end = $second_end) -> collide($window, WindowDefinition).
+all $window: all $start: all $end: date($window, $start, $end, TimeService) & observe(Chronicle, $window, $start, WindowStartScope) & observe(TemporalReview, $window, $start, WindowStartScope) & observe(Chronicle, $window, $end, WindowEndScope) & observe(TemporalReview, $window, $end, WindowEndScope) & precede($end, $start, EventPath) -> collide($window, WindowOrder).
+all $window: all $start: all $end: date($window, $start, $end, TimeService) & observe(Chronicle, $window, $start, WindowStartScope) & observe(TemporalReview, $window, $start, WindowStartScope) & observe(Chronicle, $window, $end, WindowEndScope) & observe(TemporalReview, $window, $end, WindowEndScope) & precede($end, $start, RecordPath) -> collide($window, WindowOrder).
+all $window: all $start: all $end: date($window, $start, $end, TimeService) & observe(Chronicle, $window, $start, WindowStartScope) & observe(TemporalReview, $window, $start, WindowStartScope) & observe(Chronicle, $window, $end, WindowEndScope) & observe(TemporalReview, $window, $end, WindowEndScope) & precede($start, $end, EventPath) & precede($start, $end, RecordPath) & ~collide($start, EventOrder) & ~collide($end, EventOrder) & ~collide($start, RecordOrder) & ~collide($end, RecordOrder) & ~collide($window, WindowDefinition) & ~collide($window, WindowOrder) -> time($window, ReviewedInterval).
+
+# Each reviewed input family produces one typed, closed conclusion. The active
+# rule below rejoins every exact raw field and matching observation, so a tag
+# earned by one tuple cannot bless another tuple sharing its identifier. This
+# fixes the legal meaning of every field while keeping conclusion heads bounded.
+all $lease: all $authority: all $case: authorized($lease, $authority, $case) & observe(Chronicle, $lease, $authority, PowerScope) & observe(TemporalReview, $lease, $authority, PowerScope) & observe(Chronicle, $lease, $case, CaseBindingScope) & observe(TemporalReview, $lease, $case, CaseBindingScope) -> succeed($lease, PowerBound).
+all $holder: all $case: all $subject: cite($holder, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, $holder, HolderScope) & observe(TemporalReview, $case, $holder, HolderScope) -> related($case, CaseBound).
+all $lease: all $case: all $window: limit($lease, $case, $window) & observe(Chronicle, $lease, $window, LimitScope) & observe(TemporalReview, $lease, $window, LimitScope) -> orderly($lease, WindowBound).
+all $lease: all $current: continue($lease, $current) & observe(Chronicle, $lease, $current, RenewalScope) & observe(TemporalReview, $lease, $current, RenewalScope) -> concurrent($lease, RenewalBound).
+all $binding: all $first_family: all $first_version: all $first_current: all $second_family: all $second_version: all $second_current: passport($binding, $first_family, $first_version, $first_current) & observe(Chronicle, $binding, $first_family, SourceFamilyScope) & observe(TemporalReview, $binding, $first_family, SourceFamilyScope) & observe(Chronicle, $binding, $first_version, SourceVersionScope) & observe(TemporalReview, $binding, $first_version, SourceVersionScope) & observe(Chronicle, $binding, $first_current, SourceEpochScope) & observe(TemporalReview, $binding, $first_current, SourceEpochScope) & passport($binding, $second_family, $second_version, $second_current) & observe(Chronicle, $binding, $second_family, SourceFamilyScope) & observe(TemporalReview, $binding, $second_family, SourceFamilyScope) & observe(Chronicle, $binding, $second_version, SourceVersionScope) & observe(TemporalReview, $binding, $second_version, SourceVersionScope) & observe(Chronicle, $binding, $second_current, SourceEpochScope) & observe(TemporalReview, $binding, $second_current, SourceEpochScope) & ~($first_family = $second_family) -> collide($binding, SourceBinding).
+all $binding: all $first_family: all $first_version: all $first_current: all $second_family: all $second_version: all $second_current: passport($binding, $first_family, $first_version, $first_current) & observe(Chronicle, $binding, $first_family, SourceFamilyScope) & observe(TemporalReview, $binding, $first_family, SourceFamilyScope) & observe(Chronicle, $binding, $first_version, SourceVersionScope) & observe(TemporalReview, $binding, $first_version, SourceVersionScope) & observe(Chronicle, $binding, $first_current, SourceEpochScope) & observe(TemporalReview, $binding, $first_current, SourceEpochScope) & passport($binding, $second_family, $second_version, $second_current) & observe(Chronicle, $binding, $second_family, SourceFamilyScope) & observe(TemporalReview, $binding, $second_family, SourceFamilyScope) & observe(Chronicle, $binding, $second_version, SourceVersionScope) & observe(TemporalReview, $binding, $second_version, SourceVersionScope) & observe(Chronicle, $binding, $second_current, SourceEpochScope) & observe(TemporalReview, $binding, $second_current, SourceEpochScope) & ~($first_version = $second_version) -> collide($binding, SourceBinding).
+all $binding: all $first_family: all $first_version: all $first_current: all $second_family: all $second_version: all $second_current: passport($binding, $first_family, $first_version, $first_current) & observe(Chronicle, $binding, $first_family, SourceFamilyScope) & observe(TemporalReview, $binding, $first_family, SourceFamilyScope) & observe(Chronicle, $binding, $first_version, SourceVersionScope) & observe(TemporalReview, $binding, $first_version, SourceVersionScope) & observe(Chronicle, $binding, $first_current, SourceEpochScope) & observe(TemporalReview, $binding, $first_current, SourceEpochScope) & passport($binding, $second_family, $second_version, $second_current) & observe(Chronicle, $binding, $second_family, SourceFamilyScope) & observe(TemporalReview, $binding, $second_family, SourceFamilyScope) & observe(Chronicle, $binding, $second_version, SourceVersionScope) & observe(TemporalReview, $binding, $second_version, SourceVersionScope) & observe(Chronicle, $binding, $second_current, SourceEpochScope) & observe(TemporalReview, $binding, $second_current, SourceEpochScope) & ~($first_current = $second_current) -> collide($binding, SourceBinding).
+all $binding: all $current: passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & ~collide($binding, SourceBinding) -> reference($binding, SourceBound).
+
+# One case identifier cannot name two subjects or two bases. One lease cannot
+# name divergent schedules. A challenge or an independently witnessed lawful
+# disposition suspends the lease; neither route fabricates `free`.
+all $first_holder: all $second_holder: all $case: all $first: all $second: cite($first_holder, $case, $first) & observe(Chronicle, $case, $first, CaseScope) & observe(TemporalReview, $case, $first, CaseScope) & observe(Chronicle, $case, $first_holder, HolderScope) & observe(TemporalReview, $case, $first_holder, HolderScope) & cite($second_holder, $case, $second) & observe(Chronicle, $case, $second, CaseScope) & observe(TemporalReview, $case, $second, CaseScope) & observe(Chronicle, $case, $second_holder, HolderScope) & observe(TemporalReview, $case, $second_holder, HolderScope) & ~($first = $second) -> collide($case, CaseBinding).
+all $lease: all $first_authority: all $first_case: all $second_authority: all $second_case: authorized($lease, $first_authority, $first_case) & observe(Chronicle, $lease, $first_authority, PowerScope) & observe(TemporalReview, $lease, $first_authority, PowerScope) & observe(Chronicle, $lease, $first_case, CaseBindingScope) & observe(TemporalReview, $lease, $first_case, CaseBindingScope) & authorized($lease, $second_authority, $second_case) & observe(Chronicle, $lease, $second_authority, PowerScope) & observe(TemporalReview, $lease, $second_authority, PowerScope) & observe(Chronicle, $lease, $second_case, CaseBindingScope) & observe(TemporalReview, $lease, $second_case, CaseBindingScope) & ~($first_authority = $second_authority) -> collide($lease, LeaseBinding).
+all $lease: all $first_authority: all $first_case: all $second_authority: all $second_case: authorized($lease, $first_authority, $first_case) & observe(Chronicle, $lease, $first_authority, PowerScope) & observe(TemporalReview, $lease, $first_authority, PowerScope) & observe(Chronicle, $lease, $first_case, CaseBindingScope) & observe(TemporalReview, $lease, $first_case, CaseBindingScope) & authorized($lease, $second_authority, $second_case) & observe(Chronicle, $lease, $second_authority, PowerScope) & observe(TemporalReview, $lease, $second_authority, PowerScope) & observe(Chronicle, $lease, $second_case, CaseBindingScope) & observe(TemporalReview, $lease, $second_case, CaseBindingScope) & ~($first_case = $second_case) -> collide($lease, LeaseBinding).
+all $lease: all $first_case: all $first_window: all $second_case: all $second_window: limit($lease, $first_case, $first_window) & observe(Chronicle, $lease, $first_window, LimitScope) & observe(TemporalReview, $lease, $first_window, LimitScope) & limit($lease, $second_case, $second_window) & observe(Chronicle, $lease, $second_window, LimitScope) & observe(TemporalReview, $lease, $second_window, LimitScope) & ~($first_case = $second_case) -> collide($lease, LeaseBinding).
+all $lease: all $first_case: all $first_window: all $second_case: all $second_window: limit($lease, $first_case, $first_window) & observe(Chronicle, $lease, $first_window, LimitScope) & observe(TemporalReview, $lease, $first_window, LimitScope) & limit($lease, $second_case, $second_window) & observe(Chronicle, $lease, $second_window, LimitScope) & observe(TemporalReview, $lease, $second_window, LimitScope) & ~($first_window = $second_window) -> collide($lease, LeaseBinding).
+all $lease: all $first: all $second: continue($lease, $first) & observe(Chronicle, $lease, $first, RenewalScope) & observe(TemporalReview, $lease, $first, RenewalScope) & continue($lease, $second) & observe(Chronicle, $lease, $second, RenewalScope) & observe(TemporalReview, $lease, $second, RenewalScope) & ~($first = $second) -> collide($lease, LeaseBinding).
+all $subject: all $lease: all $case: challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) -> collide($lease, LeaseSuspended).
+all $disposition: all $lease: authorized($disposition, LawfulDisposition, $lease) & complete($disposition, DispositionKindScope) & observe(Chronicle, $disposition, LawfulDisposition, DispositionKindScope) & observe(TemporalReview, $disposition, LawfulDisposition, DispositionKindScope) & complete($disposition, DispositionLeaseScope) & observe(Chronicle, $disposition, $lease, DispositionLeaseScope) & observe(TemporalReview, $disposition, $lease, DispositionLeaseScope) & approves(Electorate, $disposition) & approves(TemporalReview, $disposition) -> collide($lease, LeaseSuspended).
+
+# <T3-LEASE-RULE-BEGIN>
+# The lease is case-, power-, holder-, subject-, judgment-, victim-, source-,
+# window-, and successor-bound. Electorate and TemporalReview must both approve
+# the current schedule, and neither may be the power holder. A lease is a
+# permission to exercise one restrictive power, never a property of or score
+# about the person.
+all $lease: all $case: all $subject: all $victim: all $window: all $current: all $end: all $previous: all $binding: succeed($lease, PowerBound) & authorized($lease, ActiveCustody, $case) & observe(Chronicle, $lease, ActiveCustody, PowerScope) & observe(TemporalReview, $lease, ActiveCustody, PowerScope) & observe(Chronicle, $lease, $case, CaseBindingScope) & observe(TemporalReview, $lease, $case, CaseBindingScope) & related($case, CaseBound) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & judge(Court, $subject) & injure($subject, $victim) & observe(Chronicle, $case, CourtJudgment, JudgmentScope) & observe(TemporalReview, $case, CourtJudgment, JudgmentScope) & observe(Chronicle, $case, $victim, InjuryVictimScope) & observe(TemporalReview, $case, $victim, InjuryVictimScope) & limit($lease, $case, $window) & orderly($lease, WindowBound) & observe(Chronicle, $lease, $window, LimitScope) & observe(TemporalReview, $lease, $window, LimitScope) & continue($lease, $current) & concurrent($lease, RenewalBound) & observe(Chronicle, $lease, $current, RenewalScope) & observe(TemporalReview, $lease, $current, RenewalScope) & ~collide($case, CaseBinding) & ~collide($lease, LeaseBinding) & ~collide($lease, LeaseSuspended) & passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & reference($binding, SourceBound) & ~collide($binding, SourceBinding) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & approves(Electorate, $lease) & approves(TemporalReview, $lease) & date($window, $current, $end, TimeService) & time($window, ReviewedInterval) & ~collide($window, WindowDefinition) & ~collide($window, WindowOrder) & observe(Chronicle, $window, $current, WindowStartScope) & observe(TemporalReview, $window, $current, WindowStartScope) & observe(Chronicle, $window, $end, WindowEndScope) & observe(TemporalReview, $window, $end, WindowEndScope) & precede($current, $end, EventPath) & precede($current, $end, RecordPath) & replace($current, $previous, Chronicle) & succeed($current, TerminalTransition) -> correct($lease, ActivePower).
+# <T3-LEASE-RULE-END>
+
+all $lease: correct($lease, ActivePower) -> match($lease, ActivePower).
+all $lease: all $case: all $subject: related($case, CaseBound) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & authorized($lease, ActiveCustody, $case) & ~collide($case, CaseBinding) -> match($subject, CaseRecorded).
+all $offender: all $victim: all $case: injure($offender, $victim) & judge(Court, $offender) & cite(Court, $case, $offender) & observe(Chronicle, $case, $offender, CaseScope) & observe(TemporalReview, $case, $offender, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & observe(Chronicle, $case, CourtJudgment, JudgmentScope) & observe(TemporalReview, $case, CourtJudgment, JudgmentScope) & observe(Chronicle, $case, $victim, InjuryVictimScope) & observe(TemporalReview, $case, $victim, InjuryVictimScope) & ~collide($case, CaseBinding) -> match($offender, ConvictionRecorded).
+
+# An expected power record or Court judgment without an active, source-bound
+# lease is visible as a defect. The restrictive conclusion is separately gated,
+# so absence of temporal evidence removes public power without erasing standing,
+# a floor, appeal, remedy, or the historical authority needed by the shield.
+all $lease: all $case: authorized($lease, ActiveCustody, $case) & ~match($lease, ActivePower) -> err($lease, TemporalRecord).
+all $lease: all $case: all $subject: authorized($lease, ActiveCustody, $case) & related($case, CaseBound) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & ~match($lease, ActivePower) -> err($subject, TemporalAuthority).
+all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~match($offender, ConvictionRecorded) -> err($offender, TemporalAuthority).
+all $subject: all $lease: all $case: challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) -> err($subject, TemporalDispute).
+all $x: all $entry: err($x, TemporalAuthority) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+all $x: all $entry: err($x, TemporalDispute) & challenge($x, $entry, TemporalReview) -> obliged(Appeals, $x).
+# <T3-RULES-END>
 
 # ─── Article 9 [v0.2 NEW]: Amendment ──────────────────────────────
 # This article classifies recorded proposals; it does not apply a source
@@ -1158,6 +1401,349 @@ permanent(Art_Entrench).
 # opposite directions, and the record's only honest state today is the
 # one it ships: actualities underived except where an evidence route
 # exists.
+
+# ─── The staged temporal envelope for this snapshot ───────────────
+# These facts are the worked current envelope. The executable temporal assurance
+# case mutates them adversarially and binds `Constitution_Temporal` to this source's
+# exact SHA-256. They are not self-authenticating deployment certificates.
+
+# <T1-FACTS-BEGIN>
+public(Chronicle).
+public(TemporalReview).
+public(TimeService).
+passport(Binding_Chronicle, ChronicleLineage, Constitution_Temporal, Epoch_Current).
+observe(Chronicle, Binding_Chronicle, ChronicleLineage, LineageFamilyScope).
+observe(TemporalReview, Binding_Chronicle, ChronicleLineage, LineageFamilyScope).
+observe(Chronicle, Binding_Chronicle, Constitution_Temporal, LineageVersionScope).
+observe(TemporalReview, Binding_Chronicle, Constitution_Temporal, LineageVersionScope).
+observe(Chronicle, Binding_Chronicle, Epoch_Current, LineageEpochScope).
+observe(TemporalReview, Binding_Chronicle, Epoch_Current, LineageEpochScope).
+replace(Epoch_Current, Epoch_Previous, Chronicle).
+list(Manifest_Previous, Epoch_Previous, ManifestOrder, Chronicle).
+list(Manifest_Current, Epoch_Current, ManifestOrder, Chronicle).
+observe(Chronicle, Manifest_Previous, Epoch_Previous, ManifestScope).
+observe(TemporalReview, Manifest_Previous, Epoch_Previous, ManifestScope).
+observe(Chronicle, Manifest_Current, Epoch_Current, ManifestScope).
+observe(TemporalReview, Manifest_Current, Epoch_Current, ManifestScope).
+authorized(Vex, VoidStatus, Epoch_Previous).
+observe(Chronicle, Vex, Epoch_Previous, VoidScope).
+observe(TemporalReview, Vex, Epoch_Previous, VoidScope).
+carries(Chronicle, Vex, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, Vex, Epoch_Current, Epoch_Previous, VoidCarry).
+authorized(Vex, StandingStatus, Epoch_Previous).
+observe(Chronicle, Vex, Epoch_Previous, StandingScope).
+observe(TemporalReview, Vex, Epoch_Previous, StandingScope).
+carries(Chronicle, Vex, Epoch_Current, Epoch_Previous, StandingCarry).
+carries(TemporalReview, Vex, Epoch_Current, Epoch_Previous, StandingCarry).
+
+# Public pens need positive reconciled clearance. Boss remains blocked by the
+# separate broken mark; Vex has a carried void and therefore has no clear pair.
+authorized(Gia, ClearStatus, Epoch_Previous).
+observe(Chronicle, Gia, Epoch_Previous, ClearScope).
+observe(TemporalReview, Gia, Epoch_Previous, ClearScope).
+carries(Chronicle, Gia, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Gia, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Hex, ClearStatus, Epoch_Previous).
+observe(Chronicle, Hex, Epoch_Previous, ClearScope).
+observe(TemporalReview, Hex, Epoch_Previous, ClearScope).
+carries(Chronicle, Hex, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Hex, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Boss, ClearStatus, Epoch_Previous).
+observe(Chronicle, Boss, Epoch_Previous, ClearScope).
+observe(TemporalReview, Boss, Epoch_Previous, ClearScope).
+carries(Chronicle, Boss, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Boss, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Wren, ClearStatus, Epoch_Previous).
+observe(Chronicle, Wren, Epoch_Previous, ClearScope).
+observe(TemporalReview, Wren, Epoch_Previous, ClearScope).
+carries(Chronicle, Wren, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Wren, Epoch_Current, Epoch_Previous, ClearCarry).
+# <T1-FACTS-END>
+
+# <T2-FACTS-BEGIN>
+list(Order_Court_A, Epoch_Current, Epoch_Review, EventSequence).
+observe(Chronicle, Order_Court_A, Epoch_Current, EventStartScope).
+observe(TemporalReview, Order_Court_A, Epoch_Current, EventStartScope).
+observe(Chronicle, Order_Court_A, Epoch_Review, EventEndScope).
+observe(TemporalReview, Order_Court_A, Epoch_Review, EventEndScope).
+list(Order_Log_Court_A, Epoch_Current, Epoch_Review, RecordSequence).
+observe(Chronicle, Order_Log_Court_A, Epoch_Current, RecordStartScope).
+observe(TemporalReview, Order_Log_Court_A, Epoch_Current, RecordStartScope).
+observe(Chronicle, Order_Log_Court_A, Epoch_Review, RecordEndScope).
+observe(TemporalReview, Order_Log_Court_A, Epoch_Review, RecordEndScope).
+# <T2-FACTS-END>
+
+# <T3-FACTS-BEGIN>
+# One independently witnessed window and source version govern the lease
+# family. Each Court judgment still has its own case identifier, current
+# renewal, and dual approval; one case therefore cannot renew another.
+date(Window_Custody, Epoch_Current, Epoch_Review, TimeService).
+observe(Chronicle, Window_Custody, Epoch_Current, WindowStartScope).
+observe(TemporalReview, Window_Custody, Epoch_Current, WindowStartScope).
+observe(Chronicle, Window_Custody, Epoch_Review, WindowEndScope).
+observe(TemporalReview, Window_Custody, Epoch_Review, WindowEndScope).
+passport(Binding_Temporal, TemporalLeaseFamily, Constitution_Temporal, Epoch_Current).
+observe(Chronicle, Binding_Temporal, TemporalLeaseFamily, SourceFamilyScope).
+observe(TemporalReview, Binding_Temporal, TemporalLeaseFamily, SourceFamilyScope).
+observe(Chronicle, Binding_Temporal, Constitution_Temporal, SourceVersionScope).
+observe(TemporalReview, Binding_Temporal, Constitution_Temporal, SourceVersionScope).
+observe(Chronicle, Binding_Temporal, Epoch_Current, SourceEpochScope).
+observe(TemporalReview, Binding_Temporal, Epoch_Current, SourceEpochScope).
+
+cite(Court, Case_Adam, Adam).
+observe(Chronicle, Case_Adam, Adam, CaseScope).
+observe(TemporalReview, Case_Adam, Adam, CaseScope).
+observe(Chronicle, Case_Adam, Court, HolderScope).
+observe(TemporalReview, Case_Adam, Court, HolderScope).
+observe(Chronicle, Case_Adam, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Adam, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Adam, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Adam, Ivo, InjuryVictimScope).
+authorized(Case_Adam, ActiveCustody, Case_Adam).
+observe(Chronicle, Case_Adam, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Adam, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Adam, Case_Adam, CaseBindingScope).
+observe(TemporalReview, Case_Adam, Case_Adam, CaseBindingScope).
+limit(Case_Adam, Case_Adam, Window_Custody).
+observe(Chronicle, Case_Adam, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Adam, Window_Custody, LimitScope).
+continue(Case_Adam, Epoch_Current).
+observe(Chronicle, Case_Adam, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Adam, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Adam).
+approves(TemporalReview, Case_Adam).
+
+cite(Court, Case_Hano, Hano).
+observe(Chronicle, Case_Hano, Hano, CaseScope).
+observe(TemporalReview, Case_Hano, Hano, CaseScope).
+observe(Chronicle, Case_Hano, Court, HolderScope).
+observe(TemporalReview, Case_Hano, Court, HolderScope).
+observe(Chronicle, Case_Hano, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Hano, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Hano, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Hano, Ivo, InjuryVictimScope).
+authorized(Case_Hano, ActiveCustody, Case_Hano).
+observe(Chronicle, Case_Hano, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Hano, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Hano, Case_Hano, CaseBindingScope).
+observe(TemporalReview, Case_Hano, Case_Hano, CaseBindingScope).
+limit(Case_Hano, Case_Hano, Window_Custody).
+observe(Chronicle, Case_Hano, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Hano, Window_Custody, LimitScope).
+continue(Case_Hano, Epoch_Current).
+observe(Chronicle, Case_Hano, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Hano, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Hano).
+approves(TemporalReview, Case_Hano).
+
+cite(Court, Case_Nia, Nia).
+observe(Chronicle, Case_Nia, Nia, CaseScope).
+observe(TemporalReview, Case_Nia, Nia, CaseScope).
+observe(Chronicle, Case_Nia, Court, HolderScope).
+observe(TemporalReview, Case_Nia, Court, HolderScope).
+observe(Chronicle, Case_Nia, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Nia, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Nia, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Nia, Ivo, InjuryVictimScope).
+authorized(Case_Nia, ActiveCustody, Case_Nia).
+observe(Chronicle, Case_Nia, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Nia, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Nia, Case_Nia, CaseBindingScope).
+observe(TemporalReview, Case_Nia, Case_Nia, CaseBindingScope).
+limit(Case_Nia, Case_Nia, Window_Custody).
+observe(Chronicle, Case_Nia, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Nia, Window_Custody, LimitScope).
+continue(Case_Nia, Epoch_Current).
+observe(Chronicle, Case_Nia, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Nia, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Nia).
+approves(TemporalReview, Case_Nia).
+
+cite(Court, Case_Lalo, Lalo).
+observe(Chronicle, Case_Lalo, Lalo, CaseScope).
+observe(TemporalReview, Case_Lalo, Lalo, CaseScope).
+observe(Chronicle, Case_Lalo, Court, HolderScope).
+observe(TemporalReview, Case_Lalo, Court, HolderScope).
+observe(Chronicle, Case_Lalo, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Lalo, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Lalo, Mina, InjuryVictimScope).
+observe(TemporalReview, Case_Lalo, Mina, InjuryVictimScope).
+authorized(Case_Lalo, ActiveCustody, Case_Lalo).
+observe(Chronicle, Case_Lalo, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Lalo, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Lalo, Case_Lalo, CaseBindingScope).
+observe(TemporalReview, Case_Lalo, Case_Lalo, CaseBindingScope).
+limit(Case_Lalo, Case_Lalo, Window_Custody).
+observe(Chronicle, Case_Lalo, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Lalo, Window_Custody, LimitScope).
+continue(Case_Lalo, Epoch_Current).
+observe(Chronicle, Case_Lalo, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Lalo, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Lalo).
+approves(TemporalReview, Case_Lalo).
+
+cite(Court, Case_Nando, Nando).
+observe(Chronicle, Case_Nando, Nando, CaseScope).
+observe(TemporalReview, Case_Nando, Nando, CaseScope).
+observe(Chronicle, Case_Nando, Court, HolderScope).
+observe(TemporalReview, Case_Nando, Court, HolderScope).
+observe(Chronicle, Case_Nando, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Nando, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Nando, Opal, InjuryVictimScope).
+observe(TemporalReview, Case_Nando, Opal, InjuryVictimScope).
+authorized(Case_Nando, ActiveCustody, Case_Nando).
+observe(Chronicle, Case_Nando, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Nando, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Nando, Case_Nando, CaseBindingScope).
+observe(TemporalReview, Case_Nando, Case_Nando, CaseBindingScope).
+limit(Case_Nando, Case_Nando, Window_Custody).
+observe(Chronicle, Case_Nando, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Nando, Window_Custody, LimitScope).
+continue(Case_Nando, Epoch_Current).
+observe(Chronicle, Case_Nando, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Nando, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Nando).
+approves(TemporalReview, Case_Nando).
+
+cite(Court, Case_Rebel, Rebel).
+observe(Chronicle, Case_Rebel, Rebel, CaseScope).
+observe(TemporalReview, Case_Rebel, Rebel, CaseScope).
+observe(Chronicle, Case_Rebel, Court, HolderScope).
+observe(TemporalReview, Case_Rebel, Court, HolderScope).
+observe(Chronicle, Case_Rebel, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Rebel, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Rebel, Scapegoat, InjuryVictimScope).
+observe(TemporalReview, Case_Rebel, Scapegoat, InjuryVictimScope).
+authorized(Case_Rebel, ActiveCustody, Case_Rebel).
+observe(Chronicle, Case_Rebel, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Rebel, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Rebel, Case_Rebel, CaseBindingScope).
+observe(TemporalReview, Case_Rebel, Case_Rebel, CaseBindingScope).
+limit(Case_Rebel, Case_Rebel, Window_Custody).
+observe(Chronicle, Case_Rebel, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Rebel, Window_Custody, LimitScope).
+continue(Case_Rebel, Epoch_Current).
+observe(Chronicle, Case_Rebel, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Rebel, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Rebel).
+approves(TemporalReview, Case_Rebel).
+
+cite(Court, Case_Don, Don).
+observe(Chronicle, Case_Don, Don, CaseScope).
+observe(TemporalReview, Case_Don, Don, CaseScope).
+observe(Chronicle, Case_Don, Court, HolderScope).
+observe(TemporalReview, Case_Don, Court, HolderScope).
+observe(Chronicle, Case_Don, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Don, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Don, Pax, InjuryVictimScope).
+observe(TemporalReview, Case_Don, Pax, InjuryVictimScope).
+authorized(Case_Don, ActiveCustody, Case_Don).
+observe(Chronicle, Case_Don, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Don, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Don, Case_Don, CaseBindingScope).
+observe(TemporalReview, Case_Don, Case_Don, CaseBindingScope).
+limit(Case_Don, Case_Don, Window_Custody).
+observe(Chronicle, Case_Don, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Don, Window_Custody, LimitScope).
+continue(Case_Don, Epoch_Current).
+observe(Chronicle, Case_Don, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Don, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Don).
+approves(TemporalReview, Case_Don).
+
+cite(Court, Case_Sly, Sly).
+observe(Chronicle, Case_Sly, Sly, CaseScope).
+observe(TemporalReview, Case_Sly, Sly, CaseScope).
+observe(Chronicle, Case_Sly, Court, HolderScope).
+observe(TemporalReview, Case_Sly, Court, HolderScope).
+observe(Chronicle, Case_Sly, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Sly, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Sly, Pax, InjuryVictimScope).
+observe(TemporalReview, Case_Sly, Pax, InjuryVictimScope).
+authorized(Case_Sly, ActiveCustody, Case_Sly).
+observe(Chronicle, Case_Sly, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Sly, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Sly, Case_Sly, CaseBindingScope).
+observe(TemporalReview, Case_Sly, Case_Sly, CaseBindingScope).
+limit(Case_Sly, Case_Sly, Window_Custody).
+observe(Chronicle, Case_Sly, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Sly, Window_Custody, LimitScope).
+continue(Case_Sly, Epoch_Current).
+observe(Chronicle, Case_Sly, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Sly, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Sly).
+approves(TemporalReview, Case_Sly).
+
+cite(Court, Case_Kel, Kel).
+observe(Chronicle, Case_Kel, Kel, CaseScope).
+observe(TemporalReview, Case_Kel, Kel, CaseScope).
+observe(Chronicle, Case_Kel, Court, HolderScope).
+observe(TemporalReview, Case_Kel, Court, HolderScope).
+observe(Chronicle, Case_Kel, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Kel, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Kel, Pax, InjuryVictimScope).
+observe(TemporalReview, Case_Kel, Pax, InjuryVictimScope).
+authorized(Case_Kel, ActiveCustody, Case_Kel).
+observe(Chronicle, Case_Kel, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Kel, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Kel, Case_Kel, CaseBindingScope).
+observe(TemporalReview, Case_Kel, Case_Kel, CaseBindingScope).
+limit(Case_Kel, Case_Kel, Window_Custody).
+observe(Chronicle, Case_Kel, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Kel, Window_Custody, LimitScope).
+continue(Case_Kel, Epoch_Current).
+observe(Chronicle, Case_Kel, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Kel, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Kel).
+approves(TemporalReview, Case_Kel).
+
+cite(Court, Case_Rex, Rex).
+observe(Chronicle, Case_Rex, Rex, CaseScope).
+observe(TemporalReview, Case_Rex, Rex, CaseScope).
+observe(Chronicle, Case_Rex, Court, HolderScope).
+observe(TemporalReview, Case_Rex, Court, HolderScope).
+observe(Chronicle, Case_Rex, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Rex, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Rex, Sena, InjuryVictimScope).
+observe(TemporalReview, Case_Rex, Sena, InjuryVictimScope).
+authorized(Case_Rex, ActiveCustody, Case_Rex).
+observe(Chronicle, Case_Rex, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Rex, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Rex, Case_Rex, CaseBindingScope).
+observe(TemporalReview, Case_Rex, Case_Rex, CaseBindingScope).
+limit(Case_Rex, Case_Rex, Window_Custody).
+observe(Chronicle, Case_Rex, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Rex, Window_Custody, LimitScope).
+continue(Case_Rex, Epoch_Current).
+observe(Chronicle, Case_Rex, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Rex, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Rex).
+approves(TemporalReview, Case_Rex).
+
+cite(Court, Case_Ruk, Ruk).
+observe(Chronicle, Case_Ruk, Ruk, CaseScope).
+observe(TemporalReview, Case_Ruk, Ruk, CaseScope).
+observe(Chronicle, Case_Ruk, Court, HolderScope).
+observe(TemporalReview, Case_Ruk, Court, HolderScope).
+observe(Chronicle, Case_Ruk, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Ruk, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Ruk, Opal, InjuryVictimScope).
+observe(TemporalReview, Case_Ruk, Opal, InjuryVictimScope).
+authorized(Case_Ruk, ActiveCustody, Case_Ruk).
+observe(Chronicle, Case_Ruk, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Ruk, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Ruk, Case_Ruk, CaseBindingScope).
+observe(TemporalReview, Case_Ruk, Case_Ruk, CaseBindingScope).
+limit(Case_Ruk, Case_Ruk, Window_Custody).
+observe(Chronicle, Case_Ruk, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Ruk, Window_Custody, LimitScope).
+continue(Case_Ruk, Epoch_Current).
+observe(Chronicle, Case_Ruk, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Ruk, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Ruk).
+approves(TemporalReview, Case_Ruk).
+
+# <T3-FACTS-END>
 
 # ─── The world in facts: cast ───────────────── [v0.1, two swaps]
 # [v0.3 REPLACES prisoner(Adam)] Adam was the one asserted prisoner, a fixture

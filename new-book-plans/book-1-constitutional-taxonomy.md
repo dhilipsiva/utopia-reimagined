@@ -2,10 +2,10 @@
 
 # Book 1 Constitutional Taxonomy
 
-> **Status: author-ratified (2026-08-03); implementation remains Phase 2.** This
-> classifies the constitutional work the ratified mandate requires. It does not
-> add a right, power, predicate, delivery route, or claim of present formal
-> coverage.
+> **Status: author-ratified (2026-08-03); broader implementation remains Phase
+> 2.** This classifies the constitutional work the ratified mandate requires. It
+> does not itself add a right, power, predicate, or delivery route; it records
+> the narrow staged T3 path already implemented elsewhere.
 
 ## Ratified decision
 
@@ -49,10 +49,10 @@ return later as ad hoc “new rights” or “new branches.”
 | Where do power limits and remedies belong? | Class 3 limits interference; Class 4 governs accusation, coercion, contest, repair, and representation; Class 7 governs records. Keep those grammars separate. | Their shared evidence, remedy, and appeal contracts. |
 | Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Private wrongdoing reaches justice machinery, not a floor consequence against another person. A private actor is directly bound only where a future rule says so expressly. | The horizontal reach of an expressly enacted private duty and each matching public protection duty. |
 | Who turns a record finding into a remedy? | Class 7 supplies evidence; Class 6 supplies an independent reader with an action duty; Class 4 supplies the contest and repair route. A referral alone is not accountability. | The particular recipient, remedy, and continuity rule for each failure. |
-| Is emergency a new branch or right? | Keep emergency as an overlay across Classes 1–9. It may narrowly alter the exercise of a public power, chiefly in Classes 3–7, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary Class-6 power—not a standing emergency exception—and any exceptional exercise needs separate Class-3/4 limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
+| Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
 | Are economy, property, locality, migration, and external relations extra classes? | No. Split each into the relevant existing classes: democratic policy, public duty, liberty, standing, fair process, jurisdiction, and commons. Property is a conditional liberty bounded by floors and commons; a property or economic-power limit must name its direct class instead of hiding inside “economy.” Merit, recognition, contribution, or a qualifying threshold may not be an allocation or access key for property, commons, material security, standing, authority, or political voice. Both any present person and an independently checked public guardian have standing for commons/future-condition claims. | The resulting contract cards; the guardian's authority, independence, evidence, and removal controls; and the Book 2 operational seam. |
 | What counts as delivery evidence? | **Ratified:** `teaches` + `hears` remains a narrow legacy demonstration only. Future delivery uses accessibility-neutral, recipient-side access or receipt evidence with a named authorised writer and challenge route; it must not infer learning, health, belief, or another compelled personal state. No current route is a qualifying general model. | The names, writer authority, challenge route, and evidence of each future delivery family. |
-| Are accessibility and time classes? | No. Accessibility is a cross-cutting equality condition. T3 is an author-ratified cross-cutting target for limits on public power, still unimplemented in the current T0 kernel; missing or disputed time evidence may not restrict a claimant. | T3's staged formal work and each class's temporal status. |
+| Are accessibility and time classes? | No. Accessibility is a cross-cutting equality condition. The staged T3 path is formal for witnessed record replacement, typed transitive event/record paths, and canonical-current case-bound Court custody. It does not supply metric duration, outside-clock liveness, or temporal limits for other powers. Missing or disputed time evidence may not create or extend restrictive public power or become a personal-time score. A continuity rule may preserve only claimant-supporting status that its independent evidence establishes; the current standing route cannot cure a missing predecessor witness. | Each class's temporal status and any additional power-specific T3 contract. |
 | What stays outside Book 1? | Operations—budgets, staffing, logistics, databases, devices, clocks, and service workflows—remain Book 2. | The evidence and costed operating case that Book 2 must supply. |
 
 ### Reader-language guard
@@ -88,7 +88,7 @@ inventing a catch-all class:
 | A person seeing and contesting their own record | 7 + 4 | Record access needs correction and a fair dispute route, not a new floor. |
 | An audit finding that a provider denied a floor | 7 + 6 + 4 | A finding needs an independent recipient, a duty to act, continuity, and a remedy; referral alone is inert. |
 | A public duty to keep the floor funded | 6 + 5 | The constitutional duty binds public power; democratic policy chooses compatible means. |
-| A disaster declaration | Overlay across 1–9 | It changes no person's standing and cannot suspend floors, common protection across places, or non-destruction. |
+| A disaster declaration | Overlay across all named classes | It changes no person's standing and cannot suspend floors, common protection across places, or non-destruction. |
 | A forest or water system threatened by current voters | 9 + 5 | The common condition constrains policy; voters choose only within that limit. |
 
 These examples are classification decisions, not formal rules. They must not be
@@ -101,19 +101,24 @@ mistaken for proof that the current constitution provides the stated result.
 | 1. Standing and equal status | Who counts before any other rule applies? | Include personhood, equal protection, non-discrimination, unregistered access, and status correction. Exclude service delivery and office eligibility. | Holder; forbidden preconditions; immediate-access route; challenge/correction; independent check. |
 | 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; authorised recipient-side access/receipt evidence **(future target; legacy `hears` does not qualify)**; breach; interim continuity; remedy; appeal; audit. |
 | 3. Liberty and personal integrity | What interference must public power or another actor not impose? | Include bodily integrity, personal privacy, conscience, expression, association, movement, and family life. Exclude a claim to a particular service, record/data controls, or the procedure for deciding a case. | Protected person/act; prohibited interference; narrow necessity and least-restrictive exception; evidence; independent review; remedy. |
-| 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; current-T0 non-temporal reversal condition; temporal status. |
+| 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; end or review condition; temporal status. |
 | 5. Democratic self-government and amendment | What may people decide together? | Include equal political voice, public reasons, ordinary law, constitutional amendment, recall, and rights-compatibility review. Exclude individual adjudication and administrative workflow. | Equal voice; one person, one vote; no earned, scored, or weighted political voice; accessible participation; decision scope; public reasons; authenticated, contestable decision/tally evidence and writer; exact proposal/source change; declared target; independent semantic-effect and compatibility review; redundant and escalating writer/reviewer routes; missing approval or review never counts as approval, while no one writer or reviewer can permanently withhold the route; authenticated effective-version binding; amendment limit; challenge/remedy; temporal status. |
-| 6. Public institutions and delegated duty | Which public function may act, and under what separation? | Include legislative, electoral/deliberative, provision, justice, appeal, constitutional review, audit, ombuds, local, and external-public mandates; classify any separately scoped defence/security mandate here, never as a standing emergency exception. Exclude staffing, salaries, procurement, and workflow design. | Democratic source; mandate; trigger; scope; conflict/recusal rule; non-delegable limit; review; appeal; current-T0 non-temporal end condition; temporal status. |
+| 6. Public institutions and delegated duty | Which public function may act, and under what separation? | Include legislative, electoral/deliberative, provision, justice, appeal, constitutional review, audit, ombuds, local, and external-public mandates; classify any separately scoped defence/security mandate here, never as a standing emergency exception. Exclude staffing, salaries, procurement, and workflow design. | Democratic source; mandate; trigger; scope; conflict/recusal rule; non-delegable limit; review; appeal; end condition; temporal status. |
 | 7. Records, evidence, privacy, and accountability | What may count in a public decision, and how is power made contestable? | Include admissibility, writer authority, challenge, correction, privacy, audit, and assurance. Exclude databases, cryptography, biometrics, and assessment tools. | Basis; writer; visibility/privacy; challenge; correction/deletion control; assurance; independent recipient; action duty; continuity/remedy path; temporal status. |
 | 8. Jurisdiction, locality, and subsidiarity | How are public powers and duties divided across place without lowering common protection? | Include local authority, subsidiarity, inter-community and cross-jurisdictional duty, and portability duties. Exclude individual movement, plurality, migration procedure, transfer systems, border administration, and service logistics. | Common baseline; local mandate; non-discrimination; portability duty; equalisation and cross-jurisdictional duty; dispute forum; review. |
 | 9. Commons and future conditions | What may no contract, owner, or present majority exhaust or trade away? | Include non-regression, public maintenance duty, shared-resource limits, and intergenerational non-destruction. Exclude property/work policy, tax rates, budgets, allocation models, and production plans. | Protected condition; duty-bearer; non-destruction rule; evidence; present-person and/or independently checked public-guardian standing; remedy; public accountability. |
 
 **Temporal-status contract:** whenever a class proposes a deadline, cadence,
 expiry, term, retention period, or “temporary” exception, its contract must name
-its temporal status. T3 is a ratified target but remains unimplemented: label
-the proposal as current-T0/non-temporal or
-T3-ratified-target/implementation-gated. No class may silently assume a
-temporal effect.
+its temporal status and fresh-evaluation boundary. The implemented T3 path
+covers only witnessed record transition, a collision-free terminal successor on
+one witnessed constitutional lineage, typed transitive event/record paths, and
+case-bound custody. That custody rule rejoins independently witnessed case,
+Court-judgment, injury-victim, lease, window, renewal, and source fields, and
+rejects competing source, window, case-subject, or lease bindings. Label any other
+proposal as non-temporal or T3-unimplemented
+for that power. No class may borrow the custody rule's temporal effect by
+implication.
 
 **Worked legacy pattern—not a general delivery model:**
 `teaches($t, $s) & hears($s, $t) -> learn($s)` is the existing two-sided route.
@@ -143,10 +148,10 @@ state.
 | Records and accountability | 7 | 1 protects standing; 6 supplies the remedial reader/action duty; 4 supplies challenge and correction. |
 | Economy, property, work, and commons | **Split required** | 2 covers material security; 3 any property/economic-power limit; 5 compatible policy; 6 public fiscal duty; 9 commons/non-regression; recognition remains outside allocation. |
 | Locality, plurality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, and cross-jurisdictional duty; 3 movement/association; 1 newcomer standing; 4 migration procedure; 6 external public authority. |
-| Emergency and resilience | **Overlay, not a separate class** | It affects the exercise of powers chiefly in 3–7 but is constrained by standing and floors (1–2), the common baseline across places (8), and non-destruction (9). |
+| Emergency and resilience | **Overlay, not a separate class** | It affects liberty, fair process, democracy, institutions, and records, but remains constrained by standing, floors, the common baseline across places, and non-destruction. |
 | Ecology and future people | 9 | 5 chooses compatible policy, not the right to exhaust the common condition. |
 
-**Current-kernel warning:** Article 1's eight-name grouping is an existing
+**Current-kernel warning:** Article 1's current floor-name grouping is an existing
 anti-sanction firewall, not an adopted social taxonomy. In a future redesign,
 `secure` may split into bodily safety and material security; `expresses`,
 `believe`, and `meets` may require liberty/association interfaces alongside any
@@ -185,12 +190,18 @@ structural refusal instead limits what *form of rule* may exist across subjects.
    independent body with a defined action duty, continuity/remedy path, and a
    failure consequence if it does nothing. A referral that nobody must read is
    the current `err` → `obliged` gap in prettier language.
-8. **T3 is ratified; the current kernel remains T0:** no class yet authorises
-   duration arithmetic, expiry, deadlines, cadence, or an emergency/office
-   “temporary” period. Do not add one until the T1/T2 prerequisites, temporal
-   contracts, differential harness, and adversarial matrix pass. When time is
-   formalised, it constrains public power only: missing or disputed time evidence
-   may not restrict a claimant or become a personal-time score.
+8. **T3 is narrow and power-scoped:** T1 record replacement and carry, T2 typed
+   transitive event/record paths, and T3 canonical-current case-bound custody
+   authority are implemented. Restrictive effect reads only the collision-free
+   terminal successor selected by the witnessed constitutional lineage in a
+   fresh evaluation. A conflict-tainted order path or competing witnessed
+   source, window, case-subject, or lease binding fails closed; the case must also bind
+   the Court judgment and injury victim. These rules authorise no duration
+   arithmetic, claimant deadline, emergency period, office term, or general
+   expiry. A new temporal effect needs its own contract and adversarial case.
+   Time constrains public power only: missing or disputed time evidence may not
+   create or extend restrictive power, cut off a claimant's standing, floor,
+   liberty, appeal, or remedy, or become a personal-time score.
 9. **Formal walls and refusals are first-class controls:** a closure of
    vocabulary, asserted conclusions, a rule shape, or a downstream edge is a
    cross-cutting structural control attached to every affected class, not a new
@@ -246,7 +257,10 @@ into two contract cards.
 Every contract card also records: its class; applicable structural-wall ID and
 enforcement mechanism; permitted and prohibited inputs; permitted downstream
 effects; evidence authority; conflict rule; temporal status; formal status;
-negative-test ID; counterfactual ID; Part V status; and Book 2 handoff. An
+negative-test ID; counterfactual ID; Part V status; and Book 2 handoff. A
+temporal card additionally records its canonical-lineage rule, independently
+witnessed exact bindings, type-scoped conflict propagation, terminal-current
+condition, and whether legal effect requires a fresh evaluation. An
 amendment card additionally records the exact candidate source change, declared
 target, independent semantic-effect review, compatibility verdict, and effective
 version it authorises, plus the writer/reviewer unavailability default that prevents
@@ -277,7 +291,7 @@ This ratification preserves these conclusions:
   continuity, remedy, audit, correction—not a false equation between reward and
   punishment.
 - The taxonomy expands Book 1’s constitutional interface without importing
-  Book 2’s operations or weakening the no-score and current-T0 guardrails.
+  Book 2’s operations or weakening the no-score and power-scoped T3 guardrails.
 
 ## Ratification record
 

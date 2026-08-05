@@ -9,11 +9,15 @@ the whole structure, sitting above everything else, and it exists for one purpos
 turn a breach from something you would have to notice into something you can ask
 about.
 
-There are two of them. One reports a bad placement. One reports that a confined person
-is alone.
+There are several now. The original reports concern a bad placement and a confined
+person with no company on record. Newer ones report a missing or invented carry between
+witnessed records, conflicting clear and void histories, an omitted personhood-status
+carry or protected entry, conflicting order, a disputed maturity record, and custody
+presented without current reviewed authority.
 
-Both are worth examining closely, because between them they demonstrate the promise of
-a self-auditing design and the three ways it can fail.
+The original reports are still worth examining closely, because together they
+demonstrate the promise of a self-auditing design and several ways it can fail. The newer reports
+make the same limits sharper rather than removing them.
 
 ## The one that fires on everybody
 
@@ -70,7 +74,7 @@ what it reads, not who writes it.
 
 ## And then a duty, which is also the end of it
 
-The third failure is the one that matters most, and it is the one this book got wrong
+The deepest failure is the one that matters most, and it is the one this book got wrong
 for longest.
 
 A violation is recorded, and now something does follow: the review body is obliged.
@@ -80,42 +84,55 @@ and can state, in the same breath, that somebody else is supposed to do somethin
 about it.
 
 Read the duty carefully, because it arrives carrying what is still wrong with the
-signals that produce it. Today every duty the audit derives comes through the isolation
-marker, which fires on every prisoner without exception — so the duty is owed about all
-of them, equally, regardless of anything any of them did or suffered. A duty derived
-from a signal that fires on everyone is a duty owed to a category rather than to a
-case. Before the placement repair it was worse — a duty pointed at named, correctly
-placed people, derived from a signal that could not tell right from wrong — and that
-half is fixed, which shows the duty machinery inherits exactly the quality of whatever
-feeds it.
+signals that produce it. In the worked record, the older duties come through the
+isolation marker, which fires on every prisoner without exception — so the duty is
+owed about all of them, equally, regardless of anything any of them did or suffered. A
+duty derived from a signal that fires on everyone is a duty owed to a category rather
+than to a case. Before the placement repair it was worse — a duty pointed at named,
+correctly placed people, derived from a signal that could not tell right from wrong —
+and that half is fixed, which shows the duty machinery inherits exactly the quality of
+whatever feeds it.
+
+The new record and time reports take a narrower route. A missing carry, invented carry,
+conflicting clear and void histories, missing personhood-status carry, vanished
+protected entry, disputed maturity record, conflicting order, or unsupported custody
+can become an Appeals duty when the affected person challenges it. That gives the
+finding a reader by name. It still gives the reader no consequence
+for silence and gives the person no automatic correction.
+
+“Vanished” is deliberately conservative here. The record has no way to represent a
+lawful retirement of a protected entry, so every missing required carry receives the
+same disappearance report. The report establishes a mismatch between supplied records;
+it does not establish why the entry is absent or that its removal was unlawful.
 
 It also inherits a boundary nobody drew on purpose. The duty is not derived from
-wrongness in general; it is derived kind by kind — a rule for a misplacement, a rule
-for an isolation, written separately, each naming its own marker. A third kind of
-breach, whenever this record learns to notice one, produces no duty at all until
-somebody writes its rule. The general sentence — every mark obliges a response — is
-available and was measured while this chapter was expanded; the design keeps the two
-specific rules instead, deliberately, because they are correct and pinned and
-collapsing them buys nothing. The consequence deserves its own line. In this design
-even the obligation to respond to wrongdoing is itemised, and a new kind of wrong
-begins life unowed.
+wrongness in general; it is derived kind by kind. Placement and isolation have their
+own rules, and each temporal defect has an expressly named challenge route. A new kind
+of breach produces no duty until somebody writes another route. The general sentence
+— every mark obliges a response — is available and was measured while this chapter was
+expanded; the design deliberately keeps the specific rules because they are correct
+and pinned and collapsing them buys nothing. The consequence deserves its own line.
+In this design even the obligation to respond to wrongdoing is itemised, and a new
+kind of wrong begins life unowed.
 
 The duty also points one way. It is owed about the person who was wronged, never at
 whoever did the wrong — the placement chapter tells how the report's author is
-dropped between the premise and the conclusion, and the duty is built on the
-conclusion.
+dropped between the premise and the conclusion, and the newer reports likewise send
+the affected person's challenge to Appeals rather than identifying or punishing the
+writer or omission that caused the defect.
 
-And then **nothing reads the duty.** No rule consults it. No clock starts, no review is
-required, nothing changes about the placement or the isolation being reported. The chain
+And then **nothing reads the duty.** No rule consults it. No deadline follows, no
+performed review derives, and nothing changes about the placement or isolation being
+reported. The chain
 is one link longer than it was and it ends in the same place.
 
-This is the same shape as two earlier gaps and it is worth naming as a family. The floor
+This is the same shape as earlier gaps and it is worth naming as a family. The floor
 states what is owed and delivers to the confined. The amendment machinery decides which
 proposals receive the law label and nothing applies the change. The audit states what is
 broken, states who owes a
-response, and nothing responds. Three times, the design reaches the moment where a
-determination has been made correctly and then stops — and the third one now stops one
-step later, which is not the same as arriving.
+response, and nothing responds. Repeatedly, the design reaches the moment where a
+determination has been made correctly and then stops. The audit now stops one step
+later, which is not the same as arriving.
 
 There is a real diagnosis in that pattern, and adding the link is what made it legible.
 This design is very good at establishing *what is true* and has almost nothing to say

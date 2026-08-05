@@ -914,9 +914,10 @@ def validate_source(
     ):
         raise AssuranceError("claims: RI-7 must cite the ratified time-model decision")
     if temporal_claim["owner_ref"] != (
-        "TODO.md::Implement the ratified T3 temporal path in stages"
+        "new-book-plans/book-1-time-model-decision.md::"
+        "## 7. Formal implementation and verification gate"
     ):
-        raise AssuranceError("claims: RI-7 must remain owned by the T3 implementation gate")
+        raise AssuranceError("claims: RI-7 must remain owned by the ratified time-model gate")
     validate_premise_classes(source["premise_classes"], ledger, record_ids)
     validate_defeaters(source["defeaters"], known_claims)
     validate_fail_safe_defaults(source["fail_safe_defaults"], known_claims)
@@ -1173,9 +1174,11 @@ def render(
             "  report freshness. It does not prove real authorship, witness independence,",
             "  storage integrity, clock progress, omission recovery, or deletion recovery.",
             "- The bounded report at `new-book-plans/record-integrity-red-team.md`",
-            "  executes selected release, adulthood, roster, carry, relief, and forgiveness harms.",
-            "  Those reproduced cases expose gaps; they do not establish authorship,",
-            "  recovery, T1 transition assurance, liveness, or operational integrity.",
+            "  executes selected release, adulthood, roster, relief, and forgiveness harms,",
+            "  plus a negative control proving that bare `rotten` is inert. Those cases",
+            "  expose flat-snapshot gaps and one input boundary; they do not establish",
+            "  authorship, runtime attribution, recovery, liveness, or operational integrity,",
+            "  and they do not duplicate the staged temporal assurance harness.",
             "",
         ]
     )
@@ -1368,7 +1371,7 @@ def negative_controls(
         (
             "narrowness_impacts",
             "artifact_ref",
-            "book-1/01-what-counts-as-evidence.md::entry never written look exactly alike.",
+            "book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a",
             "standing narrowness review deleted",
         ),
     )

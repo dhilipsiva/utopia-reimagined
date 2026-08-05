@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "d92bc73e19d9edede8e0badb9a8bf8b7beaa0c84dea908c461aafc1e5aad1687",
+  "assertion_surface_contracts_sha256": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -42,12 +42,12 @@
   ],
   "limitations": {
     "in_snapshot_absence": "Within one supplied snapshot, an in-snapshot rule cannot distinguish an entry deleted before or within that snapshot from an entry withheld or never written. Absence exposes no history.",
-    "t1_boundary": "The bounded red-team now compares constructed snapshot files and exposes selected carry, omission, and rollback consequences, but those pairs have no independently attested identity, predecessor, manifest, authorship, reconciliation, replay protection, or divergence rule. A future T1 comparison can expose an attested fact that disappears between independently attested snapshots; it still cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition, or make a successor snapshot arrive.",
+    "t1_boundary": "The current staged rules and executable temporal harness can derive and attack selected predecessor/successor, carry, standing, order, and review-window consequences over exact supplied fixtures and enumerated item-field scopes. Derived status tuples retain an identifier and type tag, not their full payload; every consequential consumer must rejoin the raw fields it uses and their matching witness fields. That is repository safety evidence, not authentication or exhaustive disclosure of the observed payload, external witness independence, truth of the transition, arrival of a successor, or advancement of the outside time service. T1 can expose selected disappearance only between accepted supplied snapshots; it still cannot detect omission or deletion before first attestation, determine whether a later disappearance was deletion, withholding, or authorised disposition without further evidence, or make a successor arrive.",
     "monotone_derivation": "Monotone derivation is not append-only storage. Current rules accumulate conclusions from supplied premises, while an external fact store or rule source can still be rewritten, withheld, or deleted.",
     "independence": "Two named bodies, two entries, two signatures, or two replicas do not by themselves prove independent witnessing. Independence requires separate control, incentives, credentials, and failure domains, plus a conflict and collusion posture.",
     "authenticity": "Authentication can attribute an entry to a credential. It does not prove that the underlying event occurred, that the source was complete, that the basis was sufficient, or that the credential holder acted lawfully.",
     "genesis": "The first attested snapshot has no predecessor and cannot prove its own completeness. Genesis evidence and any unresolved uncertainty remain external assumptions rather than facts the snapshot certifies about itself.",
-    "classification_choice": "RC-1 through RC-5 are reviewed grouping choices, not derived or exhaustive constitutional classes. The checker proves exact premise assignment and declared dimension coverage; it does not prove that a semantic classification is correct.",
+    "classification_choice": "RC-1 through RC-6 are reviewed grouping choices, not derived or exhaustive constitutional classes. The checker proves exact premise assignment and declared dimension coverage; it does not prove that a semantic classification is correct, and one polymorphic relation may still serve routes that deserve distinct rule-family cards.",
     "assurance_meta_root": "The assurance source, assertion ledger, generators, verifier, engine, and review process can be weakened or compromised together. A green repository check does not authenticate or authorise edits to its own trust root; release and toolchain integrity remain externally evidenced assumptions."
   },
   "boundary": {
@@ -97,7 +97,7 @@
       "acceptance_evidence": [],
       "residual_assumption": "The release engine, parser, verifier, and human semantic review faithfully represent the source under test.",
       "owner_ref": "new-book-plans/7-assertion-surface.py::def validate_contract(",
-      "temporal_status": "Current T0 repository invariant; no claim about a live transition.",
+      "temporal_status": "Current repository invariant over the exact staged source; no claim about a deployed transition or outside clock.",
       "book2_handoff": "Deployment must bind an identified, released constitutional version to each attested snapshot."
     },
     {
@@ -152,7 +152,7 @@
           "kind": "reviewed",
           "role": "exposes_gap",
           "supports": "RI-3",
-          "ref": "new-book-plans/assertion-surface-audit.md::The relation buys an author for the reason, not truth or sufficiency of the reason."
+          "ref": "new-book-plans/assertion-surface-audit.md::For audits the relation buys an author for the reason, not truth or sufficiency."
         },
         {
           "kind": "decision",
@@ -268,10 +268,10 @@
           "kind": "prose",
           "role": "exposes_gap",
           "supports": "RI-6",
-          "ref": "book-1/05-voiding.md::never written and a line withheld are the same absence."
+          "ref": "book-1/05-voiding.md::A fact deleted before the first attested"
         }
       ],
-      "known_failure": "The current kernel has no general correction event, effective-state rule, retention policy, deletion authorisation, or history assurance; forgiveness changes one consequence while the carried mark remains and is not a general correction pattern.",
+      "known_failure": "The current `complete(item, ScopeTag)`, `succeed(after, Transition)`, `succeed(lease, PowerBound)`, `precede(claim, SequenceTag)`, `time(window, ReviewedInterval)`, `related(case, CaseBound)`, `orderly(lease, WindowBound)`, `concurrent(lease, RenewalBound)`, `reference(binding, SourceBound)`, and `correct(lease, ActivePower)` conclusions are compressed typed status outputs whose consequential consumers rejoin raw fields and their matching witness fields; despite their ordinary English names none is a general correction event. The kernel still has no general superseding-entry effect, retention policy, deletion authorisation, or stored-history assurance.",
       "target_contract": "Every correction names the superseded entry, author, authority, reason, evidence, effective scope, retrospective or prospective effect, affected conclusions, review and appeal; every retention or disposition rule states purpose, approver, proof retained, and privacy boundary.",
       "acceptance_evidence": [
         "Formal supersession semantics and tests for overwrite, silent deletion, replay, unrelated-effect changes, and correction forgery.",
@@ -285,44 +285,40 @@
     },
     {
       "id": "RI-7",
-      "title": "Snapshot lineage, reconciliation, and time",
-      "claim": "Every attested transition identifies its predecessor, constitutional version, manifest, permitted changes, independent attestations, reconciliation result, divergence and replay status, and recovery state; time-dependent effects use the ratified T1/T2/T3 sequence.",
-      "argument": "One-file pins start from a fresh engine and cannot prove an N-to-N+1 transition. T1 is required to compare attested snapshots, T2 where event order matters, and T3 where time limits public power; none proves that an outside clock advances or a successor is published.",
-      "posture": "book1_target_unimplemented",
+      "title": "Supplied snapshot lineage, order, and constitutional time",
+      "claim": "For the exact current source and supplied staged fixtures, T1 derives `succeed(after, Transition)` only after exact manifest observations and rejects enumerated lineage and manifest conflicts; T2 derives `precede(claim, SequenceTag)` from separately witnessed raw endpoints; and T3 derives `correct(lease, ActivePower)` only after typed status tags, rejoined raw fields, and their exact matching observations establish the case, subject, Court holder, custody power, window, renewal, source family, and successor required by the lease rule. Missing, disputed, conflicting, stale, or tuple-aliased inputs remove the restrictive conclusion.",
+      "argument": "The executable temporal audit runs cumulative T1, T2, and T3 candidates in fresh engines and attacks omission, forged carry, disappearance, reverse or divergent lineage, status-tag injection, order conflict, window conflict, source mismatch, case mismatch, compact-tag tuple aliasing, challenge, and frozen supplied transitions. The derived heads intentionally retain only an identifier and type tag for engine safety; consequential consumers rejoin the exact raw fields and matching observations they use. These checks establish bounded repository safety for supplied records, not witness authenticity, outside clock advancement, successor publication, or institutional action.",
+      "posture": "current_verified",
       "dimensions": [
         "reconciliation",
         "temporal_status"
       ],
       "current_evidence": [
         {
-          "kind": "decision",
-          "role": "exposes_gap",
+          "kind": "formal",
+          "role": "supports_current",
           "supports": "RI-7",
-          "ref": "new-book-plans/book-1-time-model-decision.md::current one-file pins cannot prove"
+          "ref": "new-book-plans/constitution.nibli::# <T1-RULES-BEGIN>"
+        },
+        {
+          "kind": "generated",
+          "role": "supports_current",
+          "supports": "RI-7",
+          "ref": "new-book-plans/temporal-assurance-case.md::ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED."
         },
         {
           "kind": "decision",
           "role": "sets_boundary",
           "supports": "RI-7",
-          "ref": "new-book-plans/book-1-time-model-decision.md::T1 is necessary to make cross-epoch claims less trusting."
-        },
-        {
-          "kind": "generated",
-          "role": "exposes_gap",
-          "supports": "RI-7",
-          "ref": "new-book-plans/record-integrity-red-team.md::## Cross-snapshot transition matrix — T1 precursor only"
+          "ref": "new-book-plans/book-1-time-model-decision.md::There is also a strict boundary between **safety** and **liveness**."
         }
       ],
-      "known_failure": "The current T0 kernel has only an external carry convention. It cannot establish lineage, detect replay or equivocation, reconcile competing successors, or guarantee that any next snapshot or review arrives.",
-      "target_contract": "Specify snapshot identity, predecessor, source version, permitted transition, carry and correction manifest, independent attestations, reconciliation and conflict result, replay and rollback rule, recovery status, challenge, and fail-safe consequence for missing or frozen transitions.",
-      "acceptance_evidence": [
-        "The required two-snapshot differential harness passing omission, forged carry, disappearance, replay, divergence, and frozen-transition controls.",
-        "T2 tests wherever before and after change a legal effect, and T3 tests wherever a duration or deadline limits power.",
-        "External availability and clock evidence labelled as liveness assurance rather than derivation."
-      ],
-      "residual_assumption": "Even an attested chain cannot prove an entry existed before genesis, detect a fact removed before attestation, or force the next transition to occur.",
-      "owner_ref": "TODO.md::Implement the ratified T3 temporal path in stages",
-      "temporal_status": "Current T0 gap; T1 is mandatory, T2 applies to order, and T3 applies to constitutional time limits.",
+      "known_failure": "Every temporal input and nominal witness remains ground-writable and unauthenticated. The compressed status tags do not carry their payloads; safety depends on each consequential consumer's exact raw-field and matching-witness rejoin plus the enumerated conflict and aliasing controls exercised by the supplied fixtures. Neither the tags nor those tests prove exhaustive enumeration, source deployment, honest independent control, immutable storage, physical truth, correction or recovery, successor arrival, clock advancement, release, or institutional action.",
+      "target_contract": "Keep the cumulative stage boundaries, exact status shapes, raw-field and matching-witness rejoins, source and effect bindings, restrictive-power failure polarity, and adversarial harness current whenever a temporal premise, rule, fixture, or source version changes; never relabel a compressed status tag, external liveness, or operational authenticity as proof of its underlying payload.",
+      "acceptance_evidence": [],
+      "residual_assumption": "Even the accepted supplied chain cannot prove an entry existed before genesis, detect every fact removed before attestation, authenticate its witnesses, or force the next transition, clock event, review, release, or remedy to occur.",
+      "owner_ref": "new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate",
+      "temporal_status": "T1, T2, and T3 repository safety are implemented and audited for supplied staged fixtures; storage, witness, source-deployment, successor, clock, and institutional liveness assurance remain external.",
       "book2_handoff": "Operate snapshot publication, independent attestation, reconciliation, replicated availability, replay protection, clocks, calendars, and recovery services."
     },
     {
@@ -356,7 +352,7 @@
           "ref": "new-book-plans/record-integrity-red-team.md::## Route postures"
         }
       ],
-      "known_failure": "The bounded red-team executes selected release, adulthood, roster, carry, relief, and forgiveness harms, but it neither detects nor attributes a runtime event and it supplies no recovery, interim continuity, systematic reconsideration, or remedy. Other premise routes remain reviewed-only.",
+      "known_failure": "The staged temporal path now gives selected supplied standing and restrictive-power routes an explicit polarity and the executable audits attack carry, release, adulthood, lineage, order, and review inputs. It still neither authenticates nor attributes a runtime event, covers every premise route, recovers a lost record, systematically reconsiders downstream decisions, remedies completed harm, or makes an institution act.",
       "target_contract": "For every premise route, classify assertion and withholding or deletion harm, beneficiary and power polarity, disputed-state default, interim continuity, reconstruction sources and authorised-disposition boundary, uncertainty mark, affected conclusions, reconsideration, appeal, and remedy for harm already caused; never infer that an unperformed relief occurred.",
       "acceptance_evidence": [
         "Per-route assertion and withholding or deletion tests with non-vacuous controls.",
@@ -365,7 +361,7 @@
       ],
       "residual_assumption": "Some lost facts cannot be reconstructed; in that case the constitutional default can contain harm but cannot recreate historical truth.",
       "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
-      "temporal_status": "T0 can state a failure default; disappearance and recovery across snapshots require T1, order-sensitive reconsideration requires T2, and delay limits require T3.",
+      "temporal_status": "Selected supplied-record routes now implement T1 carry and disappearance checks, T2 order conflicts, and a T3 custody-power default. General reconstruction, downstream reconsideration, delay control for other powers, and operational recovery remain unimplemented or external.",
       "book2_handoff": "Maintain independent recovery sources, backups, incident records, service continuity, claimant support, and operational procedures for reviewing and remedying decisions after integrity failure."
     },
     {
@@ -393,7 +389,7 @@
           "ref": "book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**"
         }
       ],
-      "known_failure": "Article 8b derives `obliged` from selected `err` findings, but nothing reads the duty and no general reader, response, escalation, continuity, or systemic remedy follows.",
+      "known_failure": "Articles 8b and 8c derive `obliged` from selected placement and temporal findings, but nothing reads the duty and no general reader, response, escalation, continuity, or systemic remedy follows.",
       "target_contract": "Name the recipient, independence, receipt evidence, action duty, permitted actions, continuity, reasons, review, escalation, non-response finding, final remedy authority, effect on prior decisions, common-cause investigation, systemic correction owner, affected-case re-audit, and recurrence evidence; systemic work may not delay individual continuity or remedy.",
       "acceptance_evidence": [
         "A formal reader and action-duty family with positive, negative, withholding, and wrong-recipient tests.",
@@ -456,21 +452,21 @@
           "kind": "decision",
           "role": "supports_current",
           "supports": "RI-11",
-          "ref": "new-book-plans/book-1-time-model-decision.md::cannot detect a deleted fact inside a snapshot"
+          "ref": "new-book-plans/book-1-time-model-decision.md::It cannot detect a fact deleted before or inside the first"
         },
         {
           "kind": "prose",
           "role": "supports_current",
           "supports": "RI-11",
-          "ref": "book-1/01-what-counts-as-evidence.md::entry never written look exactly alike."
+          "ref": "book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a"
         }
       ],
       "known_failure": "Any claim of internal detection would be a false guarantee and could make an omitted or deleted claimant-supporting fact look lawfully absent.",
       "target_contract": "Keep the impossibility explicit. Use independently held evidence and attested transitions where available, classify uncertainty, and apply the consequence-specific fail-safe and recovery path rather than manufacturing the missing entry.",
       "acceptance_evidence": [],
       "residual_assumption": "External evidence can itself be missing, collusive, or compromised and may never establish the original history conclusively.",
-      "owner_ref": "new-book-plans/book-1-time-model-decision.md::cannot detect a deleted fact inside a snapshot",
-      "temporal_status": "Unprovable within T0 and within any single snapshot; T1 narrows only cross-attested-snapshot disappearance.",
+      "owner_ref": "new-book-plans/book-1-time-model-decision.md::It cannot detect a fact deleted before or inside the first",
+      "temporal_status": "Unprovable within any single snapshot; the current T1 path narrows only selected disappearance between accepted supplied snapshots and does not cure genesis or pre-attestation uncertainty.",
       "book2_handoff": "Preserve independent sources and history that can expose some omissions or deletions, while reporting genesis and pre-attestation uncertainty honestly."
     },
     {
@@ -541,10 +537,10 @@
           "kind": "generated",
           "role": "exposes_gap",
           "supports": "RI-13",
-          "ref": "new-book-plans/record-integrity-red-team.md::## T0 indistinguishability boundary"
+          "ref": "new-book-plans/record-integrity-red-team.md::## Flat-snapshot indistinguishability boundary"
         }
       ],
-      "known_failure": "Current rules deliberately read many absences, but the positive writable-premise ledger does not by itself establish which record was complete, who could attest that completeness, or whether non-entry, withholding, deletion, inapplicability, and an unperformed act are distinguishable on each route.",
+      "known_failure": "Current rules deliberately read many absences. T1 derives `complete(item, ScopeTag)`, while T2 and T3 compress paired exact-field observations into typed status tags and then rejoin raw fields and matching observations at consequential consumers. Those admitted observations and status tags do not establish writer authority, independent control, exhaustive disclosure, immutable storage, truth, or whether non-entry, withholding, deletion, inapplicability, authorised disposition, and an unperformed act are distinguishable on every route.",
       "target_contract": "Inventory every negative consumer as an effective-premise route; for each, state finite scope, completeness author and witness, permitted and prohibited inference, assertion and deletion polarity, uncertainty, challenge, continuity, and recovery, preserving the settled distinction between an unadjudicated accusation and an unperformed remedy.",
       "acceptance_evidence": [
         "A generated negative-consumer inventory reconciled with every rule that reads absence.",
@@ -577,7 +573,7 @@
         "RI-12",
         "RI-13"
       ],
-      "failure_posture": "Target posture: no source change becomes effective without authorisation. Current T0 does not implement this: missing authorisation or a false label cannot prevent an independently supplied source change. A disputed semantic effect must not widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power."
+      "failure_posture": "Target posture: no source change becomes effective without authorisation. The current amendment mechanism still does not implement this: missing authorisation or a false label cannot prevent an independently supplied source change. A disputed semantic effect must not widen restrictive power or lower standing, floors, liberty, challenge, or remedy; apply consequence-specific polarity and independent review without granting a blanket veto, rolling back unrelated rights-expanding effects, or extending expired power."
     },
     {
       "id": "RC-2",
@@ -662,18 +658,44 @@
         "RI-13"
       ],
       "failure_posture": "A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome."
+    },
+    {
+      "id": "RC-6",
+      "title": "Temporal transition, order, and review records",
+      "description": "Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`, `observe`, `passport`, and `replace` inputs used by the staged T1 reconciliation, T2 order, and T3 review-window and lease paths. Closed temporal conclusions retain an identifier and type tag while consequential consumers rejoin raw payload fields and their matching observations. Shared `approves`, `cite`, and `broken` inputs remain assigned to RC-1, RC-3, and RC-2 respectively because they also serve non-temporal routes; those classifications do not authenticate their temporal uses.",
+      "assurance_claims": [
+        "RI-1",
+        "RI-2",
+        "RI-3",
+        "RI-4",
+        "RI-5",
+        "RI-6",
+        "RI-7",
+        "RI-8",
+        "RI-9",
+        "RI-10",
+        "RI-11",
+        "RI-12",
+        "RI-13"
+      ],
+      "failure_posture": "Missing, disputed, stale, replayed, divergent, or unauthenticated temporal evidence cannot extend restrictive public power, revoke independently evidenced completed relief, or manufacture an unperformed release. Once an accepted transition and both exact predecessor-standing witnesses are supplied, omitted successor carry does not erase that standing or its floor; withholding a predecessor witness can still leave both non-derivable. Repository derivation is conditional on supplied exact-field evidence; exhaustive payload disclosure, writer authenticity, witness independence, storage integrity, successor arrival, and outside time progression remain external assurance obligations."
     }
   ],
   "premise_classes": {
     "adjust": "RC-1",
     "approves": "RC-1",
     "attack": "RC-3",
+    "authorized": "RC-6",
     "broken": "RC-2",
     "capture": "RC-3",
+    "carries": "RC-6",
+    "challenge": "RC-6",
     "choose": "RC-2",
     "cite": "RC-3",
     "clear": "RC-3",
+    "continue": "RC-6",
     "cruel": "RC-3",
+    "date": "RC-6",
     "deceive": "RC-3",
     "family": "RC-4",
     "forgive": "RC-3",
@@ -682,13 +704,18 @@
     "home": "RC-4",
     "injure": "RC-3",
     "judge": "RC-3",
+    "limit": "RC-6",
+    "list": "RC-6",
     "married": "RC-4",
     "mature": "RC-2",
+    "observe": "RC-6",
     "parent": "RC-4",
+    "passport": "RC-6",
     "permanent": "RC-1",
     "person": "RC-2",
     "public": "RC-2",
     "put": "RC-3",
+    "replace": "RC-6",
     "rotten": "RC-2",
     "show": "RC-3",
     "sibling": "RC-4",
@@ -936,25 +963,25 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/01-what-counts-as-evidence.md::entry never written look exactly alike.",
-      "current_claim": "Deletion and non-entry are indistinguishable inside the current record.",
-      "classification": "preserved",
-      "reason": "This assurance case specifies an external/T1 control boundary and does not add a detector.",
-      "future_trigger": "Revise only if a later edition accurately introduces independently attested transition evidence, while retaining the intra-snapshot limit."
+      "artifact_ref": "book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a",
+      "current_claim": "A person never entered and a deletion before or inside the first attested record remain undetectable; selected later standing-carry omissions can now be exposed.",
+      "classification": "revised",
+      "reason": "The staged path detects selected conflicts and disappearance only across accepted supplied snapshots; it does not distinguish deletion, withholding, and non-entry inside one snapshot.",
+      "future_trigger": "Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit."
     },
     {
-      "artifact_ref": "book-1/03-who-holds-the-pen.md::It does not mean the record is any harder to falsify",
+      "artifact_ref": "book-1/03-who-holds-the-pen.md::It does not prove independent",
       "current_claim": "Cross-body pens raise decision cost but do not assure record authorship.",
       "classification": "preserved",
       "reason": "The case distinguishes decisional independence from record witnessing and changes no pen rule.",
       "future_trigger": "Revise when authenticated, independently witnessed writer controls are formal and tested."
     },
     {
-      "artifact_ref": "book-1/05-voiding.md::society can guarantee what follows from its record. It cannot guarantee its record.",
-      "current_claim": "The current society guarantees derivation from a snapshot, not the snapshot itself.",
-      "classification": "preserved",
-      "reason": "The top assurance verdict is explicitly not established for T0.",
-      "future_trigger": "Narrow, never erase, after T1 and external assurance evidence exists; genesis, truth, and liveness limits remain."
+      "artifact_ref": "book-1/05-voiding.md::They do not make the record self-authenticating.",
+      "current_claim": "The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive.",
+      "classification": "revised",
+      "reason": "The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service.",
+      "future_trigger": "Narrow, never erase, when scoped external assurance evidence exists; genesis, truth, exhaustive disclosure, storage integrity, and liveness limits remain."
     },
     {
       "artifact_ref": "book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds",
@@ -979,17 +1006,17 @@
     },
     {
       "artifact_ref": "book-1/method.md::Coverage outside the declared fixtures and generated",
-      "current_claim": "Coverage outside declared fixtures and the placement matrix remains accidental chapter-pin coverage, not a guarantee.",
+      "current_claim": "Coverage outside declared fixtures and generated bounded suites remains accidental chapter-pin coverage, not a guarantee.",
       "classification": "revised",
-      "reason": "The method now names the placement matrix as a bounded exception while general runtime deletion detection and transition assurance remain absent.",
-      "future_trigger": "Revise only to the exact scope of a later differential harness and deployed assurance evidence."
+      "reason": "The method can name the placement matrix and staged temporal harness as bounded exceptions while runtime authentication, exhaustive deletion detection, storage integrity, and external liveness remain absent.",
+      "future_trigger": "Revise only to the exact scope of later generated suites and independently deployed assurance evidence."
     },
     {
       "artifact_ref": "book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and",
       "current_claim": "Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented.",
       "classification": "preserved",
-      "reason": "The case is a target and acceptance gate, not an implemented institutional or operational defence.",
-      "future_trigger": "Reassess the Part V capture verdict after formal controls, independent readers, and external assurance evidence land."
+      "reason": "The staged T3 path adds bounded formal safety controls, but the supplied premises, witnesses, source deployment, storage, readers, and institutional action remain externally capturable.",
+      "future_trigger": "Reassess the Part V capture verdict after authenticated operational controls, independent readers, and external assurance evidence land."
     }
   ],
   "acceptance_gate": [
@@ -1015,7 +1042,7 @@
       "id": "RA-4",
       "requirement": "No cross-snapshot, order, expiry, deadline, or liveness claim is promoted before its T1/T2/T3 gate and differential evidence exists.",
       "evidence_needed": "Two-snapshot harness, ordering tests where applicable, T3 controls, and explicit external liveness evidence.",
-      "owner_ref": "TODO.md::Implement the ratified T3 temporal path in stages"
+      "owner_ref": "new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate"
     },
     {
       "id": "RA-5",

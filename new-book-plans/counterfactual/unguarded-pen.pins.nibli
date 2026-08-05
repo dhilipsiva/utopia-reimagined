@@ -1,11 +1,11 @@
 # ── Counterfactual: one unguarded credential route ADDED ─────────────────────
 # A different class from its siblings: the constitution PLUS a line, not minus
 # one. The added rule is the one somebody might someday write — a pen route
-# that forgets ~rotten and ~broken — and this fixture is what the world looks
-# like the day they do. It exists to justify keeping Article 4's ~broken and
-# ~rotten conjuncts, which are subsumed today and are the ONLY thing standing
-# here. If false(Tyr) below ever reads TRUE, the conjuncts were removed and
-# the justification with them.
+# that forgets ~match(·, CarriedVoid) and ~broken — and this fixture is what
+# the world looks like the day they do. It exists to justify keeping Article
+# 4's matching carried-void and recall checks, which are subsumed today and are
+# the ONLY thing standing here. If false(Tyr) below ever reads TRUE, the
+# conjuncts were removed and the justification with them.
 :expect-pins 5
 
 # The route bypasses the guards: a signer voided in a prior period gets a pen,

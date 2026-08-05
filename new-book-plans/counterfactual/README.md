@@ -11,7 +11,7 @@ Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
 - **A line deleted** (1 removed, 0 added) — `no-person-line`, `no-public-court`,
   `no-choose-boss`. What the world loses without the line.
 - **A line changed** (1 removed, 1 added) — `no-dead-conjuncts`: Article 4's multi-sig with
-  its `~broken`/`~rotten` signer checks stripped. It has **no paired pin file on purpose**:
+  its `~broken`/`~match(·, CarriedVoid)` signer checks stripped. It has **no paired pin file on purpose**:
   `verify.sh` runs chapters 4 and 5's own pin files against it, and their passing unchanged
   is the standing proof those conjuncts decide nothing today. The proof strengthens by
   itself as those suites grow.
@@ -58,7 +58,7 @@ Regenerate the changed-line and added-line fixtures with:
 python3 - <<'EOF'
 import pathlib
 s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
-old = " & ~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b) -> false($audited)."
+old = " & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) -> false($audited)."
 assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
 pathlib.Path('new-book-plans/counterfactual/no-dead-conjuncts.nibli').write_text(
     s.replace(old, " -> false($audited)."), encoding='utf-8')

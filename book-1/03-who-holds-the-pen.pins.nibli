@@ -109,6 +109,30 @@ clear(Adam).
 person(Voss).
 injure(Voss, Ivo).
 judge(Court, Voss).
+# T3 fixture: the judgment names one case and the current review binds that
+# exact case, person, Court, custody authority, window, and renewal.
+cite(Court, Case_Voss, Voss).
+observe(Chronicle, Case_Voss, Voss, CaseScope).
+observe(TemporalReview, Case_Voss, Voss, CaseScope).
+observe(Chronicle, Case_Voss, Court, HolderScope).
+observe(TemporalReview, Case_Voss, Court, HolderScope).
+observe(Chronicle, Case_Voss, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Voss, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Voss, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Voss, Ivo, InjuryVictimScope).
+authorized(Case_Voss, ActiveCustody, Case_Voss).
+observe(Chronicle, Case_Voss, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Voss, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Voss, Case_Voss, CaseBindingScope).
+observe(TemporalReview, Case_Voss, Case_Voss, CaseBindingScope).
+limit(Case_Voss, Case_Voss, Window_Custody).
+observe(Chronicle, Case_Voss, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Voss, Window_Custody, LimitScope).
+continue(Case_Voss, Epoch_Current).
+observe(Chronicle, Case_Voss, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Voss, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Voss).
+approves(TemporalReview, Case_Voss).
 
 ? prisoner(Voss).
 # => TRUE

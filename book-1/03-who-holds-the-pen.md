@@ -25,15 +25,19 @@ of the others. And they come apart in different directions — standing is never
 away, a pen is taken by recall, and credibility is the one of the three that two other
 people, seated by different bodies, can destroy between them.
 
-You are allowed to pick one up if three things are true at once. One of the two bodies
-seated you. You have not been recalled. And you were not voided in an earlier period.
-The conditions are word for word the same whichever body it was, which is deliberate:
-two doors are only worth having if they are the same weight, and an attacker uses the
+You are allowed to pick one up only if one of the two bodies seated you, you have not
+been recalled, the witnessed current record positively carries your clear status
+forward, and no reconciled void follows you from the earlier record. The record must be
+the selected end of one witnessed constitutional record line; a competing line does
+not count. Absence is no longer treated as cleanliness: withhold the clear history
+or either witness and the pen stays closed. The
+conditions are word for word the same whichever body it was, which is deliberate: two
+doors are only worth having if they are the same weight, and an attacker uses the
 cheaper one.
 
 That is all, and the ordering matters: this is a rule that runs, not a list of
 qualifications someone checks. Nobody grants you the pen. Nobody signs your
-certificate. If the three conditions hold, you have it; if any one of them fails, you
+certificate. If the conditions hold, you have it; if any one of them fails, you
 do not, and no amount of ceremony or seniority makes up the difference.
 
 ## The gap that used to be here
@@ -74,26 +78,26 @@ exact about how much it adds, because the obvious reading gives it too much. Soc
 Puppet now need to have been seated by two different bodies, so capturing one body is
 no longer enough. That is a real gain against a capturer with reach into one place.
 
-It is not a gain against the thing that actually worries this chapter. Seating is
-recorded as a fact somebody writes, and whoever can write that the electorate chose
-Sock can equally write that the convocation chose Puppet. Two bodies means two
-falsifications instead of one. It does not mean the record is any harder to falsify —
-only that it takes twice as much of the same thing, from someone who already has it.
+The attack is harder now for a second reason. Seating is still a fact somebody writes,
+but a forged seating no longer produces a pen without clear history reconciled across
+witnessed records. A capturer must also compromise or fool both public witnesses. That
+is a real separation of failure. It is not proof that any writer told the truth: two
+compromised witnesses can agree on the same invented history, and the rules will accept
+their agreement.
 
-Measured, the whole attack is six entries: two seatings, two examinations, two
-recorded findings. And one detail of the measurement deserves to be kept, because it
-shows what the voiding machinery consults and what it never thinks to. The victim
+One detail of the attack deserves to be kept, because it shows what the voiding
+machinery consults and what it never thinks to. The victim
 does not need to exist. Nobody has to write the target onto the roster of persons —
 the rule reads the examinations, the findings, and the signers' cleanliness, and
-personhood is not among the things it asks about. Run the six entries against a name
+personhood is not among the things it asks about. Run the completed attack against a name
 the record has never held, and the void arrives anyway: a person-shaped hole in the
 record, voided and docked, never having been a person there at all. The floor asks
 whether you are a person before it owes you anything. The instrument for destroying
 you does not.
 
-## Recall and rot
+## Recall and carried history
 
-Two of the three conditions are about what has already happened to you, and they
+Recall and carried history are both about what has already happened to you, and they
 behave differently from each other in a way worth noticing.
 
 Boss was seated, and then recalled. Boss has no pen. This is the same Boss from the
@@ -104,13 +108,20 @@ things were separated precisely so that one could be taken while the other could
 Vex was also seated, and was never recalled — but Vex was voided in an earlier period.
 Vex has no pen either.
 
-The second case is the more interesting one, because it is about time. A person whose
-credibility was voided is not merely marked; they carry that mark forward into every
-period that follows, and it blocks them from holding the pen again. Without that
-carry, a voided auditor could be voided on Monday and sign someone else's voiding on
-Tuesday, because within any single snapshot of the record the voiding of Vex and the
-voiding of Vex's victim would sit side by side with nothing to say which came first.
-Time has to be put in by hand, and this is where it goes.
+The second case is the more interesting one, because it crosses records. A person
+whose credibility was voided is not merely marked. The later record must name the one
+it replaces; the exact inventory entry for each record and the earlier void must be separately witnessed;
+and both public bodies must report the same carry. For that history to affect a pen, the
+later record must also be the selected end of the witnessed constitutional record line,
+with no competing selection. Only that matched carry blocks the pen. A bare carried mark no
+longer does anything by itself, and an omitted or invented one is reported as a defect.
+In the other direction, the pen opens only when an earlier clear status and the two
+reports of its carry match on that selected current record.
+
+This is narrower than a clock. It says that one witnessed record replaced another and
+that a named fact survived the crossing. It does not say how much time passed or make
+the successor arrive. But it closes the old shortcut in which a clerk could type one
+carried mark, or omit one, and have the rules treat the result as history.
 
 ## The hurried door
 
@@ -118,50 +129,54 @@ The conditions are word for word the same across the two doors, and the reason w
 stated above as a maxim: an attacker uses the cheaper one. The maxim is not left as
 prose. The design's checks keep a copy of this society with one line added — the door
 somebody in a hurry would someday write. *Seated by the electorate, therefore penned.*
-No recall check, no carried-mark check, everything else identical.
+No recall check, no matched-history check, everything else identical.
 
 Against that copy, ask who holds a pen. Boss does — recalled, and penned again,
-because the hurried door never asks. Vex does — carried mark and all. The two people
+because the hurried door never asks. Vex does — matched void and all. The two people
 the conditions exist to stop are exactly the two the extra line lets through, which
 is the maxim executed rather than merely stated: a cheaper door does not lower the average
 price of the pen, it sets the price, for everyone willing to walk around the building.
 
 Then ask whether the attack goes through — Vex, penned by the hurried door, signing a
 voiding against an innocent — and it does not. Not because of anything at the doors.
-Because the voiding rule itself asks the same questions again: each signature is
-checked for recall and for the carried mark at the moment of signing, by conditions
-that sit on the voiding rule and have never once decided anything in this design's
-life — every pen that reaches them has already passed the same checks at a door. They
-are redundant every ordinary day. The day a hurried door exists, they are the only
-thing standing.
+The voiding rule repeats two adverse guards at the moment of signing: the signer must
+not be recalled or otherwise broken, and must have no matched carried void. Those
+guards are redundant for every pen produced by the proper doors. The day a hurried
+door exists, they stop Boss and Vex again.
+
+The repetition is now deliberately partial. The proper doors also require positive,
+matched clear history; the voiding rule does not ask for that a second time. A hurried
+door could therefore admit a signer whose clear history was never reconciled, provided
+no void or broken mark blocks them. The control proves that the repeated guards catch
+the two attacks they name. It does not prove that every condition at the doors is
+duplicated at the signing table.
 
 That is what the copy in the checks is for. A second copy of a condition looks like
 dead weight exactly until the first copy is skipped, and whoever tidies it away —
-*this is already checked at the door* — has disarmed the guard on the one day it was
-built for. The doors are where the conditions live. The signing is where they are
-asked again, by a rule that does not trust its own doors, and this design keeps it
-that way on purpose.
+*this is already checked at the door* — has disarmed that guard on the one day it was
+built for. The doors hold the full conditions. The signing table repeats the two
+adverse ones, and the distinction now matters.
 
 Those doors also answer a question this book could not ask until late: what happens
 to the pen when a voided examiner is forgiven. Forgiveness exists — a later chapter
 gives it its due — and it restores what a voiding takes from a person's standing in
 the record: the weight of their word. It does not restore the pen, and
-the reason is in the credential doors you have just watched: they read the carried
-mark itself, not the conclusion the mark once fed. The mark stays on the record —
-forgiven, not erased — and a door that reads the mark stays shut.
+the reason is in the credential doors you have just watched: they read the matched
+carried history, not the conclusion that history once fed. The mark stays in the
+selected current record — forgiven, not erased — and a door that reads it stays shut.
 
 Be exact about what that does and does not mean, because two obvious readings are
 both wrong. It is not that being voided costs you the pen; the next chapter is
 careful about that, and the credential rule never asks whether your word currently
 counts. What costs the pen is the mark a voiding leaves behind when it crosses into
-the following period, and that is a different thing arriving later. Nor is it that a
+the selected current record, and that is a different thing arriving later. Nor is it that a
 forgiven examiner is waiting to be seated again. The record's marked auditor holds
 his seat and always did — none of this touches a seat — and if he were forgiven,
 measured on a copy of the record, his word would return while the pen stayed gone,
 and seating him a second time would move nothing at all. The seat is not what the
 door reads. The mark is. So the word comes back by forgiveness and the pen does not:
 nothing in this design removes a mark, and the door goes on reading it for as long as
-the record keeps it. The way back for a person's word and the way back to power are
+the selected current record keeps it. The way back for a person's word and the way back to power are
 different roads, and the second one has no pavement.
 
 ## The other pen

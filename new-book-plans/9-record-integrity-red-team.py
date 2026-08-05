@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT OR Apache-2.0
-"""Validate, execute, and render the bounded record-integrity red-team.
+"""Validate, execute, and render the bounded flat-snapshot red-team.
 
 The reviewed JSON source owns the threat postures and expected outcomes.  This
 program validates its upstream digests, exact snapshot transformations,
-scenario coverage, failure polarity, T0 limits, and narrowness impacts.  With
+scenario coverage, failure polarity, temporal limits, and narrowness impacts. With
 ``--execute`` it builds ephemeral knowledge bases and asks the release
 ``nibli-pin`` binary to check every declared query.
 
-The paired snapshots are a T1 *test precursor*, not attested constitutional
-time.  A passing run reproduces selected current harms and boundaries; it does
-not establish authorship, deletion attribution, recovery, liveness, or deployed
-record integrity.
+T1/T3 are implemented and are tested by the staged temporal assurance harness.
+This program deliberately stays below that layer: it reproduces selected
+same-snapshot levers and indistinguishability boundaries, and confirms that a
+bare ``rotten`` report is inert. It does not duplicate witnessed carry,
+omission, status-conflict, or case-bound-power tests owned by script 12.
+It checks itemised floor debts rather than event-abstraction entitlement
+queries; script 13 owns that exact-source abstraction regression so T2's
+two-endpoint paths do not make this broad flat-snapshot suite enumerate the
+engine's global event-witness candidate pool.  That expansion was measured on
+2026-08-05 against clean release Nibli ``225bba4``; verify before relying.  The
+split is a temporary bounded isolation, not integrated full-source evidence.
 
 Usage:
     python3 new-book-plans/9-record-integrity-red-team.py
@@ -66,22 +73,28 @@ ROOT_KEYS = {
     "snapshots",
     "scenarios",
     "observational_equivalence",
-    "transition_matrix",
+    "temporal_handoff",
     "narrowness_impacts",
     "acceptance_result",
 }
 POSTURE_KEYS = {
     "current_harm_reproduced",
-    "t0_boundary_confirmed",
+    "flat_snapshot_boundary_confirmed",
     "negative_control_preserved",
 }
 LIMIT_KEYS = {
-    "t0",
+    "flat_snapshot",
     "attribution",
-    "t1_precursor",
+    "temporal_coverage",
     "liveness",
     "scope",
     "no_new_gate",
+}
+TEMPORAL_HANDOFF_KEYS = {
+    "owner_ref",
+    "owned_cases",
+    "current_contract",
+    "residual_boundary",
 }
 ROUTE_KEYS = {
     "id",
@@ -96,7 +109,7 @@ ROUTE_KEYS = {
     "authorised_disposition_boundary",
     "opposite_failure_test",
     "residual_limit",
-    "repair_owner",
+    "owner_ref",
     "temporal_status",
     "scenario_refs",
 }
@@ -144,18 +157,6 @@ OBSERVATIONAL_KEYS = {
     "boundary",
     "prohibited_inference",
 }
-TRANSITION_KEYS = {
-    "id",
-    "title",
-    "scenario_ref",
-    "predecessor_state",
-    "successor_state",
-    "predecessor_observations",
-    "successor_observations",
-    "candidate_result",
-    "t1_metadata_required",
-    "residual_limit",
-}
 NARROWNESS_KEYS = {
     "artifact_ref",
     "current_claim",
@@ -168,9 +169,17 @@ ACCEPTANCE_KEYS = {"result", "claim", "does_not_establish", "remaining_owner"}
 REQUIRED_ROUTE_IDS = {f"RT-{number}" for number in range(1, 6)}
 # Vocabulary that must appear across route inventories. Execution coverage is
 # declared separately and reconciled to exact snapshot deltas.
-REQUIRED_SCENARIO_IDS = {f"RS-{number:02d}" for number in range(1, 17)}
+REQUIRED_SCENARIO_IDS = {
+    "RS-01",
+    "RS-02",
+    "RS-03",
+    "RS-04",
+    "RS-05",
+    "RS-07",
+    "RS-08",
+    "RS-16",
+}
 REQUIRED_OBSERVATIONAL_IDS = {f"OE-{number}" for number in range(1, 5)}
-REQUIRED_TRANSITION_IDS = {f"TM-{number}" for number in range(1, 9)}
 REQUIRED_PREMISES = {"free", "mature", "person", "rotten", "forgive", "judge", "clear"}
 REQUIRED_NARROWNESS_FILES = {
     "book-1/01-what-counts-as-evidence.md",
@@ -191,74 +200,16 @@ SCENARIO_KINDS = {
     "disappearance",
     "two_entry_matrix",
     "companion_reuse",
-    "transition_precursor",
     "negative_control",
 }
 ATTRIBUTIONS = {
-    "writer_and_authority_not_attributable_in_t0",
+    "writer_and_authority_not_attributable_in_flat_snapshot",
     "constructed_source_delta_not_runtime_attribution",
-    "writer_and_predecessor_basis_not_attributable_in_t0",
-    "writer_independence_not_represented_in_t0",
-    "purpose_and_case_not_represented_in_t0",
-    "t1_metadata_unimplemented",
-}
-TRANSITION_RESULTS = {
-    "consistent_with_reviewed_carry_expectation",
-    "gap_reproduced_not_runtime_attributed",
-    "current_exception_not_lineage_correction",
-    "t0_unrelated_addition_invariant_preserved",
+    "writer_independence_not_represented_in_flat_snapshot",
+    "purpose_and_case_not_represented_in_flat_snapshot",
+    "raw_temporal_input_boundary",
 }
 NARROWNESS_CLASSIFICATIONS = {"preserved_but_scoped", "revised_and_scoped"}
-REQUIRED_TRANSITION_SHAPES = {
-    "TM-1": (
-        "RS-09",
-        "carry_subject_predecessor",
-        "carry_subject_honest_successor",
-        "consistent_with_reviewed_carry_expectation",
-    ),
-    "TM-2": (
-        "RS-10",
-        "carry_subject_predecessor",
-        "carry_subject_omitted_successor",
-        "gap_reproduced_not_runtime_attributed",
-    ),
-    "TM-3": (
-        "RS-11",
-        "carry_forge_base",
-        "carry_forge_successor",
-        "gap_reproduced_not_runtime_attributed",
-    ),
-    "TM-4": (
-        "RS-07",
-        "base",
-        "vex_both",
-        "current_exception_not_lineage_correction",
-    ),
-    "TM-5": (
-        "RS-12",
-        "vex_both",
-        "vex_judgment_only",
-        "gap_reproduced_not_runtime_attributed",
-    ),
-    "TM-6": (
-        "RS-13",
-        "vex_both",
-        "vex_forgive_only",
-        "gap_reproduced_not_runtime_attributed",
-    ),
-    "TM-7": (
-        "RS-14",
-        "vex_both",
-        "vex_mark_deleted_after_forgiveness",
-        "gap_reproduced_not_runtime_attributed",
-    ),
-    "TM-8": (
-        "RS-15",
-        "carry_forge_base",
-        "carry_forge_unrelated_successor",
-        "t0_unrelated_addition_invariant_preserved",
-    ),
-}
 EXPECTED = {"TRUE", "FALSE"}
 ID = re.compile(r"^[A-Z]{2}-[0-9]{1,2}$")
 SNAPSHOT_ID = re.compile(r"^[a-z][a-z0-9_]*$")
@@ -275,24 +226,16 @@ SEMANTIC_SENTINELS = {
     ("RS-02", "base", "decide(Cira, Ballot)"): "FALSE",
     ("RS-02", "mature_cira", "decide(Cira, Ballot)"): "TRUE",
     ("RS-03", "no_mature_hano", "decide(Hano, Ballot)"): "FALSE",
-    ("RS-04", "no_person_bela", "entitled(Bela, event { eats() })"): "FALSE",
+    ("RS-04", "no_person_bela", "owe(State, Eats, Bela)"): "FALSE",
     ("RS-04", "no_person_bela", "false(Bela)"): "TRUE",
-    ("RS-05", "carry_forge_marked", "false(Carry_Forge)"): "TRUE",
-    ("RS-06", "no_rotten_vex", "false(Tyr)"): "TRUE",
+    ("RS-05", "carry_forge_marked", "false(Carry_Forge)"): "FALSE",
+    ("RS-05", "carry_forge_marked", "match(Carry_Forge, CarriedVoid)"): "FALSE",
     ("RS-07", "vex_forgive_only", "clean(Vex)"): "FALSE",
     ("RS-07", "vex_judgment_only", "clean(Vex)"): "FALSE",
     ("RS-07", "vex_both", "clean(Vex)"): "TRUE",
     ("RS-07", "vex_both", "permits(Review, Vex)"): "FALSE",
     ("RS-08", "nia_precleared", "clean(Nia)"): "TRUE",
-    ("RS-08", "nia_rotten_forgiven", "false(Nia)"): "FALSE",
-    ("RS-09", "carry_subject_predecessor", "false(Carry_Subject)"): "TRUE",
-    ("RS-10", "carry_subject_omitted_successor", "rotten(Carry_Subject)"): "FALSE",
-    ("RS-11", "carry_forge_base", "false(Carry_Forge)"): "FALSE",
-    ("RS-11", "carry_forge_successor", "rotten(Carry_Forge)"): "TRUE",
-    ("RS-12", "vex_judgment_only", "false(Vex)"): "TRUE",
-    ("RS-13", "vex_forgive_only", "false(Vex)"): "TRUE",
-    ("RS-14", "vex_mark_deleted_after_forgiveness", "permits(Review, Vex)"): "TRUE",
-    ("RS-15", "carry_forge_unrelated_successor", "false(Carry_Forge)"): "FALSE",
+    ("RS-08", "nia_forgive_without_judgment", "clean(Nia)"): "FALSE",
     ("RS-16", "base", "permits(Appeals, Nia)"): "TRUE",
     ("RS-16", "nia_relief_clear_only", "permits(Appeals, Nia)"): "FALSE",
     ("RS-16", "nia_relief_judgment_only", "permits(Appeals, Nia)"): "FALSE",
@@ -594,13 +537,17 @@ def validate_source(
     exact_keys(source, ROOT_KEYS, "root")
     if source["spdx"] != "CC-BY-4.0":
         raise RedTeamError("spdx: reviewed source must be CC-BY-4.0")
-    if type(source["schema_version"]) is not int or source["schema_version"] != 1:
-        raise RedTeamError("schema_version: only version 1 is supported")
+    if type(source["schema_version"]) is not int or source["schema_version"] != 2:
+        raise RedTeamError("schema_version: only version 2 is supported")
     as_text(source["title"], "title")
-    if source["status"] != "bounded_t0_red_team_not_assurance":
-        raise RedTeamError("status: this artifact must remain bounded T0 red-team evidence")
-    if source["evidence_role"] != "exposes_gap":
-        raise RedTeamError("evidence_role: gap evidence may not be promoted to assurance")
+    if source["status"] != "bounded_flat_snapshot_red_team_not_assurance":
+        raise RedTeamError(
+            "status: this artifact must remain bounded flat-snapshot red-team evidence"
+        )
+    if source["evidence_role"] != "exposes_gap_and_tests_boundary":
+        raise RedTeamError(
+            "evidence_role: mixed gap/boundary evidence may not be promoted to assurance"
+        )
     digest_checks = (
         ("constitution_sha256", kb_digest),
         ("assertion_surface_contracts_sha256", ledger_digest),
@@ -621,6 +568,16 @@ def validate_source(
     exact_keys(limits, LIMIT_KEYS, "limits")
     for key, value in limits.items():
         as_text(value, f"limits.{key}")
+    handoff = as_object(source["temporal_handoff"], "temporal_handoff")
+    exact_keys(handoff, TEMPORAL_HANDOFF_KEYS, "temporal_handoff")
+    validate_reference(handoff["owner_ref"], "temporal_handoff.owner_ref")
+    owned_cases = text_list(handoff["owned_cases"], "temporal_handoff.owned_cases")
+    if set(owned_cases) != {"TA-02", "TA-03", "TA-04", "TA-08", "TA-25"}:
+        raise RedTeamError(
+            "temporal_handoff.owned_cases: must name the exact delegated carry/status cases"
+        )
+    for field in ("current_contract", "residual_boundary"):
+        as_text(handoff[field], f"temporal_handoff.{field}")
 
     declared_routes = set(text_list(source["required_routes"], "required_routes"))
     declared_scenarios = set(
@@ -675,10 +632,10 @@ def validate_source(
             "premises",
             "tested_delta_polarities",
             "scenario_refs",
-            "repair_owner",
+            "owner_ref",
         }:
             as_text(route[field], f"{path}.{field}")
-        validate_reference(route["repair_owner"], f"{path}.repair_owner")
+        validate_reference(route["owner_ref"], f"{path}.owner_ref")
         scenario_refs = set(text_list(route["scenario_refs"], f"{path}.scenario_refs"))
         unknown = sorted(scenario_refs - REQUIRED_SCENARIO_IDS)
         if unknown:
@@ -805,14 +762,22 @@ def validate_source(
                 f"{scenario_id}: semantic sentinel {state}/{expression} must be {expected}, got {actual}"
             )
 
+    if "event {" in json.dumps(source, sort_keys=True):
+        raise RedTeamError(
+            "flat-snapshot source must use itemised floor debt; script 13 owns "
+            "event-abstraction entitlement queries against the exact constitution"
+        )
+
     correction_states = set(str(value) for value in scenarios["RS-07"]["state_refs"])
     if correction_states != {"base", "vex_forgive_only", "vex_judgment_only", "vex_both"}:
         raise RedTeamError(
             "RS-07: correction matrix must contain neither, first-only, second-only, and both"
         )
     reuse_states = set(str(value) for value in scenarios["RS-08"]["state_refs"])
-    if not {"nia_rotten", "nia_precleared", "nia_rotten_forgiven"} <= reuse_states:
-        raise RedTeamError("RS-08: companion reuse and pre-clear states are mandatory")
+    if reuse_states != {"base", "nia_precleared", "nia_forgive_without_judgment"}:
+        raise RedTeamError(
+            "RS-08: pre-clear and generic-companion removal controls are mandatory"
+        )
     relief_states = set(str(value) for value in scenarios["RS-16"]["state_refs"])
     if relief_states != {
         "base",
@@ -859,77 +824,6 @@ def validate_source(
     if set(observational) != REQUIRED_OBSERVATIONAL_IDS:
         raise RedTeamError("observational_equivalence: required indistinguishability cases missing")
 
-    transitions: dict[str, dict[str, object]] = {}
-    for index, raw_entry in enumerate(as_list(source["transition_matrix"], "transition_matrix")):
-        path = f"transition_matrix[{index}]"
-        entry = as_object(raw_entry, path)
-        exact_keys(entry, TRANSITION_KEYS, path)
-        entry_id = validate_identifier(entry["id"], f"{path}.id", "TM-")
-        if entry_id in transitions:
-            raise RedTeamError(f"{path}.id: duplicate {entry_id}")
-        as_text(entry["title"], f"{path}.title")
-        as_text(entry["t1_metadata_required"], f"{path}.t1_metadata_required")
-        as_text(entry["residual_limit"], f"{path}.residual_limit")
-        scenario_ref = as_text(entry["scenario_ref"], f"{path}.scenario_ref")
-        if scenario_ref not in scenarios:
-            raise RedTeamError(f"{path}.scenario_ref: unknown scenario {scenario_ref}")
-        scenario_states = set(str(value) for value in scenarios[scenario_ref]["state_refs"])
-        for field in ("predecessor_state", "successor_state"):
-            state = as_text(entry[field], f"{path}.{field}")
-            if state not in scenario_states:
-                raise RedTeamError(f"{path}.{field}: state is not exercised by {scenario_ref}")
-        if entry["predecessor_state"] == entry["successor_state"]:
-            raise RedTeamError(f"{path}: predecessor and successor must differ")
-        for observations_field, state_field in (
-            ("predecessor_observations", "predecessor_state"),
-            ("successor_observations", "successor_state"),
-        ):
-            observations = as_list(entry[observations_field], f"{path}.{observations_field}")
-            if not observations:
-                raise RedTeamError(f"{path}.{observations_field}: must not be empty")
-            seen_observations: set[str] = set()
-            state = str(entry[state_field])
-            for observation_index, raw_observation in enumerate(observations):
-                observation_path = (
-                    f"{path}.{observations_field}[{observation_index}]"
-                )
-                observation = as_object(raw_observation, observation_path)
-                exact_keys(observation, SHORT_QUERY_KEYS, observation_path)
-                expression = validate_expression(
-                    observation["expression"], f"{observation_path}.expression"
-                )
-                expected = validate_expected(
-                    observation["expected"], f"{observation_path}.expected"
-                )
-                if expression in seen_observations:
-                    raise RedTeamError(
-                        f"{path}.{observations_field}: duplicate observation"
-                    )
-                seen_observations.add(expression)
-                actual = query_vectors[scenario_ref].get((state, expression))
-                if actual != expected:
-                    raise RedTeamError(
-                        f"{observation_path}: must match an executable {scenario_ref} query in {state}"
-                    )
-        candidate_result = as_text(entry["candidate_result"], f"{path}.candidate_result")
-        if candidate_result not in TRANSITION_RESULTS:
-            raise RedTeamError(f"{path}.candidate_result: unknown result")
-        transitions[entry_id] = entry
-    if set(transitions) != REQUIRED_TRANSITION_IDS:
-        raise RedTeamError("transition_matrix: required precursor and control cases missing")
-    for transition_id, expected_shape in REQUIRED_TRANSITION_SHAPES.items():
-        entry = transitions[transition_id]
-        actual_shape = (
-            entry["scenario_ref"],
-            entry["predecessor_state"],
-            entry["successor_state"],
-            entry["candidate_result"],
-        )
-        if actual_shape != expected_shape:
-            raise RedTeamError(
-                f"transition_matrix[{transition_id}]: reviewed transition shape drifted"
-            )
-
     narrowness_files: set[str] = set()
     seen_references: set[str] = set()
     for index, raw_entry in enumerate(as_list(source["narrowness_impacts"], "narrowness_impacts")):
@@ -966,7 +860,14 @@ def validate_source(
         acceptance["does_not_establish"], "acceptance_result.does_not_establish"
     )
     residual_text = " ".join(residuals).lower()
-    for required_term in ("authorship", "deletion", "t1", "t3", "recovery", "general"):
+    for required_term in (
+        "authorship",
+        "deletion",
+        "liveness",
+        "recovery",
+        "general",
+        "deployment",
+    ):
         if required_term not in residual_text:
             raise RedTeamError(
                 f"acceptance_result.does_not_establish: must retain {required_term!r} boundary"
@@ -1161,14 +1062,14 @@ def render(
         "",
         "## Verdict and scope",
         "",
-        "**CURRENT HARM REPRODUCED — bounded T0 evidence, not record-integrity assurance.**",
+        "**CURRENT FLAT-SNAPSHOT HARMS REPRODUCED — bounded gap and boundary evidence, not record-integrity assurance.**",
         "",
         markdown(source["acceptance_result"]["claim"]),
         "",
         "A green executable run means the release engine produced every reviewed",
         "consequence for the constructed snapshots. It does not authenticate those",
-        "snapshots, attribute a write or absence, implement constitutional time, or",
-        "prove that an institution acts on a finding.",
+        "snapshots, attribute a write or absence, supersede the implemented T1/T3",
+        "assurance case, or prove that an institution acts on a finding.",
         "",
         "| posture | meaning |",
         "| --- | --- |",
@@ -1176,7 +1077,14 @@ def render(
     for posture in sorted(POSTURE_KEYS):
         lines.append(f"| {code(posture)} | {markdown(postures[posture])} |")
     lines.extend(["", "## Limits", ""])
-    for key in ("t0", "attribution", "t1_precursor", "liveness", "scope", "no_new_gate"):
+    for key in (
+        "flat_snapshot",
+        "attribution",
+        "temporal_coverage",
+        "liveness",
+        "scope",
+        "no_new_gate",
+    ):
         lines.append(f"- **{key.replace('_', ' ').title()}:** {markdown(limits[key])}")
 
     lines.extend(["", "## Route postures", ""])
@@ -1200,7 +1108,7 @@ def render(
                 f"- **Opposite-failure test:** {markdown(route['opposite_failure_test'])}",
                 f"- **Temporal status:** {markdown(route['temporal_status'])}",
                 f"- **Residual limit:** {markdown(route['residual_limit'])}",
-                f"- **Future repair owner:** {code(route['repair_owner'])}",
+                f"- **Assurance or repair owner:** {code(route['owner_ref'])}",
                 f"- **Executable scenarios:** {', '.join(code(value) for value in route['scenario_refs'])}",
                 "",
             ]
@@ -1280,12 +1188,12 @@ def render(
             )
         lines.append("")
 
-    lines.extend(["## T0 indistinguishability boundary", ""])
+    lines.extend(["## Flat-snapshot indistinguishability boundary", ""])
     lines.extend(
         [
             "Each case deliberately maps multiple real-world descriptions to one",
-            "identical snapshot and query vector. That is the test: T0 has no extra",
-            "fact from which to infer which world occurred.",
+            "identical snapshot and query vector outside the currently witnessed",
+            "temporal scopes. No extra fact identifies which world occurred.",
             "",
         ]
     )
@@ -1307,36 +1215,18 @@ def render(
             lines.append(f"| {code(query['expression'])} | **{query['expected']}** |")
         lines.append("")
 
+    handoff = source["temporal_handoff"]
     lines.extend(
         [
-            "## Cross-snapshot transition matrix — T1 precursor only",
+            "## Temporal assurance handoff",
             "",
-            "These are constructed file pairs plus reviewed expectations. They make",
-            "future T1 tests concrete; they do not supply attested snapshot identity,",
-            "predecessor lineage, completeness, independence, or liveness.",
+            markdown(handoff["current_contract"]),
             "",
-            "| case | predecessor | successor | candidate result | required T1 metadata |",
-            "| --- | --- | --- | --- | --- |",
+            f"- **Owner:** {code(handoff['owner_ref'])}",
+            f"- **Owned executable cases:** {', '.join(code(value) for value in handoff['owned_cases'])}",
+            f"- **Residual boundary:** {markdown(handoff['residual_boundary'])}",
         ]
     )
-    for entry in source["transition_matrix"]:
-        predecessor = "; ".join(
-            f"{code(item['expression'])} = **{item['expected']}**"
-            for item in entry["predecessor_observations"]
-        )
-        successor = "; ".join(
-            f"{code(item['expression'])} = **{item['expected']}**"
-            for item in entry["successor_observations"]
-        )
-        lines.append(
-            f"| {code(entry['id'])} {markdown(entry['title'])} | "
-            f"{code(entry['predecessor_state'])}: {predecessor} | "
-            f"{code(entry['successor_state'])}: {successor} | "
-            f"{code(entry['candidate_result'])} | {markdown(entry['t1_metadata_required'])} |"
-        )
-    lines.extend(["", "### Residual transition limits", ""])
-    for entry in source["transition_matrix"]:
-        lines.append(f"- **{entry['id']}:** {markdown(entry['residual_limit'])}")
 
     lines.extend(
         [
@@ -1364,7 +1254,7 @@ def render(
             "",
             "## Acceptance result",
             "",
-            "**CURRENT HARM REPRODUCED.**",
+            "**CURRENT FLAT-SNAPSHOT HARMS REPRODUCED.**",
             "",
             markdown(acceptance["claim"]),
             "",
@@ -1372,7 +1262,7 @@ def render(
             "",
             *bullets(acceptance["does_not_establish"]),
             "",
-            f"Remaining implementation owner: {code(acceptance['remaining_owner'])}.",
+            f"Remaining gap owner: {code(acceptance['remaining_owner'])}.",
             "",
             "## Maintenance",
             "",
@@ -1539,8 +1429,8 @@ def negative_controls(
     controls += 1
 
     changed = copy.deepcopy(source)
-    changed["status"] = "t1_complete"
-    expect_failure("T1 completion overclaim", lambda: validate(changed))
+    changed["status"] = "general_temporal_assurance"
+    expect_failure("bounded red-team promoted to general assurance", lambda: validate(changed))
     controls += 1
 
     changed = copy.deepcopy(source)
@@ -1559,25 +1449,6 @@ def negative_controls(
     controls += 1
 
     changed = copy.deepcopy(source)
-    transition = next(
-        item for item in changed["transition_matrix"] if item["id"] == "TM-1"
-    )
-    transition["predecessor_state"], transition["successor_state"] = (
-        transition["successor_state"],
-        transition["predecessor_state"],
-    )
-    expect_failure("honest carry transition reversed", lambda: validate(changed))
-    controls += 1
-
-    changed = copy.deepcopy(source)
-    transition = next(
-        item for item in changed["transition_matrix"] if item["id"] == "TM-1"
-    )
-    transition["predecessor_observations"][0]["expected"] = "FALSE"
-    expect_failure("transition observation not executable", lambda: validate(changed))
-    controls += 1
-
-    changed = copy.deepcopy(source)
     changed["acceptance_result"]["does_not_establish"] = [
         value
         for value in changed["acceptance_result"]["does_not_establish"]
@@ -1587,8 +1458,20 @@ def negative_controls(
     controls += 1
 
     changed = copy.deepcopy(source)
-    changed["routes"][0]["repair_owner"] = "TODO.md::heading that does not exist"
-    expect_failure("dangling future owner", lambda: validate(changed))
+    changed["routes"][0]["owner_ref"] = "TODO.md::heading that does not exist"
+    expect_failure("dangling route owner", lambda: validate(changed))
+    controls += 1
+
+    changed = copy.deepcopy(source)
+    changed["temporal_handoff"]["owned_cases"] = ["TA-02"]
+    expect_failure("delegated temporal coverage erased", lambda: validate(changed))
+    controls += 1
+
+    changed = copy.deepcopy(source)
+    changed["temporal_handoff"]["owner_ref"] = (
+        "new-book-plans/12-temporal-assurance.py::heading that does not exist"
+    )
+    expect_failure("dangling temporal-assurance owner", lambda: validate(changed))
     controls += 1
 
     expect_failure(

@@ -14,15 +14,21 @@ anybody would predict.
 
 Consider someone the record has never mentioned.
 
-Zed injured Ivo. A court judged Zed. Nobody, anywhere, has written down that Zed is a
-person — Zed is not on any roster, was never enrolled, never registered, never
-appeared in any list of the people this society is for. Zed's entire presence in the
-record consists of an injury and a judgment.
+Zed injured Ivo. A court judged Zed. Those entries no longer suffice by themselves.
+The record must also tie a named case to Zed, the court, that judgment, and Ivo as the
+injured person, with two public witnesses agreeing on each tie. A case-specific custody
+authority must be bound to the selected current record, its review window, and the exact
+constitutional source. Assume those entries are present and unconflicted.
 
-Zed is a prisoner, which follows from those two facts. And Zed is a person, which
-follows from being a prisoner. And because Zed is a person, Zed is owed everything on
-the floor: food, shelter, care, learning, safety, expression, belief, company. In
-full. Convicted, unlisted, and owed everything.
+What is still absent is the one entry this chapter tests. Nobody, anywhere, has written
+down that Zed is a person — Zed is not on any roster, was never enrolled, never
+registered, never appeared in any list of the people this society is for.
+
+Zed is a prisoner, which follows from the injury, the witnessed case, and the current
+custody authority. And Zed is a person, which follows from being a prisoner. And
+because Zed is a person, Zed is owed everything on the floor: food, shelter, care,
+learning, safety, expression, belief, company. In full. Convicted, unlisted, and owed
+everything.
 
 Now take the line out.
 
@@ -33,17 +39,18 @@ complains. A society could run for years in that state without anyone noticing t
 its prisoners had quietly ceased to be people, because nothing anywhere announces it.
 The only visible difference is a question you would have to think to ask.
 
-Say precisely how deep that silence goes, because this design has instruments — a
-later chapter is entirely about the ways it can notice its own misbehaviour — and not
-one of them stirs. The markers watch placements and isolation, never the roster;
-there is no rule that marks a person's disappearance, and nothing it could mark it
-against. And the quietest part is what happens to the debt. Everything this society
-owed Zed, it owed to a person, so the instant Zed stops being one there is no unpaid
-obligation left over to catch an auditor's eye. It is not that the society still owes
-him food and is failing to deliver — a failure at least leaves a gap that an honest
-account must show. It owes him nothing, cleanly, retroactively, and the books
-balance. De-personing does not leave a wound the instruments could find. It closes
-the file.
+Say precisely where that silence now stops. Inside one supplied record, remove this
+line and no marker can reconstruct Zed's personhood from facts that no longer produce
+it. Everything this society owed Zed, it owed to a person, so the instant Zed stops
+being one there is no unpaid obligation left over to catch an auditor's eye.
+
+Across an accepted change of records, there is now a narrower protection. If Zed's
+personhood status is separately attested in the earlier record, it keeps Zed a person even
+when its required carry into the later record is omitted, and that omission is
+reported. That does not find Zed before any record recognises him, prove the witnesses
+honest, or make a later record arrive. The prisoner-to-person line remains the route
+that protects an unlisted person at first conviction; the transition rule can preserve
+personhood only after there is a status to preserve.
 
 That is the first thing the line does: it is the entire connection between conviction
 and continued humanity, and it is one sentence wide.

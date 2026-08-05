@@ -44,7 +44,9 @@ travel together.
 Conviction is not the harshest thing this society can conclude about you. Earlier
 chapters made that case: voiding is worse — your word counts for nothing, your
 recognition takes the only loss this design ever records, every door to earning shuts,
-and unlike a sentence, nothing ends it. Bela carries all of that. Ask whether Bela
+and it has no automatic end. Separately recorded forgiveness can stop a carried void
+from re-deriving, but nothing obliges anyone to supply those entries, and the original
+guarded finding can still stand on its own. Bela carries all of that. Ask whether Bela
 keeps the right to vote.
 
 Bela does. The voiding reached Bela's credibility and Bela's recognition because
@@ -80,6 +82,12 @@ somebody's recorded child — and Esa holds no franchise, because nobody wrote h
 adulthood down. In the record, the teacher and the child are the same: an entry short
 of the franchise.
 
+Esa can now challenge that missing maturity record. The challenge produces a named
+dispute and a duty for Appeals. It does not write adulthood, confer the vote, identify
+the original writer, or make Appeals act; the duty is one of the unread duties the last
+derived chapter examines. The silence is therefore visible after a person contests it,
+but not repaired by being visible.
+
 One more fact makes the entry's strangeness exact. Esa earns here. Her teaching is
 recognised — the doors of the next chapter ask nothing about age — so the record that
 will not grant her the franchise is already counting her contribution. The same
@@ -89,9 +97,11 @@ by nothing else. A single undefined entry, written by nobody-in-particular, read
 one place, and that place is the vote.
 
 A polity that wanted a demographic voteless would not need to pass a
-rule, strip a right, or trip a marker. It would need only to decline, quietly, to
-write adulthood into certain records — and nothing anywhere would notice, because a
-franchise never derived looks exactly like one not yet due.
+rule or strip a right. It could decline, quietly, to write adulthood into certain
+records. Unless the affected person challenges the omission, nothing marks it; if they
+do challenge, the system records a dispute and an unanswered duty while the franchise
+still does not derive. A missing vote and a vote not yet due remain indistinguishable
+until somebody contests the missing word.
 
 Compare what disenfranchisement would be: a rule that reaches in and removes something
 a person already had, on the basis of something they did. The distinction between

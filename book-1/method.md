@@ -52,24 +52,45 @@ sections describe. The floor is not a preamble. It is load-bearing text in a
 running system, and the current full list — like every figure in this part —
 lives in the repository, not on this page, for a reason I will come to.
 
-Here is the rule that makes someone a prisoner — the only rule in the file
-that does:
+Here is the final gate that makes someone a prisoner — the only rule in the
+file whose conclusion is `prisoner`:
 
 ```
-all $offender: all $victim: injure($offender, $victim) &
-judge(Court, $offender) & ~permits(Appeals, $offender) &
-~broken(Court) & ~defend($offender) & ~free($offender)
--> prisoner($offender).
+all $offender: all $victim: all $case: all $renewal:
+  injure($offender, $victim) & judge(Court, $offender) &
+  cite(Court, $case, $offender) &
+  match($offender, ConvictionRecorded) &
+  observe(Chronicle, $case, $offender, CaseScope) &
+  observe(TemporalReview, $case, $offender, CaseScope) &
+  observe(Chronicle, $case, Court, HolderScope) &
+  observe(TemporalReview, $case, Court, HolderScope) &
+  observe(Chronicle, $case, CourtJudgment, JudgmentScope) &
+  observe(TemporalReview, $case, CourtJudgment, JudgmentScope) &
+  observe(Chronicle, $case, $victim, InjuryVictimScope) &
+  observe(TemporalReview, $case, $victim, InjuryVictimScope) &
+  authorized($renewal, ActiveCustody, $case) &
+  observe(Chronicle, $renewal, ActiveCustody, PowerScope) &
+  observe(TemporalReview, $renewal, ActiveCustody, PowerScope) &
+  observe(Chronicle, $renewal, $case, CaseBindingScope) &
+  observe(TemporalReview, $renewal, $case, CaseBindingScope) &
+  correct($renewal, ActivePower) &
+  ~permits(Appeals, $offender) & ~broken(Court) &
+  ~defend($offender) & ~free($offender)
+  -> prisoner($offender).
 ```
 
-Read it slowly once, because being readable in one breath is the point. A
-recorded injury, with a victim. A court's recorded judgment. No standing
-appellate relief. A court that is not itself marked broken. No derived
-defense. Not already free. Then, and only then: prisoner. Every conjunct is a
-recorded fact or the visible absence of one, and there is nothing else — no
-second route, no discretion, no "unless circumstances warrant". When chapter 13
-called imprisonment the one thing this society takes, this rule is the whole
-of what it was describing.
+It is longer than the earlier rule because no compact status is trusted by
+itself. A recorded injury and a court judgment must be tied by two witnesses to
+the same case, person, court, judgment basis, and injured person. The custody
+lease must be tied by both witnesses to that case and power. Its
+`ActivePower` conclusion is produced only after another rule rejoins the exact
+lease, case, window, renewal, constitutional source, and canonical terminal
+record without a competing binding or conflicted order path. Then this final
+gate rejoins the case and lease evidence again. No standing appellate relief. A
+court not itself marked broken. No derived defence. Not already free. Then, and
+only then: prisoner. There is no second route, discretion, or “unless
+circumstances warrant.” When chapter 13 called imprisonment the one thing this
+society takes, this rule is the whole of what it was describing.
 
 And here is the rule the voiding chapters orbit — the one that can declare a
 person's word worthless:
@@ -80,7 +101,7 @@ permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) &
 ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) &
 ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) &
 ~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) &
-~broken($a) & ~broken($b) & ~rotten($a) & ~rotten($b)
+~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid)
 -> false($audited).
 ```
 
@@ -88,7 +109,7 @@ It is long because it counts signers, not signatures: two people, each
 credentialed by a different body, each having examined and documented the
 person themselves, neither lying about them, and — the conjunct chapter 5
 turns on — not the same person twice, not each other's parent, spouse or
-sibling, neither carrying a mark. Some of those guards have nothing to catch
+sibling, neither broken nor bearing an effective carried void. Some of those guards have nothing to catch
 in the shipped record; they are kept armed for the day an assumption stops
 holding, and the sabotage fixtures described in the checks section of this
 part are what prove, rather than assert, that they still decide nothing
@@ -100,6 +121,10 @@ may be *written*:
 ```
 admits("free").       admits("hears").      admits("home").
 admits("injure").     admits("judge").      admits("married").
+admits("authorized"). admits("carries").    admits("challenge").
+admits("continue").   admits("date").       admits("limit").
+admits("list").       admits("observe").    admits("passport").
+admits("replace").
 ```
 
 The record's base vocabulary is declared, name by name, and a ground fact in
@@ -110,6 +135,11 @@ what may only be *concluded*:
 derived_only("false").
 derived_only("reward").
 derived_only("prisoner").
+derived_only("complete").
+derived_only("correct").
+derived_only("match").
+derived_only("precede").
+derived_only("time").
 ```
 
 A name in this block may never be asserted at all — every appearance of
@@ -276,13 +306,15 @@ component containing 'prisoner' -> 'free' (negative)
 
 Conviction reads *not already free*; a release derived from conviction loops
 straight back through it. That tells a fact about the current formal shape. It
-does not decide whether earned-time credit is just. The T3 target now answers
-that question: no person may earn a shorter sentence through character,
-contribution, or recognition. In this book, release remains an entry someone
-writes, never an output the machinery computes, and it carries the concession
-chapter 1 already made: the entry does not say whose decision it records. A
-future T3 rule must constrain the authority holding someone, not compute release
-from reward.
+does not decide whether earned-time credit is just. The ratified temporal contract
+answers that question separately, and the enacted path contains no route from
+character, contribution, or recognition to a shorter sentence. Release remains an
+entry someone writes,
+never an output the machinery computes, and it carries the concession chapter 1
+already made: the entry does not say whose decision it records. The temporal rule
+instead constrains the authority holding the exact person in the exact case. If
+the current reviewed authority is absent, custody does not derive; `free` is not
+manufactured in its place.
 
 What it felt like, since the opening note promised I would say: not like
 being corrected. Like leaning on a wall I had built myself and finding it did
@@ -297,7 +329,8 @@ One command runs everything: `./verify.sh`, at the root of the repository.
 It rebuilds the engine from source and prints the engine commit it built,
 then checks the generated spine and audits: the assertion surface, the
 record-integrity assurance case, the bounded record red-team, and the
-JSON-backed amendment-semantics and placement-exhaustiveness audits. It also
+JSON-backed amendment-semantics, placement-exhaustiveness, and staged temporal
+assurance audits. It also
 runs the sweeps that keep the chapters' prose inside the rules, the guards on
 what nothing may read, the full pin suite, the executable record snapshots,
 and the source counterfactuals. It stops at the first failure, naming the claim
@@ -448,11 +481,48 @@ deletions, replacements and additions for the narrower question of whether a
 declared target matches an effect.
 
 The record red-team adds a second and narrower class. Its ephemeral copies
-delete named ground entries — adulthood, roster standing, carry and the two
-parts of forgiveness — and execute the T0 consequences. Those tests prove what
-follows from the supplied flat records. They do not show that a live deletion
-occurred, identify who withheld or removed anything, or recover the missing
-entry.
+delete named ground entries — adulthood, roster standing, raw void marks and
+the two parts of forgiveness — and execute the remaining single-record
+consequences. It also proves that a raw void mark alone is now inert. Transition,
+carry, order, and renewal belong to the staged temporal assurance case described
+next. The red-team tests prove what follows from the supplied records. They do
+not show that a live deletion occurred, identify who withheld or removed
+anything, or recover the missing entry.
+
+The temporal assurance case adds the transitions that one-file chapter pins
+cannot supply. Its reviewed JSON binds the exact constitutional source and
+input contracts; its script constructs cumulative copies with record
+reconciliation, then order, then case-bound custody. Every case runs in a fresh
+process because the engine only adds conclusions: appending a later record to an
+old process would not retract an earlier conclusion and therefore could not
+honestly test which record is current.
+
+At the first stage, two witnesses bind exact manifest members and record
+replacement. A separately witnessed passport selects one constitutional
+lineage; only its collision-free terminal successor gives carried voids,
+clearance, or public power current effect. Supportive personhood and audit
+reports remain available on an accepted transition so missing carry cannot
+erase the claimant it concerns. At the second stage, independently witnessed
+event and record entries form separate typed paths. The paths close
+transitively, so a longer cycle is caught as well as a direct reversal, and the
+resulting conflict spreads through the connected path without leaking into the
+other path type. A conflicted path cannot support a review window.
+
+At the last stage, custody rejoins the raw witnessed fields behind every compact
+tag: case subject, court holder, court judgment, injured person, lease, window,
+renewal, source, and canonical terminal record. Competing witnessed
+source/window/case-subject/lease bindings fail closed. The executable cases attack
+omitted and forged carry, disjoint or replayed lineages, direct and transitive
+order conflict, tuple aliasing, source mismatch, and case reuse. The
+protected-record alarm is intentionally conservative: the constitution has no
+way to represent lawful disposal of such a record, so every missing required
+carry is reported as a disappearance. That proves a mismatch, not unlawful
+deletion.
+
+This is bounded safety evidence for supplied records. It does not prove a
+manifest complete, authenticate the outside witnesses, detect deletion before
+or inside the first attested record, advance a clock, make a later record
+arrive, release a person physically, or make Appeals perform its duty.
 
 There is a second thing to say about the fixtures, and it is a weakness
 rather than a strength, so it belongs here rather than in a footnote.
@@ -481,8 +551,8 @@ record-people. No one has independently reimplemented the checker. No
 outside red team has attacked this constitution. And the engine that blesses
 the book shares the book's author. Two things narrow that, and neither
 closes it. In this repository, the sabotage fixtures, amendment-semantics
-audit, placement audit and record red-team execute selected source and record
-mutations rather than merely describing them. Upstream, in the engine's own
+audit, placement audit, record red-team and temporal assurance case execute
+selected source and record mutations rather than merely describing them. Upstream, in the engine's own
 repository, the engine — not this constitution — is checked against work
 that is not its own: external solvers are run as referees over the fragments
 of the logic they can hear, though each starts from the engine's

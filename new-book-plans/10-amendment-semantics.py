@@ -1037,11 +1037,14 @@ def validate_source(
     return candidate_digests
 
 
-def pin_lines(case: Mapping[str, object]) -> list[str]:
-    steps = as_list(case["steps"], "steps")
+def pin_lines(
+    case: Mapping[str, object],
+    steps: Sequence[object],
+    scope: str,
+) -> list[str]:
     lines = [
         f":expect-pins {len(steps)}",
-        f"# Generated isolated amendment-semantics pins for {case['id']}.",
+        f"# Generated {scope} amendment-semantics pins for {case['id']}.",
         "# Candidate source deltas are authored by the audit, never enacted by become.",
         "",
     ]
@@ -1061,6 +1064,45 @@ def pin_lines(case: Mapping[str, object]) -> list[str]:
                 ]
             )
     return lines
+
+
+def is_event_entitlement_step(raw_step: object) -> bool:
+    step = as_object(raw_step, "step")
+    if step["type"] != "query":
+        return False
+    expression = str(step["expression"])
+    if "event {" not in expression:
+        return False
+    if re.fullmatch(r"entitled\((?:Adam|Bela), event \{ eats\(\) \}\)", expression) is None:
+        raise AmendmentAuditError(
+            "isolated amendment floor execution accepts only the reviewed "
+            "Adam/Bela food-entitlement query shape"
+        )
+    return True
+
+
+def isolated_floor_candidate(candidate: str, case_id: str) -> str:
+    floor_lines = [
+        line
+        for line in candidate.splitlines()
+        if line.startswith("entitled(every person, event { ")
+    ]
+    if not 7 <= len(floor_lines) <= 8:
+        raise AmendmentAuditError(
+            f"{case_id}: isolated floor candidate expected seven or eight live "
+            f"universal floor lines, got {len(floor_lines)}"
+        )
+    return "\n".join(
+        [
+            "# Exact candidate floor lines isolated from the reviewed source mutation.",
+            "# Script 13 owns the corresponding live-source abstraction regression.",
+            "",
+            *floor_lines,
+            "person(Adam).",
+            "person(Bela).",
+            "",
+        ]
+    )
 
 
 def parse_pass_count(output: str, label: str) -> int:
@@ -1261,25 +1303,50 @@ def execute_cases(
             case_dir = temp / case_id.lower()
             case_dir.mkdir()
             candidate = apply_mutations(kb_text, case["mutations"], f"{case_id}.mutations")
-            kb_path = case_dir / "candidate.nibli"
-            pin_path = case_dir / "candidate.pins.nibli"
-            kb_path.write_bytes(candidate.encode("utf-8"))
-            pin_path.write_bytes("\n".join(pin_lines(case)).encode("utf-8"))
-            completed = run_process(
-                [str(pin_binary), "--kb", str(kb_path), str(pin_path)],
-                label=f"{case_id} isolated engine case",
-                timeout_seconds=timeout_seconds,
-            )
-            if completed.returncode != 0:
-                tail = "\n".join(completed.stdout.splitlines()[-16:])
-                raise AmendmentAuditError(
-                    f"{case_id}: isolated nibli-pin exited {completed.returncode}\n{tail}"
+            steps = as_list(case["steps"], f"{case_id}.steps")
+            floor_steps = [step for step in steps if is_event_entitlement_step(step)]
+            ordinary_steps = [step for step in steps if not is_event_entitlement_step(step)]
+            actual = 0
+
+            for scope, selected_steps, selected_kb in (
+                ("full-source", ordinary_steps, candidate),
+                (
+                    "exact-candidate-floor",
+                    floor_steps,
+                    isolated_floor_candidate(candidate, case_id)
+                    if floor_steps
+                    else "",
+                ),
+            ):
+                if not selected_steps:
+                    continue
+                kb_path = case_dir / f"{scope}.nibli"
+                pin_path = case_dir / f"{scope}.pins.nibli"
+                kb_path.write_bytes(selected_kb.encode("utf-8"))
+                pin_path.write_bytes(
+                    "\n".join(pin_lines(case, selected_steps, scope)).encode("utf-8")
                 )
-            actual = parse_pass_count(completed.stdout, case_id)
-            expected = len(as_list(case["steps"], f"{case_id}.steps"))
-            if actual != expected:
+                completed = run_process(
+                    [str(pin_binary), "--kb", str(kb_path), str(pin_path)],
+                    label=f"{case_id} {scope} engine case",
+                    timeout_seconds=timeout_seconds,
+                )
+                if completed.returncode != 0:
+                    tail = "\n".join(completed.stdout.splitlines()[-16:])
+                    raise AmendmentAuditError(
+                        f"{case_id}: {scope} nibli-pin exited "
+                        f"{completed.returncode}\n{tail}"
+                    )
+                count = parse_pass_count(completed.stdout, f"{case_id}/{scope}")
+                if count != len(selected_steps):
+                    raise AmendmentAuditError(
+                        f"{case_id}: {scope} engine ran {count} pins, expected "
+                        f"{len(selected_steps)}"
+                    )
+                actual += count
+            if actual != len(steps):
                 raise AmendmentAuditError(
-                    f"{case_id}: engine ran {actual} pins, expected {expected}"
+                    f"{case_id}: split execution ran {actual} pins, expected {len(steps)}"
                 )
             return case_id, actual
 
@@ -1460,7 +1527,22 @@ def render(
                 f"{code(candidate)} |"
             )
 
-    lines.extend(["", "## Executable cases", ""])
+    lines.extend(
+        [
+            "",
+            "## Executable cases",
+            "",
+            "Ordinary verdicts run against each full candidate source. Opaque",
+            "food-entitlement verdicts run separately against the exact universal",
+            "floor lines extracted from that same candidate plus only the named",
+            "person facts. Script 13 owns the matching live-source abstraction",
+            "regression. On 2026-08-05, clean release Nibli `225bba4` exhibited",
+            "global witness-candidate expansion when T2 paths and opaque events shared",
+            "one broad query process. Verify before relying: this split is bounded",
+            "isolation, not integrated full-source entitlement evidence.",
+            "",
+        ]
+    )
     for case in source["cases"]:
         label = case["declared_label"]
         effect = case["source_effect"]

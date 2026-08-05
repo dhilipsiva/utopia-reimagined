@@ -11,7 +11,8 @@ the reviewed outcomes when ``--execute`` is requested.
 The audit is repository-level acceptance evidence for the exact current
 source.  It adds no runtime exclusivity rule, authenticates no placement
 report, supplies no appeal or remedy, and does not deliver housing to a free
-person.
+person. Broad matrix cases use the itemised shelter debt; script 13 separately
+owns the exact-source event-abstraction entitlement regression.
 
 Usage:
     python3 new-book-plans/11-placement-exhaustiveness.py
@@ -91,13 +92,14 @@ ROOT_KEYS = {
 AXIS_CONTRACT_KEYS = {"order", "states", "semantics"}
 SUBJECT_CONTRACT_KEYS = {"states", "semantics"}
 LIMIT_KEYS = {
-    "t0_axis_meaning",
+    "bounded_absence_meaning",
     "current_source",
     "runtime",
     "records_and_remedy",
     "housing_delivery",
     "future_delivery",
     "scope",
+    "temporal_fixture",
     "trust_root",
 }
 MATRIX_KEYS = {
@@ -213,6 +215,44 @@ class Query:
     expression: str
     expected: str
     purpose: str
+
+
+@dataclass(frozen=True)
+class T3TemporalPrerequisites:
+    """Shared ordered transition required by synthetic custody fixtures."""
+
+    previous_epoch: str
+    current_epoch: str
+    review_epoch: str
+    previous_manifest: str
+    current_manifest: str
+    event_order_claim: str
+    record_order_claim: str
+    review_window: str
+    source_binding: str
+
+
+@dataclass(frozen=True)
+class T3CustodyPrerequisites:
+    """Exact case/lease identity for one synthetic prisoner."""
+
+    subject: str
+    victim: str
+    case: str
+    lease: str
+
+
+PLACEMENT_TEMPORAL_PREREQUISITES = T3TemporalPrerequisites(
+    previous_epoch="Epoch_Previous",
+    current_epoch="Epoch_Current",
+    review_epoch="Epoch_Review",
+    previous_manifest="Manifest_Previous",
+    current_manifest="Manifest_Current",
+    event_order_claim="Order_Court_A",
+    record_order_claim="Order_Log_Court_A",
+    review_window="Window_Custody",
+    source_binding="Binding_Temporal",
+)
 
 
 FileIdentity = tuple[int, int]
@@ -706,17 +746,236 @@ def validate_matrix(source: Mapping[str, object], inventory: SourceInventory) ->
     return sorted(result, key=lambda case: str(case["id"]))
 
 
+def independently_observed(item: str, evidence: str, scope: str) -> list[str]:
+    """Return the exact two-witness premises for one reviewed field."""
+
+    return [
+        f"observe(Chronicle, {item}, {evidence}, {scope}).",
+        f"observe(TemporalReview, {item}, {evidence}, {scope}).",
+    ]
+
+
+def t3_temporal_fixture_facts(
+    prerequisites: T3TemporalPrerequisites,
+) -> list[str]:
+    """Supply raw fields rejoined by the reduced T1/T2/T3 conclusions."""
+
+    facts = [
+        f"replace({prerequisites.current_epoch}, {prerequisites.previous_epoch}, Chronicle).",
+        f"list({prerequisites.previous_manifest}, {prerequisites.previous_epoch}, ManifestOrder, Chronicle).",
+        f"list({prerequisites.current_manifest}, {prerequisites.current_epoch}, ManifestOrder, Chronicle).",
+        f"passport(Binding_Chronicle, ChronicleLineage, Constitution_Temporal, {prerequisites.current_epoch}).",
+    ]
+    facts.extend(
+        independently_observed(
+            "Binding_Chronicle",
+            "ChronicleLineage",
+            "LineageFamilyScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            "Binding_Chronicle",
+            "Constitution_Temporal",
+            "LineageVersionScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            "Binding_Chronicle",
+            prerequisites.current_epoch,
+            "LineageEpochScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.previous_manifest,
+            prerequisites.previous_epoch,
+            "ManifestScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.current_manifest,
+            prerequisites.current_epoch,
+            "ManifestScope",
+        )
+    )
+    facts.append(
+        f"list({prerequisites.event_order_claim}, {prerequisites.current_epoch}, "
+        f"{prerequisites.review_epoch}, EventSequence)."
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.event_order_claim,
+            prerequisites.current_epoch,
+            "EventStartScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.event_order_claim,
+            prerequisites.review_epoch,
+            "EventEndScope",
+        )
+    )
+    facts.append(
+        f"list({prerequisites.record_order_claim}, {prerequisites.current_epoch}, "
+        f"{prerequisites.review_epoch}, RecordSequence)."
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.record_order_claim,
+            prerequisites.current_epoch,
+            "RecordStartScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.record_order_claim,
+            prerequisites.review_epoch,
+            "RecordEndScope",
+        )
+    )
+    facts.append(
+        f"date({prerequisites.review_window}, {prerequisites.current_epoch}, "
+        f"{prerequisites.review_epoch}, TimeService)."
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.review_window,
+            prerequisites.current_epoch,
+            "WindowStartScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.review_window,
+            prerequisites.review_epoch,
+            "WindowEndScope",
+        )
+    )
+    facts.append(
+        f"passport({prerequisites.source_binding}, TemporalLeaseFamily, "
+        f"Constitution_Temporal, {prerequisites.current_epoch})."
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.source_binding,
+            "TemporalLeaseFamily",
+            "SourceFamilyScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.source_binding,
+            "Constitution_Temporal",
+            "SourceVersionScope",
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.source_binding,
+            prerequisites.current_epoch,
+            "SourceEpochScope",
+        )
+    )
+    return facts
+
+
+def t3_custody_prerequisites(subject: str) -> T3CustodyPrerequisites:
+    """Name the case-bound custody objects for one generated matrix subject."""
+
+    case_and_lease = f"Placement_Case_{subject}"
+    return T3CustodyPrerequisites(
+        subject=subject,
+        victim=f"Victim_{subject}",
+        case=case_and_lease,
+        lease=case_and_lease,
+    )
+
+
+def t3_prisoner_fixture_facts(
+    prerequisites: T3CustodyPrerequisites,
+    temporal: T3TemporalPrerequisites,
+) -> list[str]:
+    """Supply raw fields rejoined before ``correct(lease, ActivePower)``."""
+
+    if prerequisites.case != prerequisites.lease:
+        raise PlacementAuditError(
+            "the current T3 custody fixture requires one identifier to name "
+            "both the case and lease"
+        )
+    facts = [
+        f"injure({prerequisites.subject}, {prerequisites.victim}).",
+        f"judge(Court, {prerequisites.subject}).",
+        f"cite(Court, {prerequisites.case}, {prerequisites.subject}).",
+    ]
+    facts.extend(
+        independently_observed(prerequisites.case, prerequisites.subject, "CaseScope")
+    )
+    facts.extend(independently_observed(prerequisites.case, "Court", "HolderScope"))
+    facts.extend(
+        independently_observed(
+            prerequisites.case, "CourtJudgment", "JudgmentScope"
+        )
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.case, prerequisites.victim, "InjuryVictimScope"
+        )
+    )
+    facts.append(
+        f"authorized({prerequisites.lease}, ActiveCustody, {prerequisites.case})."
+    )
+    facts.extend(
+        independently_observed(prerequisites.lease, "ActiveCustody", "PowerScope")
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.lease, prerequisites.case, "CaseBindingScope"
+        )
+    )
+    facts.append(
+        f"limit({prerequisites.lease}, {prerequisites.case}, {temporal.review_window})."
+    )
+    facts.extend(
+        independently_observed(
+            prerequisites.lease, temporal.review_window, "LimitScope"
+        )
+    )
+    facts.append(f"continue({prerequisites.lease}, {temporal.current_epoch}).")
+    facts.extend(
+        independently_observed(
+            prerequisites.lease, temporal.current_epoch, "RenewalScope"
+        )
+    )
+    facts.extend(
+        [
+            f"approves(Electorate, {prerequisites.lease}).",
+            f"approves(TemporalReview, {prerequisites.lease}).",
+        ]
+    )
+    return facts
+
+
 def case_queries(case: Mapping[str, object], inventory: SourceInventory) -> list[Query]:
     kind = str(case["subject_kind"])
     axes = axis_tuple(case["axes"], f"matrix.{case['id']}.axes")
     subject = case_subject(kind, axes)
     severe, family, home = axes
+    custody = t3_custody_prerequisites(subject)
     queries = [
         Query(f"person({subject})", "TRUE", "Every generated subject has standing."),
         Query(
             f"prisoner({subject})",
             "TRUE" if kind == "confined" else "FALSE",
             "Confinement is the switch separating placement from the free mirror.",
+        ),
+        Query(
+            f"correct({custody.lease}, ActivePower)",
+            "TRUE" if kind == "confined" else "FALSE",
+            "Only confined rows receive the exact current case-bound custody lease.",
         ),
         Query(
             f"free({subject})",
@@ -731,17 +990,12 @@ def case_queries(case: Mapping[str, object], inventory: SourceInventory) -> list
         Query(
             f"family({subject})",
             "TRUE" if family == "present" else "FALSE",
-            "The family axis matches the generated snapshot.",
+            "The family axis matches the generated fixture record.",
         ),
         Query(
             f"home({subject})",
             "TRUE" if home == "present" else "FALSE",
-            "The home axis matches the generated snapshot.",
-        ),
-        Query(
-            f"entitled({subject}, event {{ dwell() }})",
-            "TRUE",
-            "Shelter entitlement survives in confined and free rows.",
+            "The home axis matches the generated fixture record.",
         ),
         Query(
             f"owe(State, Dwell, {subject})",
@@ -797,19 +1051,30 @@ def matrix_facts(cases: Sequence[Mapping[str, object]]) -> str:
     lines = [
         "",
         "# Placement-exhaustiveness matrix facts (generated, not enacted).",
-        "# Missing axis entries model current T0 non-derivability, not classical negation.",
+        "# Missing axis entries model bounded non-derivability, not classical negation.",
         "",
     ]
+    if any(str(case["subject_kind"]) == "confined" for case in cases):
+        lines.extend(
+            [
+                "# Shared T1/T2/T3 prerequisites for synthetic custody cases.",
+                *t3_temporal_fixture_facts(PLACEMENT_TEMPORAL_PREREQUISITES),
+                "",
+            ]
+        )
     for case in cases:
         kind = str(case["subject_kind"])
         axes = axis_tuple(case["axes"], f"matrix.{case['id']}.axes")
         severe, family, home = axes
         subject = case_subject(kind, axes)
-        victim = f"Victim_{subject}"
+        custody = t3_custody_prerequisites(subject)
         lines.append(f"# {case['id']}")
         if kind == "confined":
             lines.extend(
-                [f"injure({subject}, {victim}).", f"judge(Court, {subject})."]
+                t3_prisoner_fixture_facts(
+                    custody,
+                    PLACEMENT_TEMPORAL_PREREQUISITES,
+                )
             )
         elif kind == "registered_free":
             lines.append(f"free({subject}).")
@@ -817,7 +1082,10 @@ def matrix_facts(cases: Sequence[Mapping[str, object]]) -> str:
             lines.append(f"person({subject}).")
         if severe == "derived":
             lines.extend(
-                [f"attack({subject}, {victim}).", f"cruel({subject}, {victim})."]
+                [
+                    f"attack({subject}, {custody.victim}).",
+                    f"cruel({subject}, {custody.victim}).",
+                ]
             )
         if family == "present":
             lines.append(f"family({subject}).")
@@ -1145,13 +1413,18 @@ def validate_source(
     exact_keys(source, ROOT_KEYS, "root")
     if source["spdx"] != "CC-BY-4.0":
         raise PlacementAuditError("spdx must be CC-BY-4.0")
-    if type(source["schema_version"]) is not int or source["schema_version"] != 1:
-        raise PlacementAuditError("schema_version must equal 1")
+    if type(source["schema_version"]) is not int or source["schema_version"] != 2:
+        raise PlacementAuditError("schema_version must equal 2")
     as_text(source["title"], "title")
     if source["status"] != STATUS:
         raise PlacementAuditError(f"status must equal {STATUS}")
     if source["evidence_role"] != EVIDENCE_ROLE:
         raise PlacementAuditError(f"evidence_role must equal {EVIDENCE_ROLE}")
+    if "event {" in json.dumps(source, sort_keys=True):
+        raise PlacementAuditError(
+            "placement source must use itemised shelter debt; script 13 owns "
+            "event-abstraction entitlement queries"
+        )
     if (
         type(source["subprocess_timeout_seconds"]) is not int
         or source["subprocess_timeout_seconds"] != REVIEWED_TIMEOUT_SECONDS
@@ -1813,7 +2086,7 @@ def render(
         "",
         "The accepted matrix is exhaustive for the declared current axes and the exact",
         "current producer surface. `FALSE` below means *not derivable from the supplied",
-        "T0 snapshot*, not classical negation or an independently established fact.",
+        "bounded fixture*, not classical negation or an independently established fact.",
         "",
         "## Bound source manifest",
         "",
@@ -1880,7 +2153,8 @@ def render(
             [
                 "",
                 "Every row also checks standing, affirmative freedom or confinement,",
-                "the shelter entitlement, the itemised shelter debt, each axis result, and every",
+                "the presence or absence of an exact case-bound custody lease,",
+                "the itemised shelter debt, each axis result, and every",
                 "discovered non-selected destination.",
             ]
         )
@@ -1888,8 +2162,9 @@ def render(
         [
             "",
             "The two non-confined mirrors are current-source narrowness tripwires. They",
-            "record the present gap between entitlement/debt and actuality; they are not",
-            "a permanent ban on a future valid free-person delivery route.",
+            "record the present gap between itemised debt and actuality; script 13",
+            "separately executes the exact event-abstraction entitlement. They are not a",
+            "permanent ban on a future valid free-person delivery route.",
             "",
             "## Executable source mutations",
             "",

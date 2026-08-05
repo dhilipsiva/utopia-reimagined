@@ -118,31 +118,33 @@ difference at all.
 What the deletion does not delete is the lesson. The rule wanted the mark, not the
 amount — nobody who wrote it checked whether there was anything there to lose — and
 it stood for a long time beside guards built precisely against marks landing on the
-uninvolved: two auditors, no family, no liars, no carried rot, every one of them
+uninvolved: two auditors, no family, no liars, no matched carried void, every one of them
 watching the front door while this rule stood propped open at the side. The
 accountability machinery's one wrong against an innocent was not an attacker's work.
 It was written in good faith, by the same hands that built the guards, and it was
 found the way everything in this book is found — by asking the record what it held
 against a child, and refusing to like the answer.
 
-## The mark that crosses the year
+## The mark that crosses the record
 
 Everything so far happened in one period: Bela was examined, voided and docked by
 people acting here and now. Vex shows what the loss looks like after the machinery
 has gone home.
 
-Vex was voided in an earlier period. What this period's record holds is the carried
-mark — the prior judgment, written forward — and from that one entry the whole
-verdict reassembles itself: the void stands again, the loss stands again, the pen is
-withheld again. Nobody in this period examined Vex. Nobody signed anything. The
-clawback goes on costing Vex what it cost, period after period, on the strength of a
-judgment whose judges may be long recalled, because the mark is carried forward and
-everything else follows from the mark.
+Vex was voided in an earlier period. The selected current record holds a carried mark,
+but that entry no longer works alone. The predecessor's void and the exact inventory
+entry naming each record must be witnessed, both public bodies must report the same carry, the successor
+must name the predecessor it replaces, and the witnessed constitutional record line
+must select that successor as its current end without a competing selection. From that reconciled history the verdict
+reassembles itself: the void stands again, the loss stands again, the pen is withheld
+again. Nobody in this period examined Vex. Nobody signed anything. The old judgment
+continues to cost Vex because the supplied current record agrees that it crossed.
 
-That is deliberate, and chapter 5 built the machinery: the carried mark is how
-sequence gets into a record that has no natural sense of it, and without the carry a
-voided auditor could simply wait for the period to turn and sign again. Chapter 5
-also conceded what the carrying is — a discipline performed by people, not a rule.
+That is deliberate, and chapter 5 built the machinery: witnessed replacement and
+matched carry are how history crosses a record, and without them a voided auditor
+could simply wait for the period to turn and sign again. The comparison is now a
+rule, evaluated afresh for the supplied current record. The honesty of its witnesses
+and the arrival of a successor remain duties performed outside it.
 What this chapter has to add is the ending. A sentence can end inside this design:
 the record has a word for a finished sentence. For most of this design's life it had
 no word for a finished voiding — nothing said the mark was wrong, or served out, or

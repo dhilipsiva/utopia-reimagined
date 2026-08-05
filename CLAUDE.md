@@ -40,14 +40,28 @@ smuggle in operations: transition, tax rates, budgets, staffing, procurement,
 facilities, service workflows, clocks/calendars, record technology, cryptography,
 and case administration remain Book 2.
 
-**T3 is author-ratified as Book 1's time-model target (2026-08-03).** The
-current constitution remains T0: it admits no duration arithmetic, sentence
-clock, filing deadline, or operational cadence. T3 changes the expansion
-direction, not the current formal law. Before any temporal rule lands, complete
-the T1/T2 prerequisites, temporal-input contracts, two-snapshot harness, and
-adversarial matrix in `new-book-plans/book-1-time-model-decision.md`. Book 1 may
-then constrain public power through independently assured review, renewal, or an
-end condition; Book 2 continues to operate clocks, calendars, and time services.
+**T3 is author-ratified (2026-08-03) and implemented in stages for case-bound
+Court custody (2026-08-05).** T1 reconciles witnessed predecessor/successor
+records and selected carry. A witnessed passport selects one constitutional
+lineage, and only its collision-free terminal accepted successor can give
+carried adverse/clear status or public power current legal effect in a fresh
+evaluation. T2 builds independently witnessed, typed event and record paths;
+transitive cycles propagate conflict within their path type. T3 makes the exact
+current, source-bound review a positive premise of custody authority and rejoins
+the case subject, Court holder, Court judgment, injury victim, lease, window,
+renewal, source, and current-record witnesses. Competing witnessed source,
+window, case-subject, or lease bindings fail closed; the judgment and victim evidence
+are case-bound but have no general truth or uniqueness proof. Compact
+identifier-status conclusions are never sufficient alone: every
+consequential consumer rejoins the exact raw tuple and its matching witness
+fields. The current constitution still admits no duration arithmetic, sentence
+clock, filing deadline, or operational cadence, and it cannot make a successor
+arrive or prove that an outside clock advances. The reviewed contracts,
+two-snapshot harness, adversarial matrix, and residual Book 2 boundary live in
+`new-book-plans/book-1-time-model-decision.md` and
+`new-book-plans/temporal-assurance-case.json`. Another public power requires its
+own temporal contract; Book 2 continues to operate clocks, calendars, witnesses,
+publication, recovery, and time services.
 
 **The constitutional taxonomy is author-ratified (2026-08-03).**
 `new-book-plans/book-1-constitutional-taxonomy.md` is an author-chosen planning
@@ -77,7 +91,7 @@ standing, core floors, equal protection/non-discrimination, due process, core
 liberties, and commons constraints.
 
 **Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
-D2.** The current-T0 baseline remains public source and git history but receives
+D2.** The pre-expansion baseline remains public source and git history but receives
 no promoted edition, canonical serialization, assembled release, or print
 identity. The completed constitutional expansion becomes Book 1 — First Edition
 and its first print-on-demand edition. Before completion, coherent expansion
@@ -100,7 +114,7 @@ proportionality, restoration, or remedy. `decide(_, Ballot)` is the current
 franchise conclusion, **not** a cast ballot, delivery fact, tally, election, or
 legal result; those interfaces need distinct names, and democratic redesign may
 later retain or atomically replace the legacy relation. This is not a complete
-closure sweep. The eight floor actualities, `obliged`, and `travel` remain
+closure sweep. The floor actualities, `obliged`, and `travel` remain
 unadmitted and not conclusion-only pending their delivery, duty, and liberty
 contracts under the generated assertion-surface audit. The controlling record is
 `new-book-plans/book-1-closure-gaps-decision.md`.
@@ -127,9 +141,10 @@ exhaustive constitutional categories. The case separately treats every use of
 absence as an effective premise requiring a route-specific closed-world contract;
 the positive writable-relation census does not make deletion-authored absence
 safe. The generated case's top verdict is deliberately
-**NOT ESTABLISHED** for the current T0 kernel: T0 verifies what follows from a
-supplied snapshot, not its authorship, truth, completeness, persistence,
-append-only history, or eventual advancement. The case specifies Book 1's
+**NOT ESTABLISHED** for the live record system: the repository verifies bounded
+consequences of supplied records, not their authorship, truth, genesis
+completeness, persistence, append-only history, recovery, or eventual
+advancement. The case specifies Book 1's
 authorship, authority, basis, privacy, challenge, independent-witness,
 correction, reconciliation, failure-default, reader, action, continuity,
 recovery, and remedy controls while leaving identity, storage, cryptography,
@@ -138,19 +153,40 @@ to Book 2. A complete visible basis is also insufficient if a consequential
 decision uses a prohibited shadow input. The assurance source, ledger,
 generators, verifier, engine, and review can be weakened together; their green
 result does not authenticate or authorise their own trust root. It changes no
-constitutional rule or current book claim. In particular, one snapshot cannot
-distinguish a deleted entry from one withheld or never written; T1 can expose
-only disappearance between independently attested snapshots. **Bounded record
-red-team enacted 2026-08-04:** `9-record-integrity-red-team.py` now executes named
-constructed unauthenticated `free`, `mature`, and carry additions; exact `mature`,
-roster, carry, and relief deletions; constructed forgiveness/judgment rollback
-pairs; two-entry matrices; generic judgment reuse; and constructed cross-snapshot
-cases. It proves their T0
-consequences and supplies a T1 test precursor; it does not attribute a runtime
-write or absence, authenticate a transition, implement replay/divergence/frozen
-transition controls, recover a record, or make a successor arrive. No second
-registration, adulthood, release, or carry gate was added. A later operational
-claim can satisfy the case only as scoped
+constitutional rule by itself. In particular, one flat snapshot cannot
+distinguish a deleted entry from one withheld or never written.
+
+**Bounded flat-snapshot red-team enacted 2026-08-04:**
+`9-record-integrity-red-team.py` executes selected unauthenticated status
+additions, exact ground-entry deletions, rollback pairs, generic-judgment reuse,
+and same-snapshot combinations. It proves their consequences in supplied flat
+records and confirms that a raw `rotten` report is inert. It deliberately does
+not duplicate T1/T2/T3 transition, carry, order, or custody tests; it does not
+attribute a runtime write or absence, authenticate a record, recover an entry,
+or make a successor arrive. It checks itemised `owe` debts rather than opaque
+event-abstraction `entitled` queries; script 13 owns that exact-source floor
+regression because combining the broad snapshot with T2's two-endpoint paths
+triggered global witness-candidate expansion when measured against clean release
+Nibli `225bba4` on 2026-08-05. Verify before relying: this is a temporary bounded
+isolation, not a permanent engine fact or integrated full-constitution floor-query
+proof. The self-contained engine handoff lives in `TODO.md`. No second
+registration, adulthood, release, or carry gate was added.
+
+**Staged temporal assurance enacted 2026-08-05:**
+`12-temporal-assurance.py` constructs cumulative T1, T2, and T3 sources and
+executes every supplied-record case in a fresh engine process. T1 admits only
+the collision-free terminal successor selected by the witnessed constitutional
+lineage for adverse carry and public-power effect; T2 closes typed event and
+record paths transitively and propagates type-scoped conflict; T3 rejoins exact,
+independently witnessed source, window, case, lease, Court-judgment, and
+injury-victim bindings. The protected-record alarm conservatively calls every
+missing required carry `RecordDisappearance` because lawful record disposal is
+not represented. Fresh processes are mandatory: derivation is monotonic inside
+one process and does not retract an earlier conclusion when a later successor
+is added. This is bounded safety evidence only. It does not authenticate
+witnesses, prove a manifest complete, detect deletion before or inside the first
+attested record, advance a clock, publish a successor, cause physical release,
+or make Appeals act. A later operational claim can satisfy the record case only as scoped
 `external_verified` evidence; it may not be relabelled as the repository-only
 `current_verified` posture.
 
@@ -211,9 +247,9 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order the work happens**, refreshed 2026-08-03 after all fourteen chapter passes completed (their records live in git, not the tracker). It starts with **Phase 1, author-gated decisions**, currently empty and reserved for questions that must be ruled before implementation, and **Phase 2, engine handoffs (nibli)**, also currently empty. It then carries the merged **Constitutional expansion — implementation backlog**, which turns the ratified mandate, time target, taxonomy, coverage map, and democratic corridor into ordered work without claiming any unimplemented rule exists. Cross-cutting sections cover remaining book work, reach, data, legacy harvest, and book-2; **Standing facts and methods** closes the file with knowledge, not tasks. Delete a bullet when it fully lands; update it if only partly done. book-2's items live in `book-2/TODO.md`; don't work them while book-1 is active.
-- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, record red-team, amendment-semantics, and placement-exhaustiveness reports are governed by their reviewed JSON sources; edit the JSON and regenerate with scripts 7 through 11, never hand-edit the reports. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. The digest dependency is 7 → 8 → 9, while 10 binds the constitution plus the reviewed 7 and 8 sources and 11 binds the constitution plus its reviewed placement contract: propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with the release `nibli-pin --kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
-- `verify.sh` — **the one check.** `./verify.sh` took **751.70 s on 2026-08-05** with a clean `b334af1` release supplied through `NIBLI_PIN`: 549 chapter/floor pins; 23 isolated record snapshots with 145 reviewed pins; nine amendment candidates with 44 reviewed pins; 24 placement rows with 336 pins; five placement mutations with 74 pins and five baseline sabotages; and the source counterfactuals. Runtime is a property of the suites, not the engine. **`--quick` took 1.15 s with the same pinned binary; it checks the generated contracts and reports but does not execute record snapshots, amendment candidates, placement cases, the chapter/floor pins, or the counterfactual fixtures**, so run the full suite after any constitution edit. **Without a `NIBLI_PIN` override it rebuilds `nibli-pin` before generated checks and executable suites** — ~0.2 s incremental in a clean checkout, prints the nibli commit, and shares one cached `--strata` measurement between the spine and assertion-surface generators, because the binary was once three days stale and this repo silently ran the old engine to a green result. Override with `NIBLI_PIN` to pin a specific binary, or `NIBLI_SRC` if the checkout is elsewhere. The suite runs the spine, assertion-surface, assurance-case, bounded red-team, amendment-semantics, and placement-exhaustiveness checks; the evidence-vocabulary guard; jargon sweep; absence claims; `reward` guards; control-scope guard; chapter/floor pins with cross-file `:expect-pins` reconciliation; executable record snapshots; amendment and placement executions; and source counterfactuals. It exits non-zero on the first failure and names the claim that stopped being true. Run it before every commit and prefer it to any check by hand — each structural check is negative-controlled.
-- `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken`/`~rotten` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
+- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. Script 13 is an isolated exact-source floor regression. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with the release `nibli-pin --kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
+- `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
+- `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
 - `book-2/TODO.md` — book-2's seed tracker, deliberately unordered. Same channel protocol as book-1's Phase 2 when engine asks eventually arise.
 - `LICENSING.md` — the mixed-licence map. Read before adding files.
 
@@ -242,8 +278,26 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 - **The current formal duty-bearer is a thin constitutional layer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider. Under the 2026-08-03 mandate, this is not the final public-branch or remedy architecture.
 - **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`08-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says.
 - **Recognition is a bare fact and is never ranked** — not by writing a mark, not by counting entries. Decided 2026-07-30 against the proposal that verified learning mint grades for the student and outcome-conditioned perks for the teacher; all three halves are refused. **(a) Students earn nothing for being taught.** Being taught is not a contribution, the doors in `10-contribution.md:3-8` are the doors, and the constitution is **not** edited to add a student minting rule — that would commit the design to paying a child (Cira is `person` without `mature`, which is the whole of `09:43-51`). **(b) Counted degree on the reward side is refused, not merely unbuilt.** Degree needs no arithmetic here, only the same relation twice with the objects held apart — the idiom the severity rules use at `constitution.nibli:452-453` — and the cast already supplies the mirror, since Cira has two teachers. **(c) Article 3 stays unconditional**: a teacher's recognition does not depend on whether the student learned, the same shape as the auditor rule that pays for the examination and not the outcome (`10:85-87`). **State the disanalogy, never "there is no score here"** — that is verified false and its source sentence was deleted in `c0bede6`. Chapter 1 concedes a computed rating already — the paragraph opening *“Even that concedes something, and it should be said out loud rather than found later”*: severity rates an **act**, is reached through a process the accused was part of, and ends with the sentence; a grade rates a **person's capability**, with nothing adjudicated and no end. That concession is an exception the design paid for once, not a precedent. Enforced, not merely recorded — `verify.sh` section 4 checks that nothing reads `reward`, and section 4b that no rule joins `teaches` or `work` with itself; both were negative-controlled against a scratch copy. Neither is a proof: a new name for a learning record (`studies` is in the corpus, unused) routes around both, and is caught by the evidence-count gate instead, which is the only reason the pair is sufficient. **This does not block the delivery route**: teaching that delivers `learn` is a floor actuality, not recognition. Delivering learning is not grading the learner.
-- **`person` is on chapter 1's evidence list**, decided 2026-07-30. The list had claimed to be everything the record can hold while omitting the one entry every right hangs off, and the decision was forced by a finding that outranks the argument on either side: **the list already reached personhood before anybody ruled on it.** `constitution.nibli:264` is `all $x: free($x) -> person($x).`, and `free` is one of the 23, appearing in the prose list as *"Someone's sentence is finished."* So "roster membership is not a claim the world makes about you" was refuted by an entry the list already contained. Three routes in, and only the first needs nobody's permission: `prisoner -> person` (`:254`), `free -> person` (`:264`), and a direct `person(X)` write. **`derived_only("person")` is refused permanently** — it would refuse every one of its ground facts and collapse the cast; do not restate that as a number, which went stale within a day of being written — so the guard cannot be a compile-time one; it is a cross-epoch obligation over the fact store, which chapter 1 now says outright. Two consequences that must not be tidied away: chapter 1's prose list and `3-spine.md`'s generated list **deliberately disagree**, because the generated figure counts predicates with no producing rule and `person` has two (the method is stated beside the number in `3-spine.md`); and the chapter's load-bearing sentence reads *“the **conclusions** that matter are not writable”*, narrowed from "things", because personhood matters and is writable — do not restore the broader wording.
-- **The record is closed by name — Article 0a**, adopted 2026-07-31 (nibli `850cf96`). `admits("<rel>")` refuses a ground assertion of any unadmitted relation at assert time, and an `admits` line placed below the facts is refused as coming too late, so **widening the record is a visible, reviewable edit rather than a fact somebody types**. This is what makes chapter 1's first claim — *"Not may not. Cannot."* — true: before it, `rich(Adam).` loaded and answered TRUE, because the closure was at nibli's corpus of thousands rather than at this book's own list, and only an invented word ever failed. **It is extensional only.** Rules still derive `false`, `prisoner`, `err` and `obliged`; Article 0's `derived_only` is what closes those, and the two must never be described as one guard. **The admitted list is deliberately one name longer than the evidence figure** — `person` has producing rules *and* ground assertions, so it is absent from the spine's count and mandatory here. *"What counts as evidence"* and *"what may be written"* are different sets, `person` is the whole of the difference, and reconciling the two lists would be an error rather than a tidy-up. One consequence worth stating where it bites: a ground assertion through the converse alias — `obligated_by(Warden, Ruk).` — is now refused as well, because `obliged` is not admitted (verified 2026-08-01; the refusal names `admits` and the repair). The converse mechanism survives in a **rule head**, where `err($x, Placement) -> obligated_by(Review, $x)` loads and derives the inverted `obliged(Ruk, Review)` — so the chapter-14 discriminator pair still earns its keep.
+- **`person` is on chapter 1's evidence list**, decided 2026-07-30 and extended
+  by T1 on 2026-08-05. The list had claimed to be everything the record can hold
+  while omitting the entry every floor claim hangs from. “Roster membership is
+  not a claim the world makes about you” was already refuted: `person` can be
+  written directly, and both recorded freedom and imprisonment can derive it.
+  T1 adds a supportive continuity route: an independently witnessed standing
+  status in an accepted predecessor keeps deriving personhood even when its
+  required successor carry is absent, and the omission becomes a named defect.
+  Do not turn those routes into a hand-maintained count.
+  **`derived_only("person")` remains permanently refused** because it would
+  reject the ground roster itself. The remaining first-record boundary is
+  external: the transition rule cannot discover someone never entered, detect
+  deletion before or inside the first attested record, authenticate its
+  witnesses, or make a successor arrive. Chapter 1's prose list and
+  `3-spine.md`'s generated base-predicate list therefore **deliberately
+  disagree**: the prose lists what may be written, while the generated figure
+  lists predicates with no producing rule. The chapter's load-bearing sentence
+  remains *“the **conclusions** that matter are not writable”*, narrowed from
+  “things,” because personhood matters and is writable.
+- **The record is closed by name — Article 0a**, adopted 2026-07-31 (nibli `850cf96`). `admits("<rel>")` refuses a ground assertion of any unadmitted relation at assert time, and an `admits` line placed below the facts is refused as coming too late, so **widening the record is a visible, reviewable edit rather than a fact somebody types**. This is what makes chapter 1's first claim — *"Not may not. Cannot."* — true: before it, `rich(Adam).` loaded and answered TRUE, because the closure was at nibli's corpus of thousands rather than at this book's own list, and only an invented word ever failed. **It is extensional only.** Rules still derive `false`, `prisoner`, `err` and `obliged`; Article 0's `derived_only` is what closes those, and the two must never be described as one guard. The admitted roster deliberately includes `person`, while the generated base-predicate figure omits relations with a producing rule. *"What counts as evidence"* and *"what may be written"* answer different questions, and reconciling those lists would be an error rather than a tidy-up. One consequence worth stating where it bites: a ground assertion through the converse alias — `obligated_by(Warden, Ruk).` — is now refused as well, because `obliged` is not admitted (verified 2026-08-01; the refusal names `admits` and the repair). The converse mechanism survives in a **rule head**, where `err($x, Placement) -> obligated_by(Review, $x)` loads and derives the inverted `obliged(Ruk, Review)` — so the chapter-14 discriminator pair still earns its keep.
 - **Earning may not alter sentence duration or severity — T3 supersession,
   2026-08-03.** The 2026-07-29 intention that a convicted person could earn a
   reduction in duration or severity is retired. T3 prohibits earned-time credit,
@@ -255,7 +309,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   the alternative is longer confinement. The older stratifier tests that refuse
   `prisoner($x) & reward($x) -> free($x)` remain useful regression evidence, not
   a reason to invent a workaround.
-- **Confinement houses you**, decided 2026-07-31 (v0.8). The combination *not severe / no family / no home* derived no placement at all — eligible for home confinement with no home to be confined in — and Adam and Kel stood in it. The rule is `prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x)`, and it is **consistency, not new policy**: the design already held that the state houses whom it confines (`:460`, `:472`); this was the case those rules missed. **Do not restate it as "assume everybody has a home."** `home/1` is a fact the world reports, asserting it for everyone writes something that may be false, and closing the delivery gap by fiat is verified to *silence the isolation marker in the same edit* — the instrument that would have noticed goes quiet. **The framing that must survive**: this closes a *placement* gap and the *delivery* gap is exactly as wide, because the person was owed a home before the conviction and nothing delivered it. Chapter 11 says the repair came "from the wrong side" and chapter 13 says the design housed two homeless people for precisely as long as it was punishing them — neither is decoration, they are what stops this reading as a floor that works. Chapter 8's shelter sentence is now the rule — **"shelter derives for every confined person and for nobody else"** — which is this file's own canonical example of a good rule-statement and was false until this landed. Oversight of the duty-bearer (enablers, their checkers, a meta-study) was raised and **parked to book-2** under the former scope. **Superseded in scope 2026-08-03:** Book 1 now owns the constitutional mandate, independence, evidence, and remedy path for oversight; Book 2 retains inspection practice, staffing, and operating systems.
+- **Confinement houses you**, decided 2026-07-31 (v0.8). The combination *not severe / no family / no home* derived no placement at all — eligible for home confinement with no home to be confined in — and Adam and Kel stood in it. The rule is `prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x)`, and it is **consistency, not new policy**: the design already held that the state houses whom it confines (`:460`, `:472`); this was the case those rules missed. **Do not restate it as "assume everybody has a home."** `home/1` is a fact the world reports, asserting it for everyone writes something that may be false, and closing the delivery gap by fiat is verified to *silence the isolation marker in the same edit* — the instrument that would have noticed goes quiet. **The framing that must survive**: this closes a *placement* gap and the *delivery* gap is exactly as wide, because the person was owed a home before the conviction and nothing delivered it. Chapters 11 and 13 say the criminal conviction is what housed Adam and Kel, for precisely as long as it punished them — neither is decoration; those lines stop this reading as a floor that works. Chapter 8's shelter sentence is now the rule — **"shelter derives for every confined person and for nobody else"** — which is this file's own canonical example of a good rule-statement and was false until this landed. Oversight of the duty-bearer (enablers, their checkers, a meta-study) was raised and **parked to book-2** under the former scope. **Superseded in scope 2026-08-03:** Book 1 now owns the constitutional mandate, independence, evidence, and remedy path for oversight; Book 2 retains inspection practice, staffing, and operating systems.
 - **The audit feeds an obligation**, decided 2026-07-31 (v0.8), Article 8b. Chapter 14 used to argue the audit's powerlessness was **structural** — a pure observer, therefore nothing can follow. That was false and it was the comfortable kind of false: it turned a decision into a law of nature. `err($x, Placement) -> obliged(Review, $x)` and the `Isolation` twin both load and derive. **Spell it `obliged`.** The accidental route closed upstream on 2026-07-31 (nibli `e70f22f` renamed the converse alias `obligated` to `obligated_by`), so writing `obligated(...)` is now a compile error rather than a silently inverted fact — that was the realistic typo and it can no longer be made. **The mechanism is narrowed, not closed, and this repo narrowed it further by accident.** After the rename `obligated_by(Warden, Ruk)` still compiles to `obliged(Ruk, Warden)` — but re-measured 2026-08-01 against *this* constitution that ground assertion is now **refused**, because Article 0a closed the base vocabulary and `obliged` is not admitted. `admits` is extensional, so the converse survives in a **rule head**: `err($x, Placement) -> obligated_by(Review, $x)` loads and derives the inverted fact. Two things follow — the realistic forgery route is gone here, and the chapter-14 discriminator still earns its keep against a slip in a rule head. So the discriminating pin pair in the chapter-14 suite — `obliged(Review, Ruk)` TRUE **and** `obliged(Ruk, Review)` FALSE — is no longer the *only* defence, but it is still the only thing catching an argument-order slip within `obliged` itself. Keep both halves. **One constraint this puts on the method part**: nibli has a filed defect — its tracker bullet **"`obliged`-spelled every-duty renders the wrong obligated party"** — where the deontic collapse picks the event variable as duty-holder when back-translating the **base** spelling, which is ours; the converted `obligated_by` spelling binds correctly. Cited by title deliberately, not by line: this is the same file whose line numbers rotted twice inside one exchange. It cannot reach readers today because this repo runs `nibli-pin` only and never renders prose, but the method part exists to show readers the machinery, so if it ever prints a rendered sentence or a proof trace, check that party before it ships. **Two rules, not one**: the general form `err($x, $k) -> obliged(Review, $x)` loads and derives **nothing**, because a body-only variable does not bind over a derived relation on this engine — the same limitation the Article 4 note records. **This is not teeth.** Nothing reads `obliged`, so it is a second inert obligation beside Article 1b's `owe`, and `verify.sh` guards that: `err` left the absence loop and `obliged` took its place. The chapter must keep saying the chain merely ends one step later — the breach of the duty is *also* markable (`obliged & ~capture -> err($x, Duty)` is accepted and derives, pinned as the chapter's closing exhibit), so what runs out is not links but anybody who has to act.
 - **The debt is itemised, and INVARIANT 1 was rewritten because it was broken**, both 2026-07-31 (v0.8). Article 1b now carries eight `owe(State, K, $x)` rules beside the surviving `Provision` token, which is kept because it is pinned in four other files. **Enumeration cost eight rules and no vocabulary** — the evidence list counts *predicates* and the generator never looks inside the parentheses, so a constant is free; the tracker had priced this as "eight new constants in the evidence vocabulary" and that was a category error. Verified: the firewall extends to each named debt (`~owe(State, Eats, $x) -> prisoner` is refused). **The constants are not joined to the predicates**: `Eats` and `eats` are unrelated and must never be "wired up" — the names match so the resemblance is visible, and chapter 8 turns on the gap. **INVARIANT 1 no longer says "no floor predicate in any rule body"** — that was false from v0.1, because Article 6's isolation marker reads `~meets`, and nothing checked it. It now reads: **a floor right may be read only into `err` — noticed, never acted on.** The stratifier does not enforce this; it refuses `~eats -> prisoner` as a negative cycle and accepts `~eats -> reward` or `~eats -> building` happily, so `verify.sh` guards it (negative-controlled). **Do not describe the delivery gap as something the design cannot detect** — verified, `owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered)` is accepted and derives, and the design already ships that shape for company and for none of the other seven. That asymmetry was discovered, then ruled: the markers are refused while the record holds no arrival facts — see the delivery-markers entry.
 - **A control puts the base back; a premise does not**, settled 2026-08-01 with nibli
@@ -319,12 +373,14 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   mentioned at all, since "nothing reads `reward`" passes just as cleanly against a relation that
   has been renamed away.
 
-- **Article 4's `~broken`/`~rotten` signer checks stay, and are not dead code**, decided
+- **Article 4's `~broken`/`~match(CarriedVoid)` signer checks stay, and are not dead code**, decided
   2026-08-01. No assignment can fail them today — every Review/Tribunal pen derives through
-  Article 8's rules, which read both marks themselves, and `derived_only("permits")` closes the
+  Article 8's rules, which read both guards themselves, and `derived_only("permits")` closes the
   assertion route — but they were **live guards when v0.2 wrote them**, against sock-puppet
-  credentials with a prior voiding, and the v0.3 credential closure demoted them without anyone
-  deciding to. They re-arm the moment any pen route omits the guards: measured, with one
+  credentials with a prior voiding. The raw `rotten` input is now inert by itself; the guard
+  reads only an exactly witnessed void carried into the designated current record. The v0.3
+  credential closure demoted the signer checks without anyone deciding to. They re-arm the
+  moment any pen route omits the guards: measured, with one
   unguarded route added, `false(Tyr)` stays FALSE with them and flips TRUE without them — a
   carried-void signature counting. Both halves are **permanent fixtures**, not commit-body
   prose: `no-dead-conjuncts` (chapters 4 and 5's own pin files pass against the stripped copy —
@@ -332,8 +388,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   deciding check). Same idiom as the rule's own `~($a = $b)`, kept for the day the assumption
   that hides it stops holding. **Do not delete them as dead code** — that proposal has now been
   made once, by the pass that produced this ruling — and note the reading consequence: chapter
-  5's carried-mark pins land on the *missing credential*, not on these conjuncts, and the prose
-  ("that mark blocks the credential") is correct about that.
+  5's matched-history pins land on the *missing credential*, not on these conjuncts, and the prose
+  ("that matched history blocks the credential") is correct about that.
 
 - **The Esa passage tells the truth about Koa, and nobody seats him**, decided 2026-08-01.
   Chapter 5 claimed Koa *"examined Esa"* with *"the credential"*; the record holds a personhood
@@ -429,40 +485,49 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   derived head. Do not build a floor-delivery marker into this constitution without arrival
   facts, and do not re-price the decision on rule-count.
 
-- **The design does not say how long — ruled 2026-08-02; its permanent refusal is
-  superseded in scope by T3 on 2026-08-03.** The current kernel still refuses time
-  vocabulary at the record's door (measured:
-  `year(Term, Two).` and `earlier(Custody, Release).` both "not admitted vocabulary"), and
-  walking through the loud door changes nothing — measured, `admits("year")` plus a stated
-  term with no digit leaves the conviction standing and derives no release; chapter 13's
-  closing pins hold both halves, on Ruk because the file has already released Hano. Two
-  reasons, both in print at `13`: grading *how long* means saying what makes one sentence
-  longer than another, and every answer prices someone's character; and a term the record
-  cannot count down is a promise with no keeper — the delivery-markers pattern, refused for
-  the second time. **Release stays an act, not an expiry**: a decision somebody writes down,
-  with no claim about whose name the record holds (chapter 1 conceded the release entry names
-  no finder). **Do not admit temporal vocabulary into the current constitution until the
-  T3 implementation gate passes.** A future T3 family may constrain public power through
-  independently assured review, renewal, or an end condition; it may not score a person or
-  price a sentence. Book 2 retains clocks, calendars, scheduling, availability, and all
-  operational time administration. The superseded earning-shortens ruling is not a
-  deferred permission: in the current book-1 nothing measures time and nothing reads
-  `reward`, and T3 prohibits its revival as a personal-time score. One harness nuance
+- **The design does not say how long — ruled 2026-08-02; superseded in scope by
+  T3 on 2026-08-03 and implemented narrowly on 2026-08-05.** Ordinary duration
+  vocabulary remains outside the record (measured: `year(Term, Two).` and
+  `earlier(Custody, Release).` are both refused), but the constitution now admits
+  the bounded inputs needed for witnessed record replacement, order, and a
+  case-bound custody review. The implemented T3 rule says whether the supplied
+  fresh evaluation carries current reviewed authority. A witnessed passport
+  selects one constitutional lineage, and only its collision-free terminal
+  successor can supply current adverse carry or public power. Typed event and
+  record paths close transitively; a direct or longer cycle taints the connected
+  path and cannot support a review window. The custody gate rejoins independently
+  witnessed case-subject, Court-holder, Court-judgment, injury-victim, lease,
+  window, renewal, and source fields; conflicts are explicitly rejected for the
+  source, window, case-subject, and lease bindings. It does not count days, establish a
+  maximum measured sentence, or prove the outside service advances. Chapter 13's
+  closing pins preserve that distinction. **Release stays an act, not an expiry**:
+  missing, stale, disputed, or incompletely witnessed authority prevents custody
+  from deriving but never manufactures `free`. Compact status tags cannot lend
+  their authority to another raw tuple sharing the same identifier: consequential
+  consumers rejoin the exact fields and matching witnesses, and the temporal
+  harness attacks that aliasing directly. Because the engine is monotonic within
+  one process, later facts do not retract already-derived authority; every
+  current-effect case runs in a fresh process. Book 2 retains clocks, calendars,
+  scheduling, availability, publication, recovery, and operational time
+  administration. The superseded earning-shortens ruling is not a deferred
+  permission: nothing measures duration, nothing reads `reward`, and no temporal
+  premise may price a person. One harness nuance
   recorded in the pin file: `admits` for a *fresh* name loads
   from a probe (too-late guards only relations with prior facts), so refusal pins guard the
   shipped text and a probe may always widen on top.
 
 - **The shield's exposure surface is unbounded, refused as composed**, ruled 2026-08-02,
   closing chapter 4's own open question. Every candidate bound dies on a prior ruling, and the
-  settled entry names them so nobody re-proposes one at a time: a **time** bound cannot land
-  in the current T0 kernel and requires the ratified T3 implementation gate, rather than an
-  individual exception; an **epoch-recency fact** is an unadjudicated
+  settled entry names them so nobody re-proposes one at a time: a **time** bound is not part
+  of the implemented custody-only T3 family and would require its own power-specific contract,
+  rather than an individual exception; an **epoch-recency fact** is an unadjudicated
   shield-stripping write — one fact retires a target from everyone's shield surface, the
   finding-with-no-finder class chapter 1 conceded, handed to whoever writes it; **lapsing or
   re-certifying standing** revokes it, and Rebel's shield surviving Boss's recall (chapter 2's
-  thesis, pinned three files over) is the standing refutation. Beneath all three, **the record
-  is flat**: within a snapshot, exposed-then-recalled and recalled-then-exposed are
-  indistinguishable, so the past a bound would police is a past the record cannot see. The
+  thesis, pinned three files over) is the standing refutation. Beneath all three, **the shield
+  remains non-temporal**: T2 can represent a separately witnessed sequence, but no shield rule
+  reads it, and within an unordered snapshot exposed-then-recalled and recalled-then-exposed
+  remain indistinguishable. The
   reach-back is pinned in chapter 4's suite (Zeno: convicted, one `show` naming the recalled
   Boss, conviction blocked — negative-controlled on the single write). **Do not bound the
   surface by any route**; the growing list stays priced in chapter 4's costs section, and
@@ -551,7 +616,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 - **The reach strategy: public construction from a home of its own**, ruled
   2026-08-02 and qualified by E2 + P1 + D2 on 2026-08-04. The dedicated domain,
   platform syndication, public red team, and assembled-book capstone survive.
-  The original instruction to serialize the pass-complete current-T0 manuscript
+  The original instruction to serialize the pass-complete pre-expansion manuscript
   does not: E2 leaves that manuscript as public source and git history without a
   promoted edition. P1 replaces that immediate route with immutable, tagged
   expansion snapshots after their full gates; they are previews, not final
@@ -612,8 +677,9 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   **The alternatives are refused as composed — do not re-propose either**:
   review-standing derived from `prisoner` and read under negation by the conviction
   rule is the measured stratifier cycle (Article 7's own landmine), and "pending"
-  framing collides with chapter 5's "Not provisionally, not pending anything" on a
-  flat record; an affirmative exhaustion fact is a new admitted name in the
+  framing collides with chapter 5's "Not provisionally, not pending anything"
+  because the relief pair itself remains case-unbound and unordered; an
+  affirmative exhaustion fact is a new admitted name in the
   finding-with-no-finder class whose *withheld* entry blocks every conviction — one
   word upstream of liberty, pointed the other way.
 
@@ -627,9 +693,11 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   **Article 5's judge-your-child rule was deliberately not extended**. Chapter 5 keeps
   the residue: closeness the record has no words for still co-signs. **(2) Expungement,
   mark only**: `forgive(Appeals, $x)` beside `judge(Appeals, $x)` derives `clean($x)`
-  (a new `derived_only` — hold it apart from the asserted `clear`), and the epoch carry
-  became `rotten & ~clean -> false`. Two writes, never one — the clear-guard shape.
-  Word restored, clawback stops, doors reopen, and the measured retroactive consequence
+  (a new `derived_only` — hold it apart from the asserted `clear`), and the effective
+  witnessed carry became `match(CarriedVoid) & ~clean -> false`. The raw
+  `rotten` report remains an input but is inert alone. Two writes, never one —
+  the clear-guard shape.
+  Word restored, clawback stops, earning doors reopen, and the measured retroactive consequence
   is told in print: a forgiven examiner's recorded past examinations start paying.
   **The pen-return form (four sites) was refused**: credential rules and the multi-sig's
   signer checks still read the mark itself, which stays on the record — forgiven, not

@@ -2,37 +2,65 @@
 
 # Book 1 Time-Model Decision
 
-> **Status: author-ratified T3 target (2026-08-03); implementation gated.** This
-> does not yet admit a temporal predicate or change the current constitution. It
-> supersedes the 2026-08-02 refusal as a permanent scope rule, not as current law.
+> **Status: author-ratified (2026-08-03) and implemented in stages
+> (2026-08-05).** T1 now reconciles witnessed record transitions, T2 represents
+> witnessed event order, and T3 positively gates case-bound Court custody on a
+> current, source-bound review. This is a safety result over supplied records,
+> not proof that an outside clock advances or a later record arrives.
 
 ## 1. What exists now
 
-Current Book 1 is **T0: flat snapshots plus an external carry convention**.
-Facts inside one snapshot have no before/after relation, clock, duration, or
-automatic expiry. **Engine-dependent—verify before relying:** in the release
-`nibli-pin`, `past`, `now`, and `future` are distinct tensed wrappers, not a
-clock. Stored facts match their own wrapper and bare rules preserve a queried
-wrapper; the engine supplies no transition relation, duration, or ordering
-between them. Before relying on that behaviour, re-run the release engine's
-`test_tense_discrimination_past_vs_future`,
-`test_tense_discrimination_present_vs_past`, `test_temporal_rule_lifting`, and
-`test_temporal_rule_no_cross_tense`, and confirm this constitution still contains
-no tensed wrappers. **Recorded check (2026-08-03):** at clean upstream `nibli`
-commit `9b84be3`, those four tests passed. They establish wrapper discrimination
-and rule lifting only, not cross-epoch time. `rotten` is an asserted next-epoch carry of a prior `false`
-finding; the honest transition is an external obligation, not an in-snapshot
-derivation. `free` and `mature` are writable status facts, not time-derived
-states.
+Current Book 1 now carries a staged temporal path. **T1** accepts a named record
+replacement only when two public bodies attest the exact earlier and later
+manifest bindings. Those attestations do not prove that either manifest is
+actually complete or either witness honest. A separately witnessed passport
+selects one constitutional lineage; only its collision-free terminal accepted
+successor can give carried adverse or clear status, or T3 public power, current
+legal effect in a fresh evaluation. Supportive standing and named audit defects
+remain transition-scoped. T1 reports omitted and forged carry, conflicting
+clear and void histories, standing omission, and missing protected carry. The
+last report is conservative: lawful disposal of a protected record is not
+represented, so every required carry that is absent is labelled
+`RecordDisappearance`, even if outside law might have authorised its removal.
 
-This distinction is load-bearing. A written term releases nobody; `free` is an
-act, not an expiry. The current model cannot distinguish exposure-before-recall
-from recall-before-exposure, cannot detect a deleted fact inside a snapshot,
-and cannot prove that a later snapshot will ever be made.
+**T2** builds separately witnessed, typed event and record paths. Their
+transitive closure exposes direct reversals and longer cycles; a conflict is
+kept within its path type and taints the connected endpoints so a disputed path
+cannot support a review window. **T3** accepts a window only when both path
+types support its exact witnessed boundaries without a competing definition or
+order. Custody then requires independently witnessed exact fields for the case
+subject, Court holder, Court judgment, injury victim, lease, window, renewal,
+source, and canonical terminal transition. Competing source, window, case-subject, or
+lease bindings fail closed; the witnessed judgment and victim fields are
+case-bound but are not a general truth or uniqueness proof.
 
-The 2026-08-02 refusal remains controlling for the current T0 source, but T3
-supersedes its permanent scope. Ratification does not license a contributor to
-add a date-shaped fact or call it a time model.
+The old writable words remain deliberately separate. `free` is still a
+recorded completion act, not an expiry computed by the time path. `mature` is
+still writable rather than time-derived; a person can challenge its omission,
+but the resulting Appeals duty does not write adulthood or confer a ballot.
+The shield does not read temporal order or expiry. A previously attested status
+preserves personhood when its required carry into the next record is omitted; it does
+not recreate a deleted office, authority, or shield premise.
+
+**Engine-dependent—verify before relying:** in the release `nibli-pin`, `past`,
+`now`, and `future` are distinct tensed wrappers, not a clock. Stored facts match
+their own wrapper and bare rules preserve a queried wrapper; the engine supplies
+no duration arithmetic or transition merely from those flavours. Re-run the
+release engine's tense-discrimination and explicit-flavour tests before relying
+on that boundary. This constitution uses ordinary relations for its T1/T2/T3
+path and does not stack tense and deontic wrappers.
+
+The remaining boundary is load-bearing. The model can compare supplied,
+witnessed records and withhold a restrictive conclusion when the required case
+authority is absent. It cannot detect a fact deleted before or inside the first
+attested record, distinguish protected-record disposal from deletion,
+authenticate the outside witnesses, make a later record arrive, advance a
+clock, release a person physically, or make Appeals act. The engine is
+monotonic inside one process, so a newly supplied successor does not retract an
+older conclusion already derived there. Temporal legal effect is therefore a
+fresh-evaluation claim over the supplied current envelope. Missing authority
+does not manufacture `free`; it prevents the custody conclusion in that fresh
+evaluation.
 
 ## 2. The real constitutional choice
 
@@ -63,35 +91,41 @@ unreviewed public power.
 
 | Model | Book 1 can honestly claim | What it cannot supply |
 | --- | --- | --- |
-| **T0 — permanent refusal** | Snapshot conditions and explicit, adjudicated end acts. | Ordered events, promptness, expiry, or a bar on indefinite delay. |
-| **T1 — audited epoch transitions** | Predecessor/successor reconciliation, carry, correction, and an auditable cross-snapshot continuity check: a required carried fact missing from the next attested snapshot is a defect. | Intra-epoch order; detection of a fact deleted within or before an attested snapshot; duration; or assurance that the next epoch arrives. |
-| **T2 — ordered events** | Reviewable before/after evidence, such as notice before coercion. | Metric duration or a deadline that arrives. |
-| **T3 — constitutional temporal limits** | A public power may have a review, renewal, sunset, or maximum-unreviewed-period limit through an independently assured time service. | A derived proof that the service itself advances; that remains operational assurance. |
+| **T0 — historical baseline** | Conditions inside one supplied record and explicit, adjudicated end acts. | Ordered events, promptness, expiry, or a bar on indefinite delay. |
+| **T1 — implemented audited transitions** | Earlier/later reconciliation; one witnessed canonical terminal successor for restrictive legal effect; matched carry; supportive personhood continuity; and named defects for declared missing-carry classes. | Detection of a fact deleted within or before the first attested record; a distinction between lawful disposal and deletion; duration; witness honesty; or assurance that the later record arrives. |
+| **T2 — implemented ordered paths** | Independently witnessed event and record paths, transitive order, and type-scoped conflict propagation for direct or longer cycles. | Agreement about the world merely because the two record families agree; metric duration; or a deadline that arrives. |
+| **T3 — implemented for case-bound custody** | Court custody derives only from a canonical-current, case-specific renewal tied to the exact witnessed case basis, source, and conflict-free ordered interval. | A measured maximum period, a derived proof that the time service advances, or a temporal limit for any other public power. |
 
 T1 is necessary to make cross-epoch claims less trusting. T2 is necessary
-where order itself matters. Only T3 can honestly prohibit indefinitely
-unreviewed public power. Neither T1 nor T2 should be sold as a solution to that
-problem.
+where order itself matters. Only T3 can make current review or renewal a
+condition of public power; preventing indefinite delay still depends on the
+outside service advancing and publishing the next record. Neither T1 nor T2
+should be sold as a solution to that problem.
 
-## 4. Ratified ruling
+## 4. Ratified and implemented ruling
 
-**Author ruling (2026-08-03): adopt T3 as the constitutional target, with T1
-required and T2 required wherever a rule depends on event order.** This supersedes
-the old permanent-refusal rule as an expansion direction. T0 and its existing pins
-remain the current law until the implementation gate passes.
+**Author ruling (2026-08-03): adopt T3, with T1 required and T2 required wherever
+a rule depends on event order. Implemented 2026-08-05 for case-bound Court
+custody.** The formal work landed in the required order and the staged assurance
+harness tests each cumulative source rather than treating the final file as proof
+that its prerequisites passed separately.
 
-The proposed constitutional principle is:
+The constitutional principle is:
 
 > Time constrains public power; it does not price a person. A temporal rule may
 > require review, renewal, or an end to a public restriction. It may not map a
 > person's character, contribution, recognition, wealth, identity, compliance,
 > or score to a longer or shorter deprivation.
 
-Book 1 would specify the temporal authority, its limits, challenge route, and
-failure consequence. Book 2 would operate clocks, calendars, witnessing,
-storage, scheduling, recovery, and availability. A Book 1 sentence must say
-whether its temporal effect is formally modelled or externally assured; it may
-not imply that an operational promise is a present derivation.
+Book 1 now specifies those fields for the Court custody family: its reviewed
+authority; exact case, person, Court judgment, and injury victim; canonical
+current source and record; challenge route; and fail-closed consequence for the
+restrictive power. Competing witnessed case-subject, lease, source, or window bindings
+block that power. Other public powers still need their own contracts. Book 2
+operates clocks, calendars, witnessing, storage, scheduling, recovery, and
+availability. A Book 1 sentence must say whether its temporal effect is
+formally modelled, requires a fresh evaluation, or is externally assured; it
+may not imply that an operational promise is a present derivation.
 
 The rejected T0 alternative would retain only non-temporal end conditions. That
 is coherent, but it leaves the Public institutions and Emergency/resilience rows
@@ -99,6 +133,11 @@ incomplete unless the author explicitly narrows their ratified scope. It is not
 a safeguard against indefinitely unreviewed power.
 
 ## 5. Non-negotiable limits for a T3 design
+
+These remain requirements on the whole constitutional and operational system.
+The current repository establishes the legal defaults and bounded
+supplied-record tests described below; it does not establish the outside
+identity, storage, publication, or availability controls in this list.
 
 1. **Independent source:** no body may alone create a case fact, control the
    temporal record that governs it, execute the consequence, and review itself.
@@ -120,72 +159,80 @@ a safeguard against indefinitely unreviewed power.
    personhood, core floors, equality, evidence rights, appeal, or the shield.
    An adulthood rule, if retained, needs an accessible correction route and may
    never gate anything beyond the expressly ratified civic function.
+7. **One current legal line:** an adverse carry or restrictive power may read
+   only the collision-free terminal successor selected by the independently
+   witnessed constitutional-lineage binding. A disjoint terminal chain, a
+   competing source/window/case-subject/lease binding, or a status from an earlier
+   evaluation cannot lend it authority.
 
-## 6. Current-baseline prose coherence — not gated by the time ruling
+## 6. Prose coherence
 
-These are corrections to the current T0 description, not temporal
-formalisation. They remain necessary despite T3's selection as the future
-target and must land before any public expansion snapshot containing the
-affected chapters or the First-Edition release candidate.
+The implementation retires the earlier flat-record account wherever it became
+false while preserving the claims that the narrow temporal path does not change.
 
 1. [x] **Chapter 13's ambiguous “words exist” claim is repaired:** ordinary
    language is now distinguished from admitted constitutional facts and from a
    clock.
-2. [ ] **Complete the cross-chapter coherence pass.** Chapters 4, 5, and 13 must
-   use one current account: flat snapshots have no internal order; epoch carry
-   is an external/manual cross-snapshot convention; the current constitution
-   has no duration arithmetic or automatic expiry; and T3 is a ratified future
-   target. In particular, retire the remaining permanent-refusal wording in
-   Chapters 4 and 13 without implying that T3 already exists.
-3. [ ] **Verify the corrected prose and existing pins/counted-claim gates**
-   without introducing a temporal predicate, deadline, cadence, or new current
-   Book 1 guarantee.
+2. [x] **The cross-chapter coherence pass is complete.** Chapters 4, 5, and 13
+   now distinguish witnessed record replacement, represented order, symbolic
+   review intervals, and outside clock liveness. Chapter 4 keeps the shield's
+   unbounded reach-back; Chapter 13 keeps its title and single-deprivation claim.
+3. [x] **The affected prose, pins, counted-claim gates, and narrowness ledger are
+   updated together.** The new rules add no duration arithmetic, personal-time
+   score, automatic `free`, temporal floor condition, or time limit on the shield.
 
 ## 7. Formal implementation and verification gate
 
-Do not alter `constitution.nibli` until all of these are present:
+The implementation was admitted only after these gates were made executable:
 
-1. [x] **Author decision — complete:** T3 is ratified as the target and
-   supersedes the 2026-08-02 duration refusal in `CLAUDE.md` as a permanent scope
-   rule.
-2. **Temporal-input contracts:** for every input, name writer, evidence,
+1. [x] **Author decision:** T3 is ratified and power-scoped.
+2. [x] **Temporal-input contracts:** the reviewed
+   `temporal-assurance-case.json` names, for every input, its writer, evidence,
    forge route, withholding route, correction, appeal, cross-epoch handoff,
    residual external assurance, and exact Book 1/Book 2 boundary.
-3. **Constitutional source and effect binding:** bind every temporal proposal to
-   an exact candidate source change, independent semantic-effect and compatibility
-   review, and an authenticated effective version. Article 9's declared-target
-   label is not this control. The bounded amendment-semantics audit demonstrates
-   the gap; it does not close RI-12's source-release, transition, or narrowness
-   assurance work.
-4. **A two-snapshot differential harness:** current one-file pins cannot prove
-   an N-to-N+1 transition. The harness must fail on omitted carry, forged carry,
-   unexplained cross-snapshot disappearance, replay, or a frozen transition
-   rather than merely producing a harmless-looking green result. It cannot claim
-   to detect a fact deleted within or before an attested snapshot.
-   **Partial evidence, 2026-08-04:**
-   [`record-integrity-red-team.md`](record-integrity-red-team.md) executes
-   constructed honest-carry, omitted-carry, unmatched-carry, forgiveness-companion rollback,
-   silent-mark-deletion, and lawful-unrelated-change pairs. This is deliberately
-   not completion of this gate: snapshot identity, predecessor attestation,
-   replay, divergence, frozen-transition invocation, reconciliation, recovery,
-   and liveness remain unimplemented.
-5. **Staged formal work:** implement and test T1 first, then T2 wherever an
-   effect depends on before/after, then T3. Do not bypass this with `year`,
-   `earlier`, a numeral, a tense wrapper, or a raw `temporary` assertion.
-6. **Narrowness-impact note:** before each family lands, classify the impact on
-   Chapters 1, 4, 5, 7, 8, 9, 13, 14, and Part V. In particular, name the fate
-   of Chapter 4's unbounded reach-back, Chapter 13's title and no-duration
+3. [x] **Constitutional source and effect binding:** the reviewed contract binds
+   the case-gate and source-binding fragments to exact digests and records the
+   compatibility verdict. This is repository source binding, not proof of lawful
+   enactment; Article 9's declared-target label remains insufficient.
+4. [x] **A two-record differential harness:** fresh-process pairs fail on omitted
+   and forged carry, required protected carry that disappears, replay, and
+   supplied divergence. A predecessor-only case exposes the frozen-transition
+   boundary by deriving no successor; it cannot detect that an outside service
+   failed to invoke or publish one. The disappearance case is deliberately
+   conservative because record-level lawful disposal is not represented. The
+   pairs do not claim to detect a fact deleted within or before the first
+   attested record or to make the next one arrive.
+5. [x] **Staged formal work:** `12-temporal-assurance.py` constructs cumulative
+   T1, T2, and T3 candidates from marked source regions and executes each stage
+   separately before accepting the current source. A date-shaped name, numeral,
+   tense wrapper, or raw `temporary` assertion cannot satisfy those contracts.
+   Because temporal conclusions retain only an identifier and status tag, every
+   consequential consumer rejoins its exact raw tuple and matching observations.
+   T1 selects one collision-free terminal successor on the witnessed
+   constitutional lineage; T2 closes typed paths transitively and propagates
+   typed conflict; T3 rejects competing witnessed source, window, case-subject, or lease
+   bindings. Adversarial cases prove that another tuple sharing an identifier
+   cannot borrow a tag to create authority or disable a valid review window.
+6. [x] **Narrowness-impact note:** the reviewed ledger classifies the impact on
+   Chapters 1, 4, 5, 7, 8, 9, 13, 14, and Part V. It records the fate of
+   Chapter 4's unbounded reach-back, Chapter 13's title and no-duration
    claim, Chapter 8's three-open-doors claim, and Chapter 14's unread-duty
-   endpoint. Apply the coverage map's impact gate.
+   endpoint. The generated
+   [`temporal-assurance-case.md`](temporal-assurance-case.md) is the bounded
+   current-source assurance record; it preserves the outside-liveness boundary.
+
 ## 8. Required adversarial matrix
+
+The generated temporal assurance case owns these executable cases. The table
+records what each family must continue to prove and where its proof stops.
 
 | Area | Attack and required control |
 | --- | --- |
-| Baseline | Prove tense wrappers, `year`, `earlier`, and an opaque stated term create neither chronology nor release under T0. |
-| Carry | Test honest carry, omitted carry, forged `rotten`, cross-snapshot disappearance/replay, forgiveness, and same-epoch reciprocal voids. Both omission and forgery must become a named, appealable defect; do not claim detection of intra-snapshot deletion. |
-| Release | Test forged `free`, withheld release after any adopted end condition, and valid release. Preserve personhood, travel, floor debt, and the disclosed delivery gap. |
+| Baseline | Prove tense wrappers, `year`, `earlier`, and an opaque stated term create neither the implemented chronology nor release on their own. |
+| Carry and current lineage | Test honest carry, omitted carry, forged raw carry, competing or disjoint terminal lineages, cross-record disappearance/replay, forgiveness, and same-record reciprocal voids. Only the witnessed canonical terminal successor may give adverse carry legal effect in a fresh evaluation. Omission and forgery become named, challengeable defects; disappearance remains a conservative report because lawful protected-record disposal is not represented. |
+| Release | Test forged `free`, withheld current authority, and valid recorded release. Preserve personhood, travel, floor debt, and the disclosed delivery gap; authority lapse must not manufacture `free`. |
 | Maturity | Test forged and withheld `mature`; prove it cannot gate personhood, floors, liberty, due process, or remedy. |
-| Order and recency | Test exposure before/after office end, forged/withheld stale facts, and backdated records. Do not claim an ordering result without separately represented event and record time. |
+| Order and recency | Test direct and longer cycles, typed conflict propagation, exposure before/after office end, forged/withheld stale facts, and backdated records. Do not claim an ordering result without separately witnessed event and record paths, and do not let a contested connected path support a window. |
 | Emergency and office | Test forged declaration/end, frozen end, re-declaration loop, succession, and self-review. Ending power must not erase answerability or the shield. |
 | Audit | Any deadline or ignored-duty rule that reads `obliged` must deliberately retire Chapter 14's current endpoint and update its pins and prose. |
 
@@ -194,10 +241,12 @@ Do not alter `constitution.nibli` until all of these are present:
 - [ ] **Retain T0 permanently.** Not chosen. This would retain the no-time ruling
   and leave Public institutions and Emergency/resilience incomplete unless their
   mandate were narrowed.
-- [x] **Adopt T3 as the constitutional target (ratified 2026-08-03).** Keep the
-  current formal kernel at T0 until T1, T2 wherever order matters, the
-  temporal-input contracts, constitutional source/effect binding, the differential
-  harness, and the adversarial matrix all pass.
+- [x] **Adopt T3 (ratified 2026-08-03; implemented 2026-08-05).** T1 record
+  reconciliation and carry, T2 witnessed order, and T3 case-bound custody
+  authority landed after the temporal-input contracts, exact source/effect
+  binding, staged differential harness, adversarial matrix, and narrowness pass.
+  Expansion to another public power requires another power-specific contract;
+  the current result is not a general clock or liveness proof.
 
 No third option is honest: an unassured manual timestamp, a new word for an
 epoch, or a Book 2 promise with no named failure consequence is not a time

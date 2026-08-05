@@ -11,11 +11,12 @@
 
 ## 1. Ratified mandate
 
-The settled Book 1 has a narrow, verified kernel: equal standing, eight named
-floor entitlements, limited consequences, amendment, and audit. It deliberately
-defers governance vocabulary, all **non-carceral** delivery routes except
-learning, time, and most operational accountability to Book 2. It is therefore
-**not currently a comprehensive constitution**.
+The settled Book 1 has a narrow, verified kernel: equal standing, named floor
+entitlements, limited consequences, amendment, audit, and a staged temporal path
+for record carry, event order, and case-bound custody authority. It deliberately
+defers governance vocabulary, most **non-carceral** delivery routes, and most
+operational accountability to Book 2. It is therefore **not currently a
+comprehensive constitution**.
 
 The author has chosen to expand Book 1 into a formal constitutional interface
 for the domains below. The choice changes **scope**, not the current truth of
@@ -54,16 +55,16 @@ social outcome.
 
 | Domain | Current Book 1 coverage | Ratified scope requirement | Status | Gap / author ruling required |
 | --- | --- | --- | --- | --- |
-| Personhood and equality | **Partial:** `person` is the root for floor entitlements. | Universal standing; non-discrimination; emergency access without a settled record; challenge and correction. | Partial formalisation; ratified scope, contract pending. | The bounded red-team now executes one roster omission: protections disappear while sanctions survive. It exposes the lever but supplies neither universal standing nor runtime recovery. |
+| Personhood and equality | **Partial:** `person` is the root for floor entitlements; T1 preserves personhood from a separately attested earlier status and reports an omitted carry into the later record. | Universal standing; non-discrimination; emergency access without a settled record; challenge and correction. | Partial formalisation; transition continuity implemented, broader contract pending. | The transition rule cannot discover a person never entered, detect deletion before or inside the first attested record, authenticate its witnesses, or recover a missing record. Universal initial standing and runtime recovery remain absent. |
 | Material floor | **Partial:** `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` are unconditional entitlements. | Adequate food, water/sanitation, home/utilities, health and care, material security, learning/information, accessibility, and voluntary social life. | Partial formalisation; ratified scope, contract pending. | Only learning has a non-carceral arrival route; confinement can derive limited shelter/speech. The legacy `hears` route is not qualifying general delivery evidence. Every future route needs accessibility-neutral, recipient-side access/receipt evidence with an authorised writer and challenge route; it may not assert a personal outcome. |
 | Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on power. Future liberty rules bind public power directly; public institutions must prevent, investigate, and remedy private interference. A direct private prohibition exists only where a rule names it expressly. |
-| Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, and release are formalised. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, contract pending; T3 target ratified. | Civil disputes, child representation, enforcement limits, and administration are missing; the current T0 kernel has no temporal rule until the T3 gate passes. |
+| Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, release, and case-bound current custody authority are formalised. The custody gate rejoins witnessed case-subject, Court-holder, Court-judgment, and injury-victim evidence. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, broader contract pending; narrow T3 custody path implemented. | Civil disputes, child representation, enforcement limits, conditions, reintegration, and administration are missing. The T3 rule gates custody on the exact witnessed case basis and current review; it supplies neither metric duration nor an outside guarantee that a later record or review arrives. |
 | Democracy and amendment | **Partial:** vote, recall, proposal, approval, and declared-target label verdicts exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The current machinery does not authenticate the approval writer, tally, certificate, recount, challenge, or correction; bind a proposal to an exact source change; review semantic effects; identify an independent compatibility reviewer; or apply an authenticated effective-version transition. The bounded audit executes only label/effect counterexamples, including an honestly blocked label beside a manually applied deletion; it supplies none of those controls. Office and locality vocabulary also remain absent. |
-| Public institutions | **Partial:** named judicial/review actors and audit roles appear. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; T3 target ratified, implementation pending. | Authority, conflict rules, and independence are not a complete branch architecture. An adjudicated end act is not a bound on unreviewed power; complete status requires the ratified T3 path to pass. |
-| Records and accountability | **Partial:** closed admitted record, derived-only conclusions, audit markers, and a bounded executable snapshot red-team. | Complete legally operative basis; permitted and prohibited inputs; authored positive premises and route-specific admissibility of absence; visibility, privacy, contestation, correction, retention, external assurance, independent receipt/action, continuity, individual remedy, and systemic correction. | Partial formalisation; selected T0 harms executable; generated assurance case still **not established**; ratified rule families pending. | The harness reproduces named release, adulthood, roster, carry, relief, and forgiveness consequences plus constructed transition pairs. It does not authenticate writers or snapshots, attribute absence, implement T1, detect arbitrary/intra-snapshot deletion, recover records, or create a reader/remedy. `err` already derives `obliged`, but no reader turns that duty into individual or systemic correction. |
+| Public institutions | **Partial:** named judicial/review actors and audit roles appear; Court custody has a canonical-current, source-bound authority gate with independently witnessed case and lease evidence. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; narrow T3 custody path implemented. | Authority, conflict rules, and independence are not a complete branch architecture. The custody gate's named bodies do not prove real independence, and it does not create terms, review cycles, or end conditions for the other required bodies. |
+| Records and accountability | **Partial:** closed admitted record, derived-only conclusions, audit markers, witnessed predecessor/successor reconciliation, one witnessed canonical terminal lineage for restrictive legal effect, typed transitive event/record paths, and executable staged red-team cases. | Complete legally operative basis; permitted and prohibited inputs; authored positive premises and route-specific admissibility of absence; visibility, privacy, contestation, correction, retention, external assurance, independent receipt/action, continuity, individual remedy, and systemic correction. | Partial formalisation; staged T1/T2/T3 repository assurance implemented; overall live-record assurance still **not established**; ratified rule families pending. | The staged harness catches the declared carry, status, replay/divergence, typed order, exact source/window/case-subject/lease binding, and custody attacks against supplied records. Consequential rules rejoin raw witnessed tuples; a competing binding or conflict-tainted order path fails closed. Legal effect is evaluated in a fresh process because the engine does not retract conclusions incrementally. The protected-record disappearance alarm is conservative: lawful record disposal is not represented, so missing required carry is reported even if outside law might authorise removal. The model does not authenticate witnesses, detect deletion before or inside the first attested record, recover data, force a successor or clock to advance, or make the named reader act. `err` derives `obliged` after the required challenge, but no rule turns that duty into individual or systemic correction. |
 | Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. Property is a conditional liberty bounded by floors and commons. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall: merit, recognition, contribution, qualifying thresholds, and personal scores may not become allocation or access gates for property, commons, material security, standing, authority, or political voice. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
 | Locality, plurality, mobility, and external relations | **Partial:** `travel` is a current conclusion, not a federal/social interface. | Equal standing across places; local self-government; subsidiarity; portability; and basic protections for newcomers, migrants, and external relations. | Partial formalisation; ratified scope, contracts pending. | No community or transfer vocabulary; external-operation details remain Book 2 work. |
-| Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope, contracts pending; T3 target ratified, implementation pending. | No emergency model; Book 2 owns response operations. A non-temporal reversal act cannot prevent an emergency from continuing unreviewed; complete status requires the ratified T3 path to pass. |
+| Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope and T3 principle, emergency-specific contracts pending. | No emergency model; Book 2 owns response operations. The case-bound custody gate cannot be reused as an emergency term or end condition. |
 | Ecology and future people | **Absent.** | Commons, non-destruction, intergenerational constraint, and a reviewable ecological ceiling. | Absent; ratified scope, contracts pending. | Needs a constitutional statement without invented metrics or implementation claims, with standing for any present person and an independently checked public guardian. |
 
 ## 4. The constitutional contract for every row
@@ -75,8 +76,8 @@ a detail to hide in prose.
 | Object | Required constitutional fields |
 | --- | --- |
 | Right / material floor | Holder; duty-bearer; minimum; accessibility; recipient-side access/receipt evidence; authorised writer; challenge route; no personal-outcome inference; breach; interim continuity; remedy; appeal; audit; temporal status. |
-| Liberty / power limit | Protected person; prohibited act; direct public binding; public prevention/investigation/remedy duty for private interference; any explicit private binding; narrow exception test; evidence; independent reviewer; public reason; review or current-T0 non-temporal end condition; temporal status; remedy. |
-| Public power | Office; democratic source; trigger; evidence; scope; conflict rule; non-delegable limit; review; appeal; current-T0 non-temporal end condition; temporal status. |
+| Liberty / power limit | Protected person; prohibited act; direct public binding; public prevention/investigation/remedy duty for private interference; any explicit private binding; narrow exception test; evidence; independent reviewer; public reason; review or end condition; temporal status; remedy. |
+| Public power | Office; democratic source; trigger; evidence; scope; conflict rule; non-delegable limit; review; appeal; end condition; temporal status. |
 | Record | Writer; permitted basis; visibility and privacy; challenge; correction; retention; deletion control; external assurance; independent recipient; action duty; continuity/remedy path; temporal status. |
 | Commons / future condition | Protected common; present duty; ceiling or non-destruction rule; evidence; standing for any present person and an independently checked public guardian; guardian authority/independence/evidence/removal controls; remedy; public accountability; temporal status. |
 
@@ -104,14 +105,18 @@ needs privacy.
 
 The generated
 [`record-integrity-assurance-case.md`](record-integrity-assurance-case.md)
-controls the cross-cutting record argument. Its current verdict is **not
-established**: it specifies the contract and acceptance evidence without
-claiming that T0 authenticates, preserves, reconciles, or recovers a live
-record. The generated
+controls the cross-cutting record argument. Its overall live-system verdict
+remains **not established**: bounded repository evidence can verify declared
+transitions without proving outside authorship, witness honesty, storage,
+availability, recovery, or eventual advancement. It also cannot distinguish a
+lawfully retired protected record from an unlawful deletion because the
+constitution has no record-disposal contract. The generated
 [`record-integrity-red-team.md`](record-integrity-red-team.md) supplies bounded
-executable evidence for selected harms and T0 indistinguishability. Its
-constructed pairs are a T1 test precursor, not constitutional transition
-assurance or operational deletion detection.
+executable evidence for selected flat-record harms. The separate staged temporal
+assurance harness owns T1/T2/T3 transition and custody cases, including the
+canonical terminal lineage, typed transitive order conflicts, exact
+source/window/case-subject/lease bindings, and fresh-evaluation boundary. Neither
+harness is operational deletion detection.
 
 The generated
 [`amendment-semantics-audit.md`](amendment-semantics-audit.md) executes exact
@@ -170,9 +175,9 @@ Every restrictive ordinary proposal must supply: a public purpose, evidence,
 non-discrimination, least-restrictive means, a constitutional delivery duty,
 an appeal, and independent review. Actual budgets, rates, capacity models, and
 allocation operations remain Book 2. An emergency cannot erase personhood, the
-core floor, evidence rights, or a path to review. T3 is ratified as the target,
-but no temporal operation, expiry, or review cadence exists until its
-implementation gate passes.
+core floor, evidence rights, or a path to review. The implemented T3 path
+constrains case-bound custody only; it creates no emergency duration, office
+term, general expiry, or review cadence.
 
 ## 7. Scenario coverage test
 
@@ -198,17 +203,22 @@ roster-integrity-as-disclosure-only. The map now controls constitutional design
 for those areas; they are **eligible for Book 1 work**, not automatically adopted
 rules. Add them as complete domain/rule families, never one predicate at a time.
 
-The author has ratified T3 as the time-model target. This decision does not yet
-admit duration arithmetic, operational deadlines, or review cadence into the
-constitution: the current kernel remains T0 until the implementation gate passes.
+The author has ratified and implemented the staged T3 path for witnessed record
+replacement and carry, typed transitive event/record order, and case-bound
+custody authority. Restrictive legal effect reads only the collision-free
+terminal successor selected by the witnessed constitutional lineage in a fresh
+evaluation. Custody also rejoins exact, independently witnessed source, window,
+case, lease, Court-judgment, and injury-victim fields; competing source, window,
+case-subject, or lease bindings fail closed. This does not admit duration arithmetic, claimant deadlines, a
+general review cadence, or temporal limits for powers outside that rule family.
 
 [`book-1-time-model-decision.md`](book-1-time-model-decision.md) records the
-ruling and implementation gate without changing the current T0 rule.
+ruling, implemented stages, assurance boundary, and remaining power-specific work.
 
-Under the current T0 kernel, an end act may be specified but its occurrence
-cannot be guaranteed. A row requiring time-bounded review, renewal, or an end to
-unreviewed public power may not be marked complete until the ratified T3 path
-passes.
+A row requiring time-bounded review, renewal, or an end to unreviewed public
+power may not borrow the custody rule. It needs its own source-bound temporal
+contract and adversarial cases, and Book 2 must still assure that the outside
+service advances and the required record arrives.
 
 The author has ratified the constitutional taxonomy. Its named functional
 classes and boundary rulings govern future contract cards; they do not add a
@@ -218,7 +228,7 @@ mechanism. See [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxon
 This map also does not authorise a serialized edition to be changed in place.
 The ratified E2 + P1 + D2 publication contract is
 [`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md):
-the current-T0 baseline receives no promoted edition; immutable expansion
+the pre-expansion baseline receives no promoted edition; immutable expansion
 snapshots are permitted after their gates; and the completed expansion becomes
 Book 1's First Edition and first print-on-demand edition.
 
@@ -228,7 +238,8 @@ Work in this order:
    2026-08-03.**
 2. ~~Rule the taxonomy and time decisions.~~ **Done 2026-08-03.** Use the
    ratified [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md)
-   and T3 target to complete this map’s fields and scenario tests for each
+   and the implemented, power-scoped T3 path to complete this map’s fields and
+   scenario tests for each
    proposed domain. The democratic corridor is ratified but not formalised.
 3. Define only constitutional interfaces in a new formal source; keep operations
    in [`book-2/TODO.md`](../book-2/TODO.md).

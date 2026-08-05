@@ -22,11 +22,16 @@ python3 new-book-plans/10-amendment-semantics.py --check
 python3 new-book-plans/10-amendment-semantics.py --check --execute
 python3 new-book-plans/11-placement-exhaustiveness.py --check
 python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
+python3 new-book-plans/12-temporal-assurance.py --check
+python3 new-book-plans/12-temporal-assurance.py --check --execute
+python3 new-book-plans/13-floor-abstraction.py --check
+python3 new-book-plans/13-floor-abstraction.py --check --execute
 python3 registry/check.py
 ```
 
-Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Dependency order is 7 → 8 → 9; script 10 separately binds the constitution and reviewed 7/8 sources. Its fixtures manually apply candidates and do not prove enactment. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier.
-Script 11 binds the constitution and reviewed placement contract; the full verifier rejects conflicts with the current routing matrix when run but adds no runtime alarm or housing-delivery evidence.
+Use release `nibli-pin --kb`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Script 13 is an isolated exact-source floor regression. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier.
+
+Script 10 manually applies candidates and does not prove enactment. Script 11 rejects conflicts with the current routing matrix when run but adds no runtime placement alarm or housing-delivery evidence. Script 12 proves bounded supplied-record safety, not outside clock, publication, storage, or institutional liveness.
 
 ## Editing, Testing & Naming
 

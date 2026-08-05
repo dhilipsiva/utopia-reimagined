@@ -14,19 +14,19 @@ The source is already public under irrevocable open licences. Measured
 assembled reader artifact, canonical site, homepage, or immutable public-book
 URL. Public source is not yet a citable edition.
 
-The 2026-08-02 reach ruling originally assigned the pass-complete current-T0
+The 2026-08-02 reach ruling originally assigned the then-pass-complete T0
 manuscript to spine-order serialization, public red-team review, and an
 assembled capstone. The 2026-08-03 mandate creates a different future artifact:
 an expanded constitution, regenerated spine, new tests, possible reordering,
 and revised prose. A completed pass is therefore version-specific. E2 preserves
 the public-review and capstone strategy but applies them to the expansion rather
-than promoting the current-T0 manuscript.
+than promoting that T0 manuscript.
 
-The current tree is a **candidate baseline**, not and never a First Edition
-under E2. It combines the current T0 constitution with the ratified but
-unimplemented T3 target, while some reader-facing prose still states the older
-permanent no-time refusal. Its last page also promises that the operational
-volume is “the next book,” an order the expansion may change.
+At ratification, that tree was a **candidate baseline**, not and never a First
+Edition under E2. The evolving source now contains the staged T1/T2/T3 custody
+path, but it remains an expansion draft: implementation does not promote it,
+freeze its chapter order, or satisfy the separate release gate. The last page's
+publication-order promise also remains a pre-edition issue.
 
 On 2026-08-04, the author decided:
 
@@ -69,7 +69,7 @@ in the artifact itself or in inseparable release metadata.
    inputs, command, date, retained transcript, and known external-assurance
    limits. A release run may not contain `+uncommitted`, use an unidentified
    binary override, or fall back silently to an existing binary.
-4. **Plain scope:** current-T0 baseline, expanded draft, or completed expanded
+4. **Plain scope:** historical T0 baseline, staged expanded draft, or completed expanded
    interface; implemented guarantees; known defects; and what remains external.
    “Verified” describes checked formal and editorial claims, not successful
    delivery in society or independent validation of the engine.
@@ -99,11 +99,11 @@ the hash of the commit that contains it.
 
 | Choice | Benefit | Cost / condition |
 | --- | --- | --- |
-| **E1. Give the current-T0 baseline its own First Edition.** | Preserves a reproducible object, honours the existing serialization ruling, and lets outside review attack a stable claim set. | It must be labelled as narrow and later superseded; the pre-freeze and release-candidate gates apply. |
+| **E1. Give the pre-expansion T0 baseline its own First Edition.** | Preserves a reproducible object, honours the existing serialization ruling, and lets outside review attack a stable claim set. | It must be labelled as narrow and later superseded; the pre-freeze and release-candidate gates apply. |
 | **E2. Withhold a promoted edition until expansion is complete.** | Avoids giving the narrow design a durable canonical identity. | Cannot make the manuscript private; it remains in public git history. It gives up baseline serialization as the planned red-team route, so another review route and a clear completion event are required. The expanded work would become Book 1’s First Edition, not its Second. |
 
 **Ruling: E2.** The author rejected the draft recommendation to give the
-current-T0 baseline a separate First Edition. It remains public source and git
+pre-expansion T0 baseline a separate First Edition. It remains public source and git
 history, but receives no canonical serialization, assembled edition, edition
 tag, or print identity. The completed expansion becomes Book 1's First Edition.
 P1 supplies the replacement public-review route. No additional rationale was
@@ -128,7 +128,7 @@ E2 creates no baseline capstone, previews may begin when their own gate passes.
 | **D1. Print the narrow baseline if it receives a First Edition.** | Gives the verified baseline a durable, accessible physical form and fulfils the original reach ruling sooner. | Physical copies will outlive their scope warning and may be mistaken for the comprehensive redesign. This option has no object under E2. |
 | **D2. Make the completed expansion the first POD edition.** | Reserves the most durable format for the mandate the author now intends Book 1 to fulfil. | Delays the print-on-demand companion and forgoes physical reach for the baseline. |
 
-**Ruling: D2.** The current-T0 baseline receives no print edition. The completed
+**Ruling: D2.** The pre-expansion T0 baseline receives no print edition. The completed
 expansion is the first physical Book 1 as well as its First Edition.
 
 ## 7. Gate before any public expansion snapshot
@@ -136,11 +136,10 @@ expansion is the first physical Book 1 as well as its First Edition.
 P1 does not authorise publishing current HEAD or an incoherent intermediate
 state. Before the first expansion-preview tag:
 
-1. **Align current time claims.** The Chapter 13 ordinary-language distinction
-   has landed. Remove or narrow the remaining permanent-refusal claims in
-   Chapters 4 and 13 that conflict with T3 as a future target; cross-read
-   Chapter 5’s manual epoch-carry account; introduce no temporal guarantee into
-   the current T0 constitution.
+1. **Align current time claims.** Completed for the staged custody path on
+   2026-08-05: the constitution and affected prose distinguish supplied-record
+   safety from outside clock and publication liveness. Recheck this boundary
+   whenever another public power gains a temporal contract.
 2. **Audit standing claims in all public entry points.** The root README says no
    registration is required, and the opening note says rights attach from the
    day a person exists, while universal unregistered service remains expansion
@@ -163,7 +162,7 @@ state. Before the first expansion-preview tag:
 
 ## 8. Ratified release sequence under E2 + P1 + D2
 
-1. Keep the current-T0 baseline in public source and history without an edition
+1. Keep the pre-expansion T0 baseline in public source and history without an edition
    tag, canonical serialization, assembled release, or print file.
 2. Build the expansion one bounded rule family at a time under the mandate,
    taxonomy, T3 gate, coverage contracts, and narrowness-impact gate.

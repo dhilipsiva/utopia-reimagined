@@ -25,8 +25,8 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `ae1175be1219bda8037b540cd93961b32aa26d3baffaa7fc4b477b8129b63519`.
-- Authored-fact fingerprint: `804046ccf0479fe0eedfeea30a414ef3506363755bab2443c886a72d0d67ee8a`.
+- Authored-rule fingerprint: `8eab12589f3e547c25bbcb2e3539f1d73816e6fb3f85e2cedeaa66b0c248dc16`.
+- Authored-fact fingerprint: `9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
 
@@ -35,32 +35,43 @@ the contract ledger.
 | relation | stratum | admitted | derived-only | ground facts | classification | contract | direct readers |
 | --- | ---: | --- | --- | --- | --- | --- | --- |
 | `authority` | 0 | no | yes | no | `derived_only` | `derived-only-authority` | positive `defend` |
-| `become` | 2 | no | yes | no | `derived_only` | `derived-only-become` | none |
-| `believe` | 2 | no | no | no | `pending_interface` | `floor-actuality-believe-pending` | none |
-| `building` | 2 | no | yes | no | `derived_only` | `derived-only-building` | none |
+| `become` | 4 | no | yes | no | `derived_only` | `derived-only-become` | none |
+| `believe` | 4 | no | no | no | `pending_interface` | `floor-actuality-believe-pending` | none |
+| `building` | 4 | no | yes | no | `derived_only` | `derived-only-building` | none |
 | `clean` | 0 | no | yes | no | `derived_only` | `derived-only-clean` | negative `false` |
-| `decide` | 2 | no | yes | no | `derived_only` | `derived-only-decide` | none |
+| `collide` | 1 | no | yes | no | `derived_only` | `derived-only-collide` | negative `correct`, negative `match`, negative `reference`, negative `succeed`, negative `time`, positive `collide` |
+| `complete` | 0 | no | yes | no | `derived_only` | `derived-only-complete` | negative `succeed`, positive `collide`, positive `err`, positive `match`, positive `person`, positive `succeed` |
+| `concurrent` | 0 | no | yes | no | `derived_only` | `derived-only-concurrent` | positive `correct` |
+| `correct` | 2 | no | yes | no | `derived_only` | `derived-only-correct` | positive `match`, positive `prisoner` |
+| `decide` | 4 | no | yes | no | `derived_only` | `derived-only-decide` | none |
 | `defend` | 1 | no | yes | no | `derived_only` | `derived-only-defend` | negative `prisoner` |
-| `dwell` | 2 | no | no | no | `pending_interface` | `floor-actuality-dwell-pending` | none |
-| `eats` | 2 | no | no | no | `pending_interface` | `floor-actuality-eats-pending` | none |
-| `entitled` | 2 | no | yes | no | `derived_only` | `derived-only-entitled` | none |
-| `err` | 3 | no | yes | no | `derived_only` | `derived-only-err` | positive `obliged` |
-| `expresses` | 2 | no | no | no | `pending_interface` | `floor-actuality-expresses-pending` | none |
-| `false` | 1 | no | yes | no | `derived_only` | `derived-only-false` | negative `become`, negative `reward`, positive `lose` |
-| `fit` | 2 | no | yes | no | `derived_only` | `derived-only-fit` | negative `err`, positive `building`, positive `dwell` |
-| `healthy` | 2 | no | no | no | `pending_interface` | `floor-actuality-healthy-pending` | none |
-| `learn` | 2 | no | no | no | `pending_interface` | `floor-actuality-learn-pending` | none |
-| `lose` | 1 | no | yes | no | `derived_only` | `derived-only-lose` | none |
-| `meets` | 2 | no | no | no | `pending_interface` | `floor-actuality-meets-pending` | negative `err` |
-| `obliged` | 3 | no | no | no | `pending_interface` | `audit-duty-obliged-pending` | none |
-| `owe` | 2 | no | yes | no | `derived_only` | `derived-only-owe` | none |
-| `permits` | 1 | no | yes | no | `derived_only` | `derived-only-permits` | negative `prisoner`, positive `false` |
-| `person` | 2 | yes | no | yes | `mixed_base_fact` | `person-roster-mixed` | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` |
-| `prisoner` | 2 | no | yes | no | `derived_only` | `derived-only-prisoner` | negative `travel`, positive `building`, positive `dwell`, positive `err`, positive `expresses`, positive `fit`, positive `person` |
-| `reward` | 2 | no | yes | no | `derived_only` | `derived-only-reward` | none |
-| `secure` | 2 | no | no | no | `pending_interface` | `floor-actuality-secure-pending` | none |
+| `dwell` | 4 | no | no | no | `pending_interface` | `floor-actuality-dwell-pending` | none |
+| `eats` | 4 | no | no | no | `pending_interface` | `floor-actuality-eats-pending` | none |
+| `entitled` | 4 | no | yes | no | `derived_only` | `derived-only-entitled` | none |
+| `err` | 5 | no | yes | no | `derived_only` | `derived-only-err` | positive `obliged` |
+| `expresses` | 4 | no | no | no | `pending_interface` | `floor-actuality-expresses-pending` | none |
+| `false` | 3 | no | yes | no | `derived_only` | `derived-only-false` | negative `become`, negative `reward`, positive `lose` |
+| `fit` | 4 | no | yes | no | `derived_only` | `derived-only-fit` | negative `err`, positive `building`, positive `dwell` |
+| `healthy` | 4 | no | no | no | `pending_interface` | `floor-actuality-healthy-pending` | none |
+| `learn` | 4 | no | no | no | `pending_interface` | `floor-actuality-learn-pending` | none |
+| `lose` | 3 | no | yes | no | `derived_only` | `derived-only-lose` | none |
+| `match` | 2 | no | yes | no | `derived_only` | `derived-only-match` | negative `err`, negative `false`, negative `permits`, positive `err`, positive `false`, positive `permits`, positive `prisoner` |
+| `meets` | 4 | no | no | no | `pending_interface` | `floor-actuality-meets-pending` | negative `err` |
+| `obliged` | 5 | no | no | no | `pending_interface` | `audit-duty-obliged-pending` | none |
+| `orderly` | 0 | no | yes | no | `derived_only` | `derived-only-orderly` | positive `correct` |
+| `owe` | 4 | no | yes | no | `derived_only` | `derived-only-owe` | none |
+| `permits` | 3 | no | yes | no | `derived_only` | `derived-only-permits` | negative `prisoner`, positive `false` |
+| `person` | 4 | yes | no | yes | `mixed_base_fact` | `person-roster-mixed` | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` |
+| `precede` | 1 | no | yes | no | `derived_only` | `derived-only-precede` | positive `collide`, positive `correct`, positive `err`, positive `precede`, positive `time` |
+| `prisoner` | 4 | no | yes | no | `derived_only` | `derived-only-prisoner` | negative `travel`, positive `building`, positive `dwell`, positive `err`, positive `expresses`, positive `fit`, positive `person` |
+| `reference` | 2 | no | yes | no | `derived_only` | `derived-only-reference` | positive `correct` |
+| `related` | 0 | no | yes | no | `derived_only` | `derived-only-related` | positive `correct`, positive `err`, positive `match` |
+| `reward` | 4 | no | yes | no | `derived_only` | `derived-only-reward` | none |
+| `secure` | 4 | no | no | no | `pending_interface` | `floor-actuality-secure-pending` | none |
 | `severe` | 1 | no | yes | no | `derived_only` | `derived-only-severe` | negative `building`, negative `fit`, positive `building`, positive `dwell` |
-| `travel` | 3 | no | no | no | `pending_interface` | `liberty-travel-pending` | none |
+| `succeed` | 2 | no | yes | no | `derived_only` | `derived-only-succeed` | positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` |
+| `time` | 2 | no | yes | no | `derived_only` | `derived-only-time` | positive `correct` |
+| `travel` | 5 | no | no | no | `pending_interface` | `liberty-travel-pending` | none |
 
 ## Writable-premise index
 
@@ -71,32 +82,42 @@ channels. No exceptional channel exists in the current contract.
 | premise | tags | cheapest target | dispositions | direct readers | route fingerprint |
 | --- | --- | --- | --- | --- | --- |
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `approves` | amendment, democracy | `become` | patchable, external | positive `become` | `c0568d4cace09cfe` |
+| `approves` | amendment, democracy, public-power, time | `become` | patchable, external | positive `become`, positive `collide`, positive `correct` | `9915b8691afeed45` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `b599276926a4a78b` |
-| `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `bb2b5d843f216e85` |
-| `choose` | seating, public-body, democracy | `permits` | patchable, external, deliberately_refused | positive `authority`, positive `permits` | `0ee617c4279fe915` |
-| `cite` | audit, provenance | `reward` | patchable, external | positive `reward` | `ccbb9dcfcba6f725` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `3573b6207d971c26` |
+| `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `65be047ee2ff4cd2` |
+| `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `df0e5ba1ab49c076` |
+| `carries` | epoch-carry, record-integrity, time, witness | `err` | patchable, external | negative `err`, positive `err`, positive `match` | `19621bd13b05a5cd` |
+| `challenge` | challenge, record-integrity, time | `collide` | patchable, external | positive `collide`, positive `err`, positive `obliged` | `f698abded904ad1c` |
+| `choose` | seating, public-body, democracy | `permits` | patchable, external, deliberately_refused | positive `authority`, positive `permits` | `1a1477d3ac30c864` |
+| `cite` | audit, case-binding, provenance, public-power, time | `collide` | patchable, external | positive `collide`, positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `related`, positive `reward` | `b74df56401b4f54a` |
 | `clear` | justice, release | `permits` | patchable, external, deliberately_refused | positive `permits` | `affd727ee37bc030` |
+| `continue` | case-binding, public-power, renewal, time | `collide` | patchable, external | positive `collide`, positive `concurrent`, positive `correct` | `505e9935faa35ca3` |
 | `cruel` | justice, placement | `severe` | patchable, external | positive `severe` | `0093de3740303697` |
-| `deceive` | justice, liberty | `defend` | patchable, external | negative `defend`, negative `false`, negative `reward`, positive `false` | `9d333734741d6459` |
+| `date` | public-power, record-integrity, time, window | `time` | patchable, external | positive `collide`, positive `correct`, positive `time` | `07e156c91908a377` |
+| `deceive` | justice, liberty | `defend` | patchable, external | negative `defend`, negative `false`, negative `reward`, positive `false` | `572e367f36413d52` |
 | `family` | placement, privacy | `building` | patchable, external | negative `building`, negative `fit`, positive `building`, positive `dwell` | `7ab1a419e85f2887` |
 | `forgive` | justice, epoch-carry | `clean` | patchable, external | positive `clean` | `4aec77f843480e11` |
-| `free` | release, time, justice | `prisoner` | patchable, external | negative `prisoner`, positive `person` | `bf0bacd9119366a1` |
+| `free` | release, time, justice | `prisoner` | patchable, external | negative `prisoner`, positive `person` | `90761d03f8b013b4` |
 | `hears` | delivery, accessibility | `learn` | patchable, external | positive `learn` | `74985a06768cd9ab` |
 | `home` | placement, housing, privacy | `building` | patchable, external | negative `dwell`, positive `building`, positive `dwell` | `fc6d2e5aecde311b` |
-| `injure` | justice, placement | `severe` | patchable, external | positive `prisoner`, positive `severe` | `85e274281022f9ec` |
-| `judge` | justice, audit, public-body | `prisoner` | patchable, external | positive `clean`, positive `false`, positive `permits`, positive `prisoner`, positive `reward` | `9600f2d735683dd5` |
-| `married` | audit, privacy, conflict | `false` | patchable, external | negative `false` | `07ec62c697a393a1` |
+| `injure` | justice, placement | `severe` | patchable, external | positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `severe` | `e91a338c6eda3e8c` |
+| `judge` | justice, audit, public-body | `reward` | patchable, external | positive `clean`, positive `correct`, positive `err`, positive `false`, positive `match`, positive `permits`, positive `prisoner`, positive `reward` | `5f35c2e005d930c0` |
+| `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `29307709e75c2d44` |
+| `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
+| `married` | audit, privacy, conflict | `false` | patchable, external | negative `false` | `2501ab2c0b2d02aa` |
 | `mature` | adulthood, democracy, time | `decide` | patchable, external | positive `decide` | `0c872905b2585b4a` |
-| `parent` | audit, privacy, conflict | `false` | patchable, external | negative `false`, positive `false` | `b152e6e85880b7c0` |
+| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `err`, positive `match`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `succeed`, positive `time` | `5dfc1c12e584df77` |
+| `parent` | audit, privacy, conflict | `false` | patchable, external | negative `false`, positive `false` | `6ed3d63a3f8a478a` |
+| `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `c47b9efbe78a749e` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` | `da9ff4436f61507d` |
+| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` | `bf440205ead23a2b` |
 | `public` | public-body, seating, record-integrity | `authority` | patchable, external | positive `authority` | `e4774a4466627ff6` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
-| `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `false`, negative `permits`, positive `false` | `96e33d1877c50e1f` |
+| `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `e27be4808b3e69d4` |
+| `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `err`, positive `match` | `ee4885e9421cf030` |
 | `show` | liberty, public-body, record-integrity | `defend` | patchable, external, deliberately_refused | positive `defend` | `6f8d9509bc118699` |
-| `sibling` | audit, privacy, conflict | `false` | patchable, external | negative `false` | `07ec62c697a393a1` |
+| `sibling` | audit, privacy, conflict | `false` | patchable, external | negative `false` | `2501ab2c0b2d02aa` |
 | `suggest` | amendment, public-body | `become` | patchable, external | positive `become`, positive `false` | `c40d4481c5b33c85` |
 | `teaches` | delivery, recognition | `reward` | patchable, external | positive `learn`, positive `reward` | `a139a1576872b087` |
 | `work` | recognition, contribution | `reward` | patchable, external | positive `reward` | `2ff40e4e63270014` |
@@ -121,19 +142,19 @@ channels. No exceptional channel exists in the current contract.
 
 ### `approves`
 
-- **Tuple claim:** The tuple asserts that the Electorate approved the named proposal; it does not prove a docket, tally, certificate, or writer.
+- **Tuple claim:** The tuple asserts that a named public body approved an amendment or temporal renewal; it does not prove a docket, review, tally, certificate, case, scope, or writer.
 - **Claimed actor:** The first argument names the approving body; it does not authenticate that body as the writer.
 - **Current writer/authority:** Any fact-store writer can assert the approval outcome.
-- **Required writer/authority:** A publicly accountable, redundantly available publication route may record only an independently verifiable democratic result; no single writer or reviewer controls availability.
-- **Current provenance:** The constitution treats the fact as an asserted outcome and verifies no writer, certificate, count, recount, challenge, or correction.
-- **Required provenance:** A public, contestable tally record bound to the exact proposal and electorate.
+- **Required writer/authority:** A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable democratic result or case-bound review decision; no single writer or reviewer controls availability.
+- **Current provenance:** The constitution treats each fact as an asserted outcome and verifies no writer, certificate, count, case review, independence, challenge, correction, or immutable source artifact.
+- **Required provenance:** A public, contestable result bound to the exact proposal or renewal, approving body, case and subject where applicable, legal basis, snapshot, and constitutional version.
 - **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
 - **Withholding/deletion harm:** 1 operation(s): delete `approves(Electorate, Amend_Mint)`. The ordinary reform cannot derive the unread `become(_, Law)` label. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
-- **Current challenge route:** No in-model recount, contest, or correction route exists.
-- **Required challenge route:** A public contest and independent review route tied to the tally certificate.
+- **Current challenge route:** No in-model recount, approval contest, correction, or reviewer-independence test exists. A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct either approval or make Appeals act.
+- **Required challenge route:** A public contest and independent review route tied to the exact tally or renewal certificate, with safe continuity for rights and no withholding-based extension of restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Define the democratic ceiling and majority process`.
-- **Reviewed route fingerprint:** `c0568d4cace09cfe1511809e2598dca03e6fe56e0d0d0d3e65cf3a1687c40170`.
+- **Reviewed route fingerprint:** `9915b8691afeed4579c39723769080ae4ffd866bc72dcd44898af6cea07b3a49`.
 
 ### `attack`
 
@@ -151,21 +172,37 @@ channels. No exceptional channel exists in the current contract.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9`.
 
+### `authorized`
+
+- **Tuple claim:** A typed status, restrictive lease scope, or lawful disposition is authorised for the named object and context.
+- **Claimed actor:** No technical writer is encoded. The tuple names a subject and prior status, a lease and case-bound power, or a lawful-disposition record according to the consuming rule.
+- **Current writer/authority:** Any fact-store writer can forge, suppress, or delete every subtype; the relation name does not authenticate the asserted authority.
+- **Required writer/authority:** A subtype-specific lawful authority, case and subject binding, permitted basis, effective source and snapshot, independent witness, conflict rule, correction, and challenge route.
+- **Current provenance:** Constants distinguish current subtypes and consuming T1/T3 routes require separately writable exact-field observations. The closed `succeed(_, PowerBound)` tag carries no payload, so its consumer rejoins this raw tuple; enumerated conflicts fail closed, but no author, credential, source artifact, reasons, or lawful authority is bound.
+- **Required provenance:** The authorising act, exact subtype, authority source, basis, case, subject, holder, power, snapshot, constitutional version, evidence, and linked correction history.
+- **Cheapest harmful assert:** 3 operation(s): assert `authorized(Case_Adam, EmergencyCustody, Case_Adam)`; assert `observe(Chronicle, Case_Adam, EmergencyCustody, PowerScope)`; assert `observe(TemporalReview, Case_Adam, EmergencyCustody, PowerScope)`. Three coordinated unauthenticated writes derive a typed lease conflict and suspend Adam's restrictive conclusion. The fail-closed result is intentional, but the attacker still controls a consequential state change. Structural route: `authorized` → `collide`. Evidence: `new-book-plans/constitution.nibli::~($first_authority = $second_authority) -> collide($lease, LeaseBinding).`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `authorized(Case_Adam, ActiveCustody, Case_Adam)`. Adam's `succeed(Case_Adam, PowerBound)`, active-power conclusion, and custody disappear; missing public authority fails closed but the record failure remains unauthenticated and externally actionable. Structural route: `authorized` → `correct`. Evidence: `new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>`.
+- **Current challenge route:** A challenge can break a lease and derive a temporal error and inert Appeals duty. It does not authenticate the authorisation, correct it, guarantee receipt, or make an institution act.
+- **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `3573b6207d971c26ef4d75801a7ceb5d78b5c3618d3a1ae1aa02822c23e2e506`.
+
 ### `broken`
 
 - **Tuple claim:** A person or public body is recalled or unavailable for constitutional power.
 - **Claimed actor:** No writer is encoded; the tuple names the recalled or broken person or body.
-- **Current writer/authority:** Any fact-store writer can assert the mark, including against `Court`.
+- **Current writer/authority:** Any fact-store writer can assert or suppress the mark, including against `Court`; temporal conflicts use the separate conclusion-only `collide` relation.
 - **Required writer/authority:** A defined removal or incapacity process with an independent finding and continuity rule.
-- **Current provenance:** No author, ground, effective decision, or correction history is required.
-- **Required provenance:** The removal decision, legal ground, effective status, and replacement/continuity record.
+- **Current provenance:** The raw mark has no author, ground, effective decision, source, or correction history.
+- **Required provenance:** The removal decision, legal ground, effective status, source, independent review, and replacement or continuity record.
 - **Cheapest harmful assert:** 1 operation(s): assert `broken(Court)`. The negative conviction guard suppresses every current Court-based conviction: a one-write universal amnesty. Structural route: `broken` ─| `prisoner`. Evidence: `new-book-plans/constitution.nibli::~broken(Court) & ~defend($offender)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `broken(Boss)`. Boss's Review pen reappears from the surviving seating fact. Structural route: `broken` ─| `permits`. Evidence: `new-book-plans/constitution.nibli::choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a)`.
-- **Current challenge route:** No rule can correct the mark; deleting it is external and invisible in-snapshot.
+- **Withholding/deletion harm:** 1 operation(s): delete `broken(Boss)`. Boss's Review pen reappears from the surviving seating fact. Structural route: `broken` ─| `permits`. Evidence: `new-book-plans/constitution.nibli::choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a)`.
+- **Current challenge route:** No rule challenges or corrects a raw mark; deleting one remains external and invisible inside a supplied snapshot. Temporal conflicts and lease challenges use `collide` instead.
 - **Required challenge route:** Independent review, correction without silent deletion, and continuity while status is disputed.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `b599276926a4a78b3bc271d70b679a7c2fefae94e76f1089fa59c6852f52f565`.
+- **Reviewed route fingerprint:** `65be047ee2ff4cd2b396777d951eef2f7da7a71a0ac80f4252bdc835d8138443`.
 
 ### `capture`
 
@@ -181,40 +218,72 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subject access, contest, correction history, and independent case review.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions`.
-- **Reviewed route fingerprint:** `bb2b5d843f216e85d5ed3fc34bdcd611ba1b23ac1a17c9230d0be5a4e69e7882`.
+- **Reviewed route fingerprint:** `df0e5ba1ab49c076935fbee5d519490f1527d881b5bed9002e8a7348e5448fb3`.
+
+### `carries`
+
+- **Tuple claim:** A named body reports that one subject's typed status carried from a predecessor to a successor snapshot.
+- **Claimed actor:** The first argument names Chronicle or TemporalReview as a carry witness, not the authenticated technical writer of its report.
+- **Current writer/authority:** Any fact-store writer can assert both nominally independent reports; separate body names do not prove separate control, credentials, incentives, or failure domains.
+- **Required writer/authority:** Separately controlled transition witnesses bound to exact predecessor, successor, subject, status, source version, observed artifact, correction history, and conflict procedure.
+- **Current provenance:** The tuple names witness, subject, snapshots, and carry type but supplies no authenticated predecessor or successor artifact, author credential, source digest, or truth assurance.
+- **Required provenance:** Attributable witness evidence over exact independently held predecessor and successor artifacts, with source binding, replay/divergence status, correction, and recovery evidence.
+- **Cheapest harmful assert:** 2 operation(s): assert `carries(Chronicle, Hano, Epoch_Current, Epoch_Previous, VoidCarry)`; assert `carries(TemporalReview, Hano, Epoch_Current, Epoch_Previous, VoidCarry)`. One writer impersonating both witnesses derives a CarryForgery error because Hano has no authorised predecessor void status. The reports cannot void him without that separate completed basis and raw carry. Structural route: `carries` → `err`. Evidence: `new-book-plans/constitution.nibli::~authorized($x, VoidStatus, $before) -> err($x, CarryForgery)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `carries(TemporalReview, Vex, Epoch_Current, Epoch_Previous, VoidCarry)`. Vex's effective carried void and re-derived `false` disappear and a CarryOmission error appears. Positive carried clearance still prevents the missing witness from restoring a public pen. Structural route: `carries` → `match`. Evidence: `new-book-plans/constitution.nibli::# when both independent witnesses report the same predecessor-to-successor`.
+- **Current challenge route:** Carry omission or forgery can be contested into an inert Appeals duty, but no rule authenticates witnesses, repairs the transition, restores a lost supporting record, or guarantees action.
+- **Required challenge route:** Accessible subject or advocate challenge, independent fork and witness review, linked correction, safe continuity, recovery, escalation, and remedy.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `19621bd13b05a5cd99a3d77d86a5e269ab25f7d16c3890bb93c46ea8485941fe`.
+
+### `challenge`
+
+- **Tuple claim:** A person or advocate contests a named temporal entry before TemporalReview.
+- **Claimed actor:** The first argument names the affected person, not the technical writer or an authenticated advocate.
+- **Current writer/authority:** Any fact-store writer can forge, suppress, or delete the challenge; no advocate authority or receipt by the reviewer is encoded.
+- **Required writer/authority:** The affected person or an authorised advocate through an accessible channel whose receipt cannot be controlled by the challenged body.
+- **Current provenance:** The tuple names an entry and recipient but no filing artifact, basis, notice, author, effective snapshot, or response.
+- **Required provenance:** A case- and snapshot-bound filing with attributable authorship, accessible receipt evidence, notice, response, correction, and appeal history.
+- **Cheapest harmful assert:** 1 operation(s): assert `challenge(Adam, Case_Adam, TemporalReview)`. One unauthenticated filing derives a typed suspension conflict for Adam's lease, removes custody, derives a temporal-dispute error, and adds an inert Appeals duty. The fail-safe is deliberate, but writer and receipt authenticity remain external. Structural route: `challenge` → `collide`. Evidence: `new-book-plans/constitution.nibli::challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `challenge(Adam, Case_Adam, TemporalReview)` after a genuine filing. The lease remains unsuspended, the temporal-dispute error and Appeals duty disappear, and custody can continue because the challenge never reaches the supplied snapshot. Structural route: `challenge` → `collide`. Evidence: `new-book-plans/constitution.nibli::challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope)`.
+- **Current challenge route:** The relation is the challenge input: a supplied lease challenge suspends that lease and derives a dispute error and inert Appeals duty; other named temporal defects also feed the duty. Nothing authenticates receipt, corrects the entry, reads `obliged`, or guarantees action.
+- **Required challenge route:** Accessible subject or advocate filing, independent receipt, interim continuity, reasoned response, correction, appeal, escalation, and remedy for non-response.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `f698abded904ad1ca0e541f8ec8f4f9d8df3fce2b0cb1f9bc47cfb2b5c9be4a9`.
 
 ### `choose`
 
 - **Tuple claim:** The Electorate or Convocation seated a person.
 - **Claimed actor:** The first argument names the seating body, not the technical writer of its certificate.
-- **Current writer/authority:** Any fact-store writer can forge either body's seating certificate.
+- **Current writer/authority:** Any fact-store writer can forge either body's seating certificate. T1 now separately requires a positive reconciled clear status before the seat confers a pen, but the seat writer and carried-status witnesses remain unauthenticated inputs.
 - **Required writer/authority:** Only the named body's independently verified selection result may author the certificate.
 - **Current provenance:** No election, quorum, term, acceptance, or source record is represented.
 - **Required provenance:** Public selection evidence bound to body, office, candidate, result, and temporal status.
-- **Cheapest harmful assert:** 1 operation(s): assert `choose(Electorate, Sock)`. Sock receives a Review pen and permanent exposure status without an authenticated selection. Structural route: `choose` → `permits`. Evidence: `new-book-plans/constitution.nibli::choose(Electorate, $a) & ~rotten($a) & ~broken($a) -> permits(Review, $a)`.
+- **Cheapest harmful assert:** 1 operation(s): assert `choose(Convocation, Gia)`. Gia's existing reconciled clear status lets one forged Convocation seat add a Tribunal pen and expand her public authority; an unverified seat for someone without positive carried-clear status no longer suffices. Structural route: `choose` → `permits`. Evidence: `new-book-plans/constitution.nibli::choose(Electorate, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Review, $a)`.
 - **Withholding/deletion harm:** 1 operation(s): delete `choose(Electorate, Boss)`. Boss ceases to be an authority, Rebel's shield disappears, and Rebel is convicted. Structural route: `choose` → `authority`. Evidence: `new-book-plans/constitution.nibli::choose(Electorate, $o) -> authority($o)`.
 - **Current challenge route:** A `broken` mark can remove a pen but cannot correct seating or remove historical exposure status.
 - **Required challenge route:** Contest, correction, and independent review of selection while preserving historical accountability.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Recall or lapse may remove a current pen, but must not erase historical authority or exposure and thereby destroy a whistleblower's shield retroactively.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `0ee617c4279fe9151f45624a329240dc532d8cd2a99e45c74f4518dc3e8f1820`.
+- **Reviewed route fingerprint:** `1a1477d3ac30c8646aacc5277f4db15806a5eb1b195e06a2f30050ffd86df313`.
 
 ### `cite`
 
-- **Tuple claim:** An examiner cited a stated ground about an audited person.
-- **Claimed actor:** The first argument names the examiner who purportedly supplied grounds, not the writer.
-- **Current writer/authority:** Any fact-store writer can supply any word as the ground.
-- **Required writer/authority:** The authorised examiner or case body must bind the citation to a reviewable source.
-- **Current provenance:** The relation buys an author for the reason, not truth or sufficiency of the reason.
-- **Required provenance:** A source reference, case link, and admissibility record open to challenge.
-- **Cheapest harmful assert:** 2 operation(s): assert `judge(Koa, Esa)`; assert `cite(Koa, Hunch, Esa)`. Koa's existing capture fact now mints recognition on an unchecked ground. Structural route: `cite` → `reward`. Evidence: `new-book-plans/constitution.nibli::cite($auditor, $ground, $audited) & ~deceive($auditor, $audited)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `cite(Gia, Complaint, Bela)`. Gia's examination recognition disappears while the examination and voiding facts remain. Structural route: `cite` → `reward`. Evidence: `new-book-plans/constitution.nibli::cite($auditor, $ground, $audited) & ~deceive($auditor, $audited)`.
-- **Current challenge route:** No rule contests the truth, relevance, or sufficiency of a cited ground.
-- **Required challenge route:** The subject can inspect and challenge the ground before an independent reviewer.
+- **Tuple claim:** An examiner cited a stated ground about an audited person, or a public-power holder binds one case identifier to one subject.
+- **Claimed actor:** The first argument names an examiner or case holder, not the authenticated technical writer.
+- **Current writer/authority:** Any fact-store writer can supply any word as an audit ground or forge, suppress, delete, or conflict a case-subject binding.
+- **Required writer/authority:** The authorised examiner or case body must bind the citation to a reviewable source, exact case, subject, holder, effective snapshot, and correction history.
+- **Current provenance:** For audits the relation buys an author for the reason, not truth or sufficiency. For T3 it reuses the same tuple shape as case identity and separately requires exact subject and holder observations. The closed `related(_, CaseBound)` tag carries no payload, so consumers rejoin this raw tuple; all inputs remain writable and unauthenticated.
+- **Required provenance:** A source reference, exact case and subject link, holder authority, admissibility record, effective snapshot, independent receipt, and correction history open to challenge.
+- **Cheapest harmful assert:** 3 operation(s): assert `cite(Court, Case_Adam, Hano)`; assert `observe(Chronicle, Case_Adam, Hano, CaseScope)`; assert `observe(TemporalReview, Case_Adam, Hano, CaseScope)`. Three coordinated unauthenticated writes derive `collide(Case_Adam, CaseBinding)`, so its case-recorded status, active lease, and custody conclusion disappear. The fail-closed effect is intentional, but an unauthenticated writer controls it. Structural route: `cite` → `collide`. Evidence: `new-book-plans/constitution.nibli::all $first_holder: all $second_holder: all $case: all $first: all $second: cite($first_holder, $case, $first)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `cite(Court, Case_Adam, Adam)`. Adam's case no longer derives `related(Case_Adam, CaseBound)` or `match(Adam, CaseRecorded)`; the active-power and custody conclusions disappear even though the remaining lease inputs survive. Structural route: `cite` → `correct`. Evidence: `new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>`.
+- **Current challenge route:** No rule contests the truth, relevance, or sufficiency of an audit ground. A supplied lease challenge suspends a case-bound lease, but does not authenticate or correct the citation, guarantee receipt, or make Appeals act.
+- **Required challenge route:** The subject can inspect and challenge the ground or case binding before an independent reviewer, with correction, continuity, escalation, and remedy.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-3 — Provenance, authenticity, and truth limits`.
-- **Reviewed route fingerprint:** `ccbb9dcfcba6f7250281b5bdd4a69112f8b5bbf17d671079a20c56937cd6d587`.
+- **Reviewed route fingerprint:** `b74df56401b4f54a2c2bb7d2bd402d5b572f6d657564141b5a5f9abc0e3f5d05`.
 
 ### `clear`
 
@@ -233,6 +302,22 @@ channels. No exceptional channel exists in the current contract.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `affd727ee37bc0305631a0e1a3b9b75b28927467957d9f35ec0ca3b7e0dd7978`.
 
+### `continue`
+
+- **Tuple claim:** A case-bound restrictive lease continues in the named successor snapshot.
+- **Claimed actor:** No renewer or technical writer is encoded; the tuple names only a lease and asserted current successor.
+- **Current writer/authority:** Any fact-store writer can assert, suppress, delete, or duplicate a renewal marker.
+- **Required writer/authority:** A case-bound renewal decision from the authorised independent bodies, tied to the exact lease, holder, subject, source version, window, predecessor, reasons, and challenge route.
+- **Current provenance:** The tuple names lease and successor and T3 separately requires two exact `RenewalScope` observations. The closed `concurrent(_, RenewalBound)` tag carries no successor, so its consumer rejoins this raw tuple; all inputs remain writable and unauthenticated.
+- **Required provenance:** The renewal certificate, author, approvals, case, holder, subject, window, effective source and snapshots, reasons, evidence, and linked correction history.
+- **Cheapest harmful assert:** 3 operation(s): assert `continue(Case_Adam, Epoch_Review)`; assert `observe(Chronicle, Case_Adam, Epoch_Review, RenewalScope)`; assert `observe(TemporalReview, Case_Adam, Epoch_Review, RenewalScope)`. Three coordinated unauthenticated writes derive a typed lease conflict and suspend Adam's custody. The restrictive route fails closed, but an unauthenticated writer still controls the legal state. Structural route: `continue` → `collide`. Evidence: `new-book-plans/constitution.nibli::all $lease: all $first: all $second: continue($lease, $first)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `continue(Case_Adam, Epoch_Current)`. Adam's active lease and custody conclusion do not derive; the source cannot tell non-renewal from withholding, but missing evidence cannot extend the power. Structural route: `continue` → `correct`. Evidence: `new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>`.
+- **Current challenge route:** A supplied subject challenge suspends the lease and creates an inert duty; no rule authenticates the renewal, decides a disputed renewal, corrects it, or makes Appeals act.
+- **Required challenge route:** Notice, accessible subject or advocate contest, independent review, safe suspension, correction, escalation, and remedy with no renewal-by-silence.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `505e9935faa35ca35ac5253f49f78c8d2c0da55274aa8a55e43fcb51f39b624c`.
+
 ### `cruel`
 
 - **Tuple claim:** A person's conduct toward a named victim was cruel.
@@ -249,6 +334,22 @@ channels. No exceptional channel exists in the current contract.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `0093de374030369768dc6db9042a74890cb39f8f7025dde425d00888572ad50a`.
 
+### `date`
+
+- **Tuple claim:** A named constitutional review window has symbolic start and end events supplied by TimeService.
+- **Claimed actor:** The fourth argument names TimeService, not the authenticated technical writer or an independent clock operator.
+- **Current writer/authority:** Any fact-store writer can forge, suppress, or delete a window tuple; both named observations for each exact boundary field are also writable inputs.
+- **Required writer/authority:** An independently assured time service and separate witnesses bound to exact events, window, source version, case scope, correction, conflict, and outage handling.
+- **Current provenance:** The tuple names a service and boundary events and T3 separately requires two exact observations for each field. The closed `time(window, ReviewedInterval)` tag carries no endpoints, so its consumer rejoins this raw tuple; all inputs remain writable and supply no clock reading, duration, authenticated artifact, or advancement evidence.
+- **Required provenance:** The exact time-service artifact, author and authority, boundary-event evidence, independent observations, source and case binding, order evidence, correction, and availability record.
+- **Cheapest harmful assert:** 5 operation(s): assert `date(Window_Forged, Epoch_Current, Epoch_Review, TimeService)`; assert `observe(Chronicle, Window_Forged, Epoch_Current, WindowStartScope)`; assert `observe(TemporalReview, Window_Forged, Epoch_Current, WindowStartScope)`; assert `observe(Chronicle, Window_Forged, Epoch_Review, WindowEndScope)`; assert `observe(TemporalReview, Window_Forged, Epoch_Review, WindowEndScope)`. Five unauthenticated writes impersonating the time service and both exact-field witnesses derive `time(Window_Forged, ReviewedInterval)` from the existing event and record order. They still cannot prove a clock advanced. Structural route: `date` → `time`. Evidence: `new-book-plans/constitution.nibli::observe(TemporalReview, $window, $end, WindowEndScope) & precede($start, $end, EventPath) & precede($start, $end, RecordPath)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `date(Window_Custody, Epoch_Current, Epoch_Review, TimeService)`. The shared custody interval, every active custody conclusion, and every current confinement disappear; restrictive power fails closed without fabricating release or forcing the outside service to advance. Structural route: `date` → `time`. Evidence: `new-book-plans/constitution.nibli::observe(TemporalReview, $window, $end, WindowEndScope) & precede($start, $end, EventPath) & precede($start, $end, RecordPath)`.
+- **Current challenge route:** An affected person can challenge the lease, not authenticate or correct the outside window or force a new one to arrive; the resulting duty remains unread.
+- **Required challenge route:** Window and clock-source contest, independent correction, alternate time evidence, outage continuity, safe power suspension, escalation, and remedy.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `07e156c91908a377e540ac7dc7f10581c02aefb28d1afa52c18601e409cc9c09`.
+
 ### `deceive`
 
 - **Tuple claim:** A person's statement about another party was deceptive.
@@ -263,7 +364,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Prompt contest, independent review, correction history, and interim shield continuity.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `9d333734741d645920972446cef5d1839b9b47dc9dbc4dcd4c05a285ecf9c850`.
+- **Reviewed route fingerprint:** `572e367f36413d528f0561a2bfbf7d48f38b9ee7b419f792a346e44d7277514e`.
 
 ### `family`
 
@@ -311,7 +412,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Immediate challenge, independent review, and continuity that never makes release depend on a withheld official write.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `bf0bacd9119366a1f102a7ad1fd3f0c9f606f29f9300f7552d7e75ec2036c580`.
+- **Reviewed route fingerprint:** `90761d03f8b013b42c210728c2191f5016a9a7f06db6e7d3fbeca09343a1110f`.
 
 ### `hears`
 
@@ -354,12 +455,12 @@ channels. No exceptional channel exists in the current contract.
 - **Current provenance:** No injury evidence, finder, case, causation standard, or correction history is attached.
 - **Required provenance:** Admissible evidence, victim/offender identity, case linkage, and an independently reviewable finding.
 - **Cheapest harmful assert:** 1 operation(s): assert `injure(Hano, Pax)`. Hano's existing attack against a different person makes severity derive. Structural route: `injure` → `severe`. Evidence: `new-book-plans/constitution.nibli::attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `injure(Adam, Ivo)`. Adam's conviction no longer derives despite the surviving Court judgment. Structural route: `injure` → `prisoner`. Evidence: `new-book-plans/constitution.nibli::injure($offender, $victim) & judge(Court, $offender)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `injure(Adam, Ivo)`. Adam's conviction no longer derives despite the surviving Court judgment. Structural route: `injure` → `prisoner`. Evidence: `new-book-plans/constitution.nibli::# <T3-COURT-GATE-BEGIN>`.
 - **Current challenge route:** No rule contests or corrects an injury fact.
 - **Required challenge route:** Notice, hearing, appeal, and append-only correction of the factual finding.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `85e274281022f9eccaa2844e2d9bc15b3c602b2bc9de8a4fd73b730ea313b492`.
+- **Reviewed route fingerprint:** `e91a338c6eda3e8c6b155456211a65c32c684d38d6693f5eb8d3775be22acbd7`.
 
 ### `judge`
 
@@ -369,13 +470,45 @@ channels. No exceptional channel exists in the current contract.
 - **Required writer/authority:** Each constant-sensitive route needs a distinct office, jurisdiction, case, independence, and decision contract.
 - **Current provenance:** The same relation serves conviction, deceit review, appellate relief, expungement, voiding, family conflict, and recognition without a case identifier.
 - **Required provenance:** Route-specific authority, case identity, evidence, reasons, signatures, and review status.
-- **Cheapest harmful assert:** 1 operation(s): assert `judge(Court, Jala)`. Jala's existing injury fact becomes a conviction without an authenticated Court act. Structural route: `judge` → `prisoner`. Evidence: `new-book-plans/constitution.nibli::injure($offender, $victim) & judge(Court, $offender)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `judge(Court, Adam)`. Adam's conviction disappears while the injury fact remains. Structural route: `judge` → `prisoner`. Evidence: `new-book-plans/constitution.nibli::injure($offender, $victim) & judge(Court, $offender)`.
+- **Cheapest harmful assert:** 2 operation(s): assert `judge(Koa, Esa)`; assert `cite(Koa, Notice, Esa)`. Koa's existing capture entry combines with two unauthenticated case assertions to mint non-operative recognition. A forged Court judgment alone no longer creates custody without a case-bound active lease. Structural route: `judge` → `reward`. Evidence: `new-book-plans/constitution.nibli::judge($auditor, $audited) & capture($auditor, $audited) & cite($auditor, $ground, $audited)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `judge(Court, Adam)`. Adam's conviction disappears while the injury fact remains. Structural route: `judge` → `prisoner`. Evidence: `new-book-plans/constitution.nibli::# <T3-COURT-GATE-BEGIN>`.
 - **Current challenge route:** No generic challenge exists; Appeals is itself another unauthenticated `judge` route.
 - **Required challenge route:** Route-specific appeal, conflict control, correction history, and independent review.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `9600f2d735683dd5eb1667e7dad5664b0c8f923a4ac60a676ac56251021dffe4`.
+- **Reviewed route fingerprint:** `5f35c2e005d930c0e5fac9ffd5b94364334c3cfd9979c49630a68af60fdcf29f`.
+
+### `limit`
+
+- **Tuple claim:** A restrictive lease is limited to the named case-bound review window.
+- **Claimed actor:** No deciding body or technical writer is encoded; the tuple names a lease, case, and asserted review window.
+- **Current writer/authority:** Any fact-store writer can forge, suppress, delete, or add a conflicting limit.
+- **Required writer/authority:** The lawful case authority under an independently reviewable source-bound decision, with subject notice and no holder control over its own limit.
+- **Current provenance:** The tuple names lease, case, and window and T3 separately requires two exact `LimitScope` observations. The closed `orderly(_, WindowBound)` tag carries no window, so its consumer rejoins this raw tuple; all inputs remain writable and unauthenticated.
+- **Required provenance:** The exact authorising decision, lease, case, holder, subject, window artifact, constitutional version, approvals, reasons, evidence, and correction history.
+- **Cheapest harmful assert:** 3 operation(s): assert `limit(Case_Adam, Case_Adam, Window_Forged)`; assert `observe(Chronicle, Case_Adam, Window_Forged, LimitScope)`; assert `observe(TemporalReview, Case_Adam, Window_Forged, LimitScope)`. Three coordinated unauthenticated writes derive a typed lease conflict and suspend Adam's custody. This is the intended restrictive-power default, but the decisive record remains externally unauthenticated. Structural route: `limit` → `collide`. Evidence: `new-book-plans/constitution.nibli::~($first_window = $second_window) -> collide($lease, LeaseBinding).`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `limit(Case_Adam, Case_Adam, Window_Custody)`. Adam's active lease and custody conclusion disappear; absence cannot silently create an unlimited lease. Structural route: `limit` → `correct`. Evidence: `new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>`.
+- **Current challenge route:** A supplied lease challenge suspends the lease and adds an inert duty; the source does not authenticate, correct, or replace a disputed limit.
+- **Required challenge route:** Subject notice and challenge, independent review, correction, safe suspension, alternative continuity, escalation, and remedy.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `29307709e75c2d446cde0bc197f6b94231bc69249df856a6272e5eb5ac5caeeb`.
+
+### `list`
+
+- **Tuple claim:** A snapshot manifest belongs to an epoch, or a named claim orders two events or record entries according to the consuming rule.
+- **Claimed actor:** The fourth argument names Chronicle or an order scope, not an authenticated technical writer.
+- **Current writer/authority:** Any fact-store writer can forge, suppress, or delete a manifest or order claim; manifest completeness and order tags depend on separately writable observations.
+- **Required writer/authority:** A subtype-specific authorised publisher bound to exact immutable artifacts, source version, predecessor, events or entries, case, witnesses, correction, and conflict handling.
+- **Current provenance:** Constants type the current manifest and sequence uses and exact endpoint scopes separate start from end. The closed `precede(claim, SequenceTag)` conclusion carries no endpoints, so conflict and time consumers rejoin this raw claim; no writer or artifact is authenticated.
+- **Required provenance:** Exact manifest or order artifact, author and authority, source and case binding, observed evidence, predecessor or ordered endpoints, publication, correction, replay, and divergence status.
+- **Cheapest harmful assert:** 5 operation(s): assert `list(Order_Reverse, Epoch_Review, Epoch_Current, EventSequence)`; assert `observe(Chronicle, Order_Reverse, Epoch_Review, EventStartScope)`; assert `observe(TemporalReview, Order_Reverse, Epoch_Review, EventStartScope)`; assert `observe(Chronicle, Order_Reverse, Epoch_Current, EventEndScope)`; assert `observe(TemporalReview, Order_Reverse, Epoch_Current, EventEndScope)`. Five unauthenticated writes impersonating the order publisher and both exact-field witnesses derive `precede(Order_Reverse, EventSequence)` and an OrderConflict beside the current forward claim. Structural route: `list` → `err`. Evidence: `new-book-plans/constitution.nibli::precede($after_event, $before_event, EventPath) -> err($claim, OrderConflict).`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `list(Order_Court_A, Epoch_Current, Epoch_Review, EventSequence)`. `precede(Order_Court_A, EventSequence)`, the shared reviewed interval, and dependent active-power conclusions disappear even though the observation tuples remain. Structural route: `list` → `precede`. Evidence: `new-book-plans/constitution.nibli::~($before_event = $after_event) -> precede($claim, EventSequence).`.
+- **Current challenge route:** Opposite supplied orders derive a conflict and a challenge can add an inert Appeals duty; no rule authenticates the list, chooses a true order, corrects it, or makes the reader act.
+- **Required challenge route:** Order and manifest contest, independent artifact review, linked correction, fork/replay resolution, continuity, escalation, and remedy.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `0e4f71dfe66512de21bd3077110d890210ee2b9604a1479ddfad02c32d92c49c`.
 
 ### `married`
 
@@ -391,7 +524,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Confidential correction and recusal challenge before the voiding takes effect.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
-- **Reviewed route fingerprint:** `07ec62c697a393a18ac1e4183cc7a2250afcefdbc8a8ad8deaa0b10e2f44b129`.
+- **Reviewed route fingerprint:** `2501ab2c0b2d02aa80e88f63e074a331e14c62d0f69f3712eb0292279c19d02a`.
 
 ### `mature`
 
@@ -403,11 +536,27 @@ channels. No exceptional channel exists in the current contract.
 - **Required provenance:** A challengeable adulthood basis that does not let an official withhold political standing.
 - **Cheapest harmful assert:** 1 operation(s): assert `mature(Cira)`. Cira receives the franchise conclusion from a single unauthenticated status write. Structural route: `mature` → `decide`. Evidence: `new-book-plans/constitution.nibli::person($x) & mature($x) -> decide($x, Ballot)`.
 - **Withholding/deletion harm:** 1 operation(s): delete `mature(Hano)`. Hano loses the franchise conclusion while personhood and conviction remain. Structural route: `mature` → `decide`. Evidence: `new-book-plans/constitution.nibli::person($x) & mature($x) -> decide($x, Ballot)`.
-- **Current challenge route:** No challenge, correction, or automatic transition exists.
+- **Current challenge route:** A supplied `challenge(_, MaturityRecord, TemporalReview)` now derives a dispute error and inert Appeals duty; it does not correct `mature`, preserve the ballot conclusion, authenticate receipt, or make anyone act.
 - **Required challenge route:** Immediate contest and continuity of political access while the status record is reconciled.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Implement the ratified T3 temporal path in stages`.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
 - **Reviewed route fingerprint:** `0c872905b2585b4aee023d50cfbc45f6440d6e33d3134304bb319e9f34c3bbc9`.
+
+### `observe`
+
+- **Tuple claim:** A named body observed one exact field value for a manifest identifier, typed status, order endpoint, review-window endpoint, lease power, case binding, holder, limit, renewal, disposition, or source-family binding within its declared scope.
+- **Claimed actor:** The first argument names Chronicle or TemporalReview as an observer, not the authenticated writer of an attestation.
+- **Current writer/authority:** Any fact-store writer can assert both nominally independent observations; distinct names do not prove distinct control or failure domains.
+- **Required writer/authority:** Separately controlled, consequence-scaled witnesses whose credentials, observed artifact, scope, conflicts, and withholding fallback are externally assured.
+- **Current provenance:** The tuple binds an item identifier, one field value, and one scope, but the closed `complete(item, ScopeTag)` marker drops the value and T2/T3 status tags also compress their payloads. Consumers rejoin the exact raw observations they use; none authenticates the writer, proves exhaustive disclosure, supplies a source digest, or establishes physical-world truth.
+- **Required provenance:** An attributable attestation bound to the exact immutable artifact and complete typed payload, source version, case, scope, snapshot, and independently reviewable witness evidence.
+- **Cheapest harmful assert:** 2 operation(s): assert `observe(Chronicle, Manifest_Forged, Epoch_Forged, ManifestScope)`; assert `observe(TemporalReview, Manifest_Forged, Epoch_Forged, ManifestScope)`. One uncontrolled writer can impersonate both named witnesses and derive `complete(Manifest_Forged, ManifestScope)`. Consumers must rejoin the raw epoch observations, so the compressed marker alone cannot authorise a different field value; neither witness is authenticated. Structural route: `observe` → `complete`. Evidence: `new-book-plans/constitution.nibli::Matching observations from Chronicle and TemporalReview bind an item, its`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `observe(TemporalReview, Manifest_Current, Epoch_Current, ManifestScope)`. Completeness, the accepted transition, and dependent carry or authority conclusions disappear; restrictive power must fail closed while claimant-supporting continuity must survive by a separate positive route. Structural route: `observe` → `complete`. Evidence: `new-book-plans/constitution.nibli::Matching observations from Chronicle and TemporalReview bind an item, its`.
+- **Current challenge route:** Temporal defects can be challenged into an inert Appeals duty, but no rule authenticates either witness, resolves disagreement, proves that every required field was enumerated, corrects an attestation, or guarantees response.
+- **Required challenge route:** Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `5dfc1c12e584df7717fb2885dc3a48c488377d7f43675997ceaafedfef477549`.
 
 ### `parent`
 
@@ -423,7 +572,23 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Confidential relationship correction and independent conflict review.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
-- **Reviewed route fingerprint:** `b152e6e85880b7c046e5f6ae8a57d47580976b0a97d81ab29ec3452a1e112b59`.
+- **Reviewed route fingerprint:** `6ed3d63a3f8a478a4361390d92f96cc1b4d424ec0f342ad2a44155ad47246512`.
+
+### `passport`
+
+- **Tuple claim:** The current temporal-lease family is bound to the named constitutional source version in the named successor snapshot.
+- **Claimed actor:** No source publisher or technical writer is encoded; the tuple names a binding identifier, the temporal-lease family, constitutional-version constant, and successor.
+- **Current writer/authority:** Any fact-store writer can forge, suppress, delete, or reuse a binding tuple and can impersonate both named witnesses for each exact source-family, source-version, and source-epoch field.
+- **Required writer/authority:** An authenticated source-release authority and independent verifier bound to the exact source digest, rule family, successor, deployment, correction, and rollback status.
+- **Current provenance:** The family and version constants and three field scopes are exact within the producer, but they are not source digests. The closed `reference(binding, SourceBound)` tag carries none of those values, so the lease consumer rejoins the raw passport. Fully witnessed divergent family, version, or epoch tuples derive `collide(binding, SourceBinding)` and fail closed; unauthenticated or incompletely witnessed inputs remain external risks.
+- **Required provenance:** Exact source and artifact digests, release authority, independent verification, rule-family identity, effective successor, deployment evidence, correction history, uniqueness, and rollback protection.
+- **Cheapest harmful assert:** 7 operation(s): assert `passport(Binding_Forged, TemporalLeaseFamily, Constitution_Temporal, Epoch_Current)`; assert `observe(Chronicle, Binding_Forged, TemporalLeaseFamily, SourceFamilyScope)`; assert `observe(TemporalReview, Binding_Forged, TemporalLeaseFamily, SourceFamilyScope)`; assert `observe(Chronicle, Binding_Forged, Constitution_Temporal, SourceVersionScope)`; assert `observe(TemporalReview, Binding_Forged, Constitution_Temporal, SourceVersionScope)`; assert `observe(Chronicle, Binding_Forged, Epoch_Current, SourceEpochScope)`; assert `observe(TemporalReview, Binding_Forged, Epoch_Current, SourceEpochScope)`. Seven unauthenticated writes impersonating the source publisher and both witnesses derive `reference(Binding_Forged, SourceBound)`. The forged family reference does not create custody without the remaining lease inputs, but the repository cannot authenticate it. Structural route: `passport` → `reference`. Evidence: `new-book-plans/constitution.nibli::~collide($binding, SourceBinding) -> reference($binding, SourceBound).`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `passport(Binding_Temporal, TemporalLeaseFamily, Constitution_Temporal, Epoch_Current)`. The shared `reference(Binding_Temporal, SourceBound)` and every current active-power and custody conclusion disappear; a missing source-family binding cannot silently extend restrictive power. Structural route: `passport` → `correct`. Evidence: `new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>`.
+- **Current challenge route:** A supplied case challenge suspends that case-bound lease. Exact-field scopes bind the passport fields and witnessed divergence fails closed before producing a compressed source tag, but no rule authenticates the source artifact, chooses the true tuple, corrects a false binding, or proves deployment.
+- **Required challenge route:** Public source inspection, subject challenge, independent effect and release review, linked correction, rollback prevention, safe suspension, escalation, and remedy.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `c47b9efbe78a749ef231d071256dae315035d833cb1e982c46a001abc2e69ada`.
 
 ### `permanent`
 
@@ -445,18 +610,18 @@ channels. No exceptional channel exists in the current contract.
 
 - **Tuple claim:** The named individual has universal constitutional standing.
 - **Claimed actor:** No registrar or writer is encoded; the unary fact places someone on the constitutional roster.
-- **Current writer/authority:** Any fact-store writer can add or omit a roster entry; rules also derive personhood from confinement and release.
+- **Current writer/authority:** Any fact-store writer can add or omit a roster entry; rules also derive personhood from confinement, release, and an accepted predecessor standing record.
 - **Required writer/authority:** Universal standing must include a serve-and-reconcile route that does not let registration control the floor.
-- **Current provenance:** No enrolment source, continuity proof, uniqueness claim, or correction history is represented.
+- **Current provenance:** Direct roster facts have no enrolment source, uniqueness claim, or correction history. The T1 route binds a prior standing status to an accepted transition through exact-field observations, but its supplied writers, authenticity, exhaustive disclosure, and witness independence remain external assumptions.
 - **Required provenance:** Independent roster reconciliation and omission/deletion assurance without turning identity into a service gate.
 - **Cheapest harmful assert:** 1 operation(s): assert `person(Court)`. A public body is falsely classified as a person and immediately receives human standing, entitlements, and debts. Structural route: `person` (direct writable relation). Evidence: `new-book-plans/constitution.nibli::entitled(every person, event { secure() }).`.
 - **Withholding/deletion harm:** 1 operation(s): delete Bela's sole `person(Bela)` entry. Bela's entitlements and itemised debts disappear while her non-roster false and lose conclusions survive. Structural route: `person` → `entitled`. Evidence: `new-book-plans/constitution.nibli::entitled(every person, event { secure() }).`.
-- **Current challenge route:** No in-model roster correction exists; the current protection is an external cross-epoch obligation.
+- **Current challenge route:** An accepted predecessor standing entry preserves personhood and a successor omission derives an error; a supplied challenge adds an inert Appeals duty. Genesis omission, correction, receipt, action, and remedy remain unresolved.
 - **Required challenge route:** Immediate service and standing, followed by independent reconciliation, correction history, and deletion recovery.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.
 - **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
-- **Reviewed route fingerprint:** `da9ff4436f61507db006f78ded0eaaaafc46303daf91f4966d3bc3e2a9249890`.
+- **Reviewed route fingerprint:** `bf440205ead23a2bc733ad3c3f3f4ef4d3a7dff199aa1a15716585a583db1372`.
 
 ### `public`
 
@@ -490,21 +655,37 @@ channels. No exceptional channel exists in the current contract.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627`.
 
+### `replace`
+
+- **Tuple claim:** One named snapshot replaces a named predecessor in the Chronicle lineage.
+- **Claimed actor:** The third argument names Chronicle as the transition channel, not an authenticated writer or an independent predecessor witness.
+- **Current writer/authority:** Any fact-store writer can assert, omit, delete, reverse, replay, or fork the predecessor link.
+- **Required writer/authority:** A source-bound transition publisher with independent predecessor and successor attestations, single-successor or declared-fork semantics, replay protection, conflict handling, and recovery.
+- **Current provenance:** The tuple names two snapshot identifiers and a channel but no sequence number, immutable manifests, exact source versions, permitted diff, author, conflict status, or recovery evidence.
+- **Required provenance:** Predecessor and successor artifact digests, exact source version, permitted transition, independent attestations, divergence/replay verdict, publication status, and linked correction history.
+- **Cheapest harmful assert:** 1 operation(s): assert `replace(Epoch_Previous, Epoch_Current, Chronicle)` beside the accepted forward link. The reciprocal link derives a typed lineage conflict, collapses `succeed(Epoch_Current, Transition)`, and removes dependent carry, active-power, and custody conclusions. Reverse replay now fails closed, but the writer still controls a consequential state change. Structural route: `replace` → `collide`. Evidence: `new-book-plans/constitution.nibli::replace($after, $before, Chronicle) & replace($before, $after, Chronicle) -> collide($after, TransitionLineage).`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `replace(Epoch_Current, Epoch_Previous, Chronicle)`. The accepted transition and all dependent carry, order, and review conclusions disappear; claimant continuity and restrictive-power failure polarity must be handled independently. Structural route: `replace` → `correct`. Evidence: `new-book-plans/constitution.nibli::A transition is accepted only when it names one predecessor`.
+- **Current challenge route:** Reverse pairs, self-replacement, competing predecessors, competing successors, and conflicting manifest identities are detected inside a supplied snapshot and fail closed. No rule authenticates the link, resolves or corrects a fork, or proves that an external successor ever arrives.
+- **Required challenge route:** Public conflict notice, subject challenge, independently reviewed fork/replay resolution, append-only correction, safe continuity, recovery, and escalation when no successor arrives.
+- **Risk disposition:** patchable, external.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `e27be4808b3e69d4de66426d41d2499916d3981169bbfe35a1afa15030154374`.
+
 ### `rotten`
 
 - **Tuple claim:** A person's prior-epoch voiding mark was carried into the current snapshot.
 - **Claimed actor:** No carrying store, source epoch, judgment, or writer is encoded.
-- **Current writer/authority:** Any fact-store writer can forge, omit, or delete the carry fact.
+- **Current writer/authority:** Any fact-store writer can forge, omit, or delete the raw carry fact. It no longer has legal effect alone, but can combine with a writable prior status, two nominal observations, and two nominal carry reports.
 - **Required writer/authority:** A two-snapshot transition assurance process with independent witnessing and correction history.
-- **Current provenance:** The fact names neither source snapshot nor originating false judgment.
+- **Current provenance:** The fact names neither source snapshot nor originating false judgment. T1 consumers require a prior authorised void status, scoped completeness, an accepted transition, and matching Chronicle and TemporalReview carry reports, but every input remains writable and unauthenticated.
 - **Required provenance:** Source and destination snapshots, originating judgment, transition proof, and independently checked continuity.
-- **Cheapest harmful assert:** 1 operation(s): assert `rotten(Hano)`. Hano is voided and loses recognition eligibility through a single unauthenticated carry write. Structural route: `rotten` → `false`. Evidence: `new-book-plans/constitution.nibli::rotten($x) & ~clean($x) -> false($x)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `rotten(Vex)`. Vex's carried void disappears, reopening clean-hand routes unless another current rule voids him. Structural route: `rotten` → `false`. Evidence: `new-book-plans/constitution.nibli::rotten($x) & ~clean($x) -> false($x)`.
-- **Current challenge route:** Forgiveness can derive `clean` and neutralise false, but it neither authenticates nor corrects the carry fact.
+- **Cheapest harmful assert:** 6 operation(s): assert `authorized(Hano, VoidStatus, Epoch_Previous)`; assert `observe(Chronicle, Hano, Epoch_Previous, VoidScope)`; assert `observe(TemporalReview, Hano, Epoch_Previous, VoidScope)`; assert `carries(Chronicle, Hano, Epoch_Current, Epoch_Previous, VoidCarry)`; assert `carries(TemporalReview, Hano, Epoch_Current, Epoch_Previous, VoidCarry)`; assert `rotten(Hano)`. Six unauthenticated writes added to the accepted transition derive `match(Hano, CarriedVoid)` and re-derive `false(Hano)`. Raw `rotten` alone remains inert; the higher price is explicit but no input is authenticated. Structural route: `rotten` → `match` → `false`. Evidence: `new-book-plans/constitution.nibli::match($x, CarriedVoid) & ~clean($x) -> false($x)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `rotten(Vex)`. Vex's effective carried void and re-derived `false` disappear despite the authorised status, scoped completeness, and matching carry reports, while a CarryForgery error appears. The positive `CarriedClear` requirement keeps public pens closed, but other `false`-guarded consequences can still reopen. Structural route: `rotten` → `match` → `false`. Evidence: `new-book-plans/constitution.nibli::match($x, CarriedVoid) & ~clean($x) -> false($x)`.
+- **Current challenge route:** T1 can mark carry omission or forgery and a supplied challenge adds an inert Appeals duty. Forgiveness can derive `clean` and neutralise `false`, but neither route authenticates or corrects the raw carry, prior status, observations, or carry reports.
 - **Required challenge route:** Cross-snapshot contest, independent reconciliation, correction history, and recovery from omitted or forged carry.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Implement the ratified T3 temporal path in stages`.
-- **Reviewed route fingerprint:** `96e33d1877c50e1f8bf24859ea5ab769ea9f47273a4adf7b73f2cf4f32c0d494`.
+- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
+- **Reviewed route fingerprint:** `ee4885e9421cf0307421540c855456259eb07c5cd5c2ff5dbd34656895ecb07e`.
 
 ### `show`
 
@@ -519,7 +700,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** A `deceive` finding can defeat the shield, but no route corrects the show entry; recency and lapsing bounds are deliberately refused.
 - **Required challenge route:** Protected contest and correction without allowing delay, recall, or record control to erase the exposure.
 - **Risk disposition:** patchable, external, deliberately_refused.
-- **Refused alternative:** Do not impose recency, lapse, or recertification on the flat T0 record; erasing historical exposure or authority would remove the shield through delay or record control.
+- **Refused alternative:** Do not impose recency, lapse, or recertification on historical exposure or authority; erasing either would remove the shield through delay or record control.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions`.
 - **Reviewed route fingerprint:** `6f8d9509bc118699d35f0dfd418f1b994fe677cbf0387d95e6d18a1431162bd4`.
 
@@ -537,7 +718,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Confidential correction and recusal challenge before the voiding takes effect.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
-- **Reviewed route fingerprint:** `07ec62c697a393a18ac1e4183cc7a2250afcefdbc8a8ad8deaa0b10e2f44b129`.
+- **Reviewed route fingerprint:** `2501ab2c0b2d02aa80e88f63e074a331e14c62d0f69f3712eb0292279c19d02a`.
 
 ### `suggest`
 
@@ -594,7 +775,9 @@ drift-sensitive. Dependency reach is structural; it does not authenticate a
 fact, prove a scenario's real-world truth, or establish that an external
 clock or record advances. The operation sets remain a reviewed threat-model
 inventory rather than executable proof. The bounded record-integrity red-team
-executes only its named release, adulthood, roster, carry, and correction
-subset; all other ledger scenarios remain reviewed-only. The generated
-assurance case owns the wider control argument and records that current T0
-assurance is not established.
+executes only its named flat-snapshot release, adulthood, roster, relief,
+and forgiveness subset; the temporal suite separately owns carry, order,
+and renewal cases. All other ledger scenarios remain reviewed-only. The
+generated assurance case owns the wider control argument and records that
+overall deployed-record assurance is not established despite the staged
+T1/T2/T3 repository result.

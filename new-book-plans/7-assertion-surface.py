@@ -904,10 +904,12 @@ def render(contract: dict[str, object], inventory: Inventory) -> str:
             "fact, prove a scenario's real-world truth, or establish that an external",
             "clock or record advances. The operation sets remain a reviewed threat-model",
             "inventory rather than executable proof. The bounded record-integrity red-team",
-            "executes only its named release, adulthood, roster, carry, and correction",
-            "subset; all other ledger scenarios remain reviewed-only. The generated",
-            "assurance case owns the wider control argument and records that current T0",
-            "assurance is not established.",
+            "executes only its named flat-snapshot release, adulthood, roster, relief,",
+            "and forgiveness subset; the temporal suite separately owns carry, order,",
+            "and renewal cases. All other ledger scenarios remain reviewed-only. The",
+            "generated assurance case owns the wider control argument and records that",
+            "overall deployed-record assurance is not established despite the staged",
+            "T1/T2/T3 repository result.",
             "",
         ]
     )

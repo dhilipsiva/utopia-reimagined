@@ -156,15 +156,37 @@ public(Pax).
 
 # ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
 # "A defendant a century from now can reach back, expose someone nobody
-# remembers, and open the window." Executed, minus the century — which the flat
-# record could not represent anyway: nothing below says whether Zeno's exposure
-# came before or after Boss's recall, and that inexpressibility is one of the
-# four reasons the closing section gives for refusing the bound. Boss is
+# remembers, and open the window." Executed, minus the century: T2 can represent
+# separately witnessed order, but the shield deliberately consumes no such
+# claim, and nothing below says whether Zeno's exposure came before or after
+# Boss's recall. Boss is
 # deliberately an existing name — reaching back to him is the exhibit — and
 # everything else is fresh. One write blocks a conviction.
 person(Zeno).
 injure(Zeno, Yara).
 judge(Court, Zeno).
+cite(Court, Case_Zeno, Zeno).
+observe(Chronicle, Case_Zeno, Zeno, CaseScope).
+observe(TemporalReview, Case_Zeno, Zeno, CaseScope).
+observe(Chronicle, Case_Zeno, Court, HolderScope).
+observe(TemporalReview, Case_Zeno, Court, HolderScope).
+observe(Chronicle, Case_Zeno, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Zeno, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Zeno, Yara, InjuryVictimScope).
+observe(TemporalReview, Case_Zeno, Yara, InjuryVictimScope).
+authorized(Case_Zeno, ActiveCustody, Case_Zeno).
+observe(Chronicle, Case_Zeno, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Zeno, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Zeno, Case_Zeno, CaseBindingScope).
+observe(TemporalReview, Case_Zeno, Case_Zeno, CaseBindingScope).
+limit(Case_Zeno, Case_Zeno, Window_Custody).
+observe(Chronicle, Case_Zeno, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Zeno, Window_Custody, LimitScope).
+continue(Case_Zeno, Epoch_Current).
+observe(Chronicle, Case_Zeno, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Zeno, Epoch_Current, RenewalScope).
+approves(Electorate, Case_Zeno).
+approves(TemporalReview, Case_Zeno).
 
 ? prisoner(Zeno).
 # => TRUE
