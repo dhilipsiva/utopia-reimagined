@@ -22,7 +22,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 96
+:expect-pins 100
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -277,9 +277,14 @@ building(HighSec, Ghost).
 # floor reaches a person; it does not carry what is not on it — home is a fact
 # the world reports, never a floor item, and chapter 8 turns on the difference;
 # and it does not reach a non-person.
-# Exact event-abstraction derivation is exercised from these live floor lines by
-# `13-floor-abstraction.py`; this integrated file keeps the hostile-rule and
-# non-fabrication checks that depend on the complete constitution.
+? entitled(Adam, event { eats() }).
+# => TRUE
+
+? entitled(Adam, event { home() }).
+# => FALSE
+
+? entitled(Court, event { eats() }).
+# => FALSE
 
 # The firewall extends to the obligation: no rule may punish a person for not
 # being owed. The `~home` control at the end of this file is what proves this is
@@ -309,6 +314,9 @@ free(Hano).
 # convicted into the roster because of Article 1's `free -> person` line. The
 # derived case is pinned on Zed in 07-a-prisoner-is-a-person.pins.nibli.
 ? person(Hano).
+# => TRUE
+
+? entitled(Hano, event { eats() }).
 # => TRUE
 
 ? owe(State, Provision, Hano).

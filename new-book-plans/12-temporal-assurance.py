@@ -12,10 +12,9 @@ This is repository evidence for the exact bound source.  It establishes
 fail-safe derivations for supplied, independently represented records.  It
 does not authenticate the outside witnesses, make a successor arrive, advance
 a clock, release a person physically, or make an institution perform a duty.
-Every executable pin is ground and non-event-abstraction: existing chapter
-pins own the floor-event surface, while this harness checks that ordinary
-standing, authority, custody, recognition, and severity queries coexist with
-the bounded temporal identifier-status heads.
+Every executable pin is ground. The coexistence control includes the opaque
+floor-event surface alongside standing, authority, custody, recognition,
+severity, and the bounded temporal identifier-status heads.
 
 Usage:
     python3 new-book-plans/12-temporal-assurance.py
@@ -439,6 +438,9 @@ SHA256 = re.compile(r"^[0-9a-f]{64}$")
 IDENTIFIER = re.compile(r"^[A-Za-z][A-Za-z0-9_-]*$")
 GROUND = re.compile(r"^[a-z][a-z0-9_]*\([^\n]*\)\.$")
 GROUND_QUERY = re.compile(r"^[a-z][a-z0-9_]*\([A-Za-z0-9_, ]+\)$")
+EVENT_ENTITLEMENT_QUERY = re.compile(
+    r"^entitled\([A-Za-z][A-Za-z0-9_]*, event \{ [a-z][a-z0-9_]*\(\) \}\)$"
+)
 VERDICTS = {"TRUE", "FALSE"}
 POSTURES = {
     "rejected_by_current_source",
@@ -855,13 +857,13 @@ def validate_source(
             expression = text_value(check["expression"], f"case {identifier}.expression")
             if expression.endswith(".") or "\n" in expression:
                 raise TemporalAssuranceError(f"case {identifier}: expression must omit final period")
-            if GROUND_QUERY.fullmatch(expression) is None:
+            if (
+                GROUND_QUERY.fullmatch(expression) is None
+                and EVENT_ENTITLEMENT_QUERY.fullmatch(expression) is None
+            ):
                 raise TemporalAssuranceError(
-                    f"case {identifier}: temporal checks must be simple ground relation queries"
-                )
-            if "event {" in expression:
-                raise TemporalAssuranceError(
-                    f"case {identifier}: temporal harness forbids event-abstraction queries"
+                    f"case {identifier}: temporal checks must be simple ground relation "
+                    "queries or exact ground event-entitlement queries"
                 )
             if "Transition" in expression and not (
                 re.fullmatch(
@@ -1198,8 +1200,8 @@ def negative_controls(reviewed: Mapping[str, object], constitution: str, depende
     expect_failure("case with no checks", lambda: validate_source(changed, constitution, dependencies))
     controls += 1
     changed = copy.deepcopy(reviewed)
-    changed["cases"][0]["checks"][0]["expression"] = "entitled(Adam, event { eats() })"
-    expect_failure("event-abstraction temporal pin", lambda: validate_source(changed, constitution, dependencies))
+    changed["cases"][0]["checks"][0]["expression"] = "entitled(Adam, event { eats(Adam) })"
+    expect_failure("malformed event-abstraction temporal pin", lambda: validate_source(changed, constitution, dependencies))
     controls += 1
     changed = copy.deepcopy(reviewed)
     terminal_case = next(case for case in changed["cases"] if case["id"] == "TA-02")

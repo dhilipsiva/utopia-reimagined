@@ -1066,45 +1066,6 @@ def pin_lines(
     return lines
 
 
-def is_event_entitlement_step(raw_step: object) -> bool:
-    step = as_object(raw_step, "step")
-    if step["type"] != "query":
-        return False
-    expression = str(step["expression"])
-    if "event {" not in expression:
-        return False
-    if re.fullmatch(r"entitled\((?:Adam|Bela), event \{ eats\(\) \}\)", expression) is None:
-        raise AmendmentAuditError(
-            "isolated amendment floor execution accepts only the reviewed "
-            "Adam/Bela food-entitlement query shape"
-        )
-    return True
-
-
-def isolated_floor_candidate(candidate: str, case_id: str) -> str:
-    floor_lines = [
-        line
-        for line in candidate.splitlines()
-        if line.startswith("entitled(every person, event { ")
-    ]
-    if not 7 <= len(floor_lines) <= 8:
-        raise AmendmentAuditError(
-            f"{case_id}: isolated floor candidate expected seven or eight live "
-            f"universal floor lines, got {len(floor_lines)}"
-        )
-    return "\n".join(
-        [
-            "# Exact candidate floor lines isolated from the reviewed source mutation.",
-            "# Script 13 owns the corresponding live-source abstraction regression.",
-            "",
-            *floor_lines,
-            "person(Adam).",
-            "person(Bela).",
-            "",
-        ]
-    )
-
-
 def parse_pass_count(output: str, label: str) -> int:
     # nibli-pin reports the literal words "findings" and "harness errors" in
     # its clean zero-count file summary.  Remove only that exact clean shape;
@@ -1304,49 +1265,28 @@ def execute_cases(
             case_dir.mkdir()
             candidate = apply_mutations(kb_text, case["mutations"], f"{case_id}.mutations")
             steps = as_list(case["steps"], f"{case_id}.steps")
-            floor_steps = [step for step in steps if is_event_entitlement_step(step)]
-            ordinary_steps = [step for step in steps if not is_event_entitlement_step(step)]
-            actual = 0
-
-            for scope, selected_steps, selected_kb in (
-                ("full-source", ordinary_steps, candidate),
-                (
-                    "exact-candidate-floor",
-                    floor_steps,
-                    isolated_floor_candidate(candidate, case_id)
-                    if floor_steps
-                    else "",
-                ),
-            ):
-                if not selected_steps:
-                    continue
-                kb_path = case_dir / f"{scope}.nibli"
-                pin_path = case_dir / f"{scope}.pins.nibli"
-                kb_path.write_bytes(selected_kb.encode("utf-8"))
-                pin_path.write_bytes(
-                    "\n".join(pin_lines(case, selected_steps, scope)).encode("utf-8")
+            scope = "full-source"
+            kb_path = case_dir / f"{scope}.nibli"
+            pin_path = case_dir / f"{scope}.pins.nibli"
+            kb_path.write_bytes(candidate.encode("utf-8"))
+            pin_path.write_bytes(
+                "\n".join(pin_lines(case, steps, scope)).encode("utf-8")
+            )
+            completed = run_process(
+                [str(pin_binary), "--kb", str(kb_path), str(pin_path)],
+                label=f"{case_id} {scope} engine case",
+                timeout_seconds=timeout_seconds,
+            )
+            if completed.returncode != 0:
+                tail = "\n".join(completed.stdout.splitlines()[-16:])
+                raise AmendmentAuditError(
+                    f"{case_id}: {scope} nibli-pin exited "
+                    f"{completed.returncode}\n{tail}"
                 )
-                completed = run_process(
-                    [str(pin_binary), "--kb", str(kb_path), str(pin_path)],
-                    label=f"{case_id} {scope} engine case",
-                    timeout_seconds=timeout_seconds,
-                )
-                if completed.returncode != 0:
-                    tail = "\n".join(completed.stdout.splitlines()[-16:])
-                    raise AmendmentAuditError(
-                        f"{case_id}: {scope} nibli-pin exited "
-                        f"{completed.returncode}\n{tail}"
-                    )
-                count = parse_pass_count(completed.stdout, f"{case_id}/{scope}")
-                if count != len(selected_steps):
-                    raise AmendmentAuditError(
-                        f"{case_id}: {scope} engine ran {count} pins, expected "
-                        f"{len(selected_steps)}"
-                    )
-                actual += count
+            actual = parse_pass_count(completed.stdout, f"{case_id}/{scope}")
             if actual != len(steps):
                 raise AmendmentAuditError(
-                    f"{case_id}: split execution ran {actual} pins, expected {len(steps)}"
+                    f"{case_id}: {scope} engine ran {actual} pins, expected {len(steps)}"
                 )
             return case_id, actual
 
@@ -1532,14 +1472,10 @@ def render(
             "",
             "## Executable cases",
             "",
-            "Ordinary verdicts run against each full candidate source. Opaque",
-            "food-entitlement verdicts run separately against the exact universal",
-            "floor lines extracted from that same candidate plus only the named",
-            "person facts. Script 13 owns the matching live-source abstraction",
-            "regression. On 2026-08-05, clean release Nibli `225bba4` exhibited",
-            "global witness-candidate expansion when T2 paths and opaque events shared",
-            "one broad query process. Verify before relying: this split is bounded",
-            "isolation, not integrated full-source entitlement evidence.",
+            "Every ordinary and opaque food-entitlement verdict runs in one process",
+            "against the full exact candidate source. This keeps an amendment's",
+            "floor effect coupled to all temporal and non-temporal rules that coexist",
+            "with it in the same full-candidate process.",
             "",
         ]
     )

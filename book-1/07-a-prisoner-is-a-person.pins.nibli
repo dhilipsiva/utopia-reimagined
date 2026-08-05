@@ -64,6 +64,10 @@ approves(TemporalReview, Case_Zed).
 # debt. The debt pins are what the sentence rests on — and "everything" is
 # enumerated, not sampled, because the omitted item is exactly where a
 # universal fails: chapter 8's own missing expresses pin once hid a false one.
+# This file executes Zed's T3 custody-to-person chain and every itemised debt.
+# The paired full-source event projection is owned by the temporal and placement
+# audits: composing opaque abstraction with a synthetic subject whose only
+# standing proof traverses this high-arity T3 fixture remains an engine boundary.
 ? owe(State, Eats, Zed).
 # => TRUE
 
@@ -88,7 +92,6 @@ approves(TemporalReview, Case_Zed).
 ? owe(State, Meets, Zed).
 # => TRUE
 
-# Exact floor-event derivation is centralized in `13-floor-abstraction.py`.
 # (Owed, not delivered — the delivery gap is chapter 8's subject.)
 ? eats(Zed).
 # => FALSE

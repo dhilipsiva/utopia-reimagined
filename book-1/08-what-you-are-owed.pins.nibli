@@ -27,7 +27,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 43
+:expect-pins 51
 
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])owe[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
@@ -170,8 +170,9 @@ all $x: prisoner($x) -> believe($x).
 # "Not whether Bela is *entitled* to eat — whether Bela eats." The chapter's
 # whole opening turns on this contrast, and until now the file pinned only the
 # second half. Both halves, adjacent, same person:
-# Exact derivation for every live floor event is centralized in
-# `13-floor-abstraction.py`; this chapter keeps the actuality/debt contrast.
+? entitled(Bela, event { eats() }).
+# => TRUE
+
 ? eats(Bela).
 # => FALSE
 
@@ -186,6 +187,27 @@ all $x: prisoner($x) -> believe($x).
 # checked phrase rather than a summary, because the omitted item is exactly
 # where such claims fail — this file's own expresses pin was missing for as
 # long as the prose's false universal hid behind it.
+? entitled(Bela, event { secure() }).
+# => TRUE
+
+? entitled(Bela, event { dwell() }).
+# => TRUE
+
+? entitled(Bela, event { healthy() }).
+# => TRUE
+
+? entitled(Bela, event { learn() }).
+# => TRUE
+
+? entitled(Bela, event { expresses() }).
+# => TRUE
+
+? entitled(Bela, event { believe() }).
+# => TRUE
+
+? entitled(Bela, event { meets() }).
+# => TRUE
+
 ? owe(State, Secure, Bela).
 # => TRUE
 

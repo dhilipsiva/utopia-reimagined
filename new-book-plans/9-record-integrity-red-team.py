@@ -13,12 +13,9 @@ This program deliberately stays below that layer: it reproduces selected
 same-snapshot levers and indistinguishability boundaries, and confirms that a
 bare ``rotten`` report is inert. It does not duplicate witnessed carry,
 omission, status-conflict, or case-bound-power tests owned by script 12.
-It checks itemised floor debts rather than event-abstraction entitlement
-queries; script 13 owns that exact-source abstraction regression so T2's
-two-endpoint paths do not make this broad flat-snapshot suite enumerate the
-engine's global event-witness candidate pool.  That expansion was measured on
-2026-08-05 against clean release Nibli ``225bba4``; verify before relying.  The
-split is a temporary bounded isolation, not integrated full-source evidence.
+It checks itemised floor debts and their opaque event-abstraction entitlements
+together against the full source. This keeps the standing and release harms
+coupled to the exact floor projection they affect.
 
 Usage:
     python3 new-book-plans/9-record-integrity-red-team.py
@@ -227,6 +224,7 @@ SEMANTIC_SENTINELS = {
     ("RS-02", "mature_cira", "decide(Cira, Ballot)"): "TRUE",
     ("RS-03", "no_mature_hano", "decide(Hano, Ballot)"): "FALSE",
     ("RS-04", "no_person_bela", "owe(State, Eats, Bela)"): "FALSE",
+    ("RS-04", "no_person_bela", "entitled(Bela, event { eats() })"): "FALSE",
     ("RS-04", "no_person_bela", "false(Bela)"): "TRUE",
     ("RS-05", "carry_forge_marked", "false(Carry_Forge)"): "FALSE",
     ("RS-05", "carry_forge_marked", "match(Carry_Forge, CarriedVoid)"): "FALSE",
@@ -761,12 +759,6 @@ def validate_source(
             raise RedTeamError(
                 f"{scenario_id}: semantic sentinel {state}/{expression} must be {expected}, got {actual}"
             )
-
-    if "event {" in json.dumps(source, sort_keys=True):
-        raise RedTeamError(
-            "flat-snapshot source must use itemised floor debt; script 13 owns "
-            "event-abstraction entitlement queries against the exact constitution"
-        )
 
     correction_states = set(str(value) for value in scenarios["RS-07"]["state_refs"])
     if correction_states != {"base", "vex_forgive_only", "vex_judgment_only", "vex_both"}:

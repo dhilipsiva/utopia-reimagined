@@ -76,14 +76,10 @@ is reviewed in the JSON source.
 
 ## Executable cases
 
-Ordinary verdicts run against each full candidate source. Opaque
-food-entitlement verdicts run separately against the exact universal
-floor lines extracted from that same candidate plus only the named
-person facts. Script 13 owns the matching live-source abstraction
-regression. On 2026-08-05, clean release Nibli `225bba4` exhibited
-global witness-candidate expansion when T2 paths and opaque events shared
-one broad query process. Verify before relying: this split is bounded
-isolation, not integrated full-source entitlement evidence.
+Every ordinary and opaque food-entitlement verdict runs in one process
+against the full exact candidate source. This keeps an amendment's
+floor effect coupled to all temporal and non-temporal rules that coexist
+with it in the same full-candidate process.
 
 ### AS-01 — Honest registered-label control
 

@@ -238,6 +238,7 @@
         {"state": "base", "expression": "travel(Adam)", "expected": "FALSE", "purpose": "Custody removes mobility before release."},
         {"state": "base", "expression": "decide(Adam, Ballot)", "expected": "TRUE", "purpose": "The franchise survives custody."},
         {"state": "base", "expression": "owe(State, Dwell, Adam)", "expected": "TRUE", "purpose": "The itemised floor debt is already owed."},
+        {"state": "base", "expression": "entitled(Adam, event { dwell() })", "expected": "TRUE", "purpose": "The exact opaque shelter entitlement is already live in the full source."},
         {"state": "base", "expression": "expresses(Adam)", "expected": "TRUE", "purpose": "A prisoner-only delivery conclusion is live."},
         {"state": "base", "expression": "dwell(Adam)", "expected": "TRUE", "purpose": "A prisoner-only housing conclusion is live."},
         {"state": "free_adam", "expression": "free(Adam)", "expected": "TRUE", "purpose": "The exact overlay assertion is visible."},
@@ -245,6 +246,7 @@
         {"state": "free_adam", "expression": "travel(Adam)", "expected": "TRUE", "purpose": "Mobility returns from the same write."},
         {"state": "free_adam", "expression": "decide(Adam, Ballot)", "expected": "TRUE", "purpose": "The franchise remains unchanged."},
         {"state": "free_adam", "expression": "owe(State, Dwell, Adam)", "expected": "TRUE", "purpose": "The itemised floor debt remains unchanged."},
+        {"state": "free_adam", "expression": "entitled(Adam, event { dwell() })", "expected": "TRUE", "purpose": "Release leaves the exact opaque shelter entitlement unchanged."},
         {"state": "free_adam", "expression": "expresses(Adam)", "expected": "FALSE", "purpose": "The prisoner-only delivery route stops."},
         {"state": "free_adam", "expression": "dwell(Adam)", "expected": "FALSE", "purpose": "The prisoner-only housing route stops."}
       ],
@@ -254,7 +256,8 @@
       ],
       "preserved_invariants": [
         {"expression": "decide(Adam, Ballot)", "from_state": "base", "to_state": "free_adam", "expected": "TRUE", "claim": "Release does not create or remove the franchise."},
-        {"expression": "owe(State, Dwell, Adam)", "from_state": "base", "to_state": "free_adam", "expected": "TRUE", "claim": "Release does not remove the itemised floor debt."}
+        {"expression": "owe(State, Dwell, Adam)", "from_state": "base", "to_state": "free_adam", "expected": "TRUE", "claim": "Release does not remove the itemised floor debt."},
+        {"expression": "entitled(Adam, event { dwell() })", "from_state": "base", "to_state": "free_adam", "expected": "TRUE", "claim": "Release does not remove the exact opaque shelter entitlement."}
       ],
       "interpretation": "The engine proves the one-write legal lever and the delivery loss. It does not prove the write was forged or that physical release occurred.",
       "residual_limit": "An unrecorded real release and no release still produce the same supplied input; T3 limits custody but cannot invent an outside release event.",
@@ -309,6 +312,7 @@
         {"state": "no_mature_hano", "expression": "person(Hano)", "expected": "TRUE", "purpose": "Standing remains."},
         {"state": "no_mature_hano", "expression": "prisoner(Hano)", "expected": "TRUE", "purpose": "Custody remains."},
         {"state": "no_mature_hano", "expression": "owe(State, Eats, Hano)", "expected": "TRUE", "purpose": "The itemised floor debt remains."},
+        {"state": "no_mature_hano", "expression": "entitled(Hano, event { eats() })", "expected": "TRUE", "purpose": "The exact opaque food entitlement remains in the full source."},
         {"state": "no_mature_hano", "expression": "mature(Jala)", "expected": "TRUE", "purpose": "A second adulthood entry remains as a liveness control."},
         {"state": "no_mature_hano", "expression": "decide(Jala, Ballot)", "expected": "TRUE", "purpose": "The franchise rule remains live for the comparison subject."}
       ],
@@ -336,6 +340,7 @@
         {"state": "base", "expression": "person(Bela)", "expected": "TRUE", "purpose": "Bela begins on the roster."},
         {"state": "base", "expression": "decide(Bela, Ballot)", "expected": "TRUE", "purpose": "The franchise is live before omission."},
         {"state": "base", "expression": "owe(State, Eats, Bela)", "expected": "TRUE", "purpose": "The itemised floor debt is live before omission."},
+        {"state": "base", "expression": "entitled(Bela, event { eats() })", "expected": "TRUE", "purpose": "The exact opaque food entitlement is live before omission."},
         {"state": "base", "expression": "false(Bela)", "expected": "TRUE", "purpose": "The adverse voiding chain is live before omission."},
         {"state": "base", "expression": "lose(Points, Bela)", "expected": "TRUE", "purpose": "The adverse loss is live before omission."},
         {"state": "no_person_bela", "expression": "person(Bela)", "expected": "FALSE", "purpose": "The sole roster entry is absent."},
@@ -343,16 +348,19 @@
         {"state": "no_person_bela", "expression": "decide(Bela, Ballot)", "expected": "FALSE", "purpose": "The franchise disappears."},
         {"state": "no_person_bela", "expression": "travel(Bela)", "expected": "FALSE", "purpose": "Mobility disappears."},
         {"state": "no_person_bela", "expression": "owe(State, Eats, Bela)", "expected": "FALSE", "purpose": "The itemised State debt disappears."},
+        {"state": "no_person_bela", "expression": "entitled(Bela, event { eats() })", "expected": "FALSE", "purpose": "The exact opaque food entitlement disappears with standing."},
         {"state": "no_person_bela", "expression": "permits(Review, Gia)", "expected": "TRUE", "purpose": "The first voiding credential remains live."},
         {"state": "no_person_bela", "expression": "permits(Tribunal, Hex)", "expected": "TRUE", "purpose": "The second voiding credential remains live."},
         {"state": "no_person_bela", "expression": "false(Bela)", "expected": "TRUE", "purpose": "The adverse void conclusion survives de-personing."},
         {"state": "no_person_bela", "expression": "lose(Points, Bela)", "expected": "TRUE", "purpose": "The adverse loss survives de-personing."},
         {"state": "no_person_bela", "expression": "person(Jala)", "expected": "TRUE", "purpose": "A comparison roster person remains."},
-        {"state": "no_person_bela", "expression": "owe(State, Eats, Jala)", "expected": "TRUE", "purpose": "The itemised floor machinery remains live for the comparison person."}
+        {"state": "no_person_bela", "expression": "owe(State, Eats, Jala)", "expected": "TRUE", "purpose": "The itemised floor machinery remains live for the comparison person."},
+        {"state": "no_person_bela", "expression": "entitled(Jala, event { eats() })", "expected": "TRUE", "purpose": "The exact opaque floor projection remains live for the comparison person."}
       ],
       "comparisons": [
         {"expression": "person(Bela)", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The exact roster entry disappears."},
         {"expression": "owe(State, Eats, Bela)", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The itemised floor debt disappears with the roster entry."},
+        {"expression": "entitled(Bela, event { eats() })", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The exact opaque food entitlement disappears with the roster entry."},
         {"expression": "decide(Bela, Ballot)", "from_state": "base", "from_expected": "TRUE", "to_state": "no_person_bela", "to_expected": "FALSE", "claim": "The franchise disappears with the roster entry."}
       ],
       "preserved_invariants": [
@@ -549,6 +557,7 @@
       "queries": [
         {"expression": "person(Bela)", "expected": "FALSE"},
         {"expression": "owe(State, Eats, Bela)", "expected": "FALSE"},
+        {"expression": "entitled(Bela, event { eats() })", "expected": "FALSE"},
         {"expression": "false(Bela)", "expected": "TRUE"}
       ],
       "boundary": "The harness knows how it built its fixture; the engine sees only the same flat omission in every described world.",

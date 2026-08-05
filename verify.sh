@@ -8,15 +8,15 @@
 # against a spine that did not exist. Every check below exists because one of
 # those actually happened.
 #
-#   ./verify.sh          full run: every declared chapter/floor pin; exact-source floor,
-#                       reviewed record, temporal, amendment, placement, and
+#   ./verify.sh          full run: every declared chapter/floor pin; reviewed
+#                       record, temporal, amendment, placement, and
 #                       counterfactual suites.
 #   ./verify.sh --quick  everything except the executable suites
-#                       NOTE --quick cannot execute floor abstraction, record
+#                       NOTE --quick cannot execute chapter/floor pins, record
 #                       snapshots, temporal transitions, amendment candidates,
-#                       placement cases, or stale counterfactual fixtures. Run
-#                       the FULL suite after any constitution edit — that is how
-#                       a stale fixture shipped once.
+#                       placement cases, or stale counterfactual fixtures. Run the
+#                       FULL suite after any constitution edit — that is how a
+#                       stale fixture shipped once.
 #
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and every conclusion-only gate
@@ -40,7 +40,6 @@ RED_TEAM=new-book-plans/9-record-integrity-red-team.py
 AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
-FLOOR_ABSTRACTION=new-book-plans/13-floor-abstraction.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -117,7 +116,6 @@ if [ -n "$ONLY" ]; then
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
   printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, or placement audit,\n'
-  printf '        floor-abstraction execution,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -170,13 +168,7 @@ out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "temporal-assurance contract failed" "$out"
 
-# ── 2f. the live floor survives as an exact minimal engine projection ────────
-step "floor-abstraction contract"
-out=$(python3 "$FLOOR_ABSTRACTION" --check 2>&1) \
-  && pass "$out" \
-  || fail "floor-abstraction contract failed" "$out"
-
-# ── 2e. chapter 1's headline number ──────────────────────────────────────────
+# ── 2f. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and may falsify prose that describes the list.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
@@ -424,14 +416,9 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor pins, floor-abstraction execution, record snapshots, temporal, amendment and placement executions, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor pins, record snapshots, temporal, amendment and placement executions, and counterfactuals (--quick)\n'
   exit 0
 fi
-
-step "floor-abstraction execution"
-out=$(NIBLI_PIN="$PIN" python3 "$FLOOR_ABSTRACTION" --check --execute 2>&1) \
-  && pass "$out" \
-  || fail "floor-abstraction execution failed" "$out"
 
 step "chapter/floor pins"
 

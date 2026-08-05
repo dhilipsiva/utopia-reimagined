@@ -167,6 +167,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `base` | `travel(Adam)` | **FALSE** | Custody removes mobility before release. |
 | `base` | `decide(Adam, Ballot)` | **TRUE** | The franchise survives custody. |
 | `base` | `owe(State, Dwell, Adam)` | **TRUE** | The itemised floor debt is already owed. |
+| `base` | `entitled(Adam, event { dwell() })` | **TRUE** | The exact opaque shelter entitlement is already live in the full source. |
 | `base` | `expresses(Adam)` | **TRUE** | A prisoner-only delivery conclusion is live. |
 | `base` | `dwell(Adam)` | **TRUE** | A prisoner-only housing conclusion is live. |
 | `free_adam` | `free(Adam)` | **TRUE** | The exact overlay assertion is visible. |
@@ -174,6 +175,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `free_adam` | `travel(Adam)` | **TRUE** | Mobility returns from the same write. |
 | `free_adam` | `decide(Adam, Ballot)` | **TRUE** | The franchise remains unchanged. |
 | `free_adam` | `owe(State, Dwell, Adam)` | **TRUE** | The itemised floor debt remains unchanged. |
+| `free_adam` | `entitled(Adam, event { dwell() })` | **TRUE** | Release leaves the exact opaque shelter entitlement unchanged. |
 | `free_adam` | `expresses(Adam)` | **FALSE** | The prisoner-only delivery route stops. |
 | `free_adam` | `dwell(Adam)` | **FALSE** | The prisoner-only housing route stops. |
 
@@ -186,6 +188,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 
 - `decide(Adam, Ballot)` stays **TRUE** from `base` to `free_adam` — Release does not create or remove the franchise.
 - `owe(State, Dwell, Adam)` stays **TRUE** from `base` to `free_adam` — Release does not remove the itemised floor debt.
+- `entitled(Adam, event { dwell() })` stays **TRUE** from `base` to `free_adam` — Release does not remove the exact opaque shelter entitlement.
 
 ### RS-02 — One constructed unauthenticated adulthood write grants the ballot
 
@@ -240,6 +243,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `no_mature_hano` | `person(Hano)` | **TRUE** | Standing remains. |
 | `no_mature_hano` | `prisoner(Hano)` | **TRUE** | Custody remains. |
 | `no_mature_hano` | `owe(State, Eats, Hano)` | **TRUE** | The itemised floor debt remains. |
+| `no_mature_hano` | `entitled(Hano, event { eats() })` | **TRUE** | The exact opaque food entitlement remains in the full source. |
 | `no_mature_hano` | `mature(Jala)` | **TRUE** | A second adulthood entry remains as a liveness control. |
 | `no_mature_hano` | `decide(Jala, Ballot)` | **TRUE** | The franchise rule remains live for the comparison subject. |
 
@@ -268,6 +272,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `base` | `person(Bela)` | **TRUE** | Bela begins on the roster. |
 | `base` | `decide(Bela, Ballot)` | **TRUE** | The franchise is live before omission. |
 | `base` | `owe(State, Eats, Bela)` | **TRUE** | The itemised floor debt is live before omission. |
+| `base` | `entitled(Bela, event { eats() })` | **TRUE** | The exact opaque food entitlement is live before omission. |
 | `base` | `false(Bela)` | **TRUE** | The adverse voiding chain is live before omission. |
 | `base` | `lose(Points, Bela)` | **TRUE** | The adverse loss is live before omission. |
 | `no_person_bela` | `person(Bela)` | **FALSE** | The sole roster entry is absent. |
@@ -275,17 +280,20 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `no_person_bela` | `decide(Bela, Ballot)` | **FALSE** | The franchise disappears. |
 | `no_person_bela` | `travel(Bela)` | **FALSE** | Mobility disappears. |
 | `no_person_bela` | `owe(State, Eats, Bela)` | **FALSE** | The itemised State debt disappears. |
+| `no_person_bela` | `entitled(Bela, event { eats() })` | **FALSE** | The exact opaque food entitlement disappears with standing. |
 | `no_person_bela` | `permits(Review, Gia)` | **TRUE** | The first voiding credential remains live. |
 | `no_person_bela` | `permits(Tribunal, Hex)` | **TRUE** | The second voiding credential remains live. |
 | `no_person_bela` | `false(Bela)` | **TRUE** | The adverse void conclusion survives de-personing. |
 | `no_person_bela` | `lose(Points, Bela)` | **TRUE** | The adverse loss survives de-personing. |
 | `no_person_bela` | `person(Jala)` | **TRUE** | A comparison roster person remains. |
 | `no_person_bela` | `owe(State, Eats, Jala)` | **TRUE** | The itemised floor machinery remains live for the comparison person. |
+| `no_person_bela` | `entitled(Jala, event { eats() })` | **TRUE** | The exact opaque floor projection remains live for the comparison person. |
 
 **Discriminating flips**
 
 - `person(Bela)`: `base` TRUE → `no_person_bela` FALSE — The exact roster entry disappears.
 - `owe(State, Eats, Bela)`: `base` TRUE → `no_person_bela` FALSE — The itemised floor debt disappears with the roster entry.
+- `entitled(Bela, event { eats() })`: `base` TRUE → `no_person_bela` FALSE — The exact opaque food entitlement disappears with the roster entry.
 - `decide(Bela, Ballot)`: `base` TRUE → `no_person_bela` FALSE — The franchise disappears with the roster entry.
 
 **Preserved controls**
@@ -484,6 +492,7 @@ temporal scopes. No extra fact identifies which world occurred.
 | --- | --- |
 | `person(Bela)` | **FALSE** |
 | `owe(State, Eats, Bela)` | **FALSE** |
+| `entitled(Bela, event { eats() })` | **FALSE** |
 | `false(Bela)` | **TRUE** |
 
 ### OE-4 — Unperformed forgiveness and hidden completed forgiveness

@@ -11,8 +11,9 @@ the reviewed outcomes when ``--execute`` is requested.
 The audit is repository-level acceptance evidence for the exact current
 source.  It adds no runtime exclusivity rule, authenticates no placement
 report, supplies no appeal or remedy, and does not deliver housing to a free
-person. Broad matrix cases use the itemised shelter debt; script 13 separately
-owns the exact-source event-abstraction entitlement regression.
+person. Every matrix row checks the itemised shelter debt in its exact synthetic
+case and pairs it with an opaque entitlement probe against the full current
+source plus only that subject's standing fact.
 
 Usage:
     python3 new-book-plans/11-placement-exhaustiveness.py
@@ -1119,6 +1120,23 @@ def matrix_pin_lines(
     return lines
 
 
+def floor_entitlement_pin_lines(case: Mapping[str, object]) -> list[str]:
+    subject = case_subject(
+        str(case["subject_kind"]),
+        axis_tuple(case["axes"], f"matrix.{case['id']}.axes"),
+    )
+    return [
+        ":expect-pins 1",
+        "# Full-current-source floor projection for the paired matrix subject.",
+        "# The only overlay is the subject's standing fact; no floor source is extracted.",
+        f"person({subject}).",
+        "",
+        f"? entitled({subject}, event {{ dwell() }}).",
+        "# => TRUE",
+        "",
+    ]
+
+
 def apply_mutations(
     source: str,
     raw_mutations: object,
@@ -1420,11 +1438,6 @@ def validate_source(
         raise PlacementAuditError(f"status must equal {STATUS}")
     if source["evidence_role"] != EVIDENCE_ROLE:
         raise PlacementAuditError(f"evidence_role must equal {EVIDENCE_ROLE}")
-    if "event {" in json.dumps(source, sort_keys=True):
-        raise PlacementAuditError(
-            "placement source must use itemised shelter debt; script 13 owns "
-            "event-abstraction entitlement queries"
-        )
     if (
         type(source["subprocess_timeout_seconds"]) is not int
         or source["subprocess_timeout_seconds"] != REVIEWED_TIMEOUT_SECONDS
@@ -1906,13 +1919,14 @@ def execute_audit(
     cases: Sequence[Mapping[str, object]],
     mutations: Sequence[Mapping[str, object]],
     pin_binary: pathlib.Path,
-) -> tuple[int, int, int, int, int]:
+) -> tuple[int, int, int, int, int, int, int]:
     if not pin_binary.is_absolute():
         raise PlacementAuditError("selected nibli-pin path must be absolute")
     if not pin_binary.is_file() or not os.access(pin_binary, os.X_OK):
         raise PlacementAuditError(f"release nibli-pin is missing or not executable: {pin_binary}")
     timeout = int(source["subprocess_timeout_seconds"])
     base_pin_count = sum(len(case_queries(case, inventory)) for case in cases)
+    floor_pin_count = len(cases)
     cases_by_id = {str(case["id"]): case for case in cases}
     default_jobs = min(8, max(1, os.cpu_count() or 1))
     try:
@@ -1928,6 +1942,9 @@ def execute_audit(
     ) as raw_temp:
         temp = pathlib.Path(raw_temp)
         base_jobs: list[tuple[Mapping[str, object], pathlib.Path, pathlib.Path]] = []
+        floor_source = temp / "full-current-source.nibli"
+        floor_source.write_text(kb_text, encoding="utf-8", newline="\n")
+        floor_jobs: list[tuple[Mapping[str, object], pathlib.Path]] = []
         for case in cases:
             case_dir = temp / "base" / str(case["id"])
             case_dir.mkdir(parents=True)
@@ -1942,6 +1959,15 @@ def execute_audit(
                 newline="\n",
             )
             base_jobs.append((case, case_kb, case_pin))
+            floor_dir = temp / "floor" / str(case["id"])
+            floor_dir.mkdir(parents=True)
+            floor_pin = floor_dir / "entitlement.pins.nibli"
+            floor_pin.write_text(
+                "\n".join(floor_entitlement_pin_lines(case)),
+                encoding="utf-8",
+                newline="\n",
+            )
+            floor_jobs.append((case, floor_pin))
 
         def run_base_case(
             job: tuple[Mapping[str, object], pathlib.Path, pathlib.Path]
@@ -1976,6 +2002,44 @@ def execute_audit(
         if executed_base_pins != base_pin_count:
             raise PlacementAuditError(
                 f"base matrix ran {executed_base_pins} pins, expected {base_pin_count}"
+            )
+
+        def run_floor_case(
+            job: tuple[Mapping[str, object], pathlib.Path]
+        ) -> int:
+            case, floor_pin = job
+            identifier = str(case["id"])
+            completed = run_process(
+                [str(pin_binary), "--kb", str(floor_source), str(floor_pin)],
+                label=f"full-source floor {identifier}",
+                timeout_seconds=timeout,
+            )
+            if completed.returncode != 0:
+                tail = "\n".join(completed.stdout.splitlines()[-18:])
+                raise PlacementAuditError(
+                    f"full-source floor {identifier} exited "
+                    f"{completed.returncode}\n{tail}"
+                )
+            actual = parse_pass_count(
+                completed.stdout, f"full-source floor {identifier}"
+            )
+            if actual != 1:
+                raise PlacementAuditError(
+                    f"full-source floor {identifier} ran {actual} pins, expected 1"
+                )
+            return actual
+
+        executed_floor_pins = 0
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=min(requested_jobs, len(floor_jobs))
+        ) as pool:
+            futures = [pool.submit(run_floor_case, job) for job in floor_jobs]
+            for future in concurrent.futures.as_completed(futures):
+                executed_floor_pins += future.result()
+        if executed_floor_pins != floor_pin_count:
+            raise PlacementAuditError(
+                f"full-source floor probes ran {executed_floor_pins} pins, "
+                f"expected {floor_pin_count}"
             )
 
         def run_mutation(entry: Mapping[str, object]) -> int:
@@ -2051,7 +2115,15 @@ def execute_audit(
             futures = [pool.submit(run_mutation, entry) for entry in mutations]
             for future in concurrent.futures.as_completed(futures):
                 observation_pins += future.result()
-    return len(cases), base_pin_count, len(mutations), observation_pins, len(mutations)
+    return (
+        len(cases),
+        base_pin_count,
+        len(cases),
+        floor_pin_count,
+        len(mutations),
+        observation_pins,
+        len(mutations),
+    )
 
 
 def markdown(value: object) -> str:
@@ -2156,14 +2228,17 @@ def render(
                 "the presence or absence of an exact case-bound custody lease,",
                 "the itemised shelter debt, each axis result, and every",
                 "discovered non-selected destination.",
+                "A paired probe checks the same subject's exact opaque shelter",
+                "entitlement against the full current source plus only a standing",
+                "fact; it never extracts the floor rules.",
             ]
         )
     lines.extend(
         [
             "",
             "The two non-confined mirrors are current-source narrowness tripwires. They",
-            "record the present gap between itemised debt and actuality; script 13",
-            "separately executes the exact event-abstraction entitlement. They are not a",
+            "record the present gap between entitlement, itemised debt, and actuality.",
+            "They are not a",
             "permanent ban on a future valid free-person delivery route.",
             "",
             "## Executable source mutations",
@@ -2359,12 +2434,15 @@ def main(argv: Iterable[str] | None = None) -> int:
     )
     controls = negative_controls(source, kb_text, kb_digest, inventory)
 
-    base_runs = base_pins = candidate_runs = candidate_pins = sabotage_runs = 0
+    base_runs = base_pins = floor_runs = floor_pins = 0
+    candidate_runs = candidate_pins = sabotage_runs = 0
     if args.execute:
         pin = select_pin(args.pin)
         (
             base_runs,
             base_pins,
+            floor_runs,
+            floor_pins,
             candidate_runs,
             candidate_pins,
             sabotage_runs,
@@ -2378,7 +2456,8 @@ def main(argv: Iterable[str] | None = None) -> int:
         if current != generated_bytes:
             raise PlacementAuditError(f"{output_relative} is STALE — rerun without --check")
         suffix = (
-            f"; {base_runs} matrix / {base_pins} pins, {candidate_runs} mutation "
+            f"; {base_runs} matrix / {base_pins} pins, {floor_runs} full-source "
+            f"floor probes / {floor_pins} pins, {candidate_runs} mutation "
             f"observation runs / {candidate_pins} pins, and {sabotage_runs} executable "
             "baseline sabotages pass"
             if args.execute

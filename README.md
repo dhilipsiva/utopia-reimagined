@@ -23,7 +23,7 @@ imprisonment and stops there.
 | `new-book-plans/assertion-surface-contracts.json` | the reviewed authority, provenance, harm, challenge and risk contracts behind that audit |
 | `new-book-plans/record-integrity-assurance-case.md` | the generated current/target argument for positive writes, effective absences, authorship, correction, witnessing, reconciliation, challenge and recovery |
 | `new-book-plans/record-integrity-assurance-case.json` | the reviewed claims, evidence, premise coverage, defeaters, defaults and Book 2 assumptions behind that case |
-| `new-book-plans/record-integrity-red-team.md` | the generated, executable flat-snapshot audit of release, adulthood, roster, relief and forgiveness harms, using itemised floor debts while script 13 owns exact entitlement abstraction |
+| `new-book-plans/record-integrity-red-team.md` | the generated, executable flat-snapshot audit of release, adulthood, roster, relief and forgiveness harms, including full-source floor entitlement checks |
 | `new-book-plans/record-integrity-red-team.json` | the reviewed route postures, snapshot deltas, expected results, limits and narrowness impacts behind that audit |
 | `new-book-plans/amendment-semantics-audit.md` | the generated, executable audit separating Article 9's declared labels from candidate-source effects |
 | `new-book-plans/amendment-semantics-audit.json` | the reviewed exact mutations, expected verdicts, limits and affected claims behind that audit |
@@ -31,7 +31,6 @@ imprisonment and stops there.
 | `new-book-plans/placement-exhaustiveness-audit.json` | the reviewed axes, routes, source manifest, harmful mutations, limits and affected claims behind that audit |
 | `new-book-plans/temporal-assurance-case.md` | the generated staged T1/T2/T3 transition, order, renewal and residual-liveness assurance record |
 | `new-book-plans/temporal-assurance-case.json` | the reviewed temporal inputs, source/effect bindings, attacks, fresh-process pairs and narrowness ledger |
-| `new-book-plans/13-floor-abstraction.py` | an isolated exact-source regression for the floor abstraction that is deliberately kept out of the integrated query path |
 | `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
 | `verify.sh` | the one check |
 
@@ -42,8 +41,10 @@ python3 new-book-plans/9-record-integrity-red-team.py --check --execute
 python3 new-book-plans/10-amendment-semantics.py --check --execute
 python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 python3 new-book-plans/12-temporal-assurance.py --check --execute
-python3 new-book-plans/13-floor-abstraction.py --check --execute
 ```
+
+Use release `nibli-pin` at or after engine commit `5cec800`; earlier builds may
+fail to complete the full-source opaque entitlement checks.
 
 It exits non-zero on the first failure and names the claim that stopped being true.
 That includes a new or reclassified rule head, a changed admission or ground-fact

@@ -29,7 +29,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 34
+:expect-pins 35
 
 # "Hano was convicted ... and cannot move freely."
 ? prisoner(Hano).
@@ -96,6 +96,9 @@ free(Hano).
 # "The person keeps every entitlement they had ... and the body that owes it
 #  still owes it"
 ? person(Hano).
+# => TRUE
+
+? entitled(Hano, event { dwell() }).
 # => TRUE
 
 ? owe(State, Provision, Hano).

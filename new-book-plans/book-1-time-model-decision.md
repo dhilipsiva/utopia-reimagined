@@ -220,6 +220,16 @@ The implementation was admitted only after these gates were made executable:
    endpoint. The generated
    [`temporal-assurance-case.md`](temporal-assurance-case.md) is the bounded
    current-source assurance record; it preserves the outside-liveness boundary.
+7. [x] **Integrated floor-query execution:** release Nibli
+   `5cec80080eea0334c87508e60813f8f70f487441` executes an exact opaque floor
+   entitlement against the full T3 constitution. TA-22 now owns that coexistence
+   check inside the temporal harness, and the chapter, red-team, amendment, and
+   placement suites exercise the same full-source shape. This is bounded,
+   binary-specific evidence; it is not a timeless performance guarantee. The
+   placement proof is explicitly paired: its synthetic T3 row proves standing
+   and debt, while a fresh full-current-source probe supplies that same standing
+   fact and proves the opaque entitlement. It does not claim the composed
+   high-arity synthetic-standing path completes in one process.
 
 ## 8. Required adversarial matrix
 
