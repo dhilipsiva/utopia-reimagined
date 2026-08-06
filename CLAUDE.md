@@ -40,6 +40,29 @@ smuggle in operations: transition, tax rates, budgets, staffing, procurement,
 facilities, service workflows, clocks/calendars, record technology, cryptography,
 and case administration remain Book 2.
 
+**The project-level full-society completion target is author-directed
+(2026-08-05); its final volume, release, and assurance boundary remains
+author-gated.** The finished work must account for a fully functional society and
+must give an ordinary reader a reliably balanced view of normal life, provision,
+care, creation, democratic choice, private freedom, failure, coercion, repair, and
+recovery. “Exhaustive” means that every material social domain and cross-domain
+dependency receives an explicit disposition: constitutional invariant, democratic
+choice, protected private/civic freedom, Book 2 operation, or external empirical
+assumption. It does **not** authorise constitutional control of every human choice,
+and it is a versioned stopping rule rather than a timeless proof that no new domain
+can be discovered. One reviewed canonical source must own stable domain, role,
+body/institution, power, dependency, scenario, claim, external-assumption,
+threshold and assurance-route IDs; coverage, assurance, reader and Book 2 views
+are generated projections, not parallel hand-maintained truths. Every
+“functional” or feasibility claim is bound to a versioned reference envelope and
+declared adequacy, equality/accessibility, continuity, resilience, sustainability
+and resource criteria. Scope, Book 1 destination, Book 1 reader readiness, Book 2
+operations and the integrated two-book claim are separate cumulative gates. Scope
+inventory and neutral decision briefs may precede an author ruling; each contested
+rule family, dependent prose and public claim may not. The current Book 1/Book 2
+seam and edition ruling remain in force until the open Phase 1 decisions in
+`TODO.md` refine or replace them.
+
 **T3 is author-ratified (2026-08-03) and implemented in stages for case-bound
 Court custody (2026-08-05).** T1 reconciles witnessed predecessor/successor
 records and selected carry. A witnessed passport selects one constitutional
@@ -282,11 +305,32 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `book.md` — the entire book in a single Markdown file (~2970 lines).
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
-- `TODO.md` — the **book-1** work tracker, arranged **in the order the work happens**, refreshed 2026-08-03 after all fourteen chapter passes completed (their records live in git, not the tracker). It starts with **Phase 1, author-gated decisions**, currently empty and reserved for questions that must be ruled before implementation, and **Phase 2, engine handoffs (nibli)**, currently empty and reserved for fixable engine boundaries. It then carries the merged **Constitutional expansion — implementation backlog**, which turns the ratified mandate, time target, taxonomy, coverage map, and democratic corridor into ordered work without claiming any unimplemented rule exists. Cross-cutting sections cover remaining book work, reach, data, legacy harvest, and book-2; **Standing facts and methods** closes the file with knowledge, not tasks. Delete a bullet when it fully lands; update it if only partly done. book-2's items live in `book-2/TODO.md`; don't work them while book-1 is active.
+- `TODO.md` — the **book-1** work tracker, arranged **in the order
+  dependencies permit**, refreshed 2026-08-05 for the author-directed full-society
+  target. Phase 1 holds author rulings on volume/release, state/membership,
+  substantive equality, economic/private ordering and scarcity, family/collective
+  rights, ecology/future conditions/animals, security/external power, assurance,
+  narrative register and reader evidence; each ruling blocks only its
+  dependent implementation, while neutral inventory and decision briefs may
+  proceed. Phase 2 holds one self-contained, read-only Nibli audit for finite
+  collective decisions. The expansion backlog uses one canonical social model and
+  versioned reference envelope; explicit constitutional domain packs; role,
+  dependency, stress, gameability and assurance tests; separate completion gates;
+  and a generated reader contract. None makes an unimplemented right, institution,
+  operation or narrative current. Delete a bullet when it fully lands; update it if
+  partly done. Book 2 remains inactive in `book-2/TODO.md`.
 - `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
 - `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
-- `book-2/TODO.md` — book-2's seed tracker, deliberately unordered. Same channel protocol as book-1's Phase 2 when engine asks eventually arise.
+- `book-2/TODO.md` — book-2's deliberately unordered, inactive
+  tracker. Its collection-only full-society contract generates an operational view
+  from the canonical source, binds models to a reference envelope and acceptance
+  thresholds, covers material/care, economy, equality/life course, democracy/
+  integrity/statistics, justice/security/external relations, ecology, knowledge/free
+  life, records/technology, transition, gameability and reader experience, and
+  blocks integrated claims on unresolved critical gaps. Same channel protocol as
+  Book 1 Phase 2 for future engine asks; do not execute Book 2 work while Book 1 is
+  active.
 - `LICENSING.md` — the mixed-licence map. Read before adding files.
 
 ## book.md Structure

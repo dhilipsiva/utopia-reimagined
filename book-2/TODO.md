@@ -2,8 +2,10 @@
 
 book-2 is **the route**: how you would actually build it, organisationally and technically —
 the delivery machinery, the transition, the scaling story, the stack. book-1 describes the
-destination and is gated on derivation; book-2's claims will be gated on **evidence, costs,
-and data that regenerate by script**. The seam between the books is deliberate: destination
+destination and is gated on derivation; Book 2's claims require **traceable
+evidence, costs, uncertainty and claim-appropriate validation**. Code, quantitative
+models and data regenerate where applicable; qualitative/lived evidence needs
+auditable provenance and methods; normative choices need their lawful decision source. The seam between the books is deliberate: destination
 claims and transition claims are different kinds of claims with different verification
 standards, and book-1 refuses the roadmap precisely so the destination can be judged on its
 own terms. book-1 references book-2 exactly once, at its very end.
@@ -15,6 +17,13 @@ own terms. book-1 references book-2 exactly once, at its very end.
 > operating machinery—budgets, staffing, procurement, service workflows, storage,
 > technology, transition, and implementation evidence. See
 > `new-book-plans/book-1-constitutional-coverage-map.md` and `CLAUDE.md`.
+
+> **Full-society completion target — author-directed 2026-08-05.** The completed
+> project must account for a fully functional society, not only a constitutional
+> interface. Book 2 therefore owns the operational half of every domain assigned to
+> it by Book 1's full-society ledger: people, capacity, resources, finance, workflows,
+> technology, transition, shocks, recovery and reproducible evidence. This collection
+> does not activate Book 2 or overturn the instruction below.
 
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until book-1 ships: **collect here, do not work here.** Engine
@@ -28,94 +37,314 @@ noticing.
 
 ---
 
-## The central thesis candidate — the two paradoxes
+## Full-society operational completion contract — collect now, execute only when active
 
-- **Prove or disprove: currency becomes irrelevant (completely or partially) in a system
-  that ensures basic rights.** Posed by the author 2026-08-02. The recession scenario that
-  motivates it — capacity intact, claims collapse, the logistics worker unable to move food
-  to others or to themselves — is documented economics, not hypothesis: Sen proved the 1943
-  Bengal famine killed without a significant decline in food availability (entitlement
-  failure), and Keynes named the general form. **And the proposal's own paradox is already
-  formalised, in book-1, as the delivery gap**: claims intact, capacity at risk —
-  *wants-to-but-cannot* versus *can-but-need-not*. The book's question is which paradox is
-  more favorable, and it is well-posed.
-  **The proof program, in book-2's epistemic register** (theorems inside declared models +
-  empirical parameters + simulations that regenerate by script — nibli is not the tool here;
-  real arithmetic is legitimate in this book):
-  1. *The floor-feasibility threshold theorem.* Input-output analysis gives L(F), the labor
-     share required to produce and deliver the floor bundle; the floor is sustainable
-     without compulsion iff voluntary contribution ≥ L(F) + overhead. Anchor: ILO time-use
-     data — unpaid care/household/volunteer labor is already on the order of two-fifths of
-     all human labor hours, with no currency anywhere in it.
-  2. *The recession-immunity theorem.* Identical capacity, same demand shock, two claim
-     layers: derive the monetary amplification loop; show the floor's delivery is invariant
-     to the claim-layer shock by construction — the trucker's dinner never depended on the
-     trucker's wage. State the limit in the same breath: immune to demand-side causes,
-     not to physical ones; no accounting system grows wheat.
-  3. *The favorability comparison.* Both failure modes as risk profiles: fat-tail,
-     correlated, pro-cyclical monetary collapse (1929, 2008, 1943) versus diffuse, visible,
-     chronic under-provision — with two evidenced asymmetries favoring the second: acute
-     crisis raises voluntary contribution (disaster sociology), and book-1's design makes
-     floor-failure a named claim against a named duty-bearer rather than a lapsed wage.
-     UBI pilots are marginal evidence only; do not overclaim general equilibrium from them.
-  4. *The disproof branch, run honestly — the book's credibility lives here.* The
-     calculation problem for the above-floor economy (Mises/Hayek, met by name); free-rider
-     decay in steady state (public-goods experiments; recognition and visibility as the
-     decay-rate variables — which puts book-1's recognition system under empirical test);
-     the unpleasant-jobs allocation problem under refused differential reward; innovation.
-  Two gifts already in book-1: the constitution writes `entitled(...)` — Sen's own term of
-  art, converged on independently, which Part V and this book should notice out loud — and
-  the delivery gap is this thesis's tension already formalised, pinned, and priced; book-2
-  does not have to construct its central problem, book-1 shipped it.
-  **Expected honest landing**: complete irrelevance disproven, and the book stronger for
-  executing the disproof itself; partial irrelevance — the floor decoupled from currency,
-  demand-side recession-immune, feasible below a measurable participation threshold —
-  defended on evidence. Partial is still enormous: the goods that keep people alive,
-  decoupled from the layer that historically fails them. If the chapters are ever ordered,
-  this question is the strongest candidate for the spine.
+- [ ] **Generate Book 2's operational responsibility view from the canonical
+  full-society source.**
+  - Reuse stable domain, role, body/institution, power, dependency, scenario,
+    claim, external-assumption, threshold and assurance-route IDs; do not maintain a
+    second hand-edited matrix. Generate the operational view and Book 1 crosswalk
+    deterministically from the reviewed source.
+  - For every applicable handoff record: operating and assumption owners; workforce
+    and governance; facilities/infrastructure; resource, money, information and care
+    flows; capacity/demand; service levels/queues; dependencies; data/privacy; cost/
+    funding; normal operation; failure/degradation; recovery; fallback; transition;
+    external suppliers/partners; evidence/model/code source and revision; status;
+    severity; consequence; and closure condition.
+  - Reject an interface with no plausible operator, a duty with no resource path, a
+    workflow with no accountable person, or a model whose critical input has no
+    measured owner. Do not claim Book 1's derivation proves any of these.
+  - **Done when:** a deterministic check rejects stale IDs, divergent hand-maintained
+    views, unowned critical inputs and missing severity/closure fields. Reconcile the
+    historical bullets below into this source when Book 2 activates; merge
+    duplicates and delete superseded scope claims.
+
+- [ ] **Define the versioned reference envelope and acceptance thresholds before
+  modelling.**
+  - Record population/demographic profile; territory, settlement and geography;
+    resource/ecological endowment; technology/infrastructure baseline; institutional
+    starting state; trade/external-cooperation assumptions; time horizon; service
+    levels; and ordinary plus compound shock set.
+  - Pre-register domain-specific adequacy, accessibility/equity, continuity/
+    reserve, recovery/resilience, ecological-sustainability and fiscal/resource-
+    feasibility criteria. Classify each threshold's lawful source as a constitutional
+    minimum/ceiling, democratically chosen policy target, scientific safety boundary
+    or operational diagnostic; record its decision owner separately from its
+    measurement owner, uncertainty and failure interpretation.
+  - Calibrate and validate inputs; test sensitivity and alternative envelopes; state
+    external-validity limits. No result generalizes beyond its envelope without a new
+    run and review.
+  - **Done when:** every predictive/feasibility claim names an envelope version,
+    observable threshold, falsifier, calibration source and sensitivity result.
+    Empirical, causal, formal and normative claims follow Book 1's claim-type-
+    specific evidence and decision routes.
+
+**Shared completion rule for every operational-domain task below:** all
+applicable canonical IDs are covered; reproducible ordinary, failure/degradation
+and recovery runs name costs, capacity, thresholds, uncertainty and reader mapping;
+and an unresolved critical floor, equality, safety, feasibility, hidden-power or
+cross-domain gap blocks the affected claim. A task-specific `Done when` clause adds
+to, but never replaces, this rule.
+
+- [ ] **Build the integrated material, service, and care operating model.**
+  - Cover food, water/sanitation, housing/land, energy/utilities, health and care,
+    learning/information, transport/mobility, communications/digital access, public
+    space, waste, environmental maintenance and emergency continuity.
+  - Model production, stocks, flows, maintenance, accessibility, geographic
+    distribution, demand/capacity, queues, supplier failure and cross-system
+    dependencies. A right with no feasible delivery path remains a target, not an
+    accomplished social function.
+  - Cost ordinary capacity, redundancy, interim continuity and recovery. Publish
+    assumptions, sensitivity tests, bottlenecks and residual shortfalls.
+  - **Done when:** reproducible normal, peak-demand, supplier-loss and compound-shock
+    runs report each service threshold, queue/capacity bottleneck, continuity path
+    and unresolved gap against the named reference envelope.
+
+- [ ] **Build the economic, fiscal, labour, and institutional operating model.**
+  - Test public, co-operative, commons, household and private arrangements under the
+    author-ratified economic settlement. Cover taxation, budgeting, borrowing,
+    monetary/credit/debt systems, property/land administration, contracts, labour and
+    unions, enterprise, competition, insurance and insolvency.
+  - Specify how legislatures, executives, civil services, courts, regulators,
+    treasuries, providers, auditors, local bodies, ombuds and expressly bound private
+    actors are staffed, selected, trained, funded and monitored; reduce, detect,
+    expose, independently challenge, correct and recover from capture. No structure
+    may claim capture is impossible.
+  - Measure distribution, concentration, exit, dependency, unpaid care and
+    accessibility without converting a group diagnostic into an individual score or
+    a condition of the floor. Operate safety-critical qualifications/licensing,
+    portable social insurance, and fair above-floor compensation/incentives under
+    Book 1's anti-ranking and no-earned-floor guards.
+  - **Done when:** budget, workforce, production/allocation and institutional-capacity
+    models reconcile; distributional and concentration tests pass their declared
+    thresholds; and every residual fiscal, labour or incentive failure is
+    severity-rated against the reference envelope.
+
+- [ ] **Build democratic, administrative-integrity, and official-statistics
+  operations.**
+  - Operate elections, parties/opposition, deliberation, lawmaking, amendment
+    deployment and peaceful transfer; local/regional/federal coordination,
+    equalisation and portability; political-membership administration; and minority,
+    indigenous, linguistic and religious self-government/representation under Book
+    1's plurality ruling.
+  - Operate campaign finance, lobbying, procurement, appointments, conflicts,
+    patronage/nepotism, corruption and information-manipulation controls; and
+    independent census/sampling/planning data.
+  - Model staffing, calendars, accessibility, authentication, recount/challenge,
+    publication, audit independence, privacy, correction, enforcement and recovery.
+    Book 1 supplies the lawful sources and limits; this book cannot invent them.
+  - Test coalition capture, selective enforcement, audit starvation, suppressed
+    statistics, undercount, re-identification and conflicting result/version claims.
+
+  - **Done when:** a generated operations specification executes ordinary
+    election/lawmaking/statistics-publication paths plus recount, challenge,
+    peaceful-transfer, capture, suppression and conflicting-result/version cases
+    against their cost, capacity, accessibility and integrity criteria.
+
+- [ ] **Build equality, life-course, dependency, and social-insurance operations.**
+  - Cover direct/indirect/systemic/intersectional discrimination, accommodation
+    and lawful positive measures; reproduction/reproductive care, family plurality
+    and intimacy; childhood, supported decision-making/guardianship, disability,
+    dependant-caregiver conflicts, domestic-interference response, caregiving,
+    ageing and death/succession; and unemployment, illness, injury, disability, care,
+    survivor and old-age income security.
+  - Measure access, take-up, disparity, burden, continuity, portability, reserves and
+    remedy without converting group diagnostics into person-worth or entitlement
+    scores. Test documentation gaps, non-take-up, retaliation and correlated shocks.
+
+  - **Done when:** reviewed life-course/family journeys and social-insurance
+    models execute ordinary access, accommodation/support, denial/retaliation,
+    dependant-caregiver conflict, portability, continuity, correction and correlated-
+    shock cases with disparity and adequacy results.
+
+- [ ] **Build civil/criminal justice, safety, defence, migration, and external-
+  relations operations.**
+  - Operate civil, administrative, family, labour, consumer, constitutional and
+    criminal routes; investigation/prosecution/defence/adjudication separation;
+    release/reintegration; police/intelligence/military separation and civilian
+    control; borders/asylum; treaties, trade and humanitarian coordination.
+  - Model counsel/advocacy, case queues, evidence custody, review/release calendars,
+    use-of-force oversight, emergency continuity, language/accessibility, external
+    dependency and remedy. Test conflict, displacement, secession and non-cooperation.
+
+  - **Done when:** representative civil, administrative, family, labour,
+    consumer, criminal, emergency, migration and external-coordination paths execute
+    from intake through challenge/review, action, release/end, remedy and recovery,
+    including queue, custody, force, conflict and non-cooperation failures.
+
+- [ ] **Build ecological, commons, animal-protection, and intergenerational
+  operations.**
+  - Measure resource budgets, emissions, air/water/soil, biodiversity, land,
+    extraction, waste, infrastructure condition, restoration and animal welfare/
+    habitat against Book 1's ceilings and guardian contracts.
+  - Model cross-border commons and supply-chain externalities. Publish uncertainty,
+    thresholds, cumulative impacts, monitoring independence and recovery limits.
+
+  - **Done when:** versioned resource/common accounts and animal-protection
+    operations execute ordinary use, cumulative ceiling breach, cross-border or
+    supply-chain harm, guardian challenge, restoration and compound-shock cases
+    against scientific and author-ratified thresholds.
+
+- [ ] **Enable knowledge, media, science, culture, association, mutual aid, and the
+  protected free field without operating private outcomes.**
+  - Supply access, public space/infrastructure, plurality and recourse while
+    protecting non-interference, privacy and voluntary association. Do not certify
+    official belief, art, friendship, love, fulfilment or a successful life.
+  - Test censorship and concentration, inaccessible systems, compelled disclosure,
+    surveillance, retaliation and the boundary between evidenced harm and freedom.
+
+  - **Done when:** traceable cases cover ordinary access, creation,
+    association and mutual aid; enabling conditions; non-interference/privacy; narrow
+    evidenced-harm response; and recourse, while tests reject compelled disclosure,
+    surveillance and state-certified belief, art, relationship or fulfilment.
+
+- [ ] **Build the information, record, technology, and assurance operating layer.**
+  - Specify identity/status, service, health/care, education, workplace, finance,
+    justice and democratic records; publication, correction, retention/deletion,
+    privacy, recovery, availability, provenance and independent receipt/action.
+  - Evaluate databases, signed logs, CRDTs, cryptography, devices, networks,
+    algorithms/AI, accessibility and offline operation as competing technologies,
+    never as constitutional facts. Threat-model insiders, supply chain, outage,
+    surveillance, model error, vendor capture and recovery.
+  - Pin sources and builds; regenerate analyses; state what remains dependent on
+    honest people, physical custody, external clocks, other institutions and other
+    states.
+  - **Done when:** threat-modelled implementations pass provenance, privacy,
+    availability, correction, rollback/replay, compromise and recovery tests for
+    every critical record/action path, with residual trust roots named.
+
+- [ ] **Run a whole-society mechanism and gameability audit.**
+  - Model capture, collusion, rent-seeking, bribery, patronage, strategic
+    misreporting/withholding, Goodhart effects, regulatory arbitrage, adverse
+    selection, moral hazard, free-riding, black markets and exported costs.
+  - Vary behavioral assumptions rather than assuming universal selfishness or
+    altruism. Identify beneficiary, hidden loser, information/coordination need,
+    detection/challenge route, corrective action and second-order effect.
+  - Re-run affected capacity, fiscal, equality, integrity and reader-facing claims;
+    no anti-gaming control may silently create a score, surveillance default or
+    withholding veto.
+
+  - **Done when:** every high-consequence mechanism has an adversarial scenario
+    with varied behavior, detection/challenge and second-order response; affected
+    domain models are re-run; and no proposed control creates a new critical score,
+    surveillance default, exported harm or withholding veto.
+
+- [ ] **Model transition, scale, shocks, and graceful degradation as connected
+  systems.**
+  - Cost and test movement from existing institutions without erasing acquired
+    protections or people in transit. Cover pilots, adoption, legal collision,
+    migration, locality/federal scale, international dependencies and reversal.
+  - Simulate and, where ethical, pilot compound shocks: pandemic, famine, conflict,
+    infrastructure collapse, displacement, fiscal/monetary disruption, institutional
+    capture, secession and ecological constraint.
+  - Pre-register success/failure criteria. Report which floors continue, what must
+    narrow, who decides, how long authority lasts, how appeal persists, how recovery
+    occurs and where the design fails. A simulation is evidence about a model, not
+    proof that a population or institution will behave likewise.
+  - **Done when:** transition and compound-shock runs preserve acquired protections,
+    expose every critical failure boundary, satisfy declared stop/reversal rules and
+    distinguish simulation, pilot evidence, deployment and external assumptions.
+
+- [ ] **Build Book 2's reader-experience and lived-operation view from the
+  same canonical source.**
+  - For every operational domain show ordinary success and maintenance, credible
+    failure/degradation, continuity/recovery, human agency/choice and the exact model,
+    evidence and unresolved assumption. Do not let Book 2 become only a crisis,
+    infrastructure or cost manual.
+  - Test comprehension with non-specialists and affected operators/users under
+    informed consent, withdrawal, privacy/minimization, accessibility, fair
+    compensation, non-retaliation, trauma safeguards and appropriate ethics review.
+  - A reader study tests explanation and lived plausibility; it does not prove
+    capacity, authorize an institution or certify a preferred private life.
+
+  - **Done when:** the generated Book 2 reader view covers every applicable
+    operational domain and a pre-registered non-specialist/affected-user protocol
+    tests ordinary agency, maintenance, failure and recovery; sampling limits and
+    every critical narrative distortion remain visible and block the affected claim.
+
+- [ ] **Close the two-book full-society claim only with integrated evidence.**
+  - Crosswalk every Book 1 guarantee and democratic choice to its Book 2
+    operator/model or a visible external assumption. For protected private freedom,
+    permit “Book 2 operation not applicable—the protected condition is non-operation/
+    non-interference”; map enabling or recourse operations separately. Test
+    constitutional rules against operational scarcity and operational designs
+    against the floor, liberties, equality, democracy, privacy and commons.
+  - Publish costs, capacity, code, data, uncertainty, negative results and red-team
+    findings. Every critical floor, equality, safety, feasibility, hidden-power or
+    cross-domain dependency gap blocks the affected operational claim until resolved
+    and tested. A non-critical residual may remain only with severity, consequence,
+    owner, closure condition and an explicit public-claim limitation. Disclosure and
+    an owner are not operational adequacy, and isolated chapter passes do not close
+    the integrated model.
+  - **Done when:** root Gates D and E regenerate from the canonical source and
+    pass their operational, integrated, reader and external-review contracts; every
+    residual is severity-rated and no critical gap is waived by disclosure.
+
+
+---
+
+## Central thesis candidate — competing hypotheses, not a promised result
+
+- [ ] **Test whether and where a rights floor can be decoupled from money without
+  replacing monetary failure with physical, coordination, coercion, or capture
+  failure.**
+  - Define the floor bundle and delivery network inside the versioned reference
+    envelope. Feasibility is a vector of people/skills, time, capital, intermediate
+    inputs, stocks, geography, logistics, maintenance, institutions and external
+    dependencies—not a scalar labour-share inequality or an “if and only if”.
+  - Compare live hypotheses: money/credit is necessary for some or all floor
+    coordination; the floor can be partly decoupled under named conditions; either
+    arrangement fails under identifiable monetary, physical, behavioural,
+    institutional or external shocks. Do not assume recession immunity by defining
+    the floor supply chain as insulated from money, credit, contracts or imports.
+  - Test multiple author-ratified compensation/incentive and allocation regimes,
+    including unpaid care, voluntary contribution, ordinary wages, public service,
+    co-operative provision and refusals of person-ranking reward. Measure skill
+    matching, unpleasant work, free-riding, innovation, maintenance, coercion,
+    inequality, visibility, capture and graceful degradation.
+  - Treat historical famine/recession arguments, time-use estimates, disaster
+    behaviour, public-goods studies and named economists as research leads until each
+    exact claim has a primary source/URL, registry entry, applicability analysis and
+    counterevidence. Citation cannot prove the model.
+  - Pre-register baselines, mechanisms, thresholds and falsifiers; calibrate and
+    validate; publish code/data, sensitivity, null/negative results and external-
+    validity limits. A theorem may exist only inside fully declared assumptions and
+    may not become a deployment or population claim.
+  - **Done when:** competing models run against the same envelopes and shocks,
+    physical and monetary failure boundaries are reported symmetrically, the disproof
+    branches receive equal evidentiary treatment, and the author decides whether the
+    surviving result merits a chapter or spine role.
 
 ## From the hold list
 
-- **The governance vocabulary — deferred here by ruling, 2026-08-02 (book-1's vocabulary
-  batch, recorded in book-1's `CLAUDE.md`).** book-1's constitution has no predicate for
-  a community, a transfer, a tax, or a term of office, and the batch ruled that it will
-  not grow them: recall stays one asserted fact with no threshold or term (chapters 2-3
-  describe it as-is, honestly), the magnet problem and entitlement portability cannot be
-  stated without a community concept, and the justice material (standards of proof,
-  proportionality, an independent appeals path, placement inspection) needs the same
-  missing vocabulary. These arrive HERE as requirements for the operational layer, with
-  book-1's Part V owning the specifications stated as properties. Priced jointly when
-  worked — the one-name-at-a-time route was the exact shape the batch existed to refuse.
+- **Governance operating machinery — the 2026-08-02 Book-2-only vocabulary ruling is
+  superseded in scope.** Expanded Book 1 owns the constitutional definitions and
+  limits for communities/localities, transfer/portability, taxation authority, terms,
+  recall, proof, proportionality, appeal, inspection and the other public powers in
+  its full-society ledger. Book 2 owns their staffing, procedures, capacity, costs,
+  systems, transition and operational evidence. Price and test the machinery as
+  coherent systems rather than reviving the rejected one-name-at-a-time approach.
 
-- **Oversight of the duty-bearer — enablers, their checkers, and the meta-study.** Raised by
-  the author 2026-07-31 while ruling the homeless-convict gap: if shelter is owed and somebody
-  has none, the people who deliver it should have to study why, and somebody should check on
-  *them*. In book-1 terms it duplicates two deliberately inert mechanisms (`owe`, `obliged` —
-  both read by nothing) and needs vocabulary the constitution lacks (a study, an inspection, a
-  community, a transfer). Institutional design with a lexicon ask under it — book-2's subject
-  exactly. Its book-1 half landed as Article 8b.
-- **Guard the personhood roster — the cross-epoch obligation book-1 can only disclose.**
-  Moved from book-1's tracker 2026-08-02; its book-1 half (the disclosure) is done in
-  chapter 1 and in the constitution's fact-write trust-base section. The residue is an
-  operational obligation no in-snapshot rule can carry: one deleted `person(·)` entry
-  strips every right and leaves every sanction running (re-verified 2026-08-01 — the
-  entitlements, travel and ballot flip while `false` and `lose` stay TRUE, and Article 1b
-  follows the roster out, so the bearer stops owing the person the instant they stop
-  being one; no `err` fires anywhere — and `become(Amend_Mint, Law)` stays TRUE, so
-  Article 9 never notices: it entrenches rules, not facts, which is why "entrench the
-  roster" is not a repair either). **Do not reach for `all $x: human($x) ->
-  person($x).`** — re-run 2026-08-01, it renames the roster rather than closing it, and
-  the breach marker meant to accompany it can never fire because `person` then always
-  derives. No in-snapshot rule can tell a deleted roster entry from one never written, so
-  the guard is a **cross-epoch proof obligation over the fact store** — no transition
-  removes a roster entry except by an operation the record itself licenses — which needs
-  the store-discipline/epoch machinery this book's operational layer owns, alongside the
-  same obligation Article 9 states for `permanent()` and chapter 5 states for the
-  carried-mark discipline. Extend chapter 1's disclosure if the obligation gets built.
+- **Operate oversight of duty-bearers, their checkers, and systemic study.**
+  Book 1 owns each body's authority, independence, action duty, challenge, continuity
+  and remedy contract. Book 2 staffs, funds, schedules and operates inspections,
+  root-cause study, response deadlines, publication and follow-up; it must prove that
+  a finding reaches an independent reader and corrective workflow rather than ending
+  at `obliged`.
+- **Operate universal standing, identity reconciliation, and cross-epoch roster
+  continuity.** Book 1 now owns standing, serve-and-reconcile, constitutional
+  continuity, challenge and remedy. Book 2 owns accessible identity workflows,
+  authenticated storage/publication, cross-epoch custody, reconciliation, recovery
+  and operational evidence. Preserve the current counterfactual: deleting a
+  `person(·)` fact strips rights while sanctions can remain, and renaming the roster
+  through `human` does not cure deletion. Test omission, wrongful merge/split,
+  disappearance, death/status correction, migration, replay, rollback, writer
+  compromise and recovery without making documents a condition of emergency help.
 - **The transition material in `book.md`** — Part 4 in full (One Person One Family; When a
   Village Joins; Cities, Provinces and Nations; One Planet One People), plus "When the Pod
   Meets the State" and "MVS in Action". ~8,600 words, largely organisational, legal and
-  fiscal. This is book-2's spine, not an appendix to it.
+  fiscal. This is a major spine candidate, not an assumed chapter order; reconcile it
+  with the full-society ledger and author ruling when Book 2 activates.
 - **The technical backbone material in `book.md`** — local-first/offline-first
   micro-blockchains, Proof of Personhood, quantum-secure and privacy-centric design, YAD, the
   layman's guide. No support in the constitution — no ledger, no biometric, no device, no
@@ -127,9 +356,11 @@ noticing.
 - **Replace venture brand names** (union.build, Sui, Fuel, linera) with capability
   requirements plus a dated appendix. The legacy list is incomplete; re-grep `book.md` when
   this is worked rather than trusting it.
-- **The costed transition** — a fiat price tag on a 200k-city baseline, funding per phase, a
-  housing acquisition mechanism (community land trusts vs right-of-first-refusal). Needs real
-  fiscal magnitudes; **don't fabricate numbers**.
+- **The costed transition** — treat a 200k-city case as one candidate
+  reference-envelope scenario, not the project baseline. Compare other settlement
+  sizes/geographies; price funding by phase and housing acquisition alternatives
+  such as community land trusts and rights of first refusal. Needs real fiscal
+  magnitudes; **don't fabricate numbers**.
 
 ## From the adoption reviews
 
@@ -148,53 +379,55 @@ noticing.
 - **The delivery layer — obligor, tracking, consequence.** The batch's most convergent
   demand: name who supplies each floor item, record whether it arrived, and wire the audit
   markers to mandatory response with deadlines (ombudsman shapes, review boards). book-1's
-  side of this is the restored delivery-markers decision (design: which markers exist); book-2
-  owns the machinery that reads them. The chain the reviews want is
-  owed → tracked → breached → obliged → *acted upon with a deadline*. The current
-  T0 kernel stops at `obliged`; expanded Book 1 owns the constitutional reader,
-  action, continuity, and remedy interface, while this book owns the operating
-  workflow and evidence. **The markers themselves were refused for book-1** (ruled 2026-08-02:
-  over a record with no arrival facts they fire on everyone and discriminate nobody). When
-  this layer generates arrival facts, the marker design starts from the
-  `undelivered-marker` fixture — those verdicts are what it must stop producing — and the
-  general `err → obliged` form is verified to work, so one duty rule serves every kind.
-- **Sentence administration.** Downstream of book-1's duration decision (Phase 1 there):
-  duration classes, review cadence, reintegration, what the earning-shortens ruling looks like
-  as an institution. The reviews' ECHR framing (proportionality, review, rehabilitation) is
-  the requirements list to answer — and the design decision fell (2026-08-02): book-1
-  ruled no-duration, ratified. Terms, review cadence and expiry are designed here, and
-  chapter 13's closing pins — a stated term that releases nobody — are the verdicts an
-  administration layer exists to change.
-- **Asymmetric discretion — officials add, never subtract.** Proposed by a reviewer as the
-  humanizing feature; chapter 9 has since proven only that one in-run derivation accumulates
-  conclusions, so a narrower permission does not retract a surviving wider one. That is not
-  append-only source or storage history. book-2 designs the "add" half: grace as
-  *recorded provision* — an
-  official authorising more than the baseline, on the record, without that record becoming a
-  score. The hard part is keeping additions from becoming rankings by accretion.
-- **Equity and allocation machinery.** Triage, need-based provision, prioritising the
-  worse-off — everything the reviews said the no-degree rule forecloses. It forecloses it in
-  *recognition*; allocation is undesigned, not forbidden. Harvest source: legacy `book.md`'s
-  non-market allocation rules (need, rotation, waitlist, lottery, merit as threshold only).
-- **The firewalled operational-assessment layer.** Limited, expiring, non-persistent
-  assessments of present state — capacity, risk, crisis — for the care, protection and
-  emergency domains a functioning society cannot run without. Inherited from book-1's
-  2026-08-02 ruling with the boundary fixed: the constitutional record never widens for
-  them (the episode-fact route is refused there, composed), so the layer lives beside the
-  record and the interface is one-way — the record may inform the layer, the layer may
-  never write the record, and nothing in it may feed standing, voiding, conviction or the
-  floor. This is where the two-paradoxes thesis and the delivery layer meet: care delivery
-  needs present-state information the floor's record cannot hold, so whatever delivers the
-  floor reads this layer and answers to the firewall.
+  side owns the receipt-first constitutional delivery/breach/continuity/remedy
+  interfaces; book-2 owns the machinery and evidence that operate them. The chain
+  the reviews want is owed → tracked → breached → obliged → acted upon with a
+  reviewable time contract. The current kernel stops at `obliged`. The original
+  marker shape remains refused because it ran against a record with no arrival facts
+  and therefore fired on everyone; any successor begins with authorised,
+  contestable recipient-side access/receipt evidence and the
+  `undelivered-marker` counterfactual. Book 2 must make the external reader,
+  workflow, clock and response real without treating its own provider record as
+  proof that delivery occurred.
+- **Operate sentence, review, release, and reintegration administration.**
+  Book 1 owns the lawful term, proportionality, review, release/end, appeal and
+  continuity interface. Book 2 owns clocks/calendars, case administration, review
+  cadence, capacity, notice, counsel, release execution and reintegration. Test a
+  stated term that releases nobody, delayed/withheld review, conflicting records,
+  overstay, appeal, correction and post-release service continuity.
+- **Operate any author-ratified grace or additional-provision power.** Book 1
+  must first authorize and bound it through equality, lawful source, reasons,
+  conflict rules, review and anti-favouritism. Book 2 may then deliver and record
+  additional provision without treating one-run monotonic derivation as append-only
+  history or letting additions accrete into rank, patronage or a personal score.
+- **Operate scarcity allocation under the author-ratified Book 1 principle.**
+  Test only permitted keys such as need, urgency, accessibility, continuity, rotation
+  or lottery, with transparent triggers, appeal, end and repair. Wealth, merit,
+  recognition, contribution and political favour may not gate the floor or
+  property/commons access. Model queues, triage, strategic claims, scarcity rents,
+  supplier failure and disparate effects; do not import the legacy “merit as
+  threshold” proposal without a new author ruling.
+- **The firewalled operational-assessment layer.** Limited,
+  purpose-bound, expiring and contestable assessments of present capacity, need,
+  risk or crisis may inform an authorised delivery or triage choice. They may never
+  determine whether the floor is owed, reduce its minimum, alter standing, voiding
+  or conviction, write the constitutional record, or become a persistent person
+  score. Book 1 owns the authority, purpose, evidence, challenge, equality and
+  non-use walls; Book 2 operates access controls, expiry, audit, correction and
+  delivery workflows. Test provider error, withheld evidence, discrimination,
+  secondary use, persistence, feedback into eligibility and emergency override.
 
-- **Pilots before polities.** Municipality/co-op/union charter pilots (Vienna, Barcelona,
-  housing co-ops, platform co-ops were all named); run twelve months; **publish the audit
-  log** — how many `err`, how many remedied — as the evidence base. "Progressive countries
-  don't import utopias; they import tested mechanisms that solve a scandal they just had."
-- **Simulations as evidence.** Comparative runs against baseline constitutions with measured
-  outcomes (corruption, false imprisonment, appeal rates, auditability). The engineers-trust-
-  benchmarks point: book-2's empirical standard needs an analogue, and simulation is the
-  cheapest first one.
+- **Pilots before polities.** Municipality/co-op/union charter pilots were proposed.
+  Choose duration, sample and stopping rules through a pre-registered design rather
+  than a fixed twelve months. Require informed consent/voice/exit, privacy and data
+  minimization, accessibility, non-retaliation, independent ethics/safety review,
+  grievance/reparation and public negative results; never withhold an existing right
+  to create a control group. Publish the audit and remedy log with privacy safeguards.
+- **Simulations as bounded evidence.** Compare declared mechanisms and baselines on
+  measured outcomes, but first calibrate and validate the model, publish code/data,
+  vary behavioral and reference-envelope assumptions, run sensitivity and negative
+  controls, and state external-validity limits. Simulation can falsify or compare a
+  model; it is not deployment evidence or proof that people will behave likewise.
 - **The two-artifact package.** A parliament-facing plain document plus the machine spec with
   a demonstrated correspondence ("this paragraph is these rules, checked by these pins").
   book-1's chapters and method part are the seed; book-2 packages it for civil servants, with
@@ -205,13 +438,17 @@ noticing.
 - **Transition and migration.** Grandfathering existing rights and convictions, mapping
   existing institutions, phase-in, adoption route (referendum vs assembly). The reviews'
   "no clean slate exists" point is the chapter brief.
-- **Scope boundary.** A modern constitutional system also covers taxation, budget, property,
-  contracts, emergency powers, police and procedure, federalism, foreign affairs — one review
-  put book-1's coverage at 10–20%. book-2 must *decide and declare* what it covers and what it
-  deliberately leaves to ordinary law, rather than being measured against everything.
-- **Stress degradation.** Pandemic, famine, infrastructure collapse, secession — not solved,
-  but the design should say how it degrades. "It should degrade gracefully" is the right
-  standard and book-1 never claims it.
+- **Scope boundary — synchronised 2026-08-05.** Book 1's full-society ledger now owns
+  the constitutional/ordinary-law/private-freedom disposition for taxation, property,
+  contracts, emergency powers, police and procedure, local/federal structure, foreign
+  affairs and every other material domain. Book 2 owns operating designs, rates,
+  budgets, staffing, workflows, technology, transition and feasibility evidence.
+  Neither book may hide an omitted domain at the seam.
+- **Stress degradation.** Book 1 must state invariants, lawful narrowing, continuity,
+  review and restoration under pandemic, famine, infrastructure collapse, conflict
+  and secession. Book 2 must model whether actual people, stocks, systems and
+  institutions can deliver that behavior, publish the failure boundary, and avoid
+  calling simulation deployment.
 - **Engine-adjacent asks, parked until book-2 is active** (candidates for the channel, cited
   from the engine-book review): an open-world UNDECLARED verdict distinct from UNKNOWN;
   argumentation/proportionality layers; event-calculus time; multi-lingual corpus;

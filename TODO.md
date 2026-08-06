@@ -31,29 +31,35 @@ The repo is heading for two new books plus a clean deletion:
 
 **THE WORKING ORDER.** All fourteen chapter passes are complete (2026-08-02) and
 their records live in git, not here. What remains runs in two preliminary phases,
-then a constitutional-expansion backlog and cross-cutting sections:
+then a full-society expansion backlog and cross-cutting sections:
 
-1. **Phase 1 — author-gated decisions.** Currently empty. It stays first because
-   a future question that changes what a chapter says must be ruled before the
-   implementation backlog, and because a lost decision costs more than any lost
-   task; this section has been destroyed by tooling once and is watched accordingly.
-2. **Phase 2 — engine handoffs (nibli).** Currently empty and reserved for
-   fixable engine boundaries. It stays ahead of the writing because some of what
-   the book has to concede may be an engine limitation rather than a design choice,
-   and it is dishonest to write the concession while the limitation is fixable.
-3. **Constitutional expansion — implementation backlog.** The ratified mandate,
-   taxonomy, coverage map, democratic corridor, and staged T3 path now have one
-   canonical execution backlog, ordered from kernel repair through public review.
+1. **Phase 1 — author-gated decisions.** Multiple scope, institutional, and release
+   decisions are open. Rule the volume/container, assurance method, and reader-pilot
+   protocol before expansion architecture. The neutral inventory and decision briefs
+   may proceed in parallel; each domain's rules, prose, and public claim wait for its
+   own ruling. The final reader threshold waits for the pilot. This section has been
+   destroyed by tooling once and is watched accordingly.
+2. **Phase 2 — engine handoffs (nibli).** A read-only finite-decision capability
+   audit is open. Run it before formalising generic collective-decision rules because
+   some of what the book has to concede may be an engine limitation rather than a
+   design choice. It does not block unrelated inventory, evidence, or decision-brief
+   work.
+3. **Full-society expansion — implementation backlog.** The ratified constitutional
+   mandate remains the legal spine, but the completion target now also requires an
+   exhaustive social-domain map, functional cross-domain model, and balanced
+   reader-experience contract, ordered from scope mapping through public review.
 
 The remaining sections are cross-cutting: the book-1 work that remains around the
-finished text (the writing is complete as of 2026-08-03 — epigraph, opening note,
+finished text (the pre-expansion text was complete as of 2026-08-03 — epigraph, opening note,
 the derived chapters, Part V and the method part are all in print; what is left is
-the ratified constitutional-interface expansion and the licence files), the reach
+the full-society destination expansion and the licence files), the reach
 plan, data work, legacy harvest, and a pointer to book-2's own tracker. **Standing
 facts and methods** closes the file and holds knowledge, not tasks.
 
 Plain bullets, never numbered. Delete a bullet entirely when it fully lands;
-update it if only partly done. One item at a time: do it, verify it, commit it.
+update it if only partly done. Read-only inventory, evidence gathering and neutral
+decision briefs may run in parallel; shared-tree edits, verification and commits land
+serially, one owned item at a time.
 
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — they are collected in phase 1 rather than scattered.
@@ -74,12 +80,12 @@ if a reader cannot tell they have crossed into a different kind of chapter, the
 seam has failed.
 
 Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
-`new-book-plans/`; the constitutional-expansion backlog below turns its ratified
-boundaries into active work.
+`new-book-plans/`; the full-society expansion backlog below turns the ratified
+constitutional boundaries and author-directed completion target into active work.
 
 ---
 
-## Phase 1 — Author-gated decisions. Rule these before anything else.
+## Phase 1 — Author-gated decisions. Rule each before its dependent implementation.
 
 Each of these is a design decision, not a task. Record the ruling in `CLAUDE.md` when it
 lands, so it is not re-proposed. **This section was destroyed by tooling once** — a
@@ -90,8 +96,147 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-**No author-gated decision is currently open.** Settled rulings live in
-`CLAUDE.md`; implementation work remains in the ordered backlog below.
+The author has directed the project toward an exhaustive, comprehensive,
+well-balanced model of a fully functional society. That direction is settled. The
+decisions below determine its container, lawful limits, assurance stack, and
+release test; they do not reopen whether the broader result is wanted. Scope
+inventory, gap discovery, evidence collection and neutral option briefs may proceed
+before a ruling. Do not implement a contested rule family, rewrite dependent prose,
+or make its completion claim until the author has ruled it.
+
+- [ ] **[AUTHOR-GATED] Rule the full-society volume, edition, and stopping boundary.**
+  - **Recommended:** the two books jointly satisfy the full-society mandate. Book 1
+    gives the complete destination—constitutional invariants, democratic steering,
+    protected private/civic life, institutions, and normal/failure/recovery
+    interfaces. Book 2 gives costed operations, transition, capacity, technology,
+    and empirical feasibility. Neither volume claims the other half.
+  - Alternatively, explicitly expand Book 1 again and replace the current
+    constitutional-interface and E2 + P1 + D2 completion contract.
+  - Rule two questions independently: the earliest gate at which Book 1 — First
+    Edition may ship, and the exact public claim permitted at every gate.
+    **Recommended:** ship Book 1 only after Gate C; reserve “models a fully functional
+    society” for Gate E after Book 2 and integrated evidence pass.
+  - Adopt a versioned stopping rule: an external reviewer may propose a missing
+    domain, role, dependency, or failure; the project must add it, classify it out
+    with reasons, or record it as an unresolved limit. Never claim timeless social
+    exhaustiveness.
+
+- [ ] **[AUTHOR-GATED] Rule the constitutional state form and political
+  membership.**
+  - Choose the legislative structure, executive/government form, constitutional-
+    review model, local/regional/federal settlement, and the selection, appointment,
+    removal, succession, deadlock and peaceful-transfer rules for each.
+  - Rule who votes, stands for office and participates in which locality under age,
+    residence or membership rules. Universal personhood, emergency help, due process
+    and the material floor remain unconditional; political membership may not become
+    a back door to human standing.
+  - Legally separate the institutions, appointments and functions; add independent
+    detection, challenge, correction and peaceful-replacement routes for de jure or
+    de facto coalition concentration across lawmaking, execution, adjudication,
+    audit and amendment. Do not claim institutional design makes capture impossible.
+
+- [ ] **[AUTHOR-GATED] Rule the substantive-equality and anti-subordination
+  baseline.**
+  - Decide whether the constitution reaches direct, indirect, systemic and
+    intersectional discrimination; segregation, exclusion, harassment and
+    retaliation; accessibility/reasonable accommodation; and lawful positive
+    measures.
+  - Rule permissible distinctions, evidence burdens, public and concentrated-
+    private reach, privacy-safe group diagnostics, review, individual/systemic
+    remedy and the end/review conditions for positive measures.
+  - Formal equality alone may not hide durable dependency; corrective measures may
+    not create identity scores or make documentation a condition of the floor.
+
+- [ ] **[AUTHOR-GATED] Rule the economic-pluralism and protected-private-sphere
+  settlement.**
+  - Decide what ordinary majorities may choose among public, cooperative, commons,
+    household, and private arrangements above the floor, and which labour,
+    property, contract, association, family, conscience, culture, and privacy
+    boundaries they may not cross.
+  - Preserve the settled guards: property is conditional on floors and commons;
+    recognition, merit, contribution, wealth, and personal scores buy no standing,
+    floor, authority, political weight, or commons access.
+  - Name when concentrated private power—employer, landlord, lender, insurer,
+    platform, utility, or monopoly—acquires public-like duties because exit,
+    dependency, or essential function makes formal consent inadequate.
+  - Rule the constitutional allocation principle for genuine physical scarcity:
+    what need, accessibility, urgency, rotation or lottery may decide; what continuity
+    and appeal survive; and why wealth, merit, contribution, recognition and political
+    favour never decide the floor.
+
+  - Rule competence/licensing for safety-critical and fiduciary roles,
+    portable social insurance, and lawful above-floor compensation/incentives for
+    skill, difficult work, innovation, investment, maintenance and public service.
+    Separate every such distinction from personhood, floor, political weight,
+    immunity and personal-worth scoring.
+
+- [ ] **[AUTHOR-GATED] Rule family, dependency, reproduction, and collective/
+  plurality baselines.**
+  - Rule children's independent rights, best-interests/voice standard, supported
+    decision-making, guardianship limits, caregiver/dependant duties, family
+    pluralism, reproductive autonomy, domestic intervention threshold, ageing and
+    end-of-life authority.
+  - Rule whether and how minority, indigenous, linguistic, religious and other
+    collective claims receive self-government, representation, land/common claims
+    or veto/procedural protections without subordinating individual standing.
+  - Conditions and support may be guaranteed; no institution may prescribe the
+    approved family, belief, relationship, identity or personal outcome.
+
+- [ ] **[AUTHOR-GATED] Rule ecological, future-generation, commons, and
+  non-human-animal baselines.**
+  - Choose protected commons, enforceable ecological ceilings, non-regression and
+    restoration duties; the authority and limits of an independently checked future-
+    conditions guardian; and how these constrain majority, property and trade.
+  - Rule the basis and minimum scope of non-human-animal protection, permitted use,
+    enforcement and remedy without assuming that only constitutional personhood can
+    ground protection.
+  - Book 1 owns the invariant, evidence, standing/guardian and remedy contracts.
+    Book 2 owns measurement, resource budgets, transition and feasibility.
+
+- [ ] **[AUTHOR-GATED] Rule public-safety, defence, emergency, and external-power
+  baselines.**
+  - Decide the constitutional roles and separation of police/investigation,
+    prosecution, intelligence, military/defence and civilian authority; permissible
+    force; conscientious objection; emergency declaration/renewal/end; and the
+    authority for borders, asylum/expulsion, treaties, trade, war/peace, humanitarian
+    duties and secession.
+  - Name the non-derogable core, evidence and public-reason duties, cross-branch
+    checks, temporal contracts, independent review and individual/systemic remedies.
+    Operational capability and other states' cooperation remain Book 2/external.
+
+- [ ] **[AUTHOR-GATED] Rule the assurance portfolio for a functional-society
+  model.**
+  - **Recommended:** use Nibli for legal entailment, admissibility, authority, and
+    structural refusals; versioned quantitative models for resources and budgets;
+    dynamic simulations for queues, shocks, and transition; the registry for
+    empirical claims; and reader/lived-experience studies for comprehension and
+    human effects. No one formalism may impersonate the others.
+  - Rule which classes of Book 1 claim must be formally derived, which may be Part V
+    specifications, which require Book 2 evidence, and what language is permitted
+    when a model establishes safety but not liveness or feasibility.
+
+- [ ] **[AUTHOR-GATED] Rule the narrative human register for ordinary social
+  life.**
+  - The current rule keeps record-people's inner lives flat and permits exactly one
+    generic second-person domestic vignette. Decide whether balance must stay within
+    flat constitution-backed cases, diagrams, historical evidence and reader tests,
+    or whether the author will add a strictly limited class of clearly labelled,
+    author-drafted ordinary-life vignettes.
+  - Do not let an invented biography, composite citizen or attributed emotion become
+    evidence. If the register broadens, define its location, label, sourcing/voice
+    rule and maximum legal role before prose is written.
+
+- [ ] **[AUTHOR-GATED] Rule the reader-balance evidence protocol and threshold
+  timing; ratify the release threshold after the pilot.**
+  - **Recommended:** approve now a pre-registered pilot-and-fresh-holdout method,
+    while reserving the numerical/qualitative release threshold for an author ruling
+    after the pilot. This lets constitutional work proceed without inventing a
+    standard before evidence exists.
+  - Require readers to identify ordinary constructive life, democratic choice,
+    private freedom, successful provision, repair, and the prisoner as a stress test
+    rather than the society's central inhabitant.
+  - Do not use an arbitrary word, chapter, demographic or sentiment quota, and do
+    not let an aggregate score hide a repeated core misconception.
 
 ---
 
@@ -107,11 +252,89 @@ write its reply addressed directly back to this one, again through dhilipsiva: t
 what changed, whether any verdict moved, and what the prompt itself got wrong. That last
 item has been non-empty more often than not, on both ends of the channel.
 
-**No engine handoff is currently open.**
+Breadth by itself is not an engine defect. First assign each claim to the assurance
+method ruled above. Open a repair prompt only when a minimal public fixture shows
+that a claim assigned to Nibli cannot be expressed soundly, loses a definitive
+verdict, or exceeds a measured bound. Do not ask one reasoning engine to become a
+budget, population, logistics, psychology, transition, source-deployment, or
+authentication system.
 
+- [ ] **Measure the finite collective-decision boundary before formalising the
+  democratic corridor.**
+  - This is a read-only capability audit. It must not modify the engine repository,
+    design voting rules, choose thresholds, or treat a renamed ground premise as
+    authenticated.
+  - **Done when:** the reply provides neutral executable probes and a surface-by-
+    surface capability table; distinguishes fixed finite enumeration from
+    roster-parametric aggregation; distinguishes duplicate submissions, conflicting
+    choices and multiple derivations; states the external completeness,
+    authentication and challenge contract; and reports any suspected engine bug as a
+    separate minimal reproducer without fixing it.
+
+~~~text
+You are working in the Nibli engine repository. Assume no knowledge of any book
+or constitution project. This is a read-only capability audit: do not edit,
+commit, or push the engine repository.
+
+Start from current engine main, report its exact source SHA and version, and
+confirm that it is at or after the minimum compatible baseline
+4cb02aade43b394374c40e661907ad66df3af3fe.
+
+A separate formal-constitution project needs to know which finite
+collective-decision checks current Nibli can establish and which require an
+external, authenticated and contestable result service. Do not invent an
+electoral system. Quorum denominator, abstention treatment, strict/qualified
+thresholds and tie policy are normative inputs supplied by the caller, not
+choices for this audit.
+
+Using neutral names, build the smallest fixtures needed to measure these
+boundaries:
+
+1. Exact snapshot find/count observations over an externally supplied finite
+   roster and submitted-choice records.
+2. Whether CountNode or compute expressions are query-only, and the exact
+   refusal at assertion ingress and in rule antecedents.
+3. Fixed hand-enumerated finite rules versus genuinely roster-parametric quorum
+   or majority computation.
+4. A complete-roster attestation supplied as an external premise, and the
+   observational indistinguishability of an incomplete roster from a genuinely
+   smaller roster when that assurance is absent.
+5. Empty roster, tie, abstention, incomplete roster, withheld completeness
+   evidence and caller-supplied threshold cases.
+6. Distinct submitted-record identities related to voter and choice. Separate:
+   two identical submissions with different record identities; conflicting
+   choices by one voter; and multiple derivations of one effective logical fact.
+   State where set semantics collapse byte-identical facts and why conflict
+   detection does not itself select an effective choice.
+7. An externally supplied result certificate. State plainly that it remains an
+   asserted trust-root premise to Nibli; authentication, publication,
+   completeness, availability and challenge assurance are external unless
+   represented by additional supplied premises, which are trust roots too.
+8. Missing or undecidable witness leaves. Confirm whether find/count fail closed
+   rather than silently undercounting, and distinguish FALSE, UNKNOWN and
+   RESOURCE_EXCEEDED.
+
+For every case, identify the usable surface: KR rule language, nibli-pin query,
+core API, host harness or external service. A bounded three-person rule is only a
+fixture result, not generic election semantics. Missing completeness evidence may
+safely block authority but can create a withholding veto; state that liveness and
+redundant attestation remain constitutional/operational design questions.
+
+Do not add voting, arithmetic, certificate authentication, roster completeness,
+closed-world semantics or non-monotonic behavior. If you find behavior that
+contradicts a documented existing guarantee, report a separate minimal
+reproducer and proposed acceptance test, but do not repair it in this audit.
+
+Run the smallest relevant existing tests plus the neutral probes and give exact
+commands and outputs. Then write your reply directly to the
+rights-nobody-has-to-earn session through dhilipsiva. Include: exact source SHA
+and version; probes; commands; the capability table; definitive/non-definitive
+verdicts; external trust and liveness boundaries; any separate bug reproducer;
+confirmation that no repository change occurred; and what this prompt got wrong.
+~~~
 Do not work around an engine limitation in prose — conceding a fixable limitation
 as though it were a design choice is the specific dishonesty this phase exists to
-prevent, and it is why the phase runs first.
+prevent, and it is why this audit precedes generic collective-decision rules.
 
 **When a reply lands here**, independently build or identify its source commit, select
 that binary explicitly, and re-run `./verify.sh` before believing anything. This repo
@@ -119,13 +342,14 @@ has twice measured an engine change that was never rebuilt.
 
 ---
 
-## Constitutional expansion — implementation backlog
+## Full-society expansion — implementation backlog
 
 This is the canonical merged redesign backlog for the ratified constitutional
-expansion. Except for the staged T3 path already named below, it is
-future-facing: the mandate, coverage map, taxonomy, and democratic corridor set
-the boundaries, but do not make an unimplemented predicate, duty, delivery
-route, or remedy current law.
+mandate and the author-directed full-society completion target. Except for the
+staged T3 path already named below, it is future-facing: the mandate, coverage
+map, taxonomy, democratic corridor, domain ledger, system map and reader contract
+set requirements, but do not make an unimplemented predicate, duty, institution,
+operation, delivery route, remedy, social outcome or narrative current.
 
 ### Scope and guardrails
 
@@ -140,13 +364,147 @@ route, or remedy current law.
   specification or argument**, and a **Book 2 operational design**. Keep formal
   methods vocabulary out of derived chapters; the opening note, Part V, and
   `method.md` are the labelled exceptions.
-- Do not pursue symmetry by making recognition rankable, reward operative, or
-  standing purchasable. Do not mistake a provider's assertion for usable delivery,
+- Do not pursue symmetry by making recognition rankable, the existing
+  recognition predicate `reward` operative, or standing purchasable. This does not
+  pre-decide author-ratified above-floor compensation or positive incentives. Do not mistake a provider's assertion for usable delivery,
   or call a chain self-healing while `owe`, `become`, or `obliged` remains unread.
-- No material floor may depend on work, virtue, wealth, citizenship, documentation,
-  score, compliance, contribution, testing, or official approval. Book 1 defines
-  constitutional interfaces; transition, operations, infrastructure, and service
-  logistics remain Book 2.
+- Standing and entitlement to a material floor may not depend on work, virtue,
+  wealth, citizenship, documentation, score, compliance, contribution, a qualifying
+  test, or official approval. Necessary, proportionate, contestable clinical or
+  needs evidence may select a safe/accessibility-adjusted way to deliver what remains
+  owed; it may not terminate or reduce the minimum. Book 1 defines constitutional
+  interfaces; transition, operations, infrastructure and service logistics remain
+  Book 2 until the author rules otherwise.
+
+### Expansion foundation — Map the whole society before adding rule families
+
+- [ ] **Build a full-society domain-and-layer ledger with a declared stopping rule.**
+  - Create one reviewed, normalized canonical source with stable domain, role,
+    body/institution, power, dependency, scenario, claim, external-assumption,
+    threshold and assurance-route IDs. Give every record applicability, layer,
+    status, severity, consequence, owner and closure fields.
+    Generate the coverage map, contract-card views, role matrix, dependency map,
+    assurance allocation, reader ledger and Book 2 crosswalk from that source; do
+    not maintain competing matrices by hand.
+  - Preserve the ratified constitutional taxonomy as the legal-effect axis; it is
+    chosen, not exhaustive. Add an orthogonal social-domain axis answering which
+    part of life is involved and where its decisions belong.
+  - At minimum inventory: personhood/life course; body, health, care, family and
+    intimacy; learning, knowledge, media, science, religion and culture; food,
+    housing, land, utilities, infrastructure and public space; work, property,
+    enterprise, exchange, money, credit, debt and public finance; democracy,
+    government and administration; civil/criminal/administrative justice, safety
+    and repair; records, surveillance and automated power; locality, membership,
+    mobility, migration and external relations; emergencies, security and defence;
+    ecology, non-human animals, commons and future conditions; and friendship, leisure, mutual aid,
+    associations and the residual free social field.
+  - For every domain record: constitutional invariants; decisions left to ordinary
+    majorities; protected private/civic choice; public bodies and expressly bound
+    private actors; Book 2 operations; external facts/liveness assumptions;
+    applicable class cards and structural walls; evidence, time, challenge and
+    remedy contracts; scenario applicability; and its reader-facing destination.
+    Governed/provided domains require ordinary-success, failure/abuse and recovery
+    paths. Protected free/private domains require non-interference, non-recording/
+    non-compulsion and recourse boundaries—not a state-certified successful life.
+  - A row is disposition-complete only when every applicable field is answered or
+    explicitly marked “not constitutionally prescribed”, “ordinary law”, “Book 2”
+    or “external assumption”. An unresolved field must carry severity, consequence,
+    owner and closure condition; a critical floor, safety, feasibility or hidden-
+    power gap blocks the applicable completion claim. An unclassified public power
+    is a defect. A harmless unclassified private practice defaults to freedom.
+  - **Done when:** an independent scope review can name no material omitted domain,
+    role, dependency, or failure without the ledger adding it, classifying it out
+    with reasons, or recording a visible severity-rated limit. This is versioned
+    exhaustiveness, not a timeless completeness theorem, and disclosure alone does
+    not cure a critical gap.
+
+- [ ] **Define the reference-society envelope and measurable meanings of
+  “functional”.**
+  - Version the population and demographic profile; territory, settlement pattern
+    and geography; resource and ecological endowment; technology and infrastructure
+    baseline; trade and external-cooperation assumptions; institutional starting
+    state; time horizon; promised service levels; and ordinary plus compound shock
+    set. Never let a result inherit these silently.
+  - Define adequacy, continuity, equity, accessibility, resilience and sustainability
+    criteria for each applicable domain. Distinguish a parameterized design from a
+    result established only for one reference case.
+  - Book 1 records which constitutional claim depends on which envelope field and
+    what remains invariant when it changes. Book 2 owns calibration, empirical
+    validation, capacity models and sensitivity/scenario analysis.
+  - **Done when:** every functional or feasibility claim names an envelope version,
+    metric, threshold owner, uncertainty range and failure interpretation, and no
+    single favourable scenario is presented as society-wide feasibility.
+
+- [ ] **Build the roles, life-course, scale, and power-position matrix.**
+  - Cover birth/first contact, childhood, adulthood, ageing, disability, illness,
+    dependency, caregiving, death and succession without making capacity or
+    documentation a condition of standing.
+  - Cover people as family/household members, friends, learners, patients,
+    caregivers, workers/non-workers, union members, owners/tenants, consumers,
+    creators, worshippers/non-believers, association members, voters/candidates,
+    public servants, newcomers/migrants, claimants, accused people, prisoners and
+    released people. One person may occupy many roles; none buys a higher floor.
+  - Test individual, household/association, local, regional, national,
+    cross-jurisdictional and intergenerational scale. Avoid demographic decoration
+    and the impossible full Cartesian product; justify pairwise and
+    high-consequence edge coverage.
+  - **Done when:** each material domain has reviewed role/scale applicability,
+    each public or concentrated-private power has both affected and checking
+    positions, and omitted combinations carry an explicit risk-based reason.
+
+- [ ] **Model the society's functional flows and cross-domain dependencies.**
+  - Map flows of authority, information, care, labour, resources, money, claims,
+    services and accountability from lawful source through ordinary operation,
+    interruption, interim continuity, remedy, recovery and systemic correction.
+  - Identify dependency cycles, bottlenecks, conflicts of interest, single points of
+    failure and cascade paths. No right is called delivered because an institution
+    promised it, and no body is called functional because its name exists.
+  - Classify every dependency as constitutionally guaranteed, democratically
+    selected, operationally supplied, or externally assumed. Assign an owner and a
+    consequence for its absence.
+  - **Done when:** the canonical source can generate an owner-labelled dependency
+    graph, every critical input/output has a source, destination and failure
+    consequence, and the closure audit rejects unowned or unsatisfiable edges plus
+    unbounded, self-certifying, deadlocking or single-veto cycles/bottlenecks.
+    Bounded, owned ordinary service, feedback, fiscal and ecological loops must be
+    classified and tested, not rejected merely for being cyclic.
+
+- [ ] **Build whole-society journeys, collisions, and stress cases.**
+  - Execute ordinary-success, failure/abuse, continuity, remedy and recovery paths
+    for every governed, provided or power-bearing domain—not only isolated clauses.
+    For protected private/civic domains, test freedom without permission,
+    non-recording/non-compulsion, the narrow evidenced-harm threshold and recourse
+    against interference; never pin love, belief, friendship, art or fulfilment as
+    a state-defined successful outcome.
+  - Test at least: property versus floor; speech/association versus private harm;
+    majority versus minority; parent/guardian power versus child standing;
+    employer/landlord/platform power versus meaningful exit; emergency versus
+    liberty; present allocation versus future commons; locality versus portability;
+    privacy versus public accountability; and physical scarcity versus equal floor.
+  - Include compound shocks such as pandemic, famine, infrastructure failure,
+    displacement, institutional capture and conflicting jurisdictions. Book 1 must
+    state invariant/failure behavior; Book 2 must test capacity and degradation.
+  - First generate a reviewed scenario catalogue with stable IDs and applicability;
+    execute constitutional cases only after the relevant author ruling and contract
+    cards land. **Done when:** every critical domain/dependency and each high-
+    consequence collision has an owned ordinary, failure and recovery route.
+
+- [ ] **Create a generated constitutional-closure and model-allocation audit.**
+  - Generate it from reviewed domain, role, dependency and assurance data; never
+    infer constitutional importance from predicate names or raw counts.
+  - Fail when a floor lacks delivery/continuity/remedy; a public power lacks source,
+    limit, review or temporal status; a body decides, executes, audits and finally
+    remedies itself; a private duty is merely implied; a record lacks
+    writer/challenge/correction; a democratic choice crosses the floor; a Book 2
+    operation is presented as Book 1 assurance; an external assumption is hidden;
+    or a reader-facing claim has no formal/evidentiary owner.
+  - Record which claims belong to Nibli, quantitative/resource models, dynamic
+    simulations, the evidence registry, operational assurance, or reader/lived-
+    experience testing. One green model may not substitute for another.
+  - **Done when:** a deterministic check regenerates every projection from the
+    reviewed canonical source, rejects stale/unowned records and all named closure
+    failures, and publishes a claim-by-claim pass, block or bounded-unresolved
+    result with the responsible verification route.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
 
@@ -192,138 +550,479 @@ route, or remedy current law.
     | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, independent recipient, action duty, continuity/remedy path, temporal status |
     | Commons/future condition | protected common, present duty, ceiling or non-destruction rule, evidence, standing for any present person and an independently checked public guardian, guardian authority/independence/evidence/removal controls, remedy, public accountability, temporal status |
 
-  - **Done when:** no new right or institution is added without a completed row.
+  - **Done when:** every domain in the full-society ledger has complete applicable
+    rows before its rule family or prose lands; no name, value, office, or floor is
+    accepted as coverage by itself.
 
 - [ ] **Make universal standing a root condition, not a service denied by a missing entry.**
   - Design a safe “serve and reconcile” route for an unregistered person seeking help.
+  - Cover birth/first contact, absent or disputed identity, migration between records,
+    decision support, and death/status correction without making registry presence,
+    capacity, citizenship, or documentation a condition of standing.
   - Keep identity resolution separate from access to emergency aid, floor protections,
     and due process.
   - Do not erase accountability through a right to disappear from the record.
 
 - [ ] **Define the social floor, liberty shell, and ecological ceiling.**
   - Retain the existing floor as a compact core, then classify missing coverage:
-    water/sanitation, adequate utilities, material security, disability and care,
-    bodily integrity, usable information, accessibility, and voluntary social life.
+    food, water/sanitation, housing and land access, adequate utilities, material
+    security, health and care, learning and usable information, disability access,
+    mobility, communication, public space and voluntary social life.
   - Put privacy, bodily autonomy, movement, due process, association, expression,
-    equal civic status, and procedural safeguards in a power-limiting layer where
-    appropriate, not necessarily as more delivery predicates.
-  - Add a commons/intergenerational constraint: rights must not be delivered by
-    exhausting the conditions future people need to exercise them.
+    conscience, family/intimate life, equal civic status, and procedural safeguards
+    in a power-limiting layer where appropriate, not necessarily as more delivery
+    predicates.
+  - Add commons, non-regression and intergenerational constraints: present rights
+    may not be delivered by exhausting air, water, climate, biodiversity, land,
+    infrastructure or other conditions future people need to exercise them.
+
+- [ ] **Establish substantive equality and anti-subordination across domains.**
+  - Define direct, indirect, systemic and intersectional discrimination;
+    accessibility and reasonable accommodation; segregation and exclusion;
+    harassment, retaliation and status subordination; and lawful positive measures.
+  - State permissible-distinction, evidence-burden, public-reason, independent-
+    review and individual/systemic-remedy tests for public bodies and expressly
+    bound private power. A formally identical rule is not sufficient when its
+    predictable effect entrenches dependency or exclusion.
+  - Use privacy-preserving group evidence to find institutional patterns without
+    assigning individual worth, risk or entitlement scores. Positive measures must
+    be reviewable and may not make identity documentation a condition of the floor.
+
+- [ ] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
+  - Specify consent, reproductive autonomy, mental and physical care, disability
+    access and decision support; children’s interests and voice; ageing, dependency,
+    caregiving, guardianship/representation, family pluralism and intimate privacy.
+  - Protect against domestic and other private interference through explicit duties,
+    evidence, challenge, continuity and remedy. Never infer compelled health, belief,
+    relationship, family form or personal outcome from provision.
+  - Give caregivers and dependants independent standing and routes to help; neither
+    role may erase the other person's voice or floor.
 
 - [ ] **Write the Bodies specification.**
-  - Define people/civic associations; legislature and electoral-deliberative bodies;
-    provision and treasury; justice, defence, and appeal; constitutional review;
-    integrity/audit; local bodies; and an independent rights advocate/ombudsperson.
+  - Define people/civic associations; legislature; executive and public
+    administration/civil service; electoral-deliberative bodies; provision,
+    treasury and regulators; justice, defence and appeal; constitutional review;
+    integrity/audit; local and regional bodies; and an independent rights
+    advocate/ombudsperson.
+  - Give every office a democratic/legal source, jurisdiction, ordinary function,
+    delegation boundary, conflict/recusal rule, appointment, removal, succession,
+    temporal status, public-reason duty, and a typed challenge, review, audit or
+    political-accountability route. Require appeal and remedy for individualized
+    adverse determinations; do not recreate a universal right of appeal.
   - Apply separation of functions: no actor may assert case facts, decide their
-    consequence, execute it, audit it, and remedy it alone.
-  - Define a rights advocate able to act for a child, disabled person, prisoner,
-    newcomer, or unregistered claimant.
+    consequence, execute it, audit it, and remedy it alone. Show every body doing its
+    ordinary job as well as being checked.
+  - Define a rights advocate able to act without replacing the voice of a child,
+    disabled person, prisoner, newcomer, dependant or unregistered claimant.
 
 - [ ] **Specify obligations without making rights reciprocal bargains.**
-  - Public institutions must respect, protect, fulfil, and remedy.
-  - Contractors remain bound when delivering a public function.
+  - Public institutions must respect, protect, fulfil, continue and remedy.
+  - Contractors remain bound when delivering a public function. Direct private
+    duties must be express, never inferred merely from the domain's subject matter.
   - Civic duties may exist, but failure to work, pay, identify oneself, comply, or be
     socially approved must not remove a basic floor.
+  - Separate duties owed to a person, duties owed to a common, role duties, and
+    voluntary commitments; define priority, conflict, excuse and remedy without
+    turning rights into reciprocal bargains.
 
 - [ ] **Specify delivery as a lifecycle.**
   - Model: entitlement → service offered → accessible service → authorised,
     recipient-side access/receipt evidence → disputed/failed → interim continuity
-    → remedy → systemic correction.
+    → remedy → corrective control implemented → recurrence monitored over a declared
+    horizon. No finite record can verify all future non-recurrence.
+  - Apply the lifecycle across food, water, housing, utilities, health/care,
+    learning/information, mobility, communication and other essential systems.
   - A missing receipt must invite outreach and challenge, never terminate entitlement.
-  - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement, and
-    capacity planning.
+  - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement,
+    routing, maintenance, capacity planning and graceful degradation.
+
+- [ ] **Write the economic, labour, property, and fiscal constitution.**
+  - Specify lawful taxation, appropriation, spending, borrowing and audit authority;
+    floor financing; property/land as a conditional liberty; possession, use,
+    transfer, inheritance and expropriation; work, workplace safety, unions,
+    collective action; enterprise/co-operatives; contract and consumer protection;
+    competition, monopoly and economic concentration; money, credit, debt and
+    insolvency interfaces.
+  - Let democratic choices determine rates, institutional mix and policy above the
+    floor. Book 2 owns budgets, monetary/fiscal models, production, pricing,
+    allocation, staffing and capacity.
+  - Preserve the no-earned-floor and no-score walls. Wealth, contribution,
+    recognition and market success may not buy superior standing, public authority,
+    political weight, or immunity from commons and liberty limits.
+
+- [ ] **Define income security and social insurance without making survival
+  contributory.**
+  - Cover illness, disability, unemployment, caregiving, workplace injury, ageing,
+    survivor support and pensions; portability across employers, family forms and
+    jurisdictions; accessible claim/challenge routes; continuity; and insolvency.
+  - The unconditional floor remains non-contributory. Democratically chosen
+    contribution histories may affect transparent above-floor benefits only under
+    equality, adequacy, privacy, appeal and anti-poverty guards; they never alter
+    standing, emergency help or the floor.
+  - Book 2 owns actuarial/fiscal assumptions, reserves, take-up, administration and
+    shock testing. Book 1 owns the lawful interface and anti-exclusion limits.
+
+- [ ] **Authorize qualifications, licensing, compensation, and positive incentives
+  without ranking people.**
+  - Permit evidence-based competence requirements for safety-critical or fiduciary
+    roles such as clinician, pilot, judge, engineer or auditor. Separate role
+    eligibility from personhood, floor and political standing; require accessible
+    routes, proportionality, expiry/review, challenge and portability.
+  - Permit fair above-floor compensation and democratically bounded incentives for
+    difficult work, skill, innovation, investment, maintenance and public service.
+    State the source, recipient, purpose, limit, conflict rule and audit; no reward
+    may purchase authority, impunity, a higher floor or a personal-worth score.
+  - Test credential cartels, inherited advantage, scarcity rents, favoritism and
+    metric gaming. Recognition remains optional, binary and non-operative.
+
+- [ ] **Constrain concentrated private and hybrid power.**
+  - Complete contract cards for employers, landlords, lenders, insurers, utilities,
+    corporations, platforms, monopolies and public contractors where essential
+    function, dependency, lock-in, information asymmetry or lack of meaningful exit
+    creates public-scale power.
+  - Rule direct duties expressly; define evidence, transparency/privacy,
+    non-discrimination, contestability, independent review, continuity and remedy.
+    Do not constitutionalise harmless voluntary life merely because it is private.
 
 - [ ] **Define the democratic ceiling and majority process.**
-  - Ordinary majorities decide policy, tax mix, providers, and choices above the core.
+  - Ordinary majorities decide policy, tax mix, providers, public/co-operative/
+    private institutional mix, and choices above the core; the protected free field
+    remains neither a public programme nor a plebiscite.
   - Current `approves(Electorate, amendment)` names the electorate but authenticates
-    neither writer, tally, certificate, recount, challenge, nor correction. Require an
-    authenticated, contestable result without giving one writer or reviewer a
-    withholding veto.
-  - Every restrictive proposal needs public reasons, evidence, non-discrimination,
-    least-restrictive means, a constitutional delivery duty, appeal, and independent
-    review. Capacity modelling remains Book 2; time-dependent review/expiry is
-    subject to the ratified T3 implementation gate.
-  - An emergency model may never erase personhood, core floors, evidence rights, or an
-    appeal path. Its temporal authority and end condition remain T3-implementation-gated.
+    neither writer, roster, tally, certificate, recount, challenge, nor correction.
+    Require an authenticated, contestable result without giving one writer or
+    reviewer a withholding veto.
+  - Cover equal franchise/candidacy, accessible participation, deliberation,
+    opposition, lawmaking, delegation, recall, peaceful succession and amendment.
+  - Every restrictive proposal needs public reasons, evidence,
+    non-discrimination, least-restrictive means and a typed constitutional,
+    judicial, administrative, audit or political challenge/review route. Require
+    delivery/continuity duties where a floor is affected, and appeal/remedy for an
+    individualized adverse determination. Capacity modelling remains Book 2;
+    time-dependent review/expiry needs its own T3 contract.
+
+- [ ] **Protect democratic and administrative integrity.**
+  - Cover electoral systems, parties and opposition, districting, campaign finance,
+    political advertising, lobbying, gifts, procurement, public appointments,
+    patronage/nepotism, conflicts of interest, revolving doors, corruption and
+    coordinated information manipulation.
+  - Define permitted writers and money/influence records; proportionate disclosure
+    and privacy; independent election, procurement, ethics and anti-corruption
+    oversight; recusal, challenge, correction, remedy and disqualification; and
+    institutional independence from the governing coalition.
+  - Test capture through legal form, shell actors, third parties, media/platform
+    concentration, selective enforcement, audit starvation and manufactured
+    withholding. No integrity body may certify its own decisive facts and final cure.
+
+- [ ] **Constitute official statistics and planning information without building a
+  population score.**
+  - Authorize censuses, representative sampling, administrative statistics and
+    public planning data only with necessity, purpose limits, minimization,
+    accessibility, privacy, correction, independent methodology and publication.
+  - Separate aggregate planning evidence from individual eligibility and
+    enforcement. Test non-response, undercount, classification harm, political
+    manipulation, re-identification, stale data and suppression of adverse results.
+  - Book 2 owns collection operations, secure linkage, calibration and uncertainty;
+    Book 1 owns authority, non-use walls, contestability and public accountability.
+
+- [ ] **Build amendment enactment and effective-version assurance outside the
+  reasoning engine.**
+  - Distinguish exact base/candidate byte identity, bounded semantic effects, lawful
+    authorisation/approval, publication, uniquely effective deployment and later
+    rollback/supersession. The current amendment audit manually applies candidates
+    and proves only named bounded consequences.
+  - Book 1 defines the constitutional source, proposal, result, challenge,
+    independent review, successor/conflict/replay and remedy contract. A host harness
+    and Book 2 must authenticate digests/signatures, store and publish versions,
+    select/deploy the effective source, preserve rollback evidence and launch fresh
+    reasoner sessions against that exact version.
+  - Test stale base, replay, divergent candidates, conflicting approvals,
+    withholding veto, unauthorised vocabulary change, semantic mismatch, rollback
+    and query against the wrong source. Nibli may reason about supplied version facts
+    but may not be credited with authenticating or deploying them.
+
+- [ ] **Complete territory, membership, mobility, plurality, and external relations.**
+  - Specify local, regional and common authority; subsidiarity, equalisation,
+    portability and cross-jurisdiction disputes. Residence or citizenship may
+    allocate political membership where author-ratified, never personhood or floor.
+  - Cover newcomers, migrants, refugees, stateless people, borders, asylum,
+    expulsion, extradition, minority/indigenous self-government and language access.
+  - Define authority and non-derogable limits for treaties, diplomacy, external
+    trade, war/peace and humanitarian duties. Prevent public procurement, investment,
+    trade or corporate form from exporting labour exploitation, ecological damage
+    or rights violations that would be unlawful at home. Other states' cooperation
+    and supply-chain facts remain external assumptions, not derived facts.
 
 - [ ] **Add the missing non-carceral justice interface.**
-  - Cover notice, counsel/advocacy, hearing, challenge, reparation, civil disputes,
-    child representation, and post-release continuity.
+  - Cover notice, counsel/advocacy, hearing, challenge, reparation and enforcement
+    across civil, administrative, family, labour, consumer and constitutional
+    disputes as well as criminal justice.
+  - Separate investigation/policing, prosecution, defence, adjudication, execution
+    and review. Add victim/survivor protection, restitution, reparation, restorative
+    options and least-coercive response without compelling forgiveness.
   - Add explicit carceral limits: bodily integrity, communication, conditions,
-    proportionality, release review, and reintegration support.
+    proportionality, release review, post-release continuity and reintegration.
+    Prison remains the hardest stress test, not the default social case.
+
+- [ ] **Complete emergency, resilience, public-safety, and defence interfaces.**
+  - Define disaster/public-health triggers, declaring and reviewing bodies,
+    cross-branch control, non-derogable protections, public reasons, necessity,
+    proportionality, source-bound duration/renewal/end, challenge and remedy.
+  - Put policing, intelligence, force and defence under legality, civilian control,
+    role separation, evidence, oversight and repair. Do not borrow the custody T3
+    contract for a different power.
+  - Book 1 states invariant and failure behavior; Book 2 owns incident command,
+    stockpiles, force/logistics, infrastructure restoration and actual capacity.
+
+- [ ] **Govern ecology, commons, non-human animals, and future conditions.**
+  - Define present duties, evidence and enforceable ceilings for climate, air, water,
+    soil, biodiversity, land, resource extraction, waste and shared infrastructure;
+    restoration, non-regression and liability; and cross-border/common governance.
+  - Give every present person standing and an independently checked public guardian
+    authority to protect future conditions without pretending to receive facts from
+    unborn people. Define the guardian's evidence, independence, removal, conflict,
+    challenge and remedy contracts.
+  - State minimum protections for non-human animals, including welfare, habitat,
+    permitted use and enforcement, without pretending that personhood is the only
+    possible basis for protection. Book 2 owns measurement, resource budgets,
+    transition and ecological feasibility.
+
+- [ ] **Protect knowledge, communication, culture, and the free social field.**
+  - Cover learning and information access; expression, conscience, religion and
+    non-belief; association; media/press plurality; academic, scientific and
+    artistic freedom; language/accessibility; public information; sport, leisure,
+    friendship, love, mutual aid, clubs and voluntary creation.
+  - Secure the conditions and liberties for these activities without certifying
+    official truth, taste, belief, creativity, relationship or personal fulfilment.
+  - State residual freedom expressly: private/civic life remains free unless an
+    evidenced rights or commons harm justifies a least-restrictive, reviewable rule.
+
+- [ ] **Constrain records, surveillance, and automated power across every domain.**
+  - Extend the record contract to identity/status, health, care, education,
+    workplace, housing, finance, policing and public-decision records.
+  - Cover surveillance, biometrics, profiling and automated/AI-assisted decisions:
+    authorised inputs, purpose limits, privacy, explanation, contestability,
+    correction, human/independent review, non-use walls, retention/deletion and
+    remedy.
+  - Technology, storage and algorithms remain Book 2 operations or external
+    evidence. A computed output is never a constitutional oracle.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
 
 - [ ] **Name the real symmetries and necessary asymmetries.**
   - Real recursive interfaces:
-    - right → duty → delivery → breach → remedy → review;
-    - power → evidence → limit → appeal → correction;
-    - harm → due process → least coercive response → repair/release.
+    - right → duty → accessible delivery → breach → continuity → remedy → review
+      → corrective control → monitored recurrence over a declared horizon;
+    - power → lawful source/trigger → evidence → limit → public reason → independent
+      review → appeal → correction/end;
+    - harm → notice/voice → due process → least-coercive response → repair/release;
+    - democratic choice → authenticated mandate → bounded implementation → public
+      feedback → challenge → correction or peaceful replacement.
   - Necessary asymmetries:
     - recognition is optional, binary, non-ranked, and non-operative;
     - punishment is coercive and requires a higher proof threshold;
-    - public power is transparent while private life remains private;
-    - accessibility may require unequal resources to secure equal standing.
+    - public power is presumptively reason-giving and auditable subject to
+      narrow lawful confidentiality, while private life is presumptively private;
+    - accessibility may require unequal resources to secure equal standing;
+    - children, dependants and people needing support retain rights without symmetric
+      capacity or contribution duties.
 
 - [ ] **State the determination/action boundary accurately.**
-  - Book 1 must identify who owes what, what counts as delivery, failure, remedy, and
-    public accountability.
-  - Book 2 must specify how people, institutions, funding, and real-world operations
-    make those duties happen.
-  - Do not describe an infinite chain of duties as a solution to the need for people
-    and institutions to act.
+  - Book 1 must identify who owes what, what counts as ordinary lawful function,
+    delivery, failure, continuity, remedy, public accountability, and protected
+    freedom from direction.
+  - Book 2 must specify how people, institutions, funding, resources, technology and
+    real-world operations make those duties happen and how the system degrades under
+    scarcity or shock.
+  - Do not describe an infinite chain of duties as action, an interface as capacity,
+    a simulation as deployment, or an external premise as a constitutional fact.
 
 - [ ] **Use a vector of protected conditions, never a total social score.**
-  - No abundance in one domain compensates for torture, homelessness, exclusion, or
-    disenfranchisement.
-  - Use aggregate, privacy-preserving disparity and outcome measures for public
-    learning; never convert them into individual risk labels.
+  - No abundance in one domain compensates for torture, homelessness, exclusion,
+    disenfranchisement, ecological destruction or loss of standing.
+  - Use aggregate, privacy-preserving disparity, capacity and outcome measures for
+    public learning; never convert them into individual worth or risk labels.
+  - Record trade-offs and Pareto/conflict boundaries openly; do not collapse
+    heterogeneous floors, liberties, commons and democratic choices into one number.
 
-### Expansion phase 4 — Rewrite for an intelligent non-specialist reader
+- [ ] **Define cross-domain priority, conflict, and physical-scarcity rules.**
+  - Distinguish genuine physical/capacity scarcity from monetary or administrative
+    withholding. Rule transparent triggers, admissible evidence, interim continuity,
+    equal standing, need/accessibility considerations, least-harm allocation,
+    challenge, review, end and repair; never use wealth, merit, contribution,
+    recognition or political favour.
+  - Resolve conflicts through typed rules rather than hidden priority: property
+    versus floor/commons, expression versus evidenced harm, privacy versus public
+    accountability, local choice versus portability, current claims versus future
+    conditions, and emergency action versus non-derogable protections.
+  - Route the unresolved normative allocation choices back through the author gate
+    and democratic corridor; do not let implementation code decide them silently.
+
+- [ ] **Test compositional closure and graceful degradation.**
+  - For formal interfaces, prove within the declared model that individually safe
+    domains remain safe when joined; test quantitative, dynamic, empirical,
+    operational and lived compositions through their assigned assurance routes.
+    Search for duty cycles, contradictory writers, duplicated final authority, veto
+    by withheld evidence, remedy loops, unbounded delegation and cross-domain routes
+    that recreate a forbidden score or status gate.
+  - For normal operation and each compound shock, state what continues, what narrows,
+    who may decide, who is protected first, what cannot be suspended, how review
+    arrives, and how ordinary authority is restored.
+  - A bounded safety proof may not claim that people, clocks, supplies, institutions
+    or other states actually act. Assign every liveness premise to Book 2 or an
+    external assurance owner.
+
+- [ ] **Red-team incentives, capture, and strategic behavior across the composed
+  society.**
+  - Test capture, collusion, rent-seeking, bribery, patronage, regulatory arbitrage,
+    strategic withholding/misreporting, Goodhart effects, adverse selection, moral
+    hazard, free-riding, black markets and burden-shifting into another domain or
+    jurisdiction.
+  - For every mechanism state who benefits from gaming it, the information and
+    coordination required, who bears the hidden cost, how it is detected/challenged,
+    and whether the response creates a new veto, surveillance system or score.
+  - Nibli may test legal walls; quantitative models, games/simulations, empirical
+    evidence and Book 2 operations test behavior and scale. Do not assume either
+    universal selfishness or universal altruism.
+
+### Expansion phase 4 — Build a reliably balanced non-specialist reader experience
+
+- [ ] **Build a reviewed reader-experience coverage ledger before rewriting.**
+  - For every derived chapter and substantive Part V passage record: social domain
+    and rule family; normal function and protective/corrective function; setting;
+    person posture (chooses, creates, cares, works, associates, requests, receives,
+    challenges, governs, or is acted upon); trajectory (works, contested, fails,
+    continuity/remedy, unresolved); roles/life stages/access conditions; and exact
+    rule/fact/pin or exempt-source basis.
+  - Generate the report as a projection of the canonical full-society source and
+    fail verification on an unclassified passage or a completed constitutional row
+    with no reader-facing mapping. Counts may appear in the generated audit, never
+    as hand-maintained prose claims.
+  - **Done when:** every completed governed/provided domain has traceable ordinary-
+    operation, credible failure/abuse or boundary, and—where claimed—end-to-end
+    continuity/remedy cases in its assigned assurance route. Use Nibli pins for
+    formalized legal claims; use reviewed specifications, quantitative/dynamic
+    models, operational evidence or lived-experience methods for their assigned
+    claims. A protected private/civic domain needs traceable non-interference and
+    non-recording/non-compulsion limits plus recourse; ordinary-life illustration
+    remains non-evidentiary under the author-ruled narrative register. A non-justice
+    domain represented only through prison or custody fails.
+
+- [ ] **Rebalance the pinned case portfolio without fictionalising it.**
+  - Preserve the prisoner as the hardest stress test, not the default inhabitant.
+    Cover ordinary provision and care; family/dependency; learning and knowledge;
+    work/property/exchange/commons; association, conscience and creation;
+    voting/deliberation/local government; mobility/newcomer portability; civil
+    dispute/repair; emergency continuity; and institutional correction.
+  - For every public body show one lawful ordinary function and one accountability
+    path. For every materially operative role/status, pin equal standing/floor or
+    the exact lawful distinction.
+  - No role may appear only as an object of intervention when the constitution gives
+    it agency. Do not add decorative demographic labels or pretend a full Cartesian
+    product is meaningful; use reviewed pairwise/high-consequence coverage.
 
 - [ ] **Add a Reader’s Map inside an existing exempt element.**
-  - State the promise, record/rule/reality distinction, scope boundary, and visible
-    part structure before Chapter 1.
+  - State the promise, five-layer society map, record/rule/reality distinction,
+    this volume's destination/operation boundary, visible part structure, and why
+    the prisoner is a stress test before Chapter 1. Preserve the settled single
+    Book 2 pointer at the end; explain the earlier scope boundary without adding a
+    second pointer.
   - Preserve computed chapter order; make the reader-facing arc visible rather than
-    casually reordering the derivation spine.
+    casually reordering the derivation spine. If the generated spine remains
+    carceral after the constitution broadens, treat that as a model finding, not a
+    cosmetic ordering problem.
 
-- [ ] **Standardise the chapter experience.**
-  - Use: concrete existing case → plain finding → how the rule works → attack/failure
-    → boundary → brief “what this established.”
-  - Prefer chapter-local reminders to long backward cross-references.
-  - Preserve the record-people's deliberately flat inner lives; do not add invented
-    biographies or emotions as if they were evidence.
+- [ ] **Use constructive, private/civic, democratic, and coercive chapter patterns,
+  not one failure-first formula.**
+  - Constructive provision: person seeks a floor → body/duty responds → accessible
+    receipt/effect → challenge if needed → continuity/remedy → boundary.
+  - Protected private/civic agency: person chooses, creates, associates, cares or
+    cooperates without permission → non-interference and enabling conditions →
+    narrow evidenced-harm rule if applicable → recourse against interference.
+  - Democratic/co-operative agency: people deliberate and organise → authenticated,
+    bounded collective choice → implementation → feedback, challenge and peaceful
+    correction/replacement.
+  - Coercive/protective rule: power is proposed → lawful trigger/evidence → limit
+    → independent review/appeal → correction/end → boundary.
+  - Show the rule working before or beside its strongest credible failure. Do not
+    force an attack section where the rule family supports no such claim.
+  - Prefer chapter-local reminders to long backward cross-references. Preserve the
+    record-people's deliberately flat inner lives; do not invent biographies,
+    emotions or composite citizens as evidence.
 
-- [ ] **Add navigation aids.**
-  - Annotated table of contents, concise glossary, character/case index, and selected
-    diagrams for the record/conclusion distinction, floor, institutional roles, and
-    delivery/remedy loop.
-  - Do not add a diagram mechanically to every chapter; each must earn its cognitive
-    cost.
+- [ ] **Add accessible navigation and visual explanation.**
+  - Provide an annotated table of contents, concise glossary, role/body and case
+    indexes, domain-to-chapter map, and selected diagrams for the five layers,
+    record/conclusion distinction, floor, democratic corridor, institutional roles,
+    functional dependencies and delivery/remedy loops.
+  - Every diagram needs a complete prose equivalent; no meaning may depend only on
+    colour, layout, vision, hearing, fine motor control or specialist notation.
+    Check semantic headings/navigation and screen-reader, EPUB, HTML and PDF paths.
+  - Readability formulas are diagnostic flags, not truth or pass/fail targets. Each
+    visual must earn its cognitive and accessibility cost.
 
-- [ ] **Run reader-comprehension sessions.**
-  - Test the Reader’s Map and representative chapters with non-specialist readers.
-  - Success means readers can explain what is written versus derived; who owes the
-    floor; why an entitlement is not delivery; what a majority may decide; and where
-    the design stops.
+- [ ] **Run pre-registered reader-comprehension and balance sessions.**
+  - Pre-register questions, coding rubric, sample and pass rule; run a pilot, revise,
+    then use a fresh holdout of non-specialists with varied reading confidence,
+    language backgrounds and accessibility needs. Treat this as usability evidence,
+    not population statistics.
+  - Include unaided prompts: What do people do in ordinary life? What may they
+    choose privately and democratically? What do public bodies do when nothing has
+    failed? How does something owed arrive and get repaired? Why is the prisoner
+    present? What remains operational or externally assumed, and what can no model
+    guarantee?
+  - Obtain informed consent; permit withdrawal; minimize and protect data; provide
+    accessible participation and fair compensation; prevent retaliation; add trauma
+    safeguards where coercive experience is discussed; and use independent ethics/
+    safety review where appropriate. Reader evidence never purchases authority over
+    the people studied.
+  - A pass requires readers to identify constructive functions as well as restraints,
+    trace one successful delivery/remedy path and one democratic choice, and
+    recognise the prisoner as a stress test. Apply the pre-registered,
+    severity-weighted misconception rule ratified by the author after the pilot; no
+    aggregate score may hide a core failure. Revise, then use a fresh holdout.
 
 ### Expansion phase 5 — Evidence, psychology, and external review
 
-- [ ] **Apply scientific and statistical discipline to every expansion.**
-  - Each new claim needs a source, an abuse case, a counterexample test, a residual
-    assumption, and an explicit uncertainty boundary.
-  - Treat group-level outcome data as feedback for institutional repair, not as a
-    measure of individual worth.
+- [ ] **Apply claim-type-specific scientific, statistical, formal, and normative
+  discipline to every expansion.**
+  - Empirical/descriptive claims need traceable data or primary sources, measurement
+    definitions, representativeness limits and uncertainty. Causal claims also need
+    an identification strategy, plausible alternatives and sensitivity analysis.
+  - Predictive/feasibility claims need calibration, baselines, held-out or robustness
+    tests, sensitivity to the reference envelope and explicit falsifiers. Formal
+    claims need definitions, executable proof or derivation where applicable,
+    countermodels/adversarial cases and a precise scope boundary.
+  - Normative claims need stated values, alternatives, trade-offs, dissent and the
+    lawful author/democratic decision owner; citation can inform but cannot prove a
+    value choice. Psychological/lived-experience claims need ethical methods and may
+    not be inferred from a formal or administrative record.
+  - Pre-register acceptance criteria where feasible; publish code, data, provenance,
+    sensitivity tests and null/negative results subject to privacy and licence. Use
+    group-level outcomes for institutional repair, never individual worth.
 
 - [ ] **Ground psychological claims without turning people into variables.**
   - Test for autonomy, voice, non-humiliation, relatedness, meaningful control,
-    retaliation, status competition, and coercive incentives.
-  - Use lived-experience review; do not infer psychology from a formal proof.
+    retaliation, status competition, coercive incentives, learned helplessness,
+    trust, care burden and the effects of being watched or scored.
+  - Use lived-experience review across ordinary and coercive institutions; do not
+    infer psychology, wellbeing or compliance from a formal proof or service record.
+  - Protect refusal and exit where compatible with others' rights; conditions may be
+    secured, but belief, eating, learning, treatment, relationship and fulfilment
+    may not be compelled or certified.
 
-- [ ] **Run a multidisciplinary red-team before calling the redesign complete.**
+- [ ] **Run a multidisciplinary and lived-experience red-team before completion.**
   - Include constitutional law, public administration, disability/accessibility,
-    public health, economics, data governance, and people affected by coercive
-    institutions.
+    public health, care/childhood/ageing, labour and enterprise economics, consumer
+    and civil justice, policing/prison, media/science/culture/religious pluralism,
+    local/migration/indigenous governance, defence/foreign affairs, infrastructure,
+    ecology, data/AI governance, quantitative modelling and people directly affected
+    by the relevant institutions.
+  - Ask each reviewer to identify omitted domains, unowned dependencies, hidden
+    liveness assumptions, private-power blind spots, impossible operations,
+    totalising rules and narrative distortions. Every finding is fixed, classified
+    out with reasons, or retained with severity, owner and consequence. A critical
+    unresolved finding blocks the affected public claim; “disclosed” is not “safe”.
 
 ### Explicitly rejected expansion proposals
 
@@ -337,21 +1036,124 @@ route, or remedy current law.
 - Adding formal-language explanations, histories, or implementation detail throughout
   derived chapters instead of using the existing Part V/method boundary.
 - Treating a transition roadmap, full operational economy, record-storage technology,
-  or implementation logistics as Book 1 prose. The 2026-08-03 mandate adds
-  constitutional interfaces—not their operating machinery—to Book 1 scope.
+  or implementation logistics as Book 1 prose unless the author replaces the current
+  seam. The destination may specify complete functional interfaces without pretending
+  to staff, fund, build or deploy them.
+- Treating exhaustiveness as permission to regulate every harmless private practice.
+  Unauthorised public power fails closed; unclassified harmless private life defaults
+  to freedom.
+- Asking Nibli, a spreadsheet, a simulation, an empirical registry, or a reader study
+  to prove the domains assigned to the other assurance methods.
+- Declaring narrative balance from word counts, sentiment, demographic decoration or
+  a fixed prisoner/non-prisoner quota without reviewed context and reader evidence.
 
-### Expansion completion standard
+### Expansion completion standard — cumulative gates, not one finish line
 
-The redesign is ready only when:
+These gates are cumulative but not interchangeable. They follow the currently
+recommended two-book seam and must be revised if the volume/edition ruling changes
+it. Gates D and E are project-level reference gates; their executable work lives
+only in the inactive `book-2/TODO.md`. The author-gated ruling assigns the exact
+public label at each gate, and a later formal or reader test cannot substitute for
+missing operational evidence.
 
-- every constitutional domain has a completed coverage-matrix row;
-- the Book 1/Part V/Book 2 seam is visible and honest;
-- the full verification suite and new adversarial tests pass;
-- no material floor is gated by a mutable status or a provider’s self-certification;
-- ordinary readers can follow the core argument without formal-methods training; and
-- reviewers can identify both the system's guarantees and external trust assumptions
-  without reconstructing them from scattered chapters.
+#### Gate A — Scope and assurance foundation
 
+- the canonical source covers every material domain, role, power, dependency,
+  scenario and claim, or visibly classifies it out with reasons;
+- all projections regenerate from that source; unresolved items carry severity,
+  consequence, owner and closure condition, and critical gaps block the affected
+  claim;
+- the versioned reference envelope, assurance allocation, stopping rule and
+  decision briefs are reviewable; and
+- independent scope reviewers can propose no omission that is neither added,
+  classified out nor retained as an explicit severity-rated limit.
+
+**Permitted claim:** the project has a versioned, reviewable map and test program.
+It has not yet described or operated a complete society.
+
+#### Gate B — Expanded Book 1 constitutional/social destination
+
+- every applicable right, liberty, public function/power, expressly bound private
+  power, record and commons condition has a complete contract card, owner,
+  adversarial case, counterfactual and accurate reader account;
+- every floor has unconditional accessible delivery, recipient-side access/receipt
+  evidence, continuity, remedy and corrective-control interfaces without pretending
+  Book 1 supplies capacity;
+- every public body performs an ordinary function and is independently checked; the
+  democratic corridor and residual private/civic free field are explicit; and
+- domain journeys, collisions and shocks establish the claimed constitutional
+  invariants, lawful narrowing, challenge, restoration and model boundaries, with no
+  critical constitutional, equality, safety or hidden-power gap.
+
+**Permitted claim:** subject to the edition ruling, Book 1 describes a comprehensive,
+versioned constitutional and social destination. It does not establish staffing,
+resources, feasibility, deployment or outside liveness.
+
+#### Gate C — Book 1 reader and public-edition readiness
+
+- the full verifier, generated closure/reader audits, adversarial cases,
+  accessibility checks and multidisciplinary/lived-experience red-team pass;
+- each governed/provided domain has applicable ordinary-success, failure and
+  recovery coverage; each protected private/civic domain has agency,
+  non-interference, evidenced-harm and recourse coverage; and no non-carceral domain
+  is explained only through prison, punishment or institutional failure;
+- a fresh holdout passes the author-ratified, pre-registered comprehension and
+  balance rule without an aggregate score hiding a core misconception; and
+- readers can identify normal functions, freedoms, democratic choices, guarantees,
+  remedies, Book 2 dependencies and external assumptions without reconstructing them
+  from scattered chapters.
+
+**Permitted claim:** Book 1 passed the declared accessibility and balance
+protocol for the tested sample; the evidence supports suitability for the declared
+audience within stated sampling and method limits. It is evidence about the book,
+not proof that the society works.
+
+#### Gate D — Book 2 operational model
+
+- every Book 1 interface has a costed, staffed and accountable operator/model, a
+  visible external assumption, or “Book 2 operation not applicable” where the
+  protected condition is non-operation/non-interference; any recourse operation is
+  mapped separately, and the reference envelope is calibrated and versioned;
+- all applicable operational domains in the canonical generated set—including
+  material/care, economy, equality/life course, democracy/integrity/statistics,
+  justice/safety/defence/external relations, ecology, knowledge/free life, records/
+  technology, transition, gameability and reader experience—meet their
+  pre-registered adequacy, accessibility/equity, continuity, resilience,
+  sustainability and fiscal/resource-feasibility thresholds in ordinary and
+  declared shock cases;
+- the Book 2 reader/lived-operation view covers ordinary agency,
+  maintenance, failure/degradation and recovery and passes its declared
+  comprehension/balance protocol for the tested sample;
+- models publish code/data, uncertainty, sensitivity, negative results, capacity
+  and failure boundaries; simulations and pilots state external-validity limits; and
+- any unresolved critical floor, equality, safety, capacity, feasibility,
+  hidden-power or cross-domain dependency gap blocks the affected operational claim.
+  A non-critical residual needs severity, consequence, owner, closure condition and
+  an explicit public-claim limitation.
+
+**Permitted claim:** Book 2 supplies a reproducible operational design within the
+named envelope. It is not evidence of deployment or a timeless social theorem.
+
+#### Gate E — Integrated two-book full-society claim
+
+- every guarantee and democratic choice crosswalks to its operational path and
+  back; each private-freedom boundary crosswalks either to enabling/recourse
+  operations or to an explicit non-operation/non-interference disposition;
+  constitutional rules survive operational scarcity and operations respect floors,
+  liberties, equality, democracy, privacy and commons;
+- cross-domain journeys and compound shocks pass their declared safety, continuity,
+  recovery and feasibility gates with no hidden critical assumption;
+- an integrated reader test can identify ordinary life, agency, maintenance,
+  constraints, failure and recovery across both books without reducing Book 2 to a
+  crisis/cost manual; and
+- independent constitutional, operational, scientific, lived-experience and
+  accessibility reviewers can reproduce applicable analyses, audit provenance and
+  methods for non-reproducible evidence, and identify residual limits.
+
+Only this gate permits the bounded claim that the two-book project models a fully
+functional society for the declared envelope. The claim remains versioned,
+falsifiable and open to the stopping rule; it never means every harmless private life
+is prescribed or every external condition is controlled.
 
 ---
 
@@ -584,9 +1386,12 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 ## book-2
 
 book-2 has its own tracker: `book-2/TODO.md` — unordered until its chapters are
-decided, seeded from the hold list that used to live here plus the adoption reviews
-(`reviews/adoption_reviews.md`). The discipline is unchanged: **do not work book-2 items
-while book-1 is active**; collect there, rule here.
+decided, seeded from the hold list, adoption reviews, and the 2026-08-05
+full-society operational completion contract. The discipline is unchanged:
+**do not work book-2 items while book-1 is active**; collect there, rule here.
+Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner
+or an explicit external assumption so the seam cannot hide an unfunded,
+unstaffed, unmeasured or physically impossible promise.
 
 ---
 
