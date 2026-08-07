@@ -111,23 +111,6 @@ Scope inventory, gap discovery, evidence collection and neutral option briefs ma
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
 
-- [ ] **[AUTHOR-GATED] Rule the full-society volume, edition, and stopping boundary.**
-  - **Recommended:** the two books jointly satisfy the full-society mandate. Book 1
-    gives the complete destination—constitutional invariants, democratic steering,
-    protected private/civic life, institutions, and normal/failure/recovery
-    interfaces. Book 2 gives costed operations, transition, capacity, technology,
-    and empirical feasibility. Neither volume claims the other half.
-  - Alternatively, explicitly expand Book 1 again and replace the current
-    constitutional-interface and E2 + P1 + D2 completion contract.
-  - Rule two questions independently: the earliest gate at which Book 1 — First
-    Edition may ship, and the exact public claim permitted at every gate.
-    **Recommended:** ship Book 1 only after Gate C; reserve “models a fully functional
-    society” for Gate E after Book 2 and integrated evidence pass.
-  - Adopt a versioned stopping rule: an external reviewer may propose a missing
-    domain, role, dependency, or failure; the project must add it, classify it out
-    with reasons, or record it as an unresolved limit. Never claim timeless social
-    exhaustiveness.
-
 - [ ] **[AUTHOR-GATED] Rule the constitutional state form and political
   membership.**
   - Choose the legislative structure, executive/government form, constitutional-
