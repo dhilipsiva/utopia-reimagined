@@ -106,12 +106,17 @@ grammar for Phase 2, not a derivation, a claim that the named classes are
 exhaustive, or current formal coverage. Liberty limits bind public power directly
 and public institutions are responsible for preventing, investigating, and
 remedying private interference; no general private horizontal effect is implied.
-The later equality ruling expressly binds its named public-facing private domains;
-any other future direct private duty must still be named expressly.
+The equality ruling expressly binds its named public-facing private domains. The
+later economic ruling adds independently triggered, function-specific public-like
+duties for essential, dominant, gatekeeping, dependency-producing, locked-in, or
+no-meaningful-exit private functions. Neither is a general horizontal effect; any
+other direct private duty must still be named expressly.
 Property is a conditional liberty bounded by floors and commons. Merit,
 recognition, contribution, qualifying thresholds, and personal scores may not be
-allocation keys for material security, standing, authority, political voice, or
-property/commons access. Commons and future-condition claims have standing for
+allocation keys for the unconditional floor, standing, authority, political
+voice, or commons access. Purpose-limited contribution records may calculate a
+separately enacted above-floor insurance supplement but may not read `reward` or
+become a worth score. Commons and future-condition claims have standing for
 any present person and an independently checked public guardian; the guardian's
 authority, evidence, independence, and removal remain Class 6/7/9 contract work.
 Structural refusals remain cross-cutting walls, not ordinary subject-matter
@@ -267,10 +272,145 @@ population-statistics, identity-authentication, or institutional-liveness system
 The controlling record is
 `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
 
+**The economic-pluralism and protected-private-sphere settlement is
+author-ratified (2026-08-07): bounded plural economy + protected voluntary
+sphere.** Public, cooperative, commons, mutual, nonprofit, household, and private
+arrangements are lawful; no form receives constitutional priority, guaranteed
+share, profit, bailout, immunity, or monopoly. Democratic law chooses their mix
+above the floor. Property, contract, enterprise, prices, accumulation, taxation,
+and regulation remain conditional on standing, floors, substantive equality,
+labour rights, core liberties, due process, anti-domination, remedy, and commons
+limits. This does not enlarge the unamendable corridor beyond standing,
+equality, the floor, due process, core liberties, and protected commons; other
+economic rules remain constitutional but amendable only inside that corridor.
+Price and lawfully held wealth may mediate ordinary above-floor private-property
+transfers. `reward`, recognition, merit, a qualifying threshold, a personal
+score, and raw work or contribution facts may not directly qualify property
+access. A separately adjudicated wage or equity claim may support an ordinary
+transfer; a purpose-bound grant, prize, or supplement uses separate equality-
+compatible criteria. This expressly refines the broader 2026-08-03 property
+wall without erasing its historical rationale or reopening recognition, merit,
+score, threshold, or raw-contribution qualification. A provider label never
+transfers the public duty to finance, secure, and maintain the noncontributory
+floor. Price and ability to pay cannot gate it, and
+cash, vouchers, or insurance count as delivery only where independent recipient-
+side evidence establishes timely, accessible, adequate real access.
+
+People may choose, refuse, leave, and change work without losing the floor.
+Ordinary labour protections cover every ownership form and voluntary custody
+work; worker status follows actual control and dependency, not a contractual
+label. Narrow, reviewed minimum-service rules may protect life, health, safety,
+or the floor, but they bind provider or bargaining-party continuity and may not
+conscript a named worker, criminalize individual refusal, or withdraw the floor;
+blanket strike bans are refused. Licensing requires evidenced
+serious safety, fiduciary, or core-public-function risk, accessible alternative
+proof, portability, review, expiry discipline, and anti-cartel safeguards.
+Above-floor compensation, profit, savings, returns, grants, prizes, subsidies,
+and bounded incentives are lawful but remain wholly separate from `reward`,
+`false`, and `lose`; recognition stays binary, arity-one, non-ranked, and
+unread.
+
+Property and inheritance are conditional liberties. Personal possessions,
+ordinary home use, plural tenure, and lawful productive activity receive strong
+security without creating a right to a particular asset. Eviction or foreclosure
+that threatens the housing floor requires legality, hearing, proportionality,
+review, and real public continuity. Acquisition requires compatible public
+purpose, necessity, reasons, hearing, review, and reliance-sensitive
+compensation; unlawful privilege, windfall, penalty, and remediation liability
+do not generate compensation. Public power and political weight cannot be
+inherited. Statutory knowledge exclusivity remains time-bounded, may not block
+a floor or commons duty, and must yield through an effective compatible access
+route chosen by democratic law.
+
+Contracts remain voluntary but cannot enforce deception, coercion,
+unconscionable dependency, material non-disclosure, or waivers of protected
+rights. Enterprises receive only functional legal capacities, never human
+standing, a floor, ballot, candidacy, or inherent political weight. Limited
+liability is a regulated privilege. Enterprise petition, testimony, and
+attributed publication remain lawful; an enterprise treasury may not fund
+candidates, parties, or purchased independent electoral advocacy. Associated
+people retain their rights; unions and genuinely voluntary civic/advocacy
+associations need a separate Class 5 finance card that prevents relabeling.
+Existing equality duties attach in their named domains without a dominance
+finding. Additional public-like duties require an independent, contestable
+finding tied to a public-facing, essential, delegated, gatekeeping, or
+systemically controlling function, using essentiality, dominance, network
+effects, dependency, lock-in, information asymmetry, or lack of meaningful exit
+as evidence.
+Intimate dependency alone does not create public-scale status; coercion and
+captivity remain subject to justice and public protection. The calibrated duties
+may require access, continuity, reasons, portability, interoperability, audit,
+challenge, and remedy.
+
+Voluntary gifts, pooling, care, domestic production, mutual aid, lawful exchange,
+belief, culture, worship, friendship, intimacy, and association are protected
+from prescription, outcome certification, and social scoring. Each person keeps
+independent floor access, legal capacity, confidential help, and free exit; no
+family, household, association, or charity is presumed to supply the floor.
+Privacy does not shelter violence, forced labour, confiscation, document control,
+economic captivity, obstructed help, or denial of exit.
+
+The tax system as a whole reflects capacity to contribute while democratic law
+chooses rates, bases, and instruments. Collection cannot make a person floorless
+or use debt imprisonment. Public finance requires legislative source, reporting,
+audit, and fiscal-risk disclosure; there is no constitutional balanced-budget
+rule or numeric debt ceiling, and debt cannot subordinate floors or commons.
+The common tier maintains the public unit of account and accessible payment
+backbone, including a non-digital route. Bounded monetary independence carries
+published-reason, distributional-review, audit, and no-fiscal-veto duties. There
+is no general right to credit. Contribution-based insurance may supplement but
+never replace the floor. Personal insolvency provides a fresh start, wages and
+pensions receive an effective protection route, shareholders bear residual risk,
+and essential services continue through failure.
+
+Genuine physical scarcity requires an authenticated, contestable, resource-
+specific finding after reasonable alternatives, reserves, substitution,
+coordination, and assistance are considered. Budget choice, price exclusion,
+delay, artificial withholding, monopoly, and refusal to procure are failures,
+not scarcity. Preserve each person's constitutional minimum wherever supply
+makes that possible. If it does not, never redefine a reduced ration as the
+minimum: record every unmet portion as failure and mitigate it by urgency,
+accessibility, imminent irreversible harm, continuity harm, and individualized
+resource-specific benefit after accommodation. That benefit cannot disguise a
+lifespan, disability, productivity, or social-worth ranking. Wealth,
+contribution, recognition, conviction, family status, disability stereotype,
+productivity, social usefulness, generalized lifespan, and political favour are
+forbidden priority keys; materially equal claims use a disclosed rotation or
+lottery. This ruling creates no standing emergency economic power. Every
+temporary authority needs its own source-bound temporal contract; missing
+authority evidence ends the manager, not the independent floor or essential-
+service continuity route.
+
+The economic ruling deliberately supplements the state-form competence list:
+the common tier owns the monetary/payment backbone, floor finance,
+equalisation, portability, interregional commerce and competition, insolvency
+baselines, common labour and consumer minima, and cross-regional private power.
+Residual ownership, land, enterprise, service, cooperative, municipal-enterprise,
+and local-development policy remains regional or local under subsidiarity;
+stronger subnational protection survives, while no region may lower common
+floors or safeguards or defeat portability. This is not a general commerce,
+spending, taxation, or pre-emption power.
+
+The ruling is **ratified but unimplemented**. It creates no economic predicate,
+finding, duty, remedy, institution, chapter, or public coverage claim. Book 1
+owns legal forms, limits, triggers, evidence, ordering, continuity, remedies,
+and federal competence. Book 2 owns rates, budgets, models, prices, production,
+inventories, staffing, workflows, monetary instruments, capacity, and empirical
+feasibility. Nibli may consume a minimal authenticated, adjudicated, purpose-
+bound projection through a distinct premise or result-record relation, never
+the raw economic record; a consequential predicate protected by
+`derived_only` must still be derived. Nibli neither calculates nor
+authenticates an economy, proves scarcity or action, or receives a universal
+economic score. The controlling record is
+`new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
-recognition remains non-ranked and non-operative; no provider's assertion alone
-proves delivery; and Part V cannot create a right, power, or exception. The
+recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
+incentives, and above-floor insurance use separate legal relations and never read
+`reward`; price, debt, property, employment, and insurance cannot condition the
+floor; no provider's assertion alone proves delivery; and Part V cannot create a
+right, power, or exception. The
 democratic corridor is a **ratified constitutional design rule, not yet a formal
 guarantee**: a majority chooses only among policies compatible with universal
 standing, core floors, equal protection/non-discrimination, due process, core
@@ -474,9 +614,9 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
   dependencies permit**, refreshed 2026-08-07 for the ratified full-society
-  boundary. The substantive-equality baseline is also settled. Phase 1 retains
-  open author rulings on economic/private ordering and scarcity, family/collective
-  rights, ecology/future conditions/animals, security/external power, assurance,
+  boundary. The substantive-equality and bounded-plural-economy baselines are
+  also settled. Phase 1 retains open author rulings on family/collective rights,
+  ecology/future conditions/animals, security/external power, assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
   2 holds one self-contained, read-only Nibli audit for finite collective
@@ -1018,7 +1158,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 
 These were argued out and hardened in the text; several are stated as bright lines the book calls unamendable. A chapter edit made in isolation can easily re-introduce a passage the book now explicitly refutes, so check against this list before writing about points, identity, or voting.
 
-- **Merit points are earn-only recognition** — never spent, gifted, priced, or converted. Recognition is also non-rivalrous: no fixed sectoral pools, because one nurse's acknowledgment must not come at another's expense. Inflation is controlled at the contribution level (per-task standards, caps, diminishing returns). See "What Merit Points Are—and Are Not". Scarce non-essentials above the floor are allocated by transparent non-market rules (need, rotation, waitlist, lottery), with merit only as a qualifying threshold.
+- **Merit points are earn-only recognition** — never spent, gifted, priced, or converted. Recognition is also non-rivalrous: no fixed sectoral pools, because one nurse's acknowledgment must not come at another's expense. Inflation is controlled at the contribution level (per-task standards, caps, diminishing returns). See "What Merit Points Are—and Are Not". Scarce non-essentials above the floor are allocated by transparent non-market rules (need, rotation, waitlist, lottery), with merit only as a qualifying threshold. **Superseded for Book 1 by the 2026-08-07 economic settlement:** merit or recognition cannot qualify access to a physically scarce floor essential; above-floor allocation may use compatible democratic policy but never read `reward` as price, worth, or entitlement.
 - **No negative scoring of persons.** Nobody's record is ever docked as punishment; sanctions reach *perks* through due process. Pollution and fraud are handled by regulating the enterprise — a different instrument from scoring a human being (book.md:339). **book-1 adopted this narrowed** (ruling 2026-08-02, in the settled decisions above): *no subtraction except by due process for one's own adjudicated fraud* — the wrongdoer clawback stands, the student clawback is deleted.
 - **The rights floor is never gated on identity.** *Serve first, reconcile the record afterward*; `"no record found"` must read as *pending*, never *denied*. Stated as doctrine at book.md:746 and as the first bright line at book.md:2281. Every canteen, clinic, and shelter keeps a working non-biometric path.
 - **One person, one vote is an unamendable floor.** Merit never weights votes; contribution can earn advisory voice (speaking slots, sponsorship), never a heavier ballot. book.md:2285 records the book correcting its own earlier drafts on this — don't reintroduce weighted voting anywhere.
@@ -1030,14 +1170,14 @@ Deliberately removed — don't helpfully restore them: part-intro preview lists,
 
 ## Sourcing
 
-Every statistic and named study in the book is listed under `# References & Data Sources`, grouped by chapter, with a primary source and URL. Adding an empirical claim means adding its reference there in the same commit. Don't fabricate figures — the costed-transition TODO item is author-gated precisely because it needs real fiscal magnitudes.
+Every statistic and named study in the book is listed under `# References & Data Sources`, grouped by chapter, with a primary source and URL. Adding an empirical claim means adding its reference there in the same commit. Don't fabricate figures; costed transition work belongs to Book 2 and needs real fiscal magnitudes and traceable evidence; the need for evidence is not itself an author gate.
 
 ## Vocabulary & Voice Conventions
 
 The author has deliberately standardized terminology (see git history):
 
 - **"employment"**, not "work" or "jobs" — the book redefines employment beyond salaried labor
-- **"merit points"** (lowercase in prose, "Merit Points" in headings) — the recognition system replacing wages; never call it money or currency
+- **Legacy `book.md` only:** **"merit points"** (lowercase in prose, "Merit Points" in headings) described recognition as replacing wages. Do not port that claim: Book 1 now keeps `reward` optional and non-operative while wages, compensation, returns, and supplements use separate legal relations.
 - Recurring proper concepts (legacy `book.md` only — **MVS, pods and the tech stack are all out of scope for book-1**): **MVS** (Minimum Viable Society), **YAD** (Yet Another Device — government-issued device for those without smartphones), **Proof of Personhood** (Orb-style biometric identity), **pods** (local pods → regional councils → global federation), **local-first / offline-first micro-blockchains**, **quantum-secure**
 
 **No counted claims in the prose.** Do not write "twenty-two entries", "four people have

@@ -47,10 +47,10 @@ return later as ad hoc “new rights” or “new branches.”
 | What is a class? | The functional classes named below remain. A class answers a distinct constitutional question, not a list of desirable outcomes. | Exact rule families, predicates, and chapter prose. |
 | What counts as a floor? | Class 2 contains only unconditional, actually usable minimum conditions. Bodily integrity, privacy, movement, participation, and access to records are not extra floor names merely because they matter. | Which material minimums the expanded constitution formalises. |
 | Where do power limits and remedies belong? | Class 3 limits interference; Class 4 governs accusation, coercion, contest, repair, and representation; Class 7 governs records. Keep those grammars separate. | Their shared evidence, remedy, and appeal contracts. |
-| Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Unexpressed private wrongdoing reaches justice machinery, not a floor consequence against another person. An express equality duty may create its named access or accommodation consequence, while the public continuity duty remains non-delegable. The 2026-08-07 equality ruling expressly binds employment, housing, education, health and care, finance and insurance, utilities, transport, public commerce, and dominant communication/platform services; that named family is not a general horizontal effect. | Each express private duty's rule card and matching public prevention, investigation, continuity, and remedy duty; any additional private reach still requires an express ruling. |
+| Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Unexpressed private wrongdoing reaches justice machinery, not a floor consequence against another person. The equality ruling directly binds its named public-facing domains without a dominance test. The 2026-08-07 economic ruling separately names general labour, substantive-contract, and public-service consumer duties, plus additional function-specific public-like duties after an independent public-scale-power finding tied to a public-facing, essential, delegated, gatekeeping, or systemically controlling function, using essentiality, dominance, network effects, dependency, lock-in, information asymmetry, or lack of meaningful exit as evidence. Intimate dependency alone routes coercion through justice/public protection rather than public-like transparency duties. Neither express family creates a general horizontal effect, and the public floor-continuity duty remains non-delegable. | Separate cards by direct legal effect for every equality duty, labour/contract/consumer limit, public-scale-power trigger, calibrated private duty, public continuity route, and remedy; any additional private reach still requires an express ruling. |
 | Who turns a record finding into a remedy? | Class 7 supplies evidence; Class 6 supplies an independent reader with an action duty; Class 4 supplies the contest and repair route. A referral alone is not accountability. | The particular recipient, remedy, and continuity rule for each failure. |
 | Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
-| Are economy, property, locality, migration, and external relations extra classes? | No. Split each into the relevant existing classes: democratic policy, public duty, liberty, standing, fair process, jurisdiction, and commons. Property is a conditional liberty bounded by floors and commons; a property or economic-power limit must name its direct class instead of hiding inside “economy.” Merit, recognition, contribution, or a qualifying threshold may not be an allocation or access key for property, commons, material security, standing, authority, or political voice. Both any present person and an independently checked public guardian have standing for commons/future-condition claims. | The resulting contract cards; the guardian's authority, independence, evidence, and removal controls; and the Book 2 operational seam. |
+| Are economy, property, locality, migration, and external relations extra classes? | No. Split each by direct legal effect across democratic policy, public duty, liberty, standing, fair process, records, jurisdiction, and commons. The ratified economic settlement permits plural ownership and above-floor policy inside a non-delegable floor, labour, equality, conditional-property, substantive-contract, protected-private-sphere, private-power, scarcity, and no-score boundary. Property is conditional; price and lawful wealth may mediate ordinary above-floor transfers, but `reward`, recognition, merit, a qualifying threshold, personal scores, and raw work/contribution facts cannot directly qualify property access. An adjudicated wage/equity claim or purpose-bound grant, prize, or supplement uses a distinct legal relation. Contribution may calculate a separately enacted above-floor insurance supplement but cannot gate the floor or read `reward`. Both any present person and an independently checked public guardian have standing for commons/future-condition claims. | Separate cards for each economic effect and the guardian controls; ecological ceilings remain open; rates, prices, quantities, operations, and empirical feasibility remain Book 2. |
 | What counts as delivery evidence? | **Ratified:** `teaches` + `hears` remains a narrow legacy demonstration only. Future delivery uses accessibility-neutral, recipient-side access or receipt evidence with a named authorised writer and challenge route; it must not infer learning, health, belief, or another compelled personal state. No current route is a qualifying general model. | The names, writer authority, challenge route, and evidence of each future delivery family. |
 | Are accessibility and time classes? | No. Accessibility is a cross-cutting equality condition. The staged T3 path is formal for witnessed record replacement, typed transitive event/record paths, and canonical-current case-bound Court custody. It does not supply metric duration, outside-clock liveness, or temporal limits for other powers. Missing or disputed time evidence may not create or extend restrictive public power or become a personal-time score. A continuity rule may preserve only claimant-supporting status that its independent evidence establishes; the current standing route cannot cure a missing predecessor witness. | Each class's temporal status and any additional power-specific T3 contract. |
 | What stays outside Book 1? | Operations—budgets, staffing, logistics, databases, devices, clocks, and service workflows—remain Book 2. | The evidence and costed operating case that Book 2 must supply. |
@@ -146,7 +146,7 @@ state.
 | Democracy and amendment | 5 | 6 assigns bodies; 7 supports transparent, contestable decisions. |
 | Public institutions | 6 | 4 and 7 prevent self-judging/self-auditing power. |
 | Records and accountability | 7 | 1 protects standing; 6 supplies the remedial reader/action duty; 4 supplies challenge and correction. |
-| Economy, property, work, and commons | **Split required** | 2 covers material security; 3 any property/economic-power limit; 5 compatible policy; 6 public fiscal duty; 9 commons/non-regression; recognition remains outside allocation. |
+| Economy, property, work, and commons | **Split required** | 2 covers the floor and continuity; 3 labour, property, contract, protected-private-sphere, and private-power limits; 4 enforcement, insolvency, eviction, debt, and repair; 5 compatible democratic economic choice; 6 fiscal, monetary, regulatory, and continuity duties; 7 purpose-limited records, reasons, and challenge; 8 federal portability, equalisation, and economic competence; 9 commons/non-regression. Recognition remains outside compensation and allocation. |
 | Locality, plurality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, and cross-jurisdictional duty; 3 movement/association; 1 newcomer standing; 4 migration procedure; 6 external public authority. |
 | Emergency and resilience | **Overlay, not a separate class** | It affects liberty, fair process, democracy, institutions, and records, but remains constrained by standing, floors, the common baseline across places, and non-destruction. |
 | Ecology and future people | 9 | 5 chooses compatible policy, not the right to exhaust the common condition. |
@@ -167,9 +167,11 @@ structural refusal instead limits what *form of rule* may exist across subjects.
 1. **Equal access and accessibility:** disability, language, cost, geography,
    digital exclusion, age, and ability to self-advocate cannot make a person
    less protected. Equal standing can require unequal resources.
-2. **No reciprocal floor:** no material floor may depend on work, virtue, wealth,
-   citizenship, documentation, score, compliance, contribution, testing, or
-   official approval.
+2. **No reciprocal floor:** no material floor may depend on work, virtue,
+   price, wealth, debt, property, employment, contract, insurance, citizenship,
+   documentation, score, compliance, contribution, testing, or official
+   approval. A purpose-limited contribution record may calculate only a
+   separately enacted above-floor supplement.
 3. **Conditions, not compelled states:** a floor can secure nourishment, care,
    shelter, learning access, communication access, and freedom from imposed
    isolation. It cannot compel eating, health, belief, speech, achievement, or
@@ -180,10 +182,14 @@ structural refusal instead limits what *form of rule* may exist across subjects.
    side access/receipt evidence is a future target; the legacy `teaches` +
    `hears` route does not meet it because neither the writer nor validation of
    `hears` is controlled today.
-5. **No social score by another name:** recognition remains optional, non-ranked,
-   and unread by standing, entitlement, authority, political weight, liberty,
-   remedy, or allocation. Operational assessments may not enter the constitutional
-   record or feed those consequences.
+5. **No social score by another name:** recognition remains optional,
+   arity-one, non-ranked, and unread by standing, the floor, authority,
+   political weight, liberty, remedy, compensation, or allocation. Wages,
+   returns, grants, prizes, subsidies, incentives, and contribution-based
+   supplements use separate, purpose-limited relations and never read `reward`.
+   Operational assessments may not enter the canonical consequential person
+   record or become productivity, deservingness, contribution, employability,
+   risk, or worth scores.
 6. **Separation of functions:** no actor may assert decisive case facts, decide
    their consequence, execute it, audit itself, and provide final remedy alone.
 7. **Accountability has a reader:** an audit or record finding must reach an
@@ -223,6 +229,7 @@ does it describe the machinery that produces an outcome?**
 | --- | --- |
 | “Every person can challenge a failed delivery and receive continuity while it is resolved.” | Intake forms, staffing, food distribution, facilities, queues, and escalation software. |
 | “A public body must maintain the floor without discriminatory conditions.” | Tax rates, budget totals, procurement, capacity models, and provider contracts. |
+| “Plural lawful forms remain bounded by labour, property, contract, private-power, scarcity, continuity, and remedy rules.” | Rates, prices, budgets, reserves, production, inventories, monetary instruments, staffing, queues, workflows, and empirical feasibility. |
 | “No public record may determine standing without a challenge and correction path.” | Storage architecture, cryptography, identity recovery, devices, and security practice. |
 | “Majorities choose only among rights-compatible policies.” | Ballot design, tally systems, campaign regulation, and deliberation logistics. |
 
@@ -278,6 +285,11 @@ This ratification preserves these conclusions:
 - Emergency is an overlay, not an exception that swallows the constitution.
 - Democratic choice is real, but bounded by standing, floors, liberties, fair
   process, and commons.
+- Economic pluralism protects democratic choice among lawful forms and harmless
+  voluntary private life without making price, property, contract, enterprise,
+  contribution, insurance, or scarcity an escape from the floor or a score.
+  Its provisions are not all unamendable: only standing, equality, floor, due-
+  process, core-liberty, and protected-commons content inherits the corridor.
 - Absence from a roster or document may not block immediate floor access; status
   correction follows separately.
 - The current Article 1 firewall is not reclassified, rewired, or weakened until
@@ -295,13 +307,15 @@ This ratification preserves these conclusions:
 
 ## Ratification record
 
-- [x] **Horizontal reach ratified (2026-08-03; first express private family
+- [x] **Horizontal reach ratified (2026-08-03; express private families
   added 2026-08-07).** Public power is directly bound; public institutions must
   prevent, investigate, and remedy private interference. No general private
-  horizontal effect is implied. The equality ruling expressly binds its named
-  public-facing private domains; each direct private prohibition and matching
-  public protection duty must receive separate cards by direct legal effect
-  across every applicable named class rather than one omnibus equality rule.
+  horizontal effect is implied. Equality directly binds its named public-facing
+  domains without a dominance test. The economic ruling separately adds general labour, substantive-contract,
+  and public-service consumer duties plus triggered, function-specific public-
+  like duties. Every direct private prohibition, trigger, calibrated duty, and
+  matching public protection or continuity duty receives separate cards by
+  direct legal effect, never one omnibus equality or economy rule.
 - [x] **Delivery abstraction ratified (2026-08-03).** `teaches` + `hears` remains
   legacy-only. Future routes use accessibility-neutral, recipient-side
   access/receipt evidence with an authorised writer and challenge route, and do
@@ -312,6 +326,22 @@ This ratification preserves these conclusions:
   allocation or access gate for property, commons, material security, standing,
   authority, or political voice. Any present person and an independently checked
   public guardian have standing for commons/future-condition claims.
+- [x] **Economic property refinement ratified (2026-08-07).** This expressly
+  narrows the earlier property's allocation-key sentence without rewriting its
+  historical rationale. Price and lawfully held wealth may mediate ordinary
+  above-floor private-property transfers. Adjudicated wage/equity claims and
+  purpose-limited grants, prizes, subsidies, restitution, and contribution-based
+  supplements use distinct equality-compatible legal relations. `reward`,
+  recognition, merit, a qualifying threshold, personal scores, and raw work or
+  contribution facts still cannot directly qualify property access; none may
+  gate the floor, commons, standing, authority, or political voice.
+- [x] **Economic pluralism and protected private sphere ratified (2026-08-07).**
+  The bounded plural ownership settlement, non-delegable floor, labour and
+  contract limits, conditional property, function-specific private-power duties,
+  fiscal and monetary limits, insolvency continuity, genuine-scarcity meta-rule,
+  and protected voluntary sphere are chosen author policy, not derived taxonomy
+  results. They add no current predicate, duty, remedy, institution, or coverage
+  claim and must be split into direct-effect cards.
 - [x] **Functional classes ratified (2026-08-03).** This adopts the named
   functional classes, economy/locality/external splits, emergency overlay,
   record-to-remedy classification, and accessibility, T3, and structural walls

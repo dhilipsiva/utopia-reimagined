@@ -44,6 +44,16 @@ limits separately ratified by the later security/external-power ruling. This
 decision allocates the tier, not the still-open substance. Exact programmes,
 rates, budgets, facilities, staffing, and coordination workflows remain Book 2.
 
+The separately ratified economic-pluralism decision deliberately supplements
+that enumeration. The common tier owns the monetary and accessible payment
+backbone, floor finance, equalisation, portability, interregional commerce and
+competition, insolvency baselines, common labour and consumer minima, and cross-
+regional public-scale private power. Residual ownership, land, enterprise,
+service, cooperative, municipal-enterprise, and local-development policy remains
+regional or local under subsidiarity. Stronger subnational protection survives;
+coordination, equalisation, commerce, spending, taxation, and pre-emption cannot
+become unlimited common powers or withholding leverage.
+
 Regions have proportionally elected legislatures and constitutionally protected
 residual authority. Local self-government and its minimum competences are
 guaranteed, not merely delegated at pleasure. Regions may choose subnational
@@ -325,6 +335,13 @@ consent. The amendment card must bind the authenticated Council and regional
 rosters before formalisation. These approvals do not legalise an amendment that
 violates the unamendable corridor.
 
+The separately ratified economic decision adds an enterprise-only Class 5 limit:
+assets held through statutory enterprise capacities may not fund candidates,
+parties, or purchased independent electoral advocacy. Associated people retain
+their individual rights. This does not silently decide union or genuinely
+voluntary civic/advocacy association finance; a separate card must prevent
+enterprise relabeling while preserving equal ballots and association.
+
 A constitutional initiative by electors may force a public docket and
 recorded Assembly vote. It cannot bypass the Assembly's two-thirds threshold.
 Here “citizen initiative” is a conventional label for an elector-initiated
@@ -550,6 +567,12 @@ narrative, or reader-evidence ruling.
 The substantive-equality and anti-subordination baseline was separately
 author-ratified on 2026-08-07. It remains unimplemented and does not alter this
 decision's state-form or political-membership scope.
+
+The bounded-plural-economy and protected-private-sphere settlement was also
+separately author-ratified on 2026-08-07 and remains unimplemented. This state-
+form ruling itself did not choose an economic order; the later ruling alters it
+only through the expressly added common competences above and preserves regional
+and local residual authority.
 
 ## 12. Ratification record
 

@@ -121,8 +121,10 @@ It also expressly binds private actors when they control access through:
 
 Actor size may affect which accommodation is unduly burdensome and how a remedy
 is delivered. It does not create permission to discriminate in a bound domain.
-The later economic/private-order ruling may add public-like duties for
-concentrated power; it may not retract this equality duty.
+The separately author-ratified economic/private-order decision adds
+function-specific public-like duties for independently established concentrated
+or essential power; it does not retract this equality duty or make dominance a
+condition of equality protection.
 
 Public institutions must also prevent, investigate, and remedy private
 interference with protected equality outside those directly bound domains, using
@@ -556,7 +558,10 @@ universally compelled by those sources.
 This ruling does not prescribe equal income or identical outcomes, set quota or
 statistical thresholds, create a reparation formula, decide family or cultural
 membership, settle the economic order, create an identity registry, operate an
-equality programme, or prove real-world equality.
+equality programme, or prove real-world equality. The separate economic-
+pluralism and protected-private-sphere decision, author-ratified later on
+2026-08-07, now settles that distinct planning scope without changing this
+ruling's historical rationale or formal status.
 
 ## 16. Ratification record
 
