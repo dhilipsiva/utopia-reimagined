@@ -185,6 +185,27 @@ ratified sources, limits, defaults, and prohibitions; they are not open author
 policy.
 Leaving those bounds requires a new author ruling.
 
+The finite collective-decision boundary was measured on 2026-08-07 and
+independently rechecked on 2026-08-08 against Nibli `a7d288a`, which contains
+the required `4cb02aa` baseline. For definitive finite positive queries, Nibli
+can observe exact facts in a supplied snapshot, find/count witnesses, aggregate
+supplied weights, and compose supplied result certificates. It cannot generically
+derive `ceil(2R/3)`, compare dynamic
+tallies or shares, group affected regions, authenticate completeness, choose one
+effective conflicting submission, or perform an institutional act. Exact-count
+and compute nodes are query-only; a hand-enumerated two-of-three rule is not a
+changing-roster majority rule. The external result pipeline keeps four roles
+separate: election administration authenticates and classifies submissions;
+independent assurance attests completeness; the result service computes and
+certifies; authorised institutions execute. Missing completeness can become a
+withholding veto, so every route needs alternate attestation and a failure
+default. "No turnout quorum" is an absent legal condition, not an engine
+primitive. No general empty-roster passage rule was supplied; each Book 1 result
+card must state that default before formalisation. The unsafe raw non-definitive
+witness-enumeration path is excluded.
+`FALSE` does not affirmatively preserve current law or an incumbent.
+See `new-book-plans/nibli-finite-collective-decision-capability-audit.md`.
+
 The ruling is **ratified but unimplemented**: it adds no predicate, rule, pin,
 body in law, chapter, or public coverage claim. `mature`, `decide`, `choose`, `broken`,
 `approves`, `authority`, and every current institutional constant and

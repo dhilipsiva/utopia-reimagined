@@ -436,7 +436,7 @@ challenge and recount route, correction, independent certification, and
 source/version effect. The current `approves(Electorate, amendment)` fact
 supplies none of this.
 
-The constitutional result service must distinguish a proposal, submitted
+The constitutional result pipeline must distinguish a proposal, submitted
 choices, a tally, a compatibility decision, a certificate, and the source
 transition the certificate authorises. Missing approval or review never counts
 as approval.
@@ -449,6 +449,33 @@ An incomplete roster is indistinguishable to the reasoner from a genuinely
 smaller roster without that separate assurance. Nibli may reason only from the
 exact supplied premises it is qualified to use; neither a record nor a green pin
 proves that every eligible resident was included.
+
+The completed finite collective-decision audit fixes the implementation seam.
+For definitive finite positive queries, Nibli can observe exact facts in a
+supplied snapshot, find/count witnesses, aggregate supplied weights, and
+compose supplied certificates. It cannot
+generically compute a changing roster's two-thirds threshold, compare dynamic tallies or
+shares, group affected regions, decide a legal default, authenticate
+completeness, or choose one effective record from conflicting submissions. A
+fixed hand-enumerated rule is not a roster-parametric election rule.
+
+The external result pipeline keeps four roles separate. Election
+administration authenticates and classifies submissions; independently authored
+assurance attests completeness; the result service computes and certifies under
+this decision's legal rules; and authorised institutions perform removal,
+installation, transfer, or any other legal act. Each bounded certificate is a
+trust-root premise to Nibli, not something a proof authenticates. Completeness
+needs redundant or alternate writers because withholding it can block authority.
+
+This decision makes a tie fail where it expressly says so, but supplies no
+universal empty-roster passage rule. Each formal result card must state its own
+zero-roster legal result. "No turnout quorum" means no turnout condition appears
+in the legal test; it is not an engine primitive. Failure, tie, and persistence
+consequences require positive certified outcomes and positive legal rules:
+Nibli `FALSE` does not itself preserve a law, office, or ordinary term. The
+unsafe raw non-definitive witness-enumeration path is excluded.
+See
+[`nibli-finite-collective-decision-capability-audit.md`](nibli-finite-collective-decision-capability-audit.md).
 
 ## 9. Formal migration and prose impact
 
