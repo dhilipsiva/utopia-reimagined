@@ -118,6 +118,74 @@ rules: Article 1's firewall, `admits`, `derived_only`, and verifier guards keep
 their own enforcement and test obligations. This ruling adds no predicate, duty,
 or present remedy.
 
+**The constitutional state form and political membership are author-ratified
+(2026-08-07): federal constitutional parliamentary republic + residence-first
+membership.** The common/federal, regional, and local tiers are protected;
+common powers are enumerated by category, irreducible local competences are
+constitutionally reserved, and regions hold the remainder under a justiciable
+subsidiarity rule,
+while no tier may lower universal standing, the material floor, equality, due
+process, core liberties, or commons limits. The common institutions are a
+population-proportional People's Assembly, a Regions Council of proportionally
+delegated regional legislatures with equal aggregate regional weight and only a
+suspensive ordinary-law veto, a collective Assembly-dependent
+Executive Council, a non-executive Civic President, ordinary courts plus a final
+Constitutional Court, and separately checked electoral, audit/integrity,
+ombudsperson, and appointments functions. Subnational variation remains inside
+the common corridor and protected local self-government.
+
+Equal regional Council weight is an express territorial exception to population
+weight, confined by the Council's limited mandate; it is not a second popular
+chamber or an unqualified claim of equal individual weight in both chambers.
+
+Ordinary residence creates political membership; the single general legal-
+adulthood status adds an equal vote and candidacy at the person's one political
+home per tier. Citizenship, immigration classification, property, documents,
+wealth, contribution, and residence duration add no electoral weight or gate.
+Registration is evidence, not the source. A person with several qualifying
+connections chooses one nested home; custody, institutional placement, eviction,
+or forced displacement cannot move it by itself. Each decision permits at most
+one person-bound effective submission across jurisdictions. Nonresidents keep
+universal rights but receive no ballot; a former resident retains the right to
+return without gaining a diaspora vote. Conviction or custody alone removes
+neither franchise nor candidacy. The later family/life-course ruling owns the
+general adulthood status: this ruling supplies no numeric age or separate
+`mature` gate.
+
+The Assembly removes a government only by choosing its successor. Direct recall
+is limited to directly elected single-holder offices and chooses the replacement
+on the same ballot. Constitutional amendment requires two-thirds of the full
+People's Assembly and more affirmative than negative valid national referendum
+votes, with no turnout quorum; regional competence or boundary changes also
+require Regions Council and each directly affected region. An elector initiative
+may force a constitutional docket and recorded Assembly vote but cannot bypass
+the two-thirds threshold. Secession is negotiated, rights-reviewed, and finally
+ratified, never unilateral; this settles the internal federal path, while the
+later security/external-power ruling retains external recognition, defence,
+cross-border status, and international obligations. Budget, formation, review,
+appointment, succession, and transfer failures may not extend ordinary power or
+suspend the floor. A T3 contract may end legal effect on supplied time evidence;
+it cannot advance a clock or cause an election.
+
+Appointments use open nomination, reasoned screening, divided sources,
+staggered nonrenewable mandates, cause-only removal, and independently
+challengeable concentration. Majority appointment control by one current
+government, chamber, party coalition, profession, or appointing source is a
+legal incompatibility; divided sources do not by themselves prove its absence.
+This is a design against capture, not a claim that capture becomes impossible.
+The remaining office-term numbers, seat allocations, electoral metrics, and
+finite fallback mechanics are delegated implementation choices inside the
+ratified sources, limits, defaults, and prohibitions; they are not open author
+policy.
+Leaving those bounds requires a new author ruling.
+
+The ruling is **ratified but unimplemented**: it adds no predicate, rule, pin,
+body in law, chapter, or public coverage claim. `mature`, `decide`, `choose`, `broken`,
+`approves`, `authority`, and every current institutional constant and
+consumer route require explicit retain/replace/retire cards; custody T3 supplies
+no office term or election clock. The controlling record is
+`new-book-plans/book-1-state-form-and-political-membership-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains non-ranked and non-operative; no provider's assertion alone
@@ -325,8 +393,8 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
   dependencies permit**, refreshed 2026-08-07 for the ratified full-society
-  boundary. Phase 1 retains open author rulings on state/membership,
-  substantive equality, economic/private ordering and scarcity, family/collective
+  boundary. Phase 1 retains open author rulings on substantive equality,
+  economic/private ordering and scarcity, family/collective
   rights, ecology/future conditions/animals, security/external power, assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase

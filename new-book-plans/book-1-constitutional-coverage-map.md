@@ -59,11 +59,11 @@ social outcome.
 | Material floor | **Partial:** `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` are unconditional entitlements. | Adequate food, water/sanitation, home/utilities, health and care, material security, learning/information, accessibility, and voluntary social life. | Partial formalisation; ratified scope, contract pending. | Only learning has a non-carceral arrival route; confinement can derive limited shelter/speech. The legacy `hears` route is not qualifying general delivery evidence. Every future route needs accessibility-neutral, recipient-side access/receipt evidence with an authorised writer and challenge route; it may not assert a personal outcome. |
 | Liberty and personal integrity | **Partial:** belief/expression are floor names; some evidence gates and confinement-specific limits exist. | Bodily integrity, privacy, conscience, expression, association, movement, family life, and equal treatment. | Partial formalisation; ratified scope, contract pending. | A floor name is not a general limit on power. Future liberty rules bind public power directly; public institutions must prevent, investigate, and remedy private interference. A direct private prohibition exists only where a rule names it expressly. |
 | Justice and coercion | **Partial:** evidence gates, conviction, placement, forgiveness, release, and case-bound current custody authority are formalised. The custody gate rejoins witnessed case-subject, Court-holder, Court-judgment, and injury-victim evidence. | Legality, notice, advocate/counsel, hearing, impartial review, proportionality, least-coercive response, repair, conditions, and reintegration. | Partial formalisation; ratified scope, broader contract pending; narrow T3 custody path implemented. | Civil disputes, child representation, enforcement limits, conditions, reintegration, and administration are missing. The T3 rule gates custody on the exact witnessed case basis and current review; it supplies neither metric duration nor an outside guarantee that a later record or review arrives. |
-| Democracy and amendment | **Partial:** vote, recall, proposal, approval, and declared-target label verdicts exist. | Equal political status; public reasons; majority rule inside constitutional limits; constitutional amendment and review. | Partial formalisation; democratic corridor ratified, contract pending. | The current machinery does not authenticate the approval writer, tally, certificate, recount, challenge, or correction; bind a proposal to an exact source change; review semantic effects; identify an independent compatibility reviewer; or apply an authenticated effective-version transition. The bounded audit executes only label/effect counterexamples, including an honestly blocked label beside a manually applied deletion; it supplies none of those controls. Office and locality vocabulary also remain absent. |
-| Public institutions | **Partial:** named judicial/review actors and audit roles appear; Court custody has a canonical-current, source-bound authority gate with independently witnessed case and lease evidence. | Legislature, civic/electoral body, provision/treasury, justice/appeal, constitutional review, audit, ombudsperson, local bodies. | Partial formalisation; ratified scope, contract pending; narrow T3 custody path implemented. | Authority, conflict rules, and independence are not a complete branch architecture. The custody gate's named bodies do not prove real independence, and it does not create terms, review cycles, or end conditions for the other required bodies. |
+| Democracy and amendment | **Partial:** vote, recall, proposal, approval, and declared-target label verdicts exist. | Residence-first adult franchise and candidacy; proportional People's Assembly; limited Regions Council; confidence government; public reasons; majority law and bounded initiatives inside constitutional limits; constructive recall; and authenticated constitutional amendment and review. | Partial formalisation; state form, political membership, and democratic corridor author-ratified; architecture unimplemented. | The current machinery does not authenticate an electorate, approval writer, tally, certificate, recount, challenge, or correction; bind a proposal to an exact source change; review semantic effects; or apply an authenticated effective-version transition. The bounded audit executes label/effect counterexamples only. Legacy `decide`, `broken`, and `approves` are not a vote, recall, referendum, amendment, or lawful result. |
+| Public institutions | **Partial:** named judicial/review actors and audit roles appear; Court custody has a canonical-current, source-bound authority gate with independently witnessed case and lease evidence. | People's Assembly; Regions Council; Executive Council and public administration; non-executive Civic President; electoral administration; provision/treasury; ordinary justice/appeal; final Constitutional Court; audit/integrity; ombudsperson; and regional/local bodies. | Partial formalisation; federal parliamentary architecture author-ratified but unimplemented; narrow T3 custody path implemented. | Current names are narrow fixtures, not the ratified institutions. No complete authority, appointment-control, conflict, term, succession, review, coalition-concentration, or remedy contract exists. The custody gate's named bodies do not prove real independence and cannot supply another office's temporal contract. |
 | Records and accountability | **Partial:** closed admitted record, derived-only conclusions, audit markers, witnessed predecessor/successor reconciliation, one witnessed canonical terminal lineage for restrictive legal effect, typed transitive event/record paths, and executable staged red-team cases. | Complete legally operative basis; permitted and prohibited inputs; authored positive premises and route-specific admissibility of absence; visibility, privacy, contestation, correction, retention, external assurance, independent receipt/action, continuity, individual remedy, and systemic correction. | Partial formalisation; staged T1/T2/T3 repository assurance implemented; overall live-record assurance still **not established**; ratified rule families pending. | The staged harness catches the declared carry, status, replay/divergence, typed order, exact source/window/case-subject/lease binding, and custody attacks against supplied records. Consequential rules rejoin raw witnessed tuples; a competing binding or conflict-tainted order path fails closed. Legal effect is evaluated in a fresh process because the engine does not retract conclusions incrementally. The protected-record disappearance alarm is conservative: lawful record disposal is not represented, so missing required carry is reported even if outside law might authorise removal. The model does not authenticate witnesses, detect deletion before or inside the first attested record, recover data, force a successor or clock to advance, or make the named reader act. `err` derives `obliged` after the required challenge, but no rule turns that duty into individual or systemic correction. |
 | Economy, property, work, and commons | **Absent as an economic order; protected negative result:** recognition is formal but non-operative by decision, not an economic order. `verify.sh` preserves that boundary with no-reader, one-place-`reward`, and no-counted-degree guard families. | No arrangement may defeat floors, equality, liberties, or commons; public duty to finance and maintain the floor. Property is a conditional liberty bounded by floors and commons. | **No economic order; recognition firewall formal and must be preserved.** Ratified scope, contracts pending. | The expansion must preserve the recognition firewall: merit, recognition, contribution, qualifying thresholds, and personal scores may not become allocation or access gates for property, commons, material security, standing, authority, or political voice. Constitutional vocabulary is now in Book 1 scope; tax rates, fiscal models, and resource operations remain Book 2. |
-| Locality, plurality, mobility, and external relations | **Partial:** `travel` is a current conclusion, not a federal/social interface. | Equal standing across places; local self-government; subsidiarity; portability; and basic protections for newcomers, migrants, and external relations. | Partial formalisation; ratified scope, contracts pending. | No community or transfer vocabulary; external-operation details remain Book 2 work. |
+| Locality, plurality, mobility, and external relations | **Partial:** `travel` is a current conclusion, not a federal/social interface. | Enumerated common powers; irreducible local competences; regional residual authority; justiciable subsidiarity; equalisation and portability; residence-first political membership with one claimant-chosen nested home; and basic protections for newcomers, migrants, and external relations. | Partial formalisation; federal settlement and political membership author-ratified but unimplemented; plurality and external-power baselines still author-gated except for the internal secession path settled by the state-form ruling. | No community, ordinary-residence, political-home, transfer, competence, or equalisation vocabulary exists. Citizenship and residence cannot gate standing or the floor. External-operation details remain Book 2 work, while the still-open plurality and external-power rulings continue to gate their own interfaces. |
 | Emergency and resilience | **Absent.** | Narrow trigger, cross-branch authorisation, non-derogable core, public reasons, remedy, and review. | Absent; ratified scope and T3 principle, emergency-specific contracts pending. | No emergency model; Book 2 owns response operations. The case-bound custody gate cannot be reused as an emergency term or end condition. |
 | Ecology and future people | **Absent.** | Commons, non-destruction, intergenerational constraint, and a reviewable ecological ceiling. | Absent; ratified scope, contracts pending. | Needs a constitutional statement without invented metrics or implementation claims, with standing for any present person and an independently checked public guardian. |
 
@@ -140,14 +140,17 @@ placement record, appeal, remedy, or housing delivery interface.
 | Body | Constitutional job | May not do alone | Required check / remedy |
 | --- | --- | --- | --- |
 | People and civic associations | Hold rights, participate, petition, organise, and challenge. | Lose the floor for non-participation, work, identity proof, or approval. | Advocate/ombudsperson route for people unable to act alone. |
-| Legislature | Make ordinary law and allocate within the constitutional corridor. | Lower the floor, override equal standing, or judge its own contested compliance. | Compatibility review, public reasons, constitutional challenge. |
-| Electoral / deliberative body | Give people equal political voice and select/revoke public mandate. | Convert wealth, recognition, or service receipt into political weight. | Independent election review and accessible participation. |
+| People's Assembly | Make ordinary law, authorise revenue/spending, sustain or replace the government, oversee public power, and initiate amendment. | Lower the floor, override equal standing, extend its own authority, or judge its own contested compliance. | Regions Council's one-time reasoned return; public reasons; election and compatibility review; constitutional challenge. |
+| Regions Council | Represent regions through proportional legislative delegations and protect federal competences. Equal regional weight is an express territorial exception to population weight, not a second popular chamber. | Permanently veto ordinary law, lower the common floor, or convert regional voice into executive power. | Assembly repassage under the original rule for ordinary law; final Council consent only for the ratified regional settlement; Constitutional Court for competence disputes. |
+| Executive Council / public administration | Execute law and maintain lawful continuity under Assembly confidence. | Legislate by decree, dissolve the Assembly unilaterally, extend its own mandate, certify its own election, or create standing emergency power. | Constructive no confidence; legislative oversight; courts; audit; finite caretaker and succession routes. |
+| Civic President | Perform formal appointment, promulgation, certification-receipt, and continuity duties. | Exercise policy, veto, decree, emergency, dissolution, or election-result discretion. | Joint-chamber selection; predeclared alternate; cause-only removal with independent finding and cross-body confirmation. |
+| Electoral / deliberative administration | Give adult ordinary residents equal political voice and authenticate contestable public results. | Create membership by registration, convert wealth or recognition into weight, decide its own challenge, or let one missing writer withhold the route forever. | Accessible participation; independent certification, recount/challenge, alternate writer/reviewer, and correction. |
 | Provision / treasury | Maintain the floor and public commons. | Decide final disputes about its own failures. | Delivery challenge, interim continuity, independent audit. |
 | Justice and appeal | Decide disputes and limit coercion. | Investigate, prosecute, decide, execute, and review one case alone. | Notice, advocate, hearing, appeal, release/repair path. |
-| Constitutional review | Test law and public power against entrenched limits. | Run ordinary government or insulate itself from correction. | Reasons, standing, reviewable appointments, amendment-bound limits. |
+| Constitutional Court | Give final general constitutional rulings and resolve competence, election, amendment, and secession disputes; ordinary courts retain case relief. | Run ordinary government, invent policy, certify its own decisive facts, or insulate itself from correction. | Public reasons, recusal, effective remedy, divided appointments, cause-only removal, and amendment-bound limits. |
 | Integrity / audit | Examine records, conflicts, disparities, and systemic failures. | Create the case facts it later certifies, or impose final remedy alone. | Independent evidence, public findings consistent with privacy, referral/remedy authority. |
 | Ombudsperson / rights advocate | Act for a child, disabled person, prisoner, newcomer, or unregistered claimant. | Become a substitute sovereign or condition help on representation. | Direct access to review and protected independence. |
-| Local bodies | Exercise local choice and contextual delivery inside common guarantees. | Create a lower caste of resident or reduce the common floor. | Portability, equalisation, and constitutional review. |
+| Regional and local bodies | Exercise residual regional authority and protected local choice inside common guarantees. | Create a lower caste of resident, reduce the common floor, or acquire a disputed competence by delay. | Portability, equalisation, intergovernmental reasons/mediation, and Constitutional Court review. |
 
 **Separation rule:** no actor may assert decisive case facts, decide their
 consequence, execute the result, audit itself, and provide the final remedy in
@@ -160,6 +163,18 @@ public function remains bound by the same floor, evidence, and remedy rules.
 majority chooses among rights-compatible options.
 It does not vote on whether a person counts, whether basic protection applies,
 or whether a public body may act without evidence or review.
+
+The author-ratified state form makes this corridor concrete. Every adult
+ordinary resident has one equal vote and one political home per tier; the
+People's Assembly must produce proportional outcomes; and the Regions Council
+may return ordinary law once but cannot veto it permanently. A constitutional
+amendment needs two-thirds of the full Assembly and a simple national referendum
+majority without a turnout quorum, plus Council and affected-region consent for
+competence or boundary changes. An elector initiative may force an amendment
+docket and recorded Assembly vote but cannot bypass that threshold. Bounded
+ordinary-law initiatives remain subject to independent compatibility review.
+See
+[`book-1-state-form-and-political-membership-decision.md`](book-1-state-form-and-political-membership-decision.md).
 
 ```text
 universal standing, core floors, equal protection, due process, commons
@@ -191,7 +206,12 @@ Before a domain is called complete, run these questions through its rows.
 | A person is accused or detained | Lawful trigger; evidence; notice; advocate; hearing; least coercion; review; release/repair. |
 | A majority backs a discriminatory or floor-cutting policy | Compatibility gate; standing; reviewer; remedy; amendment boundary. |
 | A provider falsifies a record or suppresses a complaint | Basis/visibility/challenge; independent audit; correction; consequence for the power, not loss of the claimant's floor. |
-| A person moves between localities | Equal standing, portability, local duty, and dispute forum. |
+| A person moves between localities | Equal standing and portable duties; claimant choice among genuine homes; no coerced transfer; one person-bound submission per decision; last uncontested home during challenge; and a dispute forum. |
+| An adult resident is convicted or confined | Franchise and candidacy remain; any office-specific exclusion is individualized, relevant, proportionate, time-limited, and reviewable. |
+| A government loses confidence or cannot form | Constructive replacement; limited caretaker authority; ordinary power ending on valid source-bound evidence; a legal duty to call an election without a claim that Book 1 makes it happen. |
+| One coalition controls both political chambers | Legally incompatible appointment concentration; observable direct/de facto control; independent challenge, continuity, and correction before contested court or oversight authority is treated as lawful. |
+| A budget does not pass | Prior essential authority and the material floor continue while the public deadlock routes operate. |
+| The Civic President refuses a formal act | A certified result remains legally effective through the predeclared alternate; refusal creates no veto or extra power. |
 | A policy satisfies today’s voters by exhausting a shared condition | Ecological/intergenerational limit; evidence; standing; correction. |
 | A disaster is declared | Trigger, authorised bodies, non-derogable protections, reasons, challenge, an adjudicated reversal/end condition, and explicit temporal status. |
 
@@ -225,6 +245,19 @@ classes and boundary rulings govern future contract cards; they do not add a
 current predicate, delivery route, private duty, property claim, or guardian
 mechanism. See [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md).
 
+The author has also ratified the federal parliamentary state form and residence-
+first political membership. The decision selects bodies, federal allocation,
+franchise/candidacy, amendment, initiative, recall, anti-capture, deadlock,
+succession, transfer, and secession contracts but formalises none of them. The
+general adulthood status remains dependent on the later family/life-course
+ruling; no state-form implementation may choose a numeric age or reuse
+`mature` as an unauthenticated gate. Office-term numbers, exact seat allocations,
+electoral metrics, and finite fallback mechanics remain implementation choices
+only inside the decision's ratified sources, limits, defaults, and prohibitions;
+they are not another author gate. Leaving those bounds requires a new ruling.
+See
+[`book-1-state-form-and-political-membership-decision.md`](book-1-state-form-and-political-membership-decision.md).
+
 This map also does not authorise a serialized edition to be changed in place.
 The ratified E2 + P1 + D2 Book 1 publication mechanics are in
 [`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md):
@@ -240,12 +273,16 @@ Work in this order:
 
 1. ~~Record the mandate and Book 1/Part V/Book 2 seam in `CLAUDE.md`.~~ **Done
    2026-08-03.**
-2. ~~Rule the taxonomy and time decisions.~~ **Done 2026-08-03.** Use the
-   ratified [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md)
+2. ~~Rule the taxonomy, time model, state form, and political membership.~~
+   **Done 2026-08-07.** Use the
+   ratified taxonomy and state-form decisions,
    and the implemented, power-scoped T3 path to complete this map’s fields and
    scenario tests for each
-   proposed domain. The democratic corridor is ratified but not formalised.
-3. Define only constitutional interfaces in a new formal source; keep operations
+   proposed domain. The architecture and democratic corridor are ratified but
+   not formalised.
+3. Complete one contract card for every ratified institution, membership status,
+   public power, result record, and transfer route before adding constitutional
+   interfaces to a new formal source. Keep operations
    in [`book-2/TODO.md`](../book-2/TODO.md).
 4. Add one bounded rule family at a time, including adversarial pins and a
    counterfactual showing what it prevents.
@@ -280,6 +317,10 @@ At minimum, check these live claims:
   constitutionally approved nor semantically entrenched.
 - Chapter 12's distinction between a declared-target label verdict, a candidate's
   actual effect, and an applied source transition.
+- Any state-form or membership family must resolve the two meanings of
+  `standing` and audit chapters 2, 3, 9, 12, and 13, even when no existing chapter
+  derivation changes. The same pass must reach the Part V rotation/State verdicts
+  and the method part through the broader checks below.
 - Every Part V verdict and stated specification in
   `book-1/15-the-five-joints.md`, including valuation's non-operative
   recognition, rotation's failure and no-term-of-office claim, coercion's
