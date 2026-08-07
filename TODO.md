@@ -44,11 +44,12 @@ then a full-society expansion backlog and cross-cutting sections:
    proceed in parallel; each still-gated domain's rules, prose, and public claim
    wait for its own ruling. The final reader threshold waits for the pilot. This
    section has been destroyed by tooling once and is watched accordingly.
-2. **Phase 2 — engine handoffs (nibli).** A read-only finite-decision capability
-   audit is open. Run it before formalising generic collective-decision rules because
-   some of what the book has to concede may be an engine limitation rather than a
-   design choice. It does not block unrelated inventory, evidence, or decision-brief
-   work.
+2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision
+   capability audit is closed and recorded in the source-bound planning artifact.
+   Two bounded, non-blocking repairs remain: fail-closed raw witness enumeration
+   and a truthful novel text-compute registration contract. Democratic
+   formalisation may proceed through authenticated external result certificates;
+   it may not rely on either defective surface.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
    versioned disposition map for declared social axes and envelope, a functional
@@ -217,116 +218,127 @@ verdict, or exceeds a measured bound. Do not ask one reasoning engine to become 
 budget, population, logistics, psychology, transition, source-deployment, or
 authentication system.
 
-- [ ] **Measure the finite collective-decision boundary before formalising the
-  democratic corridor.**
-  - This is a read-only capability audit. It must not modify the engine repository,
-    revise the ratified voting rules, choose new thresholds, or treat a renamed
-    ground premise as authenticated.
-  - **Done when:** the reply provides neutral executable probes and a surface-by-
-    surface capability table; distinguishes fixed finite enumeration from
-    roster-parametric aggregation; distinguishes duplicate submissions, conflicting
-    choices and multiple derivations; executes the caller-supplied Assembly,
-    Council, confidence, referendum, initiative, and recall cases below; states the
-    external completeness,
-    authentication and challenge contract; and reports any suspected engine bug as a
-    separate minimal reproducer without fixing it.
+- [ ] **Make raw witness enumeration fail closed on non-definitive leaves.**
+  - This repairs a public raw-API undercount found by the completed audit. It does
+    not change the constitutional result-service seam and does not block
+    certificate-based democratic formalisation.
+  - **Done when:** raw `query_find` and `count_witnesses` refuse incomplete
+    enumeration for `Unknown(NafDependent)` and `Unknown(NonFinite)`; entailment
+    and exact-zero retain their current non-definitive verdicts; definitive
+    behavior and the text negative-scope firewall do not move; tests and public
+    guarantees agree.
 
 ~~~text
 You are working in the Nibli engine repository. Assume no knowledge of any book
-or constitution project. This is a read-only capability audit: do not edit,
-commit, or push the engine repository.
+or constitution project. Implement and verify one general raw-API correctness
+repair; do not add voting predicates, book-specific names, arithmetic, or new
+closed-world semantics.
 
-Start from current engine main, report its exact source SHA and version, and
-confirm that it is at or after the minimum compatible baseline
-4cb02aade43b394374c40e661907ad66df3af3fe.
+Start from current engine main and report its exact source SHA and workspace
+version. This defect was reproduced on 2026-08-08 at
+`a7d288a9ab9b9eb4e0f282469c3bc278ec94894e` through the public raw
+`KnowledgeBase` API.
 
-A separate formal-constitution project needs to know which finite
-collective-decision checks current Nibli can establish and which require an
-external, authenticated and contestable result service. Do not invent or revise
-an electoral system. Use these caller-supplied legal cases without treating them
-as built-in engine semantics:
+Build this neutral raw-IR fixture:
 
-- A constitutional amendment needs affirmative votes from two-thirds of the
-  full People's Assembly roster.
-- Its national referendum needs more affirmative than negative valid votes, no
-  turnout quorum, and failure on a tie; blank and invalid submissions are not
-  affirmative votes.
-- A directly regional amendment needs a majority of the Regions Council's full
-  aggregate regional voting weight. A competence or boundary change also needs
-  more affirmative than negative valid votes in every directly affected region,
-  with no turnout quorum and failure on a tie.
-- For ordinary law, the Regions Council may return a bill once with reasons; the
-  People's Assembly may repass it only under the same rule that first passed it.
-- Constructive no confidence removes a government only when the same decision
-  identifies and certifies its successor.
-- If an ordinary-law initiative and Assembly counterproposal both pass that
-  valid-vote test, the larger affirmative share wins; neither or a tied share
-  preserves current law.
-- Constructive recall requires both a removal majority and one successor under
-  a predeclared majority-producing rule; failure or a successor tie preserves
-  the ordinary term and succession route.
-- Each decision admits at most one person-bound effective submission across all
-  participating jurisdictions.
+- assert `person(adam)`;
+- add `dog(x) -> cat(x)` and `cat(x) -> dog(x)`;
+- query `exists x. person(x) and not dog(x)`.
 
-The exact decision roster and its completeness assurance are externally
-supplied and distinct. Authentication, publication, challenge, correction,
-clock advancement, and institutional action are external unless separately
-represented by supplied premises. Do not design those systems in this audit.
+The observed behavior was:
 
-Using neutral names, build the smallest fixtures needed to measure these
-boundaries:
+- entailment: `Ok(Unknown(NafDependent))`;
+- find: `Ok([])`;
+- count: `Ok(0)`;
+- exact zero: `Ok(Unknown(NafDependent))`.
 
-1. Exact snapshot find/count observations over an externally supplied finite
-   roster and submitted-choice records.
-2. Whether CountNode or compute expressions are query-only, and the exact
-   refusal at assertion ingress and in rule antecedents.
-3. Fixed hand-enumerated finite rules versus genuinely roster-parametric quorum
-   or majority computation.
-4. A complete-roster attestation supplied as an external premise, and the
-   observational indistinguishability of an incomplete roster from a genuinely
-   smaller roster when that assurance is absent.
-5. Empty roster, tie, abstention, blank/invalid submission, incomplete roster,
-   withheld completeness evidence, and every caller-supplied threshold/default
-   case above.
-6. Distinct submitted-record identities related to voter and choice. Separate:
-   two identical submissions with different record identities; conflicting
-   choices by one person across jurisdictions; and multiple derivations of one
-   effective logical fact.
-   State where set semantics collapse byte-identical facts and why conflict
-   detection does not itself select an effective choice.
-7. An externally supplied result certificate. State plainly that it remains an
-   asserted trust-root premise to Nibli; authentication, publication,
-   completeness, availability and challenge assurance are external unless
-   represented by additional supplied premises, which are trust roots too.
-8. Missing or undecidable witness leaves. Confirm whether find/count fail closed
-   rather than silently undercounting, and distinguish FALSE, UNKNOWN and
-   RESOURCE_EXCEEDED.
+The empty list and zero are unsound because the witness set was not completely
+decided. Make raw `query_find` and `count_witnesses` return the existing
+incomplete-enumeration error whenever any candidate leaf is non-definitive.
+Acceptance must cover both `Unknown(NafDependent)` and `Unknown(NonFinite)`, and
+you must inspect the witness-cut path for any other non-definitive reason that
+could be silently discarded.
 
-For every case, identify the usable surface: KR rule language, nibli-pin query,
-core API, host harness or external service. A bounded three-person rule is only a
-fixture result, not generic election semantics. Missing completeness evidence may
-safely block authority but can create a withholding veto; state that liveness and
-redundant attestation remain constitutional/operational design questions.
+Preserve definitive TRUE/FALSE enumeration, exact-count behavior, equality
+canonicalisation, logical deduplication, proof behavior, depth/resource errors,
+and the text compiler's negative-scope co-reference firewall. Do not convert
+UNKNOWN to FALSE or make absence classical negation. Check aggregate callers so
+none can inherit a silent partial set.
 
-Do not add voting, arithmetic, certificate authentication, roster completeness,
-closed-world semantics or non-monotonic behavior. If you find behavior that
-contradicts a documented existing guarantee, report a separate minimal
-reproducer and proposed acceptance test, but do not repair it in this audit.
+Add neutral regressions at the lowest public API layer and update
+`GUARANTEES.md` and any API documentation whose fail-closed claim changes or is
+made accurate. Keep `NibliEngine::validate` documented as compile-only;
+assertion admission must still use `assert_text` or
+`KnowledgeBase::validate_assertion`.
 
-Run the smallest relevant existing tests plus the neutral probes and give exact
-commands and outputs. Then write your reply directly to the
-rights-nobody-has-to-earn session through dhilipsiva. Include: exact source SHA
-and version; probes; commands; the capability table; definitive/non-definitive
-verdicts; external trust and liveness boundaries; any separate bug reproducer;
-confirmation that no repository change occurred; and what this prompt got wrong.
+Run the focused new tests, the relevant reasoner and engine suites, and clean
+`just ci-all`. Commit and push the repair only after those gates pass. Then
+write your reply directly to the rights-nobody-has-to-earn session through
+dhilipsiva. Include the exact commit SHA and version, files and semantics
+changed, before/after reproducer output, tests, whether any definitive verdict
+moved, any performance effect, and what this prompt got wrong.
 ~~~
-Do not work around an engine limitation in prose — conceding a fixable limitation
-as though it were a design choice is the specific dishonesty this phase exists to
-prevent, and it is why this audit precedes generic collective-decision rules.
 
-**When a reply lands here**, independently build or identify its source commit, select
-that binary explicitly, and re-run `./verify.sh` before believing anything. This repo
-has twice measured an engine change that was never rebuilt.
+- [ ] **Reconcile novel text-compute registration with compiler admission.**
+  - This is a public API/documentation mismatch found by the completed audit, not
+    a request for an election arithmetic engine. It does not block the book's
+    bounded external-certificate path.
+  - **Done when:** the implemented text surface and public documentation make one
+    truthful promise for registered novel compute names; unregistered names
+    remain fail closed; raw IR, assertion admission, and query-only boundaries
+    remain explicit; neutral tests cover the selected contract.
+
+~~~text
+You are working in the Nibli engine repository. Assume no knowledge of any book
+or constitution project. Reconcile one general text-compute API/documentation
+mismatch; do not add voting predicates, book-specific cases, or a permissive
+unknown-name fallback.
+
+Start from current engine main and report its exact source SHA and workspace
+version. This behavior was reproduced on 2026-08-08 at
+`a7d288a9ab9b9eb4e0f282469c3bc278ec94894e`:
+
+1. call `register_compute_predicate("quorum")`;
+2. call `query_holds("quorum(Panel).")`;
+3. text compilation fails before compute dispatch with `unknown predicate
+   "quorum": not a corpus name`.
+
+Public documentation broadly says custom backend predicates may be registered.
+Determine the intended supported contract and make implementation, API docs,
+README, guarantees, and tests agree. There are two acceptable shapes:
+
+- make an explicitly registered name and arity visible to the KR compiler before
+  fail-closed vocabulary rejection; or
+- narrow the text API/documentation to corpus-resolvable names and state that
+  arbitrary custom names require raw IR or an explicit vocabulary/schema
+  extension.
+
+Choose the smaller coherent contract after inspecting the architecture and state
+why. Under either choice, unregistered text names must still fail closed;
+registration must not guess arity, bypass assertion validation, persist compute
+nodes as facts/rule literals, or alter the raw-IR query-only contract. Preserve
+all six temporal/deontic flavors, deterministic compilation, and existing
+corpus-resolvable compute behavior. `NibliEngine::validate` remains compile-only,
+not an assertion-admission check.
+
+Add neutral tests for the chosen text contract, unregistered rejection, wrong
+arity, raw IR, assertion/rule refusal, and existing corpus-resolvable names.
+Check every advertised native/component surface and correct documentation that
+claims more than it exposes. Run focused tests, relevant reasoner/engine/host
+suites, and clean `just ci-all`. Commit and push only after those gates pass.
+Then write your reply directly to the rights-nobody-has-to-earn session through
+dhilipsiva. Include the exact commit SHA and version, selected contract and why,
+files changed, exact before/after outputs, tests, whether any verdict or API
+surface moved, and what this prompt got wrong.
+~~~
+
+Do not work around either engine defect in book prose. Until a repair is
+independently rebuilt and verified here, democratic formalisation must use only
+definitive positive queries and authenticated external result certificates.
+
+**When a reply lands here**, independently build or identify its source commit,
+select that binary explicitly, and re-run `./verify.sh` before believing anything.
+This repo has twice measured an engine change that was never rebuilt.
 
 ---
 
@@ -901,10 +913,25 @@ Gate B; it does not claim Book 2 operations or feasibility.
     confidence and single-holder constructive recall without an avoidable vacancy.
   - Current `approves(Electorate, amendment)` names the electorate but authenticates
     neither writer, roster, tally, certificate, recount, challenge, nor correction.
-    Require an authenticated, contestable result with an exact attested roster,
-    separate external completeness assurance, person-bound submissions, alternate
-    writers/reviewers, and correction. Nibli cannot infer a complete population
-    from a supplied finite roster.
+    Implement a four-role external result pipeline: election administration
+    authenticates and classifies submissions; independent assurance attests roster
+    and submission completeness through redundant or alternate writers; the result
+    service computes and certifies; and authorised institutions execute. Keep each
+    bounded certificate an explicit trust-root premise to Nibli.
+  - Respect the measured engine boundary. Nibli may inspect definitive finite
+    positive snapshot facts and compose supplied certificates; it cannot compute a
+    changing roster's threshold, compare dynamic tallies/shares, group affected
+    regions, resolve effective submissions, authenticate completeness, or act.
+    Exact-count/compute nodes are query-only. Never substitute a fixed finite
+    witness rule for generic election semantics, and do not use the unsafe raw
+    non-definitive find/count path.
+  - Give every result card its roster, separate completeness source, submission
+    functional key, classification rule, threshold, tie result, empty-roster
+    result, challenge/correction route, alternate attestation, certificate effect,
+    and positive failure/persistence consequence. "No turnout quorum" means that
+    the legal rule has no turnout condition; it is not an engine primitive.
+    Nibli `FALSE` alone cannot preserve current law, government, or an ordinary
+    term.
   - Implement the ratified amendment route: two-thirds of the full Assembly and
     more affirmative than negative valid national referendum votes, no turnout
     quorum, and failure on a tie; add a full-weight Council majority for directly

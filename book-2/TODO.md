@@ -194,10 +194,19 @@ but never replaces, this rule.
     atomic transfers, last-uncontested-home continuity, guarded provisional status,
     homeless/refugee/stateless access, and the rule that custody, placement,
     eviction, shelter use, or forced displacement does not move the home.
-  - Operate person-bound submissions, ballots, tallies, recounts, result challenges,
-    and initiative-signature collection/validation against exact attested decision
-    rosters and separate external completeness assurance. Book 2 may not choose
-    lawful membership, amendment thresholds, initiative defaults, or recall rules.
+  - Operate a four-role external result pipeline with separation and independent
+    control: election administration authenticates and classifies person-bound
+    submissions; a distinct assurance route attests exact roster/submission
+    completeness through redundant or alternate writers; the result service
+    computes and certifies; and Book 1-authorised institutions execute.
+  - Compute changing-roster thresholds, valid-vote comparisons, weighted Council
+    results, every-affected-region groupings, initiative/counterproposal shares,
+    constructive successor results, and Book 1-specified tie and empty-roster
+    defaults. Operate functional-key enforcement, effective-record selection,
+    recount, correction, challenge, publication, availability, and conflicting-
+    certificate/version resolution without treating a certificate as self-
+    authenticating. Book 2 may not choose lawful membership, thresholds, defaults,
+    or recall rules.
   - Operate parties/opposition, deliberation, lawmaking, amendment deployment,
     government formation, finite caretakers, elections after failure, succession,
     record/office transfer, budget continuity, federal coordination, equalisation,
@@ -211,10 +220,13 @@ but never replaces, this rule.
     enforcement, recovery, and deployment. Produce evidence for direct and de facto
     appointment concentration, selector absence/conflict, vacancy fallback, and
     cause-only removal; do not claim capture is impossible.
-  - Test duplicate cross-jurisdiction submissions, coerced-home reassignment,
-    incomplete rosters, coalition capture, presidential refusal, caretaker or
-    budget overreach, selective enforcement, audit starvation, suppressed
-    statistics, undercount, re-identification, and conflicting result/version claims.
+  - Test duplicate and conflicting cross-jurisdiction submissions, blank/invalid
+    records, empty rosters, ties, coerced-home reassignment, incomplete rosters,
+    withheld or conflicting completeness evidence, alternate-attestor failure,
+    certificate conflict, recount/correction, coalition capture, presidential
+    refusal, caretaker or budget overreach, selective enforcement, audit starvation,
+    suppressed statistics, undercount, re-identification, and conflicting
+    result/version claims.
 
   - **Done when:** a generated operations specification executes ordinary
     roll/transfer, election, lawmaking, government-formation, amendment,

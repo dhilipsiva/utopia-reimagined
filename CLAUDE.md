@@ -640,8 +640,10 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   ecology/future conditions/animals, security/external power, assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
-  2 holds one self-contained, read-only Nibli audit for finite collective
-  decisions. The expansion backlog uses one canonical social model, a versioned
+  2 records the completed finite collective-decision audit and holds two bounded,
+  non-blocking engine repair prompts: fail-closed raw witness enumeration and a
+  truthful novel text-compute registration contract. The expansion backlog uses
+  one canonical social model, a versioned
   reference envelope and disposition map, explicit constitutional domain packs,
   role/dependency/stress/gameability/assurance tests, separate completion gates,
   and a generated reader contract. None makes an unimplemented right,
