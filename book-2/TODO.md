@@ -31,6 +31,16 @@ book-1 references book-2 exactly once, at its very end.
 > editions model a fully functional society for the declared reference envelope.
 > See `new-book-plans/full-society-boundary-decision.md`.
 
+> **State-form handoff - author-ratified 2026-08-07.** Book 1 owns the federal
+> parliamentary institutions, residence-first political membership, lawful
+> thresholds, appointment limits, competence allocation, continuity defaults,
+> and internal negotiated-secession path. Book 2 operates their rolls, political
+> homes, ballots, tallies, recounts, signature collection/validation, staffing,
+> costs, clocks, workflows, capacity, publication, deployment, and external
+> assurance. It may not invent membership, thresholds, powers, or a different
+> secession route. See
+> `new-book-plans/book-1-state-form-and-political-membership-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow
@@ -131,24 +141,42 @@ but never replaces, this rule.
 
 - [ ] **Build democratic, administrative-integrity, and official-statistics
   operations.**
-  - Operate elections, parties/opposition, deliberation, lawmaking, amendment
-    deployment and peaceful transfer; local/regional/federal coordination,
-    equalisation and portability; political-membership administration; and minority,
-    indigenous, linguistic and religious self-government/representation under Book
-    1's plurality ruling.
+  - Operate the People's Assembly, Regions Council, Executive Council/public
+    administration, Civic President, electoral administration, ordinary and
+    Constitutional Courts, audit/integrity, ombudsperson, appointment-qualification,
+    and regional/local interfaces under Book 1's exact powers and limits.
+  - Operate residence-first rolls and one claimant-chosen nested political home:
+    atomic transfers, last-uncontested-home continuity, guarded provisional status,
+    homeless/refugee/stateless access, and the rule that custody, placement,
+    eviction, shelter use, or forced displacement does not move the home.
+  - Operate person-bound submissions, ballots, tallies, recounts, result challenges,
+    and initiative-signature collection/validation against exact attested decision
+    rosters and separate external completeness assurance. Book 2 may not choose
+    lawful membership, amendment thresholds, initiative defaults, or recall rules.
+  - Operate parties/opposition, deliberation, lawmaking, amendment deployment,
+    government formation, finite caretakers, elections after failure, succession,
+    record/office transfer, budget continuity, federal coordination, equalisation,
+    portability, and peaceful transfer. A modelled clock or workflow is operational
+    evidence, not a Book 1 derivation.
   - Operate campaign finance, lobbying, procurement, appointments, conflicts,
     patronage/nepotism, corruption and information-manipulation controls; and
     independent census/sampling/planning data.
-  - Model staffing, calendars, accessibility, authentication, recount/challenge,
-    publication, audit independence, privacy, correction, enforcement and recovery.
-    Book 1 supplies the lawful sources and limits; this book cannot invent them.
-  - Test coalition capture, selective enforcement, audit starvation, suppressed
-    statistics, undercount, re-identification and conflicting result/version claims.
+  - Model staffing, costs, capacity, calendars/clocks, accessibility,
+    authentication, publication, audit independence, privacy, correction,
+    enforcement, recovery, and deployment. Produce evidence for direct and de facto
+    appointment concentration, selector absence/conflict, vacancy fallback, and
+    cause-only removal; do not claim capture is impossible.
+  - Test duplicate cross-jurisdiction submissions, coerced-home reassignment,
+    incomplete rosters, coalition capture, presidential refusal, caretaker or
+    budget overreach, selective enforcement, audit starvation, suppressed
+    statistics, undercount, re-identification, and conflicting result/version claims.
 
   - **Done when:** a generated operations specification executes ordinary
-    election/lawmaking/statistics-publication paths plus recount, challenge,
-    peaceful-transfer, capture, suppression and conflicting-result/version cases
-    against their cost, capacity, accessibility and integrity criteria.
+    roll/transfer, election, lawmaking, government-formation, amendment,
+    statistics-publication, and appointment paths plus recount, challenge,
+    peaceful-transfer, capture, suppression, deadlock, and conflicting-result/
+    version cases against cost, capacity, accessibility, liveness, and integrity
+    criteria.
 
 - [ ] **Build equality, life-course, dependency, and social-insurance operations.**
   - Cover direct/indirect/systemic/intersectional discrimination, accommodation
@@ -174,7 +202,14 @@ but never replaces, this rule.
     control; borders/asylum; treaties, trade and humanitarian coordination.
   - Model counsel/advocacy, case queues, evidence custody, review/release calendars,
     use-of-force oversight, emergency continuity, language/accessibility, external
-    dependency and remedy. Test conflict, displacement, secession and non-cooperation.
+    dependency and remedy. Operate the negotiation and federal-agreement workflow;
+    the borders, assets, debts, commons, floor, and minority-protection settlement;
+    final affected-population ratification; and the external recognition, defence,
+    cross-border, international-obligation, and post-exit effects of Book 1's
+    negotiated secession path without inventing a different internal route. Operate
+    accessible evidence and border administration for a former resident's return
+    right without creating a diaspora ballot. Test conflict,
+    displacement, lawful-exit operations and non-cooperation.
 
   - **Done when:** representative civil, administrative, family, labour,
     consumer, criminal, emergency, migration and external-coordination paths execute
