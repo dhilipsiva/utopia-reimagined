@@ -105,8 +105,9 @@ publication, recovery, and time services.
 grammar for Phase 2, not a derivation, a claim that the named classes are
 exhaustive, or current formal coverage. Liberty limits bind public power directly
 and public institutions are responsible for preventing, investigating, and
-remedying private interference; no general private horizontal effect is implied,
-and a future direct private duty must be named expressly.
+remedying private interference; no general private horizontal effect is implied.
+The later equality ruling expressly binds its named public-facing private domains;
+any other future direct private duty must still be named expressly.
 Property is a conditional liberty bounded by floors and commons. Merit,
 recognition, contribution, qualifying thresholds, and personal scores may not be
 allocation keys for material security, standing, authority, political voice, or
@@ -185,6 +186,86 @@ body in law, chapter, or public coverage claim. `mature`, `decide`, `choose`, `b
 consumer route require explicit retain/replace/retire cards; custody T3 supplies
 no office term or election clock. The controlling record is
 `new-book-plans/book-1-state-form-and-political-membership-decision.md`.
+
+**The substantive-equality and anti-subordination baseline is author-ratified
+(2026-08-07): universal substantive equality + structural repair.** Every person
+receives equal and effective constitutional protection. Purpose or effect can
+establish discrimination; intent and a single-ground comparator are unnecessary.
+The open protected-ground architecture covers actual, past, anticipated,
+perceived, associated, multiple, and intersectional status. Direct, indirect,
+systemic, and associative discrimination; denial of accommodation; imposed
+segregation or exclusion; harassment; and retaliation are in scope. A persistent
+disparity is evidence capable of shifting a burden and opening systemic review,
+not an automatic finding or an individual verdict.
+
+Every public tier, institution, contractor, and delegated public function is
+directly bound. Express direct private duties apply in employment, housing,
+education, health and care, finance and insurance, utilities, transport, public
+commerce, and dominant communication or platform services. Intimate choice and
+genuinely voluntary cultural, affinity, safety, faith, and expressive association
+remain protected. A mission-linked distinction is confined to a genuinely
+expressive role; it does not excuse discrimination in general employment,
+commercial service, housing, or essential access. Imposed status segregation and
+inferior parallel systems are prohibited, while voluntary association requires
+free exit and undiminished common rights and services.
+
+Direct adverse status distinctions require an evidenced, genuine and determining
+function-specific necessity with no less discriminatory effective alternative.
+Indirect distinctions require a compatible purpose, evidential fit, necessity,
+least-discriminatory means, and proportionality. Accommodation and remedial
+positive measures use their own ratified contracts rather than pretending that
+status is a job qualification. No test can balance away standing, the material
+floor, core liberty, due process, the adult ordinary resident's equal popular
+ballot, or remedy. Equal regional Council weight remains the existing confined
+territorial exception. A credible barrier or group pattern shifts the burden only
+in remedial equality proceedings; it never reverses a criminal burden, proves
+guilt, or authorises punishment.
+
+Accessibility is proactive and systemic; reasonable accommodation is an
+individual duty. An undue-burden claim reads the responsible institution as a
+whole, not one office or budget line, and a provider's genuine inability cannot
+leave the person without the floor or core access: an effective alternative and
+public continuity route must remain. Accessibility and accommodation do not
+sunset as positive measures.
+
+Equality diagnostics are purpose-limited, privacy-preserving, independently
+governed, and separated from the canonical consequential person record. Aggregate
+patterns may create a rebuttable presumption and audit but never an individual
+standing, floor, sanction, risk, entitlement, or worth conclusion. A separately
+enacted positive measure may use voluntary self-description and minimally
+necessary, contestable eligibility evidence for that measure only; no reusable
+identity registry or documentation gate follows.
+
+Positive measures, including bounded targets and quotas, are permitted and are
+required where ordinary equality and accommodation cannot dismantle evidenced
+structural disadvantage. Political measures may govern candidate lists,
+nominations, outreach, and appointments while preserving one equal ballot,
+overall proportionality, the appointment anti-capture controls, and no separate
+electorate or reserved-seat exception in general-government bodies. Each measure
+needs an objective, evidence, independent review, alternate reviewer, a fresh
+source-bound temporal contract, and an end when the objective is sustainably
+achieved; review silence cannot renew it. Public institutions must repair
+continuing historical barriers, while democratic law chooses compatible means
+without erasing official provenance or permanent historical public answerability.
+
+Affected people, chosen supporters, qualified associations, and the independent
+rights advocate or ombud may initiate review without erasing the person's voice.
+Ordinary courts give case-specific relief; the Constitutional Court alone gives
+final general invalidation; advocacy, audit, adjudication, execution, and final
+review stay separated. Individual continuity and relief coexist with related-case
+re-audit, redesign, recurrence monitoring, and measures directed at
+non-repetition. No remedy may take another person's standing, floor, core liberty,
+due process, or political equality, or assign guilt solely by group membership.
+
+The ruling is **ratified but unimplemented**. It creates no equality predicate,
+finding, duty, remedy, institution, chapter, or public coverage claim. Book 1 owns
+the legal definitions, reach, proof, review, continuity, remedy, and failure
+polarity. Book 2 owns collection and statistical methods, staffing, costs,
+accommodation operations, monitoring, enforcement workflows, and empirical
+evaluation. Nibli may consume an authenticated external finding; it is not a
+population-statistics, identity-authentication, or institutional-liveness system.
+The controlling record is
+`new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
 
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
@@ -393,8 +474,8 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
   dependencies permit**, refreshed 2026-08-07 for the ratified full-society
-  boundary. Phase 1 retains open author rulings on substantive equality,
-  economic/private ordering and scarcity, family/collective
+  boundary. The substantive-equality baseline is also settled. Phase 1 retains
+  open author rulings on economic/private ordering and scarcity, family/collective
   rights, ecology/future conditions/animals, security/external power, assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase

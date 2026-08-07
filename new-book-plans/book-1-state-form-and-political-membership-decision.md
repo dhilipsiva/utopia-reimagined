@@ -544,8 +544,12 @@ regional veto, diaspora voting, universal recall, conviction-based
 disenfranchisement, and citizen bypass of the Assembly threshold for
 constitutional amendment. It does not settle the numeric legal-adulthood age,
 exact office durations, ballot technology, staffing, costs, external-operation
-details, or any still-open equality, economic, family/plurality, ecological,
-security, assurance, narrative, or reader-evidence ruling.
+details, or any economic, family/plurality, ecological, security, assurance,
+narrative, or reader-evidence ruling.
+
+The substantive-equality and anti-subordination baseline was separately
+author-ratified on 2026-08-07. It remains unimplemented and does not alter this
+decision's state-form or political-membership scope.
 
 ## 12. Ratification record
 

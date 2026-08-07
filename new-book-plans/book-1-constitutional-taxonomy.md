@@ -47,7 +47,7 @@ return later as ad hoc “new rights” or “new branches.”
 | What is a class? | The functional classes named below remain. A class answers a distinct constitutional question, not a list of desirable outcomes. | Exact rule families, predicates, and chapter prose. |
 | What counts as a floor? | Class 2 contains only unconditional, actually usable minimum conditions. Bodily integrity, privacy, movement, participation, and access to records are not extra floor names merely because they matter. | Which material minimums the expanded constitution formalises. |
 | Where do power limits and remedies belong? | Class 3 limits interference; Class 4 governs accusation, coercion, contest, repair, and representation; Class 7 governs records. Keep those grammars separate. | Their shared evidence, remedy, and appeal contracts. |
-| Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Private wrongdoing reaches justice machinery, not a floor consequence against another person. A private actor is directly bound only where a future rule says so expressly. | The horizontal reach of an expressly enacted private duty and each matching public protection duty. |
+| Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Unexpressed private wrongdoing reaches justice machinery, not a floor consequence against another person. An express equality duty may create its named access or accommodation consequence, while the public continuity duty remains non-delegable. The 2026-08-07 equality ruling expressly binds employment, housing, education, health and care, finance and insurance, utilities, transport, public commerce, and dominant communication/platform services; that named family is not a general horizontal effect. | Each express private duty's rule card and matching public prevention, investigation, continuity, and remedy duty; any additional private reach still requires an express ruling. |
 | Who turns a record finding into a remedy? | Class 7 supplies evidence; Class 6 supplies an independent reader with an action duty; Class 4 supplies the contest and repair route. A referral alone is not accountability. | The particular recipient, remedy, and continuity rule for each failure. |
 | Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
 | Are economy, property, locality, migration, and external relations extra classes? | No. Split each into the relevant existing classes: democratic policy, public duty, liberty, standing, fair process, jurisdiction, and commons. Property is a conditional liberty bounded by floors and commons; a property or economic-power limit must name its direct class instead of hiding inside “economy.” Merit, recognition, contribution, or a qualifying threshold may not be an allocation or access key for property, commons, material security, standing, authority, or political voice. Both any present person and an independently checked public guardian have standing for commons/future-condition claims. | The resulting contract cards; the guardian's authority, independence, evidence, and removal controls; and the Book 2 operational seam. |
@@ -295,10 +295,13 @@ This ratification preserves these conclusions:
 
 ## Ratification record
 
-- [x] **Horizontal reach ratified (2026-08-03).** Public power is directly bound;
-  public institutions must prevent, investigate, and remedy private interference.
-  No general private horizontal effect is implied: a future rule must name any
-  direct private prohibition expressly.
+- [x] **Horizontal reach ratified (2026-08-03; first express private family
+  added 2026-08-07).** Public power is directly bound; public institutions must
+  prevent, investigate, and remedy private interference. No general private
+  horizontal effect is implied. The equality ruling expressly binds its named
+  public-facing private domains; each direct private prohibition and matching
+  public protection duty must receive separate cards by direct legal effect
+  across every applicable named class rather than one omnibus equality rule.
 - [x] **Delivery abstraction ratified (2026-08-03).** `teaches` + `hears` remains
   legacy-only. Future routes use accessibility-neutral, recipient-side
   access/receipt evidence with an authorised writer and challenge route, and do
