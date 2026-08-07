@@ -7,9 +7,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 A book-writing project heading for **two new books**, with the original two manuscripts slated for deletion:
 
 - **book-1** — the active work. Two parts to its scope, and the seam is deliberate:
-  - **Parts I–V — the destination.** *What an ideal society must be and how it functions* — **never how to get there.** No roadmap, no transition, no MVS, no scaling story. Spine is *derived*: chapter order is computed from the dependency stratification of a formal constitution in nibli KR (`new-book-plans/constitution.nibli`), and content is **gated on that constitution** — if the KR does not derive it, it does not go in. **Jargon-free**: a general reader can finish Part V and stop, and the formalism is never mentioned here. Exactly three elements are exempt from the derivation gate and each is labelled as such in the text: a short non-derived **opening note**, **Part V** (argument and evidence), and the final method part. What they verify is the **data**.
+  - **Parts I–V — the constitutional and social destination.** They describe what an ideal society must guarantee, permit, organise, and constrain, including normal, failure, and recovery interfaces — **never transition or costed operation.** No roadmap, no MVS, no scaling story. The spine is *derived*: chapter order is computed from the dependency stratification of the formal constitution in `new-book-plans/constitution.nibli`, and content is **gated on that constitution** — if the KR does not derive it, it does not go in. **Jargon-free**: a general reader can finish Part V and stop, and the formalism is never mentioned here. Exactly three elements are exempt from the derivation gate and each is labelled in the text: a short non-derived **opening note**, **Part V** (argument and evidence), and the final method part. What they verify is the **data**.
   - **Final part — the method, explicitly optional.** Shows the machinery to whoever wants it: the constitution, the derived spine, the compile-time firewall, the evidence/conclusion split, and what the logic *refused*. Clearly labelled as a different kind of reading. This is the only place in book-1 where the formalism appears, and its existence is what answers the "you built a machine and hid it" objection.
-- **book-2** — **how you would actually build it, organisationally and technically.** The transition material (MVS, the family→village→planet scaling story, legal collisions, costed transition) *and* the technology stack. Where book-1's claims are gated on derivation, book-2's will be gated on **evidence, costs, and data that regenerate by script** — the seam is epistemic, not editorial. It has a seed tracker now, `book-2/TODO.md` — **unordered until its chapters are decided**, seeded from the old hold list and the adoption reviews; collect there, do not work there while book-1 is active. book-1 references it exactly once, at the very end.
+- **book-2** — **how the destination would be operated and reached.** It owns staffing, costs, capacity, resources, technology, workflows, transition, deployment, empirical feasibility, and operation under ordinary and declared shock conditions. Where book-1's claims are gated on derivation, book-2's require claim-appropriate evidence, costs, and uncertainty. Its unordered seed tracker is `book-2/TODO.md`; collect there, but do not execute Book 2 work until Book 1 — First Edition actually ships at Gate C. book-1 references it exactly once, at the very end.
 - **`book.md` and `manifesto.md`** — legacy. To be deleted once both new books exist, but **not before** the legacy-harvest section of `TODO.md` is complete: `book.md`'s 55 sourced references, the nine historical cases, the Bharati poem, and the five bright lines all need porting first.
 
 So this is no longer only Markdown editing: there is a constitution to verify against the real engine, and a data pipeline to build. See `TODO.md`.
@@ -40,28 +40,42 @@ smuggle in operations: transition, tax rates, budgets, staffing, procurement,
 facilities, service workflows, clocks/calendars, record technology, cryptography,
 and case administration remain Book 2.
 
-**The project-level full-society completion target is author-directed
-(2026-08-05); its final volume, release, and assurance boundary remains
-author-gated.** The finished work must account for a fully functional society and
-must give an ordinary reader a reliably balanced view of normal life, provision,
-care, creation, democratic choice, private freedom, failure, coercion, repair, and
-recovery. “Exhaustive” means that every material social domain and cross-domain
-dependency receives an explicit disposition: constitutional invariant, democratic
-choice, protected private/civic freedom, Book 2 operation, or external empirical
-assumption. It does **not** authorise constitutional control of every human choice,
-and it is a versioned stopping rule rather than a timeless proof that no new domain
-can be discovered. One reviewed canonical source must own stable domain, role,
-body/institution, power, dependency, scenario, claim, external-assumption,
-threshold and assurance-route IDs; coverage, assurance, reader and Book 2 views
-are generated projections, not parallel hand-maintained truths. Every
-“functional” or feasibility claim is bound to a versioned reference envelope and
-declared adequacy, equality/accessibility, continuity, resilience, sustainability
-and resource criteria. Scope, Book 1 destination, Book 1 reader readiness, Book 2
-operations and the integrated two-book claim are separate cumulative gates. Scope
-inventory and neutral decision briefs may precede an author ruling; each contested
-rule family, dependent prose and public claim may not. The current Book 1/Book 2
-seam and edition ruling remain in force until the open Phase 1 decisions in
-`TODO.md` refine or replace them.
+**The full-society volume, edition, and stopping boundary is author-ratified
+(2026-08-07): two-book model + C then E + versioned closure.** Book 1 owns the
+complete constitutional and social destination: constitutional invariants,
+democratic steering, institutions, protected private/civic life, and normal,
+failure, challenge, remedy, restoration, and recovery interfaces. Book 2 owns
+staffing, costs, capacity, resources, technology, workflows, transition,
+deployment, empirical feasibility, and operation under ordinary and declared
+shock conditions. Book 2 remains collection-only until Book 1 — First Edition
+ships at Gate C. Gate D permits only immutable Book 2 previews or release
+candidates; Book 2 — First Edition and the integrated full-society release wait
+for Gate E. E2 + P1 + D2 remains in force, and its “completed expansion” now
+means cumulative Gate C completion. Only Gate E permits the bounded claim that
+the exact paired editions model a fully functional society for the declared
+reference envelope. The controlling decision is
+`new-book-plans/full-society-boundary-decision.md`.
+
+The finished work must give an ordinary reader a reliably balanced view of
+normal life, provision, care, creation, democratic choice, private freedom,
+failure, coercion, repair, and recovery. “Exhaustive” may describe only the
+disposition map for named axes, a named source version, a named envelope, and a
+named review event. Every material social domain and cross-domain dependency
+must receive an explicit disposition: constitutional invariant,
+democratic/ordinary-law choice, protected private/civic freedom, Book 2
+operation, or external assumption. This does **not** authorise constitutional
+control of every human choice or assert timeless completeness. One reviewed
+canonical source must own stable domain, role, body/institution, power,
+dependency, scenario, claim, external-assumption, threshold and assurance-route
+IDs; coverage, assurance, reader and Book 2 views are generated projections,
+not parallel hand-maintained truths. Every “functional” or feasibility claim
+is bound to a versioned reference envelope and declared adequacy,
+equality/accessibility, continuity, resilience, sustainability and resource
+criteria. Scope, Book 1 destination, Book 1 reader readiness, Book 2 operations
+and the integrated two-book claim are separate cumulative gates. Scope inventory
+and neutral decision briefs may precede an outstanding author ruling; each
+contested rule family, dependent prose and public claim remains gated until its
+own ruling lands.
 
 **T3 is author-ratified (2026-08-03) and implemented in stages for case-bound
 Court custody (2026-08-05).** T1 reconciles witnessed predecessor/successor
@@ -114,17 +128,21 @@ standing, core floors, equal protection/non-discrimination, due process, core
 liberties, and commons constraints.
 
 **Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
-D2.** The pre-expansion baseline remains public source and git history but receives
-no promoted edition, canonical serialization, assembled release, or print
-identity. The completed constitutional expansion becomes Book 1 — First Edition
-and its first print-on-demand edition. Before completion, coherent expansion
-milestones may appear only as immutable, tagged First-Edition previews with
-permanent URLs, exact book and nibli sources, full verification records, and
-visible supersession; they are design snapshots, not promises of final chapter
-order. `main` is never an edition URL, and no public artifact may be silently
-replaced. The controlling publication contract and release gates are in
-`new-book-plans/book-1-edition-boundary-decision.md`. This ruling creates no tag,
-release, site, preview, or print file by itself.
+D2, refined by the 2026-08-07 full-society boundary.** The pre-expansion
+baseline remains public source and git history but receives no promoted edition,
+canonical serialization, assembled release, or print identity. “Completed
+expansion” now means cumulative Gate C completion. Gate C publishes Book 1 —
+First Edition, its assembled digital artifacts, and its first Book 1 POD under
+one provenance contract; it makes no operational or integrated full-society
+claim. After Gate B and before Gate C, coherent milestones may appear only as
+immutable, tagged First-Edition previews with permanent URLs, exact book and
+nibli sources, full verification records, and visible supersession. They are design snapshots, not
+promises of final chapter order, and no public release candidate becomes an
+edition early. `main` is never an edition URL, and no public artifact may be
+silently replaced. `new-book-plans/book-1-edition-boundary-decision.md` controls
+Book 1 publication mechanics; `new-book-plans/full-society-boundary-decision.md`
+controls Gate A–E labels, the two-book seam, and versioned closure. Neither
+ruling creates a tag, release, site, preview, or print file by itself.
 
 **`lose` and legacy `decide` are relation-wide conclusion-only — L1 + D1,
 author-ratified and enacted 2026-08-04.** Both had been closed only by omission:
@@ -306,31 +324,31 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
-  dependencies permit**, refreshed 2026-08-05 for the author-directed full-society
-  target. Phase 1 holds author rulings on volume/release, state/membership,
+  dependencies permit**, refreshed 2026-08-07 for the ratified full-society
+  boundary. Phase 1 retains open author rulings on state/membership,
   substantive equality, economic/private ordering and scarcity, family/collective
   rights, ecology/future conditions/animals, security/external power, assurance,
-  narrative register and reader evidence; each ruling blocks only its
-  dependent implementation, while neutral inventory and decision briefs may
-  proceed. Phase 2 holds one self-contained, read-only Nibli audit for finite
-  collective decisions. The expansion backlog uses one canonical social model and
-  versioned reference envelope; explicit constitutional domain packs; role,
-  dependency, stress, gameability and assurance tests; separate completion gates;
-  and a generated reader contract. None makes an unimplemented right, institution,
-  operation or narrative current. Delete a bullet when it fully lands; update it if
-  partly done. Book 2 remains inactive in `book-2/TODO.md`.
+  narrative register, and reader evidence; each ruling blocks only its dependent
+  implementation, while neutral inventory and decision briefs may proceed. Phase
+  2 holds one self-contained, read-only Nibli audit for finite collective
+  decisions. The expansion backlog uses one canonical social model, a versioned
+  reference envelope and disposition map, explicit constitutional domain packs,
+  role/dependency/stress/gameability/assurance tests, separate completion gates,
+  and a generated reader contract. None makes an unimplemented right,
+  institution, operation, or narrative current. Delete a bullet when it fully
+  lands; update it if partly done. Book 2 remains inactive until Book 1 — First
+  Edition actually ships at Gate C.
 - `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
 - `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
-- `book-2/TODO.md` — book-2's deliberately unordered, inactive
-  tracker. Its collection-only full-society contract generates an operational view
-  from the canonical source, binds models to a reference envelope and acceptance
-  thresholds, covers material/care, economy, equality/life course, democracy/
-  integrity/statistics, justice/security/external relations, ecology, knowledge/free
-  life, records/technology, transition, gameability and reader experience, and
-  blocks integrated claims on unresolved critical gaps. Same channel protocol as
-  Book 1 Phase 2 for future engine asks; do not execute Book 2 work while Book 1 is
-  active.
+- `book-2/TODO.md` — book-2's deliberately unordered tracker, inactive until
+  Book 1 — First Edition ships at Gate C. Its collection-only full-society
+  contract generates an operational view from the canonical source, binds models
+  to a reference envelope and acceptance thresholds, covers every declared
+  operational domain, and blocks integrated claims on unresolved critical gaps.
+  Gate D permits only immutable Book 2 previews or release candidates; Gate E
+  publishes Book 2 — First Edition and the integrated release. The Book 1 Phase 2
+  channel protocol governs future engine asks.
 - `LICENSING.md` — the mixed-licence map. Read before adding files.
 
 ## book.md Structure
@@ -694,17 +712,18 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   add a second reference anywhere.
 
 - **The reach strategy: public construction from a home of its own**, ruled
-  2026-08-02 and qualified by E2 + P1 + D2 on 2026-08-04. The dedicated domain,
+  2026-08-02, qualified by E2 + P1 + D2 on 2026-08-04, and bounded to Gate C
+  on 2026-08-07. The dedicated domain,
   platform syndication, public red team, and assembled-book capstone survive.
   The original instruction to serialize the pass-complete pre-expansion manuscript
   does not: E2 leaves that manuscript as public source and git history without a
   promoted edition. P1 replaces that immediate route with immutable, tagged
-  expansion snapshots after their full gates; they are previews, not final
-  spine-order serialization. Once the expanded constitution and spine freeze,
-  the First-Edition release candidate serializes in computed order **as each
-  whole-chapter pass completes against that exact candidate**; the assembled
-  digital book is the capstone, and D2 makes that completed expansion the first
-  print-on-demand edition. Building in public still performs the thesis: repo
+  expansion snapshots after Gate B and their snapshot-specific gates; they are
+  previews, not editions or final spine-order serialization. Constitution and
+  spine freeze may create a candidate, but no public candidate becomes an
+  edition early. Only cumulative Gate C completion publishes Book 1 — First
+  Edition, its assembled digital capstone, and D2's first Book 1 POD under one
+  provenance contract. Building in public still performs the thesis: repo
   history is the method's proof, previews recruit the outside red team, and
   defect pins make known flaws declared features. Four companions remain: the
   launch essay (*The Furnished Prison* the standing headline candidate; inside

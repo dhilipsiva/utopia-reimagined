@@ -226,11 +226,15 @@ current predicate, delivery route, private duty, property claim, or guardian
 mechanism. See [`book-1-constitutional-taxonomy.md`](book-1-constitutional-taxonomy.md).
 
 This map also does not authorise a serialized edition to be changed in place.
-The ratified E2 + P1 + D2 publication contract is
+The ratified E2 + P1 + D2 Book 1 publication mechanics are in
 [`book-1-edition-boundary-decision.md`](book-1-edition-boundary-decision.md):
 the pre-expansion baseline receives no promoted edition; immutable expansion
-snapshots are permitted after their gates; and the completed expansion becomes
-Book 1's First Edition and first print-on-demand edition.
+previews are permitted only after Gate B and their snapshot-specific gates; and
+the cumulative Gate C expansion becomes Book 1's First Edition and first
+print-on-demand edition. The later
+[`full-society-boundary-decision.md`](full-society-boundary-decision.md)
+controls the two-book seam, Gate A–E public artifacts and claims, and versioned
+closure.
 
 Work in this order:
 
@@ -254,7 +258,8 @@ Work in this order:
    own derivation did not; make a reader map, glossary, diagrams, and
    non-specialist test pass.
 7. Run the full verification suite and an external assurance review before
-   calling the resulting book comprehensive.
+   calling the resulting book comprehensive for its declared source version and
+   scope.
 
 ### Narrowness-dependent claim impact gate
 
@@ -295,8 +300,9 @@ boundary. It is not preserved merely because no numbered chapter pin changed.
 
 ## 9. Completion standard
 
-Book 1 may call itself a comprehensive constitutional interface only when every
-target domain has a completed contract row; every public power has an
+For its declared source version and scope, Book 1 may call itself a
+comprehensive constitutional interface only when every target domain has a
+completed contract row; every public power has an
 independent check and remedy; every floor has a non-reciprocal access path; the
 majority corridor is explicit; the Book 2 handoffs are named; and the formal
 model, pins, counterfactuals, prose, and reader-facing explanation agree about

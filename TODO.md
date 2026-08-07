@@ -8,18 +8,21 @@ deleted the moment it fully lands. History belongs in git.
 The repo is heading for two new books plus a clean deletion:
 
 - **book-1** — the active work, in two parts with a deliberate seam:
-  - **Parts I–V — the destination.** What the society IS and how it FUNCTIONS,
-    never how to get there. Derived from the constitution and **gated on it**.
+  - **Parts I–V — the constitutional and social destination.** What the society
+    must guarantee, permit, organise and constrain, including normal, failure and
+    recovery interfaces — never transition or costed operation. Derived from the
+    constitution and **gated on it**.
     **Jargon-free** — a general reader finishes Part V and stops, and the
     formalism is never mentioned in these parts.
   - **Final part — the method, explicitly optional.** The constitution, the
     derived spine, the compile-time firewall, the evidence/conclusion split, and
     what the logic refused. Labelled as a different kind of reading. The only
     place the formalism appears, and what answers "you built a machine and hid it".
-- **book-2** — **how you would actually build it, organisationally and
-  technically.** The transition material (MVS, family→village→planet scaling,
-  legal collisions, costed transition) *and* the technology stack. Its tracker is
-  `book-2/TODO.md` — collect there, do not work there while book-1 is active.
+- **book-2** — **how the destination would be operated and reached.** It owns
+  staffing, costs, capacity, resources, technology, workflows, transition,
+  deployment, empirical feasibility, and operation under ordinary and declared
+  shock conditions. Its tracker is `book-2/TODO.md` — collect there, but do not
+  execute Book 2 work until Book 1 — First Edition actually ships at Gate C.
   book-1 references it once, at the end.
 - **`book.md` and `manifesto.md`** — legacy, to be **deleted** once both new books
   are written. Nothing in this tracker improves them. The one obligation they carry
@@ -33,25 +36,26 @@ The repo is heading for two new books plus a clean deletion:
 their records live in git, not here. What remains runs in two preliminary phases,
 then a full-society expansion backlog and cross-cutting sections:
 
-1. **Phase 1 — author-gated decisions.** Multiple scope, institutional, and release
-   decisions are open. Rule the volume/container, assurance method, and reader-pilot
-   protocol before expansion architecture. The neutral inventory and decision briefs
-   may proceed in parallel; each domain's rules, prose, and public claim wait for its
-   own ruling. The final reader threshold waits for the pilot. This section has been
-   destroyed by tooling once and is watched accordingly.
+1. **Phase 1 — author-gated decisions.** The volume, edition, and stopping
+   boundary is settled. Institutional, constitutional, assurance, narrative, and
+   reader-threshold decisions remain open. Neutral inventory and decision briefs
+   may proceed in parallel; each domain's rules, prose, and public claim wait for
+   its own ruling. The final reader threshold waits for the pilot. This section
+   has been destroyed by tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** A read-only finite-decision capability
    audit is open. Run it before formalising generic collective-decision rules because
    some of what the book has to concede may be an engine limitation rather than a
    design choice. It does not block unrelated inventory, evidence, or decision-brief
    work.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
-   mandate remains the legal spine, but the completion target now also requires an
-   exhaustive social-domain map, functional cross-domain model, and balanced
-   reader-experience contract, ordered from scope mapping through public review.
+   mandate remains the legal spine, but the completion target also requires a
+   versioned disposition map for declared social axes and envelope, a functional
+   cross-domain model, and a balanced reader-experience contract, ordered from
+   scope mapping through public review.
 
 The remaining sections are cross-cutting: the book-1 work that remains around the
 finished text (the pre-expansion text was complete as of 2026-08-03 — epigraph, opening note,
-the derived chapters, Part V and the method part are all in print; what is left is
+the derived chapters, Part V and the method part are all present in source; what is left is
 the full-society destination expansion and the licence files), the reach
 plan, data work, legacy harvest, and a pointer to book-2's own tracker. **Standing
 facts and methods** closes the file and holds knowledge, not tasks.
@@ -66,8 +70,9 @@ or a design decision — they are collected in phase 1 rather than scattered.
 
 **THE INCLUSION GATE — applies to Parts I–V only.** Those parts describe a
 destination, not a route. Before any passage goes in, two tests: (a) does it
-describe what the society IS or how it FUNCTIONS — not how anyone gets there? and
-(b) does the constitution derive it? A passage failing (a) belongs to **book-2**;
+describe what the society must guarantee, permit, organise, or constrain — not
+transition, costed operation, or how anyone gets there? and (b) does the
+constitution derive it? A passage failing (a) belongs to **book-2**;
 one failing (b) belongs in Part V's explicitly-not-derived section, or in the
 opening note, or nowhere. Exactly three things in book-1 are exempt and each is
 labelled as such: the opening note, Part V, and the final method part.
@@ -81,7 +86,7 @@ seam has failed.
 
 Settled design decisions live in `CLAUDE.md`, not here. Planning material is in
 `new-book-plans/`; the full-society expansion backlog below turns the ratified
-constitutional boundaries and author-directed completion target into active work.
+constitutional boundaries and full-society boundary into active work.
 
 ---
 
@@ -96,13 +101,15 @@ emptied section as "every earlier decision was ruled", which was false. Treat th
 the most expensive lines in the file. Line numbers cited inside bullets may predate
 later edits — re-derive before trusting.
 
-The author has directed the project toward an exhaustive, comprehensive,
-well-balanced model of a fully functional society. That direction is settled. The
-decisions below determine its container, lawful limits, assurance stack, and
-release test; they do not reopen whether the broader result is wanted. Scope
-inventory, gap discovery, evidence collection and neutral option briefs may proceed
-before a ruling. Do not implement a contested rule family, rewrite dependent prose,
-or make its completion claim until the author has ruled it.
+The author has directed the project toward a well-balanced two-book model. Book
+1's use of “comprehensive” remains bounded to its Gate B/C declared scope, and
+the Gate E claim is bounded to a declared reference envelope. The two-book
+container, C-then-E release sequence, and versioned stopping boundary are settled.
+The remaining decisions determine constitutional choices, assurance, narrative,
+and reader thresholds; they do not reopen whether the broader result is wanted.
+Scope inventory, gap discovery, evidence collection and neutral option briefs may
+proceed before a ruling. Do not implement a contested rule family, rewrite
+dependent prose, or make its completion claim until the author has ruled it.
 
 - [ ] **[AUTHOR-GATED] Rule the full-society volume, edition, and stopping boundary.**
   - **Recommended:** the two books jointly satisfy the full-society mandate. Book 1
@@ -407,16 +414,29 @@ operation, delivery route, remedy, social outcome or narrative current.
     paths. Protected free/private domains require non-interference, non-recording/
     non-compulsion and recourse boundaries—not a state-certified successful life.
   - A row is disposition-complete only when every applicable field is answered or
-    explicitly marked “not constitutionally prescribed”, “ordinary law”, “Book 2”
-    or “external assumption”. An unresolved field must carry severity, consequence,
-    owner and closure condition; a critical floor, safety, feasibility or hidden-
-    power gap blocks the applicable completion claim. An unclassified public power
-    is a defect. A harmless unclassified private practice defaults to freedom.
-  - **Done when:** an independent scope review can name no material omitted domain,
-    role, dependency, or failure without the ledger adding it, classifying it out
-    with reasons, or recording a visible severity-rated limit. This is versioned
-    exhaustiveness, not a timeless completeness theorem, and disclosure alone does
-    not cure a critical gap.
+    explicitly marked “not constitutionally prescribed”,
+    “democratic/ordinary-law choice”, “Book 2 operation”, or “external
+    assumption”. Classification is routing, not assurance. An unresolved field
+    must carry severity, consequence, owner, closure condition, and public-claim
+    limitation; a critical gap applicable to the gate's permitted claim blocks
+    that gate. An unclassified public power is a defect. A harmless private
+    practice may map categorically to the protected free field only after checking
+    rights harm, dependency/concentrated power, public duty, and commons/external
+    effects.
+  - Give every reviewer proposal one public disposition: add it to the
+    canonical source; classify it with reasons under the available dispositions
+    or as duplicate/immaterial; or retain it as an unresolved severity-rated
+    limit. The named severity owner applies the published rubric and an
+    independent checker reviews the result; a reviewer forces a reasoned
+    disposition, not automatic acceptance or a personal veto.
+  - **Done when:** every projection regenerates from the canonical source and an
+    independent scope review can name no material omitted domain, role,
+    dependency, or failure without the ledger adding it, classifying it out with
+    reasons, or recording a visible severity-rated limit. The closure record
+    binds the gate, claim, source version, envelope, candidate, review cut-off,
+    assurance records, residuals, and claim limits. This is versioned
+    exhaustiveness for those declared axes, not a timeless completeness theorem,
+    and disclosure alone does not cure a critical gap.
 
 - [ ] **Define the reference-society envelope and measurable meanings of
   “functional”.**
@@ -507,6 +527,9 @@ operation, delivery route, remedy, social outcome or narrative current.
     result with the responsible verification route.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
+
+“Comprehensive” here is bounded to Book 1's declared source version and scope at
+Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Implement the ratified T3 temporal path in stages — staged rule families and
   the full-source execution gates landed; four semantic and prose closures remain.**
@@ -1020,9 +1043,12 @@ operation, delivery route, remedy, social outcome or narrative current.
     by the relevant institutions.
   - Ask each reviewer to identify omitted domains, unowned dependencies, hidden
     liveness assumptions, private-power blind spots, impossible operations,
-    totalising rules and narrative distortions. Every finding is fixed, classified
-    out with reasons, or retained with severity, owner and consequence. A critical
-    unresolved finding blocks the affected public claim; “disclosed” is not “safe”.
+    totalising rules and narrative distortions. Every finding is fixed,
+    classified out with reasons, or retained with severity, consequence, owner,
+    closure condition, and public-claim limitation. The named severity owner
+    applies the declared rubric and an independent checker reviews it. A critical
+    unresolved finding applicable to a gate's permitted claim blocks that gate;
+    “disclosed” is not “safe”.
 
 ### Explicitly rejected expansion proposals
 
@@ -1049,12 +1075,12 @@ operation, delivery route, remedy, social outcome or narrative current.
 
 ### Expansion completion standard — cumulative gates, not one finish line
 
-These gates are cumulative but not interchangeable. They follow the currently
-recommended two-book seam and must be revised if the volume/edition ruling changes
-it. Gates D and E are project-level reference gates; their executable work lives
-only in the inactive `book-2/TODO.md`. The author-gated ruling assigns the exact
-public label at each gate, and a later formal or reader test cannot substitute for
-missing operational evidence.
+These gates are cumulative but not interchangeable. The author-ratified
+2026-08-07 boundary fixes the two-book seam, C-then-E publication sequence, and
+versioned closure; `new-book-plans/full-society-boundary-decision.md` controls.
+Gates D and E are project-level reference gates whose executable work lives only
+in `book-2/TODO.md` after Book 1 — First Edition ships at Gate C. A later formal,
+operational, or reader test cannot substitute for an earlier missing condition.
 
 #### Gate A — Scope and assurance foundation
 
@@ -1068,8 +1094,10 @@ missing operational evidence.
 - independent scope reviewers can propose no omission that is neither added,
   classified out nor retained as an explicit severity-rated limit.
 
-**Permitted claim:** the project has a versioned, reviewable map and test program.
-It has not yet described or operated a complete society.
+**Artifact and permitted claim:** the map and test program may be public, but no
+book preview, release candidate, or edition may publish. The project has a
+versioned, reviewable map and test program; it has not yet described or operated
+a complete society.
 
 #### Gate B — Expanded Book 1 constitutional/social destination
 
@@ -1085,9 +1113,12 @@ It has not yet described or operated a complete society.
   invariants, lawful narrowing, challenge, restoration and model boundaries, with no
   critical constitutional, equality, safety or hidden-power gap.
 
-**Permitted claim:** subject to the edition ruling, Book 1 describes a comprehensive,
-versioned constitutional and social destination. It does not establish staffing,
-resources, feasibility, deployment or outside liveness.
+**Artifact and permitted claim:** immutable Book 1 — First Edition previews may
+publish under P1 after Gate B and their snapshot-specific gates pass. A preview
+may say that it describes a comprehensive, versioned constitutional and social
+destination for its declared scope. It may not claim reader suitability,
+staffing, resources, feasibility, deployment, outside liveness, or an operational
+society.
 
 #### Gate C — Book 1 reader and public-edition readiness
 
@@ -1103,10 +1134,14 @@ resources, feasibility, deployment or outside liveness.
   remedies, Book 2 dependencies and external assumptions without reconstructing them
   from scattered chapters.
 
-**Permitted claim:** Book 1 passed the declared accessibility and balance
-protocol for the tested sample; the evidence supports suitability for the declared
-audience within stated sampling and method limits. It is evidence about the book,
-not proof that the society works.
+**Artifact and permitted claim:** publish Book 1 — First Edition, its assembled
+digital artifacts, and its first Book 1 POD atomically under one provenance and
+Gate C closure record. The cumulative Gate B destination passed the declared
+accessibility and balance protocol for the tested sample; the evidence supports
+suitability for the declared audience within stated sampling and method limits.
+It is evidence about the book, not proof that the society is operational. If any
+matching source, artifact, POD identity, provenance, or Gate C record fails, the
+public object remains a preview and Book 2 does not activate.
 
 #### Gate D — Book 2 operational model
 
@@ -1131,8 +1166,11 @@ not proof that the society works.
   A non-critical residual needs severity, consequence, owner, closure condition and
   an explicit public-claim limitation.
 
-**Permitted claim:** Book 2 supplies a reproducible operational design within the
-named envelope. It is not evidence of deployment or a timeless social theorem.
+**Artifact and permitted claim:** only immutable Book 2 — First Edition previews
+or release candidates may publish. Book 2 may say that it supplies a reproducible
+operational design within the named envelope. It may not publish Book 2 — First
+Edition or claim deployment, generalisation beyond the envelope, or an integrated
+functional society.
 
 #### Gate E — Integrated two-book full-society claim
 
@@ -1150,10 +1188,16 @@ named envelope. It is not evidence of deployment or a timeless social theorem.
   accessibility reviewers can reproduce applicable analyses, audit provenance and
   methods for non-reproducible evidence, and identify residual limits.
 
-Only this gate permits the bounded claim that the two-book project models a fully
-functional society for the declared envelope. The claim remains versioned,
-falsifiable and open to the stopping rule; it never means every harmless private life
-is prescribed or every external condition is controlled.
+**Artifact and permitted claim:** atomically publish Book 2 — First Edition and
+an immutable integrated release manifest pairing the exact compatible Book 1 and
+Book 2 editions, artifact hashes, canonical-source version, reference-envelope
+version, assurance and review records, external assumptions, and residual limits.
+If the pairing, integrated checks, or manifest fails, Book 2 remains a preview or
+release candidate. Only Gate E permits the bounded claim that the exact paired
+editions model a fully functional society for the declared reference envelope.
+The claim remains versioned, falsifiable and open to the stopping rule; it never
+means successful deployment, timeless completeness, prescription of every
+harmless private life, or control of every external condition.
 
 ---
 
@@ -1215,18 +1259,23 @@ is prescribed or every external condition is controlled.
 
 ## Reach — delivery and edition boundary ruled 2026-08-04
 
-The ratified policy is E2 + P1 + D2. The current-T0 baseline remains public
+The ratified policy is E2 + P1 + D2, refined on 2026-08-07 by the two-book,
+C-then-E, versioned-closure boundary. The current-T0 baseline remains public
 source and git history but receives no canonical serialization, assembled
-edition, edition tag, or print identity. The completed expansion becomes Book 1
-— First Edition and its first print-on-demand edition.
+edition, edition tag, or print identity. “Completed expansion” means cumulative
+Gate C completion; Gate C publishes Book 1 — First Edition, its assembled digital
+artifacts, and its first Book 1 POD without making an operational or integrated
+full-society claim.
 
 Building in public survives through P1: coherent expansion milestones may be
-published as immutable, tagged previews after their full gates. They are design
-snapshots with provisional order, not final serialization. Once the expanded
-constitution and spine freeze, serialize the First-Edition release candidate in
-computed order, with each whole-chapter pass rerun against that exact candidate;
-the assembled digital and POD book is the capstone. The controlling contract is
-[`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md).
+published as immutable, tagged previews only after Gate B and their
+snapshot-specific gates. They are design snapshots with provisional order, not
+editions or final serialization. Constitution and spine freeze may create a
+private release candidate, but every public pre-Gate-C object remains a preview.
+The controlling publication mechanics are in
+[`new-book-plans/book-1-edition-boundary-decision.md`](new-book-plans/book-1-edition-boundary-decision.md);
+the gate, claim, and stopping contract is
+[`new-book-plans/full-society-boundary-decision.md`](new-book-plans/full-society-boundary-decision.md).
 
 - **Align the current time account before any public expansion snapshot.**
   - Chapter 13's ordinary-language/admitted-fact distinction has landed. Remove
@@ -1253,11 +1302,13 @@ the assembled digital and POD book is the capstone. The controlling contract is
     SHAs, each verified from a clean tree; the full verification transcript/date;
     registry snapshot; known limits; licences; and artifact hashes. Never cite
     `main`, move a tag, or replace an asset in place.
-  - Publish coherent milestones, when useful, as immutable tags such as
+  - Publish coherent milestones, when useful, only after Gate B and their
+    snapshot-specific gates, as immutable tags such as
     `book-1-v1.0.0-preview.1`; preserve superseded previews and mark their order
-    provisional. After the expansion freezes, serialize tagged release
-    candidates in computed order and publish the final assembled digital and
-    POD capstone after an explicit review-close event.
+    provisional. After the expansion freezes, use a private candidate for
+    holdout and release checks. Publish `book-1-v1.0.0`, the assembled digital
+    capstone, and matching POD atomically only after cumulative Gate C and an
+    explicit review-close event pass.
   - Give every version a permanent URL; only `latest` navigation may move. New
     content creates a new version, and withdrawal means visibly disrecommended,
     not silently erased.
@@ -1281,7 +1332,8 @@ the assembled digital and POD book is the capstone. The controlling contract is
   mutable nibli checkout. Supply and test a pinned two-checkout or bootstrap path
   from clean inputs, and publish the exact engine commit; only then say “clone,
   one command, the pins pass.”
-- **Print-on-demand for the completed expansion only (D2).** A priced, well-made
+- **Print-on-demand for the Gate C-complete expansion only (D2).** A priced,
+  well-made
   physical edition of a free text. Quality is the lever and revenue a side
   effect: the typography is canonical because it is first and good, never
   because it is exclusive. Generate it only from the final tagged First
@@ -1388,7 +1440,8 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 book-2 has its own tracker: `book-2/TODO.md` — unordered until its chapters are
 decided, seeded from the hold list, adoption reviews, and the 2026-08-05
 full-society operational completion contract. The discipline is unchanged:
-**do not work book-2 items while book-1 is active**; collect there, rule here.
+**do not work book-2 items until Book 1 — First Edition actually ships at Gate
+C**; collect there, rule here.
 Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner
 or an explicit external assumption so the seam cannot hide an unfunded,
 unstaffed, unmeasured or physically impossible promise.

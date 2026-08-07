@@ -2,10 +2,12 @@
 
 # Book 1 Public-Edition Boundary Decision
 
-> **Status: author-ratified 2026-08-04 — E2 + P1 + D2.** This is a
-> publication decision, not a constitutional change. It qualifies the
-> 2026-08-02 reach ruling and does not authorise changing a public artifact in
-> place.
+> **Status: author-ratified 2026-08-04 — E2 + P1 + D2; refined
+> 2026-08-07 by the full-society boundary.** This is a publication decision,
+> not a constitutional change. It qualifies the 2026-08-02 reach ruling and
+> does not authorise changing a public artifact in place. The later ruling
+> defines “completed expansion” as cumulative Gate C completion and controls if
+> gate timing conflicts.
 
 ## 1. What is being decided
 
@@ -32,14 +34,20 @@ On 2026-08-04, the author decided:
 
 1. the candidate baseline does **not** become a promoted edition;
 2. coherent, immutable expansion snapshots may be published before completion;
-3. the completed expansion becomes both Book 1's First Edition and its first
-   print-on-demand edition.
+3. the Gate C-complete expansion becomes both Book 1's First Edition and its
+   first print-on-demand edition.
+
+The author-ratified 2026-08-07 full-society boundary now defines “completed
+expansion” as **cumulative Gate C completion**. The companion decision
+`full-society-boundary-decision.md` controls the cross-volume seam, Gate A–E
+public labels and claims, and versioned stopping/reopening. This file continues
+to control Book 1 publication mechanics.
 
 ## 2. Terms that must not be blurred
 
 - **Source:** the evolving public repository. `main` is never an edition URL.
-- **Release candidate:** an immutable, tagged source snapshot used for
-  serialization and public review before a final edition.
+- **Release candidate:** an immutable, tagged source snapshot used for private
+  serialization, holdout, and release checks before a final edition.
 - **Edition:** a final, immutable assembled artifact with a stable identity.
 - **Preview:** an immutable, non-final snapshot of expansion work. It is not a
   promise of final chapter order.
@@ -49,7 +57,7 @@ On 2026-08-04, the author decided:
 
 In reader-facing material, use **Book 1 — First Edition** and **Book 1 — Second
 Edition**, not bare “v1” and “v2,” which can be confused with Book 2. Namespaced
-machine tags may use forms such as `book-1-v1.0.0`. Under E2, the completed
+machine tags may use forms such as `book-1-v1.0.0`. Under E2, the Gate C-complete
 expansion is Book 1 — First Edition; “Second Edition” is reserved for a later
 major revision, not used as another name for the expansion.
 
@@ -105,8 +113,8 @@ the hash of the commit that contains it.
 **Ruling: E2.** The author rejected the draft recommendation to give the
 pre-expansion T0 baseline a separate First Edition. It remains public source and git
 history, but receives no canonical serialization, assembled edition, edition
-tag, or print identity. The completed expansion becomes Book 1's First Edition.
-P1 supplies the replacement public-review route. No additional rationale was
+tag, or print identity. The Gate C-complete expansion becomes Book 1's First
+Edition. P1 supplies the replacement public-review route. No additional rationale was
 supplied; do not invent one.
 
 ## 5. Ratified choice 2 — expansion previews
@@ -119,22 +127,28 @@ supplied; do not invent one.
 **Ruling: P1.** Publish milestone snapshots, not a mutable living page. An
 individual preview chapter may be linked only as part of a tagged coherent
 snapshot whose provisional order and supersession status are explicit. Because
-E2 creates no baseline capstone, previews may begin when their own gate passes.
+E2 creates no baseline capstone, Book 1 previews may begin only after Gate B and
+their snapshot-specific gates pass. Every public pre-Gate-C object remains a
+preview; a release candidate may be used privately for holdout and release checks
+but cannot acquire an edition identity early.
 
 ## 6. Ratified choice 3 — print boundary
 
 | Choice | Benefit | Cost / condition |
 | --- | --- | --- |
 | **D1. Print the narrow baseline if it receives a First Edition.** | Gives the verified baseline a durable, accessible physical form and fulfils the original reach ruling sooner. | Physical copies will outlive their scope warning and may be mistaken for the comprehensive redesign. This option has no object under E2. |
-| **D2. Make the completed expansion the first POD edition.** | Reserves the most durable format for the mandate the author now intends Book 1 to fulfil. | Delays the print-on-demand companion and forgoes physical reach for the baseline. |
+| **D2. Make the Gate C-complete expansion the first POD edition.** | Reserves the most durable format for the mandate the author now intends Book 1 to fulfil. | Delays the print-on-demand companion and forgoes physical reach for the baseline. |
 
-**Ruling: D2.** The pre-expansion T0 baseline receives no print edition. The completed
-expansion is the first physical Book 1 as well as its First Edition.
+**Ruling: D2.** The pre-expansion T0 baseline receives no print edition. The
+Gate C-complete expansion is the first physical Book 1 as well as its First
+Edition. Gate C publication is atomic: if the matching source, digital artifact,
+POD identity, provenance, or release record fails, the object remains a preview.
 
 ## 7. Gate before any public expansion snapshot
 
 P1 does not authorise publishing current HEAD or an incoherent intermediate
-state. Before the first expansion-preview tag:
+state. Gate B and every snapshot-specific condition below must pass before the
+first expansion-preview tag:
 
 1. **Align current time claims.** Completed for the staged custody path on
    2026-08-05: the constitution and affected prose distinguish supplied-record
@@ -166,17 +180,20 @@ state. Before the first expansion-preview tag:
    tag, canonical serialization, assembled release, or print file.
 2. Build the expansion one bounded rule family at a time under the mandate,
    taxonomy, T3 gate, coverage contracts, and narrowness-impact gate.
-3. When a coherent milestone passes Section 7 and the fresh gate below, publish
-   it as an immutable First-Edition preview such as
+3. When a coherent milestone has passed Gate B, Section 7, and the fresh gate
+   below, publish it as an immutable First-Edition preview such as
    `book-1-v1.0.0-preview.1`. A later preview receives a new tag and URL; it
    never replaces the prior snapshot.
-4. After the expanded constitution and spine are frozen, create a tagged First-
-   Edition release candidate. Serialize its chapters in computed order, with
-   every whole-chapter pass rerun against that exact candidate.
+4. After the expanded constitution and spine are frozen, create a First-Edition
+   release candidate for private holdout and release checks. Serialize its
+   chapters in computed order, with every whole-chapter pass rerun against that
+   exact candidate. Any public pre-Gate-C object remains labelled a preview.
 5. Close review on an explicit published event, resolve every release-blocking
-   finding, rerun the exact release gate, and tag `book-1-v1.0.0`.
-6. Publish the assembled digital capstone and its matching POD files. Both
-   identify the same final source and release manifest.
+   finding, and rerun the exact release gate. Only after cumulative Gate C
+   passes may the project tag `book-1-v1.0.0`.
+6. Atomically publish the assembled digital capstone and matching POD files.
+   Both identify the same final source, Gate C closure record, and release
+   manifest; a failure in either artifact or its provenance leaves a preview.
 7. After final release, typography or metadata-only corrections use patch
    versions; a correction that changes a public claim uses a visibly named
    corrected edition. Any later constitutional/spine redesign is a new major
@@ -185,7 +202,8 @@ state. Before the first expansion-preview tag:
 ## 9. Fresh gate for every expansion snapshot
 
 No expansion rule family inherits baseline publication clearance. Before a
-snapshot is public, it needs completed coverage and taxonomy contracts,
+snapshot is public, it must have passed Gate B and needs completed coverage and
+taxonomy contracts,
 constitution/spine/pin and counterfactual validation, full-suite verification,
 and the coverage map’s narrowness-impact disposition.
 
@@ -207,6 +225,9 @@ The author selected one option on each axis on 2026-08-04:
 
 Ratified composite ruling: **E2 + P1 + D2**.
 
-This ruling closes the Phase 1 author gate. It does not itself create a tag,
+This ruling closed the 2026-08-04 baseline, preview, and Book 1 POD choice axes.
+It did not settle the later full-society volume, claim, or stopping boundary;
+that author gate was separately ratified on 2026-08-07 in
+`full-society-boundary-decision.md`. Neither ruling itself creates a tag,
 release, site, preview, or print file; those remain ordered Reach implementation
 work in `TODO.md`.

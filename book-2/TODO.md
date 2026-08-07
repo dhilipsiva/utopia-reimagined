@@ -1,14 +1,16 @@
 # TODO — book-2
 
-book-2 is **the route**: how you would actually build it, organisationally and technically —
-the delivery machinery, the transition, the scaling story, the stack. book-1 describes the
-destination and is gated on derivation; Book 2's claims require **traceable
-evidence, costs, uncertainty and claim-appropriate validation**. Code, quantitative
-models and data regenerate where applicable; qualitative/lived evidence needs
-auditable provenance and methods; normative choices need their lawful decision source. The seam between the books is deliberate: destination
-claims and transition claims are different kinds of claims with different verification
-standards, and book-1 refuses the roadmap precisely so the destination can be judged on its
-own terms. book-1 references book-2 exactly once, at its very end.
+book-2 is **the operational and transition volume**: how the destination would be
+staffed, costed, resourced, implemented, operated, stressed, recovered, and
+reached. Book 1 owns the complete constitutional and social destination and is
+gated on derivation; Book 2 owns capacity, resources, technology, workflows,
+transition, deployment, empirical feasibility, and operation under ordinary and
+declared shock conditions. Its claims require **traceable evidence, costs,
+uncertainty and claim-appropriate validation**. Code, quantitative models and
+data regenerate where applicable; qualitative/lived evidence needs auditable
+provenance and methods; normative choices need their lawful decision source.
+Neither volume may claim the other's half or hide an omitted domain at the seam.
+book-1 references book-2 exactly once, at its very end.
 
 > **Scope synchronisation — 2026-08-03.** Book 1's constitutional-interface mandate now
 > owns its constitutional vocabulary, delivery/breach/remedy interfaces, duty-bearer
@@ -18,16 +20,21 @@ own terms. book-1 references book-2 exactly once, at its very end.
 > technology, transition, and implementation evidence. See
 > `new-book-plans/book-1-constitutional-coverage-map.md` and `CLAUDE.md`.
 
-> **Full-society completion target — author-directed 2026-08-05.** The completed
-> project must account for a fully functional society, not only a constitutional
-> interface. Book 2 therefore owns the operational half of every domain assigned to
-> it by Book 1's full-society ledger: people, capacity, resources, finance, workflows,
-> technology, transition, shocks, recovery and reproducible evidence. This collection
-> does not activate Book 2 or overturn the instruction below.
+> **Full-society boundary — author-ratified 2026-08-07: two books + C then E +
+> versioned closure.** Book 2 owns the operational half of every domain assigned
+> by Book 1's canonical ledger: people, capacity, resources, finance, workflows,
+> technology, transition, shocks, recovery, and claim-appropriate evidence. It
+> remains collection-only until Book 1 — First Edition actually ships at Gate C.
+> Gate D permits only immutable Book 2 — First Edition previews or release
+> candidates. Gate E atomically publishes Book 2 — First Edition and the
+> integrated manifest, and alone permits the bounded claim that the exact paired
+> editions model a fully functional society for the declared reference envelope.
+> See `new-book-plans/full-society-boundary-decision.md`.
 
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
-book-2's first real act. Until book-1 ships: **collect here, do not work here.** Engine
-handoffs, when they come, follow book-1's channel protocol — dhilipsiva carries prompts
+book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
+**collect here, do not work here.** Engine handoffs, when they come, follow
+book-1's channel protocol — dhilipsiva carries prompts
 between sessions, each written as one session addressing the other directly.
 
 The seed has two sources: the hold list that lived in book-1's tracker, and the adoption
@@ -37,7 +44,7 @@ noticing.
 
 ---
 
-## Full-society operational completion contract — collect now, execute only when active
+## Full-society operational completion contract — collect now, execute only after Gate C
 
 - [ ] **Generate Book 2's operational responsibility view from the canonical
   full-society source.**
@@ -56,7 +63,7 @@ noticing.
     measured owner. Do not claim Book 1's derivation proves any of these.
   - **Done when:** a deterministic check rejects stale IDs, divergent hand-maintained
     views, unowned critical inputs and missing severity/closure fields. Reconcile the
-    historical bullets below into this source when Book 2 activates; merge
+    historical bullets below into this source after Gate C activates Book 2; merge
     duplicates and delete superseded scope claims.
 
 - [ ] **Define the versioned reference envelope and acceptance thresholds before
@@ -81,10 +88,12 @@ noticing.
 
 **Shared completion rule for every operational-domain task below:** all
 applicable canonical IDs are covered; reproducible ordinary, failure/degradation
-and recovery runs name costs, capacity, thresholds, uncertainty and reader mapping;
-and an unresolved critical floor, equality, safety, feasibility, hidden-power or
-cross-domain gap blocks the affected claim. A task-specific `Done when` clause adds
-to, but never replaces, this rule.
+and recovery runs name costs, capacity, thresholds, uncertainty and reader
+mapping; no critical gap applicable to the gate's permitted claim remains; and
+every non-critical residual records severity, consequence, owner, closure
+condition, and public-claim limitation. Classification or a Book 1 handoff is
+routing, not operational assurance. A task-specific `Done when` clause adds to,
+but never replaces, this rule.
 
 - [ ] **Build the integrated material, service, and care operating model.**
   - Cover food, water/sanitation, housing/land, energy/utilities, health and care,
@@ -276,9 +285,19 @@ to, but never replaces, this rule.
     owner, closure condition and an explicit public-claim limitation. Disclosure and
     an owner are not operational adequacy, and isolated chapter passes do not close
     the integrated model.
+  - Gate D may publish only immutable Book 2 — First Edition previews or release
+    candidates with the bounded operational-design claim. It cannot create Book
+    2 — First Edition, a print edition, or the integrated claim.
+  - Gate E atomically publishes Book 2 — First Edition and an immutable
+    integrated manifest pairing the exact compatible Book 1 and Book 2 editions,
+    artifact hashes, canonical-source and envelope versions, assurance and review
+    records, external assumptions, and residual limits. If the pairing, checks,
+    or manifest fails, Book 2 remains a preview or release candidate. Book 2
+    print remains optional after Gate E and forbidden before it.
   - **Done when:** root Gates D and E regenerate from the canonical source and
-    pass their operational, integrated, reader and external-review contracts; every
-    residual is severity-rated and no critical gap is waived by disclosure.
+    pass their operational, integrated, reader and external-review contracts;
+    every residual is severity-rated, no critical gap is waived by disclosure,
+    and the Gate E release set is provenance-complete and internally compatible.
 
 
 ---
@@ -449,7 +468,8 @@ to, but never replaces, this rule.
   and secession. Book 2 must model whether actual people, stocks, systems and
   institutions can deliver that behavior, publish the failure boundary, and avoid
   calling simulation deployment.
-- **Engine-adjacent asks, parked until book-2 is active** (candidates for the channel, cited
+- **Engine-adjacent asks, parked until Book 1 ships at Gate C and Book 2 is active**
+  (candidates for the channel, cited
   from the engine-book review): an open-world UNDECLARED verdict distinct from UNKNOWN;
   argumentation/proportionality layers; event-calculus time; multi-lingual corpus;
   sandbox/impact-assessment tooling. Do not hand these off now — they are book-2 requirements,
