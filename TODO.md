@@ -37,9 +37,10 @@ their records live in git, not here. What remains runs in two preliminary phases
 then a full-society expansion backlog and cross-cutting sections:
 
 1. **Phase 1 — author-gated decisions.** The volume, edition, and stopping
-   boundary, state form, and political membership are settled. Equality,
-   economic, family/plurality, ecology, public-power, assurance, narrative, and
-   reader-threshold decisions remain open. Neutral inventory and decision briefs
+   boundary, state form, political membership, and substantive equality are
+   settled. Economic, family/plurality, ecology, public-power, assurance,
+   narrative, and reader-threshold decisions remain open. Neutral inventory and
+   decision briefs
    may proceed in parallel; each still-gated domain's rules, prose, and public
    claim wait for its own ruling. The final reader threshold waits for the pilot.
    This section
@@ -107,25 +108,14 @@ The author has directed the project toward a well-balanced two-book model. Book
 1's use of “comprehensive” remains bounded to its Gate B/C declared scope, and
 the Gate E claim is bounded to a declared reference envelope. The two-book
 container, C-then-E release sequence, and versioned stopping boundary are settled.
-The state form and residence-first political membership are also settled. The
-remaining decisions determine other constitutional choices, assurance,
+The state form, residence-first political membership, and substantive-equality
+and anti-subordination baseline are also settled. The remaining decisions
+determine other constitutional choices, assurance,
 narrative, and reader thresholds; they do not reopen whether the broader result
 is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
-
-- [ ] **[AUTHOR-GATED] Rule the substantive-equality and anti-subordination
-  baseline.**
-  - Decide whether the constitution reaches direct, indirect, systemic and
-    intersectional discrimination; segregation, exclusion, harassment and
-    retaliation; accessibility/reasonable accommodation; and lawful positive
-    measures.
-  - Rule permissible distinctions, evidence burdens, public and concentrated-
-    private reach, privacy-safe group diagnostics, review, individual/systemic
-    remedy and the end/review conditions for positive measures.
-  - Formal equality alone may not hide durable dependency; corrective measures may
-    not create identity scores or make documentation a condition of the floor.
 
 - [ ] **[AUTHOR-GATED] Rule the economic-pluralism and protected-private-sphere
   settlement.**
@@ -144,6 +134,10 @@ dependent prose, or make its completion claim until the author has ruled it.
     and appeal survive; and why wealth, merit, contribution, recognition and political
     favour never decide the floor.
 
+  - The equality ruling already directly binds its named public-facing private
+    domains. This gate may add other public-like duties for concentrated power and
+    settle non-equality economic obligations; it may not retract the ratified
+    non-discrimination, accommodation, continuity, or remedy duties.
   - Rule competence/licensing for safety-critical and fiduciary roles,
     portable social insurance, and lawful above-floor compensation/incentives for
     skill, difficult work, innovation, investment, maintenance and public service.
@@ -163,6 +157,10 @@ dependent prose, or make its completion claim until the author has ruled it.
   - Rule whether and how minority, indigenous, linguistic, religious and other
     collective claims receive self-government, representation, land/common claims
     or veto/procedural protections without subordinating individual standing.
+  - The equality baseline and its general-government ballot rules remain binding.
+    This gate may still design a later collective self-government body's internal
+    membership or selection, but may not reduce any person's standing, common
+    services, or equal ballot in general government.
   - Conditions and support may be guaranteed; no institution may prescribe the
     approved family, belief, relationship, identity or personal outcome.
 
@@ -373,6 +371,12 @@ are author-ratified but unimplemented. Their controlling contract is
 `new-book-plans/book-1-state-form-and-political-membership-decision.md`;
 remaining office-term numbers and finite mechanics are delegated implementation
 choices only inside its hard constraints, not a reopened author gate.
+The substantive-equality and anti-subordination baseline is likewise author-
+ratified but unimplemented. Its controlling contract is
+`new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`;
+statistical thresholds, quota values, operational methods, and programme
+workflows remain delegated only inside its legal reach, proof, data, continuity,
+and remedy constraints.
 
 ### Scope and guardrails
 
@@ -616,16 +620,103 @@ Gate B; it does not claim Book 2 operations or feasibility.
     infrastructure or other conditions future people need to exercise them.
 
 - [ ] **Establish substantive equality and anti-subordination across domains.**
-  - Define direct, indirect, systemic and intersectional discrimination;
-    accessibility and reasonable accommodation; segregation and exclusion;
-    harassment, retaliation and status subordination; and lawful positive measures.
-  - State permissible-distinction, evidence-burden, public-reason, independent-
-    review and individual/systemic-remedy tests for public bodies and expressly
-    bound private power. A formally identical rule is not sufficient when its
-    predictable effect entrenches dependency or exclusion.
-  - Use privacy-preserving group evidence to find institutional patterns without
-    assigning individual worth, risk or entitlement scores. Positive measures must
-    be reviewable and may not make identity documentation a condition of the floor.
+  - Implement the open protected-ground architecture and direct, indirect,
+    systemic, multiple, intersectional, associative, accommodation, segregation,
+    harassment, and retaliation forms. Actual, past, anticipated, perceived,
+    associated, and combined grounds remain legal handles, never person-worth,
+    risk, entitlement, or character scores.
+  - Split cards by direct legal effect across every applicable taxonomy class,
+    including accessible floor delivery and territorial equality. Do not create
+    one omnibus equality predicate or silently turn the Article 1 firewall,
+    `admits`, `derived_only`, recognition non-operation, or no-score guards into
+    equality rules.
+  - Bind every public tier, institution, contractor, and delegated function plus
+    the ratified public-facing private domains. Give each express private duty a
+    matching, non-delegable public prevention, investigation, continuity, and
+    remedy duty. Preserve intimate choice and genuinely voluntary affinity,
+    cultural, safety, faith, and expressive association only with free exit and
+    undiminished common rights and services. Prohibit imposed status segregation
+    and inferior parallel systems. Mission-linked requirements must concern a
+    genuinely expressive role, satisfy the direct-distinction test, and cannot
+    cover commercial or essential access.
+  - Apply the separate legal tests: genuine determining necessity for an adverse
+    direct distinction; compatible purpose, evidential fit, necessity, least-
+    discriminatory means, and proportionality for indirect effects; the
+    decision's accommodation and remedial-positive-measure contracts. None may
+    balance away standing, the floor, core liberty, due process, the adult ordinary
+    resident's equal popular ballot, or remedy.
+  - Shift the burden in remedial equality proceedings after credible adverse
+    treatment, a barrier, or a relevant pattern. Intent and one-ground comparator
+    are unnecessary. Never reverse a criminal burden or derive guilt, punishment,
+    or an adverse individual fact from a diagnostic pattern. Bare record absence
+    is not withholding; require authenticated notice, opportunity, source-bound
+    deadline, authorised non-production/destruction finding, and review.
+  - Require proactive physical, sensory, cognitive, linguistic, digital,
+    geographic, financial, and procedural accessibility plus individualized
+    accommodation. Assess undue burden across the responsible institution and
+    available support. If one provider genuinely cannot perform, preserve an
+    equivalent public route in timeliness, quality, dignity, privacy, and cost.
+  - Keep diagnostics purpose-limited, privacy-preserving, independently governed,
+    and outside the canonical consequential person record. Aggregate evidence may
+    create a rebuttable presumption and audit, never an individual standing,
+    floor, sanction, risk, entitlement, or worth result.
+  - Implement, and require where ordinary equality, accessibility, and
+    accommodation remain insufficient, positive measures, including bounded
+    quotas, only through a separately enacted objective, evidence, necessity,
+    proportionality, review, challenge, and end contract. Use purpose-limited,
+    minimally necessary, contestable eligibility evidence that cannot become a
+    reusable identity registry or enter the canonical consequential person record;
+    declining voluntary self-description creates no adverse inference. General-
+    government candidate-list, nomination, outreach, and appointment measures
+    preserve equal ballots, proportionality, appointment anti-capture, and the
+    bans on a protected-ground separate electorate or reserved-seat exception.
+  - Give each measure a fresh source-bound temporal contract, alternate reviewer,
+    and review-silence default. Without current continuation evidence it creates
+    no new preference or enlargement; bounded continuity may preserve accrued
+    positions while alternate review proceeds. End the measure when its objective
+    is sustainably achieved; ordinary equality, accessibility, accommodation, and
+    accrued remedies continue.
+  - Implement the duty to identify and repair continuing historical barriers while
+    democratic law chooses compatible means. Record correction, sealing, or
+    expungement must preserve lawful provenance and permanent historical public
+    answerability; no repair assigns inherited guilt.
+  - Permit affected people, chosen supporters, qualified associations, and the
+    rights advocate or ombud to initiate review without erasing the person's voice.
+    Keep advocacy, investigation, adjudication, execution, audit, and final review
+    separate. Route case relief through ordinary courts and final general
+    invalidation through the Constitutional Court; structural orders state the
+    unlawful condition and required result without running ordinary administration.
+  - Provide interim continuity, cessation, and individual restoration,
+    accommodation, record correction, compensation/reparation, and anti-retaliation
+    protection plus
+    reasoned related-case review, systemic redesign, monitoring, and measures
+    directed at non-repetition. No remedy removes another person's standing,
+    floor, core liberty, due process, or political equality.
+  - Before formalisation, audit the opening note, every numbered chapter, Part V,
+    `method.md`, every affected TRUE/FALSE pin, every narrowness/count guard, and
+    every claim whose truth depends on the absence of an equality/remedy reader.
+    Give family, home, maturity, conviction, custody, official-status, placement,
+    voiding, recognition, and qualification distinctions explicit retain, replace,
+    narrow, or retire decisions.
+  - Acceptance must distinguish direct, indirect, systemic, multiple,
+    intersectional, and associative cases; undocumented claimants; accessibility
+    modes; valid/pretextual undue burden; public, delegated, named-private,
+    intimate, and expressive contexts; forced versus voluntary separation; one
+    grave act and cumulative harassment, protected expression, and retaliation;
+    privacy-safe burden shift; lawful quota, unjustified continuation, prohibited
+    identity reuse, review silence, and end;
+    political measures; historical record disposition; individual and systemic
+    remedy; related-case reopening; court non-administration; federal variation;
+    and discriminatory laws, initiatives, amendments, regional rules, secession
+    terms, and emergencies.
+  - Book 1 owns definitions, reach, burdens, data walls, review, continuity,
+    remedies, and failure polarity. Book 2 owns collection/statistical methods,
+    staffing, costs, operational accommodation and programme design, monitoring,
+    enforcement workflows, and empirical evaluation within that contract. Nibli
+    may consume an authenticated, contestable, bounded finding; do not open an
+    engine handoff
+    merely for statistics or credit it with population computation, identity
+    authentication, or institutional action.
 
 - [ ] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
   - Specify consent, reproductive autonomy, mental and physical care, disability
@@ -751,9 +842,12 @@ Gate B; it does not claim Book 2 operations or feasibility.
     corporations, platforms, monopolies and public contractors where essential
     function, dependency, lock-in, information asymmetry or lack of meaningful exit
     creates public-scale power.
-  - Rule direct duties expressly; define evidence, transparency/privacy,
-    non-discrimination, contestability, independent review, continuity and remedy.
-    Do not constitutionalise harmless voluntary life merely because it is private.
+  - The named employment, housing, education, health/care, finance/insurance,
+    utility, transport, public-commerce, and dominant platform equality duties are
+    already ratified. This task owns additional public-like powers and non-equality
+    duties; it may not reopen that reach or weaken its evidence, accommodation,
+    contestability, continuity, and remedy contracts. Do not constitutionalise
+    harmless voluntary life merely because it is private.
 
 - [ ] **Define the democratic ceiling and majority process.**
   - Ordinary majorities decide policy, tax mix, providers, public/co-operative/
@@ -819,12 +913,25 @@ Gate B; it does not claim Book 2 operations or feasibility.
   population score.**
   - Authorize censuses, representative sampling, administrative statistics and
     public planning data only with necessity, purpose limits, minimization,
-    accessibility, privacy, correction, independent methodology and publication.
-  - Separate aggregate planning evidence from individual eligibility and
-    enforcement. Test non-response, undercount, classification harm, political
-    manipulation, re-identification, stale data and suppression of adverse results.
-  - Book 2 owns collection operations, secure linkage, calibration and uncertainty;
-    Book 1 owns authority, non-use walls, contestability and public accountability.
+    accessibility, privacy, correction, retention/deletion control, independent
+    methodology, uncertainty disclosure and publication.
+  - Put equality diagnostics under the ratified data wall: separate purpose-
+    limited person evidence from the canonical consequential record and from
+    eligibility/enforcement data; protect small groups and intersections from re-
+    identification; make non-response non-adverse; and provide access, correction,
+    challenge, independent governance, and anti-retaliation.
+  - Aggregate patterns may create a rebuttable equality presumption and systemic
+    audit, but never an individual standing, floor, sanction, risk, entitlement,
+    worth, guilt, or punishment result. Test undercount, classification harm,
+    political manipulation, stale data, method drift, suppression, identity reuse,
+    and attempts to feed diagnostics into an individual consequence.
+  - Book 2 owns collection, sampling, linkage, privacy technology, calibration,
+    thresholds, and empirical evaluation. Book 1 owns authority, purposes,
+    permitted consumers, non-use walls, burdens, contestability, and public
+    accountability. Nibli may consume an authenticated, contestable, bounded
+    finding; do not
+    open an engine handoff merely for statistics or claim it computes disparities,
+    authenticates identity, or proves institutional action.
 
 - [ ] **Build amendment enactment and effective-version assurance outside the
   reasoning engine.**

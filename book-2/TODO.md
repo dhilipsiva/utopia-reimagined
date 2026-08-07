@@ -41,6 +41,20 @@ book-1 references book-2 exactly once, at its very end.
 > secession route. See
 > `new-book-plans/book-1-state-form-and-political-membership-decision.md`.
 
+> **Equality handoff - author-ratified 2026-08-07.** Book 1 owns the legal
+> equality definitions, protected reach, distinction and burden tests, data wall,
+> accommodation invariant, positive-measure authority and continuation default,
+> review, continuity, individual/systemic remedies, and failure polarity. Book 2
+> owns data collection and statistical methods, staffing, costs, operational
+> accessibility/accommodation and programme design, monitoring, enforcement
+> workflows, privacy technology, and empirical evaluation within that contract.
+> It may not choose protected grounds or reach, an eligible class, quota or
+> preference, rights effects, proof burdens, remedies, or temporal defaults. Nibli
+> may consume an authenticated, contestable, bounded finding but is not the
+> population,
+> identity, or institutional-liveness system. See
+> `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow
@@ -179,20 +193,62 @@ but never replaces, this rule.
     criteria.
 
 - [ ] **Build equality, life-course, dependency, and social-insurance operations.**
-  - Cover direct/indirect/systemic/intersectional discrimination, accommodation
-    and lawful positive measures; reproduction/reproductive care, family plurality
-    and intimacy; childhood, supported decision-making/guardianship, disability,
-    dependant-caregiver conflicts, domestic-interference response, caregiving,
-    ageing and death/succession; and unemployment, illness, injury, disability, care,
-    survivor and old-age income security.
-  - Measure access, take-up, disparity, burden, continuity, portability, reserves and
-    remedy without converting group diagnostics into person-worth or entitlement
-    scores. Test documentation gaps, non-take-up, retaliation and correlated shocks.
+  - Operate direct, indirect, systemic, multiple, intersectional, associative,
+    accommodation, segregation, harassment, and retaliation routes across every
+    public/delegated function and the named employment, housing, education,
+    health/care, finance/insurance, utility, transport, public-commerce, dominant
+    communication/platform, monopoly, gatekeeping-intermediary, and dependency or
+    no-meaningful-exit domains. Preserve intimate and genuinely voluntary cultural,
+    affinity, safety, faith, and expressive association with free exit and
+    undiminished common rights and services; do not reproduce imposed status
+    segregation or inferior parallel systems.
+  - Deliver proactive physical, sensory, cognitive, linguistic, digital,
+    geographic, financial, and procedural accessibility plus individualized
+    accommodation. Model whole-institution resources and available support; test
+    valid and pretextual undue burden and an equivalent public continuity route in
+    timeliness, quality, dignity, privacy, and cost.
+  - Operate purpose-limited diagnostic collection, denominators, sampling,
+    linkage, privacy/security, small-group protection, method publication,
+    correction, retention/deletion, and challenge outside the consequential person
+    record. Implement the civil/administrative presumption and disclosure workflow
+    without turning disparity into an individual verdict, criminal burden, or
+    person score.
+  - Operate separately enacted positive measures, including quotas, with bounded
+    eligibility evidence, no reusable identity registry, accessible alternatives,
+    independent review, alternate reviewers, review-silence default, accrued-
+    position continuity, sustainable-objective completion, and no adverse inference
+    from declining voluntary self-description. Political measures may use
+    candidate-list, nomination, outreach, and appointment routes. They must
+    preserve equal ballots, proportionality, appointment anti-capture, and the
+    general-government bans on a protected-ground separate electorate or reserved-
+    seat exception.
+  - Operate historical-barrier identification and democratically enacted compatible
+    repair while preserving record provenance and official answerability. Run
+    claimant, supporter, association, and ombud initiation; notice and voice;
+    separated investigation, adjudication, execution, audit, and final review;
+    interim continuity; individual relief; shared-defect related-case review;
+    bounded structural orders; recurrence monitoring; and non-repetition measures.
+  - Cover reproduction/reproductive care, family plurality and intimacy;
+    childhood, supported decision-making/guardianship, disability, dependant-
+    caregiver conflicts, domestic-interference response, caregiving, ageing and
+    death/succession; and unemployment, illness, injury, disability, care,
+    survivor, and old-age income security under the ratified equality wall.
+  - Measure access, take-up, disparity, burden, continuity, portability, reserves,
+    remedy, effectiveness, and recurrence without choosing Book 1's protected
+    grounds/reach, legal tests, quotas/preferences, rights effects, remedies, or
+    continuation default.
 
-  - **Done when:** reviewed life-course/family journeys and social-insurance
-    models execute ordinary access, accommodation/support, denial/retaliation,
-    dependant-caregiver conflict, portability, continuity, correction and correlated-
-    shock cases with disparity and adequacy results.
+  - **Done when:** reviewed operations execute direct, indirect, systemic,
+    multiple, intersectional, and associative routes; an undocumented claimant;
+    every accessibility mode; valid/pretextual undue burden; public, delegated,
+    named-private, intimate, and expressive contexts; forced/voluntary separation;
+    one grave act and cumulative harassment, protected expression, and retaliation;
+    privacy-safe burden shift; lawful quota, premature withdrawal, unjustified
+    continuation, review silence, sustainable end, and prohibited identity reuse;
+    political measures; historical record disposition;
+    individual and systemic relief; proper/improper related-case reopening; court
+    non-administration; recurrence; and representative life-course, family,
+    dependency, insurance, portability, correction, and correlated-shock cases.
 
 - [ ] **Build civil/criminal justice, safety, defence, migration, and external-
   relations operations.**
