@@ -248,16 +248,24 @@ and one equal vote there. Candidacy uses the same adult-resident baseline: no
 higher age, citizenship requirement, property test, or residence-duration test
 may be added for elected office.
 
-The state-form rules import the one general legal-adulthood status that the
-later family and life-course ruling must define. They create no number, separate
-political maturity test, or discretionary adulthood entry. The later ruling must
-make lawful acquisition non-discretionary and provide authorised evidence,
-challenge, correction, and continuity when that evidence is missing, deleted,
-or disputed. Once lawfully established, adulthood itself cannot be revoked by a
-political reclassification. Franchise separately requires current residence;
-loss or transfer of that membership needs its own evidence and challenge.
-No later reclassification may retroactively invalidate a ballot lawfully
-submitted under the status and rules effective when it was accepted.
+The separate family, dependency, reproduction, and collective-plurality ruling
+of 2026-08-08 now defines the imported general legal-adulthood status. Adulthood
+arises automatically and non-discretionarily at one common-tier statutory age;
+records are evidence of it, never its source. The ruling supplies no numeric age
+and creates no separate political-maturity test, discretionary adulthood entry,
+or global capacity score. A future-conditions route may confer only a named,
+decision-specific early power and cannot replace adulthood or itself confer
+franchise or candidacy. Missing, deleted, or disputed evidence must reach a
+prompt independent determination, challenge, and correction. The last
+uncontested adult status continues. If credible evidence shows that the age
+threshold may have been crossed and a ballot or candidacy opportunity would
+expire before resolution, provisional adult status preserves that opportunity
+unless a timely evidence-backed contrary determination resolves it. Adulthood
+cannot be revoked or withdrawn retroactively. Franchise separately requires
+current residence; loss or transfer of that membership needs its own evidence
+and challenge. No later reclassification may retroactively invalidate a ballot
+lawfully submitted under
+the status and rules effective when it was accepted.
 
 A move transfers political home atomically. Establishing the new home ends the
 old one in the same legally effective transition. During a dispute the last
@@ -310,6 +318,16 @@ Participation may extend beyond the electorate. Any materially affected person
 may receive relevant public information consistent with personal privacy and
 record limits, petition, speak, organise, and challenge without that broader
 participation becoming a second or weighted vote.
+
+Indigenous self-government and other lawful collective bodies may use their own
+rights-bounded membership and internal selection rules. Internal participation
+is not a duplicate general-government ballot and may not move a person's
+political home, reduce the person's equal general ballot, create a protected-
+ground electorate or reserved seat in a general-government body, or reopen the
+settled prohibition on unilateral secession. Collective membership combines
+self-identification with lawful collective acceptance and remains bounded by
+universal standing, equality, due process, free exit, and an effective challenge
+route.
 
 ## 6. Lawmaking, amendment, initiative, and recall
 
@@ -586,10 +604,13 @@ It must not be represented as legally compelled by that source.
 This ruling rejects a directly elected common executive, a coequal permanent
 regional veto, diaspora voting, universal recall, conviction-based
 disenfranchisement, and citizen bypass of the Assembly threshold for
-constitutional amendment. It does not settle the numeric legal-adulthood age,
+constitutional amendment. It did not itself settle the numeric legal-adulthood
+age or the family, dependency, reproduction, and collective-plurality contract;
+the separate author ruling of 2026-08-08 now settles that planning scope while
+still leaving the numeric age to common-tier statute. This ruling does not settle
 exact office durations, ballot technology, staffing, costs, external-operation
-details, or any economic, family/plurality, ecological, security, assurance,
-narrative, or reader-evidence ruling.
+details, or any ecological, security, assurance, narrative, or reader-evidence
+ruling.
 
 The substantive-equality and anti-subordination baseline was separately
 author-ratified on 2026-08-07. It remains unimplemented and does not alter this
@@ -600,6 +621,11 @@ separately author-ratified on 2026-08-07 and remains unimplemented. This state-
 form ruling itself did not choose an economic order; the later ruling alters it
 only through the expressly added common competences above and preserves regional
 and local residual authority.
+
+The family, dependency, reproduction, and collective-plurality contract was
+separately author-ratified on 2026-08-08 and remains unimplemented. It controls
+the adulthood and collective-membership interfaces cross-referenced here; see
+[`book-1-family-dependency-reproduction-and-collective-plurality-decision.md`](book-1-family-dependency-reproduction-and-collective-plurality-decision.md).
 
 ## 12. Ratification record
 

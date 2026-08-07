@@ -142,6 +142,15 @@ remain undiminished. Unless it also performs a directly bound function, the
 association need not itself provide those common services; its existence or a
 person's exit cannot reduce the services owed elsewhere.
 
+The separate family, dependency, reproduction, and collective-plurality ruling
+protects modular pair and plural family forms while keeping parentage, care,
+household, support, property, and decision-agent roles legally distinct. It
+permits more than two legal parents, creates no marital privilege, makes care
+continuity public-first, and imposes no compulsory personal-care or inherited
+support debt on adult kin. Every form remains fully subject to equality,
+standing, due process, free exit, and remedy; no family, cultural, or religious
+label supplies an exception.
+
 A mission-linked status requirement is permissible only for a genuinely
 expressive role where that characteristic is essential to performing the role.
 The exception is role-specific. It does not extend to general employment,
@@ -307,10 +316,11 @@ outreach, and appointments while preserving one equal ballot, overall
 proportionality, and the ratified chamber structure. In the People's Assembly,
 regional legislatures, and ordinary local representative bodies, this ruling
 creates no protected-ground separate electorate, unequal vote, or reserved-seat
-exception. It does not decide the membership or internal selection of a later-
-ratified collective self-government body; such a body may not reduce anyone's
-standing or equal ballot in general government. Appointment
-measures must also preserve open nominations, reasoned qualification review,
+exception. The separately ratified 2026-08-08 collective-plurality contract now
+governs internal membership and selection through self-identification plus lawful
+collective acceptance. Such a body may not reduce anyone's standing, individual
+rights, access to common services, or equal ballot in general
+government. Appointment measures must also preserve open nominations, reasoned qualification review,
 divided selectors, staggered nonrenewable mandates, cause-only removal, and the
 legal incompatibility of majority appointment control by one current government,
 chamber, party coalition, profession, or appointing source.
@@ -520,7 +530,8 @@ The later rule families and assurance programme must distinguish at least:
   sustainable completion, and
   prohibited identity reuse;
 - candidate-list or nomination measures preserving equal ballots and
-  proportionality, plus the distinct collective-self-government question;
+  proportionality, plus separately ratified rights-bounded internal collective
+  membership and selection;
 - lawful record disposition preserving provenance and public answerability;
 - an individual remedy, a properly and improperly reopened related case, a
   bounded structural order that does not administer the institution, and
@@ -556,12 +567,14 @@ identity-data wall are author policy choices and must not be presented as
 universally compelled by those sources.
 
 This ruling does not prescribe equal income or identical outcomes, set quota or
-statistical thresholds, create a reparation formula, decide family or cultural
-membership, settle the economic order, create an identity registry, operate an
-equality programme, or prove real-world equality. The separate economic-
-pluralism and protected-private-sphere decision, author-ratified later on
-2026-08-07, now settles that distinct planning scope without changing this
-ruling's historical rationale or formal status.
+statistical thresholds, create a reparation formula, create an identity registry,
+operate an equality programme, or prove real-world equality. It did not itself
+decide family or cultural membership or settle the economic order. The separate
+economic-pluralism and protected-private-sphere decision of 2026-08-07 and the
+family, dependency, reproduction, and collective-plurality decision of
+2026-08-08 now settle those distinct planning scopes without changing this
+ruling's historical rationale or formal status. See
+[`book-1-family-dependency-reproduction-and-collective-plurality-decision.md`](book-1-family-dependency-reproduction-and-collective-plurality-decision.md).
 
 ## 16. Ratification record
 

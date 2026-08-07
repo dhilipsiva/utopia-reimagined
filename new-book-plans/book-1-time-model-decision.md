@@ -37,7 +37,14 @@ case-bound but are not a general truth or uniqueness proof.
 The old writable words remain deliberately separate. `free` is still a
 recorded completion act, not an expiry computed by the time path. `mature` is
 still writable rather than time-derived; a person can challenge its omission,
-but the resulting Appeals duty does not write adulthood or confer a ballot.
+but the resulting Appeals duty does not write adulthood or confer a ballot. The
+separate 2026-08-08 ruling makes adulthood automatic at one common-tier statutory
+age and treats records only as evidence of that status. That contract remains
+unimplemented and cannot silently reuse `mature`. A future-conditions route may
+confer only a named, decision-specific early power; it cannot create a second
+adulthood status, global capacity score, ballot, or candidacy. A genuinely
+unresolved first adulthood determination needs prompt review and provisional
+continuity where delay would otherwise erase an expiring ballot or candidacy.
 The shield does not read temporal order or expiry. A previously attested status
 preserves personhood when its required carry into the next record is omitted; it does
 not recreate a deleted office, authority, or shield premise.
@@ -157,8 +164,14 @@ identity, storage, publication, or availability controls in this list.
    silently extend an already expired restriction.
 6. **Protected special cases:** emergency and office time limits cannot erase
    personhood, core floors, equality, evidence rights, appeal, or the shield.
-   An adulthood rule, if retained, needs an accessible correction route and may
-   never gate anything beyond the expressly ratified civic function.
+   The ratified adulthood status needs accessible evidence, correction,
+   non-retroactivity, and continuity when its record is missing, deleted, or
+   disputed; the record evidences the status and does not create it. Legacy
+   `mature` cannot silently become that status or gate beyond its current narrow
+   civic fixture. Any early-power route must name its own decision scope and
+   evidence and cannot become global incapacity, adulthood, person scoring, a
+   ballot, or candidacy. Credible unresolved first-status evidence requires prompt
+   determination and provisional continuity for an expiring political opportunity.
 7. **One current legal line:** an adverse carry or restrictive power may read
    only the collision-free terminal successor selected by the independently
    witnessed constitutional-lineage binding. A disjoint terminal chain, a
@@ -241,7 +254,7 @@ records what each family must continue to prove and where its proof stops.
 | Baseline | Prove tense wrappers, `year`, `earlier`, and an opaque stated term create neither the implemented chronology nor release on their own. |
 | Carry and current lineage | Test honest carry, omitted carry, forged raw carry, competing or disjoint terminal lineages, cross-record disappearance/replay, forgiveness, and same-record reciprocal voids. Only the witnessed canonical terminal successor may give adverse carry legal effect in a fresh evaluation. Omission and forgery become named, challengeable defects; disappearance remains a conservative report because lawful protected-record disposal is not represented. |
 | Release | Test forged `free`, withheld current authority, and valid recorded release. Preserve personhood, travel, floor debt, and the disclosed delivery gap; authority lapse must not manufacture `free`. |
-| Maturity | Test forged and withheld `mature`; prove it cannot gate personhood, floors, liberty, due process, or remedy. |
+| Adulthood and legacy maturity | Test automatic statutory-age adulthood; missing, corrected, deleted, and disputed evidence; last-status continuity, a provisional first determination where a political opportunity would expire, and non-retroactivity; and a bounded decision-specific early power that cannot itself confer a ballot or candidacy. Test forged and withheld `mature`; neither status nor fixture may gate personhood, floors, liberty, due process, or remedy, and `mature` may not become the adulthood record. |
 | Order and recency | Test direct and longer cycles, typed conflict propagation, exposure before/after office end, forged/withheld stale facts, and backdated records. Do not claim an ordering result without separately witnessed event and record paths, and do not let a contested connected path support a window. |
 | Emergency and office | Test forged declaration/end, frozen end, re-declaration loop, succession, and self-review. Ending power must not erase answerability or the shield. |
 | Audit | Any deadline or ignored-duty rule that reads `obliged` must deliberately retire Chapter 14's current endpoint and update its pins and prose. |

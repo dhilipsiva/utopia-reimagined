@@ -51,6 +51,8 @@ return later as ad hoc “new rights” or “new branches.”
 | Who turns a record finding into a remedy? | Class 7 supplies evidence; Class 6 supplies an independent reader with an action duty; Class 4 supplies the contest and repair route. A referral alone is not accountability. | The particular recipient, remedy, and continuity rule for each failure. |
 | Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
 | Are economy, property, locality, migration, and external relations extra classes? | No. Split each by direct legal effect across democratic policy, public duty, liberty, standing, fair process, records, jurisdiction, and commons. The ratified economic settlement permits plural ownership and above-floor policy inside a non-delegable floor, labour, equality, conditional-property, substantive-contract, protected-private-sphere, private-power, scarcity, and no-score boundary. Property is conditional; price and lawful wealth may mediate ordinary above-floor transfers, but `reward`, recognition, merit, a qualifying threshold, personal scores, and raw work/contribution facts cannot directly qualify property access. An adjudicated wage/equity claim or purpose-bound grant, prize, or supplement uses a distinct legal relation. Contribution may calculate a separately enacted above-floor insurance supplement but cannot gate the floor or read `reward`. Both any present person and an independently checked public guardian have standing for commons/future-condition claims. | Separate cards for each economic effect and the guardian controls; ecological ceilings remain open; rates, prices, quantities, operations, and empirical feasibility remain Book 2. |
+| Are life course, family, care, reproduction, ageing, and death extra classes? | No. Split their direct effects across Class 1 status and legal capacity; Class 2 public care and continuity; Class 3 bodily, reproductive, domestic, family, treatment, and association liberty; Class 4 child, parentage, supported-decision, protection, succession, and end-of-life proceedings; Class 6 public duties; and Class 7 consequential records. A family, caregiver, supporter, age, disability, diagnosis, or residence label cannot stand in for consent, care, capacity, best interests, parentage, adulthood, responsibility, or authority. | Separate cards for each status, liberty, private duty, public continuity route, proceeding, finding, record, and remedy; one common-tier-law age remains to be chosen, and operations remain Book 2. |
+| Are collective and plurality rights an extra class? | No. Split universal individual status and membership effects into Class 1; cultural, linguistic, religious, association, property, and anti-assimilation liberties into Class 3; internal-dissent, customary-law, consultation, consent, and remedy proceedings into Class 4; internal collective choice and the one-general-ballot boundary into Class 5; institutional mandates into Class 6; membership/title/decision records into Class 7; territorially grounded self-government into Class 8; and shared-resource non-destruction into Class 9. Neither `family` nor a new omnibus `collective` predicate may carry these effects. | Separate cards for each direct effect, including historical/territorial basis, individual-rights review, consent-versus-consultation boundary, nonmember services, title continuity, finite decision semantics, and Book 2 administration. |
 | What counts as delivery evidence? | **Ratified:** `teaches` + `hears` remains a narrow legacy demonstration only. Future delivery uses accessibility-neutral, recipient-side access or receipt evidence with a named authorised writer and challenge route; it must not infer learning, health, belief, or another compelled personal state. No current route is a qualifying general model. | The names, writer authority, challenge route, and evidence of each future delivery family. |
 | Are accessibility and time classes? | No. Accessibility is a cross-cutting equality condition. The staged T3 path is formal for witnessed record replacement, typed transitive event/record paths, and canonical-current case-bound Court custody. It does not supply metric duration, outside-clock liveness, or temporal limits for other powers. Missing or disputed time evidence may not create or extend restrictive public power or become a personal-time score. A continuity rule may preserve only claimant-supporting status that its independent evidence establishes; the current standing route cannot cure a missing predecessor witness. | Each class's temporal status and any additional power-specific T3 contract. |
 | What stays outside Book 1? | Operations—budgets, staffing, logistics, databases, devices, clocks, and service workflows—remain Book 2. | The evidence and costed operating case that Book 2 must supply. |
@@ -85,6 +87,10 @@ inventing a catch-all class:
 | --- | --- | --- |
 | Urgent food for a person absent from the roster | 1 + 2 + 7 | Standing cannot wait for a record; delivery and later correction are separate. |
 | Bodily integrity or freedom not to speak or work | 3 | These limit imposed interference; they are not a provider-delivered outcome. |
+| Automatic adulthood despite a missing registration record | 1 + 7 | The status arises from common-tier law, while evidence, challenge, correction, carry, and continuity are separate record effects. |
+| Pregnancy authority plus access to reproductive care | 3 + 2 + 6 | Bodily authority limits interference; usable care and the non-delegable public duty require separate cards. |
+| Child separation, plural parentage, or a supported-decision conflict | 4 + 1 + 7 | The proceeding must preserve each person's standing and voice while using bounded, contestable case and status records. |
+| Indigenous self-government, collective title, and a project affecting a sacred site | Split across 3 + 4 + 5 + 6 + 7 + 8, and 9 where a shared condition is at stake | Property/culture, process, collective decision, institutional mandate, evidence, territorial authority, and non-destruction are distinct legal effects; no omnibus collective rule may replace them. |
 | A person seeing and contesting their own record | 7 + 4 | Record access needs correction and a fair dispute route, not a new floor. |
 | An audit finding that a provider denied a floor | 7 + 6 + 4 | A finding needs an independent recipient, a duty to act, continuity, and a remedy; referral alone is inert. |
 | A public duty to keep the floor funded | 6 + 5 | The constitutional duty binds public power; democratic policy chooses compatible means. |
@@ -142,12 +148,14 @@ state.
 | Personhood and equality | 1 | 7 for status evidence and correction. A recorded `person` is not yet proof of safe unregistered access; actual urgent support is a class-2 claim. |
 | Material floor | 2 | 7 supplies delivery/receipt evidence; 6 names the duty-bearer. It secures conditions, not forced eating, health, learning, speech, belief, or friendship. |
 | Liberty and personal integrity | 3 | 4 governs remedies after a breach; record/data privacy is class 7. |
+| Life course, family, care, reproduction, and death | **Split required** | 1 covers independent child/adult standing, automatic adulthood, and legal capacity; 2 public care and continuity; 3 bodily/reproductive authority, treatment refusal, family/domestic life, supported living, and cultural association; 4 child protection, parentage, decision support, domestic intervention, succession, and end-of-life proceedings; 5 leaves assisted-dying permission, compensation, and the adulthood age to compatible democratic law inside the ratified bounds; 6 assigns public care/protection/adjudication duties; 7 controls age, family, origin, consent, directive, will, and decision records. |
 | Justice and coercion | 4 | 3 limits coercion; 6 separates adjudication, execution, and review. |
 | Democracy and amendment | 5 | 6 assigns bodies; 7 supports transparent, contestable decisions. |
 | Public institutions | 6 | 4 and 7 prevent self-judging/self-auditing power. |
 | Records and accountability | 7 | 1 protects standing; 6 supplies the remedial reader/action duty; 4 supplies challenge and correction. |
 | Economy, property, work, and commons | **Split required** | 2 covers the floor and continuity; 3 labour, property, contract, protected-private-sphere, and private-power limits; 4 enforcement, insolvency, eviction, debt, and repair; 5 compatible democratic economic choice; 6 fiscal, monetary, regulatory, and continuity duties; 7 purpose-limited records, reasons, and challenge; 8 federal portability, equalisation, and economic competence; 9 commons/non-regression. Recognition remains outside compensation and allocation. |
-| Locality, plurality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, and cross-jurisdictional duty; 3 movement/association; 1 newcomer standing; 4 migration procedure; 6 external public authority. |
+| Locality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, and cross-jurisdictional duty; 3 movement/association; 1 newcomer standing; 4 migration procedure; 6 external public authority. |
+| Collective and plurality rights | **Split required** | 1 preserves universal individual status and governs consequential membership effects; 3 protects culture, language, religion, association, anti-assimilation, and conditional collective property/title; 4 governs membership challenge, internal dissent, customary-law conflict, consultation, consent, restitution, and remedy; 5 governs authenticated internal collective decisions while preserving one equal general-government ballot; 6 assigns collective and reviewing institutional mandates; 7 controls membership, basis, title, consultation, and decision records; 8 covers territorially grounded self-government and common services for nonmembers; 9 covers shared-resource and irreversible-harm limits where applicable. |
 | Emergency and resilience | **Overlay, not a separate class** | It affects liberty, fair process, democracy, institutions, and records, but remains constrained by standing, floors, the common baseline across places, and non-destruction. |
 | Ecology and future people | 9 | 5 chooses compatible policy, not the right to exhaust the common condition. |
 
@@ -219,6 +227,27 @@ structural refusal instead limits what *form of rule* may exist across subjects.
    subject matter and thereby lose what they prevent. Article 9's registered
    names are not such a semantic wall: they compare a proposal's self-declared
    label and do not bind that label to an exact source change or its effects.
+10. **Independent agency survives every status:** a child, adult, dependant,
+    caregiver, family member, supporter, collective member, dissenter, and
+    nonmember resident keeps independent standing, floors, privacy, voice,
+    challenge, and remedy. Adulthood is one automatic status, not a global
+    maturity score; support is chosen and decision-specific, not guardianship;
+    and neither family recognition nor collective autonomy may lower individual
+    rights, worsen confinement, prove care, create compensation, or add a second
+    general-government ballot.
+11. **Consequential status has a complete record contract:** every age,
+    parentage, caregiver, decision-agent, origin, directive, will, collective
+    membership, historical/territorial basis, title, consultation, or consent
+    effect names its source, writer, evidence rule, independent reader, privacy
+    boundary, challenge, correction, carry, end condition, alternate route,
+    continuity, remedy, and failure polarity. Missing kinship never certifies
+    independence, and registration is never the source of adulthood.
+12. **Bounded findings are inputs, not Nibli decisions:** Nibli may consume an
+    authenticated purpose-bound finding but is not credited with deciding
+    capacity, best interests, consent, pregnancy, parentage, death, collective
+    identity, membership, title, institutional action, or generic tally
+    semantics. Collective decisions use the completed finite-decision audit.
+
 
 ## Book 1 / Book 2 discriminator
 
@@ -342,6 +371,15 @@ This ratification preserves these conclusions:
   and protected voluntary sphere are chosen author policy, not derived taxonomy
   results. They add no current predicate, duty, remedy, institution, or coverage
   claim and must be split into direct-effect cards.
+- [x] **Family, dependency, reproduction, and collective/plurality baselines
+  ratified (2026-08-08).** These are author policy choices mapped into the
+  existing nine functional classes by direct legal effect. They add no class,
+  omnibus `family` or `collective` predicate, age number, status finding,
+  institution, rule, pin, chapter, programme, or release. Implementation must
+  replace `mature`, retire unary `family` as a placement/liberty proxy, split
+  `home`, replace absence-based kinship independence with case-bound conflict
+  findings, preserve individual rights inside collective autonomy, and complete
+  every consequential-status and finite-decision contract.
 - [x] **Functional classes ratified (2026-08-03).** This adopts the named
   functional classes, economy/locality/external splits, emergency overlay,
   record-to-remedy classification, and accessibility, T3, and structural walls

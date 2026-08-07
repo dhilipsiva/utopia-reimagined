@@ -154,9 +154,10 @@ or forced displacement cannot move it by itself. Each decision permits at most
 one person-bound effective submission across jurisdictions. Nonresidents keep
 universal rights but receive no ballot; a former resident retains the right to
 return without gaining a diaspora vote. Conviction or custody alone removes
-neither franchise nor candidacy. The later family/life-course ruling owns the
-general adulthood status: this ruling supplies no numeric age or separate
-`mature` gate.
+neither franchise nor candidacy. The 2026-08-08 family/life-course ruling owns
+the general adulthood status: one common-tier statutory age applies uniformly,
+but neither that ruling nor this one supplies its numeric value or reuses
+`mature` as the gate.
 
 The Assembly removes a government only by choosing its successor. Direct recall
 is limited to directly elected single-holder offices and chooses the replacement
@@ -425,6 +426,106 @@ authenticates an economy, proves scarcity or action, or receives a universal
 economic score. The controlling record is
 `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
 
+**The family, dependency, reproduction, and collective/plurality baselines are
+author-ratified (2026-08-08): independent personhood + supported agency + modular
+plural families + reproductive bodily authority + differentiated collective
+rights.** A born child is an independent rights-holder. Best interests are a
+primary substantive and procedural consideration, never an ownership claim or
+automatic adult veto; the child is heard without a minimum speaking age and
+receives increasing, decision-specific authority with accessible support.
+Parent and caregiver powers are fiduciary, scoped, challengeable, and
+reviewable. Separation requires individualized serious-harm or neglect evidence,
+support before removal, the least disruptive effective response, continuity,
+and reunification or a stable alternative. Poverty, disability, custody,
+culture, or family form alone is insufficient. Safe, voluntary, education-
+compatible child activity receives ordinary labour protection and wages;
+hazardous, coerced, exploitative, or floor-conditioned work is prohibited.
+
+Common-tier law sets one uniform legal-adulthood age. Status arises
+automatically at that age; records evidence it but do not create it. Missing,
+disputed, or corrected evidence cannot create a gap, and a later increase cannot
+remove established adulthood. Conditions may confer a particular decision power
+earlier but may not replace general adulthood, become a global capability score,
+or leave anyone permanently below adult status. No separate political maturity
+test, higher candidacy age, retroactive loss, or guardian ballot is permitted.
+Plenary guardianship and status-based incapacity are refused. Adults choose,
+change, or refuse supporters; when will and preferences remain unascertainable
+after support, only a conflict-free, decision-specific, least-restrictive,
+time-bounded best-interpretation route with independent review may act.
+
+Family law is modular. Parentage, caregiving, household, support, property, and
+decision-agent roles remain distinct and may be combined by pair or plural
+families; marriage may remain a private or statutory label but carries no
+constitutional privilege by itself. More than two legal parents may be
+recognized through prior intent, adoption, or an adjudicated child-continuity
+finding. Parents and expressly responsible caregivers owe capacity-bounded
+duties, while public continuity stays immediate and non-delegable. Adult kinship
+creates no compelled personal-care duty or inherited support debt. Every
+caregiver and dependant keeps separate standing, floor access, voice, privacy,
+help, respite, exit, and remedy. Domestic privacy does not shelter violence,
+sexual abuse, coercive control, exploitation, serious neglect, captivity,
+document control, or obstruction of help; intervention needs credible evidence,
+least-restrictive scope, temporary emergency authority, review, continuity, and
+repair. Imprisonment alone ends no parentage, contact, or custody relation.
+
+Reproductive care is protected from coercion, discrimination, punishment, and
+third-party authorization. The pregnant person controls continuation and
+termination throughout pregnancy; no embryo or fetus receives independent
+constitutional personhood capable of overriding that authority. Assisted
+reproduction and gestational agreements remain lawful under consent and anti-
+exploitation safeguards, and no agreement may control bodily decisions. Law must
+avoid a child's parentage gap and may regulate compensation. Accurate birth,
+adoption, donor, and gestational-origin records are preserved for access by the
+person concerned, without creating automatic contact or relationship rights.
+Age, disability, diagnosis, or residence setting never automatically removes
+agency. Current informed treatment choice controls, including refusal of life-
+sustaining care; otherwise a valid advance directive, a chosen representative
+implementing known will and preferences, and only then the bounded best-
+interpretation route apply. Palliative care is guaranteed. Medically assisted
+dying for adults is democratically permissible, neither guaranteed nor
+prohibited, and any enabling law needs explicit, informed, repeated consent,
+independent review, protection from pressure, real care alternatives, and its
+own temporal contract. A valid will leads succession subject to bounded
+dependant claims, estate liabilities, collective title, and anti-domination;
+intestacy follows functional legal relationships rather than marital rank.
+
+Indigenous peoples receive protected internal and local self-government,
+institutions, language, culture, education, collective land/resource title,
+participation, restitution, and remedy. Other linguistic, religious, ethnic,
+and minority communities receive culture, language, education, media,
+association, accessibility, anti-assimilation, and participation protections;
+territorial authority needs an independently established historical or
+territorial basis. Membership uses self-identification plus the collective's
+lawful acceptance process, permits multiple membership and exit, and carries
+privacy and procedural challenge. Internal selection and customary law may
+differ from general-government rules only inside universal standing, equality,
+liberty, due process, individual voice, appeal, and Constitutional Court review.
+Actual collective consent is required for permanent forced relocation,
+extinguishment or irreversible impairment of collective title, sacred-site
+destruction, hazardous-material placement, and comparable existential harms;
+temporary lifesaving evacuation uses a separate emergency contract and never
+extinguishes title. Other material effects require good-faith consultation,
+accessible information, time, accommodation, reasons, and review, not a blanket
+veto. The equal general-government ballot, common services for nonmembers, and
+the negotiated-secession route remain unchanged.
+
+The ruling is **ratified but unimplemented**. It creates no predicate, rule,
+finding, duty, institution, chapter, age number, programme, or public claim.
+`mature` must be replaced; unary `family` retired as a placement or liberty
+proxy; `home` split by legal effect; and absence-based `parent`, `married`, and
+`sibling` independence replaced by case-bound conflict findings. `work(Care)`,
+`healthy`, `free`, `public`, and `owe` cannot stand in for care, consent,
+emancipation, collective status, or responsibility. Book 1 owns statuses,
+rights, duties, intervention and consent limits, collective competences,
+evidence, challenge, continuity, remedy, and failure polarity. Book 2 owns
+service capacity, family and care proceedings, clinical and death-record
+operations, land/title administration, language services, consultation,
+staffing, costs, and workflows. Nibli may consume bounded authenticated findings;
+it does not decide best interests, capacity, consent, pregnancy, parentage,
+death, collective identity, membership, title, or institutional action. The
+controlling record is
+`new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
@@ -635,9 +736,10 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
   dependencies permit**, refreshed 2026-08-07 for the ratified full-society
-  boundary. The substantive-equality and bounded-plural-economy baselines are
-  also settled. Phase 1 retains open author rulings on family/collective rights,
-  ecology/future conditions/animals, security/external power, assurance,
+  boundary. The substantive-equality, bounded-plural-economy, and family/
+  dependency/reproduction/collective-plurality baselines are settled. Phase 1
+  retains open author rulings on ecology/future conditions/animals, security/
+  external power, assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
   2 records the completed finite collective-decision audit and holds two bounded,

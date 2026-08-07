@@ -176,10 +176,15 @@ that conflict arises and may choose among public research, open standards,
 interoperability, prizes, compulsory licensing, procurement, or another lawful
 floor- or commons-protecting instrument.
 
-This ruling does not decide Indigenous, customary, communal, family, or
-faith-community title or detailed succession mechanics. Those questions remain
-for the later collective/family and commons rulings, without weakening the
-present floor, equality, exit, and anti-exploitation limits.
+This economic ruling did not itself decide Indigenous, customary, communal,
+family, or faith-community title or detailed succession mechanics. The separate
+family, dependency, reproduction, and collective-plurality ruling of 2026-08-08
+now settles the family and succession interfaces and the Indigenous and
+collective portions of that scope, including strong Indigenous collective title
+and rights-bounded membership. Ecological ceilings, the general commons contract,
+and claims to title not established under that ruling remain outside this
+decision, without weakening the present floor, equality, exit, and anti-
+exploitation limits.
 
 ## 5. Contracts, consumers, and enterprises
 
@@ -286,10 +291,15 @@ and mission-linked. It does not expand into general employment, public
 commerce, housing, education, health or care, finance, utilities, transport, or
 essential-service immunity.
 
-Detailed family-support duties, kinship, guardianship, family-property
-division, child-work rules, collective land membership, cultural membership,
-and succession mechanics remain for their later author rulings. Exploitation
-and compelled hazardous work are prohibited in the meantime.
+Those family-support, kinship, guardianship, family-property, child-work,
+collective-land, cultural-membership, and succession questions were open when
+this economic ruling landed. The separate 2026-08-08 ruling now governs modular
+pair and plural family roles, parentage beyond two legal parents, public-first
+care continuity, the refusal of compulsory adult-kin personal care, supported
+decision-making, bounded child-work limits, family property and succession, and
+collective land and cultural membership. It preserves each person's independent
+floor, free exit, no-score protection, and freedom from exploitation. See
+[`book-1-family-dependency-reproduction-and-collective-plurality-decision.md`](book-1-family-dependency-reproduction-and-collective-plurality-decision.md).
 
 ## 8. Taxation, public finance, money, and insurance
 
@@ -654,10 +664,13 @@ choices.
 This ruling does not set tax rates, wage levels, compensation formulas,
 inheritance ceilings, monetary targets, licensing lists, co-determination
 thresholds, benefit formulas, prices, budgets, scarcity quantities, or
-ecological ceilings. It does not settle family support law, detailed child-work
-law, collective or Indigenous land membership, external trade or treaty power,
-non-human-animal protection, or emergency authority. It does not operate an
-economy or prove affordability, supply, capacity, stability, or feasibility.
+ecological ceilings. It did not itself settle family support law, detailed
+child-work law, or collective and Indigenous land membership; the separate
+family, dependency, reproduction, and collective-plurality decision of
+2026-08-08 now settles those distinct planning scopes. External trade and treaty
+power, non-human-animal protection, emergency authority, and ecological and
+general-commons limits remain outside this ruling. Neither decision operates an
+economy or proves affordability, supply, capacity, stability, or feasibility.
 
 ## 17. Ratification record
 
