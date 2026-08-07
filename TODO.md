@@ -37,14 +37,13 @@ their records live in git, not here. What remains runs in two preliminary phases
 then a full-society expansion backlog and cross-cutting sections:
 
 1. **Phase 1 — author-gated decisions.** The volume, edition, and stopping
-   boundary, state form, political membership, and substantive equality are
-   settled. Economic, family/plurality, ecology, public-power, assurance,
-   narrative, and reader-threshold decisions remain open. Neutral inventory and
-   decision briefs
-   may proceed in parallel; each still-gated domain's rules, prose, and public
-   claim wait for its own ruling. The final reader threshold waits for the pilot.
-   This section
-   has been destroyed by tooling once and is watched accordingly.
+   boundary, state form, political membership, substantive equality, and the
+   bounded plural economy/protected private sphere are settled. Family/plurality,
+   ecology, public-safety/external-power, assurance, narrative, and reader-
+   threshold decisions remain open. Neutral inventory and decision briefs may
+   proceed in parallel; each still-gated domain's rules, prose, and public claim
+   wait for its own ruling. The final reader threshold waits for the pilot. This
+   section has been destroyed by tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** A read-only finite-decision capability
    audit is open. Run it before formalising generic collective-decision rules because
    some of what the book has to concede may be an engine limitation rather than a
@@ -108,41 +107,14 @@ The author has directed the project toward a well-balanced two-book model. Book
 1's use of “comprehensive” remains bounded to its Gate B/C declared scope, and
 the Gate E claim is bounded to a declared reference envelope. The two-book
 container, C-then-E release sequence, and versioned stopping boundary are settled.
-The state form, residence-first political membership, and substantive-equality
-and anti-subordination baseline are also settled. The remaining decisions
-determine other constitutional choices, assurance,
-narrative, and reader thresholds; they do not reopen whether the broader result
-is wanted.
+The state form, residence-first political membership, substantive-equality
+and anti-subordination baseline, and bounded plural economy/protected voluntary
+sphere are also settled. The remaining decisions determine family/plurality,
+ecology, public-safety/external power, assurance, narrative, and reader
+thresholds; they do not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
-
-- [ ] **[AUTHOR-GATED] Rule the economic-pluralism and protected-private-sphere
-  settlement.**
-  - Decide what ordinary majorities may choose among public, cooperative, commons,
-    household, and private arrangements above the floor, and which labour,
-    property, contract, association, family, conscience, culture, and privacy
-    boundaries they may not cross.
-  - Preserve the settled guards: property is conditional on floors and commons;
-    recognition, merit, contribution, wealth, and personal scores buy no standing,
-    floor, authority, political weight, or commons access.
-  - Name when concentrated private power—employer, landlord, lender, insurer,
-    platform, utility, or monopoly—acquires public-like duties because exit,
-    dependency, or essential function makes formal consent inadequate.
-  - Rule the constitutional allocation principle for genuine physical scarcity:
-    what need, accessibility, urgency, rotation or lottery may decide; what continuity
-    and appeal survive; and why wealth, merit, contribution, recognition and political
-    favour never decide the floor.
-
-  - The equality ruling already directly binds its named public-facing private
-    domains. This gate may add other public-like duties for concentrated power and
-    settle non-equality economic obligations; it may not retract the ratified
-    non-discrimination, accommodation, continuity, or remedy duties.
-  - Rule competence/licensing for safety-critical and fiduciary roles,
-    portable social insurance, and lawful above-floor compensation/incentives for
-    skill, difficult work, innovation, investment, maintenance and public service.
-    Separate every such distinction from personhood, floor, political weight,
-    immunity and personal-worth scoring.
 
 - [ ] **[AUTHOR-GATED] Rule family, dependency, reproduction, and collective/
   plurality baselines.**
@@ -377,6 +349,14 @@ ratified but unimplemented. Its controlling contract is
 statistical thresholds, quota values, operational methods, and programme
 workflows remain delegated only inside its legal reach, proof, data, continuity,
 and remedy constraints.
+The economic-pluralism and protected-private-sphere settlement is likewise
+author-ratified but unimplemented. Its controlling contract is
+`new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`;
+rates, budgets, quantities, prices, production, inventories, actuarial methods,
+staffing, workflows, monetary instruments, capacity, and empirical feasibility
+remain Book 2 work. Implementation may choose only inside its plural-form,
+floor, labour, property, contract, private-power, scarcity, federal, temporal,
+data, and remedy limits.
 
 ### Scope and guardrails
 
@@ -392,9 +372,14 @@ and remedy constraints.
   methods vocabulary out of derived chapters; the opening note, Part V, and
   `method.md` are the labelled exceptions.
 - Do not pursue symmetry by making recognition rankable, the existing
-  recognition predicate `reward` operative, or standing purchasable. This does not
-  pre-decide author-ratified above-floor compensation or positive incentives. Do not mistake a provider's assertion for usable delivery,
-  or call a chain self-healing while `owe`, `become`, or `obliged` remains unread.
+  recognition predicate `reward` operative, or standing purchasable. The economic
+  ruling permits above-floor wages, profits, savings, returns, grants, prizes,
+  subsidies, incentives, and contribution-based supplements through legal
+  relations distinct from recognition. Grants, prizes, subsidies, restitution,
+  and supplements also require purpose-specific, equality-compatible criteria;
+  none may read `reward`, `false`, `lose`, or a personal-worth score.
+  Do not mistake a provider's assertion for usable delivery, or call a chain self-
+  healing while `owe`, `become`, or `obliged` remains unread.
 - Standing and entitlement to a material floor may not depend on work, virtue,
   wealth, citizenship, documentation, score, compliance, contribution, a qualifying
   test, or official approval. Necessary, proportionate, contestable clinical or
@@ -794,64 +779,113 @@ Gate B; it does not claim Book 2 operations or feasibility.
     routing, maintenance, capacity planning and graceful degradation.
 
 - [ ] **Write the economic, labour, property, and fiscal constitution.**
-  - Specify lawful taxation, appropriation, spending, borrowing and audit authority;
-    floor financing; property/land as a conditional liberty; possession, use,
-    transfer, inheritance and expropriation; work, workplace safety, unions,
-    collective action; enterprise/co-operatives; contract and consumer protection;
-    competition, monopoly and economic concentration; money, credit, debt and
-    insolvency interfaces.
-  - Let democratic choices determine rates, institutional mix and policy above the
-    floor. Book 2 owns budgets, monetary/fiscal models, production, pricing,
-    allocation, staffing and capacity.
-  - Formalise the budget-deadlock default: only the constitutionally enumerated
-    prior essential authority and protected floor continue, with public basis,
-    independent audit, expedited review, and a source-bound end. It creates no new
-    programme or permanent spending power; Book 2 must demonstrate operational
-    capacity.
-  - Preserve the no-earned-floor and no-score walls. Wealth, contribution,
-    recognition and market success may not buy superior standing, public authority,
-    political weight, or immunity from commons and liberty limits.
+  - Implement the ratified settlement by direct legal effect; create no omnibus
+    `economy` predicate. Cover public, cooperative, commons, mutual, nonprofit,
+    household, and private forms without granting any form a protected share,
+    profit, bailout, immunity, or monopoly.
+  - Make floor finance, real access, recipient-side delivery evidence, and
+    continuity non-delegable regardless of provider, payment, voucher, insurance,
+    charity, or voluntary household support. Price and ability to pay never gate
+    the floor.
+  - Protect voluntary gifts, pooling, care, domestic production, mutual aid,
+    lawful exchange, belief, culture, friendship, intimacy, and association from
+    prescription and scoring. Presume no private floor provider; preserve legal
+    capacity, confidential help, and free exit. Voluntary receipt evidence may
+    avoid duplicate delivery but never extinguishes public duty, and withdrawal
+    triggers continuity. Care may support insurance without becoming employment
+    or `reward`; violence, document control, captivity, and obstructed exit
+    remain actionable.
+  - Formalise work freedom and common labour protection across ownership forms:
+    worker status follows actual control and dependency; custody work remains
+    voluntary; narrow minimum service binds provider/collective continuity, never
+    conscripts an individual or withdraws the floor.
+  - Formalise conditional possession, use, transfer, inheritance, plural housing
+    tenure, eviction/foreclosure continuity, lawful acquisition and compensation,
+    and time-bounded statutory knowledge exclusivity. Exclusivity must yield
+    through an effective route when it blocks a floor or commons duty.
+  - Formalise substantive contract and consumer protection, function-only
+    enterprise capacity, conditional limited liability, enterprise-treasury
+    electoral-spending refusal, public-scale private-power triggers, and
+    calibrated individual and structural remedies that preserve service.
+  - Formalise capacity-based taxation, lawful appropriation/spending/borrowing,
+    fiscal transparency, the budget-deadlock default, accessible public payment
+    backbone with a non-digital route, bounded monetary authority, credit reasons,
+    fresh-start insolvency, and wage/pension protection.
+  - Respect the ratified federal allocation: common monetary/payment, floor-
+    finance, portability/equalisation, interregional commerce/competition,
+    insolvency, labour/consumer minima, and cross-regional private power; regional
+    or local residual economic policy and stronger compatible protections survive.
+  - Keep raw financial, contribution, insurance, credit, and equality data outside
+    the canonical consequential person record. Import only minimal authenticated,
+    adjudicated, purpose-bound premise/result records; every `derived_only`
+    consequential predicate must still be derived.
+  - Before formalisation, census `work`, `teaches`, `reward`, `lose`, `false`,
+    `home`, `family`, `dwell`, `secure`, `owe`, `public`, `authority`, `person`,
+    `building`, `obliged`, `become`, and `travel`; record retain/replace/split/
+    retire decisions and power-specific temporal contracts.
+  - Audit the opening note, every numbered chapter, Part V, `method.md`, every
+    affected pin/counterfactual/registry claim/generated assertion, and every
+    narrowness guard. Retire recognition-as-payment, private-power-absence,
+    open-compulsion, ownership-`home`, optional-scarcity-score, and other claims
+    made false by the new families in the same content change.
+  - **Book 2 handoff:** rates, budgets, models, prices, production, inventories,
+    actuarial assumptions, monetary instruments, staffing, workflows, capacity,
+    transition, deployment, monitoring, and empirical feasibility.
 
 - [ ] **Define income security and social insurance without making survival
   contributory.**
-  - Cover illness, disability, unemployment, caregiving, workplace injury, ageing,
-    survivor support and pensions; portability across employers, family forms and
-    jurisdictions; accessible claim/challenge routes; continuity; and insolvency.
-  - The unconditional floor remains non-contributory. Democratically chosen
-    contribution histories may affect transparent above-floor benefits only under
-    equality, adequacy, privacy, appeal and anti-poverty guards; they never alter
-    standing, emergency help or the floor.
-  - Book 2 owns actuarial/fiscal assumptions, reserves, take-up, administration and
-    shock testing. Book 1 owns the lawful interface and anti-exclusion limits.
+  - Cover illness, disability, unemployment, caregiving, workplace injury,
+    ageing, survivor support, and pensions with portable, accessible, contestable
+    above-floor supplements. The unconditional floor remains noncontributory.
+  - Use contribution history only through a separately enacted purpose-limited
+    relation. It may calculate an above-floor supplement but cannot read
+    recognition, become a risk/worth score, alter standing or emergency help,
+    exceed its lawful purpose-specific retention, or be reused for another purpose.
+  - Preserve the earned supplement itself through employer insolvency, not merely
+    its record. Test zero history, missing/corrupt records, employer failure,
+    family/jurisdiction transfer, lawful correction, and separately adjudicated
+    fraud without lowering the floor.
+  - **Book 2 handoff:** actuarial assumptions, rates, reserves, take-up,
+    administration, employer-insolvency operations, and shock testing.
 
 - [ ] **Authorize qualifications, licensing, compensation, and positive incentives
   without ranking people.**
-  - Permit evidence-based competence requirements for safety-critical or fiduciary
-    roles such as clinician, pilot, judge, engineer or auditor. Separate role
-    eligibility from personhood, floor and political standing; require accessible
-    routes, proportionality, expiry/review, challenge and portability.
-  - Permit fair above-floor compensation and democratically bounded incentives for
-    difficult work, skill, innovation, investment, maintenance and public service.
-    State the source, recipient, purpose, limit, conflict rule and audit; no reward
-    may purchase authority, impunity, a higher floor or a personal-worth score.
-  - Test credential cartels, inherited advantage, scarcity rents, favoritism and
-    metric gaming. Recognition remains optional, binary and non-operative.
+  - Permit mandatory licensing only for evidenced serious safety, fiduciary, or
+    core-public-function risk; otherwise prefer certification. Require relevant
+    standards, accessible alternative proof, portability, independent challenge,
+    expiry/renewal, anti-cartel safeguards, and a fresh temporal contract.
+  - Implement wages, profits, savings, returns, grants, prizes, subsidies, and
+    bounded incentives through distinct legal relations. No rule may read
+    `reward`, `false`, `lose`, or missing recognition to alter compensation,
+    property, benefits, pensions, insurance, authority, or political weight.
+  - Test valid and pretextual licensing, credential-cartel capture, accessible
+    alternative proof, inherited advantage, metric gaming, and proportionate
+    fraud restitution. Recognition remains binary, arity-one, non-ranked, and
+    unread.
 
 - [ ] **Constrain concentrated private and hybrid power.**
-  - Complete contract cards for employers, landlords, lenders, insurers, utilities,
-    corporations, platforms, monopolies and public contractors where essential
-    function, dependency, lock-in, information asymmetry or lack of meaningful exit
-    creates public-scale power.
-  - The named employment, housing, education, health/care, finance/insurance,
-    utility, transport, public-commerce, and dominant platform equality duties are
-    already ratified. This task owns additional public-like powers and non-equality
-    duties; it may not reopen that reach or weaken its evidence, accommodation,
-    contestability, continuity, and remedy contracts. Do not constitutionalise
-    harmless voluntary life merely because it is private.
+  - Preserve equality's named direct private reach without a dominance finding.
+    Separately create an independent, contestable, function-specific public-scale
+    trigger for essential, dominant, delegated, gatekeeping, network, dependency,
+    lock-in, information-asymmetry, or no-meaningful-exit power.
+  - Bind only the affected public-facing, essential, delegated, gatekeeping, or
+    systemically controlling function. Intimate dependency alone does not create
+    public-like transparency duties; coercion, captivity, violence, and obstruction
+    of exit instead route through justice and public protection.
+  - Calibrate access, continuity, reasons, transparency, portability,
+    interoperability, audit, challenge, and remedy. Give findings a source, scope,
+    tier/jurisdiction, contestability, temporal status, expiry consequence, and
+    conflict rule; regional/local findings cover their jurisdiction and the common
+    tier owns cross-regional cases and minima.
+  - Test each named actor with and without the trigger, an equality-bound actor
+    without it, an expired finding, regional and cross-regional gatekeepers,
+    relabeling, confidentiality, capture, and structural remedies that preserve
+    workers, users, savers, and essential services.
 
 - [ ] **Define the democratic ceiling and majority process.**
-  - Ordinary majorities decide policy, tax mix, providers, public/co-operative/
-    private institutional mix, and choices above the core; the protected free field
+  - Ordinary majorities decide policy, tax mix, providers, public, cooperative,
+    commons, mutual, nonprofit, household, and private institutional mixtures and
+    choices above the core; the protected free field
     remains neither a public programme nor a plebiscite.
   - Implement residence-first membership: ordinary residence plus the one general
     adulthood status gives equal franchise and candidacy at one claimant-chosen,
@@ -1074,17 +1108,33 @@ Gate B; it does not claim Book 2 operations or feasibility.
     heterogeneous floors, liberties, commons and democratic choices into one number.
 
 - [ ] **Define cross-domain priority, conflict, and physical-scarcity rules.**
-  - Distinguish genuine physical/capacity scarcity from monetary or administrative
-    withholding. Rule transparent triggers, admissible evidence, interim continuity,
-    equal standing, need/accessibility considerations, least-harm allocation,
-    challenge, review, end and repair; never use wealth, merit, contribution,
-    recognition or political favour.
-  - Resolve conflicts through typed rules rather than hidden priority: property
-    versus floor/commons, expression versus evidenced harm, privacy versus public
-    accountability, local choice versus portability, current claims versus future
-    conditions, and emergency action versus non-derogable protections.
-  - Route the unresolved normative allocation choices back through the author gate
-    and democratic corridor; do not let implementation code decide them silently.
+  - Admit scarcity only from authenticated, contestable, resource/population-
+    specific evidence after alternatives, reserves, substitution, coordination,
+    replenishment, and mutual assistance. Budget choice, price exclusion,
+    administrative delay, artificial withholding, monopoly, provider failure, and
+    refusal to procure remain constitutional failures, not physical scarcity.
+  - Preserve each constitutional minimum wherever usable supply permits. Never
+    redefine a reduced ration as the minimum; record every shortfall as failure.
+    Use an effective usable equal share where one exists; never divide a threshold
+    resource into equally useless pieces. Otherwise mitigate through urgency,
+    accessibility, imminent irreversible harm, continuity harm, and individualized
+    resource-specific benefit after accommodation.
+  - Forbid wealth, contribution, recognition, conviction, family status,
+    disability stereotype, expected productivity, social usefulness, generalized
+    lifespan, and political favour as priority keys. Use disclosed rotation or
+    lottery only among materially equal claims.
+  - Require public reasons, challenge, independent review, interim alternatives,
+    replenishment, fresh reassessment evidence, a source-bound end, and repair.
+    Scarcity creates no standing emergency power; missing authority ends the
+    restrictive manager while the independent floor/continuity route survives.
+  - Resolve other conflicts through typed rules rather than hidden priority:
+    property versus floor/commons, expression versus evidenced harm, privacy versus
+    public accountability, local choice versus portability, current claims versus
+    future conditions, and emergency action versus non-derogable protections.
+  - Any departure from the ratified scarcity ordering needs a new author ruling;
+    implementation code may not choose it silently. **Book 2 handoff:** evidence
+    collection/assurance, inventories, forecasts, quantities, reserves, production,
+    capacity, queues, workflows, and empirical evaluation.
 
 - [ ] **Test compositional closure and graceful degradation.**
   - For formal interfaces, prove within the declared model that individually safe

@@ -55,6 +55,20 @@ book-1 references book-2 exactly once, at its very end.
 > identity, or institutional-liveness system. See
 > `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
 
+> **Economic handoff - author-ratified 2026-08-07.** Book 1 owns lawful
+> institutional forms, rights and limits, floor non-delegation, labour/property/
+> contract/private-power triggers, evidence and data walls, scarcity ordering,
+> fiscal and monetary authority, temporal defaults, continuity, remedies, and
+> federal competence. Book 2 owns rates, budgets, models, prices, production,
+> inventories, actuarial assumptions, staffing, workflows, monetary instruments,
+> capacity, transition, deployment, monitoring, and empirical feasibility. It
+> operates within the ratified plural economy; it does not choose a new economic
+> order or turn operational metrics into person scores. Nibli may consume only
+> minimal authenticated, adjudicated, purpose-bound premise/result records and is
+> not a market, valuation, scarcity, identity, payment, or institutional-liveness
+> system. See
+> `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow
@@ -134,24 +148,41 @@ but never replaces, this rule.
     and unresolved gap against the named reference envelope.
 
 - [ ] **Build the economic, fiscal, labour, and institutional operating model.**
-  - Test public, co-operative, commons, household and private arrangements under the
-    author-ratified economic settlement. Cover taxation, budgeting, borrowing,
-    monetary/credit/debt systems, property/land administration, contracts, labour and
-    unions, enterprise, competition, insurance and insolvency.
+  - Test public, cooperative, commons, mutual, nonprofit, household, and private
+    arrangements under the ratified settlement. Cover taxation, budgeting,
+    borrowing, floor finance/equalisation, money and accessible offline payments,
+    credit/debt/insurance, property/land/housing administration, contracts and
+    consumers, labour/unions/worker participation, enterprise/competition/private
+    power, licensing, insolvency, and essential-service continuity.
+  - Operate real-access checks for cash, vouchers, and insurance; purpose-limited
+    contribution supplements; wage/pension guarantees; fresh-start insolvency;
+    public-scale-power findings; licence/IP/private-power expiry; and individual
+    and structural remedies without rewriting Book 1's legal tests.
+  - Test harmless voluntary household pooling, care, mutual aid, and withdrawal
+    alongside confidential help, free exit, and immediate public continuity. Test
+    economic captivity, confiscation/document control, and obstructed help without
+    certifying private outcomes, converting care into employment, or scoring
+    affection and association.
   - Specify how legislatures, executives, civil services, courts, regulators,
-    treasuries, providers, auditors, local bodies, ombuds and expressly bound private
-    actors are staffed, selected, trained, funded and monitored; reduce, detect,
-    expose, independently challenge, correct and recover from capture. No structure
-    may claim capture is impossible.
-  - Measure distribution, concentration, exit, dependency, unpaid care and
-    accessibility without converting a group diagnostic into an individual score or
-    a condition of the floor. Operate safety-critical qualifications/licensing,
-    portable social insurance, and fair above-floor compensation/incentives under
-    Book 1's anti-ranking and no-earned-floor guards.
-  - **Done when:** budget, workforce, production/allocation and institutional-capacity
-    models reconcile; distributional and concentration tests pass their declared
-    thresholds; and every residual fiscal, labour or incentive failure is
-    severity-rated against the reference envelope.
+    treasuries, monetary/payment bodies, providers, auditors, local bodies, ombuds,
+    unions, and expressly bound private actors are staffed, selected, trained,
+    funded, coordinated, and monitored. Detect, expose, independently challenge,
+    correct, and recover from capture; no structure may claim capture is impossible.
+  - Measure distribution, concentration, exit, dependency, unpaid care,
+    accessibility, production, stocks, prices, queues, and capacity without
+    converting a group diagnostic into an individual score or floor condition.
+    Operate qualifications, social insurance, compensation, and incentives under
+    Book 1's no-ranking, no-earned-floor, privacy, and equality walls.
+  - Collect and assure scarcity evidence, inventories, reserves, substitution,
+    mutual assistance, forecasts, reassessment, and replenishment. Budget cuts,
+    administrative delay, monopoly withholding, supplier/provider failure, and
+    refusal to procure remain failure cases, not scarcity findings.
+  - **Done when:** reproducible normal, failure/degradation, recovery, genuine-
+    scarcity, provider-collapse, monetary/payment-outage, and compound-shock runs
+    reconcile budgets, workforce, production/allocation, continuity, and
+    institutional capacity; test distribution/concentration against declared
+    thresholds; and severity-rate every residual fiscal, labour, private-power,
+    delivery, or incentive gap against the reference envelope.
 
 - [ ] **Build democratic, administrative-integrity, and official-statistics
   operations.**
@@ -510,13 +541,27 @@ but never replaces, this rule.
   conflict rules, review and anti-favouritism. Book 2 may then deliver and record
   additional provision without treating one-run monotonic derivation as append-only
   history or letting additions accrete into rank, patronage or a personal score.
-- **Operate scarcity allocation under the author-ratified Book 1 principle.**
-  Test only permitted keys such as need, urgency, accessibility, continuity, rotation
-  or lottery, with transparent triggers, appeal, end and repair. Wealth, merit,
-  recognition, contribution and political favour may not gate the floor or
-  property/commons access. Model queues, triage, strategic claims, scarcity rents,
-  supplier failure and disparate effects; do not import the legacy “merit as
-  threshold” proposal without a new author ruling.
+- **Operate genuine physical scarcity under the author-ratified Book 1
+  principle.** Collect and assure the named resource/population evidence,
+  alternatives, reserves, substitution, coordination, mutual assistance,
+  responsible authority, review, reassessment, replenishment, source-bound end,
+  and repair. Budget choice, price exclusion, administrative delay, artificial
+  withholding, monopoly, supplier/provider failure, and refusal to procure are
+  non-scarcity failures with continuity/remedy routes. Preserve the constitutional
+  minimum wherever usable supply permits; never redefine a reduced ration as the
+  minimum, and record every shortfall as failure. Test effective divisible shares,
+  threshold/indivisible resources, urgency, accessibility, irreversible and
+  continuity harm, individualized resource-specific benefit, and disclosed
+  rotation or lottery only among materially equal claims. Wealth, recognition,
+  merit, work, contribution, conviction, family status, disability stereotype,
+  productivity, social usefulness, lifespan, and political favour are forbidden
+  priority keys. Price and lawful wealth may still mediate ordinary above-floor
+  transfers outside this declared floor-essential scarcity; adjudicated wage/
+  equity claims and purpose-bound grants, prizes, restitution, and supplements use
+  separate legal relations. Model operational queues as observable flows, never as
+  an unstated constitutional priority rule, and do not import the legacy merit-
+  threshold proposal.
+
 - **The firewalled operational-assessment layer.** Limited,
   purpose-bound, expiring and contestable assessments of present capacity, need,
   risk or crisis may inform an authorised delivery or triage choice. They may never
