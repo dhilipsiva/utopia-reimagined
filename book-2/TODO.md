@@ -69,6 +69,22 @@ book-1 references book-2 exactly once, at its very end.
 > system. See
 > `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
 
+> **Family, dependency, reproduction, and collective-plurality handoff - author-
+> ratified 2026-08-08.** Book 1 owns the constitutional contract for children,
+> adulthood, support and decision assistance, family and parentage, care and
+> dependency, reproduction, treatment and end-of-life choice, and collective
+> membership, self-government, title, language, consultation, and consent. Book 2
+> owns care, child-support/protection, family-court, reproductive, assisted-
+> reproduction, gestational, palliative, and any enacted assisted-dying operations;
+> collective-body staffing and systems; land mapping and title administration;
+> language services; consultation/consent workflows; and their records, costs,
+> capacity, monitoring, and evaluation. It may not choose a family form, capacity
+> hierarchy, adult-kin care debt, an overriding fetal-personhood rule,
+> collective-membership rule, general-ballot exception, secession path, or
+> consultation/consent threshold.
+> See
+> `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow
@@ -271,11 +287,28 @@ but never replaces, this rule.
     separated investigation, adjudication, execution, audit, and final review;
     interim continuity; individual relief; shared-defect related-case review;
     bounded structural orders; recurrence monitoring; and non-repetition measures.
-  - Cover reproduction/reproductive care, family plurality and intimacy;
-    childhood, supported decision-making/guardianship, disability, dependant-
-    caregiver conflicts, domestic-interference response, caregiving, ageing and
-    death/succession; and unemployment, illness, injury, disability, care,
-    survivor, and old-age income security under the ratified equality wall.
+  - Operate automatic-adulthood evidence, prompt independent determination,
+    correction, non-retroactivity, last-status continuity, and provisional adult
+    status where unresolved evidence would otherwise erase an expiring ballot or
+    candidacy; supported decision-making, chosen assistance, bounded best
+    interpretation of will and preferences, independent advocacy, and review.
+    Create neither plenary guardianship nor a global capacity score.
+  - Operate modular pair and plural family and parentage registration, including
+    more than two legal parents where lawfully established; family-property and
+    succession administration; child support/protection, adoption and alternative
+    care; caregiver conflicts; domestic-interference response; public-first care,
+    respite, and ageing services. Create no marital privilege, compulsory adult-
+    kin personal-care duty, or inherited support debt.
+  - Operate reproductive and pregnancy care, maternity support, contraception,
+    abortion, assisted reproduction, and gestational arrangements with consent,
+    accessibility, anti-exploitation, privacy, origin-record, continuity, and
+    remedy controls.
+  - Operate current treatment refusal, advance directives, bounded representatives,
+    palliative care, and medically assisted dying only where democratically enacted
+    under Book 1's strict safeguards; neither guarantee nor prohibit it operationally.
+  - Operate unemployment, illness, injury, disability, care, survivor, and old-age
+    income security under the ratified equality, economic, and family-role and
+    record-separation contracts.
   - Measure access, take-up, disparity, burden, continuity, portability, reserves,
     remedy, effectiveness, and recurrence without choosing Book 1's protected
     grounds/reach, legal tests, quotas/preferences, rights effects, remedies, or
@@ -291,7 +324,34 @@ but never replaces, this rule.
     political measures; historical record disposition;
     individual and systemic relief; proper/improper related-case reopening; court
     non-administration; recurrence; and representative life-course, family,
-    dependency, insurance, portability, correction, and correlated-shock cases.
+    dependency, reproductive, palliative, insurance, portability, correction,
+    and correlated-shock cases.
+
+- [ ] **Build collective self-government, land, language, and consultation
+  operations.**
+  - Operate Indigenous self-government and other lawful collective bodies within
+    their constitutional mandates without converting internal authority into a
+    second general government or unilateral secession route.
+  - Run self-identification plus lawful collective-acceptance membership evidence,
+    privacy, correction, challenge, dissent, and free-exit paths without weakening
+    individual standing, floors, equality, due process, or the equal general ballot.
+  - Build collective-title mapping, recognition, restitution, and land/resource
+    administration; and culture, sacred-site, language, education, media, and
+    minority-participation services. Preserve portability, federal competence,
+    common services, and the still-open ecological and general-commons limits.
+  - Operate good-faith consultation, accommodation, reasons, independent review,
+    and remedy. Require actual collective consent only for the existential harms
+    named by Book 1; consultation alone creates neither consent nor a veto elsewhere.
+  - Model contested membership and title, overlapping claims, unavailable or
+    captured representatives, coercion, withheld records, institutional non-
+    cooperation, correction, and continuity while disputes are resolved.
+
+  - **Done when:** reviewed operations execute internal selection without a second
+    general ballot; membership, dissent, challenge, and exit; language and cultural
+    services; title recognition and restitution; consultation with reasons and
+    accommodation; a lawful project proceeding without consent where consent is not
+    required; an existential-harm case stopped for lack of actual consent; and a
+    purported unilateral exit being refused.
 
 - [ ] **Build civil/criminal justice, safety, defence, migration, and external-
   relations operations.**

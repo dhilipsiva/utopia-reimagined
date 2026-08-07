@@ -38,12 +38,13 @@ then a full-society expansion backlog and cross-cutting sections:
 
 1. **Phase 1 — author-gated decisions.** The volume, edition, and stopping
    boundary, state form, political membership, substantive equality, and the
-   bounded plural economy/protected private sphere are settled. Family/plurality,
-   ecology, public-safety/external-power, assurance, narrative, and reader-
-   threshold decisions remain open. Neutral inventory and decision briefs may
-   proceed in parallel; each still-gated domain's rules, prose, and public claim
-   wait for its own ruling. The final reader threshold waits for the pilot. This
-   section has been destroyed by tooling once and is watched accordingly.
+   bounded plural economy/protected private sphere, family, dependency,
+   reproduction, and collective/plurality baselines are settled. Ecology,
+   public-safety/external-power, assurance, narrative, and reader-threshold
+   decisions remain open. Neutral inventory and decision briefs may proceed in
+   parallel; each still-gated domain's rules, prose, and public claim wait for its
+   own ruling. The final reader threshold waits for the pilot. This section has
+   been destroyed by tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision
    capability audit is closed and recorded in the source-bound planning artifact.
    Two bounded, non-blocking repairs remain: fail-closed raw witness enumeration
@@ -110,32 +111,13 @@ the Gate E claim is bounded to a declared reference envelope. The two-book
 container, C-then-E release sequence, and versioned stopping boundary are settled.
 The state form, residence-first political membership, substantive-equality
 and anti-subordination baseline, and bounded plural economy/protected voluntary
-sphere are also settled. The remaining decisions determine family/plurality,
-ecology, public-safety/external power, assurance, narrative, and reader
-thresholds; they do not reopen whether the broader result is wanted.
+sphere are also settled, as are the family, dependency, reproduction, and
+collective/plurality baselines. The remaining decisions determine ecology,
+public-safety/external power, assurance, narrative, and reader thresholds; they
+do not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
-
-- [ ] **[AUTHOR-GATED] Rule family, dependency, reproduction, and collective/
-  plurality baselines.**
-  - Rule children's independent rights, best-interests/voice standard, supported
-    decision-making, guardianship limits, caregiver/dependant duties, family
-    pluralism, reproductive autonomy, domestic intervention threshold, ageing and
-    end-of-life authority.
-  - Define the one general legal-adulthood status imported by the ratified
-    political-membership contract, including non-discretionary acquisition,
-    accessible evidence, challenge, correction, and continuity. Do not add a
-    separate political maturity test, higher candidacy age, or retroactive loss.
-  - Rule whether and how minority, indigenous, linguistic, religious and other
-    collective claims receive self-government, representation, land/common claims
-    or veto/procedural protections without subordinating individual standing.
-  - The equality baseline and its general-government ballot rules remain binding.
-    This gate may still design a later collective self-government body's internal
-    membership or selection, but may not reduce any person's standing, common
-    services, or equal ballot in general government.
-  - Conditions and support may be guaranteed; no institution may prescribe the
-    approved family, belief, relationship, identity or personal outcome.
 
 - [ ] **[AUTHOR-GATED] Rule ecological, future-generation, commons, and
   non-human-animal baselines.**
@@ -370,6 +352,20 @@ remain Book 2 work. Implementation may choose only inside its plural-form,
 floor, labour, property, contract, private-power, scarcity, federal, temporal,
 data, and remedy limits.
 
+The family, dependency, reproduction, and collective/plurality settlement is
+likewise author-ratified but unimplemented. Its controlling contract is
+`new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
+Common-tier law must choose the uniform adulthood age; later law may define
+decision-specific early authority, family and support procedures, assisted-
+reproduction safeguards and compensation, any assisted-dying regime, succession
+mechanics, and collective membership and consultation procedures only inside the
+ratified rights and continuity limits. Book 2 owns care services, family
+proceedings, reproductive and palliative capacity, land/title administration,
+language services, consultation, records operations, staffing, costs, and
+workflows. Those delegated details do not reopen children's independent rights,
+automatic adulthood, supported agency, bodily authority throughout pregnancy,
+public-first care, family plurality, or rights-bounded collective autonomy.
+
 ### Scope and guardrails
 
 - The ratified scope and contract boundary live in
@@ -589,7 +585,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, current-T0 non-temporal end condition, temporal status |
     | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, independent recipient, action duty, continuity/remedy path, temporal status |
     | Commons/future condition | protected common, present duty, ceiling or non-destruction rule, evidence, standing for any present person and an independently checked public guardian, guardian authority/independence/evidence/removal controls, remedy, public accountability, temporal status |
-
+    | Consequential status or supported decision | status or decision effect, source, writer, permitted evidence, affected person's voice and preferences, required support, authorised reader or decider, scope, conflict rule, privacy, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
+    | Collective status, authority, title, or consent | collective and right type, member or affected people, source, writer, evidence, jurisdiction, common-rights floor, consent or consultation trigger, dissent, exit, privacy, authorised reader or reviewer, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
   - **Done when:** every domain in the full-society ledger has complete applicable
     rows before its rule family or prose lands; no name, value, office, or floor is
     accepted as coverage by itself.
@@ -716,18 +713,89 @@ Gate B; it does not claim Book 2 operations or feasibility.
     authentication, or institutional action.
 
 - [ ] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
-  - Specify consent, reproductive autonomy, mental and physical care, disability
-    access and decision support; children’s interests and voice; ageing, dependency,
-    caregiving, guardianship/representation, family pluralism and intimate privacy.
-  - Protect against domestic and other private interference through explicit duties,
-    evidence, challenge, continuity and remedy. Never infer compelled health, belief,
-    relationship, family form or personal outcome from provision.
-  - Give caregivers and dependants independent standing and routes to help; neither
-    role may erase the other person's voice or floor.
-  - Define the one general legal-adulthood status imported by political membership:
-    non-discretionary acquisition, accessible evidence, challenge, correction, and
-    continuity when evidence is missing or disputed. Add no separate political age,
-    maturity test, higher candidacy age, or retroactive loss.
+  - Implement one general legal-adulthood status at the uniform age later set by
+    common-tier law. Acquisition is automatic and non-discretionary; registration
+    is evidence, never its source; a later increase cannot revoke adulthood already
+    acquired. Provide accessible evidence, prompt independent determination,
+    challenge and correction, preserve established status, and provide provisional adult status
+    for an expiring political opportunity when credible evidence shows the
+    threshold may have been crossed. Missing, disputed, or corrected records and
+    administrative silence cannot create a franchise or candidacy gap.
+  - Research supported, decision-specific authority before adulthood. It may grant
+    an earlier power for a particular decision, but may not replace general
+    adulthood, become a global maturity score, confer the general-government ballot
+    or candidacy, or leave anyone permanently below adult status.
+  - Give every born child independent standing, floors, privacy, information, voice,
+    representation, and remedy. Make best interests a primary substantive and
+    procedural consideration rather than an adult veto; hear the child without a
+    speaking-age floor and weight supported, decision-specific capacity. Bound
+    parent/caregiver authority as fiduciary and challengeable.
+  - Formalise child-separation safeguards: individualized serious-harm or neglect
+    evidence, support before removal, least disruption, independent review,
+    continuity, and reunification or stable care. Poverty, disability, custody,
+    culture, and family form do not suffice. Give safe, voluntary, education-
+    compatible child activity ordinary labour protection and wages while refusing
+    hazardous, coerced, exploitative, or floor-conditioned work.
+  - Separate parentage, caregiving, household, support, property, and decision-agent
+    roles. Permit pair and plural families to combine modules without marital
+    privilege; require consent, disclosure, defined duties, free exit, winding up,
+    and independent rights for children and dependants. Support more than two legal
+    parents through prior intent, adoption, or an adjudicated child-continuity
+    finding without creating a status gap.
+  - Make public care continuity immediate and non-delegable while keeping assumed
+    parent/caregiver duties capacity-bounded. Give caregivers and dependants
+    separate floors, advocates, privacy, respite, exit, and remedies; impose no
+    compulsory adult-kin personal-care duty or inherited support debt. Imprisonment
+    never automatically ends parentage, contact, or custody.
+  - Protect harmless unconventional households. Permit domestic intervention only
+    on credible evidence of violence, sexual abuse, coercive control, exploitation,
+    serious neglect, captivity, document control, obstruction of help, or denial
+    of free exit. Make emergency action temporary, reviewable, and least restrictive.
+  - Reject plenary guardianship and status-based incapacity. Preserve adult legal
+    capacity and support that the person may choose, change, or refuse. If will and
+    preferences remain unascertainable after support, allow only a conflict-free,
+    decision-specific, least-restrictive, time-bounded best-interpretation route
+    with independent review.
+  - Protect contraception, fertility assistance, pregnancy care, birth, postpartum
+    care, sterilization decisions, and abortion against coercion, discrimination,
+    third-party authorization, and punishment. Preserve the pregnant person's
+    authority over continuation or termination throughout pregnancy; create no
+    separate fetal constitutional personhood capable of overriding it.
+  - Permit assisted reproduction and gestational agreements under consent and
+    anti-exploitation safeguards. No agreement controls bodily decisions; parentage
+    cannot leave a child in a status gap. Preserve accurate birth, adoption, donor,
+    and gestational-origin records and the concerned person's access to identity and
+    health information without creating an automatic contact or relationship right.
+  - Protect supported community living, palliative care, current informed treatment
+    decisions, advance directives, and chosen representatives across ageing,
+    disability, diagnosis, and residence settings, including refusal of life-
+    sustaining treatment. Keep assisted dying democratically permissible for adults
+    only under the ratified consent, review,
+    anti-pressure, real-alternative, and fresh temporal safeguards. Implement
+    will-led succession with bounded dependant claims, estate liabilities,
+    collective-title limits, anti-domination, and functional rather than marital
+    intestacy.
+  - Before formalisation, explicitly replace `mature`; retire unary `family` as
+    a placement/liberty proxy; split `home`; and replace absence-based
+    `parent`/`married`/`sibling` independence with case-bound conflict
+    findings. Never reuse `work(Care)`, `healthy`, `free`, `public`, or
+    `owe` as evidence of care, consent, emancipation, status, or responsibility.
+    Give every consequential status the completed source, writer, evidence, reader,
+    privacy, challenge, correction, carry, end, alternate-route, continuity,
+    remedy, failure-polarity, and temporal contract.
+  - Book 1 owns these legal boundaries; Book 2 owns services, proceedings, records
+    operations, capacity, staffing, costs, and workflows. Nibli may consume an
+    authenticated bounded finding but may not decide capacity, best interests,
+    consent, pregnancy, parentage, death, or institutional action.
+  - Audit chapters 1, 3, 5, 6, 8-11, and 13-14, Part V, `method.md`, placement
+    assurance, affected pins and registries, and counted-claim guards. Acceptance
+    must cover undocumented adulthood, early authority, child medical choice,
+    poverty versus neglect, supported adult decisions, caregiver conflict, plural
+    parentage, domestic coercion, custody parenting, reproductive vetoes,
+    gestational agreements, origin access, treatment refusal, advance directives,
+    assisted-dying safeguards, and succession. Also prove that missing kinship
+    never certifies independence, family never worsens confinement, and recognition
+    neither proves care nor creates compensation.
 
 - [ ] **Write the Bodies specification.**
   - Constitute the ratified People's Assembly, Regions Council, Executive Council
@@ -1015,7 +1083,7 @@ Gate B; it does not claim Book 2 operations or feasibility.
     and query against the wrong source. Nibli may reason about supplied version facts
     but may not be credited with authenticating or deploying them.
 
-- [ ] **Complete territory, membership, mobility, plurality, and external relations.**
+- [ ] **Complete territory, political membership, mobility, collective/plurality rights, and external relations.**
   - Formalise the ratified federal settlement: enumerated common powers, regional
     residual authority, the protected local minimum, justiciable subsidiarity,
     equalisation, portability, and a competence-dispute route that cannot acquire
@@ -1027,15 +1095,59 @@ Gate B; it does not claim Book 2 operations or feasibility.
     placement, eviction, shelter use, or other compelled displacement. Citizenship
     adds no electoral weight.
   - Cover newcomers, migrants, refugees, stateless people, borders, asylum,
-    expulsion, extradition, minority/indigenous self-government and language access.
+    expulsion, extradition, accessible language and process, and continuity of
+    standing, floors, liberty, and remedy.
+  - Implement differentiated collective rights. Protect Indigenous internal and
+    local self-government, institutions, language, culture, education, collective
+    land/resource title, participation, restitution, and remedy. Protect linguistic,
+    religious, ethnic, and other minorities in culture, language, education, media,
+    association, accessibility, anti-assimilation, and participation; require an
+    independently established historical or territorial basis before giving a
+    minority territorial authority.
+  - Define membership through self-identification plus the collective's lawful
+    acceptance process. Permit multiple memberships and free exit; protect privacy
+    and provide an independent procedural challenge without making membership a
+    reusable worth, risk, floor, or political-weight score.
+  - Permit internal selection and customary law to differ from general-government
+    rules only inside universal standing, equality, liberty, due process, individual
+    voice, appeal, and Constitutional Court review. Preserve one equal
+    general-government ballot and common services for members and nonmembers.
+  - Require actual collective consent before permanent forced relocation,
+    extinguishment or irreversible impairment of collective title, sacred-site
+    destruction, hazardous-material placement, or a comparable existential harm.
+    Temporary lifesaving evacuation needs its own emergency contract and cannot
+    extinguish title. For other material effects require good-faith consultation,
+    accessible information, adequate time, accommodation, public reasons, and
+    review rather than a blanket veto.
+  - Keep collective autonomy inside the settled negotiated-secession path; it
+    creates no unilateral exit from the republic. The later external-power work
+    owns recognition, defence, cross-border status, international obligations, and
+    post-exit effects, but may not replace the affected-region vote, federal
+    agreement, rights/minority review, settlement, or final affected-population
+    ratification.
+  - Split formal work by direct legal effect across the existing taxonomy; create
+    no new class or omnibus `collective` predicate. Census and explicitly dispose
+    of `public`, `authority`, `home`, `family`, and every status proxy before
+    reuse. Give membership, authority, title, consultation, and consent findings
+    complete source, writer, evidence, privacy, reader, challenge, correction,
+    carry, end, alternate-route, continuity, remedy, failure-polarity, and temporal
+    contracts.
+  - Nibli may consume an authenticated, bounded membership, title, consultation, or
+    consent finding but may not decide collective identity, membership, territory,
+    title, consent, or institutional action. Apply the completed finite
+    collective-decision audit to any supplied result certificate; do not invent
+    generic tally, roster-completeness, signature, or enactment semantics.
   - Preserve a former resident's return right without creating a nonresident ballot.
     The later migration/external-power work owns accessible evidence and border
-    operation, not the right's existence.
-  - Treat the negotiated internal secession path as settled here. The still-gated
-    external-power work owns recognition, defence, cross-border status,
-    international obligations, and post-exit effects; it may not replace the
-    affected-region vote, federal agreement, rights/minority review, settlement, or
-    final affected-population ratification.
+    operation, not the right's existence. Book 2 owns land/title administration,
+    language and consultation services, records, staffing, costs, capacity, and
+    workflows.
+  - Acceptance must cover disputed and multiple membership, exit and privacy,
+    internal dissent, customary-law conflict, nonmember residents, language access,
+    title and restitution, each consent-required harm, consultation-only projects,
+    temporary evacuation, and forced assimilation or relocation. Prove that
+    collective autonomy never lowers individual rights, common services, or
+    political equality and never creates a second general-government ballot.
   - Define authority and non-derogable limits for treaties, diplomacy, external
     trade, war/peace and humanitarian duties. Prevent public procurement, investment,
     trade or corporate form from exporting labour exploitation, ecological damage
