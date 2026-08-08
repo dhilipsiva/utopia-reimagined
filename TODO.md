@@ -59,14 +59,15 @@ then a full-society expansion backlog and cross-cutting sections:
    rely on either defective surface.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
-   versioned disposition map for declared social axes and envelope, a functional
-   cross-domain model, and a balanced reader-experience contract, ordered from
-   scope mapping through public review.
+   versioned claim-assurance, defect-disposition, and response-stage map for
+   declared social axes and envelope, a functional cross-domain model, and a balanced
+   reader-experience contract, ordered from scope mapping through public review.
 
 The remaining sections are cross-cutting: the book-1 work that remains around the
 finished text (the pre-expansion text was complete as of 2026-08-03 — epigraph, opening note,
 the derived chapters, Part V and the method part are all present in source; what is left is
-the full-society destination expansion and the licence files), the reach
+the full-society destination expansion, the living Creative Commons publication
+and conversation layer, and the licence files), the reach
 plan, data work, legacy harvest, and a pointer to book-2's own tracker. **Standing
 facts and methods** closes the file and holds knowledge, not tasks.
 
@@ -779,9 +780,10 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 - [ ] **Build a full-society domain-and-layer ledger with a declared stopping rule.**
   - Create one reviewed, normalized canonical source with stable domain, role,
-    body/institution, power, dependency, scenario, claim, external-assumption,
-    threshold and assurance-route IDs. Give every record applicability, layer,
-    status, severity, consequence, owner and closure fields.
+    body/institution, power, dependency, scenario, claim, defect, external-
+    assumption, threshold, assurance-route, and resolution-receipt IDs. Give
+    every record applicability, layer, status, severity, consequence, owner and
+    closure fields.
     Generate the coverage map, contract-card views, role matrix, dependency map,
     assurance allocation, reader ledger and Book 2 crosswalk from that source; do
     not maintain competing matrices by hand.
@@ -794,6 +796,116 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     **generated projection** of these fields, not a second reviewed file — a
     parallel hand-maintained matrix of assurance truth is refused by the
     canonical-source mandate above.
+  - **Add a defect-disposition axis orthogonal to claim assurance.** Claim
+    posture answers how strongly a proposition is supported; assurance route
+    identifies which method may establish it; and assurance overlay says whether
+    it concerns safety, liveness, feasibility, or another surface.
+    `defect_disposition` instead answers what the design did about a known failure.
+    Keep it orthogonal to all
+    three, to the constitutional class, and to the social-domain axis. Use
+    distinct schema keys for `unestablished_disposition`, `scope_disposition`,
+    `proposal_disposition`, and `defect_disposition`; never overload one generic
+    `disposition` field or let one axis satisfy another.
+  - Keep each `defect_id` stable. Key each disposition row by `defect_id` x
+    `affected_claim_id` x `consequence_id` x `scope_id` x `envelope_id` x
+    `source_version`. Give each row exactly one current `defect_disposition` and
+    one current `response_stage`; retain prior values as transition history.
+    Different consequences or scopes create rows, not replacement defect IDs.
+  - Use this closed `defect_disposition` enum; its last three values are explicit
+    non-resolution boundaries; the other values are resolution-eligible only under
+    the claim-ceiling and response-stage rules below:
+    - `eliminated-structurally`: the failure-producing route no longer exists in
+      the declared model. A formal/Derived resolution requires an executable
+      reintroduction mutation; every other route requires its own preregistered
+      reintroduction, ablation, hostile, or negative control. The repaired source
+      or system must refuse the former result for the intended reason.
+    - `prevented`: the initiating failure cannot arise within the named scope.
+      Route-appropriate hostile and negative controls test the initiation boundary.
+    - `protected-consequence-contained`: the initiating failure may arise, but the
+      named protected consequence cannot cross the stated boundary. Bypass,
+      composition, and negative-control cases test that exact boundary.
+    - `remedied`: after harm occurs, an evidenced route restores the protected
+      condition. Record actor, trigger, interim continuity, restoration, challenge/
+      appeal, recurrence control, and evidence. This disposition is resolution-
+      eligible only with `operationally-assured-in-envelope` and an Evidenced
+      liveness claim through operational assurance; it never proves prevention.
+    - `externally-bounded-assumption`: closure depends on a premise outside the
+      model. Name its source/authenticator, falsifier, failure consequence, owner,
+      and public-claim restriction. Explicitly bounded is still not internally
+      resolved.
+    - `irreducible-limitation`: the chosen model cannot close the failure without
+      contradicting a settled boundary or claiming control it does not have.
+      Supply the argument, alternatives considered, residual risk, and exact claim
+      narrowing. Honest limitation is not resolution.
+    - `open-defect`: no adequate response is established. Carry severity,
+      consequence, owner, closure condition, affected claims, and blocking gate.
+  - Track one current `response_stage` under the closed enum below. Stage
+    progression is route-relative, not a universal total order.
+    `operationally-assured-in-envelope` subsumes
+    `implemented-in-assigned-route`; no other stage implication is automatic.
+    Preserve actual prior stages and their evidence in transition history:
+    - `detected`: the failure has a visible, attributable witness; nothing is yet
+      specified, implemented, prevented, repaired, recovered, or resolved.
+    - `interface-specified`: Book 1 assigns a duty, evidence, continuity, challenge,
+      or remedy interface, but no implemented route establishes its effect.
+    - `implemented-in-assigned-route`: the response exists in its assigned formal,
+      model, evidence, argument, editorial, or review route. The stage supplies no
+      assurance; the claim posture and route-specific controls still decide what is
+      established.
+    - `operationally-assured-in-envelope`: a staffed, costed, accountable route is
+      exercised end to end in the named test/pilot setting and declared shock cases.
+      It supports only the reproducible operational-design claim established for
+      that envelope, never deployment or generalisation beyond it.
+  - Never review or hand-author a free-form `resolved: true`. Generate the closed
+    `resolution_status` from affected claim and consequence, claim posture, assigned
+    route and admissible evidence, `defect_disposition`, `response_stage`,
+    `scope_id`, `envelope_id`, `source_version`, and eligible gate. Permit only
+    `resolved-for-claim` and `unresolved-for-claim`; derive gate blocking separately
+    from severity and applicability. A disposition or stage never upgrades a
+    posture or substitutes for an assurance route; resolution may not exceed the
+    affected claim's independently established ceiling. Publish and enforce a
+    defect-disposition x response-stage x posture/route compatibility table;
+    invalid combinations such as `remedied` + `detected` or
+    `eliminated-structurally` + `interface-specified` fail generation.
+    `eliminated-structurally` may resolve only the named failure in its exact model;
+    `prevented` only the initiating-failure claim; and
+    `protected-consequence-contained` only the named consequence and boundary.
+    Each requires route-specific controls and either
+    `implemented-in-assigned-route` or `operationally-assured-in-envelope`, which
+    subsumes that implementation maturity while retaining its evidence in history.
+    `remedied` resolves only the recovery claim and only with
+    `operationally-assured-in-envelope` plus an Evidenced liveness claim through
+    operational assurance. `externally-bounded-assumption`,
+    `irreducible-limitation`, and `open-defect` remain unresolved for the defect.
+    `detected` and `interface-specified` are non-resolution stages;
+    `implemented-in-assigned-route` and `operationally-assured-in-envelope` mature
+    a disposition but resolve nothing by themselves. Detected, specified, assigned,
+    implemented, disclosed, and understood are not synonyms for resolved.
+  - Every generated resolution claim needs one resolution receipt binding: defect,
+    affected-claim, and consequence IDs; defect disposition and response stage;
+    claim posture, assigned route, admissible evidence, and assurance ceiling; what
+    failed and the hostile witness; why it failed; the exact response/change; what
+    now follows; the proof, probe, model, observation, or operational test and its
+    negative control; what still does not follow; remaining external dependencies
+    or residuals; scope, source, and envelope versions; responsible owner; and
+    eligible gate. Parts I-V carry the jargon-free reader form. The generated
+    public ledger carries exact rules, controls, models, evidence, and provenance;
+    neither may imply that a narrower receipt cured a wider defect.
+  - Backfill every existing `:defect`, known design/model/argument/evidence/reader
+    defect, open gap, residual, material red-team finding, and passage claiming a
+    defect was repaired before new resolution language ships. A narrated social
+    harm is a hostile witness or scenario, not automatically a book/design defect.
+    Extend the generator to fail on a missing or multiply active disposition or
+    response stage for one keyed row; a hand-authored resolution status; resolution
+    stronger than the affected claim's posture/route/evidence ceiling; elimination
+    without its route-appropriate reintroduction/ablation control; prevention
+    without an initiation-boundary hostile control; containment without bypass/
+    composition controls; remedy without the recovery fields, Evidenced posture,
+    operational-assurance route, and `operationally-assured-in-envelope` stage;
+    that operational stage counted before its eligible gate, without operational
+    evidence, or as proof of deployment/generalisation; a non-resolution defect
+    or stage counted as closed; a critical unresolved defect that does not block
+    its affected claim; or a resolution receipt with no reader-facing mapping.
   - Split, do not label. A record that would carry two postures is two records;
     "partial formalisation" is not a posture but an unsplit claim. One posture and
     one evidence kind per record is a precondition of the generator, not a
@@ -803,9 +915,10 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     on a mutation with no mutation reference; a Checked row phrased as an
     impossibility; an Evidenced row with no reachable source or a failing
     staleness gate; a Specified row without its unimplemented marker; a Reasoned
-    row cited as Derived; an Unestablished row with no disposition, or with a
-    route-unbuilt disposition lacking severity, owner, closure condition and claim
-    restriction; a liveness claim in any posture but Unestablished; a feasibility
+    row cited as Derived; an Unestablished row with no
+    `unestablished_disposition`, or with a route-unbuilt disposition lacking
+    severity, owner, closure condition, and claim restriction; a liveness claim in
+    any posture but Unestablished; a feasibility
     claim present in Book 1 at all; an established posture resting on a route that
     is neither built nor available; a route with no declared negative control; a
     reviewed enum with no mapping row; and any aggregate score. One conservative
@@ -833,7 +946,7 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     Governed/provided domains require ordinary-success, failure/abuse and recovery
     paths. Protected free/private domains require non-interference, non-recording/
     non-compulsion and recourse boundaries—not a state-certified successful life.
-  - A row is disposition-complete only when every applicable field is answered or
+  - A scope row is routing-complete only when every applicable field is answered or
     explicitly marked “not constitutionally prescribed”,
     “democratic/ordinary-law choice”, “Book 2 operation”, or “external
     assumption”. Classification is routing, not assurance. An unresolved field
@@ -843,12 +956,12 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     practice may map categorically to the protected free field only after checking
     rights harm, dependency/concentrated power, public duty, and commons/external
     effects.
-  - Give every reviewer proposal one public disposition: add it to the
-    canonical source; classify it with reasons under the available dispositions
+  - Give every reviewer proposal one public `proposal_disposition`: add it to the
+    canonical source; classify it with reasons under the proposal dispositions
     or as duplicate/immaterial; or retain it as an unresolved severity-rated
     limit. The named severity owner applies the published rubric and an
     independent checker reviews the result; a reviewer forces a reasoned
-    disposition, not automatic acceptance or a personal veto.
+    proposal disposition, not automatic acceptance or a personal veto.
   - **Done when:** every projection regenerates from the canonical source and an
     independent scope review can name no material omitted domain, role,
     dependency, or failure without the ledger adding it, classifying it out with
@@ -930,14 +1043,27 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     consequence collision has an owned ordinary, failure and recovery route.
 
 - [ ] **Create a generated constitutional-closure and model-allocation audit.**
-  - Generate it from reviewed domain, role, dependency and assurance data; never
-    infer constitutional importance from predicate names or raw counts.
+  - Generate it from reviewed domain, role, dependency, assurance, defect-
+    disposition, and response-stage data; never infer constitutional importance
+    from predicate names or raw counts.
   - Fail when a floor lacks delivery/continuity/remedy; a public power lacks source,
     limit, review or temporal status; a body decides, executes, audits and finally
     remedies itself; a private duty is merely implied; a record lacks
     writer/challenge/correction; a democratic choice crosses the floor; a Book 2
     operation is presented as Book 1 assurance; an external assumption is hidden;
     or a reader-facing claim has no formal/evidentiary owner.
+  - Join every public claim to its affected defect records and generated
+    claim-relative resolution status. Publish disposition history and resolution
+    receipts beside the claim audit, so a green derivation cannot hide an open
+    liveness, operation, evidence, or reader defect.
+  - Also fail when a known defect row has no defect disposition or response stage;
+    resolution is asserted rather than generated or exceeds its claim-assurance
+    ceiling; detection, interface specification, implementation, assignment,
+    disclosure, an external bound, an irreducible limit, or an open item is counted
+    as closure; an elimination, prevention, containment, remedy, or operational
+    assurance stage lacks its required route-specific controls; a narrower
+    resolution is promoted to a wider claim; or a critical unresolved defect fails
+    to block the claim it can falsify.
   - Record which claims belong to Nibli, quantitative/resource models, dynamic
     simulations, the evidence registry, operational assurance, or reader/lived-
     experience testing. One green model may not substitute for another.
@@ -2036,7 +2162,10 @@ Gate B; it does not claim Book 2 operations or feasibility.
     person posture (chooses, creates, cares, works, associates, requests, receives,
     challenges, governs, or is acted upon); trajectory (works, contested, fails,
     continuity/remedy, unresolved); roles/life stages/access conditions; and exact
-    rule/fact/pin or exempt-source basis.
+    rule/fact/pin or exempt-source basis. For any passage about a design, model,
+    argument, evidence, or reader defect, also project its stable defect/claim/
+    consequence IDs, defect disposition, response stage, assurance ceiling, and
+    receipt or unresolved claim restriction.
   - Generate the report as a projection of the canonical full-society source and
     fail verification on an unclassified passage or a completed constitutional row
     with no reader-facing mapping. Counts may appear in the generated audit, never
@@ -2050,6 +2179,38 @@ Gate B; it does not claim Book 2 operations or feasibility.
     non-recording/non-compulsion limits plus recourse; ordinary-life illustration
     remains non-evidentiary under the author-ruled narrative register. A non-justice
     domain represented only through prison or custody fails.
+
+- [ ] **Replace confession-as-ending with claim-scoped resolution receipts.**
+  - Whenever the book identifies a design, model, argument, evidence, or reader
+    defect; claims a former contradiction was repaired; or uses a narrated harm/
+    hostile case as a witness of such a defect, end that thread in exactly one
+    honest state: a verifiable claim-scoped resolution; an interface that remains
+    operationally unresolved;
+    an externally bounded or irreducible limitation with the public claim narrowed;
+    or an open defect that blocks the affected claim. Naming the limitation and
+    moving on is not a resolution.
+  - The jargon-free reader receipt states what failed, why it failed, what changed
+    or responded, what now follows, how the former attack was rerun, what still
+    does not follow, and which dependency remains external or open. Use
+    `eliminated-structurally`, `prevented`,
+    `protected-consequence-contained`, and `remedied` language only for the
+    narrower claim whose defect disposition, response stage, and assurance close it.
+  - Link each reader receipt to the generated technical receipt with exact claim
+    and defect IDs, source change, hostile witness/mutation, relevant pin/model/
+    evidence or operational test, negative control, scope, residual, and gate.
+    Parts I-V remain ordinary language; the public ledger supplies the derivable
+    and reproducible detail. Do not widen sealed `method.md` merely to duplicate
+    the ledger.
+  - Fail the reader audit when prose says `resolved`, `fixed`, `prevents`,
+    `contains`, `restores`, `ensures`, or an equivalent without an eligible
+    defect disposition, response stage, assurance record, and receipt; when a
+    receipt proves only detection or specification; when a repaired passage omits
+    its residual boundary; or when a confessed limit
+    has no defect record, owner, claim restriction, and gate consequence.
+  - **Done when:** an independent reader can move from every claimed repair in the
+    book to a version-bound receipt, reproduce or inspect the assigned verification
+    route, and state both the resolution and its surviving boundary without giving
+    disclosure any credit as closure.
 
 - [ ] **Rebalance the pinned case portfolio without fictionalising it.**
   - **This item is the consumer, not the fix.** The 2026-08-08 narrative-register
@@ -2185,11 +2346,16 @@ Gate B; it does not claim Book 2 operations or feasibility.
     by the relevant institutions.
   - Ask each reviewer to identify omitted domains, unowned dependencies, hidden
     liveness assumptions, private-power blind spots, impossible operations,
-    totalising rules and narrative distortions. Every finding is fixed,
-    classified out with reasons, or retained with severity, consequence, owner,
-    closure condition, and public-claim limitation. The named severity owner
-    applies the declared rubric and an independent checker reviews it. A critical
-    unresolved finding applicable to a gate's permitted claim blocks that gate;
+    totalising rules and narrative distortions. Give every submission a public
+    proposal disposition. A material finding creates or joins a stable defect ID
+    and its affected claim/consequence row with one current defect disposition and
+    stage; `fixed` is permitted only when the generated claim-relative resolution
+    receipt stays within its assurance ceiling. Classify a proposal out only with
+    reasons, or retain the defect with severity, consequence, owner, closure
+    condition, affected claims, and public-claim limitation. The named
+    severity owner applies the declared rubric and an independent checker reviews
+    it. A critical unresolved finding applicable to a gate's permitted claim
+    blocks that gate;
     “disclosed” is not “safe”.
 
 ### Explicitly rejected expansion proposals
@@ -2235,6 +2401,13 @@ operational, or reader test cannot substitute for an earlier missing condition.
   decision briefs are reviewable; and
 - independent scope reviewers can propose no omission that is neither added,
   classified out nor retained as an explicit severity-rated limit.
+- every material known defect has a stable ID and claim/consequence/scope row
+  with one current defect disposition and response stage, the required evidence
+  state or an explicit evidence gap and closure condition, and a generated
+  resolution status bounded by its claim-assurance ceiling; history remains
+  versioned; and
+- no critical unresolved defect affecting the Gate A permitted claim is hidden
+  by classification, assignment, disclosure, or a stopping-rule decision.
 
 **Artifact and permitted claim:** the map and test program may be public, but no
 book preview, release candidate, or edition may publish. The project has a
@@ -2254,6 +2427,15 @@ a complete society.
 - domain journeys, collisions and shocks establish the claimed constitutional
   invariants, lawful narrowing, challenge, restoration and model boundaries, with no
   critical constitutional, equality, safety or hidden-power gap.
+- every claim that a constitutional failure is resolved joins to a receipt whose
+  defect disposition, response stage, posture, route, and evidence can close that
+  claim. `detected` and `interface-specified` never count as resolution;
+  `externally-bounded-assumption` may remain only where the permitted claim is
+  explicitly conditioned on the named premise. `irreducible-limitation` and
+  `open-defect` may remain only where the permitted claim is narrowed so it does
+  not assert the unresolved consequence; any critical defect still applicable to
+  the conditioned or narrowed claim blocks. Book 1 may not count
+  `operationally-assured-in-envelope` or remedy liveness as its own achievement.
 
 **Artifact and permitted claim:** immutable Book 1 — First Edition previews may
 publish under P1 after Gate B and their snapshot-specific gates pass. A preview
@@ -2275,6 +2457,11 @@ society.
 - readers can identify normal functions, freedoms, democratic choices, guarantees,
   remedies, Book 2 dependencies and external assumptions without reconstructing them
   from scattered chapters.
+- readers can distinguish structural elimination, initiating-failure prevention,
+  protected-consequence containment, a specified remedy interface from
+  operationally evidenced recovery, each response stage, external bounds,
+  irreducible limits, and open defects; every claimed repair is traceable to its
+  version-bound reader and technical resolution receipt.
 
 **Artifact and permitted claim:** publish Book 1 — First Edition, its assembled
 digital artifacts, and its first Book 1 POD atomically under one provenance and
@@ -2307,6 +2494,13 @@ public object remains a preview and Book 2 does not activate.
   hidden-power or cross-domain dependency gap blocks the affected operational claim.
   A non-critical residual needs severity, consequence, owner, closure condition and
   an explicit public-claim limitation.
+- neither `interface-specified` nor `implemented-in-assigned-route` is
+  operational closure. `operationally-assured-in-envelope` requires an Evidenced
+  claim through operational assurance: a staffed, costed, accountable end-to-end
+  route exercised in ordinary, failure, continuity and recovery cases in the
+  named test/pilot envelope. It supports only Gate D's reproducible operational-
+  design claim, never deployment or generalisation; any narrower exercise
+  generates only the narrower resolution status.
 
 **Artifact and permitted claim:** only immutable Book 2 — First Edition previews
 or release candidates may publish. Book 2 may say that it supplies a reproducible
@@ -2329,6 +2523,15 @@ functional society.
 - independent constitutional, operational, scientific, lived-experience and
   accessibility reviewers can reproduce applicable analyses, audit provenance and
   methods for non-reproducible evidence, and identify residual limits.
+- the paired releases generate one compatible cross-book defect projection:
+  every Book 1 interface row has generated `resolved-for-claim` supported by an
+  eligible defect disposition, claim posture, route, evidence, and, where liveness
+  is involved, `operationally-assured-in-envelope`; is explicitly non-applicable
+  under `scope_disposition`; or remains under a named non-resolution defect
+  disposition with an exact public-claim condition or narrowing. Any
+  critical residual still applicable to that conditioned or narrowed claim blocks.
+  No defect disappears at the seam, and every integrated resolution receipt names
+  the exact compatible editions, envelope, assurance route, and evidence versions.
 
 **Artifact and permitted claim:** atomically publish Book 2 — First Edition and
 an immutable integrated release manifest pairing the exact compatible Book 1 and
@@ -2419,6 +2622,14 @@ The controlling publication mechanics are in
 the gate, claim, and stopping contract is
 [`new-book-plans/full-society-boundary-decision.md`](new-book-plans/full-society-boundary-decision.md).
 
+The publication objective is honest public conversation rather than revenue.
+`Living` names the public project, source, review record, and future versions; it
+never authorises silent mutation of a released object. The working source may
+continue to evolve under its visible gate status, while every public preview and
+edition remains immutable, permanently citable, reproducible, and linked to its
+superseding versions. An external publisher may steward a particular edition but
+may not become the sole custodian of the book or of its future development.
+
 - **Align the current time account before any public expansion snapshot.**
   - Chapter 13's ordinary-language/admitted-fact distinction has landed. Remove
     or narrow the remaining permanent-refusal wording in Chapters 4 and 13 that
@@ -2455,12 +2666,88 @@ the gate, claim, and stopping contract is
     content creates a new version, and withdrawal means visibly disrecommended,
     not silently erased.
 
+- **Implement the living, evaluable, evolvable Creative Commons conversation
+  layer without weakening immutable releases.**
+  - Before implementation begins, record the author-ratified publication purpose
+    and publisher-custody boundary in `CLAUDE.md`; this tracker specifies the work
+    but is not the permanent home for a settled ruling.
+  - Until Gate B, describe the public repository and history as a living
+    construction record, never a living edition. Public discussion may begin
+    against commit-addressed construction records before Gate B; no pre-Gate-B
+    object may be presented as a preview, edition, or Gate B claim. After Gate B,
+    immutable previews may expose the conversation; after Gate C, the living
+    project may point to the immutable First Edition and later immutable versions.
+    Every page must state which object it is, its source version, gate status, and
+    whether it is citable.
+  - For every substantive public change, publish a change record linking affected
+    claim IDs, defect IDs, `defect_disposition` and `response_stage` transitions,
+    resolution receipts, assurance evidence, reviewer cut-off, verification status,
+    and superseded version. The
+    working source may change; a released artifact, manifest, tag, or print
+    interior never changes in place. An ISBN/DOI identifies one exact release;
+    its metadata may add correction or supersession links but may not repoint the
+    identifier to changed content.
+    Every substantive successor release reruns its applicable cumulative gates;
+    no prior version's green result is inherited.
+  - Put the evaluable surface beside the reading surface: exact source, reproducible
+    artifacts, verifier instructions, claim-assurance, defect-disposition, and
+    response-stage ledgers, resolution receipts, known limits, external assumptions,
+    review record and cut-off, and release manifest. A reader should not need
+    repository archaeology to learn what is established, unresolved, superseded, or
+    outside the model.
+  - Provide a public, accessible submission channel with stable finding IDs, a code
+    of conduct, moderation and safety/privacy rules, and a visible review cut-off.
+    Give each material criticism a traceable response and proposal disposition;
+    create or join a defect record when warranted. A comment, vote, credential, or
+    volume of agreement does not automatically become evidence, a rule, or a veto.
+  - Keep new book prose under `CC-BY-4.0`; keep code, registry data, snapshots, and
+    third-party material under the repository's actual licence map. Incorporate a
+    contribution only with explicit compatible permission and attribution; otherwise
+    link or quote within lawful limits without silently relicensing the contributor.
+    Add no DRM or downstream term that restricts exercise of the Creative Commons
+    grant.
+  - Measure the conversation by whether substantive objections receive inspectable
+    dispositions and cause verified repair, explicit claim narrowing, or a visible
+    open defect, rather than by sales, praise, follower counts, or agreement.
+  - **Done when:** an independent reader can cite an immutable version, reproduce
+    its applicable checks, compare it with its successor, submit a finding, and trace
+    the finding to a public disposition and any resulting source/claim/defect change.
+
+- **Seek a publishing steward only on terms that preserve the living public book.**
+  - After a Gate B preview exists, prepare a compact proposal containing the thesis,
+    intended readers, representative chapters, method/evaluation surface, immutable
+    release model, Creative Commons terms, and the kind of editorial, accessibility,
+    library/discovery, and print-quality help sought. Revenue is not a selection
+    criterion.
+  - Evaluate mission-aligned open-access, university, independent, and publishing-
+    service routes against one public matrix. A publisher may edit, review, design,
+    distribute, archive, and sell a named immutable edition; it is not the canonical
+    mutable source and receives no authority over defect or assurance verdicts.
+  - Contract red lines: the author retains copyright and future-revision/publication
+    rights; book prose remains `CC-BY-4.0`; the canonical source, free digital
+    edition, verifier, registry, review record, and release archive stay public.
+    Grant no exclusive right in the CC-BY prose. Any edition-specific exclusivity
+    is limited to publisher-created assets or services and may not restrict the
+    existing Creative Commons grant, public source, or future editions. Permit no
+    DRM, silent replacement, exclusive canonical URL, suppression of prior versions,
+    or control over future editions; require every publisher-issued copy to name its
+    exact source, licence, errata, and supersession path. Obtain independent
+    publishing-contract review before signing.
+  - An external publisher is optional and is not Gate C. If no steward accepts these
+    terms, publish the Gate C digital artifacts and POD directly under the same
+    provenance, accessibility, licence, and immutability contract.
+  - **Done when:** the comparison records accept/reject reasons against the red lines
+    and either a compliant edition-specific agreement is signed or the self-
+    publication route is release-ready without weakening the public conversation.
+
 - **The site.** A dedicated domain — **registering it is the author's own task**
   — plain, built from the Markdown that already exists; immutable preview
-  snapshots during expansion, then final chapters in computed order; the repo
-  and the one-command suite linked from the front page. Platforms syndicate
-  *from* it: CC-BY means they will copy regardless, so the canonical home must
-  name itself.
+  snapshots during expansion, then final chapters in computed order. Link the
+  exact release/source, claim-assurance, defect-disposition, and response-stage
+  ledgers, resolution receipts, review channel, and one-command suite from the
+  reading surface.
+  Platforms syndicate *from* it: CC-BY means they will copy regardless, so the
+  canonical home must name itself.
 - **The launch essay. [AUTHOR-GATED]** A standalone distillation for someone who will
   never read the book, carrying the thesis and the honest second half in miniature. *The
   Furnished Prison* is the standing headline candidate. First-person territory: the voice
