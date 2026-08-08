@@ -990,6 +990,101 @@ pin, generator, verifier section, chapter, or public claim, and reclassifies
 nothing; each artifact keeps its own vocabulary until the ledger lands. The
 controlling record is `new-book-plans/book-1-assurance-portfolio-decision.md`.
 
+**The narrative register is author-ratified (2026-08-08): it stays flat, and the
+balance problem is a constitutional deficit rather than a prose one.** The four
+approved channels remain a **closed list** and this ruling disposes of all four,
+not only the passage: the author's first person is unchanged; the single
+second-person domestic passage is retained under the rule below; the hostile
+reviewer corpus stays Part-V-only and is **not** claim-free, since a quotation
+carries its own posture and attribution; and the historical cases stay
+Part-V-only, capped at their sourced members, and are **explicitly not a
+substitute for derived ordinary life** — they are evidence about other societies
+and how they failed. "Do not warm the cast in any pass, any part, ever" stands
+unamended, as does the reading that the flatness is chosen rather than awaiting
+repair.
+
+**The register ruling amends the two 2026-08-02 rulings in exactly two ways, and
+both are named rather than silent.** (a) The passage channel **widens** from
+Part V — which the flatness ruling scoped it to in its own words — to **the
+opening note and Part V**, because both are exempt elements the author writes in
+the first person. (b) **`method.md` is excluded despite being exempt**, not
+because it is less exempt but because its scope is sealed by five decisions and
+its reading contract is what keeps a documented renderer defect dormant.
+Derived chapters stay closed by three standing rulings; no fourth exempt element
+exists. Supply is **author-drafted**: the ruling defines the slot, the form, the
+assertion rule and the legal role, and the prose is the author's. The
+ghost-writing refusal stands unamended — it is written into the constitutional
+source's own header comment, not merely into this file.
+
+**The passage rule** is form plus assertion. *Form:* generic second person,
+never a name; **no interior state attributed to any person in the scene**,
+though a force named in the negative is permitted, because naming what cannot
+reach a household is a statement about the design rather than about a mind; no
+dialogue, backstory, named place, or time-course beyond one scene, optionally
+paired with a contrast scene in the reader's present society; and it closes by
+re-declaring itself as argument rather than scene. *Assertion:* every concrete
+detail traces to one of **three** permitted targets and says which — a
+constitutional rule or fact, a derived chapter's fixed gloss of a floor item, or
+a pinned fixture; **an arrival may appear only inside the hypothetical frame and
+only where the same sentence names the entitlement that grounds it**; and the
+disclosure that the design delivers nothing outside confinement travels with the
+passage. The slot sits inside the jargon sweep and the counted-claims hard gate.
+
+**The mood is claim-free; the predications are not.** "Imagine a household"
+asserts nothing, but a definitional clause about the designed society, a
+description of the reader's present world, and a universal negative are all
+predications. The resolution is a **restatement-only register**: a passage may
+restate only claims that already carry a posture elsewhere in Book 1, **no claim
+may make its first appearance in an exempt-element passage**, and a passage may
+never be the sole support for a ledger row, a coverage field, or a public claim.
+It therefore adds no ledger row. A contrast scene about the reader's present
+society is rhetorical contrast carrying no evidentiary weight, explicitly
+outside Part V's sourcing discipline.
+
+**The existing passage is recorded, not edited**, and it is the exemplar of the
+form clauses only. Its per-clause trace is in the decision. Two results matter:
+"the flat is warm and the water is clean" traces to **chapter 8's gloss, not the
+constitution**, which contains no warmth or water term; and "the record can hold
+an accusation only as an entry with an author" **traces to nothing** — the harm
+relations name the alleged offender and victim, expressly not the writer, and
+the reviewed ledger records that no finder, evidence, causation standard or
+correction history is attached. The passage is therefore dated **non-conforming
+on arrival, trace and proximity as of 2026-08-08**, grandfathered with that
+visible, and the rule is prospective. The fix is author-owned prose and **no
+session may make it**.
+
+**The deficit is measured and classified.** Five of the eight floor items have
+no producing rule; the two that arrive derive only from confinement; every
+`home` and `family` entry names a convicted person; the one non-carceral route
+to a floor actuality ships dormant; every non-carceral derived conclusion is
+inert; care is a pin-fixture and work is one fact; the franchise and movement
+derive broadly but nothing reads either. State these as rules, never as counts —
+the carceral-chapter count moves with the criterion, which is exactly why the
+counted-claims gate exists. The deficit is a **formalisation gap inside
+already-mapped scope**, not a scope or assurance omission, so it does **not**
+reopen Gate A. It carries severity, consequence, owners, closure condition and
+claim restriction, and the accusation-authorship gap joins it: no adverse ground
+relation has an authorship place. **Two owners in dependency order** — the
+delivery and receipt rule families are the precondition; the pinned-case
+rebalance is the consumer that can only run afterwards.
+
+On the reader-balance gate, three statements in this order, because the shorter
+version is an overclaim: the deficit **does not by itself** make Gate C
+unpassable, since its claim is protocol-relative; this ruling makes **no
+prediction** about the outcome; and the deficit is a named, **disclosed input**
+to the protocol's design, which may not be written so as to hide it. In the
+reader-experience ledger a passage is enrolled for completeness, occupies no
+person-posture or domain cell, contributes zero coverage, and reads as an
+exempt source — otherwise one illustration would mask the deficit the ledger
+exists to expose.
+
+Refused by name: composite citizens, an invented antagonist, dramatised cast
+scenes, warming the cast "slightly" later, a fourth exempt element, boxes inside
+derived chapters, inferring an inner life from a record entry, a passage
+introducing a claim that appears nowhere else, and the historical cases as a
+substitute for derived ordinary life. The controlling record is
+`new-book-plans/book-1-narrative-register-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
@@ -1211,9 +1306,9 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   boundary. The substantive-equality, bounded-plural-economy, family/
   dependency/reproduction/collective-plurality, ecological/future-condition/
   commons/non-human-animal, and public-safety/defence/emergency/external-power
-  baselines are settled, as is the assurance portfolio. Phase 1 retains open author
-  rulings on
-  narrative register and reader evidence; each ruling blocks only its dependent
+  baselines are settled, as are the assurance portfolio and the narrative
+  register. Phase 1 retains one open author
+  ruling, on reader evidence; it blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
   2 records the completed finite collective-decision audit, holds two bounded,
   non-blocking engine repair prompts, and carries read-only ecology/animal and
@@ -1550,7 +1645,12 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   generic "you", never a cast name; the **hostile reviewer corpus as the antagonist**, quoted
   from `reviews/` and answered at the joints; and the **nine historical cases as the
   documented feeling**. Nothing else — no invented antagonist, no composite citizens, no
-  dramatised cast scenes.
+  dramatised cast scenes. **Amended 2026-08-08 by the narrative-register ruling**, which
+  keeps the list closed and disposes of all four channels, but widens the passage channel
+  from Part V to the opening note *and* Part V, adds the form/assertion rule and the
+  restatement-only register, and dates the existing passage non-conforming on arrival,
+  trace and proximity. The rationale above is unchanged and is not superseded; see
+  `new-book-plans/book-1-narrative-register-decision.md`.
 
 - **The voice boundary is the derivation boundary**, ruled 2026-08-02. The plain, direct,
   reader-facing register of the fourteen derived chapters is ratified as their voice — it is a
@@ -1575,7 +1675,10 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   launch essay and the epigraph translation remain the author's — unless the author rules
   again. The
   full re-weave the tracker once priced (every chapter re-touched, dearer each week) is dead
-  by this ruling, not deferred.
+  by this ruling, not deferred. **Confirmed 2026-08-08 by the narrative-register ruling**:
+  supply for any ordinary-life passage is author-drafted, the refusal stands unamended, and
+  `method.md` is excluded from that channel despite being one of the three exempt elements —
+  because its scope is sealed, not because it is less exempt.
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be
