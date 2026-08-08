@@ -40,7 +40,16 @@ personhood, emergency help, due process, or the material floor.
 The common tier owns the constitutional floor and its portability; fiscal and
 service equalisation duties; and interregional coordination and commons. It
 represents the republic externally and exercises only the external powers and
-limits separately ratified by the later security/external-power ruling. This
+limits separately ratified by the public-safety, defence, emergency, and
+external-power ruling of 2026-08-08, which now supplies that enumerated list:
+external representation and treaties, external defence and the authorisation of
+force abroad, borders and entry, asylum determination, expulsion, extradition
+and mutual legal assistance, external trade measures and sanctions, security
+intelligence and its oversight, common minimum standards for policing and
+permissible force, and coordination of cross-regional and cross-border hazards.
+That addition creates no general security, foreign-affairs, policing, or
+emergency power, and ordinary policing, civil protection, and disaster response
+remain regional and local under subsidiarity. This
 decision allocates the tier. The separate ecological, future-generation,
 commons, and non-human-animal ruling of 2026-08-08 now supplies that subject's
 constitutional substance: the common tier owns republic-wide and interregional
@@ -312,9 +321,14 @@ an elected office at those tiers. They retain universal standing, protection,
 and petition. A former resident retains the right to return to the republic
 without that right creating a ballot while the person is nonresident. Accessible
 evidence may establish the prior connection; property, conventional address, or
-document perfection cannot defeat it. The later migration/external-power ruling
-owns evidence, border administration, and entry claims without a prior residence;
-it does not reopen this return right. Citizenship creates no diaspora
+document perfection cannot defeat it. The 2026-08-08 public-safety and
+external-power ruling now owns evidence, border administration, and entry claims
+without a prior residence, and it did not reopen this return right. It adds that
+everyone within the republic's jurisdiction or effective control is owed
+standing, the material floor, due process, and remedy regardless of status; that
+non-refoulement and the ban on collective expulsion are corridor members; and
+that no service may condition access on, enrol, collect, or transmit immigration
+status for enforcement. Citizenship creates no diaspora
 constituency or extra ballot.
 
 Conviction and custody never remove franchise or candidacy by status alone.
@@ -457,9 +471,24 @@ commons, floors, and minority protections, and final ratification by the
 affected population. Unilateral secession has no legal effect.
 
 This ruling settles the republic's internal constitutional secession path and
-supersedes that choice inside the later security/external-power gate. That later
-ruling still owns external recognition, defence, cross-border status,
-international obligations, and the powers exercised before and after exit.
+supersedes that choice inside the security/external-power gate. That ruling,
+ratified 2026-08-08, owns external recognition, defence, cross-border status,
+international obligations, and the powers exercised before and after exit. It
+did not reopen the negotiated path or any element of it. It treats the
+settlement contents above as a floor and supplements them with the continuing
+protection of people who lose membership, nationality and statelessness
+prevention, the position of residents who do not move, cross-border family and
+cultural relations, defence and security arrangements, treaty succession, and
+the disposition of records affecting individual rights. It adds a gate this
+ruling did not state: where an exit would transfer, extinguish, or irreversibly
+impair collective land or resource title, or transfer sovereignty over
+collective lands, the ratified free, prior, and informed **actual collective
+consent** requirement applies. And it decides in the open what this ruling left
+unsaid — because the armed forces' mandate is external only, the republic holds
+**no military instrument against a unilateral exit**; legal invalidity, ordinary
+policing under the imminent-threat-to-life standard, and negotiation are the
+available responses, and defence, trade, border, payment, and service levers may
+not be weaponised against a region seeking or completing a lawful exit.
 
 ## 8. Evidence and result contract
 

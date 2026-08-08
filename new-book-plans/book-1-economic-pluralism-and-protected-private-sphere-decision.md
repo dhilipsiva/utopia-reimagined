@@ -432,8 +432,21 @@ does not make the reassessment clock advance or the evidence arrive.
 
 This decision creates no standing requisition, rationing, compulsory-
 continuity, or price-control power. Any emergency authority needs a separate
-trigger, scope, review, remedy, and temporal contract through the later
-emergency ruling. Book 2 owns evidence collection and assurance methods,
+trigger, scope, review, remedy, and temporal contract through the
+emergency ruling. That ruling landed on 2026-08-08 and disposes of all four by
+name. It confers **compensated requisition** as one of exactly four emergency
+powers. **Rationing** is not a new power: where a genuine physical shortage
+exists it is an instance of the scarcity contract in this section and runs
+through it unchanged, so a declaration neither creates a shortage, lowers the
+evidential threshold for finding one, nor licenses allocation on any key this
+contract forbids. **Compulsory continuity** keeps the narrow form already
+ratified here — binding a provider or bargaining party, never conscripting a
+named worker, criminalizing an individual refusal, or withdrawing a floor.
+**Price control** is ordinary economic law available to the legislature at any
+time inside this settlement; it is not an emergency power, needs no declaration,
+and confers no unilateral executive pricing authority. See
+[`book-1-public-safety-defence-emergency-and-external-power-decision.md`](book-1-public-safety-defence-emergency-and-external-power-decision.md).
+Book 2 owns evidence collection and assurance methods,
 inventories, forecasts, quantities, optimization, production, and capacity. The
 authorized decision institution supplies the reviewed live scarcity finding;
 Nibli may consume only its bounded projection.
@@ -692,8 +705,11 @@ family, dependency, reproduction, and collective-plurality decision of
 settle the environmental right, future-generation representation, general
 commons limits, or non-human-animal protection; the separate author ruling of
 2026-08-08 now settles that distinct planning scope. External trade and treaty
-power and emergency authority remain outside this ruling. Neither later
-decision operates an economy or proves affordability, supply, capacity,
+power and emergency authority remain outside this ruling; the public-safety,
+defence, emergency, and external-power ruling of 2026-08-08 settles them,
+subordinating every treaty, trade agreement, arbitration clause, and sanctions
+measure to the corridor and generalising the no-evasion rule. None of these later
+decisions operates an economy or proves affordability, supply, capacity,
 stability, ecological compliance, animal protection, or feasibility. See
 [`book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
 

@@ -145,6 +145,35 @@ never approval and needs a predeclared alternate route. Conversely, absence of a
 record does not by itself prove harm, compliance, restoration, or expiry. Book 2
 still owns clocks, measurement, publication, scheduling, and outside liveness.
 
+The public-safety, defence, emergency, and external-power ruling of 2026-08-08
+closes the long-open **Emergency and office** row's design question without
+extending the implemented path. Each of the following needs its own source-bound
+contract and its own adversarial cases: the emergency declaration; **each
+renewal separately**; each individual emergency measure, rejoining the exact
+declaration version rather than a compact status tag; deployment; surveillance
+authorisation; arrest; pre-trial detention; protective restriction; border hold;
+expulsion stay; transfer or surrender of a person; treaty window; and exit
+settlement. Custody T3 cannot be reused or borrowed by implication for any of
+them.
+
+Two clarifications belong here because both have already been got wrong once.
+**The polarity is the same as the implemented custody gate, not an inverse.**
+Current restrictive authority is a positive premise: absent current,
+authenticated, source-bound renewal evidence in a fresh evaluation, the
+restrictive power has no current legal effect. Describing that as an inverse
+invites an absence-derives-cessation rule, which this model refuses — cessation
+is a positive recorded act or a fresh-evaluation claim over the supplied
+envelope, never an inference from silence. **And fail-safe polarity defeats a
+renewal that was never made, not a frozen or replayed record.** In an emergency
+the party who gains from freezing the record is the party the contract exists to
+constrain; distinguishing a live renewal from a frozen one requires
+independently witnessed sources that Book 1 can specify and only Book 2 can
+operate. Book 1 also cannot make an emergency end: it can withhold current legal
+effect from an unrenewed power, and it cannot cause anyone to act. Where a
+cross-branch authoriser cannot convene, a predeclared alternate authorising
+route and a predeclared independent substitute reviewer preserve the route;
+neither absence becomes approval nor an indefinite hold.
+
 The rejected T0 alternative would retain only non-temporal end conditions. That
 is coherent, but it leaves the Public institutions and Emergency/resilience rows
 incomplete unless the author explicitly narrows their ratified scope. It is not
@@ -268,7 +297,7 @@ records what each family must continue to prove and where its proof stops.
 | Release | Test forged `free`, withheld current authority, and valid recorded release. Preserve personhood, travel, floor debt, and the disclosed delivery gap; authority lapse must not manufacture `free`. |
 | Adulthood and legacy maturity | Test automatic statutory-age adulthood; missing, corrected, deleted, and disputed evidence; last-status continuity, a provisional first determination where a political opportunity would expire, and non-retroactivity; and a bounded decision-specific early power that cannot itself confer a ballot or candidacy. Test forged and withheld `mature`; neither status nor fixture may gate personhood, floors, liberty, due process, or remedy, and `mature` may not become the adulthood record. |
 | Order and recency | Test direct and longer cycles, typed conflict propagation, exposure before/after office end, forged/withheld stale facts, and backdated records. Do not claim an ordering result without separately witnessed event and record paths, and do not let a contested connected path support a window. |
-| Emergency and office | Test forged declaration/end, frozen end, re-declaration loop, succession, and self-review. Ending power must not erase answerability or the shield. |
+| Emergency and office | Test forged declaration/end, frozen end, re-declaration loop, succession, and self-review. Ending power must not erase answerability or the shield. The 2026-08-08 protective ruling adds: one declaration fanning out to several concurrent measures, each separately justified and separately renewable; a measure rejoining a stale or wrong declaration version; a withheld first renewal against a frozen or replayed one; an alternate authorising route used while the ordinary body can in fact convene, and an alternate authorisation the ordinary body never ratifies; and a substitute reviewer standing in for an available reviewer. Missing authority must end the restrictive power without ending the floor, essential-service continuity, or a claimant's standing, appeal, or remedy. |
 | Audit | Any deadline or ignored-duty rule that reads `obliged` must deliberately retire Chapter 14's current endpoint and update its pins and prose. |
 
 ## 9. Ratification record

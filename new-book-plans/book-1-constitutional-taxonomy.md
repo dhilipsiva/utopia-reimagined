@@ -53,7 +53,7 @@ return later as ad hoc “new rights” or “new branches.”
 | Where do power limits and remedies belong? | Class 3 limits interference; Class 4 governs accusation, coercion, contest, repair, and representation; Class 7 governs records. Keep those grammars separate. | Their shared evidence, remedy, and appeal contracts. |
 | Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Unexpressed private wrongdoing reaches justice machinery, not a floor consequence against another person. The equality ruling directly binds its named public-facing domains without a dominance test. The 2026-08-07 economic ruling separately names general labour, substantive-contract, and public-service consumer duties, plus additional function-specific public-like duties after an independent public-scale-power finding tied to a public-facing, essential, delegated, gatekeeping, or systemically controlling function, using essentiality, dominance, network effects, dependency, lock-in, information asymmetry, or lack of meaningful exit as evidence. Intimate dependency alone routes coercion through justice/public protection rather than public-like transparency duties. Neither express family creates a general horizontal effect, and the public floor-continuity duty remains non-delegable. | Separate cards by direct legal effect for every equality duty, labour/contract/consumer limit, public-scale-power trigger, calibrated private duty, public continuity route, and remedy; any additional private reach still requires an express ruling. |
 | Who turns a record finding into a remedy? | Class 7 supplies evidence; Class 6 supplies an independent reader with an action duty; Class 4 supplies the contest and repair route. A referral alone is not accountability. | The particular recipient, remedy, and continuity rule for each failure. |
-| Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
+| Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. **Settled 2026-08-08:** the protective settlement brought defence and security into scope as six separated Class 6 mandates and **created no Class 11**. It also went further than this row anticipated — there is no derogation clause at all, so the overlay alters the exercise of a power without suspending anything. | Its trigger, authorised bodies, and formal temporal controls now live in [`book-1-public-safety-defence-emergency-and-external-power-decision.md`](book-1-public-safety-defence-emergency-and-external-power-decision.md); implementation still owes each of them a contract card. |
 | Are economy, property, locality, migration, and external relations extra classes? | No. Split each by direct legal effect across democratic policy, public duty, liberty, standing, fair process, records, jurisdiction, and commons. The ratified economic settlement permits plural ownership and above-floor policy inside a non-delegable floor, labour, equality, conditional-property, substantive-contract, protected-private-sphere, private-power, scarcity, and no-score boundary. Property is conditional; price and lawful wealth may mediate ordinary above-floor transfers, but `reward`, recognition, merit, a qualifying threshold, personal scores, and raw work/contribution facts cannot directly qualify property access. An adjudicated wage/equity claim or purpose-bound grant, prize, or supplement uses a distinct legal relation. Contribution may calculate a separately enacted above-floor insurance supplement but cannot gate the floor or read `reward`. Any present person, qualified association, rights advocate, and the independently checked Future Conditions Guardian each has an independent initiation route for commons/future-condition claims; no route depends on another claimant being present. | Separate cards for each economic effect, ecological ceiling, guardian power, and remedy. Physical scarcity manages a present shortfall and never permits creating one by violating Class 9. Rates, prices, quantities, operations, measurements, and empirical feasibility remain Book 2. |
 | Are life course, family, care, reproduction, ageing, and death extra classes? | No. Split their direct effects across Class 1 status and legal capacity; Class 2 public care and continuity; Class 3 bodily, reproductive, domestic, family, treatment, and association liberty; Class 4 child, parentage, supported-decision, protection, succession, and end-of-life proceedings; Class 6 public duties; and Class 7 consequential records. A family, caregiver, supporter, age, disability, diagnosis, or residence label cannot stand in for consent, care, capacity, best interests, parentage, adulthood, responsibility, or authority. | Separate cards for each status, liberty, private duty, public continuity route, proceeding, finding, record, and remedy; one common-tier-law age remains to be chosen, and operations remain Book 2. |
 | Are collective and plurality rights an extra class? | No. Split universal individual status and membership effects into Class 1; cultural, linguistic, religious, association, property, and anti-assimilation liberties into Class 3; internal-dissent, customary-law, consultation, consent, and remedy proceedings into Class 4; internal collective choice and the one-general-ballot boundary into Class 5; institutional mandates into Class 6; membership/title/decision records into Class 7; territorially grounded self-government into Class 8; and shared-resource non-destruction into Class 9. Neither `family` nor a new omnibus `collective` predicate may carry these effects. | Separate cards for each direct effect, including historical/territorial basis, individual-rights review, consent-versus-consultation boundary, nonmember services, title continuity, finite decision semantics, and Book 2 administration. |
@@ -168,9 +168,10 @@ state.
 | Public institutions | 6 | 4 and 7 prevent self-judging/self-auditing power. |
 | Records and accountability | 7 | 1 protects standing; 6 supplies the remedial reader/action duty; 4 supplies challenge and correction. |
 | Economy, property, work, and commons | **Split required** | 2 covers the floor and continuity; 3 labour, property, contract, protected-private-sphere, and private-power limits; 4 enforcement, insolvency, eviction, debt, and repair; 5 compatible democratic economic choice; 6 fiscal, monetary, regulatory, and continuity duties; 7 purpose-limited records, reasons, and challenge; 8 federal portability, equalisation, and economic competence; 9 commons/non-regression. Recognition remains outside compensation and allocation. |
-| Locality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, and cross-jurisdictional duty; 3 movement/association; 1 newcomer standing; 4 migration procedure; 6 external public authority. |
+| Locality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, cross-jurisdictional duty, and the 2026-08-08 enumerated common competence for external representation, treaties, external trade, borders, and cross-border hazard coordination; 3 movement/association and the limits on border holds and transfers; 1 newcomer standing, which is owed to everyone within jurisdiction or effective control regardless of status; 4 migration procedure, asylum determination, expulsion, extradition, and transfer of a person; 6 external public authority, the armed forces' external-only mandate, and authorisation of force abroad; 7 the enforcement firewall covering enrolment. Non-refoulement and the ban on collective expulsion are corridor members, not ordinary rules. |
 | Collective and plurality rights | **Split required** | 1 preserves universal individual status and governs consequential membership effects; 3 protects culture, language, religion, association, anti-assimilation, and conditional collective property/title; 4 governs membership challenge, internal dissent, customary-law conflict, consultation, consent, restitution, and remedy; 5 governs authenticated internal collective decisions while preserving one equal general-government ballot; 6 assigns collective and reviewing institutional mandates; 7 controls membership, basis, title, consultation, and decision records; 8 covers territorially grounded self-government and common services for nonmembers; 9 covers shared-resource and irreversible-harm limits where applicable. |
-| Emergency and resilience | **Overlay, not a separate class** | It affects liberty, fair process, democracy, institutions, and records, but remains constrained by standing, floors, the common baseline across places, and non-destruction. |
+| Emergency and resilience | **Overlay, not a separate class** | It affects liberty, fair process, democracy, institutions, and records, but remains constrained by standing, floors, the common baseline across places, and non-destruction. The 2026-08-08 settlement adopts **no derogation clause**: the overlay confers procedural acceleration, resource redirection, compensated requisition, and hazard-specific reviewable restriction, and suspends nothing. |
+| Security, defence, and armed force | **6 for every protective mandate; no new class** | 6 separates policing, prosecution, adjudication, custodial execution, external defence, and security intelligence, and holds civilian command and the anti-fusion incompatibilities; 3 limits arrest, detention, search, seizure, force, surveillance, and protective restriction; 4 supplies grounds, review, investigation of force incidents, and remedy; 5 governs authorisation of force abroad, treaty ratification, and what a majority may not choose; 7 controls protective and intelligence records and the assessment firewall; 8 carries the enumerated common competence and cross-border coordination. Legal defence and victim protection stay with the justice interface. Individual animal and ecological effects are unchanged. |
 | Ecology, future generations, and commons | **Split required** | 1 covers unequal environmental burdens; 3 harmful interference; 4 challenge, continuity, and repair; 5 compatible democratic policy; 6 public and guardian duties; 7 scientific and decision records; 8 federal, cross-boundary, and portability competence; 9 protects the common condition. The environmental right is neither Class 2 nor a guaranteed outcome; future generations and ecosystems are not human `person` holders. |
 | Non-human animals | **10 for individual welfare; 9 for species/populations/habitat** | Class 10 governs direct welfare, use, custody, inspection, rescue, and remedy for an individual sentient or credibly sentient animal. Class 9 governs ecological populations and habitat. Neither class substitutes for the other or creates human personhood, a human floor, or political standing. |
 
@@ -294,6 +295,37 @@ structural refusal instead limits what *form of rule* may exist across subjects.
     justice card proving individual culpability with full due process; status,
     employment, investment, residence, ownership form, or group membership alone
     proves neither liability nor guilt.
+16. **Force and emergency alter exercise, never entitlement:** a protective
+    mandate and an emergency declaration may change how, how fast, and by whom a
+    public power is exercised. Neither suspends a right, and there is no
+    derogation clause to invoke. Every coercive act needs its own instrument
+    card with a lawful trigger, an authorised actor, an individualised ground,
+    reasons, an independent reviewer, a source-bound temporal contract, and a
+    remedy; the categorical refusals are refused at every magnitude and under
+    every declaration. Current restrictive authority is a **positive premise**,
+    the same polarity as the implemented custody gate: its absence withholds the
+    conclusion and never extends the power, and cessation is a positive recorded
+    act or a fresh-evaluation claim rather than an inference from silence. Two
+    structural obligations attach to any new coercive instrument, because the
+    existing walls do not cover it: the instrument must carry its own rule
+    placing it upstream of personhood in the same change, since the floor
+    firewall reaches the confinement conclusion only; and the **capability it
+    removes** must join the no-reader list, since it is the deprivation that
+    must stay a leaf and not the instrument. Anyone the state physically holds
+    by any instrument is owed shelter and a recorded voice.
+17. **Security evidence is bounded input, never a person score:** no risk,
+    threat, dangerousness, loyalty, clearance, or watchlist product may enter the
+    canonical consequential person record, condition standing, the floor,
+    personhood, franchise, candidacy, liberty, remedy, or allocation, or become
+    a reusable status. This extends the temporary-assessment exclusion rather
+    than reopening it. Secret material is never the sole or decisive basis for a
+    conclusion about a person; where disclosure is impossible the consequence
+    does not follow. Absence of a protective record never proves a coercive act
+    did not happen and never excuses the actor who should have written it.
+    Aggregate patterns run through the equality diagnostics and never produce an
+    adverse individual finding. Citizenship, nationality, immigration status,
+    documentation, and manner of entry gate nothing, and join the forbidden
+    priority keys for any scarce floor essential.
 
 ## Book 1 / Book 2 discriminator
 
@@ -377,10 +409,19 @@ This ratification preserves these conclusions:
 - Floors are unconditional delivery claims, not names for every important good.
 - Liberties are power limits, not promises of a particular service.
 - Records are constitutional controls, not neutral technical plumbing.
-- Emergency is an overlay, not an exception that swallows the constitution.
+- Emergency is an overlay, not an exception that swallows the constitution. The
+  2026-08-08 protective settlement takes this to its conclusion: there is no
+  derogation clause, so there is no suspension power to capture. A defence or
+  security mandate is an ordinary Class 6 public institution; **no Class 11 was
+  created**, and Class 10 remains the last class.
 - Democratic choice is real, but bounded by standing, floors, liberties, fair
-  process, commons, direct non-human-animal protected-subject status, and the
-  prohibitions on severe avoidable animal suffering and dispensable killing.
+  process, commons, direct non-human-animal protected-subject status, the
+  prohibitions on severe avoidable animal suffering and dispensable killing,
+  and the 2026-08-08 additions: the categorical refusals on force, absolute
+  non-refoulement and the ban on collective expulsion, prompt independent
+  judicial review of detention, the right to an effective remedy, and the
+  continued existence and capacity to sit of the legislature and the
+  constitutional court.
 - Economic pluralism protects democratic choice among lawful forms and harmless
   voluntary private life without making price, property, contract, enterprise,
   contribution, insurance, or scarcity an escape from the floor or a score.

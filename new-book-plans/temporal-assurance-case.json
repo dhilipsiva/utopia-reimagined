@@ -7,7 +7,7 @@
   "subprocess_timeout_seconds": 180,
   "constitution_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
   "bound_sources_sha256": {
-    "time_model": "360b2fc318ec86deed6b959a9d9f05478a678d13d4147b8393fba931f5dd4448",
+    "time_model": "4263f90c831c266121bdac1bfdc233135059dc809ecd96523bff7ed61c44eeeb",
     "assertion_surface": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
     "record_assurance": "03c6345d4cea4715116c2fea25e315ce00877bfe8521c8f3aeacf3742bab5d1f",
     "record_red_team": "62d00a43ac1b35b0dba0460cc78038e8624b21a2e14956637270a58dd3813653",

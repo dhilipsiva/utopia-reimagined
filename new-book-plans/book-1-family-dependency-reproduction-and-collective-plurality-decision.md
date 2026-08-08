@@ -542,7 +542,15 @@ A temporary evacuation to prevent imminent loss of life may occur without prior
 collective consent only under a separate emergency contract. It must be
 necessary, least restrictive, source-bound, independently reviewed, supported
 by safe continuity, and followed by return and repair. It cannot transfer or
-extinguish title.
+extinguish title. The emergency ruling of 2026-08-08 supplies that contract and
+does not weaken this gate: it creates no derogation power, so an evacuation
+suspends no right and no title, and it must satisfy the declaration's named
+hazard, separate justification, published reasons, cross-branch authorisation,
+per-renewal temporal contract, judicial review, restoration, and post-hoc audit.
+That ruling separately makes actual collective consent a gate on any negotiated
+exit that would transfer, extinguish, or irreversibly impair collective title.
+See
+[`book-1-public-safety-defence-emergency-and-external-power-decision.md`](book-1-public-safety-defence-emergency-and-external-power-decision.md).
 
 For other laws, projects, licences, or public decisions with a material
 collective effect, the duty is good-faith consultation and accommodation:

@@ -464,7 +464,14 @@ regional residual or protected local competence where those tiers can satisfy
 the common baseline; subsidiarity remains justiciable in both directions.
 
 Ordinary law, initiatives, constitutional amendments, secession terms, and
-emergency measures remain inside the unamendable corridor. A discriminatory
+emergency measures remain inside the unamendable corridor. The public-safety
+ruling of 2026-08-08 strengthens rather than qualifies that: it creates no
+derogation clause, so an emergency measure is an ordinary measure judged by the
+ordinary tests, and it adds the categorical refusals on force, absolute
+non-refoulement, the ban on collective expulsion, prompt independent judicial
+review of detention, and the right to an effective remedy to the corridor
+itself. Nationality, citizenship, immigration status, documentation, and manner
+of entry gate nothing and join the forbidden priority keys. A discriminatory
 majority result does not become valid through turnout, territorial support,
 delay, or reviewer silence. The future compatibility route must test both a
 proposal's text and its bounded semantic effects. The unamendable corridor

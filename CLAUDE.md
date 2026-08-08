@@ -175,8 +175,10 @@ require Regions Council and each directly affected region. An elector initiative
 may force a constitutional docket and recorded Assembly vote but cannot bypass
 the two-thirds threshold. Secession is negotiated, rights-reviewed, and finally
 ratified, never unilateral; this settles the internal federal path, while the
-later security/external-power ruling retains external recognition, defence,
-cross-border status, and international obligations. Budget, formation, review,
+security/external-power ruling of 2026-08-08 retains external recognition,
+defence, cross-border status, and international obligations — and adds that the
+external-only defence mandate leaves **no military instrument against a
+unilateral exit**. Budget, formation, review,
 appointment, succession, and transfer failures may not extend ordinary power or
 suspend the floor. A T3 contract may end legal effect on supplied time evidence;
 it cannot advance a clock or cause an election.
@@ -675,6 +677,191 @@ science, invent future preferences, or perform institutional action. The
 controlling record is
 `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
 
+**The public-safety, defence, emergency, and external-power baselines are
+author-ratified (2026-08-08): separated protective functions + no derogation
+clause + jurisdiction-wide standing + civilian command.** Policing,
+prosecution, adjudication, custodial execution, external defence, and security
+intelligence are six distinct Class 6 mandates; **no new taxonomy class is
+created** and emergency remains an overlay. Legal defence and victim protection
+stay owned by the non-carceral justice interface and are cross-referenced, not
+restated. Command is civilian; no serving armed-forces or intelligence member
+holds a legislative, executive, judicial, or oversight seat; no secondment may
+reconstitute a fused force; there is no military jurisdiction over civilians;
+and civil assistance is unarmed, individually authorised, and carries no arrest,
+search, detention, interrogation, crowd-control, or surveillance power. Secret
+law, secret courts, and secret detention are refused.
+
+Policing exists to prevent and respond to harm, never to maintain order as
+such; a general order-maintenance power is refused. Arrest, pre-trial detention,
+search, and seizure are named coercive instruments — absent from the record
+today — each needing an individualised recorded ground, identification and
+reasons, counsel and interpreter, third-party notification, prior independent
+authorisation for search, and prompt **automatic** independent judicial review
+of detention that the person need not request. Force must be strictly necessary,
+least harmful, minimum, warned where feasible, stopped on achievement, and
+followed by aid; the burden of lawfulness is on the public actor; lethal force
+is lawful only where strictly unavoidable to protect life. Superior orders is no
+defence, refusal of a manifestly unlawful order is protected, and every death or
+serious injury is investigated by a body other than the deploying one.
+
+The **categorical refusals** are torture and cruel, inhuman or degrading
+treatment; enforced disappearance and secret detention; extrajudicial or
+arbitrary killing; collective punishment and reprisal; indefinite detention
+without charge or review; coerced confession; human shields and attacks on
+people not taking part in hostilities; starvation or floor denial as weapon,
+sanction, or inducement; experimentation without consent; indiscriminate or
+superfluous-injury weapons and autonomous systems engaging human targets without
+meaningful human control; and aggressive war.
+
+**Emergency suspends nothing — there is no derogation clause.** A declaration
+confers exactly procedural acceleration, resource redirection, compensated
+requisition, and hazard-specific reviewable restriction. It cannot suspend a
+right, legislate by decree, prevent the Assembly sitting, bypass a court,
+postpone an election, extend a mandate, alter the franchise, or lower the floor,
+and it creates no standing power between declarations. Rationing is not a new
+power but an instance of the ratified physical-scarcity contract, forbidden
+priority keys intact and every shortfall recorded as failure; compulsory
+continuity keeps its already ratified narrow form and may not conscript a named
+worker; price control is ordinary economic law needing no declaration. A managed
+departure is a failure, never renamed compliance, with restoration owed. Each
+declaration, renewal, and measure needs its own source-bound temporal contract
+rejoining the exact declaration version; **the polarity is the same as custody
+T3** — current authority is a positive premise, and its absence withholds the
+restrictive conclusion. Do not call it inverse: cessation is a positive recorded
+act or a fresh-evaluation claim, never derived from silence. Fail-safe evidence
+rules never extend a restrictive power or cut off a claimant. Stated plainly:
+this defeats a renewal never made, **not a frozen or replayed record**, and Book
+1 cannot make an emergency end. A **predeclared alternate authorising route and
+independent substitute reviewer** prevent whoever blocks the authorising body
+from vetoing every lawful response; neither absence is approval or an indefinite
+hold, and an unratified alternate authorisation ends.
+
+Bulk, suspicionless, and population-scale collection is refused, as is buying or
+exchanging what the republic could not lawfully collect. Covert measures need
+prior individualised judicial authorisation, least intrusive means, defined
+scope and duration, fresh authorisation per renewal, and later notification. The
+**2026-08-02 temporary-assessment exclusion is extended by name** to every risk,
+threat, loyalty, dangerousness, clearance, and watchlist product: none enters the
+canonical consequential person record or conditions standing, floor, personhood,
+franchise, liberty, remedy, or allocation. Secret evidence is never sole or
+decisive; where disclosure is impossible the consequence does not follow.
+Conscientious objection to a lethal or armed role is unconditional, with no
+sincerity tribunal, a genuinely non-punitive equivalent, no loss of floor,
+standing, franchise, candidacy or employment, and no repeated punishment.
+
+Everyone within the republic's jurisdiction or effective control is **owed**
+standing, the floor, due process, and remedy — written as a duty, not as a
+record claim, because a person never entered is not recorded as missing. No
+power may condition help on a record entry or treat an absent entry as a
+finding. The **enforcement firewall** covers **enrolment** as well as collection
+and transmission: floor access, care, schooling, courts, and crime reporting
+never enrol, collect, or transmit status for enforcement. Non-refoulement is
+absolute and collective expulsion refused, both inside the corridor; asylum is a
+right to fair determination with advocate, interpreter and suspensive appeal;
+expulsion needs an individual reasoned decision; no child is detained for an
+immigration purpose and adult detention needs individualised necessity, judicial
+authorisation, a maximum, and a real alternative; statelessness may not be
+created and deprivation of nationality is never a punishment. Pushbacks,
+evasive externalised processing, and jurisdiction-shopping are refused on the
+ecological no-evasion principle — effective control, not formal territory, is
+the test. A scarcity finding's **named population includes everyone within
+jurisdiction or effective control**, so arrivals cannot be defined out of the
+floor, and nationality, citizenship, immigration status, documentation, and
+manner of entry join the forbidden priority keys. **Extradition, mutual legal
+assistance, and transfer of a person** close the route around all of this:
+individual judicial decision, suspensive appeal, and an express bar where
+surrender would breach non-refoulement or expose the person to a categorical
+refusal; a diplomatic assurance is weak evidence, never a cure.
+
+A standing defence force is permitted, not required, with an **external-only**
+mandate, an Assembly-held ceiling on size and armament, ordinary appropriation
+with full audit access, and no jurisdiction over civilians. Delegated private
+coercion, mercenaries, and paramilitaries are refused; private security holds no
+more authority than any person. Force abroad requires prior Assembly
+authorisation naming objective, basis, scope, geography, means and reporting;
+an immediate defensive response is submitted without delay and **ends absent
+ratification**. Aggressive and secret war are refused. A cyber or infrastructure
+attack may constitute an armed attack where scale and effects are equivalent,
+with evidenced attribution and the same limits. Arms transfers need an evidenced
+non-misuse test; rescue, care for the wounded, humane treatment, humanitarian
+access, and civilian protection are unconditional; and no one below legal
+adulthood may be recruited or used in hostilities by the republic or any actor
+it supports. Abuse of a protective office gets an integrity route outside the
+abuser's chain, with non-recording and destruction treated as substantive
+failures, and **no immunity, repose, amnesty, or pardon** for a categorically
+refused act.
+
+Treaties are executive-negotiated and Assembly-ratified, with Regions Council
+and affected-region consent where regional competence or a boundary is touched;
+no provisional application pre-empts ratification. No treaty, trade agreement,
+or arbitration clause may lower standing, the floor, equality, due process, core
+liberties, the commons ceiling, the animal core, or the non-derogable core, or
+place them beyond constitutional review — **stated in the honest register the
+amendment-semantics audit requires**: a rule addressed to ratifiers, reviewers,
+and courts, not a claim that any current mechanism reads a treaty's actual
+effect. The no-evasion rule generalises: nothing refused at home may be achieved
+through trade, procurement, an affiliate, a supply chain, a flag, an arbitration
+forum, or exported enforcement.
+
+The **corridor** limits amendment; **non-derogability** limits emergency. Since
+no derogation power exists, every corridor member is non-derogable and the
+converse does not hold. Added to the corridor expressly: the categorical
+refusals; non-refoulement and the ban on collective expulsion; prompt
+independent judicial review of detention; the right to an effective remedy; and
+the continued existence and capacity to sit of the People's Assembly and the
+Constitutional Court. The common tier gains an express, bounded competence
+addition — external representation and treaties, external defence and force
+abroad, borders/entry/asylum/expulsion/extradition, external trade measures and
+sanctions, security intelligence and its oversight, common minima for policing
+and force, and cross-border hazard coordination — creating **no** general
+security, foreign-affairs, policing, or emergency power and leaving ordinary
+policing, civil protection, and disaster response with the regional and local
+tiers under subsidiarity.
+
+Oversight and remedy are written against the design's existing endpoint rather
+than over it: nothing reads `obliged`, so this ruling specifies who must be able
+to look and what must follow, and does **not** claim that abuse is corrected by
+an unread mechanism.
+
+Three formal facts govern implementation. **(a) The floor firewall reaches the
+confinement conclusion only** — the source discloses it, and the disclosed
+non-floor control loads at zero errors — so every new coercive instrument sits
+outside it unless deliberately placed inside. Each must carry its own rule
+putting it upstream of personhood in the same change, plus a refusal pin for
+**each** floor predicate and a re-measurement of the existing refusals.
+**(b) The deprivation stays a leaf, not the instrument** — the existing
+confinement conclusion is read by several rules, so an "instrument is a leaf"
+invariant would be false of it; every removed capability joins the no-reader
+list instead. **(c) `capture` means documented, not arrested** — its consumers
+are credibility voiding and recognition, so an arrest reading would derive both;
+arrest needs its own name. `severe` may not become a threat grading; `permits`,
+`authority`, `free`, `travel`, `prisoner`, `public`, `defend`, `show`, and
+`judge` each need explicit retain/replace/retire cards.
+
+The ruling is **ratified but unimplemented**: no predicate, rule, finding, duty,
+institution in law, chapter, programme, or public claim. Before any protective
+rule family lands, four prose sites must be re-audited — the single-deprivation
+claim and its Part V verdict **plus the same claim in `3-spine.md`'s
+hand-authored chapter list, which no generator and no prose gate covers**; the
+two confinement rule-statements, since shelter and recorded voice must extend to
+anyone the state physically holds by any instrument; the absent-justifications
+sentence, whose vocabulary half is false the moment justification vocabulary is
+admitted while its reachability half survives by scoping the force test to the
+public actor's own accountability; and the accountability endpoint. Note also
+that the counted-claim gate matches neither small cardinals nor "exactly *n*",
+so counting discipline here is human until it is extended — do not cite it as
+this domain's guard. Book 2 owns **operation under ordinary and declared shock
+conditions**: capability, doctrine, training, equipment, forensics, tradecraft,
+border and reception operations, incident command, stockpiles, restoration,
+procurement, treaty and sanctions administration, staffing, costs, and outside
+liveness. Other states' cooperation and recognition are named external
+assumptions. Nibli may consume a bounded authenticated authorisation,
+declaration, order, or review record; it does not detect a threat, decide
+necessity, proportionality, imminence or attribution, authenticate a warrant,
+prove an order was given or refused, advance a clock, end an emergency, or
+perform an institutional act. The controlling record is
+`new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
@@ -686,8 +873,14 @@ democratic corridor is a **ratified constitutional design rule, not yet a formal
 guarantee**: a majority chooses only among policies compatible with universal
 standing, core floors, equal protection/non-discrimination, due process, core
 liberties, commons constraints, direct non-human-animal protected-subject status,
-and the prohibitions on severe avoidable animal suffering and dispensable
-killing.
+the prohibitions on severe avoidable animal suffering and dispensable
+killing, and — added 2026-08-08 — the categorical refusals on force, absolute
+non-refoulement and the ban on collective expulsion, prompt independent judicial
+review of detention, the right to an effective remedy, and the continued
+existence and capacity to sit of the People's Assembly and the Constitutional
+Court. The corridor governs **amendment**; the separate non-derogable list
+governs **emergency**, and because no derogation power exists every corridor
+member is also non-derogable while the converse does not hold.
 
 **Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
 D2, refined by the 2026-08-07 full-society boundary.** The pre-expansion
@@ -887,15 +1080,16 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted. Read it for context on what's in progress; don't treat it as book content.
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
   dependencies permit**, refreshed 2026-08-07 for the ratified full-society
-  boundary. The substantive-equality, bounded-plural-economy, and family/
-  dependency/reproduction/collective-plurality and ecological/future-condition/
-  commons/non-human-animal baselines are settled. Phase 1 retains open author
-  rulings on security/external power, assurance,
+  boundary. The substantive-equality, bounded-plural-economy, family/
+  dependency/reproduction/collective-plurality, ecological/future-condition/
+  commons/non-human-animal, and public-safety/defence/emergency/external-power
+  baselines are settled. Phase 1 retains open author
+  rulings on assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
   2 records the completed finite collective-decision audit, holds two bounded,
-  non-blocking engine repair prompts, and carries a read-only ecology/animal
-  finding-boundary audit before formalisation. The expansion backlog uses
+  non-blocking engine repair prompts, and carries read-only ecology/animal and
+  protective-power finding-boundary audits before formalisation. The expansion backlog uses
   one canonical social model, a versioned
   reference envelope and disposition map, explicit constitutional domain packs,
   role/dependency/stress/gameability/assurance tests, separate completion gates,

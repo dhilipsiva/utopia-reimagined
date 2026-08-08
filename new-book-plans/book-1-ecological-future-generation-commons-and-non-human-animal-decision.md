@@ -292,8 +292,16 @@ reproductive, equality, and collective-rights rules remain intact.
 
 No standing emergency suspension or requisition power is created here. A
 temporary ecological or animal-protection departure during a genuine emergency
-requires the later emergency ruling's trigger, scope, non-derogable core,
+requires the emergency ruling's trigger, scope, non-derogable core,
 reasons, fresh temporal contract, review, continuity, remedy, and restoration.
+That ruling landed on 2026-08-08 and supplies each of those, with one result
+worth stating here: it adopts **no derogation clause at all**, so an emergency
+never suspends an ecological ceiling or an animal protection. It confers only
+procedural acceleration, resource redirection, compensated requisition, and
+hazard-specific reviewable restriction, each separately justified and separately
+renewable. A departure that nonetheless occurs is recorded as a breach and
+repaired; it is never renamed compliance, and restoration remains owed. See
+[`book-1-public-safety-defence-emergency-and-external-power-decision.md`](book-1-public-safety-defence-emergency-and-external-power-decision.md).
 
 ## 9. Future Conditions Guardian
 
@@ -387,10 +395,14 @@ existing Indigenous consent boundary.
 
 No public or private actor may evade the substantive baseline through trade,
 finance, procurement, contracting, an affiliate, a supply chain, import or
-export, flags of convenience, or jurisdiction shopping. The later
-external-power ruling will decide treaty, customs, sanctions, border, and
-international-enforcement authority. This ruling supplies the no-evasion
-principle, not those powers or operations.
+export, flags of convenience, or jurisdiction shopping. The
+external-power ruling of 2026-08-08 decides treaty, customs, sanctions, border,
+and international-enforcement authority. This ruling supplies the no-evasion
+principle, not those powers or operations; that ruling generalises the principle
+across every domain, subordinates treaties and trade measures to the corridor,
+and adds extradition, mutual legal assistance, and transfer of a person as the
+enforcement route that must not become an escape. See
+[`book-1-public-safety-defence-emergency-and-external-power-decision.md`](book-1-public-safety-defence-emergency-and-external-power-decision.md).
 
 ## 11. Class 10: non-human-animal welfare and integrity
 
