@@ -41,8 +41,8 @@ then a full-society expansion backlog and cross-cutting sections:
    plural economy/protected private sphere, family/dependency/reproduction/
    collective-plurality, ecological/future-generation/commons/non-human-
    animal, and public-safety/defence/emergency/external-power baselines are
-   settled, as is the assurance portfolio. Narrative
-   and reader-threshold decisions remain open. Neutral inventory and
+   settled, as are the assurance portfolio and the narrative register. The
+   reader-threshold decision remains open. Neutral inventory and
    decision briefs may proceed in parallel; each still-gated domain's rules,
    prose, and public claim wait for its own ruling. The final reader threshold
    waits for the pilot. This section has been destroyed by tooling once and is
@@ -119,26 +119,39 @@ The state form, residence-first political membership, substantive equality,
 bounded plural economy/protected voluntary sphere, family/dependency/
 reproduction/collective-plurality, ecological/future-generation/commons/
 non-human-animal, and public-safety/defence/emergency/external-power baselines
-are also settled, as is the assurance portfolio. The remaining decisions
-determine narrative register and reader thresholds; they
-do not reopen whether the broader result is wanted.
+are also settled, as are the assurance portfolio and the narrative register. The
+remaining decision determines reader thresholds; it
+does not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
 
-- [ ] **[AUTHOR-GATED] Rule the narrative human register for ordinary social
-  life.**
-  - The current rule keeps record-people's inner lives flat and permits exactly one
-    generic second-person domestic vignette. Decide whether balance must stay within
-    flat constitution-backed cases, diagrams, historical evidence and reader tests,
-    or whether the author will add a strictly limited class of clearly labelled,
-    author-drafted ordinary-life vignettes.
-  - Do not let an invented biography, composite citizen or attributed emotion become
-    evidence. If the register broadens, define its location, label, sourcing/voice
-    rule and maximum legal role before prose is written.
+- [ ] **[AUTHOR-DRAFTED] Bring the existing ordinary-life passage into
+  conformance, or record the exception as permanent.**
+  - The 2026-08-08 register ruling is prospective and grandfathers the one
+    existing second-person passage, dating it **non-conforming on three counts**:
+    the warmth-and-water sentence depicts an arrival without naming the
+    entitlement that grounds it in the same sentence; the accusation sentence
+    traces to nothing, because the harm relations name the alleged offender and
+    victim and expressly not the writer; and no delivery-gap disclosure sits near
+    it in its part.
+  - The passage is the exemplar of the ruling's **form** clauses and remains so.
+    Only the assertion and proximity clauses are at issue.
+  - **This is author-owned prose and no session may edit it.** The ruling defines
+    the slot; the sentences are the author's. Either bring it into conformance or
+    record the exception as permanent with its reason.
 
 - [ ] **[AUTHOR-GATED] Rule the reader-balance evidence protocol and threshold
   timing; ratify the release threshold after the pilot.**
+  - **Input from the 2026-08-08 register ruling, worded as an input rather than a
+    prediction.** The measured ordinary-life deficit does **not** by itself make
+    Gate C unpassable — its permitted claim is protocol-relative, asserting that
+    the destination passed the declared protocol for the tested audience within
+    the disclosed sampling and method limits. This ruling makes **no prediction**
+    about the outcome. But the deficit is a named, disclosed input to the
+    protocol's design: the protocol may not be written so as to hide it, and its
+    disclosed limits must state that the book's ordinary-life account rests on
+    unimplemented families at the time of testing.
   - **Recommended:** approve now a pre-registered pilot-and-fresh-holdout method,
     while reserving the numerical/qualitative release threshold for an author ruling
     after the pilot. This lets constitutional work proceed without inventing a
@@ -2039,6 +2052,28 @@ Gate B; it does not claim Book 2 operations or feasibility.
     domain represented only through prison or custody fails.
 
 - [ ] **Rebalance the pinned case portfolio without fictionalising it.**
+  - **This item is the consumer, not the fix.** The 2026-08-08 narrative-register
+    ruling measured the deficit and it is constitutional, not editorial: five of
+    the eight floor items have no producing rule; the two floor actualities that
+    arrive derive only from confinement; every `home` and `family` entry names a
+    convicted person; the one non-carceral route to a floor actuality ships
+    dormant; care is a pin-file fixture and work is a single fact; and the
+    franchise and movement derive broadly while nothing reads either. State those
+    as rules, never as counts — the carceral-chapter count moves with the
+    criterion, which is why the counted-claims gate exists:
+    `for f in book-1/*.pins.nibli; do grep -qE "prisoner|dwell|severe|fit\(|building\(|defend" "$f" || echo "no confinement query: $f"; done`
+  - **Dependency order.** The delivery and receipt rule families are the
+    precondition; this item can only run afterwards. Until a floor item has a
+    producing rule there is no ordinary case to pin, so scheduling this first
+    would leave a live item structurally unable to discharge the deficit.
+    Classified as a formalisation gap inside already-mapped scope — not a scope or
+    assurance omission, and it does not reopen Gate A. Its closure condition is
+    the landing of accessibility-neutral, recipient-side delivery and receipt
+    families for the floor items with no producing rule; until then no public
+    claim may describe the book as showing ordinary social life. The
+    accusation-authorship gap joins it: no adverse ground relation carries an
+    authorship place. See
+    [`new-book-plans/book-1-narrative-register-decision.md`](new-book-plans/book-1-narrative-register-decision.md).
   - Preserve the prisoner as the hardest stress test, not the default inhabitant.
     Cover ordinary provision and care; family/dependency; learning and knowledge;
     work/property/exchange/commons; association, conscience and creation;
