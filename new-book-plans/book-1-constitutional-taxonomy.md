@@ -326,6 +326,20 @@ structural refusal instead limits what *form of rule* may exist across subjects.
     adverse individual finding. Citizenship, nationality, immigration status,
     documentation, and manner of entry gate nothing, and join the forbidden
     priority keys for any scarce floor essential.
+18. **Every card carries a posture and a route:** a contract card states which
+    assurance route warrants it and which posture it holds — Derived, Checked,
+    Evidenced, Specified, Reasoned, or Unestablished with a named disposition —
+    and, where the route is formal entailment, which evidence kind it rests on.
+    A card carrying two postures is two cards. **No card may cite a weaker
+    posture as a stronger one:** a pattern guard, a freshness comparison or a
+    reviewed inventory is Checked and never Derived; a Specified contract may not
+    be written in the indicative; a reasoned survival may not be quoted as a
+    machine result. A card may take an established posture only through a route
+    that is built here or available through an admissibility contract. Arrival,
+    delivery, release, correction and institutional action are Unestablished in
+    every card, and no card carries a resource, cost, capacity or shock claim.
+    See
+    [`book-1-assurance-portfolio-decision.md`](book-1-assurance-portfolio-decision.md).
 
 ## Book 1 / Book 2 discriminator
 

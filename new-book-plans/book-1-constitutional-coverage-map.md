@@ -80,6 +80,33 @@ No new right, limit, institution, or record power should be drafted until its
 row can answer every applicable field below. A blank field is a design gap, not
 a detail to hide in prose.
 
+**Every row additionally carries an assurance triple**, ratified 2026-08-08:
+its **posture**, its **assurance route**, and — where the route is formal
+entailment — its **evidence kind**. The postures are Derived, Checked,
+Evidenced, Specified, Reasoned, and Unestablished with a named disposition. One
+posture per row: a row that would carry two is two rows and must be split until
+each carries one posture and one evidence kind.
+
+This retires **"partial formalisation"** as a status. It was never a posture but
+an unsplit claim, and a partly formalised domain is a Derived part, a Specified
+part, and usually an Unestablished part, each with its own closure condition.
+The legend below maps the older vocabulary onto the ceiling; existing rows keep
+their wording until they are split.
+
+| Legacy status in section 3 | Canonical posture |
+| --- | --- |
+| Formal now | Derived |
+| Partial formalisation | **Split the row** — Derived plus Specified, and usually Unestablished |
+| Part V specification only | Specified, or Reasoned where the row records an argument |
+| Absent | Unestablished, with its disposition named |
+| Ratified but unimplemented | Specified |
+
+A row may take an established posture only through a route that is built here or
+available through an admissibility contract. No row may claim arrival, delivery,
+release, correction or institutional action in any posture but Unestablished,
+and no row may carry a resource, cost, capacity or shock claim at all. See
+[`book-1-assurance-portfolio-decision.md`](book-1-assurance-portfolio-decision.md).
+
 | Object | Required constitutional fields |
 | --- | --- |
 | Right / material floor | Holder; duty-bearer; minimum; accessibility; recipient-side access/receipt evidence; authorised writer; challenge route; no personal-outcome inference; breach; interim continuity; remedy; appeal; audit; temporal status. |

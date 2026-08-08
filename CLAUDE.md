@@ -862,6 +862,134 @@ prove an order was given or refused, advance a clock, end an emergency, or
 perform an institutional act. The controlling record is
 `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
 
+**The assurance portfolio is author-ratified (2026-08-08): seven
+non-substitutable routes + one posture set + a claim-language rule per posture.**
+This is a method ruling, not a constitutional one. It **upgrades no existing
+claim's posture** and renames nothing inside an existing artifact. Underneath it
+sits one sentence: **a route establishes what it executes, over what it was
+given, and nothing further.**
+
+The routes are formal entailment (Nibli, executed by `verify.sh`); versioned
+quantitative and resource models; dynamic simulations; the claim registry;
+operational assurance; reader and lived-experience studies; and independent
+multidisciplinary and adversarial review. Operational assurance is **restored by
+name** against the gate bullet's shorter list, because it is the only route that
+can carry an arrival claim and dropping it is what lets a safety result read as
+"it works". Independent review is added because Gate A already demands a warrant
+no other route produces. A route may not be split, renamed, or stretched to make
+a claim fit, and **one green route may never stand in for another**.
+
+A route is **built** when its check runs in `verify.sh` — true of Nibli and the
+registry, and of nothing else. A route is **available** when its evidence
+contract, admissibility criteria, named reviewer, and in-repo gate exist so
+outside evidence can be admitted. Both count; neither is satisfied by naming
+one. Defining "built" as in-repo only would make operational assurance
+impossible by construction, every arrival claim permanently unestablishable, and
+the record-integrity verdict permanently frozen. **Every route must declare a
+falsification condition and ship controls that must fail** — sabotage first,
+trust after. The registry splits: its staleness gate covers only
+script-refreshable entries, and pinned-source entries are schema-checked and
+human re-cited. Do not count registry entries in prose; the ratio moves.
+
+**A green `verify.sh` is four different things**, and the difference decides what
+a claim may say. **Executable** — the pin suites and the record, temporal,
+amendment, placement and counterfactual runs. **Pattern guard** — the jargon,
+counted-claims, absence, floor-noticing, recognition-arity, no-counted-degree,
+control-scope and evidence-vocabulary checks; one says of itself it is a pattern
+guard and not a proof, another reads only a directive's spelling. **Freshness** —
+the generator `--check` modes, the claim table, the registry gate: currency, not
+truth. **Inventory** — the operation sets, record classes and scenario
+narratives: a reviewed threat model, explicitly not executable proof. Only the
+executable kind warrants Derived. **Two checks are compound**: the spine check
+shells the engine for its stratification and the assertion-surface check
+consumes that output, so both are an engine result *and* an artifact comparison.
+**`--quick` is not "proves nothing"** — it still builds the engine and runs the
+stratification; what it omits is the chapter and floor pins, the record-snapshot,
+temporal, amendment and placement executions, and the counterfactuals. Say which
+half is being cited. No green run authenticates its own trust root.
+
+**The posture set is three bands.** Established: **Derived** (an executable
+engine result over the exact current source, *or over a named bounded mutation
+declared in a fixture or reviewed audit* — that clause is how a restriction
+claim is established at all, since derivation is monotone, and such a row must
+name its mutation); **Checked** (a mechanical check establishing a property of
+the artifacts, never of the world and never of a semantic impossibility);
+**Evidenced** (a claim about the world, with population, period, place and
+method). Stated but not established: **Specified** (a complete contract, not
+formalised) and **Reasoned** (argument against a named adversarial corpus,
+permanently weaker than Derived and never citable as it). Not established:
+**Unestablished**, carrying one mandatory disposition — routed-book-2,
+external-assumption, route-unbuilt, author-ruling-pending, refused, or
+not-establishable. Collapsing routing and refusal into one band is deliberate:
+it makes "classification is a disposition, not assurance" structural rather than
+exhortative. **The names avoid two words that already carry load in the
+chapters, one of which inverts** — a chapter calls the vote *guarded by refusal*,
+meaning the strongest protection available, while the posture would have meant
+the weakest warrant.
+
+**One posture per claim.** A claim carrying two is two claims and must be split
+until each part carries one posture and one evidence kind. This disposes of
+"partial formalisation", which is not a posture but an unsplit claim. Reserved
+joint forms are the exception: an immutable verbatim string carries rows keyed
+to its clauses.
+
+**Three overlays answer what the gate actually asked.** A **safety** claim may
+be Derived, with a supplied-records scope bound and an **enumerated**
+non-extension clause — a gesture at further limits does not satisfy it. A
+**liveness** claim — arrival, advance, action, release, delivery, repair — may
+**never** be Derived, Checked or Reasoned; that is categorical and no scope bound
+rescues it. Its only established posture is Evidenced through operational
+assurance, which is not yet available, so every liveness claim is Unestablished
+today: state the condition and the failure polarity, never the arrival, and
+never read a duty or an alarm as evidence that anyone acted. A **feasibility**
+claim needs models or simulations plus operational assurance, none available, so
+it is Unestablished/route-unbuilt and **may not be written in Book 1 at all** —
+a feasibility sentence with no route is a defect, not a gap.
+
+**No Book 1 claim may take an established posture through a route that is
+neither built nor available**; it takes Unestablished/route-unbuilt with
+severity, consequence, owner, closure condition and public-claim restriction.
+**But building a route is work, not a claim** — designing, pre-registering and
+piloting a route asserts nothing and takes no posture. That clause is what keeps
+the gate ladder a **sequence rather than a deadlock**: Gate C needs reader
+evidence, the reader route is unbuilt, and its pass rule is itself a separate
+open ruling to be made after a pilot.
+
+**No bridge into the engine.** No modelled, measured, simulated, operational or
+reader result may enter through the compute backend, an external predicate, or
+built-in arithmetic — it arrives only as an authenticated, adjudicated,
+purpose-bound premise through a distinct relation, and a conclusion-only
+predicate must still be derived. This ruling is the first to place numeric routes
+beside formal entailment in one portfolio, which is exactly the composition the
+oracle refusal exists to forbid.
+
+**No aggregate score, total, percentage, coverage figure, or "N of M
+established"** — Part V refuses a total in print and the reason carries here. One
+conservative non-numeric rollup is permitted because the repository already
+computes it: any non-refused row below an established posture yields the weaker
+overall verdict. **No fourth Part V verdict token**; naming argument as a posture
+classifies the method, not the verdict. **No rewording of the byte-exact
+artifact verdict string**, which its generator enforces, its reviewed source
+stores, and the record-integrity case cross-references by literal needle.
+
+The mapping table maps existing vocabularies onto the ceiling **without
+renaming anything inside an artifact**, and a closure rule requires a mapping row
+for every consequential enum. The future **claim-assurance ledger is a generated
+projection of the one canonical source** — posture, route, evidence kind, scope
+bound, disposition, owner, severity, closure condition, claim restriction and
+mutation reference are fields on that source's claim records. A second
+hand-maintained matrix of assurance truth is refused by the ratified
+canonical-source mandate, in those words. One practical hazard when editing the
+planning files: reviewed JSON references use `path::literal needle` and the
+generators require each needle to occur **exactly once** in its target, with the
+tracker and the coverage map carrying the most. Re-check needles mechanically
+before committing an edit to either.
+
+The ruling is **ratified but unimplemented**. It creates no predicate, rule,
+pin, generator, verifier section, chapter, or public claim, and reclassifies
+nothing; each artifact keeps its own vocabulary until the ledger lands. The
+controlling record is `new-book-plans/book-1-assurance-portfolio-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
@@ -1083,9 +1211,9 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   boundary. The substantive-equality, bounded-plural-economy, family/
   dependency/reproduction/collective-plurality, ecological/future-condition/
   commons/non-human-animal, and public-safety/defence/emergency/external-power
-  baselines are settled. Phase 1 retains open author
-  rulings on assurance,
-  narrative register, and reader evidence; each ruling blocks only its dependent
+  baselines are settled, as is the assurance portfolio. Phase 1 retains open author
+  rulings on
+  narrative register and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
   2 records the completed finite collective-decision audit, holds two bounded,
   non-blocking engine repair prompts, and carries read-only ecology/animal and

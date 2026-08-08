@@ -73,7 +73,13 @@ integrated claim may publish.
   "for the declared reference envelope" or an equally explicit bound.
 - **Verified** names the checks actually run. Formal verification does not prove
   resources, liveness, lived effects, engine independence, or deployment unless
-  a separate assurance route establishes that claim.
+  a separate assurance route establishes that claim. The 2026-08-08 assurance
+  portfolio names those routes and rules that a green verifier result is four
+  epistemically different things — an executable engine result, a static pattern
+  guard, a freshness comparison, and a reviewed inventory — of which only the
+  first warrants a derivation claim. It also rules that a liveness claim may
+  never be derived and that a feasibility claim may not be written in Book 1 at
+  all while its routes are unavailable.
 
 Protected private and civic life is not a blank in the map. An explicit
 non-prescription or non-interference disposition counts as coverage;
@@ -116,12 +122,28 @@ resilience, sustainability, safety, or resource criterion.
 Every reviewer proposal must receive one of three public outcomes:
 
 1. **add it** to the canonical model with stable identity, applicability, owner,
-   assurance route, and closure condition;
+   assurance route, posture, and closure condition;
 2. **classify it with reasons** as a constitutional invariant,
    democratic/ordinary-law choice, protected private/civic freedom, Book 2
-   operation, external assumption, duplicate, or immaterial item; or
+   operation, external assumption, duplicate, or immaterial item, **carrying the
+   matching Unestablished disposition** where the classification routes the item
+   outward rather than establishing it; or
 3. **retain it as an unresolved limit** with severity, consequence, owner,
-   closure condition, and claim restriction.
+   closure condition, and claim restriction, **as Unestablished with its
+   disposition named**.
+
+The assurance-portfolio decision of 2026-08-08 supplies the closed value set the
+`assurance route` field had been missing. A route is one of: formal entailment;
+versioned quantitative and resource models; dynamic simulations; the claim
+registry; operational assurance; reader and lived-experience studies; or
+independent multidisciplinary and adversarial review. No route may be split,
+renamed, or stretched to fit a claim, and one green route may not stand in for
+another. An item may take an established posture only through a route that is
+built here or available through an admissibility contract; otherwise it is
+Unestablished and records its restriction. Outcomes (2) and (3) are dispositions
+rather than assurance, which is why each carries an Unestablished disposition:
+routing an item does not establish it. See
+[`book-1-assurance-portfolio-decision.md`](book-1-assurance-portfolio-decision.md).
 
 Reviewers compel a reasoned disposition, not automatic acceptance and not an
 individual veto. The named severity owner applies the published rubric, an
