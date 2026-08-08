@@ -39,8 +39,9 @@ then a full-society expansion backlog and cross-cutting sections:
 1. **Phase 1 — author-gated decisions.** The volume, edition, stopping
    boundary, state form, political membership, substantive equality, bounded
    plural economy/protected private sphere, family/dependency/reproduction/
-   collective-plurality, and ecological/future-generation/commons/non-human-
-   animal baselines are settled. Public-safety/external-power, assurance,
+   collective-plurality, ecological/future-generation/commons/non-human-
+   animal, and public-safety/defence/emergency/external-power baselines are
+   settled. Assurance,
    narrative, and reader-threshold decisions remain open. Neutral inventory and
    decision briefs may proceed in parallel; each still-gated domain's rules,
    prose, and public claim wait for its own ruling. The final reader threshold
@@ -49,7 +50,9 @@ then a full-society expansion backlog and cross-cutting sections:
 2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision
    capability audit is closed and recorded in the source-bound planning artifact.
    A read-only, source- and binary-bound audit of versioned ecological and animal
-   findings must close before those rule families are formalised. Two bounded,
+   findings must close before those rule families are formalised, and a second
+   read-only audit must measure multi-power, multi-window protective authority
+   composition before the emergency and force families are formalised. Two bounded,
    non-blocking repairs also remain: fail-closed raw witness enumeration and a
    truthful novel text-compute registration contract. Democratic formalisation
    may proceed through authenticated external result certificates; it may not
@@ -114,28 +117,14 @@ the Gate E claim is bounded to a declared reference envelope. The two-book
 container, C-then-E release sequence, and versioned stopping boundary are settled.
 The state form, residence-first political membership, substantive equality,
 bounded plural economy/protected voluntary sphere, family/dependency/
-reproduction/collective-plurality, and ecological/future-generation/commons/
-non-human-animal baselines are also settled. The remaining decisions determine
-public-safety/external power, assurance, narrative, and reader thresholds; they
+reproduction/collective-plurality, ecological/future-generation/commons/
+non-human-animal, and public-safety/defence/emergency/external-power baselines
+are also settled. The remaining decisions determine
+assurance, narrative, and reader thresholds; they
 do not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
-
-- [ ] **[AUTHOR-GATED] Rule public-safety, defence, emergency, and external-power
-  baselines.**
-  - Decide the constitutional roles and separation of police/investigation,
-    prosecution, intelligence, military/defence and civilian authority; permissible
-    force; conscientious objection; emergency declaration/renewal/end; and the
-    authority for borders, asylum/expulsion, treaties, trade, war/peace, humanitarian
-    duties, plus external recognition, defence, cross-border status, and
-    international effects before and after a lawful exit.
-  - Do not reopen the internal secession rule: a regional vote opens negotiation,
-    and exit needs federal agreement, rights/minority review, settlement, and final
-    affected-population ratification; unilateral exit is invalid.
-  - Name the non-derogable core, evidence and public-reason duties, cross-branch
-    checks, temporal contracts, independent review and individual/systemic remedies.
-    Operational capability and other states' cooperation remain Book 2/external.
 
 - [ ] **[AUTHOR-GATED] Rule the assurance portfolio for a functional-society
   model.**
@@ -407,6 +396,158 @@ Write the final reply directly to the rights-nobody-has-to-earn session through
 dhilipsiva. Include the baseline SHA/version/binary first, then the capability
 matrix, exact probes and outputs, derivation-versus-caller boundary, gaps,
 minimal recommendations, mutation-proof checks, and prompt errors.
+~~~
+
+- [ ] **[READ-ONLY] Measure multi-power, multi-window protective authority composition before formalising it.**
+  - This is a capability audit, not an engine-change request. The implemented
+    custody path binds one case to one lease and one window. A declaration binds
+    many concurrent measures, each separately justified and separately renewable,
+    each rejoining the exact declaration version. Nothing has measured that
+    fan-out, and the ratified emergency contract depends on it.
+  - **Done when:** the reply supplies the requested surface matrix, exact probes and
+    outputs, caller/engine responsibility boundary, gaps and minimal general repair
+    recommendation; the engine worktree remains unchanged.
+
+~~~text
+You are working in the Nibli engine repository. Assume no knowledge of any book
+or constitution repository. Perform a read-only, evidence-bound capability
+audit with this exact task title: **Measure multi-power, multi-window protective authority composition before formalising it.**
+
+Do not edit any engine file, generated file, index entry, branch, ref, tag,
+remote, commit, or documentation. Do not commit or push. Put every fixture,
+temporary crate, build target, log, and binary outside the repository. Finish
+by proving the worktree, index, refs, and remotes were not changed.
+
+The question is narrow. An earlier audit established that this engine can gate
+one restrictive conclusion on one authenticated, independently witnessed case
+binding with one authority window, failing closed when that evidence is absent
+or conflicting. The new question is whether the same soundness survives when
+**one authorising act fans out to many concurrently restrictive measures**, each
+carrying its own separately renewable authority, and each required to rejoin the
+exact version of the authorising act rather than a compact status tag.
+
+First bind the audit to the exact implementation:
+
+1. Report the current branch, HEAD SHA, upstream, workspace/package version,
+   public remote URL, and the public remote's current main SHA using a read-only
+   remote query. Do not fetch or update a remote-tracking ref.
+2. Report whether
+   `4cb02aade43b394374c40e661907ad66df3af3fe` and its prerequisite
+   `5cec80080eea0334c87508e60813f8f70f487441` are present and are ancestors of
+   the tested HEAD. Give exact `git cat-file` and
+   `git merge-base --is-ancestor` commands and exit codes. If either object is
+   absent, say so rather than inferring ancestry.
+3. Build the tested release binary into an isolated temporary target directory.
+   Report its absolute path, SHA-256, build command, build profile, source SHA,
+   version output, host/toolchain versions, and audit date. Do not use an old
+   unbound binary.
+4. Capture exact before/after `git status --short --branch`,
+   `git diff --exit-code`, `git diff --cached --exit-code`, refs, and remote
+   configuration sufficient to prove no repository mutation.
+
+Use only neutral fixtures. Do not use any predicate, constant, person, office,
+chapter, or domain name copied from a book — no `emergency`, `declaration`,
+`arrest`, `detention`, `border`, `war`, or similar. Use abstract role and record
+names. Where arbitrary neutral names are not admitted by the text compiler, use
+declared raw IR or a temporary neutral schema and record that surface boundary;
+do not modify the corpus vocabulary. Keep every finding explicit and case-bound.
+
+Probe at least these cases:
+
+### A. One authorising act, many dependent measures
+
+Represent one authorising record and at least three dependent restrictive
+measures. Each measure carries its own subject, scope, justification reference,
+and its own separately renewable authority record.
+
+- Prove that a valid authority for one measure cannot supply authority for a
+  sibling measure sharing the same authorising act.
+- Prove that revoking or failing to renew one measure leaves the others
+  unaffected, and that failing the authorising act withdraws all of them.
+- Report the cost profile as the measure count grows, with exact timings and
+  peak RSS at a few sizes. State plainly whether the join is linear, and whether
+  any candidate-expansion behaviour reappears at this arity.
+
+### B. Version rejoining versus compact status tags
+
+Give the authorising act an identity plus a separately witnessed version field.
+
+- Supply a measure that rejoins the identifier but a stale version. Prove no
+  restrictive conclusion follows.
+- Supply a compact "currently valid" status tag for the authorising act and a
+  raw measure tuple that does not match its version. Prove the tag cannot lend
+  authority across the mismatch.
+- Report which of these the engine can enforce structurally and which remain
+  caller policy.
+
+### C. Frozen, replayed, and withheld renewal evidence
+
+This is the case the constitutional contract explicitly cannot close, and the
+audit must say exactly where the boundary falls.
+
+- Supply a renewal record that is simply absent. Confirm no current restrictive
+  conclusion follows.
+- Supply the same renewal record twice, and supply one whose witnessed window
+  never advances across two snapshots. State precisely whether anything in the
+  engine can distinguish these from a live renewal, or whether that
+  distinction is entirely a property of the supplied witnesses.
+- Confirm that `FALSE` here means not derivable from the supplied snapshot, not
+  proof that a power has ended, and that no absence yields an affirmative
+  cessation conclusion.
+
+### D. Alternate authoriser and substitute reviewer
+
+Use neutral roles for an ordinary authoriser, a predeclared alternate, an
+ordinary reviewer, and a predeclared substitute reviewer.
+
+- Derive authority through the alternate only where the ordinary authoriser's
+  unavailability is itself positively evidenced.
+- Prove that an alternate authorisation which is never ratified by the ordinary
+  authoriser yields no continuing authority in a later fresh evaluation.
+- Prove that silence, vacancy, or conflict never becomes approval, and that no
+  single unavailable writer or reviewer can withhold the route permanently.
+
+### E. Non-cascade between instruments
+
+Represent two independent restrictive instruments over one subject.
+
+- Prove that neither instrument's conclusion is readable by the other, and that
+  no consequence attaches to a subject merely from being under one of them.
+- Show what the engine can and cannot enforce about a capability being read by
+  no rule, and whether that property is checkable from the compiled program
+  rather than only by inspection.
+
+Then report the exact surface boundary between:
+
+- what `nibli-pin` can pin;
+- what native `NibliEngine`, `CoreSession`, and `KnowledgeBase` query, find,
+  count, aggregate, proof, and raw-IR surfaces expose;
+- what the caller must authenticate, compare, classify, persist, publish,
+  schedule, correct, challenge, or execute; and
+- whether the result is definitive, non-definitive, resource-bounded, or
+  observational only.
+
+Return a compact capability matrix and the complete neutral fixtures. Include
+every exact command, exit code, material stdout/stderr, verdict, witness/count
+result, proof boundary, binary SHA-256, source SHA, version, runtime, and any
+resource measurement needed to reproduce the finding. Clearly label:
+
+1. definitive capabilities;
+2. caller/service responsibilities;
+3. unsupported or unsafe surfaces;
+4. gaps that block sound formalisation versus gaps safely handled by an
+   authenticated external-record seam; and
+5. the smallest general, book-neutral repair or documentation recommendation
+   for each real engine gap, with a minimal acceptance test.
+
+Do not implement any recommendation. If the present engine can already express
+the safe bounded seam, say so and recommend no repair. End with what this prompt
+got wrong or assumed without evidence.
+
+Write the final reply directly to the rights-nobody-has-to-earn session through
+dhilipsiva. Include the baseline SHA/version/binary first, then the capability
+matrix, exact probes and outputs, derivation-versus-caller boundary, cost
+profile, gaps, minimal recommendations, mutation-proof checks, and prompt errors.
 ~~~
 
 - [ ] **Make raw witness enumeration fail closed on non-definitive leaves.**
@@ -812,6 +953,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     | Non-human-animal protected subject — Class 10 | covered animal/taxon and sentience evidence, direct bodily/life/species-appropriate interest, controller and public duty, non-waivable welfare baseline for every controlled use, ordinary non-food/non-lethal/non-invasive/non-high-severity no-enhanced-test branch, lethal/invasive/high-severity enhanced-use trigger, strict alternative-sensitive rule for every controlled food-producing use in addition to the baseline, strict research 3Rs/replacement-first route and categorical unrelieved-severe/prolonged ban, categorical refusals and animal corridor core, purpose/necessity/alternatives/least-harm evidence where applicable, Animal Protection Advocate, Guardian conflict and independent adjudicator, rescue/continuity, record/privacy boundary, challenge, correction, remedy, audit, end condition, failure polarity, temporal status |
     | Consequential status or supported decision | status or decision effect, source, writer, permitted evidence, affected person's voice and preferences, required support, authorised reader or decider, scope, conflict rule, privacy, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
     | Collective status, authority, title, or consent | collective and right type, member or affected people, source, writer, evidence, jurisdiction, common-rights floor, consent or consultation trigger, dissent, exit, privacy, authorised reader or reviewer, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
+    | Coercive or protective public power | named instrument, authorised actor and its mandate, individualised recorded ground, contemporaneous identification and accessible reasons, prior independent authorisation and any narrow reported immediate-danger exception, strict-necessity/least-harmful-means/minimum-sufficiency/warning/cessation/aid tests, burden of lawfulness on the public actor, the capability removed and its no-reader obligation, the instrument's own upstream-of-personhood rule and per-floor-predicate refusal pin, counsel/interpreter/accommodation, third-party notification, prompt automatic independent review, investigating body separated from the deploying body, non-punitive character where the person is unconvicted with an express bar on feeding severity/placement/conviction/recognition, shelter and recorded-voice duties wherever the state physically holds the person, record author/basis/visibility/challenge/correction/retention, failure polarity, remedy, audit, source-bound temporal contract |
+    | Emergency declaration | named hazard, territory and affected people, each conferred power separately justified, narrowest sufficient scope as a validity condition, published reasons and evidence, cross-branch authorisation plus a predeclared alternate authorising route and predeclared independent substitute reviewer each ratified at the ordinary body's first opportunity, immediate legislature and constitutional-court notification, a fresh source-bound temporal contract per declaration and separately per renewal, each measure rejoining the exact declaration version rather than a compact status tag, judicial review of existence and of every measure available during the emergency, the express list of what is not conferred, the non-derogable core untouched, restoration on end, mandatory post-hoc audit and accounting, remedy for harms from lawful as well as unlawful measures, fail-safe polarity with the frozen-record limit stated |
   - **Done when:** every domain in the full-society ledger has complete applicable
     rows before its rule family or prose lands; no name, value, office, or floor is
     accepted as coverage by itself.
@@ -1362,11 +1505,15 @@ Gate B; it does not claim Book 2 operations or feasibility.
     accessible information, adequate time, accommodation, public reasons, and
     review rather than a blanket veto.
   - Keep collective autonomy inside the settled negotiated-secession path; it
-    creates no unilateral exit from the republic. The later external-power work
+    creates no unilateral exit from the republic. The ratified external-power work
     owns recognition, defence, cross-border status, international obligations, and
-    post-exit effects, but may not replace the affected-region vote, federal
+    post-exit effects, and did not replace the affected-region vote, federal
     agreement, rights/minority review, settlement, or final affected-population
-    ratification.
+    ratification. It treats the settlement contents as a floor, adds actual
+    collective consent as a **gate** where exit would transfer, extinguish or
+    irreversibly impair collective title or transfer sovereignty over collective
+    lands, and records that the external-only defence mandate leaves no military
+    instrument against a unilateral exit.
   - Split formal work by direct legal effect across the existing taxonomy; create
     no new class or omnibus `collective` predicate. Census and explicitly dispose
     of `public`, `authority`, `home`, `family`, and every status proxy before
@@ -1380,8 +1527,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     collective-decision audit to any supplied result certificate; do not invent
     generic tally, roster-completeness, signature, or enactment semantics.
   - Preserve a former resident's return right without creating a nonresident ballot.
-    The later migration/external-power work owns accessible evidence and border
-    operation, not the right's existence. Book 2 owns land/title administration,
+    The ratified public-safety and external-power work owns accessible evidence and
+    border operation, not the right's existence. Book 2 owns land/title administration,
     language and consultation services, records, staffing, costs, capacity, and
     workflows.
   - Acceptance must cover disputed and multiple membership, exit and privacy,
@@ -1390,9 +1537,11 @@ Gate B; it does not claim Book 2 operations or feasibility.
     temporary evacuation, and forced assimilation or relocation. Prove that
     collective autonomy never lowers individual rights, common services, or
     political equality and never creates a second general-government ballot.
-  - Define authority and non-derogable limits for treaties, diplomacy, external
-    trade, war/peace and humanitarian duties. Prevent public procurement, investment,
-    trade or corporate form from exporting labour exploitation, ecological damage
+  - Treaty, diplomacy, external trade, war/peace and humanitarian authority is now
+    ratified and owned by the public-safety and external-power implementation bullet
+    below; do not duplicate it here. This bullet retains only the locality and
+    membership half. The no-evasion rule stands: public procurement, investment,
+    trade or corporate form may not export labour exploitation, ecological damage
     or rights violations that would be unlawful at home. Other states' cooperation
     and supply-chain facts remain external assumptions, not derived facts.
 
@@ -1407,15 +1556,173 @@ Gate B; it does not claim Book 2 operations or feasibility.
     proportionality, release review, post-release continuity and reintegration.
     Prison remains the hardest stress test, not the default social case.
 
-- [ ] **Complete emergency, resilience, public-safety, and defence interfaces.**
-  - Define disaster/public-health triggers, declaring and reviewing bodies,
-    cross-branch control, non-derogable protections, public reasons, necessity,
-    proportionality, source-bound duration/renewal/end, challenge and remedy.
-  - Put policing, intelligence, force and defence under legality, civilian control,
-    role separation, evidence, oversight and repair. Do not borrow the custody T3
-    contract for a different power.
-  - Book 1 states invariant and failure behavior; Book 2 owns incident command,
-    stockpiles, force/logistics, infrastructure restoration and actual capacity.
+- [ ] **Implement the ratified public-safety, defence, emergency, and
+  external-power baselines.**
+  - Follow the author-ratified 2026-08-08 contract in
+    [`new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`](new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md).
+    Create **no** new taxonomy class and no omnibus `security`, `emergency`,
+    `threat`, `enemy`, `danger`, `border`, `defence`, or `war` conclusion.
+  - Formalise six separated Class 6 protective mandates — policing, prosecution,
+    adjudication, custodial execution, external defence, security intelligence —
+    each with democratic source, mandate, trigger, scope, conflict/recusal rule,
+    non-delegable limit, review, appeal, end condition and temporal status. Legal
+    defence and victim protection belong to the non-carceral justice interface
+    above; cross-reference it rather than restating or narrowing it.
+  - Formalise civilian command and the anti-fusion incompatibilities: no serving
+    armed-forces or intelligence member in a legislative, executive, judicial or
+    oversight seat; no secondment or joint command reconstituting a fused force;
+    no military jurisdiction over civilians; civil assistance unarmed,
+    individually authorised, and carrying no arrest, search, detention,
+    interrogation, crowd-control or surveillance power.
+  - Add arrest, pre-trial detention, search and seizure as named coercive
+    instruments — none exists in the record today. Each needs an individualised
+    recorded ground, identification and reasons, counsel/interpreter/
+    accommodation, third-party notification, prior independent authorisation for
+    search with a narrow reported immediate-danger exception, and prompt
+    **automatic** independent judicial review of detention. Do not reuse
+    `capture`: it means *documented*, and its consumers are credibility voiding
+    and recognition, so an arrest reading derives both.
+  - Formalise the force test — strict necessity, no reasonably available less
+    harmful means, minimum sufficiency, warning where feasible, cessation, aid,
+    burden of lawfulness on the public actor, lethal force only where strictly
+    unavoidable to protect life — plus independent investigation of every death
+    and serious injury by a body other than the deploying one, no orders defence,
+    and command responsibility.
+  - Put the categorical refusals inside the corridor: torture and cruel, inhuman
+    or degrading treatment; enforced disappearance and secret detention;
+    extrajudicial or arbitrary killing; collective punishment and reprisal;
+    indefinite detention without charge or review; coerced confession; human
+    shields and attacks on people not taking part in hostilities; starvation or
+    floor denial as weapon, sanction or inducement; experimentation without
+    consent; indiscriminate and superfluous-injury weapons and autonomous systems
+    engaging human targets without meaningful human control; aggressive war.
+  - **Two structural obligations attach to every new coercive instrument**,
+    because the existing walls do not cover it. The floor firewall reaches the
+    confinement conclusion only — the source discloses this and the disclosed
+    non-floor control loads at zero errors — so each instrument must carry its
+    own rule placing it upstream of personhood **in the same change**, and must
+    ship a refusal pin for **each** floor predicate, not one sample, plus a
+    re-measurement of the existing refusals. And the **deprivation** stays a
+    leaf, not the instrument: every capability an instrument removes joins the
+    no-reader guard family in the same change, while the instrument itself may
+    be read where the design requires it.
+  - Keep protective restriction separate from punishment. A quarantine,
+    exclusion order, border hold, or pre-expulsion detention carries no punitive
+    consequence, never feeds severity, placement, conviction or recognition,
+    reads no risk or dangerousness assessment, and gets its own trigger,
+    evidence, review and temporal contract. Anyone the state physically holds by
+    any instrument is owed shelter and a recorded voice — extend both
+    protections in the same change that creates the instrument.
+  - Formalise the non-derogating emergency overlay. It confers exactly
+    procedural acceleration, resource redirection, compensated requisition, and
+    hazard-specific reviewable restriction; it suspends no right, institution,
+    election or remedy, creates no decree power, extends no mandate, and leaves
+    no standing power between declarations. Rationing routes through the
+    ratified physical-scarcity contract rather than becoming a new power;
+    compulsory continuity keeps its narrow ratified form; price control is
+    ordinary economic law needing no declaration.
+  - Give the declaration, **each renewal separately**, and each individual
+    measure its own source-bound temporal contract, with every measure rejoining
+    the exact declaration version rather than a compact status tag. Do not borrow
+    the custody T3 contract for a different power. The polarity is the **same**
+    as the custody gate — current authority is a positive premise — so do not
+    write an absence-derives-cessation rule; cessation is a positive recorded act
+    or a fresh-evaluation claim. Pin the frozen-and-replayed-record limit
+    honestly rather than claiming it is closed.
+  - Formalise the predeclared alternate authorising route and the predeclared
+    independent substitute reviewer, both bound by identical limits and ratified
+    at the ordinary body's first opportunity. Neither absence becomes approval
+    nor an indefinite hold, and an unratified alternate authorisation ends.
+  - Formalise the intelligence limits and extend the temporary-assessment
+    exclusion **by name**: no bulk or suspicionless collection, no acquisition of
+    what could not lawfully be collected, prior individualised judicial
+    authorisation, defined scope and duration, fresh authorisation per renewal,
+    later notification, and no risk, threat, loyalty, dangerousness, clearance or
+    watchlist product entering the canonical consequential person record or
+    conditioning standing, floor, franchise, liberty, remedy or allocation.
+    Secret evidence is never sole or decisive.
+  - Formalise unconditional conscientious objection with no sincerity tribunal, a
+    genuinely non-punitive equivalent, no loss of floor, standing, franchise,
+    candidacy, education or employment, no repeated punishment, and the duty to
+    refuse a manifestly unlawful order with protection for the refuser.
+  - Formalise jurisdiction-wide standing as a **duty and a limit on power**, not
+    as a record claim — a person never entered is not recorded as missing, so no
+    power may condition help on a record entry or treat an absent entry as a
+    finding. Build the enforcement firewall to cover **enrolment** as well as
+    collection and transmission.
+  - Formalise absolute non-refoulement, the ban on collective expulsion, asylum
+    as a right to fair determination with advocate/interpreter/suspensive appeal,
+    individual reasoned expulsion, no immigration detention of children, adult
+    detention only on individualised necessity with judicial authorisation, a
+    maximum and a real alternative, statelessness prevention, and the refusal of
+    pushbacks, evasive externalised processing and jurisdiction-shopping —
+    effective control, not formal territory, is the test. A scarcity finding's
+    named population includes everyone within jurisdiction or effective control,
+    and nationality, citizenship, immigration status, documentation and manner of
+    entry join the forbidden priority keys.
+  - Formalise extradition, mutual legal assistance and transfer of a person as
+    the route that must not become an escape: individual judicial decision,
+    suspensive appeal, and an express bar where surrender would breach
+    non-refoulement or expose the person to a categorical refusal. A diplomatic
+    assurance is weak evidence, never a cure.
+  - Formalise the external-only defence mandate, the Assembly ceiling on size and
+    armament, full audit access, the refusal of delegated private coercion,
+    mercenaries and paramilitaries, prior authorisation for force abroad with the
+    lapse of an unratified defensive response, the refusal of aggressive and
+    secret war, the cyber/infrastructure threshold with evidenced attribution,
+    arms-transfer control, unconditional humanitarian duties, and the bar on
+    anyone below legal adulthood being recruited or used in hostilities.
+  - Formalise the abuse-of-office route with no immunity, repose, amnesty or
+    pardon for a categorically refused act, and treat non-recording, destruction
+    and falsification of a coercive record as substantive failures attributable
+    to the power rather than evidential misfortunes borne by the person.
+  - Formalise treaty ratification and the supremacy limit **in the register the
+    amendment-semantics audit requires**: a rule addressed to ratifiers,
+    reviewers and courts, with the express statement that no current mechanism
+    reads a treaty's actual effect. Generalise the no-evasion rule across trade,
+    procurement, affiliates, supply chains, flags, arbitration fora and exported
+    enforcement.
+  - Add the express, bounded common competence and state its disclaimer:
+    external representation and treaties, external defence and force abroad,
+    borders/entry/asylum/expulsion/extradition, external trade and sanctions,
+    security intelligence and oversight, common policing and force minima, and
+    cross-border hazard coordination — creating no general security,
+    foreign-affairs, policing or emergency power, preserving regional civil
+    protection and residual competence, and permitting stronger compatible
+    subnational protection.
+  - Write oversight and remedy against the existing endpoint rather than over it:
+    nothing reads `obliged`, so specify who must be able to look and what must
+    follow, and do not upgrade a specification into an assurance.
+  - **Before any of the above lands, re-audit four prose sites** and revise them
+    in the same content change: the single-deprivation claim, its Part V verdict,
+    **and the same claim in `new-book-plans/3-spine.md`'s hand-authored chapter
+    list, which no generator and no prose gate covers**; the two confinement
+    rule-statements in chapter 8, since shelter and recorded voice must extend to
+    anyone the state physically holds; the absent-justifications sentence in
+    chapter 4, whose vocabulary half is false the moment justification vocabulary
+    is admitted while its reachability half survives; and the accountability
+    endpoint in chapter 14. Note that the counted-claim gate matches neither
+    small cardinals nor "exactly *n*", so counting discipline here is human until
+    that gate is extended — do not cite it as this domain's guard.
+  - Census and explicitly dispose of `capture`, `permits`, `authority`, `free`,
+    `travel`, `severe`, `prisoner`, `err`/`obliged`, `public`, `defend`, `show`
+    and `judge` before reuse. `severe` may not become a threat grading.
+  - Nibli may consume a bounded authenticated authorisation, declaration, order
+    or review record. It does not detect a threat, decide necessity,
+    proportionality, imminence or attribution, authenticate a warrant, prove an
+    order was given or refused, advance a clock, end an emergency, or perform an
+    institutional act. Close the multi-power composition audit above first.
+  - **Book 2 handoff:** force capability, doctrine, training, equipment and
+    less-lethal options; forensics, investigation practice and case
+    administration; intelligence tradecraft and information security; border,
+    reception, asylum-processing and non-custodial-alternative operations;
+    incident command, stockpiles, disaster logistics, continuity planning and
+    infrastructure restoration; defence procurement, readiness and sustainment;
+    treaty negotiation, sanctions administration and consular practice; staffing,
+    costs, capacity and empirical feasibility; and the assurance that an outside
+    clock advances, a required record arrives, and a reviewer acts. Other states'
+    cooperation, recognition and readmission are **named external assumptions**,
+    not derived facts and not Book 2 deliverables.
 
 - [ ] **Implement the ratified environmental right, Class 9 commons, and
   Class 10 non-human-animal protections.**

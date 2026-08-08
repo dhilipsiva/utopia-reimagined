@@ -111,6 +111,45 @@ book-1 references book-2 exactly once, at its very end.
 > See
 > `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
 
+> **Public-safety, defence, emergency, and external-power handoff —
+> author-ratified 2026-08-08.** Book 1 owns six separated protective mandates
+> under civilian command and the anti-fusion incompatibilities; the coercive
+> instruments (arrest, pre-trial detention, search, seizure, protective
+> restriction, border hold, transfer) with prompt automatic independent review;
+> the permissible-force test and the categorical refusals now inside the
+> corridor; a **non-derogating** emergency overlay conferring only procedural
+> acceleration, resource redirection, compensated requisition, and
+> hazard-specific reviewable restriction; declaration, per-renewal and
+> per-measure temporal contracts with a predeclared alternate authorising route
+> and substitute reviewer; the refusal of bulk collection and the extended
+> assessment firewall; unconditional conscientious objection; jurisdiction-wide
+> standing and the enforcement firewall covering enrolment; absolute
+> non-refoulement, the ban on collective expulsion, and the border, asylum,
+> expulsion, statelessness, extradition and transfer limits; the external-only
+> defence mandate, authorisation of force abroad, humanitarian duties and
+> arms-transfer control; treaty and no-evasion limits; and the enumerated common
+> competence.
+>
+> Book 2 owns **operation under ordinary and declared shock conditions**: force
+> capability, doctrine, training, equipment and less-lethal options; forensics,
+> investigation practice and case administration; intelligence tradecraft and
+> information security; border, reception, asylum-processing and non-custodial-
+> alternative operations; incident command, stockpiles, disaster logistics,
+> continuity planning and infrastructure restoration; defence procurement,
+> readiness and sustainment; treaty negotiation, sanctions administration and
+> consular practice; staffing, costs, capacity and empirical feasibility; and the
+> assurance that an outside clock advances, a required record arrives, and a
+> reviewer acts. It may not create a derogation power, a standing emergency
+> authority, a domestic military mandate, a risk or threat score, a status that
+> gates the floor, or an exception to a categorical refusal, and it may not treat
+> an operational metric as constitutional proof. Other states' cooperation,
+> recognition and readmission are **named external assumptions** with an owner,
+> an evidence status, and a stated consequence if they fail — not Book 2
+> deliverables. Nibli may consume authenticated bounded authorisation,
+> declaration, order or review records; it is not a threat-detection,
+> attribution, warrant-authentication, or institutional-liveness system. See
+> `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow
@@ -487,6 +526,78 @@ but never replaces, this rule.
     population control; restoration; stale/frozen/replayed authority; and
     compound shocks, with no operational metric presented as a Nibli or
     constitutional proof.
+
+- [ ] **Operate public safety, defence, and declared shock conditions without
+  acquiring a power Book 1 refused.**
+  - Follow the author-ratified 2026-08-08 contract in
+    `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
+    Book 2 supplies capability and never a legal authority: no derogation power,
+    no standing emergency authority, no domestic military mandate, no risk or
+    threat score, no status that gates the floor, and no exception to a
+    categorical refusal.
+  - Build policing, prosecution, custodial, and investigation operations that
+    keep the six mandates institutionally separate in practice — separate
+    staffing, budgets, records, premises, and reporting lines — and show that the
+    force-incident investigator, the intelligence oversight body, and the
+    integrity route are genuinely outside the chains they examine.
+  - Operate the coercive instruments to the standard Book 1 sets: recorded
+    grounds and reasons at the moment of the act; identification; counsel,
+    interpreter, and accommodation reaching people in fact; third-party
+    notification; a custody record an independent body and a chosen
+    representative can actually reach; and prompt automatic judicial review that
+    happens without the detained person requesting it. Cost and staff the review,
+    since a right to prompt review that nobody can service is the failure this
+    book exists to catch.
+  - Supply less-lethal capability, de-escalation training, planning precaution,
+    and immediate medical response so that the strict-necessity and
+    minimum-force tests are operationally reachable rather than aspirational, and
+    report honestly where current capability cannot meet them.
+  - Operate declaration, renewal, and end workflows in which each measure carries
+    its own justification and its own renewal, and each rejoins the exact
+    declaration version. Assure independently witnessed sources, because Book 1
+    can withhold effect from an unrenewed power but **cannot distinguish a frozen
+    or replayed renewal record from a live one** — that distinction is entirely a
+    Book 2 assurance obligation. Exercise the predeclared alternate authorising
+    route and substitute reviewer, including the case where the ordinary body
+    never ratifies.
+  - Operate rationing through the ratified physical-scarcity workflow rather than
+    an emergency exception: authenticated resource-specific findings, every
+    minimum preserved where supply permits, every shortfall recorded as failure,
+    the forbidden priority keys enforced in the allocation software itself, and
+    rotation or lottery only among materially equal claims.
+  - Build border, reception, asylum-processing, and non-custodial-alternative
+    capacity sufficient that non-refoulement, individual determination, suspensive
+    appeal, and the no-detention-of-children rule are operationally real. Where
+    capacity cannot meet the duty, record the shortfall as a failure and cost the
+    remedy; never present a queue as a lawful outcome.
+  - Implement the enforcement firewall in the systems themselves: floor, health,
+    education, court, and crime-reporting services must be unable to **enrol**,
+    collect, or transmit immigration or security status, and the absence of a
+    record must not be representable as an adverse finding anywhere downstream.
+  - Operate intelligence tradecraft, retention, deletion, and notification so
+    that the bulk-collection refusal and the assessment firewall hold under
+    pressure, including against purchased, partnered, or foreign-exchanged
+    material the republic could not lawfully collect.
+  - Cost and staff defence readiness, procurement, and sustainment under the
+    Assembly ceiling and full audit access; operate treaty negotiation, sanctions
+    administration, and consular practice; and record other states' cooperation,
+    recognition, and readmission as **named external assumptions** with owner,
+    evidence status, and failure consequence.
+  - Operate conscientious-objection alternatives that are genuinely equivalent
+    and non-punitive, and protected-disclosure channels that do not require an
+    implicated internal route first.
+  - **Done when:** operations execute an ordinary policing contact; an arrest and
+    its automatic review; a search with and without prior authorisation; a use of
+    force and its independent investigation; a protective restriction with
+    shelter and recorded voice; a declaration with several concurrent measures,
+    a partial renewal, a withheld renewal, and a frozen record; an alternate
+    authorisation that is and is not ratified; a shortage during a declaration; a
+    covert measure and its later notification; an unaccompanied child at a
+    frontier; an expulsion and a surrender request; a firewall request from a
+    hospital and a school; a conscientious objection; a defensive response
+    pending ratification; and a lawful exit settlement — each with capability,
+    staffing and cost stated, each shortfall recorded as failure, and no
+    operational metric presented as a Nibli or constitutional proof.
 
 - [ ] **Enable knowledge, media, science, culture, association, mutual aid, and the
   protected free field without operating private outcomes.**
