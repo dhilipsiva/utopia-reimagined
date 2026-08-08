@@ -85,6 +85,32 @@ book-1 references book-2 exactly once, at its very end.
 > See
 > `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
 
+> **Ecological, future-generation, commons, and non-human-animal handoff -
+> author-ratified 2026-08-08.** Book 1 owns the distinct individual environmental
+> right (not a material-floor item); independent commons and democratically
+> enacted ceilings bounded by science, precaution, and non-regression; dual
+> floor-and-ceiling continuity; tiered ecological liability; federal allocation;
+> the separate Future Conditions Guardian and Animal Protection Advocate; direct
+> sentience-based protection for Class 10 protected subjects; the non-waivable
+> welfare baseline; the enhanced serious-purpose test only for lethal, invasive,
+> or high-severity use; the strict alternative-sensitive rule for every controlled
+> food-producing use; the strict research/education rule and categorical
+> unrelieved severe-or-prolonged-procedure ban; wildlife, disease-control and
+> introduced-population limits; evidence, challenge, remedies, failure polarity,
+> corridor core, and fresh temporal defaults.
+>
+> Book 2 owns measurement, models, inventories, resource budgets, monitoring,
+> habitat and welfare operations, restoration, husbandry, food/research
+> replacement and worker/community transition, veterinary/rescue/shelter/
+> inspection capacity, staffing, costs, workflows, and empirical feasibility. It
+> may not choose or weaken a ceiling or right, merge the two offices, give either
+> a policy veto, turn animals into persons, invent a use exception, narrow a
+> categorical refusal, or treat an operational metric as constitutional proof.
+> Nibli may consume authenticated bounded findings; it is not a measurement,
+> sentience, causation, threshold, restoration, or institutional-liveness system.
+> See
+> `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow
@@ -338,7 +364,8 @@ but never replaces, this rule.
   - Build collective-title mapping, recognition, restitution, and land/resource
     administration; and culture, sacred-site, language, education, media, and
     minority-participation services. Preserve portability, federal competence,
-    common services, and the still-open ecological and general-commons limits.
+    common services, and the separately ratified ecological and general-commons
+    limits.
   - Operate good-faith consultation, accommodation, reasons, independent review,
     and remedy. Require actual collective consent only for the existential harms
     named by Book 1; consultation alone creates neither consent nor a veto elsewhere.
@@ -377,16 +404,89 @@ but never replaces, this rule.
 
 - [ ] **Build ecological, commons, animal-protection, and intergenerational
   operations.**
-  - Measure resource budgets, emissions, air/water/soil, biodiversity, land,
-    extraction, waste, infrastructure condition, restoration and animal welfare/
-    habitat against Book 1's ceilings and guardian contracts.
-  - Model cross-border commons and supply-chain externalities. Publish uncertainty,
-    thresholds, cumulative impacts, monitoring independence and recovery limits.
+  - Measure resource budgets, emissions, air, water, soil, biodiversity, land,
+    extraction, waste, infrastructure condition, restoration, animal sentience
+    evidence, welfare, and habitat against the exact enacted ceiling and legal
+    contracts. Preserve the distinction between the individual environmental
+    right, independent commons, and unchanged material floor.
+  - Implement the collegial Future Conditions Guardian and separate Animal
+    Protection Advocate with independent evidence access, challenge, correction,
+    predeclared alternates, and remedies. Operate independent case initiation for
+    present people, qualified associations, the ordinary rights advocate and the
+    Guardian; the first three may request judicial interim relief but do not
+    trigger an automatic stay. Operate the bounded irreversible-part automatic
+    stay only for an evidence-supported Guardian objection or its predeclared
+    alternate advocate acting in its place. Bind one shared case/authorization/
+    evidence/ground replay key across Guardian, alternate, successor, primary
+    reviewer and substitute reviewer; only materially new authenticated evidence
+    or materially changed authorization reopens a finally resolved key. Do not
+    give either office a policy veto or let one body become evidence source, final
+    adjudicator, executor, and auditor.
+  - Model binding science, uncertainty, precaution, non-regression, cumulative
+    harm, cross-border commons, supply-chain effects, environmental inequality,
+    restoration limits, and disagreement among qualified sources. Publish
+    methods, exclusions, assumptions, confidence, residual risk, correction, and
+    every version/place/jurisdiction/time scope.
+  - Operate immediate no-fault prevention, cessation, containment and human/animal
+    continuity without waiting for final liability. Apply strict restoration and
+    reasonable-response-cost liability to causally connected inherently hazardous
+    activity, adjudicated contribution/control liability otherwise, and immediate
+    public restoration where the responsible actor is unknown, insolvent, absent
+    or too slow. Require separately adjudicated culpability before punishment.
+  - Exercise dual floor-and-ceiling continuity. If no available route satisfies
+    both, preserve immediate human floor continuity through the least-harm route,
+    record the floor and/or ceiling failures without renaming either success,
+    obtain alternatives, repair harm, and operate a source-bound transition.
+  - Put **every** controlled use of a credibly sentient animal under the
+    non-waivable welfare baseline. Apply the enhanced serious-purpose, necessity,
+    feasible-alternatives and least-harm test only where a use is lethal, invasive
+    or high-severity; ordinary non-food/non-lethal/non-invasive/non-high-severity
+    uses do not acquire that extra test merely because they are uses.
+  - Apply the strict food rule to every controlled food-producing use, including
+    nonlethal or non-severe production: require no safe, accessible,
+    nutritionally adequate, materially less-harmful alternative reasonably
+    available to the affected people. Model supply, price, nutrition, geography,
+    worker/community support and transition without withholding the human food
+    floor while alternatives are unavailable.
+  - Operate research/testing/education only through replacement, reduction and
+    refinement with replacement first; proof that no scientifically valid
+    non-animal or materially less-harmful route can serve the purpose; independent
+    project review; minimum animals; pain relief, humane endpoints, aftercare,
+    registration, result/welfare reporting, inspection and remedy. Categorically
+    refuse every unrelieved severe or prolonged procedure regardless of claimed
+    purpose or benefit.
+  - Cover companion/domestic, farmed/working, captive and wild animals. Natural
+    predation creates no offender and no universal rescue operation. Prioritise
+    human-caused or controlled pollution, infrastructure, entanglement, habitat,
+    capture, trade and killing harms. Permit grave disease/danger/introduced-
+    population control only after authenticated risk, human-cause prevention and
+    feasible nonlethal exclusion, treatment, vaccination, relocation, fertility
+    or habitat routes fail or would cause greater grave harm; require the least-
+    painful reliable method, review, reassessment, repair and fresh T3.
+  - Give each permit, ceiling review, Guardian/alternate automatic stay, judicial
+    interim-relief order, restoration deadline, temporary power, research
+    approval, disease-control action and lethal/high-severity authorization a
+    fresh source-bound temporal workflow. Test forged, withheld, stale, corrected
+    and frozen records, capture, silence, alternate advocate and substitute-review
+    routes, replay across Guardian/alternate/successor/reviewers, non-cooperation,
+    recurrence, service continuity and repair; custody T3 is not an operational
+    shortcut.
 
-  - **Done when:** versioned resource/common accounts and animal-protection
-    operations execute ordinary use, cumulative ceiling breach, cross-border or
-    supply-chain harm, guardian challenge, restoration and compound-shock cases
-    against scientific and author-ratified thresholds.
+  - **Done when:** versioned ecological/common accounts and animal-protection
+    operations execute lawful ordinary use; an individual environmental-right
+    and independent commons claim; cumulative ceiling breach; precaution,
+    non-regression and non-substitution; floor/ceiling collision and transition;
+    no-fault protection plus strict inherently-hazardous, contribution/control
+    and public-continuity liability branches; Guardian/alternate automatic stay,
+    ordinary-route judicial interim relief, shared replay and substitute review;
+    separate Guardian and Advocate challenges and conflict adjudication;
+    lawful/refused enhanced uses; strict all-food-use alternatives with
+    uninterrupted food-floor continuity; lawful
+    research and the categorical unrelieved severe/prolonged refusal; domestic/farmed/
+    captive/wild harm; natural predation; lawful/refused disease or introduced-
+    population control; restoration; stale/frozen/replayed authority; and
+    compound shocks, with no operational metric presented as a Nibli or
+    constitutional proof.
 
 - [ ] **Enable knowledge, media, science, culture, association, mutual aid, and the
   protected free field without operating private outcomes.**

@@ -36,21 +36,24 @@ The repo is heading for two new books plus a clean deletion:
 their records live in git, not here. What remains runs in two preliminary phases,
 then a full-society expansion backlog and cross-cutting sections:
 
-1. **Phase 1 — author-gated decisions.** The volume, edition, and stopping
-   boundary, state form, political membership, substantive equality, and the
-   bounded plural economy/protected private sphere, family, dependency,
-   reproduction, and collective/plurality baselines are settled. Ecology,
-   public-safety/external-power, assurance, narrative, and reader-threshold
-   decisions remain open. Neutral inventory and decision briefs may proceed in
-   parallel; each still-gated domain's rules, prose, and public claim wait for its
-   own ruling. The final reader threshold waits for the pilot. This section has
-   been destroyed by tooling once and is watched accordingly.
+1. **Phase 1 — author-gated decisions.** The volume, edition, stopping
+   boundary, state form, political membership, substantive equality, bounded
+   plural economy/protected private sphere, family/dependency/reproduction/
+   collective-plurality, and ecological/future-generation/commons/non-human-
+   animal baselines are settled. Public-safety/external-power, assurance,
+   narrative, and reader-threshold decisions remain open. Neutral inventory and
+   decision briefs may proceed in parallel; each still-gated domain's rules,
+   prose, and public claim wait for its own ruling. The final reader threshold
+   waits for the pilot. This section has been destroyed by tooling once and is
+   watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision
    capability audit is closed and recorded in the source-bound planning artifact.
-   Two bounded, non-blocking repairs remain: fail-closed raw witness enumeration
-   and a truthful novel text-compute registration contract. Democratic
-   formalisation may proceed through authenticated external result certificates;
-   it may not rely on either defective surface.
+   A read-only, source- and binary-bound audit of versioned ecological and animal
+   findings must close before those rule families are formalised. Two bounded,
+   non-blocking repairs also remain: fail-closed raw witness enumeration and a
+   truthful novel text-compute registration contract. Democratic formalisation
+   may proceed through authenticated external result certificates; it may not
+   rely on either defective surface.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
    versioned disposition map for declared social axes and envelope, a functional
@@ -109,26 +112,15 @@ The author has directed the project toward a well-balanced two-book model. Book
 1's use of “comprehensive” remains bounded to its Gate B/C declared scope, and
 the Gate E claim is bounded to a declared reference envelope. The two-book
 container, C-then-E release sequence, and versioned stopping boundary are settled.
-The state form, residence-first political membership, substantive-equality
-and anti-subordination baseline, and bounded plural economy/protected voluntary
-sphere are also settled, as are the family, dependency, reproduction, and
-collective/plurality baselines. The remaining decisions determine ecology,
+The state form, residence-first political membership, substantive equality,
+bounded plural economy/protected voluntary sphere, family/dependency/
+reproduction/collective-plurality, and ecological/future-generation/commons/
+non-human-animal baselines are also settled. The remaining decisions determine
 public-safety/external power, assurance, narrative, and reader thresholds; they
 do not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
-
-- [ ] **[AUTHOR-GATED] Rule ecological, future-generation, commons, and
-  non-human-animal baselines.**
-  - Choose protected commons, enforceable ecological ceilings, non-regression and
-    restoration duties; the authority and limits of an independently checked future-
-    conditions guardian; and how these constrain majority, property and trade.
-  - Rule the basis and minimum scope of non-human-animal protection, permitted use,
-    enforcement and remedy without assuming that only constitutional personhood can
-    ground protection.
-  - Book 1 owns the invariant, evidence, standing/guardian and remedy contracts.
-    Book 2 owns measurement, resource budgets, transition and feasibility.
 
 - [ ] **[AUTHOR-GATED] Rule public-safety, defence, emergency, and external-power
   baselines.**
@@ -199,6 +191,223 @@ that a claim assigned to Nibli cannot be expressed soundly, loses a definitive
 verdict, or exceeds a measured bound. Do not ask one reasoning engine to become a
 budget, population, logistics, psychology, transition, source-deployment, or
 authentication system.
+
+- [ ] **[READ-ONLY] Measure the versioned ecological and animal finding boundary before formalising it.**
+  - This is a capability audit, not an engine-change request. It must bind every
+    conclusion to the exact engine source and binary tested, use neutral fixtures,
+    and separate derivation from measurement, authentication, clocks, institutional
+    action, and finite-body result production.
+  - **Done when:** the reply supplies the requested surface matrix, exact probes and
+    outputs, caller/engine responsibility boundary, gaps and minimal general repair
+    recommendation; the engine worktree remains unchanged.
+
+~~~text
+You are working in the Nibli engine repository. Assume no knowledge of any book
+or constitution repository. Perform a read-only, evidence-bound capability
+audit with this exact task title: **Measure the versioned ecological and animal finding boundary before formalising it.**
+
+Do not edit any engine file, generated file, index entry, branch, ref, tag,
+remote, commit, or documentation. Do not commit or push. Put every fixture,
+temporary crate, build target, log, and binary outside the repository. Finish
+by proving the worktree, index, refs, and remotes were not changed.
+
+The question is narrow: can current Nibli soundly consume already authenticated,
+versioned, multidimensional findings and derive bounded consequences without
+being credited with measuring the world, authenticating a source, deciding
+scientific or animal questions, advancing time, acting institutionally, or
+computing a generic collective threshold?
+
+First bind the audit to the exact implementation:
+
+1. Report the current branch, HEAD SHA, upstream, workspace/package version,
+   public remote URL, and the public remote's current main SHA using a read-only
+   remote query. Do not fetch or update a remote-tracking ref.
+2. Report whether
+   `4cb02aade43b394374c40e661907ad66df3af3fe` and its prerequisite
+   `5cec80080eea0334c87508e60813f8f70f487441` are present and are ancestors of
+   the tested HEAD. Give exact `git cat-file` and
+   `git merge-base --is-ancestor` commands and exit codes. If either object is
+   absent, say so rather than inferring ancestry.
+3. Build the tested release binary into an isolated temporary target directory.
+   Report its absolute path, SHA-256, build command, build profile, source SHA,
+   version output, host/toolchain versions, and audit date. Do not use an old
+   unbound binary.
+4. Capture exact before/after `git status --short --branch`,
+   `git diff --exit-code`, `git diff --cached --exit-code`, refs, and remote
+   configuration sufficient to prove no repository mutation.
+
+Use only neutral fixtures. Do not use any predicate, constant, person, office,
+chapter, or domain name copied from a book. Where arbitrary neutral names are
+not admitted by the text compiler, use declared raw IR or a temporary neutral
+schema and record that surface boundary; do not modify the corpus vocabulary.
+Keep every finding explicit and case-bound.
+
+Probe at least these cases:
+
+### A. Multidimensional, non-substitutable findings
+
+Represent at least two independent protected dimensions for one case. Bind each
+finding to its own dimension, value, unit or classification, source identity,
+source version, method/result version, place, jurisdiction, relevant subject,
+and source-bounded time window.
+
+- One dimension passes and another breaches. Prove that the pass cannot mask,
+  compensate for, or rewrite the breach.
+- Supply an overall or scalar “good” result and prove it creates no
+  dimension-specific conclusion unless an explicit rule improperly says so.
+- Use the same record identifier with a wrong source, version, place,
+  jurisdiction, subject, dimension, or window. Prove that no sibling field or
+  status tag can be borrowed across the mismatch.
+- State whether the engine can enforce only the correlations represented in the
+  rule, and which completeness/non-substitution claims remain caller policy.
+
+Do not invent arithmetic, scientific comparison, unit conversion, aggregation,
+or a sustainability/worth score.
+
+### B. Missing, non-definitive, and adverse evidence
+
+Require positive, scope-matched evidence for every authority-producing result.
+
+- Test a missing finding, a missing source/version/scope field, a contradictory
+  or competing finding, an unavailable compute dependency producing
+  `UNKNOWN(reason)`, and a configured search/resource horizon producing
+  `RESOURCE_EXCEEDED(kind)` where the public surface permits it.
+- Keep `FALSE` distinct from classical negation: it means not derivable from
+  the supplied closed-world snapshot, not proof that a condition is safe,
+  absent in reality, or lawfully rejected.
+- Confirm that missing, FALSE, UNKNOWN, or resource-exhausted evidence cannot be
+  treated as positive authorization. Identify any find/count/aggregate surface
+  that can silently undercount a non-definitive witness and relate it to current
+  documented guarantees rather than assuming a repair.
+- Show the exact verdict and proof/error behavior at every tested surface.
+
+### C. Bounded objection, stay, replay, and alternate review
+
+This probes the bounded-objection function assigned to a Future Conditions
+Guardian without using that title as a fixture predicate. Use neutral roles for
+an authorised long-horizon guardian, its predeclared alternate advocate acting
+in its place, a successor guardian, an ordinary independent initiator, a
+primary independent reviewer, and a predeclared substitute reviewer. Do not
+encode a real-world clock.
+
+- Derive a bounded automatic review/stay status only from a case-bound objection
+  by the guardian role or its alternate acting in its place, a credible-harm
+  finding, exact challenged authorization, exact evidence/ground, supplied
+  current-window certificate, and independent review route.
+- Give the ordinary initiator an independent case-initiation and judicial-
+  interim-relief request route, but prove that initiation or request alone does
+  not derive the automatic stay. Any stay through that route requires a
+  separately caller-authenticated judicial interim-relief result.
+- Bind one replay key across the guardian, alternate, successor, primary reviewer,
+  and substitute reviewer to the case, authorization version, evidence version,
+  and ground. Changing officeholder or review route must not restart it. A
+  finally resolved objection on the same key must not restart the status;
+  materially new evidence or a materially changed authorization may form a new
+  key only when a caller supplies that authenticated distinction.
+- Show that primary reviewer absence, conflict, or silence is not approval and
+  that a supplied substitute-reviewer route can be selected without giving the
+  objector final merits authority.
+- State plainly that Nibli did not authenticate the objection, decide
+  credibility, advance or expire the window, pause an activity, notify a body,
+  select a human reviewer, or execute review. Those remain caller/service acts.
+
+### D. Separate long-horizon and protected-subject advocates
+
+This probes the required separation between a Future Conditions Guardian
+function and an Animal Protection Advocate function. Represent them with neutral
+role names and two independent advocacy records that can disagree. Neither role
+name may create priority. Require a separately authenticated adjudicated result
+bound to the same case and source versions before deriving the selected legal
+result.
+
+Keep every hard prohibition and each human, commons, protected-subject,
+collective, uncertainty, reversibility, and continuity axis visible. Prove that
+a single scalar balance or one advocate's silence cannot decide the conflict.
+Test wrong-case, wrong-version, missing-adjudicator, conflicting-result, and
+corrected-result cases.
+
+### E. Caller-authenticated protected-subject and use findings
+
+Use a neutral non-human subject fixture. Treat taxon/coverage, realistic
+sentience possibility, custody/control, ordinary welfare needs, use
+classification, severity, purpose, necessity, available alternatives, least
+harm, care, and end conditions as authenticated caller findings, never engine
+measurements.
+
+- Put every controlled use under the supplied non-waivable welfare baseline.
+  Distinguish ordinary non-food/non-lethal/non-invasive/non-high-severity use,
+  which needs no enhanced serious-purpose certificate, from lethal, invasive,
+  or high-severity use, which may receive authority only from all supplied
+  enhanced-test findings.
+- Treat every controlled food-producing use as the welfare baseline plus its
+  own strict alternative-sensitive route, whether or not the fixture is
+  slaughter, lethal, or severe: authority requires a caller finding that no
+  safe, accessible, nutritionally adequate, materially less-harmful alternative
+  is reasonably available.
+- Represent the research boundary so an externally classified unrelieved severe
+  or prolonged procedure is categorically refused; no purpose certificate may
+  override it.
+- Prove that a missing identity, owner, price, affection, rarity, productivity,
+  usefulness, or global score creates no protection or use conclusion.
+- State exactly which classifications Nibli can compose after assertion and
+  which facts—sentience, pain, nutrition, alternatives, scientific validity,
+  causation, welfare, or action—must remain externally authenticated.
+
+### F. Authenticated finite-body result certificate
+
+Where a collegial body result is needed, use an externally authenticated,
+case-bound finite-body result certificate. Prove only the consequence of that
+certificate and its exact roster/decision/version scope.
+
+Also measure the current find/count/aggregate and exact-count surfaces with a
+small neutral finite fixture. State whether any surface can compute and compare
+a dynamic threshold, prove roster completeness, authenticate votes, resolve
+ties, or turn a returned count into a stored rule antecedent. Do not hand-code a
+fixed witness rule and call it a generic majority. Test empty, incomplete, tie,
+conflicting, wrong-decision, and valid-certificate cases. A `FALSE` default
+must not affirmatively preserve or enact anything.
+
+For every probe, separate:
+
+- what the KR derivation establishes relative to supplied premises;
+- what `nibli-pin` can pin;
+- what native `NibliEngine`, `CoreSession`, and `KnowledgeBase` query,
+  find, count, aggregate, proof, and raw-IR surfaces expose;
+- what WIT/component and shipped host surfaces expose;
+- what an external compute/result service can return;
+- what the caller must authenticate, compare, classify, persist, publish,
+  schedule, correct, challenge, or execute; and
+- whether the result is definitive, non-definitive, resource-bounded, or
+  observational only.
+
+Include query-only versus assertion/rule-literal boundaries for Count and
+Compute nodes, vocabulary admission for neutral text predicates, proof-trace
+limits, logical deduplication versus domain-record identity, mutation/cache
+effects if relevant, and all supported temporal/deontic flavours. Do not treat a
+compute reply or asserted certificate as self-authenticating.
+
+Return a compact capability matrix and the complete neutral fixtures. Include
+every exact command, exit code, material stdout/stderr, verdict, witness/count/
+aggregate result, proof boundary, binary SHA-256, source SHA, version, runtime,
+and any resource measurement needed to reproduce the finding. Clearly label:
+
+1. definitive capabilities;
+2. caller/service responsibilities;
+3. unsupported or unsafe surfaces;
+4. gaps that block sound formalisation versus gaps safely handled by an
+   authenticated external-result seam; and
+5. the smallest general, book-neutral repair or documentation recommendation
+   for each real engine gap, with a minimal acceptance test.
+
+Do not implement any recommendation. If the present engine can already express
+the safe bounded seam, say so and recommend no repair. End with what this prompt
+got wrong or assumed without evidence.
+
+Write the final reply directly to the rights-nobody-has-to-earn session through
+dhilipsiva. Include the baseline SHA/version/binary first, then the capability
+matrix, exact probes and outputs, derivation-versus-caller boundary, gaps,
+minimal recommendations, mutation-proof checks, and prompt errors.
+~~~
 
 - [ ] **Make raw witness enumeration fail closed on non-definitive leaves.**
   - This repairs a public raw-API undercount found by the completed audit. It does
@@ -365,6 +574,20 @@ language services, consultation, records operations, staffing, costs, and
 workflows. Those delegated details do not reopen children's independent rights,
 automatic adulthood, supported agency, bodily authority throughout pregnancy,
 public-first care, family plurality, or rights-bounded collective autonomy.
+
+The ecological, future-generation, commons, and non-human-animal settlement is
+likewise author-ratified on 2026-08-08 and unimplemented. Its controlling
+contract is
+[`new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
+The existing material-floor inventory remains unchanged; the environmental
+right is distinct, Class 9 continues to govern commons and future ecological
+capability, and credibly sentient non-human animals are Class 10 protected
+subjects rather than constitutional persons. Numerical ceilings, measurement,
+models, inventories, monitoring, facilities, staffing, transition, and
+empirical feasibility remain Book 2 work. Those delegated operations do not
+reopen the science/precaution/non-regression boundary, dual floor-and-ceiling
+continuity, separate Guardian and Advocate, direct animal protection,
+categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Scope and guardrails
 
@@ -580,11 +803,13 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
     | Object | Required fields |
     | --- | --- |
-    | Right/floor | holder, duty-bearer, minimum, accessibility, recipient-side access/receipt evidence, authorised writer, challenge route, no personal-outcome inference, breach, interim continuity, remedy, appeal, audit, temporal status |
+    | Material floor — existing inventory only | holder, duty-bearer, existing minimum and inventory ID, accessibility, medium-neutral recipient-side access/receipt evidence, authorised writer, challenge route, no personal-outcome inference, breach, interim continuity, remedy, appeal, audit, temporal status |
+    | Environmental right — distinct from the floor | every present person, protected condition and threatened/completed harm, direct public and ratified private reach, information, prior assessment and accessible participation, uncertainty and cumulative/distributional evidence, prevention and continuity, public reason, independent review, interim protection, correction, remedy, equality route, failure polarity, temporal status |
     | Liberty/power limit | protected person, prohibited act, direct public binding, public prevention/investigation/remedy duty for private interference, any explicit private binding, narrow exception test, evidence, independent reviewer, public reason, review or current-T0 non-temporal end condition, temporal status, remedy |
     | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, current-T0 non-temporal end condition, temporal status |
     | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, independent recipient, action duty, continuity/remedy path, temporal status |
-    | Commons/future condition | protected common, present duty, ceiling or non-destruction rule, evidence, standing for any present person and an independently checked public guardian, guardian authority/independence/evidence/removal controls, remedy, public accountability, temporal status |
+    | Commons/future condition — Class 9 | protected common and future capability, independent initiation/standing for every present person, qualified association, ordinary rights advocate and Future Conditions Guardian, ordinary-route judicial-interim-relief request without automatic stay, bounded automatic stay only for an evidence-supported Guardian objection or its predeclared alternate advocate acting in its place, versioned non-substitutable ceiling/minimum/resource budget, source/evidence/version/place/jurisdiction/time scope, scientific proposer/reviewer and democratic enactor, uncertainty/precaution/non-regression, avoidance/minimisation/restoration/nonfungibility, dual floor-and-ceiling continuity, immediate no-fault protection/public restoration plus strict causal inherently-hazardous and adjudicated contribution/control liability, one shared case/authorization/evidence/ground replay key across Guardian/alternate/successor/primary and substitute reviewers, final-resolution non-restart, materially-new-evidence or changed-authorization rule, predeclared alternate advocate and substitute reviewer, remedy, audit, failure polarity, temporal status |
+    | Non-human-animal protected subject — Class 10 | covered animal/taxon and sentience evidence, direct bodily/life/species-appropriate interest, controller and public duty, non-waivable welfare baseline for every controlled use, ordinary non-food/non-lethal/non-invasive/non-high-severity no-enhanced-test branch, lethal/invasive/high-severity enhanced-use trigger, strict alternative-sensitive rule for every controlled food-producing use in addition to the baseline, strict research 3Rs/replacement-first route and categorical unrelieved-severe/prolonged ban, categorical refusals and animal corridor core, purpose/necessity/alternatives/least-harm evidence where applicable, Animal Protection Advocate, Guardian conflict and independent adjudicator, rescue/continuity, record/privacy boundary, challenge, correction, remedy, audit, end condition, failure polarity, temporal status |
     | Consequential status or supported decision | status or decision effect, source, writer, permitted evidence, affected person's voice and preferences, required support, authorised reader or decider, scope, conflict rule, privacy, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
     | Collective status, authority, title, or consent | collective and right type, member or affected people, source, writer, evidence, jurisdiction, common-rights floor, consent or consultation trigger, dissent, exit, privacy, authorised reader or reviewer, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
   - **Done when:** every domain in the full-society ledger has complete applicable
@@ -600,18 +825,35 @@ Gate B; it does not claim Book 2 operations or feasibility.
     and due process.
   - Do not erase accountability through a right to disappear from the record.
 
-- [ ] **Define the social floor, liberty shell, and ecological ceiling.**
-  - Retain the existing floor as a compact core, then classify missing coverage:
-    food, water/sanitation, housing and land access, adequate utilities, material
-    security, health and care, learning and usable information, disability access,
-    mobility, communication, public space and voluntary social life.
+- [ ] **Preserve the material-floor inventory; implement the liberty shell,
+  environmental right, and ecological ceiling.**
+  - Keep the constitution's existing floor inventory unchanged. Do not add a
+    ninth environmental floor item, delete an existing item, or silently relabel
+    food, water/sanitation, housing/land access, utilities, material security,
+    health/care, learning/information, disability access, mobility,
+    communication, public space, or voluntary social life as a new floor. Map
+    each claimed gap explicitly to an existing floor and its delivery interface,
+    a distinct right or liberty, a public duty, protected free life, Book 2
+    operation, or an unresolved limit.
+  - Retain unconditional standing, medium-neutral recipient-side access/receipt
+    evidence, continuity, breach, and remedy for every existing floor item.
+    Ecological policy cannot select people for floor loss, and floor delivery
+    cannot erase an ecological ceiling.
   - Put privacy, bodily autonomy, movement, due process, association, expression,
-    conscience, family/intimate life, equal civic status, and procedural safeguards
-    in a power-limiting layer where appropriate, not necessarily as more delivery
-    predicates.
-  - Add commons, non-regression and intergenerational constraints: present rights
-    may not be delivered by exhausting air, water, climate, biodiversity, land,
-    infrastructure or other conditions future people need to exercise them.
+    conscience, family/intimate life, equal civic status, and procedural
+    safeguards in a power-limiting layer where appropriate rather than turning
+    them into delivery predicates.
+  - Implement every person's distinct right to clean, healthy, sustainable
+    environmental conditions, including information, prior assessment,
+    participation, public reasons, review, interim protection, correction, and
+    remedy. Keep unequal exposure connected to the equality route, never a
+    vulnerability or ecological-worth score.
+  - Implement Class 9 commons, versioned multidimensional ceilings, precaution,
+    non-regression, nonfungibility, restoration, and future ecological capability.
+    Where floor and ceiling cannot both be met immediately, preserve least-harm
+    human continuity, record every shortfall as failure, obtain alternatives,
+    repair harm, and use a source-bound transition; neither side is renamed
+    success.
 
 - [ ] **Establish substantive equality and anti-subordination across domains.**
   - Implement the open protected-ground architecture and direct, indirect,
@@ -1175,18 +1417,152 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Book 1 states invariant and failure behavior; Book 2 owns incident command,
     stockpiles, force/logistics, infrastructure restoration and actual capacity.
 
-- [ ] **Govern ecology, commons, non-human animals, and future conditions.**
-  - Define present duties, evidence and enforceable ceilings for climate, air, water,
-    soil, biodiversity, land, resource extraction, waste and shared infrastructure;
-    restoration, non-regression and liability; and cross-border/common governance.
-  - Give every present person standing and an independently checked public guardian
-    authority to protect future conditions without pretending to receive facts from
-    unborn people. Define the guardian's evidence, independence, removal, conflict,
-    challenge and remedy contracts.
-  - State minimum protections for non-human animals, including welfare, habitat,
-    permitted use and enforcement, without pretending that personhood is the only
-    possible basis for protection. Book 2 owns measurement, resource budgets,
-    transition and ecological feasibility.
+- [ ] **Implement the ratified environmental right, Class 9 commons, and
+  Class 10 non-human-animal protections.**
+  - Follow the author-ratified 2026-08-08 contract in
+    [`new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
+    Keep the existing material-floor inventory unchanged and create no omnibus
+    `environment`, `ecology`, `sustainable`, `animal`, `sentient`,
+    `balance`, or `worth` conclusion.
+  - Preserve three non-collapsed holders and effects: every person's independently
+    enforceable environmental right; Class 9 protected commons and future
+    ecological capability; and credibly sentient animals as direct Class 10
+    protected subjects without `person`, floor, ballot, property, contract, or
+    human-equality status.
+  - Implement the environmental right's public and material-control private reach;
+    clean air, safe water, healthy soil/food systems and hazardous-exposure
+    protection; information and uncertainty disclosure; prior cumulative,
+    distributional, cross-boundary and long-latency assessment; accessible
+    participation; reasons; retaliation protection; review, interim protection,
+    correction, continuity and remedy. Route unequal exposure through substantive
+    equality without creating a vulnerability or ecological-worth score.
+  - Give each Class 9 common a versioned, multidimensional ceiling, minimum
+    condition or resource budget bound to source/method version, protected
+    condition, place, territory, jurisdiction, population and temporal scope.
+    Preserve climate, water, air, soil, biodiversity, habitat, extraction and waste
+    as non-substitutable axes; no offset, payment or scalar pass may excuse a breach
+    or replace an irreplaceable, unique, sacred or functionally non-substitutable
+    system.
+  - Keep science and law distinct: independently reviewed science proposes or
+    authenticates evidence; democratic law enacts the operative ceiling and may
+    choose stronger protection; the Guardian advocates and challenges; an
+    independent court reviews legality. Implement proportionate precaution,
+    outcome-based non-regression, cumulative/supply-chain/no-jurisdiction-shopping
+    controls, public reasons, correction and challenge.
+  - Give independent commons/future-condition initiation routes to every present
+    person, a qualified association, the ordinary rights advocate, and the
+    collegial Future Conditions Guardian. No route claims an unborn person's
+    preferences or depends on proprietary injury. A present person, qualified
+    association or rights advocate may request judicial interim relief but does
+    not trigger the automatic stay.
+  - Formalise avoid → minimise at source → restore in place → tightly bounded
+    replaceable residual compensation, followed separately by human/collective
+    reparation. Record additionality, durability, functional/place relevance,
+    no double counting, monitoring, correction and repair where ecological
+    equivalence is claimed.
+  - Implement dual floor-and-ceiling continuity: neither floor denial nor ceiling
+    breach is success. If no present route satisfies both, preserve immediate
+    human continuity through the least-harm route, record both shortfalls, obtain
+    alternatives, repair harm, and use a source-bound transition. Budget choice,
+    delay, monopoly, artificial withholding or refusal to procure proves neither
+    physical nor ecological scarcity.
+  - Implement tiered ecological liability without making urgent protection wait:
+    immediate no-fault prevention, cessation, containment, animal/human continuity
+    and public restoration; strict restoration and reasonable-response-cost
+    liability for causally connected inherently hazardous activity; adjudicated
+    contribution/control otherwise; public continuity where a responsible actor
+    is unknown, insolvent or absent; and separate proof of culpability before any
+    punitive or criminal consequence.
+  - Create the collegial Future Conditions Guardian under the ratified divided,
+    anti-capture appointment contract, separate from regulator, scientist, court,
+    auditor and operator. Only its evidence-supported objection, or that of its
+    predeclared alternate advocate acting in its place, automatically pauses the
+    irreversible part through a fresh T3 window pending expedited independent
+    review, with essential-floor continuity.
+  - Bind one shared replay key across the Guardian, alternate, successor, primary
+    reviewer and substitute reviewer to the case, challenged authorization
+    version, evidence version and ground. A final resolution prevents restart on
+    that key; only materially new authenticated evidence or a materially changed
+    authorization may open another. Silence, vacancy, conflict or capture is never
+    approval: use the predeclared alternate advocate for the Guardian function and
+    a separate substitute reviewer for review. The Guardian has no policy veto,
+    final merits power, budget, programme or scientific-oracle status.
+  - Implement Class 10's sentience presumption and evidence-responsive extension,
+    direct bodily/life/species-appropriate interests, dependency-created welfare,
+    rescue, care, habitat, movement/social opportunity, humane handling and death,
+    and protection from abandonment, exploitative overwork, extreme confinement,
+    harmful breeding and avoidable invasive intervention. Never rank an animal by
+    owner, price, affection, recognition, productivity, rarity alone or a total
+    animal-worth score.
+  - Apply the non-waivable evidence-based welfare baseline to **every** controlled
+    use. Ordinary non-food/non-lethal/non-invasive/non-high-severity use needs no
+    enhanced serious-purpose test merely because it is a use. Apply the enhanced
+    purpose, necessity, feasible-alternatives, least-harm, care, prior-review and
+    source-bound-end test only to lethal, invasive or high-severity use. Food-
+    producing use receives the welfare baseline plus the separate strict rule
+    below.
+  - Apply the strict food rule to **every controlled use of a credibly sentient
+    animal to produce food**, not only slaughter or an already classified
+    high-severity use. It is lawful only where no safe, accessible, nutritionally
+    adequate, materially less-harmful alternative is reasonably available to the
+    affected people. Taste, habit, prestige, profit, advertising or price alone
+    is insufficient; transition may never withhold the human food floor.
+  - Apply the strict research/testing/education rule: serious health, safety or
+    ecological purpose; replacement, reduction and refinement with replacement
+    first; no scientifically valid non-animal/materially less-harmful alternative;
+    independent project review; minimum animals/least-harm design; pain relief,
+    humane endpoints, aftercare and public registration/results. Categorically
+    refuse every unrelieved severe or prolonged procedure; no claimed purpose,
+    prestige, curiosity or commercial benefit may override that ban.
+  - Formalise the remaining categorical refusals, including fighting, sexual use,
+    deliberate cruelty, punitive treatment, dispensable killing/severe suffering,
+    abandonment, extreme confinement, seriously harmful breeding, painful
+    purposeless mutilation, and cosmetic/marketing use. Put direct protected-
+    subject status and the severe-avoidable-suffering and dispensable-killing core
+    inside the unamendable democratic corridor.
+  - Cover companion/domestic, farmed/working, captive and wild animals without
+    ownership-form exceptions. Natural predation creates no offender and no
+    universal rescue duty. Prioritise human-caused or controlled pollution,
+    infrastructure, entanglement, habitat, capture, trade and killing harms.
+    Permit grave disease/danger/introduced-population control only after
+    authenticated risk, human-cause prevention and feasible nonlethal exclusion,
+    treatment, vaccination, relocation, fertility or habitat routes fail or would
+    cause greater grave harm; require the least-painful reliable method, review,
+    reassessment, repair and fresh T3.
+  - Create the separate Animal Protection Advocate with initiation, evidence,
+    inspection, rescue/cessation and remedy powers but no ownership, custody,
+    prosecution, permit, budget, programme, adjudication or veto. When Guardian
+    and Advocate positions conflict, require an independent adjudicated result
+    keeping human right/floor, Class 9, Class 10, collective rights, alternatives,
+    uncertainty, reversibility and continuity separate and applying categorical
+    refusals first.
+  - Give each ecological and animal finding an authorised source/writer, exact
+    version/place/jurisdiction/time scope, independent reader, privacy boundary,
+    reasons, challenge, correction, carry, end, alternate route, audit, continuity,
+    remedy and failure polarity. A missing record cannot block urgent protection,
+    but FALSE remains non-derivability rather than proof of safety; Nibli consumes
+    only authenticated bounded findings and never measures, authenticates,
+    classifies, advances a clock or operates an institution.
+  - Give every permit, ceiling, Guardian/alternate automatic stay, judicial
+    interim-relief order, restoration order, research approval, disease-control
+    action and lethal/high-severity authority its own source-bound temporal
+    contract. Custody T3 cannot be reused, reviewer silence cannot approve, and
+    correction cannot silently extend expired harmful authority.
+  - **Book 2 handoff:** numerical ceilings, budgets, measurements, models,
+    inventories, uncertainty methods, monitoring, laboratories, restoration,
+    husbandry, veterinary/rescue/shelter/inspection capacity, food/research/
+    worker/community transition, cross-border coordination, staffing, costs and
+    empirical feasibility. Book 1 must derive the legal interface without claiming
+    those operations exist.
+  - **Done when:** contract cards, pins, counterfactuals and reader prose cover
+    ordinary compliance and breach; independent environmental-right and commons
+    claims; non-substitutable ceilings; precaution/non-regression; floor/ceiling
+    collision; Guardian/alternate automatic stay, ordinary-route judicial interim
+    relief, shared replay, substitute review and no veto; tiered liability;
+    ordinary controlled use; enhanced lethal/invasive/high-severity use; strict
+    food and research routes; categorical refusals; domestic/farmed/captive/
+    wild cases; Guardian/Advocate conflict; rescue/restoration/remedy; corridor
+    refusal; record mismatch/withholding/correction; and fresh temporal expiry.
 
 - [ ] **Protect knowledge, communication, culture, and the free social field.**
   - Cover learning and information access; expression, conscience, religion and
