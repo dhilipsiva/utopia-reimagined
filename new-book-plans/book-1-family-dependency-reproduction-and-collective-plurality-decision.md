@@ -553,9 +553,21 @@ This is not a blanket veto, and consultation is not satisfied by notice after
 the decision is fixed.
 
 Collective land and resource governance remains bounded by the universal floor,
-the rights of members and lawful nonmember residents, protected commons,
-interregional obligations, and the separately ratified scarcity contract.
-Those limits cannot be used as a pretext for dispossession or assimilation.
+the rights of members and lawful nonmember residents, interregional obligations,
+the separately ratified scarcity contract, and the later ecological, commons,
+and direct animal-protection baselines. Collective consent is necessary for the
+existential harms listed above, but it cannot authorize breach of a binding
+ecological ceiling or waive direct protection owed to a sentient non-human
+animal.
+
+Conversely, ecological or animal-protection law cannot be used as a pretext for
+dispossession, assimilation, forced cultural abandonment, or exclusion from
+evidence and remedy. Every human-controlled animal use remains subject to the
+non-waivable welfare baseline. An Indigenous, cultural, or religious lethal,
+invasive, or high-severity use receives neither a blanket exemption nor automatic
+prohibition: its purpose, necessity, alternatives, and least-harm evidence must
+be assessed under the separate animal-protection contract with equality,
+consultation, and independent review.
 
 ## 15. Public authority, federal allocation, and remedies
 
@@ -614,6 +626,11 @@ evidence contracts, burden and review rules, failure polarity, continuity,
 remedies, federal allocation, and structural refusals selected here. It must
 describe normal, failure, challenge, correction, restoration, and recovery
 interfaces without pretending to operate them.
+
+Land, title, culture, and consultation operations must interoperate with Book
+2's separate ecological, commons, and animal-protection handoff. Neither handoff
+may redefine the other's legal holders, consent boundary, ceiling, direct animal
+protection, or remedy.
 
 Book 2 owns childcare, education, family proceeding, adoption, reproductive,
 fertility, birth, abortion, disability-support, home and community support,
@@ -895,6 +912,13 @@ functional intestacy, democratically permissible assisted dying, exact
 collective-consent boundary, and the relationship between collective autonomy
 and federal review are author policy choices. They must not be presented as
 universally compelled by the sources.
+
+This ruling did not itself settle the environmental right, ecological ceilings,
+independent commons, future-generation representation, or non-human-animal
+protection. The separate author ruling of 2026-08-08 now settles that distinct
+planning scope without changing this decision's historical rationale or formal
+status. See
+[`book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
 
 This ruling does not select the numeric adulthood age, early-authority metric,
 family-registration forms, support amounts, parentage presumptions, adoption

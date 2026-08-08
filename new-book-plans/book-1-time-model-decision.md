@@ -134,6 +134,17 @@ availability. A Book 1 sentence must say whether its temporal effect is
 formally modelled, requires a fresh evaluation, or is externally assured; it
 may not imply that an operational promise is a present derivation.
 
+The ecological, future-generation, commons, and non-human-animal ruling does not
+extend the implemented custody path by analogy. Every time-dependent ecological
+or animal-protection permission, licence, ceiling review, restoration duty,
+temporary intervention, office act, or remedy requires its own source-bound T3
+contract and adversarial assurance. Custody T3 cannot be reused. Missing,
+disputed, withheld, stale, or frozen temporal evidence must not create or extend
+permission to breach a ceiling or harm a protected animal; review silence is
+never approval and needs a predeclared alternate route. Conversely, absence of a
+record does not by itself prove harm, compliance, restoration, or expiry. Book 2
+still owns clocks, measurement, publication, scheduling, and outside liveness.
+
 The rejected T0 alternative would retain only non-temporal end conditions. That
 is coherent, but it leaves the Public institutions and Emergency/resilience rows
 incomplete unless the author explicitly narrows their ratified scope. It is not
@@ -251,6 +262,7 @@ records what each family must continue to prove and where its proof stops.
 
 | Area | Attack and required control |
 | --- | --- |
+| Ecology, commons, and animals | Test forged, stale, withheld, corrected, and frozen permit, ceiling-review, restoration, temporary-power, and animal-use records; repeated authorisation; reviewer capture or silence; and alternate routes. Keep the Future Conditions Guardian and Animal Protection Advocate separate. Missing temporal evidence must not extend harmful authority, while record absence alone proves neither breach nor compliance. Each rule family needs fresh T3; custody T3 is not a template proof. |
 | Baseline | Prove tense wrappers, `year`, `earlier`, and an opaque stated term create neither the implemented chronology nor release on their own. |
 | Carry and current lineage | Test honest carry, omitted carry, forged raw carry, competing or disjoint terminal lineages, cross-record disappearance/replay, forgiveness, and same-record reciprocal voids. Only the witnessed canonical terminal successor may give adverse carry legal effect in a fresh evaluation. Omission and forgery become named, challengeable defects; disappearance remains a conservative report because lawful protected-record disposal is not represented. |
 | Release | Test forged `free`, withheld current authority, and valid recorded release. Preserve personhood, travel, floor debt, and the disclosed delivery gap; authority lapse must not manufacture `free`. |

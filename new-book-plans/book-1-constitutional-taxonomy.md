@@ -28,6 +28,7 @@ class does not add that rule to the ratified coverage map.
 people:       standing → floor → liberty → fair process
 public life:  democracy → institutions → records
 shared world: jurisdiction → commons
+animal life:  individual welfare (Class 10); species/habitat remain commons
 outside:      operations (Book 2)
 ```
 
@@ -35,6 +36,9 @@ This is functional symmetry, not a claim that the named classes are derived,
 exhaustive, or permanent. Different classes have different grammars because
 provision, coercion, democratic choice, and evidence are not moral or
 mathematical opposites.
+Class numbers are stable labels for those grammars, never priority, rank, worth,
+or a claim that the current list is timeless. The 2026-08-08 ecology and animal
+ruling adds Class 10 through this document's change-control route.
 
 ## Ratified design decisions
 
@@ -50,9 +54,10 @@ return later as ad hoc “new rights” or “new branches.”
 | Who do liberty rules bind? | **Ratified:** bind public power directly; require public institutions to prevent, investigate, and remedy private interference. Unexpressed private wrongdoing reaches justice machinery, not a floor consequence against another person. The equality ruling directly binds its named public-facing domains without a dominance test. The 2026-08-07 economic ruling separately names general labour, substantive-contract, and public-service consumer duties, plus additional function-specific public-like duties after an independent public-scale-power finding tied to a public-facing, essential, delegated, gatekeeping, or systemically controlling function, using essentiality, dominance, network effects, dependency, lock-in, information asymmetry, or lack of meaningful exit as evidence. Intimate dependency alone routes coercion through justice/public protection rather than public-like transparency duties. Neither express family creates a general horizontal effect, and the public floor-continuity duty remains non-delegable. | Separate cards by direct legal effect for every equality duty, labour/contract/consumer limit, public-scale-power trigger, calibrated private duty, public continuity route, and remedy; any additional private reach still requires an express ruling. |
 | Who turns a record finding into a remedy? | Class 7 supplies evidence; Class 6 supplies an independent reader with an action duty; Class 4 supplies the contest and repair route. A referral alone is not accountability. | The particular recipient, remedy, and continuity rule for each failure. |
 | Is emergency a new branch or right? | Keep emergency as an overlay across all named classes. It may narrowly alter the exercise of a public power, chiefly in the liberty, fair-process, democratic, institutional, and record classes, but never lower standing, floors, the common baseline across places, or non-destruction. A defence/security mandate, if separately brought into scope, is an ordinary public-institution power—not a standing emergency exception—and any exceptional exercise needs separate liberty/process limits and this overlay. | Its trigger, authorised bodies, and formal temporal controls. |
-| Are economy, property, locality, migration, and external relations extra classes? | No. Split each by direct legal effect across democratic policy, public duty, liberty, standing, fair process, records, jurisdiction, and commons. The ratified economic settlement permits plural ownership and above-floor policy inside a non-delegable floor, labour, equality, conditional-property, substantive-contract, protected-private-sphere, private-power, scarcity, and no-score boundary. Property is conditional; price and lawful wealth may mediate ordinary above-floor transfers, but `reward`, recognition, merit, a qualifying threshold, personal scores, and raw work/contribution facts cannot directly qualify property access. An adjudicated wage/equity claim or purpose-bound grant, prize, or supplement uses a distinct legal relation. Contribution may calculate a separately enacted above-floor insurance supplement but cannot gate the floor or read `reward`. Both any present person and an independently checked public guardian have standing for commons/future-condition claims. | Separate cards for each economic effect and the guardian controls; ecological ceilings remain open; rates, prices, quantities, operations, and empirical feasibility remain Book 2. |
+| Are economy, property, locality, migration, and external relations extra classes? | No. Split each by direct legal effect across democratic policy, public duty, liberty, standing, fair process, records, jurisdiction, and commons. The ratified economic settlement permits plural ownership and above-floor policy inside a non-delegable floor, labour, equality, conditional-property, substantive-contract, protected-private-sphere, private-power, scarcity, and no-score boundary. Property is conditional; price and lawful wealth may mediate ordinary above-floor transfers, but `reward`, recognition, merit, a qualifying threshold, personal scores, and raw work/contribution facts cannot directly qualify property access. An adjudicated wage/equity claim or purpose-bound grant, prize, or supplement uses a distinct legal relation. Contribution may calculate a separately enacted above-floor insurance supplement but cannot gate the floor or read `reward`. Any present person, qualified association, rights advocate, and the independently checked Future Conditions Guardian each has an independent initiation route for commons/future-condition claims; no route depends on another claimant being present. | Separate cards for each economic effect, ecological ceiling, guardian power, and remedy. Physical scarcity manages a present shortfall and never permits creating one by violating Class 9. Rates, prices, quantities, operations, measurements, and empirical feasibility remain Book 2. |
 | Are life course, family, care, reproduction, ageing, and death extra classes? | No. Split their direct effects across Class 1 status and legal capacity; Class 2 public care and continuity; Class 3 bodily, reproductive, domestic, family, treatment, and association liberty; Class 4 child, parentage, supported-decision, protection, succession, and end-of-life proceedings; Class 6 public duties; and Class 7 consequential records. A family, caregiver, supporter, age, disability, diagnosis, or residence label cannot stand in for consent, care, capacity, best interests, parentage, adulthood, responsibility, or authority. | Separate cards for each status, liberty, private duty, public continuity route, proceeding, finding, record, and remedy; one common-tier-law age remains to be chosen, and operations remain Book 2. |
 | Are collective and plurality rights an extra class? | No. Split universal individual status and membership effects into Class 1; cultural, linguistic, religious, association, property, and anti-assimilation liberties into Class 3; internal-dissent, customary-law, consultation, consent, and remedy proceedings into Class 4; internal collective choice and the one-general-ballot boundary into Class 5; institutional mandates into Class 6; membership/title/decision records into Class 7; territorially grounded self-government into Class 8; and shared-resource non-destruction into Class 9. Neither `family` nor a new omnibus `collective` predicate may carry these effects. | Separate cards for each direct effect, including historical/territorial basis, individual-rights review, consent-versus-consultation boundary, nonmember services, title continuity, finite decision semantics, and Book 2 administration. |
+| Are ecology, future generations, commons, and non-human animals extra classes? | Ecology and future-condition effects split across Class 1 equality where environmental burdens subordinate people, Class 3 protection from harmful interference, Class 4 challenge and repair, Class 5 compatible democratic policy, Class 6 public and guardian duties, Class 7 scientific/decision records, Class 8 federal and cross-boundary competence, and Class 9 ecological non-destruction. The clean, healthy, and sustainable-environment right is not a material-floor predicate or a guaranteed personal outcome. Future generations and ecosystems are protected interests and conditions, not human `person` or Class-1 holders. Individual sentient-animal welfare has a distinct direct legal effect and is therefore new Class 10; species, populations, and habitat remain Class 9. Liability also splits by direct effect: prevention and cessation do not require fault; an inherently hazardous activity bears strict containment, restoration, and reasonable response-cost liability after causal connection is established; other liability requires adjudicated causal contribution or control; and personal punishment requires separately adjudicated individual culpability and due process. | Separate cards for each environmental-right effect, ecological condition and ceiling, quantitative-standard interface, precaution/non-regression decision, guardian power, participation route, prevention/cessation duty, strict-hazard and contribution/control liability tier, individualized-punishment route, restoration, animal category, welfare limit, permitted lethal/invasive/high-severity use, advocate, inspection, rescue, and remedy. Measurements, models, budgets, husbandry, veterinary operations, staffing, transition, and feasibility remain Book 2. |
 | What counts as delivery evidence? | **Ratified:** `teaches` + `hears` remains a narrow legacy demonstration only. Future delivery uses accessibility-neutral, recipient-side access or receipt evidence with a named authorised writer and challenge route; it must not infer learning, health, belief, or another compelled personal state. No current route is a qualifying general model. | The names, writer authority, challenge route, and evidence of each future delivery family. |
 | Are accessibility and time classes? | No. Accessibility is a cross-cutting equality condition. The staged T3 path is formal for witnessed record replacement, typed transitive event/record paths, and canonical-current case-bound Court custody. It does not supply metric duration, outside-clock liveness, or temporal limits for other powers. Missing or disputed time evidence may not create or extend restrictive public power or become a personal-time score. A continuity rule may preserve only claimant-supporting status that its independent evidence establishes; the current standing route cannot cure a missing predecessor witness. | Each class's temporal status and any additional power-specific T3 contract. |
 | What stays outside Book 1? | Operations—budgets, staffing, logistics, databases, devices, clocks, and service workflows—remain Book 2. | The evidence and costed operating case that Book 2 must supply. |
@@ -68,6 +73,11 @@ everyone counts → everyone gets a usable minimum → power has limits
                  → public bodies have bounded jobs → records can be challenged
                  → places share a common floor → no generation may exhaust it
 ```
+Class 10 adds one plain clause to that reader map: a sentient or credibly
+sentient animal is a direct protected subject, and human control or use may not
+impose severe avoidable suffering or dispensable killing. That is direct animal
+protection, not human personhood, a human material floor, or a substitute for
+Class-9 species and habitat protection.
 
 If a future class cannot be explained in that sequence, it is probably an
 implementation detail, a cross-cutting constraint, or an unseparated bundle.
@@ -96,6 +106,9 @@ inventing a catch-all class:
 | A public duty to keep the floor funded | 6 + 5 | The constitutional duty binds public power; democratic policy chooses compatible means. |
 | A disaster declaration | Overlay across all named classes | It changes no person's standing and cannot suspend floors, common protection across places, or non-destruction. |
 | A forest or water system threatened by current voters | 9 + 5 | The common condition constrains policy; voters choose only within that limit. |
+| A person claims clean, healthy, and sustainable environmental conditions | Split across 1 + 3 + 4 + 6 + 7 + 8 + 9 as applicable; never 2 merely because the right matters | Equality, freedom from harmful interference, challenge/remedy, public duty/guardian, evidence, jurisdiction, and the protected common are distinct effects. The rule must not certify a delivered environment or personal outcome. |
+| A Future Conditions Guardian objects to a serious irreversible risk | 6 + 7 + 4 + 9 | The guardian receives independently sourced evidence, challenge and appeal powers, and may trigger an expedited independent hold; it neither supplies the science nor exercises a final policy veto. |
+| One confined animal suffers while its species is ecologically secure | 10, plus 4 + 6 + 7 for enforcement | Class 10 protects the individual animal; Class 9 cannot substitute merely because the population or habitat is secure. Conversely, individual care cannot substitute for species and habitat protection. |
 
 These examples are classification decisions, not formal rules. They must not be
 mistaken for proof that the current constitution provides the stated result.
@@ -112,7 +125,8 @@ mistaken for proof that the current constitution provides the stated result.
 | 6. Public institutions and delegated duty | Which public function may act, and under what separation? | Include legislative, electoral/deliberative, provision, justice, appeal, constitutional review, audit, ombuds, local, and external-public mandates; classify any separately scoped defence/security mandate here, never as a standing emergency exception. Exclude staffing, salaries, procurement, and workflow design. | Democratic source; mandate; trigger; scope; conflict/recusal rule; non-delegable limit; review; appeal; end condition; temporal status. |
 | 7. Records, evidence, privacy, and accountability | What may count in a public decision, and how is power made contestable? | Include admissibility, writer authority, challenge, correction, privacy, audit, and assurance. Exclude databases, cryptography, biometrics, and assessment tools. | Basis; writer; visibility/privacy; challenge; correction/deletion control; assurance; independent recipient; action duty; continuity/remedy path; temporal status. |
 | 8. Jurisdiction, locality, and subsidiarity | How are public powers and duties divided across place without lowering common protection? | Include local authority, subsidiarity, inter-community and cross-jurisdictional duty, and portability duties. Exclude individual movement, plurality, migration procedure, transfer systems, border administration, and service logistics. | Common baseline; local mandate; non-discrimination; portability duty; equalisation and cross-jurisdictional duty; dispute forum; review. |
-| 9. Commons and future conditions | What may no contract, owner, or present majority exhaust or trade away? | Include non-regression, public maintenance duty, shared-resource limits, and intergenerational non-destruction. Exclude property/work policy, tax rates, budgets, allocation models, and production plans. | Protected condition; duty-bearer; non-destruction rule; evidence; present-person and/or independently checked public-guardian standing; remedy; public accountability. |
+| 9. Commons and future conditions | What may no contract, owner, or present majority exhaust or trade away? | Include the qualitative ecological ceiling, non-regression, precaution under serious or irreversible uncertainty, cumulative effects, restoration, shared-resource limits, and intergenerational non-destruction. Keep the distinct human environmental right on its own direct-effect cards. Exclude individual-animal welfare, property/work policy, tax rates, budgets, metrics, models, allocation systems, and production plans. | Protected condition; duty-bearer; qualitative non-destruction rule; source and version of each quantitative standard; evidence, uncertainty, and cumulative-effect rule; independent initiation by any present person, qualified association, rights advocate, or the checked Guardian; judicial interim relief for non-Guardian initiators; automatic pause only by the Guardian or its predeclared alternate acting in its place; one case-bound stay/replay key shared across Guardian, alternate, successor, and reviewers; independent substitute reviewer; participation; non-regression; no-fault prevention and cessation; strict inherently-hazardous and adjudicated contribution/control liability cross-references; individualized-punishment cross-reference; restoration; review; remedy; public accountability. |
+| 10. Non-human-animal welfare and integrity | What human-caused or human-controllable suffering, severe deprivation, or killing may be imposed on an individual non-human animal? | Include sentience or credible sentience under uncertainty; custody, care, handling, use, transport, confinement, experimentation, and killing; anti-cruelty and non-waivable welfare. Exclude human personhood, human floors, species/population/habitat protection (Class 9), husbandry systems, veterinary operations, staffing, and inspection logistics. | Animal/category; sentience and uncertainty basis; custodian, user, and public duty; welfare minimum; prohibited harm; lawful-use boundary; strict alternative-sensitive test for every controlled food-production use, including nonlethal or non-severe production; research replacement, reduction, and refinement plus a categorical ban on unrelieved severe or prolonged suffering; enhanced purpose, necessity, proportionality, minimisation, and review for every lethal, invasive, or high-severity use; authorised writer/inspector; separate Animal Protection Advocate; rescue/continuity; remedy; audit; temporal status. |
 
 **Temporal-status contract:** whenever a class proposes a deadline, cadence,
 expiry, term, retention period, or “temporary” exception, its contract must name
@@ -157,7 +171,8 @@ state.
 | Locality, mobility, and external relations | **Split required** | 8 handles jurisdiction, locality, and cross-jurisdictional duty; 3 movement/association; 1 newcomer standing; 4 migration procedure; 6 external public authority. |
 | Collective and plurality rights | **Split required** | 1 preserves universal individual status and governs consequential membership effects; 3 protects culture, language, religion, association, anti-assimilation, and conditional collective property/title; 4 governs membership challenge, internal dissent, customary-law conflict, consultation, consent, restitution, and remedy; 5 governs authenticated internal collective decisions while preserving one equal general-government ballot; 6 assigns collective and reviewing institutional mandates; 7 controls membership, basis, title, consultation, and decision records; 8 covers territorially grounded self-government and common services for nonmembers; 9 covers shared-resource and irreversible-harm limits where applicable. |
 | Emergency and resilience | **Overlay, not a separate class** | It affects liberty, fair process, democracy, institutions, and records, but remains constrained by standing, floors, the common baseline across places, and non-destruction. |
-| Ecology and future people | 9 | 5 chooses compatible policy, not the right to exhaust the common condition. |
+| Ecology, future generations, and commons | **Split required** | 1 covers unequal environmental burdens; 3 harmful interference; 4 challenge, continuity, and repair; 5 compatible democratic policy; 6 public and guardian duties; 7 scientific and decision records; 8 federal, cross-boundary, and portability competence; 9 protects the common condition. The environmental right is neither Class 2 nor a guaranteed outcome; future generations and ecosystems are not human `person` holders. |
+| Non-human animals | **10 for individual welfare; 9 for species/populations/habitat** | Class 10 governs direct welfare, use, custody, inspection, rescue, and remedy for an individual sentient or credibly sentient animal. Class 9 governs ecological populations and habitat. Neither class substitutes for the other or creates human personhood, a human floor, or political standing. |
 
 **Current-kernel warning:** Article 1's current floor-name grouping is an existing
 anti-sanction firewall, not an adopted social taxonomy. In a future redesign,
@@ -248,6 +263,37 @@ structural refusal instead limits what *form of rule* may exist across subjects.
     identity, membership, title, institutional action, or generic tally
     semantics. Collective decisions use the completed finite-decision audit.
 
+13. **Environmental evidence is bounded input, not an oracle or veto:** each
+    quantitative standard names its lawful source, version, evidence basis,
+    uncertainty treatment, cumulative-effects rule, writer, challenge, and
+    correction path. Any present person, qualified association, rights advocate,
+    or the Future Conditions Guardian may initiate independently. A present
+    person, qualified association, or rights advocate may request judicial interim
+    relief, but only the collegial Guardian—or its predeclared alternate advocate
+    acting in its place—may trigger the automatic constitutional pause. One
+    case-bound stay/replay key binds the exact authorization version, ground, and
+    reviewed evidence set across the Guardian, alternate, successor, and
+    reviewers. None may restart an unchanged key; only materially new evidence or
+    a materially changed authorization creates a new key. A separate independent
+    substitute reviewer decides when the ordinary reviewer is unavailable,
+    conflicted, or captured. The Guardian cannot supply its own
+    science, make silence approval, or exercise a final policy veto. Nibli may
+    consume authenticated findings but does not measure or model nature.
+14. **Commons and individual-animal protection do not substitute:** Class 9
+    protects species, populations, habitat, and shared future conditions; Class
+    10 protects individual sentient or credibly sentient animals against direct
+    human-caused or controllable harm. Neither creates human personhood, a human
+    floor, fetal standing, a pregnancy override, or a duty to end natural suffering.
+15. **Ecological liability is tiered, not one guilt predicate:** prevention and
+    cessation attach without fault through the relevant Class 3, 6, and 9 cards.
+    After causal connection is established, an inherently hazardous activity
+    carries strict containment, restoration, and reasonable response-cost
+    liability; otherwise civil responsibility requires adjudicated causal
+    contribution or control. Those liability and repair effects use Class 4 and
+    their evidence uses Class 7. Personal punishment requires a separate Class 4
+    justice card proving individual culpability with full due process; status,
+    employment, investment, residence, ownership form, or group membership alone
+    proves neither liability nor guilt.
 
 ## Book 1 / Book 2 discriminator
 
@@ -262,6 +308,8 @@ does it describe the machinery that produces an outcome?**
 | “No public record may determine standing without a challenge and correction path.” | Storage architecture, cryptography, identity recovery, devices, and security practice. |
 | “Majorities choose only among rights-compatible policies.” | Ballot design, tally systems, campaign regulation, and deliberation logistics. |
 
+| "A protected ecological condition may not regress, and serious irreversible uncertainty triggers precaution, public reasons, challenge, and restoration duties." | Metrics, models, inventories, carbon or biodiversity budgets, monitoring systems, restoration operations, staffing, and empirical feasibility. |
+| "A human custodian or user owes an individual sentient animal non-waivable welfare, strict use limits, independent advocacy, rescue, and remedy." | Husbandry methods, veterinary protocols, inspection schedules, facilities, rescue capacity, staffing, costs, and transition. |
 ## Classification test
 
 For each proposal, consider every relevant question below. The numbers are
@@ -280,8 +328,10 @@ labels, not a priority order:
 8. Does it divide public authority across place without lowering the common
    guarantee? → **8**.
 9. Does it preserve a shared condition against present extraction? → **9**.
-10. Does it answer how much, when, where, with whom, or using what system? →
-    **Book 2**, unless it first supplies a separate constitutional interface.
+10. Does it directly protect an individual non-human animal from human-caused
+    or human-controllable harm? → **10**.
+Outside. Does it answer how much, when, where, with whom, or using what system?
+    → **Book 2**, unless it first supplies a separate constitutional interface.
 
 Choose the class of the rule's **direct legal effect**, not the earliest numbered
 class that happens to fit. Mark secondary dependencies rather than collapsing
@@ -305,6 +355,22 @@ reviewer from permanently withholding the route through redundant escalation. Th
 makes the taxonomy a control on dangerous edges, not a prettier table of topics.
 
 ## Ratification limits
+An ecological card additionally records the protected condition, qualitative
+ceiling, source and version of each quantitative standard, science and uncertainty
+rule, cumulative effects, non-regression baseline, four independent initiation
+routes, judicial interim relief for the non-Guardian routes, Guardian-or-alternate-
+only automatic pause, shared case-bound stay/replay key across the Guardian,
+alternate, successor, and reviewers, independent substitute reviewer, guardian
+power and no-veto limit, participation, no-fault
+prevention/cessation, inherently-hazardous strict containment/restoration/
+reasonable-cost tier, other causal-contribution/control tier, individualized-
+punishment boundary, and Class-9/Class-4 remedies. An animal card additionally
+records category and sentience basis, welfare minimum, prohibited harm, the
+alternative-sensitive rule for every controlled food-production use, the
+unrelieved severe-or-prolonged research ceiling, the lethal/invasive/high-
+severity enhanced-use tier, custodian/user/public duties, authorised inspector,
+independent advocate, rescue, remedy, temporal status, and its Class-9 habitat
+cross-reference.
 
 This ratification preserves these conclusions:
 
@@ -313,12 +379,16 @@ This ratification preserves these conclusions:
 - Records are constitutional controls, not neutral technical plumbing.
 - Emergency is an overlay, not an exception that swallows the constitution.
 - Democratic choice is real, but bounded by standing, floors, liberties, fair
-  process, and commons.
+  process, commons, direct non-human-animal protected-subject status, and the
+  prohibitions on severe avoidable animal suffering and dispensable killing.
 - Economic pluralism protects democratic choice among lawful forms and harmless
   voluntary private life without making price, property, contract, enterprise,
   contribution, insurance, or scarcity an escape from the floor or a score.
   Its provisions are not all unamendable: only standing, equality, floor, due-
   process, core-liberty, and protected-commons content inherits the corridor.
+  The later animal ruling separately adds its direct protected-subject status,
+  severe-avoidable-suffering prohibition, and dispensable-killing prohibition;
+  detailed welfare standards remain revisable inside that expanded core.
 - Absence from a roster or document may not block immediate floor access; status
   correction follows separately.
 - The current Article 1 firewall is not reclassified, rewired, or weakened until
@@ -335,6 +405,18 @@ This ratification preserves these conclusions:
   Book 2’s operations or weakening the no-score and power-scoped T3 guardrails.
 
 ## Ratification record
+- The environmental right is a distinct legal protection, not a material floor
+  predicate, a guaranteed ecological outcome, or proof that a condition arrived.
+- Future generations and ecosystems are protected interests and conditions, not
+  human `person` holders; the guardian has challenge powers, never final veto.
+- Class 9 ecological integrity and Class 10 individual-animal welfare are both
+  required where both effects arise; neither may be used to erase the other.
+- Bounded animal use remains democratically available only inside the non-waivable
+  welfare, alternative-sensitive rule for every controlled food-production use,
+  categorical refusal of unrelieved severe or prolonged research suffering,
+  lethal/invasive/high-severity enhanced-use, ecological, equality, and review
+  boundaries.
+- Class numbers are stable labels, not ranks, priority, authority, or a timeless count.
 
 - [x] **Horizontal reach ratified (2026-08-03; express private families
   added 2026-08-07).** Public power is directly bound; public institutions must
@@ -353,8 +435,11 @@ This ratification preserves these conclusions:
   is a conditional liberty bounded by floors and commons. Merit, recognition,
   contribution, a qualifying threshold, or a personal score cannot be an
   allocation or access gate for property, commons, material security, standing,
-  authority, or political voice. Any present person and an independently checked
-  public guardian have standing for commons/future-condition claims.
+  authority, or political voice. At that ruling, any present person and an
+  independently checked public guardian were named as standing routes. The
+  2026-08-08 ecology ruling makes those routes independent and adds qualified
+  associations and the rights advocate; no claimant's presence depends on
+  another's.
 - [x] **Economic property refinement ratified (2026-08-07).** This expressly
   narrows the earlier property's allocation-key sentence without rewriting its
   historical rationale. Price and lawfully held wealth may mediate ordinary
@@ -373,17 +458,23 @@ This ratification preserves these conclusions:
   claim and must be split into direct-effect cards.
 - [x] **Family, dependency, reproduction, and collective/plurality baselines
   ratified (2026-08-08).** These are author policy choices mapped into the
-  existing nine functional classes by direct legal effect. They add no class,
+  then-existing functional classes by direct legal effect. That ruling added no
   omnibus `family` or `collective` predicate, age number, status finding,
   institution, rule, pin, chapter, programme, or release. Implementation must
   replace `mature`, retire unary `family` as a placement/liberty proxy, split
   `home`, replace absence-based kinship independence with case-bound conflict
   findings, preserve individual rights inside collective autonomy, and complete
   every consequential-status and finite-decision contract.
-- [x] **Functional classes ratified (2026-08-03).** This adopts the named
-  functional classes, economy/locality/external splits, emergency overlay,
-  record-to-remedy classification, and accessibility, T3, and structural walls
-  as cross-cutting constraints. It does not formalise any new rule family.
+- [x] **Ecological, future-generation, commons, and non-human-animal baselines
+  ratified (2026-08-08).** The environmental right remains distinct from the
+  material floor; ecological and future-condition effects map across existing
+  classes, while individual-animal welfare adds direct-effect Class 10. The
+  settlement is author policy and remains unimplemented.
+- [x] **Functional classes ratified (2026-08-03; Class 10 added 2026-08-08).**
+  This adopts the named functional classes, economy/locality/external splits,
+  emergency overlay, record-to-remedy classification, and accessibility, T3,
+  ecology/animal separation, and structural walls as cross-cutting constraints.
+  It does not formalise any new rule family.
 
 ### Change control
 

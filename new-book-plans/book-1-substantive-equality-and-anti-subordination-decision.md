@@ -151,6 +151,23 @@ support debt on adult kin. Every form remains fully subject to equality,
 standing, due process, free exit, and remedy; no family, cultural, or religious
 label supplies an exception.
 
+The separate ecological, future-generation, commons, and non-human-animal
+ruling creates a distinct individual environmental right, independent commons
+and ceiling duties, and direct sentience-based protection for non-human animals
+as Class 10 protected subjects. The individual environmental right is not a
+material-floor item, and non-human animals do not acquire human standing or
+equality status. This equality ruling nevertheless governs discriminatory
+exposure and displacement and unequal access to information, participation,
+protection, challenge, and remedy for people.
+
+Protected voluntary belief, culture, association, and private choice is neither
+proof of ecological or animal-protection harm nor an exemption from evidenced
+harm. A rule affecting people remains subject to this decision's distinction,
+burden, accessibility, and remedy tests. A serious-purpose animal-use claim may
+not be granted or refused solely because a purpose is associated with a
+protected group, and no cultural, religious, occupational, or economic label
+waives the separate necessity and least-harm requirements.
+
 A mission-linked status requirement is permissible only for a genuinely
 expressive role where that characteristic is essential to performing the role.
 The exception is role-specific. It does not extend to general employment,
@@ -280,6 +297,13 @@ re-identification, permit people to inspect and correct person-level data where
 such data lawfully exists, and publish methods, uncertainty, exclusions, and
 known undercount without exposing individuals. Non-response or refusal to join a
 diagnostic dataset cannot reduce any constitutional right.
+
+Ecological, commons, and animal-protection evidence associated with a person or
+community retains this data wall, including purpose limitation, minimisation,
+privacy, correction, challenge, and anti-retaliation. A disparity in exposure
+or enforcement may open an equality audit; it may not become a reusable
+identity, risk, worth, floor, sanction, or eligibility score. Evidence about a
+protected animal remains governed by the separate Class 10 contract.
 
 Statistical collection, linkage, calibration, privacy technology, sampling,
 thresholds, and empirical evaluation belong to Book 2. Nibli may reason from an
@@ -575,6 +599,13 @@ family, dependency, reproduction, and collective-plurality decision of
 2026-08-08 now settle those distinct planning scopes without changing this
 ruling's historical rationale or formal status. See
 [`book-1-family-dependency-reproduction-and-collective-plurality-decision.md`](book-1-family-dependency-reproduction-and-collective-plurality-decision.md).
+
+This equality ruling also did not itself decide the environmental right,
+ecological ceilings, independent commons, future-generation representation, or
+non-human-animal protection. The separate author ruling of 2026-08-08 now
+settles that distinct planning scope without changing this ruling's historical
+rationale or formal status. See
+[`book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
 
 ## 16. Ratification record
 

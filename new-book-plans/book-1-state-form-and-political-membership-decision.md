@@ -41,8 +41,17 @@ The common tier owns the constitutional floor and its portability; fiscal and
 service equalisation duties; and interregional coordination and commons. It
 represents the republic externally and exercises only the external powers and
 limits separately ratified by the later security/external-power ruling. This
-decision allocates the tier, not the still-open substance. Exact programmes,
-rates, budgets, facilities, staffing, and coordination workflows remain Book 2.
+decision allocates the tier. The separate ecological, future-generation,
+commons, and non-human-animal ruling of 2026-08-08 now supplies that subject's
+constitutional substance: the common tier owns republic-wide and interregional
+ceilings and minimum protections, interregional and external commons
+coordination, and the two independent common institutions named there. Regional
+and local tiers retain residual land-use, ecosystem, and animal-protection
+administration under subsidiarity, may enact stronger compatible protection,
+and may not undercut a common ceiling, non-regression duty, or direct animal
+protection. Exact numeric ceilings, programmes, rates, budgets, facilities,
+staffing, measurement, and coordination workflows remain outside this ruling;
+operational work remains Book 2.
 
 The separately ratified economic-pluralism decision deliberately supplements
 that enumeration. The common tier owns the monetary and accessible payment
@@ -169,6 +178,15 @@ audit and integrity functions, an ombudsperson or rights advocate, and an
 appointments-qualification function. A record referral is insufficient unless
 an independent recipient has a duty to act, a continuity/remedy path, and a
 consequence for inaction.
+
+The later ecological ruling additionally mandates a collegial **Future
+Conditions Guardian** and a separate **Animal Protection Advocate**. Both are
+independent common institutions subject to this decision's appointment,
+anti-capture, recusal, alternate-route, public-reason, and removal requirements.
+They may investigate, initiate challenge, and seek remedy within their distinct
+mandates; neither receives a policy veto, adjudicative finality, executive
+control, or power to make its own evidence conclusive. Their functions may not
+be merged merely for administrative convenience.
 
 ## 4. Appointments, terms, and anti-capture
 
@@ -607,10 +625,13 @@ disenfranchisement, and citizen bypass of the Assembly threshold for
 constitutional amendment. It did not itself settle the numeric legal-adulthood
 age or the family, dependency, reproduction, and collective-plurality contract;
 the separate author ruling of 2026-08-08 now settles that planning scope while
-still leaving the numeric age to common-tier statute. This ruling does not settle
-exact office durations, ballot technology, staffing, costs, external-operation
-details, or any ecological, security, assurance, narrative, or reader-evidence
-ruling.
+still leaving the numeric age to common-tier statute. It also did not itself
+settle ecological, future-generation, commons, or non-human-animal protection;
+the separate author ruling of 2026-08-08 now settles that distinct planning
+scope and adds only the competences and institutions cross-referenced above.
+This ruling still does not settle exact office durations, ballot technology,
+staffing, costs, external-operation details, security, assurance, narrative, or
+reader-evidence questions.
 
 The substantive-equality and anti-subordination baseline was separately
 author-ratified on 2026-08-07. It remains unimplemented and does not alter this
@@ -626,6 +647,12 @@ The family, dependency, reproduction, and collective-plurality contract was
 separately author-ratified on 2026-08-08 and remains unimplemented. It controls
 the adulthood and collective-membership interfaces cross-referenced here; see
 [`book-1-family-dependency-reproduction-and-collective-plurality-decision.md`](book-1-family-dependency-reproduction-and-collective-plurality-decision.md).
+
+The ecological, future-generation, commons, and non-human-animal baselines were
+separately author-ratified on 2026-08-08 and remain unimplemented. They control
+the ecological competence and independent-institution interfaces cross-
+referenced here; see
+[`book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
 
 ## 12. Ratification record
 

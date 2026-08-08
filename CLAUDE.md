@@ -100,7 +100,8 @@ two-snapshot harness, adversarial matrix, and residual Book 2 boundary live in
 own temporal contract; Book 2 continues to operate clocks, calendars, witnesses,
 publication, recovery, and time services.
 
-**The constitutional taxonomy is author-ratified (2026-08-03).**
+**The constitutional taxonomy is author-ratified (2026-08-03) and extended by
+the author-ratified non-human-animal Class 10 (2026-08-08).**
 `new-book-plans/book-1-constitutional-taxonomy.md` is an author-chosen planning
 grammar for Phase 2, not a derivation, a claim that the named classes are
 exhaustive, or current formal coverage. Liberty limits bind public power directly
@@ -116,9 +117,15 @@ recognition, contribution, qualifying thresholds, and personal scores may not be
 allocation keys for the unconditional floor, standing, authority, political
 voice, or commons access. Purpose-limited contribution records may calculate a
 separately enacted above-floor insurance supplement but may not read `reward` or
-become a worth score. Commons and future-condition claims have standing for
-any present person and an independently checked public guardian; the guardian's
-authority, evidence, independence, and removal remain Class 6/7/9 contract work.
+become a worth score. Commons and future-condition claims may be initiated by any
+present person, a qualified association, the rights advocate, or the independently
+checked collegial Future Conditions Guardian. Each route is independent; none
+requires another claimant to be present. The 2026-08-08 ecological ruling settles
+the Guardian's authority, evidence boundary, independence, Guardian-only
+automatic-pause power, case-bound replay key, conflict controls, removal,
+alternate advocate, independent substitute reviewer, and lack of a final veto.
+Direct non-human-animal welfare and integrity is Class 10 rather than human
+personhood or an extension of the ecological-commons class.
 Structural refusals remain cross-cutting walls, not ordinary subject-matter
 rules: Article 1's firewall, `admits`, `derived_only`, and verifier guards keep
 their own enforcement and test obligations. This ruling adds no predicate, duty,
@@ -526,6 +533,148 @@ death, collective identity, membership, title, or institutional action. The
 controlling record is
 `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
 
+**The ecological, future-generation, commons, and non-human-animal baselines are
+author-ratified (2026-08-08): distinct environmental right + protected commons +
+science-constrained democratic ceilings + directly protected sentient animals.**
+Every present person has an independently enforceable right to clean, healthy,
+and sustainable environmental conditions. This right is distinct from the
+material floor and does not add a floor item. It may be violated before food,
+water, health, dwelling, or another floor is lost; where ecological harm also
+causes a floor deprivation, both claims remain available and neither substitutes
+for the other. Climate and atmosphere, air, fresh and marine waters, soil,
+biodiversity and genetic diversity, habitats, ecosystem integrity, connectivity
+and resilience, regenerative and waste-absorption capacity, and the ecological
+inheritance of land and nonrenewable resources are protected on separate,
+non-substitutable axes. No sustainability score may hide one failed condition.
+Protecting ecological function neither nationalises private, customary, or
+collective title nor lets ownership waive the condition.
+
+Future generations receive no present `person` record, ballot, presumed
+preference, or fetal or embryonic standing. The protected object is the
+ecological capability and reasonable option-space inherited by whoever later
+exists. Versioned, multidimensional ceilings and budgets are enacted by
+democratic law inside an independently reviewed scientific envelope; the
+constitution supplies no number. A recalibration or weakening needs fresh public
+evidence of equal or greater expected protection or corrected science. Cost,
+profit, convenience, lobbying, or missing review is insufficient. Credible
+serious or irreversible risk shifts the assessment, alternatives, and compliance
+burden to the proponent without creating a zero-risk rule for harmless ordinary
+life. Material-risk decisions require accessible information, participation,
+reasons, cumulative and lifecycle assessment, independent assurance, challenge,
+and interim relief before irreversible commitment.
+
+The remedy order is avoidance, minimisation, in-place restoration, then genuinely
+equivalent compensatory ecological restoration. An offset cannot legalise a
+ceiling breach, irreplaceable loss, or local rights harm. Non-regression protects
+outcomes rather than obsolete methods. Prevention and cessation do not depend on
+fault. After causal connection is established, inherently hazardous activities
+carry strict containment, restoration, and reasonable response-cost liability;
+other liability follows proved causal contribution or control, while personal
+punishment still needs individual culpability and due process. Unknown
+or insolvent responsibility cannot stop public restoration. The common tier sets
+common minima and governs interregional commons and cross-regional harm; stronger
+regional, local, and collective rules survive. Indigenous title, governance,
+consultation, and the ratified consent boundary survive, and conservation cannot
+become a dispossession or assimilation device. Treaty, customs, and
+extraterritorial machinery remain for the external-power ruling and Book 2.
+
+The Future Conditions Guardian is a collegial independent office with open
+nominations, divided selectors, mixed expertise, staggered nonrenewable terms,
+cause-only removal, budget independence, conflict controls, and no selector,
+government, party, industry, or profession controlling a majority. It may obtain
+evidence, demand assessment and reasons, participate, publish warnings, and seek
+review and remedy. An evidence-supported objection published by the collegial
+Guardian—or by its predeclared alternate advocate acting in its place—identifying
+credible serious or irreversible harm automatically pauses only the irreversible
+authorisation pending expedited independent review. Any present person, qualified
+association, or rights advocate retains an independent initiation route and may
+request judicial interim relief, but their filing does not itself trigger that
+automatic pause. The pause needs its own source-bound T3 contract and one
+case-bound replay key binding the exact authorisation version, ground, and
+reviewed evidence set across the Guardian, alternate advocate, successor office,
+and reviewers. None may restart an unchanged key. Only materially new evidence
+or a materially changed authorisation creates a new key and may support a new
+pause. The predeclared alternate advocate preserves the Guardian's initiation and
+automatic-pause route when the Guardian cannot act; a separately predeclared
+independent substitute reviewer decides when the ordinary reviewer is
+unavailable, conflicted, or captured. Neither absence may become approval or an
+indefinite hold. The Guardian has no permanent veto, legislative or budget power,
+programme control, scientific-oracle status, or authority to invent future
+preferences. Scientific assessment, advocacy, authorisation, adjudication,
+execution, and audit remain separate.
+
+Public tiers, delegated functions, public authorisations, and materially
+attributable private harm are directly bound. Diffuse cumulative harm ordinarily
+runs through general law and sector ceilings rather than turning one harmless act
+into constitutional guilt. Property, contract, finance, insurance, corporate
+form, imports, exports, insolvency, and jurisdiction-shopping cannot legalise or
+outsource prohibited harm. Environmental inequality uses the substantive-
+equality machinery. Where an existing material floor and ecological ceiling
+cannot immediately both be met, the least-harm route preserves the immediate
+floor, records any ecological breach as breach, and triggers transition,
+restoration, review, and non-repetition. Neither duty is renamed satisfied;
+budget choice, artificial withholding, monopoly, and delay are not physical
+impossibility. The ruling creates no standing ecological emergency power.
+
+The taxonomy adds **Class 10: non-human-animal welfare and integrity**. Sentient
+or credibly sentient animals are protected subjects with direct interests in
+bodily integrity, continued life, species-appropriate conditions, and freedom
+from severe or prolonged avoidable pain, fear, distress, deprivation, and
+abandonment. Vertebrates, cephalopods, and decapod crustaceans are presumptively
+covered, and independent evidence of a realistic possibility of sentience extends
+the class; species, populations, and habitats remain separately protected by the
+commons. Animals are not human `person`s and receive no human floor, ballot,
+candidacy, political weight, or general human-equality status. They are also not
+ordinary chattels whose protection an owner may waive. Custody and property may
+allocate care and costs but cannot create a rescue veto.
+
+All controlled uses carry a non-waivable welfare baseline. Lethal, invasive, or
+high-severity uses additionally need a compatible serious purpose, necessity,
+proportionality, no reasonably available materially less harmful means,
+least-harm design, independent review, records, challenge, and a fresh temporal
+contract. Deliberate cruelty, fighting, sexual use, abandonment, extreme
+confinement, predictably harmful breeding, unnecessary painful mutilation, sport
+or trophy killing, and severe harm solely for spectacle, gambling, amusement,
+prestige, fashion, cosmetics, marketing, convenience, or profit are refused.
+Every controlled use of a credibly sentient animal to produce food, including
+nonlethal or non-severe production, is subject to the alternative-sensitive food
+rule. Preference, tradition, convenience, and lower price are insufficient where
+a safe, accessible, nutritionally adequate, materially less harmful route is
+reasonably available; public transition may not withhold the food floor.
+Cultural, religious, and Indigenous protection creates consultation,
+accommodation, and non-assimilation duties but no exemption from the severe-
+avoidable-suffering core. Research additionally requires replacement, reduction,
+refinement, serious purpose, no validated alternative, public reporting, and
+humane endpoints. Unrelieved severe or prolonged suffering is categorically
+refused. Natural predation creates no offender or universal rescue duty.
+Human-caused or controllable harm does; disease and
+introduced-species control needs grave-harm evidence, exhausted feasible
+nonlethal alternatives, humane means, review, and a fresh temporal contract.
+
+The Animal Protection Advocate is institutionally separate from the Future
+Conditions Guardian because ecosystem repair can conflict with an individual
+animal's interests. Any person or qualified association may initiate; the
+Advocate may investigate, seek rescue and interim relief, and pursue individual
+or systemic remedies. Conflicts go to independent adjudication, and neither
+office has a final veto. The unamendable corridor now includes direct animal
+protected-subject status and the prohibitions on severe avoidable suffering and
+dispensable killing; detailed standards remain democratically revisable inside
+that core. Animal remedies cannot remove human standing, the material floor,
+core liberty, due process, or political equality.
+
+The ruling is **ratified but unimplemented**. It creates no predicate, rule,
+finding, ceiling, duty, remedy, institution, chapter, programme, or public claim.
+Book 1 owns rights and protected conditions, legal limits, evidence burdens,
+institutions, federal competence, challenge, continuity, liability, remedy, and
+failure polarity. Book 2 owns measurements, numerical ceilings and budgets,
+inventories, models, species standards, monitoring, restoration and veterinary
+capacity, food and research transition, staffing, costs, workflows, and
+feasibility. Nibli may consume bounded authenticated findings; it does not
+measure ecology, decide sentience or causation, choose a ceiling, authenticate
+science, invent future preferences, or perform institutional action. The
+controlling record is
+`new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
@@ -536,7 +685,9 @@ right, power, or exception. The
 democratic corridor is a **ratified constitutional design rule, not yet a formal
 guarantee**: a majority chooses only among policies compatible with universal
 standing, core floors, equal protection/non-discrimination, due process, core
-liberties, and commons constraints.
+liberties, commons constraints, direct non-human-animal protected-subject status,
+and the prohibitions on severe avoidable animal suffering and dispensable
+killing.
 
 **Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
 D2, refined by the 2026-08-07 full-society boundary.** The pre-expansion
@@ -737,14 +888,14 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `TODO.md` — the **book-1** work tracker, arranged **in the order
   dependencies permit**, refreshed 2026-08-07 for the ratified full-society
   boundary. The substantive-equality, bounded-plural-economy, and family/
-  dependency/reproduction/collective-plurality baselines are settled. Phase 1
-  retains open author rulings on ecology/future conditions/animals, security/
-  external power, assurance,
+  dependency/reproduction/collective-plurality and ecological/future-condition/
+  commons/non-human-animal baselines are settled. Phase 1 retains open author
+  rulings on security/external power, assurance,
   narrative register, and reader evidence; each ruling blocks only its dependent
   implementation, while neutral inventory and decision briefs may proceed. Phase
-  2 records the completed finite collective-decision audit and holds two bounded,
-  non-blocking engine repair prompts: fail-closed raw witness enumeration and a
-  truthful novel text-compute registration contract. The expansion backlog uses
+  2 records the completed finite collective-decision audit, holds two bounded,
+  non-blocking engine repair prompts, and carries a read-only ecology/animal
+  finding-boundary audit before formalisation. The expansion backlog uses
   one canonical social model, a versioned
   reference envelope and disposition map, explicit constitutional domain packs,
   role/dependency/stress/gameability/assurance tests, separate completion gates,

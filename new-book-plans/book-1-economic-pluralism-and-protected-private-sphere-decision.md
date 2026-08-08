@@ -181,10 +181,15 @@ family, or faith-community title or detailed succession mechanics. The separate
 family, dependency, reproduction, and collective-plurality ruling of 2026-08-08
 now settles the family and succession interfaces and the Indigenous and
 collective portions of that scope, including strong Indigenous collective title
-and rights-bounded membership. Ecological ceilings, the general commons contract,
-and claims to title not established under that ruling remain outside this
-decision, without weakening the present floor, equality, exit, and anti-
-exploitation limits.
+and rights-bounded membership. Ecological ceilings and the general commons
+contract were also outside this economic decision when it landed. The separate
+ecological, future-generation, commons, and non-human-animal ruling of 2026-08-08
+now settles that distinct planning scope. No property or collective title,
+contract, price, profit, market demand, insurance, enterprise form, or collective
+consent supplies permission to exceed its ceiling or evade its direct animal
+protection. Claims to title not established by either later ruling remain outside
+this decision, without weakening the present floor, equality, exit, anti-
+exploitation, ecological, commons, or animal-protection limits.
 
 ## 5. Contracts, consumers, and enterprises
 
@@ -285,6 +290,15 @@ Care periods may support portable social-insurance supplements without turning
 affection or household life into employment, contribution merit, or `reward`.
 Privacy does not protect violence, forced labour, confiscation, document
 control, economic captivity, obstruction of help, or denial of free exit.
+
+The protected voluntary sphere neither proves nor excuses ecological or animal-
+protection harm. A harmless voluntary practice does not become public merely
+because it uses resources or involves an animal; the later ruling's evidence and
+reach contract must be satisfied. Every human-controlled animal use remains
+subject to the non-waivable welfare baseline. Where a lethal, invasive, or high-
+severity use is established, a private, cultural, religious, charitable, or
+commercial label does not waive the enhanced serious-purpose, necessity,
+alternatives, and least-harm requirements.
 
 The equality ruling's exception for genuinely expressive roles remains narrow
 and mission-linked. It does not expand into general employment, public
@@ -404,6 +418,13 @@ ordering:
 
 Every unmet floor claim remains recorded as a constitutional failure. Fair
 rationing mitigates harm; it does not transform non-delivery into success.
+
+A physical-scarcity finding is not an ecological authorization. This allocation
+route cannot establish a scientific ceiling, prove that an ecological threshold
+has been crossed, or permit a ceiling breach. It must operate inside the
+separately ratified ecological and commons contract. Budget choice, artificial
+withholding, and damage caused by violating that contract remain failures, not
+scarcity and not permission.
 Public reasons, independent review, challenge, interim alternatives,
 accessibility, correction, replenishment, a duty to obtain and record fresh
 reassessment evidence, a source-bound end, and repair remain mandatory. Book 1
@@ -667,10 +688,14 @@ thresholds, benefit formulas, prices, budgets, scarcity quantities, or
 ecological ceilings. It did not itself settle family support law, detailed
 child-work law, or collective and Indigenous land membership; the separate
 family, dependency, reproduction, and collective-plurality decision of
-2026-08-08 now settles those distinct planning scopes. External trade and treaty
-power, non-human-animal protection, emergency authority, and ecological and
-general-commons limits remain outside this ruling. Neither decision operates an
-economy or proves affordability, supply, capacity, stability, or feasibility.
+2026-08-08 now settles those distinct planning scopes. It also did not itself
+settle the environmental right, future-generation representation, general
+commons limits, or non-human-animal protection; the separate author ruling of
+2026-08-08 now settles that distinct planning scope. External trade and treaty
+power and emergency authority remain outside this ruling. Neither later
+decision operates an economy or proves affordability, supply, capacity,
+stability, ecological compliance, animal protection, or feasibility. See
+[`book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
 
 ## 17. Ratification record
 
