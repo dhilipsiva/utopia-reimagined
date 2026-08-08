@@ -150,6 +150,37 @@ book-1 references book-2 exactly once, at its very end.
 > attribution, warrant-authentication, or institutional-liveness system. See
 > `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
 
+> **Assurance-portfolio handoff — author-ratified 2026-08-08.** Book 1 owns the
+> route list, the posture set, the claim-language rules, the safety/liveness/
+> feasibility overlays, the reserved wordings, the claim-class allocation, the
+> unbuilt-route rule, the no-bridge clause, and the ledger contract.
+>
+> Book 2 owns the operational side of the routes it will run: quantitative and
+> resource model construction, versioning and calibration; simulation design and
+> validation; operational evidence collection, provenance and independent
+> reproduction; and the staffing, cost and capacity of all of it. **Three of
+> those routes carry claims Book 1 cannot make at all today** — every arrival,
+> delivery, release, correction and institutional-action claim is Unestablished
+> until operational assurance becomes available, and every resource, cost,
+> capacity and shock claim may not be written in Book 1 in any form.
+>
+> Book 2 additionally owes the **admissibility contract** that makes an external
+> route usable: the evidence contract, admissibility criteria, named reviewer and
+> in-repo gate through which outside evidence is admitted and checked. A route is
+> *available* when that contract exists — being built here is a separate test that
+> only formal entailment and the claim registry meet. Every route must also
+> declare a falsification condition and ship controls that must fail; a route with
+> no negative-control story counts as neither built nor available.
+>
+> Book 2 may not upgrade a posture, invent a route, stretch one to fit a claim,
+> let one green route stand in for another, produce an aggregate assurance score,
+> or convert a routed claim into a closed one — routing is a disposition, not
+> assurance. No modelled, measured, simulated or operational result may enter the
+> reasoning engine through the compute backend, an external predicate, or built-in
+> arithmetic; it arrives only as an authenticated, adjudicated, purpose-bound
+> premise through a distinct relation. See
+> `new-book-plans/book-1-assurance-portfolio-decision.md`.
+
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
 **collect here, do not work here.** Engine handoffs, when they come, follow

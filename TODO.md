@@ -41,8 +41,8 @@ then a full-society expansion backlog and cross-cutting sections:
    plural economy/protected private sphere, family/dependency/reproduction/
    collective-plurality, ecological/future-generation/commons/non-human-
    animal, and public-safety/defence/emergency/external-power baselines are
-   settled. Assurance,
-   narrative, and reader-threshold decisions remain open. Neutral inventory and
+   settled, as is the assurance portfolio. Narrative
+   and reader-threshold decisions remain open. Neutral inventory and
    decision briefs may proceed in parallel; each still-gated domain's rules,
    prose, and public claim wait for its own ruling. The final reader threshold
    waits for the pilot. This section has been destroyed by tooling once and is
@@ -119,23 +119,12 @@ The state form, residence-first political membership, substantive equality,
 bounded plural economy/protected voluntary sphere, family/dependency/
 reproduction/collective-plurality, ecological/future-generation/commons/
 non-human-animal, and public-safety/defence/emergency/external-power baselines
-are also settled. The remaining decisions determine
-assurance, narrative, and reader thresholds; they
+are also settled, as is the assurance portfolio. The remaining decisions
+determine narrative register and reader thresholds; they
 do not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
 dependent prose, or make its completion claim until the author has ruled it.
-
-- [ ] **[AUTHOR-GATED] Rule the assurance portfolio for a functional-society
-  model.**
-  - **Recommended:** use Nibli for legal entailment, admissibility, authority, and
-    structural refusals; versioned quantitative models for resources and budgets;
-    dynamic simulations for queues, shocks, and transition; the registry for
-    empirical claims; and reader/lived-experience studies for comprehension and
-    human effects. No one formalism may impersonate the others.
-  - Rule which classes of Book 1 claim must be formally derived, which may be Part V
-    specifications, which require Book 2 evidence, and what language is permitted
-    when a model establishes safety but not liveness or feasibility.
 
 - [ ] **[AUTHOR-GATED] Rule the narrative human register for ordinary social
   life.**
@@ -175,11 +164,24 @@ what changed, whether any verdict moved, and what the prompt itself got wrong. T
 item has been non-empty more often than not, on both ends of the channel.
 
 Breadth by itself is not an engine defect. First assign each claim to the assurance
-method ruled above. Open a repair prompt only when a minimal public fixture shows
+route ruled in
+[`new-book-plans/book-1-assurance-portfolio-decision.md`](new-book-plans/book-1-assurance-portfolio-decision.md).
+Open a repair prompt only when a minimal public fixture shows
 that a claim assigned to Nibli cannot be expressed soundly, loses a definitive
 verdict, or exceeds a measured bound. Do not ask one reasoning engine to become a
 budget, population, logistics, psychology, transition, source-deployment, or
 authentication system.
+
+**Interim assignment, until the generated ledger lands.** The portfolio is
+ratified but its ledger is not built, so assignment is stated inline rather than
+looked up: a repair prompt may open when the prompt body itself names, for each
+claim it serves, the posture, the route, and — where the route is formal
+entailment — the evidence kind, reviewed at prompt time. A prompt whose claims
+would take an established posture through a route that is neither built here nor
+available through an admissibility contract does not open; the claim is recorded
+as Unestablished/route-unbuilt instead. A read-only capability audit is not a
+repair prompt and needs no such assignment: it measures a boundary rather than
+claiming one.
 
 - [ ] **[READ-ONLY] Measure the versioned ecological and animal finding boundary before formalising it.**
   - This is a capability audit, not an engine-change request. It must bind every
@@ -770,6 +772,34 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     Generate the coverage map, contract-card views, role matrix, dependency map,
     assurance allocation, reader ledger and Book 2 crosswalk from that source; do
     not maintain competing matrices by hand.
+  - **Carry the ratified assurance triple as fields on every claim record**, per
+    [`new-book-plans/book-1-assurance-portfolio-decision.md`](new-book-plans/book-1-assurance-portfolio-decision.md):
+    posture, route, evidence kind where the route is formal entailment, scope
+    bound, Unestablished disposition, owner, severity, closure condition,
+    public-claim restriction, and a mutation reference for any Derived row
+    resting on a bounded source mutation. The claim-assurance ledger is a
+    **generated projection** of these fields, not a second reviewed file — a
+    parallel hand-maintained matrix of assurance truth is refused by the
+    canonical-source mandate above.
+  - Split, do not label. A record that would carry two postures is two records;
+    "partial formalisation" is not a posture but an unsplit claim. One posture and
+    one evidence kind per record is a precondition of the generator, not a
+    preference.
+  - The generator must fail on: a claim with no posture; a posture unsupported by
+    its route; a Derived row whose evidence kind is not executable, or which rests
+    on a mutation with no mutation reference; a Checked row phrased as an
+    impossibility; an Evidenced row with no reachable source or a failing
+    staleness gate; a Specified row without its unimplemented marker; a Reasoned
+    row cited as Derived; an Unestablished row with no disposition, or with a
+    route-unbuilt disposition lacking severity, owner, closure condition and claim
+    restriction; a liveness claim in any posture but Unestablished; a feasibility
+    claim present in Book 1 at all; an established posture resting on a route that
+    is neither built nor available; a route with no declared negative control; a
+    reviewed enum with no mapping row; and any aggregate score. One conservative
+    non-numeric rollup is permitted, on the record case's existing rule.
+  - Map the remaining per-case and per-scenario enums in the reviewed sources onto
+    the canonical postures **mechanically**, in the same change. Do not transcribe
+    them; transcribed lists rot here.
   - Preserve the ratified constitutional taxonomy as the legal-effect axis; it is
     chosen, not exhaustive. Add an orthogonal social-domain axis answering which
     part of life is involved and where its decisions belong.
